@@ -2,10 +2,13 @@ import { access, copyFile, mkdir, readdir, readFile, rm, writeFile } from 'node:
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
+await import('./build-multi.mjs');
+process.exit(0);
+
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const source = join(root, 'snapshot');
 const output = join(root, 'dist');
-const published = 'edlt.shox';
+const publishedProfiles = ['edlt.shox', 'pexe.bh', 'pigeon.flac', 'reposted'];
 const readJson = async (name) => JSON.parse(await readFile(join(source, name), 'utf8'));
 const plainText = (value) => String(value ?? '').replace(/[\p{Extended_Pictographic}\p{Regional_Indicator}\p{Emoji_Modifier}\uFE0E\uFE0F\u200D\u20E3]/gu, '');
 const esc = (value) => plainText(value).replace(/[&<>"']/g, (ch) =>
@@ -35,23 +38,14 @@ const localImage = async (file) => {
 };
 
 const index = await readJson('index.json');
-const profile = await readJson(`${published}/profile.json`);
-const discovery = await readJson(`${published}/discovery.json`);
-const items = await readJson(`${published}/items.json`);
-const run = await readJson(`${published}/run.json`);
-if (!Array.isArray(index.profile_keys) || !index.profile_keys.includes(published)) throw new Error('Published profile is missing from the catalog.');
+if (!Array.isArray(index.profile_keys) || publishedProfiles.some((username) => !index.profile_keys.includes(username))) throw new Error('A published profile is missing from the catalog.');
 if (!index.profile_keys.every((username) => /^[A-Za-z0-9._]{1,30}$/.test(username))) throw new Error('Catalog contains an invalid username.');
 if (new Set(index.profile_keys).size !== index.profile_keys.length) throw new Error('Catalog contains duplicate usernames.');
-if (profile.username !== published || !Array.isArray(items) || !discovery.reel?.complete) throw new Error('Published snapshot is incomplete.');
-const reels = items.filter((item) => item.kind === 'reel');
-if (reels.length !== discovery.reel.items.length) throw new Error('Published reel records do not match the confirmed grid.');
-const complete = reels.filter((item) => item.status === 'complete' && !item.last_error).length;
-const review = reels.length - complete;
 const buildDate = new Intl.DateTimeFormat('en-IN', { dateStyle: 'medium', timeZone: 'Asia/Kolkata' }).format(new Date());
 
-function shell({ title, description, base, active, content }) {
+function shell({ title, description, base, active, profileKey, content }) {
   return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#ffffff"><meta name="description" content="${esc(description)}"><title>${esc(title)}</title><link rel="icon" href="${base}assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="${base}assets/site.css"><script src="${base}assets/site.js" defer></script></head><body>
-  <a class="skip-link" href="#main">Skip to content</a><header class="topbar"><div class="topbar-inner"><a class="brand" href="${base}" aria-label="deadgram atlas home"><img class="brand-icon" src="${base}assets/favicon.svg" alt=""><span>deadgram <small>ATLAS</small></span></a><nav aria-label="Main navigation"><a class="${active === 'catalog' ? 'active' : ''}" href="${base}">Profiles</a><a class="${active === 'profile' ? 'active' : ''}" href="${base}profiles/${published}/">Profile record</a></nav><span class="nav-status">COLLECTION IN PROGRESS</span></div></header>
+  <a class="skip-link" href="#main">Skip to content</a><header class="topbar"><div class="topbar-inner"><a class="brand" href="${base}" aria-label="deadgram atlas home"><img class="brand-icon" src="${base}assets/favicon.svg" alt=""><span>deadgram <small>ATLAS</small></span></a><nav aria-label="Main navigation"><a class="${active === 'catalog' ? 'active' : ''}" href="${base}">Profiles</a>${profileKey ? `<a class="${active === 'profile' ? 'active' : ''}" href="${base}profiles/${profileKey}/">Profile record</a>` : ''}</nav><span class="nav-status">COLLECTION IN PROGRESS</span></div></header>
   <main id="main">${content}</main><footer class="footer"><div><strong>deadgram ATLAS</strong><p>Saved profile records.</p></div><div><span>Updated ${esc(buildDate)}</span><span>Metrics reflect the saved snapshot.</span></div></footer></body></html>`;
 }
 
