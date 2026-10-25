@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url';
 const site = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const repo = resolve(site, '..');
 const snapshot = join(site, 'snapshot');
-const publishedProfiles = ['edlt.shox', 'pexe.bh', 'pigeon.flac', 'reposted'];
+const publishedProfiles = ['edlt.shox', 'pexe.bh', 'pigeon.flac', 'reposted', 'pichypeapp', 'printamovie'];
 const files = ['profile.json', 'discovery.json', 'items.json', 'run.json', 'profile.csv', 'items.csv', 'report.html'];
 const catalog = JSON.parse(await readFile(join(repo, 'bot-info', 'database', 'profiles', 'index.json'), 'utf8'));
 if (!Array.isArray(catalog.profile_keys) || publishedProfiles.some((username) => !catalog.profile_keys.includes(username))) {
