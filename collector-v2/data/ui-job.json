@@ -1,28 +1,978 @@
 {
-  "id": "d98263b5-6fa9-40f6-b793-44dc07922257",
-  "mode": "reel_grid",
+  "id": "77e435ae-01b1-40e1-9047-515d46aa4978",
+  "mode": "profile_header",
   "order": "posts_ascending",
-  "status": "complete",
+  "status": "interrupted",
   "profiles": [
-    "illmisguideyou"
+    "tom4our",
+    "crustykid67",
+    "solvik.editz9",
+    "farf_allajade",
+    "41.3k",
+    "micro.siss",
+    "aniruddhballal",
+    "yervin8_",
+    "vexo.7k",
+    "funny.exe07",
+    "twinkiewinkie3",
+    "nhiftbl",
+    "short_vibesz",
+    "mr_oggy_114",
+    "oooiway",
+    "zuxxie.pov",
+    "extreme.laugh8",
+    "coopyyz",
+    "2many_memes_in_my_camera_roll",
+    "guywithbadmemes69",
+    "zosttfeed",
+    "puffinvalley",
+    "movi.egaze",
+    "slopfeed100m",
+    "scoobyjacks_",
+    "kanika_s.0711",
+    "zosttified",
+    "girlsgetitt",
+    "kabir.chaudhary69",
+    "slopcorn.exe",
+    "blunt.fun4",
+    "crick_video_07",
+    "zennnooxx",
+    "manas.8x_",
+    "me_me_s31",
+    "freddy.memes",
+    "iron_block2",
+    "memes.fatafat",
+    "pixa.300k",
+    "madarameme0",
+    "pigeonlarping",
+    "paystasongta",
+    "fun_fineee",
+    "kujo__o",
+    "extreme_laugh_07",
+    "sallusmemer",
+    "jellyfish.m3mes",
+    "zoya._100x",
+    "melonphernelia",
+    "damn_nigas",
+    "nixk.xyz"
   ],
   "steps": [
     {
-      "username": "illmisguideyou",
-      "stage": "reel_grid"
+      "username": "tom4our",
+      "stage": "profile_header"
+    },
+    {
+      "username": "crustykid67",
+      "stage": "profile_header"
+    },
+    {
+      "username": "solvik.editz9",
+      "stage": "profile_header"
+    },
+    {
+      "username": "farf_allajade",
+      "stage": "profile_header"
+    },
+    {
+      "username": "41.3k",
+      "stage": "profile_header"
+    },
+    {
+      "username": "micro.siss",
+      "stage": "profile_header"
+    },
+    {
+      "username": "aniruddhballal",
+      "stage": "profile_header"
+    },
+    {
+      "username": "yervin8_",
+      "stage": "profile_header"
+    },
+    {
+      "username": "vexo.7k",
+      "stage": "profile_header"
+    },
+    {
+      "username": "funny.exe07",
+      "stage": "profile_header"
+    },
+    {
+      "username": "twinkiewinkie3",
+      "stage": "profile_header"
+    },
+    {
+      "username": "nhiftbl",
+      "stage": "profile_header"
+    },
+    {
+      "username": "short_vibesz",
+      "stage": "profile_header"
+    },
+    {
+      "username": "mr_oggy_114",
+      "stage": "profile_header"
+    },
+    {
+      "username": "oooiway",
+      "stage": "profile_header"
+    },
+    {
+      "username": "zuxxie.pov",
+      "stage": "profile_header"
+    },
+    {
+      "username": "extreme.laugh8",
+      "stage": "profile_header"
+    },
+    {
+      "username": "coopyyz",
+      "stage": "profile_header"
+    },
+    {
+      "username": "2many_memes_in_my_camera_roll",
+      "stage": "profile_header"
+    },
+    {
+      "username": "guywithbadmemes69",
+      "stage": "profile_header"
+    },
+    {
+      "username": "zosttfeed",
+      "stage": "profile_header"
+    },
+    {
+      "username": "puffinvalley",
+      "stage": "profile_header"
+    },
+    {
+      "username": "movi.egaze",
+      "stage": "profile_header"
+    },
+    {
+      "username": "slopfeed100m",
+      "stage": "profile_header"
+    },
+    {
+      "username": "scoobyjacks_",
+      "stage": "profile_header"
+    },
+    {
+      "username": "kanika_s.0711",
+      "stage": "profile_header"
+    },
+    {
+      "username": "zosttified",
+      "stage": "profile_header"
+    },
+    {
+      "username": "girlsgetitt",
+      "stage": "profile_header"
+    },
+    {
+      "username": "kabir.chaudhary69",
+      "stage": "profile_header"
+    },
+    {
+      "username": "slopcorn.exe",
+      "stage": "profile_header"
+    },
+    {
+      "username": "blunt.fun4",
+      "stage": "profile_header"
+    },
+    {
+      "username": "crick_video_07",
+      "stage": "profile_header"
+    },
+    {
+      "username": "zennnooxx",
+      "stage": "profile_header"
+    },
+    {
+      "username": "manas.8x_",
+      "stage": "profile_header"
+    },
+    {
+      "username": "me_me_s31",
+      "stage": "profile_header"
+    },
+    {
+      "username": "freddy.memes",
+      "stage": "profile_header"
+    },
+    {
+      "username": "iron_block2",
+      "stage": "profile_header"
+    },
+    {
+      "username": "memes.fatafat",
+      "stage": "profile_header"
+    },
+    {
+      "username": "pixa.300k",
+      "stage": "profile_header"
+    },
+    {
+      "username": "madarameme0",
+      "stage": "profile_header"
+    },
+    {
+      "username": "pigeonlarping",
+      "stage": "profile_header"
+    },
+    {
+      "username": "paystasongta",
+      "stage": "profile_header"
+    },
+    {
+      "username": "fun_fineee",
+      "stage": "profile_header"
+    },
+    {
+      "username": "kujo__o",
+      "stage": "profile_header"
+    },
+    {
+      "username": "extreme_laugh_07",
+      "stage": "profile_header"
+    },
+    {
+      "username": "sallusmemer",
+      "stage": "profile_header"
+    },
+    {
+      "username": "jellyfish.m3mes",
+      "stage": "profile_header"
+    },
+    {
+      "username": "zoya._100x",
+      "stage": "profile_header"
+    },
+    {
+      "username": "melonphernelia",
+      "stage": "profile_header"
+    },
+    {
+      "username": "damn_nigas",
+      "stage": "profile_header"
+    },
+    {
+      "username": "nixk.xyz",
+      "stage": "profile_header"
     }
   ],
   "results": {
-    "illmisguideyou": {
-      "status": "complete",
-      "started_at": "2026-10-28T06:03:29.233Z",
-      "finished_at": "2026-10-28T06:09:03.349Z",
+    "tom4our": {
+      "status": "failed",
+      "started_at": "2026-10-28T08:56:16.368Z",
+      "finished_at": "2026-10-28T08:56:28.033Z",
+      "error": "Invalid URL",
+      "stages": {
+        "profile_header": {
+          "status": "failed",
+          "started_at": "2026-10-28T08:56:16.368Z",
+          "finished_at": "2026-10-28T08:56:28.033Z",
+          "error": "Invalid URL"
+        }
+      }
+    },
+    "crustykid67": {
+      "status": "failed",
+      "started_at": "2026-10-28T08:56:28.036Z",
+      "finished_at": "2026-10-28T08:56:33.830Z",
+      "error": "Invalid URL",
+      "stages": {
+        "profile_header": {
+          "status": "failed",
+          "started_at": "2026-10-28T08:56:28.036Z",
+          "finished_at": "2026-10-28T08:56:33.830Z",
+          "error": "Invalid URL"
+        }
+      }
+    },
+    "solvik.editz9": {
+      "status": "failed",
+      "started_at": "2026-10-28T08:56:34.041Z",
+      "finished_at": "2026-10-28T08:56:39.748Z",
+      "error": "Invalid URL",
+      "stages": {
+        "profile_header": {
+          "status": "failed",
+          "started_at": "2026-10-28T08:56:34.041Z",
+          "finished_at": "2026-10-28T08:56:39.748Z",
+          "error": "Invalid URL"
+        }
+      }
+    },
+    "farf_allajade": {
+      "status": "failed",
+      "started_at": "2026-10-28T08:56:39.757Z",
+      "finished_at": "2026-10-28T08:56:46.162Z",
+      "error": "Invalid URL",
+      "stages": {
+        "profile_header": {
+          "status": "failed",
+          "started_at": "2026-10-28T08:56:39.757Z",
+          "finished_at": "2026-10-28T08:56:46.162Z",
+          "error": "Invalid URL"
+        }
+      }
+    },
+    "41.3k": {
+      "status": "failed",
+      "started_at": "2026-10-28T08:56:46.164Z",
+      "finished_at": "2026-10-28T08:56:52.913Z",
+      "error": "Invalid URL",
+      "stages": {
+        "profile_header": {
+          "status": "failed",
+          "started_at": "2026-10-28T08:56:46.164Z",
+          "finished_at": "2026-10-28T08:56:52.913Z",
+          "error": "Invalid URL"
+        }
+      }
+    },
+    "micro.siss": {
+      "status": "failed",
+      "started_at": "2026-10-28T08:56:52.916Z",
+      "finished_at": "2026-10-28T08:56:59.336Z",
+      "error": "Invalid URL",
+      "stages": {
+        "profile_header": {
+          "status": "failed",
+          "started_at": "2026-10-28T08:56:52.916Z",
+          "finished_at": "2026-10-28T08:56:59.336Z",
+          "error": "Invalid URL"
+        }
+      }
+    },
+    "aniruddhballal": {
+      "status": "failed",
+      "started_at": "2026-10-28T08:56:59.339Z",
+      "finished_at": "2026-10-28T08:57:09.574Z",
+      "error": "Invalid URL",
+      "stages": {
+        "profile_header": {
+          "status": "failed",
+          "started_at": "2026-10-28T08:56:59.339Z",
+          "finished_at": "2026-10-28T08:57:09.574Z",
+          "error": "Invalid URL"
+        }
+      }
+    },
+    "yervin8_": {
+      "status": "failed",
+      "started_at": "2026-10-28T08:57:09.576Z",
+      "finished_at": "2026-10-28T08:57:16.824Z",
+      "error": "Invalid URL",
+      "stages": {
+        "profile_header": {
+          "status": "failed",
+          "started_at": "2026-10-28T08:57:09.576Z",
+          "finished_at": "2026-10-28T08:57:16.824Z",
+          "error": "Invalid URL"
+        }
+      }
+    },
+    "vexo.7k": {
+      "status": "failed",
+      "started_at": "2026-10-28T08:57:16.826Z",
+      "finished_at": "2026-10-28T08:57:22.807Z",
+      "error": "Invalid URL",
+      "stages": {
+        "profile_header": {
+          "status": "failed",
+          "started_at": "2026-10-28T08:57:16.826Z",
+          "finished_at": "2026-10-28T08:57:22.807Z",
+          "error": "Invalid URL"
+        }
+      }
+    },
+    "funny.exe07": {
+      "status": "interrupted",
+      "started_at": "2026-10-28T08:57:22.810Z",
+      "finished_at": null,
       "error": null,
       "stages": {
-        "reel_grid": {
-          "status": "complete",
-          "started_at": "2026-10-28T06:03:29.233Z",
-          "finished_at": "2026-10-28T06:09:03.349Z",
+        "profile_header": {
+          "status": "interrupted",
+          "started_at": "2026-10-28T08:57:22.810Z",
+          "finished_at": null,
+          "error": null
+        }
+      }
+    },
+    "twinkiewinkie3": {
+      "status": "queued",
+      "started_at": null,
+      "finished_at": null,
+      "error": null,
+      "stages": {
+        "profile_header": {
+          "status": "queued",
+          "started_at": null,
+          "finished_at": null,
+          "error": null
+        }
+      }
+    },
+    "nhiftbl": {
+      "status": "queued",
+      "started_at": null,
+      "finished_at": null,
+      "error": null,
+      "stages": {
+        "profile_header": {
+          "status": "queued",
+          "started_at": null,
+          "finished_at": null,
+          "error": null
+        }
+      }
+    },
+    "short_vibesz": {
+      "status": "queued",
+      "started_at": null,
+      "finished_at": null,
+      "error": null,
+      "stages": {
+        "profile_header": {
+          "status": "queued",
+          "started_at": null,
+          "finished_at": null,
+          "error": null
+        }
+      }
+    },
+    "mr_oggy_114": {
+      "status": "queued",
+      "started_at": null,
+      "finished_at": null,
+      "error": null,
+      "stages": {
+        "profile_header": {
+          "status": "queued",
+          "started_at": null,
+          "finished_at": null,
+          "error": null
+        }
+      }
+    },
+    "oooiway": {
+      "status": "queued",
+      "started_at": null,
+      "finished_at": null,
+      "error": null,
+      "stages": {
+        "profile_header": {
+          "status": "queued",
+          "started_at": null,
+          "finished_at": null,
+          "error": null
+        }
+      }
+    },
+    "zuxxie.pov": {
+      "status": "queued",
+      "started_at": null,
+      "finished_at": null,
+      "error": null,
+      "stages": {
+        "profile_header": {
+          "status": "queued",
+          "started_at": null,
+          "finished_at": null,
+          "error": null
+        }
+      }
+    },
+    "extreme.laugh8": {
+      "status": "queued",
+      "started_at": null,
+      "finished_at": null,
+      "error": null,
+      "stages": {
+        "profile_header": {
+          "status": "queued",
+          "started_at": null,
+          "finished_at": null,
+          "error": null
+        }
+      }
+    },
+    "coopyyz": {
+      "status": "queued",
+      "started_at": null,
+      "finished_at": null,
+      "error": null,
+      "stages": {
+        "profile_header": {
+          "status": "queued",
+          "started_at": null,
+          "finished_at": null,
+          "error": null
+        }
+      }
+    },
+    "2many_memes_in_my_camera_roll": {
+      "status": "queued",
+      "started_at": null,
+      "finished_at": null,
+      "error": null,
+      "stages": {
+        "profile_header": {
+          "status": "queued",
+          "started_at": null,
+          "finished_at": null,
+          "error": null
+        }
+      }
+    },
+    "guywithbadmemes69": {
+      "status": "queued",
+      "started_at": null,
+      "finished_at": null,
+      "error": null,
+      "stages": {
+        "profile_header": {
+          "status": "queued",
+          "started_at": null,
+          "finished_at": null,
+          "error": null
+        }
+      }
+    },
+    "zosttfeed": {
+      "status": "queued",
+      "started_at": null,
+      "finished_at": null,
+      "error": null,
+      "stages": {
+        "profile_header": {
+          "status": "queued",
+          "started_at": null,
+          "finished_at": null,
+          "error": null
+        }
+      }
+    },
+    "puffinvalley": {
+      "status": "queued",
+      "started_at": null,
+      "finished_at": null,
+      "error": null,
+      "stages": {
+        "profile_header": {
+          "status": "queued",
+          "started_at": null,
+          "finished_at": null,
+          "error": null
+        }
+      }
+    },
+    "movi.egaze": {
+      "status": "queued",
+      "started_at": null,
+      "finished_at": null,
+      "error": null,
+      "stages": {
+        "profile_header": {
+          "status": "queued",
+          "started_at": null,
+          "finished_at": null,
+          "error": null
+        }
+      }
+    },
+    "slopfeed100m": {
+      "status": "queued",
+      "started_at": null,
+      "finished_at": null,
+      "error": null,
+      "stages": {
+        "profile_header": {
+          "status": "queued",
+          "started_at": null,
+          "finished_at": null,
+          "error": null
+        }
+      }
+    },
+    "scoobyjacks_": {
+      "status": "queued",
+      "started_at": null,
+      "finished_at": null,
+      "error": null,
+      "stages": {
+        "profile_header": {
+          "status": "queued",
+          "started_at": null,
+          "finished_at": null,
+          "error": null
+        }
+      }
+    },
+    "kanika_s.0711": {
+      "status": "queued",
+      "started_at": null,
+      "finished_at": null,
+      "error": null,
+      "stages": {
+        "profile_header": {
+          "status": "queued",
+          "started_at": null,
+          "finished_at": null,
+          "error": null
+        }
+      }
+    },
+    "zosttified": {
+      "status": "queued",
+      "started_at": null,
+      "finished_at": null,
+      "error": null,
+      "stages": {
+        "profile_header": {
+          "status": "queued",
+          "started_at": null,
+          "finished_at": null,
+          "error": null
+        }
+      }
+    },
+    "girlsgetitt": {
+      "status": "queued",
+      "started_at": null,
+      "finished_at": null,
+      "error": null,
+      "stages": {
+        "profile_header": {
+          "status": "queued",
+          "started_at": null,
+          "finished_at": null,
+          "error": null
+        }
+      }
+    },
+    "kabir.chaudhary69": {
+      "status": "queued",
+      "started_at": null,
+      "finished_at": null,
+      "error": null,
+      "stages": {
+        "profile_header": {
+          "status": "queued",
+          "started_at": null,
+          "finished_at": null,
+          "error": null
+        }
+      }
+    },
+    "slopcorn.exe": {
+      "status": "queued",
+      "started_at": null,
+      "finished_at": null,
+      "error": null,
+      "stages": {
+        "profile_header": {
+          "status": "queued",
+          "started_at": null,
+          "finished_at": null,
+          "error": null
+        }
+      }
+    },
+    "blunt.fun4": {
+      "status": "queued",
+      "started_at": null,
+      "finished_at": null,
+      "error": null,
+      "stages": {
+        "profile_header": {
+          "status": "queued",
+          "started_at": null,
+          "finished_at": null,
+          "error": null
+        }
+      }
+    },
+    "crick_video_07": {
+      "status": "queued",
+      "started_at": null,
+      "finished_at": null,
+      "error": null,
+      "stages": {
+        "profile_header": {
+          "status": "queued",
+          "started_at": null,
+          "finished_at": null,
+          "error": null
+        }
+      }
+    },
+    "zennnooxx": {
+      "status": "queued",
+      "started_at": null,
+      "finished_at": null,
+      "error": null,
+      "stages": {
+        "profile_header": {
+          "status": "queued",
+          "started_at": null,
+          "finished_at": null,
+          "error": null
+        }
+      }
+    },
+    "manas.8x_": {
+      "status": "queued",
+      "started_at": null,
+      "finished_at": null,
+      "error": null,
+      "stages": {
+        "profile_header": {
+          "status": "queued",
+          "started_at": null,
+          "finished_at": null,
+          "error": null
+        }
+      }
+    },
+    "me_me_s31": {
+      "status": "queued",
+      "started_at": null,
+      "finished_at": null,
+      "error": null,
+      "stages": {
+        "profile_header": {
+          "status": "queued",
+          "started_at": null,
+          "finished_at": null,
+          "error": null
+        }
+      }
+    },
+    "freddy.memes": {
+      "status": "queued",
+      "started_at": null,
+      "finished_at": null,
+      "error": null,
+      "stages": {
+        "profile_header": {
+          "status": "queued",
+          "started_at": null,
+          "finished_at": null,
+          "error": null
+        }
+      }
+    },
+    "iron_block2": {
+      "status": "queued",
+      "started_at": null,
+      "finished_at": null,
+      "error": null,
+      "stages": {
+        "profile_header": {
+          "status": "queued",
+          "started_at": null,
+          "finished_at": null,
+          "error": null
+        }
+      }
+    },
+    "memes.fatafat": {
+      "status": "queued",
+      "started_at": null,
+      "finished_at": null,
+      "error": null,
+      "stages": {
+        "profile_header": {
+          "status": "queued",
+          "started_at": null,
+          "finished_at": null,
+          "error": null
+        }
+      }
+    },
+    "pixa.300k": {
+      "status": "queued",
+      "started_at": null,
+      "finished_at": null,
+      "error": null,
+      "stages": {
+        "profile_header": {
+          "status": "queued",
+          "started_at": null,
+          "finished_at": null,
+          "error": null
+        }
+      }
+    },
+    "madarameme0": {
+      "status": "queued",
+      "started_at": null,
+      "finished_at": null,
+      "error": null,
+      "stages": {
+        "profile_header": {
+          "status": "queued",
+          "started_at": null,
+          "finished_at": null,
+          "error": null
+        }
+      }
+    },
+    "pigeonlarping": {
+      "status": "queued",
+      "started_at": null,
+      "finished_at": null,
+      "error": null,
+      "stages": {
+        "profile_header": {
+          "status": "queued",
+          "started_at": null,
+          "finished_at": null,
+          "error": null
+        }
+      }
+    },
+    "paystasongta": {
+      "status": "queued",
+      "started_at": null,
+      "finished_at": null,
+      "error": null,
+      "stages": {
+        "profile_header": {
+          "status": "queued",
+          "started_at": null,
+          "finished_at": null,
+          "error": null
+        }
+      }
+    },
+    "fun_fineee": {
+      "status": "queued",
+      "started_at": null,
+      "finished_at": null,
+      "error": null,
+      "stages": {
+        "profile_header": {
+          "status": "queued",
+          "started_at": null,
+          "finished_at": null,
+          "error": null
+        }
+      }
+    },
+    "kujo__o": {
+      "status": "queued",
+      "started_at": null,
+      "finished_at": null,
+      "error": null,
+      "stages": {
+        "profile_header": {
+          "status": "queued",
+          "started_at": null,
+          "finished_at": null,
+          "error": null
+        }
+      }
+    },
+    "extreme_laugh_07": {
+      "status": "queued",
+      "started_at": null,
+      "finished_at": null,
+      "error": null,
+      "stages": {
+        "profile_header": {
+          "status": "queued",
+          "started_at": null,
+          "finished_at": null,
+          "error": null
+        }
+      }
+    },
+    "sallusmemer": {
+      "status": "queued",
+      "started_at": null,
+      "finished_at": null,
+      "error": null,
+      "stages": {
+        "profile_header": {
+          "status": "queued",
+          "started_at": null,
+          "finished_at": null,
+          "error": null
+        }
+      }
+    },
+    "jellyfish.m3mes": {
+      "status": "queued",
+      "started_at": null,
+      "finished_at": null,
+      "error": null,
+      "stages": {
+        "profile_header": {
+          "status": "queued",
+          "started_at": null,
+          "finished_at": null,
+          "error": null
+        }
+      }
+    },
+    "zoya._100x": {
+      "status": "queued",
+      "started_at": null,
+      "finished_at": null,
+      "error": null,
+      "stages": {
+        "profile_header": {
+          "status": "queued",
+          "started_at": null,
+          "finished_at": null,
+          "error": null
+        }
+      }
+    },
+    "melonphernelia": {
+      "status": "queued",
+      "started_at": null,
+      "finished_at": null,
+      "error": null,
+      "stages": {
+        "profile_header": {
+          "status": "queued",
+          "started_at": null,
+          "finished_at": null,
+          "error": null
+        }
+      }
+    },
+    "damn_nigas": {
+      "status": "queued",
+      "started_at": null,
+      "finished_at": null,
+      "error": null,
+      "stages": {
+        "profile_header": {
+          "status": "queued",
+          "started_at": null,
+          "finished_at": null,
+          "error": null
+        }
+      }
+    },
+    "nixk.xyz": {
+      "status": "queued",
+      "started_at": null,
+      "finished_at": null,
+      "error": null,
+      "stages": {
+        "profile_header": {
+          "status": "queued",
+          "started_at": null,
+          "finished_at": null,
           "error": null
         }
       }
@@ -30,18 +980,70 @@
   },
   "current": null,
   "current_stage": null,
-  "started_at": "2026-10-28T06:03:29.229Z",
-  "updated_at": "2026-10-28T06:09:03.352Z",
-  "finished_at": "2026-10-28T06:09:03.352Z",
+  "started_at": "2026-10-28T08:56:16.359Z",
+  "updated_at": "2026-10-28T08:57:22.810Z",
+  "finished_at": null,
   "stop_requested": false,
   "logs": [
-    "Starting @illmisguideyou reel_grid",
-    "[11:33:30] Saved before history snapshot: D:\\post engg\\dedgram\\collector-v2\\data\\illmisguideyou\\history\\2026-10-28T06-03-30-334Z-before-ac3390cf-5d97-4e46-9b7a-e4d0017a7d27",
-    "[11:33:30] Using saved illmisguideyou profile details",
-    "[11:33:30] Scanning reel grid",
-    "[11:39:01] reel: 918 confirmed",
-    "[11:39:01] Saved after history snapshot: D:\\post engg\\dedgram\\collector-v2\\data\\illmisguideyou\\history\\2026-10-28T06-09-01-736Z-after-5aefdb4f-ca19-4aee-be97-8968b4c02f7c",
-    "[11:39:01] Done: reel URLs 918. Report: D:\\post engg\\dedgram\\collector-v2\\data\\illmisguideyou\\report.html",
-    "Finished @illmisguideyou reel_grid: complete"
+    "[14:26:47] Collecting 41.3k profile",
+    "[14:26:52] Saved after history snapshot: D:\\post engg\\dedgram\\collector-v2\\data\\41.3k\\history\\2026-10-28T08-56-52-077Z-after-fe38b027-2683-4fe7-be73-5cfc1bc5329e",
+    "TypeError: Invalid URL",
+    "at new URL (node:internal/url:825:25)",
+    "at collect (file:///D:/post%20engg/dedgram/collector-v2/src/cli.mjs:170:31)",
+    "at async file:///D:/post%20engg/dedgram/collector-v2/src/cli.mjs:304:35 {",
+    "code: 'ERR_INVALID_URL',",
+    "input: '41.3k'",
+    "}",
+    "Finished @41.3k profile_header: failed",
+    "Starting @micro.siss profile_header",
+    "[14:26:54] Collecting micro.siss profile",
+    "[14:26:58] Saved after history snapshot: D:\\post engg\\dedgram\\collector-v2\\data\\micro.siss\\history\\2026-10-28T08-56-58-496Z-after-8d2fd38f-dbe8-4064-a311-2d0d70f62c28",
+    "TypeError: Invalid URL",
+    "at new URL (node:internal/url:825:25)",
+    "at collect (file:///D:/post%20engg/dedgram/collector-v2/src/cli.mjs:170:31)",
+    "at async file:///D:/post%20engg/dedgram/collector-v2/src/cli.mjs:304:35 {",
+    "code: 'ERR_INVALID_URL',",
+    "input: 'micro.siss'",
+    "}",
+    "Finished @micro.siss profile_header: failed",
+    "Starting @aniruddhballal profile_header",
+    "[14:27:00] Collecting aniruddhballal profile",
+    "[14:27:08] Saved after history snapshot: D:\\post engg\\dedgram\\collector-v2\\data\\aniruddhballal\\history\\2026-10-28T08-57-08-640Z-after-21e86744-bf83-497a-bd1e-30c05474af62",
+    "TypeError: Invalid URL",
+    "at new URL (node:internal/url:825:25)",
+    "at collect (file:///D:/post%20engg/dedgram/collector-v2/src/cli.mjs:170:31)",
+    "at runNextTicks (node:internal/process/task_queues:65:5)",
+    "at process.processImmediate (node:internal/timers:453:9)",
+    "at process.callbackTrampoline (node:internal/async_hooks:130:17)",
+    "at async file:///D:/post%20engg/dedgram/collector-v2/src/cli.mjs:304:35 {",
+    "code: 'ERR_INVALID_URL',",
+    "input: 'aniruddhballal'",
+    "}",
+    "Finished @aniruddhballal profile_header: failed",
+    "Starting @yervin8_ profile_header",
+    "[14:27:10] Collecting yervin8_ profile",
+    "[14:27:15] Saved after history snapshot: D:\\post engg\\dedgram\\collector-v2\\data\\yervin8_\\history\\2026-10-28T08-57-15-874Z-after-d6943f4b-dbf7-4b3f-9394-6a8b214756a8",
+    "TypeError: Invalid URL",
+    "at new URL (node:internal/url:825:25)",
+    "at collect (file:///D:/post%20engg/dedgram/collector-v2/src/cli.mjs:170:31)",
+    "at runNextTicks (node:internal/process/task_queues:65:5)",
+    "at process.processImmediate (node:internal/timers:453:9)",
+    "at process.callbackTrampoline (node:internal/async_hooks:130:17)",
+    "at async file:///D:/post%20engg/dedgram/collector-v2/src/cli.mjs:304:35 {",
+    "code: 'ERR_INVALID_URL',",
+    "input: 'yervin8_'",
+    "}",
+    "Finished @yervin8_ profile_header: failed",
+    "Starting @vexo.7k profile_header",
+    "[14:27:18] Collecting vexo.7k profile",
+    "[14:27:22] Saved after history snapshot: D:\\post engg\\dedgram\\collector-v2\\data\\vexo.7k\\history\\2026-10-28T08-57-21-994Z-after-5146f30c-b194-4db4-8b8d-2561d09855ed",
+    "TypeError: Invalid URL",
+    "at new URL (node:internal/url:825:25)",
+    "at collect (file:///D:/post%20engg/dedgram/collector-v2/src/cli.mjs:170:31)",
+    "at async file:///D:/post%20engg/dedgram/collector-v2/src/cli.mjs:304:35 {",
+    "code: 'ERR_INVALID_URL',",
+    "input: 'vexo.7k'",
+    "}",
+    "Finished @vexo.7k profile_header: failed"
   ]
 }

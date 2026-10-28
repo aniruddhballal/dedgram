@@ -1,0 +1,23 @@
+{
+  "started_at": "2026-10-28T08:57:10.557Z",
+  "updated_at": "2026-10-28T08:57:15.866Z",
+  "status": "blocked",
+  "phase": "profile",
+  "scope": [
+    "profile"
+  ],
+  "current_url": null,
+  "error": "Invalid URL",
+  "progress": {
+    "task": "profile",
+    "label": "Profile details",
+    "action": "Reading the profile header, account details and exact post count",
+    "completed": 0,
+    "total": 1,
+    "percent": 0,
+    "remaining": 1,
+    "current_item": null,
+    "detail": "Blocked: Invalid URL",
+    "updated_at": "2026-10-28T08:57:15.866Z"
+  }
+}
