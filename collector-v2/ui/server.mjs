@@ -4,7 +4,7 @@ import { readFile } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { randomUUID } from 'node:crypto';
-import { catalog, detail, profileData, profileSummary, resolveUsername, root, summary, usernames } from './data.mjs';
+import { catalog, detail, failedReels, profileData, profileSummary, resolveUsername, root, summary, usernames } from './data.mjs';
 import { MODES, ORDERS, orderProfiles, resultStatus, stepsFor, terminal } from './plan.mjs';
 import { paths, readJson, writeJson } from '../src/store.mjs';
 import { exactPostCount, gridCount, profileHeaderComplete, profileLevelComplete } from '../src/model.mjs';
@@ -421,6 +421,7 @@ const server = createServer(async (request, response) => {
     if (request.method !== 'GET') return json(response, 405, { error: 'Method not allowed.' });
     if (pathname === '/api/health') return json(response, 200, { ok: true, active: preview ? runner.batch?.status === 'running' : runner.active, read_only: preview });
     if (pathname === '/api/catalog') return json(response, 200, { profiles: await catalog() });
+    if (pathname === '/api/failed-reels') return json(response, 200, { reels: await failedReels() });
     if (pathname === '/api/summary') return json(response, 200, await summary());
     if (pathname === '/api/username-scan') return json(response, 200, usernameScanJob);
     if (pathname === '/api/username-migration') return json(response, 200, usernameMigrationJob);
@@ -467,7 +468,7 @@ const server = createServer(async (request, response) => {
         }
       }
     }
-    if (pathname === '/' || pathname === '/summary' || pathname === '/overview' || pathname === '/collection/review'
+    if (pathname === '/' || pathname === '/summary' || pathname === '/overview' || pathname === '/failed-reels' || pathname === '/failed-reels/' || pathname === '/collection/review'
       || pathname === '/collect/profiles' || pathname === '/collect/reel-urls' || pathname === '/collect/reel-details'
       || pathname.startsWith('/profiles/')) {
       return sendFile(response, join(publicDir, 'index-v3.html'), 'text/html; charset=utf-8');

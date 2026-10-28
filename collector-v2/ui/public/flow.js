@@ -174,6 +174,25 @@ function runPanel(state) {
     ${batch.logs?.length ? `<details class="run-log"><summary>Recent activity</summary><pre>${esc(batch.logs.slice(-18).join('\n'))}</pre></details>` : ''}</section>`;
 }
 
+function failedReelDate(value) {
+  if (!value) return 'Time not recorded';
+  return new Intl.DateTimeFormat('en-IN', { dateStyle: 'long', timeStyle: 'medium' }).format(new Date(value));
+}
+
+export function renderFailedReels(state) {
+  const reels = state.failedReels;
+  const rows = reels?.length ? reels.map((reel) => `<tr>
+    <td><a href="${esc(reel.url || '#')}" target="_blank" rel="noreferrer">${esc(reel.shortcode)} ↗</a><small class="cell-note">${esc(statusText(reel.status))}</small></td>
+    <td><a href="${profileHref(reel.username, reel.current_username)}">@${esc(reel.current_username || reel.username)}</a>${reel.current_username && reel.current_username !== reel.username ? `<small class="cell-note">Saved as @${esc(reel.username)}</small>` : ''}</td>
+    <td>${esc(failedReelDate(reel.failed_at))}</td>
+    <td class="failed-reel-reason">${esc(reel.reason)}</td>
+    <td><a class="button secondary small" href="${esc(reel.url || '#')}" target="_blank" rel="noreferrer">Open reel ↗</a></td>
+  </tr>`).join('') : '';
+  return `<section class="setup-header failed-reels-header"><div><span class="eyebrow">REEL REVIEW INDEX</span><h1>Failed reels</h1><p>Manually open each reel that could not be fully captured. This list includes failed and incomplete reel records from the saved collection runs.</p></div><div class="setup-header-actions"><a class="button secondary" href="/">Back to collection</a></div></section>
+    <section class="notice soft failed-reels-note"><h2>${reels ? `${number(reels.length)} reel${reels.length === 1 ? '' : 's'} need review` : 'Loading failed reels…'}</h2><p>Each row shows the profile, the reel ID, when its latest capture attempt happened, and why the record was left incomplete. Opening a link does not change the saved data.</p></section>
+    ${reels ? (rows ? `<section class="failed-reels-section"><div class="table-wrap"><table class="failed-reels-table"><thead><tr><th>REEL ID</th><th>PROFILE</th><th>CAPTURE ATTEMPT</th><th>WHY IT NEEDS REVIEW</th><th>ACTION</th></tr></thead><tbody>${rows}</tbody></table></div></section>` : '<p class="empty-state">No failed or incomplete reel captures are currently saved.</p>') : '<p class="loading">Reading saved reel results…</p>'}`;
+}
+
 const setupSteps = [
   ['profiles', 'Profiles'], ['mode', 'Collection mode'], ['order', 'Run order'], ['review', 'Review & start'], ['progress', 'Progress']
 ];
@@ -261,7 +280,7 @@ function usernameReviewStep(state) {
 
 function progressStep(state) {
   if (usernameMigration(state)) return usernameMigrationProgress(state);
-  const actions = '<div class="setup-header-actions"><button class="button secondary" data-action="setup-new">New collection</button><a class="button secondary" href="/collection/review">View saved results →</a></div>';
+  const actions = '<div class="setup-header-actions"><button class="button secondary" data-action="setup-new">New collection</button><a class="button secondary" href="/failed-reels">View failed reels →</a><a class="button secondary" href="/collection/review">View saved results →</a></div>';
   return `${setupHeader(state, 'Collection progress', 'Follow the current run and inspect its saved results.', actions)}
     ${friendlyProgressMarkup(runPanel(state))}`;
 }

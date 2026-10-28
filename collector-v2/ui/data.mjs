@@ -100,6 +100,26 @@ export async function detail(username) {
     items: data.items.map(({ raw, ...item }) => item) };
 }
 
+export async function failedReels() {
+  const keys = await usernames();
+  const profiles = await Promise.all(keys.map(profileData));
+  return profiles.flatMap(({ username, profile, items }) => items
+    .filter((item) => item.kind === 'reel' && (item.status === 'partial' || item.status === 'failed' || item.last_error))
+    .map((item) => {
+      const missing = (item.missing || []).map((field) => `${field}: ${item.missing_reasons?.[field] || 'No readable value was found.'}`);
+      return {
+        username,
+        current_username: profile?.current_username || username,
+        shortcode: item.shortcode || item.url?.split('/').filter(Boolean).at(-1) || 'Unknown reel',
+        url: item.url || null,
+        status: item.last_error ? 'failed' : item.status || 'partial',
+        failed_at: item.last_attempt_at || item.fetched_at || null,
+        reason: item.last_error || missing.join('; ') || 'Incomplete reel record.'
+      };
+    }))
+    .sort((a, b) => (Date.parse(b.failed_at || '') || 0) - (Date.parse(a.failed_at || '') || 0));
+}
+
 export async function summary() {
   const keys = await usernames();
   const data = await Promise.all(keys.map(profileData));

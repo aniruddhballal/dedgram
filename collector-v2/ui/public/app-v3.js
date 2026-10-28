@@ -1,5 +1,5 @@
 import { api, esc } from './shared.js';
-import { steps, visibleCatalog, renderSelect, renderStage, renderReview, renderUsernameReview, batchStrip } from './flow.js';
+import { steps, visibleCatalog, renderSelect, renderStage, renderReview, renderUsernameReview, renderFailedReels, batchStrip } from './flow.js';
 import { renderProfile } from './profile-v3.js';
 import { renderOverview } from './overview.js';
 
@@ -13,7 +13,7 @@ const savedOrder = localStorage.getItem('dedgram-order-v2');
 const savedSetup = sessionStorage.getItem(setupKey);
 const savedWorkflow = sessionStorage.getItem(workflowKey);
 const state = {
-  catalog: [], batch: null, batchProfiles: [], detail: null, overview: null, usernameScan: null, usernameMigration: null,
+  catalog: [], batch: null, batchProfiles: [], detail: null, overview: null, failedReels: null, usernameScan: null, usernameMigration: null,
   selected: new Set(Array.isArray(saved) ? saved : []),
   search: '', filter: 'all', layout: 'grid',
   mode: ['profile_header', 'reel_grid', 'profile_only', 'depth_first', 'breadth_first', 'reels_only'].includes(savedMode) ? savedMode : 'depth_first',
@@ -141,6 +141,7 @@ function render() {
   const step = steps.findIndex((item) => item.path === current);
   document.querySelectorAll('[data-nav]').forEach((link) => link.classList.toggle('active', link.dataset.nav === (current === '/overview' ? 'overview' : 'collection')));
   const content = current === '/overview' ? renderOverview(state)
+    : (current === '/failed-reels' || current === '/failed-reels/') ? renderFailedReels(state)
     : current.startsWith('/profiles/') ? `${batchStrip(state)}${renderProfile(state)}`
       : step === 0 ? renderSelect(state) : step === 4 ? (state.workflow === 'username_migration' ? renderUsernameReview(state) : renderReview(state))
         : step > 0 ? renderStage(state, step) : '<p class="loading">Page not found.</p>';
@@ -192,6 +193,7 @@ async function refresh() {
     api('/api/username-migration').then((result) => { state.usernameMigration = result; })
   ];
   if (current === '/overview') calls.push(api('/api/summary').then((result) => { state.overview = result; }));
+  if (current === '/failed-reels' || current === '/failed-reels/') calls.push(api('/api/failed-reels').then(({ reels }) => { state.failedReels = reels; }));
   if (current.startsWith('/profiles/')) calls.push(api(`/api/profiles/${encodeURIComponent(decodeURIComponent(current.slice('/profiles/'.length)))}`).then((result) => { state.detail = result; }));
   await Promise.all(calls);
   if (!sessionStorage.getItem(setupKey) && state.batch?.status === 'running') {
