@@ -5,9 +5,15 @@ import { fileURLToPath } from 'node:url';
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const source = join(root, 'snapshot');
 const output = join(root, 'dist');
-const publishedProfiles = ['edlt.shox', 'pexe.bh', 'pigeon.flac', 'reposted', 'pichypeapp', 'printamovie'];
+const fullProfiles = ['edlt.shox', 'pexe.bh', 'pigeon.flac', 'reposted', 'pichypeapp', 'printamovie'];
+const profileLevelProfiles = ['illmisguideyou'];
+const resolvedProfiles = ['hnvx.07', 'prime_senchui', 'vlad.aep_', 'nxx._.nmercy', 'dexea.100k', 'igpostinggang', 'rzk.mp4', 'renyajichu', 'hammergag', 'caodogsfofo', 'back'];
+const publishedProfiles = [...fullProfiles, ...profileLevelProfiles, ...resolvedProfiles];
+const profileLevelSet = new Set(profileLevelProfiles);
+const resolvedSet = new Set(resolvedProfiles);
 const files = ['profile.json', 'discovery.json', 'items.json', 'run.json', 'profile.csv', 'items.csv', 'report.html'];
 const readJson = async (name) => JSON.parse(await readFile(join(source, name), 'utf8'));
+const resolutions = await readJson('resolutions.json');
 const plainText = (value) => String(value ?? '').replace(/[\p{Extended_Pictographic}\p{Regional_Indicator}\p{Emoji_Modifier}\uFE0E\uFE0F\u200D\u20E3]/gu, '');
 const esc = (value) => plainText(value).replace(/[&<>"']/g, (ch) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[ch]);
 const fmt = (value) => Number.isFinite(value) ? new Intl.NumberFormat('en-IN').format(value) : 'Unavailable';
@@ -43,20 +49,57 @@ function shell({ title, description, base, active, profileKey, content }) {
 const publishedSet = new Set(publishedProfiles);
 const catalogCards = index.profile_keys.map((username, i) => {
   const ready = publishedSet.has(username);
-  const inner = `<span class="row-number">${String(i + 1).padStart(3, '0')}</span><span class="row-title"><strong>@${esc(username)}</strong><small>${esc(instagram(username))}</small></span><span class="row-tag ${ready ? 'live' : ''}">${ready ? 'Profile available' : 'In progress'}</span>`;
+  const resolved = resolutions.profiles?.[username];
+  const label = resolved ? `Resolved: ${resolved.status}` : profileLevelSet.has(username) ? 'Profile level complete' : ready ? 'Profile and reel analysis complete' : 'In progress';
+  const tag = resolved ? 'Resolved' : profileLevelSet.has(username) ? 'Profile complete' : ready ? 'Profile available' : 'In progress';
+  const inner = `<span class="row-number">${String(i + 1).padStart(3, '0')}</span><span class="row-title"><strong>@${esc(username)}</strong><small>${esc(label)}</small></span><span class="row-tag ${ready ? 'live' : ''}">${esc(tag)}</span>`;
   return `<article class="profile-row" data-catalog-row><div class="profile-row-main">${ready ? `<a class="profile-internal" href="./profiles/${username}/" aria-label="View saved profile data for @${username}">${inner}</a>` : `<div class="profile-internal">${inner}</div>`}</div><div class="row-external">${external(instagram(username), 'Instagram', 'external-link')}</div></article>`;
 }).join('');
 const publishedCount = publishedProfiles.length;
 const partialPublishedProfiles = new Set(['edlt.shox', 'pichypeapp', 'printamovie']);
 const catalogHtml = shell({ title: 'Profiles Â· deadgram atlas', description: 'Explore the deadgram profile catalog and the published research profiles.', base: './', active: 'catalog', content: `<section class="hero catalog-hero"><div class="hero-copy"><div class="eyebrow">PROFILE INDEX / PUBLIC PREVIEW</div><h1>Profiles,<br>on record.</h1><p>${fmt(index.profile_keys.length)} accounts indexed. ${fmt(publishedCount)} profile records are available; the rest are being collected.</p><div class="hero-actions"><a class="button primary" href="#published">View published profiles</a><a class="button secondary" href="#directory">Browse profiles</a></div></div><div class="hero-count" aria-label="${fmt(publishedCount)} of ${fmt(index.profile_keys.length)} profiles published"><strong>${String(publishedCount).padStart(2, '0')}</strong><span>/ ${fmt(index.profile_keys.length)} PUBLISHED</span></div></section><section class="stat-strip" aria-label="Publishing status"><div><span>CATALOG</span><strong>${fmt(index.profile_keys.length)}</strong><small>profile URLs indexed</small></div><div><span>PUBLISHED</span><strong>${fmt(publishedCount)}</strong><small>profile records available</small></div><div><span>IN PROGRESS</span><strong>${fmt(index.profile_keys.length - publishedCount)}</strong><small>more profiles to publish</small></div></section><section class="process-note"><div><h2>Collection in progress</h2><p>More profile records will appear here as they are checked.</p></div></section><section class="directory" id="published"><div class="section-head"><div><span class="overline">01 / PUBLISHED RECORDS</span><h2>Ready to explore</h2><p>Completed records and partial reel coverage are labeled below.</p></div></div><div class="profile-list">${publishedProfiles.map((username) => `<article class="profile-row"><div class="profile-row-main"><a class="profile-internal" href="./profiles/${username}/" aria-label="View saved profile data for @${username}"><span class="row-title"><strong>@${esc(username)}</strong><small>${partialPublishedProfiles.has(username) ? 'Partial reel coverage' : 'Profile and reel analysis complete'}</small></span><span class="row-tag live">View record</span></a></div><div class="row-external">${external(instagram(username), 'Instagram', 'external-link')}</div></article>`).join('')}</div></section><section class="directory" id="directory"><div class="section-head"><div><span class="overline">02 / DIRECTORY</span><h2>Profile index</h2><p>Direct Instagram links for all ${fmt(index.profile_keys.length)} accounts.</p></div><div class="directory-search"><label for="catalog-search">Find a profile</label><input id="catalog-search" type="search" placeholder="Search @username" autocomplete="off"></div></div><div class="directory-toolbar"><span id="catalog-count">${fmt(index.profile_keys.length)} profiles shown</span><span>SAVED RECORDS APPEAR WHEN READY</span></div><div class="profile-list" id="profile-list">${catalogCards}</div><p class="empty-state" id="catalog-empty" hidden>No profiles match that search.</p></section>` });
 
+const catalogHtmlForOutput = publishedProfiles.reduce((html, username) => {
+  const resolved = resolutions.profiles?.[username];
+  const label = resolved ? `Resolved: ${resolved.status}` : profileLevelSet.has(username) ? 'Profile level complete; reel details pending' : partialPublishedProfiles.has(username) ? 'Partial reel coverage' : 'Profile and reel analysis complete';
+  const escapedUsername = username.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  return html.replace(new RegExp(`(<strong>@${escapedUsername}<\\/strong><small>)[^<]*(</small>)`, 'g'), `$1${esc(label)}$2`);
+}, catalogHtml);
+
+function resolvedProfilePage(resolved, recordNumber) {
+  const status = resolved.status || 'Resolved';
+  const range = resolved.deletion_date_range || resolved.age_restriction;
+  const reason = status === 'Deleted account' ? 'Instagram reported the profile as unavailable after its earlier bot classification.'
+    : status === 'Age restricted' ? `Instagram access was age restricted to users ${resolved.minimum_age || 25}+.`
+      : resolved.false_identification?.reason || 'Manual review concluded that this capture should not be treated as a confirmed Instagram profile.';
+  const timing = range ? `${date(range.after_classified_at)} to ${date(range.before_first_unavailable_at || range.before_initial_blocked_or_failed_at)}` : date(resolved.observed_at);
+  return shell({ title: `@${resolved.username} · deadgram atlas`, description: `${status} resolution record for @${resolved.username}.`, base: '../../', active: 'profile', profileKey: resolved.username, content: `<section class="profile-hero"><div class="profile-hero-top"><a class="back-link" href="../../">All profiles</a><span class="snapshot-label">RESOLVED ${esc(date(resolved.observed_at))}</span></div><div class="profile-title-row"><div class="profile-avatar"><span aria-hidden="true">@</span></div><div><div class="eyebrow">RESOLUTION RECORD / ${recordNumber}</div><h1>@${esc(resolved.username)}</h1><p>${esc(status)}</p></div><div class="profile-hero-link">${external(instagram(resolved.username), 'Instagram profile', 'button secondary')}</div></div><div class="profile-meta"><span>RESOLVED RECORD</span><span>${esc(status)}</span><span>Observed ${esc(date(resolved.observed_at))}</span></div></section><section class="profile-stats" aria-label="Resolution status"><div><span>STATUS</span><strong>${esc(status)}</strong><small>Collection resolved</small></div><div><span>OBSERVED</span><strong>${esc(date(resolved.observed_at))}</strong><small>Status evidence</small></div><div><span>REEL DETAILS</span><strong>Not collected</strong><small>No further scrape required</small></div><div><span>PUBLIC RECORD</span><strong>Finished</strong><small>Resolution preserved</small></div></section><section class="profile-context"><div class="context-card"><span class="overline">02 / RESOLUTION DETAILS</span><h2>${esc(status)}</h2><dl class="account-facts">${field('Reason', reason)}${field('Observed', date(resolved.observed_at))}${field('Relevant interval', timing)}${field('Minimum age', resolved.minimum_age ? `${resolved.minimum_age}+` : null)}${field('Posts captured', resolved.posts_count)}${field('Date joined', resolved.date_joined)}</dl></div><div class="context-card bio-card"><span class="overline">EVIDENCE</span><h2>Why this record is finished</h2><p class="bio-text">${esc(reason)}</p>${resolved.profile_text ? `<p class="bio-text">Original captured profile text is preserved in the source record.</p>` : ''}</div></section><section class="evidence-note"><span class="note-symbol">i</span><div><h2>No further collection required</h2><p>This profile is included as a resolved record because its final state is known. It is not counted as an unfinished profile in the public catalog.</p></div></section>` });
+}
+
+async function profileLevelPage(published, profile, discovery, items, run, recordNumber) {
+  const reels = discovery.reel.items || [];
+  const reelDetails = items.filter((item) => item.kind === 'reel');
+  const avatarFile = await localImage(`avatar-${published}.jpg`);
+  const avatar = avatarFile ? `<img src="../../media/${avatarFile}" alt="Profile picture of @${published}" width="92" height="92">` : `<span aria-hidden="true">@</span>`;
+  return shell({ title: `@${published} · deadgram atlas`, description: `Profile-level record and ${reels.length} saved reel URLs for @${published}.`, base: '../../', active: 'profile', profileKey: published, content: `<section class="profile-hero"><div class="profile-hero-top"><a class="back-link" href="../../">All profiles</a><span class="snapshot-label">SAVED ${esc(date(profile.fetched_at))}</span></div><div class="profile-title-row"><div class="profile-avatar">${avatar}</div><div><div class="eyebrow">PROFILE LEVEL RECORD / ${recordNumber}</div><h1>@${published}</h1>${profile.category ? `<p>${esc(profile.category)}</p>` : ''}</div><div class="profile-hero-link">${external(profile.url || instagram(published), 'Instagram profile', 'button secondary')}</div></div><div class="profile-meta"><span>PROFILE LEVEL COMPLETE</span><span>REEL DETAILS PENDING</span><span>Collected ${esc(date(profile.fetched_at))}</span></div></section><section class="profile-stats" aria-label="Profile metrics"><div><span>FOLLOWERS</span><strong>${esc(metric(profile.followers_count))}</strong><small>Saved count</small></div><div><span>FOLLOWING</span><strong>${esc(metric(profile.following_count))}</strong><small>Profile header</small></div><div><span>POSTS</span><strong>${esc(metric(profile.posts_count))}</strong><small>Exact header count</small></div><div><span>REEL URLS</span><strong>${fmt(reels.length)}</strong><small>Full grid confirmed</small></div></section><section class="profile-context"><div class="context-card"><span class="overline">02 / ACCOUNT DETAILS</span><h2>Profile level complete</h2><dl class="account-facts">${field('Category', profile.category)}${field('Account based in', profile.account_based_in)}${field('Date joined', profile.date_joined)}${field('Last profile scan', date(profile.fetched_at))}${field('Reel grid verified', date(discovery.reel.attempted_at))}${field('Collection run', `${run.status || 'Unknown'} · ${reelDetails.length}/${reels.length} reel details complete`)}</dl></div><div class="context-card bio-card"><span class="overline">PROFILE BIO</span><h2>What the account says</h2><p class="bio-text">${esc(profile.bio || 'No bio captured.')}</p></div></section><section class="evidence-note"><span class="note-symbol">i</span><div><h2>Reel-level analysis pending</h2><p>${fmt(reels.length)} reel URLs are saved and counted. Individual reel pages have not been scraped yet; the saved discovery JSON is ready for the next reel-details run.</p></div></section><section class="downloads"><div><span class="overline">03 / SOURCE FILES</span><h2>Source files</h2><p>Original profile-level records and exports.</p></div><div class="download-links">${files.map((name) => `<a href="../../downloads/${published}/${name}" ${name.endsWith('.json') || name.endsWith('.csv') ? 'download' : ''}>${esc(name)}</a>`).join('')}</div></section>` });
+}
+
 const profilePages = [];
 for (const published of publishedProfiles) {
+  const resolved = resolutions.profiles?.[published];
+  if (resolved) {
+    profilePages.push({ published, html: resolvedProfilePage(resolved, String(publishedProfiles.indexOf(published) + 1).padStart(3, '0')) });
+    continue;
+  }
   const profile = await readJson(`${published}/profile.json`);
   const discovery = await readJson(`${published}/discovery.json`);
   const items = await readJson(`${published}/items.json`);
   const run = await readJson(`${published}/run.json`);
   if (profile.username !== published || !Array.isArray(items) || !discovery.reel?.complete) throw new Error(`Published snapshot is incomplete for ${published}.`);
+  if (profileLevelSet.has(published)) {
+    profilePages.push({ published, html: await profileLevelPage(published, profile, discovery, items, run, String(publishedProfiles.indexOf(published) + 1).padStart(3, '0')) });
+    continue;
+  }
   const reels = items.filter((item) => item.kind === 'reel');
   if (reels.length !== discovery.reel.items.length) throw new Error(`Published reel records do not match the confirmed grid for ${published}.`);
   const complete = reels.filter((item) => item.status === 'complete' && !item.last_error).length;
@@ -90,12 +133,14 @@ for (const published of publishedProfiles) {
 await rm(output, { recursive: true, force: true });
 await mkdir(join(output, 'assets'), { recursive: true });
 await mkdir(join(output, 'media'), { recursive: true });
-await writeFile(join(output, 'index.html'), catalogHtml);
+await writeFile(join(output, 'index.html'), catalogHtmlForOutput);
 for (const page of profilePages) {
   await mkdir(join(output, 'profiles', page.published), { recursive: true });
   await mkdir(join(output, 'downloads', page.published), { recursive: true });
   await writeFile(join(output, 'profiles', page.published, 'index.html'), page.html);
-  for (const file of files) await copyFile(join(source, page.published, file), join(output, 'downloads', page.published, file));
+  if (!resolvedSet.has(page.published)) {
+    for (const file of files) await copyFile(join(source, page.published, file), join(output, 'downloads', page.published, file));
+  }
 }
 for (const file of ['site.css', 'site.js', 'favicon.svg']) await copyFile(join(root, 'src', file), join(output, 'assets', file));
 for (const file of await readdir(join(source, 'media'))) await copyFile(join(source, 'media', file), join(output, 'media', file));
