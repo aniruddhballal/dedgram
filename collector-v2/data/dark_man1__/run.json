@@ -1,12 +1,23 @@
 {
-  "started_at": "2026-10-23T16:18:36.205Z",
-  "updated_at": "2026-10-23T16:18:48.065Z",
-  "status": "complete",
+  "started_at": "2026-10-28T11:24:42.605Z",
+  "updated_at": "2026-10-28T11:24:55.239Z",
+  "status": "partial",
   "phase": "done",
   "scope": [
-    "profile",
-    "reel_grid"
+    "reel"
   ],
   "current_url": null,
-  "error": null
+  "error": null,
+  "progress": {
+    "task": "item_details",
+    "label": "Reel details",
+    "action": "Opening reel pages and extracting dates, captions, views, likes and comments",
+    "completed": 2,
+    "total": 2,
+    "percent": 100,
+    "remaining": 0,
+    "current_item": null,
+    "detail": "Stage finished with review required",
+    "updated_at": "2026-10-28T11:24:55.239Z"
+  }
 }
