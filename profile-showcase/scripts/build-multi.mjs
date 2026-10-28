@@ -93,7 +93,7 @@ const overview = {
 };
 
 function shell({ title, description, base, active, profileKey, content }) {
-  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#ffffff"><meta name="description" content="${esc(description)}"><title>${esc(title)}</title><link rel="icon" href="${base}assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="${base}assets/site.css"><script src="${base}assets/site.js" defer></script></head><body><a class="skip-link" href="#main">Skip to content</a><header class="topbar"><div class="topbar-inner"><a class="brand" href="${base}" aria-label="deadgram atlas home"><img class="brand-icon" src="${base}assets/favicon.svg" alt=""><span>deadgram <small>ATLAS</small></span></a><nav aria-label="Main navigation"><a class="${active === 'catalog' ? 'active' : ''}" href="${base}">Profiles</a><a class="${active === 'overview' ? 'active' : ''}" href="${base}overview/">Overview</a>${profileKey ? `<a class="${active === 'profile' ? 'active' : ''}" href="${base}profiles/${profileKey}/">Profile record</a>` : ''}</nav><span class="nav-status">COLLECTION IN PROGRESS</span></div></header><main id="main">${content}</main><footer class="footer"><div><strong>deadgram ATLAS</strong><p>Saved profile records.</p></div><div><span>Updated ${esc(buildDate)}</span><span>Metrics reflect the saved snapshot.</span></div></footer></body></html>`;
+  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#ffffff"><meta name="description" content="${esc(description)}"><title>${esc(title)}</title><link rel="icon" href="${base}assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="${base}assets/site.css"><script src="${base}assets/site.js" defer></script></head><body><a class="skip-link" href="#main">Skip to content</a><header class="topbar"><div class="topbar-inner"><a class="brand" href="${base}" aria-label="deadgram atlas home"><img class="brand-icon" src="${base}assets/favicon.svg" alt=""><span>deadgram <small>ATLAS</small></span></a><nav aria-label="Main navigation"><a class="${active === 'catalog' ? 'active' : ''}" href="${base}profiles/">Profiles</a><a class="${active === 'overview' ? 'active' : ''}" href="${base}">Overview</a>${profileKey ? `<a class="${active === 'profile' ? 'active' : ''}" href="./">Profile record</a>` : ''}</nav><span class="nav-status">COLLECTION IN PROGRESS</span></div></header><main id="main">${content}</main><footer class="footer"><div><strong>deadgram ATLAS</strong><p>Saved profile records.</p></div><div><span>Updated ${esc(buildDate)}</span><span>Metrics reflect the saved snapshot.</span></div></footer></body></html>`;
 }
 
 const publishedSet = new Set(publishedProfiles);
@@ -122,7 +122,13 @@ const publicCatalogHtml = catalogHtmlForOutput
   .replace('<strong>@illmisguideyou</strong><small>Profile and reel analysis complete</small>', '<strong>@illmisguideyou</strong><small>Profile saved; reel analysis pending</small>')
   .replaceAll('Profile and reel analysis complete', 'Profile and reels analyzed')
   .replaceAll('Partial reel coverage', 'Some reels analyzed')
-  .replaceAll('Resolved:', 'Account status:');
+  .replaceAll('Resolved:', 'Account status:')
+  .replace('<a class="brand" href="./"', '<a class="brand" href="../"')
+  .replace('<a class="active" href="./profiles/">Profiles', '<a class="active" href="../profiles/">Profiles')
+  .replace('<a class="" href="./">Overview', '<a class="" href="../">Overview')
+  .replaceAll('href="./assets/', 'href="../assets/')
+  .replaceAll('src="./assets/', 'src="../assets/')
+  .replaceAll('href="./profiles/', 'href="./');
 
 const overviewBars = (rows, total) => rows.length ? rows.slice(0, 8).map(([name, count]) => `<div class="bar-row"><div><span>${esc(name)}</span><strong>${fmt(count)}</strong></div><div class="bar-track"><span style="width:${Math.max(5, Math.round(count / Math.max(total, 1) * 100))}%"></span></div></div>`).join('') : '<p class="muted">No completed data yet.</p>';
 const overviewAccountRows = publishedSnapshotProfiles.map((username) => {
@@ -166,6 +172,10 @@ const overviewHtml = shell({ title: 'Overview · deadgram atlas', description: '
   <section class="overview-table"><div class="section-head"><div><span class="overline">TOP REELS</span><h2>Most viewed reels</h2><p>Based on view counts captured from Instagram.</p></div></div><div class="table-wrap"><table><thead><tr><th>REEL</th><th>PROFILE</th><th>DATE</th><th>VIEWS</th><th>LIKES</th><th>COMMENTS</th></tr></thead><tbody>${overviewReelRows || '<tr><td colspan="6">No reel information is available yet.</td></tr>'}</tbody></table></div></section>
   <section class="process-note"><div><h2>${fmt(overview.futureCandidates)} future candidates are hidden by default</h2><p>They are indexed but do not have a public saved record yet. Use the Profiles tab or the button above to reveal them.</p></div></section>
   <p class="method-note">Totals are from the current saved snapshot, not a time series. Instagram's abbreviated K/M counts are kept where applicable; missing metrics are shown as unavailable.</p>` });
+const overviewAliasHtml = overviewHtml
+  .replace('href="../">View published profiles', 'href="../profiles/">View published profiles')
+  .replace('href="../#future"', 'href="../profiles/#future"');
+const overviewHomeHtml = overviewAliasHtml.replaceAll('../', './');
 
 const publicProfileHtml = (html) => html
   .replaceAll('PROFILE LEVEL RECORD', 'PROFILE SNAPSHOT')
@@ -182,6 +192,7 @@ const publicProfileHtml = (html) => html
   .replaceAll('Record details', 'More information')
   .replaceAll('Individual reel pages have not been scraped yet', 'The individual reels have not been analyzed yet')
   .replaceAll('the saved discovery JSON is ready for the next reel-details run', 'the saved reel list is ready for the next analysis')
+  .replaceAll('href="../../">All profiles', 'href="../../profiles/">All profiles')
   .replaceAll('Profile-level record', 'Saved profile information')
   .replaceAll('profile-level record', 'saved profile information');
 
@@ -253,8 +264,10 @@ await rm(output, { recursive: true, force: true });
 await mkdir(join(output, 'assets'), { recursive: true });
 await mkdir(join(output, 'media'), { recursive: true });
 await mkdir(join(output, 'overview'), { recursive: true });
-await writeFile(join(output, 'index.html'), publicCatalogHtml);
-await writeFile(join(output, 'overview', 'index.html'), overviewHtml);
+await mkdir(join(output, 'profiles'), { recursive: true });
+await writeFile(join(output, 'index.html'), overviewHomeHtml);
+await writeFile(join(output, 'overview', 'index.html'), overviewAliasHtml);
+await writeFile(join(output, 'profiles', 'index.html'), publicCatalogHtml);
 for (const page of profilePages) {
   await mkdir(join(output, 'profiles', page.published), { recursive: true });
   await mkdir(join(output, 'downloads', page.published), { recursive: true });
