@@ -65,6 +65,7 @@ export function profileSummary(data) {
     reels: content('reel'),
     posts: content('post'),
     run: { status: run.status || 'not_started', phase: run.phase || null,
+      started_at: run.started_at || null,
       scope: run.scope || [], current_url: run.current_url || null,
       updated_at: run.updated_at || null, error: run.error || null, progress: run.progress || null }
   };

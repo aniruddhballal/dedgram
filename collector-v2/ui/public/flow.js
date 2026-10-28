@@ -42,6 +42,20 @@ function workAfterCurrent(state, currentProfile) {
   return { stages: after.length, scrapes, unknown };
 }
 
+function elapsed(startedAt) {
+  if (!startedAt) return 'Elapsed time unavailable';
+  const seconds = Math.max(0, Math.floor((Date.now() - new Date(startedAt).getTime()) / 1000));
+  const minutes = Math.floor(seconds / 60);
+  return `${minutes}:${String(seconds % 60).padStart(2, '0')} elapsed`;
+}
+
+function liveTitle(progress) {
+  if (progress?.task === 'reel_grid') return `${number(progress.completed)} reel URLs found so far`;
+  if (progress?.task === 'profile') return 'Reading profile fields and exact post count';
+  if (progress?.task === 'item_details') return `Reel ${progress.current_item?.index || progress.completed} of ${progress.total || '?'} details`;
+  return progress?.label || 'Collection in progress';
+}
+
 export function stepNav(index) {
   return `<nav class="step-nav" aria-label="Collection steps">${steps.map((step, i) => `<a href="${step.path}" class="${i === index ? 'active' : ''}" ${i === index ? 'aria-current="step"' : ''}><span>${step.number}</span>${step.short}</a>`).join('')}</nav>`;
 }
@@ -58,19 +72,41 @@ function legacyBatchStrip(state) {
   return `<section class="flow-batch ${active ? 'active' : ''}" aria-live="polite"><div><span class="eyebrow">${active ? 'COLLECTION RUNNING' : 'LATEST RUN'}</span><strong>${active ? `@${esc(batch.current || 'preparing')} · ${esc(batch.current_stage?.replaceAll('_', ' ') || 'preparing')}` : esc(statusText(batch.status))}</strong><small>${active ? `${number(done)} / ${number(batch.steps?.length || 0)} stages finished` : `${esc(batch.mode?.replaceAll('_', ' ') || 'collection')} · ${esc(date(batch.finished_at || batch.updated_at))}`}</small></div>${active && !state.readOnly ? `<button class="button secondary" data-action="stop" ${batch.stop_requested || state.busy ? 'disabled' : ''}>${batch.stop_requested ? 'Stopping after this stage' : 'Stop after this stage'}</button>` : ''}</section>`;
 }
 
-export function batchStrip(state) {
+function legacyDetailedBatchStrip(state) {
   const batch = state.batch;
   if (!batch) return '';
   const active = running(state);
   const done = batch.steps?.filter((step) => stageDone(batch, step)).length || 0;
   const current = state.batchProfiles.find((profile) => profile.username === batch.current);
-  const live = active ? current?.run?.progress : null;
-  const after = active ? workAfterCurrent(state, current) : null;
+  const detailCurrent = state.detail?.username === batch.current ? { ...current, run: state.detail.run, reels: current?.reels || state.detail.summary?.reels } : current;
+  const live = active ? detailCurrent?.run?.progress : null;
+  const after = active ? workAfterCurrent(state, detailCurrent) : null;
   const percent = live?.percent == null ? 'Progress calculating' : `${live.percent}%`;
   const currentItem = live?.current_item ? `Reel ${live.current_item.index} of ${live.current_item.total} · ${live.current_item.shortcode || live.current_item.url}` : '';
   const afterText = after ? `${after.stages} stage${after.stages === 1 ? '' : 's'} after this${after.unknown ? ' · scrape total pending' : ` · ${after.scrapes} scrape${after.scrapes === 1 ? '' : 's'} after this`}` : '';
   const liveDetails = live ? `<div class="live-progress"><div class="live-progress-heading"><strong>${esc(live.action || live.label || 'Collecting')}</strong><span>${percent}</span></div><div class="live-track ${live.percent == null ? 'indeterminate' : ''}"><span style="width:${live.percent == null ? 35 : live.percent}%"></span></div><small>${esc([live.detail, currentItem, live.remaining != null ? `${live.remaining} scrape${live.remaining === 1 ? '' : 's'} left in this stage` : 'Total becomes known when this scan finishes', afterText].filter(Boolean).join(' · '))}</small></div>` : '';
   return `<section class="flow-batch ${active ? 'active' : ''}" aria-live="polite"><div><span class="eyebrow">${active ? 'COLLECTION RUNNING' : 'LATEST RUN'}</span><strong>${active ? `@${esc(batch.current || 'preparing')} · ${esc(batch.current_stage?.replaceAll('_', ' ') || 'preparing')}` : esc(statusText(batch.status))}</strong><small>${active ? `${number(done)} / ${number(batch.steps?.length || 0)} stages finished` : `${esc(batch.mode?.replaceAll('_', ' ') || 'collection')} · ${esc(date(batch.finished_at || batch.updated_at))}`}</small>${liveDetails}</div>${active && !state.readOnly ? `<button class="button secondary" data-action="stop" ${batch.stop_requested || state.busy ? 'disabled' : ''}>${batch.stop_requested ? 'Stopping after this stage' : 'Stop after this stage'}</button>` : ''}</section>`;
+}
+
+function enhancedBatchStrip(state) {
+  const batch = state.batch;
+  if (!batch) return '';
+  const active = running(state);
+  const done = batch.steps?.filter((step) => stageDone(batch, step)).length || 0;
+  const current = state.batchProfiles.find((profile) => profile.username === batch.current);
+  const detailCurrent = state.detail?.username === batch.current ? { ...current, run: state.detail.run, reels: current?.reels || state.detail.summary?.reels } : current;
+  const live = active ? detailCurrent?.run?.progress : null;
+  const after = active ? workAfterCurrent(state, detailCurrent) : null;
+  const progressLabel = live?.task === 'reel_grid' && live.percent == null ? 'Live count' : live?.percent == null ? 'Progress calculating' : `${live.percent}%`;
+  const currentItem = live?.current_item ? `Reel ${live.current_item.index} of ${live.current_item.total} / ${live.current_item.shortcode || live.current_item.url}` : '';
+  const afterText = after ? after.stages === 0 ? 'No later stages' : `${after.stages} stage${after.stages === 1 ? '' : 's'} after this${after.unknown ? ' / scrape total pending' : ` / ${after.scrapes} scrape${after.scrapes === 1 ? '' : 's'} after this`}` : '';
+  const liveDetails = live ? `<div class="live-progress"><div class="live-progress-heading"><strong>${esc(liveTitle(live))}</strong><span>${progressLabel}</span></div><div class="live-track ${live.percent == null ? 'indeterminate' : ''}"><span style="width:${live.percent == null ? 35 : live.percent}%"></span></div><small>${esc([live.action, live.detail, currentItem, elapsed(detailCurrent?.run?.started_at), live.remaining != null ? `${live.remaining} scrape${live.remaining === 1 ? '' : 's'} left in this stage` : 'Final total is determined when the grid scan finishes', afterText].filter(Boolean).join(' / '))}</small></div>` : '';
+  const activeSummary = live ? `${esc(live.label || 'Current task')} / ${elapsed(detailCurrent?.run?.started_at)}` : `${number(done)} / ${number(batch.steps?.length || 0)} stages finished`;
+  return `<section class="flow-batch ${active ? 'active' : ''}" aria-live="polite"><div><span class="eyebrow">${active ? 'COLLECTION RUNNING' : 'LATEST RUN'}</span><strong>${active ? `@${esc(batch.current || 'preparing')} / ${esc(batch.current_stage?.replaceAll('_', ' ') || 'preparing')}` : esc(statusText(batch.status))}</strong><small>${active ? activeSummary : `${esc(batch.mode?.replaceAll('_', ' ') || 'collection')} / ${esc(date(batch.finished_at || batch.updated_at))}`}</small>${liveDetails}</div>${active && !state.readOnly ? `<button class="button secondary" data-action="stop" ${batch.stop_requested || state.busy ? 'disabled' : ''}>${batch.stop_requested ? 'Stopping after this stage' : 'Stop after this stage'}</button>` : ''}</section>`;
+}
+
+export function batchStrip(state) {
+  return enhancedBatchStrip(state);
 }
 
 export function visibleCatalog(state) {

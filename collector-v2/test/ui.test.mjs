@@ -52,3 +52,19 @@ test('the live batch strip shows extraction detail, percentage and remaining wor
   assert.match(html, /1 stage after this/);
   assert.match(html, /8 scrapes after this/);
 });
+
+test('a profile page shows live reel counts instead of only a one-stage counter', () => {
+  const html = batchStrip({
+    batch: { status: 'running', current: 'example', current_stage: 'reel_grid', profiles: ['example'],
+      steps: [{ username: 'example', stage: 'reel_grid' }], results: { example: { stages: { reel_grid: { status: 'running' } } } } },
+    batchProfiles: [{ username: 'example', reels: { discovered: null, complete: 0 }, run: {} }],
+    detail: { username: 'example', summary: { reels: { discovered: null, complete: 0 } }, run: { started_at: '2026-10-28T06:00:00.000Z', progress: {
+      task: 'reel_grid', label: 'Reel URL discovery', action: 'Finding every reel URL in the profile grid', completed: 180, total: null, percent: null,
+      remaining: null, detail: '180 reel URLs found so far'
+    } } },
+    readOnly: false, busy: false
+  });
+  assert.match(html, /180 reel URLs found so far/);
+  assert.match(html, /Live count/);
+  assert.doesNotMatch(html, /0 \/ 1 stages finished/);
+});
