@@ -17,6 +17,18 @@ const terminalStatus = (value) => ['complete', 'needs_review', 'failed', 'skippe
 const usernameMigration = (state) => state.workflow === 'username_migration';
 const flaggedSelected = (state) => selected(state).filter((profile) => usernameChangeFlagged(profile));
 const profileDetailsReady = (profile) => Boolean(profile?.profile_header_complete && profile?.posts_count !== null && profile?.posts_count !== undefined);
+const stageLabel = (stage) => ({
+  profile: 'Profile details',
+  profile_header: 'Profile details',
+  reel_grid: 'Reel URLs + count',
+  reels: 'Reel details'
+}[stage] || String(stage || 'collecting').replaceAll('_', ' '));
+const friendlyProgressMarkup = (markup) => markup
+  .replaceAll('profile_header', stageLabel('profile_header'))
+  .replaceAll('Profile Header', stageLabel('profile_header'))
+  .replaceAll('profile header', stageLabel('profile_header'))
+  .replaceAll('reel_grid', 'Reel URLs + count')
+  .replaceAll('reel grid', stageLabel('reel_grid'));
 
 function stageDone(batch, step) {
   return terminalStatus(batch.results?.[step.username]?.stages?.[step.stage]?.status);
@@ -109,7 +121,7 @@ function enhancedBatchStrip(state) {
 }
 
 export function batchStrip(state) {
-  return enhancedBatchStrip(state);
+  return friendlyProgressMarkup(enhancedBatchStrip(state));
 }
 
 export function visibleCatalog(state) {
@@ -251,7 +263,7 @@ function progressStep(state) {
   if (usernameMigration(state)) return usernameMigrationProgress(state);
   const actions = '<div class="setup-header-actions"><button class="button secondary" data-action="setup-new">New collection</button><a class="button secondary" href="/collection/review">View saved results →</a></div>';
   return `${setupHeader(state, 'Collection progress', 'Follow the current run and inspect its saved results.', actions)}
-    ${runPanel(state)}`;
+    ${friendlyProgressMarkup(runPanel(state))}`;
 }
 
 function usernameMigrationProgress(state) {
