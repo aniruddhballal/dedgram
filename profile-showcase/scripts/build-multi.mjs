@@ -26,12 +26,10 @@ const external = (url, label, className = '') => {
 const metric = (value) => value?.raw || (Number.isFinite(value?.value) ? fmt(value.value) : 'Unavailable');
 const date = (value, precision) => {
   if (!value) return 'Date unavailable';
-  if (precision === 'day' || /^\d{4}-\d{2}-\d{2}$/.test(value)) {
-    const parsed = new Date(`${value.slice(0, 10)}T00:00:00Z`);
-    return Number.isNaN(parsed.valueOf()) ? value : new Intl.DateTimeFormat('en-IN', { dateStyle: 'medium', timeZone: 'UTC' }).format(parsed);
-  }
-  const parsed = new Date(value);
-  return Number.isNaN(parsed.valueOf()) ? value : `${new Intl.DateTimeFormat('en-IN', { dateStyle: 'medium', timeStyle: 'short', timeZone: 'Asia/Kolkata' }).format(parsed)} IST`;
+  const dateOnly = precision === 'day' || /^\d{4}-\d{2}-\d{2}$/.test(value);
+  const parsed = dateOnly ? new Date(`${value.slice(0, 10)}T00:00:00Z`) : new Date(value);
+  const timeZone = dateOnly ? 'UTC' : 'Asia/Kolkata';
+  return Number.isNaN(parsed.valueOf()) ? value : new Intl.DateTimeFormat('en-IN', { day: 'numeric', month: 'long', year: 'numeric', timeZone }).format(parsed);
 };
 const field = (label, value) => `<div class="fact"><dt>${esc(label)}</dt><dd>${esc(value ?? 'Unavailable')}</dd></div>`;
 const localImage = async (file) => { try { await access(join(source, 'media', file)); return file; } catch { return null; } };
@@ -40,7 +38,7 @@ const index = await readJson('index.json');
 if (!Array.isArray(index.profile_keys) || publishedProfiles.some((username) => !index.profile_keys.includes(username))) throw new Error('A published profile is missing from the catalog.');
 if (!index.profile_keys.every((username) => /^[A-Za-z0-9._]{1,30}$/.test(username))) throw new Error('Catalog contains an invalid username.');
 if (new Set(index.profile_keys).size !== index.profile_keys.length) throw new Error('Catalog contains duplicate usernames.');
-const buildDate = new Intl.DateTimeFormat('en-IN', { dateStyle: 'medium', timeZone: 'Asia/Kolkata' }).format(new Date());
+const buildDate = new Intl.DateTimeFormat('en-IN', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'Asia/Kolkata' }).format(new Date());
 
 const partialPublishedProfiles = new Set(['edlt.shox', 'pichypeapp', 'printamovie']);
 const snapshotData = new Map();
@@ -156,7 +154,7 @@ const overviewFalseIdentificationRows = falseIdentificationProfiles.map((usernam
 const overviewReelRows = (await Promise.all(topReels.map(async (item) => {
   const thumb = await localImage(`${item.shortcode}.jpg`);
   const image = thumb ? `<img class="overview-reel-thumb" src="../media/${esc(thumb)}" alt="Cover image for reel ${esc(item.shortcode)}" loading="lazy">` : '<span class="overview-thumb-fallback" aria-hidden="true">REEL</span>';
-  return `<tr><td><div class="content-cell">${image}<a href="${esc(item.url)}" target="_blank" rel="noopener noreferrer">${esc(item.shortcode)} ↗</a></div></td><td><a href="../profiles/${item.username}/">@${esc(item.username)}</a></td><td>${esc(item.date || '—')}</td><td><strong>${esc(metric(item.views))}</strong></td><td>${esc(metric(item.likes))}</td><td>${esc(metric(item.comments))}</td></tr>`;
+  return `<tr><td><div class="content-cell">${image}<a href="${esc(item.url)}" target="_blank" rel="noopener noreferrer">${esc(item.shortcode)} ↗</a></div></td><td><a href="../profiles/${item.username}/">@${esc(item.username)}</a></td><td>${esc(date(item.date, item.date_precision))}</td><td><strong>${esc(metric(item.views))}</strong></td><td>${esc(metric(item.likes))}</td><td>${esc(metric(item.comments))}</td></tr>`;
 }))).join('');
 const overviewHtml = shell({ title: 'Overview · deadgram atlas', description: 'Overall statistics for the completed deadgram public snapshot.', base: '../', active: 'overview', content: `
   <section class="hero overview-hero"><div class="hero-copy"><div class="eyebrow">COLLECTION OVERVIEW / PUBLIC SNAPSHOT</div><h1>The whole picture,<br><em>one reel at a time.</em></h1><p>These totals reflect the research records currently available on the public site. Uncollected candidates stay out of the first view until you choose to reveal them.</p><div class="hero-actions"><a class="button primary" href="../">View published profiles</a><a class="button secondary" href="../#future">Show future candidates</a></div></div><div class="hero-count" aria-label="${fmt(overview.publicRecords)} public records"><strong>${String(overview.publicRecords).padStart(2, '0')}</strong><span>PUBLIC RECORDS</span></div></section>
