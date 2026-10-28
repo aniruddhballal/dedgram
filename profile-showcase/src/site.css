@@ -72,6 +72,16 @@ td a { font-weight: 700; text-decoration: underline; text-underline-offset: 3px;
 .deleted-table-note { margin: 0 0 12px; color: var(--muted); font-size: 11px; }
 .deleted-profile-section .table-wrap { border-top: 0; }
 .deleted-profile-section table { min-width: 760px; }
+.status-panels { margin: 10px 0 90px; }
+.status-intro { max-width: 760px; margin-bottom: 28px; border-top: 2px solid #000; padding-top: 16px; }
+.status-intro p { margin: 10px 0 0; color: var(--muted); font-size: 13px; }
+.status-panel-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+.status-panel { min-width: 0; border-top: 2px solid #000; padding-top: 16px; }
+.status-panel-full { grid-column: 1 / -1; }
+.status-panel h3 { margin: 12px 0 6px; font-size: 28px; font-weight: 740; letter-spacing: -.04em; }
+.status-panel > p { margin: 0 0 20px; color: var(--muted); font-size: 12px; }
+.status-panel .table-wrap { border-top: 1px solid #000; }
+.status-panel table { min-width: 0; }
 .future-directory { grid-column: 1 / -1; margin: 18px 0 5px; border-top: 1px solid #000; padding-top: 17px; }
 .future-directory summary { cursor: pointer; width: fit-content; font-size: 11px; font-weight: 760; text-decoration: underline; text-underline-offset: 3px; }
 .future-directory summary::marker { font-size: 9px; }
@@ -202,6 +212,8 @@ a.profile-internal:hover .row-title strong { text-decoration: underline; text-un
   .profile-context { grid-template-columns: 1fr; gap: 45px; }
   .overview-stat-strip { grid-template-columns: 1fr 1fr; }
   .overview-grid { grid-template-columns: 1fr; gap: 45px; }
+  .status-panel-grid { grid-template-columns: 1fr; gap: 45px; }
+  .status-panel-full { grid-column: auto; }
   .overview-table { padding-bottom: 55px; }
   .reels-section { padding-top: 70px; }
   .reels-section .section-head { align-items: stretch; }
