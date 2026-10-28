@@ -58,6 +58,8 @@ export function profileSummary(data) {
     account_status: run.account_status || profile?.account_status || null,
     account_status_observed_at: run.account_status_observed_at || profile?.account_status_observed_at || null,
     deletion_date_range: run.deletion_date_range || profile?.deletion_date_range || null,
+    minimum_age: run.minimum_age || profile?.minimum_age || null,
+    age_restriction: run.age_restriction || profile?.age_restriction || null,
     profile_header_complete: profileHeaderComplete(profile),
     profile_complete: profileLevelComplete(profile, discovery),
     reels: content('reel'),

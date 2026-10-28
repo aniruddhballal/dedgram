@@ -25,7 +25,7 @@ export function filteredCatalog(state) {
 }
 
 function card(profile, selected, running) {
-  const status = profile.account_status === 'deleted' ? 'deleted' : profile.profile_header_complete && !profile.profile_complete && profile.run.status === 'complete'
+  const status = profile.account_status === 'age_restricted' ? 'age_restricted' : profile.account_status === 'deleted' ? 'deleted' : profile.profile_header_complete && !profile.profile_complete && profile.run.status === 'complete'
     ? 'counts_pending' : profile.run.status;
   return `<article class="profile-card ${selected ? 'selected' : ''}">
     <div class="card-top"><label class="check-label"><input type="checkbox" data-select="${esc(profile.username)}" ${selected ? 'checked' : ''} aria-label="Select ${esc(profile.username)}"><span></span></label>${badge(status)}</div>

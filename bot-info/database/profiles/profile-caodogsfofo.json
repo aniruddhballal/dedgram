@@ -5,7 +5,13 @@
   "country": "Not shown",
   "date_joined": "Not shown",
   "posts_count": "Not shown",
-  "status": "Collection failed",
+  "status": "Age restricted",
+  "age_restriction": {
+    "minimum_age": 25,
+    "after_classified_at": "2026-10-18T00:36:19.004Z",
+    "before_initial_blocked_or_failed_at": "2026-10-22T16:21:54.359Z",
+    "exact_timestamp_known": false
+  },
   "ignored": false,
   "last_error": "Profile options button was not found.",
   "added_at": "2026-10-18T00:36:19.004Z",

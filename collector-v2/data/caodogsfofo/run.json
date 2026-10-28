@@ -8,5 +8,12 @@
     "reel_grid"
   ],
   "current_url": null,
+  "account_status": "age_restricted",
+  "minimum_age": 25,
+  "age_restriction": {
+    "after_classified_at": "2026-10-18T00:36:19.004Z",
+    "before_initial_blocked_or_failed_at": "2026-10-22T16:21:54.359Z",
+    "exact_timestamp_known": false
+  },
   "error": "Instagram did not show the profile header."
 }

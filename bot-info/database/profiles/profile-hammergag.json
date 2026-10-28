@@ -5,7 +5,13 @@
   "country": "Not shared",
   "date_joined": "October 2023",
   "posts_count": "Not shown",
-  "status": "Collected",
+  "status": "Age restricted",
+  "age_restriction": {
+    "minimum_age": 25,
+    "after_classified_at": "2026-10-18T05:20:23.996Z",
+    "before_initial_blocked_or_failed_at": "2026-10-24T08:37:21.429Z",
+    "exact_timestamp_known": false
+  },
   "last_error": "",
   "added_at": "2026-10-18T07:16:01.619Z",
   "last_fetched_at": "2026-10-18T07:22:09.083Z",
