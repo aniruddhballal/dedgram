@@ -156,7 +156,7 @@ class BatchRunner {
       this.log(`Starting @${username} ${level}`);
       const flags = level === 'profile' ? ['--profile-only'] : level === 'profile_header' ? ['--header-only']
         : level === 'reel_grid' ? ['--reel-grid-only', '--refresh']
-          : ['--reels-only', '--skip-profile', ...(this.batch.mode === 'reel_details' ? ['--refresh'] : [])];
+        : ['--reels-only', '--skip-profile'];
       const child = spawn(process.execPath,
         ['src/cli.mjs', 'collect', `--username=${username}`, ...flags, '--headless'],
         { cwd: root, windowsHide: true, stdio: ['ignore', 'pipe', 'pipe'] });

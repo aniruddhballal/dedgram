@@ -35,6 +35,8 @@ export function profileSummary(data) {
       complete: records.filter((item) => item.status === 'complete' && !item.last_error).length,
       review: records.filter((item) => item.status === 'partial' || item.status === 'failed' || !!item.last_error).length,
       grid_complete: gridCount(discovery[kind]) !== null,
+      refresh_required: Boolean(discovery[kind]?.refresh_required),
+      refresh_reason: discovery[kind]?.refresh_reason || null,
       attempted_at: discovery[kind]?.attempted_at || null,
       grid_error: gridCountError(discovery[kind])
     };
@@ -42,6 +44,8 @@ export function profileSummary(data) {
   return {
     username,
     url: profile?.url || `https://www.instagram.com/${username}/`,
+    current_username: profile?.current_username || username,
+    username_history: profile?.username_history || [],
     display_name: profile?.display_name || null,
     profile_picture_url: profile?.profile_picture_url || null,
     category: profile?.category || null,

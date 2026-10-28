@@ -165,8 +165,26 @@ async function collect() {
     if (!skipProfile && !reelGridOnly) {
       await saveProgress({ task: 'profile', label: 'Profile details', action: 'Reading the profile header, account details and exact post count', total: 1, detail: 'Opening profile page' });
       log(`Collecting ${username} profile`);
-      const snapshot = await captureProfile(page, username);
-      const current = profileFromSnapshot(username, snapshot);
+      const target = profile?.url || username;
+      const snapshot = await captureProfile(page, target);
+      const currentUsername = new URL(target).pathname.split('/').filter(Boolean)[0] || username;
+      const previousUsername = profile?.current_username || profile?.username || username;
+      const observedAt = now();
+      const usernameHistory = Array.isArray(profile?.username_history) && profile.username_history.length
+        ? profile.username_history.map((entry) => ({ ...entry }))
+        : [{ username: currentUsername, role: 'current username', first_seen_at: profile?.fetched_at || observedAt }];
+      if (currentUsername !== previousUsername) {
+        for (const entry of usernameHistory) if (entry.username === previousUsername) {
+          entry.role = 'previous username';
+          entry.last_seen_at = observedAt;
+        }
+        if (!usernameHistory.some((entry) => entry.username === currentUsername)) {
+          usernameHistory.push({ username: currentUsername, role: 'current username', first_seen_at: observedAt });
+        }
+      }
+      const current = { ...profileFromSnapshot(username, snapshot), url: `https://www.instagram.com/${currentUsername}/`, current_username: currentUsername,
+        username_history: usernameHistory, username_change_observed_at: currentUsername !== previousUsername
+          ? observedAt : profile?.username_change_observed_at || null };
       profileStageComplete = profileHeaderComplete(current) && exactPostCount(current) !== null;
       profile = mergeProfile(profile, current);
       await writeJson(path.profile, profile);
@@ -192,7 +210,7 @@ async function collect() {
         continue;
       }
       log(`Scanning ${kind} grid`);
-      const result = await discover(page, username, kind, async (found, complete, error = '') => {
+      const result = await discover(page, profile?.url || username, kind, async (found, complete, error = '') => {
         discovery[kind] = { items: mergeDiscoveryItems(discovery[kind]?.items || [], found, complete),
           complete, error, attempted_at: now() };
         await writeJson(path.discovery, discovery);

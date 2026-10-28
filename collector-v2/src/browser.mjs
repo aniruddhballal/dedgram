@@ -4,6 +4,16 @@ import { canonicalItemUrl, clean } from './model.mjs';
 
 const pause = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
+function profileTarget(value) {
+  const raw = String(value || '').trim();
+  const parsed = /^https?:\/\//i.test(raw)
+    ? new URL(raw)
+    : new URL(`https://www.instagram.com/${raw.replace(/^\/+|\/+$/g, '')}/`);
+  const username = parsed.pathname.split('/').filter(Boolean)[0];
+  if (!username || !/^[A-Za-z0-9._]{1,30}$/.test(username)) throw new Error(`Invalid Instagram profile target: ${value}`);
+  return { username, url: `https://www.instagram.com/${username}/` };
+}
+
 export async function launch(root, { headless = false } = {}) {
   const context = await chromium.launchPersistentContext(join(root, '.auth', 'browser'), {
     headless,
@@ -69,7 +79,8 @@ async function aboutText(page) {
 }
 
 export async function captureProfile(page, username) {
-  await open(page, `https://www.instagram.com/${username}/`);
+  const target = profileTarget(username);
+  await open(page, target.url);
   const header = page.locator('main header').first();
   await header.waitFor({ state: 'visible', timeout: 15000 }).catch(() => {});
   const headerText = await header.innerText().catch(() => '');
@@ -92,7 +103,8 @@ export async function captureProfile(page, username) {
 
 export async function discover(page, username, kind, onProgress,
   { maxPasses = Infinity, maxIdleMs = 60_000, pauseMs = 850 } = {}) {
-  const url = `https://www.instagram.com/${username}/${kind === 'reel' ? 'reels/' : ''}`;
+  const target = profileTarget(username);
+  const url = `${target.url}${kind === 'reel' ? 'reels/' : ''}`;
   await open(page, url);
   const found = new Map();
   let stable = 0;
@@ -112,7 +124,7 @@ export async function discover(page, username, kind, onProgress,
     for (const anchor of raw) {
       const pathname = new URL(anchor.href).pathname;
       const owner = pathname.match(/^\/([^/]+)\/(?:p|reel|reels)\//)?.[1];
-      if (owner && owner.toLowerCase() !== username.toLowerCase()) continue;
+      if (owner && owner.toLowerCase() !== target.username.toLowerCase()) continue;
       const item = canonicalItemUrl(anchor.href);
       if (item?.kind !== kind) continue;
       const tileText = clean(anchor.label || anchor.text);

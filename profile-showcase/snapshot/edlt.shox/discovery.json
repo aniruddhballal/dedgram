@@ -543,6 +543,10 @@
     ],
     "complete": true,
     "error": "",
-    "attempted_at": "2026-10-23T09:27:40.432Z"
+    "attempted_at": "2026-10-23T09:27:40.432Z",
+    "refresh_required": true,
+    "previous_username": "edlt.shox",
+    "previous_complete": true,
+    "previous_attempted_at": "2026-10-23T09:27:40.432Z"
   }
 }

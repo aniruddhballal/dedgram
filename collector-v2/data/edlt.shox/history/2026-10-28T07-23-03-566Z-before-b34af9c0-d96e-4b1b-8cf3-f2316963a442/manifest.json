@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "username": "edlt.shox",
+  "phase": "before",
+  "snapshot_at": "2026-10-28T07:23:03.566Z",
+  "run_status": "partial",
+  "run_updated_at": "2026-10-23T09:50:54.481Z",
+  "profile_fetched_at": "2026-10-23T09:50:50.077Z",
+  "item_count": 76,
+  "complete_item_count": 76,
+  "discovery": {
+    "post": {
+      "count": 0,
+      "complete": true,
+      "error": null,
+      "attempted_at": "2026-10-23T09:27:12.775Z"
+    },
+    "reel": {
+      "count": 76,
+      "complete": true,
+      "error": null,
+      "attempted_at": "2026-10-23T09:27:40.432Z"
+    }
+  }
+}
