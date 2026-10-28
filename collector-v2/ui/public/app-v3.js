@@ -17,7 +17,7 @@ const state = {
   mode: ['profile_only', 'depth_first', 'breadth_first', 'reels_only'].includes(savedMode) ? savedMode : 'depth_first',
   order: ['selection', 'posts_ascending', 'reels_ascending'].includes(savedOrder) ? savedOrder : 'posts_ascending',
   setupStep: ['profiles', 'mode', 'order', 'review', 'progress'].includes(savedSetup) ? savedSetup : 'profiles',
-  itemSearch: '', itemFilter: 'all', itemSort: 'newest', busy: false, error: null, readOnly: false, toasts: []
+  itemSearch: '', itemFilter: 'all', itemSort: 'newest', busy: false, error: null, readOnly: false, popup: null
 };
 const observed = { batchId: null, batchStatus: null, usernameJobs: new Map() };
 const sound = { context: null };
@@ -42,22 +42,23 @@ function playNotificationSound(type) {
     oscillator.connect(gain).connect(context.destination);
     oscillator.start();
     oscillator.stop(context.currentTime + 0.18);
-  } catch { /* Audio is optional; the visual toast remains the source of truth. */ }
+  } catch { /* Audio is optional; the visual popup remains the source of truth. */ }
 }
 
 function notify(message, type = 'info', duration = 7000) {
   const id = `${Date.now()}-${Math.random().toString(36).slice(2)}`;
-  state.toasts.push({ id, message, type });
+  state.popup = { id, message, type };
   playNotificationSound(type);
   render();
   window.setTimeout(() => {
-    const index = state.toasts.findIndex((toast) => toast.id === id);
-    if (index >= 0) { state.toasts.splice(index, 1); render(); }
+    if (state.popup?.id === id) { state.popup = null; render(); }
   }, duration);
 }
 
-function toastMarkup() {
-  return `<div class="toast-stack" aria-live="polite" aria-atomic="false">${state.toasts.map((toast) => `<div class="toast ${toast.type}" role="status"><span class="toast-mark" aria-hidden="true">${toast.type === 'success' ? '✓' : toast.type === 'error' ? '!' : 'i'}</span><span>${esc(toast.message)}</span><button data-action="dismiss-toast" data-toast-id="${esc(toast.id)}" aria-label="Dismiss notification">×</button></div>`).join('')}</div>`;
+function popupMarkup() {
+  if (!state.popup) return '';
+  const title = state.popup.type === 'success' ? 'TASK COMPLETE' : state.popup.type === 'error' ? 'TASK ERROR' : 'TASK IN PROGRESS';
+  return `<div class="dos-popup-layer" role="presentation"><section class="dos-popup ${state.popup.type}" role="alertdialog" aria-modal="true" aria-label="${title}"><div class="dos-popup-title">[ ${title} ]</div><p>${esc(state.popup.message)}</p><button class="dos-popup-ok" data-action="dismiss-popup">OK</button></section></div>`;
 }
 
 function observeAsyncState() {
@@ -108,7 +109,7 @@ function render() {
     : current.startsWith('/profiles/') ? `${batchStrip(state)}${renderProfile(state)}`
       : step === 0 ? renderSelect(state) : step === 4 ? renderReview(state)
         : step > 0 ? renderStage(state, step) : '<p class="loading">Page not found.</p>';
-  app.innerHTML = `${state.readOnly ? '<div class="preview-banner">PREVIEW · Collection actions are disabled while the original batch runs.</div>' : ''}${state.error ? `<div class="error-banner" role="alert"><strong>Something needs attention.</strong> ${esc(state.error)} <button data-action="dismiss" aria-label="Dismiss">×</button></div>` : ''}${content}${toastMarkup()}`;
+  app.innerHTML = `${state.readOnly ? '<div class="preview-banner">PREVIEW · Collection actions are disabled while the original batch runs.</div>' : ''}${state.error ? `<div class="error-banner" role="alert"><strong>Something needs attention.</strong> ${esc(state.error)} <button data-action="dismiss" aria-label="Dismiss">×</button></div>` : ''}${content}${popupMarkup()}`;
   if (focusId) {
     const input = document.getElementById(focusId);
     if (input) { input.focus(); if (typeof cursor === 'number' && typeof input.setSelectionRange === 'function') input.setSelectionRange(cursor, cursor); }
@@ -167,7 +168,7 @@ document.addEventListener('click', async (event) => {
   if (!button) return;
   const action = button.dataset.action;
   if (action === 'dismiss') { state.error = null; render(); return; }
-  if (action === 'dismiss-toast') { state.toasts = state.toasts.filter((toast) => toast.id !== button.dataset.toastId); render(); return; }
+  if (action === 'dismiss-popup') { state.popup = null; render(); return; }
   if (action === 'setup-progress' && state.batch) { setSetupStep('progress'); return; }
   if (action === 'setup-new') { setSetupStep('profiles'); return; }
   if (action === 'setup-step' && setupSteps.includes(button.dataset.step)) { setSetupStep(button.dataset.step); return; }
