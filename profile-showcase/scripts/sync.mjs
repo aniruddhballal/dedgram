@@ -32,6 +32,7 @@ for (const username of resolvedProfiles) {
     age_restriction: profile.age_restriction || null,
     minimum_age: profile.minimum_age || profile.age_restriction?.minimum_age || null,
     false_identification: profile.false_identification || null,
+    resolution_note: profile.resolution_note || null,
     reason: profile.last_error || null
   };
 }

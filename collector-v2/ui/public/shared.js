@@ -14,7 +14,7 @@ export const metric = (value) => value?.source === 'others_plus_one'
 export const profileHref = (name) => `/profiles/${encodeURIComponent(name)}`;
 export const reportHref = (name) => `/reports/${encodeURIComponent(name)}`;
 export const statusText = (value) => ({ not_started: 'Not collected', running: 'Running', complete: 'Complete',
-  needs_review: 'Needs review', partial: 'Needs review', queued: 'Queued', failed: 'Failed', blocked: 'Blocked', deleted: 'Deleted account', age_restricted: 'Age restricted (25+)', false_identification: 'False identification',
+  needs_review: 'Needs review', partial: 'Needs review', queued: 'Queued', failed: 'Failed', blocked: 'Blocked', deleted: 'Deleted or username changed', age_restricted: 'Age restricted (25+)', false_identification: 'False identification',
   interrupted: 'Interrupted', stopped: 'Stopped', skipped: 'Skipped', counts_pending: 'Counts pending' })[value] || value || 'Not collected';
 export const badge = (value) => `<span class="badge ${({ complete: 'good', running: 'active', needs_review: 'warn', partial: 'warn', failed: 'bad', blocked: 'bad', deleted: 'bad', age_restricted: 'warn', false_identification: 'bad', interrupted: 'warn', skipped: 'warn', counts_pending: 'warn' })[value] || 'quiet'}">${esc(statusText(value))}</span>`;
 export const renderStageStatus = (profile) => {

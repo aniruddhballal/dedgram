@@ -1,6 +1,6 @@
 # dedgram atlas public preview
 
-A static, self-contained Vercel site. It publishes an overall snapshot, detailed pages for saved records, a profile-level record for `illmisguideyou`, and resolved records for deleted, age-restricted, and false-identification outcomes. The public Profiles view emphasizes saved data and keeps future collection candidates behind an explicit disclosure. Partial reel coverage and pending reel-detail analysis are called out on the affected profile pages. No Instagram login, collector process, database, or server function is needed to serve it.
+A static, self-contained Vercel site. It publishes an overall snapshot, detailed pages for saved records, a profile-level record for `illmisguideyou`, and resolved records for usernames that became unavailable, age-restricted, or falsely identified. An unavailable username may represent either a deleted account or a username change; the evidence and timestamps are preserved without claiming which occurred. The public Profiles view emphasizes saved data and keeps future collection candidates behind an explicit disclosure. Partial reel coverage and pending reel-detail analysis are called out on the affected profile pages. No Instagram login, collector process, database, or server function is needed to serve it.
 
 ## Deploy on Vercel
 

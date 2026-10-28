@@ -5,7 +5,8 @@
   "country": "Not shared",
   "date_joined": "October 2026",
   "posts_count": "Not shown",
-  "status": "Deleted account",
+  "status": "Deleted or username changed",
+  "resolution_note": "The original username was unavailable during the follow-up check. The account may have been deleted or the username may have changed.",
   "account_status_observed_at": "2026-10-24T08:36:38.648Z",
   "deletion_date_range": {
     "after_classified_at": "2026-10-18T01:41:55.245Z",

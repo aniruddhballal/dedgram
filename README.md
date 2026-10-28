@@ -130,7 +130,7 @@ Current routes:
 - `/profiles/<username>/` — individual published profile record.
 - `/overview/` — compatibility alias for the Overview.
 
-The public Overview includes profile performance, profile country and join information, reel counts, analyzed reel counts, total reel likes/comments/views, most-viewed reels, local reel cover images, and resolved deleted/age-restricted/false-identification records. Engagement totals are displayed compactly with hover text containing the full stored value. The public site hides uncollected candidates from its first view.
+The public Overview includes profile performance, profile country and join information, reel counts, analyzed reel counts, total reel likes/comments/views, most-viewed reels, local reel cover images, and resolved unavailable-or-renamed, age-restricted, and false-identification records. Engagement totals are displayed compactly with hover text containing the full stored value. The public site hides uncollected candidates from its first view.
 
 To refresh and build the showcase after new Collector v2 outputs are ready:
 
