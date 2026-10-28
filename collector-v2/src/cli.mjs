@@ -165,7 +165,8 @@ async function collect() {
     if (!skipProfile && !reelGridOnly) {
       await saveProgress({ task: 'profile', label: 'Profile details', action: 'Reading the profile header, account details and exact post count', total: 1, detail: 'Opening profile page' });
       log(`Collecting ${username} profile`);
-      const target = profile?.url || username;
+      const savedUrl = typeof profile?.url === 'string' && /^https?:\/\//i.test(profile.url) ? profile.url : null;
+      const target = savedUrl || `https://www.instagram.com/${username}/`;
       const snapshot = await captureProfile(page, target);
       const currentUsername = new URL(target).pathname.split('/').filter(Boolean)[0] || username;
       const previousUsername = profile?.current_username || profile?.username || username;
