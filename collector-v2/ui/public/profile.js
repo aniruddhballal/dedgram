@@ -1,4 +1,4 @@
-import { badge, errorBanner, esc, gridLabel, metric, number, profileHref, reportHref, time } from './shared.js';
+import { badge, errorBanner, esc, gridLabel, metric, number, profileHref, renderStageStatus, reportHref, time } from './shared.js';
 
 function reviewReason(item) {
   const parts = (item.missing || []).map((field) => `${field}: ${item.missing_reasons?.[field] || 'No readable value found.'}`);
@@ -31,7 +31,7 @@ export function renderProfile(state) {
   const runDisabled = state.busy || state.batch?.status === 'running';
   const reportStatus = p.account_status === 'false_identification' ? 'false_identification' : p.account_status === 'age_restricted' ? 'age_restricted' : p.account_status === 'deleted' ? 'deleted' : p.profile_header_complete && !p.profile_complete && p.run.status === 'complete'
     ? 'counts_pending' : batchResult?.status || p.run.status;
-  return `${errorBanner(state.error)}<div class="breadcrumbs"><a href="/">Collection</a><span>/</span><span>@${esc(p.username)}</span></div>
+  return `${errorBanner(state.error)}<div class="breadcrumbs"><a href="/">Collection</a><span>/</span><span>@${esc(p.username)}</span></div>${renderStageStatus(p)}
     <section class="detail-hero"><div class="detail-identity">${p.profile_picture_url ? `<img class="detail-avatar" src="${esc(p.profile_picture_url)}" alt="">` : `<div class="detail-avatar fallback">${esc(p.username[0].toUpperCase())}</div>`}
       <div><span class="eyebrow">PROFILE REPORT</span><h1>@${esc(p.username)}</h1><p>${esc(p.display_name || p.category || 'Instagram profile')}</p>
         <div class="detail-links">${badge(reportStatus)}<a href="${esc(p.url)}" target="_blank" rel="noopener noreferrer">Instagram ↗</a><a href="${reportHref(p.username)}" target="_blank" rel="noopener noreferrer">HTML report ↗</a></div></div></div>

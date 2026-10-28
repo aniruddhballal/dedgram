@@ -30,6 +30,20 @@ test('the profile page never displays a partial grid count as a result', () => {
   assert.doesNotMatch(html, /2\+|>2 posts/);
 });
 
+test('the profile page distinguishes profile-level completion from reel-detail completion', () => {
+  const profile = { username: 'example', fetched_at: '2026-10-28T00:00:00Z', raw: { header_text: 'example\n1,137 posts\n9,556 followers\n45 following' },
+    posts_count: { value: 1137, raw: '1,137' }, followers_count: { value: 9556, raw: '9,556' }, following_count: { value: 45, raw: '45' } };
+  const discovery = { reel: { items: [{ url: 'one' }, { url: 'two' }], complete: true, attempted_at: '2026-10-28T00:01:00Z' } };
+  const data = { username: 'example', profile, discovery, items: [], run: { status: 'complete' } };
+  const summary = profileSummary(data);
+  const html = renderProfile({ detail: { ...data, summary }, itemSearch: '', itemFilter: 'all', itemSort: 'newest', batch: null, error: null });
+  assert.match(html, /Profile level complete/);
+  assert.match(html, /PROFILE DETAILS/);
+  assert.match(html, /REEL URLS/);
+  assert.match(html, /REEL DETAILS/);
+  assert.match(html, /0 of 2 reels fully extracted/);
+});
+
 test('the live batch strip shows extraction detail, percentage and remaining work', () => {
   const html = batchStrip({
     batch: {
