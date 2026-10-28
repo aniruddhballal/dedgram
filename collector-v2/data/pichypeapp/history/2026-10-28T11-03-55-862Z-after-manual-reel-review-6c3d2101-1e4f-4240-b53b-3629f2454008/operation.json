@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "operation": "manual reel review",
+  "performed_at": "2026-10-28T11:03:55.862Z",
+  "username": "pichypeapp",
+  "source": "manual user review",
+  "changes": [
+    {
+      "shortcode": "De1Jk4IRtIP",
+      "resolution": "deleted_or_archived"
+    },
+    {
+      "shortcode": "DejpZ6nostn",
+      "resolution": "age_restricted",
+      "metrics": [
+        "likes",
+        "comments",
+        "views",
+        "reposts",
+        "shares",
+        "saves"
+      ]
+    }
+  ],
+  "before_snapshot": "D:\\post engg\\dedgram\\collector-v2\\data\\pichypeapp\\history\\2026-10-28T11-03-55-862Z-before-manual-reel-review-61332eb7-4612-4af6-832f-db82fd4cfa3b",
+  "after_snapshot": "D:\\post engg\\dedgram\\collector-v2\\data\\pichypeapp\\history\\2026-10-28T11-03-55-862Z-after-manual-reel-review-6c3d2101-1e4f-4240-b53b-3629f2454008"
+}

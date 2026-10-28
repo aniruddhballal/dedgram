@@ -42,6 +42,7 @@ export function profileSummary(data) {
       discovered: gridCount(discovery[kind]),
       processed: records.filter((item) => !!item.fetched_at).length,
       complete: records.filter((item) => item.status === 'complete' && !item.last_error).length,
+      resolved: records.filter((item) => ['archived', 'age_restricted'].includes(item.status) && !item.last_error).length,
       review: records.filter((item) => item.status === 'partial' || item.status === 'failed' || !!item.last_error).length,
       grid_complete: gridCount(discovery[kind]) !== null,
       refresh_required: Boolean(discovery[kind]?.refresh_required),

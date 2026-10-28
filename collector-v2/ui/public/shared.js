@@ -14,15 +14,17 @@ export const metric = (value) => value?.source === 'others_plus_one'
 export const profileHref = (name, currentUsername) => `/profiles/${encodeURIComponent(currentUsername || name)}`;
 export const reportHref = (name) => `/reports/${encodeURIComponent(name)}`;
 export const statusText = (value) => ({ not_started: 'Not collected', running: 'Running', complete: 'Complete',
-  needs_review: 'Needs review', partial: 'Needs review', queued: 'Queued', failed: 'Failed', blocked: 'Blocked', deleted: 'Deleted or username changed', age_restricted: 'Age restricted (25+)', false_identification: 'False identification',
+  needs_review: 'Needs review', partial: 'Needs review', queued: 'Queued', failed: 'Failed', blocked: 'Blocked', deleted: 'Deleted or username changed', archived: 'Deleted / archived', age_restricted: 'Age restricted (25+)', false_identification: 'False identification',
   interrupted: 'Interrupted', stopped: 'Stopped', skipped: 'Skipped', counts_pending: 'Counts pending' })[value] || value || 'Not collected';
-export const badge = (value) => `<span class="badge ${({ complete: 'good', running: 'active', needs_review: 'warn', partial: 'warn', failed: 'bad', blocked: 'bad', deleted: 'bad', age_restricted: 'warn', false_identification: 'bad', interrupted: 'warn', skipped: 'warn', counts_pending: 'warn' })[value] || 'quiet'}">${esc(statusText(value))}</span>`;
+export const badge = (value) => `<span class="badge ${({ complete: 'good', running: 'active', needs_review: 'warn', partial: 'warn', failed: 'bad', blocked: 'bad', deleted: 'bad', archived: 'bad', age_restricted: 'warn', false_identification: 'bad', interrupted: 'warn', skipped: 'warn', counts_pending: 'warn' })[value] || 'quiet'}">${esc(statusText(value))}</span>`;
 export const renderStageStatus = (profile) => {
   const profileDetails = profile.profile_header_complete && profile.posts_count !== null ? 'complete' : profile.profile_fetched_at ? 'needs_review' : 'not_started';
   const reelUrls = profile.reels.grid_complete ? 'complete' : profile.reels.attempted_at ? 'needs_review' : 'not_started';
   const discovered = profile.reels.discovered;
-  const reelDetails = reelUrls !== 'complete' ? 'not_started' : discovered === 0 || profile.reels.complete >= discovered ? 'complete' : profile.reels.complete ? 'partial' : 'queued';
-  const reelDetailsText = discovered == null ? 'Waiting for a completed reel URL scan' : `${number(profile.reels.complete)} of ${number(discovered)} reels fully extracted`;
+  const resolved = profile.reels.resolved || 0;
+  const handled = (profile.reels.complete || 0) + resolved;
+  const reelDetails = reelUrls !== 'complete' ? 'not_started' : discovered === 0 || handled >= discovered ? 'complete' : profile.reels.complete ? 'partial' : 'queued';
+  const reelDetailsText = discovered == null ? 'Waiting for a completed reel URL scan' : `${number(profile.reels.complete)} fully extracted${resolved ? ` · ${number(resolved)} manually resolved` : ''} of ${number(discovered)} reels`;
   return `<section class="stage-status"><div class="stage-status-head"><div><span class="eyebrow">COLLECTION STATUS</span><h2>${profile.profile_complete ? 'Profile level complete' : 'Profile level incomplete'}</h2><p>${profile.profile_complete ? 'Profile details and reel URLs are complete. Individual reel details can still be collected below.' : 'Profile level completion requires profile details and a completed reel URL scan.'}</p></div>${badge(profile.profile_complete ? 'complete' : 'counts_pending')}</div><div class="stage-status-grid"><div><span>PROFILE DETAILS</span>${badge(profileDetails)}<small>${profileDetails === 'complete' ? 'Header and exact post count saved' : 'Profile header or post count needs attention'}</small></div><div><span>REEL URLS</span>${badge(reelUrls)}<small>${reelUrls === 'complete' ? `${number(discovered)} reel URLs counted` : 'Grid has not finished scanning'}</small></div><div><span>REEL DETAILS</span>${badge(reelDetails)}<small>${esc(reelDetailsText)}</small></div></div></section>`;
 };
 export const progress = (done, total) => `<div class="track"><span style="width:${total ? Math.min(100, Math.round(done / total * 100)) : 0}%"></span></div>`;

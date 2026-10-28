@@ -38,7 +38,7 @@ function knownScrapes(profile, step, batch) {
   if (step.stage !== 'reels') return 1;
   const discovered = profile?.reels?.discovered;
   if (discovered == null) return null;
-  return batch.mode === 'reel_details' ? discovered : Math.max(0, discovered - (profile.reels.complete || 0));
+  return batch.mode === 'reel_details' ? discovered : Math.max(0, discovered - (profile.reels.complete || 0) - (profile.reels.resolved || 0));
 }
 
 function workAfterCurrent(state, currentProfile) {
