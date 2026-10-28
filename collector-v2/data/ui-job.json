@@ -25,7 +25,6 @@
     "pixa.300k",
     "sallusmemer",
     "fun_fineee",
-    "aniruddhballal",
     "kabir.chaudhary69",
     "solvik.editz9",
     "yervin8_",
@@ -133,10 +132,6 @@
     },
     {
       "username": "fun_fineee",
-      "stage": "reel_grid"
-    },
-    {
-      "username": "aniruddhballal",
       "stage": "reel_grid"
     },
     {
@@ -523,20 +518,6 @@
           "status": "complete",
           "started_at": "2026-10-28T09:43:07.284Z",
           "finished_at": "2026-10-28T09:43:27.441Z",
-          "error": null
-        }
-      }
-    },
-    "aniruddhballal": {
-      "status": "complete",
-      "started_at": "2026-10-28T09:43:27.444Z",
-      "finished_at": "2026-10-28T09:43:49.169Z",
-      "error": null,
-      "stages": {
-        "reel_grid": {
-          "status": "complete",
-          "started_at": "2026-10-28T09:43:27.444Z",
-          "finished_at": "2026-10-28T09:43:49.169Z",
           "error": null
         }
       }
