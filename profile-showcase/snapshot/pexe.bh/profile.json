@@ -3,7 +3,7 @@
   "url": "https://www.instagram.com/pexe.bh/",
   "fetched_at": "2026-10-23T14:37:22.856Z",
   "display_name": "memesi",
-  "bio": "#アニメ 『ANIME』\n話題の最新作がついに解禁!! ⚡\n待望の最新情報を公開!\nさらに、注目を集める新キャラクターの情報に加え、...\nmore",
+  "bio": "#アニメ 『ANIME』\n話題の最新作がついに解禁!! ⚡\n待望の最新情報を公開!\nさらに、注目を集める新キャラクターの情報に加え、\n物語を大きく動かす重要人物「主人公」の詳細も明らかに\nな\nりました!!\n◆新キャラクター情報:",
   "posts_count": {
     "value": 62,
     "raw": "62",
@@ -90,5 +90,39 @@
       }
     }
   },
-  "issues": []
+  "issues": [],
+  "username_check": {
+    "status": "no_change",
+    "checked_at": "2026-10-28T08:20:16.027Z",
+    "record_username": "pexe.bh",
+    "stored_username": "pexe.bh",
+    "detected_username": "pexe.bh",
+    "reel_url": "https://www.instagram.com/reel/De1rwTqRO8M/",
+    "source": "og_description",
+    "evidence": {
+      "description": "50 likes, 0 comments - pexe.bh on October 23, 2026: \"#FOOTBALL ⚽ 『THE BEAUTIFUL GAME』 世界中で愛されるサッカーの最新情報がついに解禁!! 🔥 予測不可能な試合展開と圧巻のプレーが交差する瞬間を公開! さらに、選手たちの驚異的なテクニックや劇的なゴール に加え、 世界中のファンを熱狂させるサッカーの魅力も明 らかになりました!!\n\n◆注目のFootballポイント\". ",
+      "article_text": "pexe.bh\n•\nFollow\nOh No · Welcome To Los Santos\n#FOOTBALL ⚽ 『THE BEAUTIFUL GAME』 世界中で愛されるサッカーの最新情報がついに解禁!! 🔥 予測不可能な試合展開と圧巻のプレーが交差する瞬間を公開! さらに、選手たちの驚異的なテクニックや劇的なゴール に加え、 世界中のファンを熱狂させるサッカーの魅力も明 らかになりました!!\n\n◆注目のFootballポイント\n50\n2\njustpranss_\n•\nFollow\nHarshdeep, Arijit Singh, Pritam · Kabira (Encore)\nHarshdeep, Arijit Singh, Pritam · Kabira (Encore)\nMy day one\n.\n.\n.\n.\n.\n.\n[siblings, sisters, love, cousins, memories, nostalgia, emotional]\n17.1K\n1,819\n203",
+      "profile_link": null
+    },
+    "page_url": "https://www.instagram.com/reels/De1rwTqRO8M/",
+    "message": "The saved reel identifies the same username currently stored: @pexe.bh."
+  },
+  "username_checks": [
+    {
+      "status": "no_change",
+      "checked_at": "2026-10-28T08:20:16.027Z",
+      "record_username": "pexe.bh",
+      "stored_username": "pexe.bh",
+      "detected_username": "pexe.bh",
+      "reel_url": "https://www.instagram.com/reel/De1rwTqRO8M/",
+      "source": "og_description",
+      "evidence": {
+        "description": "50 likes, 0 comments - pexe.bh on October 23, 2026: \"#FOOTBALL ⚽ 『THE BEAUTIFUL GAME』 世界中で愛されるサッカーの最新情報がついに解禁!! 🔥 予測不可能な試合展開と圧巻のプレーが交差する瞬間を公開! さらに、選手たちの驚異的なテクニックや劇的なゴール に加え、 世界中のファンを熱狂させるサッカーの魅力も明 らかになりました!!\n\n◆注目のFootballポイント\". ",
+        "article_text": "pexe.bh\n•\nFollow\nOh No · Welcome To Los Santos\n#FOOTBALL ⚽ 『THE BEAUTIFUL GAME』 世界中で愛されるサッカーの最新情報がついに解禁!! 🔥 予測不可能な試合展開と圧巻のプレーが交差する瞬間を公開! さらに、選手たちの驚異的なテクニックや劇的なゴール に加え、 世界中のファンを熱狂させるサッカーの魅力も明 らかになりました!!\n\n◆注目のFootballポイント\n50\n2\njustpranss_\n•\nFollow\nHarshdeep, Arijit Singh, Pritam · Kabira (Encore)\nHarshdeep, Arijit Singh, Pritam · Kabira (Encore)\nMy day one\n.\n.\n.\n.\n.\n.\n[siblings, sisters, love, cousins, memories, nostalgia, emotional]\n17.1K\n1,819\n203",
+        "profile_link": null
+      },
+      "page_url": "https://www.instagram.com/reels/De1rwTqRO8M/",
+      "message": "The saved reel identifies the same username currently stored: @pexe.bh."
+    }
+  ]
 }

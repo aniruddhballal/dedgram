@@ -5,7 +5,20 @@ import { fileURLToPath } from 'node:url';
 const site = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const repo = resolve(site, '..');
 const snapshot = join(site, 'snapshot');
-const fullProfiles = ['edlt.shox', 'pexe.bh', 'pigeon.flac', 'reposted', 'pichypeapp', 'printamovie'];
+const fullProfiles = [
+  'edlt.shox',
+  'pexe.bh',
+  'pigeon.flac',
+  'reposted',
+  'pichypeapp',
+  'printamovie',
+  'crick_video_07',
+  'damn_nigas',
+  'james_basas',
+  'mikre_film',
+  'scoobyjacks_',
+  'the.ravshanbek_'
+];
 const profileLevelProfiles = ['illmisguideyou'];
 const resolvedProfiles = ['hnvx.07', 'prime_senchui', 'vlad.aep_', 'nxx._.nmercy', 'dexea.100k', 'igpostinggang', 'rzk.mp4', 'renyajichu', 'hammergag', 'caodogsfofo', 'back', 'short_vibesz', 'oooiway', 'zuxxie.pov', 'extreme.laugh8', 'iron_block2', 'memes.fatafat'];
 const publishedProfiles = [...fullProfiles, ...profileLevelProfiles, ...resolvedProfiles];
