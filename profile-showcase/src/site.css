@@ -45,7 +45,7 @@ main { max-width: 1360px; margin: auto; padding: 0 32px; }
 .process-note { display: flex; align-items: baseline; margin: 24px 0 90px; border-left: 3px solid #000; padding-left: 15px; }
 .process-note h2 { display: inline; font-size: 13px; font-weight: 750; margin: 0 12px 0 0; }
 .process-note p { display: inline; font-size: 13px; color: var(--muted); margin: 0; }
-.overview-stat-strip { grid-template-columns: repeat(4, 1fr); }
+.overview-stat-strip { grid-template-columns: repeat(5, 1fr); }
 .secondary-stats { border-top: 1px solid var(--line); }
 .overview-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin: 68px 0 90px; }
 .overview-panel { min-width: 0; border-top: 2px solid #000; padding-top: 16px; }

@@ -101,8 +101,8 @@ function shell({ title, description, base, active, profileKey, content }) {
 const publishedSet = new Set(publishedProfiles);
 const catalogCard = (username, i, ready) => {
   const resolved = resolutions.profiles?.[username];
-  const label = resolved ? `Resolved: ${resolved.status}` : profileLevelSet.has(username) ? 'Profile level complete; reel details pending' : partialPublishedProfiles.has(username) ? 'Partial reel coverage' : ready ? 'Profile and reel analysis complete' : 'Future collection candidate';
-  const tag = resolved ? 'Resolved' : profileLevelSet.has(username) ? 'Profile complete' : ready ? 'Profile available' : 'Future candidate';
+  const label = resolved ? `Account status: ${resolved.status}` : profileLevelSet.has(username) ? 'Profile saved; reel analysis pending' : partialPublishedProfiles.has(username) ? 'Some reels analyzed' : ready ? 'Profile and reels analyzed' : 'Not analyzed yet';
+  const tag = resolved ? 'Status confirmed' : profileLevelSet.has(username) ? 'Profile saved' : ready ? 'View record' : 'Not analyzed';
   const inner = `<span class="row-number">${String(i + 1).padStart(3, '0')}</span><span class="row-title"><strong>@${esc(username)}</strong><small>${esc(label)}</small></span><span class="row-tag ${ready ? 'live' : ''}">${esc(tag)}</span>`;
   return `<article class="profile-row" data-catalog-row><div class="profile-row-main">${ready ? `<a class="profile-internal" href="./profiles/${username}/" aria-label="View saved profile data for @${username}">${inner}</a>` : `<div class="profile-internal">${inner}</div>`}</div><div class="row-external">${external(instagram(username), 'Instagram', 'external-link')}</div></article>`;
 };
@@ -115,13 +115,16 @@ const catalogHtml = shell({ title: 'Profiles Â· deadgram atlas', description: 
 
 const catalogHtmlForOutput = publishedProfiles.reduce((html, username) => {
   const resolved = resolutions.profiles?.[username];
-  const label = resolved ? `Resolved: ${resolved.status}` : profileLevelSet.has(username) ? 'Profile level complete; reel details pending' : partialPublishedProfiles.has(username) ? 'Partial reel coverage' : 'Profile and reel analysis complete';
+  const label = resolved ? `Account status: ${resolved.status}` : profileLevelSet.has(username) ? 'Profile saved; reel analysis pending' : partialPublishedProfiles.has(username) ? 'Some reels analyzed' : 'Profile and reels analyzed';
   const escapedUsername = username.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
   return html.replace(new RegExp(`(<strong>@${escapedUsername}<\\/strong><small>)[^<]*(</small>)`, 'g'), `$1${esc(label)}$2`);
 }, catalogHtml);
 const publicCatalogHtml = catalogHtmlForOutput
   .replace(`${fmt(index.profile_keys.length)} profiles shown`, `${fmt(publishedCount)} profiles shown`)
-  .replace('<strong>@illmisguideyou</strong><small>Profile and reel analysis complete</small>', '<strong>@illmisguideyou</strong><small>Profile level complete; reel details pending</small>');
+  .replace('<strong>@illmisguideyou</strong><small>Profile and reel analysis complete</small>', '<strong>@illmisguideyou</strong><small>Profile saved; reel analysis pending</small>')
+  .replaceAll('Profile and reel analysis complete', 'Profile and reels analyzed')
+  .replaceAll('Partial reel coverage', 'Some reels analyzed')
+  .replaceAll('Resolved:', 'Account status:');
 
 const overviewBars = (rows, total) => rows.length ? rows.slice(0, 8).map(([name, count]) => `<div class="bar-row"><div><span>${esc(name)}</span><strong>${fmt(count)}</strong></div><div class="bar-track"><span style="width:${Math.max(5, Math.round(count / Math.max(total, 1) * 100))}%"></span></div></div>`).join('') : '<p class="muted">No completed data yet.</p>';
 const overviewAccountRows = publishedSnapshotProfiles.map((username) => {
@@ -142,13 +145,31 @@ const overviewDeletedRows = deletedProfiles.map(overviewResolvedRow).join('');
 const overviewReelRows = topReels.map((item) => `<tr><td><div class="content-cell"><a href="${esc(item.url)}" target="_blank" rel="noopener noreferrer">${esc(item.shortcode)} ↗</a></div></td><td><a href="../profiles/${item.username}/">@${esc(item.username)}</a></td><td>${esc(item.date || '—')}</td><td><strong>${esc(metric(item.views))}</strong></td><td>${esc(metric(item.likes))}</td><td>${esc(metric(item.comments))}</td></tr>`).join('');
 const overviewHtml = shell({ title: 'Overview · deadgram atlas', description: 'Overall statistics for the completed deadgram public snapshot.', base: '../', active: 'overview', content: `
   <section class="hero overview-hero"><div class="hero-copy"><div class="eyebrow">COLLECTION OVERVIEW / PUBLIC SNAPSHOT</div><h1>The whole picture,<br><em>one reel at a time.</em></h1><p>These totals reflect the research records currently available on the public site. Uncollected candidates stay out of the first view until you choose to reveal them.</p><div class="hero-actions"><a class="button primary" href="../">View published profiles</a><a class="button secondary" href="../#future">Show future candidates</a></div></div><div class="hero-count" aria-label="${fmt(overview.publicRecords)} public records"><strong>${String(overview.publicRecords).padStart(2, '0')}</strong><span>PUBLIC RECORDS</span></div></section>
-  <section class="stat-strip overview-stat-strip" aria-label="Overall collection statistics"><div><span>PROFILE RECORDS</span><strong>${fmt(overview.profileRecords)}</strong><small>Saved account-level data</small></div><div><span>REEL URLS SAVED</span><strong>${fmt(overview.reelUrls)}</strong><small>Confirmed grid discoveries</small></div><div><span>REEL DETAILS</span><strong>${fmt(overview.reelDetails)}</strong><small>${fmt(overview.reelReview)} still need review</small></div><div><span>RESOLVED RECORDS</span><strong>${fmt(overview.resolvedRecords)}</strong><small>Finished outcomes preserved</small></div></section>
-  <section class="stat-strip overview-stat-strip secondary-stats" aria-label="Collected metrics"><div><span>INSTAGRAM POSTS</span><strong>${fmt(overview.posts)}</strong><small>${fmt(overview.profileRecords)} saved profiles with counts</small></div><div><span>REEL VIEWS</span><strong>${fmt(overview.views)}</strong><small>${fmt(overview.viewsCovered)} reels with readable views</small></div><div><span>REEL LIKES</span><strong>${fmt(overview.likes)}</strong><small>${fmt(overview.likesCovered)} reels with readable likes</small></div><div><span>NEAR-TERM FOLLOW-UP</span><strong>${fmt(overview.nearTerm)}</strong><small>Published records with more analysis queued</small></div></section>
+  <section class="stat-strip overview-stat-strip" aria-label="Overall collection statistics"><div><span>PROFILES WITH DATA</span><strong>${fmt(overview.profileRecords)}</strong><small>Saved profile information</small></div><div><span>REELS FOUND</span><strong>${fmt(overview.reelUrls)}</strong><small>Reels found on profile pages</small></div><div><span>REELS ANALYZED</span><strong>${fmt(overview.reelDetails)}</strong><small>Full reel information captured</small></div><div><span>PARTIALLY ANALYZED</span><strong>${fmt(overview.reelReview)}</strong><small>Reels with some information missing</small></div><div><span>ACCOUNT STATUS CONFIRMED</span><strong>${fmt(overview.resolvedRecords)}</strong><small>Finished account outcomes</small></div></section>
+  <section class="stat-strip overview-stat-strip secondary-stats" aria-label="Collected metrics"><div><span>INSTAGRAM POSTS</span><strong>${fmt(overview.posts)}</strong><small>${fmt(overview.profileRecords)} profiles with saved counts</small></div><div><span>REEL VIEWS</span><strong>${fmt(overview.views)}</strong><small>${fmt(overview.viewsCovered)} reels with readable views</small></div><div><span>REEL LIKES</span><strong>${fmt(overview.likes)}</strong><small>${fmt(overview.likesCovered)} reels with readable likes</small></div><div><span>NEXT TO ANALYZE</span><strong>${fmt(overview.nearTerm)}</strong><small>Published profiles with more work queued</small></div></section>
   <section class="overview-grid"><div class="overview-panel"><span class="overline">PROFILE MAP</span><h2>Accounts by country</h2>${overviewBars(countryRows, overview.profileRecords)}</div><div class="overview-panel"><span class="overline">REEL LANGUAGE</span><h2>Frequent hashtags</h2>${overviewBars(hashtagRows, completeReels.length)}<p class="panel-foot">From completed reel captions.</p></div></section>
-  <section class="overview-table"><div class="section-head"><div><span class="overline">ACROSS PUBLIC RECORDS</span><h2>Profile performance</h2><p>Totals use saved item-level metrics. “Unavailable” means that metric has not been collected for that profile.</p></div></div><div class="table-wrap"><table><thead><tr><th>PROFILE</th><th>INSTAGRAM POSTS</th><th>REEL URLS</th><th>REEL DETAILS</th><th>POST LIKES TOTAL</th><th>REEL LIKES TOTAL</th><th>REEL VIEWS TOTAL</th><th>REELS WITH VIEWS</th><th>FOLLOWERS</th></tr></thead><tbody>${overviewAccountRows}${overviewResolvedRows}</tbody></table></div><details class="deleted-profile-section"><summary><span>Deleted profiles</span><span>${fmt(deletedProfiles.length)} profiles</span></summary><div class="table-wrap"><table><thead><tr><th>PROFILE</th><th>INSTAGRAM POSTS</th><th>REEL URLS</th><th>REEL DETAILS</th><th>POST LIKES TOTAL</th><th>REEL LIKES TOTAL</th><th>REEL VIEWS TOTAL</th><th>REELS WITH VIEWS</th><th>FOLLOWERS</th></tr></thead><tbody>${overviewDeletedRows}</tbody></table></div></details></section>
-  <section class="overview-table"><div class="section-head"><div><span class="overline">TOP COLLECTED REELS</span><h2>Most viewed reels</h2><p>Sorted by Instagram's saved displayed view values.</p></div></div><div class="table-wrap"><table><thead><tr><th>REEL</th><th>PROFILE</th><th>DATE</th><th>VIEWS</th><th>LIKES</th><th>COMMENTS</th></tr></thead><tbody>${overviewReelRows || '<tr><td colspan="6">No reel details are available yet.</td></tr>'}</tbody></table></div></section>
+  <section class="overview-table"><div class="section-head"><div><span class="overline">ACROSS PUBLIC RECORDS</span><h2>Profile performance</h2><p>Totals use saved information. “Unavailable” means that metric has not been captured for that profile yet.</p></div></div><div class="table-wrap"><table><thead><tr><th>PROFILE</th><th>POSTS</th><th>REELS FOUND</th><th>REELS ANALYZED</th><th>POST LIKES</th><th>REEL LIKES</th><th>REEL VIEWS</th><th>REELS WITH VIEW COUNTS</th><th>FOLLOWERS</th></tr></thead><tbody>${overviewAccountRows}${overviewResolvedRows}</tbody></table></div><details class="deleted-profile-section"><summary><span>Deleted profiles</span><span>${fmt(deletedProfiles.length)} profiles</span></summary><div class="table-wrap"><table><thead><tr><th>PROFILE</th><th>POSTS</th><th>REELS FOUND</th><th>REELS ANALYZED</th><th>POST LIKES</th><th>REEL LIKES</th><th>REEL VIEWS</th><th>REELS WITH VIEW COUNTS</th><th>FOLLOWERS</th></tr></thead><tbody>${overviewDeletedRows}</tbody></table></div></details></section>
+  <section class="overview-table"><div class="section-head"><div><span class="overline">TOP REELS</span><h2>Most viewed reels</h2><p>Based on view counts captured from Instagram.</p></div></div><div class="table-wrap"><table><thead><tr><th>REEL</th><th>PROFILE</th><th>DATE</th><th>VIEWS</th><th>LIKES</th><th>COMMENTS</th></tr></thead><tbody>${overviewReelRows || '<tr><td colspan="6">No reel information is available yet.</td></tr>'}</tbody></table></div></section>
   <section class="process-note"><div><h2>${fmt(overview.futureCandidates)} future candidates are hidden by default</h2><p>They are indexed but do not have a public saved record yet. Use the Profiles tab or the button above to reveal them.</p></div></section>
-  <p class="method-note">Totals are from the current saved snapshot, not a time series. Instagram's K/M labels are retained where applicable; missing metrics are excluded.</p>` });
+  <p class="method-note">Totals are from the current saved snapshot, not a time series. Instagram's abbreviated K/M counts are kept where applicable; missing metrics are shown as unavailable.</p>` });
+
+const publicProfileHtml = (html) => html
+  .replaceAll('PROFILE LEVEL RECORD', 'PROFILE SNAPSHOT')
+  .replaceAll('PROFILE LEVEL COMPLETE', 'PROFILE INFORMATION SAVED')
+  .replaceAll('PROFILE RECORD /', 'PROFILE PAGE /')
+  .replaceAll('REEL DETAILS PENDING', 'REEL ANALYSIS PENDING')
+  .replaceAll('REEL URLS', 'REELS FOUND')
+  .replaceAll('REEL RECORDS', 'ANALYZED REELS')
+  .replaceAll('Incomplete reel coverage', 'Some reels need more information')
+  .replaceAll('complete detail records', 'full information')
+  .replaceAll('Needs review', 'Partially analyzed')
+  .replaceAll('need review', 'partially analyzed')
+  .replaceAll('Manual review needed', 'Some information is missing')
+  .replaceAll('Record details', 'More information')
+  .replaceAll('Individual reel pages have not been scraped yet', 'The individual reels have not been analyzed yet')
+  .replaceAll('the saved discovery JSON is ready for the next reel-details run', 'the saved reel list is ready for the next analysis')
+  .replaceAll('Profile-level record', 'Saved profile information')
+  .replaceAll('profile-level record', 'saved profile information');
 
 function resolvedProfilePage(resolved, recordNumber) {
   const status = resolved.status || 'Resolved';
@@ -223,7 +244,7 @@ await writeFile(join(output, 'overview', 'index.html'), overviewHtml);
 for (const page of profilePages) {
   await mkdir(join(output, 'profiles', page.published), { recursive: true });
   await mkdir(join(output, 'downloads', page.published), { recursive: true });
-  await writeFile(join(output, 'profiles', page.published, 'index.html'), page.html);
+  await writeFile(join(output, 'profiles', page.published, 'index.html'), publicProfileHtml(page.html));
   if (!resolvedSet.has(page.published)) {
     for (const file of files) await copyFile(join(source, page.published, file), join(output, 'downloads', page.published, file));
   }
