@@ -55,7 +55,25 @@ function notify(message, type = 'info') {
 function popupMarkup() {
   if (!state.popup) return '';
   const title = state.popup.type === 'success' ? 'TASK COMPLETE' : state.popup.type === 'error' ? 'TASK ERROR' : 'TASK IN PROGRESS';
-  return `<div class="dos-popup-layer" role="presentation"><section class="dos-popup ${state.popup.type}" role="alertdialog" aria-modal="true" aria-label="${title}"><div class="dos-popup-title">[ ${title} ]</div><p>${esc(state.popup.message)}</p><button class="dos-popup-ok" data-action="dismiss-popup">OK</button></section></div>`;
+  return `<div class="dos-popup-layer" role="presentation"><section class="dos-popup ${state.popup.type}" role="alertdialog" aria-modal="true" aria-label="${title}"><div class="dos-popup-title">[ ${title} ]</div><p class="dos-popup-message">${esc(state.popup.message)}</p><button class="dos-popup-ok" data-action="dismiss-popup">OK</button></section></div>`;
+}
+
+function syncPopup() {
+  const existing = document.querySelector('.dos-popup-layer');
+  if (!state.popup) {
+    existing?.remove();
+    return;
+  }
+  const title = state.popup.type === 'success' ? 'TASK COMPLETE' : state.popup.type === 'error' ? 'TASK ERROR' : 'TASK IN PROGRESS';
+  if (!existing) {
+    document.body.insertAdjacentHTML('beforeend', popupMarkup());
+    return;
+  }
+  const dialog = existing.querySelector('.dos-popup');
+  dialog.className = `dos-popup ${state.popup.type}`;
+  dialog.setAttribute('aria-label', title);
+  existing.querySelector('.dos-popup-title').textContent = `[ ${title} ]`;
+  existing.querySelector('.dos-popup-message').textContent = state.popup.message;
 }
 
 function observeAsyncState() {
@@ -106,7 +124,8 @@ function render() {
     : current.startsWith('/profiles/') ? `${batchStrip(state)}${renderProfile(state)}`
       : step === 0 ? renderSelect(state) : step === 4 ? renderReview(state)
         : step > 0 ? renderStage(state, step) : '<p class="loading">Page not found.</p>';
-  app.innerHTML = `${state.readOnly ? '<div class="preview-banner">PREVIEW · Collection actions are disabled while the original batch runs.</div>' : ''}${state.error ? `<div class="error-banner" role="alert"><strong>Something needs attention.</strong> ${esc(state.error)} <button data-action="dismiss" aria-label="Dismiss">×</button></div>` : ''}${content}${popupMarkup()}`;
+  app.innerHTML = `${state.readOnly ? '<div class="preview-banner">PREVIEW · Collection actions are disabled while the original batch runs.</div>' : ''}${state.error ? `<div class="error-banner" role="alert"><strong>Something needs attention.</strong> ${esc(state.error)} <button data-action="dismiss" aria-label="Dismiss">×</button></div>` : ''}${content}`;
+  syncPopup();
   if (focusId) {
     const input = document.getElementById(focusId);
     if (input) { input.focus(); if (typeof cursor === 'number' && typeof input.setSelectionRange === 'function') input.setSelectionRange(cursor, cursor); }
