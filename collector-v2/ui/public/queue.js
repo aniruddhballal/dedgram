@@ -51,8 +51,8 @@ const filterDefinitions = [
   ['reel_count_ready', 'Reel count ready', (profile) => !resolvedProfile(profile) && reelCountReady(profile) && !reelDetailsComplete(profile)],
   ['reel_details_complete', 'Reel details complete', (profile) => !resolvedProfile(profile) && reelDetailsComplete(profile)],
   ['username_changed', 'Username change flagged', usernameChangeFlagged],
-  ['resolved', 'Resolved / no collection needed', (profile) => resolvedProfile(profile)],
-  ['review', 'Needs review / failed', (profile) => needsReview(profile)]
+  ['review', 'Needs review / failed', (profile) => needsReview(profile)],
+  ['resolved', 'Resolved / no collection needed', (profile) => resolvedProfile(profile)]
 ];
 
 export function filterOptions(state) {
