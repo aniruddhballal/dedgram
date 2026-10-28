@@ -1,4 +1,4 @@
-# deadgram local dashboard
+# dedgram local dashboard
 
 ## Start
 

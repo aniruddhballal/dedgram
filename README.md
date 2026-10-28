@@ -1,8 +1,8 @@
-# deadgram
+# dedgram
 
-deadgram is a research toolkit for examining how Instagram profiles and reels are collected, classified, and preserved over time. The project began as a phone-assisted profile catalog and now includes a staged local collector plus a public, static research showcase.
+dedgram is a research toolkit for examining how Instagram profiles and reels are collected, classified, and preserved over time. The project began as a phone-assisted profile catalog and now includes a staged local collector plus a public, static research showcase.
 
-The public project explores a question rather than asserting a conclusion: how much of the visible internet may be shaped by automated or bot-like accounts generating engagement for one another? deadgram records the profiles and reels that make up the current evidence set, one reel at a time.
+The public project explores a question rather than asserting a conclusion: how much of the visible internet may be shaped by automated or bot-like accounts generating engagement for one another? dedgram records the profiles and reels that make up the current evidence set, one reel at a time.
 
 ## Project map
 
@@ -34,7 +34,7 @@ The public showcase focuses on collected reel research. Profile post counts rema
 
 ## 1. Capture profiles on Android
 
-Install the app, grant overlay permission, enable the deadgram accessibility service, open an Instagram profile, and tap the capture bubble. The app validates the visible identity, rejects common interface labels, de-duplicates usernames, and saves successful captures to:
+Install the app, grant overlay permission, enable the dedgram accessibility service, open an Instagram profile, and tap the capture bubble. The app validates the visible identity, rejects common interface labels, de-duplicates usernames, and saves successful captures to:
 
 ```text
 Documents/dedgram/profiles.json

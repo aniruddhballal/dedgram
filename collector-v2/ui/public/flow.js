@@ -61,7 +61,7 @@ export function stepNav(index) {
 }
 
 function hero(index, title, description, countText = '') {
-  return `<section class="flow-hero"><div><span class="eyebrow"><span class="brand-word">deadgram</span> / COLLECTION ${steps[index].number}</span><h1>${title}</h1><p>${esc(description)}</p></div><strong>${esc(countText || steps[index].number)}</strong></section>`;
+  return `<section class="flow-hero"><div><span class="eyebrow"><span class="brand-word">dedgram</span> / COLLECTION ${steps[index].number}</span><h1>${title}</h1><p>${esc(description)}</p></div><strong>${esc(countText || steps[index].number)}</strong></section>`;
 }
 
 function legacyBatchStrip(state) {
@@ -162,7 +162,7 @@ const setupSteps = [
 
 function setupHeader(state, title, description, actions = '') {
   const index = setupSteps.findIndex(([key]) => key === state.setupStep);
-  return `<header class="setup-header"><div><span class="eyebrow"><span class="brand-word">deadgram</span> / NEW COLLECTION</span><h1>${esc(title)}</h1><p>${esc(description)}</p></div>${actions || (state.batch && state.setupStep !== 'progress' ? `<button class="setup-latest" data-action="setup-progress">View latest run →</button>` : '')}</header>
+  return `<header class="setup-header"><div><span class="eyebrow"><span class="brand-word">dedgram</span> / NEW COLLECTION</span><h1>${esc(title)}</h1><p>${esc(description)}</p></div>${actions || (state.batch && state.setupStep !== 'progress' ? `<button class="setup-latest" data-action="setup-progress">View latest run →</button>` : '')}</header>
     <ol class="setup-steps" aria-label="Collection setup">${setupSteps.map(([key, label], i) => `<li class="${i === index ? 'active' : i < index ? 'done' : ''}" ${i === index ? 'aria-current="step"' : ''}><span>${String(i + 1).padStart(2, '0')}</span>${esc(label)}</li>`).join('')}</ol>`;
 }
 
