@@ -99,4 +99,4 @@ refresh().catch((error) => { state.error = error.message; render(); });
 setInterval(() => {
   if (document.visibilityState === 'hidden') return;
   refresh().catch((error) => { state.error = error.message; render(); });
-}, 4000);
+}, 3000);

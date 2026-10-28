@@ -13,6 +13,34 @@ const selected = (state) => state.catalog.filter((profile) => state.selected.has
 const date = (value) => value ? time(value) : 'Time not recorded';
 const count = (value) => value == null ? '—' : number(value);
 const running = (state) => state.batch?.status === 'running';
+const terminalStatus = (value) => ['complete', 'needs_review', 'failed', 'skipped'].includes(value);
+
+function stageDone(batch, step) {
+  return terminalStatus(batch.results?.[step.username]?.stages?.[step.stage]?.status);
+}
+
+function knownScrapes(profile, step, batch) {
+  if (step.stage !== 'reels') return 1;
+  const discovered = profile?.reels?.discovered;
+  if (discovered == null) return null;
+  return batch.mode === 'reel_details' ? discovered : Math.max(0, discovered - (profile.reels.complete || 0));
+}
+
+function workAfterCurrent(state, currentProfile) {
+  const batch = state.batch;
+  if (!batch?.steps?.length) return { stages: 0, scrapes: 0, unknown: false };
+  const pending = batch.steps.filter((step) => !stageDone(batch, step));
+  const after = pending.filter((step) => !(step.username === batch.current && step.stage === batch.current_stage));
+  let scrapes = currentProfile?.run?.progress?.remaining ?? 0;
+  let unknown = currentProfile?.run?.progress?.remaining == null;
+  for (const step of after) {
+    const profile = state.batchProfiles.find((item) => item.username === step.username);
+    const amount = knownScrapes(profile, step, batch);
+    if (amount == null) unknown = true;
+    else scrapes += amount;
+  }
+  return { stages: after.length, scrapes, unknown };
+}
 
 export function stepNav(index) {
   return `<nav class="step-nav" aria-label="Collection steps">${steps.map((step, i) => `<a href="${step.path}" class="${i === index ? 'active' : ''}" ${i === index ? 'aria-current="step"' : ''}><span>${step.number}</span>${step.short}</a>`).join('')}</nav>`;
@@ -22,12 +50,27 @@ function hero(index, title, description, countText = '') {
   return `<section class="flow-hero"><div><span class="eyebrow"><span class="brand-word">deadgram</span> / COLLECTION ${steps[index].number}</span><h1>${title}</h1><p>${esc(description)}</p></div><strong>${esc(countText || steps[index].number)}</strong></section>`;
 }
 
-export function batchStrip(state) {
+function legacyBatchStrip(state) {
   const batch = state.batch;
   if (!batch) return '';
   const active = running(state);
   const done = batch.steps?.filter((step) => ['complete', 'needs_review', 'failed', 'skipped'].includes(batch.results?.[step.username]?.stages?.[step.stage]?.status)).length || 0;
   return `<section class="flow-batch ${active ? 'active' : ''}" aria-live="polite"><div><span class="eyebrow">${active ? 'COLLECTION RUNNING' : 'LATEST RUN'}</span><strong>${active ? `@${esc(batch.current || 'preparing')} · ${esc(batch.current_stage?.replaceAll('_', ' ') || 'preparing')}` : esc(statusText(batch.status))}</strong><small>${active ? `${number(done)} / ${number(batch.steps?.length || 0)} stages finished` : `${esc(batch.mode?.replaceAll('_', ' ') || 'collection')} · ${esc(date(batch.finished_at || batch.updated_at))}`}</small></div>${active && !state.readOnly ? `<button class="button secondary" data-action="stop" ${batch.stop_requested || state.busy ? 'disabled' : ''}>${batch.stop_requested ? 'Stopping after this stage' : 'Stop after this stage'}</button>` : ''}</section>`;
+}
+
+export function batchStrip(state) {
+  const batch = state.batch;
+  if (!batch) return '';
+  const active = running(state);
+  const done = batch.steps?.filter((step) => stageDone(batch, step)).length || 0;
+  const current = state.batchProfiles.find((profile) => profile.username === batch.current);
+  const live = active ? current?.run?.progress : null;
+  const after = active ? workAfterCurrent(state, current) : null;
+  const percent = live?.percent == null ? 'Progress calculating' : `${live.percent}%`;
+  const currentItem = live?.current_item ? `Reel ${live.current_item.index} of ${live.current_item.total} · ${live.current_item.shortcode || live.current_item.url}` : '';
+  const afterText = after ? `${after.stages} stage${after.stages === 1 ? '' : 's'} after this${after.unknown ? ' · scrape total pending' : ` · ${after.scrapes} scrape${after.scrapes === 1 ? '' : 's'} after this`}` : '';
+  const liveDetails = live ? `<div class="live-progress"><div class="live-progress-heading"><strong>${esc(live.action || live.label || 'Collecting')}</strong><span>${percent}</span></div><div class="live-track ${live.percent == null ? 'indeterminate' : ''}"><span style="width:${live.percent == null ? 35 : live.percent}%"></span></div><small>${esc([live.detail, currentItem, live.remaining != null ? `${live.remaining} scrape${live.remaining === 1 ? '' : 's'} left in this stage` : 'Total becomes known when this scan finishes', afterText].filter(Boolean).join(' · '))}</small></div>` : '';
+  return `<section class="flow-batch ${active ? 'active' : ''}" aria-live="polite"><div><span class="eyebrow">${active ? 'COLLECTION RUNNING' : 'LATEST RUN'}</span><strong>${active ? `@${esc(batch.current || 'preparing')} · ${esc(batch.current_stage?.replaceAll('_', ' ') || 'preparing')}` : esc(statusText(batch.status))}</strong><small>${active ? `${number(done)} / ${number(batch.steps?.length || 0)} stages finished` : `${esc(batch.mode?.replaceAll('_', ' ') || 'collection')} · ${esc(date(batch.finished_at || batch.updated_at))}`}</small>${liveDetails}</div>${active && !state.readOnly ? `<button class="button secondary" data-action="stop" ${batch.stop_requested || state.busy ? 'disabled' : ''}>${batch.stop_requested ? 'Stopping after this stage' : 'Stop after this stage'}</button>` : ''}</section>`;
 }
 
 export function visibleCatalog(state) {

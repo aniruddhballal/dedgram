@@ -133,4 +133,4 @@ document.addEventListener('click', async (event) => {
 });
 
 refresh().catch((error) => { state.error = error.message; render(); });
-setInterval(() => { if (document.visibilityState !== 'hidden') refresh().catch((error) => { state.error = error.message; render(); }); }, 5000);
+setInterval(() => { if (document.visibilityState !== 'hidden') refresh().catch((error) => { state.error = error.message; render(); }); }, 3000);

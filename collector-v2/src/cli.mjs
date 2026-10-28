@@ -47,6 +47,17 @@ async function snapshot(phase, data) {
   }
 }
 
+function progressState({ task, label, action, completed = 0, total = null, currentItem = null, detail = null }) {
+  const boundedTotal = Number.isFinite(total) ? Math.max(0, total) : null;
+  const boundedCompleted = Math.max(0, completed || 0);
+  return {
+    task, label, action, completed: boundedCompleted, total: boundedTotal,
+    percent: boundedTotal === null ? null : boundedTotal === 0 ? 100 : Math.min(100, Math.round(boundedCompleted / boundedTotal * 100)),
+    remaining: boundedTotal === null ? null : Math.max(0, boundedTotal - boundedCompleted),
+    current_item: currentItem, detail, updated_at: now()
+  };
+}
+
 async function status() {
   const { profile, discovery, items, run } = await files();
   console.log(JSON.stringify({
@@ -117,6 +128,10 @@ async function collect() {
   if (skipProfile && !profileLevelComplete(profile, discovery)) throw new Error(`Collect an exact @${username} post count and a complete reel count before running reels only.`);
   const hadPreviousState = profile !== null || items.length > 0 || Object.keys(discovery).length > 0 || Object.keys(run).length > 0;
   if (hadPreviousState) await snapshot('before', { profile, discovery, items, run });
+  const initialTask = skipProfile || reelGridOnly ? 'reel_grid' : 'profile';
+  const initialProgress = initialTask === 'profile'
+    ? progressState({ task: 'profile', label: 'Profile details', action: 'Reading the profile header, account details and exact post count', total: 1, detail: 'Preparing profile page' })
+    : progressState({ task: 'reel_grid', label: 'Reel URL discovery', action: 'Finding every reel URL in the profile grid', total: 1, detail: 'Preparing reel grid scan' });
   let corrected = false;
   items = items.map((item) => {
     const day = item.date_precision === 'day' ? dayFromDescription(item.raw?.description) : null;
@@ -134,8 +149,13 @@ async function collect() {
   run = { ...run, started_at: now(), updated_at: now(), status: 'running',
     phase: skipProfile || reelGridOnly ? 'reel discovery' : 'profile',
     scope: headerOnly ? ['profile'] : reelGridOnly ? ['reel_grid'] : profileOnly ? ['profile', 'reel_grid'] : skipProfile ? kinds : ['profile', ...kinds],
-    current_url: null, error: null };
+    current_url: null, error: null, progress: initialProgress };
   await writeJson(path.run, run);
+  const saveProgress = async (value) => {
+    const updatedAt = now();
+    run = { ...run, updated_at: updatedAt, progress: { ...progressState(value), updated_at: updatedAt } };
+    await writeJson(path.run, run);
+  };
   let context;
   let profileStageComplete = skipProfile;
   try {
@@ -143,21 +163,31 @@ async function collect() {
     context = launched.context;
     const page = launched.page;
     if (!skipProfile && !reelGridOnly) {
+      await saveProgress({ task: 'profile', label: 'Profile details', action: 'Reading the profile header, account details and exact post count', total: 1, detail: 'Opening profile page' });
       log(`Collecting ${username} profile`);
       const snapshot = await captureProfile(page, username);
       const current = profileFromSnapshot(username, snapshot);
       profileStageComplete = profileHeaderComplete(current) && exactPostCount(current) !== null;
       profile = mergeProfile(profile, current);
       await writeJson(path.profile, profile);
+      await saveProgress({ task: 'profile', label: 'Profile details', action: 'Reading the profile header, account details and exact post count', completed: 1, total: 1,
+        detail: profileStageComplete ? 'Profile details extracted' : 'Profile details extracted with missing fields' });
       if (!profileStageComplete) log(`Profile details are incomplete: ${postCountError(current)}`);
     } else log(`Using saved ${username} profile details`);
     for (const kind of discoveryKinds) {
       run = { ...run, phase: `${kind} discovery`, updated_at: now() };
-      await writeJson(path.run, run);
-      if (gridCount(discovery[kind]) !== null && !refresh) { log(`Using saved ${kind} grid`); continue; }
+      await saveProgress({ task: `${kind}_grid`, label: `${kind === 'reel' ? 'Reel' : 'Post'} URL discovery`, action: `Finding every ${kind} URL in the profile grid`, total: 1,
+        detail: 'Preparing grid scan' });
+      if (gridCount(discovery[kind]) !== null && !refresh) {
+        await saveProgress({ task: `${kind}_grid`, label: `${kind === 'reel' ? 'Reel' : 'Post'} URL discovery`, action: `Finding every ${kind} URL in the profile grid`, completed: 1, total: 1,
+          detail: `Using saved grid with ${discovery[kind].items.length} URLs` });
+        log(`Using saved ${kind} grid`); continue;
+      }
       if (kind === 'post' && profile.posts_count?.value === 0 && !profile.posts_count?.approximate) {
         discovery.post = { items: [], complete: true, error: '', attempted_at: now(), source: 'profile_post_count' };
         await writeJson(path.discovery, discovery);
+        await saveProgress({ task: `${kind}_grid`, label: 'Post URL discovery', action: 'Finding every post URL in the profile grid', completed: 1, total: 1,
+          detail: 'Profile has exactly zero posts' });
         log('Post count is exactly zero; post grid is empty');
         continue;
       }
@@ -166,7 +196,11 @@ async function collect() {
         discovery[kind] = { items: mergeDiscoveryItems(discovery[kind]?.items || [], found, complete),
           complete, error, attempted_at: now() };
         await writeJson(path.discovery, discovery);
+        await saveProgress({ task: `${kind}_grid`, label: `${kind === 'reel' ? 'Reel' : 'Post'} URL discovery`, action: `Finding every ${kind} URL in the profile grid`,
+          completed: found.length, total: null, detail: `${found.length} ${kind} URLs found so far` });
       });
+      await saveProgress({ task: `${kind}_grid`, label: `${kind === 'reel' ? 'Reel' : 'Post'} URL discovery`, action: `Finding every ${kind} URL in the profile grid`, completed: 1, total: 1,
+        detail: result.complete ? `Grid scan complete — ${result.items.length} ${kind} URLs found` : `${result.items.length} ${kind} URLs saved; scan incomplete` });
       log(result.complete ? `${kind}: ${result.items.length} confirmed` : `${kind} count unavailable: ${result.error}`);
     }
     const queued = new Map();
@@ -179,12 +213,21 @@ async function collect() {
     }
     items = [...existing.values()];
     await writeJson(path.items, items);
+    const workItems = [...queued.values()].filter((item) => refresh || existing.get(item.url)?.status !== 'complete');
+    if (workItems.length) {
+      await saveProgress({ task: 'item_details', label: 'Reel details', action: 'Opening reel pages and extracting dates, captions, views, likes and comments',
+        total: workItems.length, detail: `${workItems.length} reel page${workItems.length === 1 ? '' : 's'} queued` });
+    }
     let attempted = 0;
     for (const item of queued.values()) {
       const old = existing.get(item.url);
       if (!refresh && old?.status === 'complete') continue;
       if (attempted >= limit) break;
       attempted++;
+      run = { ...run, phase: 'item details', current_url: item.url };
+      await saveProgress({ task: 'item_details', label: 'Reel details', action: 'Extracting date, caption, views, likes and comments from the current reel',
+        completed: attempted - 1, total: workItems.length, currentItem: { index: attempted, total: workItems.length, kind: item.kind, shortcode: item.shortcode, url: item.url },
+        detail: `Opening ${item.kind} ${item.shortcode || item.url}` });
       run = { ...run, phase: 'item details', current_url: item.url, updated_at: now() };
       await writeJson(path.run, run);
       log(`${attempted}: ${item.kind} ${item.shortcode}`);
@@ -202,6 +245,9 @@ async function collect() {
       }
       items = [...existing.values()];
       await writeJson(path.items, items);
+      run = { ...run, current_url: null };
+      await saveProgress({ task: 'item_details', label: 'Reel details', action: 'Opening reel pages and extracting dates, captions, views, likes and comments',
+        completed: attempted, total: workItems.length, detail: `${attempted} of ${workItems.length} reel page${workItems.length === 1 ? '' : 's'} processed` });
       await new Promise((done) => setTimeout(done, 1600));
     }
     const complete = (reelGridOnly || profileStageComplete) && discoveryKinds.every((kind) => gridCount(discovery[kind]) !== null)
@@ -211,6 +257,10 @@ async function collect() {
     run = { ...run, phase: 'done', current_url: null, updated_at: now(), status: complete ? 'complete' : 'partial',
     error: gridErrors.join(' | ') || (!reelGridOnly && !profileStageComplete
         ? postCountError(profile) || 'Profile header counts are incomplete.' : null) };
+    if (run.progress) run.progress = progressState({ ...run.progress,
+      completed: complete && run.progress.total !== null ? run.progress.total : run.progress.completed,
+      total: run.progress.total ?? run.progress.completed, currentItem: null,
+      detail: complete ? 'Stage complete' : 'Stage finished with review required' });
     await writeJson(path.run, run);
     await writeReport(path, profile, discovery, items, run);
     await snapshot('after', { profile, discovery, items, run });
@@ -220,6 +270,7 @@ async function collect() {
       : `Done: ${items.length} items. Report: ${path.report}`);
   } catch (error) {
     run = { ...run, status: 'blocked', updated_at: now(), error: error instanceof Error ? error.message : String(error) };
+    if (run.progress) run.progress = { ...run.progress, current_item: null, detail: `Blocked: ${run.error}`, updated_at: run.updated_at };
     try { await writeJson(path.run, run); }
     catch (saveError) { log(`Could not save failure status: ${saveError.message}`); }
     try { await writeReport(path, profile, discovery, items, run); }

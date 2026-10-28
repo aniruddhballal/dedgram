@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { profileSummary } from '../ui/data.mjs';
 import { renderProfile } from '../ui/public/profile.js';
+import { batchStrip } from '../ui/public/flow.js';
 import { gridLabel } from '../ui/public/shared.js';
 
 test('the profile page never displays a partial grid count as a result', () => {
@@ -27,4 +28,27 @@ test('the profile page never displays a partial grid count as a result', () => {
   assert.match(html, /INSTAGRAM POSTS<\/span><strong>2,894<\/strong>/);
   assert.match(html, /REELS IN GRID<\/span><strong>Error<\/strong>/);
   assert.doesNotMatch(html, /2\+|>2 posts/);
+});
+
+test('the live batch strip shows extraction detail, percentage and remaining work', () => {
+  const html = batchStrip({
+    batch: {
+      status: 'running', current: 'example', current_stage: 'reels', mode: 'depth_first',
+      profiles: ['example', 'later'], steps: [{ username: 'example', stage: 'reels' }, { username: 'later', stage: 'reels' }],
+      results: { example: { stages: { reels: { status: 'running' } } }, later: { stages: { reels: { status: 'queued' } } } }
+    },
+    batchProfiles: [
+      { username: 'example', reels: { discovered: 10, complete: 4 }, run: { progress: {
+        action: 'Extracting date, caption, views, likes and comments from the current reel', completed: 5, total: 10, percent: 50, remaining: 5,
+        current_item: { index: 6, total: 10, shortcode: 'ABC123' }, detail: 'Opening reel ABC123'
+      } } },
+      { username: 'later', reels: { discovered: 3, complete: 0 }, run: { progress: null } }
+    ],
+    readOnly: false, busy: false
+  });
+  assert.match(html, /Extracting date, caption, views, likes and comments/);
+  assert.match(html, />50%<\/span>/);
+  assert.match(html, /Reel 6 of 10/);
+  assert.match(html, /1 stage after this/);
+  assert.match(html, /8 scrapes after this/);
 });

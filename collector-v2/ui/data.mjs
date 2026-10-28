@@ -66,7 +66,7 @@ export function profileSummary(data) {
     posts: content('post'),
     run: { status: run.status || 'not_started', phase: run.phase || null,
       scope: run.scope || [], current_url: run.current_url || null,
-      updated_at: run.updated_at || null, error: run.error || null }
+      updated_at: run.updated_at || null, error: run.error || null, progress: run.progress || null }
   };
 }
 
