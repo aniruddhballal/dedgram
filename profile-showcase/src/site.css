@@ -30,6 +30,8 @@ main { max-width: 1360px; margin: auto; padding: 0 32px; }
 
 .hero { display: grid; grid-template-columns: minmax(0, 1fr) 230px; align-items: end; gap: 40px; padding: 80px 0 70px; border-bottom: 1px solid #000; }
 .hero h1 { font-size: clamp(58px, 7vw, 105px); line-height: .94; letter-spacing: -.075em; margin: 25px 0; font-weight: 760; }
+.overview-hero h1 { font-size: clamp(50px, 6vw, 92px); }
+.overview-hero .headline-line { white-space: nowrap; }
 .hero-copy > p { max-width: 610px; margin: 0; font-size: 17px; line-height: 1.55; }
 .hero-copy > p a { text-decoration: underline; text-underline-offset: 3px; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 32px; }
@@ -215,6 +217,7 @@ a.profile-internal:hover .row-title strong { text-decoration: underline; text-un
   .profile-stats { grid-template-columns: 1fr 1fr; }
   .profile-stats > div:nth-child(3) { border-left: 0; border-top: 1px solid var(--line); padding-left: 0; }
   .profile-stats > div:nth-child(4) { border-top: 1px solid var(--line); }
+  .overview-hero .headline-line { white-space: normal; }
   .profile-context { grid-template-columns: 1fr; gap: 45px; }
   .overview-stat-strip { grid-template-columns: 1fr 1fr; }
   .overview-grid { grid-template-columns: 1fr; gap: 45px; }
