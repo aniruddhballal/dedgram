@@ -16,6 +16,7 @@ const running = (state) => state.batch?.status === 'running';
 const terminalStatus = (value) => ['complete', 'needs_review', 'failed', 'skipped'].includes(value);
 const usernameMigration = (state) => state.workflow === 'username_migration';
 const flaggedSelected = (state) => selected(state).filter((profile) => usernameChangeFlagged(profile));
+const profileDetailsReady = (profile) => Boolean(profile?.profile_header_complete && profile?.posts_count !== null && profile?.posts_count !== undefined);
 
 function stageDone(batch, step) {
   return terminalStatus(batch.results?.[step.username]?.stages?.[step.stage]?.status);
@@ -117,6 +118,7 @@ export function visibleCatalog(state) {
 
 const modeOptions = [
   ['profile_header', 'Profile details only', 'Collect account fields and the exact Instagram post count. Skip reel URLs and reel count discovery.'],
+  ['reel_grid', 'Reel URLs + count only', 'Use saved profile details, then discover and save every reel URL and finalize the reel count.'],
   ['profile_only', 'Profile + reel count', 'Collect account fields, the exact Instagram post count, and the reel grid count. Individual reel details wait.'],
   ['depth_first', 'Profile + reels, depth first', 'Finish each account before moving to the next.'],
   ['breadth_first', 'Profile + reels, breadth first', "Collect every profile first, then every account's reels."],
@@ -179,9 +181,12 @@ function setupActions(back, next, nextDisabled = false, extra = '') {
 function modeStep(state) {
   if (usernameMigration(state)) return usernameModeStep(state);
   const unavailable = selected(state).filter((profile) => !profile.profile_complete);
-  const blocked = state.mode === 'reels_only' && unavailable.length;
+  const missingProfileDetails = selected(state).filter((profile) => !profileDetailsReady(profile));
+  const blocked = (state.mode === 'reels_only' && unavailable.length) || (state.mode === 'reel_grid' && missingProfileDetails.length);
+  const strategyWarning = state.mode === 'reel_grid' && missingProfileDetails.length
+    ? `<p class="flow-warning">Finish Profile details only first for ${missingProfileDetails.length} selected account${missingProfileDetails.length === 1 ? '' : 's'}.</p>` : '';
   return `${setupHeader(state, 'Choose what to collect', 'Choose one collection strategy for the selected accounts.')}${strategy(state)}
-    ${setupActions(true, 'Choose run order', !state.selected.size || blocked, `${number(state.selected.size)} profile${state.selected.size === 1 ? '' : 's'} selected`)}`;
+    ${strategyWarning}${setupActions(true, 'Choose run order', !state.selected.size || blocked, `${number(state.selected.size)} profile${state.selected.size === 1 ? '' : 's'} selected`)}`;
 }
 
 const migrationModes = [
@@ -216,14 +221,16 @@ function reviewStep(state) {
   if (usernameMigration(state)) return usernameReviewStep(state);
   const profiles = selected(state);
   const unavailable = profiles.filter((profile) => !profile.profile_complete);
-  const canRun = profiles.length && !running(state) && !state.busy && !state.readOnly && (state.mode !== 'reels_only' || !unavailable.length);
+  const missingProfileDetails = profiles.filter((profile) => !profileDetailsReady(profile));
+  const canRun = profiles.length && !running(state) && !state.busy && !state.readOnly
+    && (state.mode !== 'reels_only' || !unavailable.length) && (state.mode !== 'reel_grid' || !missingProfileDetails.length);
   const mode = modeOptions.find(([value]) => value === state.mode)?.[1] || state.mode;
   const order = state.order === 'posts_ascending' ? 'Fewest posts first' : state.order === 'reels_ascending' ? 'Fewest reels first' : 'Selection order';
   return `${setupHeader(state, 'Review and start', 'Check your choices before starting collection.')}
     <section class="setup-review"><div><span class="eyebrow">PROFILES</span><strong>${number(profiles.length)} selected</strong><p>${profiles.slice(0, 7).map((profile) => `@${esc(profile.username)}`).join(', ')}${profiles.length > 7 ? `, and ${profiles.length - 7} more` : ''}</p><button data-action="setup-step" data-step="profiles">Edit profiles</button></div>
       <div><span class="eyebrow">COLLECTION MODE</span><strong>${esc(mode)}</strong><p>${esc(modeOptions.find(([value]) => value === state.mode)?.[2] || '')}</p><button data-action="setup-step" data-step="mode">Edit mode</button></div>
       <div><span class="eyebrow">RUN ORDER</span><strong>${esc(order)}</strong><p>${state.order === 'posts_ascending' ? 'Saved exact post counts determine order.' : state.order === 'reels_ascending' ? 'Saved finalized reel counts determine order.' : 'Accounts run in the order selected.'}</p><button data-action="setup-step" data-step="order">Edit order</button></div></section>
-    ${state.mode === 'reels_only' && unavailable.length ? `<p class="flow-warning">${unavailable.length} selected account${unavailable.length === 1 ? '' : 's'} still need profile details and reel counts before a reels-only run.</p>` : ''}
+    ${state.mode === 'reels_only' && unavailable.length ? `<p class="flow-warning">${unavailable.length} selected account${unavailable.length === 1 ? '' : 's'} still need profile details and reel counts before a reels-only run.</p>` : ''}${state.mode === 'reel_grid' && missingProfileDetails.length ? `<p class="flow-warning">${missingProfileDetails.length} selected account${missingProfileDetails.length === 1 ? '' : 's'} still need Profile details only before reel URL discovery can run.</p>` : ''}
     <div class="setup-actions"><button class="button secondary" data-action="setup-back">← Back</button><a class="button secondary ${profiles.length ? '' : 'disabled'}" href="/collect/profiles">Collect step by step →</a><button class="button primary" data-action="start" ${canRun ? '' : 'disabled'}>${state.busy ? 'Starting…' : `Run ${number(profiles.length)} selected →`}</button></div>`;
 }
 

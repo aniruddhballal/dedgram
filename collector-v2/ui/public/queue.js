@@ -88,7 +88,7 @@ function card(profile, selected, running) {
 }
 
 const isDone = (status) => ['complete', 'needs_review', 'failed', 'skipped'].includes(status);
-const modeLabel = { profile_header: 'PROFILE DETAILS ONLY', profile_only: 'PROFILE + REEL COUNT', depth_first: 'DEPTH FIRST', breadth_first: 'BREADTH FIRST', reels_only: 'REEL DETAILS ONLY' };
+const modeLabel = { profile_header: 'PROFILE DETAILS ONLY', reel_grid: 'REEL URLS + COUNT ONLY', profile_only: 'PROFILE + REEL COUNT', depth_first: 'DEPTH FIRST', breadth_first: 'BREADTH FIRST', reels_only: 'REEL DETAILS ONLY' };
 
 function batchPanel(state) {
   const batch = state.batch;
@@ -137,7 +137,8 @@ export function renderQueue(state) {
   const running = state.batch?.status === 'running';
   const selected = state.catalog.filter((profile) => state.selected.has(profile.username));
   const unavailable = selected.filter((profile) => !profile.profile_complete);
-  const ready = state.mode !== 'reels_only' || !unavailable.length;
+  const ready = (state.mode !== 'reels_only' || !unavailable.length)
+    && (state.mode !== 'reel_grid' || selected.every((profile) => profile.profile_header_complete && profile.posts_count !== null && profile.posts_count !== undefined));
   return `${errorBanner(state.error)}<section class="hero"><div><span class="eyebrow"><span class="mini-dot"></span> PROFILE RESEARCH / V2</span>
     <h1>Choose your profiles.<br><em>Follow every reel.</em></h1><p>Collect account details first or move through the reel workflow in the order you choose.</p>
     <div class="hero-stats"><span><b>${number(state.catalog.length)}</b> in catalog</span><span><b>${number(scanned)}</b> profiles saved</span><span><b>${number(state.selected.size)}</b> selected</span></div></div>
@@ -145,6 +146,7 @@ export function renderQueue(state) {
     ${batchPanel(state)}
     <section class="mode-section"><div class="section-heading"><div><span class="eyebrow">COLLECTION STRATEGY</span><h2>Choose what to collect</h2><p>Each stage saves its result, so you can run reels later.</p></div></div>
       <div class="mode-grid">${modeOption(state, 'profile_header', 'Profile details only', 'Collect account fields and the exact Instagram post count. Skip reel URLs and reel count discovery.')}
+        ${modeOption(state, 'reel_grid', 'Reel URLs + count only', 'Use saved profile details, then discover and save every reel URL and finalize the reel count.')}
         ${modeOption(state, 'profile_only', 'Profile + reel count', 'Collect account fields, the exact Instagram post count, and the reel grid count. Individual reel details wait.')}
         ${modeOption(state, 'depth_first', 'Profile + reels, depth first', 'Finish each account before moving to the next.')}
         ${modeOption(state, 'breadth_first', 'Profile + reels, breadth first', 'Collect every profile first, then every account\'s reels.')}

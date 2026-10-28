@@ -11,7 +11,7 @@ const state = {
   catalog: [], batch: null, batchProfiles: [], detail: null, overview: null,
   selected: new Set(Array.isArray(saved) ? saved : []),
   search: '', filter: 'all', layout: 'grid',
-  mode: ['profile_header', 'profile_only', 'depth_first', 'breadth_first', 'reels_only'].includes(savedMode) ? savedMode : 'depth_first',
+  mode: ['profile_header', 'reel_grid', 'profile_only', 'depth_first', 'breadth_first', 'reels_only'].includes(savedMode) ? savedMode : 'depth_first',
   order: ['selection', 'posts_ascending'].includes(savedOrder) ? savedOrder : 'posts_ascending',
   itemSearch: '', itemFilter: 'all', itemSort: 'newest',
   busy: false, error: null

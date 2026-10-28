@@ -16,7 +16,7 @@ const state = {
   catalog: [], batch: null, batchProfiles: [], detail: null, overview: null, usernameScan: null, usernameMigration: null,
   selected: new Set(Array.isArray(saved) ? saved : []),
   search: '', filter: 'all', layout: 'grid',
-  mode: ['profile_header', 'profile_only', 'depth_first', 'breadth_first', 'reels_only'].includes(savedMode) ? savedMode : 'depth_first',
+  mode: ['profile_header', 'reel_grid', 'profile_only', 'depth_first', 'breadth_first', 'reels_only'].includes(savedMode) ? savedMode : 'depth_first',
   order: ['selection', 'posts_ascending', 'reels_ascending'].includes(savedOrder) ? savedOrder : 'posts_ascending',
   workflow: savedWorkflow === 'username_migration' ? 'username_migration' : 'collection',
   setupStep: ['profiles', 'mode', 'order', 'review', 'progress'].includes(savedSetup) ? savedSetup : 'profiles',
@@ -241,6 +241,9 @@ document.addEventListener('click', async (event) => {
     if (state.workflow === 'username_migration' && !state.catalog.some((profile) => state.selected.has(profile.username) && profile.username_check?.status === 'changed')) return;
     if (state.setupStep === 'mode' && state.mode === 'reels_only'
       && state.catalog.some((profile) => state.selected.has(profile.username) && !profile.profile_complete)) return;
+    if (state.setupStep === 'mode' && state.mode === 'reel_grid'
+      && state.catalog.some((profile) => state.selected.has(profile.username)
+        && (!profile.profile_header_complete || profile.posts_count === null || profile.posts_count === undefined))) return;
     setSetupStep(setupSteps[Math.min(3, setupSteps.indexOf(state.setupStep) + 1)]);
     return;
   }
