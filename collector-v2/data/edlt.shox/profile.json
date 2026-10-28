@@ -112,7 +112,7 @@
   "posts_count_observed_at": "2026-10-28T07:23:32.186Z",
   "username_check": {
     "status": "no_change",
-    "checked_at": "2026-10-28T07:57:16.686Z",
+    "checked_at": "2026-10-28T07:58:58.878Z",
     "record_username": "edlt.shox",
     "stored_username": "coldex7.ae",
     "detected_username": "coldex7.ae",
@@ -290,6 +290,22 @@
     {
       "status": "no_change",
       "checked_at": "2026-10-28T07:57:16.686Z",
+      "record_username": "edlt.shox",
+      "stored_username": "coldex7.ae",
+      "detected_username": "coldex7.ae",
+      "reel_url": "https://www.instagram.com/reel/De0hYZIoecD/",
+      "source": "og_description",
+      "evidence": {
+        "description": "4,267 likes, 25 comments - coldex7.ae on October 22, 2026: \"③ 魔王軍との全面戦争を繰り広げる！『勇者伝説 公式\nInstagramです！TVアニメ『聖剣のレガリア』放送中！\n『劇場版特別編』デジタル配信/ブルーレイ＆DVD\n発売中\". ",
+        "article_text": "coldex7.ae\n•\nFollow\n• AI-generated profile\n③ 魔王軍との全面戦争を繰り広げる！『勇者伝説 公式\nInstagramです！TVアニメ『聖剣のレガリア』放送中！\n『劇場版特別編』デジタル配信/ブルーレイ＆DVD\n発売中\n4,267\n25\n105\ntjeggs\n•\nFollow\nDefinitely would’ve been a different movie.. #impressions #matthewmcconaughey #theodyssey #odyssey #fyp\n33.4K\n253\n624",
+        "profile_link": null
+      },
+      "page_url": "https://www.instagram.com/reels/De0hYZIoecD/",
+      "message": "The saved reel identifies the same username currently stored: @coldex7.ae."
+    },
+    {
+      "status": "no_change",
+      "checked_at": "2026-10-28T07:58:58.878Z",
       "record_username": "edlt.shox",
       "stored_username": "coldex7.ae",
       "detected_username": "coldex7.ae",
