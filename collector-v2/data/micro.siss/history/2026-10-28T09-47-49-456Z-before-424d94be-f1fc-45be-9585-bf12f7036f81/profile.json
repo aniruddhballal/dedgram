@@ -1,0 +1,104 @@
+{
+  "username": "micro.siss",
+  "url": "https://www.instagram.com/micro.siss/",
+  "fetched_at": "2026-10-28T09:00:45.129Z",
+  "display_name": "microsiz",
+  "bio": "🎬 最新PV 最新PVでは、アイナ・ジ・エンドが歌うオープニング主題歌「ルミナス - Luminous」音源の一部とともに、中村悠一演じるロキのボイスが収められています。公式YouTubeチャンネルやTVアニメ公式サイトにて公開中です。",
+  "posts_count": {
+    "value": 62,
+    "raw": "62",
+    "approximate": false
+  },
+  "posts_count_observed_at": "2026-10-28T09:00:45.129Z",
+  "followers_count": {
+    "value": 2352,
+    "raw": "2,352",
+    "approximate": false,
+    "source": "header_title"
+  },
+  "following_count": {
+    "value": 6,
+    "raw": "6",
+    "approximate": false,
+    "source": "header_text"
+  },
+  "count_evidence": {
+    "followers": {
+      "header": {
+        "value": 2352,
+        "raw": "2,352",
+        "approximate": false
+      },
+      "exact_title": {
+        "value": 2352,
+        "raw": "2,352",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 2358,
+        "raw": "2,358",
+        "approximate": false
+      }
+    },
+    "following": {
+      "header": {
+        "value": 6,
+        "raw": "6",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 6,
+        "raw": "6",
+        "approximate": false
+      },
+      "conflict": false
+    },
+    "posts": {
+      "header": {
+        "value": 62,
+        "raw": "62",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 62,
+        "raw": "62",
+        "approximate": false
+      }
+    }
+  },
+  "category": null,
+  "ai_generated_profile": false,
+  "profile_picture_url": "https://instagram.fblr1-7.fna.fbcdn.net/v/t51.82787-19/852693875_17908867632330908_1347922087154353581_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=bQV_FqLMBBUQ7kNvwHG_aFH&_nc_oc=Adoxr-SMuzSnY_P7TXg2HkuaMtTt0ClCPp1Oo06WSW12IB-IkiVF2dzH6C8-LUjGtUP_nPxZr8x4gz8eV-gSUq63&_nc_zt=24&_nc_ht=instagram.fblr1-7.fna&_nc_gid=V2l66AXlkMBNk6uWp_1kMQ&_nc_ss=7f6a8&oh=00_AQQfELfLGUy1GxtmAHo1srln5VkDvCX-9SCu5dB1ck0GiQ&oe=6AE770B6",
+  "date_joined": "October 2026",
+  "account_based_in": "Philippines",
+  "former_usernames_count": null,
+  "raw": {
+    "header_text": "micro.siss\nmicrosiz\n62 posts\n2,352 followers\n6 following\n🎬 最新PV 最新PVでは、アイナ・ジ・エンドが歌うオープニング主題歌「ルミナス - Luminous」音源の一部とともに、中村悠一演じるロキのボイスが収められています。公式YouTubeチャンネルやTVアニメ公式サイトにて公開中です。\nFollow\nMessage\nMilestones 🔥\nDisclaimer ⚠️",
+    "about_text": "About this account\nmicro.siss\nTo help keep our community authentic, we’re showing information about profiles on Instagram. See why this information is important.\nDate joined\nOctober 2026\nAccount based in\nPhilippines\nClose",
+    "description": "2,358 Followers, 6 Following, 62 Posts - microsiz (@micro.siss) on Instagram: \"🎬 最新PV 最新PVでは、アイナ・ジ・エンドが歌うオープニング主題歌「ルミナス - Luminous」音源の一部とともに、中村悠一演じるロキのボイスが収められています。公式YouTubeチャンネルやTVアニメ公式サイトにて公開中です。\"",
+    "stat_evidence": {
+      "posts": {
+        "label": "",
+        "exact_title": ""
+      },
+      "followers": {
+        "label": "2,352 followers",
+        "exact_title": "2,352"
+      },
+      "following": {
+        "label": "6 following",
+        "exact_title": ""
+      }
+    }
+  },
+  "issues": [],
+  "current_username": "micro.siss",
+  "username_history": [
+    {
+      "username": "micro.siss",
+      "role": "current username",
+      "first_seen_at": "2026-10-28T09:00:45.126Z"
+    }
+  ],
+  "username_change_observed_at": null
+}

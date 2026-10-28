@@ -1,23 +1,23 @@
 {
-  "started_at": "2026-10-28T09:01:21.536Z",
-  "updated_at": "2026-10-28T09:01:27.701Z",
+  "started_at": "2026-10-28T09:41:57.708Z",
+  "updated_at": "2026-10-28T09:42:11.632Z",
   "status": "complete",
   "phase": "done",
   "scope": [
-    "profile"
+    "reel_grid"
   ],
   "current_url": null,
   "error": null,
   "progress": {
-    "task": "profile",
-    "label": "Profile details",
-    "action": "Reading the profile header, account details and exact post count",
+    "task": "reel_grid",
+    "label": "Reel URL discovery",
+    "action": "Finding every reel URL in the profile grid",
     "completed": 1,
     "total": 1,
     "percent": 100,
     "remaining": 0,
     "current_item": null,
     "detail": "Stage complete",
-    "updated_at": "2026-10-28T09:01:27.701Z"
+    "updated_at": "2026-10-28T09:42:11.632Z"
   }
 }

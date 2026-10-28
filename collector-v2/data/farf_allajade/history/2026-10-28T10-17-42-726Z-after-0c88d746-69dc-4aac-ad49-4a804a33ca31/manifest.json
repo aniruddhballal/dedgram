@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "username": "farf_allajade",
+  "phase": "after",
+  "snapshot_at": "2026-10-28T10:17:42.726Z",
+  "run_status": "complete",
+  "run_updated_at": "2026-10-28T10:17:42.715Z",
+  "profile_fetched_at": "2026-10-28T09:00:33.297Z",
+  "item_count": 0,
+  "complete_item_count": 0,
+  "discovery": {
+    "reel": {
+      "count": 380,
+      "complete": true,
+      "error": null,
+      "attempted_at": "2026-10-28T10:17:42.702Z"
+    }
+  }
+}

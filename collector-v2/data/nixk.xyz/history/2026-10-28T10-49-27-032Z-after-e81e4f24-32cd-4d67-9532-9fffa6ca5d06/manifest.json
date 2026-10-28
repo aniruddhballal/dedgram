@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "username": "nixk.xyz",
+  "phase": "after",
+  "snapshot_at": "2026-10-28T10:49:27.032Z",
+  "run_status": "complete",
+  "run_updated_at": "2026-10-28T10:49:27.025Z",
+  "profile_fetched_at": "2026-10-28T09:05:47.183Z",
+  "item_count": 0,
+  "complete_item_count": 0,
+  "discovery": {
+    "reel": {
+      "count": 3556,
+      "complete": true,
+      "error": null,
+      "attempted_at": "2026-10-28T10:49:26.998Z"
+    }
+  }
+}

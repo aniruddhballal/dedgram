@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "username": "freddy.memes",
+  "phase": "before",
+  "snapshot_at": "2026-10-28T10:20:09.200Z",
+  "run_status": "complete",
+  "run_updated_at": "2026-10-28T09:03:49.119Z",
+  "profile_fetched_at": "2026-10-28T09:03:49.112Z",
+  "item_count": 0,
+  "complete_item_count": 0,
+  "discovery": {}
+}

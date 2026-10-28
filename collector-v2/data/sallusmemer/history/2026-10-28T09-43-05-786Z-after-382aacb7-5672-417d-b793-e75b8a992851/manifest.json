@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "username": "sallusmemer",
+  "phase": "after",
+  "snapshot_at": "2026-10-28T09:43:05.786Z",
+  "run_status": "complete",
+  "run_updated_at": "2026-10-28T09:43:05.778Z",
+  "profile_fetched_at": "2026-10-28T09:05:16.607Z",
+  "item_count": 0,
+  "complete_item_count": 0,
+  "discovery": {
+    "reel": {
+      "count": 36,
+      "complete": true,
+      "error": null,
+      "attempted_at": "2026-10-28T09:43:05.769Z"
+    }
+  }
+}

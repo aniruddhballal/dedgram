@@ -1,0 +1,104 @@
+{
+  "username": "damn_nigas",
+  "url": "https://www.instagram.com/damn_nigas/",
+  "fetched_at": "2026-10-28T09:05:41.102Z",
+  "display_name": "damn",
+  "bio": "映画「マスク」のユニークな世界と驚きの冒険を存分に楽しもう! 愉快なシーンや忘れられない物語が満載。デジタル配信サービスでも視聴可能。Blu-ray & DVDも好評発売中。",
+  "posts_count": {
+    "value": 18,
+    "raw": "18",
+    "approximate": false
+  },
+  "posts_count_observed_at": "2026-10-28T09:05:41.102Z",
+  "followers_count": {
+    "value": 2161,
+    "raw": "2,161",
+    "approximate": false,
+    "source": "header_title"
+  },
+  "following_count": {
+    "value": 0,
+    "raw": "0",
+    "approximate": false,
+    "source": "header_text"
+  },
+  "count_evidence": {
+    "followers": {
+      "header": {
+        "value": 2161,
+        "raw": "2,161",
+        "approximate": false
+      },
+      "exact_title": {
+        "value": 2161,
+        "raw": "2,161",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 31,
+        "raw": "31",
+        "approximate": false
+      }
+    },
+    "following": {
+      "header": {
+        "value": 0,
+        "raw": "0",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 0,
+        "raw": "0",
+        "approximate": false
+      },
+      "conflict": false
+    },
+    "posts": {
+      "header": {
+        "value": 18,
+        "raw": "18",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 18,
+        "raw": "18",
+        "approximate": false
+      }
+    }
+  },
+  "category": null,
+  "ai_generated_profile": false,
+  "profile_picture_url": "https://instagram.fblr1-6.fna.fbcdn.net/v/t51.82787-19/866412481_18229363951332655_3534201107386745934_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=1&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=7UG6QGknkOMQ7kNvwHtkTjt&_nc_oc=AdpYCvk5aiogQ0SmYW4reaocabFfFyeu8K9F3b_0Vja-VhqJ5HHts1erdpvG59JMjdpzhzXU2edXQe3X-p6qHz6w&_nc_zt=24&_nc_ht=instagram.fblr1-6.fna&_nc_gid=dooq0kqNsDzlxFMoOEHBBQ&_nc_ss=7f6a8&oh=00_AQSkaSPTZheiIw7o8Kl71kgWEbkha0OiXAfZuPAIOqjT1A&oe=6AE79436",
+  "date_joined": "October 2026",
+  "account_based_in": null,
+  "former_usernames_count": null,
+  "raw": {
+    "header_text": "damn_nigas\ndamn\n18 posts\n2,161 followers\n0 following\n映画「マスク」のユニークな世界と驚きの冒険を存分に楽しもう! 愉快なシーンや忘れられない物語が満載。デジタル配信サービスでも視聴可能。Blu-ray & DVDも好評発売中。\nFollow\nMessage\ngrowthh🚀\nDM for CREDITS",
+    "about_text": "About this account\ndamn_nigas\nTo help keep our community authentic, we’re showing information about profiles on Instagram. See why this information is important.\nDate joined\nOctober 2026\nClose",
+    "description": "31 Followers, 0 Following, 18 Posts - damn (@damn_nigas) on Instagram: \"映画「マスク」のユニークな世界と驚きの冒険を存分に楽しもう! 愉快なシーンや忘れられない物語が満載。デジタル配信サービスでも視聴可能。Blu-ray & DVDも好評発売中。\"",
+    "stat_evidence": {
+      "posts": {
+        "label": "",
+        "exact_title": ""
+      },
+      "followers": {
+        "label": "2,161 followers",
+        "exact_title": "2,161"
+      },
+      "following": {
+        "label": "0 following",
+        "exact_title": ""
+      }
+    }
+  },
+  "issues": [],
+  "current_username": "damn_nigas",
+  "username_history": [
+    {
+      "username": "damn_nigas",
+      "role": "current username",
+      "first_seen_at": "2026-10-28T09:05:41.098Z"
+    }
+  ],
+  "username_change_observed_at": null
+}

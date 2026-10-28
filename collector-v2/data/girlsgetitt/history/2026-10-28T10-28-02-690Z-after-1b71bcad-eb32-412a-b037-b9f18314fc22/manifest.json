@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "username": "girlsgetitt",
+  "phase": "after",
+  "snapshot_at": "2026-10-28T10:28:02.690Z",
+  "run_status": "complete",
+  "run_updated_at": "2026-10-28T10:28:02.676Z",
+  "profile_fetched_at": "2026-10-28T09:03:00.384Z",
+  "item_count": 0,
+  "complete_item_count": 0,
+  "discovery": {
+    "reel": {
+      "count": 514,
+      "complete": true,
+      "error": null,
+      "attempted_at": "2026-10-28T10:28:02.666Z"
+    }
+  }
+}

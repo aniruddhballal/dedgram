@@ -1,0 +1,23 @@
+{
+  "started_at": "2026-10-28T09:33:48.602Z",
+  "updated_at": "2026-10-28T09:34:58.786Z",
+  "status": "partial",
+  "phase": "done",
+  "scope": [
+    "reel_grid"
+  ],
+  "current_url": null,
+  "error": "reel grid: Grid made no progress for 60 seconds at scroll 13/963 with 0 reel links.",
+  "progress": {
+    "task": "reel_grid",
+    "label": "Reel URL discovery",
+    "action": "Finding every reel URL in the profile grid",
+    "completed": 1,
+    "total": 1,
+    "percent": 100,
+    "remaining": 0,
+    "current_item": null,
+    "detail": "Stage finished with review required",
+    "updated_at": "2026-10-28T09:34:58.786Z"
+  }
+}

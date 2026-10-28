@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "username": "kujo__o",
+  "phase": "after",
+  "snapshot_at": "2026-10-28T10:13:36.689Z",
+  "run_status": "complete",
+  "run_updated_at": "2026-10-28T10:13:36.682Z",
+  "profile_fetched_at": "2026-10-28T09:05:04.804Z",
+  "item_count": 0,
+  "complete_item_count": 0,
+  "discovery": {
+    "reel": {
+      "count": 2269,
+      "complete": true,
+      "error": null,
+      "attempted_at": "2026-10-28T10:13:36.656Z"
+    }
+  }
+}

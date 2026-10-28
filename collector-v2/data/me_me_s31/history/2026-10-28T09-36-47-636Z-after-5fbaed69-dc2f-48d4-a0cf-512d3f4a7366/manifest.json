@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "username": "me_me_s31",
+  "phase": "after",
+  "snapshot_at": "2026-10-28T09:36:47.636Z",
+  "run_status": "complete",
+  "run_updated_at": "2026-10-28T09:36:47.627Z",
+  "profile_fetched_at": "2026-10-28T09:03:42.591Z",
+  "item_count": 0,
+  "complete_item_count": 0,
+  "discovery": {
+    "reel": {
+      "count": 298,
+      "complete": true,
+      "error": null,
+      "attempted_at": "2026-10-28T09:36:47.618Z"
+    }
+  }
+}

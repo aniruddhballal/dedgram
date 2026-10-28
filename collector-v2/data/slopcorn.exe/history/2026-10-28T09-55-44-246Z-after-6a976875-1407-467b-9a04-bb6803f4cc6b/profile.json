@@ -1,0 +1,108 @@
+{
+  "username": "slopcorn.exe",
+  "url": "https://www.instagram.com/slopcorn.exe/",
+  "fetched_at": "2026-10-28T09:03:12.690Z",
+  "display_name": "welcome 🙏",
+  "bio": "あらゆる追いかけっこを繰り広げる！「トムとジェリー」公式Instagram です！ Cartoon Networkにて『まいにちトムとジェリー』放送中！『映画トムとジェリー」デジタル配信中/ブルーレイ&DVD 発売中TEC （S23）",
+  "posts_count": {
+    "value": 185,
+    "raw": "185",
+    "approximate": false
+  },
+  "posts_count_observed_at": "2026-10-28T09:03:12.690Z",
+  "followers_count": {
+    "value": 10767,
+    "raw": "10,767",
+    "approximate": false,
+    "source": "header_title"
+  },
+  "following_count": {
+    "value": 0,
+    "raw": "0",
+    "approximate": false,
+    "source": "header_text"
+  },
+  "count_evidence": {
+    "followers": {
+      "header": {
+        "value": 10700,
+        "raw": "10.7K",
+        "approximate": true
+      },
+      "exact_title": {
+        "value": 10767,
+        "raw": "10,767",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 11000,
+        "raw": "11K",
+        "approximate": true
+      }
+    },
+    "following": {
+      "header": {
+        "value": 0,
+        "raw": "0",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 0,
+        "raw": "0",
+        "approximate": false
+      },
+      "conflict": false
+    },
+    "posts": {
+      "header": {
+        "value": 185,
+        "raw": "185",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 185,
+        "raw": "185",
+        "approximate": false
+      }
+    }
+  },
+  "category": null,
+  "ai_generated_profile": false,
+  "profile_picture_url": "https://instagram.fblr1-7.fna.fbcdn.net/v/t51.82787-19/804647066_18102927095623499_7292469967639639199_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=bTszsWBjNnsQ7kNvwGQfW2e&_nc_oc=AdpGYcFSSXereYnP51ESoBcIUgTykxBRQ3g3Esnome3qQAHINd9-OSJioprBiHsR9rRjcSYSHc-8H60GmwttLA0m&_nc_zt=24&_nc_ht=instagram.fblr1-7.fna&_nc_gid=7-FRzdzyADWQkKDnjy09PA&_nc_ss=7f6a8&oh=00_AQQ72yiyeRuAAuC79FwyYwjxgSP46BDtgZR_GhShXBinvA&oe=6AE784D1",
+  "date_joined": "August 2021",
+  "account_based_in": "Not shared",
+  "former_usernames_count": {
+    "value": 4,
+    "raw": "4",
+    "approximate": false
+  },
+  "raw": {
+    "header_text": "slopcorn.exe\nwelcome 🙏\n185 posts\n10.7K followers\n0 following\nあらゆる追いかけっこを繰り広げる！「トムとジェリー」公式Instagram です！ Cartoon Networkにて『まいにちトムとジェリー』放送中！『映画トムとジェリー」デジタル配信中/ブルーレイ&DVD 発売中TEC （S23）\nFollow\nMessage\n10k",
+    "about_text": "About this account\nslopcorn.exe\nTo help keep our community authentic, we’re showing information about profiles on Instagram. See why this information is important.\nDate joined\nAugust 2021\nAccount based in\nNot shared\nFormer usernames\n4\nVerified\nOctober 2026\nThe verified badge means an account has been verified based on their activity across our products and information or documents they provide. Some verified accounts are owned by a notable person, brand or entity, while others subscribe to Meta Verified.\n \nWith a Meta Verified subscription, you get a verified badge, proactive account protection, access to direct account support and more. Learn more\nGet a verified badge\nClose",
+    "description": "11K Followers, 0 Following, 185 Posts - welcome 🙏 (@slopcorn.exe) on Instagram: \"あらゆる追いかけっこを繰り広げる！「トムとジェリー」公式Instagram です！ Cartoon Networkにて『まいにちトムとジェリー』放送中！『映画トムとジェリー」デジタル配信中/ブルーレイ&DVD 発売中TEC （S23）\"",
+    "stat_evidence": {
+      "posts": {
+        "label": "",
+        "exact_title": ""
+      },
+      "followers": {
+        "label": "10.7K followers",
+        "exact_title": "10,767"
+      },
+      "following": {
+        "label": "0 following",
+        "exact_title": ""
+      }
+    }
+  },
+  "issues": [],
+  "current_username": "slopcorn.exe",
+  "username_history": [
+    {
+      "username": "slopcorn.exe",
+      "role": "current username",
+      "first_seen_at": "2026-10-28T09:03:12.686Z"
+    }
+  ],
+  "username_change_observed_at": null
+}

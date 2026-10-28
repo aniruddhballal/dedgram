@@ -1,0 +1,104 @@
+{
+  "username": "me_me_s31",
+  "url": "https://www.instagram.com/me_me_s31/",
+  "fetched_at": "2026-10-28T09:03:42.591Z",
+  "display_name": "Me_me_s",
+  "bio": "#TVアニメ『世界の奇妙な古代遺物』 🏺\n知られざる古代遺物の秘密を一挙公開！\n謎に包まれた遺物や歴史を変える驚きの発見も明らかに！\n最後まで見逃すな!! 👀🔥",
+  "posts_count": {
+    "value": 7,
+    "raw": "7",
+    "approximate": false
+  },
+  "posts_count_observed_at": "2026-10-28T09:03:42.591Z",
+  "followers_count": {
+    "value": 14834,
+    "raw": "14,834",
+    "approximate": false,
+    "source": "header_title"
+  },
+  "following_count": {
+    "value": 3,
+    "raw": "3",
+    "approximate": false,
+    "source": "header_text"
+  },
+  "count_evidence": {
+    "followers": {
+      "header": {
+        "value": 14800,
+        "raw": "14.8K",
+        "approximate": true
+      },
+      "exact_title": {
+        "value": 14834,
+        "raw": "14,834",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 14000,
+        "raw": "14K",
+        "approximate": true
+      }
+    },
+    "following": {
+      "header": {
+        "value": 3,
+        "raw": "3",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 3,
+        "raw": "3",
+        "approximate": false
+      },
+      "conflict": false
+    },
+    "posts": {
+      "header": {
+        "value": 7,
+        "raw": "7",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 7,
+        "raw": "7",
+        "approximate": false
+      }
+    }
+  },
+  "category": "Reel creator",
+  "ai_generated_profile": false,
+  "profile_picture_url": "https://instagram.fblr1-6.fna.fbcdn.net/v/t51.82787-19/863066565_18128103997752799_4746666272402170280_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=1&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDY4LkMzIn0%3D&_nc_ohc=a0yB5Owi7doQ7kNvwH_K6JZ&_nc_oc=Adr_OgdDHEfv2AIv6aKrY67WrPHbgx3w23g6V4iwd4PUJMUcijOiBryRaA7EppNqlE2CTY2Vvxee5pQuuegS8I8a&_nc_zt=24&_nc_ht=instagram.fblr1-6.fna&_nc_gid=TTdBdkTI9v0rynyIyQumTw&_nc_ss=7f6a8&oh=00_AQR0K46ZLlw7MeN7EmXMwHqVeElg5r4x8fPCtZwiUmeatg&oe=6AE7A1A2",
+  "date_joined": "October 2026",
+  "account_based_in": "Brazil",
+  "former_usernames_count": null,
+  "raw": {
+    "header_text": "me_me_s31\nMe_me_s\n7 posts\n14.8K followers\n3 following\nReel creator\n#TVアニメ『世界の奇妙な古代遺物』 🏺\n知られざる古代遺物の秘密を一挙公開！\n謎に包まれた遺物や歴史を変える驚きの発見も明らかに！\n最後まで見逃すな!! 👀🔥\nFollow\nMessage",
+    "about_text": "About this account\nme_me_s31\nTo help keep our community authentic, we’re showing information about profiles on Instagram. See why this information is important.\nDate joined\nOctober 2026\nAccount based in\nBrazil\nClose",
+    "description": "14K Followers, 3 Following, 7 Posts - Me_me_s (@me_me_s31) on Instagram: \"#TVアニメ『世界の奇妙な古代遺物』 🏺\n知られざる古代遺物の秘密を一挙公開！\n謎に包まれた遺物や歴史を変える驚きの発見も明らかに！\n最後まで見逃すな!! 👀🔥\"",
+    "stat_evidence": {
+      "posts": {
+        "label": "",
+        "exact_title": ""
+      },
+      "followers": {
+        "label": "14.8K followers",
+        "exact_title": "14,834"
+      },
+      "following": {
+        "label": "3 following",
+        "exact_title": ""
+      }
+    }
+  },
+  "issues": [],
+  "current_username": "me_me_s31",
+  "username_history": [
+    {
+      "username": "me_me_s31",
+      "role": "current username",
+      "first_seen_at": "2026-10-28T09:03:42.587Z"
+    }
+  ],
+  "username_change_observed_at": null
+}

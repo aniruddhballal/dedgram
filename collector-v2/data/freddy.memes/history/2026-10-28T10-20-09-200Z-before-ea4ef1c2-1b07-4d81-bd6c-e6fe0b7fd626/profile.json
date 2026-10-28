@@ -1,0 +1,108 @@
+{
+  "username": "freddy.memes",
+  "url": "https://www.instagram.com/freddy.memes/",
+  "fetched_at": "2026-10-28T09:03:49.112Z",
+  "display_name": "Freddy",
+  "bio": "📩 DM for Paid PR & Collaborations 🤝",
+  "posts_count": {
+    "value": 561,
+    "raw": "561",
+    "approximate": false
+  },
+  "posts_count_observed_at": "2026-10-28T09:03:49.112Z",
+  "followers_count": {
+    "value": 9265,
+    "raw": "9,265",
+    "approximate": false,
+    "source": "header_title"
+  },
+  "following_count": {
+    "value": 0,
+    "raw": "0",
+    "approximate": false,
+    "source": "header_text"
+  },
+  "count_evidence": {
+    "followers": {
+      "header": {
+        "value": 9265,
+        "raw": "9,265",
+        "approximate": false
+      },
+      "exact_title": {
+        "value": 9265,
+        "raw": "9,265",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 9263,
+        "raw": "9,263",
+        "approximate": false
+      }
+    },
+    "following": {
+      "header": {
+        "value": 0,
+        "raw": "0",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 0,
+        "raw": "0",
+        "approximate": false
+      },
+      "conflict": false
+    },
+    "posts": {
+      "header": {
+        "value": 561,
+        "raw": "561",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 561,
+        "raw": "561",
+        "approximate": false
+      }
+    }
+  },
+  "category": null,
+  "ai_generated_profile": false,
+  "profile_picture_url": "https://instagram.fblr24-1.fna.fbcdn.net/v/t51.82787-19/791014242_18085301051379307_6465618643414260179_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=sQHpYjK5h-oQ7kNvwHGnIRA&_nc_oc=AdogwpRSXldBQsJWroxbFURbK3wqXeY0yPPORIeDsXUfNd8KjGAbrTPKgNYvauQ8WsivI0_ojQTS7deWBip7eXXv&_nc_zt=24&_nc_ht=instagram.fblr24-1.fna&_nc_gid=yfVX-pHWWvvxbXh3T1anBA&_nc_ss=7f6a8&oh=00_AQTQchFxkxFcMZRUS_bzGZYwN3dV2gMV_5HdDnlf7LeMaw&oe=6AE7869F",
+  "date_joined": "August 2026",
+  "account_based_in": "Not shared",
+  "former_usernames_count": {
+    "value": 2,
+    "raw": "2",
+    "approximate": false
+  },
+  "raw": {
+    "header_text": "freddy.memes\nFreddy\n561 posts\n9,265 followers\n0 following\n📩 DM for Paid PR & Collaborations 🤝\nFollow\nMessage",
+    "about_text": "About this account\nfreddy.memes\nTo help keep our community authentic, we’re showing information about profiles on Instagram. See why this information is important.\nDate joined\nAugust 2026\nAccount based in\nNot shared\nFormer usernames\n2\nClose",
+    "description": "9,263 Followers, 0 Following, 561 Posts - Freddy (@freddy.memes) on Instagram: \"📩 DM for Paid PR & Collaborations 🤝\"",
+    "stat_evidence": {
+      "posts": {
+        "label": "",
+        "exact_title": ""
+      },
+      "followers": {
+        "label": "9,265 followers",
+        "exact_title": "9,265"
+      },
+      "following": {
+        "label": "0 following",
+        "exact_title": ""
+      }
+    }
+  },
+  "issues": [],
+  "current_username": "freddy.memes",
+  "username_history": [
+    {
+      "username": "freddy.memes",
+      "role": "current username",
+      "first_seen_at": "2026-10-28T09:03:49.107Z"
+    }
+  ],
+  "username_change_observed_at": null
+}

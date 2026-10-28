@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "username": "movi.egaze",
+  "phase": "before",
+  "snapshot_at": "2026-10-28T09:37:06.998Z",
+  "run_status": "complete",
+  "run_updated_at": "2026-10-28T09:02:29.383Z",
+  "profile_fetched_at": "2026-10-28T09:02:29.376Z",
+  "item_count": 0,
+  "complete_item_count": 0,
+  "discovery": {}
+}

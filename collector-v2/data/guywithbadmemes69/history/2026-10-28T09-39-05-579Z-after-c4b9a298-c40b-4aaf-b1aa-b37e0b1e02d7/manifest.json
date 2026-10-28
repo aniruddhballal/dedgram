@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "username": "guywithbadmemes69",
+  "phase": "after",
+  "snapshot_at": "2026-10-28T09:39:05.579Z",
+  "run_status": "complete",
+  "run_updated_at": "2026-10-28T09:39:05.572Z",
+  "profile_fetched_at": "2026-10-28T09:02:10.678Z",
+  "item_count": 0,
+  "complete_item_count": 0,
+  "discovery": {
+    "reel": {
+      "count": 0,
+      "complete": true,
+      "error": null,
+      "attempted_at": "2026-10-28T09:39:05.555Z"
+    }
+  }
+}

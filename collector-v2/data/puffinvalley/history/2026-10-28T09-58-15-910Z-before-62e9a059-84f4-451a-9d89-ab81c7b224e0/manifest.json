@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "username": "puffinvalley",
+  "phase": "before",
+  "snapshot_at": "2026-10-28T09:58:15.910Z",
+  "run_status": "complete",
+  "run_updated_at": "2026-10-28T09:02:23.473Z",
+  "profile_fetched_at": "2026-10-28T09:02:23.466Z",
+  "item_count": 0,
+  "complete_item_count": 0,
+  "discovery": {}
+}

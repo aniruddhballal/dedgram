@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "username": "zosttfeed",
+  "phase": "before",
+  "snapshot_at": "2026-10-28T09:37:55.443Z",
+  "run_status": "complete",
+  "run_updated_at": "2026-10-28T09:02:17.182Z",
+  "profile_fetched_at": "2026-10-28T09:02:17.170Z",
+  "item_count": 0,
+  "complete_item_count": 0,
+  "discovery": {}
+}

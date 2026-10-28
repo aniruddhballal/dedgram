@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "username": "crick_video_07",
+  "phase": "after",
+  "snapshot_at": "2026-10-28T09:38:36.735Z",
+  "run_status": "complete",
+  "run_updated_at": "2026-10-28T09:38:36.728Z",
+  "profile_fetched_at": "2026-10-28T09:03:24.693Z",
+  "item_count": 0,
+  "complete_item_count": 0,
+  "discovery": {
+    "reel": {
+      "count": 22,
+      "complete": true,
+      "error": null,
+      "attempted_at": "2026-10-28T09:38:36.719Z"
+    }
+  }
+}

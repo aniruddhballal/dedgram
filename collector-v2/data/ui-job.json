@@ -1,978 +1,864 @@
 {
-  "id": "cde4b502-7e75-41c7-9aea-b16631695592",
-  "mode": "profile_header",
+  "id": "ffc49e45-5051-45c2-8edd-541f09c5f351",
+  "mode": "reel_grid",
   "order": "posts_ascending",
   "status": "complete",
   "profiles": [
-    "tom4our",
-    "crustykid67",
-    "solvik.editz9",
-    "farf_allajade",
     "41.3k",
-    "micro.siss",
-    "aniruddhballal",
-    "yervin8_",
-    "vexo.7k",
-    "funny.exe07",
-    "twinkiewinkie3",
-    "nhiftbl",
-    "short_vibesz",
-    "mr_oggy_114",
-    "oooiway",
-    "zuxxie.pov",
-    "extreme.laugh8",
     "coopyyz",
-    "2many_memes_in_my_camera_roll",
-    "guywithbadmemes69",
-    "zosttfeed",
-    "puffinvalley",
+    "me_me_s31",
+    "funny.exe07",
     "movi.egaze",
-    "slopfeed100m",
+    "extreme_laugh_07",
     "scoobyjacks_",
-    "kanika_s.0711",
-    "zosttified",
-    "girlsgetitt",
-    "kabir.chaudhary69",
-    "slopcorn.exe",
+    "damn_nigas",
+    "zosttfeed",
     "blunt.fun4",
     "crick_video_07",
+    "2many_memes_in_my_camera_roll",
+    "guywithbadmemes69",
+    "slopfeed100m",
     "zennnooxx",
-    "manas.8x_",
-    "me_me_s31",
-    "freddy.memes",
-    "iron_block2",
-    "memes.fatafat",
-    "pixa.300k",
-    "madarameme0",
-    "pigeonlarping",
-    "paystasongta",
-    "fun_fineee",
-    "kujo__o",
-    "extreme_laugh_07",
-    "sallusmemer",
     "jellyfish.m3mes",
+    "nhiftbl",
+    "madarameme0",
+    "pixa.300k",
+    "sallusmemer",
+    "fun_fineee",
+    "aniruddhballal",
+    "kabir.chaudhary69",
+    "solvik.editz9",
+    "yervin8_",
+    "kanika_s.0711",
+    "micro.siss",
+    "crustykid67",
+    "mr_oggy_114",
+    "tom4our",
+    "twinkiewinkie3",
     "zoya._100x",
+    "manas.8x_",
+    "slopcorn.exe",
+    "vexo.7k",
+    "paystasongta",
+    "puffinvalley",
+    "kujo__o",
     "melonphernelia",
-    "damn_nigas",
+    "farf_allajade",
+    "pigeonlarping",
+    "freddy.memes",
+    "zosttified",
+    "girlsgetitt",
     "nixk.xyz"
   ],
   "steps": [
     {
-      "username": "tom4our",
-      "stage": "profile_header"
-    },
-    {
-      "username": "crustykid67",
-      "stage": "profile_header"
-    },
-    {
-      "username": "solvik.editz9",
-      "stage": "profile_header"
-    },
-    {
-      "username": "farf_allajade",
-      "stage": "profile_header"
-    },
-    {
       "username": "41.3k",
-      "stage": "profile_header"
-    },
-    {
-      "username": "micro.siss",
-      "stage": "profile_header"
-    },
-    {
-      "username": "aniruddhballal",
-      "stage": "profile_header"
-    },
-    {
-      "username": "yervin8_",
-      "stage": "profile_header"
-    },
-    {
-      "username": "vexo.7k",
-      "stage": "profile_header"
-    },
-    {
-      "username": "funny.exe07",
-      "stage": "profile_header"
-    },
-    {
-      "username": "twinkiewinkie3",
-      "stage": "profile_header"
-    },
-    {
-      "username": "nhiftbl",
-      "stage": "profile_header"
-    },
-    {
-      "username": "short_vibesz",
-      "stage": "profile_header"
-    },
-    {
-      "username": "mr_oggy_114",
-      "stage": "profile_header"
-    },
-    {
-      "username": "oooiway",
-      "stage": "profile_header"
-    },
-    {
-      "username": "zuxxie.pov",
-      "stage": "profile_header"
-    },
-    {
-      "username": "extreme.laugh8",
-      "stage": "profile_header"
+      "stage": "reel_grid"
     },
     {
       "username": "coopyyz",
-      "stage": "profile_header"
-    },
-    {
-      "username": "2many_memes_in_my_camera_roll",
-      "stage": "profile_header"
-    },
-    {
-      "username": "guywithbadmemes69",
-      "stage": "profile_header"
-    },
-    {
-      "username": "zosttfeed",
-      "stage": "profile_header"
-    },
-    {
-      "username": "puffinvalley",
-      "stage": "profile_header"
-    },
-    {
-      "username": "movi.egaze",
-      "stage": "profile_header"
-    },
-    {
-      "username": "slopfeed100m",
-      "stage": "profile_header"
-    },
-    {
-      "username": "scoobyjacks_",
-      "stage": "profile_header"
-    },
-    {
-      "username": "kanika_s.0711",
-      "stage": "profile_header"
-    },
-    {
-      "username": "zosttified",
-      "stage": "profile_header"
-    },
-    {
-      "username": "girlsgetitt",
-      "stage": "profile_header"
-    },
-    {
-      "username": "kabir.chaudhary69",
-      "stage": "profile_header"
-    },
-    {
-      "username": "slopcorn.exe",
-      "stage": "profile_header"
-    },
-    {
-      "username": "blunt.fun4",
-      "stage": "profile_header"
-    },
-    {
-      "username": "crick_video_07",
-      "stage": "profile_header"
-    },
-    {
-      "username": "zennnooxx",
-      "stage": "profile_header"
-    },
-    {
-      "username": "manas.8x_",
-      "stage": "profile_header"
+      "stage": "reel_grid"
     },
     {
       "username": "me_me_s31",
-      "stage": "profile_header"
+      "stage": "reel_grid"
     },
     {
-      "username": "freddy.memes",
-      "stage": "profile_header"
+      "username": "funny.exe07",
+      "stage": "reel_grid"
     },
     {
-      "username": "iron_block2",
-      "stage": "profile_header"
-    },
-    {
-      "username": "memes.fatafat",
-      "stage": "profile_header"
-    },
-    {
-      "username": "pixa.300k",
-      "stage": "profile_header"
-    },
-    {
-      "username": "madarameme0",
-      "stage": "profile_header"
-    },
-    {
-      "username": "pigeonlarping",
-      "stage": "profile_header"
-    },
-    {
-      "username": "paystasongta",
-      "stage": "profile_header"
-    },
-    {
-      "username": "fun_fineee",
-      "stage": "profile_header"
-    },
-    {
-      "username": "kujo__o",
-      "stage": "profile_header"
+      "username": "movi.egaze",
+      "stage": "reel_grid"
     },
     {
       "username": "extreme_laugh_07",
-      "stage": "profile_header"
+      "stage": "reel_grid"
     },
     {
-      "username": "sallusmemer",
-      "stage": "profile_header"
-    },
-    {
-      "username": "jellyfish.m3mes",
-      "stage": "profile_header"
-    },
-    {
-      "username": "zoya._100x",
-      "stage": "profile_header"
-    },
-    {
-      "username": "melonphernelia",
-      "stage": "profile_header"
+      "username": "scoobyjacks_",
+      "stage": "reel_grid"
     },
     {
       "username": "damn_nigas",
-      "stage": "profile_header"
+      "stage": "reel_grid"
+    },
+    {
+      "username": "zosttfeed",
+      "stage": "reel_grid"
+    },
+    {
+      "username": "blunt.fun4",
+      "stage": "reel_grid"
+    },
+    {
+      "username": "crick_video_07",
+      "stage": "reel_grid"
+    },
+    {
+      "username": "2many_memes_in_my_camera_roll",
+      "stage": "reel_grid"
+    },
+    {
+      "username": "guywithbadmemes69",
+      "stage": "reel_grid"
+    },
+    {
+      "username": "slopfeed100m",
+      "stage": "reel_grid"
+    },
+    {
+      "username": "zennnooxx",
+      "stage": "reel_grid"
+    },
+    {
+      "username": "jellyfish.m3mes",
+      "stage": "reel_grid"
+    },
+    {
+      "username": "nhiftbl",
+      "stage": "reel_grid"
+    },
+    {
+      "username": "madarameme0",
+      "stage": "reel_grid"
+    },
+    {
+      "username": "pixa.300k",
+      "stage": "reel_grid"
+    },
+    {
+      "username": "sallusmemer",
+      "stage": "reel_grid"
+    },
+    {
+      "username": "fun_fineee",
+      "stage": "reel_grid"
+    },
+    {
+      "username": "aniruddhballal",
+      "stage": "reel_grid"
+    },
+    {
+      "username": "kabir.chaudhary69",
+      "stage": "reel_grid"
+    },
+    {
+      "username": "solvik.editz9",
+      "stage": "reel_grid"
+    },
+    {
+      "username": "yervin8_",
+      "stage": "reel_grid"
+    },
+    {
+      "username": "kanika_s.0711",
+      "stage": "reel_grid"
+    },
+    {
+      "username": "micro.siss",
+      "stage": "reel_grid"
+    },
+    {
+      "username": "crustykid67",
+      "stage": "reel_grid"
+    },
+    {
+      "username": "mr_oggy_114",
+      "stage": "reel_grid"
+    },
+    {
+      "username": "tom4our",
+      "stage": "reel_grid"
+    },
+    {
+      "username": "twinkiewinkie3",
+      "stage": "reel_grid"
+    },
+    {
+      "username": "zoya._100x",
+      "stage": "reel_grid"
+    },
+    {
+      "username": "manas.8x_",
+      "stage": "reel_grid"
+    },
+    {
+      "username": "slopcorn.exe",
+      "stage": "reel_grid"
+    },
+    {
+      "username": "vexo.7k",
+      "stage": "reel_grid"
+    },
+    {
+      "username": "paystasongta",
+      "stage": "reel_grid"
+    },
+    {
+      "username": "puffinvalley",
+      "stage": "reel_grid"
+    },
+    {
+      "username": "kujo__o",
+      "stage": "reel_grid"
+    },
+    {
+      "username": "melonphernelia",
+      "stage": "reel_grid"
+    },
+    {
+      "username": "farf_allajade",
+      "stage": "reel_grid"
+    },
+    {
+      "username": "pigeonlarping",
+      "stage": "reel_grid"
+    },
+    {
+      "username": "freddy.memes",
+      "stage": "reel_grid"
+    },
+    {
+      "username": "zosttified",
+      "stage": "reel_grid"
+    },
+    {
+      "username": "girlsgetitt",
+      "stage": "reel_grid"
     },
     {
       "username": "nixk.xyz",
-      "stage": "profile_header"
+      "stage": "reel_grid"
     }
   ],
   "results": {
-    "tom4our": {
-      "status": "complete",
-      "started_at": "2026-10-28T09:00:07.334Z",
-      "finished_at": "2026-10-28T09:00:13.703Z",
-      "error": null,
-      "stages": {
-        "profile_header": {
-          "status": "complete",
-          "started_at": "2026-10-28T09:00:07.334Z",
-          "finished_at": "2026-10-28T09:00:13.703Z",
-          "error": null
-        }
-      }
-    },
-    "crustykid67": {
-      "status": "complete",
-      "started_at": "2026-10-28T09:00:13.712Z",
-      "finished_at": "2026-10-28T09:00:19.452Z",
-      "error": null,
-      "stages": {
-        "profile_header": {
-          "status": "complete",
-          "started_at": "2026-10-28T09:00:13.712Z",
-          "finished_at": "2026-10-28T09:00:19.452Z",
-          "error": null
-        }
-      }
-    },
-    "solvik.editz9": {
-      "status": "complete",
-      "started_at": "2026-10-28T09:00:19.470Z",
-      "finished_at": "2026-10-28T09:00:28.019Z",
-      "error": null,
-      "stages": {
-        "profile_header": {
-          "status": "complete",
-          "started_at": "2026-10-28T09:00:19.470Z",
-          "finished_at": "2026-10-28T09:00:28.019Z",
-          "error": null
-        }
-      }
-    },
-    "farf_allajade": {
-      "status": "complete",
-      "started_at": "2026-10-28T09:00:28.021Z",
-      "finished_at": "2026-10-28T09:00:34.115Z",
-      "error": null,
-      "stages": {
-        "profile_header": {
-          "status": "complete",
-          "started_at": "2026-10-28T09:00:28.021Z",
-          "finished_at": "2026-10-28T09:00:34.115Z",
-          "error": null
-        }
-      }
-    },
     "41.3k": {
-      "status": "complete",
-      "started_at": "2026-10-28T09:00:34.117Z",
-      "finished_at": "2026-10-28T09:00:39.963Z",
-      "error": null,
+      "status": "needs_review",
+      "started_at": "2026-10-28T09:33:47.350Z",
+      "finished_at": "2026-10-28T09:35:00.379Z",
+      "error": "reel grid: Grid made no progress for 60 seconds at scroll 13/963 with 0 reel links.",
       "stages": {
-        "profile_header": {
-          "status": "complete",
-          "started_at": "2026-10-28T09:00:34.117Z",
-          "finished_at": "2026-10-28T09:00:39.963Z",
-          "error": null
-        }
-      }
-    },
-    "micro.siss": {
-      "status": "complete",
-      "started_at": "2026-10-28T09:00:39.965Z",
-      "finished_at": "2026-10-28T09:00:45.938Z",
-      "error": null,
-      "stages": {
-        "profile_header": {
-          "status": "complete",
-          "started_at": "2026-10-28T09:00:39.965Z",
-          "finished_at": "2026-10-28T09:00:45.938Z",
-          "error": null
-        }
-      }
-    },
-    "aniruddhballal": {
-      "status": "complete",
-      "started_at": "2026-10-28T09:00:45.940Z",
-      "finished_at": "2026-10-28T09:00:56.079Z",
-      "error": null,
-      "stages": {
-        "profile_header": {
-          "status": "complete",
-          "started_at": "2026-10-28T09:00:45.940Z",
-          "finished_at": "2026-10-28T09:00:56.079Z",
-          "error": null
-        }
-      }
-    },
-    "yervin8_": {
-      "status": "complete",
-      "started_at": "2026-10-28T09:00:56.081Z",
-      "finished_at": "2026-10-28T09:01:02.108Z",
-      "error": null,
-      "stages": {
-        "profile_header": {
-          "status": "complete",
-          "started_at": "2026-10-28T09:00:56.081Z",
-          "finished_at": "2026-10-28T09:01:02.108Z",
-          "error": null
-        }
-      }
-    },
-    "vexo.7k": {
-      "status": "complete",
-      "started_at": "2026-10-28T09:01:02.109Z",
-      "finished_at": "2026-10-28T09:01:08.200Z",
-      "error": null,
-      "stages": {
-        "profile_header": {
-          "status": "complete",
-          "started_at": "2026-10-28T09:01:02.109Z",
-          "finished_at": "2026-10-28T09:01:08.200Z",
-          "error": null
-        }
-      }
-    },
-    "funny.exe07": {
-      "status": "complete",
-      "started_at": "2026-10-28T09:01:08.202Z",
-      "finished_at": "2026-10-28T09:01:14.086Z",
-      "error": null,
-      "stages": {
-        "profile_header": {
-          "status": "complete",
-          "started_at": "2026-10-28T09:01:08.202Z",
-          "finished_at": "2026-10-28T09:01:14.086Z",
-          "error": null
-        }
-      }
-    },
-    "twinkiewinkie3": {
-      "status": "complete",
-      "started_at": "2026-10-28T09:01:14.087Z",
-      "finished_at": "2026-10-28T09:01:20.396Z",
-      "error": null,
-      "stages": {
-        "profile_header": {
-          "status": "complete",
-          "started_at": "2026-10-28T09:01:14.087Z",
-          "finished_at": "2026-10-28T09:01:20.396Z",
-          "error": null
-        }
-      }
-    },
-    "nhiftbl": {
-      "status": "complete",
-      "started_at": "2026-10-28T09:01:20.398Z",
-      "finished_at": "2026-10-28T09:01:28.700Z",
-      "error": null,
-      "stages": {
-        "profile_header": {
-          "status": "complete",
-          "started_at": "2026-10-28T09:01:20.398Z",
-          "finished_at": "2026-10-28T09:01:28.700Z",
-          "error": null
-        }
-      }
-    },
-    "short_vibesz": {
-      "status": "failed",
-      "started_at": "2026-10-28T09:01:28.702Z",
-      "finished_at": "2026-10-28T09:01:33.689Z",
-      "error": "Instagram reports this page is unavailable.",
-      "stages": {
-        "profile_header": {
-          "status": "failed",
-          "started_at": "2026-10-28T09:01:28.702Z",
-          "finished_at": "2026-10-28T09:01:33.689Z",
-          "error": "Instagram reports this page is unavailable."
-        }
-      }
-    },
-    "mr_oggy_114": {
-      "status": "complete",
-      "started_at": "2026-10-28T09:01:33.691Z",
-      "finished_at": "2026-10-28T09:01:40.002Z",
-      "error": null,
-      "stages": {
-        "profile_header": {
-          "status": "complete",
-          "started_at": "2026-10-28T09:01:33.691Z",
-          "finished_at": "2026-10-28T09:01:40.002Z",
-          "error": null
-        }
-      }
-    },
-    "oooiway": {
-      "status": "failed",
-      "started_at": "2026-10-28T09:01:40.003Z",
-      "finished_at": "2026-10-28T09:01:45.054Z",
-      "error": "Instagram reports this page is unavailable.",
-      "stages": {
-        "profile_header": {
-          "status": "failed",
-          "started_at": "2026-10-28T09:01:40.003Z",
-          "finished_at": "2026-10-28T09:01:45.054Z",
-          "error": "Instagram reports this page is unavailable."
-        }
-      }
-    },
-    "zuxxie.pov": {
-      "status": "failed",
-      "started_at": "2026-10-28T09:01:45.056Z",
-      "finished_at": "2026-10-28T09:01:49.204Z",
-      "error": "Instagram reports this page is unavailable.",
-      "stages": {
-        "profile_header": {
-          "status": "failed",
-          "started_at": "2026-10-28T09:01:45.056Z",
-          "finished_at": "2026-10-28T09:01:49.204Z",
-          "error": "Instagram reports this page is unavailable."
-        }
-      }
-    },
-    "extreme.laugh8": {
-      "status": "failed",
-      "started_at": "2026-10-28T09:01:49.206Z",
-      "finished_at": "2026-10-28T09:01:53.645Z",
-      "error": "Instagram reports this page is unavailable.",
-      "stages": {
-        "profile_header": {
-          "status": "failed",
-          "started_at": "2026-10-28T09:01:49.206Z",
-          "finished_at": "2026-10-28T09:01:53.645Z",
-          "error": "Instagram reports this page is unavailable."
+        "reel_grid": {
+          "status": "needs_review",
+          "started_at": "2026-10-28T09:33:47.350Z",
+          "finished_at": "2026-10-28T09:35:00.379Z",
+          "error": "reel grid: Grid made no progress for 60 seconds at scroll 13/963 with 0 reel links."
         }
       }
     },
     "coopyyz": {
       "status": "complete",
-      "started_at": "2026-10-28T09:01:53.647Z",
-      "finished_at": "2026-10-28T09:01:59.495Z",
+      "started_at": "2026-10-28T09:35:00.383Z",
+      "finished_at": "2026-10-28T09:35:13.036Z",
       "error": null,
       "stages": {
-        "profile_header": {
+        "reel_grid": {
           "status": "complete",
-          "started_at": "2026-10-28T09:01:53.647Z",
-          "finished_at": "2026-10-28T09:01:59.495Z",
-          "error": null
-        }
-      }
-    },
-    "2many_memes_in_my_camera_roll": {
-      "status": "complete",
-      "started_at": "2026-10-28T09:01:59.497Z",
-      "finished_at": "2026-10-28T09:02:05.620Z",
-      "error": null,
-      "stages": {
-        "profile_header": {
-          "status": "complete",
-          "started_at": "2026-10-28T09:01:59.497Z",
-          "finished_at": "2026-10-28T09:02:05.620Z",
-          "error": null
-        }
-      }
-    },
-    "guywithbadmemes69": {
-      "status": "complete",
-      "started_at": "2026-10-28T09:02:05.622Z",
-      "finished_at": "2026-10-28T09:02:11.535Z",
-      "error": null,
-      "stages": {
-        "profile_header": {
-          "status": "complete",
-          "started_at": "2026-10-28T09:02:05.622Z",
-          "finished_at": "2026-10-28T09:02:11.535Z",
-          "error": null
-        }
-      }
-    },
-    "zosttfeed": {
-      "status": "complete",
-      "started_at": "2026-10-28T09:02:11.537Z",
-      "finished_at": "2026-10-28T09:02:18.075Z",
-      "error": null,
-      "stages": {
-        "profile_header": {
-          "status": "complete",
-          "started_at": "2026-10-28T09:02:11.537Z",
-          "finished_at": "2026-10-28T09:02:18.075Z",
-          "error": null
-        }
-      }
-    },
-    "puffinvalley": {
-      "status": "complete",
-      "started_at": "2026-10-28T09:02:18.078Z",
-      "finished_at": "2026-10-28T09:02:24.284Z",
-      "error": null,
-      "stages": {
-        "profile_header": {
-          "status": "complete",
-          "started_at": "2026-10-28T09:02:18.078Z",
-          "finished_at": "2026-10-28T09:02:24.284Z",
-          "error": null
-        }
-      }
-    },
-    "movi.egaze": {
-      "status": "complete",
-      "started_at": "2026-10-28T09:02:24.286Z",
-      "finished_at": "2026-10-28T09:02:30.156Z",
-      "error": null,
-      "stages": {
-        "profile_header": {
-          "status": "complete",
-          "started_at": "2026-10-28T09:02:24.286Z",
-          "finished_at": "2026-10-28T09:02:30.156Z",
-          "error": null
-        }
-      }
-    },
-    "slopfeed100m": {
-      "status": "complete",
-      "started_at": "2026-10-28T09:02:30.158Z",
-      "finished_at": "2026-10-28T09:02:36.513Z",
-      "error": null,
-      "stages": {
-        "profile_header": {
-          "status": "complete",
-          "started_at": "2026-10-28T09:02:30.158Z",
-          "finished_at": "2026-10-28T09:02:36.513Z",
-          "error": null
-        }
-      }
-    },
-    "scoobyjacks_": {
-      "status": "complete",
-      "started_at": "2026-10-28T09:02:36.515Z",
-      "finished_at": "2026-10-28T09:02:43.135Z",
-      "error": null,
-      "stages": {
-        "profile_header": {
-          "status": "complete",
-          "started_at": "2026-10-28T09:02:36.515Z",
-          "finished_at": "2026-10-28T09:02:43.135Z",
-          "error": null
-        }
-      }
-    },
-    "kanika_s.0711": {
-      "status": "complete",
-      "started_at": "2026-10-28T09:02:43.137Z",
-      "finished_at": "2026-10-28T09:02:49.106Z",
-      "error": null,
-      "stages": {
-        "profile_header": {
-          "status": "complete",
-          "started_at": "2026-10-28T09:02:43.137Z",
-          "finished_at": "2026-10-28T09:02:49.106Z",
-          "error": null
-        }
-      }
-    },
-    "zosttified": {
-      "status": "complete",
-      "started_at": "2026-10-28T09:02:49.108Z",
-      "finished_at": "2026-10-28T09:02:55.246Z",
-      "error": null,
-      "stages": {
-        "profile_header": {
-          "status": "complete",
-          "started_at": "2026-10-28T09:02:49.108Z",
-          "finished_at": "2026-10-28T09:02:55.246Z",
-          "error": null
-        }
-      }
-    },
-    "girlsgetitt": {
-      "status": "complete",
-      "started_at": "2026-10-28T09:02:55.249Z",
-      "finished_at": "2026-10-28T09:03:01.236Z",
-      "error": null,
-      "stages": {
-        "profile_header": {
-          "status": "complete",
-          "started_at": "2026-10-28T09:02:55.249Z",
-          "finished_at": "2026-10-28T09:03:01.236Z",
-          "error": null
-        }
-      }
-    },
-    "kabir.chaudhary69": {
-      "status": "complete",
-      "started_at": "2026-10-28T09:03:01.238Z",
-      "finished_at": "2026-10-28T09:03:07.241Z",
-      "error": null,
-      "stages": {
-        "profile_header": {
-          "status": "complete",
-          "started_at": "2026-10-28T09:03:01.238Z",
-          "finished_at": "2026-10-28T09:03:07.241Z",
-          "error": null
-        }
-      }
-    },
-    "slopcorn.exe": {
-      "status": "complete",
-      "started_at": "2026-10-28T09:03:07.243Z",
-      "finished_at": "2026-10-28T09:03:13.508Z",
-      "error": null,
-      "stages": {
-        "profile_header": {
-          "status": "complete",
-          "started_at": "2026-10-28T09:03:07.243Z",
-          "finished_at": "2026-10-28T09:03:13.508Z",
-          "error": null
-        }
-      }
-    },
-    "blunt.fun4": {
-      "status": "complete",
-      "started_at": "2026-10-28T09:03:13.510Z",
-      "finished_at": "2026-10-28T09:03:19.484Z",
-      "error": null,
-      "stages": {
-        "profile_header": {
-          "status": "complete",
-          "started_at": "2026-10-28T09:03:13.510Z",
-          "finished_at": "2026-10-28T09:03:19.484Z",
-          "error": null
-        }
-      }
-    },
-    "crick_video_07": {
-      "status": "complete",
-      "started_at": "2026-10-28T09:03:19.486Z",
-      "finished_at": "2026-10-28T09:03:25.521Z",
-      "error": null,
-      "stages": {
-        "profile_header": {
-          "status": "complete",
-          "started_at": "2026-10-28T09:03:19.486Z",
-          "finished_at": "2026-10-28T09:03:25.521Z",
-          "error": null
-        }
-      }
-    },
-    "zennnooxx": {
-      "status": "complete",
-      "started_at": "2026-10-28T09:03:25.523Z",
-      "finished_at": "2026-10-28T09:03:31.429Z",
-      "error": null,
-      "stages": {
-        "profile_header": {
-          "status": "complete",
-          "started_at": "2026-10-28T09:03:25.523Z",
-          "finished_at": "2026-10-28T09:03:31.429Z",
-          "error": null
-        }
-      }
-    },
-    "manas.8x_": {
-      "status": "complete",
-      "started_at": "2026-10-28T09:03:31.431Z",
-      "finished_at": "2026-10-28T09:03:37.644Z",
-      "error": null,
-      "stages": {
-        "profile_header": {
-          "status": "complete",
-          "started_at": "2026-10-28T09:03:31.431Z",
-          "finished_at": "2026-10-28T09:03:37.644Z",
+          "started_at": "2026-10-28T09:35:00.383Z",
+          "finished_at": "2026-10-28T09:35:13.036Z",
           "error": null
         }
       }
     },
     "me_me_s31": {
       "status": "complete",
-      "started_at": "2026-10-28T09:03:37.646Z",
-      "finished_at": "2026-10-28T09:03:43.630Z",
+      "started_at": "2026-10-28T09:35:13.038Z",
+      "finished_at": "2026-10-28T09:36:48.704Z",
       "error": null,
       "stages": {
-        "profile_header": {
+        "reel_grid": {
           "status": "complete",
-          "started_at": "2026-10-28T09:03:37.646Z",
-          "finished_at": "2026-10-28T09:03:43.630Z",
+          "started_at": "2026-10-28T09:35:13.038Z",
+          "finished_at": "2026-10-28T09:36:48.704Z",
           "error": null
         }
       }
     },
-    "freddy.memes": {
+    "funny.exe07": {
       "status": "complete",
-      "started_at": "2026-10-28T09:03:43.642Z",
-      "finished_at": "2026-10-28T09:03:49.938Z",
+      "started_at": "2026-10-28T09:36:48.707Z",
+      "finished_at": "2026-10-28T09:37:05.989Z",
       "error": null,
       "stages": {
-        "profile_header": {
+        "reel_grid": {
           "status": "complete",
-          "started_at": "2026-10-28T09:03:43.642Z",
-          "finished_at": "2026-10-28T09:03:49.938Z",
+          "started_at": "2026-10-28T09:36:48.707Z",
+          "finished_at": "2026-10-28T09:37:05.989Z",
           "error": null
         }
       }
     },
-    "iron_block2": {
-      "status": "failed",
-      "started_at": "2026-10-28T09:03:49.941Z",
-      "finished_at": "2026-10-28T09:04:25.197Z",
-      "error": "Instagram did not show the profile header.",
-      "stages": {
-        "profile_header": {
-          "status": "failed",
-          "started_at": "2026-10-28T09:03:49.941Z",
-          "finished_at": "2026-10-28T09:04:25.197Z",
-          "error": "Instagram did not show the profile header."
-        }
-      }
-    },
-    "memes.fatafat": {
-      "status": "failed",
-      "started_at": "2026-10-28T09:04:25.199Z",
-      "finished_at": "2026-10-28T09:04:29.324Z",
-      "error": "Instagram reports this page is unavailable.",
-      "stages": {
-        "profile_header": {
-          "status": "failed",
-          "started_at": "2026-10-28T09:04:25.199Z",
-          "finished_at": "2026-10-28T09:04:29.324Z",
-          "error": "Instagram reports this page is unavailable."
-        }
-      }
-    },
-    "pixa.300k": {
+    "movi.egaze": {
       "status": "complete",
-      "started_at": "2026-10-28T09:04:29.325Z",
-      "finished_at": "2026-10-28T09:04:35.158Z",
+      "started_at": "2026-10-28T09:37:05.991Z",
+      "finished_at": "2026-10-28T09:37:17.778Z",
       "error": null,
       "stages": {
-        "profile_header": {
+        "reel_grid": {
           "status": "complete",
-          "started_at": "2026-10-28T09:04:29.325Z",
-          "finished_at": "2026-10-28T09:04:35.158Z",
-          "error": null
-        }
-      }
-    },
-    "madarameme0": {
-      "status": "complete",
-      "started_at": "2026-10-28T09:04:35.160Z",
-      "finished_at": "2026-10-28T09:04:41.184Z",
-      "error": null,
-      "stages": {
-        "profile_header": {
-          "status": "complete",
-          "started_at": "2026-10-28T09:04:35.160Z",
-          "finished_at": "2026-10-28T09:04:41.184Z",
-          "error": null
-        }
-      }
-    },
-    "pigeonlarping": {
-      "status": "complete",
-      "started_at": "2026-10-28T09:04:41.187Z",
-      "finished_at": "2026-10-28T09:04:47.105Z",
-      "error": null,
-      "stages": {
-        "profile_header": {
-          "status": "complete",
-          "started_at": "2026-10-28T09:04:41.187Z",
-          "finished_at": "2026-10-28T09:04:47.105Z",
-          "error": null
-        }
-      }
-    },
-    "paystasongta": {
-      "status": "complete",
-      "started_at": "2026-10-28T09:04:47.108Z",
-      "finished_at": "2026-10-28T09:04:53.147Z",
-      "error": null,
-      "stages": {
-        "profile_header": {
-          "status": "complete",
-          "started_at": "2026-10-28T09:04:47.108Z",
-          "finished_at": "2026-10-28T09:04:53.147Z",
-          "error": null
-        }
-      }
-    },
-    "fun_fineee": {
-      "status": "complete",
-      "started_at": "2026-10-28T09:04:53.150Z",
-      "finished_at": "2026-10-28T09:04:59.508Z",
-      "error": null,
-      "stages": {
-        "profile_header": {
-          "status": "complete",
-          "started_at": "2026-10-28T09:04:53.150Z",
-          "finished_at": "2026-10-28T09:04:59.508Z",
-          "error": null
-        }
-      }
-    },
-    "kujo__o": {
-      "status": "complete",
-      "started_at": "2026-10-28T09:04:59.510Z",
-      "finished_at": "2026-10-28T09:05:05.614Z",
-      "error": null,
-      "stages": {
-        "profile_header": {
-          "status": "complete",
-          "started_at": "2026-10-28T09:04:59.510Z",
-          "finished_at": "2026-10-28T09:05:05.614Z",
+          "started_at": "2026-10-28T09:37:05.991Z",
+          "finished_at": "2026-10-28T09:37:17.778Z",
           "error": null
         }
       }
     },
     "extreme_laugh_07": {
       "status": "complete",
-      "started_at": "2026-10-28T09:05:05.616Z",
-      "finished_at": "2026-10-28T09:05:11.500Z",
+      "started_at": "2026-10-28T09:37:17.781Z",
+      "finished_at": "2026-10-28T09:37:29.270Z",
       "error": null,
       "stages": {
-        "profile_header": {
+        "reel_grid": {
           "status": "complete",
-          "started_at": "2026-10-28T09:05:05.616Z",
-          "finished_at": "2026-10-28T09:05:11.500Z",
+          "started_at": "2026-10-28T09:37:17.781Z",
+          "finished_at": "2026-10-28T09:37:29.270Z",
           "error": null
         }
       }
     },
-    "sallusmemer": {
+    "scoobyjacks_": {
       "status": "complete",
-      "started_at": "2026-10-28T09:05:11.502Z",
-      "finished_at": "2026-10-28T09:05:17.420Z",
+      "started_at": "2026-10-28T09:37:29.273Z",
+      "finished_at": "2026-10-28T09:37:41.684Z",
       "error": null,
       "stages": {
-        "profile_header": {
+        "reel_grid": {
           "status": "complete",
-          "started_at": "2026-10-28T09:05:11.502Z",
-          "finished_at": "2026-10-28T09:05:17.420Z",
-          "error": null
-        }
-      }
-    },
-    "jellyfish.m3mes": {
-      "status": "complete",
-      "started_at": "2026-10-28T09:05:17.422Z",
-      "finished_at": "2026-10-28T09:05:23.085Z",
-      "error": null,
-      "stages": {
-        "profile_header": {
-          "status": "complete",
-          "started_at": "2026-10-28T09:05:17.422Z",
-          "finished_at": "2026-10-28T09:05:23.085Z",
-          "error": null
-        }
-      }
-    },
-    "zoya._100x": {
-      "status": "complete",
-      "started_at": "2026-10-28T09:05:23.087Z",
-      "finished_at": "2026-10-28T09:05:29.981Z",
-      "error": null,
-      "stages": {
-        "profile_header": {
-          "status": "complete",
-          "started_at": "2026-10-28T09:05:23.087Z",
-          "finished_at": "2026-10-28T09:05:29.981Z",
-          "error": null
-        }
-      }
-    },
-    "melonphernelia": {
-      "status": "complete",
-      "started_at": "2026-10-28T09:05:29.984Z",
-      "finished_at": "2026-10-28T09:05:36.060Z",
-      "error": null,
-      "stages": {
-        "profile_header": {
-          "status": "complete",
-          "started_at": "2026-10-28T09:05:29.984Z",
-          "finished_at": "2026-10-28T09:05:36.060Z",
+          "started_at": "2026-10-28T09:37:29.273Z",
+          "finished_at": "2026-10-28T09:37:41.684Z",
           "error": null
         }
       }
     },
     "damn_nigas": {
       "status": "complete",
-      "started_at": "2026-10-28T09:05:36.062Z",
-      "finished_at": "2026-10-28T09:05:41.974Z",
+      "started_at": "2026-10-28T09:37:41.688Z",
+      "finished_at": "2026-10-28T09:37:54.396Z",
       "error": null,
       "stages": {
-        "profile_header": {
+        "reel_grid": {
           "status": "complete",
-          "started_at": "2026-10-28T09:05:36.062Z",
-          "finished_at": "2026-10-28T09:05:41.974Z",
+          "started_at": "2026-10-28T09:37:41.688Z",
+          "finished_at": "2026-10-28T09:37:54.396Z",
+          "error": null
+        }
+      }
+    },
+    "zosttfeed": {
+      "status": "complete",
+      "started_at": "2026-10-28T09:37:54.399Z",
+      "finished_at": "2026-10-28T09:38:09.423Z",
+      "error": null,
+      "stages": {
+        "reel_grid": {
+          "status": "complete",
+          "started_at": "2026-10-28T09:37:54.399Z",
+          "finished_at": "2026-10-28T09:38:09.423Z",
+          "error": null
+        }
+      }
+    },
+    "blunt.fun4": {
+      "status": "complete",
+      "started_at": "2026-10-28T09:38:09.427Z",
+      "finished_at": "2026-10-28T09:38:24.344Z",
+      "error": null,
+      "stages": {
+        "reel_grid": {
+          "status": "complete",
+          "started_at": "2026-10-28T09:38:09.427Z",
+          "finished_at": "2026-10-28T09:38:24.344Z",
+          "error": null
+        }
+      }
+    },
+    "crick_video_07": {
+      "status": "complete",
+      "started_at": "2026-10-28T09:38:24.350Z",
+      "finished_at": "2026-10-28T09:38:38.272Z",
+      "error": null,
+      "stages": {
+        "reel_grid": {
+          "status": "complete",
+          "started_at": "2026-10-28T09:38:24.350Z",
+          "finished_at": "2026-10-28T09:38:38.272Z",
+          "error": null
+        }
+      }
+    },
+    "2many_memes_in_my_camera_roll": {
+      "status": "complete",
+      "started_at": "2026-10-28T09:38:38.276Z",
+      "finished_at": "2026-10-28T09:38:52.826Z",
+      "error": null,
+      "stages": {
+        "reel_grid": {
+          "status": "complete",
+          "started_at": "2026-10-28T09:38:38.276Z",
+          "finished_at": "2026-10-28T09:38:52.826Z",
+          "error": null
+        }
+      }
+    },
+    "guywithbadmemes69": {
+      "status": "complete",
+      "started_at": "2026-10-28T09:38:52.830Z",
+      "finished_at": "2026-10-28T09:39:07.105Z",
+      "error": null,
+      "stages": {
+        "reel_grid": {
+          "status": "complete",
+          "started_at": "2026-10-28T09:38:52.830Z",
+          "finished_at": "2026-10-28T09:39:07.105Z",
+          "error": null
+        }
+      }
+    },
+    "slopfeed100m": {
+      "status": "complete",
+      "started_at": "2026-10-28T09:39:07.107Z",
+      "finished_at": "2026-10-28T09:39:22.352Z",
+      "error": null,
+      "stages": {
+        "reel_grid": {
+          "status": "complete",
+          "started_at": "2026-10-28T09:39:07.107Z",
+          "finished_at": "2026-10-28T09:39:22.352Z",
+          "error": null
+        }
+      }
+    },
+    "zennnooxx": {
+      "status": "complete",
+      "started_at": "2026-10-28T09:39:22.355Z",
+      "finished_at": "2026-10-28T09:41:40.117Z",
+      "error": null,
+      "stages": {
+        "reel_grid": {
+          "status": "complete",
+          "started_at": "2026-10-28T09:39:22.355Z",
+          "finished_at": "2026-10-28T09:41:40.117Z",
+          "error": null
+        }
+      }
+    },
+    "jellyfish.m3mes": {
+      "status": "complete",
+      "started_at": "2026-10-28T09:41:40.120Z",
+      "finished_at": "2026-10-28T09:41:56.557Z",
+      "error": null,
+      "stages": {
+        "reel_grid": {
+          "status": "complete",
+          "started_at": "2026-10-28T09:41:40.120Z",
+          "finished_at": "2026-10-28T09:41:56.557Z",
+          "error": null
+        }
+      }
+    },
+    "nhiftbl": {
+      "status": "complete",
+      "started_at": "2026-10-28T09:41:56.559Z",
+      "finished_at": "2026-10-28T09:42:13.148Z",
+      "error": null,
+      "stages": {
+        "reel_grid": {
+          "status": "complete",
+          "started_at": "2026-10-28T09:41:56.559Z",
+          "finished_at": "2026-10-28T09:42:13.148Z",
+          "error": null
+        }
+      }
+    },
+    "madarameme0": {
+      "status": "complete",
+      "started_at": "2026-10-28T09:42:13.151Z",
+      "finished_at": "2026-10-28T09:42:30.409Z",
+      "error": null,
+      "stages": {
+        "reel_grid": {
+          "status": "complete",
+          "started_at": "2026-10-28T09:42:13.151Z",
+          "finished_at": "2026-10-28T09:42:30.409Z",
+          "error": null
+        }
+      }
+    },
+    "pixa.300k": {
+      "status": "complete",
+      "started_at": "2026-10-28T09:42:30.412Z",
+      "finished_at": "2026-10-28T09:42:49.775Z",
+      "error": null,
+      "stages": {
+        "reel_grid": {
+          "status": "complete",
+          "started_at": "2026-10-28T09:42:30.412Z",
+          "finished_at": "2026-10-28T09:42:49.775Z",
+          "error": null
+        }
+      }
+    },
+    "sallusmemer": {
+      "status": "complete",
+      "started_at": "2026-10-28T09:42:49.778Z",
+      "finished_at": "2026-10-28T09:43:07.281Z",
+      "error": null,
+      "stages": {
+        "reel_grid": {
+          "status": "complete",
+          "started_at": "2026-10-28T09:42:49.778Z",
+          "finished_at": "2026-10-28T09:43:07.281Z",
+          "error": null
+        }
+      }
+    },
+    "fun_fineee": {
+      "status": "complete",
+      "started_at": "2026-10-28T09:43:07.284Z",
+      "finished_at": "2026-10-28T09:43:27.441Z",
+      "error": null,
+      "stages": {
+        "reel_grid": {
+          "status": "complete",
+          "started_at": "2026-10-28T09:43:07.284Z",
+          "finished_at": "2026-10-28T09:43:27.441Z",
+          "error": null
+        }
+      }
+    },
+    "aniruddhballal": {
+      "status": "complete",
+      "started_at": "2026-10-28T09:43:27.444Z",
+      "finished_at": "2026-10-28T09:43:49.169Z",
+      "error": null,
+      "stages": {
+        "reel_grid": {
+          "status": "complete",
+          "started_at": "2026-10-28T09:43:27.444Z",
+          "finished_at": "2026-10-28T09:43:49.169Z",
+          "error": null
+        }
+      }
+    },
+    "kabir.chaudhary69": {
+      "status": "complete",
+      "started_at": "2026-10-28T09:43:49.171Z",
+      "finished_at": "2026-10-28T09:44:11.159Z",
+      "error": null,
+      "stages": {
+        "reel_grid": {
+          "status": "complete",
+          "started_at": "2026-10-28T09:43:49.171Z",
+          "finished_at": "2026-10-28T09:44:11.159Z",
+          "error": null
+        }
+      }
+    },
+    "solvik.editz9": {
+      "status": "complete",
+      "started_at": "2026-10-28T09:44:11.161Z",
+      "finished_at": "2026-10-28T09:46:46.673Z",
+      "error": null,
+      "stages": {
+        "reel_grid": {
+          "status": "complete",
+          "started_at": "2026-10-28T09:44:11.161Z",
+          "finished_at": "2026-10-28T09:46:46.673Z",
+          "error": null
+        }
+      }
+    },
+    "yervin8_": {
+      "status": "complete",
+      "started_at": "2026-10-28T09:46:46.675Z",
+      "finished_at": "2026-10-28T09:47:35.658Z",
+      "error": null,
+      "stages": {
+        "reel_grid": {
+          "status": "complete",
+          "started_at": "2026-10-28T09:46:46.675Z",
+          "finished_at": "2026-10-28T09:47:35.658Z",
+          "error": null
+        }
+      }
+    },
+    "kanika_s.0711": {
+      "status": "complete",
+      "started_at": "2026-10-28T09:47:35.661Z",
+      "finished_at": "2026-10-28T09:47:48.472Z",
+      "error": null,
+      "stages": {
+        "reel_grid": {
+          "status": "complete",
+          "started_at": "2026-10-28T09:47:35.661Z",
+          "finished_at": "2026-10-28T09:47:48.472Z",
+          "error": null
+        }
+      }
+    },
+    "micro.siss": {
+      "status": "complete",
+      "started_at": "2026-10-28T09:47:48.475Z",
+      "finished_at": "2026-10-28T09:48:13.817Z",
+      "error": null,
+      "stages": {
+        "reel_grid": {
+          "status": "complete",
+          "started_at": "2026-10-28T09:47:48.475Z",
+          "finished_at": "2026-10-28T09:48:13.817Z",
+          "error": null
+        }
+      }
+    },
+    "crustykid67": {
+      "status": "complete",
+      "started_at": "2026-10-28T09:48:13.820Z",
+      "finished_at": "2026-10-28T09:48:37.002Z",
+      "error": null,
+      "stages": {
+        "reel_grid": {
+          "status": "complete",
+          "started_at": "2026-10-28T09:48:13.820Z",
+          "finished_at": "2026-10-28T09:48:37.002Z",
+          "error": null
+        }
+      }
+    },
+    "mr_oggy_114": {
+      "status": "complete",
+      "started_at": "2026-10-28T09:48:37.005Z",
+      "finished_at": "2026-10-28T09:49:05.958Z",
+      "error": null,
+      "stages": {
+        "reel_grid": {
+          "status": "complete",
+          "started_at": "2026-10-28T09:48:37.005Z",
+          "finished_at": "2026-10-28T09:49:05.958Z",
+          "error": null
+        }
+      }
+    },
+    "tom4our": {
+      "status": "complete",
+      "started_at": "2026-10-28T09:49:05.960Z",
+      "finished_at": "2026-10-28T09:49:34.057Z",
+      "error": null,
+      "stages": {
+        "reel_grid": {
+          "status": "complete",
+          "started_at": "2026-10-28T09:49:05.960Z",
+          "finished_at": "2026-10-28T09:49:34.057Z",
+          "error": null
+        }
+      }
+    },
+    "twinkiewinkie3": {
+      "status": "complete",
+      "started_at": "2026-10-28T09:49:34.060Z",
+      "finished_at": "2026-10-28T09:50:08.722Z",
+      "error": null,
+      "stages": {
+        "reel_grid": {
+          "status": "complete",
+          "started_at": "2026-10-28T09:49:34.060Z",
+          "finished_at": "2026-10-28T09:50:08.722Z",
+          "error": null
+        }
+      }
+    },
+    "zoya._100x": {
+      "status": "complete",
+      "started_at": "2026-10-28T09:50:08.725Z",
+      "finished_at": "2026-10-28T09:51:01.557Z",
+      "error": null,
+      "stages": {
+        "reel_grid": {
+          "status": "complete",
+          "started_at": "2026-10-28T09:50:08.725Z",
+          "finished_at": "2026-10-28T09:51:01.557Z",
+          "error": null
+        }
+      }
+    },
+    "manas.8x_": {
+      "status": "complete",
+      "started_at": "2026-10-28T09:51:01.559Z",
+      "finished_at": "2026-10-28T09:51:59.012Z",
+      "error": null,
+      "stages": {
+        "reel_grid": {
+          "status": "complete",
+          "started_at": "2026-10-28T09:51:01.559Z",
+          "finished_at": "2026-10-28T09:51:59.012Z",
+          "error": null
+        }
+      }
+    },
+    "slopcorn.exe": {
+      "status": "complete",
+      "started_at": "2026-10-28T09:51:59.015Z",
+      "finished_at": "2026-10-28T09:55:45.953Z",
+      "error": null,
+      "stages": {
+        "reel_grid": {
+          "status": "complete",
+          "started_at": "2026-10-28T09:51:59.015Z",
+          "finished_at": "2026-10-28T09:55:45.953Z",
+          "error": null
+        }
+      }
+    },
+    "vexo.7k": {
+      "status": "complete",
+      "started_at": "2026-10-28T09:55:45.956Z",
+      "finished_at": "2026-10-28T09:56:53.032Z",
+      "error": null,
+      "stages": {
+        "reel_grid": {
+          "status": "complete",
+          "started_at": "2026-10-28T09:55:45.956Z",
+          "finished_at": "2026-10-28T09:56:53.032Z",
+          "error": null
+        }
+      }
+    },
+    "paystasongta": {
+      "status": "complete",
+      "started_at": "2026-10-28T09:56:53.035Z",
+      "finished_at": "2026-10-28T09:58:14.863Z",
+      "error": null,
+      "stages": {
+        "reel_grid": {
+          "status": "complete",
+          "started_at": "2026-10-28T09:56:53.035Z",
+          "finished_at": "2026-10-28T09:58:14.863Z",
+          "error": null
+        }
+      }
+    },
+    "puffinvalley": {
+      "status": "complete",
+      "started_at": "2026-10-28T09:58:14.866Z",
+      "finished_at": "2026-10-28T09:59:34.885Z",
+      "error": null,
+      "stages": {
+        "reel_grid": {
+          "status": "complete",
+          "started_at": "2026-10-28T09:58:14.866Z",
+          "finished_at": "2026-10-28T09:59:34.885Z",
+          "error": null
+        }
+      }
+    },
+    "kujo__o": {
+      "status": "complete",
+      "started_at": "2026-10-28T09:59:34.887Z",
+      "finished_at": "2026-10-28T10:13:38.208Z",
+      "error": null,
+      "stages": {
+        "reel_grid": {
+          "status": "complete",
+          "started_at": "2026-10-28T09:59:34.887Z",
+          "finished_at": "2026-10-28T10:13:38.208Z",
+          "error": null
+        }
+      }
+    },
+    "melonphernelia": {
+      "status": "complete",
+      "started_at": "2026-10-28T10:13:38.211Z",
+      "finished_at": "2026-10-28T10:15:38.043Z",
+      "error": null,
+      "stages": {
+        "reel_grid": {
+          "status": "complete",
+          "started_at": "2026-10-28T10:13:38.211Z",
+          "finished_at": "2026-10-28T10:15:38.043Z",
+          "error": null
+        }
+      }
+    },
+    "farf_allajade": {
+      "status": "complete",
+      "started_at": "2026-10-28T10:15:38.047Z",
+      "finished_at": "2026-10-28T10:17:44.289Z",
+      "error": null,
+      "stages": {
+        "reel_grid": {
+          "status": "complete",
+          "started_at": "2026-10-28T10:15:38.047Z",
+          "finished_at": "2026-10-28T10:17:44.289Z",
+          "error": null
+        }
+      }
+    },
+    "pigeonlarping": {
+      "status": "complete",
+      "started_at": "2026-10-28T10:17:44.292Z",
+      "finished_at": "2026-10-28T10:20:08.023Z",
+      "error": null,
+      "stages": {
+        "reel_grid": {
+          "status": "complete",
+          "started_at": "2026-10-28T10:17:44.292Z",
+          "finished_at": "2026-10-28T10:20:08.023Z",
+          "error": null
+        }
+      }
+    },
+    "freddy.memes": {
+      "status": "complete",
+      "started_at": "2026-10-28T10:20:08.026Z",
+      "finished_at": "2026-10-28T10:23:22.263Z",
+      "error": null,
+      "stages": {
+        "reel_grid": {
+          "status": "complete",
+          "started_at": "2026-10-28T10:20:08.026Z",
+          "finished_at": "2026-10-28T10:23:22.263Z",
+          "error": null
+        }
+      }
+    },
+    "zosttified": {
+      "status": "complete",
+      "started_at": "2026-10-28T10:23:22.266Z",
+      "finished_at": "2026-10-28T10:25:24.259Z",
+      "error": null,
+      "stages": {
+        "reel_grid": {
+          "status": "complete",
+          "started_at": "2026-10-28T10:23:22.266Z",
+          "finished_at": "2026-10-28T10:25:24.259Z",
+          "error": null
+        }
+      }
+    },
+    "girlsgetitt": {
+      "status": "complete",
+      "started_at": "2026-10-28T10:25:24.266Z",
+      "finished_at": "2026-10-28T10:28:04.170Z",
+      "error": null,
+      "stages": {
+        "reel_grid": {
+          "status": "complete",
+          "started_at": "2026-10-28T10:25:24.266Z",
+          "finished_at": "2026-10-28T10:28:04.170Z",
           "error": null
         }
       }
     },
     "nixk.xyz": {
       "status": "complete",
-      "started_at": "2026-10-28T09:05:41.977Z",
-      "finished_at": "2026-10-28T09:05:48.030Z",
+      "started_at": "2026-10-28T10:28:04.173Z",
+      "finished_at": "2026-10-28T10:49:28.796Z",
       "error": null,
       "stages": {
-        "profile_header": {
+        "reel_grid": {
           "status": "complete",
-          "started_at": "2026-10-28T09:05:41.977Z",
-          "finished_at": "2026-10-28T09:05:48.030Z",
+          "started_at": "2026-10-28T10:28:04.173Z",
+          "finished_at": "2026-10-28T10:49:28.796Z",
           "error": null
         }
       }
@@ -980,70 +866,70 @@
   },
   "current": null,
   "current_stage": null,
-  "started_at": "2026-10-28T09:00:07.329Z",
-  "updated_at": "2026-10-28T09:05:48.032Z",
-  "finished_at": "2026-10-28T09:05:48.032Z",
+  "started_at": "2026-10-28T09:33:47.340Z",
+  "updated_at": "2026-10-28T10:49:28.798Z",
+  "finished_at": "2026-10-28T10:49:28.798Z",
   "stop_requested": false,
   "logs": [
-    "Starting @madarameme0 profile_header",
-    "[14:34:36] Collecting madarameme0 profile",
-    "[14:34:40] Saved after history snapshot: D:\\post engg\\dedgram\\collector-v2\\data\\madarameme0\\history\\2026-10-28T09-04-40-341Z-after-9564bb5d-e653-42a3-b42d-d2e618952407",
-    "[14:34:40] Done: Instagram posts 30. Report: D:\\post engg\\dedgram\\collector-v2\\data\\madarameme0\\report.html",
-    "Finished @madarameme0 profile_header: complete",
-    "Starting @pigeonlarping profile_header",
-    "[14:34:42] Collecting pigeonlarping profile",
-    "[14:34:46] Saved after history snapshot: D:\\post engg\\dedgram\\collector-v2\\data\\pigeonlarping\\history\\2026-10-28T09-04-46-239Z-after-332aa494-9074-4670-bc96-429adab42f06",
-    "[14:34:46] Done: Instagram posts 448. Report: D:\\post engg\\dedgram\\collector-v2\\data\\pigeonlarping\\report.html",
-    "Finished @pigeonlarping profile_header: complete",
-    "Starting @paystasongta profile_header",
-    "[14:34:48] Collecting paystasongta profile",
-    "[14:34:52] Saved after history snapshot: D:\\post engg\\dedgram\\collector-v2\\data\\paystasongta\\history\\2026-10-28T09-04-52-337Z-after-d6201889-a150-4a98-8a29-7b24c317272d",
-    "[14:34:52] Done: Instagram posts 228. Report: D:\\post engg\\dedgram\\collector-v2\\data\\paystasongta\\report.html",
-    "Finished @paystasongta profile_header: complete",
-    "Starting @fun_fineee profile_header",
-    "[14:34:54] Collecting fun_fineee profile",
-    "[14:34:58] Saved after history snapshot: D:\\post engg\\dedgram\\collector-v2\\data\\fun_fineee\\history\\2026-10-28T09-04-58-632Z-after-27fbd74a-16db-482d-a81c-a25462fa226f",
-    "[14:34:58] Done: Instagram posts 43. Report: D:\\post engg\\dedgram\\collector-v2\\data\\fun_fineee\\report.html",
-    "Finished @fun_fineee profile_header: complete",
-    "Starting @kujo__o profile_header",
-    "[14:35:00] Collecting kujo__o profile",
-    "[14:35:04] Saved after history snapshot: D:\\post engg\\dedgram\\collector-v2\\data\\kujo__o\\history\\2026-10-28T09-05-04-819Z-after-04e260ba-99bf-4b35-9146-a5c34afbe99a",
-    "[14:35:04] Done: Instagram posts 310. Report: D:\\post engg\\dedgram\\collector-v2\\data\\kujo__o\\report.html",
-    "Finished @kujo__o profile_header: complete",
-    "Starting @extreme_laugh_07 profile_header",
-    "[14:35:06] Collecting extreme_laugh_07 profile",
-    "[14:35:10] Saved after history snapshot: D:\\post engg\\dedgram\\collector-v2\\data\\extreme_laugh_07\\history\\2026-10-28T09-05-10-702Z-after-83a6d03b-3b76-4d86-8744-e3bb4ddec452",
-    "[14:35:10] Done: Instagram posts 13. Report: D:\\post engg\\dedgram\\collector-v2\\data\\extreme_laugh_07\\report.html",
-    "Finished @extreme_laugh_07 profile_header: complete",
-    "Starting @sallusmemer profile_header",
-    "[14:35:12] Collecting sallusmemer profile",
-    "[14:35:16] Saved after history snapshot: D:\\post engg\\dedgram\\collector-v2\\data\\sallusmemer\\history\\2026-10-28T09-05-16-618Z-after-570177d8-4ccf-4262-a73f-ccb1158fa288",
-    "[14:35:16] Done: Instagram posts 36. Report: D:\\post engg\\dedgram\\collector-v2\\data\\sallusmemer\\report.html",
-    "Finished @sallusmemer profile_header: complete",
-    "Starting @jellyfish.m3mes profile_header",
-    "[14:35:18] Collecting jellyfish.m3mes profile",
-    "[14:35:22] Saved after history snapshot: D:\\post engg\\dedgram\\collector-v2\\data\\jellyfish.m3mes\\history\\2026-10-28T09-05-22-269Z-after-a24f6074-4a9f-45be-b4c3-0c77a2cb62a8",
-    "[14:35:22] Done: Instagram posts 28. Report: D:\\post engg\\dedgram\\collector-v2\\data\\jellyfish.m3mes\\report.html",
-    "Finished @jellyfish.m3mes profile_header: complete",
-    "Starting @zoya._100x profile_header",
-    "[14:35:24] Collecting zoya._100x profile",
-    "[14:35:29] Saved after history snapshot: D:\\post engg\\dedgram\\collector-v2\\data\\zoya._100x\\history\\2026-10-28T09-05-29-086Z-after-71de0aa5-32fb-4d67-a095-d0198845ddbe",
-    "[14:35:29] Done: Instagram posts 158. Report: D:\\post engg\\dedgram\\collector-v2\\data\\zoya._100x\\report.html",
-    "Finished @zoya._100x profile_header: complete",
-    "Starting @melonphernelia profile_header",
-    "[14:35:31] Collecting melonphernelia profile",
-    "[14:35:35] Saved after history snapshot: D:\\post engg\\dedgram\\collector-v2\\data\\melonphernelia\\history\\2026-10-28T09-05-35-264Z-after-14fece32-bc32-4593-901a-27be69e32a0f",
-    "[14:35:35] Done: Instagram posts 315. Report: D:\\post engg\\dedgram\\collector-v2\\data\\melonphernelia\\report.html",
-    "Finished @melonphernelia profile_header: complete",
-    "Starting @damn_nigas profile_header",
-    "[14:35:37] Collecting damn_nigas profile",
-    "[14:35:41] Saved after history snapshot: D:\\post engg\\dedgram\\collector-v2\\data\\damn_nigas\\history\\2026-10-28T09-05-41-114Z-after-bdedbdd0-faeb-45a6-a57e-60981449bf20",
-    "[14:35:41] Done: Instagram posts 18. Report: D:\\post engg\\dedgram\\collector-v2\\data\\damn_nigas\\report.html",
-    "Finished @damn_nigas profile_header: complete",
-    "Starting @nixk.xyz profile_header",
-    "[14:35:43] Collecting nixk.xyz profile",
-    "[14:35:47] Saved after history snapshot: D:\\post engg\\dedgram\\collector-v2\\data\\nixk.xyz\\history\\2026-10-28T09-05-47-195Z-after-72ba1645-e890-47c2-b622-d4bfb6cc61f5",
-    "[14:35:47] Done: Instagram posts 3107. Report: D:\\post engg\\dedgram\\collector-v2\\data\\nixk.xyz\\report.html",
-    "Finished @nixk.xyz profile_header: complete"
+    "[15:43:36] reel: 2269 confirmed",
+    "[15:43:36] Saved after history snapshot: D:\\post engg\\dedgram\\collector-v2\\data\\kujo__o\\history\\2026-10-28T10-13-36-689Z-after-134433b3-afb7-4605-81e1-d4d3752e2688",
+    "[15:43:36] Done: reel URLs 2269. Report: D:\\post engg\\dedgram\\collector-v2\\data\\kujo__o\\report.html",
+    "Finished @kujo__o reel_grid: complete",
+    "Starting @melonphernelia reel_grid",
+    "[15:43:39] Saved before history snapshot: D:\\post engg\\dedgram\\collector-v2\\data\\melonphernelia\\history\\2026-10-28T10-13-39-432Z-before-a927234b-a6fa-4937-8ab3-576c21e5d367",
+    "[15:43:39] Using saved melonphernelia profile details",
+    "[15:43:39] Scanning reel grid",
+    "[15:45:36] reel: 315 confirmed",
+    "[15:45:36] Saved after history snapshot: D:\\post engg\\dedgram\\collector-v2\\data\\melonphernelia\\history\\2026-10-28T10-15-36-512Z-after-733daea5-b98e-4ff2-b9c3-631fc348b884",
+    "[15:45:36] Done: reel URLs 315. Report: D:\\post engg\\dedgram\\collector-v2\\data\\melonphernelia\\report.html",
+    "Finished @melonphernelia reel_grid: complete",
+    "Starting @farf_allajade reel_grid",
+    "[15:45:39] Saved before history snapshot: D:\\post engg\\dedgram\\collector-v2\\data\\farf_allajade\\history\\2026-10-28T10-15-39-155Z-before-6b51ffee-4172-4c26-ae59-5fabb82ae2e2",
+    "[15:45:39] Using saved farf_allajade profile details",
+    "[15:45:39] Scanning reel grid",
+    "[15:47:42] reel: 380 confirmed",
+    "[15:47:42] Saved after history snapshot: D:\\post engg\\dedgram\\collector-v2\\data\\farf_allajade\\history\\2026-10-28T10-17-42-726Z-after-0c88d746-69dc-4aac-ad49-4a804a33ca31",
+    "[15:47:42] Done: reel URLs 380. Report: D:\\post engg\\dedgram\\collector-v2\\data\\farf_allajade\\report.html",
+    "Finished @farf_allajade reel_grid: complete",
+    "Starting @pigeonlarping reel_grid",
+    "[15:47:45] Saved before history snapshot: D:\\post engg\\dedgram\\collector-v2\\data\\pigeonlarping\\history\\2026-10-28T10-17-45-378Z-before-533fad53-b364-4315-8726-26ba39e9a72b",
+    "[15:47:45] Using saved pigeonlarping profile details",
+    "[15:47:45] Scanning reel grid",
+    "[15:50:06] reel: 429 confirmed",
+    "[15:50:06] Saved after history snapshot: D:\\post engg\\dedgram\\collector-v2\\data\\pigeonlarping\\history\\2026-10-28T10-20-06-457Z-after-ac5f712f-d089-42f2-be2e-18c07d95729a",
+    "[15:50:06] Done: reel URLs 429. Report: D:\\post engg\\dedgram\\collector-v2\\data\\pigeonlarping\\report.html",
+    "Finished @pigeonlarping reel_grid: complete",
+    "Starting @freddy.memes reel_grid",
+    "[15:50:09] Saved before history snapshot: D:\\post engg\\dedgram\\collector-v2\\data\\freddy.memes\\history\\2026-10-28T10-20-09-200Z-before-ea4ef1c2-1b07-4d81-bd6c-e6fe0b7fd626",
+    "[15:50:09] Using saved freddy.memes profile details",
+    "[15:50:09] Scanning reel grid",
+    "[15:53:20] reel: 559 confirmed",
+    "[15:53:20] Saved after history snapshot: D:\\post engg\\dedgram\\collector-v2\\data\\freddy.memes\\history\\2026-10-28T10-23-20-692Z-after-c74ad363-0558-4881-8c9b-ba38403379ca",
+    "[15:53:20] Done: reel URLs 559. Report: D:\\post engg\\dedgram\\collector-v2\\data\\freddy.memes\\report.html",
+    "Finished @freddy.memes reel_grid: complete",
+    "Starting @zosttified reel_grid",
+    "[15:53:23] Saved before history snapshot: D:\\post engg\\dedgram\\collector-v2\\data\\zosttified\\history\\2026-10-28T10-23-23-314Z-before-4341d348-47f2-4b3b-8574-c9b125c4c07b",
+    "[15:53:23] Using saved zosttified profile details",
+    "[15:53:23] Scanning reel grid",
+    "[15:55:22] reel: 0 confirmed",
+    "[15:55:22] Saved after history snapshot: D:\\post engg\\dedgram\\collector-v2\\data\\zosttified\\history\\2026-10-28T10-25-22-758Z-after-9c05584a-148c-4ee6-acb8-b189668669ac",
+    "[15:55:22] Done: reel URLs 0. Report: D:\\post engg\\dedgram\\collector-v2\\data\\zosttified\\report.html",
+    "Finished @zosttified reel_grid: complete",
+    "Starting @girlsgetitt reel_grid",
+    "[15:55:25] Saved before history snapshot: D:\\post engg\\dedgram\\collector-v2\\data\\girlsgetitt\\history\\2026-10-28T10-25-25-375Z-before-5523bef0-930b-48f1-a8ba-f2c9d1787a1f",
+    "[15:55:25] Using saved girlsgetitt profile details",
+    "[15:55:25] Scanning reel grid",
+    "[15:58:02] reel: 514 confirmed",
+    "[15:58:02] Saved after history snapshot: D:\\post engg\\dedgram\\collector-v2\\data\\girlsgetitt\\history\\2026-10-28T10-28-02-690Z-after-1b71bcad-eb32-412a-b037-b9f18314fc22",
+    "[15:58:02] Done: reel URLs 514. Report: D:\\post engg\\dedgram\\collector-v2\\data\\girlsgetitt\\report.html",
+    "Finished @girlsgetitt reel_grid: complete",
+    "Starting @nixk.xyz reel_grid",
+    "[15:58:05] Saved before history snapshot: D:\\post engg\\dedgram\\collector-v2\\data\\nixk.xyz\\history\\2026-10-28T10-28-05-292Z-before-46a62457-b853-4de9-a8d1-08bf29038d22",
+    "[15:58:05] Using saved nixk.xyz profile details",
+    "[15:58:05] Scanning reel grid",
+    "[16:19:27] reel: 3556 confirmed",
+    "[16:19:27] Saved after history snapshot: D:\\post engg\\dedgram\\collector-v2\\data\\nixk.xyz\\history\\2026-10-28T10-49-27-032Z-after-e81e4f24-32cd-4d67-9532-9fffa6ca5d06",
+    "[16:19:27] Done: reel URLs 3556. Report: D:\\post engg\\dedgram\\collector-v2\\data\\nixk.xyz\\report.html",
+    "Finished @nixk.xyz reel_grid: complete"
   ]
 }
