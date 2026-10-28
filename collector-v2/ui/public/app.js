@@ -40,6 +40,13 @@ function render() {
 
 function saveSelection() { localStorage.setItem('dedgram-selected-v2', JSON.stringify([...state.selected])); }
 
+function renderAfterRefresh() {
+  // Replacing the DOM while a native select menu is open closes that menu.
+  // Keep the current controls alive until the user finishes choosing an option.
+  if (document.activeElement?.tagName === 'SELECT') return;
+  render();
+}
+
 async function refresh() {
   const page = route();
   const tasks = [api('/api/run').then((result) => { state.batch = result.batch; state.batchProfiles = result.profiles; })];
@@ -52,7 +59,7 @@ async function refresh() {
   if (page.page === 'profile') tasks.push(api(`/api/profiles/${encodeURIComponent(page.username)}`).then((result) => { state.detail = result; }));
   if (page.page === 'summary') tasks.push(api('/api/summary').then((result) => { state.overview = result; }));
   await Promise.all(tasks);
-  render();
+  renderAfterRefresh();
 }
 
 document.addEventListener('input', (event) => {
@@ -97,8 +104,8 @@ document.addEventListener('click', async (event) => {
   }
 });
 
-refresh().catch((error) => { state.error = error.message; render(); });
+refresh().catch((error) => { state.error = error.message; renderAfterRefresh(); });
 setInterval(() => {
   if (document.visibilityState === 'hidden') return;
-  refresh().catch((error) => { state.error = error.message; render(); });
+  refresh().catch((error) => { state.error = error.message; renderAfterRefresh(); });
 }, 3000);

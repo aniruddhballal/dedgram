@@ -47,6 +47,13 @@ function render() {
   }
 }
 
+function renderAfterRefresh() {
+  // Replacing the DOM while a native select menu is open closes that menu.
+  // Keep the current controls alive until the user finishes choosing an option.
+  if (document.activeElement?.tagName === 'SELECT') return;
+  render();
+}
+
 async function refresh() {
   const current = path();
   const calls = [
@@ -70,7 +77,7 @@ async function refresh() {
     state.setupStep = 'profiles';
     sessionStorage.setItem(setupKey, 'profiles');
   }
-  render();
+  renderAfterRefresh();
 }
 
 document.addEventListener('input', (event) => {
@@ -126,5 +133,5 @@ document.addEventListener('click', async (event) => {
   finally { state.busy = false; render(); }
 });
 
-refresh().catch((error) => { state.error = error.message; render(); });
-setInterval(() => { if (document.visibilityState !== 'hidden') refresh().catch((error) => { state.error = error.message; render(); }); }, 3000);
+refresh().catch((error) => { state.error = error.message; renderAfterRefresh(); });
+setInterval(() => { if (document.visibilityState !== 'hidden') refresh().catch((error) => { state.error = error.message; renderAfterRefresh(); }); }, 3000);
