@@ -53,7 +53,6 @@ if (!index.profile_keys.every((username) => /^[A-Za-z0-9._]{1,30}$/.test(usernam
 if (new Set(index.profile_keys).size !== index.profile_keys.length) throw new Error('Catalog contains duplicate usernames.');
 const buildDate = new Intl.DateTimeFormat('en-IN', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'Asia/Kolkata' }).format(new Date());
 
-const partialPublishedProfiles = new Set(['pichypeapp', 'printamovie']);
 const snapshotData = new Map();
 for (const username of [...fullProfiles, ...profileLevelProfiles]) {
   const [profile, discovery, items, run] = await Promise.all([
@@ -74,6 +73,10 @@ const publishedReelUrls = publishedSnapshotProfiles.reduce((sum, username) => su
 const resolvedReelStatuses = new Set(['archived', 'age_restricted']);
 const isCompleteReel = (item) => item.status === 'complete' && !item.last_error;
 const isResolvedReel = (item) => resolvedReelStatuses.has(item.status);
+const partialPublishedProfiles = new Set([...fullProfiles, ...profileLevelProfiles].filter((username) => {
+  const snapshot = snapshotData.get(username);
+  return (snapshot?.items || []).some((item) => item.kind === 'reel' && !isCompleteReel(item) && !isResolvedReel(item));
+}));
 const completeReels = publishedReelRows.filter(isCompleteReel);
 const reviewReels = publishedReelRows.filter((item) => !isCompleteReel(item) && !isResolvedReel(item));
 const totalMetric = (rows, key) => rows.reduce((sum, row) => sum + (numberMetric(row[key]) || 0), 0);
