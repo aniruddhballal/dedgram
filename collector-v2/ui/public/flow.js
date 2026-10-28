@@ -116,6 +116,7 @@ export function visibleCatalog(state) {
 }
 
 const modeOptions = [
+  ['profile_header', 'Profile details only', 'Collect account fields and the exact Instagram post count. Skip reel URLs and reel count discovery.'],
   ['profile_only', 'Profile + reel count', 'Collect account fields, the exact Instagram post count, and the reel grid count. Individual reel details wait.'],
   ['depth_first', 'Profile + reels, depth first', 'Finish each account before moving to the next.'],
   ['breadth_first', 'Profile + reels, breadth first', "Collect every profile first, then every account's reels."],
@@ -143,7 +144,8 @@ function runPanel(state) {
     ? Object.values(batch.results[name].stages).every((stage) => ['complete', 'needs_review', 'failed', 'skipped'].includes(stage.status))
     : ['complete', 'needs_review', 'failed', 'skipped'].includes(batch.results?.[name]?.status)).length;
   const complete = batch.profiles.filter((name) => batch.results?.[name]?.status === 'complete'
-    && (batch.mode !== 'profile_only' || state.batchProfiles.find((profile) => profile.username === name)?.profile_complete)).length;
+    && (batch.mode === 'profile_header' ? state.batchProfiles.find((profile) => profile.username === name)?.profile_header_complete
+      : batch.mode !== 'profile_only' || state.batchProfiles.find((profile) => profile.username === name)?.profile_complete)).length;
   const profileSteps = steps.filter((step) => ['profile', 'profile_header'].includes(step.stage));
   const reelSteps = steps.filter((step) => ['reel_grid', 'reels'].includes(step.stage));
   const current = state.batchProfiles.find((profile) => profile.username === batch.current);
