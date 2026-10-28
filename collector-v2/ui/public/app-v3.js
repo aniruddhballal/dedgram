@@ -20,7 +20,7 @@ const state = {
   order: ['selection', 'posts_ascending', 'reels_ascending'].includes(savedOrder) ? savedOrder : 'posts_ascending',
   workflow: savedWorkflow === 'username_migration' ? 'username_migration' : 'collection',
   setupStep: ['profiles', 'mode', 'order', 'review', 'progress'].includes(savedSetup) ? savedSetup : 'profiles',
-  itemSearch: '', itemFilter: 'all', itemSort: 'newest', busy: false, error: null, readOnly: false, popup: null
+  itemSearch: '', itemFilter: 'all', itemSort: 'newest', failedReelProfile: 'all', failedReelReason: '', failedReelSort: 'newest', busy: false, error: null, readOnly: false, popup: null
 };
 const observed = { batchId: null, batchStatus: null, usernameJobs: new Map(), usernameScan: null, usernameMigration: null };
 const sound = { context: null };
@@ -211,6 +211,7 @@ async function refresh() {
 document.addEventListener('input', (event) => {
   if (event.target.id === 'catalog-search') { state.search = event.target.value; render(); }
   if (event.target.id === 'item-search') { state.itemSearch = event.target.value; render(); }
+  if (event.target.id === 'failed-reel-reason') { state.failedReelReason = event.target.value; render(); }
 });
 document.addEventListener('change', (event) => {
   const target = event.target;
@@ -220,6 +221,8 @@ document.addEventListener('change', (event) => {
   if (target.id === 'catalog-filter') { state.filter = target.value; render(); }
   if (target.id === 'item-filter') { state.itemFilter = target.value; render(); }
   if (target.id === 'item-sort') { state.itemSort = target.value; render(); }
+  if (target.id === 'failed-reel-profile') { state.failedReelProfile = target.value; render(); }
+  if (target.id === 'failed-reel-sort') { state.failedReelSort = target.value; render(); }
 });
 document.addEventListener('click', async (event) => {
   const button = event.target.closest('[data-action]');

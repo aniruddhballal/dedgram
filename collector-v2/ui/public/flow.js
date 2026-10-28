@@ -180,7 +180,17 @@ function failedReelDate(value) {
 }
 
 export function renderFailedReels(state) {
-  const reels = state.failedReels;
+  const allReels = state.failedReels;
+  const profiles = allReels ? [...new Map(allReels.map((reel) => [reel.username, reel])).values()]
+    .sort((a, b) => (a.current_username || a.username).localeCompare(b.current_username || b.username)) : [];
+  const reasonQuery = (state.failedReelReason || '').trim().toLowerCase();
+  const reels = allReels?.filter((reel) => (state.failedReelProfile === 'all' || reel.username === state.failedReelProfile)
+    && (!reasonQuery || reel.reason.toLowerCase().includes(reasonQuery)))
+    .sort((a, b) => {
+      const left = Date.parse(a.failed_at || '') || 0;
+      const right = Date.parse(b.failed_at || '') || 0;
+      return state.failedReelSort === 'oldest' ? left - right : right - left;
+    });
   const rows = reels?.length ? reels.map((reel) => `<tr>
     <td><a href="${esc(reel.url || '#')}" target="_blank" rel="noreferrer">${esc(reel.shortcode)} ↗</a><small class="cell-note">${esc(statusText(reel.status))}</small></td>
     <td><a href="${profileHref(reel.username, reel.current_username)}">@${esc(reel.current_username || reel.username)}</a>${reel.current_username && reel.current_username !== reel.username ? `<small class="cell-note">Saved as @${esc(reel.username)}</small>` : ''}</td>
@@ -189,7 +199,8 @@ export function renderFailedReels(state) {
     <td><a class="button secondary small" href="${esc(reel.url || '#')}" target="_blank" rel="noreferrer">Open reel ↗</a></td>
   </tr>`).join('') : '';
   return `<section class="setup-header failed-reels-header"><div><span class="eyebrow">REEL REVIEW INDEX</span><h1>Failed reels</h1><p>Manually open each reel that could not be fully captured. This list includes failed and incomplete reel records from the saved collection runs.</p></div><div class="setup-header-actions"><a class="button secondary" href="/">Back to collection</a></div></section>
-    <section class="notice soft failed-reels-note"><h2>${reels ? `${number(reels.length)} reel${reels.length === 1 ? '' : 's'} need review` : 'Loading failed reels…'}</h2><p>Each row shows the profile, the reel ID, when its latest capture attempt happened, and why the record was left incomplete. Opening a link does not change the saved data.</p></section>
+    <section class="notice soft failed-reels-note"><h2>${allReels ? `${number(reels.length)} shown · ${number(allReels.length)} total need review` : 'Loading failed reels…'}</h2><p>Each row shows the profile, the reel ID, when its latest capture attempt happened, and why the record was left incomplete. Opening a link does not change the saved data.</p></section>
+    ${allReels ? `<section class="failed-reels-filters" aria-label="Filter failed reels"><label>PROFILE<select id="failed-reel-profile"><option value="all" ${state.failedReelProfile === 'all' ? 'selected' : ''}>All profiles (${number(profiles.length)})</option>${profiles.map((profile) => `<option value="${esc(profile.username)}" ${state.failedReelProfile === profile.username ? 'selected' : ''}>@${esc(profile.current_username || profile.username)} (${number(allReels.filter((reel) => reel.username === profile.username).length)})</option>`).join('')}</select></label><label>WHY IT NEEDS REVIEW<input id="failed-reel-reason" type="search" placeholder="Search failure reason…" value="${esc(state.failedReelReason || '')}"></label><label>SORT BY CAPTURE ATTEMPT<select id="failed-reel-sort"><option value="newest" ${state.failedReelSort !== 'oldest' ? 'selected' : ''}>Newest first</option><option value="oldest" ${state.failedReelSort === 'oldest' ? 'selected' : ''}>Oldest first</option></select></label></section>` : ''}
     ${reels ? (rows ? `<section class="failed-reels-section"><div class="table-wrap"><table class="failed-reels-table"><thead><tr><th>REEL ID</th><th>PROFILE</th><th>CAPTURE ATTEMPT</th><th>WHY IT NEEDS REVIEW</th><th>ACTION</th></tr></thead><tbody>${rows}</tbody></table></div></section>` : '<p class="empty-state">No failed or incomplete reel captures are currently saved.</p>') : '<p class="loading">Reading saved reel results…</p>'}`;
 }
 
