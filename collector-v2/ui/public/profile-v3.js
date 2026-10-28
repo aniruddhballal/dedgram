@@ -29,13 +29,14 @@ export function renderProfile(state) {
   const rows = filteredItems(state);
   const batchResult = state.batch?.results?.[p.username];
   const runDisabled = state.busy || state.readOnly || state.batch?.status === 'running';
-  const currentUsernameNote = p.current_username && p.current_username !== p.username ? `<p>Current username: @${esc(p.current_username)}</p>` : `<p>${esc(p.display_name || p.category || 'Instagram profile')}</p>`;
+  const identityUsername = p.current_username || p.username;
+  const currentUsernameNote = p.current_username && p.current_username !== p.username ? `<p>Previous username: @${esc(p.username)}</p>` : `<p>${esc(p.display_name || p.category || 'Instagram profile')}</p>`;
   const profileNeedsReelRefresh = p.profile_header_complete && p.posts_count !== null && !p.reels.grid_complete;
   const reportStatus = p.account_status === 'false_identification' ? 'false_identification' : p.account_status === 'age_restricted' ? 'age_restricted' : p.account_status === 'deleted' ? 'deleted' : p.profile_header_complete && !p.profile_complete && p.run.status === 'complete'
     ? 'counts_pending' : batchResult?.status || p.run.status;
-  return `${errorBanner(state.error)}<div class="breadcrumbs"><a href="/">Collection</a><span>/</span><span>@${esc(p.username)}</span></div>${renderStageStatus(p)}
+  return `${errorBanner(state.error)}<div class="breadcrumbs"><a href="/">Collection</a><span>/</span><span>@${esc(p.route_username || p.username)}</span></div>${renderStageStatus(p)}
     <section class="detail-hero"><div class="detail-identity">${p.profile_picture_url ? `<img class="detail-avatar" src="${esc(p.profile_picture_url)}" alt="">` : `<div class="detail-avatar fallback">${esc(p.username[0].toUpperCase())}</div>`}
-      <div><span class="eyebrow">PROFILE REPORT</span><h1>@${esc(p.username)}</h1>${currentUsernameNote}
+      <div><span class="eyebrow">PROFILE REPORT</span><h1>@${esc(identityUsername)}</h1>${currentUsernameNote}
         <div class="detail-links">${badge(reportStatus)}<a href="${esc(p.url)}" target="_blank" rel="noopener noreferrer">Instagram ↗</a><a href="${reportHref(p.username)}" target="_blank" rel="noopener noreferrer">HTML report ↗</a></div></div></div>
       <div class="detail-note"><span>LAST SCAN</span><strong>${esc(time(p.run.updated_at || p.profile_fetched_at))}</strong><small>${esc(p.run.phase || 'Awaiting first run')}</small></div></section>
     <div class="detail-actions"><button class="button secondary" data-action="run-profile-stage" data-username="${esc(p.username)}" data-mode="profile_header" ${runDisabled ? 'disabled' : ''}>Rerun profile details</button><button class="button secondary" data-action="run-profile-stage" data-username="${esc(p.username)}" data-mode="reel_grid" ${runDisabled ? 'disabled' : ''}>Rerun reel URLs</button><button class="button secondary" data-action="run-profile-stage" data-username="${esc(p.username)}" data-mode="reel_details" ${runDisabled ? 'disabled' : ''}>Rerun reel details</button><button class="button primary" data-action="run-profile-stage" data-username="${esc(p.username)}" data-mode="depth_first" ${runDisabled ? 'disabled' : ''}>Rerun all</button></div>

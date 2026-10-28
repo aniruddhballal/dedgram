@@ -270,6 +270,17 @@ const server = createServer(async (request, response) => {
       const [file, type] = assets.get(pathname);
       return sendFile(response, join(publicDir, file), type);
     }
+    if (pathname.startsWith('/profiles/')) {
+      const requested = decodeURIComponent(pathname.slice('/profiles/'.length)).replace(/\/$/, '');
+      const resolved = await resolveUsername(requested);
+      if (resolved) {
+        const current = (await profileData(resolved)).profile?.current_username;
+        if (current && current.toLowerCase() !== requested.toLowerCase()) {
+          response.writeHead(302, { Location: `/profiles/${encodeURIComponent(current)}` });
+          return response.end();
+        }
+      }
+    }
     if (pathname === '/' || pathname === '/summary' || pathname === '/overview' || pathname === '/collection/review'
       || pathname === '/collect/profiles' || pathname === '/collect/reel-urls' || pathname === '/collect/reel-details'
       || pathname.startsWith('/profiles/')) {

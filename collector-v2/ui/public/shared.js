@@ -11,7 +11,7 @@ export const compact = (value) => new Intl.NumberFormat('en', { notation: 'compa
 export const time = (value) => value ? new Date(value).toLocaleString() : 'Not yet';
 export const metric = (value) => value?.source === 'others_plus_one'
   ? number(value.value) : value?.raw ?? (value?.value == null ? '—' : number(value.value));
-export const profileHref = (name) => `/profiles/${encodeURIComponent(name)}`;
+export const profileHref = (name, currentUsername) => `/profiles/${encodeURIComponent(currentUsername || name)}`;
 export const reportHref = (name) => `/reports/${encodeURIComponent(name)}`;
 export const statusText = (value) => ({ not_started: 'Not collected', running: 'Running', complete: 'Complete',
   needs_review: 'Needs review', partial: 'Needs review', queued: 'Queued', failed: 'Failed', blocked: 'Blocked', deleted: 'Deleted or username changed', age_restricted: 'Age restricted (25+)', false_identification: 'False identification',

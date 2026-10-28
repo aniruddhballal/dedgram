@@ -14,7 +14,14 @@ export async function usernames() {
 
 export async function resolveUsername(requested) {
   if (typeof requested !== 'string') return null;
-  return (await usernames()).find((name) => name.toLowerCase() === requested.toLowerCase()) || null;
+  const names = await usernames();
+  const exact = names.find((name) => name.toLowerCase() === requested.toLowerCase());
+  if (exact) return exact;
+  for (const name of names) {
+    const profile = await readJson(paths(root, name).profile, {});
+    if (profile?.current_username?.toLowerCase() === requested.toLowerCase()) return name;
+  }
+  return null;
 }
 
 export async function profileData(username) {
@@ -43,6 +50,7 @@ export function profileSummary(data) {
   };
   return {
     username,
+    route_username: profile?.current_username || username,
     url: profile?.url || `https://www.instagram.com/${username}/`,
     current_username: profile?.current_username || username,
     username_history: profile?.username_history || [],
@@ -91,7 +99,8 @@ export async function summary() {
   const data = await Promise.all(keys.map(profileData));
   const profiles = data.map(profileSummary);
   const reels = data.flatMap(({ username, items }) => items.filter((item) => item.kind === 'reel')
-    .map((item) => ({ username, shortcode: item.shortcode, url: item.url,
+    .map((item) => ({ username, current_username: data.find((profile) => profile.username === username)?.profile?.current_username || username,
+      shortcode: item.shortcode, url: item.url,
       date: item.date, date_precision: item.date_precision,
       likes: item.likes, comments: item.comments, views: item.views,
       status: item.status, thumbnail_url: item.thumbnail_url,
