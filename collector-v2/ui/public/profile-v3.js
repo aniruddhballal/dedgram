@@ -6,6 +6,11 @@ function reviewReason(item) {
   return parts.join(' · ');
 }
 
+function reelCoverUrl(item) {
+  const shortcode = String(item.shortcode || '');
+  return /^[A-Za-z0-9_-]+$/.test(shortcode) ? `/media/${encodeURIComponent(shortcode)}.jpg` : item.thumbnail_url || '';
+}
+
 function filteredItems(state) {
   const needle = state.itemSearch.trim().toLowerCase();
   const filter = state.itemFilter === 'review' ? 'review' : 'all';
@@ -73,7 +78,7 @@ export function renderProfile(state) {
         <select id="item-filter" aria-label="Filter reels"><option value="all" ${state.itemFilter !== 'review' ? 'selected' : ''}>All reels</option><option value="review" ${state.itemFilter === 'review' ? 'selected' : ''}>Needs review</option></select>
         <select id="item-sort" aria-label="Sort content"><option value="newest" ${state.itemSort === 'newest' ? 'selected' : ''}>Newest first</option><option value="oldest" ${state.itemSort === 'oldest' ? 'selected' : ''}>Oldest first</option><option value="views" ${state.itemSort === 'views' ? 'selected' : ''}>Most views</option><option value="likes" ${state.itemSort === 'likes' ? 'selected' : ''}>Most likes</option></select></div>
       <div class="table-wrap"><table><thead><tr><th>REEL</th><th>DATE</th><th>LIKES</th><th>COMMENTS</th><th>VIEWS</th><th>STATUS</th><th>CAPTION</th></tr></thead><tbody>
-      ${rows.map((item) => `<tr class="${reviewReason(item) ? 'row-review' : ''}"><td><div class="content-cell">${item.thumbnail_url ? `<img src="${esc(item.thumbnail_url)}" alt="" loading="lazy">` : '<div class="thumb-fallback">▦</div>'}<span><a href="${esc(item.url)}" target="_blank" rel="noopener noreferrer">${esc(item.shortcode)} ↗</a><small>${esc(item.kind)}</small></span></div></td>
+      ${rows.map((item) => `<tr class="${reviewReason(item) ? 'row-review' : ''}"><td><div class="content-cell">${reelCoverUrl(item) ? `<img src="${esc(reelCoverUrl(item))}" data-cover-fallback="${esc(item.thumbnail_url || '')}" alt="Cover image for reel ${esc(item.shortcode)}" loading="lazy"><div class="thumb-fallback" hidden>REEL</div>` : '<div class="thumb-fallback">REEL</div>'}<span><a href="${esc(item.url)}" target="_blank" rel="noopener noreferrer">${esc(item.shortcode)} ↗</a><small>${esc(item.kind)}</small></span></div></td>
         <td>${esc(item.date || '—')}${item.date_precision === 'day' ? '<small class="cell-note">Day only</small>' : ''}</td><td>${esc(metric(item.likes))}</td><td>${esc(metric(item.comments))}</td><td><strong>${esc(metric(item.views))}</strong></td><td>${badge(item.status)}${reviewReason(item) ? `<small class="cell-note review-note">${esc(reviewReason(item))}</small>` : ''}</td><td class="caption" title="${esc(item.caption || '')}">${esc((item.caption || '—').slice(0, 120))}</td></tr>`).join('')}
       </tbody></table></div>${!rows.length ? '<div class="empty-state"><strong>No content matches this filter.</strong></div>' : ''}</section>`;
 }

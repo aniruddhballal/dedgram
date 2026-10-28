@@ -11,6 +11,7 @@ import { exactPostCount, gridCount, profileHeaderComplete, profileLevelComplete 
 import { applyUsernameChange, checkUsernameChange } from '../src/username-change.mjs';
 
 const publicDir = join(dirname(fileURLToPath(import.meta.url)), 'public');
+const showcaseMediaDir = join(root, '..', 'profile-showcase', 'snapshot', 'media');
 const jobPath = process.env.COLLECTOR_UI_JOB_PATH || join(root, 'data', 'ui-job.json');
 const port = Number(process.env.COLLECTOR_UI_PORT || 5174);
 const preview = process.env.COLLECTOR_UI_PREVIEW === '1';
@@ -300,6 +301,11 @@ const server = createServer(async (request, response) => {
     if (assets.has(pathname)) {
       const [file, type] = assets.get(pathname);
       return sendFile(response, join(publicDir, file), type);
+    }
+    if (pathname.startsWith('/media/')) {
+      const filename = decodeURIComponent(pathname.slice('/media/'.length));
+      if (!/^[A-Za-z0-9_-]+\.jpg$/.test(filename)) return json(response, 400, { error: 'Invalid media filename.' });
+      return sendFile(response, join(showcaseMediaDir, filename), 'image/jpeg');
     }
     if (pathname.startsWith('/profiles/')) {
       const requested = decodeURIComponent(pathname.slice('/profiles/'.length)).replace(/\/$/, '');

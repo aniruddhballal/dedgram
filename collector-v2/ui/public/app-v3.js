@@ -125,6 +125,14 @@ function render() {
       : step === 0 ? renderSelect(state) : step === 4 ? renderReview(state)
         : step > 0 ? renderStage(state, step) : '<p class="loading">Page not found.</p>';
   app.innerHTML = `${state.readOnly ? '<div class="preview-banner">PREVIEW · Collection actions are disabled while the original batch runs.</div>' : ''}${state.error ? `<div class="error-banner" role="alert"><strong>Something needs attention.</strong> ${esc(state.error)} <button data-action="dismiss" aria-label="Dismiss">×</button></div>` : ''}${content}`;
+  app.querySelectorAll('img[data-cover-fallback]').forEach((image) => {
+    image.addEventListener('error', () => {
+      const fallback = image.dataset.coverFallback;
+      if (fallback && !image.dataset.fallbackTried) { image.dataset.fallbackTried = '1'; image.src = fallback; return; }
+      image.hidden = true;
+      image.nextElementSibling?.removeAttribute('hidden');
+    });
+  });
   syncPopup();
   if (focusId) {
     const input = document.getElementById(focusId);
