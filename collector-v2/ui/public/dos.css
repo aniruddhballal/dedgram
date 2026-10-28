@@ -187,6 +187,7 @@ select option { background: var(--dos-panel); color: var(--dos-ink); }
 
 /* Monospace fonts read smaller than proportional UI fonts at the same size. */
 body { font-size: 16px; line-height: 1.6; }
+p { font-size: 16px; line-height: 1.6; }
 nav a, .nav-status, .footer, .footer strong { font-size: 12px; }
 .eyebrow, .overline, .snapshot-label, .flow-filters label, .directory-search label,
 .reel-controls label, .stat-strip span, .profile-stats span, .flow-stats span,
@@ -212,3 +213,20 @@ th, .flow-table-head { font-size: 11px; }
 .setup-review button { font-size: 12px; }
 .reel-date, .reel-link, .reel-details summary, .reel-metrics span,
 .reel-metrics small, .cell-note, .content-cell small { font-size: 11px; }
+.stage-status-head p { font-size: 17px; line-height: 1.55; }
+.stage-status-grid > div > span:first-child { font-size: 12px; }
+.stage-status-grid small, .run-panel p, .setup-review p { font-size: 14px; }
+.flow-head p, .section-heading p, .flow-batch small, .flow-table-row .value small,
+.flow-table-row .when, .flow-table-row .issue, .detail-note span, .detail-note small,
+.stat small, .profile-stats small, .reel-metrics small { font-size: 13px; }
+.flow-warning, .error-banner, .preview-banner, .notice, .bio, .bio-text,
+.caption, .reel-caption { font-size: 15px; }
+.strategy-note, .method-note { font-size: 13px; }
+small { font-size: 13px !important; }
+label, th, .eyebrow, .overline, .snapshot-label, .flow-filters label,
+.directory-search label, .reel-controls label, .stat-strip span, .profile-stats span,
+.flow-stats span, .scope-strip span, .stage-status-grid > div > span:first-child { font-size: 12px; }
+th, .flow-table-head { font-size: 12px !important; }
+td, .flow-table-row { font-size: 14px !important; }
+.content-cell small, .cell-note, .reel-date, .reel-link, .reel-details summary,
+.reel-metrics span { font-size: 12px !important; }
