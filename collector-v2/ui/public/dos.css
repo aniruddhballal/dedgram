@@ -174,7 +174,7 @@ select option { background: var(--dos-panel); color: var(--dos-ink); }
 .dos-popup-title { color: var(--dos-accent); border-color: var(--dos-line); }
 .dos-popup p { color: var(--dos-ink); }
 .dos-popup-ok { background: var(--dos-accent); color: var(--dos-bg); border-color: var(--dos-accent); }
-.dos-popup-ok:hover { background: var(--dos-bright); border-color: var(--dos-bright); }
+.dos-popup-ok:hover, .dos-popup-ok:focus-visible { background: var(--dos-accent) !important; border-color: var(--dos-accent) !important; color: var(--dos-bg) !important; }
 .dos-popup.error { border-color: var(--dos-danger) !important; }
 .dos-popup.error .dos-popup-title { color: var(--dos-danger); }
 
