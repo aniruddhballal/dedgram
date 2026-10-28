@@ -20,12 +20,35 @@ const state = {
   itemSearch: '', itemFilter: 'all', itemSort: 'newest', busy: false, error: null, readOnly: false, toasts: []
 };
 const observed = { batchId: null, batchStatus: null, usernameJobs: new Map() };
+const sound = { context: null };
 const path = () => location.pathname === '/summary' ? '/overview' : location.pathname;
 const saveSelection = () => localStorage.setItem(selectionKey, JSON.stringify([...state.selected]));
 const setupSteps = ['profiles', 'mode', 'order', 'review', 'progress'];
+function playNotificationSound(type) {
+  try {
+    const AudioContext = window.AudioContext || window.webkitAudioContext;
+    if (!AudioContext) return;
+    sound.context ||= new AudioContext();
+    const context = sound.context;
+    if (context.state === 'suspended') void context.resume();
+    const oscillator = context.createOscillator();
+    const gain = context.createGain();
+    const frequency = type === 'error' ? 220 : type === 'success' ? 880 : 660;
+    oscillator.type = 'sine';
+    oscillator.frequency.value = frequency;
+    gain.gain.setValueAtTime(0.0001, context.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.08, context.currentTime + 0.015);
+    gain.gain.exponentialRampToValueAtTime(0.0001, context.currentTime + 0.16);
+    oscillator.connect(gain).connect(context.destination);
+    oscillator.start();
+    oscillator.stop(context.currentTime + 0.18);
+  } catch { /* Audio is optional; the visual toast remains the source of truth. */ }
+}
+
 function notify(message, type = 'info', duration = 7000) {
   const id = `${Date.now()}-${Math.random().toString(36).slice(2)}`;
   state.toasts.push({ id, message, type });
+  playNotificationSound(type);
   render();
   window.setTimeout(() => {
     const index = state.toasts.findIndex((toast) => toast.id === id);
@@ -161,6 +184,10 @@ document.addEventListener('click', async (event) => {
   if (action === 'select-visible') { for (const profile of visibleCatalog(state)) state.selected.add(profile.username); saveSelection(); render(); return; }
   if (!['run-stage', 'run-filtered-stage', 'start', 'run-one', 'run-profile-stage', 'stop', 'check-username', 'apply-username-change'].includes(action)) return;
   state.busy = true; state.error = null; render();
+  if (action === 'check-username') notify('Username check started. Opening a saved reel...', 'info', 5000);
+  if (action === 'apply-username-change') notify('Username migration started. Fetching the current profile and preserving history...', 'info', 6000);
+  if (action === 'stop') notify('Stop requested. The current stage will finish first.', 'info', 6000);
+  if (action === 'start' || action === 'run-one' || action === 'run-filtered-stage' || action === 'run-profile-stage') notify('Collection started. Live progress is shown on this page.', 'info', 5000);
   try {
     const usernameAction = action === 'check-username' || action === 'apply-username-change';
     const endpoint = action === 'stop' ? '/api/runs/stop' : action === 'check-username' ? '/api/username-check'
@@ -173,10 +200,6 @@ document.addEventListener('click', async (event) => {
       mode: action === 'run-one' ? 'depth_first' : action === 'start' || filteredStageAction ? (filteredStageAction ? button.dataset.mode : state.mode) : button.dataset.mode,
       order: state.order };
     await api(endpoint, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
-    if (action === 'check-username') notify('Username check started. Opening a saved reel…', 'info', 5000);
-    if (action === 'apply-username-change') notify('Username migration started. Fetching the current profile and preserving history…', 'info', 6000);
-    if (action === 'stop') notify('Stop requested. The current stage will finish first.', 'info', 6000);
-    if (action === 'start' || action === 'run-one' || action === 'run-filtered-stage' || action === 'run-profile-stage') notify('Collection started. Live progress is shown on this page.', 'info', 5000);
     if (action === 'start' || action === 'run-one' || filteredStageAction) {
       state.setupStep = 'progress';
       sessionStorage.setItem(setupKey, 'progress');
