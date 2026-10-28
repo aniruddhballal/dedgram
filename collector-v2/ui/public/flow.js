@@ -1,5 +1,5 @@
 import { badge, esc, gridLabel, number, profileHref, progress, statusText, time } from './shared.js';
-import { filteredCatalog, filterOptions, stageModeForFilter } from './queue.js';
+import { filteredCatalog, filterOptions, stageModeForFilter, usernameChangeFlagged } from './queue.js';
 
 export const steps = [
   { path: '/', label: 'Choose profiles', short: 'Select', number: '01' },
@@ -14,6 +14,8 @@ const date = (value) => value ? time(value) : 'Time not recorded';
 const count = (value) => value == null ? '—' : number(value);
 const running = (state) => state.batch?.status === 'running';
 const terminalStatus = (value) => ['complete', 'needs_review', 'failed', 'skipped'].includes(value);
+const usernameMigration = (state) => state.workflow === 'username_migration';
+const flaggedSelected = (state) => selected(state).filter((profile) => usernameChangeFlagged(profile));
 
 function stageDone(batch, step) {
   return terminalStatus(batch.results?.[step.username]?.stages?.[step.stage]?.status);
@@ -162,8 +164,10 @@ const setupSteps = [
 
 function setupHeader(state, title, description, actions = '') {
   const index = setupSteps.findIndex(([key]) => key === state.setupStep);
+  const migration = usernameMigration(state);
+  const labels = migration ? ['Profiles', 'Migration mode', 'Run order', 'Review & start', 'Progress'] : setupSteps.map(([, label]) => label);
   return `<header class="setup-header"><div><span class="eyebrow"><span class="brand-word">dedgram</span> / NEW COLLECTION</span><h1>${esc(title)}</h1><p>${esc(description)}</p></div>${actions || (state.batch && state.setupStep !== 'progress' ? `<button class="setup-latest" data-action="setup-progress">View latest run →</button>` : '')}</header>
-    <ol class="setup-steps" aria-label="Collection setup">${setupSteps.map(([key, label], i) => `<li class="${i === index ? 'active' : i < index ? 'done' : ''}" ${i === index ? 'aria-current="step"' : ''}><span>${String(i + 1).padStart(2, '0')}</span>${esc(label)}</li>`).join('')}</ol>`;
+    <ol class="setup-steps" aria-label="${migration ? 'Username migration setup' : 'Collection setup'}">${setupSteps.map(([key], i) => `<li class="${i === index ? 'active' : i < index ? 'done' : ''}" ${i === index ? 'aria-current="step"' : ''}><span>${String(i + 1).padStart(2, '0')}</span>${esc(labels[i])}</li>`).join('')}</ol>`;
 }
 
 function setupActions(back, next, nextDisabled = false, extra = '') {
@@ -171,20 +175,43 @@ function setupActions(back, next, nextDisabled = false, extra = '') {
 }
 
 function modeStep(state) {
+  if (usernameMigration(state)) return usernameModeStep(state);
   const unavailable = selected(state).filter((profile) => !profile.profile_complete);
   const blocked = state.mode === 'reels_only' && unavailable.length;
   return `${setupHeader(state, 'Choose what to collect', 'Choose one collection strategy for the selected accounts.')}${strategy(state)}
     ${setupActions(true, 'Choose run order', !state.selected.size || blocked, `${number(state.selected.size)} profile${state.selected.size === 1 ? '' : 's'} selected`)}`;
 }
 
+const migrationModes = [
+  ['depth_first', 'Profile by profile', 'Finish the complete username migration for one account before moving to the next.'],
+  ['breadth_first', 'Queued migration', 'Queue every selected account in order; each account is still migrated atomically.']
+];
+
+function usernameModeStep(state) {
+  const profiles = flaggedSelected(state);
+  return `${setupHeader(state, 'Choose migration mode', 'Choose how the flagged username changes should be applied.')}
+    <section class="setup-choice"><span class="eyebrow">MIGRATION MODE</span><div class="mode-grid">${migrationModes.map(([mode, title, description]) => `<label class="mode-option ${state.mode === mode ? 'chosen' : ''}"><input type="radio" name="run-mode" value="${mode}" ${state.mode === mode ? 'checked' : ''}><span><strong>${esc(title)}</strong><small>${esc(description)}</small></span></label>`).join('')}</div></section>
+    ${setupActions(true, 'Choose run order', !profiles.length, `${number(profiles.length)} flagged profile${profiles.length === 1 ? '' : 's'} selected`)}`;
+}
+
 function orderStep(state) {
+  if (usernameMigration(state)) return usernameOrderStep(state);
   return `${setupHeader(state, 'Choose run order', 'Choose how the selected accounts will be queued.')}
     <section class="setup-choice"><span class="eyebrow">RUN ORDER</span>${orderControl(state)}
       <p>Fewest posts first uses saved exact post counts. Fewest reels first uses saved finalized reel grid counts. Profiles without the chosen count run last. Selection order follows the order you selected accounts.</p></section>
     ${setupActions(true, 'Review collection', !state.selected.size, `${number(state.selected.size)} profile${state.selected.size === 1 ? '' : 's'} · ${esc(modeOptions.find(([mode]) => mode === state.mode)?.[1] || state.mode)}`)}`;
 }
 
+function usernameOrderStep(state) {
+  const profiles = flaggedSelected(state);
+  return `${setupHeader(state, 'Choose run order', 'Choose the order for the flagged username migrations.')}
+    <section class="setup-choice"><span class="eyebrow">RUN ORDER</span>${orderControl(state)}
+      <p>Fewest posts first uses saved post counts. Fewest reels first uses saved reel counts. Selection order follows the accounts you selected.</p></section>
+    ${setupActions(true, 'Review migration', !profiles.length, `${number(profiles.length)} flagged profile${profiles.length === 1 ? '' : 's'} · ${esc(state.mode === 'depth_first' ? 'Profile by profile' : 'Queued migration')}`)}`;
+}
+
 function reviewStep(state) {
+  if (usernameMigration(state)) return usernameReviewStep(state);
   const profiles = selected(state);
   const unavailable = profiles.filter((profile) => !profile.profile_complete);
   const canRun = profiles.length && !running(state) && !state.busy && !state.readOnly && (state.mode !== 'reels_only' || !unavailable.length);
@@ -198,10 +225,51 @@ function reviewStep(state) {
     <div class="setup-actions"><button class="button secondary" data-action="setup-back">← Back</button><a class="button secondary ${profiles.length ? '' : 'disabled'}" href="/collect/profiles">Collect step by step →</a><button class="button primary" data-action="start" ${canRun ? '' : 'disabled'}>${state.busy ? 'Starting…' : `Run ${number(profiles.length)} selected →`}</button></div>`;
 }
 
+function usernameReviewStep(state) {
+  const profiles = flaggedSelected(state);
+  const canRun = profiles.length && !state.busy && !state.readOnly && state.usernameMigration?.status !== 'running';
+  const order = state.order === 'posts_ascending' ? 'Fewest posts first' : state.order === 'reels_ascending' ? 'Fewest reels first' : 'Selection order';
+  const mode = state.mode === 'depth_first' ? 'Profile by profile' : 'Queued migration';
+  return `${setupHeader(state, 'Review and start', 'Check the old and detected usernames before changing any stored records.')}
+    <section class="setup-review"><div><span class="eyebrow">PROFILES</span><strong>${number(profiles.length)} selected</strong><p>${profiles.slice(0, 7).map((profile) => `@${esc(profile.username)} → @${esc(profile.username_check.detected_username)}`).join(', ')}${profiles.length > 7 ? `, and ${profiles.length - 7} more` : ''}</p><button data-action="setup-step" data-step="profiles">Edit profiles</button></div>
+      <div><span class="eyebrow">MIGRATION MODE</span><strong>${esc(mode)}</strong><p>Each migration preserves the old record, folder, URLs, and public snapshot history.</p><button data-action="setup-step" data-step="mode">Edit mode</button></div>
+      <div><span class="eyebrow">RUN ORDER</span><strong>${esc(order)}</strong><p>The migration engine applies one account at a time.</p><button data-action="setup-step" data-step="order">Edit order</button></div></section>
+    <section class="username-migration-list">${profiles.map((profile) => `<div><strong>@${esc(profile.username)}</strong><span>→</span><strong>@${esc(profile.username_check.detected_username)}</strong><small>Confirmed ${esc(date(profile.username_check.checked_at))}</small></div>`).join('')}</section>
+    <div class="setup-actions"><button class="button secondary" data-action="setup-back">← Back</button><button class="button primary" data-action="start" ${canRun ? '' : 'disabled'}>${state.busy ? 'Starting…' : `Start migration for ${number(profiles.length)} →`}</button></div>`;
+}
+
 function progressStep(state) {
+  if (usernameMigration(state)) return usernameMigrationProgress(state);
   const actions = '<div class="setup-header-actions"><button class="button secondary" data-action="setup-new">New collection</button><a class="button secondary" href="/collection/review">View saved results →</a></div>';
   return `${setupHeader(state, 'Collection progress', 'Follow the current run and inspect its saved results.', actions)}
     ${runPanel(state)}`;
+}
+
+function usernameMigrationProgress(state) {
+  const job = state.usernameMigration;
+  const active = job?.status === 'running';
+  const done = job?.completed || 0;
+  const total = job?.profiles?.length || 0;
+  const current = job?.profiles?.find((profile) => profile.username === job.current);
+  const actions = '<div class="setup-header-actions"><button class="button secondary" data-action="setup-new">New collection</button></div>';
+  return `${setupHeader(state, 'Username migration progress', 'Follow each confirmed username change as the local and public records are updated.', actions)}
+    <section class="run-panel"><div class="run-panel-top"><div><span class="eyebrow">${active ? 'USERNAME MIGRATION RUNNING' : 'LATEST USERNAME MIGRATION'}</span><h2>${active ? `@${esc(job.current || 'Preparing')}` : esc(job?.status || 'No migration run')}</h2><p>${active ? esc(current?.detail || current?.phase || 'Preparing migration') : `${number(done)} of ${number(total)} migrations finished`}</p></div></div>
+      <div class="run-counts"><div><strong>${number(done)}<small> / ${number(total)}</small></strong><span>PROFILES FINISHED</span></div><div><strong>${number(job?.profiles?.filter((profile) => profile.status === 'complete').length || 0)}</strong><span>MIGRATED</span></div><div><strong>${number(job?.profiles?.filter((profile) => profile.status === 'failed').length || 0)}</strong><span>NEEDS REVIEW</span></div></div>
+      ${progress(done, total)}
+      <div class="run-accounts">${(job?.profiles || []).map((profile) => `<div><span><strong>@${esc(profile.username)}</strong> → <strong>@${esc(profile.detected_username)}</strong></span><span>${badge(profile.status)}</span><small>${esc(profile.error || profile.detail || 'Queued')}</small></div>`).join('')}</div>
+    </section>`;
+}
+
+function usernameScanPanel(state) {
+  const scan = state.usernameScan;
+  const active = scan?.status === 'running';
+  const flagged = state.catalog.filter((profile) => usernameChangeFlagged(profile)).length;
+  const selectedFlagged = flaggedSelected(state).length;
+  return `<section class="username-workflow-panel"><div><span class="eyebrow">USERNAME WORKFLOW</span><h2>Find renamed accounts without changing anything</h2><p>Run a global check to label accounts whose saved reel now shows a different username. This check only records evidence; it does not rename folders or refetch profiles.</p>${scan ? `<p class="username-scan-status">${active ? `Checking ${number(scan.completed)} of ${number(scan.total)}${scan.current ? ` · @${esc(scan.current)}` : ''}` : `Last check: ${number(scan.changed || 0)} change${scan.changed === 1 ? '' : 's'} flagged · ${number(scan.no_change || 0)} unchanged · ${number(scan.failed || 0)} failed`}</p>` : ''}</div><div class="username-workflow-actions"><button class="button secondary" data-action="scan-usernames" ${active || state.busy || state.readOnly ? 'disabled' : ''}>${active ? 'Checking usernames…' : 'Run global username check'}</button><button class="button primary" data-action="begin-username-migration" ${!selectedFlagged || state.busy || state.readOnly ? 'disabled' : ''}>Review ${number(selectedFlagged)} flagged for migration</button></div></section>`;
+}
+
+export function renderUsernameReview(state) {
+  return usernameReviewStep(state);
 }
 
 export function renderSelect(state) {
@@ -214,6 +282,7 @@ export function renderSelect(state) {
   const filteredStageLabel = state.filter === 'profile_missing' ? 'profile details' : state.filter === 'reel_count_missing' ? 'reel URLs / count' : 'reel details';
   const canRunFilteredStage = filteredStageMode && visible.length && !running(state) && !state.busy && !state.readOnly;
   return `${setupHeader(state, 'Choose profiles', 'Find and select the accounts you want to collect.')}
+    ${usernameScanPanel(state)}
     <section class="flow-head"><div><span class="eyebrow">PROFILE CATALOG</span><h2>Pick a collection set</h2><p>Filter by the next missing stage, then run that stage or select the set for a combined depth-first or breadth-first run.</p></div><div class="flow-actions">${filteredStageMode ? `<button class="button primary" data-action="run-filtered-stage" data-mode="${filteredStageMode}" ${canRunFilteredStage ? '' : 'disabled'}>Run visible ${filteredStageLabel} (${number(visible.length)})</button>` : ''}<button class="button secondary" data-action="select-visible">Select visible</button><button class="button secondary" data-action="clear">Clear</button></div></section>
     <div class="setup-dock"><span><strong>${number(state.selected.size)}</strong> selected</span><button class="button primary" data-action="setup-next" ${state.selected.size ? '' : 'disabled'}>Continue to mode →</button></div>
      <div class="flow-filters"><label>SEARCH PROFILES<input id="catalog-search" type="search" placeholder="Username, country, category, bio" value="${esc(state.search)}"></label><label>SHOW<select id="catalog-filter" aria-label="Filter profiles">${filterOptions(state)}</select></label><div class="flow-layout" role="group" aria-label="Profile layout"><button data-action="grid" class="${state.layout === 'grid' ? 'current' : ''}" aria-label="Grid view" aria-pressed="${state.layout === 'grid'}">▦</button><button data-action="list" class="${state.layout === 'list' ? 'current' : ''}" aria-label="List view" aria-pressed="${state.layout === 'list'}">☰</button></div></div>

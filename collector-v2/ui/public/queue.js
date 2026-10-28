@@ -40,12 +40,17 @@ export function stageModeForFilter(filter) {
   return { profile_missing: 'profile_header', reel_count_missing: 'reel_grid', reel_count_ready: 'reel_details' }[filter] || null;
 }
 
+export function usernameChangeFlagged(profile) {
+  return profile?.username_check?.status === 'changed' && Boolean(profile.username_check.detected_username);
+}
+
 const filterDefinitions = [
   ['all', 'All profiles', () => true],
   ['profile_missing', 'Profile details missing', (profile) => !resolvedProfile(profile) && !profileDetailsReady(profile)],
   ['reel_count_missing', 'Reel count missing', (profile) => !resolvedProfile(profile) && profileDetailsReady(profile) && !reelCountReady(profile)],
   ['reel_count_ready', 'Reel count ready', (profile) => !resolvedProfile(profile) && reelCountReady(profile) && !reelDetailsComplete(profile)],
   ['reel_details_complete', 'Reel details complete', (profile) => !resolvedProfile(profile) && reelDetailsComplete(profile)],
+  ['username_changed', 'Username change flagged', usernameChangeFlagged],
   ['resolved', 'Resolved / no collection needed', (profile) => resolvedProfile(profile)],
   ['review', 'Needs review / failed', (profile) => needsReview(profile)]
 ];
@@ -75,7 +80,7 @@ function card(profile, selected, running) {
     <div class="card-top"><label class="check-label"><input type="checkbox" data-select="${esc(profile.username)}" ${selected ? 'checked' : ''} aria-label="Select ${esc(profile.username)}"><span></span></label>${badge(status)}</div>
     <div class="card-identity">${profile.profile_picture_url ? `<img class="avatar" src="${esc(profile.profile_picture_url)}" alt="" loading="lazy">` : `<div class="avatar fallback">${esc(profile.username[0].toUpperCase())}</div>`}
       <div><a class="profile-name" href="${profileHref(profile.username)}">@${esc(profile.username)}</a><p>${esc(profile.display_name || profile.category || profile.country || 'Profile ready for collection')}</p></div></div>
-    <div class="card-levels"><span>Profile: <b>${profile.profile_complete ? 'Ready' : profile.profile_header_complete ? 'Counts pending' : profile.profile_fetched_at ? 'Needs review' : 'Not collected'}</b></span><span>Items scanned: <b>${profile.reels.processed + profile.posts.processed}</b></span>${profile.reels.review ? `<span>Reels for review: <b>${profile.reels.review}</b></span>` : ''}</div>
+    <div class="card-levels"><span>Profile: <b>${profile.profile_complete ? 'Ready' : profile.profile_header_complete ? 'Counts pending' : profile.profile_fetched_at ? 'Needs review' : 'Not collected'}</b></span><span>Items scanned: <b>${profile.reels.processed + profile.posts.processed}</b></span>${profile.reels.review ? `<span>Reels for review: <b>${profile.reels.review}</b></span>` : ''}${usernameChangeFlagged(profile) ? `<span>Username: <b>Changed to @${esc(profile.username_check.detected_username)}</b></span>` : ''}</div>
     <div class="card-counts"><div title="${esc(profile.reels.grid_error || '')}"><strong>${profile.profile_fetched_at ? gridLabel(profile.reels, profile.run) : 'Not collected'}</strong><span>REEL GRID COUNT</span></div><div title="${esc(profile.posts_count_error || '')}"><strong>${profile.posts_count === null ? profile.profile_fetched_at ? 'Error' : 'Not collected' : number(profile.posts_count)}</strong><span>INSTAGRAM POSTS</span></div></div>
     ${profile.reels.grid_complete ? progress(profile.reels.processed, profile.reels.discovered) : ''}
     <div class="card-footer"><span>${profile.profile_fetched_at ? `Updated ${esc(time(profile.run.updated_at || profile.profile_fetched_at))}` : 'Ready to collect'}</span><div><button class="text-button" data-action="run-one" data-username="${esc(profile.username)}" ${running ? 'disabled' : ''}>Run profile + reels</button><a href="${profileHref(profile.username)}">View profile</a></div></div>

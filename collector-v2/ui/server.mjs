@@ -16,6 +16,8 @@ const jobPath = process.env.COLLECTOR_UI_JOB_PATH || join(root, 'data', 'ui-job.
 const port = Number(process.env.COLLECTOR_UI_PORT || 5174);
 const preview = process.env.COLLECTOR_UI_PREVIEW === '1';
 const usernameJobs = new Map();
+let usernameScanJob = null;
+let usernameMigrationJob = null;
 
 const json = (response, status, value) => {
   response.writeHead(status, { 'Content-Type': 'application/json; charset=utf-8', 'Cache-Control': 'no-store' });
@@ -218,6 +220,137 @@ function queueUsernameJob(username, kind, task) {
   return job;
 }
 
+function usernameWorkRunning() {
+  return usernameScanJob?.status === 'running' || usernameMigrationJob?.status === 'running';
+}
+
+function ensureUsernameWorkAvailable() {
+  if (runner.active) throw Object.assign(new Error('Finish or stop the collection run before starting username work.'), { status: 409 });
+  if (usernameWorkRunning()) throw Object.assign(new Error('Another username workflow is already running.'), { status: 409 });
+}
+
+function resolvedAccount(profile) {
+  return ['deleted', 'age_restricted', 'false_identification'].includes(profile?.run?.account_status || profile?.profile?.account_status);
+}
+
+function scanResult(username, status, extra = {}) {
+  return { username, status, ...extra };
+}
+
+function startUsernameScan() {
+  ensureUsernameWorkAvailable();
+  const startedAt = new Date().toISOString();
+  usernameScanJob = { kind: 'bulk-check', status: 'running', started_at: startedAt, updated_at: startedAt,
+    total: 0, completed: 0, current: null, changed: 0, no_change: 0, failed: 0, skipped: 0, results: [], error: null };
+  void (async () => {
+    try {
+      const candidates = [];
+      for (const username of await usernames()) {
+        const data = await profileData(username);
+        if (!resolvedAccount(data)) candidates.push({ username, data });
+      }
+      usernameScanJob.total = candidates.length;
+      usernameScanJob.updated_at = new Date().toISOString();
+      for (const { username, data } of candidates) {
+        usernameScanJob.current = username;
+        usernameScanJob.updated_at = new Date().toISOString();
+        const hasReel = Boolean(data.discovery?.reel?.items?.some((item) => item?.url)
+          || data.items?.some((item) => item.kind === 'reel' && item.url));
+        if (!hasReel) {
+          usernameScanJob.results.push(scanResult(username, 'skipped', { detail: 'No saved reel URL is available.' }));
+          usernameScanJob.skipped += 1;
+          usernameScanJob.completed += 1;
+          continue;
+        }
+        try {
+          const result = await checkUsernameChange(root, username, { headless: true });
+          usernameScanJob.results.push(scanResult(username, result.status, {
+            detected_username: result.detected_username, stored_username: result.stored_username,
+            checked_at: result.checked_at, reel_url: result.reel_url, message: result.message
+          }));
+          if (result.status === 'changed') usernameScanJob.changed += 1;
+          else usernameScanJob.no_change += 1;
+        } catch (error) {
+          usernameScanJob.results.push(scanResult(username, 'failed', { detail: error.message }));
+          usernameScanJob.failed += 1;
+        }
+        usernameScanJob.completed += 1;
+        usernameScanJob.updated_at = new Date().toISOString();
+      }
+      usernameScanJob.current = null;
+      usernameScanJob.status = 'complete';
+      usernameScanJob.finished_at = new Date().toISOString();
+      usernameScanJob.updated_at = usernameScanJob.finished_at;
+    } catch (error) {
+      usernameScanJob.status = 'failed';
+      usernameScanJob.error = error.message;
+      usernameScanJob.finished_at = new Date().toISOString();
+      usernameScanJob.updated_at = usernameScanJob.finished_at;
+    }
+  })();
+  return usernameScanJob;
+}
+
+async function startUsernameMigration(input) {
+  ensureUsernameWorkAvailable();
+  if (!Array.isArray(input?.profiles) || !input.profiles.length) {
+    throw Object.assign(new Error('Select at least one flagged username change.'), { status: 400 });
+  }
+  if (!Object.hasOwn(ORDERS, input.order || 'selection')) {
+    throw Object.assign(new Error('Choose a valid profile order.'), { status: 400 });
+  }
+  const mode = input.mode || 'depth_first';
+  if (!['depth_first', 'breadth_first'].includes(mode)) {
+    throw Object.assign(new Error('Choose a valid username migration mode.'), { status: 400 });
+  }
+  const valid = await usernames();
+  const lookup = new Map(valid.map((name) => [name.toLowerCase(), name]));
+  const requested = input.profiles.map((entry) => ({
+    username: lookup.get(String(entry?.username || '').toLowerCase()),
+    detected_username: entry?.detected_username
+  }));
+  if (requested.some((entry) => !entry.username || !/^[A-Za-z0-9._]{1,30}$/.test(entry.detected_username || ''))) {
+    throw Object.assign(new Error('Selection contains an invalid username migration.'), { status: 400 });
+  }
+  const unique = [...new Map(requested.map((entry) => [entry.username.toLowerCase(), entry])).values()];
+  const checked = await Promise.all(unique.map(async (entry) => ({ ...entry, data: await profileData(entry.username) })));
+  const invalid = checked.filter(({ data, detected_username }) => data.profile?.username_check?.status !== 'changed'
+    || data.profile.username_check.detected_username?.toLowerCase() !== detected_username.toLowerCase());
+  if (invalid.length) throw Object.assign(new Error(`Run the global username check first for: ${invalid.map(({ username }) => `@${username}`).join(', ')}.`), { status: 400 });
+  const counts = new Map(checked.map(({ username, data }) => [username,
+    input.order === 'reels_ascending' ? (data.discovery?.reel?.items?.length ?? null) : data.profile?.posts_count?.value ?? data.profile?.posts_count ?? null]));
+  const orderedNames = orderProfiles(unique.map((entry) => entry.username), input.order || 'selection', counts);
+  const byName = new Map(unique.map((entry) => [entry.username, entry]));
+  const profiles = orderedNames.map((username) => ({ username, detected_username: byName.get(username).detected_username,
+    status: 'queued', phase: null, detail: null }));
+  const startedAt = new Date().toISOString();
+  usernameMigrationJob = { kind: 'bulk-migration', status: 'running', started_at: startedAt, updated_at: startedAt,
+    mode, order: input.order || 'selection', profiles, completed: 0, current: null, error: null };
+  void (async () => {
+    for (const item of usernameMigrationJob.profiles) {
+      usernameMigrationJob.current = item.username;
+      item.status = 'running';
+      usernameMigrationJob.updated_at = new Date().toISOString();
+      try {
+        const result = await applyUsernameChange(root, item.username, item.detected_username, {
+          headless: true,
+          onProgress: (progress) => { Object.assign(item, progress); usernameMigrationJob.updated_at = new Date().toISOString(); }
+        });
+        Object.assign(item, { status: 'complete', result, finished_at: new Date().toISOString() });
+      } catch (error) {
+        Object.assign(item, { status: 'failed', error: error.message, finished_at: new Date().toISOString() });
+      }
+      usernameMigrationJob.completed += 1;
+      usernameMigrationJob.updated_at = new Date().toISOString();
+    }
+    usernameMigrationJob.current = null;
+    usernameMigrationJob.status = usernameMigrationJob.profiles.some((item) => item.status === 'failed') ? 'needs_review' : 'complete';
+    usernameMigrationJob.finished_at = new Date().toISOString();
+    usernameMigrationJob.updated_at = usernameMigrationJob.finished_at;
+  })();
+  return usernameMigrationJob;
+}
+
 const assets = new Map([
   ['/app.js', ['app.js', 'text/javascript; charset=utf-8']],
   ['/app-v3.js', ['app-v3.js', 'text/javascript; charset=utf-8']],
@@ -260,10 +393,16 @@ const server = createServer(async (request, response) => {
         return json(response, 202, await runner.start(input.profiles, input.mode, input.order));
       }
       if (pathname === '/api/runs/stop') return json(response, 200, await runner.stop());
+      if (pathname === '/api/username-scan') return json(response, 202, startUsernameScan());
+      if (pathname === '/api/username-change/bulk') {
+        const input = await body(request);
+        return json(response, 202, await startUsernameMigration(input));
+      }
       if (pathname === '/api/username-check') {
         const input = await body(request);
         const username = await resolveUsername(input.username);
         if (!username) return json(response, 404, { error: 'Profile not in catalog.' });
+        ensureUsernameWorkAvailable();
         return json(response, 202, queueUsernameJob(username, 'check', async (progress) => {
           progress({ phase: 'reel', detail: 'Opening a saved reel and reading its poster username' });
           return checkUsernameChange(root, username, { headless: true });
@@ -273,6 +412,7 @@ const server = createServer(async (request, response) => {
         const input = await body(request);
         const username = await resolveUsername(input.username);
         if (!username) return json(response, 404, { error: 'Profile not in catalog.' });
+        ensureUsernameWorkAvailable();
         return json(response, 202, queueUsernameJob(username, 'apply', (progress) => applyUsernameChange(root, username,
           input.detected_username, { headless: true, onProgress: progress })));
       }
@@ -282,6 +422,8 @@ const server = createServer(async (request, response) => {
     if (pathname === '/api/health') return json(response, 200, { ok: true, active: preview ? runner.batch?.status === 'running' : runner.active, read_only: preview });
     if (pathname === '/api/catalog') return json(response, 200, { profiles: await catalog() });
     if (pathname === '/api/summary') return json(response, 200, await summary());
+    if (pathname === '/api/username-scan') return json(response, 200, usernameScanJob);
+    if (pathname === '/api/username-migration') return json(response, 200, usernameMigrationJob);
     if (pathname === '/api/run') {
       if (preview) runner.batch = await readJson(jobPath);
       const profiles = runner.batch?.profiles || [];

@@ -1,25 +1,28 @@
 import { api, esc } from './shared.js';
-import { steps, visibleCatalog, renderSelect, renderStage, renderReview, batchStrip } from './flow.js';
+import { steps, visibleCatalog, renderSelect, renderStage, renderReview, renderUsernameReview, batchStrip } from './flow.js';
 import { renderProfile } from './profile-v3.js';
 import { renderOverview } from './overview.js';
 
 const app = document.querySelector('#app');
 const selectionKey = 'dedgram-selected-v2';
 const setupKey = 'dedgram-setup-step-v1';
+const workflowKey = 'dedgram-workflow-v1';
 const saved = (() => { try { return JSON.parse(localStorage.getItem(selectionKey) || '[]'); } catch { return []; } })();
 const savedMode = localStorage.getItem('dedgram-mode-v2');
 const savedOrder = localStorage.getItem('dedgram-order-v2');
 const savedSetup = sessionStorage.getItem(setupKey);
+const savedWorkflow = sessionStorage.getItem(workflowKey);
 const state = {
-  catalog: [], batch: null, batchProfiles: [], detail: null, overview: null,
+  catalog: [], batch: null, batchProfiles: [], detail: null, overview: null, usernameScan: null, usernameMigration: null,
   selected: new Set(Array.isArray(saved) ? saved : []),
   search: '', filter: 'all', layout: 'grid',
   mode: ['profile_only', 'depth_first', 'breadth_first', 'reels_only'].includes(savedMode) ? savedMode : 'depth_first',
   order: ['selection', 'posts_ascending', 'reels_ascending'].includes(savedOrder) ? savedOrder : 'posts_ascending',
+  workflow: savedWorkflow === 'username_migration' ? 'username_migration' : 'collection',
   setupStep: ['profiles', 'mode', 'order', 'review', 'progress'].includes(savedSetup) ? savedSetup : 'profiles',
   itemSearch: '', itemFilter: 'all', itemSort: 'newest', busy: false, error: null, readOnly: false, popup: null
 };
-const observed = { batchId: null, batchStatus: null, usernameJobs: new Map() };
+const observed = { batchId: null, batchStatus: null, usernameJobs: new Map(), usernameScan: null, usernameMigration: null };
 const sound = { context: null };
 const path = () => location.pathname === '/summary' ? '/overview' : location.pathname;
 const saveSelection = () => localStorage.setItem(selectionKey, JSON.stringify([...state.selected]));
@@ -89,6 +92,23 @@ function observeAsyncState() {
       observed.batchStatus = batch.status;
     } else observed.batchStatus = batch.status;
   }
+  const scan = state.usernameScan;
+  if (scan?.started_at) {
+    if (!observed.usernameScan) observed.usernameScan = scan.status;
+    else if (observed.usernameScan === 'running' && scan.status !== 'running') {
+      notify(scan.status === 'complete' ? `Global username check complete: ${scan.changed || 0} change${scan.changed === 1 ? '' : 's'} flagged.` : `Global username check failed${scan.error ? `: ${scan.error}` : '.'}`, scan.status === 'complete' ? 'success' : 'error');
+      observed.usernameScan = scan.status;
+    } else observed.usernameScan = scan.status;
+  }
+  const migration = state.usernameMigration;
+  if (migration?.started_at) {
+    if (!observed.usernameMigration) observed.usernameMigration = migration.status;
+    else if (observed.usernameMigration === 'running' && migration.status !== 'running') {
+      const failed = migration.profiles?.filter((profile) => profile.status === 'failed').length || 0;
+      notify(migration.status === 'complete' ? `Username migration complete for ${migration.completed} profile${migration.completed === 1 ? '' : 's'}.` : `Username migration finished with ${failed} profile${failed === 1 ? '' : 's'} needing review.`, migration.status === 'complete' ? 'success' : 'error');
+      observed.usernameMigration = migration.status;
+    } else observed.usernameMigration = migration.status;
+  }
   const profile = state.detail;
   const job = profile?.username_job;
   if (profile?.username && job?.started_at) {
@@ -122,7 +142,7 @@ function render() {
   document.querySelectorAll('[data-nav]').forEach((link) => link.classList.toggle('active', link.dataset.nav === (current === '/overview' ? 'overview' : 'collection')));
   const content = current === '/overview' ? renderOverview(state)
     : current.startsWith('/profiles/') ? `${batchStrip(state)}${renderProfile(state)}`
-      : step === 0 ? renderSelect(state) : step === 4 ? renderReview(state)
+      : step === 0 ? renderSelect(state) : step === 4 ? (state.workflow === 'username_migration' ? renderUsernameReview(state) : renderReview(state))
         : step > 0 ? renderStage(state, step) : '<p class="loading">Page not found.</p>';
   app.innerHTML = `${state.readOnly ? '<div class="preview-banner">PREVIEW · Collection actions are disabled while the original batch runs.</div>' : ''}${state.error ? `<div class="error-banner" role="alert"><strong>Something needs attention.</strong> ${esc(state.error)} <button data-action="dismiss" aria-label="Dismiss">×</button></div>` : ''}${content}`;
   app.querySelectorAll('img[data-cover-fallback]').forEach((image) => {
@@ -157,7 +177,9 @@ async function refresh() {
       const valid = new Set(profiles.map((profile) => profile.username));
       for (const name of state.selected) if (!valid.has(name)) state.selected.delete(name);
       saveSelection();
-    })
+    }),
+    api('/api/username-scan').then((result) => { state.usernameScan = result; }),
+    api('/api/username-migration').then((result) => { state.usernameMigration = result; })
   ];
   if (current === '/overview') calls.push(api('/api/summary').then((result) => { state.overview = result; }));
   if (current.startsWith('/profiles/')) calls.push(api(`/api/profiles/${encodeURIComponent(decodeURIComponent(current.slice('/profiles/'.length)))}`).then((result) => { state.detail = result; }));
@@ -194,11 +216,29 @@ document.addEventListener('click', async (event) => {
   if (action === 'dismiss') { state.error = null; render(); return; }
   if (action === 'dismiss-popup') { state.popup = null; render(); return; }
   if (action === 'setup-progress' && state.batch) { setSetupStep('progress'); return; }
-  if (action === 'setup-new') { setSetupStep('profiles'); return; }
+  if (action === 'setup-new') { state.workflow = 'collection'; sessionStorage.setItem(workflowKey, 'collection'); setSetupStep('profiles'); return; }
+  if (action === 'scan-usernames') {
+    state.busy = true; state.error = null; notify('Global username check started. It will only label and record evidence.'); render();
+    try { await api('/api/username-scan', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: '{}' }); await refresh(); }
+    catch (error) { state.error = error.message; }
+    finally { state.busy = false; render(); }
+    return;
+  }
+  if (action === 'begin-username-migration') {
+    const flagged = state.catalog.filter((profile) => state.selected.has(profile.username) && profile.username_check?.status === 'changed');
+    if (!flagged.length) { notify('Select profiles from the Username change flagged filter first.', 'error'); return; }
+    state.workflow = 'username_migration';
+    state.mode = 'depth_first';
+    sessionStorage.setItem(workflowKey, 'username_migration');
+    localStorage.setItem('dedgram-mode-v2', state.mode);
+    setSetupStep('mode');
+    return;
+  }
   if (action === 'setup-step' && setupSteps.includes(button.dataset.step)) { setSetupStep(button.dataset.step); return; }
   if (action === 'setup-back') { setSetupStep(setupSteps[Math.max(0, setupSteps.indexOf(state.setupStep) - 1)]); return; }
   if (action === 'setup-next') {
     if (!state.selected.size) return;
+    if (state.workflow === 'username_migration' && !state.catalog.some((profile) => state.selected.has(profile.username) && profile.username_check?.status === 'changed')) return;
     if (state.setupStep === 'mode' && state.mode === 'reels_only'
       && state.catalog.some((profile) => state.selected.has(profile.username) && !profile.profile_complete)) return;
     setSetupStep(setupSteps[Math.min(3, setupSteps.indexOf(state.setupStep) + 1)]);
@@ -212,14 +252,18 @@ document.addEventListener('click', async (event) => {
   if (action === 'check-username') notify('Username check started. Opening a saved reel...');
   if (action === 'apply-username-change') notify('Username migration started. Fetching the current profile and preserving history...');
   if (action === 'stop') notify('Stop requested. The current stage will finish first.');
-  if (action === 'start' || action === 'run-one' || action === 'run-filtered-stage' || action === 'run-profile-stage') notify('Collection started. Live progress is shown on this page.');
+  if (action === 'start' && state.workflow === 'username_migration') notify('Username migration started. Each confirmed rename is preserved and applied one profile at a time.');
+  else if (action === 'start' || action === 'run-one' || action === 'run-filtered-stage' || action === 'run-profile-stage') notify('Collection started. Live progress is shown on this page.');
   try {
     const usernameAction = action === 'check-username' || action === 'apply-username-change';
+    const migrationAction = action === 'start' && state.workflow === 'username_migration';
     const endpoint = action === 'stop' ? '/api/runs/stop' : action === 'check-username' ? '/api/username-check'
-      : action === 'apply-username-change' ? '/api/username-change/apply' : '/api/runs';
+      : action === 'apply-username-change' ? '/api/username-change/apply' : migrationAction ? '/api/username-change/bulk' : '/api/runs';
     const profileAction = action === 'run-profile-stage';
     const filteredStageAction = action === 'run-filtered-stage';
     const body = action === 'stop' ? {} : usernameAction ? { username: button.dataset.username, detected_username: button.dataset.detectedUsername }
+      : migrationAction ? { profiles: state.catalog.filter((profile) => state.selected.has(profile.username) && profile.username_check?.status === 'changed')
+        .map((profile) => ({ username: profile.username, detected_username: profile.username_check.detected_username })), mode: state.mode, order: state.order }
       : { profiles: action === 'run-one' || profileAction ? [button.dataset.username]
       : filteredStageAction ? visibleCatalog(state).map((profile) => profile.username) : [...state.selected],
       mode: action === 'run-one' ? 'depth_first' : action === 'start' || filteredStageAction ? (filteredStageAction ? button.dataset.mode : state.mode) : button.dataset.mode,
