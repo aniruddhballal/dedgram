@@ -1,213 +1,47 @@
 {
-  "id": "9dcbc125-f489-4ae3-9365-99b9703f0990",
-  "mode": "reels_only",
-  "order": "selection",
-  "status": "running",
+  "id": "d98263b5-6fa9-40f6-b793-44dc07922257",
+  "mode": "reel_grid",
+  "order": "posts_ascending",
+  "status": "complete",
   "profiles": [
-    "hulksmash.exe",
-    "diamond_bl0ckk",
-    "vviennteru",
-    "hezciv",
-    "mugiwaramemez",
-    "uz87b",
-    "camilaboucheryamamoto"
+    "illmisguideyou"
   ],
   "steps": [
     {
-      "username": "hulksmash.exe",
-      "stage": "reels"
-    },
-    {
-      "username": "diamond_bl0ckk",
-      "stage": "reels"
-    },
-    {
-      "username": "vviennteru",
-      "stage": "reels"
-    },
-    {
-      "username": "hezciv",
-      "stage": "reels"
-    },
-    {
-      "username": "mugiwaramemez",
-      "stage": "reels"
-    },
-    {
-      "username": "uz87b",
-      "stage": "reels"
-    },
-    {
-      "username": "camilaboucheryamamoto",
-      "stage": "reels"
+      "username": "illmisguideyou",
+      "stage": "reel_grid"
     }
   ],
   "results": {
-    "hulksmash.exe": {
-      "status": "needs_review",
-      "started_at": "2026-10-24T15:44:11.916Z",
-      "finished_at": "2026-10-24T15:58:24.878Z",
+    "illmisguideyou": {
+      "status": "complete",
+      "started_at": "2026-10-28T06:03:29.233Z",
+      "finished_at": "2026-10-28T06:09:03.349Z",
       "error": null,
       "stages": {
-        "reels": {
-          "status": "needs_review",
-          "started_at": "2026-10-24T15:44:11.916Z",
-          "finished_at": "2026-10-24T15:58:24.878Z",
-          "error": null
-        }
-      }
-    },
-    "diamond_bl0ckk": {
-      "status": "running",
-      "started_at": "2026-10-24T15:58:24.889Z",
-      "finished_at": null,
-      "error": null,
-      "stages": {
-        "reels": {
-          "status": "running",
-          "started_at": "2026-10-24T15:58:24.889Z",
-          "finished_at": null,
-          "error": null
-        }
-      }
-    },
-    "vviennteru": {
-      "status": "queued",
-      "started_at": null,
-      "finished_at": null,
-      "error": null,
-      "stages": {
-        "reels": {
-          "status": "queued",
-          "started_at": null,
-          "finished_at": null,
-          "error": null
-        }
-      }
-    },
-    "hezciv": {
-      "status": "queued",
-      "started_at": null,
-      "finished_at": null,
-      "error": null,
-      "stages": {
-        "reels": {
-          "status": "queued",
-          "started_at": null,
-          "finished_at": null,
-          "error": null
-        }
-      }
-    },
-    "mugiwaramemez": {
-      "status": "queued",
-      "started_at": null,
-      "finished_at": null,
-      "error": null,
-      "stages": {
-        "reels": {
-          "status": "queued",
-          "started_at": null,
-          "finished_at": null,
-          "error": null
-        }
-      }
-    },
-    "uz87b": {
-      "status": "queued",
-      "started_at": null,
-      "finished_at": null,
-      "error": null,
-      "stages": {
-        "reels": {
-          "status": "queued",
-          "started_at": null,
-          "finished_at": null,
-          "error": null
-        }
-      }
-    },
-    "camilaboucheryamamoto": {
-      "status": "queued",
-      "started_at": null,
-      "finished_at": null,
-      "error": null,
-      "stages": {
-        "reels": {
-          "status": "queued",
-          "started_at": null,
-          "finished_at": null,
+        "reel_grid": {
+          "status": "complete",
+          "started_at": "2026-10-28T06:03:29.233Z",
+          "finished_at": "2026-10-28T06:09:03.349Z",
           "error": null
         }
       }
     }
   },
-  "current": "diamond_bl0ckk",
-  "current_stage": "reels",
-  "started_at": "2026-10-24T15:44:11.906Z",
-  "updated_at": "2026-10-24T15:58:24.889Z",
-  "finished_at": null,
+  "current": null,
+  "current_stage": null,
+  "started_at": "2026-10-28T06:03:29.229Z",
+  "updated_at": "2026-10-28T06:09:03.352Z",
+  "finished_at": "2026-10-28T06:09:03.352Z",
   "stop_requested": false,
   "logs": [
-    "[21:17:06] 10: reel DerMih9JJHq",
-    "[21:17:27] Item issue: Instagram rendered an empty page.",
-    "[21:17:29] 11: reel DeqlvsVpG0P",
-    "[21:17:50] Item issue: Instagram rendered an empty page.",
-    "[21:17:52] 12: reel DeqbIUFJ8rk",
-    "[21:18:13] Item issue: Instagram rendered an empty page.",
-    "[21:18:15] 13: reel DeqOBKvpOBL",
-    "[21:18:36] Item issue: Instagram rendered an empty page.",
-    "[21:18:38] 14: reel DeqGR5cvmhX",
-    "[21:18:59] Item issue: Instagram rendered an empty page.",
-    "[21:19:01] 15: reel Dep4MDmy6tT",
-    "[21:19:22] Item issue: Instagram rendered an empty page.",
-    "[21:19:24] 16: reel Deo-6ugpUy3",
-    "[21:19:46] Item issue: Instagram rendered an empty page.",
-    "[21:19:47] 17: reel DeouNNyuaui",
-    "[21:20:09] Item issue: Instagram rendered an empty page.",
-    "[21:20:10] 18: reel Deod7ORv3AB",
-    "[21:20:32] Item issue: Instagram rendered an empty page.",
-    "[21:20:34] 19: reel DeoXGV5AxO1",
-    "[21:20:56] Item issue: Instagram rendered an empty page.",
-    "[21:20:58] 20: reel Densx_XBfwn",
-    "[21:21:20] Item issue: Instagram rendered an empty page.",
-    "[21:21:22] 21: reel DembUBdtu-C",
-    "[21:21:44] Item issue: Instagram rendered an empty page.",
-    "[21:21:47] 22: reel Delky4mN7Xr",
-    "[21:22:10] Item issue: Instagram rendered an empty page.",
-    "[21:22:12] 23: reel DelbmictM1-",
-    "[21:22:33] Item issue: Instagram rendered an empty page.",
-    "[21:22:35] 24: reel DelWdrstgnl",
-    "[21:22:57] Item issue: Instagram rendered an empty page.",
-    "[21:22:58] 25: reel DelPSwrB-CE",
-    "[21:23:20] Item issue: Instagram rendered an empty page.",
-    "[21:23:21] 26: reel Dek_Lnkph-l",
-    "[21:23:43] Item issue: Instagram rendered an empty page.",
-    "[21:23:45] 27: reel Dek3w9vpYyg",
-    "[21:24:06] Item issue: Instagram rendered an empty page.",
-    "[21:24:08] 28: reel Dej2TnPBKVB",
-    "[21:24:30] Item issue: Instagram rendered an empty page.",
-    "[21:24:32] 29: reel DejuXA1Sksf",
-    "[21:24:54] Item issue: Instagram rendered an empty page.",
-    "[21:24:55] 30: reel DejpVdkM_Ms",
-    "[21:25:17] Item issue: Instagram rendered an empty page.",
-    "[21:25:18] 31: reel DejfyMnh0CY",
-    "[21:25:40] Item issue: Instagram rendered an empty page.",
-    "[21:25:42] 32: reel DejZTIYBGOj",
-    "[21:26:03] Item issue: Instagram rendered an empty page.",
-    "[21:26:05] 33: reel DejQ54KP7bq",
-    "[21:26:26] Item issue: Instagram rendered an empty page.",
-    "[21:26:28] 34: reel DejBf4hBohU",
-    "[21:26:49] Item issue: Instagram rendered an empty page.",
-    "[21:26:51] 35: reel Dei6D8NSrqF",
-    "[21:27:12] Item issue: Instagram rendered an empty page.",
-    "[21:27:14] 36: reel DeixvXlBWpv",
-    "[21:27:35] Item issue: Instagram rendered an empty page.",
-    "[21:27:37] 37: reel DeiouUtg3UL",
-    "[21:27:58] Item issue: Instagram rendered an empty page.",
-    "[21:28:00] 38: reel DehIKRLN5GT",
-    "[21:28:21] Item issue: Instagram rendered an empty page.",
-    "[21:28:23] Done: 44 items. Report: D:\\post engg\\dedgram\\collector-v2\\data\\hulksmash.exe\\report.html",
-    "Finished @hulksmash.exe reels: needs_review"
+    "Starting @illmisguideyou reel_grid",
+    "[11:33:30] Saved before history snapshot: D:\\post engg\\dedgram\\collector-v2\\data\\illmisguideyou\\history\\2026-10-28T06-03-30-334Z-before-ac3390cf-5d97-4e46-9b7a-e4d0017a7d27",
+    "[11:33:30] Using saved illmisguideyou profile details",
+    "[11:33:30] Scanning reel grid",
+    "[11:39:01] reel: 918 confirmed",
+    "[11:39:01] Saved after history snapshot: D:\\post engg\\dedgram\\collector-v2\\data\\illmisguideyou\\history\\2026-10-28T06-09-01-736Z-after-5aefdb4f-ca19-4aee-be97-8968b4c02f7c",
+    "[11:39:01] Done: reel URLs 918. Report: D:\\post engg\\dedgram\\collector-v2\\data\\illmisguideyou\\report.html",
+    "Finished @illmisguideyou reel_grid: complete"
   ]
 }
