@@ -25,18 +25,29 @@ function afterLabel(text, label) {
   return i >= 0 && lines[i + 1] ? lines[i + 1] : null;
 }
 
+function bioFromDescription(description) {
+  const match = String(description || '').match(/\bon Instagram:\s*(.*)$/is);
+  if (!match) return null;
+  let bio = match[1].trim();
+  if (bio.startsWith('"') && bio.endsWith('"')) bio = bio.slice(1, -1);
+  return bio.replace(/\\"/g, '"').trim() || null;
+}
+
 export function profileFromSnapshot(username, snapshot) {
   const header = snapshot.header_text || '';
   const lines = header.split(/\r?\n/).map(clean).filter(Boolean);
   const statIndex = lines.findIndex((line) => /\bposts?\b/i.test(line) && metric(line, ['posts?']));
   const bioStart = lines.findIndex((line) => /\bfollowing\b/i.test(line));
-  const bioStop = lines.findIndex((line, i) => i > bioStart && /^(follow|following|message|edit profile|share profile|posts|reels|tagged)$/i.test(line));
+  const bioStop = lines.findIndex((line, i) => i > bioStart && /^(more|see translation|follow|following|message|contact|edit profile|share profile|posts|reels|tagged)$/i.test(line));
   const bioLines = bioStart >= 0 ? lines.slice(bioStart + 1, bioStop >= 0 ? bioStop : undefined) : [];
   const category = snapshot.category || bioLines.find((line) => /^(reel creator|digital creator|video creator|blogger|editor|artist|public figure|entrepreneur|personal blog)\s*•?$/i.test(line))?.replace(/\s*•$/, '') || null;
   const bioContent = bioLines.filter((line) => line !== category && line !== `${category} •` && !/^AI-generated profile$/i.test(line));
   const about = snapshot.about_text || '';
-  const former = afterLabel(about, 'Former usernames');
   const description = snapshot.description || '';
+  const metadataBio = bioFromDescription(description);
+  const headerBio = bioContent.length ? bioContent.join('\n') : null;
+  const selectedBio = metadataBio && lines.some((line) => /^(more|see translation)$/i.test(line)) ? metadataBio : headerBio || metadataBio;
+  const former = afterLabel(about, 'Former usernames');
   const headerPosts = metric(header, ['posts?']);
   const metadataPosts = metric(description, ['posts?']);
   const headerFollowing = metric(header, ['following']);
@@ -51,7 +62,7 @@ export function profileFromSnapshot(username, snapshot) {
     url: `https://www.instagram.com/${username}/`,
     fetched_at: observedAt,
     display_name: statIndex > 1 ? lines.slice(1, statIndex).join(' ') : null,
-    bio: bioContent.length ? bioContent.join('\n') : null,
+    bio: selectedBio,
     posts_count: headerPosts || metadataPosts,
     posts_count_observed_at: headerPosts || metadataPosts ? observedAt : null,
     followers_count: exactFollowers ? { ...exactFollowers, source: 'header_title' }

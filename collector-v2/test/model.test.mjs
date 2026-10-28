@@ -39,6 +39,21 @@ test('profile extracts the sample account fields', () => {
   assert.equal(profileLevelComplete(result, { reel: { items: [], complete: false } }), false);
 });
 
+test('profile bio excludes Instagram controls and uses complete metadata when the header is truncated', () => {
+  const result = profileFromSnapshot('example', {
+    header_text: 'example\n25 posts\n689 followers\n0 following\nVisible bio...\nmore\nFollow\nMessage',
+    description: '694 Followers, 0 Following, 25 Posts - @example on Instagram: "Complete bio\nSecond line"'
+  });
+  assert.equal(result.bio, 'Complete bio\nSecond line');
+});
+
+test('profile bio does not retain a standalone more control when metadata is unavailable', () => {
+  const result = profileFromSnapshot('example', {
+    header_text: 'example\n1 post\n10 followers\n0 following\nVisible bio\nmore\nFollow'
+  });
+  assert.equal(result.bio, 'Visible bio');
+});
+
 test('a rounded Instagram post label cannot be used as a true count', () => {
   const profile = profileFromSnapshot('example', { header_text: 'example\n2.9K posts\n10 followers\n0 following' });
   assert.equal(exactPostCount(profile), null);
