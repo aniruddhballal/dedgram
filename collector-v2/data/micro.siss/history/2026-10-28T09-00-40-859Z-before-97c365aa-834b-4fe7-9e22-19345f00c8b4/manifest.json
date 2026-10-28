@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "username": "micro.siss",
+  "phase": "before",
+  "snapshot_at": "2026-10-28T09:00:40.859Z",
+  "run_status": "blocked",
+  "run_updated_at": "2026-10-28T08:56:58.488Z",
+  "profile_fetched_at": null,
+  "item_count": 0,
+  "complete_item_count": 0,
+  "discovery": {}
+}

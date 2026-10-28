@@ -1,0 +1,108 @@
+{
+  "username": "zennnooxx",
+  "url": "https://www.instagram.com/zennnooxx/",
+  "fetched_at": "2026-10-28T09:03:30.570Z",
+  "display_name": "ᴢᴇɴᴏx",
+  "bio": "新たな冒険の幕開けと共に、最新PVが公開されました。注目キャラクターの登場、新オープニングテーマ＆エンディングテーマも決定！！さらに物語を彩る重要人物のキャストも発表！ ！...\nmore",
+  "posts_count": {
+    "value": 28,
+    "raw": "28",
+    "approximate": false
+  },
+  "posts_count_observed_at": "2026-10-28T09:03:30.570Z",
+  "followers_count": {
+    "value": 44275,
+    "raw": "44,275",
+    "approximate": false,
+    "source": "header_title"
+  },
+  "following_count": {
+    "value": 1,
+    "raw": "1",
+    "approximate": false,
+    "source": "header_text"
+  },
+  "count_evidence": {
+    "followers": {
+      "header": {
+        "value": 44200,
+        "raw": "44.2K",
+        "approximate": true
+      },
+      "exact_title": {
+        "value": 44275,
+        "raw": "44,275",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 44000,
+        "raw": "44K",
+        "approximate": true
+      }
+    },
+    "following": {
+      "header": {
+        "value": 1,
+        "raw": "1",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 1,
+        "raw": "1",
+        "approximate": false
+      },
+      "conflict": false
+    },
+    "posts": {
+      "header": {
+        "value": 28,
+        "raw": "28",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 28,
+        "raw": "28",
+        "approximate": false
+      }
+    }
+  },
+  "category": "Reel creator",
+  "ai_generated_profile": true,
+  "profile_picture_url": "https://instagram.fblr24-1.fna.fbcdn.net/v/t51.82787-19/763298492_18146202748525164_8627868332950387789_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=pDtMNZ10XPUQ7kNvwEfMZ7h&_nc_oc=Adr6KiAafgxUt_qjxE2SJplbmkvtgkODOiORAu0GmnprGT1AUR_PlVfoSFN88SB_LkucQbSURcddLkWn4ehcDFB8&_nc_zt=24&_nc_ht=instagram.fblr24-1.fna&_nc_gid=c9Vim5aLigI-RGsZ4IjjRA&_nc_ss=7f6a8&oh=00_AQRd8LTLLI9KSTLWwcOm-XT5sdVqDC2Q4Z5esGCn2HRNiw&oe=6AE7822E",
+  "date_joined": "July 2026",
+  "account_based_in": "Not shared",
+  "former_usernames_count": {
+    "value": 5,
+    "raw": "5",
+    "approximate": false
+  },
+  "raw": {
+    "header_text": "zennnooxx\nᴢᴇɴᴏx\n28 posts\n44.2K followers\n1 following\nReel creator • \nAI-generated profile\n新たな冒険の幕開けと共に、最新PVが公開されました。注目キャラクターの登場、新オープニングテーマ＆エンディングテーマも決定！！さらに物語を彩る重要人物のキャストも発表！ ！... \nmore\nFollow\nHighlights",
+    "about_text": "About this account\nzennnooxx\n • AI-generated profile\nTo help keep our community authentic, we’re showing information about profiles on Instagram. See why this information is important.\nDate joined\nJuly 2026\nAccount based in\nNot shared\nFormer usernames\n5\nClose",
+    "description": "44K Followers, 1 Following, 28 Posts - ᴢᴇɴᴏx (@zennnooxx) on Instagram: \"新たな冒険の幕開けと共に、最新PVが公開されました。注目キャラクターの登場、新オープニングテーマ＆エンディングテーマも決定！！さらに物語を彩る重要人物のキャストも発表！ ！ 未知なる島で待ち受ける新たな戦い。麦わらの一味の冒険は、まだ終わらない。放送をお楽しみに #最新PVが\"",
+    "stat_evidence": {
+      "posts": {
+        "label": "",
+        "exact_title": ""
+      },
+      "followers": {
+        "label": "44.2K followers",
+        "exact_title": "44,275"
+      },
+      "following": {
+        "label": "1 following",
+        "exact_title": ""
+      }
+    }
+  },
+  "issues": [],
+  "current_username": "zennnooxx",
+  "username_history": [
+    {
+      "username": "zennnooxx",
+      "role": "current username",
+      "first_seen_at": "2026-10-28T09:03:30.564Z"
+    }
+  ],
+  "username_change_observed_at": null
+}

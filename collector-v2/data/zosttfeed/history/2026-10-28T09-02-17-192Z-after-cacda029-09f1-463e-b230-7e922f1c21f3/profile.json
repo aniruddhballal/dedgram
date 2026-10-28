@@ -1,0 +1,108 @@
+{
+  "username": "zosttfeed",
+  "url": "https://www.instagram.com/zosttfeed/",
+  "fetched_at": "2026-10-28T09:02:17.170Z",
+  "display_name": null,
+  "bio": "スリル満点の追跡劇が満載! こちらは『Jokrori』の公式Instagramアカウントです! カートゥーンネットワークで『Jokrori』をチェックしよう! 『Jokrori』は現在、デジタル配信およびブルーレイ＆DVDで発売・配信中!...\nmore",
+  "posts_count": {
+    "value": 25,
+    "raw": "25",
+    "approximate": false
+  },
+  "posts_count_observed_at": "2026-10-28T09:02:17.170Z",
+  "followers_count": {
+    "value": 689,
+    "raw": "689",
+    "approximate": false,
+    "source": "header_title"
+  },
+  "following_count": {
+    "value": 0,
+    "raw": "0",
+    "approximate": false,
+    "source": "header_text"
+  },
+  "count_evidence": {
+    "followers": {
+      "header": {
+        "value": 689,
+        "raw": "689",
+        "approximate": false
+      },
+      "exact_title": {
+        "value": 689,
+        "raw": "689",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 694,
+        "raw": "694",
+        "approximate": false
+      }
+    },
+    "following": {
+      "header": {
+        "value": 0,
+        "raw": "0",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 0,
+        "raw": "0",
+        "approximate": false
+      },
+      "conflict": false
+    },
+    "posts": {
+      "header": {
+        "value": 25,
+        "raw": "25",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 25,
+        "raw": "25",
+        "approximate": false
+      }
+    }
+  },
+  "category": null,
+  "ai_generated_profile": false,
+  "profile_picture_url": "https://instagram.fblr1-6.fna.fbcdn.net/v/t51.89012-19/573323465_1219825463302212_7278921664109726296_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=1&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy5DMyJ9&_nc_ohc=o_d969tGlSkQ7kNvwERFszP&_nc_oc=AdqkfB-FLxndovYGpCu2bunbpXLkG6lToTYWy4UIkA8UFSDipKwVtDlrgblh1-jD9Oy1okx-KxSuwf18yIthu6W0&_nc_zt=24&_nc_ht=instagram.fblr1-6.fna&_nc_gid=zQNZ2TSWWcuZe_HnJ5_3KQ&_nc_ss=7f6a8&oh=00_AQQBfuSHVNS1zrmdI8qmd5Ha4L8nhYiA_Stn0Ci7Mea1Vg&oe=6AE770E2",
+  "date_joined": "September 2026",
+  "account_based_in": "United States",
+  "former_usernames_count": {
+    "value": 1,
+    "raw": "1",
+    "approximate": false
+  },
+  "raw": {
+    "header_text": "zosttfeed\n25 posts\n689 followers\n0 following\nスリル満点の追跡劇が満載! こちらは『Jokrori』の公式Instagramアカウントです! カートゥーンネットワークで『Jokrori』をチェックしよう! 『Jokrori』は現在、デジタル配信およびブルーレイ＆DVDで発売・配信中!... \nmore\nFollow\nMessage",
+    "about_text": "About this account\nzosttfeed\nTo help keep our community authentic, we’re showing information about profiles on Instagram. See why this information is important.\nDate joined\nSeptember 2026\nAccount based in\nUnited States\nFormer usernames\n1\nClose",
+    "description": "694 Followers, 0 Following, 25 Posts - @zosttfeed on Instagram: \"スリル満点の追跡劇が満載! こちらは『Jokrori』の公式Instagramアカウントです! カートゥーンネットワークで『Jokrori』をチェックしよう! 『Jokrori』は現在、デジタル配信およびブルーレイ＆DVDで発売・配信中!\nTFC(24)\"",
+    "stat_evidence": {
+      "posts": {
+        "label": "",
+        "exact_title": ""
+      },
+      "followers": {
+        "label": "689 followers",
+        "exact_title": "689"
+      },
+      "following": {
+        "label": "0 following",
+        "exact_title": ""
+      }
+    }
+  },
+  "issues": [],
+  "current_username": "zosttfeed",
+  "username_history": [
+    {
+      "username": "zosttfeed",
+      "role": "current username",
+      "first_seen_at": "2026-10-28T09:02:17.162Z"
+    }
+  ],
+  "username_change_observed_at": null
+}

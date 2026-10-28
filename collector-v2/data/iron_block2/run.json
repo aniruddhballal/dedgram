@@ -1,0 +1,23 @@
+{
+  "started_at": "2026-10-28T09:03:50.899Z",
+  "updated_at": "2026-10-28T09:04:23.903Z",
+  "status": "blocked",
+  "phase": "profile",
+  "scope": [
+    "profile"
+  ],
+  "current_url": null,
+  "error": "Instagram did not show the profile header.",
+  "progress": {
+    "task": "profile",
+    "label": "Profile details",
+    "action": "Reading the profile header, account details and exact post count",
+    "completed": 0,
+    "total": 1,
+    "percent": 0,
+    "remaining": 1,
+    "current_item": null,
+    "detail": "Blocked: Instagram did not show the profile header.",
+    "updated_at": "2026-10-28T09:04:23.903Z"
+  }
+}

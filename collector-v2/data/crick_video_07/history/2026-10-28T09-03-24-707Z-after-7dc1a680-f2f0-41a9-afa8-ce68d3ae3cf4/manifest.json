@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "username": "crick_video_07",
+  "phase": "after",
+  "snapshot_at": "2026-10-28T09:03:24.707Z",
+  "run_status": "complete",
+  "run_updated_at": "2026-10-28T09:03:24.700Z",
+  "profile_fetched_at": "2026-10-28T09:03:24.693Z",
+  "item_count": 0,
+  "complete_item_count": 0,
+  "discovery": {}
+}

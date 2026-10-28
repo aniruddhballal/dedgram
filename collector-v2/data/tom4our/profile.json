@@ -1,0 +1,104 @@
+{
+  "username": "tom4our",
+  "url": "https://www.instagram.com/tom4our/",
+  "fetched_at": "2026-10-28T09:00:12.668Z",
+  "display_name": "Tom",
+  "bio": "TVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開！",
+  "posts_count": {
+    "value": 72,
+    "raw": "72",
+    "approximate": false
+  },
+  "posts_count_observed_at": "2026-10-28T09:00:12.668Z",
+  "followers_count": {
+    "value": 1929,
+    "raw": "1,929",
+    "approximate": false,
+    "source": "header_title"
+  },
+  "following_count": {
+    "value": 0,
+    "raw": "0",
+    "approximate": false,
+    "source": "header_text"
+  },
+  "count_evidence": {
+    "followers": {
+      "header": {
+        "value": 1929,
+        "raw": "1,929",
+        "approximate": false
+      },
+      "exact_title": {
+        "value": 1929,
+        "raw": "1,929",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 1933,
+        "raw": "1,933",
+        "approximate": false
+      }
+    },
+    "following": {
+      "header": {
+        "value": 0,
+        "raw": "0",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 0,
+        "raw": "0",
+        "approximate": false
+      },
+      "conflict": false
+    },
+    "posts": {
+      "header": {
+        "value": 72,
+        "raw": "72",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 72,
+        "raw": "72",
+        "approximate": false
+      }
+    }
+  },
+  "category": null,
+  "ai_generated_profile": false,
+  "profile_picture_url": "https://instagram.fblr24-1.fna.fbcdn.net/v/t51.82787-19/856562683_18073730837500977_7829884147973131985_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=U-3ulb4teR0Q7kNvwEfh6Dq&_nc_oc=Adq69_IRrCX8M4SSO4rFqFYUYYYPgjA8y8nulbvQCOJg08y1_uV96--h-6qh2VNWYWyATKMgQYjDckjjjLBvWQhg&_nc_zt=24&_nc_ht=instagram.fblr24-1.fna&_nc_gid=lGMi2BAOGZeQGSFuTS0QDw&_nc_ss=7f6a8&oh=00_AQTNXkYXy_j48uCeQFv9VHM8iBwwTdllbMqUY-pCBWDUcA&oe=6AE786ED",
+  "date_joined": "October 2026",
+  "account_based_in": "India",
+  "former_usernames_count": null,
+  "raw": {
+    "header_text": "tom4our\nTom\n72 posts\n1,929 followers\n0 following\nTVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開！\nFollow",
+    "about_text": "About this account\ntom4our\nTo help keep our community authentic, we’re showing information about profiles on Instagram. See why this information is important.\nDate joined\nOctober 2026\nAccount based in\nIndia\nClose",
+    "description": "1,933 Followers, 0 Following, 72 Posts - Tom (@tom4our) on Instagram: \"TVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開！\"",
+    "stat_evidence": {
+      "posts": {
+        "label": "",
+        "exact_title": ""
+      },
+      "followers": {
+        "label": "1,929 followers",
+        "exact_title": "1,929"
+      },
+      "following": {
+        "label": "0 following",
+        "exact_title": ""
+      }
+    }
+  },
+  "issues": [],
+  "current_username": "tom4our",
+  "username_history": [
+    {
+      "username": "tom4our",
+      "role": "current username",
+      "first_seen_at": "2026-10-28T09:00:12.663Z"
+    }
+  ],
+  "username_change_observed_at": null
+}

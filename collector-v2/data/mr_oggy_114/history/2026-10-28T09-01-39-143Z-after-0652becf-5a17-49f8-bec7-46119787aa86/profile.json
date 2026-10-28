@@ -1,0 +1,104 @@
+{
+  "username": "mr_oggy_114",
+  "url": "https://www.instagram.com/mr_oggy_114/",
+  "fetched_at": "2026-10-28T09:01:39.128Z",
+  "display_name": "OGGYANDTHECOCKROACHES",
+  "bio": "これは『オギー&コックローチ』の公式Instagramで す! あらゆるチェイスを繰り広げよう! カートゥーン ネットワークで『オギー&コックローチ』を毎日放 送中! 『オギー&コックローチ』 デジタル版、ブルー レイ&DVDが絶賛発売中!",
+  "posts_count": {
+    "value": 69,
+    "raw": "69",
+    "approximate": false
+  },
+  "posts_count_observed_at": "2026-10-28T09:01:39.128Z",
+  "followers_count": {
+    "value": 44141,
+    "raw": "44,141",
+    "approximate": false,
+    "source": "header_title"
+  },
+  "following_count": {
+    "value": 0,
+    "raw": "0",
+    "approximate": false,
+    "source": "header_text"
+  },
+  "count_evidence": {
+    "followers": {
+      "header": {
+        "value": 44100,
+        "raw": "44.1K",
+        "approximate": true
+      },
+      "exact_title": {
+        "value": 44141,
+        "raw": "44,141",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 44000,
+        "raw": "44K",
+        "approximate": true
+      }
+    },
+    "following": {
+      "header": {
+        "value": 0,
+        "raw": "0",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 0,
+        "raw": "0",
+        "approximate": false
+      },
+      "conflict": false
+    },
+    "posts": {
+      "header": {
+        "value": 69,
+        "raw": "69",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 69,
+        "raw": "69",
+        "approximate": false
+      }
+    }
+  },
+  "category": null,
+  "ai_generated_profile": false,
+  "profile_picture_url": "https://instagram.fblr1-7.fna.fbcdn.net/v/t51.82787-19/838893572_18129958048677233_4882235562475065569_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=qkYWkNxU_wMQ7kNvwGmvKR3&_nc_oc=AdqVeQrG7JlIumS0fqNAJOIiv-2nMQTR51VSoYCSWIFkRpYc17l8cVyNzKWIq6Md2RgxsUognRPxD233QdQNn9Tn&_nc_zt=24&_nc_ht=instagram.fblr1-7.fna&_nc_gid=5L5DDqFm6uZNrBxhOr9y5A&_nc_ss=7f6a8&oh=00_AQQSYbQDmyuJbMRiD1TlmAUqfACx8eQH3Ywgj4MvRJ5-Rg&oe=6AE79EDE",
+  "date_joined": "October 2026",
+  "account_based_in": "India",
+  "former_usernames_count": null,
+  "raw": {
+    "header_text": "mr_oggy_114\nOGGYANDTHECOCKROACHES\n69 posts\n44.1K followers\n0 following\nこれは『オギー&コックローチ』の公式Instagramで す! あらゆるチェイスを繰り広げよう! カートゥーン ネットワークで『オギー&コックローチ』を毎日放 送中! 『オギー&コックローチ』 デジタル版、ブルー レイ&DVDが絶賛発売中!\nFollow",
+    "about_text": "About this account\nmr_oggy_114\nTo help keep our community authentic, we’re showing information about profiles on Instagram. See why this information is important.\nDate joined\nOctober 2026\nAccount based in\nIndia\nClose",
+    "description": "44K Followers, 0 Following, 69 Posts - OGGYANDTHECOCKROACHES (@mr_oggy_114) on Instagram: \"これは『オギー&コックローチ』の公式Instagramで す! あらゆるチェイスを繰り広げよう! カートゥーン ネットワークで『オギー&コックローチ』を毎日放 送中! 『オギー&コックローチ』 デジタル版、ブルー レイ&DVDが絶賛発売中!\"",
+    "stat_evidence": {
+      "posts": {
+        "label": "",
+        "exact_title": ""
+      },
+      "followers": {
+        "label": "44.1K followers",
+        "exact_title": "44,141"
+      },
+      "following": {
+        "label": "0 following",
+        "exact_title": ""
+      }
+    }
+  },
+  "issues": [],
+  "current_username": "mr_oggy_114",
+  "username_history": [
+    {
+      "username": "mr_oggy_114",
+      "role": "current username",
+      "first_seen_at": "2026-10-28T09:01:39.125Z"
+    }
+  ],
+  "username_change_observed_at": null
+}

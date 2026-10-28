@@ -1,0 +1,108 @@
+{
+  "username": "kujo__o",
+  "url": "https://www.instagram.com/kujo__o/",
+  "fetched_at": "2026-10-28T09:05:04.804Z",
+  "display_name": "Kujo_o",
+  "bio": "TVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開!\nkujo__o",
+  "posts_count": {
+    "value": 310,
+    "raw": "310",
+    "approximate": false
+  },
+  "posts_count_observed_at": "2026-10-28T09:05:04.804Z",
+  "followers_count": {
+    "value": 124302,
+    "raw": "124,302",
+    "approximate": false,
+    "source": "header_title"
+  },
+  "following_count": {
+    "value": 81,
+    "raw": "81",
+    "approximate": false,
+    "source": "header_text"
+  },
+  "count_evidence": {
+    "followers": {
+      "header": {
+        "value": 124000,
+        "raw": "124K",
+        "approximate": true
+      },
+      "exact_title": {
+        "value": 124302,
+        "raw": "124,302",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 124000,
+        "raw": "124K",
+        "approximate": true
+      }
+    },
+    "following": {
+      "header": {
+        "value": 81,
+        "raw": "81",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 107,
+        "raw": "107",
+        "approximate": false
+      },
+      "conflict": true
+    },
+    "posts": {
+      "header": {
+        "value": 310,
+        "raw": "310",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 310,
+        "raw": "310",
+        "approximate": false
+      }
+    }
+  },
+  "category": null,
+  "ai_generated_profile": false,
+  "profile_picture_url": "https://instagram.fblr1-6.fna.fbcdn.net/v/t51.82787-19/652825368_17949349980116691_2851240156164435364_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=1&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=GrYUywX5inEQ7kNvwHpo9zm&_nc_oc=AdqxiIGN-DnoDLobYo80yiUeGZzzvrsJLjxSmiQxaIMTZ5GbWrWWWATOMNPQMa75nKJtEU58X6xW_nJypbYA88qH&_nc_zt=24&_nc_ht=instagram.fblr1-6.fna&_nc_gid=iweWArhB6MX7jt1k1JeHSA&_nc_ss=7f6a8&oh=00_AQQt5U_NsplNBjqF5MNfwV_EKVh1m-CGFhzhadnuleCfLA&oe=6AE7718D",
+  "date_joined": "December 2023",
+  "account_based_in": "Not shared",
+  "former_usernames_count": {
+    "value": 4,
+    "raw": "4",
+    "approximate": false
+  },
+  "raw": {
+    "header_text": "kujo__o\nKujo_o\n310 posts\n124K followers\n81 following\nTVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開!\nkujo__o\nFollow\nMessage\nCredits",
+    "about_text": "About this account\nkujo__o\nTo help keep our community authentic, we’re showing information about profiles on Instagram. See why this information is important.\nDate joined\nDecember 2023\nAccount based in\nNot shared\nFormer usernames\n4\nClose",
+    "description": "124K Followers, 107 Following, 310 Posts - Kujo_o (@kujo__o) on Instagram: \"TVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開!\"",
+    "stat_evidence": {
+      "posts": {
+        "label": "",
+        "exact_title": ""
+      },
+      "followers": {
+        "label": "124K followers",
+        "exact_title": "124,302"
+      },
+      "following": {
+        "label": "81 following",
+        "exact_title": ""
+      }
+    }
+  },
+  "issues": [],
+  "current_username": "kujo__o",
+  "username_history": [
+    {
+      "username": "kujo__o",
+      "role": "current username",
+      "first_seen_at": "2026-10-28T09:05:04.800Z"
+    }
+  ],
+  "username_change_observed_at": null
+}

@@ -1,0 +1,108 @@
+{
+  "username": "pigeonlarping",
+  "url": "https://www.instagram.com/pigeonlarping/",
+  "fetched_at": "2026-10-28T09:04:46.212Z",
+  "display_name": "Big P",
+  "bio": "TVアニメ\nTONE PIGEON .\nエルバフ編 最新情報を発表&最新PV公開\nオープニング主題歌＆エンディング主題歌、さらにエルバフ\n編の重要キャラクター「ロキ」のキャストが決定しました\npigeonlarping",
+  "posts_count": {
+    "value": 448,
+    "raw": "448",
+    "approximate": false
+  },
+  "posts_count_observed_at": "2026-10-28T09:04:46.212Z",
+  "followers_count": {
+    "value": 4690,
+    "raw": "4,690",
+    "approximate": false,
+    "source": "header_title"
+  },
+  "following_count": {
+    "value": 0,
+    "raw": "0",
+    "approximate": false,
+    "source": "header_text"
+  },
+  "count_evidence": {
+    "followers": {
+      "header": {
+        "value": 4690,
+        "raw": "4,690",
+        "approximate": false
+      },
+      "exact_title": {
+        "value": 4690,
+        "raw": "4,690",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 4666,
+        "raw": "4,666",
+        "approximate": false
+      }
+    },
+    "following": {
+      "header": {
+        "value": 0,
+        "raw": "0",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 1,
+        "raw": "1",
+        "approximate": false
+      },
+      "conflict": true
+    },
+    "posts": {
+      "header": {
+        "value": 448,
+        "raw": "448",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 448,
+        "raw": "448",
+        "approximate": false
+      }
+    }
+  },
+  "category": null,
+  "ai_generated_profile": false,
+  "profile_picture_url": "https://instagram.fblr1-9.fna.fbcdn.net/v/t51.82787-19/828677817_18104023778140008_449042580338419258_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=utGcU3BX05IQ7kNvwHZv9C1&_nc_oc=AdpK6xTiFNiJhbBknnsXI1Y-JEtjk66FyklefaVDvyi0BTzdJndUZDo89DqNFa0Xc9MdiaDm4WDh59A6YeF5Gnd-&_nc_zt=24&_nc_ht=instagram.fblr1-9.fna&_nc_gid=4WZAgd7QDTizl6OVcK-r6A&_nc_ss=7f6a8&oh=00_AQSsO_iHnJ9Ht4ZAzLPuj84GEyasX1xxuiEgj29Qajp6Xg&oe=6AE777D3",
+  "date_joined": "August 2026",
+  "account_based_in": "Not shared",
+  "former_usernames_count": {
+    "value": 6,
+    "raw": "6",
+    "approximate": false
+  },
+  "raw": {
+    "header_text": "pigeonlarping\nBig P\n448 posts\n4,690 followers\n0 following\nTVアニメ\nTONE PIGEON .\nエルバフ編 最新情報を発表&最新PV公開\nオープニング主題歌＆エンディング主題歌、さらにエルバフ\n編の重要キャラクター「ロキ」のキャストが決定しました\npigeonlarping\nFollow\nMessage\ngoin up\ncredits",
+    "about_text": "About this account\npigeonlarping\nTo help keep our community authentic, we’re showing information about profiles on Instagram. See why this information is important.\nDate joined\nAugust 2026\nAccount based in\nNot shared\nFormer usernames\n6\nClose",
+    "description": "4,666 Followers, 1 Following, 448 Posts - Big P (@pigeonlarping) on Instagram: \"TVアニメ\nTONE PIGEON .\nエルバフ編 最新情報を発表&最新PV公開\nオープニング主題歌＆エンディング主題歌、さらにエルバフ\n編の重要キャラクター「ロキ」のキャストが決定しました\"",
+    "stat_evidence": {
+      "posts": {
+        "label": "",
+        "exact_title": ""
+      },
+      "followers": {
+        "label": "4,690 followers",
+        "exact_title": "4,690"
+      },
+      "following": {
+        "label": "0 following",
+        "exact_title": ""
+      }
+    }
+  },
+  "issues": [],
+  "current_username": "pigeonlarping",
+  "username_history": [
+    {
+      "username": "pigeonlarping",
+      "role": "current username",
+      "first_seen_at": "2026-10-28T09:04:46.207Z"
+    }
+  ],
+  "username_change_observed_at": null
+}

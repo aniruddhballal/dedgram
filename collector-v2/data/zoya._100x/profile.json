@@ -1,0 +1,108 @@
+{
+  "username": "zoya._100x",
+  "url": "https://www.instagram.com/zoya._100x/",
+  "fetched_at": "2026-10-28T09:05:29.071Z",
+  "display_name": "Zoya",
+  "bio": "あらゆる追いかけっこを繰り広げる！「トムとジェリー-公式Instagramです！ Cartoon Networkにて『まいにちトムとジェリー」放送中！『映画トムとジェリー』デジタル配中/ブルーレイ&DVD発売中TEC（S23）",
+  "posts_count": {
+    "value": 158,
+    "raw": "158",
+    "approximate": false
+  },
+  "posts_count_observed_at": "2026-10-28T09:05:29.071Z",
+  "followers_count": {
+    "value": 18032,
+    "raw": "18,032",
+    "approximate": false,
+    "source": "header_title"
+  },
+  "following_count": {
+    "value": 245,
+    "raw": "245",
+    "approximate": false,
+    "source": "header_text"
+  },
+  "count_evidence": {
+    "followers": {
+      "header": {
+        "value": 18000,
+        "raw": "18K",
+        "approximate": true
+      },
+      "exact_title": {
+        "value": 18032,
+        "raw": "18,032",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 18000,
+        "raw": "18K",
+        "approximate": true
+      }
+    },
+    "following": {
+      "header": {
+        "value": 245,
+        "raw": "245",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 327,
+        "raw": "327",
+        "approximate": false
+      },
+      "conflict": true
+    },
+    "posts": {
+      "header": {
+        "value": 158,
+        "raw": "158",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 158,
+        "raw": "158",
+        "approximate": false
+      }
+    }
+  },
+  "category": null,
+  "ai_generated_profile": false,
+  "profile_picture_url": "https://instagram.fblr1-8.fna.fbcdn.net/v/t51.82787-19/825323074_17903026050584631_4522546849451241796_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=WYfGBUweRVQQ7kNvwFlPQzr&_nc_oc=Adr1snODSAyHdrrB15mP-idQGri-rEuZxC_9ILzzt_ttdeFGDzx2pCPOX7zNCXhvpRZwmoLAK3Mn9N0k0E9M_ybG&_nc_zt=24&_nc_ht=instagram.fblr1-8.fna&_nc_gid=u2gZsdeZn3ScMdNM9zj8pw&_nc_ss=7f6a8&oh=00_AQTaRZEtHJ6BX8FtrnLf1PJbTIaVqKfx2WyiYJFOwbGgVQ&oe=6AE79523",
+  "date_joined": "October 2025",
+  "account_based_in": "India",
+  "former_usernames_count": {
+    "value": 4,
+    "raw": "4",
+    "approximate": false
+  },
+  "raw": {
+    "header_text": "zoya._100x\nZoya\n158 posts\n18K followers\n245 following\nあらゆる追いかけっこを繰り広げる！「トムとジェリー-公式Instagramです！ Cartoon Networkにて『まいにちトムとジェリー」放送中！『映画トムとジェリー』デジタル配中/ブルーレイ&DVD発売中TEC（S23）\nFollow\nGrowth📈",
+    "about_text": "About this account\nzoya._100x\nTo help keep our community authentic, we’re showing information about profiles on Instagram. See why this information is important.\nDate joined\nOctober 2025\nAccount based in\nIndia\nFormer usernames\n4\nClose",
+    "description": "18K Followers, 327 Following, 158 Posts - Zoya (@zoya._100x) on Instagram: \"あらゆる追いかけっこを繰り広げる！「トムとジェリー-公式Instagramです！ Cartoon Networkにて『まいにちトムとジェリー」放送中！『映画トムとジェリー』デジタル配中/ブルーレイ&DVD発売中TEC（S23）\"",
+    "stat_evidence": {
+      "posts": {
+        "label": "",
+        "exact_title": ""
+      },
+      "followers": {
+        "label": "18K followers",
+        "exact_title": "18,032"
+      },
+      "following": {
+        "label": "245 following",
+        "exact_title": ""
+      }
+    }
+  },
+  "issues": [],
+  "current_username": "zoya._100x",
+  "username_history": [
+    {
+      "username": "zoya._100x",
+      "role": "current username",
+      "first_seen_at": "2026-10-28T09:05:29.067Z"
+    }
+  ],
+  "username_change_observed_at": null
+}

@@ -1,0 +1,104 @@
+{
+  "username": "madarameme0",
+  "url": "https://www.instagram.com/madarameme0/",
+  "fetched_at": "2026-10-28T09:04:40.318Z",
+  "display_name": "Madarameme0",
+  "bio": "[#TVアニメ] 『マダラ・ウチハ』\n「俺は俺の道を行く。誰に理解されなくても、嫌われても、恐れられても。それでも俺は俺であり続ける」🔥\n🌑 揺るがぬ意思\n⚔️ 信念に生きる\n✨...\nmore",
+  "posts_count": {
+    "value": 30,
+    "raw": "30",
+    "approximate": false
+  },
+  "posts_count_observed_at": "2026-10-28T09:04:40.318Z",
+  "followers_count": {
+    "value": 53,
+    "raw": "53",
+    "approximate": false,
+    "source": "header_title"
+  },
+  "following_count": {
+    "value": 39,
+    "raw": "39",
+    "approximate": false,
+    "source": "header_text"
+  },
+  "count_evidence": {
+    "followers": {
+      "header": {
+        "value": 53,
+        "raw": "53",
+        "approximate": false
+      },
+      "exact_title": {
+        "value": 53,
+        "raw": "53",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 45,
+        "raw": "45",
+        "approximate": false
+      }
+    },
+    "following": {
+      "header": {
+        "value": 39,
+        "raw": "39",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 41,
+        "raw": "41",
+        "approximate": false
+      },
+      "conflict": true
+    },
+    "posts": {
+      "header": {
+        "value": 30,
+        "raw": "30",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 30,
+        "raw": "30",
+        "approximate": false
+      }
+    }
+  },
+  "category": null,
+  "ai_generated_profile": false,
+  "profile_picture_url": "https://instagram.fblr1-8.fna.fbcdn.net/v/t51.82787-19/858270010_18139371067599999_990455985707699498_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=b4LBQxiauiUQ7kNvwGBA18n&_nc_oc=AdriRIWjaLIuSoJubIgxaqKiYk8yCnriKLwj1Cerq2OInTQjpWGLun0sC6V4xqdaUAr0vJPJpXJvuh9niNuvL0N5&_nc_zt=24&_nc_ht=instagram.fblr1-8.fna&_nc_gid=olf5Xr0M1w2mAyQBfZCIqg&_nc_ss=7f6a8&oh=00_AQTed9YH19G3GyYAKW5FKYfxYxEh2izpvFH-FL2SPzgfCQ&oe=6AE78FB4",
+  "date_joined": "October 2026",
+  "account_based_in": "Brazil",
+  "former_usernames_count": null,
+  "raw": {
+    "header_text": "madarameme0\nMadarameme0\n30 posts\n53 followers\n39 following\n[#TVアニメ] 『マダラ・ウチハ』\n「俺は俺の道を行く。誰に理解されなくても、嫌われても、恐れられても。それでも俺は俺であり続ける」🔥\n🌑 揺るがぬ意思\n⚔️ 信念に生きる\n✨... \nmore\nFollow",
+    "about_text": "About this account\nmadarameme0\nTo help keep our community authentic, we’re showing information about profiles on Instagram. See why this information is important.\nDate joined\nOctober 2026\nAccount based in\nBrazil\nClose",
+    "description": "45 Followers, 41 Following, 30 Posts - Madarameme0 (@madarameme0) on Instagram: \"[#TVアニメ] 『マダラ・ウチハ』\n「俺は俺の道を行く。誰に理解されなくても、嫌われても、恐れられても。それでも俺は俺であり続ける」🔥\n🌑 揺るがぬ意思\n⚔️ 信念に生きる\n✨ 誇り高き魂\n#うちはマダラ #NARUTO\"",
+    "stat_evidence": {
+      "posts": {
+        "label": "",
+        "exact_title": ""
+      },
+      "followers": {
+        "label": "53 followers",
+        "exact_title": "53"
+      },
+      "following": {
+        "label": "39 following",
+        "exact_title": ""
+      }
+    }
+  },
+  "issues": [],
+  "current_username": "madarameme0",
+  "username_history": [
+    {
+      "username": "madarameme0",
+      "role": "current username",
+      "first_seen_at": "2026-10-28T09:04:40.314Z"
+    }
+  ],
+  "username_change_observed_at": null
+}

@@ -1,23 +1,23 @@
 {
-  "started_at": "2026-10-28T08:56:54.000Z",
-  "updated_at": "2026-10-28T08:56:58.488Z",
-  "status": "blocked",
-  "phase": "profile",
+  "started_at": "2026-10-28T09:00:40.900Z",
+  "updated_at": "2026-10-28T09:00:45.136Z",
+  "status": "complete",
+  "phase": "done",
   "scope": [
     "profile"
   ],
   "current_url": null,
-  "error": "Invalid URL",
+  "error": null,
   "progress": {
     "task": "profile",
     "label": "Profile details",
     "action": "Reading the profile header, account details and exact post count",
-    "completed": 0,
+    "completed": 1,
     "total": 1,
-    "percent": 0,
-    "remaining": 1,
+    "percent": 100,
+    "remaining": 0,
     "current_item": null,
-    "detail": "Blocked: Invalid URL",
-    "updated_at": "2026-10-28T08:56:58.488Z"
+    "detail": "Stage complete",
+    "updated_at": "2026-10-28T09:00:45.136Z"
   }
 }

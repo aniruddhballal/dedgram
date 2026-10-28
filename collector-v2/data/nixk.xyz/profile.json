@@ -1,0 +1,104 @@
+{
+  "username": "nixk.xyz",
+  "url": "https://www.instagram.com/nixk.xyz/",
+  "fetched_at": "2026-10-28T09:05:47.183Z",
+  "display_name": null,
+  "bio": "#TVアニメ\nrLINDINHA PODEROSA\n王都魔法祭編の最新情報がついに解禁!! 待望の最新キービジュアルを公開! さらに、新キャラクター&新たな魔法の情報に加え、王都魔法祭編の物語を大きく動かす重要人物...\nmore",
+  "posts_count": {
+    "value": 3107,
+    "raw": "3,107",
+    "approximate": false
+  },
+  "posts_count_observed_at": "2026-10-28T09:05:47.183Z",
+  "followers_count": {
+    "value": 35420,
+    "raw": "35,420",
+    "approximate": false,
+    "source": "header_title"
+  },
+  "following_count": {
+    "value": 1,
+    "raw": "1",
+    "approximate": false,
+    "source": "header_text"
+  },
+  "count_evidence": {
+    "followers": {
+      "header": {
+        "value": 35400,
+        "raw": "35.4K",
+        "approximate": true
+      },
+      "exact_title": {
+        "value": 35420,
+        "raw": "35,420",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 35000,
+        "raw": "35K",
+        "approximate": true
+      }
+    },
+    "following": {
+      "header": {
+        "value": 1,
+        "raw": "1",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 1,
+        "raw": "1",
+        "approximate": false
+      },
+      "conflict": false
+    },
+    "posts": {
+      "header": {
+        "value": 3107,
+        "raw": "3,107",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 3107,
+        "raw": "3,107",
+        "approximate": false
+      }
+    }
+  },
+  "category": "Digital creator",
+  "ai_generated_profile": true,
+  "profile_picture_url": "https://instagram.fblr1-6.fna.fbcdn.net/v/t51.82787-19/842255403_18101548640257332_4898744932642229697_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=1&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=h5jpw9eWo-4Q7kNvwEBkb9m&_nc_oc=AdrDLtFpAlPPealUnX3ExrKPAr87hH_ZQSE59acgtmn-FEBicEgTExC7tOWcD4rZR96HaUOOg2v-OPOogJHAOrNA&_nc_zt=24&_nc_ht=instagram.fblr1-6.fna&_nc_gid=vNfrsC25IF09O0edr3pmfw&_nc_ss=7f6a8&oh=00_AQTxss5c7zWy0U6104hSKXazOBv_SK52XMFTcoCBfHi2Dw&oe=6AE78D29",
+  "date_joined": "August 2026",
+  "account_based_in": "Not shared",
+  "former_usernames_count": null,
+  "raw": {
+    "header_text": "nixk.xyz\n3,107 posts\n35.4K followers\n1 following\nDigital creator • \nAI-generated profile\n#TVアニメ\nrLINDINHA PODEROSA\n王都魔法祭編の最新情報がついに解禁!! 待望の最新キービジュアルを公開! さらに、新キャラクター&新たな魔法の情報に加え、王都魔法祭編の物語を大きく動かす重要人物... \nmore\nFollow\nMessage\n⚠️",
+    "about_text": "About this account\nnixk.xyz\n • AI-generated profile\nTo help keep our community authentic, we’re showing information about profiles on Instagram. See why this information is important.\nDate joined\nAugust 2026\nAccount based in\nNot shared\nClose",
+    "description": "35K Followers, 1 Following, 3,107 Posts - @nixk.xyz on Instagram: \"#TVアニメ\nrLINDINHA PODEROSA\n王都魔法祭編の最新情報がついに解禁!! 待望の最新キービジュアルを公開! さらに、新キャラクター&新たな魔法の情報に加え、王都魔法祭編の物語を大きく動かす重要人物 「ルミナ」の登場も決定しました!!\n◆新キャラクター\"",
+    "stat_evidence": {
+      "posts": {
+        "label": "",
+        "exact_title": ""
+      },
+      "followers": {
+        "label": "35.4K followers",
+        "exact_title": "35,420"
+      },
+      "following": {
+        "label": "1 following",
+        "exact_title": ""
+      }
+    }
+  },
+  "issues": [],
+  "current_username": "nixk.xyz",
+  "username_history": [
+    {
+      "username": "nixk.xyz",
+      "role": "current username",
+      "first_seen_at": "2026-10-28T09:05:47.179Z"
+    }
+  ],
+  "username_change_observed_at": null
+}

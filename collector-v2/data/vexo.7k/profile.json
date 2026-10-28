@@ -1,0 +1,104 @@
+{
+  "username": "vexo.7k",
+  "url": "https://www.instagram.com/vexo.7k/",
+  "fetched_at": "2026-10-28T09:01:07.380Z",
+  "display_name": null,
+  "bio": "⛧ 𝐕𝐄𝐗𝐎.𝟕𝐊\nTVアニメ\n『ONE PIECE』エルバフ編 最新情報を発表 & 最新PV公開 オープニング主題歌＆エンディング主題歌、さらにエルバフ編の重要キャラクター「ロキ」のキャストが決定しました！ …",
+  "posts_count": {
+    "value": 193,
+    "raw": "193",
+    "approximate": false
+  },
+  "posts_count_observed_at": "2026-10-28T09:01:07.380Z",
+  "followers_count": {
+    "value": 2420,
+    "raw": "2,420",
+    "approximate": false,
+    "source": "header_title"
+  },
+  "following_count": {
+    "value": 38,
+    "raw": "38",
+    "approximate": false,
+    "source": "header_text"
+  },
+  "count_evidence": {
+    "followers": {
+      "header": {
+        "value": 2420,
+        "raw": "2,420",
+        "approximate": false
+      },
+      "exact_title": {
+        "value": 2420,
+        "raw": "2,420",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 2380,
+        "raw": "2,380",
+        "approximate": false
+      }
+    },
+    "following": {
+      "header": {
+        "value": 38,
+        "raw": "38",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 39,
+        "raw": "39",
+        "approximate": false
+      },
+      "conflict": true
+    },
+    "posts": {
+      "header": {
+        "value": 193,
+        "raw": "193",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 193,
+        "raw": "193",
+        "approximate": false
+      }
+    }
+  },
+  "category": "Editor",
+  "ai_generated_profile": true,
+  "profile_picture_url": "https://instagram.fblr1-6.fna.fbcdn.net/v/t51.82787-19/862898628_18129018439760861_3510218083087460598_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=YkKvoBaR0aUQ7kNvwF5oKDX&_nc_oc=Adp7Q6P9vCU77PILkj4yaRXIzZe6k4sLtggr_v7NDiNnQ5aooKtTDpNJ8MXuhQ6odW7GHASY6oxKcQ4GTd4uOyg1&_nc_zt=24&_nc_ht=instagram.fblr1-6.fna&_nc_gid=gKJ8mQpP60gsHgEe86q-3A&_nc_ss=7f6a8&oh=00_AQQ6G-RSRk_o9Fbp1rvZsR1jQ2xtFIdtlYwBl0cdiADjRw&oe=6AE7A3FE",
+  "date_joined": "October 2026",
+  "account_based_in": "Russia",
+  "former_usernames_count": null,
+  "raw": {
+    "header_text": "vexo.7k\n193 posts\n2,420 followers\n38 following\nEditor • \nAI-generated profile\n⛧ 𝐕𝐄𝐗𝐎.𝟕𝐊\nTVアニメ\n『ONE PIECE』エルバフ編 最新情報を発表 & 最新PV公開 オープニング主題歌＆エンディング主題歌、さらにエルバフ編の重要キャラクター「ロキ」のキャストが決定しました！ …\nFollow\nMessage",
+    "about_text": "About this account\nvexo.7k\n • AI-generated profile\nTo help keep our community authentic, we’re showing information about profiles on Instagram. See why this information is important.\nDate joined\nOctober 2026\nAccount based in\nRussia\nClose",
+    "description": "2,380 Followers, 39 Following, 193 Posts - @vexo.7k on Instagram: \"⛧ 𝐕𝐄𝐗𝐎.𝟕𝐊\nTVアニメ\n『ONE PIECE』エルバフ編 最新情報を発表 & 最新PV公開 オープニング主題歌＆エンディング主題歌、さらにエルバフ編の重要キャラクター「ロキ」のキャストが決定しました！ …\"",
+    "stat_evidence": {
+      "posts": {
+        "label": "",
+        "exact_title": ""
+      },
+      "followers": {
+        "label": "2,420 followers",
+        "exact_title": "2,420"
+      },
+      "following": {
+        "label": "38 following",
+        "exact_title": ""
+      }
+    }
+  },
+  "issues": [],
+  "current_username": "vexo.7k",
+  "username_history": [
+    {
+      "username": "vexo.7k",
+      "role": "current username",
+      "first_seen_at": "2026-10-28T09:01:07.376Z"
+    }
+  ],
+  "username_change_observed_at": null
+}

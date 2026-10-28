@@ -1,0 +1,104 @@
+{
+  "username": "paystasongta",
+  "url": "https://www.instagram.com/paystasongta/",
+  "fetched_at": "2026-10-28T09:04:52.323Z",
+  "display_name": "Paystason Gta",
+  "bio": "TVアニメ『ONE PIECE』 エルバフ編 最新情報を発表＆最新PV公開オープニング主題歌＆エンディング主題歌 さらに重要キャラクター「ロキ」のキャスト決定！！◆\n公式最新情報",
+  "posts_count": {
+    "value": 228,
+    "raw": "228",
+    "approximate": false
+  },
+  "posts_count_observed_at": "2026-10-28T09:04:52.323Z",
+  "followers_count": {
+    "value": 3258,
+    "raw": "3,258",
+    "approximate": false,
+    "source": "header_title"
+  },
+  "following_count": {
+    "value": 0,
+    "raw": "0",
+    "approximate": false,
+    "source": "header_text"
+  },
+  "count_evidence": {
+    "followers": {
+      "header": {
+        "value": 3258,
+        "raw": "3,258",
+        "approximate": false
+      },
+      "exact_title": {
+        "value": 3258,
+        "raw": "3,258",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 3247,
+        "raw": "3,247",
+        "approximate": false
+      }
+    },
+    "following": {
+      "header": {
+        "value": 0,
+        "raw": "0",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 0,
+        "raw": "0",
+        "approximate": false
+      },
+      "conflict": false
+    },
+    "posts": {
+      "header": {
+        "value": 228,
+        "raw": "228",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 228,
+        "raw": "228",
+        "approximate": false
+      }
+    }
+  },
+  "category": null,
+  "ai_generated_profile": false,
+  "profile_picture_url": "https://instagram.fblr1-8.fna.fbcdn.net/v/t51.82787-19/786827995_18093443993169333_7806338685198574331_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDcwLkMzIn0%3D&_nc_ohc=R0Pcm7D58BwQ7kNvwFK5e6c&_nc_oc=AdpEnlfHPO_-JtSjq985Y00C8dkn8-VxbiFbuwEIMclw8vNCoW8SWGGilcdpq1-CbowT6zD86hifdZUXNfIBejbG&_nc_zt=24&_nc_ht=instagram.fblr1-8.fna&_nc_gid=iQs1V4CyvSGbiR-uTNZlSQ&_nc_ss=7f6a8&oh=00_AQTAwUbx9IJsSshe7eko2HX9ue9S9NAEfFqm7UOozxkSTw&oe=6AE7871E",
+  "date_joined": "August 2026",
+  "account_based_in": "India",
+  "former_usernames_count": null,
+  "raw": {
+    "header_text": "paystasongta\nPaystason Gta\n228 posts\n3,258 followers\n0 following\nTVアニメ『ONE PIECE』 エルバフ編 最新情報を発表＆最新PV公開オープニング主題歌＆エンディング主題歌 さらに重要キャラクター「ロキ」のキャスト決定！！◆\n公式最新情報\nFollow\nMessage",
+    "about_text": "About this account\npaystasongta\nTo help keep our community authentic, we’re showing information about profiles on Instagram. See why this information is important.\nDate joined\nAugust 2026\nAccount based in\nIndia\nClose",
+    "description": "3,247 Followers, 0 Following, 228 Posts - Paystason Gta (@paystasongta) on Instagram: \"TVアニメ『ONE PIECE』 エルバフ編 最新情報を発表＆最新PV公開オープニング主題歌＆エンディング主題歌 さらに重要キャラクター「ロキ」のキャスト決定！！◆\n公式最新情報\"",
+    "stat_evidence": {
+      "posts": {
+        "label": "",
+        "exact_title": ""
+      },
+      "followers": {
+        "label": "3,258 followers",
+        "exact_title": "3,258"
+      },
+      "following": {
+        "label": "0 following",
+        "exact_title": ""
+      }
+    }
+  },
+  "issues": [],
+  "current_username": "paystasongta",
+  "username_history": [
+    {
+      "username": "paystasongta",
+      "role": "current username",
+      "first_seen_at": "2026-10-28T09:04:52.319Z"
+    }
+  ],
+  "username_change_observed_at": null
+}
