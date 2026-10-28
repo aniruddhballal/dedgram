@@ -6,6 +6,12 @@
   "date_joined": "Not shown",
   "posts_count": "Not shown",
   "status": "Deleted account",
+  "account_status_observed_at": "2026-10-22T16:24:58.499Z",
+  "deletion_date_range": {
+    "after_classified_at": "2026-10-20T05:08:19.345Z",
+    "before_first_unavailable_at": "2026-10-22T16:24:58.499Z",
+    "exact_timestamp_known": false
+  },
   "ignored": false,
   "last_error": "Instagram reports that this profile is unavailable.",
   "added_at": "2026-10-20T05:08:19.345Z",

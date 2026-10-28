@@ -5,7 +5,13 @@
   "country": "Uzbekistan",
   "date_joined": "October 2026",
   "posts_count": "26",
-  "status": "Collected",
+  "status": "Deleted account",
+  "account_status_observed_at": "2026-10-24T07:47:19.039Z",
+  "deletion_date_range": {
+    "after_classified_at": "2026-10-20T07:20:40.722Z",
+    "before_first_unavailable_at": "2026-10-24T07:47:19.039Z",
+    "exact_timestamp_known": false
+  },
   "ignored": false,
   "last_error": "",
   "added_at": "2026-10-20T07:20:40.722Z",

@@ -5,10 +5,17 @@
   "country": "Not shared",
   "date_joined": "October 2026",
   "posts_count": "Not shown",
-  "status": "Collected",
-  "last_error": "",
+  "status": "Deleted account",
+  "account_status_observed_at": "2026-10-24T08:36:38.648Z",
+  "deletion_date_range": {
+    "after_classified_at": "2026-10-18T01:41:55.245Z",
+    "before_first_unavailable_at": "2026-10-24T08:36:38.648Z",
+    "exact_timestamp_known": false
+  },
+  "last_error": "Instagram reports this page is unavailable.",
   "added_at": "2026-10-18T07:14:06.625Z",
   "last_fetched_at": "2026-10-18T07:20:16.295Z",
+  "catalog_first_seen_at": "2026-10-18T01:41:55.245Z",
   "profile_text": "hnvx.07\n321 posts\n12.7K followers\n0 following\nあらゆるワクワクする追いかけっこをお届けします！\n『トムとジェリー』＆『オギー＆コックローチ』は、\nCartoon Network C+!\n『トムとジェリー』＆『オギー＆コックローチ』は\nデジタル配信でもお楽しみいただけます！\nFollow\nMessage\nfollowers",
   "about_text": "About this account\nhnvx.07\nTo help keep our community authentic, we’re showing information about profiles on Instagram. See why this information is important.\nDate joined\nOctober 2026\nAccount based in\nNot shared"
 }

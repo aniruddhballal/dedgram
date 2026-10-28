@@ -5,7 +5,13 @@
   "country": "Not shared",
   "date_joined": "October 2026",
   "posts_count": "356",
-  "status": "Collected",
+  "status": "Deleted account",
+  "account_status_observed_at": "2026-10-24T08:38:09.914Z",
+  "deletion_date_range": {
+    "after_classified_at": "2026-10-18T07:59:56.971Z",
+    "before_first_unavailable_at": "2026-10-24T08:38:09.914Z",
+    "exact_timestamp_known": false
+  },
   "ignored": false,
   "last_error": "",
   "added_at": "2026-10-18T07:59:56.971Z",

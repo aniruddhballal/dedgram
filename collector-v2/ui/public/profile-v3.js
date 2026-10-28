@@ -28,7 +28,7 @@ export function renderProfile(state) {
   const review = data.items.filter((item) => !!reviewReason(item));
   const rows = filteredItems(state);
   const batchResult = state.batch?.results?.[p.username];
-  const reportStatus = p.profile_header_complete && !p.profile_complete && p.run.status === 'complete'
+  const reportStatus = p.account_status === 'deleted' ? 'deleted' : p.profile_header_complete && !p.profile_complete && p.run.status === 'complete'
     ? 'counts_pending' : batchResult?.status || p.run.status;
   return `${errorBanner(state.error)}<div class="breadcrumbs"><a href="/">Collection</a><span>/</span><span>@${esc(p.username)}</span></div>
     <section class="detail-hero"><div class="detail-identity">${p.profile_picture_url ? `<img class="detail-avatar" src="${esc(p.profile_picture_url)}" alt="">` : `<div class="detail-avatar fallback">${esc(p.username[0].toUpperCase())}</div>`}

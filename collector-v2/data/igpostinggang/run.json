@@ -8,5 +8,12 @@
     "reel_grid"
   ],
   "current_url": null,
+  "account_status": "deleted",
+  "account_status_observed_at": "2026-10-22T16:25:26.195Z",
+  "deletion_date_range": {
+    "after_classified_at": "2026-10-20T07:37:18.918Z",
+    "before_first_unavailable_at": "2026-10-22T16:25:26.195Z",
+    "exact_timestamp_known": false
+  },
   "error": "Instagram reports this page is unavailable."
 }
