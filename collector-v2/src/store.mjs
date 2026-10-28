@@ -33,6 +33,7 @@ export function paths(root, username) {
     base,
     history: join(base, 'history'),
     profile: join(base, 'profile.json'),
+    profilePicture: join(base, 'profile.jpg'),
     discovery: join(base, 'discovery.json'),
     items: join(base, 'items.json'),
     run: join(base, 'run.json'),

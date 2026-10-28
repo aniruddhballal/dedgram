@@ -3,7 +3,7 @@ import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { execFile } from 'node:child_process';
 import { promisify } from 'node:util';
-import { captureItemOwner, captureProfile, launch } from './browser.mjs';
+import { captureItemOwner, captureProfile, launch, saveProfilePicture } from './browser.mjs';
 import { now, profileFromSnapshot } from './model.mjs';
 import { mergeProfile, paths, readJson, writeJson, writeSnapshot } from './store.mjs';
 import { writeReport } from './report.mjs';
@@ -152,6 +152,10 @@ export async function applyUsernameChange(root, recordUsername, requestedUsernam
     const launched = await launch(root, { headless });
     context = launched.context;
     snapshot = await captureProfile(launched.page, `https://www.instagram.com/${requestedUsername}/`);
+    if (snapshot.profile_picture_url) {
+      try { await saveProfilePicture(launched.page, data.path.profilePicture); }
+      catch (error) { if (process.env.DEDGRAM_DEBUG) console.warn('Profile picture cache:', error.message); }
+    }
   } finally { if (context) await context.close(); }
   const fresh = profileFromSnapshot(recordUsername, snapshot);
   const profile = { ...mergeProfile(data.profile, fresh), username: requestedUsername,

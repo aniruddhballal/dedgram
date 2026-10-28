@@ -449,6 +449,13 @@ const server = createServer(async (request, response) => {
       if (!/^[A-Za-z0-9_-]+\.jpg$/.test(filename)) return json(response, 400, { error: 'Invalid media filename.' });
       return sendFile(response, join(showcaseMediaDir, filename), 'image/jpeg');
     }
+    if (pathname.startsWith('/avatars/')) {
+      const filename = decodeURIComponent(pathname.slice('/avatars/'.length));
+      if (!/^[A-Za-z0-9._-]+\.jpg$/.test(filename)) return json(response, 400, { error: 'Invalid avatar filename.' });
+      const username = await resolveUsername(filename.slice(0, -4));
+      return username ? sendFile(response, paths(root, username).profilePicture, 'image/jpeg')
+        : json(response, 404, { error: 'Profile not in catalog.' });
+    }
     if (pathname.startsWith('/profiles/')) {
       const requested = decodeURIComponent(pathname.slice('/profiles/'.length)).replace(/\/$/, '');
       const resolved = await resolveUsername(requested);

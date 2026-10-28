@@ -31,6 +31,16 @@ function render() {
   const page = route().page;
   document.querySelectorAll('[data-nav]').forEach((link) => link.classList.toggle('active', link.dataset.nav === (page === 'summary' ? 'summary' : 'queue')));
   app.innerHTML = page === 'summary' ? renderOverview(state) : page === 'profile' ? renderProfile(state) : renderQueue(state);
+  app.querySelectorAll('img[data-avatar-fallback]').forEach((image) => {
+    image.addEventListener('error', () => {
+      const local = image.dataset.avatarLocal;
+      if (local && !image.dataset.avatarLocalTried) { image.dataset.avatarLocalTried = '1'; image.src = local; return; }
+      const fallback = document.createElement('span');
+      fallback.className = `${image.className} fallback`.trim();
+      fallback.textContent = image.dataset.avatarFallback || '?';
+      image.replaceWith(fallback);
+    });
+  });
   if (focused && document.getElementById(focused)) {
     const input = document.getElementById(focused);
     input.focus();

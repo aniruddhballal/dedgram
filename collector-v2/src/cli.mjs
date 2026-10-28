@@ -3,7 +3,7 @@ import { dirname, resolve, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { execFile } from 'node:child_process';
 import { promisify } from 'node:util';
-import { launch, captureProfile, discover, captureItem } from './browser.mjs';
+import { launch, captureProfile, discover, captureItem, saveProfilePicture } from './browser.mjs';
 import { dayFromDescription, exactPostCount, gridCount, gridCountError, itemFromSnapshot, now, postCountError, profileFromSnapshot, profileHeaderComplete, profileLevelComplete } from './model.mjs';
 import { paths, readJson, writeJson, writeSnapshot, mergeDiscoveryItems, mergeItem, mergeProfile, syncGridViews } from './store.mjs';
 import { writeReport } from './report.mjs';
@@ -168,6 +168,10 @@ async function collect() {
       const savedUrl = typeof profile?.url === 'string' && /^https?:\/\//i.test(profile.url) ? profile.url : null;
       const target = savedUrl || `https://www.instagram.com/${username}/`;
       const snapshot = await captureProfile(page, target);
+      if (snapshot.profile_picture_url) {
+        try { await saveProfilePicture(page, path.profilePicture); }
+        catch (error) { log(`Profile picture was visible but could not be cached: ${error.message}`); }
+      }
       const currentUsername = new URL(target).pathname.split('/').filter(Boolean)[0] || username;
       const previousUsername = profile?.current_username || profile?.username || username;
       const observedAt = now();

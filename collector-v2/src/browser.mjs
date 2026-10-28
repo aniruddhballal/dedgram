@@ -1,4 +1,5 @@
 import { join } from 'node:path';
+import { writeFile } from 'node:fs/promises';
 import { chromium } from 'playwright';
 import { canonicalItemUrl, clean } from './model.mjs';
 
@@ -99,6 +100,14 @@ export async function captureProfile(page, username) {
     }))
   }));
   return { header_text: headerText, about_text: about, ...meta };
+}
+
+export async function saveProfilePicture(page, destination) {
+  const image = page.locator('main header img').first();
+  if (!await image.isVisible({ timeout: 1500 }).catch(() => false)) return false;
+  const buffer = await image.screenshot({ type: 'jpeg', quality: 88 });
+  await writeFile(destination, buffer);
+  return true;
 }
 
 export async function discover(page, username, kind, onProgress,

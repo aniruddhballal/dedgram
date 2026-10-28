@@ -145,6 +145,16 @@ function render() {
       : step === 0 ? renderSelect(state) : step === 4 ? (state.workflow === 'username_migration' ? renderUsernameReview(state) : renderReview(state))
         : step > 0 ? renderStage(state, step) : '<p class="loading">Page not found.</p>';
   app.innerHTML = `${state.readOnly ? '<div class="preview-banner">PREVIEW · Collection actions are disabled while the original batch runs.</div>' : ''}${state.error ? `<div class="error-banner" role="alert"><strong>Something needs attention.</strong> ${esc(state.error)} <button data-action="dismiss" aria-label="Dismiss">×</button></div>` : ''}${content}`;
+  app.querySelectorAll('img[data-avatar-fallback]').forEach((image) => {
+    image.addEventListener('error', () => {
+      const local = image.dataset.avatarLocal;
+      if (local && !image.dataset.avatarLocalTried) { image.dataset.avatarLocalTried = '1'; image.src = local; return; }
+      const fallback = document.createElement('span');
+      fallback.className = `${image.className} fallback`.trim();
+      fallback.textContent = image.dataset.avatarFallback || '?';
+      image.replaceWith(fallback);
+    });
+  });
   app.querySelectorAll('img[data-cover-fallback]').forEach((image) => {
     image.addEventListener('error', () => {
       const fallback = image.dataset.coverFallback;

@@ -60,6 +60,7 @@ export function profileSummary(data) {
     username_history: profile?.username_history || [],
     display_name: profile?.display_name || null,
     profile_picture_url: profile?.profile_picture_url || null,
+    profile_picture_local_url: `/avatars/${encodeURIComponent(username)}.jpg`,
     category: profile?.category || null,
     bio: profile?.bio || null,
     country: profile?.account_based_in || null,
