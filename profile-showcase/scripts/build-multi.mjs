@@ -17,6 +17,7 @@ const fullProfiles = [
   'mikre_film',
   'scoobyjacks_',
   'the.ravshanbek_',
+  'blunt.fun4',
   'coldex7.ae'
 ];
 const profileLevelProfiles = ['illmisguideyou'];

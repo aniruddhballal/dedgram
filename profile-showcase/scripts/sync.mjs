@@ -20,7 +20,8 @@ const fullProfiles = [
   'james_basas',
   'mikre_film',
   'scoobyjacks_',
-  'the.ravshanbek_'
+  'the.ravshanbek_',
+  'blunt.fun4'
 ];
 const profileLevelProfiles = ['coldex7.ae', 'illmisguideyou'];
 const resolvedProfiles = ['hnvx.07', 'prime_senchui', 'vlad.aep_', 'nxx._.nmercy', 'dexea.100k', 'igpostinggang', 'rzk.mp4', 'renyajichu', 'hammergag', 'caodogsfofo', 'back', 'short_vibesz', 'oooiway', 'zuxxie.pov', 'extreme.laugh8', 'iron_block2', 'memes.fatafat'];
