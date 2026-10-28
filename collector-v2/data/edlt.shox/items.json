@@ -1809,41 +1809,49 @@
     "shortcode": "DelvXC-OG6N",
     "url": "https://www.instagram.com/reel/DelvXC-OG6N/",
     "grid_views_raw": null,
-    "status": "partial",
-    "fetched_at": "2026-10-23T09:50:52.868Z",
+    "status": "complete",
+    "fetched_at": "2026-10-28T12:42:56.3242429+05:30",
     "date": "2026-10-17",
     "date_precision": "day",
     "caption": "③ 魔王軍との全面戦争を繰り広げる！『勇者伝説 公式\nInstagramです！TVアニメ『聖剣のレガリア』放送中！\n『劇場版特別編』デジタル配信/ブルーレイ＆DVD\n発売中",
     "hashtags": [],
     "mentions": [],
     "likes": {
-      "value": 2383,
-      "raw": "2,383",
+      "value": 2402,
+      "raw": "2,402",
       "approximate": false,
-      "source": "og_description"
+      "source": "manual_sensitive_content"
     },
     "comments": {
       "value": 21,
       "raw": "21",
       "approximate": false,
-      "source": "og_description"
+      "source": "manual_sensitive_content"
     },
-    "views": null,
+    "views": {
+      "value": 105854,
+      "raw": "105,854",
+      "approximate": false,
+      "source": "manual_sensitive_content",
+      "observed_at": "2026-10-28T12:42:56.3242429+05:30"
+    },
     "thumbnail_url": "https://instagram.fblr24-4.fna.fbcdn.net/v/t51.82787-15/845653517_1553654939851420_207157253049934099_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=4T7W_JK2Ur0Q7kNvwHdwkxI&_nc_oc=AdrLCI5jPyDvR_V8tWPUIgLYwNH2IfOAhYTEiWUErs1XGxGbgyflXP5zahdlBFbmQLCEnSOySqY65ruzSHNeyZfh&_nc_zt=23&_nc_ht=instagram.fblr24-4.fna&_nc_gid=xXkdmfO8DuxmpQ19h9ofCA&_nc_ss=7f6a8&oh=00_AQN9N0hVjXAeCqrmoiKAc8lQhUpC7pmqD3ol__NQQ6qbzg&oe=6AE1171A&ig_cache_key=MDJSQVF6QmcybVp6SUhDb1VGQUp3YXkzb0hiUGpmQWhQaHI1QTpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
-    "missing": [
-      "views"
-    ],
+    "missing": [],
     "raw": {
       "description": "2,383 likes, 21 comments - edlt.shox on October 17, 2026: \"③ 魔王軍との全面戦争を繰り広げる！『勇者伝説 公式\nInstagramです！TVアニメ『聖剣のレガリア』放送中！\n『劇場版特別編』デジタル配信/ブルーレイ＆DVD\n発売中\". ",
       "article_text": "edlt.shox\n•\nFollow\n• AI-generated profile\n③ 魔王軍との全面戦争を繰り広げる！『勇者伝説 公式\nInstagramです！TVアニメ『聖剣のレガリア』放送中！\n『劇場版特別編』デジタル配信/ブルーレイ＆DVD\n発売中\nSensitive Content\nThis video contains content that some people may find upsetting.\nSee why\nSee reel\n2,383\n21\n72\nelemental.math\n•\nFollow\nHow does a page wrap text around a moving disc, 60 times a second, without asking the browser where each line ends?\n\nThe answer is Pretext, by Cheng Lou (who worked on React and Midjourney): a TypeScript library that measures and breaks text without touching the DOM. You call prepare(text, font) once, then layout(prepared, maxWidth, lineHeight), which is plain arithmetic.\n\nThe trick: measure every word once with the canvas and keep the widths. A line break is just addition. In the video, \"Your CSS can't do this. But this library can.\" at 500 px adds up to 457.12 px at \"this.\"; \"But\" (72.64 px) would make it 544.41, past 500, so the line breaks. Around the disc (radius 220 px), a line whose text sits 184 px from the center meets a chord of 2·√(220² − 184²) = 241.2 px, which leaves 317.4 px on each side.\n\nThe cost: resizing 1,000 posts by reading their heights one by one takes the DOM 476 ms per width, about 28.6 frames at 60 fps. Pretext's layout() takes 0.245 ms.\n\n476 ms ÷ 0.245 ms ≈ 1,944× faster (the full run, 40 widths, gives 19,460 ms ÷ 10.0 ms = 1,944×). The one-time prepare() of the 1,000 posts is 54.6 ms. Heights match the DOM in 39,988 of 40,000 cases.\n\nMeasured here on a notebook (i5-1235U, Chromium 145). Code: github.com/chenglou/pretext, MIT, 50,843 stars (GitHub API, Oct 20, 2026).\n\nWould you swap getBoundingClientRect for this?\n\n#javascript #typescript #webdev #computerscience #opensource\n99",
       "aria_text": "edlt.shox reels\nedlt.shox reels\nSensitive content overlay icon\nLike\nComment\nRepost\nShare\nSave\nMore\nelemental.math reels\nelemental.math reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
       "json_ld": {}
     },
-    "grid_views_issue": "Sensitive Content overlay hides the profile grid view label; the reel page showed no readable view count.",
-    "missing_reasons": {
-      "views": "Sensitive Content overlay hides the profile grid view label; the reel page showed no readable view count."
+    "manual_observation": {
+      "source": "user_provided_screenshot",
+      "observed_at": "2026-10-28T12:42:56.3242429+05:30",
+      "reason": "Sensitive content prevented automated extraction.",
+      "shares_shown": 71
     },
+    "grid_views_issue": "Sensitive Content overlay hid the profile-grid view label; engagement values were entered manually from a user-provided screenshot.",
+    "missing_reasons": {},
     "last_error": null,
     "last_attempt_at": "2026-10-23T09:50:52.868Z"
   },
