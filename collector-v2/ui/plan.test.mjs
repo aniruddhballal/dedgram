@@ -52,3 +52,14 @@ test('reel work includes only ready profiles with pending or reviewable reel det
   assert.deepEqual(filteredCatalog({ catalog: profiles, search: '', filter: 'reels_pending' }).map(({ username }) => username),
     ['pending', 'review']);
 });
+
+test('catalog filters distinguish profiles not run from failed or blocked runs', () => {
+  const profiles = [
+    { username: 'never', run: { status: 'not_started' } },
+    { username: 'blocked', run: { status: 'blocked' } },
+    { username: 'failed', run: { status: 'failed' } },
+    { username: 'complete', run: { status: 'complete' } }
+  ];
+  assert.deepEqual(filteredCatalog({ catalog: profiles, search: '', filter: 'not_started' }).map(({ username }) => username), ['never']);
+  assert.deepEqual(filteredCatalog({ catalog: profiles, search: '', filter: 'run_failed' }).map(({ username }) => username), ['blocked', 'failed']);
+});

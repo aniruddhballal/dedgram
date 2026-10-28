@@ -4,12 +4,18 @@ export function reelsNeedWork(profile) {
   return profile.profile_complete && (profile.reels.processed < profile.reels.discovered || profile.reels.review > 0);
 }
 
+export function runFailed(profile) {
+  return ['failed', 'blocked'].includes(profile.run.status);
+}
+
 export function filteredCatalog(state) {
   const needle = state.search.trim().toLowerCase();
   return state.catalog.filter((profile) => {
     if (needle && ![profile.username, profile.display_name, profile.country, profile.category, profile.bio]
       .some((value) => String(value || '').toLowerCase().includes(needle))) return false;
     if (state.filter === 'uncollected') return !profile.profile_complete;
+    if (state.filter === 'not_started') return profile.run.status === 'not_started';
+    if (state.filter === 'run_failed') return runFailed(profile);
     if (state.filter === 'collected') return profile.profile_complete;
     if (state.filter === 'reels_pending') return reelsNeedWork(profile);
     if (state.filter === 'review') return profile.reels.review > 0 || profile.run.status === 'blocked'
@@ -77,6 +83,9 @@ function modeOption(state, value, title, description) {
 
 export function renderQueue(state) {
   const visible = filteredCatalog(state);
+  const notReady = state.catalog.filter((profile) => !profile.profile_complete).length;
+  const notStarted = state.catalog.filter((profile) => profile.run.status === 'not_started').length;
+  const failedRuns = state.catalog.filter(runFailed).length;
   const scanned = state.catalog.filter((profile) => !!profile.profile_fetched_at).length;
   const running = state.batch?.status === 'running';
   const selected = state.catalog.filter((profile) => state.selected.has(profile.username));
@@ -98,7 +107,7 @@ export function renderQueue(state) {
       <div class="selection-actions"><button class="button subtle" data-action="select-visible">Select visible</button><button class="button subtle" data-action="clear">Clear</button>
         <button class="button primary" data-action="start" ${!state.selected.size || !ready || running || state.busy ? 'disabled' : ''}>${state.busy ? 'Starting...' : `Run ${state.selected.size ? `${state.selected.size} selected` : 'selection'}`}</button></div></div>
       <div class="toolbar"><div class="search-wrap"><span aria-hidden="true">⌕</span><input id="catalog-search" type="search" placeholder="Search username, country, category..." value="${esc(state.search)}" aria-label="Search profiles"></div>
-        <select id="catalog-filter" aria-label="Filter profiles"><option value="all" ${state.filter === 'all' ? 'selected' : ''}>All profiles</option><option value="uncollected" ${state.filter === 'uncollected' ? 'selected' : ''}>Profile not ready</option><option value="collected" ${state.filter === 'collected' ? 'selected' : ''}>Profile details ready</option><option value="reels_pending" ${state.filter === 'reels_pending' ? 'selected' : ''}>Reels incomplete</option><option value="review" ${state.filter === 'review' ? 'selected' : ''}>Needs review</option></select>
+        <select id="catalog-filter" aria-label="Filter profiles"><option value="all" ${state.filter === 'all' ? 'selected' : ''}>All profiles</option><option value="uncollected" ${state.filter === 'uncollected' ? 'selected' : ''}>Profile not ready (${number(notReady)})</option><option value="not_started" ${state.filter === 'not_started' ? 'selected' : ''}>Not run yet (${number(notStarted)})</option><option value="run_failed" ${state.filter === 'run_failed' ? 'selected' : ''}>Run failed / blocked (${number(failedRuns)})</option><option value="collected" ${state.filter === 'collected' ? 'selected' : ''}>Profile details ready</option><option value="reels_pending" ${state.filter === 'reels_pending' ? 'selected' : ''}>Reels incomplete</option><option value="review" ${state.filter === 'review' ? 'selected' : ''}>Needs review</option></select>
         <div class="layout-toggle"><button data-action="grid" class="${state.layout === 'grid' ? 'current' : ''}" aria-label="Grid view">▦</button><button data-action="list" class="${state.layout === 'list' ? 'current' : ''}" aria-label="List view">☰</button></div></div>
       <div class="catalog-meta">Showing ${number(visible.length)} of ${number(state.catalog.length)} profiles</div>
       ${visible.length ? `<div class="profile-grid ${state.layout === 'list' ? 'list-layout' : ''}">${visible.map((profile) => card(profile, state.selected.has(profile.username), running || state.busy)).join('')}</div>` : `<div class="empty-state"><strong>No profiles match that view.</strong><p>Try another search or filter.</p></div>`}</section>`;
