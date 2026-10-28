@@ -184,3 +184,31 @@ select option { background: var(--dos-panel); color: var(--dos-ink); }
   .hero, .flow-hero, .summary-hero, .detail-hero { padding-top: 48px; }
   .flow-head h2, .section-heading h2, .panel h2, .notice h2 { font-size: 30px; }
 }
+
+/* Monospace fonts read smaller than proportional UI fonts at the same size. */
+body { font-size: 16px; line-height: 1.6; }
+nav a, .nav-status, .footer, .footer strong { font-size: 12px; }
+.eyebrow, .overline, .snapshot-label, .flow-filters label, .directory-search label,
+.reel-controls label, .stat-strip span, .profile-stats span, .flow-stats span,
+.scope-strip span, .stage-status-grid > div > span:first-child { font-size: 11px; }
+.flow-profile-row .index, .flow-profile-row .meta, .flow-table-head,
+.flow-list-title, .directory-toolbar, .snapshot-label { font-size: 11px; }
+.flow-profile-row .identity strong, .flow-table-row .account a { font-size: 15px; }
+.flow-profile-row .identity small, .flow-batch small, .flow-table-row .account small,
+.flow-table-row .value small, .flow-table-row .when, .flow-table-row .issue,
+.detail-note span, .detail-note small, .stat small, .profile-stats small { font-size: 12px; }
+.flow-table-row, td { font-size: 13px; }
+.flow-warning, .error-banner, .preview-banner, .notice { font-size: 14px; }
+.breadcrumbs, .detail-links { font-size: 13px; }
+.detail-hero p, .bio, .bio-text, .caption, .reel-caption { font-size: 14px; }
+.details-list dt, .fact dt { font-size: 11px; }
+.details-list dd, .fact dd { font-size: 14px; }
+th, .flow-table-head { font-size: 11px; }
+.toolbar input, .toolbar select, .flow-filters input, .flow-filters select,
+.directory-search input, .reel-controls input, .reel-controls select,
+.flow-order select { font-size: 13px; }
+.button, button.button, input[type="submit"], input[type="button"],
+.flow-profile-card .card-bottom button, .flow-profile-card .card-bottom a,
+.setup-review button { font-size: 12px; }
+.reel-date, .reel-link, .reel-details summary, .reel-metrics span,
+.reel-metrics small, .cell-note, .content-cell small { font-size: 11px; }
