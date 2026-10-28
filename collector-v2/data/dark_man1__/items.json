@@ -5,10 +5,27 @@
     "url": "https://www.instagram.com/reel/De19Z73O_ol/",
     "grid_views_raw": "9",
     "grid_views_issue": null,
-    "status": "failed",
+    "status": "partial",
     "last_error": "Instagram reports this page is unavailable.",
-    "last_attempt_at": "2026-10-28T11:24:49.449Z",
-    "attempts": 1
+    "last_attempt_at": "2026-10-28T11:28:35.994Z",
+    "attempts": 2,
+    "views": {
+      "value": 9,
+      "raw": "9",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:18:48.052Z"
+    },
+    "missing": [
+      "date",
+      "likes",
+      "comments"
+    ],
+    "missing_reasons": {
+      "date": "No readable timestamp or calendar date was found on the content page or in its metadata.",
+      "likes": "No readable like count was found on the content page or in its metadata.",
+      "comments": "No readable comment count was found on the content page or in its metadata."
+    }
   },
   {
     "kind": "reel",
@@ -16,9 +33,26 @@
     "url": "https://www.instagram.com/reel/De1ay0qOEJX/",
     "grid_views_raw": "2,741",
     "grid_views_issue": null,
-    "status": "failed",
+    "status": "partial",
     "last_error": "Instagram reports this page is unavailable.",
-    "last_attempt_at": "2026-10-28T11:24:53.626Z",
-    "attempts": 1
+    "last_attempt_at": "2026-10-28T11:28:40.126Z",
+    "attempts": 2,
+    "views": {
+      "value": 2741,
+      "raw": "2,741",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:18:48.052Z"
+    },
+    "missing": [
+      "date",
+      "likes",
+      "comments"
+    ],
+    "missing_reasons": {
+      "date": "No readable timestamp or calendar date was found on the content page or in its metadata.",
+      "likes": "No readable like count was found on the content page or in its metadata.",
+      "comments": "No readable comment count was found on the content page or in its metadata."
+    }
   }
 ]

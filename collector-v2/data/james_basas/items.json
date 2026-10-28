@@ -1,1 +1,46 @@
-[]
+[
+  {
+    "kind": "reel",
+    "shortcode": "DeRdDviM5Dn",
+    "url": "https://www.instagram.com/reel/DeRdDviM5Dn/",
+    "grid_views_raw": "3M",
+    "grid_views_issue": null,
+    "status": "complete",
+    "fetched_at": "2026-10-28T11:28:28.944Z",
+    "date": "2026-10-09",
+    "date_precision": "day",
+    "caption": "eyes can't lie HAHAHA",
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 143000,
+      "raw": "143K",
+      "approximate": true,
+      "source": "og_description"
+    },
+    "comments": {
+      "value": 1841,
+      "raw": "1,841",
+      "approximate": false,
+      "source": "og_description"
+    },
+    "views": {
+      "value": 3000000,
+      "raw": "3M",
+      "approximate": true,
+      "source": "profile_grid"
+    },
+    "thumbnail_url": "https://instagram.fblr1-7.fna.fbcdn.net/v/t51.71878-15/841064415_1358859259426132_8887705523812495185_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=1RLECk-lAAEQ7kNvwFMld0U&_nc_oc=Adqsybe-d5NnXM8fhqpzq4h6P0Sd99sKnUeROa3RXWW1LN6JwlgTb8e3hMdi2jg_l2FAIu3oJGOEMCabP9fZ3SJA&_nc_zt=23&_nc_ht=instagram.fblr1-7.fna&_nc_gid=lHuuLhk6Dbfa1eaT7pIlzg&_nc_ss=7e6a8&oh=00_AQQMwyRmkh-Qa2_f55gm5AqRqnBss2kS3WapI2I2E4XHVg&oe=6AE7986C&ig_cache_key=MDJSQVF6QnRfZklUSUg0Tk1FQUZRMWRSTUhGWGxYZTFIdkhyYzpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
+    "media_url": null,
+    "missing": [],
+    "missing_reasons": {},
+    "raw": {
+      "description": "143K likes, 1,841 comments - james_basas on October 9, 2026: \"eyes can't lie HAHAHA\". ",
+      "article_text": "james_basas\n•\nFollow\n• AI-generated profile\n• AI content\neyes can't lie HAHAHA\n143K\n1,841\n7,597\nsandy.tracks\n•\nFollow\nAustralia\nI’ll take the home on wheels any day…\n.\n#toyota #landcruiser\n481K\n1,096\n10.4K",
+      "aria_text": "james_basas reels\njames_basas reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nsandy.tracks reels\nsandy.tracks reels\nVerified\nLocation\nLocation\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {}
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-10-28T11:28:28.945Z"
+  }
+]

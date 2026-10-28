@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "username": "james_basas",
+  "phase": "before",
+  "snapshot_at": "2026-10-28T11:28:24.240Z",
+  "run_status": "complete",
+  "run_updated_at": "2026-10-23T16:14:24.197Z",
+  "profile_fetched_at": "2026-10-23T16:14:17.298Z",
+  "item_count": 0,
+  "complete_item_count": 0,
+  "discovery": {
+    "reel": {
+      "count": 1,
+      "complete": true,
+      "error": null,
+      "attempted_at": "2026-10-23T16:14:24.191Z"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "username": "reelrestock",
+  "phase": "after",
+  "snapshot_at": "2026-10-28T11:29:31.461Z",
+  "run_status": "partial",
+  "run_updated_at": "2026-10-28T11:29:31.452Z",
+  "profile_fetched_at": "2026-10-23T17:15:47.293Z",
+  "item_count": 5,
+  "complete_item_count": 1,
+  "discovery": {
+    "reel": {
+      "count": 5,
+      "complete": true,
+      "error": null,
+      "attempted_at": "2026-10-23T17:15:54.348Z"
+    }
+  }
+}

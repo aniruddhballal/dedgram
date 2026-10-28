@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "username": "extreme_laugh_07",
+  "phase": "after",
+  "snapshot_at": "2026-10-28T11:34:20.514Z",
+  "run_status": "partial",
+  "run_updated_at": "2026-10-28T11:34:20.333Z",
+  "profile_fetched_at": "2026-10-28T09:05:10.686Z",
+  "item_count": 15,
+  "complete_item_count": 11,
+  "discovery": {
+    "reel": {
+      "count": 15,
+      "complete": true,
+      "error": null,
+      "attempted_at": "2026-10-28T09:37:28.201Z"
+    }
+  }
+}

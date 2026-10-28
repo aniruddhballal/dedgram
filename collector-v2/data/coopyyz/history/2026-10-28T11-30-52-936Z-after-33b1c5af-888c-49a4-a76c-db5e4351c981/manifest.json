@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "username": "coopyyz",
+  "phase": "after",
+  "snapshot_at": "2026-10-28T11:30:52.936Z",
+  "run_status": "partial",
+  "run_updated_at": "2026-10-28T11:30:52.925Z",
+  "profile_fetched_at": "2026-10-28T09:01:58.676Z",
+  "item_count": 6,
+  "complete_item_count": 4,
+  "discovery": {
+    "reel": {
+      "count": 6,
+      "complete": true,
+      "error": null,
+      "attempted_at": "2026-10-28T09:35:11.972Z"
+    }
+  }
+}

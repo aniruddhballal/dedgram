@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "username": "kanika_s.0711",
+  "phase": "after",
+  "snapshot_at": "2026-10-28T11:29:54.704Z",
+  "run_status": "partial",
+  "run_updated_at": "2026-10-28T11:29:54.695Z",
+  "profile_fetched_at": "2026-10-28T09:02:48.292Z",
+  "item_count": 5,
+  "complete_item_count": 4,
+  "discovery": {
+    "reel": {
+      "count": 5,
+      "complete": true,
+      "error": null,
+      "attempted_at": "2026-10-28T09:47:47.337Z"
+    }
+  }
+}

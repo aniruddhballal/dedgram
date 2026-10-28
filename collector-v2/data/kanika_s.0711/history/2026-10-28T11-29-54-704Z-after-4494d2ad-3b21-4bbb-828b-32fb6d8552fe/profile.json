@@ -1,0 +1,108 @@
+{
+  "username": "kanika_s.0711",
+  "url": "https://www.instagram.com/kanika_s.0711/",
+  "fetched_at": "2026-10-28T09:02:48.292Z",
+  "display_name": "kanika sharma",
+  "bio": "TVアニメ『紫禁・御猫房』10月10日放送開始！\n宮廷に隠された秘密とは？ みんなは観たい？ コメントで教えてね！\n#紫禁御猫房 #新作アニメ #拡散希望 #猫\n《紫禁・御猫房》\n#紫禁御猫房\n新作アニメ\n拡散希望\n猫",
+  "posts_count": {
+    "value": 52,
+    "raw": "52",
+    "approximate": false
+  },
+  "posts_count_observed_at": "2026-10-28T09:02:48.292Z",
+  "followers_count": {
+    "value": 29482,
+    "raw": "29,482",
+    "approximate": false,
+    "source": "header_title"
+  },
+  "following_count": {
+    "value": 65,
+    "raw": "65",
+    "approximate": false,
+    "source": "header_text"
+  },
+  "count_evidence": {
+    "followers": {
+      "header": {
+        "value": 29400,
+        "raw": "29.4K",
+        "approximate": true
+      },
+      "exact_title": {
+        "value": 29482,
+        "raw": "29,482",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 28000,
+        "raw": "28K",
+        "approximate": true
+      }
+    },
+    "following": {
+      "header": {
+        "value": 65,
+        "raw": "65",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 72,
+        "raw": "72",
+        "approximate": false
+      },
+      "conflict": true
+    },
+    "posts": {
+      "header": {
+        "value": 52,
+        "raw": "52",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 52,
+        "raw": "52",
+        "approximate": false
+      }
+    }
+  },
+  "category": null,
+  "ai_generated_profile": true,
+  "profile_picture_url": "https://instagram.fblr1-6.fna.fbcdn.net/v/t51.82787-19/843397455_18092838953672824_4958748860025619696_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=1&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=F5NgAOO64ZIQ7kNvwGCT74n&_nc_oc=AdoSOwgNRxFL-44gX5ICPu99yK5RHqFVpGpW5h1Np3SoF5rboskKFh3CkUXOUKa0hsaFE2q581zzYlyust21bB7D&_nc_zt=24&_nc_ht=instagram.fblr1-6.fna&_nc_gid=N88DTCfRFSQrhT5fc813tQ&_nc_ss=7f6a8&oh=00_AQQcBcFhl_oDje7qpaIFOBFWvqc_hH2NNMYy_e4OxeLHCw&oe=6AE78E52",
+  "date_joined": "October 2021",
+  "account_based_in": "India",
+  "former_usernames_count": {
+    "value": 4,
+    "raw": "4",
+    "approximate": false
+  },
+  "raw": {
+    "header_text": "kanika_s.0711\nkanika sharma\n52 posts\n29.4K followers\n65 following\nCreator • \nAI-generated profile\nTVアニメ『紫禁・御猫房』10月10日放送開始！\n宮廷に隠された秘密とは？ みんなは観たい？ コメントで教えてね！\n#紫禁御猫房 #新作アニメ #拡散希望 #猫\n《紫禁・御猫房》... \nmore\nFollow\nMessage",
+    "about_text": "About this account\nkanika_s.0711\n • AI-generated profile\nTo help keep our community authentic, we’re showing information about profiles on Instagram. See why this information is important.\nDate joined\nOctober 2021\nAccount based in\nIndia\nFormer usernames\n4\nClose",
+    "description": "28K Followers, 72 Following, 52 Posts - kanika sharma (@kanika_s.0711) on Instagram: \"TVアニメ『紫禁・御猫房』10月10日放送開始！\n宮廷に隠された秘密とは？ みんなは観たい？ コメントで教えてね！\n#紫禁御猫房 #新作アニメ #拡散希望 #猫\n《紫禁・御猫房》\n#紫禁御猫房\n新作アニメ\n拡散希望\n猫\"",
+    "stat_evidence": {
+      "posts": {
+        "label": "",
+        "exact_title": ""
+      },
+      "followers": {
+        "label": "29.4K followers",
+        "exact_title": "29,482"
+      },
+      "following": {
+        "label": "65 following",
+        "exact_title": ""
+      }
+    }
+  },
+  "issues": [],
+  "current_username": "kanika_s.0711",
+  "username_history": [
+    {
+      "username": "kanika_s.0711",
+      "role": "current username",
+      "first_seen_at": "2026-10-28T09:02:48.288Z"
+    }
+  ],
+  "username_change_observed_at": null
+}

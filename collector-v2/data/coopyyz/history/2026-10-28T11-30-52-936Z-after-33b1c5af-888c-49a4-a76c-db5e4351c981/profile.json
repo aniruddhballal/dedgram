@@ -1,0 +1,104 @@
+{
+  "username": "coopyyz",
+  "url": "https://www.instagram.com/coopyyz/",
+  "fetched_at": "2026-10-28T09:01:58.676Z",
+  "display_name": "coopyyz fae/ve/ne",
+  "bio": "③魔王軍との全面戦争を繰り広げる！勇者伝説公式Instagramです！TVアニメ「聖剣のレガリア」放送中！「劇場版特別編」デジタル配信中／ブルーレイ＆DVD発売中",
+  "posts_count": {
+    "value": 6,
+    "raw": "6",
+    "approximate": false
+  },
+  "posts_count_observed_at": "2026-10-28T09:01:58.676Z",
+  "followers_count": {
+    "value": 4002,
+    "raw": "4,002",
+    "approximate": false,
+    "source": "header_title"
+  },
+  "following_count": {
+    "value": 0,
+    "raw": "0",
+    "approximate": false,
+    "source": "header_text"
+  },
+  "count_evidence": {
+    "followers": {
+      "header": {
+        "value": 4002,
+        "raw": "4,002",
+        "approximate": false
+      },
+      "exact_title": {
+        "value": 4002,
+        "raw": "4,002",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 3992,
+        "raw": "3,992",
+        "approximate": false
+      }
+    },
+    "following": {
+      "header": {
+        "value": 0,
+        "raw": "0",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 0,
+        "raw": "0",
+        "approximate": false
+      },
+      "conflict": false
+    },
+    "posts": {
+      "header": {
+        "value": 6,
+        "raw": "6",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 6,
+        "raw": "6",
+        "approximate": false
+      }
+    }
+  },
+  "category": null,
+  "ai_generated_profile": false,
+  "profile_picture_url": "https://instagram.fblr1-8.fna.fbcdn.net/v/t51.82787-19/858088518_18142877083586328_6954941212766082221_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=tUOMXexO7nsQ7kNvwFSdk40&_nc_oc=AdogeCOc1-952zsoHc0Q6Uis-BfWD_kyCI3PhJDrRpTAn0bsa25BiKXGxesVJTPA2P0q3qfSj3ljUIIgDWmkUTWj&_nc_zt=24&_nc_ht=instagram.fblr1-8.fna&_nc_gid=gxh8p1u1eAXsQa6PNVAByQ&_nc_ss=7f6a8&oh=00_AQTWyrBjH5Eyfa6KA4nlKGrv0eSG9dceyv0kCrYdn8BjTQ&oe=6AE7A5A3",
+  "date_joined": "October 2026",
+  "account_based_in": "India",
+  "former_usernames_count": null,
+  "raw": {
+    "header_text": "coopyyz\ncoopyyz\nfae/ve/ne\n6 posts\n4,002 followers\n0 following\n③魔王軍との全面戦争を繰り広げる！勇者伝説公式Instagramです！TVアニメ「聖剣のレガリア」放送中！「劇場版特別編」デジタル配信中／ブルーレイ＆DVD発売中\nFollow",
+    "about_text": "About this account\ncoopyyz\nTo help keep our community authentic, we’re showing information about profiles on Instagram. See why this information is important.\nDate joined\nOctober 2026\nAccount based in\nIndia\nClose",
+    "description": "3,992 Followers, 0 Following, 6 Posts - @coopyyz on Instagram: \"③魔王軍との全面戦争を繰り広げる！勇者伝説公式Instagramです！TVアニメ「聖剣のレガリア」放送中！「劇場版特別編」デジタル配信中／ブルーレイ＆DVD発売中\"",
+    "stat_evidence": {
+      "posts": {
+        "label": "",
+        "exact_title": ""
+      },
+      "followers": {
+        "label": "4,002 followers",
+        "exact_title": "4,002"
+      },
+      "following": {
+        "label": "0 following",
+        "exact_title": ""
+      }
+    }
+  },
+  "issues": [],
+  "current_username": "coopyyz",
+  "username_history": [
+    {
+      "username": "coopyyz",
+      "role": "current username",
+      "first_seen_at": "2026-10-28T09:01:58.673Z"
+    }
+  ],
+  "username_change_observed_at": null
+}

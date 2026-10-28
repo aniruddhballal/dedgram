@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "username": "bollyxedit.7",
+  "phase": "before",
+  "snapshot_at": "2026-10-28T11:36:59.678Z",
+  "run_status": "complete",
+  "run_updated_at": "2026-10-23T16:17:44.256Z",
+  "profile_fetched_at": "2026-10-23T16:17:33.692Z",
+  "item_count": 0,
+  "complete_item_count": 0,
+  "discovery": {
+    "reel": {
+      "count": 21,
+      "complete": true,
+      "error": null,
+      "attempted_at": "2026-10-23T16:17:44.249Z"
+    }
+  }
+}
