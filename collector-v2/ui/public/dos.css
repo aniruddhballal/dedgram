@@ -247,3 +247,20 @@ th, .flow-table-head { font-size: 12px !important; }
 td, .flow-table-row { font-size: 14px !important; }
 .content-cell small, .cell-note, .reel-date, .reel-link, .reel-details summary,
 .reel-metrics span { font-size: 12px !important; }
+
+/* Keep operational text readable while a collection is running. */
+body { font-size: 17px; }
+p { font-size: 17px; }
+small, .flow-batch small, .run-panel small, .run-accounts small { font-size: 14px !important; }
+.eyebrow, .overline, .snapshot-label, .flow-filters label, .directory-search label,
+.reel-controls label, .stat-strip span, .profile-stats span, .flow-stats span,
+.scope-strip span, .stage-status-grid > div > span:first-child { font-size: 13px !important; }
+.setup-steps, .setup-steps li, .setup-dock, .setup-choice, .setup-review,
+.flow-head, .flow-list-title, .flow-table-head, .flow-table-row,
+.run-panel, .run-accounts, .run-current, .live-progress { font-size: 15px; }
+.flow-table-head, .flow-list-title, .directory-toolbar, th { font-size: 13px !important; }
+.flow-table-row, td, .run-accounts > div, .run-accounts span { font-size: 15px !important; }
+.flow-table-row .value small, .flow-table-row .when, .flow-table-row .issue,
+.flow-batch small, .run-panel p, .setup-review p, .live-progress small { font-size: 14px !important; }
+.button, button.button, input[type="submit"], input[type="button"],
+.setup-review button, .setup-latest, .setup-header-actions a { font-size: 14px !important; }
