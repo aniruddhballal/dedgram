@@ -8,5 +8,11 @@
     "reel_grid"
   ],
   "current_url": null,
+  "account_status": "false_identification",
+  "false_identification": {
+    "identified_at": "2026-10-18T12:09:42.962Z",
+    "reason": "Manual review: the Android extractor may have captured the generic UI label 'back'; no successful profile snapshot confirms this as an Instagram username.",
+    "username_is_syntactically_valid": true
+  },
   "error": "Instagram reports this page is unavailable."
 }

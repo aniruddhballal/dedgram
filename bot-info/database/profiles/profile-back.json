@@ -5,7 +5,12 @@
   "country": "Not shown",
   "date_joined": "Not shown",
   "posts_count": "Not shown",
-  "status": "Deleted account",
+  "status": "False identification",
+  "false_identification": {
+    "identified_at": "2026-10-18T12:09:42.962Z",
+    "reason": "Manual review: the Android extractor may have captured the generic UI label 'back'; no successful profile snapshot confirms this as an Instagram username.",
+    "username_is_syntactically_valid": true
+  },
   "ignored": false,
   "last_error": "Instagram reports that this profile is unavailable.",
   "added_at": "2026-10-18T12:09:42.962Z",
