@@ -104,7 +104,10 @@
     "url": "https://www.instagram.com/reel/De0_xrJRbdV/",
     "grid_views_raw": "58.4K",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "failed",
+    "last_error": "Instagram rendered an empty page.",
+    "last_attempt_at": "2026-10-28T12:08:06.298Z",
+    "attempts": 1
   },
   {
     "kind": "reel",

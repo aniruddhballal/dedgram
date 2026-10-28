@@ -2,7 +2,7 @@
   "id": "72dd5bba-0fb2-4887-b7c8-459333b42ab1",
   "mode": "reels_only",
   "order": "reels_ascending",
-  "status": "running",
+  "status": "interrupted",
   "profiles": [
     "james_basas",
     "dark_man1__",
@@ -1084,13 +1084,13 @@
       }
     },
     "funny.exe07": {
-      "status": "running",
+      "status": "interrupted",
       "started_at": "2026-10-28T12:04:11.911Z",
       "finished_at": null,
       "error": null,
       "stages": {
         "reels": {
-          "status": "running",
+          "status": "interrupted",
           "started_at": "2026-10-28T12:04:11.911Z",
           "finished_at": null,
           "error": null
@@ -2764,8 +2764,8 @@
       }
     }
   },
-  "current": "funny.exe07",
-  "current_stage": "reels",
+  "current": null,
+  "current_stage": null,
   "started_at": "2026-10-28T11:28:23.049Z",
   "updated_at": "2026-10-28T12:04:11.911Z",
   "finished_at": null,

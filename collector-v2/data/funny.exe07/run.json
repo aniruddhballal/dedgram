@@ -1,23 +1,29 @@
 {
   "started_at": "2026-10-28T12:04:13.053Z",
-  "updated_at": "2026-10-28T12:07:43.221Z",
+  "updated_at": "2026-10-28T12:08:07.909Z",
   "status": "running",
   "phase": "item details",
   "scope": [
     "reel"
   ],
-  "current_url": null,
+  "current_url": "https://www.instagram.com/reel/De05UJsxJD1/",
   "error": null,
   "progress": {
     "task": "item_details",
     "label": "Reel details",
-    "action": "Opening reel pages and extracting dates, captions, views, likes and comments",
-    "completed": 9,
+    "action": "Extracting date, caption, views, likes and comments from the current reel",
+    "completed": 10,
     "total": 35,
-    "percent": 26,
-    "remaining": 26,
-    "current_item": null,
-    "detail": "9 of 35 reel pages processed",
-    "updated_at": "2026-10-28T12:07:43.221Z"
+    "percent": 29,
+    "remaining": 25,
+    "current_item": {
+      "index": 11,
+      "total": 35,
+      "kind": "reel",
+      "shortcode": "De05UJsxJD1",
+      "url": "https://www.instagram.com/reel/De05UJsxJD1/"
+    },
+    "detail": "Opening reel De05UJsxJD1",
+    "updated_at": "2026-10-28T12:08:07.906Z"
   }
 }
