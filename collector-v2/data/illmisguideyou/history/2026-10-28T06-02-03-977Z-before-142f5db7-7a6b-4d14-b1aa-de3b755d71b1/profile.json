@@ -1,0 +1,99 @@
+{
+  "username": "illmisguideyou",
+  "url": "https://www.instagram.com/illmisguideyou/",
+  "fetched_at": "2026-10-28T05:56:45.073Z",
+  "display_name": null,
+  "bio": "#TVアニメ 『ONE PIECE』 エルバフ編 最新情報を発表&最新PV公開 オープニング主題歌&エンディング主題歌、さらにエルバフ編の重要キャラクター「ロキ」のキャストが決定しました!! ◆ オープニング主題歌:",
+  "posts_count": {
+    "value": 1137,
+    "raw": "1,137",
+    "approximate": false
+  },
+  "posts_count_observed_at": "2026-10-28T05:56:45.073Z",
+  "followers_count": {
+    "value": 9556,
+    "raw": "9,556",
+    "approximate": false,
+    "source": "header_title"
+  },
+  "following_count": {
+    "value": 45,
+    "raw": "45",
+    "approximate": false,
+    "source": "header_text"
+  },
+  "count_evidence": {
+    "followers": {
+      "header": {
+        "value": 9556,
+        "raw": "9,556",
+        "approximate": false
+      },
+      "exact_title": {
+        "value": 9556,
+        "raw": "9,556",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 9551,
+        "raw": "9,551",
+        "approximate": false
+      }
+    },
+    "following": {
+      "header": {
+        "value": 45,
+        "raw": "45",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 55,
+        "raw": "55",
+        "approximate": false
+      },
+      "conflict": true
+    },
+    "posts": {
+      "header": {
+        "value": 1137,
+        "raw": "1,137",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 1137,
+        "raw": "1,137",
+        "approximate": false
+      }
+    }
+  },
+  "category": "Reel creator",
+  "ai_generated_profile": false,
+  "profile_picture_url": "https://instagram.fblr1-6.fna.fbcdn.net/v/t51.82787-19/798245964_18028774001906465_7287768851527729837_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=485u6x5T2V8Q7kNvwFuantk&_nc_oc=AdrVXkCM1-FAquYoY-YCSu2m8wfS2pcBCUa0GpGeyaCfOx_Kdc6BIVpkilrZYN53XkRYm_M_kB9o08h5RelfS46u&_nc_zt=24&_nc_ht=instagram.fblr1-6.fna&_nc_gid=9swPqfI_uPKQ79o6ZqRt8Q&_nc_ss=7f6a8&oh=00_AQRzhbcRaWotrw7W4jZ-5TcGwtONRYR3mTltH5FVdLqnQw&oe=6AE773F5",
+  "date_joined": "December 2022",
+  "account_based_in": null,
+  "former_usernames_count": {
+    "value": 10,
+    "raw": "10",
+    "approximate": false
+  },
+  "raw": {
+    "header_text": "illmisguideyou\n1,137 posts\n9,556 followers\n45 following\nReel creator\n#TVアニメ 『ONE PIECE』 エルバフ編 最新情報を発表&最新PV公開 オープニング主題歌&エンディング主題歌、さらにエルバフ編の重要キャラクター「ロキ」のキャストが決定しました!! ◆ オープニング主題歌:\nFollow\nMessage\nlife\nc/r/p\n📈",
+    "about_text": "About this account\nillmisguideyou\nTo help keep our community authentic, we’re showing information about profiles on Instagram. See why this information is important.\nDate joined\nDecember 2022\nFormer usernames\n10\nClose",
+    "description": "9,551 Followers, 55 Following, 1,137 Posts - @illmisguideyou on Instagram: \"#TVアニメ 『ONE PIECE』 エルバフ編 最新情報を発表&最新PV公開 オープニング主題歌&エンディング主題歌、さらにエルバフ編の重要キャラクター「ロキ」のキャストが決定しました!! ◆ オープニング主題歌:\"",
+    "stat_evidence": {
+      "posts": {
+        "label": "",
+        "exact_title": ""
+      },
+      "followers": {
+        "label": "9,556 followers",
+        "exact_title": "9,556"
+      },
+      "following": {
+        "label": "45 following",
+        "exact_title": ""
+      }
+    }
+  },
+  "issues": []
+}
