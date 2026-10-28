@@ -47,7 +47,7 @@ button, input, select { color: var(--dos-ink); font-family: inherit; }
   background: var(--dos-bg);
   border-bottom: 1px solid var(--dos-line);
 }
-.topbar-inner { max-width: 1360px; padding: 13px 32px; }
+.topbar-inner { max-width: 1440px; padding: 13px 32px; }
 .brand { color: var(--dos-bright); letter-spacing: .12em; }
 .brand small { color: var(--dos-muted); }
 .brand-icon { filter: grayscale(1) sepia(1) hue-rotate(70deg) saturate(5) brightness(1.5); }
@@ -55,9 +55,7 @@ nav a { color: var(--dos-muted); border-color: transparent; }
 nav a:hover, nav a.active { color: var(--dos-accent); }
 nav a.active { border-color: var(--dos-accent); background: var(--dos-panel); }
 .nav-status { color: var(--dos-warn); }
-main { max-width: 1360px; }
-.detail-columns, .overview-grid, .profile-context { column-gap: 32px; }
-.flow-profile-list, .profile-list { column-gap: 24px; }
+main { max-width: 1440px; }
 .footer { border-color: var(--dos-line); background: var(--dos-bg); color: var(--dos-muted); }
 .footer strong { color: var(--dos-bright); }
 
@@ -143,6 +141,7 @@ select option { background: var(--dos-panel); color: var(--dos-ink); }
 .stage-status, .detail-hero, .profile-hero { border-color: var(--dos-line); }
 .stage-status-head p, .stage-status-grid small { color: var(--dos-muted); }
 .reel-card, .reel-detail, .panel, .notice, .setup-review > div { border-color: var(--dos-line); background: var(--dos-panel); }
+.panel, .notice { padding-inline: 24px; }
 .reel-card:hover { background: var(--dos-panel-2); }
 .reel-metrics strong, .reel-content h3 { color: var(--dos-bright); }
 .reel-date, .reel-link, .reel-content p, .reel-details dt, .reel-details dd { color: var(--dos-muted); }
