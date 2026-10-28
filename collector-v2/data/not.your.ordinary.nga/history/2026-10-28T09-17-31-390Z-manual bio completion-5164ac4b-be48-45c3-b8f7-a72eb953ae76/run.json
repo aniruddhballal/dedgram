@@ -1,0 +1,13 @@
+{
+  "started_at": "2026-10-23T14:16:13.207Z",
+  "updated_at": "2026-10-23T14:39:01.092Z",
+  "status": "complete",
+  "phase": "done",
+  "scope": [
+    "profile",
+    "reel_grid"
+  ],
+  "current_url": null,
+  "error": null,
+  "verification_source": "loaded_firefox_reel_grid"
+}

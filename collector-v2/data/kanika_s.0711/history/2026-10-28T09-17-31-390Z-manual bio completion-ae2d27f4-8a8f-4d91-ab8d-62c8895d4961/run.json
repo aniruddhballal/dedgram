@@ -1,0 +1,23 @@
+{
+  "started_at": "2026-10-28T09:02:43.977Z",
+  "updated_at": "2026-10-28T09:02:48.299Z",
+  "status": "complete",
+  "phase": "done",
+  "scope": [
+    "profile"
+  ],
+  "current_url": null,
+  "error": null,
+  "progress": {
+    "task": "profile",
+    "label": "Profile details",
+    "action": "Reading the profile header, account details and exact post count",
+    "completed": 1,
+    "total": 1,
+    "percent": 100,
+    "remaining": 0,
+    "current_item": null,
+    "detail": "Stage complete",
+    "updated_at": "2026-10-28T09:02:48.299Z"
+  }
+}

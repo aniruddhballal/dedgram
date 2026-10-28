@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "operation": "manual bio completion",
+  "reason": "Completed truncated profile bios after identifying an issue in the profile-level data fetch.",
+  "performed_at": "2026-10-28T09:17:31.390Z",
+  "username": "raffater7",
+  "field": "bio",
+  "source": "saved profile metadata description",
+  "previous_value": "#TVアニメ「夜明けの物語」最新情報\n待望の新情報がついに解禁!! ⚡️\n最新ビジュアルを公開！\nさらに、物語を彩る新キャラクターや...\nmore",
+  "completed_value": "#TVアニメ「夜明けの物語」最新情報\n待望の新情報がついに解禁!! ⚡️\n最新ビジュアルを公開！\nさらに、物語を彩る新キャラクターや\n今後の展開に関する情報も続々解禁します!!\n◆最新情報\n◆新キャラクター紹介\n◆スペシャル映像公開 🎬\n◆今後の展開に注目！"
+}

@@ -1,0 +1,98 @@
+{
+  "username": "cartoon_.xhub",
+  "url": "https://www.instagram.com/cartoon_.xhub/",
+  "fetched_at": "2026-10-23T16:21:46.742Z",
+  "display_name": "Ogyyyyy",
+  "bio": "1998年から2018年まで放送された、テレビシリーズ『オギー＆コックローチ』の公式チャンネルです！ 終わりのないドタバタの追いかけっこを、ぜひご覧ください！現在、『オギー＆コックローチ\n💬 DM for paid collabs & enquiries",
+  "posts_count": {
+    "value": 55,
+    "raw": "55",
+    "approximate": false
+  },
+  "followers_count": {
+    "value": 12892,
+    "raw": "12,892",
+    "approximate": false,
+    "source": "header_title"
+  },
+  "following_count": {
+    "value": 1,
+    "raw": "1",
+    "approximate": false,
+    "source": "header_text"
+  },
+  "count_evidence": {
+    "followers": {
+      "header": {
+        "value": 12800,
+        "raw": "12.8K",
+        "approximate": true
+      },
+      "exact_title": {
+        "value": 12892,
+        "raw": "12,892",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 12000,
+        "raw": "12K",
+        "approximate": true
+      }
+    },
+    "following": {
+      "header": {
+        "value": 1,
+        "raw": "1",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 1,
+        "raw": "1",
+        "approximate": false
+      },
+      "conflict": false
+    },
+    "posts": {
+      "header": {
+        "value": 55,
+        "raw": "55",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 55,
+        "raw": "55",
+        "approximate": false
+      }
+    }
+  },
+  "category": "Digital creator",
+  "ai_generated_profile": false,
+  "profile_picture_url": "https://instagram.fblr1-9.fna.fbcdn.net/v/t51.82787-19/848814668_17901432696395031_4373701207358163491_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=1&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=HbfIZ_UdpHAQ7kNvwG4hDp9&_nc_oc=AdoagiWLiU7c_yddatWdGhLLQKhXlPA6zQS30oorjz85aeIKDSwLogMYlpJMDnx0kDFAES8HHTCzST8OPNDPj0Mp&_nc_zt=24&_nc_ht=instagram.fblr1-9.fna&_nc_gid=1sO6-gc6FjmYfTRprdO9cA&_nc_ss=7f6a8&oh=00_AQNTg8Xhm5ZWZxvGjHyntItXLQKasPuTb4fd7g18hbH1kQ&oe=6AE14952",
+  "date_joined": "October 2026",
+  "account_based_in": "India",
+  "former_usernames_count": {
+    "value": 1,
+    "raw": "1",
+    "approximate": false
+  },
+  "raw": {
+    "header_text": "cartoon_.xhub\nOgyyyyy\n55 posts\n12.8K followers\n1 following\nDigital creator\n1998年から2018年まで放送された、テレビシリーズ『オギー＆コックローチ』の公式チャンネルです！ 終わりのないドタバタの追いかけっこを、ぜひご覧ください！現在、『オギー＆コックローチ\n💬 DM for paid collabs &... \nmore\nFollow\nMessage",
+    "about_text": "About this account\ncartoon_.xhub\nTo help keep our community authentic, we’re showing information about profiles on Instagram. See why this information is important.\nDate joined\nOctober 2026\nAccount based in\nIndia\nFormer usernames\n1\nClose",
+    "description": "12K Followers, 1 Following, 55 Posts - Ogyyyyy (@cartoon_.xhub) on Instagram: \"1998年から2018年まで放送された、テレビシリーズ『オギー＆コックローチ』の公式チャンネルです！ 終わりのないドタバタの追いかけっこを、ぜひご覧ください！現在、『オギー＆コックローチ\n💬 DM for paid collabs & enquiries\"",
+    "stat_evidence": {
+      "posts": {
+        "label": "",
+        "exact_title": ""
+      },
+      "followers": {
+        "label": "12.8K followers",
+        "exact_title": "12,892"
+      },
+      "following": {
+        "label": "1 following",
+        "exact_title": ""
+      }
+    }
+  },
+  "issues": []
+}

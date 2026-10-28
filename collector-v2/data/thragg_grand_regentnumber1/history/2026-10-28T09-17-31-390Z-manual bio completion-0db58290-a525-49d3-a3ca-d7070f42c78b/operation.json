@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "operation": "manual bio completion",
+  "reason": "Completed truncated profile bios after identifying an issue in the profile-level data fetch.",
+  "performed_at": "2026-10-28T09:17:31.390Z",
+  "username": "thragg_grand_regentnumber1",
+  "field": "bio",
+  "source": "saved profile metadata description",
+  "previous_value": "TV アニメ\n『紫禁城・御猫房」最新PV公開！ 紫禁城で猫\nたちが巻き起こす新たな物語。宮廷に隠された秘密とはーー？10月10日放送開始TVアニメ『紫禁・御猫房』最新PV公開！紫禁城で猫たちが巻き起こす新たな物語。...\nmore",
+  "completed_value": "TV アニメ\n『紫禁城・御猫房」最新PV公開！ 紫禁城で猫\nたちが巻き起こす新たな物語。宮廷に隠された秘密とはーー？10月10日放送開始TVアニメ『紫禁・御猫房』最新PV公開！紫禁城で猫たちが巻き起こす新たな物語。\n宮廷に隠された秘密とはーー？10月10日放送開始！"
+}

@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "operation": "manual bio completion",
+  "reason": "Completed truncated profile bios after identifying an issue in the profile-level data fetch.",
+  "performed_at": "2026-10-28T09:17:31.390Z",
+  "username": "oggy675908",
+  "field": "bio",
+  "source": "saved profile metadata description",
+  "previous_value": "1998年から2018年まで放送された、テレビシリーズ 『オギー&コックローチ』の公式チャンネルです!...\nmore",
+  "completed_value": "1998年から2018年まで放送された、テレビシリーズ 『オギー&コックローチ』の公式チャンネルです! 終わりのないドタバタの追いかけっこを、ぜひご覧ください!現在、『オギー&コックローチ』はカートゥーンネットワークのほか、デジタル配信やブルーレイ・DVDでもお楽しみいただけます。"
+}

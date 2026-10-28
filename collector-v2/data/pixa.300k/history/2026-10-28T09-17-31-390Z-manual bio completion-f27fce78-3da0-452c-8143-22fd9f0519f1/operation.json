@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "operation": "manual bio completion",
+  "reason": "Completed truncated profile bios after identifying an issue in the profile-level data fetch.",
+  "performed_at": "2026-10-28T09:17:31.390Z",
+  "username": "pixa.300k",
+  "field": "bio",
+  "source": "saved profile metadata description",
+  "previous_value": "TVアニメ 『ONE PIECE』 エルバフ編 最新情報を発表&最新PV公開 オープニング主題歌&エンディング主題歌、さらにエルバフ編の重要キャラクター 「ロキ」のキャストが決定しました!! ◆オープニング主題歌: アイナ・ジ・エンド...\nmore",
+  "completed_value": "TVアニメ 『ONE PIECE』 エルバフ編 最新情報を発表&最新PV公開 オープニング主題歌&エンディング主題歌、さらにエルバフ編の重要キャラクター 「ロキ」のキャストが決定しました!! ◆オープニング主題歌: アイナ・ジ・エンド\n「ルミナス -\nLuminous」\n◆エンディング主題歌:"
+}

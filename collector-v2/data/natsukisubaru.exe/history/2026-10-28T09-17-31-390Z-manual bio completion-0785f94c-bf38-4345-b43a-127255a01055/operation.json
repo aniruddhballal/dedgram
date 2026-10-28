@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "operation": "manual bio completion",
+  "reason": "Completed truncated profile bios after identifying an issue in the profile-level data fetch.",
+  "performed_at": "2026-10-28T09:17:31.390Z",
+  "username": "natsukisubaru.exe",
+  "field": "bio",
+  "source": "saved profile metadata description",
+  "previous_value": "#TVアニメ『HULK』\n王都魔法祭編の最新情報がついに解禁!!\n👊⚡️\n待望の最新キービジュアルを公開!\n...\nmore",
+  "completed_value": "#TVアニメ『HULK』\n王都魔法祭編の最新情報がついに解禁!!\n👊⚡️\n待望の最新キービジュアルを公開!\nさらに、新キャラクター&新たな魔法の情報 に加え、王都魔法祭編の物語を大きく動かす 重要人物「ルミナ」の登場も決定しまし\nた!!\n◆新キャラクター"
+}

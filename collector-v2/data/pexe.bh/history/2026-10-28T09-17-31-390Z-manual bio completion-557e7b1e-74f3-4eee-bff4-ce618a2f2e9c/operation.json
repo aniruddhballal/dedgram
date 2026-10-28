@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "operation": "manual bio completion",
+  "reason": "Completed truncated profile bios after identifying an issue in the profile-level data fetch.",
+  "performed_at": "2026-10-28T09:17:31.390Z",
+  "username": "pexe.bh",
+  "field": "bio",
+  "source": "saved profile metadata description",
+  "previous_value": "#アニメ 『ANIME』\n話題の最新作がついに解禁!! ⚡\n待望の最新情報を公開!\nさらに、注目を集める新キャラクターの情報に加え、...\nmore",
+  "completed_value": "#アニメ 『ANIME』\n話題の最新作がついに解禁!! ⚡\n待望の最新情報を公開!\nさらに、注目を集める新キャラクターの情報に加え、\n物語を大きく動かす重要人物「主人公」の詳細も明らかに\nな\nりました!!\n◆新キャラクター情報:"
+}

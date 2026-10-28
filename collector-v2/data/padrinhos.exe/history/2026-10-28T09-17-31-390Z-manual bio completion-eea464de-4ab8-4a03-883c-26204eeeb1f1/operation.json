@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "operation": "manual bio completion",
+  "reason": "Completed truncated profile bios after identifying an issue in the profile-level data fetch.",
+  "performed_at": "2026-10-28T09:17:31.390Z",
+  "username": "padrinhos.exe",
+  "field": "bio",
+  "source": "saved profile metadata description",
+  "previous_value": "#TVアニメ 『爆笑タイム』\n話題の新エピソードがいよいよ登場!!😂\n思わず笑えるハプニング映像をお届け!\nさらに、クセ強めのリアクション & まさかの珍展開に加\n...\nmore",
+  "completed_value": "#TVアニメ 『爆笑タイム』\n話題の新エピソードがいよいよ登場!!😂\n思わず笑えるハプニング映像をお届け!\nさらに、クセ強めのリアクション & まさかの珍展開に加\nえて、\n最後には想像を超える衝撃の「オチ」まで待っていまし\nた!!\n◆今回の爆笑ポイント:"
+}

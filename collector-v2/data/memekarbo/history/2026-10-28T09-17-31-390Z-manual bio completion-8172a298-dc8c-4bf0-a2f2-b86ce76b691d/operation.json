@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "operation": "manual bio completion",
+  "reason": "Completed truncated profile bios after identifying an issue in the profile-level data fetch.",
+  "performed_at": "2026-10-28T09:17:31.390Z",
+  "username": "memekarbo",
+  "field": "bio",
+  "source": "saved profile metadata description",
+  "previous_value": "あらゆる追いかけっこを繰り広げる! 「トムとジェリー」公式 Instagramです! Cartoon Networkにて 「まいにちトムとジェリー」放送中! 「映画トムとジェリー」 デジタル配信中/ブルーレイ&DVD発売中 TEC...\nmore",
+  "completed_value": "あらゆる追いかけっこを繰り広げる! 「トムとジェリー」公式 Instagramです! Cartoon Networkにて 「まいにちトムとジェリー」放送中! 「映画トムとジェリー」 デジタル配信中/ブルーレイ&DVD発売中 TEC (s23)\nTarget 10k 🎯"
+}

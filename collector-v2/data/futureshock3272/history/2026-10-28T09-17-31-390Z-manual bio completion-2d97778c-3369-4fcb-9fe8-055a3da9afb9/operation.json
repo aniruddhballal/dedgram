@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "operation": "manual bio completion",
+  "reason": "Completed truncated profile bios after identifying an issue in the profile-level data fetch.",
+  "performed_at": "2026-10-28T09:17:31.390Z",
+  "username": "futureshock3272",
+  "field": "bio",
+  "source": "saved profile metadata description",
+  "previous_value": "『METAL GEAR SOLID Δ: SNAKE EATER』発売記念！ ありがとうございました！♡初のフルリメイクでのジャングルサバイバル！ 初めての方とも出会えてとっても嬉しかったよ〜！！🎃♡全国のみんなに会えますように！...\nmore",
+  "completed_value": "『METAL GEAR SOLID Δ: SNAKE EATER』発売記念！ ありがとうございました！♡初のフルリメイクでのジャングルサバイバル！ 初めての方とも出会えてとっても嬉しかったよ〜！！🎃♡全国のみんなに会えますように！ お待ちしてます 💣"
+}

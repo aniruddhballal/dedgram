@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "username": "cartoon_.xhub",
+  "phase": "manual bio completion",
+  "snapshot_at": "2026-10-28T09:17:31.390Z",
+  "run_status": "complete",
+  "run_updated_at": "2026-10-23T16:22:06.869Z",
+  "profile_fetched_at": "2026-10-23T16:21:46.742Z",
+  "item_count": 0,
+  "complete_item_count": 0,
+  "discovery": {
+    "reel": {
+      "count": 55,
+      "complete": true,
+      "error": null,
+      "attempted_at": "2026-10-23T16:22:06.863Z"
+    }
+  }
+}

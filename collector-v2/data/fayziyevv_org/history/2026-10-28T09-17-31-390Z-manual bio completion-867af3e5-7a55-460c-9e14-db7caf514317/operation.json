@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "operation": "manual bio completion",
+  "reason": "Completed truncated profile bios after identifying an issue in the profile-level data fetch.",
+  "performed_at": "2026-10-28T09:17:31.390Z",
+  "username": "fayziyevv_org",
+  "field": "bio",
+  "source": "saved profile metadata description",
+  "previous_value": "#tvアニメ...\nmore",
+  "completed_value": "#tvアニメ 箱根湯本駅からアクセスしやすい天成園は、開放感あふれる天空露天風呂、源泉かけ流しの温泉、美しい滝と庭園、さらに食べ放題の豪華バイキングまで楽しめる人気宿。チェックインからチェックアウトまで館内だけで充実した時間を過ごせるので、カップルや夫婦はもちろん、女子旅や家族旅行にもぴったりです。"
+}

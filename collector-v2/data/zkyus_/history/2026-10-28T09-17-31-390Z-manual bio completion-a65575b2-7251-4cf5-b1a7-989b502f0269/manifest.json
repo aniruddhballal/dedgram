@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "username": "zkyus_",
+  "phase": "manual bio completion",
+  "snapshot_at": "2026-10-28T09:17:31.390Z",
+  "run_status": "complete",
+  "run_updated_at": "2026-10-24T06:59:52.737Z",
+  "profile_fetched_at": "2026-10-24T06:59:00.653Z",
+  "item_count": 0,
+  "complete_item_count": 0,
+  "discovery": {
+    "reel": {
+      "count": 166,
+      "complete": true,
+      "error": null,
+      "attempted_at": "2026-10-24T06:59:52.730Z"
+    }
+  }
+}

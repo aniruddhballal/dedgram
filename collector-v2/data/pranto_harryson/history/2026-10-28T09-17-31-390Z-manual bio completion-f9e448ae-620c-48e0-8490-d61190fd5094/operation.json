@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "operation": "manual bio completion",
+  "reason": "Completed truncated profile bios after identifying an issue in the profile-level data fetch.",
+  "performed_at": "2026-10-28T09:17:31.390Z",
+  "username": "pranto_harryson",
+  "field": "bio",
+  "source": "saved profile metadata description",
+  "previous_value": "#アニメ『ローラの毎日』\nローラの最新情報をついに公開!! 🐰\n日常の面白い出来事や、思わず笑ってしまう瞬間をたっぷり紹\n介！\n...\nmore",
+  "completed_value": "#アニメ『ローラの毎日』\nローラの最新情報をついに公開!! 🐰\n日常の面白い出来事や、思わず笑ってしまう瞬間をたっぷり紹\n介！\nさらに、予想外の展開や驚きの発見、目を疑うような爆笑シーンまで一挙にお届け!!\n◆話題のローラ✨"
+}

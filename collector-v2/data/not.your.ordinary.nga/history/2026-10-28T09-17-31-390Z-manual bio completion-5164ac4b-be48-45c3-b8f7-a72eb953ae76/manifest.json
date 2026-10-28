@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "username": "not.your.ordinary.nga",
+  "phase": "manual bio completion",
+  "snapshot_at": "2026-10-28T09:17:31.390Z",
+  "run_status": "complete",
+  "run_updated_at": "2026-10-23T14:39:01.092Z",
+  "profile_fetched_at": "2026-10-23T14:16:21.989Z",
+  "item_count": 1106,
+  "complete_item_count": 0,
+  "discovery": {
+    "post": {
+      "count": 12,
+      "complete": false,
+      "error": "Windows EPERM prevented saving the post grid scan before it finished.",
+      "attempted_at": "2026-10-23T14:11:12.372Z"
+    },
+    "reel": {
+      "count": 1106,
+      "complete": true,
+      "error": null,
+      "attempted_at": "2026-10-23T14:39:01.092Z"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "operation": "manual bio completion",
+  "reason": "Completed truncated profile bios after identifying an issue in the profile-level data fetch.",
+  "performed_at": "2026-10-28T09:17:31.390Z",
+  "username": "9ineesss",
+  "field": "bio",
+  "source": "saved profile metadata description",
+  "previous_value": "Tea Room\nTVアニメ『紫禁・御猫房』10月10日放送開始！宮廷に隠された秘密とは？みんなは観たい？コメントで教えてね！\n#紫禁御猫房#新作アニメ#拡散希望#猫\n《紫禁•御猫房》\n#紫禁御猫房...\nmore",
+  "completed_value": "TVアニメ『紫禁・御猫房』10月10日放送開始！宮廷に隠された秘密とは？みんなは観たい？コメントで教えてね！\n#紫禁御猫房#新作アニメ#拡散希望#猫\n《紫禁•御猫房》\n#紫禁御猫房\n新作アニメ\n拡散希望\n猫"
+}

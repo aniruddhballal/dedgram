@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "operation": "manual bio completion",
+  "reason": "Completed truncated profile bios after identifying an issue in the profile-level data fetch.",
+  "performed_at": "2026-10-28T09:17:31.390Z",
+  "username": "nreanimnida",
+  "field": "bio",
+  "source": "saved profile metadata description",
+  "previous_value": "#TVアニメ 『NOSTALGIA』\n懐かしさに包まれる、あの頃の思い出がついに蘇る!! 🥹✨\n思わず昔を思い出してしまう、懐かしい瞬間を一挙公開！\n心に残る名シーンや、忘れられない思い出、...\nmore",
+  "completed_value": "#TVアニメ 『NOSTALGIA』\n懐かしさに包まれる、あの頃の思い出がついに蘇る!! 🥹✨\n思わず昔を思い出してしまう、懐かしい瞬間を一挙公開！\n心に残る名シーンや、忘れられない思い出、\nそして「あの頃に戻りたい」と感じるような瞬間まで登場しました!!\n◆今回のNOSTALGIAポイント:"
+}

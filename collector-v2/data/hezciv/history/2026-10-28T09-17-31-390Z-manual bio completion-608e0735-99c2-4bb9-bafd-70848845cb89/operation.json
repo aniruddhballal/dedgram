@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "operation": "manual bio completion",
+  "reason": "Completed truncated profile bios after identifying an issue in the profile-level data fetch.",
+  "performed_at": "2026-10-28T09:17:31.390Z",
+  "username": "hezciv",
+  "field": "bio",
+  "source": "saved profile metadata description",
+  "previous_value": "『トムとジェリー』&『オギー＆コックローチ』公式\nInstagram!\nあらゆるワクワクする追いかけっこをお届けします！\n『トムとジェリー』＆『オギー＆コックローチ』は、...\nmore",
+  "completed_value": "『トムとジェリー』&『オギー＆コックローチ』公式\nInstagram!\nあらゆるワクワクする追いかけっこをお届けします！\n『トムとジェリー』＆『オギー＆コックローチ』は、\nCartoon Network C+!\n『トムとジェリー』＆『オギー＆コックローチ』はデジタル配信でもお楽しみいただけます！"
+}

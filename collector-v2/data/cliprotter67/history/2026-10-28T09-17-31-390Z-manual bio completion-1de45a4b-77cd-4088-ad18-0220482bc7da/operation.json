@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "operation": "manual bio completion",
+  "reason": "Completed truncated profile bios after identifying an issue in the profile-level data fetch.",
+  "performed_at": "2026-10-28T09:17:31.390Z",
+  "username": "cliprotter67",
+  "field": "bio",
+  "source": "saved profile metadata description",
+  "previous_value": "ついに解禁...！！！\nTVアニメ『SPY FAMILY』フォージャー家の\"ありえない日常\"が再び動き出す。\nアーニャのあの顔、ロイドの変装、ヨルの強すぎる愛...\n最新PVに詰まってる全てが尊すぎる。...\nmore",
+  "completed_value": "ついに解禁...！！！\nTVアニメ『SPY FAMILY』フォージャー家の\"ありえない日常\"が再び動き出す。\nアーニャのあの顔、ロイドの変装、ヨルの強すぎる愛...\n最新PVに詰まってる全てが尊すぎる。\nSNSでは既に100万再生突破。あなたはまだ見てないの？\n#SPY_FAMILY"
+}
