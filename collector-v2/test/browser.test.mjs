@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { chromium } from 'playwright';
-import { captureProfile, discover, captureItem } from '../src/browser.mjs';
+import { captureProfile, captureItemOwner, discover, captureItem } from '../src/browser.mjs';
 import { profileFromSnapshot, itemFromSnapshot } from '../src/model.mjs';
 
 test('browser adapter collects a profile, both grids, and a direct item page', async () => {
@@ -30,8 +30,24 @@ test('browser adapter collects a profile, both grids, and a direct item page', a
     assert.equal(item.status, 'complete');
     assert.equal(item.likes.value, 12);
     assert.equal(item.comments.value, 3);
+    const owner = await captureItemOwner(page, reels.items[0]);
+    assert.equal(owner.poster_username, 'edlt.shox');
   } finally { await browser.close(); }
 }, { timeout: 40000 });
+
+test('username-change evidence reads a renamed poster from a reel page', async () => {
+  const browser = await chromium.launch({ headless: true });
+  const page = await browser.newPage();
+  await page.route('https://www.instagram.com/**', (route) => route.fulfill({
+    contentType: 'text/html',
+    body: '<meta property="og:description" content="12 likes, 3 comments - new.name on October 1, 2026: caption"><main><article>12 likes, 3 comments - new.name on October 1, 2026: caption</article></main>'
+  }));
+  try {
+    const owner = await captureItemOwner(page, { shortcode: 'REEL1', url: 'https://www.instagram.com/reel/REEL1/' });
+    assert.equal(owner.poster_username, 'new.name');
+    assert.equal(owner.source, 'og_description');
+  } finally { await browser.close(); }
+}, { timeout: 20000 });
 
 test('a post grid containing only reels confirms zero standalone posts', async () => {
   const browser = await chromium.launch({ headless: true });

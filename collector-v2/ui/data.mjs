@@ -19,7 +19,9 @@ export async function resolveUsername(requested) {
   if (exact) return exact;
   for (const name of names) {
     const profile = await readJson(paths(root, name).profile, {});
-    if (profile?.current_username?.toLowerCase() === requested.toLowerCase()) return name;
+    const aliases = [profile?.current_username, profile?.original_username,
+      ...(profile?.username_history || []).map((entry) => entry?.username)];
+    if (aliases.some((alias) => alias?.toLowerCase() === requested.toLowerCase())) return name;
   }
   return null;
 }
@@ -51,6 +53,8 @@ export function profileSummary(data) {
   return {
     username,
     route_username: profile?.current_username || username,
+    username_check: profile?.username_check || null,
+    username_migrations: profile?.username_migrations || [],
     url: profile?.url || `https://www.instagram.com/${username}/`,
     current_username: profile?.current_username || username,
     username_history: profile?.username_history || [],

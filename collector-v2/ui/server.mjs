@@ -8,11 +8,13 @@ import { catalog, detail, profileData, profileSummary, resolveUsername, root, su
 import { MODES, ORDERS, orderProfiles, resultStatus, stepsFor, terminal } from './plan.mjs';
 import { paths, readJson, writeJson } from '../src/store.mjs';
 import { exactPostCount, gridCount, profileHeaderComplete, profileLevelComplete } from '../src/model.mjs';
+import { applyUsernameChange, checkUsernameChange } from '../src/username-change.mjs';
 
 const publicDir = join(dirname(fileURLToPath(import.meta.url)), 'public');
 const jobPath = process.env.COLLECTOR_UI_JOB_PATH || join(root, 'data', 'ui-job.json');
 const port = Number(process.env.COLLECTOR_UI_PORT || 5174);
 const preview = process.env.COLLECTOR_UI_PREVIEW === '1';
+const usernameJobs = new Map();
 
 const json = (response, status, value) => {
   response.writeHead(status, { 'Content-Type': 'application/json; charset=utf-8', 'Cache-Control': 'no-store' });
@@ -204,6 +206,17 @@ class BatchRunner {
 const runner = new BatchRunner();
 await runner.load();
 
+function queueUsernameJob(username, kind, task) {
+  const existing = usernameJobs.get(username);
+  if (existing?.status === 'running') throw Object.assign(new Error('A username check or migration is already running for this profile.'), { status: 409 });
+  const job = { kind, status: 'running', started_at: new Date().toISOString(), updated_at: new Date().toISOString(), phase: 'starting', detail: 'Preparing' };
+  usernameJobs.set(username, job);
+  void task((progress) => Object.assign(job, progress, { updated_at: new Date().toISOString() }))
+    .then((result) => Object.assign(job, { status: 'complete', result, finished_at: new Date().toISOString(), updated_at: new Date().toISOString() }))
+    .catch((error) => Object.assign(job, { status: 'failed', error: error.message, finished_at: new Date().toISOString(), updated_at: new Date().toISOString() }));
+  return job;
+}
+
 const assets = new Map([
   ['/app.js', ['app.js', 'text/javascript; charset=utf-8']],
   ['/app-v3.js', ['app-v3.js', 'text/javascript; charset=utf-8']],
@@ -245,6 +258,22 @@ const server = createServer(async (request, response) => {
         return json(response, 202, await runner.start(input.profiles, input.mode, input.order));
       }
       if (pathname === '/api/runs/stop') return json(response, 200, await runner.stop());
+      if (pathname === '/api/username-check') {
+        const input = await body(request);
+        const username = await resolveUsername(input.username);
+        if (!username) return json(response, 404, { error: 'Profile not in catalog.' });
+        return json(response, 202, queueUsernameJob(username, 'check', async (progress) => {
+          progress({ phase: 'reel', detail: 'Opening a saved reel and reading its poster username' });
+          return checkUsernameChange(root, username, { headless: true });
+        }));
+      }
+      if (pathname === '/api/username-change/apply') {
+        const input = await body(request);
+        const username = await resolveUsername(input.username);
+        if (!username) return json(response, 404, { error: 'Profile not in catalog.' });
+        return json(response, 202, queueUsernameJob(username, 'apply', (progress) => applyUsernameChange(root, username,
+          input.detected_username, { headless: true, onProgress: progress })));
+      }
       return json(response, 404, { error: 'Unknown action.' });
     }
     if (request.method !== 'GET') return json(response, 405, { error: 'Method not allowed.' });
@@ -259,7 +288,8 @@ const server = createServer(async (request, response) => {
     }
     if (pathname.startsWith('/api/profiles/')) {
       const username = await resolveUsername(decodeURIComponent(pathname.slice('/api/profiles/'.length)));
-      return username ? json(response, 200, await detail(username)) : json(response, 404, { error: 'Profile not in catalog.' });
+      if (!username) return json(response, 404, { error: 'Profile not in catalog.' });
+      return json(response, 200, { ...(await detail(username)), username_job: usernameJobs.get(username) || null });
     }
     if (pathname.startsWith('/reports/')) {
       const username = await resolveUsername(decodeURIComponent(pathname.slice('/reports/'.length)));

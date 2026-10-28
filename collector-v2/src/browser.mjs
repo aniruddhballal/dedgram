@@ -195,3 +195,31 @@ export async function captureItem(page, item) {
   if (!clean(snapshot.article_text)) throw new Error('Item page rendered no readable content.');
   return snapshot;
 }
+
+function profileUsernameFromPath(pathname) {
+  const parts = String(pathname || '').split('/').filter(Boolean);
+  if (parts.length !== 1 || !/^[A-Za-z0-9._]{1,30}$/.test(parts[0])) return null;
+  if (/^(accounts|about|direct|explore|reel|reels|p|stories|web)$/i.test(parts[0])) return null;
+  return parts[0];
+}
+
+export async function captureItemOwner(page, item) {
+  await open(page, item.url);
+  if (canonicalItemUrl(page.url())?.shortcode !== item.shortcode) throw new Error('Instagram redirected to a different item.');
+  const evidence = await page.evaluate(() => {
+    const article = document.querySelector('main article, [role="dialog"] article, article') || document.querySelector('main') || document.body;
+    const description = document.querySelector('meta[property="og:description"]')?.content || '';
+    const links = [...article.querySelectorAll('a[href]')].map((anchor) => ({ href: anchor.href, text: anchor.innerText || '' }));
+    return { description, article_text: article.innerText || '', links, page_url: location.href };
+  });
+  const descriptionMatch = evidence.description.match(/(?:likes?|comments?)[\s\S]*?[-–]\s*([A-Za-z0-9._]{1,30})(?:\s+on\b|:)/i);
+  const textMatch = evidence.article_text.match(/(?:likes?|comments?)[\s\S]*?[-–]\s*([A-Za-z0-9._]{1,30})(?:\s+on\b|:)/i);
+  const linkUsername = evidence.links.map((link) => {
+    try { return profileUsernameFromPath(new URL(link.href).pathname); } catch { return null; }
+  }).find(Boolean) || null;
+  const posterUsername = descriptionMatch?.[1] || textMatch?.[1] || linkUsername;
+  if (!posterUsername) throw new Error('Instagram opened the reel but no poster username was readable.');
+  return { poster_username: posterUsername, item_url: item.url, page_url: evidence.page_url,
+    source: descriptionMatch ? 'og_description' : textMatch ? 'visible_text' : 'profile_link',
+    evidence: { description: evidence.description, article_text: evidence.article_text.slice(0, 2000), profile_link: linkUsername } };
+}

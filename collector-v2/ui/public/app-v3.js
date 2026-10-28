@@ -112,13 +112,16 @@ document.addEventListener('click', async (event) => {
   if (action === 'grid' || action === 'list') { state.layout = action; render(); return; }
   if (action === 'clear') { state.selected.clear(); saveSelection(); render(); return; }
   if (action === 'select-visible') { for (const profile of visibleCatalog(state)) state.selected.add(profile.username); saveSelection(); render(); return; }
-  if (!['run-stage', 'run-filtered-stage', 'start', 'run-one', 'run-profile-stage', 'stop'].includes(action)) return;
+  if (!['run-stage', 'run-filtered-stage', 'start', 'run-one', 'run-profile-stage', 'stop', 'check-username', 'apply-username-change'].includes(action)) return;
   state.busy = true; state.error = null; render();
   try {
-    const endpoint = action === 'stop' ? '/api/runs/stop' : '/api/runs';
+    const usernameAction = action === 'check-username' || action === 'apply-username-change';
+    const endpoint = action === 'stop' ? '/api/runs/stop' : action === 'check-username' ? '/api/username-check'
+      : action === 'apply-username-change' ? '/api/username-change/apply' : '/api/runs';
     const profileAction = action === 'run-profile-stage';
     const filteredStageAction = action === 'run-filtered-stage';
-    const body = action === 'stop' ? {} : { profiles: action === 'run-one' || profileAction ? [button.dataset.username]
+    const body = action === 'stop' ? {} : usernameAction ? { username: button.dataset.username, detected_username: button.dataset.detectedUsername }
+      : { profiles: action === 'run-one' || profileAction ? [button.dataset.username]
       : filteredStageAction ? visibleCatalog(state).map((profile) => profile.username) : [...state.selected],
       mode: action === 'run-one' ? 'depth_first' : action === 'start' || filteredStageAction ? (filteredStageAction ? button.dataset.mode : state.mode) : button.dataset.mode,
       order: state.order };
