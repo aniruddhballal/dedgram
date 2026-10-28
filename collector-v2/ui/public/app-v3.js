@@ -17,11 +17,56 @@ const state = {
   mode: ['profile_only', 'depth_first', 'breadth_first', 'reels_only'].includes(savedMode) ? savedMode : 'depth_first',
   order: ['selection', 'posts_ascending', 'reels_ascending'].includes(savedOrder) ? savedOrder : 'posts_ascending',
   setupStep: ['profiles', 'mode', 'order', 'review', 'progress'].includes(savedSetup) ? savedSetup : 'profiles',
-  itemSearch: '', itemFilter: 'all', itemSort: 'newest', busy: false, error: null, readOnly: false
+  itemSearch: '', itemFilter: 'all', itemSort: 'newest', busy: false, error: null, readOnly: false, toasts: []
 };
+const observed = { batchId: null, batchStatus: null, usernameJobs: new Map() };
 const path = () => location.pathname === '/summary' ? '/overview' : location.pathname;
 const saveSelection = () => localStorage.setItem(selectionKey, JSON.stringify([...state.selected]));
 const setupSteps = ['profiles', 'mode', 'order', 'review', 'progress'];
+function notify(message, type = 'info', duration = 7000) {
+  const id = `${Date.now()}-${Math.random().toString(36).slice(2)}`;
+  state.toasts.push({ id, message, type });
+  render();
+  window.setTimeout(() => {
+    const index = state.toasts.findIndex((toast) => toast.id === id);
+    if (index >= 0) { state.toasts.splice(index, 1); render(); }
+  }, duration);
+}
+
+function toastMarkup() {
+  return `<div class="toast-stack" aria-live="polite" aria-atomic="false">${state.toasts.map((toast) => `<div class="toast ${toast.type}" role="status"><span class="toast-mark" aria-hidden="true">${toast.type === 'success' ? '✓' : toast.type === 'error' ? '!' : 'i'}</span><span>${esc(toast.message)}</span><button data-action="dismiss-toast" data-toast-id="${esc(toast.id)}" aria-label="Dismiss notification">×</button></div>`).join('')}</div>`;
+}
+
+function observeAsyncState() {
+  const batch = state.batch;
+  if (batch?.id) {
+    if (observed.batchId !== batch.id) {
+      observed.batchId = batch.id;
+      observed.batchStatus = batch.status;
+    } else if (observed.batchStatus === 'running' && batch.status !== 'running') {
+      const label = batch.status === 'complete' ? 'Collection complete.' : batch.status === 'failed'
+        ? `Collection failed${batch.error ? `: ${batch.error}` : '.'}` : `Collection ${batch.status}.`;
+      notify(label, batch.status === 'complete' ? 'success' : batch.status === 'failed' ? 'error' : 'info');
+      observed.batchStatus = batch.status;
+    } else observed.batchStatus = batch.status;
+  }
+  const profile = state.detail;
+  const job = profile?.username_job;
+  if (profile?.username && job?.started_at) {
+    const key = `${profile.username}:${job.kind}:${job.started_at}`;
+    const previous = observed.usernameJobs.get(key);
+    if (!previous) observed.usernameJobs.set(key, job.status);
+    else if (previous === 'running' && job.status !== 'running') {
+      const result = job.result || {};
+      if (job.status === 'failed') notify(`${job.kind === 'apply' ? 'Username migration' : 'Username check'} failed${job.error ? `: ${job.error}` : '.'}`, 'error', 10000);
+      else if (job.kind === 'check' && result.status === 'no_change') notify(`No username change found. The reel still shows @${result.stored_username}.`, 'success');
+      else if (job.kind === 'check' && result.status === 'changed') notify(`Username change detected: @${result.stored_username} → @${result.detected_username}.`, 'success', 10000);
+      else if (job.kind === 'apply') notify(`Username migration complete: @${result.previous_username} → @${result.current_username}.`, 'success', 10000);
+      else notify('Username task finished.', 'success');
+      observed.usernameJobs.set(key, job.status);
+    }
+  }
+}
 function setSetupStep(step) {
   state.setupStep = step;
   sessionStorage.setItem(setupKey, step);
@@ -40,7 +85,7 @@ function render() {
     : current.startsWith('/profiles/') ? `${batchStrip(state)}${renderProfile(state)}`
       : step === 0 ? renderSelect(state) : step === 4 ? renderReview(state)
         : step > 0 ? renderStage(state, step) : '<p class="loading">Page not found.</p>';
-  app.innerHTML = `${state.readOnly ? '<div class="preview-banner">PREVIEW · Collection actions are disabled while the original batch runs.</div>' : ''}${state.error ? `<div class="error-banner" role="alert"><strong>Something needs attention.</strong> ${esc(state.error)} <button data-action="dismiss" aria-label="Dismiss">×</button></div>` : ''}${content}`;
+  app.innerHTML = `${state.readOnly ? '<div class="preview-banner">PREVIEW · Collection actions are disabled while the original batch runs.</div>' : ''}${state.error ? `<div class="error-banner" role="alert"><strong>Something needs attention.</strong> ${esc(state.error)} <button data-action="dismiss" aria-label="Dismiss">×</button></div>` : ''}${content}${toastMarkup()}`;
   if (focusId) {
     const input = document.getElementById(focusId);
     if (input) { input.focus(); if (typeof cursor === 'number' && typeof input.setSelectionRange === 'function') input.setSelectionRange(cursor, cursor); }
@@ -77,6 +122,7 @@ async function refresh() {
     state.setupStep = 'profiles';
     sessionStorage.setItem(setupKey, 'profiles');
   }
+  observeAsyncState();
   renderAfterRefresh();
 }
 
@@ -98,6 +144,7 @@ document.addEventListener('click', async (event) => {
   if (!button) return;
   const action = button.dataset.action;
   if (action === 'dismiss') { state.error = null; render(); return; }
+  if (action === 'dismiss-toast') { state.toasts = state.toasts.filter((toast) => toast.id !== button.dataset.toastId); render(); return; }
   if (action === 'setup-progress' && state.batch) { setSetupStep('progress'); return; }
   if (action === 'setup-new') { setSetupStep('profiles'); return; }
   if (action === 'setup-step' && setupSteps.includes(button.dataset.step)) { setSetupStep(button.dataset.step); return; }
@@ -126,6 +173,10 @@ document.addEventListener('click', async (event) => {
       mode: action === 'run-one' ? 'depth_first' : action === 'start' || filteredStageAction ? (filteredStageAction ? button.dataset.mode : state.mode) : button.dataset.mode,
       order: state.order };
     await api(endpoint, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
+    if (action === 'check-username') notify('Username check started. Opening a saved reel…', 'info', 5000);
+    if (action === 'apply-username-change') notify('Username migration started. Fetching the current profile and preserving history…', 'info', 6000);
+    if (action === 'stop') notify('Stop requested. The current stage will finish first.', 'info', 6000);
+    if (action === 'start' || action === 'run-one' || action === 'run-filtered-stage' || action === 'run-profile-stage') notify('Collection started. Live progress is shown on this page.', 'info', 5000);
     if (action === 'start' || action === 'run-one' || filteredStageAction) {
       state.setupStep = 'progress';
       sessionStorage.setItem(setupKey, 'progress');
