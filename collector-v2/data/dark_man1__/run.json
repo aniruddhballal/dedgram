@@ -1,7 +1,7 @@
 {
   "started_at": "2026-10-28T11:28:32.883Z",
-  "updated_at": "2026-10-28T11:28:41.732Z",
-  "status": "partial",
+  "updated_at": "2026-10-28T16:09:05.687Z",
+  "status": "complete",
   "phase": "done",
   "scope": [
     "reel"
@@ -11,13 +11,28 @@
   "progress": {
     "task": "item_details",
     "label": "Reel details",
-    "action": "Opening reel pages and extracting dates, captions, views, likes and comments",
+    "action": "Manual reel review and resolution",
     "completed": 2,
     "total": 2,
     "percent": 100,
     "remaining": 0,
     "current_item": null,
-    "detail": "Stage finished with review required",
-    "updated_at": "2026-10-28T11:28:41.732Z"
+    "detail": "Stage complete after manually resolving 2 unavailable reels",
+    "updated_at": "2026-10-28T16:09:05.687Z"
+  },
+  "manual_review": {
+    "operation": "manual reel review",
+    "performed_at": "2026-10-28T16:09:05.687Z",
+    "source": "manual user review",
+    "resolved_items": [
+      {
+        "shortcode": "De1ay0qOEJX",
+        "resolution": "deleted"
+      },
+      {
+        "shortcode": "De19Z73O_ol",
+        "resolution": "deleted"
+      }
+    ]
   }
 }

@@ -1,0 +1,56 @@
+[
+  {
+    "kind": "reel",
+    "shortcode": "De19Z73O_ol",
+    "url": "https://www.instagram.com/reel/De19Z73O_ol/",
+    "grid_views_raw": "9",
+    "grid_views_issue": null,
+    "status": "archived",
+    "last_error": null,
+    "last_attempt_at": "2026-10-28T16:09:05.687Z",
+    "attempts": 2,
+    "views": {
+      "value": 9,
+      "raw": "9",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:18:48.052Z"
+    },
+    "missing": [],
+    "missing_reasons": {},
+    "fetched_at": "2026-10-28T16:09:05.687Z",
+    "manual_observation": {
+      "source": "manual_review",
+      "observed_at": "2026-10-28T16:09:05.687Z",
+      "resolution": "deleted",
+      "reason": "User manually checked the saved reel URL and confirmed that it does not open from any profile; the reel is treated as deleted."
+    }
+  },
+  {
+    "kind": "reel",
+    "shortcode": "De1ay0qOEJX",
+    "url": "https://www.instagram.com/reel/De1ay0qOEJX/",
+    "grid_views_raw": "2,741",
+    "grid_views_issue": null,
+    "status": "archived",
+    "last_error": null,
+    "last_attempt_at": "2026-10-28T16:09:05.687Z",
+    "attempts": 2,
+    "views": {
+      "value": 2741,
+      "raw": "2,741",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:18:48.052Z"
+    },
+    "missing": [],
+    "missing_reasons": {},
+    "fetched_at": "2026-10-28T16:09:05.687Z",
+    "manual_observation": {
+      "source": "manual_review",
+      "observed_at": "2026-10-28T16:09:05.687Z",
+      "resolution": "deleted",
+      "reason": "User manually checked the saved reel URL and confirmed that it does not open from any profile; the reel is treated as deleted."
+    }
+  }
+]

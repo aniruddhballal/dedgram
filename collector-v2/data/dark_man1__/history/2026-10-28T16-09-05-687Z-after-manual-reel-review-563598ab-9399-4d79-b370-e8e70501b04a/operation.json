@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "operation": "manual reel review",
+  "performed_at": "2026-10-28T16:09:05.687Z",
+  "username": "dark_man1__",
+  "source": "manual user review",
+  "reason": "User manually checked the saved reel URL and confirmed that it does not open from any profile; the reel is treated as deleted.",
+  "changes": [
+    {
+      "shortcode": "De1ay0qOEJX",
+      "resolution": "deleted"
+    },
+    {
+      "shortcode": "De19Z73O_ol",
+      "resolution": "deleted"
+    }
+  ],
+  "before_snapshot": "D:\\post engg\\dedgram\\collector-v2\\data\\dark_man1__\\history\\2026-10-28T16-09-05-687Z-before-manual-reel-review-7cbec4ff-7eb1-47d7-a2c7-30188e80b03f",
+  "after_snapshot": "D:\\post engg\\dedgram\\collector-v2\\data\\dark_man1__\\history\\2026-10-28T16-09-05-687Z-after-manual-reel-review-563598ab-9399-4d79-b370-e8e70501b04a"
+}
