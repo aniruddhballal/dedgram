@@ -42,21 +42,71 @@ if (!index.profile_keys.every((username) => /^[A-Za-z0-9._]{1,30}$/.test(usernam
 if (new Set(index.profile_keys).size !== index.profile_keys.length) throw new Error('Catalog contains duplicate usernames.');
 const buildDate = new Intl.DateTimeFormat('en-IN', { dateStyle: 'medium', timeZone: 'Asia/Kolkata' }).format(new Date());
 
+const partialPublishedProfiles = new Set(['edlt.shox', 'pichypeapp', 'printamovie']);
+const snapshotData = new Map();
+for (const username of [...fullProfiles, ...profileLevelProfiles]) {
+  const [profile, discovery, items, run] = await Promise.all([
+    readJson(`${username}/profile.json`), readJson(`${username}/discovery.json`),
+    readJson(`${username}/items.json`), readJson(`${username}/run.json`)
+  ]);
+  snapshotData.set(username, { profile, discovery, items, run });
+}
+
+const numberMetric = (value) => Number.isFinite(value?.value) ? value.value : null;
+const publishedSnapshotProfiles = [...fullProfiles, ...profileLevelProfiles];
+const publishedReelRows = publishedSnapshotProfiles.flatMap((username) => {
+  const snapshot = snapshotData.get(username);
+  return (snapshot.items || []).filter((item) => item.kind === 'reel').map((item) => ({ username, ...item }));
+});
+const publishedReelUrls = publishedSnapshotProfiles.reduce((sum, username) => sum + (snapshotData.get(username).discovery.reel.items || []).length, 0);
+const completeReels = publishedReelRows.filter((item) => item.status === 'complete' && !item.last_error);
+const reviewReels = publishedReelRows.filter((item) => item.status !== 'complete' || item.last_error);
+const totalMetric = (rows, key) => rows.reduce((sum, row) => sum + (numberMetric(row[key]) || 0), 0);
+const measuredMetric = (rows, key) => rows.filter((row) => numberMetric(row[key]) !== null);
+const countValues = (values) => Object.entries(values.reduce((counts, value) => {
+  if (value) counts[value] = (counts[value] || 0) + 1;
+  return counts;
+}, {})).sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+const countryRows = countValues(publishedSnapshotProfiles.map((username) => snapshotData.get(username).profile.account_based_in));
+const hashtagRows = countValues(completeReels.flatMap((item) => item.hashtags || []));
+const topReels = [...publishedReelRows].filter((item) => numberMetric(item.views) !== null)
+  .sort((a, b) => numberMetric(b.views) - numberMetric(a.views)).slice(0, 10);
+const exactPostRows = publishedSnapshotProfiles.map((username) => snapshotData.get(username).profile.posts_count).filter((value) => numberMetric(value) !== null);
+const overview = {
+  publicRecords: publishedProfiles.length,
+  profileRecords: publishedSnapshotProfiles.length,
+  resolvedRecords: resolvedProfiles.length,
+  futureCandidates: index.profile_keys.length - publishedProfiles.length,
+  nearTerm: [...partialPublishedProfiles, ...profileLevelProfiles].length,
+  reelUrls: publishedReelUrls,
+  reelDetails: completeReels.length,
+  reelReview: reviewReels.length,
+  posts: exactPostRows.reduce((sum, value) => sum + numberMetric(value), 0),
+  views: totalMetric(publishedReelRows, 'views'),
+  viewsCovered: measuredMetric(publishedReelRows, 'views').length,
+  likes: totalMetric(publishedReelRows, 'likes'),
+  likesCovered: measuredMetric(publishedReelRows, 'likes').length,
+  comments: totalMetric(publishedReelRows, 'comments'),
+  commentsCovered: measuredMetric(publishedReelRows, 'comments').length
+};
+
 function shell({ title, description, base, active, profileKey, content }) {
-  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#ffffff"><meta name="description" content="${esc(description)}"><title>${esc(title)}</title><link rel="icon" href="${base}assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="${base}assets/site.css"><script src="${base}assets/site.js" defer></script></head><body><a class="skip-link" href="#main">Skip to content</a><header class="topbar"><div class="topbar-inner"><a class="brand" href="${base}" aria-label="deadgram atlas home"><img class="brand-icon" src="${base}assets/favicon.svg" alt=""><span>deadgram <small>ATLAS</small></span></a><nav aria-label="Main navigation"><a class="${active === 'catalog' ? 'active' : ''}" href="${base}">Profiles</a>${profileKey ? `<a class="${active === 'profile' ? 'active' : ''}" href="${base}profiles/${profileKey}/">Profile record</a>` : ''}</nav><span class="nav-status">COLLECTION IN PROGRESS</span></div></header><main id="main">${content}</main><footer class="footer"><div><strong>deadgram ATLAS</strong><p>Saved profile records.</p></div><div><span>Updated ${esc(buildDate)}</span><span>Metrics reflect the saved snapshot.</span></div></footer></body></html>`;
+  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#ffffff"><meta name="description" content="${esc(description)}"><title>${esc(title)}</title><link rel="icon" href="${base}assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="${base}assets/site.css"><script src="${base}assets/site.js" defer></script></head><body><a class="skip-link" href="#main">Skip to content</a><header class="topbar"><div class="topbar-inner"><a class="brand" href="${base}" aria-label="deadgram atlas home"><img class="brand-icon" src="${base}assets/favicon.svg" alt=""><span>deadgram <small>ATLAS</small></span></a><nav aria-label="Main navigation"><a class="${active === 'catalog' ? 'active' : ''}" href="${base}">Profiles</a><a class="${active === 'overview' ? 'active' : ''}" href="${base}overview/">Overview</a>${profileKey ? `<a class="${active === 'profile' ? 'active' : ''}" href="${base}profiles/${profileKey}/">Profile record</a>` : ''}</nav><span class="nav-status">COLLECTION IN PROGRESS</span></div></header><main id="main">${content}</main><footer class="footer"><div><strong>deadgram ATLAS</strong><p>Saved profile records.</p></div><div><span>Updated ${esc(buildDate)}</span><span>Metrics reflect the saved snapshot.</span></div></footer></body></html>`;
 }
 
 const publishedSet = new Set(publishedProfiles);
-const catalogCards = index.profile_keys.map((username, i) => {
-  const ready = publishedSet.has(username);
+const catalogCard = (username, i, ready) => {
   const resolved = resolutions.profiles?.[username];
-  const label = resolved ? `Resolved: ${resolved.status}` : profileLevelSet.has(username) ? 'Profile level complete' : ready ? 'Profile and reel analysis complete' : 'In progress';
-  const tag = resolved ? 'Resolved' : profileLevelSet.has(username) ? 'Profile complete' : ready ? 'Profile available' : 'In progress';
+  const label = resolved ? `Resolved: ${resolved.status}` : profileLevelSet.has(username) ? 'Profile level complete; reel details pending' : partialPublishedProfiles.has(username) ? 'Partial reel coverage' : ready ? 'Profile and reel analysis complete' : 'Future collection candidate';
+  const tag = resolved ? 'Resolved' : profileLevelSet.has(username) ? 'Profile complete' : ready ? 'Profile available' : 'Future candidate';
   const inner = `<span class="row-number">${String(i + 1).padStart(3, '0')}</span><span class="row-title"><strong>@${esc(username)}</strong><small>${esc(label)}</small></span><span class="row-tag ${ready ? 'live' : ''}">${esc(tag)}</span>`;
   return `<article class="profile-row" data-catalog-row><div class="profile-row-main">${ready ? `<a class="profile-internal" href="./profiles/${username}/" aria-label="View saved profile data for @${username}">${inner}</a>` : `<div class="profile-internal">${inner}</div>`}</div><div class="row-external">${external(instagram(username), 'Instagram', 'external-link')}</div></article>`;
-}).join('');
+};
+const publishedCards = publishedProfiles.map((username) => catalogCard(username, index.profile_keys.indexOf(username), true)).join('');
+const futureCards = index.profile_keys.filter((username) => !publishedSet.has(username))
+  .map((username) => catalogCard(username, index.profile_keys.indexOf(username), false)).join('');
 const publishedCount = publishedProfiles.length;
-const partialPublishedProfiles = new Set(['edlt.shox', 'pichypeapp', 'printamovie']);
+const catalogCards = `${publishedCards}<details class="future-directory" data-catalog-future><summary>Show ${fmt(index.profile_keys.length - publishedCount)} future collection candidates</summary><div class="profile-list future-profile-list">${futureCards}</div></details>`;
 const catalogHtml = shell({ title: 'Profiles Â· deadgram atlas', description: 'Explore the deadgram profile catalog and the published research profiles.', base: './', active: 'catalog', content: `<section class="hero catalog-hero"><div class="hero-copy"><div class="eyebrow">PROFILE INDEX / PUBLIC PREVIEW</div><h1>Profiles,<br>on record.</h1><p>${fmt(index.profile_keys.length)} accounts indexed. ${fmt(publishedCount)} profile records are available; the rest are being collected.</p><div class="hero-actions"><a class="button primary" href="#published">View published profiles</a><a class="button secondary" href="#directory">Browse profiles</a></div></div><div class="hero-count" aria-label="${fmt(publishedCount)} of ${fmt(index.profile_keys.length)} profiles published"><strong>${String(publishedCount).padStart(2, '0')}</strong><span>/ ${fmt(index.profile_keys.length)} PUBLISHED</span></div></section><section class="stat-strip" aria-label="Publishing status"><div><span>CATALOG</span><strong>${fmt(index.profile_keys.length)}</strong><small>profile URLs indexed</small></div><div><span>PUBLISHED</span><strong>${fmt(publishedCount)}</strong><small>profile records available</small></div><div><span>IN PROGRESS</span><strong>${fmt(index.profile_keys.length - publishedCount)}</strong><small>more profiles to publish</small></div></section><section class="process-note"><div><h2>Collection in progress</h2><p>More profile records will appear here as they are checked.</p></div></section><section class="directory" id="published"><div class="section-head"><div><span class="overline">01 / PUBLISHED RECORDS</span><h2>Ready to explore</h2><p>Completed records and partial reel coverage are labeled below.</p></div></div><div class="profile-list">${publishedProfiles.map((username) => `<article class="profile-row"><div class="profile-row-main"><a class="profile-internal" href="./profiles/${username}/" aria-label="View saved profile data for @${username}"><span class="row-title"><strong>@${esc(username)}</strong><small>${partialPublishedProfiles.has(username) ? 'Partial reel coverage' : 'Profile and reel analysis complete'}</small></span><span class="row-tag live">View record</span></a></div><div class="row-external">${external(instagram(username), 'Instagram', 'external-link')}</div></article>`).join('')}</div></section><section class="directory" id="directory"><div class="section-head"><div><span class="overline">02 / DIRECTORY</span><h2>Profile index</h2><p>Direct Instagram links for all ${fmt(index.profile_keys.length)} accounts.</p></div><div class="directory-search"><label for="catalog-search">Find a profile</label><input id="catalog-search" type="search" placeholder="Search @username" autocomplete="off"></div></div><div class="directory-toolbar"><span id="catalog-count">${fmt(index.profile_keys.length)} profiles shown</span><span>SAVED RECORDS APPEAR WHEN READY</span></div><div class="profile-list" id="profile-list">${catalogCards}</div><p class="empty-state" id="catalog-empty" hidden>No profiles match that search.</p></section>` });
 
 const catalogHtmlForOutput = publishedProfiles.reduce((html, username) => {
@@ -65,6 +115,33 @@ const catalogHtmlForOutput = publishedProfiles.reduce((html, username) => {
   const escapedUsername = username.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
   return html.replace(new RegExp(`(<strong>@${escapedUsername}<\\/strong><small>)[^<]*(</small>)`, 'g'), `$1${esc(label)}$2`);
 }, catalogHtml);
+const publicCatalogHtml = catalogHtmlForOutput
+  .replace(`${fmt(index.profile_keys.length)} profiles shown`, `${fmt(publishedCount)} profiles shown`)
+  .replace('<strong>@illmisguideyou</strong><small>Profile and reel analysis complete</small>', '<strong>@illmisguideyou</strong><small>Profile level complete; reel details pending</small>');
+
+const overviewBars = (rows, total) => rows.length ? rows.slice(0, 8).map(([name, count]) => `<div class="bar-row"><div><span>${esc(name)}</span><strong>${fmt(count)}</strong></div><div class="bar-track"><span style="width:${Math.max(5, Math.round(count / Math.max(total, 1) * 100))}%"></span></div></div>`).join('') : '<p class="muted">No completed data yet.</p>';
+const overviewAccountRows = publishedSnapshotProfiles.map((username) => {
+  const { profile, discovery, items } = snapshotData.get(username);
+  const reels = discovery.reel.items || [];
+  const details = items.filter((item) => item.kind === 'reel');
+  const complete = details.filter((item) => item.status === 'complete' && !item.last_error).length;
+  const status = profileLevelSet.has(username) ? 'Profile level complete' : partialPublishedProfiles.has(username) ? 'Partial reel coverage' : 'Reel analysis complete';
+  return `<tr><td><a href="../profiles/${username}/">@${esc(username)}</a><small class="cell-note">${esc(status)}</small></td><td>${esc(metric(profile.posts_count))}</td><td>${fmt(reels.length)}</td><td>${fmt(complete)} / ${fmt(reels.length)}</td><td>${fmt(details.filter((item) => numberMetric(item.views) !== null).length)}</td><td>${esc(metric(profile.followers_count))}</td></tr>`;
+}).join('');
+const overviewResolvedRows = resolvedProfiles.map((username) => {
+  const resolved = resolutions.profiles?.[username] || {};
+  return `<tr><td><a href="../profiles/${username}/">@${esc(username)}</a><small class="cell-note">Resolved: ${esc(resolved.status || 'Finished')}</small></td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>`;
+}).join('');
+const overviewReelRows = topReels.map((item) => `<tr><td><div class="content-cell"><a href="${esc(item.url)}" target="_blank" rel="noopener noreferrer">${esc(item.shortcode)} ↗</a></div></td><td><a href="../profiles/${item.username}/">@${esc(item.username)}</a></td><td>${esc(item.date || '—')}</td><td><strong>${esc(metric(item.views))}</strong></td><td>${esc(metric(item.likes))}</td><td>${esc(metric(item.comments))}</td></tr>`).join('');
+const overviewHtml = shell({ title: 'Overview · deadgram atlas', description: 'Overall statistics for the completed deadgram public snapshot.', base: '../', active: 'overview', content: `
+  <section class="hero overview-hero"><div class="hero-copy"><div class="eyebrow">COLLECTION OVERVIEW / PUBLIC SNAPSHOT</div><h1>The whole picture,<br><em>one reel at a time.</em></h1><p>These totals reflect the research records currently available on the public site. Uncollected candidates stay out of the first view until you choose to reveal them.</p><div class="hero-actions"><a class="button primary" href="../">View published profiles</a><a class="button secondary" href="../#future">Show future candidates</a></div></div><div class="hero-count" aria-label="${fmt(overview.publicRecords)} public records"><strong>${String(overview.publicRecords).padStart(2, '0')}</strong><span>PUBLIC RECORDS</span></div></section>
+  <section class="stat-strip overview-stat-strip" aria-label="Overall collection statistics"><div><span>PROFILE RECORDS</span><strong>${fmt(overview.profileRecords)}</strong><small>Saved account-level data</small></div><div><span>REEL URLS SAVED</span><strong>${fmt(overview.reelUrls)}</strong><small>Confirmed grid discoveries</small></div><div><span>REEL DETAILS</span><strong>${fmt(overview.reelDetails)}</strong><small>${fmt(overview.reelReview)} still need review</small></div><div><span>RESOLVED RECORDS</span><strong>${fmt(overview.resolvedRecords)}</strong><small>Finished outcomes preserved</small></div></section>
+  <section class="stat-strip overview-stat-strip secondary-stats" aria-label="Collected metrics"><div><span>INSTAGRAM POSTS</span><strong>${fmt(overview.posts)}</strong><small>${fmt(overview.profileRecords)} saved profiles with counts</small></div><div><span>REEL VIEWS</span><strong>${fmt(overview.views)}</strong><small>${fmt(overview.viewsCovered)} reels with readable views</small></div><div><span>REEL LIKES</span><strong>${fmt(overview.likes)}</strong><small>${fmt(overview.likesCovered)} reels with readable likes</small></div><div><span>NEAR-TERM FOLLOW-UP</span><strong>${fmt(overview.nearTerm)}</strong><small>Published records with more analysis queued</small></div></section>
+  <section class="overview-grid"><div class="overview-panel"><span class="overline">PROFILE MAP</span><h2>Accounts by country</h2>${overviewBars(countryRows, overview.profileRecords)}</div><div class="overview-panel"><span class="overline">REEL LANGUAGE</span><h2>Frequent hashtags</h2>${overviewBars(hashtagRows, completeReels.length)}<p class="panel-foot">From completed reel captions.</p></div></section>
+  <section class="overview-table"><div class="section-head"><div><span class="overline">ACROSS PUBLIC RECORDS</span><h2>Profile performance</h2><p>Only saved records are shown here. Resolved records remain visible as finished outcomes.</p></div></div><div class="table-wrap"><table><thead><tr><th>PROFILE</th><th>INSTAGRAM POSTS</th><th>REEL URLS</th><th>REEL DETAILS</th><th>REELS WITH VIEWS</th><th>FOLLOWERS</th></tr></thead><tbody>${overviewAccountRows}${overviewResolvedRows}</tbody></table></div></section>
+  <section class="overview-table"><div class="section-head"><div><span class="overline">TOP COLLECTED REELS</span><h2>Most viewed reels</h2><p>Sorted by Instagram's saved displayed view values.</p></div></div><div class="table-wrap"><table><thead><tr><th>REEL</th><th>PROFILE</th><th>DATE</th><th>VIEWS</th><th>LIKES</th><th>COMMENTS</th></tr></thead><tbody>${overviewReelRows || '<tr><td colspan="6">No reel details are available yet.</td></tr>'}</tbody></table></div></section>
+  <section class="process-note"><div><h2>${fmt(overview.futureCandidates)} future candidates are hidden by default</h2><p>They are indexed but do not have a public saved record yet. Use the Profiles tab or the button above to reveal them.</p></div></section>
+  <p class="method-note">Totals are from the current saved snapshot, not a time series. Instagram's K/M labels are retained where applicable; missing metrics are excluded.</p>` });
 
 function resolvedProfilePage(resolved, recordNumber) {
   const status = resolved.status || 'Resolved';
@@ -133,7 +210,9 @@ for (const published of publishedProfiles) {
 await rm(output, { recursive: true, force: true });
 await mkdir(join(output, 'assets'), { recursive: true });
 await mkdir(join(output, 'media'), { recursive: true });
-await writeFile(join(output, 'index.html'), catalogHtmlForOutput);
+await mkdir(join(output, 'overview'), { recursive: true });
+await writeFile(join(output, 'index.html'), publicCatalogHtml);
+await writeFile(join(output, 'overview', 'index.html'), overviewHtml);
 for (const page of profilePages) {
   await mkdir(join(output, 'profiles', page.published), { recursive: true });
   await mkdir(join(output, 'downloads', page.published), { recursive: true });

@@ -1,6 +1,6 @@
 # deadgram atlas public preview
 
-A static, self-contained Vercel site. It lists every username in the bot profile index and publishes detailed pages for the saved records, a profile-level record for `illmisguideyou`, and resolved records for deleted, age-restricted, and false-identification outcomes. Partial reel coverage and pending reel-detail analysis are called out on the affected profile pages. No Instagram login, collector process, database, or server function is needed to serve it.
+A static, self-contained Vercel site. It publishes an overall snapshot, detailed pages for saved records, a profile-level record for `illmisguideyou`, and resolved records for deleted, age-restricted, and false-identification outcomes. The public Profiles view emphasizes saved data and keeps future collection candidates behind an explicit disclosure. Partial reel coverage and pending reel-detail analysis are called out on the affected profile pages. No Instagram login, collector process, database, or server function is needed to serve it.
 
 ## Deploy on Vercel
 
@@ -18,4 +18,4 @@ npm run refresh
 
 `sync` copies the current catalog and the published collector outputs from the parent repository into `snapshot/`, records resolved outcomes from `bot-info/database/profiles/`, and refreshes thumbnails. `build` generates the static `dist/` site solely from `snapshot/`. Commit the refreshed snapshot to publish a new version. For a local preview, serve `dist` with any static file server, for example `npx serve dist`.
 
-The public preview includes the six full analysis records, `illmisguideyou` as profile-level complete with reel URLs pending individual detail analysis, and the 11 resolved records. Adding another profile requires extending the published profile list and checking its saved data before publishing it.
+The public preview includes an Overall tab with aggregate profile and reel statistics, the six full analysis records, `illmisguideyou` as profile-level complete with reel URLs pending individual detail analysis, and the 11 resolved records. The Profiles tab initially shows only those 18 public records; the remaining indexed candidates can be revealed from the future-candidates disclosure. Adding another profile requires extending the published profile list and checking its saved data before publishing it.

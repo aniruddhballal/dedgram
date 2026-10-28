@@ -3,17 +3,22 @@ if (catalogSearch) {
   const rows = [...document.querySelectorAll('[data-catalog-row]')];
   const count = document.querySelector('#catalog-count');
   const empty = document.querySelector('#catalog-empty');
+  const future = document.querySelector('[data-catalog-future]');
   const update = () => {
     const query = catalogSearch.value.trim().toLocaleLowerCase();
     let visible = 0;
     for (const row of rows) {
-      row.hidden = !row.textContent.toLocaleLowerCase().includes(query);
+      const hiddenFuture = future && row.closest('[data-catalog-future]') && !future.open;
+      row.hidden = hiddenFuture || !row.textContent.toLocaleLowerCase().includes(query);
       if (!row.hidden) visible++;
     }
     count.textContent = `${visible} profile${visible === 1 ? '' : 's'} shown`;
     empty.hidden = visible > 0;
   };
   catalogSearch.addEventListener('input', update);
+  future?.addEventListener('toggle', update);
+  if (location.hash === '#future' && future) future.open = true;
+  update();
 }
 
 const reelGrid = document.querySelector('#reel-grid');
