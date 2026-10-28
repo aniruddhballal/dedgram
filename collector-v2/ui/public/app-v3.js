@@ -45,14 +45,11 @@ function playNotificationSound(type) {
   } catch { /* Audio is optional; the visual popup remains the source of truth. */ }
 }
 
-function notify(message, type = 'info', duration = 7000) {
+function notify(message, type = 'info') {
   const id = `${Date.now()}-${Math.random().toString(36).slice(2)}`;
   state.popup = { id, message, type };
   playNotificationSound(type);
   render();
-  window.setTimeout(() => {
-    if (state.popup?.id === id) { state.popup = null; render(); }
-  }, duration);
 }
 
 function popupMarkup() {
@@ -77,7 +74,7 @@ function observeAsyncState() {
   const profile = state.detail;
   const job = profile?.username_job;
   if (profile?.username && job?.started_at) {
-    const key = `${profile.username}:${job.kind}:${job.started_at}`;
+    const key = `${job.kind}:${job.started_at}`;
     const previous = observed.usernameJobs.get(key);
     if (!previous) observed.usernameJobs.set(key, job.status);
     else if (previous === 'running' && job.status !== 'running') {
@@ -185,10 +182,10 @@ document.addEventListener('click', async (event) => {
   if (action === 'select-visible') { for (const profile of visibleCatalog(state)) state.selected.add(profile.username); saveSelection(); render(); return; }
   if (!['run-stage', 'run-filtered-stage', 'start', 'run-one', 'run-profile-stage', 'stop', 'check-username', 'apply-username-change'].includes(action)) return;
   state.busy = true; state.error = null; render();
-  if (action === 'check-username') notify('Username check started. Opening a saved reel...', 'info', 5000);
-  if (action === 'apply-username-change') notify('Username migration started. Fetching the current profile and preserving history...', 'info', 6000);
-  if (action === 'stop') notify('Stop requested. The current stage will finish first.', 'info', 6000);
-  if (action === 'start' || action === 'run-one' || action === 'run-filtered-stage' || action === 'run-profile-stage') notify('Collection started. Live progress is shown on this page.', 'info', 5000);
+  if (action === 'check-username') notify('Username check started. Opening a saved reel...');
+  if (action === 'apply-username-change') notify('Username migration started. Fetching the current profile and preserving history...');
+  if (action === 'stop') notify('Stop requested. The current stage will finish first.');
+  if (action === 'start' || action === 'run-one' || action === 'run-filtered-stage' || action === 'run-profile-stage') notify('Collection started. Live progress is shown on this page.');
   try {
     const usernameAction = action === 'check-username' || action === 'apply-username-change';
     const endpoint = action === 'stop' ? '/api/runs/stop' : action === 'check-username' ? '/api/username-check'
@@ -200,7 +197,8 @@ document.addEventListener('click', async (event) => {
       : filteredStageAction ? visibleCatalog(state).map((profile) => profile.username) : [...state.selected],
       mode: action === 'run-one' ? 'depth_first' : action === 'start' || filteredStageAction ? (filteredStageAction ? button.dataset.mode : state.mode) : button.dataset.mode,
       order: state.order };
-    await api(endpoint, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
+    const accepted = await api(endpoint, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
+    if (usernameAction && accepted?.started_at) observed.usernameJobs.set(`${accepted.kind}:${accepted.started_at}`, 'running');
     if (action === 'start' || action === 'run-one' || filteredStageAction) {
       state.setupStep = 'progress';
       sessionStorage.setItem(setupKey, 'progress');
