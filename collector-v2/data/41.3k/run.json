@@ -7,6 +7,12 @@
     "reel_grid"
   ],
   "current_url": null,
+  "account_status": "false_identification",
+  "false_identification": {
+    "identified_at": "2026-10-28T10:53:22.131Z",
+    "reason": "Manual review: @41.3k was marked as a false profile report and should not be treated as a confirmed account in the collection.",
+    "username_is_syntactically_valid": true
+  },
   "error": "reel grid: Grid made no progress for 60 seconds at scroll 13/963 with 0 reel links.",
   "progress": {
     "task": "reel_grid",

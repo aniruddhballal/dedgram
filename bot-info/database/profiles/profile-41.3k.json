@@ -1,0 +1,21 @@
+{
+  "url": "https://www.instagram.com/41.3k/",
+  "username": "41.3k",
+  "bio": "Not shown",
+  "country": "Not shown",
+  "date_joined": "Not shown",
+  "posts_count": "Not shown",
+  "status": "False identification",
+  "false_identification": {
+    "identified_at": "2026-10-28T10:53:22.131Z",
+    "reason": "Manual review: @41.3k was marked as a false profile report and should not be treated as a confirmed account in the collection.",
+    "username_is_syntactically_valid": true
+  },
+  "ignored": false,
+  "last_error": "Manual review marked this profile report as a false identification.",
+  "added_at": "2026-10-28T10:53:22.131Z",
+  "last_fetched_at": "2026-10-28T09:00:39.126Z",
+  "profile_text": "",
+  "about_text": "",
+  "catalog_first_seen_at": "2026-10-28T09:00:39.126Z"
+}
