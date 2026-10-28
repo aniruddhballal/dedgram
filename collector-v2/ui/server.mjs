@@ -229,6 +229,7 @@ const assets = new Map([
   ['/style.css', ['style.css', 'text/css; charset=utf-8']],
   ['/showcase.css', ['showcase.css', 'text/css; charset=utf-8']],
   ['/flow.css', ['flow.css', 'text/css; charset=utf-8']],
+  ['/dos.css', ['dos.css', 'text/css; charset=utf-8']],
   ['/favicon.svg', ['favicon.svg', 'image/svg+xml']]
 ]);
 
