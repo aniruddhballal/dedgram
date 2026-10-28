@@ -302,7 +302,8 @@ export function renderSelect(state) {
   const filteredStageMode = stageModeForFilter(state.filter);
   const filteredStageLabel = state.filter === 'profile_missing' ? 'profile details' : state.filter === 'reel_count_missing' ? 'reel URLs / count' : 'reel details';
   const canRunFilteredStage = filteredStageMode && visible.length && !running(state) && !state.busy && !state.readOnly;
-  return `${setupHeader(state, 'Choose profiles', 'Find and select the accounts you want to collect.')}
+  const landingActions = `<div class="setup-header-actions"><button class="button primary" data-action="setup-new">New collection</button>${state.batch ? '<button class="button secondary" data-action="setup-progress">View latest run →</button>' : ''}</div>`;
+  return `${setupHeader(state, 'Choose profiles', 'Find and select the accounts you want to collect.', landingActions)}
     ${usernameScanPanel(state)}
     <section class="flow-head"><div><span class="eyebrow">PROFILE CATALOG</span><h2>Pick a collection set</h2><p>Filter by the next missing stage, then run that stage or select the set for a combined depth-first or breadth-first run.</p></div><div class="flow-actions">${filteredStageMode ? `<button class="button primary" data-action="run-filtered-stage" data-mode="${filteredStageMode}" ${canRunFilteredStage ? '' : 'disabled'}>Run visible ${filteredStageLabel} (${number(visible.length)})</button>` : ''}<button class="button secondary" data-action="select-visible">Select visible</button><button class="button secondary" data-action="clear">Clear</button></div></section>
     <div class="setup-dock"><span><strong>${number(state.selected.size)}</strong> selected</span><button class="button primary" data-action="setup-next" ${state.selected.size ? '' : 'disabled'}>Continue to mode →</button></div>
