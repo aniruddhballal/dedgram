@@ -105,8 +105,8 @@ const overview = {
   reelDetails: completeReels.length,
   reelReview: reviewReels.length,
   posts: exactPostRows.reduce((sum, value) => sum + numberMetric(value), 0),
-  views: totalMetric(completeReels, 'views'),
-  viewsCovered: measuredMetric(completeReels, 'views').length,
+  views: totalMetric(publishedReelRows, 'views'),
+  viewsCovered: measuredMetric(publishedReelRows, 'views').length,
   likes: totalMetric(publishedReelRows, 'likes'),
   likesCovered: measuredMetric(publishedReelRows, 'likes').length,
   comments: totalMetric(publishedReelRows, 'comments'),
@@ -164,7 +164,7 @@ const overviewAccountRows = publishedSnapshotProfiles.map((username) => {
   const status = profileLevelSet.has(username) ? 'Profile level complete' : partialPublishedProfiles.has(username) ? 'Partial reel coverage' : 'Reel analysis complete';
   const reelLikes = metricTotal(items, 'reel', 'likes');
   const reelComments = metricTotal(items, 'reel', 'comments');
-  const reelViews = metricTotal(details.filter(isCompleteReel), 'reel', 'views');
+  const reelViews = metricTotal(items, 'reel', 'views');
   return `<tr><td><a href="../profiles/${username}/">@${esc(username)}</a><small class="cell-note">${esc(status)}</small></td><td>${esc(profile.account_based_in || 'Unavailable')}</td><td>${esc(profile.date_joined || 'Unavailable')}</td><td>${esc(metric(profile.posts_count))}</td><td>${fmt(reels.length)}</td><td>${fmt(handled)} / ${fmt(reels.length)}</td><td>${totalCell(reelLikes, 'Total reel likes')}</td><td>${totalCell(reelComments, 'Total reel comments')}</td><td>${totalCell(reelViews, 'Total reel views')}</td><td>${esc(metric(profile.followers_count))}</td></tr>`;
 }).join('');
 const deletedProfiles = resolvedProfiles.filter((username) => resolutions.profiles?.[username]?.status === 'Deleted or username changed');
