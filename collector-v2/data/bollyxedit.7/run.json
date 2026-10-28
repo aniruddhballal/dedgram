@@ -1,29 +1,23 @@
 {
   "started_at": "2026-10-28T11:36:59.741Z",
-  "updated_at": "2026-10-28T11:38:01.742Z",
-  "status": "running",
-  "phase": "item details",
+  "updated_at": "2026-10-28T11:38:34.451Z",
+  "status": "partial",
+  "phase": "done",
   "scope": [
     "reel"
   ],
-  "current_url": "https://www.instagram.com/reel/Deeh09HNwPH/",
+  "current_url": null,
   "error": null,
   "progress": {
     "task": "item_details",
     "label": "Reel details",
-    "action": "Extracting date, caption, views, likes and comments from the current reel",
-    "completed": 14,
+    "action": "Opening reel pages and extracting dates, captions, views, likes and comments",
+    "completed": 21,
     "total": 21,
-    "percent": 67,
-    "remaining": 7,
-    "current_item": {
-      "index": 15,
-      "total": 21,
-      "kind": "reel",
-      "shortcode": "Deeh09HNwPH",
-      "url": "https://www.instagram.com/reel/Deeh09HNwPH/"
-    },
-    "detail": "Opening reel Deeh09HNwPH",
-    "updated_at": "2026-10-28T11:38:01.739Z"
+    "percent": 100,
+    "remaining": 0,
+    "current_item": null,
+    "detail": "Stage finished with review required",
+    "updated_at": "2026-10-28T11:38:34.451Z"
   }
 }

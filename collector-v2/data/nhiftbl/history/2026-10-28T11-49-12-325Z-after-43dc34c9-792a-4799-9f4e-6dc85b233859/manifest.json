@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "username": "nhiftbl",
+  "phase": "after",
+  "snapshot_at": "2026-10-28T11:49:12.325Z",
+  "run_status": "partial",
+  "run_updated_at": "2026-10-28T11:49:12.315Z",
+  "profile_fetched_at": "2026-10-28T09:01:27.694Z",
+  "item_count": 29,
+  "complete_item_count": 27,
+  "discovery": {
+    "reel": {
+      "count": 29,
+      "complete": true,
+      "error": null,
+      "attempted_at": "2026-10-28T09:42:11.623Z"
+    }
+  }
+}

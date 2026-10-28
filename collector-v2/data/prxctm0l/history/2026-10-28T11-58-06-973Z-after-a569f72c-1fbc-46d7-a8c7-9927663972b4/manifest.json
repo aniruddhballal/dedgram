@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "username": "prxctm0l",
+  "phase": "after",
+  "snapshot_at": "2026-10-28T11:58:06.973Z",
+  "run_status": "partial",
+  "run_updated_at": "2026-10-28T11:58:06.963Z",
+  "profile_fetched_at": "2026-10-24T06:25:55.926Z",
+  "item_count": 32,
+  "complete_item_count": 18,
+  "discovery": {
+    "reel": {
+      "count": 32,
+      "complete": true,
+      "error": null,
+      "attempted_at": "2026-10-24T06:26:08.791Z"
+    }
+  }
+}

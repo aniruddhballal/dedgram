@@ -1,23 +1,23 @@
 {
-  "started_at": "2026-10-28T09:36:49.861Z",
-  "updated_at": "2026-10-28T09:37:04.488Z",
-  "status": "complete",
-  "phase": "done",
+  "started_at": "2026-10-28T12:04:13.053Z",
+  "updated_at": "2026-10-28T12:07:43.221Z",
+  "status": "running",
+  "phase": "item details",
   "scope": [
-    "reel_grid"
+    "reel"
   ],
   "current_url": null,
   "error": null,
   "progress": {
-    "task": "reel_grid",
-    "label": "Reel URL discovery",
-    "action": "Finding every reel URL in the profile grid",
-    "completed": 1,
-    "total": 1,
-    "percent": 100,
-    "remaining": 0,
+    "task": "item_details",
+    "label": "Reel details",
+    "action": "Opening reel pages and extracting dates, captions, views, likes and comments",
+    "completed": 9,
+    "total": 35,
+    "percent": 26,
+    "remaining": 26,
     "current_item": null,
-    "detail": "Stage complete",
-    "updated_at": "2026-10-28T09:37:04.489Z"
+    "detail": "9 of 35 reel pages processed",
+    "updated_at": "2026-10-28T12:07:43.221Z"
   }
 }

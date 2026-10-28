@@ -916,182 +916,182 @@
       }
     },
     "bollyxedit.7": {
-      "status": "running",
+      "status": "needs_review",
       "started_at": "2026-10-28T11:36:58.616Z",
-      "finished_at": null,
+      "finished_at": "2026-10-28T11:38:35.942Z",
       "error": null,
       "stages": {
         "reels": {
-          "status": "running",
+          "status": "needs_review",
           "started_at": "2026-10-28T11:36:58.616Z",
-          "finished_at": null,
+          "finished_at": "2026-10-28T11:38:35.942Z",
           "error": null
         }
       }
     },
     "pranto_harryson": {
-      "status": "queued",
-      "started_at": null,
-      "finished_at": null,
+      "status": "needs_review",
+      "started_at": "2026-10-28T11:38:35.948Z",
+      "finished_at": "2026-10-28T11:40:16.736Z",
       "error": null,
       "stages": {
         "reels": {
-          "status": "queued",
-          "started_at": null,
-          "finished_at": null,
+          "status": "needs_review",
+          "started_at": "2026-10-28T11:38:35.948Z",
+          "finished_at": "2026-10-28T11:40:16.736Z",
           "error": null
         }
       }
     },
     "crick_video_07": {
-      "status": "queued",
-      "started_at": null,
-      "finished_at": null,
+      "status": "complete",
+      "started_at": "2026-10-28T11:40:16.742Z",
+      "finished_at": "2026-10-28T11:41:53.164Z",
       "error": null,
       "stages": {
         "reels": {
-          "status": "queued",
-          "started_at": null,
-          "finished_at": null,
+          "status": "complete",
+          "started_at": "2026-10-28T11:40:16.742Z",
+          "finished_at": "2026-10-28T11:41:53.164Z",
           "error": null
         }
       }
     },
     "not.yourtyppee": {
-      "status": "queued",
-      "started_at": null,
-      "finished_at": null,
+      "status": "needs_review",
+      "started_at": "2026-10-28T11:41:53.169Z",
+      "finished_at": "2026-10-28T11:43:32.768Z",
       "error": null,
       "stages": {
         "reels": {
-          "status": "queued",
-          "started_at": null,
-          "finished_at": null,
+          "status": "needs_review",
+          "started_at": "2026-10-28T11:41:53.169Z",
+          "finished_at": "2026-10-28T11:43:32.768Z",
           "error": null
         }
       }
     },
     "hazelxpost": {
-      "status": "queued",
-      "started_at": null,
-      "finished_at": null,
+      "status": "needs_review",
+      "started_at": "2026-10-28T11:43:32.775Z",
+      "finished_at": "2026-10-28T11:45:16.189Z",
       "error": null,
       "stages": {
         "reels": {
-          "status": "queued",
-          "started_at": null,
-          "finished_at": null,
+          "status": "needs_review",
+          "started_at": "2026-10-28T11:43:32.775Z",
+          "finished_at": "2026-10-28T11:45:16.189Z",
           "error": null
         }
       }
     },
     "blunt.fun4": {
-      "status": "queued",
-      "started_at": null,
-      "finished_at": null,
+      "status": "complete",
+      "started_at": "2026-10-28T11:45:16.201Z",
+      "finished_at": "2026-10-28T11:47:04.071Z",
       "error": null,
       "stages": {
         "reels": {
-          "status": "queued",
-          "started_at": null,
-          "finished_at": null,
+          "status": "complete",
+          "started_at": "2026-10-28T11:45:16.201Z",
+          "finished_at": "2026-10-28T11:47:04.071Z",
           "error": null
         }
       }
     },
     "nhiftbl": {
-      "status": "queued",
-      "started_at": null,
-      "finished_at": null,
+      "status": "needs_review",
+      "started_at": "2026-10-28T11:47:04.076Z",
+      "finished_at": "2026-10-28T11:49:13.868Z",
       "error": null,
       "stages": {
         "reels": {
-          "status": "queued",
-          "started_at": null,
-          "finished_at": null,
+          "status": "needs_review",
+          "started_at": "2026-10-28T11:47:04.076Z",
+          "finished_at": "2026-10-28T11:49:13.868Z",
           "error": null
         }
       }
     },
     "madarameme0": {
-      "status": "queued",
-      "started_at": null,
-      "finished_at": null,
+      "status": "needs_review",
+      "started_at": "2026-10-28T11:49:13.873Z",
+      "finished_at": "2026-10-28T11:51:25.655Z",
       "error": null,
       "stages": {
         "reels": {
-          "status": "queued",
-          "started_at": null,
-          "finished_at": null,
+          "status": "needs_review",
+          "started_at": "2026-10-28T11:49:13.873Z",
+          "finished_at": "2026-10-28T11:51:25.655Z",
           "error": null
         }
       }
     },
     "jellyfish.m3mes": {
-      "status": "queued",
-      "started_at": null,
-      "finished_at": null,
+      "status": "needs_review",
+      "started_at": "2026-10-28T11:51:25.666Z",
+      "finished_at": "2026-10-28T11:53:34.088Z",
       "error": null,
       "stages": {
         "reels": {
-          "status": "queued",
-          "started_at": null,
-          "finished_at": null,
+          "status": "needs_review",
+          "started_at": "2026-10-28T11:51:25.666Z",
+          "finished_at": "2026-10-28T11:53:34.088Z",
           "error": null
         }
       }
     },
     "nastynigas": {
-      "status": "queued",
-      "started_at": null,
-      "finished_at": null,
+      "status": "needs_review",
+      "started_at": "2026-10-28T11:53:34.092Z",
+      "finished_at": "2026-10-28T11:55:48.193Z",
       "error": null,
       "stages": {
         "reels": {
-          "status": "queued",
-          "started_at": null,
-          "finished_at": null,
+          "status": "needs_review",
+          "started_at": "2026-10-28T11:53:34.092Z",
+          "finished_at": "2026-10-28T11:55:48.193Z",
           "error": null
         }
       }
     },
     "prxctm0l": {
-      "status": "queued",
-      "started_at": null,
-      "finished_at": null,
+      "status": "needs_review",
+      "started_at": "2026-10-28T11:55:48.198Z",
+      "finished_at": "2026-10-28T11:58:08.462Z",
       "error": null,
       "stages": {
         "reels": {
-          "status": "queued",
-          "started_at": null,
-          "finished_at": null,
+          "status": "needs_review",
+          "started_at": "2026-10-28T11:55:48.198Z",
+          "finished_at": "2026-10-28T11:58:08.462Z",
           "error": null
         }
       }
     },
     "pixa.300k": {
-      "status": "queued",
-      "started_at": null,
-      "finished_at": null,
+      "status": "needs_review",
+      "started_at": "2026-10-28T11:58:08.479Z",
+      "finished_at": "2026-10-28T12:04:11.899Z",
       "error": null,
       "stages": {
         "reels": {
-          "status": "queued",
-          "started_at": null,
-          "finished_at": null,
+          "status": "needs_review",
+          "started_at": "2026-10-28T11:58:08.479Z",
+          "finished_at": "2026-10-28T12:04:11.899Z",
           "error": null
         }
       }
     },
     "funny.exe07": {
-      "status": "queued",
-      "started_at": null,
+      "status": "running",
+      "started_at": "2026-10-28T12:04:11.911Z",
       "finished_at": null,
       "error": null,
       "stages": {
         "reels": {
-          "status": "queued",
-          "started_at": null,
+          "status": "running",
+          "started_at": "2026-10-28T12:04:11.911Z",
           "finished_at": null,
           "error": null
         }
@@ -2764,72 +2764,72 @@
       }
     }
   },
-  "current": "bollyxedit.7",
+  "current": "funny.exe07",
   "current_stage": "reels",
   "started_at": "2026-10-28T11:28:23.049Z",
-  "updated_at": "2026-10-28T11:36:58.616Z",
+  "updated_at": "2026-10-28T12:04:11.911Z",
   "finished_at": null,
   "stop_requested": false,
   "logs": [
-    "[17:03:51] 9: reel De0_hqEMSvm",
-    "[17:03:55] 10: reel De00yScMQut",
-    "[17:03:59] 11: reel De0c4mAsMvU",
-    "[17:04:03] 12: reel DezkgS_Tkxr",
-    "[17:04:07] 13: reel DezkNdgzAVe",
-    "[17:04:11] 14: reel Dezj-DrTq68",
-    "[17:04:16] 15: reel Dezjes_zY3W",
-    "[17:04:20] Saved after history snapshot: D:\\post engg\\dedgram\\collector-v2\\data\\extreme_laugh_07\\history\\2026-10-28T11-34-20-514Z-after-14e17085-d537-44d0-9d8c-eb9da7a3c6c7",
-    "[17:04:20] Done: 15 items. Report: D:\\post engg\\dedgram\\collector-v2\\data\\extreme_laugh_07\\report.html",
-    "Finished @extreme_laugh_07 reels: needs_review",
-    "Starting @scoobyjacks_ reels",
-    "[17:04:22] Saved before history snapshot: D:\\post engg\\dedgram\\collector-v2\\data\\scoobyjacks_\\history\\2026-10-28T11-34-22-885Z-before-9feed606-5f34-4a95-b2f0-5909d1f9c60c",
-    "[17:04:23] Using saved scoobyjacks_ profile details",
-    "[17:04:23] Using saved reel grid",
-    "[17:04:23] 1: reel Db9m5Sfzpo4",
-    "[17:04:27] 2: reel Db9m0BnzIjo",
-    "[17:04:31] 3: reel Db9my8OzJHT",
-    "[17:04:36] 4: reel Db9m1L8TpEy",
-    "[17:04:39] 5: reel Db8m5dUzc2T",
-    "[17:04:43] 6: reel Db8m4FsTXPP",
-    "[17:04:47] 7: reel Db8myIkzbDk",
-    "[17:04:52] 8: reel DbyYqQ1CUTJ",
-    "[17:04:56] 9: reel DbyYopuCUNT",
-    "[17:05:00] 10: reel DbyYm-zCWdd",
-    "[17:05:05] 11: reel DbyYe3gio_k",
-    "[17:05:09] 12: reel DbxCCyuCL0z",
-    "[17:05:13] 13: reel DbxCBJBCNao",
-    "[17:05:18] 14: reel DbxB_k9C7dG",
-    "[17:05:23] 15: reel DbxB-RUCJpn",
-    "[17:05:27] 16: reel DbxB8U9iHeS",
-    "[17:05:32] 17: reel Da-7WbgD5eW",
-    "[17:05:36] 18: reel DZY4b-pzLjB",
-    "[17:05:40] Saved after history snapshot: D:\\post engg\\dedgram\\collector-v2\\data\\scoobyjacks_\\history\\2026-10-28T11-35-40-764Z-after-7565fe14-2cd3-4d90-95e6-7f673e187651",
-    "[17:05:40] Done: 18 items. Report: D:\\post engg\\dedgram\\collector-v2\\data\\scoobyjacks_\\report.html",
-    "Finished @scoobyjacks_ reels: complete",
-    "Starting @damn_nigas reels",
-    "[17:05:43] Saved before history snapshot: D:\\post engg\\dedgram\\collector-v2\\data\\damn_nigas\\history\\2026-10-28T11-35-43-322Z-before-9b39edf1-b1f4-4086-a0fd-b86e83704726",
-    "[17:05:43] Using saved damn_nigas profile details",
-    "[17:05:43] Using saved reel grid",
-    "[17:05:43] 1: reel DfBGmYlojpA",
-    "[17:05:48] 2: reel DfBE2VNob99",
-    "[17:05:52] 3: reel DfBD0ZWIVNf",
-    "[17:05:56] 4: reel DfA2L6vRVW4",
-    "[17:06:00] 5: reel DfA1RrrRP6W",
-    "[17:06:04] 6: reel DfA0Re3ROg_",
-    "[17:06:08] 7: reel DfAdjLyReKy",
-    "[17:06:11] 8: reel DfAczk7RmZf",
-    "[17:06:15] 9: reel DfAb-9lxWOi",
-    "[17:06:20] 10: reel De_q7DeRYRv",
-    "[17:06:24] 11: reel De_p6RZNEbP",
-    "[17:06:28] 12: reel De_pWCdteBe",
-    "[17:06:32] 13: reel De-0f2-IbTd",
-    "[17:06:36] 14: reel De-zbraIz5w",
-    "[17:06:40] 15: reel De-fdYPokEW",
-    "[17:06:44] 16: reel De-PY8cx_9D",
-    "[17:06:48] 17: reel De-OUE7xQv_",
-    "[17:06:52] 18: reel De-MyC0xOcA",
-    "[17:06:57] Saved after history snapshot: D:\\post engg\\dedgram\\collector-v2\\data\\damn_nigas\\history\\2026-10-28T11-36-57-119Z-after-c2f3d573-6510-4334-a607-552eae791450",
-    "[17:06:57] Done: 18 items. Report: D:\\post engg\\dedgram\\collector-v2\\data\\damn_nigas\\report.html",
-    "Finished @damn_nigas reels: complete"
+    "[17:27:50] 29: reel Dd8mpONTATD",
+    "[17:27:54] 30: reel Dd8NCA-zQ9I",
+    "[17:27:59] 31: reel Dd7IVgoCxes",
+    "[17:28:03] 32: reel Dd7DG0zSYUt",
+    "[17:28:06] Saved after history snapshot: D:\\post engg\\dedgram\\collector-v2\\data\\prxctm0l\\history\\2026-10-28T11-58-06-973Z-after-a569f72c-1fbc-46d7-a8c7-9927663972b4",
+    "[17:28:06] Done: 32 items. Report: D:\\post engg\\dedgram\\collector-v2\\data\\prxctm0l\\report.html",
+    "Finished @prxctm0l reels: needs_review",
+    "Starting @pixa.300k reels",
+    "[17:28:09] Saved before history snapshot: D:\\post engg\\dedgram\\collector-v2\\data\\pixa.300k\\history\\2026-10-28T11-58-09-566Z-before-36724345-4604-4bc4-8a3f-0eeef296489b",
+    "[17:28:09] Using saved pixa.300k profile details",
+    "[17:28:10] Using saved reel grid",
+    "[17:28:10] 1: reel Db-8EIIzY-9",
+    "[17:28:16] 2: reel Db-8FENzkc_",
+    "[17:28:20] 3: reel Db-78V8zEPk",
+    "[17:28:24] 4: reel Db-71q0zV9T",
+    "[17:28:29] 5: reel Db-73JPzj9B",
+    "[17:28:33] 6: reel Db-7Q1fzMRS",
+    "[17:28:38] 7: reel Db-7GNvTL2h",
+    "[17:28:42] 8: reel Db-7DQBzJcV",
+    "[17:28:46] 9: reel Db-LNQqTYu1",
+    "[17:28:50] 10: reel Dbv8sl7zgkE",
+    "[17:28:54] 11: reel Dbv7h_GyoUO",
+    "[17:28:58] 12: reel Dbv7ZJkS5Hj",
+    "[17:29:02] 13: reel DbtNBpcygmg",
+    "[17:29:06] 14: reel Dbs8nHDyn4N",
+    "[17:29:10] 15: reel DbqUt5WTDNo",
+    "[17:29:14] 16: reel DbqUqZszqJO",
+    "[17:29:19] 17: reel DbqUnivz0yb",
+    "[17:29:23] 18: reel DbqT0cpzvF5",
+    "[17:29:28] 19: reel DboGIQIS8DS",
+    "[17:29:32] 20: reel DboF4rCyLaL",
+    "[17:29:37] 21: reel DboF01eS2Ds",
+    "[17:29:41] 22: reel DboAKnDyqUm",
+    "[17:29:45] 23: reel DbjP0_dzKi7",
+    "[17:30:06] Item issue: Instagram rendered an empty page.",
+    "[17:30:08] 24: reel DbjPaQJzWi-",
+    "[17:30:29] Item issue: Instagram rendered an empty page.",
+    "[17:30:31] 25: reel Dbg1Srkz6Gy",
+    "[17:30:52] Item issue: Instagram rendered an empty page.",
+    "[17:30:54] 26: reel DbgOq_my9hl",
+    "[17:31:15] Item issue: Instagram rendered an empty page.",
+    "[17:31:17] 27: reel Dbd7Qy0SmJG",
+    "[17:31:39] Item issue: Instagram rendered an empty page.",
+    "[17:31:40] 28: reel Dbdk5OYyhO9",
+    "[17:32:02] Item issue: Instagram rendered an empty page.",
+    "[17:32:03] 29: reel DbdkwzAyuR8",
+    "[17:32:25] Item issue: Instagram rendered an empty page.",
+    "[17:32:27] 30: reel DbdQzNBzR-6",
+    "[17:32:48] Item issue: Instagram rendered an empty page.",
+    "[17:32:50] 31: reel DbcjazGyXG9",
+    "[17:33:13] Item issue: Instagram rendered an empty page.",
+    "[17:33:14] 32: reel DbcgApEyHCZ",
+    "[17:33:36] Item issue: Instagram rendered an empty page.",
+    "[17:33:37] 33: reel DbbblxUS1-A",
+    "[17:33:45] Item issue: Instagram reports this page is unavailable.",
+    "[17:33:47] 34: reel DbbbNjGy2nY",
+    "[17:34:08] Item issue: Instagram rendered an empty page.",
+    "[17:34:10] Saved after history snapshot: D:\\post engg\\dedgram\\collector-v2\\data\\pixa.300k\\history\\2026-10-28T12-04-10-256Z-after-08ae59a5-e25a-4100-acf3-9e2c04177936",
+    "[17:34:10] Done: 34 items. Report: D:\\post engg\\dedgram\\collector-v2\\data\\pixa.300k\\report.html",
+    "Finished @pixa.300k reels: needs_review"
   ]
 }

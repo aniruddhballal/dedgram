@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "username": "pranto_harryson",
+  "phase": "before",
+  "snapshot_at": "2026-10-28T11:38:36.933Z",
+  "run_status": "complete",
+  "run_updated_at": "2026-10-23T16:18:07.277Z",
+  "profile_fetched_at": "2026-10-23T16:17:56.798Z",
+  "item_count": 0,
+  "complete_item_count": 0,
+  "discovery": {
+    "reel": {
+      "count": 22,
+      "complete": true,
+      "error": null,
+      "attempted_at": "2026-10-23T16:18:07.272Z"
+    }
+  }
+}

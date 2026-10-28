@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "username": "nastynigas",
+  "phase": "before",
+  "snapshot_at": "2026-10-28T11:53:35.189Z",
+  "run_status": "complete",
+  "run_updated_at": "2026-10-23T16:22:28.253Z",
+  "profile_fetched_at": "2026-10-23T16:22:14.374Z",
+  "item_count": 0,
+  "complete_item_count": 0,
+  "discovery": {
+    "reel": {
+      "count": 32,
+      "complete": true,
+      "error": null,
+      "attempted_at": "2026-10-23T16:22:28.246Z"
+    }
+  }
+}

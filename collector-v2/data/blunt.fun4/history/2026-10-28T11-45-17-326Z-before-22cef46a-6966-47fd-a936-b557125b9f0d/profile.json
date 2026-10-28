@@ -1,0 +1,104 @@
+{
+  "username": "blunt.fun4",
+  "url": "https://www.instagram.com/blunt.fun4/",
+  "fetched_at": "2026-10-28T09:03:18.670Z",
+  "display_name": null,
+  "bio": "有村架純が自分自身と向き合い、得た気づき。俳優業を通じて「自分とは何なんだろう」と向き合ってきた彼女が、自分自身を知ることの大切さや、最新作『さとこはいつも』 について語る。",
+  "posts_count": {
+    "value": 25,
+    "raw": "25",
+    "approximate": false
+  },
+  "posts_count_observed_at": "2026-10-28T09:03:18.670Z",
+  "followers_count": {
+    "value": 7446,
+    "raw": "7,446",
+    "approximate": false,
+    "source": "header_title"
+  },
+  "following_count": {
+    "value": 6,
+    "raw": "6",
+    "approximate": false,
+    "source": "header_text"
+  },
+  "count_evidence": {
+    "followers": {
+      "header": {
+        "value": 7446,
+        "raw": "7,446",
+        "approximate": false
+      },
+      "exact_title": {
+        "value": 7446,
+        "raw": "7,446",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 7478,
+        "raw": "7,478",
+        "approximate": false
+      }
+    },
+    "following": {
+      "header": {
+        "value": 6,
+        "raw": "6",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 6,
+        "raw": "6",
+        "approximate": false
+      },
+      "conflict": false
+    },
+    "posts": {
+      "header": {
+        "value": 25,
+        "raw": "25",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 25,
+        "raw": "25",
+        "approximate": false
+      }
+    }
+  },
+  "category": null,
+  "ai_generated_profile": true,
+  "profile_picture_url": "https://instagram.fblr1-6.fna.fbcdn.net/v/t51.82787-19/860589843_18122142791089655_3847354836667945808_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=1&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=oNS8hlS-Ye8Q7kNvwG8et2q&_nc_oc=AdrN7ei2mSoPsQjzxQOIeb-MYustCDsif4Lbm7--dxV-DgAxGtxQVNhQuul_hFaMny2A3EL9QklzRjCltpFmIVe6&_nc_zt=24&_nc_ht=instagram.fblr1-6.fna&_nc_gid=JXASY8wNedZIO3AOgg8Pkg&_nc_ss=7f6a8&oh=00_AQS12dWVXHgislmkqFjwhnqFp39JF4QgHaIPNUl00gmLHg&oe=6AE78F85",
+  "date_joined": "October 2026",
+  "account_based_in": "India",
+  "former_usernames_count": null,
+  "raw": {
+    "header_text": "blunt.fun4\n25 posts\n7,446 followers\n6 following\nAI-generated profile\n有村架純が自分自身と向き合い、得た気づき。俳優業を通じて「自分とは何なんだろう」と向き合ってきた彼女が、自分自身を知ることの大切さや、最新作『さとこはいつも』 について語る。\nFollow",
+    "about_text": "About this account\nblunt.fun4\n • AI-generated profile\nTo help keep our community authentic, we’re showing information about profiles on Instagram. See why this information is important.\nDate joined\nOctober 2026\nAccount based in\nIndia\nClose",
+    "description": "7,478 Followers, 6 Following, 25 Posts - @blunt.fun4 on Instagram: \"有村架純が自分自身と向き合い、得た気づき。俳優業を通じて「自分とは何なんだろう」と向き合ってきた彼女が、自分自身を知ることの大切さや、最新作『さとこはいつも』 について語る。\"",
+    "stat_evidence": {
+      "posts": {
+        "label": "",
+        "exact_title": ""
+      },
+      "followers": {
+        "label": "7,446 followers",
+        "exact_title": "7,446"
+      },
+      "following": {
+        "label": "6 following",
+        "exact_title": ""
+      }
+    }
+  },
+  "issues": [],
+  "current_username": "blunt.fun4",
+  "username_history": [
+    {
+      "username": "blunt.fun4",
+      "role": "current username",
+      "first_seen_at": "2026-10-28T09:03:18.667Z"
+    }
+  ],
+  "username_change_observed_at": null
+}
