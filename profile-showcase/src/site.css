@@ -58,7 +58,7 @@ main { max-width: 1360px; margin: auto; padding: 0 32px; }
 .panel-foot, .method-note { color: var(--muted); font-size: 11px; }
 .overview-table { padding-bottom: 80px; }
 .table-wrap { overflow-x: auto; border-top: 1px solid #000; }
-table { width: 100%; border-collapse: collapse; min-width: 720px; }
+table { width: 100%; border-collapse: collapse; min-width: 980px; }
 th, td { padding: 13px 12px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; font-size: 12px; }
 th { font-size: 9px; font-weight: 800; letter-spacing: .1em; white-space: nowrap; }
 td:first-child, th:first-child { padding-left: 0; }
@@ -66,6 +66,10 @@ td a { font-weight: 700; text-decoration: underline; text-underline-offset: 3px;
 .cell-note { display: block; margin-top: 3px; color: var(--muted); font-size: 10px; }
 .content-cell { display: flex; align-items: center; gap: 8px; }
 .method-note { margin: 0 0 70px; }
+.deleted-profile-section { margin-top: 30px; border-top: 1px solid #000; }
+.deleted-profile-section summary { display: flex; justify-content: space-between; gap: 20px; padding: 15px 0; cursor: pointer; font-size: 11px; font-weight: 760; text-transform: uppercase; letter-spacing: .08em; }
+.deleted-profile-section summary span:last-child { color: var(--muted); }
+.deleted-profile-section .table-wrap { border-top: 0; }
 .future-directory { grid-column: 1 / -1; margin: 18px 0 5px; border-top: 1px solid #000; padding-top: 17px; }
 .future-directory summary { cursor: pointer; width: fit-content; font-size: 11px; font-weight: 760; text-decoration: underline; text-underline-offset: 3px; }
 .future-directory summary::marker { font-size: 9px; }
