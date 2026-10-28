@@ -69,7 +69,9 @@ td a { font-weight: 700; text-decoration: underline; text-underline-offset: 3px;
 .deleted-profile-section { margin-top: 30px; border-top: 1px solid #000; }
 .deleted-profile-section summary { display: flex; justify-content: space-between; gap: 20px; padding: 15px 0; cursor: pointer; font-size: 11px; font-weight: 760; text-transform: uppercase; letter-spacing: .08em; }
 .deleted-profile-section summary span:last-child { color: var(--muted); }
+.deleted-table-note { margin: 0 0 12px; color: var(--muted); font-size: 11px; }
 .deleted-profile-section .table-wrap { border-top: 0; }
+.deleted-profile-section table { min-width: 760px; }
 .future-directory { grid-column: 1 / -1; margin: 18px 0 5px; border-top: 1px solid #000; padding-top: 17px; }
 .future-directory summary { cursor: pointer; width: fit-content; font-size: 11px; font-weight: 760; text-decoration: underline; text-underline-offset: 3px; }
 .future-directory summary::marker { font-size: 9px; }
