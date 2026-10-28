@@ -1,6 +1,5 @@
 import { api, esc } from './shared.js';
 import { steps, visibleCatalog, renderSelect, renderStage, renderReview, batchStrip } from './flow.js';
-import { reelsNeedWork } from './queue.js';
 import { renderProfile } from './profile-v3.js';
 import { renderOverview } from './overview.js';
 
@@ -105,24 +104,19 @@ document.addEventListener('click', async (event) => {
   }
   if (action === 'grid' || action === 'list') { state.layout = action; render(); return; }
   if (action === 'clear') { state.selected.clear(); saveSelection(); render(); return; }
-  if (action === 'select-reel-work') {
-    state.selected = new Set(state.catalog.filter(reelsNeedWork).map((profile) => profile.username));
-    state.search = ''; state.filter = 'reels_pending'; state.mode = 'reels_only'; state.order = 'reels_ascending';
-    saveSelection();
-    localStorage.setItem('dedgram-mode-v2', state.mode);
-    localStorage.setItem('dedgram-order-v2', state.order);
-    render(); return;
-  }
   if (action === 'select-visible') { for (const profile of visibleCatalog(state)) state.selected.add(profile.username); saveSelection(); render(); return; }
-  if (!['run-stage', 'start', 'run-one', 'run-profile-stage', 'stop'].includes(action)) return;
+  if (!['run-stage', 'run-filtered-stage', 'start', 'run-one', 'run-profile-stage', 'stop'].includes(action)) return;
   state.busy = true; state.error = null; render();
   try {
     const endpoint = action === 'stop' ? '/api/runs/stop' : '/api/runs';
     const profileAction = action === 'run-profile-stage';
-    const body = action === 'stop' ? {} : { profiles: action === 'run-one' || profileAction ? [button.dataset.username] : [...state.selected],
-      mode: action === 'run-one' ? 'depth_first' : action === 'start' ? state.mode : button.dataset.mode, order: state.order };
+    const filteredStageAction = action === 'run-filtered-stage';
+    const body = action === 'stop' ? {} : { profiles: action === 'run-one' || profileAction ? [button.dataset.username]
+      : filteredStageAction ? visibleCatalog(state).map((profile) => profile.username) : [...state.selected],
+      mode: action === 'run-one' ? 'depth_first' : action === 'start' || filteredStageAction ? (filteredStageAction ? button.dataset.mode : state.mode) : button.dataset.mode,
+      order: state.order };
     await api(endpoint, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
-    if (action === 'start' || action === 'run-one') {
+    if (action === 'start' || action === 'run-one' || filteredStageAction) {
       state.setupStep = 'progress';
       sessionStorage.setItem(setupKey, 'progress');
       window.scrollTo(0, 0);

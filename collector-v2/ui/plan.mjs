@@ -2,7 +2,7 @@ export const MODES = Object.freeze({
   profile_header: 'Profile details and post count',
   reel_grid: 'Reel URLs and count',
   reel_details: 'Reel details',
-  profile_only: 'Profile details only',
+  profile_only: 'Profile details and reel count',
   depth_first: 'Profile + reels, one account at a time',
   breadth_first: 'All profiles, then all reels',
   reels_only: 'Reels for saved profiles'

@@ -1,5 +1,5 @@
 import { badge, esc, gridLabel, number, profileHref, progress, statusText, time } from './shared.js';
-import { filteredCatalog, reelsNeedWork, runFailed } from './queue.js';
+import { filteredCatalog, filterOptions, stageModeForFilter } from './queue.js';
 
 export const steps = [
   { path: '/', label: 'Choose profiles', short: 'Select', number: '01' },
@@ -114,10 +114,10 @@ export function visibleCatalog(state) {
 }
 
 const modeOptions = [
-  ['profile_only', 'Profile details only', 'Collect account fields, the exact Instagram post count, and count the reel grid. Item details wait.'],
+  ['profile_only', 'Profile + reel count', 'Collect account fields, the exact Instagram post count, and the reel grid count. Individual reel details wait.'],
   ['depth_first', 'Profile + reels, depth first', 'Finish each account before moving to the next.'],
   ['breadth_first', 'Profile + reels, breadth first', "Collect every profile first, then every account's reels."],
-  ['reels_only', 'Reels only', 'Use saved profile details; collect and retry reels.']
+  ['reels_only', 'Reel details only', 'Use saved profile details and reel counts; collect or retry individual reels.']
 ];
 
 function strategy(state) {
@@ -210,14 +210,13 @@ export function renderSelect(state) {
   if (state.setupStep === 'review') return reviewStep(state);
   if (state.setupStep === 'progress') return progressStep(state);
   const visible = visibleCatalog(state);
-  const reelWorkCount = state.catalog.filter(reelsNeedWork).length;
-  const notReady = state.catalog.filter((profile) => !profile.profile_complete).length;
-  const notStarted = state.catalog.filter((profile) => profile.run.status === 'not_started').length;
-  const failedRuns = state.catalog.filter(runFailed).length;
+  const filteredStageMode = stageModeForFilter(state.filter);
+  const filteredStageLabel = state.filter === 'profile_missing' ? 'profile details' : state.filter === 'reel_count_missing' ? 'reel URLs / count' : 'reel details';
+  const canRunFilteredStage = filteredStageMode && visible.length && !running(state) && !state.busy && !state.readOnly;
   return `${setupHeader(state, 'Choose profiles', 'Find and select the accounts you want to collect.')}
-    <section class="flow-head"><div><span class="eyebrow">PROFILE CATALOG</span><h2>Pick a collection set</h2><p>Accounts come from the existing bot profile index.</p></div><div class="flow-actions"><button class="button secondary" data-action="select-reel-work" ${reelWorkCount ? '' : 'disabled'}>Select all reel work (${number(reelWorkCount)})</button><button class="button secondary" data-action="select-visible">Select visible</button><button class="button secondary" data-action="clear">Clear</button></div></section>
+    <section class="flow-head"><div><span class="eyebrow">PROFILE CATALOG</span><h2>Pick a collection set</h2><p>Filter by the next missing stage, then run that stage or select the set for a combined depth-first or breadth-first run.</p></div><div class="flow-actions">${filteredStageMode ? `<button class="button primary" data-action="run-filtered-stage" data-mode="${filteredStageMode}" ${canRunFilteredStage ? '' : 'disabled'}>Run visible ${filteredStageLabel} (${number(visible.length)})</button>` : ''}<button class="button secondary" data-action="select-visible">Select visible</button><button class="button secondary" data-action="clear">Clear</button></div></section>
     <div class="setup-dock"><span><strong>${number(state.selected.size)}</strong> selected</span><button class="button primary" data-action="setup-next" ${state.selected.size ? '' : 'disabled'}>Continue to mode →</button></div>
-     <div class="flow-filters"><label>SEARCH PROFILES<input id="catalog-search" type="search" placeholder="Username, country, category, bio" value="${esc(state.search)}"></label><label>SHOW<select id="catalog-filter" aria-label="Filter profiles"><option value="all" ${state.filter === 'all' ? 'selected' : ''}>All profiles</option><option value="uncollected" ${state.filter === 'uncollected' ? 'selected' : ''}>Profile not ready (${number(notReady)})</option><option value="not_started" ${state.filter === 'not_started' ? 'selected' : ''}>Not run yet (${number(notStarted)})</option><option value="run_failed" ${state.filter === 'run_failed' ? 'selected' : ''}>Run failed / blocked (${number(failedRuns)})</option><option value="collected" ${state.filter === 'collected' ? 'selected' : ''}>Profile details ready</option><option value="reels_pending" ${state.filter === 'reels_pending' ? 'selected' : ''}>Reels incomplete</option><option value="review" ${state.filter === 'review' ? 'selected' : ''}>Needs review</option></select></label><div class="flow-layout" role="group" aria-label="Profile layout"><button data-action="grid" class="${state.layout === 'grid' ? 'current' : ''}" aria-label="Grid view" aria-pressed="${state.layout === 'grid'}">▦</button><button data-action="list" class="${state.layout === 'list' ? 'current' : ''}" aria-label="List view" aria-pressed="${state.layout === 'list'}">☰</button></div></div>
+     <div class="flow-filters"><label>SEARCH PROFILES<input id="catalog-search" type="search" placeholder="Username, country, category, bio" value="${esc(state.search)}"></label><label>SHOW<select id="catalog-filter" aria-label="Filter profiles">${filterOptions(state)}</select></label><div class="flow-layout" role="group" aria-label="Profile layout"><button data-action="grid" class="${state.layout === 'grid' ? 'current' : ''}" aria-label="Grid view" aria-pressed="${state.layout === 'grid'}">▦</button><button data-action="list" class="${state.layout === 'list' ? 'current' : ''}" aria-label="List view" aria-pressed="${state.layout === 'list'}">☰</button></div></div>
     <div class="flow-list-title"><span>SHOWING ${number(visible.length)} OF ${number(state.catalog.length)} PROFILES</span><span>${number(state.selected.size)} SELECTED</span></div>
     <div class="flow-profile-list ${state.layout === 'list' ? 'list-layout' : ''}">${visible.map((profile) => {
       const checked = state.selected.has(profile.username);

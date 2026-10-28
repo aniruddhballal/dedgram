@@ -79,13 +79,15 @@ document.addEventListener('click', async (event) => {
   if (action === 'grid' || action === 'list') { state.layout = action; render(); return; }
   if (action === 'clear') { state.selected.clear(); saveSelection(); render(); return; }
   if (action === 'select-visible') { for (const profile of filteredCatalog(state)) state.selected.add(profile.username); saveSelection(); render(); return; }
-  if (action === 'start' || action === 'run-one' || action === 'run-profile-stage' || action === 'stop') {
+  if (action === 'start' || action === 'run-filtered-stage' || action === 'run-one' || action === 'run-profile-stage' || action === 'stop') {
     state.busy = true; state.error = null; render();
     try {
-      if (action === 'start' || action === 'run-one' || action === 'run-profile-stage') {
+      if (action === 'start' || action === 'run-filtered-stage' || action === 'run-one' || action === 'run-profile-stage') {
         const profileAction = action === 'run-profile-stage';
-        const profiles = action === 'run-one' || profileAction ? [button.dataset.username] : [...state.selected];
-        const mode = action === 'run-one' ? 'depth_first' : profileAction ? button.dataset.mode : state.mode;
+        const filteredStageAction = action === 'run-filtered-stage';
+        const profiles = action === 'run-one' || profileAction ? [button.dataset.username]
+          : filteredStageAction ? filteredCatalog(state).map((profile) => profile.username) : [...state.selected];
+        const mode = action === 'run-one' ? 'depth_first' : profileAction || filteredStageAction ? button.dataset.mode : state.mode;
         await api('/api/runs', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ profiles, mode, order: state.order }) });
       }
       else await api('/api/runs/stop', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: '{}' });

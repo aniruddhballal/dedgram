@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { orderProfiles, resultStatus, stepsFor } from './plan.mjs';
-import { filteredCatalog, reelsNeedWork } from './public/queue.js';
+import { filteredCatalog, profileDetailsReady, reelCountReady, reelDetailsComplete, reelsNeedWork } from './public/queue.js';
 
 const selected = ['alpha', 'beta'];
 const labels = (mode) => stepsFor(selected, mode).map(({ username, stage }) => `${username}:${stage}`);
@@ -49,17 +49,31 @@ test('reel work includes only ready profiles with pending or reviewable reel det
     { username: 'profile_pending', profile_complete: false, reels: { discovered: 5, processed: 2, review: 0 } }
   ];
   assert.deepEqual(profiles.filter(reelsNeedWork).map(({ username }) => username), ['pending', 'review']);
-  assert.deepEqual(filteredCatalog({ catalog: profiles, search: '', filter: 'reels_pending' }).map(({ username }) => username),
+  assert.deepEqual(filteredCatalog({ catalog: profiles, search: '', filter: 'reel_count_ready' }).map(({ username }) => username),
     ['pending', 'review']);
 });
 
-test('catalog filters distinguish profiles not run from failed or blocked runs', () => {
+test('catalog filters expose the next missing collection stage', () => {
   const profiles = [
-    { username: 'never', run: { status: 'not_started' } },
-    { username: 'blocked', run: { status: 'blocked' } },
-    { username: 'failed', run: { status: 'failed' } },
-    { username: 'complete', run: { status: 'complete' } }
+    { username: 'profile_missing', profile_header_complete: false, posts_count: null, profile_complete: false, run: { status: 'not_started' }, reels: { processed: 0, review: 0 } },
+    { username: 'count_missing', profile_header_complete: true, posts_count: 10, profile_complete: false, run: { status: 'complete' }, reels: { processed: 0, review: 0 } },
+    { username: 'details_pending', profile_header_complete: true, posts_count: 10, profile_complete: true, reels: { discovered: 5, processed: 2, review: 0 }, run: { status: 'complete' } },
+    { username: 'details_complete', profile_header_complete: true, posts_count: 10, profile_complete: true, reels: { discovered: 5, processed: 5, review: 0 }, run: { status: 'complete' } },
+    { username: 'resolved', account_status: 'deleted', profile_header_complete: false, posts_count: null, profile_complete: false, run: { status: 'complete' }, reels: { processed: 0, review: 0 } },
+    { username: 'failed', profile_header_complete: false, posts_count: null, profile_complete: false, run: { status: 'failed' }, reels: { processed: 0, review: 0 } }
   ];
-  assert.deepEqual(filteredCatalog({ catalog: profiles, search: '', filter: 'not_started' }).map(({ username }) => username), ['never']);
-  assert.deepEqual(filteredCatalog({ catalog: profiles, search: '', filter: 'run_failed' }).map(({ username }) => username), ['blocked', 'failed']);
+  assert.deepEqual(filteredCatalog({ catalog: profiles, search: '', filter: 'profile_missing' }).map(({ username }) => username), ['profile_missing', 'failed']);
+  assert.deepEqual(filteredCatalog({ catalog: profiles, search: '', filter: 'reel_count_missing' }).map(({ username }) => username), ['count_missing']);
+  assert.deepEqual(filteredCatalog({ catalog: profiles, search: '', filter: 'reel_count_ready' }).map(({ username }) => username), ['details_pending']);
+  assert.deepEqual(filteredCatalog({ catalog: profiles, search: '', filter: 'reel_details_complete' }).map(({ username }) => username), ['details_complete']);
+  assert.deepEqual(filteredCatalog({ catalog: profiles, search: '', filter: 'resolved' }).map(({ username }) => username), ['resolved']);
+  assert.deepEqual(filteredCatalog({ catalog: profiles, search: '', filter: 'review' }).map(({ username }) => username), ['failed']);
+});
+
+test('stage readiness helpers map directly to the three collection stages', () => {
+  const profile = { profile_header_complete: true, posts_count: 10, profile_complete: true,
+    reels: { grid_complete: true, discovered: 2, processed: 2, review: 0 } };
+  assert.equal(profileDetailsReady(profile), true);
+  assert.equal(reelCountReady(profile), true);
+  assert.equal(reelDetailsComplete(profile), true);
 });
