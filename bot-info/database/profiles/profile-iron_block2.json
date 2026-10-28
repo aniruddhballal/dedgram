@@ -1,0 +1,24 @@
+{
+  "url": "https://www.instagram.com/iron_block2/",
+  "username": "iron_block2",
+  "bio": "Not shown",
+  "country": "Not shown",
+  "date_joined": "Not shown",
+  "posts_count": "Not shown",
+  "status": "Age restricted",
+  "account_status_observed_at": "2026-10-28T09:04:23.903Z",
+  "age_restriction": {
+    "minimum_age": 25,
+    "after_classified_at": "2026-10-28T09:03:50.899Z",
+    "before_initial_blocked_or_failed_at": "2026-10-28T09:04:23.903Z",
+    "exact_timestamp_known": false
+  },
+  "minimum_age": 25,
+  "ignored": false,
+  "last_error": "Instagram did not show the profile header.",
+  "added_at": "2026-10-28T09:03:50.899Z",
+  "last_fetched_at": "2026-10-28T09:03:50.899Z",
+  "profile_text": "Instagram did not show the profile header.",
+  "about_text": "",
+  "catalog_first_seen_at": "2026-10-28T09:03:50.899Z"
+}

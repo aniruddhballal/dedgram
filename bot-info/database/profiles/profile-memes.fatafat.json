@@ -1,0 +1,23 @@
+{
+  "url": "https://www.instagram.com/memes.fatafat/",
+  "username": "memes.fatafat",
+  "bio": "Not shown",
+  "country": "Not shown",
+  "date_joined": "Not shown",
+  "posts_count": "Not shown",
+  "status": "Deleted or username changed",
+  "resolution_note": "The original username was unavailable during the latest profile-level collection. The account may have been deleted or the username may have changed.",
+  "account_status_observed_at": "2026-10-28T09:04:28.520Z",
+  "deletion_date_range": {
+    "after_classified_at": "2026-10-28T09:04:26.095Z",
+    "before_first_unavailable_at": "2026-10-28T09:04:28.520Z",
+    "exact_timestamp_known": false
+  },
+  "ignored": false,
+  "last_error": "Instagram reports this page is unavailable.",
+  "added_at": "2026-10-28T09:04:26.095Z",
+  "last_fetched_at": "2026-10-28T09:04:26.095Z",
+  "profile_text": "Instagram reports this page is unavailable.",
+  "about_text": "",
+  "catalog_first_seen_at": "2026-10-28T09:04:26.095Z"
+}

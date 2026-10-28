@@ -7,6 +7,13 @@
     "profile"
   ],
   "current_url": null,
+  "account_status": "deleted",
+  "account_status_observed_at": "2026-10-28T09:01:48.412Z",
+  "deletion_date_range": {
+    "after_classified_at": "2026-10-28T09:01:45.958Z",
+    "before_first_unavailable_at": "2026-10-28T09:01:48.412Z",
+    "exact_timestamp_known": false
+  },
   "error": "Instagram reports this page is unavailable.",
   "progress": {
     "task": "profile",

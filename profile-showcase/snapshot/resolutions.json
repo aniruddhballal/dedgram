@@ -233,6 +233,133 @@
       },
       "resolution_note": null,
       "reason": "Instagram reports that this profile is unavailable."
+    },
+    "short_vibesz": {
+      "username": "short_vibesz",
+      "status": "Deleted or username changed",
+      "observed_at": "2026-10-28T09:01:32.870Z",
+      "last_fetched_at": "2026-10-28T09:01:29.666Z",
+      "profile_text": "Instagram reports this page is unavailable.",
+      "bio": "Not shown",
+      "country": "Not shown",
+      "date_joined": "Not shown",
+      "posts_count": "Not shown",
+      "deletion_date_range": {
+        "after_classified_at": "2026-10-28T09:01:29.666Z",
+        "before_first_unavailable_at": "2026-10-28T09:01:32.870Z",
+        "exact_timestamp_known": false
+      },
+      "age_restriction": null,
+      "minimum_age": null,
+      "false_identification": null,
+      "resolution_note": "The original username was unavailable during the latest profile-level collection. The account may have been deleted or the username may have changed.",
+      "reason": "Instagram reports this page is unavailable."
+    },
+    "oooiway": {
+      "username": "oooiway",
+      "status": "Deleted or username changed",
+      "observed_at": "2026-10-28T09:01:44.217Z",
+      "last_fetched_at": "2026-10-28T09:01:40.988Z",
+      "profile_text": "Instagram reports this page is unavailable.",
+      "bio": "Not shown",
+      "country": "Not shown",
+      "date_joined": "Not shown",
+      "posts_count": "Not shown",
+      "deletion_date_range": {
+        "after_classified_at": "2026-10-28T09:01:40.988Z",
+        "before_first_unavailable_at": "2026-10-28T09:01:44.217Z",
+        "exact_timestamp_known": false
+      },
+      "age_restriction": null,
+      "minimum_age": null,
+      "false_identification": null,
+      "resolution_note": "The original username was unavailable during the latest profile-level collection. The account may have been deleted or the username may have changed.",
+      "reason": "Instagram reports this page is unavailable."
+    },
+    "zuxxie.pov": {
+      "username": "zuxxie.pov",
+      "status": "Deleted or username changed",
+      "observed_at": "2026-10-28T09:01:48.412Z",
+      "last_fetched_at": "2026-10-28T09:01:45.958Z",
+      "profile_text": "Instagram reports this page is unavailable.",
+      "bio": "Not shown",
+      "country": "Not shown",
+      "date_joined": "Not shown",
+      "posts_count": "Not shown",
+      "deletion_date_range": {
+        "after_classified_at": "2026-10-28T09:01:45.958Z",
+        "before_first_unavailable_at": "2026-10-28T09:01:48.412Z",
+        "exact_timestamp_known": false
+      },
+      "age_restriction": null,
+      "minimum_age": null,
+      "false_identification": null,
+      "resolution_note": "The original username was unavailable during the latest profile-level collection. The account may have been deleted or the username may have changed.",
+      "reason": "Instagram reports this page is unavailable."
+    },
+    "extreme.laugh8": {
+      "username": "extreme.laugh8",
+      "status": "Deleted or username changed",
+      "observed_at": "2026-10-28T09:01:52.812Z",
+      "last_fetched_at": "2026-10-28T09:01:50.102Z",
+      "profile_text": "Instagram reports this page is unavailable.",
+      "bio": "Not shown",
+      "country": "Not shown",
+      "date_joined": "Not shown",
+      "posts_count": "Not shown",
+      "deletion_date_range": {
+        "after_classified_at": "2026-10-28T09:01:50.102Z",
+        "before_first_unavailable_at": "2026-10-28T09:01:52.812Z",
+        "exact_timestamp_known": false
+      },
+      "age_restriction": null,
+      "minimum_age": null,
+      "false_identification": null,
+      "resolution_note": "The original username was unavailable during the latest profile-level collection. The account may have been deleted or the username may have changed.",
+      "reason": "Instagram reports this page is unavailable."
+    },
+    "iron_block2": {
+      "username": "iron_block2",
+      "status": "Age restricted",
+      "observed_at": "2026-10-28T09:04:23.903Z",
+      "last_fetched_at": "2026-10-28T09:03:50.899Z",
+      "profile_text": "Instagram did not show the profile header.",
+      "bio": "Not shown",
+      "country": "Not shown",
+      "date_joined": "Not shown",
+      "posts_count": "Not shown",
+      "deletion_date_range": null,
+      "age_restriction": {
+        "minimum_age": 25,
+        "after_classified_at": "2026-10-28T09:03:50.899Z",
+        "before_initial_blocked_or_failed_at": "2026-10-28T09:04:23.903Z",
+        "exact_timestamp_known": false
+      },
+      "minimum_age": 25,
+      "false_identification": null,
+      "resolution_note": null,
+      "reason": "Instagram did not show the profile header."
+    },
+    "memes.fatafat": {
+      "username": "memes.fatafat",
+      "status": "Deleted or username changed",
+      "observed_at": "2026-10-28T09:04:28.520Z",
+      "last_fetched_at": "2026-10-28T09:04:26.095Z",
+      "profile_text": "Instagram reports this page is unavailable.",
+      "bio": "Not shown",
+      "country": "Not shown",
+      "date_joined": "Not shown",
+      "posts_count": "Not shown",
+      "deletion_date_range": {
+        "after_classified_at": "2026-10-28T09:04:26.095Z",
+        "before_first_unavailable_at": "2026-10-28T09:04:28.520Z",
+        "exact_timestamp_known": false
+      },
+      "age_restriction": null,
+      "minimum_age": null,
+      "false_identification": null,
+      "resolution_note": "The original username was unavailable during the latest profile-level collection. The account may have been deleted or the username may have changed.",
+      "reason": "Instagram reports this page is unavailable."
     }
   }
 }
