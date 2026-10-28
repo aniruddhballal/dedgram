@@ -160,11 +160,12 @@ const overviewAccountRows = publishedSnapshotProfiles.map((username) => {
   const reels = discovery.reel.items || [];
   const details = items.filter((item) => item.kind === 'reel');
   const complete = details.filter(isCompleteReel).length;
+  const handled = details.filter((item) => isCompleteReel(item) || isResolvedReel(item)).length;
   const status = profileLevelSet.has(username) ? 'Profile level complete' : partialPublishedProfiles.has(username) ? 'Partial reel coverage' : 'Reel analysis complete';
   const reelLikes = metricTotal(items, 'reel', 'likes');
   const reelComments = metricTotal(items, 'reel', 'comments');
   const reelViews = metricTotal(details.filter(isCompleteReel), 'reel', 'views');
-  return `<tr><td><a href="../profiles/${username}/">@${esc(username)}</a><small class="cell-note">${esc(status)}</small></td><td>${esc(profile.account_based_in || 'Unavailable')}</td><td>${esc(profile.date_joined || 'Unavailable')}</td><td>${esc(metric(profile.posts_count))}</td><td>${fmt(reels.length)}</td><td>${fmt(complete)} / ${fmt(reels.length)}</td><td>${totalCell(reelLikes, 'Total reel likes')}</td><td>${totalCell(reelComments, 'Total reel comments')}</td><td>${totalCell(reelViews, 'Total reel views')}</td><td>${esc(metric(profile.followers_count))}</td></tr>`;
+  return `<tr><td><a href="../profiles/${username}/">@${esc(username)}</a><small class="cell-note">${esc(status)}</small></td><td>${esc(profile.account_based_in || 'Unavailable')}</td><td>${esc(profile.date_joined || 'Unavailable')}</td><td>${esc(metric(profile.posts_count))}</td><td>${fmt(reels.length)}</td><td>${fmt(handled)} / ${fmt(reels.length)}</td><td>${totalCell(reelLikes, 'Total reel likes')}</td><td>${totalCell(reelComments, 'Total reel comments')}</td><td>${totalCell(reelViews, 'Total reel views')}</td><td>${esc(metric(profile.followers_count))}</td></tr>`;
 }).join('');
 const deletedProfiles = resolvedProfiles.filter((username) => resolutions.profiles?.[username]?.status === 'Deleted or username changed');
 const ageRestrictedProfiles = resolvedProfiles.filter((username) => resolutions.profiles?.[username]?.status === 'Age restricted');
