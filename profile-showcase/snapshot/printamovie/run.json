@@ -1,11 +1,29 @@
 {
   "started_at": "2026-10-24T09:25:57.310Z",
-  "updated_at": "2026-10-24T09:32:44.964Z",
-  "status": "partial",
+  "updated_at": "2026-10-28T11:19:28.691Z",
+  "status": "complete",
   "phase": "done",
   "scope": [
     "reel"
   ],
   "current_url": null,
-  "error": null
+  "error": null,
+  "manual_review": {
+    "operation": "manual reel review",
+    "performed_at": "2026-10-28T11:19:28.691Z",
+    "resolved_items": [
+      {
+        "shortcode": "DewckqaBBJ0",
+        "resolution": "date_completed"
+      },
+      {
+        "shortcode": "DetiSDHBBtb",
+        "resolution": "metrics_completed"
+      },
+      {
+        "shortcode": "DepDEFtB_AY",
+        "resolution": "metrics_completed"
+      }
+    ]
+  }
 }
