@@ -163,6 +163,7 @@ a.profile-internal:hover .row-title strong { text-decoration: underline; text-un
 .reel-index { top: 7px; }
 .reel-status { bottom: 7px; }
 .reel-status.review { background: #000; color: #fff; }
+.reel-status.resolved { background: #fff; color: #000; border: 1px solid #000; }
 .reel-content { min-width: 0; padding-left: 16px; }
 .reel-top { display: flex; align-items: start; justify-content: space-between; gap: 8px; }
 .reel-date { color: var(--muted); font-size: 10px; }

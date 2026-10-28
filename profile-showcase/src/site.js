@@ -38,7 +38,10 @@ if (reelGrid) {
     reelGrid.replaceChildren(...ordered);
     let visible = 0;
     for (const card of ordered) {
-      const matchesStatus = filter.value === 'all' || (filter.value === 'review' ? card.dataset.status !== 'complete' : card.dataset.status === 'complete');
+      const matchesStatus = filter.value === 'all'
+        || (filter.value === 'complete' ? card.dataset.status === 'complete'
+          : filter.value === 'resolved' ? ['archived', 'age_restricted'].includes(card.dataset.status)
+            : !['complete', 'archived', 'age_restricted'].includes(card.dataset.status));
       card.hidden = !matchesStatus || !card.textContent.toLocaleLowerCase().includes(query);
       if (!card.hidden) visible++;
     }

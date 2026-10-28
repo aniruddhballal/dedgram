@@ -141,10 +141,19 @@
     "url": "https://www.instagram.com/reel/De1Jk4IRtIP/",
     "grid_views_raw": "150",
     "grid_views_issue": null,
-    "status": "failed",
-    "last_error": "Instagram reports this page is unavailable.",
-    "last_attempt_at": "2026-10-24T09:20:54.555Z",
-    "attempts": 1
+    "status": "archived",
+    "last_error": null,
+    "last_attempt_at": "2026-10-28T11:03:55.862Z",
+    "attempts": 1,
+    "manual_observation": {
+      "source": "manual_review",
+      "observed_at": "2026-10-28T11:03:55.862Z",
+      "resolution": "deleted_or_archived",
+      "reason": "User manually confirmed that the saved reel is no longer available and should be treated as deleted or archived."
+    },
+    "fetched_at": "2026-10-28T11:03:55.862Z",
+    "missing": [],
+    "missing_reasons": {}
   },
   {
     "kind": "reel",
@@ -1709,34 +1718,38 @@
     "url": "https://www.instagram.com/reel/DejpZ6nostn/",
     "grid_views_raw": null,
     "grid_views_issue": "Sensitive Content overlay hides the profile grid view label; the reel page showed no readable view count.",
-    "status": "partial",
-    "fetched_at": "2026-10-24T09:23:25.106Z",
+    "status": "age_restricted",
+    "fetched_at": "2026-10-28T11:03:55.862Z",
     "date": "2026-10-16",
     "date_precision": "day",
     "caption": "コービー・ブライアントはNBAの伝説的選手。\n5度のNBA優勝、18回のオールスター選出を達成。\n「Mamba Mentality」は、努力と諦めない精神の象徴。\n🐍🏀",
     "hashtags": [],
     "mentions": [],
     "likes": {
-      "value": 484000,
-      "raw": "484K",
-      "approximate": true,
-      "source": "og_description"
+      "value": 484068,
+      "raw": "484,068",
+      "approximate": false,
+      "source": "manual_user_details",
+      "observed_at": "2026-10-28T11:03:55.862Z"
     },
     "comments": {
-      "value": 6963,
-      "raw": "6,963",
+      "value": 6960,
+      "raw": "6,960",
       "approximate": false,
-      "source": "og_description"
+      "source": "manual_user_details",
+      "observed_at": "2026-10-28T11:03:55.862Z"
     },
-    "views": null,
+    "views": {
+      "value": 8656811,
+      "raw": "8,656,811",
+      "approximate": false,
+      "source": "manual_user_details",
+      "observed_at": "2026-10-28T11:03:55.862Z"
+    },
     "thumbnail_url": "https://instagram.fblr1-7.fna.fbcdn.net/v/t51.82787-15/848804810_18077360840569933_181750827494485691_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=kxZ5aKNxaDEQ7kNvwHbzlqo&_nc_oc=AdrIdToXeqP9cPCRSkzgedQe69vtv0mmOtt0cek9V0cUjpbfI239SrX58y6-7_INxGgCLi8w2xOrD-rXmO-sFmv7&_nc_zt=23&_nc_ht=instagram.fblr1-7.fna&_nc_gid=tJux5hJ1SEXkBelseEsmFQ&_nc_ss=7f6a8&oh=00_AQPbetFVPgr_zqgQpd3sKyDgbepTNhWIH8ukM2JYZwLv3w&oe=6AE23D77&ig_cache_key=MDJSQVF6QnNxN2x6SUhRemxBQUUzMFlJOEhhcldGQXJzdWNTWTpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
-    "missing": [
-      "views"
-    ],
-    "missing_reasons": {
-      "views": "Sensitive Content overlay hides the profile grid view label; the reel page showed no readable view count."
-    },
+    "missing": [],
+    "missing_reasons": {},
     "raw": {
       "description": "484K likes, 6,963 comments - pichypeapp on October 16, 2026: \"コービー・ブライアントはNBAの伝説的選手。\n5度のNBA優勝、18回のオールスター選出を達成。\n「Mamba Mentality」は、努力と諦めない精神の象徴。\n🐍🏀\". ",
       "article_text": "pichypeapp\n•\nFollow\nコービー・ブライアントはNBAの伝説的選手。\n5度のNBA優勝、18回のオールスター選出を達成。\n「Mamba Mentality」は、努力と諦めない精神の象徴。\n🐍🏀\nSensitive Content\nThis video contains content that some people may find upsetting.\nSee why\nSee reel\n483K\n6,963\n17.5K\nkrystinatasker\n•\nFollow\nUsher · Hey Daddy (Daddy's Home) (feat. Plies)\nUsher · Hey Daddy (Daddy's Home) (feat. Plies)\nI need 24 hours to recover 🤯🥹 ACKNOWLEDGE HIM! 👆🏻\n\n#streetfighter #romanreigns #tribalchief #akuma #wwe\n598K\n2,720\n5,965",
@@ -1744,7 +1757,34 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-24T09:23:25.106Z"
+    "last_attempt_at": "2026-10-28T11:03:55.862Z",
+    "reposts": {
+      "value": 17500,
+      "raw": "17.5K",
+      "approximate": true,
+      "source": "manual_user_details",
+      "observed_at": "2026-10-28T11:03:55.862Z"
+    },
+    "shares": {
+      "value": 273000,
+      "raw": "273K",
+      "approximate": true,
+      "source": "manual_user_details",
+      "observed_at": "2026-10-28T11:03:55.862Z"
+    },
+    "saves": {
+      "value": 43200,
+      "raw": "43.2K",
+      "approximate": true,
+      "source": "manual_user_details",
+      "observed_at": "2026-10-28T11:03:55.862Z"
+    },
+    "manual_observation": {
+      "source": "manual_user_details",
+      "observed_at": "2026-10-28T11:03:55.862Z",
+      "resolution": "age_restricted",
+      "reason": "Sensitive-content restriction prevented the normal collector from reading the reel details; engagement values were supplied manually by the user."
+    }
   },
   {
     "kind": "reel",
