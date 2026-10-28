@@ -61,10 +61,27 @@ const completeReels = publishedReelRows.filter((item) => item.status === 'comple
 const reviewReels = publishedReelRows.filter((item) => item.status !== 'complete' || item.last_error);
 const totalMetric = (rows, key) => rows.reduce((sum, row) => sum + (numberMetric(row[key]) || 0), 0);
 const measuredMetric = (rows, key) => rows.filter((row) => numberMetric(row[key]) !== null);
+const compactTotal = (value) => {
+  if (!Number.isFinite(value)) return 'Unavailable';
+  const units = [[1e12, 'tn'], [1e9, 'bn'], [1e6, 'mn'], [1e3, 'k']];
+  const unit = units.find(([threshold]) => value >= threshold);
+  if (!unit) return fmt(value);
+  const scaled = value / unit[0];
+  const decimals = scaled >= 100 ? 0 : scaled >= 10 ? 1 : 2;
+  return `${Number(scaled.toFixed(decimals))}${unit[1]}`;
+};
 const metricTotal = (rows, kind, key) => {
   const measured = rows.filter((row) => row.kind === kind && numberMetric(row[key]) !== null);
-  return measured.length ? fmt(totalMetric(measured, key)) : 'Unavailable';
+  if (!measured.length) return { display: 'Unavailable', actual: 'Unavailable', title: 'No saved value is available.' };
+  const total = totalMetric(measured, key);
+  const approximate = measured.some((row) => row[key]?.approximate);
+  return {
+    display: compactTotal(total),
+    actual: fmt(total),
+    title: `Full stored total: ${fmt(total)}${approximate ? ' · Some source labels were abbreviated by Instagram.' : ''}`
+  };
 };
+const totalCell = (summary, label) => `<span class="compact-total" title="${esc(summary.title)}" aria-label="${esc(`${label}: ${summary.actual}`)}">${esc(summary.display)}</span>`;
 const countValues = (values) => Object.entries(values.reduce((counts, value) => {
   if (value) counts[value] = (counts[value] || 0) + 1;
   return counts;
@@ -89,7 +106,10 @@ const overview = {
   likes: totalMetric(publishedReelRows, 'likes'),
   likesCovered: measuredMetric(publishedReelRows, 'likes').length,
   comments: totalMetric(publishedReelRows, 'comments'),
-  commentsCovered: measuredMetric(publishedReelRows, 'comments').length
+  commentsCovered: measuredMetric(publishedReelRows, 'comments').length,
+  viewsApproximate: measuredMetric(publishedReelRows, 'views').some((item) => item.views.approximate),
+  likesApproximate: measuredMetric(publishedReelRows, 'likes').some((item) => item.likes.approximate),
+  commentsApproximate: measuredMetric(publishedReelRows, 'comments').some((item) => item.comments.approximate)
 };
 
 function shell({ title, description, base, active, profileKey, content }) {
@@ -137,7 +157,10 @@ const overviewAccountRows = publishedSnapshotProfiles.map((username) => {
   const details = items.filter((item) => item.kind === 'reel');
   const complete = details.filter((item) => item.status === 'complete' && !item.last_error).length;
   const status = profileLevelSet.has(username) ? 'Profile level complete' : partialPublishedProfiles.has(username) ? 'Partial reel coverage' : 'Reel analysis complete';
-  return `<tr><td><a href="../profiles/${username}/">@${esc(username)}</a><small class="cell-note">${esc(status)}</small></td><td>${esc(profile.account_based_in || 'Unavailable')}</td><td>${esc(profile.date_joined || 'Unavailable')}</td><td>${esc(metric(profile.posts_count))}</td><td>${fmt(reels.length)}</td><td>${fmt(complete)} / ${fmt(reels.length)}</td><td>${metricTotal(items, 'reel', 'likes')}</td><td>${metricTotal(items, 'reel', 'comments')}</td><td>${metricTotal(items, 'reel', 'views')}</td><td>${esc(metric(profile.followers_count))}</td></tr>`;
+  const reelLikes = metricTotal(items, 'reel', 'likes');
+  const reelComments = metricTotal(items, 'reel', 'comments');
+  const reelViews = metricTotal(items, 'reel', 'views');
+  return `<tr><td><a href="../profiles/${username}/">@${esc(username)}</a><small class="cell-note">${esc(status)}</small></td><td>${esc(profile.account_based_in || 'Unavailable')}</td><td>${esc(profile.date_joined || 'Unavailable')}</td><td>${esc(metric(profile.posts_count))}</td><td>${fmt(reels.length)}</td><td>${fmt(complete)} / ${fmt(reels.length)}</td><td>${totalCell(reelLikes, 'Total reel likes')}</td><td>${totalCell(reelComments, 'Total reel comments')}</td><td>${totalCell(reelViews, 'Total reel views')}</td><td>${esc(metric(profile.followers_count))}</td></tr>`;
 }).join('');
 const deletedProfiles = resolvedProfiles.filter((username) => resolutions.profiles?.[username]?.status === 'Deleted account');
 const ageRestrictedProfiles = resolvedProfiles.filter((username) => resolutions.profiles?.[username]?.status === 'Age restricted');
@@ -165,7 +188,8 @@ const overviewReelRows = (await Promise.all(topReels.map(async (item) => {
 const overviewHtml = shell({ title: 'Overview · deadgram atlas', description: 'Overall statistics for the completed deadgram public snapshot.', base: '../', active: 'overview', content: `
   <section class="hero overview-hero"><div class="hero-copy"><div class="eyebrow">COLLECTION OVERVIEW / PUBLIC SNAPSHOT</div><h1>The whole picture,<br><em>one reel at a time.</em></h1><p>These totals reflect the research records currently available on the public site. Uncollected candidates stay out of the first view until you choose to reveal them.</p><div class="hero-actions"><a class="button primary" href="../">View published profiles</a><a class="button secondary" href="../#future">Show future candidates</a></div></div><div class="hero-count" aria-label="${fmt(overview.publicRecords)} public records"><strong>${String(overview.publicRecords).padStart(2, '0')}</strong><span>PUBLIC RECORDS</span></div></section>
   <section class="stat-strip overview-stat-strip" aria-label="Overall collection statistics"><div><span>PROFILES WITH DATA</span><strong>${fmt(overview.profileRecords)}</strong><small>Saved profile information</small></div><div><span>REELS FOUND</span><strong>${fmt(overview.reelUrls)}</strong><small>Reels found on profile pages</small></div><div><span>REELS ANALYZED</span><strong>${fmt(overview.reelDetails)}</strong><small>Full reel information captured</small></div><div><span>PARTIALLY ANALYZED</span><strong>${fmt(overview.reelReview)}</strong><small>Reels with some information missing</small></div><div><span>ACCOUNT STATUS CONFIRMED</span><strong>${fmt(overview.resolvedRecords)}</strong><small>Finished account outcomes</small></div></section>
-  <section class="stat-strip overview-stat-strip secondary-stats" aria-label="Collected metrics"><div><span>INSTAGRAM POSTS</span><strong>${fmt(overview.posts)}</strong><small>${fmt(overview.profileRecords)} profiles with saved counts</small></div><div><span>TOTAL REEL VIEWS</span><strong>${fmt(overview.views)}</strong><small>${fmt(overview.viewsCovered)} reels with readable views</small></div><div><span>TOTAL REEL LIKES</span><strong>${fmt(overview.likes)}</strong><small>${fmt(overview.likesCovered)} reels with readable likes</small></div><div><span>NEXT TO ANALYZE</span><strong>${fmt(overview.nearTerm)}</strong><small>Published profiles with more work queued</small></div></section>
+  <section class="metric-note"><span class="overline">ACTUAL STORED NUMBERS</span><h2>Engagement totals are not rounded estimates</h2><p>They are the values stored from the collected reel records. Hover over a compact total to see the full stored number.</p></section>
+  <section class="stat-strip overview-stat-strip secondary-stats" aria-label="Collected metrics"><div><span>INSTAGRAM POSTS</span><strong>${fmt(overview.posts)}</strong><small>${fmt(overview.profileRecords)} profiles with saved counts</small></div><div><span>TOTAL REEL VIEWS</span><strong class="compact-total" title="Full stored total: ${fmt(overview.views)}${overview.viewsApproximate ? ' · Some source labels were abbreviated by Instagram.' : ''}" aria-label="Total reel views: ${fmt(overview.views)}">${compactTotal(overview.views)}</strong><small>${fmt(overview.viewsCovered)} reels with readable views</small></div><div><span>TOTAL REEL LIKES</span><strong class="compact-total" title="Full stored total: ${fmt(overview.likes)}${overview.likesApproximate ? ' · Some source labels were abbreviated by Instagram.' : ''}" aria-label="Total reel likes: ${fmt(overview.likes)}">${compactTotal(overview.likes)}</strong><small>${fmt(overview.likesCovered)} reels with readable likes</small></div><div><span>TOTAL REEL COMMENTS</span><strong class="compact-total" title="Full stored total: ${fmt(overview.comments)}${overview.commentsApproximate ? ' · Some source labels were abbreviated by Instagram.' : ''}" aria-label="Total reel comments: ${fmt(overview.comments)}">${compactTotal(overview.comments)}</strong><small>${fmt(overview.commentsCovered)} reels with readable comments</small></div><div><span>NEXT TO ANALYZE</span><strong>${fmt(overview.nearTerm)}</strong><small>Published profiles with more work queued</small></div></section>
   <section class="overview-grid"><div class="overview-panel"><span class="overline">PROFILE MAP</span><h2>Accounts by country</h2>${overviewBars(countryRows, overview.profileRecords)}</div><div class="overview-panel"><span class="overline">REEL LANGUAGE</span><h2>Frequent hashtags</h2>${overviewBars(hashtagRows, completeReels.length)}<p class="panel-foot">From completed reel captions.</p></div></section>
   <section class="overview-table"><div class="section-head"><div><span class="overline">ANALYZED PROFILES</span><h2>Profile performance</h2><p>This table contains saved profile information and reel analysis. The post figure is the profile’s total post count; individual posts are not analyzed.</p></div></div><div class="table-wrap"><table><thead><tr><th>PROFILE</th><th>COUNTRY</th><th>JOINED INSTAGRAM</th><th>POSTS</th><th>REELS FOUND</th><th>REELS ANALYZED</th><th>TOTAL REEL LIKES</th><th>TOTAL REEL COMMENTS</th><th>TOTAL REEL VIEWS</th><th>FOLLOWERS</th></tr></thead><tbody>${overviewAccountRows}</tbody></table></div></section>
   <section class="status-panels" aria-label="Profiles excluded from analysis"><div class="status-intro"><span class="overline">PROFILES NO LONGER AVAILABLE FOR ANALYSIS</span><p>These profiles were available during the initial scan. They were later found to be deleted, age-restricted, or incorrectly identified, so they are kept as status records and excluded from the analysis totals below.</p></div><div class="status-panel-grid"><section class="status-panel"><span class="overline">DELETED PROFILES</span><h3>Later found unavailable</h3><p>Collected first, then flagged when the Instagram profile was no longer available.</p><div class="table-wrap"><table><thead><tr><th>USERNAME</th><th>COLLECTED ON</th><th>FLAGGED AS POSSIBLY DELETED</th></tr></thead><tbody>${overviewDeletedRows}</tbody></table></div></section><section class="status-panel"><span class="overline">AGE-RESTRICTED PROFILES</span><h3>Later became age-restricted</h3><p>Collected first, then found behind Instagram’s age restriction.</p><div class="table-wrap"><table><thead><tr><th>USERNAME</th><th>AGE REQUIREMENT</th><th>COLLECTED ON</th><th>FLAGGED AS AGE-RESTRICTED</th></tr></thead><tbody>${overviewAgeRestrictedRows}</tbody></table></div></section><section class="status-panel status-panel-full"><span class="overline">FALSE IDENTIFICATION</span><h3>Removed from the analysis set</h3><p>This capture did not provide enough evidence that the username represented a real Instagram profile.</p><div class="table-wrap"><table><thead><tr><th>USERNAME</th><th>COLLECTED ON</th><th>FLAGGED AS FALSE IDENTIFICATION</th><th>REASON</th></tr></thead><tbody>${overviewFalseIdentificationRows}</tbody></table></div></section></div></section>
