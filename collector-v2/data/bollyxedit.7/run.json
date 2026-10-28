@@ -1,29 +1,29 @@
 {
   "started_at": "2026-10-28T11:36:59.741Z",
-  "updated_at": "2026-10-28T11:37:53.134Z",
+  "updated_at": "2026-10-28T11:38:01.742Z",
   "status": "running",
   "phase": "item details",
   "scope": [
     "reel"
   ],
-  "current_url": "https://www.instagram.com/reel/DegV8asNXMA/",
+  "current_url": "https://www.instagram.com/reel/Deeh09HNwPH/",
   "error": null,
   "progress": {
     "task": "item_details",
     "label": "Reel details",
     "action": "Extracting date, caption, views, likes and comments from the current reel",
-    "completed": 12,
+    "completed": 14,
     "total": 21,
-    "percent": 57,
-    "remaining": 9,
+    "percent": 67,
+    "remaining": 7,
     "current_item": {
-      "index": 13,
+      "index": 15,
       "total": 21,
       "kind": "reel",
-      "shortcode": "DegV8asNXMA",
-      "url": "https://www.instagram.com/reel/DegV8asNXMA/"
+      "shortcode": "Deeh09HNwPH",
+      "url": "https://www.instagram.com/reel/Deeh09HNwPH/"
     },
-    "detail": "Opening reel DegV8asNXMA",
-    "updated_at": "2026-10-28T11:37:53.131Z"
+    "detail": "Opening reel Deeh09HNwPH",
+    "updated_at": "2026-10-28T11:38:01.739Z"
   }
 }
