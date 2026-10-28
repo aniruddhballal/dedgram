@@ -114,11 +114,12 @@ document.addEventListener('click', async (event) => {
     render(); return;
   }
   if (action === 'select-visible') { for (const profile of visibleCatalog(state)) state.selected.add(profile.username); saveSelection(); render(); return; }
-  if (!['run-stage', 'start', 'run-one', 'stop'].includes(action)) return;
+  if (!['run-stage', 'start', 'run-one', 'run-profile-stage', 'stop'].includes(action)) return;
   state.busy = true; state.error = null; render();
   try {
     const endpoint = action === 'stop' ? '/api/runs/stop' : '/api/runs';
-    const body = action === 'stop' ? {} : { profiles: action === 'run-one' ? [button.dataset.username] : [...state.selected],
+    const profileAction = action === 'run-profile-stage';
+    const body = action === 'stop' ? {} : { profiles: action === 'run-one' || profileAction ? [button.dataset.username] : [...state.selected],
       mode: action === 'run-one' ? 'depth_first' : action === 'start' ? state.mode : button.dataset.mode, order: state.order };
     await api(endpoint, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
     if (action === 'start' || action === 'run-one') {

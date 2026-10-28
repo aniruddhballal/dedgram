@@ -65,6 +65,9 @@ Outputs are under tracked `data/edlt.shox/`:
 | `items.csv` | Analysis friendly flat export. |
 | `profile.csv` | One row of account fields, the exact Instagram post count, reel grid count, and count errors for analysis. |
 | `report.html` | Standalone local review page. Open it directly in a browser. |
+| `history/<timestamp>-<phase>-<id>/` | Immutable `before` and `after` snapshots of the profile, discovery, items, and run files for each rerun, plus a manifest summary. |
+
+Each rerun keeps immutable before/after snapshots under `history/`, so the live JSON files remain the current merged view while the history preserves counts and fields over time. A failed or blocked rerun does not erase the previous profile snapshot; its after snapshot records the failure state alongside the preserved data.
 
 Counts shown in Instagram as `K` or `M` are marked `approximate` and retain the original label. The HTML report shows the supplied view and like labels, including `K` or `M` when Instagram used them. `items.csv` keeps numeric estimates in `views` and `likes` and the supplied labels in `views_displayed` and `likes_displayed`. A grid refresh updates view labels in existing reel records and records when they were observed. A missing field is `null` and listed in `missing`; it is not turned into zero. A preview limited by a login wall is marked incomplete. Existing values survive a retry that temporarily cannot read the same field.
 

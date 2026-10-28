@@ -28,6 +28,7 @@ export function renderProfile(state) {
   const review = data.items.filter((item) => !!reviewReason(item));
   const rows = filteredItems(state);
   const batchResult = state.batch?.results?.[p.username];
+  const runDisabled = state.busy || state.readOnly || state.batch?.status === 'running';
   const reportStatus = p.account_status === 'false_identification' ? 'false_identification' : p.account_status === 'age_restricted' ? 'age_restricted' : p.account_status === 'deleted' ? 'deleted' : p.profile_header_complete && !p.profile_complete && p.run.status === 'complete'
     ? 'counts_pending' : batchResult?.status || p.run.status;
   return `${errorBanner(state.error)}<div class="breadcrumbs"><a href="/">Collection</a><span>/</span><span>@${esc(p.username)}</span></div>
@@ -35,6 +36,7 @@ export function renderProfile(state) {
       <div><span class="eyebrow">PROFILE REPORT</span><h1>@${esc(p.username)}</h1><p>${esc(p.display_name || p.category || 'Instagram profile')}</p>
         <div class="detail-links">${badge(reportStatus)}<a href="${esc(p.url)}" target="_blank" rel="noopener noreferrer">Instagram ↗</a><a href="${reportHref(p.username)}" target="_blank" rel="noopener noreferrer">HTML report ↗</a></div></div></div>
       <div class="detail-note"><span>LAST SCAN</span><strong>${esc(time(p.run.updated_at || p.profile_fetched_at))}</strong><small>${esc(p.run.phase || 'Awaiting first run')}</small></div></section>
+    <div class="detail-actions"><button class="button secondary" data-action="run-profile-stage" data-username="${esc(p.username)}" data-mode="profile_header" ${runDisabled ? 'disabled' : ''}>Rerun profile details</button><button class="button secondary" data-action="run-profile-stage" data-username="${esc(p.username)}" data-mode="reel_grid" ${runDisabled ? 'disabled' : ''}>Rerun reel URLs</button><button class="button secondary" data-action="run-profile-stage" data-username="${esc(p.username)}" data-mode="reel_details" ${runDisabled ? 'disabled' : ''}>Rerun reel details</button><button class="button primary" data-action="run-profile-stage" data-username="${esc(p.username)}" data-mode="depth_first" ${runDisabled ? 'disabled' : ''}>Rerun all</button></div>
     <section class="stat-grid detail-stats"><div class="stat"><span>FOLLOWERS</span><strong>${esc(metric(p.followers))}</strong><small>${p.followers?.approximate ? 'Displayed estimate' : 'Exact when available'}</small></div>
       <div class="stat"><span>FOLLOWING</span><strong>${esc(metric(p.following))}</strong><small>Visible profile header</small></div>
       <div class="stat"><span>REELS IN GRID</span><strong>${gridLabel(p.reels, p.run)}</strong><small>${p.reels.grid_complete ? `${p.reels.processed} item details scanned · ${p.reels.review} review` : p.run.status === 'running' && p.run.phase === 'reel discovery' ? 'Grid scan in progress' : esc(p.reels.grid_error)}</small></div>

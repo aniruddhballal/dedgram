@@ -31,6 +31,7 @@ export function paths(root, username) {
   const base = join(root, 'data', username);
   return {
     base,
+    history: join(base, 'history'),
     profile: join(base, 'profile.json'),
     discovery: join(base, 'discovery.json'),
     items: join(base, 'items.json'),
@@ -39,6 +40,36 @@ export function paths(root, username) {
     csv: join(base, 'items.csv'),
     profileCsv: join(base, 'profile.csv')
   };
+}
+
+export async function writeSnapshot(pathSet, { username, phase, snapshotAt, profile, discovery, items, run }) {
+  const observedAt = snapshotAt || new Date().toISOString();
+  const directory = join(pathSet.history, `${observedAt.replace(/[:.]/g, '-')}-${phase}-${randomUUID()}`);
+  const savedItems = Array.isArray(items) ? items : [];
+  const savedDiscovery = discovery && typeof discovery === 'object' ? discovery : {};
+  const manifest = {
+    schema_version: 1,
+    username,
+    phase,
+    snapshot_at: observedAt,
+    run_status: run?.status || null,
+    run_updated_at: run?.updated_at || null,
+    profile_fetched_at: profile?.fetched_at || null,
+    item_count: savedItems.length,
+    complete_item_count: savedItems.filter((item) => item.status === 'complete').length,
+    discovery: Object.fromEntries(Object.entries(savedDiscovery).map(([kind, value]) => [kind, {
+      count: Array.isArray(value?.items) ? value.items.length : 0,
+      complete: value?.complete ?? false,
+      error: value?.error || null,
+      attempted_at: value?.attempted_at || null
+    }]))
+  };
+  await writeJson(join(directory, 'profile.json'), profile ?? null);
+  await writeJson(join(directory, 'discovery.json'), savedDiscovery);
+  await writeJson(join(directory, 'items.json'), savedItems);
+  await writeJson(join(directory, 'run.json'), run || {});
+  await writeJson(join(directory, 'manifest.json'), manifest);
+  return directory;
 }
 
 export function mergeItem(previous, current) {

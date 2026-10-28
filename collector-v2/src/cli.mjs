@@ -5,7 +5,7 @@ import { execFile } from 'node:child_process';
 import { promisify } from 'node:util';
 import { launch, captureProfile, discover, captureItem } from './browser.mjs';
 import { dayFromDescription, exactPostCount, gridCount, gridCountError, itemFromSnapshot, now, postCountError, profileFromSnapshot, profileHeaderComplete, profileLevelComplete } from './model.mjs';
-import { paths, readJson, writeJson, mergeDiscoveryItems, mergeItem, mergeProfile, syncGridViews } from './store.mjs';
+import { paths, readJson, writeJson, writeSnapshot, mergeDiscoveryItems, mergeItem, mergeProfile, syncGridViews } from './store.mjs';
 import { writeReport } from './report.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
@@ -36,6 +36,15 @@ async function report() {
   const data = await files();
   await writeReport(path, data.profile, data.discovery, data.items, data.run);
   log(`Wrote ${path.report} and ${path.csv}`);
+}
+
+async function snapshot(phase, data) {
+  try {
+    const directory = await writeSnapshot(path, { username, phase, ...data });
+    log(`Saved ${phase} history snapshot: ${directory}`);
+  } catch (error) {
+    log(`Could not save ${phase} history snapshot: ${error.message}`);
+  }
 }
 
 async function status() {
@@ -106,6 +115,8 @@ async function collect() {
   if (!Number.isInteger(limit) && limit !== Infinity || limit < 0) throw new Error('--limit must be a nonnegative integer.');
   let { profile, discovery, items, run } = await files();
   if (skipProfile && !profileLevelComplete(profile, discovery)) throw new Error(`Collect an exact @${username} post count and a complete reel count before running reels only.`);
+  const hadPreviousState = profile !== null || items.length > 0 || Object.keys(discovery).length > 0 || Object.keys(run).length > 0;
+  if (hadPreviousState) await snapshot('before', { profile, discovery, items, run });
   let corrected = false;
   items = items.map((item) => {
     const day = item.date_precision === 'day' ? dayFromDescription(item.raw?.description) : null;
@@ -202,6 +213,7 @@ async function collect() {
         ? postCountError(profile) || 'Profile header counts are incomplete.' : null) };
     await writeJson(path.run, run);
     await writeReport(path, profile, discovery, items, run);
+    await snapshot('after', { profile, discovery, items, run });
     log(headerOnly ? `Done: Instagram posts ${exactPostCount(profile) ?? `error (${postCountError(profile)})`}. Report: ${path.report}`
       : reelGridOnly ? `Done: reel URLs ${gridCount(discovery.reel) ?? `error (${gridCountError(discovery.reel)})`}. Report: ${path.report}`
       : profileOnly ? `Done: Instagram posts ${exactPostCount(profile) ?? `error (${postCountError(profile)})`}, reels ${gridCount(discovery.reel) ?? `error (${gridCountError(discovery.reel)})`}. Report: ${path.report}`
@@ -212,6 +224,7 @@ async function collect() {
     catch (saveError) { log(`Could not save failure status: ${saveError.message}`); }
     try { await writeReport(path, profile, discovery, items, run); }
     catch (saveError) { log(`Could not save failure report: ${saveError.message}`); }
+    await snapshot('after', { profile, discovery, items, run });
     throw error;
   } finally { if (context) await context.close(); }
 }
