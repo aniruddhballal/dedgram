@@ -1105,10 +1105,10 @@
     "url": "https://www.instagram.com/reel/DewckqaBBJ0/",
     "grid_views_raw": "60.1K",
     "grid_views_issue": null,
-    "status": "partial",
-    "fetched_at": "2026-10-24T09:27:43.343Z",
-    "date": null,
-    "date_precision": null,
+    "status": "complete",
+    "fetched_at": "2026-10-28T11:19:28.691Z",
+    "date": "2026-10-21",
+    "date_precision": "day",
     "caption": null,
     "hashtags": [],
     "mentions": [],
@@ -1132,12 +1132,8 @@
     },
     "thumbnail_url": "https://instagram.fblr24-4.fna.fbcdn.net/v/t51.71878-15/858779590_1057080827292146_7472410778476937101_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=L9gTHd5-SgkQ7kNvwHnnu6N&_nc_oc=AdoPvleoXKM_zm2v_lSdHOcFwXc5Rj6YCIiLMb4pzrym9f4kFEoP0ucSi8doI1C1ILom4Tms1uuH9IsJ80JEMH-l&_nc_zt=23&_nc_ht=instagram.fblr24-4.fna&_nc_gid=ewOteBLXX5ddURYLuo2eVw&_nc_ss=7f6a8&oh=00_AQNlTWcfbTDAOErk8NI8-oEPYgGVAKxSg6rE102BQ6GcWQ&oe=6AE232DA&ig_cache_key=MDJSQVF6QnNidkx6TUhhTUVEQVBLcE5jOEhBMWF6WjQzLTZqSTpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
-    "missing": [
-      "date"
-    ],
-    "missing_reasons": {
-      "date": "No readable timestamp or calendar date was found on the content page or in its metadata."
-    },
+    "missing": [],
+    "missing_reasons": {},
     "raw": {
       "description": "4,247 likes, 28 comments - printamovie on October 21, 2026",
       "article_text": "printamovie\n•\nFollow\n• AI-generated profile\n4,247\n28\n247\ntruptivish\n•\nFollow\npure ♥️✨\n253K\n893\n2,134",
@@ -1145,7 +1141,13 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-24T09:27:43.344Z"
+    "last_attempt_at": "2026-10-28T11:19:28.691Z",
+    "manual_observation": {
+      "source": "manual_user_details",
+      "observed_at": "2026-10-28T11:19:28.691Z",
+      "resolution": "manual_completion",
+      "reason": "The reel was posted seven days before the manual review date; its calendar date was recorded manually."
+    }
   },
   {
     "kind": "reel",
@@ -2121,33 +2123,38 @@
     "url": "https://www.instagram.com/reel/DetiSDHBBtb/",
     "grid_views_raw": "648K",
     "grid_views_issue": null,
-    "status": "partial",
-    "fetched_at": "2026-10-24T09:29:20.344Z",
-    "date": null,
-    "date_precision": null,
+    "status": "complete",
+    "fetched_at": "2026-10-28T11:19:28.691Z",
+    "date": "2026-10-20",
+    "date_precision": "day",
     "caption": "「TVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開！」",
     "hashtags": [],
     "mentions": [],
-    "likes": null,
-    "comments": null,
+    "likes": {
+      "value": 25151,
+      "raw": "25,151",
+      "approximate": false,
+      "source": "manual_user_details",
+      "observed_at": "2026-10-28T11:19:28.691Z"
+    },
+    "comments": {
+      "value": 147,
+      "raw": "147",
+      "approximate": false,
+      "source": "manual_user_details",
+      "observed_at": "2026-10-28T11:19:28.691Z"
+    },
     "views": {
-      "value": 648000,
-      "raw": "648K",
-      "approximate": true,
-      "source": "profile_grid"
+      "value": 649605,
+      "raw": "649,605",
+      "approximate": false,
+      "source": "manual_user_details",
+      "observed_at": "2026-10-28T11:19:28.691Z"
     },
     "thumbnail_url": "https://instagram.fblr24-1.fna.fbcdn.net/v/t51.71878-15/859188014_1633780524819018_3441985630568526081_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=q3-YMZtl3vEQ7kNvwEygxUr&_nc_oc=AdrU7eXt0qd7QROWqGk1AxEclKPdkwPapa197sTeVoqQiGg7AZCL6ikSEovXK78yhx85ycVOJ3rlXKvYaTvWH68n&_nc_zt=23&_nc_ht=instagram.fblr24-1.fna&_nc_gid=zUYT9QZ7nKi-WocpI3Fa5w&_nc_ss=7f6a8&oh=00_AQMDWZ0MUdVTFLwEBHWdQcjuilAPlWmMkjAvua3On7iOMA&oe=6AE2568B&ig_cache_key=MDJSQVF6Qmk0ck5qTUg2czBGQUVxaTBpc0hzV1BFTHdFeENkQTpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
-    "missing": [
-      "date",
-      "likes",
-      "comments"
-    ],
-    "missing_reasons": {
-      "date": "No readable timestamp or calendar date was found on the content page or in its metadata.",
-      "likes": "No readable like count was found on the content page or in its metadata.",
-      "comments": "No readable comment count was found on the content page or in its metadata."
-    },
+    "missing": [],
+    "missing_reasons": {},
     "raw": {
       "description": "2026年10月20日、「いいね！」25K件、コメント147件 - printamovie: 「TVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開！」",
       "article_text": "printamovie\n•\nFollow\n• AI-generated profile\nTVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開！\n25.1K\n147\n429\ntaranicolinaa\n•\nFollow\n2 people\nShe was looking at Titus like the proudest mama in the world, then turned around and looked at me like I was somebody she was trying to take home. 😂❤️ Man, I love this woman. And I’m not about to pretend I don’t enjoy being looked at like THAT by my own wife. This woman has seen me fresh out of the barbershop, overdue for a haircut, half asleep, stressed out, and everything in between. So believe me, I know it’s not just the lineup. There’s something special about being loved by somebody who genuinely likes you, too. Somebody who knows you inside and out and still finds reasons to look at you like they’ve got a crush on you. I don’t take that for granted, and I definitely don’t plan on giving her a reason to stop. But for now, excuse me while I watch that last part a few more times. Shoutout to our Barber: @rentscut\nAnd shoutout to our braider: @youheartstyles\n•\n•\n•\n#marriage #couples\n1M\n4,949\n26.9K",
@@ -2155,7 +2162,34 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-24T09:29:20.344Z"
+    "last_attempt_at": "2026-10-28T11:19:28.691Z",
+    "reposts": {
+      "value": 428,
+      "raw": "428",
+      "approximate": false,
+      "source": "manual_user_details",
+      "observed_at": "2026-10-28T11:19:28.691Z"
+    },
+    "shares": {
+      "value": 4526,
+      "raw": "4,526",
+      "approximate": false,
+      "source": "manual_user_details",
+      "observed_at": "2026-10-28T11:19:28.691Z"
+    },
+    "saves": {
+      "value": 1362,
+      "raw": "1,362",
+      "approximate": false,
+      "source": "manual_user_details",
+      "observed_at": "2026-10-28T11:19:28.691Z"
+    },
+    "manual_observation": {
+      "source": "manual_user_details",
+      "observed_at": "2026-10-28T11:19:28.691Z",
+      "resolution": "manual_completion",
+      "reason": "Date and engagement metrics were supplied manually after the normal collector could not read them."
+    }
   },
   {
     "kind": "reel",
@@ -3351,34 +3385,36 @@
     "url": "https://www.instagram.com/reel/DepDEFtB_AY/",
     "grid_views_raw": null,
     "grid_views_issue": null,
-    "status": "partial",
-    "fetched_at": "2026-10-24T09:31:16.012Z",
+    "status": "complete",
+    "fetched_at": "2026-10-28T11:19:28.691Z",
     "date": "2026-10-18",
     "date_precision": "day",
     "caption": "TVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開！",
     "hashtags": [],
     "mentions": [],
     "likes": {
-      "value": 792,
-      "raw": "792",
+      "value": 793,
+      "raw": "793",
       "approximate": false,
       "source": "og_description"
     },
     "comments": {
-      "value": 12,
-      "raw": "12",
+      "value": 8,
+      "raw": "8",
       "approximate": false,
       "source": "og_description"
     },
-    "views": null,
+    "views": {
+      "value": 16213,
+      "raw": "16,213",
+      "approximate": false,
+      "source": "manual_user_details",
+      "observed_at": "2026-10-28T11:19:28.691Z"
+    },
     "thumbnail_url": "https://instagram.fblr1-6.fna.fbcdn.net/v/t51.71878-15/852297501_1831031758133482_3125039220684769421_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=aQCyZEdTsxMQ7kNvwEotUym&_nc_oc=Adorw3eDK_rzOkrvV4TW0b0YoRa9VhUri0fv0b51tZ31liD8F4tEdoAf2h7YVWO5hePv0AYjfjIUm2P-YLg-Dosv&_nc_zt=23&_nc_ht=instagram.fblr1-6.fna&_nc_gid=6TnCME0llQDbELS-6JDsRg&_nc_ss=7f6a8&oh=00_AQOC1wzgzgD8Ooaxdg3P2WYLV_Ir13B3tAHl23KRRdYllw&oe=6AE24BAC&ig_cache_key=MDJSQVF6QmgwSHpUSUhVSUVHQU9vWWhFMEhuVjVlSzQxSUZESTpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
-    "missing": [
-      "views"
-    ],
-    "missing_reasons": {
-      "views": "No readable view count was found on the reel page or profile grid."
-    },
+    "missing": [],
+    "missing_reasons": {},
     "raw": {
       "description": "792 likes, 12 comments - printamovie on October 18, 2026: \"TVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開！\". ",
       "article_text": "printamovie\n•\nFollow\n• AI-generated profile\nTVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開！\nFalse information.\nSimilar to another post reviewed by third-party fact checkers.\nSee why\nSee Post\n792\n12\n87\nlovettshow\n•\nFollow\n2 people\nLovett asks former NASA astronaut, Danny Olivas, another space question that we were all thinking.\n\nFollow @lovettshow for more.\n55.6K\n407\n357",
@@ -3386,7 +3422,34 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-24T09:31:16.013Z"
+    "last_attempt_at": "2026-10-28T11:19:28.691Z",
+    "reposts": {
+      "value": 87,
+      "raw": "87",
+      "approximate": false,
+      "source": "manual_user_details",
+      "observed_at": "2026-10-28T11:19:28.691Z"
+    },
+    "shares": {
+      "value": 751,
+      "raw": "751",
+      "approximate": false,
+      "source": "manual_user_details",
+      "observed_at": "2026-10-28T11:19:28.691Z"
+    },
+    "saves": {
+      "value": 102,
+      "raw": "102",
+      "approximate": false,
+      "source": "manual_user_details",
+      "observed_at": "2026-10-28T11:19:28.691Z"
+    },
+    "manual_observation": {
+      "source": "manual_user_details",
+      "observed_at": "2026-10-28T11:19:28.691Z",
+      "resolution": "manual_completion",
+      "reason": "View and engagement metrics were supplied manually after the normal collector could not read the view count."
+    }
   },
   {
     "kind": "reel",

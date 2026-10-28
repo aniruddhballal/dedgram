@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "operation": "manual reel review",
+  "performed_at": "2026-10-28T11:19:28.691Z",
+  "username": "printamovie",
+  "source": "manual user review",
+  "changes": [
+    {
+      "shortcode": "DewckqaBBJ0",
+      "resolution": "date_completed",
+      "date": "2026-10-21"
+    },
+    {
+      "shortcode": "DetiSDHBBtb",
+      "resolution": "metrics_completed",
+      "metrics": [
+        "date",
+        "likes",
+        "views",
+        "comments",
+        "reposts",
+        "shares",
+        "saves"
+      ]
+    },
+    {
+      "shortcode": "DepDEFtB_AY",
+      "resolution": "metrics_completed",
+      "metrics": [
+        "likes",
+        "views",
+        "comments",
+        "reposts",
+        "shares",
+        "saves"
+      ]
+    }
+  ],
+  "before_snapshot": "D:\\post engg\\dedgram\\collector-v2\\data\\printamovie\\history\\2026-10-28T11-19-28-691Z-before-manual-reel-review-4b61072a-f7f9-4fa7-b532-6ba5dbecae45",
+  "after_snapshot": "D:\\post engg\\dedgram\\collector-v2\\data\\printamovie\\history\\2026-10-28T11-19-28-691Z-after-manual-reel-review-bf273fb6-3210-44de-baec-aa9a9383fd7e"
+}
