@@ -13,7 +13,7 @@ The public project explores a question rather than asserting a conclusion: how m
 | [`collectorV2/`](collectorV2/README.md) | Playwright-based local collector, local UI, staged runs, reports, retries, and immutable run history. | Current analysis workspace |
 | [`profile-showcase/`](profile-showcase/README.md) | Static-site source, committed public snapshot, build scripts, and generated Vercel output. | Current public website |
 | [`profiles.json`](profiles.json) | Repository copy or working export of the captured profile catalog. | Catalog handoff/reference file |
-| [`dedgram.apk`](dedgram.apk) | APK snapshot for transferring or installing the Android collector. | Installation artifact |
+| [`app/dedgram.apk`](app/dedgram.apk) | APK snapshot for transferring or installing the Android collector. | Installation artifact |
 | [`vercel.json`](vercel.json) | Root Vercel configuration. It builds `profile-showcase` and serves `profile-showcase/dist`. | Public deployment configuration |
 
 The Android app, CollectorV2, shared data store, and public showcase have separate responsibilities. The public website is built from a snapshot; it does not run the collector or access Instagram.
