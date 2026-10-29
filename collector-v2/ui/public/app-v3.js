@@ -20,7 +20,7 @@ const state = {
   order: ['selection', 'posts_ascending', 'reels_ascending'].includes(savedOrder) ? savedOrder : 'posts_ascending',
   workflow: savedWorkflow === 'username_migration' ? 'username_migration' : 'collection',
   setupStep: ['profiles', 'mode', 'order', 'review', 'progress'].includes(savedSetup) ? savedSetup : 'profiles',
-  itemSearch: '', itemFilter: 'all', itemSort: 'newest', failedReelProfile: 'all', failedReelIssueType: 'all', failedReelSort: 'newest', busy: false, error: null, readOnly: false, popup: null
+  itemSearch: '', itemFilter: 'all', itemSort: 'newest', failedReelProfile: 'all', failedReelIssueType: 'all', failedReelSort: 'newest', busy: false, error: null, readOnly: false, popup: null, confirmation: null
 };
 const observed = { batchId: null, batchStatus: null, usernameJobs: new Map(), usernameScan: null, usernameMigration: null };
 const sound = { context: null };
@@ -58,11 +58,17 @@ function notify(message, type = 'info') {
 function popupMarkup() {
   if (!state.popup) return '';
   const title = state.popup.type === 'success' ? 'TASK COMPLETE' : state.popup.type === 'error' ? 'TASK ERROR' : 'TASK IN PROGRESS';
-  return `<div class="dos-popup-layer" role="presentation"><section class="dos-popup ${state.popup.type}" role="alertdialog" aria-modal="true" aria-label="${title}"><div class="dos-popup-title">[ ${title} ]</div><p class="dos-popup-message">${esc(state.popup.message)}</p><button class="dos-popup-ok" data-action="dismiss-popup">OK</button></section></div>`;
+  return `<div class="dos-popup-layer" data-popup-kind="notification" role="presentation"><section class="dos-popup ${state.popup.type}" role="alertdialog" aria-modal="true" aria-label="${title}"><div class="dos-popup-title">[ ${title} ]</div><p class="dos-popup-message">${esc(state.popup.message)}</p><button class="dos-popup-ok" data-action="dismiss-popup">OK</button></section></div>`;
+}
+
+function confirmationMarkup() {
+  const confirmation = state.confirmation;
+  if (!confirmation) return '';
+  return `<div class="dos-popup-layer confirmation-layer" data-popup-kind="confirmation" role="presentation"><section class="dos-popup confirmation-popup" role="alertdialog" aria-modal="true" aria-labelledby="deletion-confirmation-title" aria-describedby="deletion-confirmation-message"><div class="dos-popup-title" id="deletion-confirmation-title">[ CLEAR PREVIOUS CHECK ]</div><p class="dos-popup-message" id="deletion-confirmation-message">A previous deletion check for ${esc(confirmation.issueType)} is complete (${esc(confirmation.completed)}). Clear its details from the UI before changing filters?</p><div class="dos-popup-actions"><button class="dos-popup-ok" data-action="confirm-deletion-filter-change">Clear and change filters</button><button class="dos-popup-cancel" data-action="cancel-deletion-filter-change">Keep current filter</button></div></section></div>`;
 }
 
 function syncPopup() {
-  const existing = document.querySelector('.dos-popup-layer');
+  const existing = document.querySelector('[data-popup-kind="notification"]');
   if (!state.popup) {
     existing?.remove();
     return;
@@ -145,7 +151,7 @@ function render() {
     : current.startsWith('/profiles/') ? `${batchStrip(state)}${renderProfile(state)}`
       : step === 0 ? renderSelect(state) : step === 4 ? (state.workflow === 'username_migration' ? renderUsernameReview(state) : renderReview(state))
         : step > 0 ? renderStage(state, step) : '<p class="loading">Page not found.</p>';
-  app.innerHTML = `${state.readOnly ? '<div class="preview-banner">PREVIEW · Collection actions are disabled while the original batch runs.</div>' : ''}${state.error ? `<div class="error-banner" role="alert"><strong>Something needs attention.</strong> ${esc(state.error)} <button data-action="dismiss" aria-label="Dismiss">×</button></div>` : ''}${content}`;
+  app.innerHTML = `${state.readOnly ? '<div class="preview-banner">PREVIEW · Collection actions are disabled while the original batch runs.</div>' : ''}${state.error ? `<div class="error-banner" role="alert"><strong>Something needs attention.</strong> ${esc(state.error)} <button data-action="dismiss" aria-label="Dismiss">×</button></div>` : ''}${content}${confirmationMarkup()}`;
   app.querySelectorAll('img[data-avatar-fallback]').forEach((image) => {
     image.addEventListener('error', () => {
       const local = image.dataset.avatarLocal;
@@ -185,9 +191,9 @@ function confirmDeletionCheckFilterChange(nextIssueType, nextProfile) {
   if (sameSelection) return true;
   const label = job.issue_type || 'the previous issue type';
   const completed = `${job.completed || 0} / ${job.total || 0}`;
-  const clear = window.confirm(`A previous deletion check for ${label} is complete (${completed}). Clear its details from the UI before changing filters?`);
-  if (clear) state.deletionCheck = null;
-  return clear;
+  state.confirmation = { issueType: label, completed, nextIssueType: nextIssueType || 'all', nextProfile: nextProfile || 'all' };
+  render();
+  return false;
 }
 
 async function refresh() {
@@ -236,7 +242,7 @@ document.addEventListener('change', (event) => {
   if (target.id === 'item-filter') { state.itemFilter = target.value; render(); }
   if (target.id === 'item-sort') { state.itemSort = target.value; render(); }
   if (target.id === 'failed-reel-profile') {
-    if (!confirmDeletionCheckFilterChange(state.failedReelIssueType, target.value)) { render(); return; }
+    if (!confirmDeletionCheckFilterChange(state.failedReelIssueType, target.value)) return;
     state.failedReelProfile = target.value; render();
   }
   if (target.id === 'failed-reel-sort') { state.failedReelSort = target.value; render(); }
@@ -247,6 +253,18 @@ document.addEventListener('click', async (event) => {
   const action = button.dataset.action;
   if (action === 'dismiss') { state.error = null; render(); return; }
   if (action === 'dismiss-popup') { state.popup = null; render(); return; }
+  if (action === 'confirm-deletion-filter-change') {
+    const pending = state.confirmation;
+    if (pending) {
+      state.deletionCheck = null;
+      state.failedReelIssueType = pending.nextIssueType;
+      state.failedReelProfile = pending.nextProfile;
+    }
+    state.confirmation = null;
+    render();
+    return;
+  }
+  if (action === 'cancel-deletion-filter-change') { state.confirmation = null; render(); return; }
   if (action === 'open-reel-private') {
     try {
       await api('/api/open-reel', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ url: button.dataset.url }) });
@@ -256,11 +274,11 @@ document.addEventListener('click', async (event) => {
   }
   if (action === 'filter-failed-issue') {
     const nextIssueType = button.dataset.issueType || 'all';
-    if (!confirmDeletionCheckFilterChange(nextIssueType, state.failedReelProfile)) { render(); return; }
+    if (!confirmDeletionCheckFilterChange(nextIssueType, state.failedReelProfile)) return;
     state.failedReelIssueType = nextIssueType; render(); return;
   }
   if (action === 'reset-failed-reel-filters') {
-    if (!confirmDeletionCheckFilterChange('all', state.failedReelProfile)) { render(); return; }
+    if (!confirmDeletionCheckFilterChange('all', state.failedReelProfile)) return;
     state.failedReelIssueType = 'all'; render(); return;
   }
   if (action === 'start-failed-reel-deletion-check') {
