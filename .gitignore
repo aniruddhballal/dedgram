@@ -10,10 +10,10 @@ __pycache__/
 .mypy_cache/
 
 # Native Android build output
-android-app/.gradle/
-android-app/build/
-android-app/app/build/
-android-app/local.properties
+app/.gradle/
+app/build/
+app/app/build/
+app/local.properties
 
 # Local dashboard dependencies and build output
 web-dashboard/node_modules/
