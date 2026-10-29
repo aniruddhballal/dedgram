@@ -183,7 +183,7 @@ export async function applyUsernameChange(root, recordUsername, requestedUsernam
   const oldMirror = join(mirrorDirectory, `profile-${recordUsername}.json`);
   const newMirror = join(mirrorDirectory, `profile-${requestedUsername}.json`);
   await renameIfPresent(oldMirror, newMirror);
-  const showcase = resolve(root, '..', 'profile-showcase');
+  const showcase = resolve(root, '..', 'website');
   await renameIfPresent(join(showcase, 'snapshot', recordUsername), join(showcase, 'snapshot', requestedUsername));
   await renameIfPresent(join(showcase, 'snapshot', 'media', `avatar-${recordUsername}.jpg`), join(showcase, 'snapshot', 'media', `avatar-${requestedUsername}.jpg`));
   await updateMirror(root, recordUsername, requestedUsername, profile);

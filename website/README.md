@@ -4,7 +4,7 @@ A static, self-contained Vercel site. It publishes an overall snapshot, detailed
 
 ## Deploy on Vercel
 
-Import this repository as a Vercel project and set **Root Directory** to `profile-showcase`. The included `vercel.json` runs `npm run build` and serves `dist`. No environment variables are required. The deployment opens on the public overview at `/`; the profile directory is at `/profiles/`, and each published record has its own `/profiles/<username>/` page. `/overview/` remains available as a compatibility alias.
+Import this repository as a Vercel project and set **Root Directory** to `website`. The included `vercel.json` runs `npm run build` and serves `dist`. No environment variables are required. The deployment opens on the public overview at `/`; the profile directory is at `/profiles/`, and each published record has its own `/profiles/<username>/` page. `/overview/` remains available as a compatibility alias.
 
 The committed `snapshot/` directory is the complete input for the Vercel build. The site serves the original profile, discovery, item, and run JSON files, CSV exports, and HTML collector reports under `/downloads/<profile>/`. It also includes local copies of available profile and reel thumbnails so signed Instagram image URLs do not determine whether the site renders.
 

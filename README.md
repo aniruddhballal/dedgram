@@ -11,10 +11,10 @@ The public project explores a question rather than asserting a conclusion: how m
 | [`app/`](app/README.md) | Native Android app and accessibility service used to capture Instagram profiles and reels from the visible Instagram UI. | Active phone collection tool |
 | [`data/`](data/) | Shared catalog indexes and persisted profile analysis records. | Shared research data |
 | [`collector/`](collector/README.md) | Playwright-based local collector, local UI, staged runs, reports, retries, and immutable run history. | Current analysis workspace |
-| [`profile-showcase/`](profile-showcase/README.md) | Static-site source, committed public snapshot, build scripts, and generated Vercel output. | Current public website |
+| [`website/`](website/README.md) | Static-site source, committed public snapshot, build scripts, and generated Vercel output. | Current public website |
 | [`profiles.json`](profiles.json) | Repository copy or working export of the captured profile catalog. | Catalog handoff/reference file |
 | [`app/dedgram.apk`](app/dedgram.apk) | APK snapshot for transferring or installing the Android collector. | Installation artifact |
-| [`vercel.json`](vercel.json) | Root Vercel configuration. It builds `profile-showcase` and serves `profile-showcase/dist`. | Public deployment configuration |
+| [`vercel.json`](vercel.json) | Root Vercel configuration. It builds `website` and serves `website/dist`. | Public deployment configuration |
 
 The Android app, collector, shared data store, and public showcase have separate responsibilities. The public website is built from a snapshot; it does not run the collector or access Instagram.
 
@@ -117,7 +117,7 @@ Reruns merge new information into the current record without deleting older vali
 
 ## 4. Public Vercel showcase
 
-The public site is built from [`profile-showcase/snapshot/`](profile-showcase/snapshot/), not directly from a live collector process. It contains a curated public snapshot of profile records, reel records, resolved account outcomes, thumbnails, reports, and aggregate statistics.
+The public site is built from [`website/snapshot/`](website/snapshot/), not directly from a live collector process. It contains a curated public snapshot of profile records, reel records, resolved account outcomes, thumbnails, reports, and aggregate statistics.
 
 Live site: [dedgram.vercel.app](https://dedgram.vercel.app/)
 
@@ -133,15 +133,15 @@ The public Overview includes profile performance, profile country and join infor
 To refresh and build the showcase after new Collector v2 outputs are ready:
 
 ```powershell
-cd profile-showcase
+cd website
 npm install
 npm run refresh       # sync published data and build dist
 npm run build         # build only from the committed snapshot
 ```
 
-`profile-showcase/snapshot/` is the source committed for publication. `profile-showcase/dist/` is generated output. The root `vercel.json` runs the showcase build for Vercel. No Instagram login, browser session, database connection, or server function is used by the public site.
+`website/snapshot/` is the source committed for publication. `website/dist/` is generated output. The root `vercel.json` runs the website build for Vercel. No Instagram login, browser session, database connection, or server function is used by the public site.
 
-See [`profile-showcase/README.md`](profile-showcase/README.md) for the publication list, snapshot rules, thumbnail handling, and deployment details.
+See [`website/README.md`](website/README.md) for the publication list, snapshot rules, thumbnail handling, and deployment details.
 
 ## Retired workflows
 
@@ -152,7 +152,7 @@ The former React/Vite dashboard and Firefox extension have been removed. Current
 - Android reads Instagram’s visible accessibility tree only after an explicit capture tap.
 - Collector v2 reads visible Instagram pages through a local browser session and does not use undocumented Instagram endpoints or bypass login, checkpoints, consent screens, rate limits, or age restrictions.
 - Browser credentials, authentication profiles, and temporary screenshots are ignored and must not be committed.
-- Public Vercel files are static snapshots. They contain only the records intentionally copied into `profile-showcase/snapshot/`.
+- Public Vercel files are static snapshots. They contain only the records intentionally copied into `website/snapshot/`.
 - Instagram’s UI and labels can change. When identity, counts, or item fields cannot be verified, the collectors preserve the issue instead of guessing.
 
 ## Android development

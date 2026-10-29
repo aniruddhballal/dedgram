@@ -13,7 +13,7 @@ import { applyUsernameChange, checkUsernameChange } from '../src/username-change
 import { runReelDeletionCheck } from '../src/reel-deletion-check.mjs';
 
 const publicDir = join(dirname(fileURLToPath(import.meta.url)), 'public');
-const showcaseMediaDir = join(root, '..', 'profile-showcase', 'snapshot', 'media');
+const showcaseMediaDir = join(root, '..', 'website', 'snapshot', 'media');
 const jobPath = process.env.COLLECTOR_UI_JOB_PATH || join(root, 'data', 'ui-job.json');
 const port = Number(process.env.COLLECTOR_UI_PORT || 5174);
 const preview = process.env.COLLECTOR_UI_PREVIEW === '1';
