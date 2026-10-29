@@ -1,6 +1,6 @@
 {
   "started_at": "2026-10-24T09:32:47.593Z",
-  "updated_at": "2026-10-29T02:19:11.865Z",
+  "updated_at": "2026-10-29T02:21:46.299Z",
   "status": "partial",
   "phase": "done",
   "scope": [
@@ -11,8 +11,8 @@
   "deletion_check": {
     "operation": "automated reel availability check",
     "issue_type": "Missing date, comments",
-    "started_at": "2026-10-29T02:18:56.814Z",
-    "completed_at": "2026-10-29T02:19:11.865Z",
+    "started_at": "2026-10-29T02:21:35.085Z",
+    "completed_at": "2026-10-29T02:21:46.299Z",
     "counts": {
       "deleted": 0,
       "exists": 2,
