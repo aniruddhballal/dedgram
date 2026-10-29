@@ -217,7 +217,7 @@ export function renderFailedReels(state) {
     <td><a href="${profileHref(reel.username, reel.current_username)}">@${esc(reel.current_username || reel.username)}</a>${reel.current_username && reel.current_username !== reel.username ? `<small class="cell-note">Saved as @${esc(reel.username)}</small>` : ''}</td>
     <td>${esc(failedReelDate(reel.failed_at))}</td>
     <td class="failed-reel-reason">${esc(reel.reason)}</td>
-    <td><a class="button secondary small" href="${esc(reel.url || '#')}" target="_blank" rel="noreferrer">Open reel ↗</a></td>
+    <td><button type="button" class="button secondary small" data-action="open-reel-private" data-url="${esc(reel.url || '')}">Open reel ↗</button></td>
   </tr>`).join('') : '';
   return `<section class="setup-header failed-reels-header"><div><span class="eyebrow">REEL REVIEW INDEX</span><h1>Failed reels</h1><p>Manually open each reel that could not be fully captured. This list includes failed and incomplete reel records from the saved collection runs.</p></div><div class="setup-header-actions"><a class="button secondary" href="/">Back to collection</a></div></section>
     <section class="notice soft failed-reels-note"><h2>${allReels ? `${number(reels.length)} shown · ${number(allReels.length)} total need review` : 'Loading failed reels…'}</h2><p>Each row shows the profile, the reel ID, when its latest capture attempt happened, and why the record was left incomplete. Opening a link does not change the saved data.</p></section>

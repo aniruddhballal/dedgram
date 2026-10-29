@@ -1,5 +1,6 @@
 import { createServer } from 'node:http';
 import { spawn } from 'node:child_process';
+import { existsSync } from 'node:fs';
 import { readFile } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -18,6 +19,41 @@ const preview = process.env.COLLECTOR_UI_PREVIEW === '1';
 const usernameJobs = new Map();
 let usernameScanJob = null;
 let usernameMigrationJob = null;
+
+function privateBrowserCommand() {
+  if (process.platform === 'win32') {
+    const candidates = [
+      join(process.env.ProgramFiles || 'C:\\Program Files', 'Mozilla Firefox', 'firefox.exe'),
+      join(process.env['ProgramFiles(x86)'] || 'C:\\Program Files (x86)', 'Mozilla Firefox', 'firefox.exe')
+    ];
+    return { command: candidates.find((candidate) => existsSync(candidate)) || 'firefox.exe', args: ['-private-window'] };
+  }
+  if (process.platform === 'darwin') return { command: 'open', args: ['-a', 'Firefox', '--args', '-private-window'] };
+  return { command: 'firefox', args: ['-private-window'] };
+}
+
+function validateReelUrl(value) {
+  try {
+    const parsed = new URL(value);
+    if (!['www.instagram.com', 'instagram.com'].includes(parsed.hostname)
+      || !/^\/reel\/[A-Za-z0-9_-]+\/?$/.test(parsed.pathname)) throw new Error('Only Instagram reel URLs can be opened privately.');
+    return parsed.href;
+  } catch (error) {
+    throw Object.assign(new Error(error.message || 'Enter a valid Instagram reel URL.'), { status: 400 });
+  }
+}
+
+async function openPrivateReel(value) {
+  const url = validateReelUrl(value);
+  const { command, args } = privateBrowserCommand();
+  const child = spawn(command, [...args, url], { detached: true, stdio: 'ignore', windowsHide: true });
+  await new Promise((resolve, reject) => {
+    child.once('spawn', resolve);
+    child.once('error', reject);
+  }).catch((error) => { throw Object.assign(new Error(`Could not launch a private Firefox window: ${error.message}`), { status: 500 }); });
+  child.unref();
+  return { opened: true, mode: 'private_window', url };
+}
 
 const json = (response, status, value) => {
   response.writeHead(status, { 'Content-Type': 'application/json; charset=utf-8', 'Cache-Control': 'no-store' });
@@ -391,6 +427,10 @@ const server = createServer(async (request, response) => {
       if (pathname === '/api/runs') {
         const input = await body(request);
         return json(response, 202, await runner.start(input.profiles, input.mode, input.order));
+      }
+      if (pathname === '/api/open-reel') {
+        const input = await body(request);
+        return json(response, 200, await openPrivateReel(input.url));
       }
       if (pathname === '/api/runs/stop') return json(response, 200, await runner.stop());
       if (pathname === '/api/username-scan') return json(response, 202, startUsernameScan());

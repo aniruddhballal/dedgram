@@ -229,6 +229,13 @@ document.addEventListener('click', async (event) => {
   const action = button.dataset.action;
   if (action === 'dismiss') { state.error = null; render(); return; }
   if (action === 'dismiss-popup') { state.popup = null; render(); return; }
+  if (action === 'open-reel-private') {
+    try {
+      await api('/api/open-reel', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ url: button.dataset.url }) });
+      notify('Opened the reel in a new Firefox private window.', 'success');
+    } catch (error) { state.error = error.message; render(); }
+    return;
+  }
   if (action === 'filter-failed-issue') { state.failedReelIssueType = button.dataset.issueType || 'all'; render(); return; }
   if (action === 'reset-failed-reel-filters') { state.failedReelIssueType = 'all'; render(); return; }
   if (action === 'setup-progress' && state.batch) { setSetupStep('progress'); return; }
