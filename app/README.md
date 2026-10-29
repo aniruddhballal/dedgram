@@ -62,7 +62,7 @@ Each saved entry contains the captured username, its normalized username, and th
 Requirements: JDK 17, Android SDK platform 36, and Build Tools 36.
 
 ```powershell
-cd android-app
+cd app
 .\gradlew.bat :app:testDebugUnitTest
 .\gradlew.bat :app:assembleDebug
 .\gradlew.bat :app:assembleRelease

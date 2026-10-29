@@ -103,7 +103,7 @@ async function replaceActiveReference(file, previous, current) {
 }
 
 async function updateMirror(root, previous, current, profile) {
-  const directory = resolve(root, '..', 'bot-info', 'database', 'profiles');
+  const directory = resolve(root, '..', 'data', 'database', 'profiles');
   const oldFile = join(directory, `profile-${previous}.json`);
   const newFile = join(directory, `profile-${current}.json`);
   let mirror = await readJson(oldFile, await readJson(newFile, {}));
@@ -121,7 +121,7 @@ async function updateMirror(root, previous, current, profile) {
 }
 
 async function updateCatalog(root, previous, current) {
-  const catalogFile = resolve(root, '..', 'bot-info', 'database', 'profiles', 'index.json');
+  const catalogFile = resolve(root, '..', 'data', 'database', 'profiles', 'index.json');
   const catalog = await readJson(catalogFile);
   const keys = (catalog.profile_keys || []).map((key) => key === previous ? current : key);
   if (new Set(keys).size !== keys.length) throw new Error(`Cannot migrate @${previous}: @${current} is already in the catalog.`);
@@ -179,7 +179,7 @@ export async function applyUsernameChange(root, recordUsername, requestedUsernam
   await writeSnapshot(data.path, { username: requestedUsername, phase: 'after-username-migration', profile, discovery, items: data.items, run });
   await onProgress({ phase: 'storage', detail: 'Renaming the active profile record and preserving the old username in history' });
   await renameIfPresent(oldBase, newPath.base);
-  const mirrorDirectory = resolve(root, '..', 'bot-info', 'database', 'profiles');
+  const mirrorDirectory = resolve(root, '..', 'data', 'database', 'profiles');
   const oldMirror = join(mirrorDirectory, `profile-${recordUsername}.json`);
   const newMirror = join(mirrorDirectory, `profile-${requestedUsername}.json`);
   await renameIfPresent(oldMirror, newMirror);

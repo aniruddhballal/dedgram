@@ -12,12 +12,12 @@ const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const command = process.argv[2] || 'status';
 const flags = new Set(process.argv.slice(3));
 const targetFile = await readJson(join(root, 'targets.json'));
-const index = await readJson(resolve(root, '..', 'bot-info', 'database', 'profiles', 'index.json'));
+const index = await readJson(resolve(root, '..', 'data', 'database', 'profiles', 'index.json'));
 const targets = targetFile?.profile_keys || [];
 const requestedUsername = process.argv.find((arg) => arg.startsWith('--username='))?.slice(11) || targets[0];
 const username = index?.profile_keys?.find((key) => key.toLowerCase() === requestedUsername?.toLowerCase());
 if (!username || !/^[A-Za-z0-9._]{1,30}$/.test(username)) {
-  throw new Error('Select an Instagram username present in bot-info/database/profiles/index.json.');
+  throw new Error('Select an Instagram username present in data/database/profiles/index.json.');
 }
 const path = paths(root, username);
 const log = (value) => console.log(`[${new Date().toLocaleTimeString('en-GB')}] ${value}`);
@@ -76,7 +76,7 @@ async function status() {
 async function login() {
   const { context, page } = await launch(root);
   await page.goto('https://www.instagram.com/', { waitUntil: 'domcontentloaded' });
-  log('Sign in in the opened Chromium window, then close that window. The session remains in collector-v2/.auth/browser.');
+  log('Sign in in the opened Chromium window, then close that window. The session remains in collectorV2/.auth/browser.');
   await new Promise((done) => context.once('close', done));
 }
 

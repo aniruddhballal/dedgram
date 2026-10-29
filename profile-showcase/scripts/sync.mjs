@@ -27,7 +27,7 @@ const profileLevelProfiles = ['coldex7.ae', 'illmisguideyou'];
 const resolvedProfiles = ['hnvx.07', 'prime_senchui', 'vlad.aep_', 'nxx._.nmercy', 'dexea.100k', 'igpostinggang', 'rzk.mp4', 'renyajichu', 'hammergag', 'caodogsfofo', 'back', 'short_vibesz', 'oooiway', 'zuxxie.pov', 'extreme.laugh8', 'iron_block2', 'memes.fatafat'];
 const publishedProfiles = [...fullProfiles, ...profileLevelProfiles, ...resolvedProfiles];
 const files = ['profile.json', 'discovery.json', 'items.json', 'run.json', 'profile.csv', 'items.csv', 'report.html'];
-const sourceCatalog = JSON.parse(await readFile(join(repo, 'bot-info', 'database', 'profiles', 'index.json'), 'utf8'));
+const sourceCatalog = JSON.parse(await readFile(join(repo, 'data', 'database', 'profiles', 'index.json'), 'utf8'));
 const catalog = {
   ...sourceCatalog,
   profile_keys: sourceCatalog.profile_keys.map((username) => usernameAliases[username] || username)
@@ -38,7 +38,7 @@ if (!Array.isArray(catalog.profile_keys) || publishedProfiles.some((username) =>
 await writeFile(join(snapshot, 'index.json'), JSON.stringify(catalog, null, 2) + '\n', 'utf8');
 const resolved = {};
 for (const username of resolvedProfiles) {
-  const profile = JSON.parse(await readFile(join(repo, 'bot-info', 'database', 'profiles', `profile-${username}.json`), 'utf8'));
+  const profile = JSON.parse(await readFile(join(repo, 'data', 'database', 'profiles', `profile-${username}.json`), 'utf8'));
   resolved[username] = {
     username,
     status: profile.status,
@@ -62,7 +62,7 @@ const mediaDir = join(snapshot, 'media');
 await mkdir(mediaDir, { recursive: true });
 const images = [];
 for (const username of [...fullProfiles, ...profileLevelProfiles]) {
-  const source = join(repo, 'collector-v2', 'data', sourceUsername(username));
+  const source = join(repo, 'collectorV2', 'data', sourceUsername(username));
   await mkdir(join(snapshot, username), { recursive: true });
   for (const file of files) {
     if (file === 'profile.json' || file === 'profile.csv') continue;

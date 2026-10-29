@@ -16,6 +16,6 @@ From this folder, run:
 npm run refresh
 ```
 
-`sync` copies the current catalog and the published collector outputs from the parent repository into `snapshot/`, records resolved outcomes from `bot-info/database/profiles/`, and refreshes thumbnails. `build` generates the static `dist/` site solely from `snapshot/`. Commit the refreshed snapshot to publish a new version. For a local preview, serve `dist` with any static file server, for example `npx serve dist`.
+`sync` copies the current catalog and the published collector outputs from the parent repository into `snapshot/`, records resolved outcomes from `data/database/profiles/`, and refreshes thumbnails. `build` generates the static `dist/` site solely from `snapshot/`. Commit the refreshed snapshot to publish a new version. For a local preview, serve `dist` with any static file server, for example `npx serve dist`.
 
 The public preview opens with aggregate profile and reel statistics, the six full analysis records, `illmisguideyou` as profile-level complete with reel URLs pending individual detail analysis, and the 17 resolved records. The Profiles page initially shows only those 24 public records; the remaining indexed candidates can be revealed from the future-candidates disclosure. Adding another profile requires extending the published profile list and checking its saved data before publishing it.

@@ -4,7 +4,7 @@ import { paths, readJson } from '../src/store.mjs';
 import { exactPostCount, gridCount, gridCountError, postCountError, profileHeaderComplete, profileLevelComplete } from '../src/model.mjs';
 
 export const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
-const catalogPath = resolve(root, '..', 'bot-info', 'database', 'profiles', 'index.json');
+const catalogPath = resolve(root, '..', 'data', 'database', 'profiles', 'index.json');
 
 export async function usernames() {
   const index = await readJson(catalogPath);

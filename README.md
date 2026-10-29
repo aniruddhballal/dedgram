@@ -8,17 +8,15 @@ The public project explores a question rather than asserting a conclusion: how m
 
 | Folder or file | What it does | Current role |
 | --- | --- | --- |
-| [`android-app/`](android-app/README.md) | Native Android app and accessibility service used to capture Instagram usernames from the visible profile screen. | Active profile discovery tool |
-| [`bot-info/`](bot-info/) | Catalog indexes and the older split JSON data store used by the original dashboard workflow. | Shared catalog and legacy data |
-| [`collector-v2/`](collector-v2/README.md) | Playwright-based local collector, local UI, staged runs, reports, retries, and immutable run history. | Current analysis workspace |
+| [`app/`](app/README.md) | Native Android app and accessibility service used to capture Instagram profiles and reels from the visible Instagram UI. | Active phone collection tool |
+| [`data/`](data/) | Shared catalog indexes and persisted profile analysis records. | Shared research data |
+| [`collectorV2/`](collectorV2/README.md) | Playwright-based local collector, local UI, staged runs, reports, retries, and immutable run history. | Current analysis workspace |
 | [`profile-showcase/`](profile-showcase/README.md) | Static-site source, committed public snapshot, build scripts, and generated Vercel output. | Current public website |
-| [`web-dashboard/`](web-dashboard/README.md) | Earlier React/Vite dashboard and loopback API backed by `bot-info/database/`. | Legacy analysis workflow |
-| [`firefox-extension/`](firefox-extension/README.md) | Temporary Firefox DOM adapter that executes jobs from the legacy dashboard. | Legacy collector adapter |
 | [`profiles.json`](profiles.json) | Repository copy or working export of the captured profile catalog. | Catalog handoff/reference file |
 | [`dedgram.apk`](dedgram.apk) | APK snapshot for transferring or installing the Android collector. | Installation artifact |
 | [`vercel.json`](vercel.json) | Root Vercel configuration. It builds `profile-showcase` and serves `profile-showcase/dist`. | Public deployment configuration |
 
-The Android app, Collector v2, legacy dashboard, and public showcase have separate responsibilities. The public website is built from a snapshot; it does not run the collector or access Instagram.
+The Android app, CollectorV2, shared data store, and public showcase have separate responsibilities. The public website is built from a snapshot; it does not run the collector or access Instagram.
 
 ## Current workflow
 
@@ -42,16 +40,16 @@ Documents/dedgram/profiles.json
 
 The service reads the active Instagram accessibility tree only after the user taps the bubble. It stores usernames and timestamps, not screenshots, bios, captions, follower counts, direct messages, or surrounding UI text.
 
-See [`android-app/README.md`](android-app/README.md) for permissions, platform limitations, build commands, and device installation instructions.
+See [`app/README.md`](app/README.md) for permissions, platform limitations, build commands, and device installation instructions.
 
 ## 2. Bring the phone catalog into the repository
 
 There is no automatic phone-to-computer sync. Copy the phone catalog to the computer, then merge its `profiles` entries into the catalog used by the local tools, matching by `normalized_username` so existing records are not duplicated.
 
-The repository catalog and database locations differ between the current and legacy workflows:
+The shared catalog and database are stored in the repository under `data/`:
 
-- Collector v2 reads the profile index at `bot-info/database/profiles/index.json`.
-- The older dashboard imports from `bot-info/dedgram-catalog.json` and stores results under `bot-info/database/`.
+- CollectorV2 reads the profile index at `data/database/profiles/index.json`.
+- Confirmed username migrations mirror updated profile records into `data/database/profiles/`.
 - The Android app writes the user-visible phone file at `Documents/dedgram/profiles.json`.
 
 ## 3. Use Collector v2 locally
@@ -59,7 +57,7 @@ The repository catalog and database locations differ between the current and leg
 From the collector directory:
 
 ```powershell
-cd collector-v2
+cd collectorV2
 npm install
 npx playwright install chromium
 npm run ui
@@ -88,7 +86,7 @@ The local UI supports profile-only, reel-grid-only, reel-details-only, reels-onl
 ### Collector v2 commands
 
 ```powershell
-cd collector-v2
+cd collectorV2
 npm run ui                 # local workspace at http://127.0.0.1:5174/
 npm run login              # sign in through a persistent Chromium session
 npm run import-firefox    # optionally import Instagram cookies from Firefox
@@ -98,11 +96,11 @@ npm run report             # regenerate its local report
 npm test                   # run parser and browser-adapter tests
 ```
 
-Useful command-line flags include `--username=NAME`, `--headless`, `--profile-only`, `--reel-grid-only`, `--reels-only`, `--skip-profile`, `--refresh`, and `--limit=N`. Credentials in `collector-v2/.auth/` are ignored and must not be committed.
+Useful command-line flags include `--username=NAME`, `--headless`, `--profile-only`, `--reel-grid-only`, `--reels-only`, `--skip-profile`, `--refresh`, and `--limit=N`. Credentials in `collectorV2/.auth/` are ignored and must not be committed.
 
 ### Collector v2 data model
 
-Each profile directory under `collector-v2/data/<username>/` contains:
+Each profile directory under `collectorV2/data/<username>/` contains:
 
 | File | Purpose |
 | --- | --- |
@@ -145,23 +143,14 @@ npm run build         # build only from the committed snapshot
 
 See [`profile-showcase/README.md`](profile-showcase/README.md) for the publication list, snapshot rules, thumbnail handling, and deployment details.
 
-## Legacy workflow
+## Retired workflows
 
-The older local dashboard remains in `web-dashboard/`. It uses a React/Vite frontend and a loopback API at `http://127.0.0.1:4317`, with the UI at `http://127.0.0.1:5173`.
-
-```powershell
-cd web-dashboard
-npm install
-npm run dev
-```
-
-The companion [`firefox-extension/`](firefox-extension/) is loaded temporarily through `about:debugging` and executes only jobs explicitly queued by that dashboard. Its historical workflow includes surface analysis, post counts, reel counts, deep analysis, and separate post/reel detail scans. It is retained for older data and workflows; new collection work should use Collector v2.
+The former React/Vite dashboard and Firefox extension have been removed. Current desktop analysis runs through `collectorV2`, while direct phone capture runs through the Android app in `app/`.
 
 ## Privacy and operational boundaries
 
 - Android reads Instagram’s visible accessibility tree only after an explicit capture tap.
 - Collector v2 reads visible Instagram pages through a local browser session and does not use undocumented Instagram endpoints or bypass login, checkpoints, consent screens, rate limits, or age restrictions.
-- The Firefox extension is local-only and acts only on dashboard-queued jobs.
 - Browser credentials, authentication profiles, and temporary screenshots are ignored and must not be committed.
 - Public Vercel files are static snapshots. They contain only the records intentionally copied into `profile-showcase/snapshot/`.
 - Instagram’s UI and labels can change. When identity, counts, or item fields cannot be verified, the collectors preserve the issue instead of guessing.
@@ -171,13 +160,13 @@ The companion [`firefox-extension/`](firefox-extension/) is loaded temporarily t
 Requirements: JDK 17, Android SDK platform 36, and Build Tools 36.
 
 ```powershell
-cd android-app
+cd app
 .\gradlew.bat :app:testDebugUnitTest
 .\gradlew.bat :app:assembleDebug
 .\gradlew.bat :app:assembleRelease
 ```
 
-Build outputs are written under `android-app/app/build/outputs/apk/`. The local release build uses the generated debug signing key and is intended for device testing. Detailed instructions are in [`android-app/README.md`](android-app/README.md).
+Build outputs are written under `app/app/build/outputs/apk/`. The local release build uses the generated debug signing key and is intended for device testing. Detailed instructions are in [`app/README.md`](app/README.md).
 
 ## Repository conventions
 
