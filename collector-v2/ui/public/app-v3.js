@@ -85,6 +85,20 @@ function syncPopup() {
   existing.querySelector('.dos-popup-message').textContent = state.popup.message;
 }
 
+function syncConfirmation() {
+  const existing = document.querySelector('[data-popup-kind="confirmation"]');
+  if (!state.confirmation) {
+    existing?.remove();
+    return;
+  }
+  if (!existing) {
+    document.body.insertAdjacentHTML('beforeend', confirmationMarkup());
+    return;
+  }
+  const message = `A previous deletion check for ${state.confirmation.issueType} is complete (${state.confirmation.completed}). Clear its details from the UI before changing filters?`;
+  existing.querySelector('.dos-popup-message').textContent = message;
+}
+
 function observeAsyncState() {
   const batch = state.batch;
   if (batch?.id) {
@@ -151,7 +165,7 @@ function render() {
     : current.startsWith('/profiles/') ? `${batchStrip(state)}${renderProfile(state)}`
       : step === 0 ? renderSelect(state) : step === 4 ? (state.workflow === 'username_migration' ? renderUsernameReview(state) : renderReview(state))
         : step > 0 ? renderStage(state, step) : '<p class="loading">Page not found.</p>';
-  app.innerHTML = `${state.readOnly ? '<div class="preview-banner">PREVIEW · Collection actions are disabled while the original batch runs.</div>' : ''}${state.error ? `<div class="error-banner" role="alert"><strong>Something needs attention.</strong> ${esc(state.error)} <button data-action="dismiss" aria-label="Dismiss">×</button></div>` : ''}${content}${confirmationMarkup()}`;
+  app.innerHTML = `${state.readOnly ? '<div class="preview-banner">PREVIEW · Collection actions are disabled while the original batch runs.</div>' : ''}${state.error ? `<div class="error-banner" role="alert"><strong>Something needs attention.</strong> ${esc(state.error)} <button data-action="dismiss" aria-label="Dismiss">×</button></div>` : ''}${content}`;
   app.querySelectorAll('img[data-avatar-fallback]').forEach((image) => {
     image.addEventListener('error', () => {
       const local = image.dataset.avatarLocal;
@@ -171,6 +185,7 @@ function render() {
     });
   });
   syncPopup();
+  syncConfirmation();
   if (focusId) {
     const input = document.getElementById(focusId);
     if (input) { input.focus(); if (typeof cursor === 'number' && typeof input.setSelectionRange === 'function') input.setSelectionRange(cursor, cursor); }
