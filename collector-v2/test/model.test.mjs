@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { count, exactPostCount, gridCount, gridCountError, postCountError, profileFromSnapshot, profileHeaderComplete, profileLevelComplete, canonicalItemUrl, itemFromSnapshot, publicDetailsFromSnapshot } from '../src/model.mjs';
+import { count, dayFromDescription, exactPostCount, gridCount, gridCountError, postCountError, profileFromSnapshot, profileHeaderComplete, profileLevelComplete, canonicalItemUrl, itemFromSnapshot, publicDetailsFromSnapshot } from '../src/model.mjs';
 import { mergeDiscoveryItems, mergeItem, mergeProfile, syncGridViews } from '../src/store.mjs';
 import { posterUsername } from '../src/reel-deletion-check.mjs';
 
@@ -154,6 +154,20 @@ test('public details parse localized Japanese engagement labels', () => {
   assert.equal(result.comments.value, 8);
   assert.equal(result.likes.source, 'og_description_localized');
   assert.equal(result.comments.source, 'og_description_localized');
+});
+
+test('public details parse localized Japanese calendar dates', () => {
+  const result = publicDetailsFromSnapshot({ kind: 'reel' }, {
+    og_description: '「Caption」 - 2026年9月28日、「いいね！」238K件、コメント951件 - memesprcaf',
+    article_text: '',
+    aria_text: '',
+    json_ld: []
+  });
+  assert.equal(dayFromDescription(result.raw.description), '2026-09-28');
+  assert.equal(result.date, '2026-09-28');
+  assert.equal(result.date_source, 'og_description_localized');
+  assert.equal(result.date_original, '2026年9月28日');
+  assert.equal(result.date_translation, '2026-09-28');
 });
 
 test('metric parsing does not use a date before a separate Like label', () => {

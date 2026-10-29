@@ -141,8 +141,8 @@
       "evidence": "Log In\nSign Up\nNever miss a post from memesprcaf\nSign up for Instagram to stay in the loop.\nBy continuing, you agree to Instagram's Terms of Use and Privacy Policy.\nSign up\nLog in\nAge-restricted content\nThis content is age-restricted based on your age or account settings. Log in to continue.\nLog in\nSign up\nMeta\nAbout\nBlog\nJobs\nHelp\nAPI\nPrivacy\nTerms\nLocations\nPopular\nInstagram Lite\nMeta AI\nMuse\nThreads\nContact Uploading & Non-Users\nMeta Verified\nEnglish\nAfrikaans\nالعربية\nČeština\nDansk\nDeutsch\nΕλληνικά\nEnglish\nEnglish (UK)\nEspañol (España)\nEspañol\nفارسی\nSuomi\nFrançais\nעברית\nBahasa Indonesia\nItaliano\n日本語\n한국어\nBahasa Melayu\nNorsk\nNederlands\nPolski\nPortuguês (Brasil)\nPortuguês (Portugal)\nРусский\nSvenska\nภาษาไทย\nFilipino\nTürkçe\n中文(简体)\n中文(台灣)\nবাংলা\nગુજરાતી\nहिन्दी\nHrvatski\nMagyar\nಕನ್ನಡ\nമലയാളം\nमराठी\nनेपाली\nਪੰਜਾਬੀ\nසිංහල\nSlovenčina\nதமிழ்\nతెలుగు\nاردو\nTiếng Việt\n中文(香港)\nБългарски\nFrançais (Canada)\nRomână\nСрпски\nУкраїнська\n© 2026 Instagram from Meta",
       "observed_details": {
         "observed_at": "2026-10-29T02:23:00.362Z",
-        "date": null,
-        "date_precision": null,
+        "date": "2026-09-28",
+        "date_precision": "day",
         "caption": null,
         "hashtags": [],
         "mentions": [],
@@ -164,6 +164,7 @@
         "thumbnail_url": "https://scontent.cdninstagram.com/v/t51.82787-15/847495276_18117138496938921_6850486167244014952_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=kwiTFfFmIfwQ7kNvwFp3l32&_nc_oc=Ado2x1JkdnpQQqChL_sBNhttKZx7UsniuQ2qNAuA-6gXWjBe_3wCBqL8eDXXO81RkNEjopemcjsgWFNn5mAXu8A6&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=iNwl-ecwmh6Gycc9vVn33w&_nc_ss=7c689&oh=00_AQT6JwQxYrEstOLSqHzccKhOLwZb937ut4MlIZH3WPZGbw&oe=6AE88778",
         "media_url": null,
         "available_fields": [
+          "date",
           "likes",
           "comments",
           "thumbnail_url"
@@ -215,7 +216,18 @@
         },
         "poster_username": null,
         "page_url": "https://www.instagram.com/reel/Dd2L0NtPH4L/",
-        "source": "fresh_incognito_context"
+        "source": "fresh_incognito_context",
+        "date_source": "og_description_localized",
+        "date_original": "2026年9月28日",
+        "date_translation": "2026-09-28",
+        "manual_extraction": {
+          "field": "date",
+          "method": "japanese_calendar_date_to_iso",
+          "source": "manual_extraction_from_japanese_metadata",
+          "original": "2026年9月28日",
+          "translated": "2026-09-28",
+          "observed_at": "2026-10-29T02:23:00.362Z"
+        }
       },
       "manually_resolved_at": "2026-10-29T02:27:40.849Z",
       "manual_resolution": {

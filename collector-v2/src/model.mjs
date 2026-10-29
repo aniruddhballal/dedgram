@@ -149,9 +149,18 @@ export function canonicalItemUrl(href) {
 
 export function dayFromDescription(description) {
   const match = String(description || '').match(/\bon\s+([A-Za-z]+\s+\d{1,2},\s+\d{4})\s*:/);
-  if (!match) return null;
-  const parsed = new Date(`${match[1]} 00:00:00 GMT`);
-  return Number.isNaN(parsed.getTime()) ? null : parsed.toISOString().slice(0, 10);
+  if (match) {
+    const parsed = new Date(`${match[1]} 00:00:00 GMT`);
+    if (!Number.isNaN(parsed.getTime())) return parsed.toISOString().slice(0, 10);
+  }
+  const localized = String(description || '').match(/(\d{4})年(\d{1,2})月(\d{1,2})日/);
+  if (!localized) return null;
+  const year = Number(localized[1]);
+  const month = Number(localized[2]);
+  const day = Number(localized[3]);
+  const parsed = new Date(Date.UTC(year, month - 1, day));
+  return parsed.getUTCFullYear() === year && parsed.getUTCMonth() === month - 1 && parsed.getUTCDate() === day
+    ? parsed.toISOString().slice(0, 10) : null;
 }
 
 export function reasonsForMissing(missing, item = {}) {
@@ -242,10 +251,14 @@ function observedMetric(metricValue, observedAt) {
 
 export function publicDetailsFromSnapshot(item, snapshot, observedAt = now()) {
   const parsed = itemFromSnapshot(item, snapshot);
+  const localizedDate = String(snapshot.og_description || '').match(/(\d{4}年\d{1,2}月\d{1,2}日)/);
   return {
     observed_at: observedAt,
     date: parsed.date || null,
     date_precision: parsed.date_precision || null,
+    date_source: parsed.date ? (snapshot.datetime ? 'page_timestamp' : localizedDate ? 'og_description_localized' : 'og_description') : null,
+    date_original: localizedDate?.[1] || null,
+    date_translation: localizedDate ? parsed.date || null : null,
     caption: parsed.caption || null,
     hashtags: parsed.hashtags || [],
     mentions: parsed.mentions || [],
