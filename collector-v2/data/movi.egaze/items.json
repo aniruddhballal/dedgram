@@ -439,10 +439,154 @@
     "deletion_check": {
       "status": "exists",
       "reason": "The reel page opened without Instagram's unavailable-page message.",
-      "checked_at": "2026-10-29T01:57:20.778Z",
+      "checked_at": "2026-10-29T02:22:55.889Z",
       "page_url": "https://www.instagram.com/reel/DeyW4IvuN_C/",
       "source": "fresh_incognito_context",
-      "evidence": "Log In\nSign Up\nNever miss a post from movi.egaze\nSign up for Instagram to stay in the loop.\nBy continuing, you agree to Instagram's Terms of Use and Privacy Policy.\nSign up\nLog in\nmovi.egaze\n•\nFollow\nOriginal audio\nmovi.egaze\n \n6d\n花粉症シーズン 🌼トムの対策は犬の被り物!?⁉️ 花 粉は防げても、ジェリーは防げません...。\nNo comments yet.\nStart the conversation.\n108\n6 days ago\nLog in to like or comment.\nMore posts from movi.egaze\nSee more posts\nMeta\nAbout\nBlog\nJobs\nHelp\nAPI\nPrivacy\nTerms\nLocations\nPopular\nInstagram Lite\nMeta AI\nMuse\nThreads\nContact Uploading & Non-Users\nMeta Verified\nEnglish\nAfrikaans\nالعربية\nČeština\nDansk\nDeutsch\nΕλληνικά\nEnglish\nEnglish (UK)\nEspañol (España)\nEspañol\nفارسی\nSuomi\nFrançais\nעברית\nBahasa Indonesia\nItaliano\n日本語\n한국어\nBahasa Melayu\nNorsk\nNederlands\nPolski\nPortuguês (Brasil)\nPortuguês (Portugal)\nРусский\nSv"
+      "evidence": "Log In\nSign Up\nNever miss a post from movi.egaze\nSign up for Instagram to stay in the loop.\nBy continuing, you agree to Instagram's Terms of Use and Privacy Policy.\nSign up\nLog in\nmovi.egaze\n•\nFollow\nOriginal audio\nmovi.egaze\n \n6d\n花粉症シーズン 🌼トムの対策は犬の被り物!?⁉️ 花 粉は防げても、ジェリーは防げません...。\nNo comments yet.\nStart the conversation.\n108\n6 days ago\nLog in to like or comment.\nMore posts from movi.egaze\nSee more posts\nMeta\nAbout\nBlog\nJobs\nHelp\nAPI\nPrivacy\nTerms\nLocations\nPopular\nInstagram Lite\nMeta AI\nMuse\nThreads\nContact Uploading & Non-Users\nMeta Verified\nEnglish\nAfrikaans\nالعربية\nČeština\nDansk\nDeutsch\nΕλληνικά\nEnglish\nEnglish (UK)\nEspañol (España)\nEspañol\nفارسی\nSuomi\nFrançais\nעברית\nBahasa Indonesia\nItaliano\n日本語\n한국어\nBahasa Melayu\nNorsk\nNederlands\nPolski\nPortuguês (Brasil)\nPortuguês (Portugal)\nРусский\nSvenska\nภาษาไทย\nFilipino\nTürkçe\n中文(简体)\n中文(台灣)\nবাংলা\nગુજરાતી\nहिन्दी\nHrvatski\nMagyar\nಕನ್ನಡ\nമലയാളം\nमराठी\nनेपाली\nਪੰਜਾਬੀ\nසිංහල\nSlovenčina\nதமிழ்\nతెలుగు\nاردو\nTiếng Việt\n中文(香港)\nБългарски\nFrançais (Canada)\nRomână\nСрпски\nУкраїнська\n© 2026 Instagram from Meta",
+      "observed_details": {
+        "observed_at": "2026-10-29T02:22:55.889Z",
+        "date": "2026-10-22T11:46:45.000Z",
+        "date_precision": "timestamp",
+        "caption": "「花粉症シーズン 🌼トムの対策は犬の被り物!?⁉️ 花 粉は防げても、ジェリーは防げません...。」",
+        "hashtags": [],
+        "mentions": [],
+        "likes": {
+          "value": 108,
+          "raw": "108",
+          "approximate": false,
+          "source": "og_description_localized",
+          "observed_at": "2026-10-29T02:22:55.889Z"
+        },
+        "comments": {
+          "value": 0,
+          "raw": "0",
+          "approximate": false,
+          "source": "og_description_localized",
+          "observed_at": "2026-10-29T02:22:55.889Z"
+        },
+        "views": null,
+        "thumbnail_url": "https://scontent.cdninstagram.com/v/t51.82787-15/858593918_17979741209939952_6278376563647067773_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=DgVhI8X2YMQQ7kNvwFYVuLF&_nc_oc=AdqY7LpglB08C56jD6bBgoLYlXPTkhBxH5dXGf_N_gB1kuI4gP8Vp2JOA6EciBkNAmYJRZD33kDStk8pRffcJ58T&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=0VCHA35uXd0CrXixYxodlw&_nc_ss=7c689&oh=00_AQR1Lz_11MU3JUHBB5d5z6xS8SQUvr8-C9wL5ww_biUHsA&oe=6AE89409",
+        "media_url": null,
+        "available_fields": [
+          "date",
+          "caption",
+          "likes",
+          "comments",
+          "thumbnail_url"
+        ],
+        "raw": {
+          "description": "2026年10月21日、「いいね！」108件、コメント0件 - movi.egaze: 「花粉症シーズン 🌼トムの対策は犬の被り物!?⁉️ 花 粉は防げても、ジェリーは防げません...。」",
+          "page_title": "Instagram",
+          "meta": {
+            "og:type": "article",
+            "twitter:card": "summary_large_image",
+            "twitter:site": "@instagram",
+            "twitter:maxage": "86400",
+            "twitter:image": "https://scontent.cdninstagram.com/v/t51.82787-15/858593918_17979741209939952_6278376563647067773_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=DgVhI8X2YMQQ7kNvwFYVuLF&_nc_oc=AdqY7LpglB08C56jD6bBgoLYlXPTkhBxH5dXGf_N_gB1kuI4gP8Vp2JOA6EciBkNAmYJRZD33kDStk8pRffcJ58T&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=0VCHA35uXd0CrXixYxodlw&_nc_ss=7c689&oh=00_AQR1Lz_11MU3JUHBB5d5z6xS8SQUvr8-C9wL5ww_biUHsA&oe=6AE89409",
+            "twitter:title": "movie gaze (@movi.egaze) • Instagram reel",
+            "description": "2026年10月21日、「いいね！」108件、コメント0件 - movi.egaze: 「花粉症シーズン 🌼トムの対策は犬の被り物!?⁉️ 花 粉は防げても、ジェリーは防げません...。」",
+            "og:site_name": "Instagram",
+            "og:title": "movie gaze on Instagram: \"花粉症シーズン 🌼トムの対策は犬の被り物!?⁉️ 花 粉は防げても、ジェリーは防げません...。\"",
+            "og:image": "https://scontent.cdninstagram.com/v/t51.82787-15/858593918_17979741209939952_6278376563647067773_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=DgVhI8X2YMQQ7kNvwFYVuLF&_nc_oc=AdqY7LpglB08C56jD6bBgoLYlXPTkhBxH5dXGf_N_gB1kuI4gP8Vp2JOA6EciBkNAmYJRZD33kDStk8pRffcJ58T&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=0VCHA35uXd0CrXixYxodlw&_nc_ss=7c689&oh=00_AQR1Lz_11MU3JUHBB5d5z6xS8SQUvr8-C9wL5ww_biUHsA&oe=6AE89409",
+            "og:url": "https://www.instagram.com/movi.egaze/reel/DeyW4IvuN_C/",
+            "og:description": "2026年10月21日、「いいね！」108件、コメント0件 - movi.egaze: 「花粉症シーズン 🌼トムの対策は犬の被り物!?⁉️ 花 粉は防げても、ジェリーは防げません...。」"
+          },
+          "article_text": "Never miss a post from movi.egaze\nSign up for Instagram to stay in the loop.\nBy continuing, you agree to Instagram's Terms of Use and Privacy Policy.\nSign up\nLog in\nmovi.egaze\n•\nFollow\nOriginal audio\nmovi.egaze\n \n6d\n花粉症シーズン 🌼トムの対策は犬の被り物!?⁉️ 花 粉は防げても、ジェリーは防げません...。\nNo comments yet.\nStart the conversation.\n108\n6 days ago\nLog in to like or comment.\nMore posts from movi.egaze\nSee more posts",
+          "aria_text": "Close\nVideo player\nAdjust volume\nAudio is muted\nMore options\nOct 22, 2026\nLoad more comments\nLike\nComment\nShare\nSave\nOct 22, 2026\nClip\nClip\nClip\nClip\nClip\nClip\nClip\nClip\nClip",
+          "json_ld": {},
+          "json_ld_scripts": [],
+          "page_url": "https://www.instagram.com/reel/DeyW4IvuN_C/",
+          "links": [
+            {
+              "href": "https://help.instagram.com/581066165581870/?locale=en_US",
+              "text": "Terms of Use"
+            },
+            {
+              "href": "https://privacycenter.instagram.com/policy/",
+              "text": "Privacy Policy"
+            },
+            {
+              "href": "https://www.instagram.com/accounts/emailsignup/",
+              "text": "Sign up"
+            },
+            {
+              "href": "https://www.instagram.com/accounts/login/?source=desktop_dynamic_landing_dialog",
+              "text": "Log in"
+            },
+            {
+              "href": "https://www.instagram.com/movi.egaze/",
+              "text": "movi.egaze"
+            },
+            {
+              "href": "https://www.instagram.com/reels/audio/29129511396668326/",
+              "text": "Original audio"
+            },
+            {
+              "href": "https://www.instagram.com/movi.egaze/",
+              "text": ""
+            },
+            {
+              "href": "https://www.instagram.com/movi.egaze/",
+              "text": "movi.egaze"
+            },
+            {
+              "href": "https://www.instagram.com/movi.egaze/reel/DeyW4IvuN_C/",
+              "text": "6 days ago"
+            },
+            {
+              "href": "https://www.instagram.com/accounts/login/?next=%2Freel%2FDeyW4IvuN_C%2F&source=post_comment_input",
+              "text": "Log in"
+            },
+            {
+              "href": "https://www.instagram.com/movi.egaze/",
+              "text": "movi.egaze"
+            },
+            {
+              "href": "https://www.instagram.com/movi.egaze/reel/DfCiAH-AL9u/",
+              "text": ""
+            },
+            {
+              "href": "https://www.instagram.com/movi.egaze/reel/DfAeN_8PSQr/",
+              "text": ""
+            },
+            {
+              "href": "https://www.instagram.com/movi.egaze/reel/De9bUu7hIV7/",
+              "text": ""
+            },
+            {
+              "href": "https://www.instagram.com/movi.egaze/reel/De8n16pv9BY/",
+              "text": ""
+            },
+            {
+              "href": "https://www.instagram.com/movi.egaze/reel/De617natYl-/",
+              "text": ""
+            },
+            {
+              "href": "https://www.instagram.com/movi.egaze/reel/De6OdUiBoz7/",
+              "text": ""
+            },
+            {
+              "href": "https://www.instagram.com/movi.egaze/reel/De4M0gcvkza/",
+              "text": ""
+            },
+            {
+              "href": "https://www.instagram.com/movi.egaze/reel/De1NmHeM3oY/",
+              "text": ""
+            },
+            {
+              "href": "https://www.instagram.com/movi.egaze/reel/DezRfM-B2L7/",
+              "text": ""
+            },
+            {
+              "href": "https://www.instagram.com/movi.egaze/",
+              "text": "See more posts"
+            }
+          ]
+        },
+        "poster_username": "movi.egaze",
+        "page_url": "https://www.instagram.com/reel/DeyW4IvuN_C/",
+        "source": "fresh_incognito_context"
+      }
     }
   },
   {

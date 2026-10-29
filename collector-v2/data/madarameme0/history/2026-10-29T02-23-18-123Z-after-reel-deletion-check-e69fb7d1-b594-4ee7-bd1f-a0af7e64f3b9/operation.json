@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "operation": "automated reel availability check",
+  "issue_type": "Missing date, likes, comments",
+  "performed_at": "2026-10-29T02:23:18.123Z",
+  "username": "madarameme0",
+  "source": "fresh incognito context",
+  "changes": [
+    {
+      "shortcode": "DesS5V6vwVU",
+      "status": "exists",
+      "checked_at": "2026-10-29T02:22:46.800Z",
+      "reason": "The reel page opened without Instagram's unavailable-page message."
+    }
+  ],
+  "before_snapshot": "D:\\post engg\\dedgram\\collector-v2\\data\\madarameme0\\history\\2026-10-29T02-22-39-804Z-before-reel-deletion-check-fbbcba25-ec4b-4abd-8c7e-9f3d1dea9d7a",
+  "after_snapshot": "D:\\post engg\\dedgram\\collector-v2\\data\\madarameme0\\history\\2026-10-29T02-23-18-123Z-after-reel-deletion-check-e69fb7d1-b594-4ee7-bd1f-a0af7e64f3b9"
+}

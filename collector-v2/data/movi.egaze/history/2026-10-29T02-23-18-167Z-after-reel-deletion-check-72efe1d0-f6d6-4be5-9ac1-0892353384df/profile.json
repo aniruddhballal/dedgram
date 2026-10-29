@@ -1,0 +1,104 @@
+{
+  "username": "movi.egaze",
+  "url": "https://www.instagram.com/movi.egaze/",
+  "fetched_at": "2026-10-28T09:02:29.376Z",
+  "display_name": "movie gaze",
+  "bio": "公式Instagramでは、ドタバタ追いかけっこのすべ てをお届け!\nCartoon Networkでは「まいにちトムとジェリー」 を放送中。\nさらに『映画 トムとジェリー」はデジタル配信中 ブ ルーレイ・DVDも好評発売中です!",
+  "posts_count": {
+    "value": 12,
+    "raw": "12",
+    "approximate": false
+  },
+  "posts_count_observed_at": "2026-10-28T09:02:29.376Z",
+  "followers_count": {
+    "value": 894,
+    "raw": "894",
+    "approximate": false,
+    "source": "header_title"
+  },
+  "following_count": {
+    "value": 6,
+    "raw": "6",
+    "approximate": false,
+    "source": "header_text"
+  },
+  "count_evidence": {
+    "followers": {
+      "header": {
+        "value": 894,
+        "raw": "894",
+        "approximate": false
+      },
+      "exact_title": {
+        "value": 894,
+        "raw": "894",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 789,
+        "raw": "789",
+        "approximate": false
+      }
+    },
+    "following": {
+      "header": {
+        "value": 6,
+        "raw": "6",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 7,
+        "raw": "7",
+        "approximate": false
+      },
+      "conflict": true
+    },
+    "posts": {
+      "header": {
+        "value": 12,
+        "raw": "12",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 12,
+        "raw": "12",
+        "approximate": false
+      }
+    }
+  },
+  "category": "Reel creator",
+  "ai_generated_profile": false,
+  "profile_picture_url": "https://instagram.fblr24-1.fna.fbcdn.net/v/t51.82787-19/854625387_17979495503939952_487417960432061119_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=y1DlNwXdwFgQ7kNvwEh_lSH&_nc_oc=Adou3ranJek-kw5uIG_xDwm9_vnySeHwxQhwicFifCd3wxM5k7Lbr25ldvM37_gnY1LzIw7uKsL73ahrX9z1WNjr&_nc_zt=24&_nc_ht=instagram.fblr24-1.fna&_nc_gid=Lq70Qy1_9yaz_zOk2zWWxg&_nc_ss=7f6a8&oh=00_AQTRUCZ3j6ShB2v6V-eBotNj-1V-CuaBL6xPasOp5aEhXQ&oe=6AE77A2C",
+  "date_joined": "October 2026",
+  "account_based_in": "Pakistan",
+  "former_usernames_count": null,
+  "raw": {
+    "header_text": "movi.egaze\nmovie gaze\n12 posts\n894 followers\n6 following\nReel creator\n公式Instagramでは、ドタバタ追いかけっこのすべ てをお届け!\nCartoon Networkでは「まいにちトムとジェリー」 を放送中。\nさらに『映画 トムとジェリー」はデジタル配信中 ブ ルーレイ・DVDも好評発売中です!\nFollow\nMessage",
+    "about_text": "About this account\nmovi.egaze\nTo help keep our community authentic, we’re showing information about profiles on Instagram. See why this information is important.\nDate joined\nOctober 2026\nAccount based in\nPakistan\nClose",
+    "description": "789 Followers, 7 Following, 12 Posts - movie gaze (@movi.egaze) on Instagram: \"公式Instagramでは、ドタバタ追いかけっこのすべ てをお届け!\nCartoon Networkでは「まいにちトムとジェリー」 を放送中。\nさらに『映画 トムとジェリー」はデジタル配信中 ブ ルーレイ・DVDも好評発売中です!\"",
+    "stat_evidence": {
+      "posts": {
+        "label": "",
+        "exact_title": ""
+      },
+      "followers": {
+        "label": "894 followers",
+        "exact_title": "894"
+      },
+      "following": {
+        "label": "6 following",
+        "exact_title": ""
+      }
+    }
+  },
+  "issues": [],
+  "current_username": "movi.egaze",
+  "username_history": [
+    {
+      "username": "movi.egaze",
+      "role": "current username",
+      "first_seen_at": "2026-10-28T09:02:29.373Z"
+    }
+  ],
+  "username_change_observed_at": null
+}

@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "username": "movi.egaze",
+  "phase": "before-reel-deletion-check",
+  "snapshot_at": "2026-10-29T02:22:39.804Z",
+  "run_status": "partial",
+  "run_updated_at": "2026-10-29T01:57:44.222Z",
+  "profile_fetched_at": "2026-10-28T09:02:29.376Z",
+  "item_count": 12,
+  "complete_item_count": 11,
+  "discovery": {
+    "reel": {
+      "count": 12,
+      "complete": true,
+      "error": null,
+      "attempted_at": "2026-10-28T09:37:16.701Z"
+    }
+  }
+}

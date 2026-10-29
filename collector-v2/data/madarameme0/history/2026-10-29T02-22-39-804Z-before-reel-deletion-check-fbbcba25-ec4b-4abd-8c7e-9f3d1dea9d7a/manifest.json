@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "username": "madarameme0",
+  "phase": "before-reel-deletion-check",
+  "snapshot_at": "2026-10-29T02:22:39.804Z",
+  "run_status": "partial",
+  "run_updated_at": "2026-10-29T01:57:44.178Z",
+  "profile_fetched_at": "2026-10-28T09:04:40.318Z",
+  "item_count": 30,
+  "complete_item_count": 29,
+  "discovery": {
+    "reel": {
+      "count": 30,
+      "complete": true,
+      "error": null,
+      "attempted_at": "2026-10-28T09:42:28.831Z"
+    }
+  }
+}

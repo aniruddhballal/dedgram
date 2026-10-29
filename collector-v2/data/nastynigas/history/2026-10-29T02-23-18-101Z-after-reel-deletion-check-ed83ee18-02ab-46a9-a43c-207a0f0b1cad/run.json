@@ -1,0 +1,34 @@
+{
+  "started_at": "2026-10-28T11:53:35.243Z",
+  "updated_at": "2026-10-29T02:23:18.101Z",
+  "status": "partial",
+  "phase": "done",
+  "scope": [
+    "reel"
+  ],
+  "current_url": null,
+  "error": null,
+  "progress": {
+    "task": "item_details",
+    "label": "Reel details",
+    "action": "Opening reel pages and extracting dates, captions, views, likes and comments",
+    "completed": 32,
+    "total": 32,
+    "percent": 100,
+    "remaining": 0,
+    "current_item": null,
+    "detail": "Stage finished with review required",
+    "updated_at": "2026-10-28T11:55:46.641Z"
+  },
+  "deletion_check": {
+    "operation": "automated reel availability check",
+    "issue_type": "Missing date, likes, comments",
+    "started_at": "2026-10-29T02:22:39.804Z",
+    "completed_at": "2026-10-29T02:23:18.101Z",
+    "counts": {
+      "deleted": 0,
+      "exists": 7,
+      "check_failed": 1
+    }
+  }
+}

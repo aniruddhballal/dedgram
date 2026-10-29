@@ -1,6 +1,6 @@
 {
   "started_at": "2026-10-24T09:32:47.593Z",
-  "updated_at": "2026-10-29T02:21:46.299Z",
+  "updated_at": "2026-10-29T02:23:18.300Z",
   "status": "partial",
   "phase": "done",
   "scope": [
@@ -10,13 +10,13 @@
   "error": null,
   "deletion_check": {
     "operation": "automated reel availability check",
-    "issue_type": "Missing date, comments",
-    "started_at": "2026-10-29T02:21:35.085Z",
-    "completed_at": "2026-10-29T02:21:46.299Z",
+    "issue_type": "Missing date, likes, comments",
+    "started_at": "2026-10-29T02:22:39.804Z",
+    "completed_at": "2026-10-29T02:23:18.300Z",
     "counts": {
       "deleted": 0,
-      "exists": 2,
-      "check_failed": 0
+      "exists": 7,
+      "check_failed": 1
     }
   }
 }

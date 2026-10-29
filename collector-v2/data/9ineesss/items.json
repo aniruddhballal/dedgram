@@ -91,10 +91,131 @@
     "deletion_check": {
       "status": "exists",
       "reason": "The reel page opened without Instagram's unavailable-page message.",
-      "checked_at": "2026-10-29T01:57:39.870Z",
+      "checked_at": "2026-10-29T02:23:13.987Z",
       "page_url": "https://www.instagram.com/reel/Der1sPXNK8e/",
       "source": "fresh_incognito_context",
-      "evidence": "Log In\nSign Up\nNever miss a post from 9ineesss\nSign up for Instagram to stay in the loop.\nBy continuing, you agree to Instagram's Terms of Use and Privacy Policy.\nSign up\nLog in\n9ineesss\n•\nFollow\nAI content\nOriginal audio\nNo comments yet.\nStart the conversation.\nOctober 19\nLog in to like or comment.\nMore posts from 9ineesss\nSee more posts\nMeta\nAbout\nBlog\nJobs\nHelp\nAPI\nPrivacy\nTerms\nLocations\nPopular\nInstagram Lite\nMeta AI\nMuse\nThreads\nContact Uploading & Non-Users\nMeta Verified\nEnglish\nAfrikaans\nالعربية\nČeština\nDansk\nDeutsch\nΕλληνικά\nEnglish\nEnglish (UK)\nEspañol (España)\nEspañol\nفارسی\nSuomi\nFrançais\nעברית\nBahasa Indonesia\nItaliano\n日本語\n한국어\nBahasa Melayu\nNorsk\nNederlands\nPolski\nPortuguês (Brasil)\nPortuguês (Portugal)\nРусский\nSvenska\nภาษาไทย\nFilipino\nTürkçe\n中文(简体)\n中文(台灣)\nবাংলা\nગુજરાતી\nहिन्दी\n"
+      "evidence": "Log In\nSign Up\nNever miss a post from 9ineesss\nSign up for Instagram to stay in the loop.\nBy continuing, you agree to Instagram's Terms of Use and Privacy Policy.\nSign up\nLog in\n9ineesss\n•\nFollow\nAI content\nOriginal audio\nNo comments yet.\nStart the conversation.\nOctober 19\nLog in to like or comment.\nMore posts from 9ineesss\nSee more posts\nMeta\nAbout\nBlog\nJobs\nHelp\nAPI\nPrivacy\nTerms\nLocations\nPopular\nInstagram Lite\nMeta AI\nMuse\nThreads\nContact Uploading & Non-Users\nMeta Verified\nEnglish\nAfrikaans\nالعربية\nČeština\nDansk\nDeutsch\nΕλληνικά\nEnglish\nEnglish (UK)\nEspañol (España)\nEspañol\nفارسی\nSuomi\nFrançais\nעברית\nBahasa Indonesia\nItaliano\n日本語\n한국어\nBahasa Melayu\nNorsk\nNederlands\nPolski\nPortuguês (Brasil)\nPortuguês (Portugal)\nРусский\nSvenska\nภาษาไทย\nFilipino\nTürkçe\n中文(简体)\n中文(台灣)\nবাংলা\nગુજરાતી\nहिन्दी\nHrvatski\nMagyar\nಕನ್ನಡ\nമലയാളം\nमराठी\nनेपाली\nਪੰਜਾਬੀ\nසිංහල\nSlovenčina\nதமிழ்\nతెలుగు\nاردو\nTiếng Việt\n中文(香港)\nБългарски\nFrançais (Canada)\nRomână\nСрпски\nУкраїнська\n© 2026 Instagram from Meta",
+      "observed_details": {
+        "observed_at": "2026-10-29T02:23:13.987Z",
+        "date": "2026-10-19T17:53:50.000Z",
+        "date_precision": "timestamp",
+        "caption": null,
+        "hashtags": [],
+        "mentions": [],
+        "likes": null,
+        "comments": null,
+        "views": null,
+        "thumbnail_url": "https://scontent.cdninstagram.com/v/t51.82787-15/858283285_18136004548619901_7469800139030117727_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=pnSESUhv_OIQ7kNvwH9ldNG&_nc_oc=Adr_daLuiYScJT5JxvR70sdf37oklkxU0X7IBgaZvB-fk2Qp4hMDzMiEIJXTE9PBRqRLBc9j7mHLL9SwjYRWv0QM&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=eyYpyntJi6WbE-gqfeEHvQ&_nc_ss=7c689&oh=00_AQTwdhzQqqL6IUnCNI2ATmD-6flNPP5_2mA91ltjZal8bQ&oe=6AE875E4",
+        "media_url": null,
+        "available_fields": [
+          "date",
+          "thumbnail_url"
+        ],
+        "raw": {
+          "description": "9ineesss on October 19, 2026",
+          "page_title": "Instagram",
+          "meta": {
+            "og:type": "article",
+            "twitter:card": "summary_large_image",
+            "twitter:site": "@instagram",
+            "twitter:maxage": "86400",
+            "twitter:image": "https://scontent.cdninstagram.com/v/t51.82787-15/858283285_18136004548619901_7469800139030117727_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=pnSESUhv_OIQ7kNvwH9ldNG&_nc_oc=Adr_daLuiYScJT5JxvR70sdf37oklkxU0X7IBgaZvB-fk2Qp4hMDzMiEIJXTE9PBRqRLBc9j7mHLL9SwjYRWv0QM&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=eyYpyntJi6WbE-gqfeEHvQ&_nc_ss=7c689&oh=00_AQTwdhzQqqL6IUnCNI2ATmD-6flNPP5_2mA91ltjZal8bQ&oe=6AE875E4",
+            "twitter:title": "爱。 (@9ineesss) • Instagram reel",
+            "description": "9ineesss on October 19, 2026",
+            "og:site_name": "Instagram",
+            "og:title": "爱。 on Instagram",
+            "og:image": "https://scontent.cdninstagram.com/v/t51.82787-15/858283285_18136004548619901_7469800139030117727_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=pnSESUhv_OIQ7kNvwH9ldNG&_nc_oc=Adr_daLuiYScJT5JxvR70sdf37oklkxU0X7IBgaZvB-fk2Qp4hMDzMiEIJXTE9PBRqRLBc9j7mHLL9SwjYRWv0QM&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=eyYpyntJi6WbE-gqfeEHvQ&_nc_ss=7c689&oh=00_AQTwdhzQqqL6IUnCNI2ATmD-6flNPP5_2mA91ltjZal8bQ&oe=6AE875E4",
+            "og:url": "https://www.instagram.com/9ineesss/reel/Der1sPXNK8e/",
+            "og:description": "9ineesss on October 19, 2026"
+          },
+          "article_text": "Never miss a post from 9ineesss\nSign up for Instagram to stay in the loop.\nBy continuing, you agree to Instagram's Terms of Use and Privacy Policy.\nSign up\nLog in\n9ineesss\n•\nFollow\nAI content\nOriginal audio\nNo comments yet.\nStart the conversation.\nOctober 19\nLog in to like or comment.\nMore posts from 9ineesss\nSee more posts",
+          "aria_text": "Close\nVideo player\nAdjust volume\nAudio is muted\nMore options\nLoad more comments\nLike\nComment\nShare\nSave\nOct 19, 2026\nClip\nClip\nClip\nClip\nClip\nClip\nClip\nClip",
+          "json_ld": {},
+          "json_ld_scripts": [],
+          "page_url": "https://www.instagram.com/reel/Der1sPXNK8e/",
+          "links": [
+            {
+              "href": "https://help.instagram.com/581066165581870/?locale=en_US",
+              "text": "Terms of Use"
+            },
+            {
+              "href": "https://privacycenter.instagram.com/policy/",
+              "text": "Privacy Policy"
+            },
+            {
+              "href": "https://www.instagram.com/accounts/emailsignup/",
+              "text": "Sign up"
+            },
+            {
+              "href": "https://www.instagram.com/accounts/login/?source=desktop_dynamic_landing_dialog",
+              "text": "Log in"
+            },
+            {
+              "href": "https://www.instagram.com/9ineesss/",
+              "text": "9ineesss"
+            },
+            {
+              "href": "https://www.instagram.com/reels/audio/27779215495088336/",
+              "text": "Original audio"
+            },
+            {
+              "href": "https://www.instagram.com/9ineesss/reel/Der1sPXNK8e/",
+              "text": "October 19"
+            },
+            {
+              "href": "https://www.instagram.com/accounts/login/?next=%2Freel%2FDer1sPXNK8e%2F&source=post_comment_input",
+              "text": "Log in"
+            },
+            {
+              "href": "https://www.instagram.com/9ineesss/",
+              "text": "9ineesss"
+            },
+            {
+              "href": "https://www.instagram.com/9ineesss/reel/De961fto_gj/",
+              "text": ""
+            },
+            {
+              "href": "https://www.instagram.com/9ineesss/reel/De96wfmIC0l/",
+              "text": ""
+            },
+            {
+              "href": "https://www.instagram.com/9ineesss/reel/De96rbuIfL7/",
+              "text": ""
+            },
+            {
+              "href": "https://www.instagram.com/9ineesss/reel/De96js9o8fh/",
+              "text": ""
+            },
+            {
+              "href": "https://www.instagram.com/9ineesss/p/De96b97o_Fn/",
+              "text": ""
+            },
+            {
+              "href": "https://www.instagram.com/9ineesss/reel/Der1xZ0tyPZ/",
+              "text": ""
+            },
+            {
+              "href": "https://www.instagram.com/9ineesss/reel/Der1mpQt4Nh/",
+              "text": ""
+            },
+            {
+              "href": "https://www.instagram.com/9ineesss/reel/Der1fRztm3h/",
+              "text": ""
+            },
+            {
+              "href": "https://www.instagram.com/9ineesss/reel/Der1X8LtP1a/",
+              "text": ""
+            },
+            {
+              "href": "https://www.instagram.com/9ineesss/",
+              "text": "See more posts"
+            }
+          ]
+        },
+        "poster_username": "9ineesss",
+        "page_url": "https://www.instagram.com/reel/Der1sPXNK8e/",
+        "source": "fresh_incognito_context"
+      }
     }
   },
   {
@@ -3273,10 +3394,186 @@
     "deletion_check": {
       "status": "exists",
       "reason": "The reel page opened without Instagram's unavailable-page message.",
-      "checked_at": "2026-10-29T01:57:35.522Z",
+      "checked_at": "2026-10-29T02:23:09.421Z",
       "page_url": "https://www.instagram.com/reel/DemspEgNjMh/",
       "source": "fresh_incognito_context",
-      "evidence": "Log In\nSign Up\nNever miss a post from 9ineesss\nSign up for Instagram to stay in the loop.\nBy continuing, you agree to Instagram's Terms of Use and Privacy Policy.\nSign up\nLog in\n9ineesss\n•\nFollow\nAI content\nOriginal audio\n9ineesss\n \n1w\nあらゆる追いかけっこを繰り広げる#\nzaheedoesntcare\n2 likes\nReply\njannath33glizzy\n \n5d\nbut both\nLike\nReply\n__abhinanduh__\n \n1w\nI’m one of the loud girls so please don’t look at me, love when men don’t look at all😂\n6 likes\nReply\n2.3K\n9\nOctober 17\nLog in to like or comment.\nMore posts from 9ineesss\nSee more posts\nMeta\nAbout\nBlog\nJobs\nHelp\nAPI\nPrivacy\nTerms\nLocations\nPopular\nInstagram Lite\nMeta AI\nMuse\nThreads\nContact Uploading & Non-Users\nMeta Verified\nEnglish\nAfrikaans\nالعربية\nČeština\nDansk\nDeutsch\nΕλληνικά\nEnglish\nEnglish (UK)\nEspañol (España)\nEspañol\nفارسی\nSuomi\nFrançais\nעב"
+      "evidence": "Log In\nSign Up\nNever miss a post from 9ineesss\nSign up for Instagram to stay in the loop.\nBy continuing, you agree to Instagram's Terms of Use and Privacy Policy.\nSign up\nLog in\n9ineesss\n•\nFollow\nAI content\nOriginal audio\n9ineesss\n \n1w\nあらゆる追いかけっこを繰り広げる#\nzaheedoesntcare\n2 likes\nReply\njannath33glizzy\n \n5d\nbut both\nLike\nReply\n__abhinanduh__\n \n1w\nI’m one of the loud girls so please don’t look at me, love when men don’t look at all😂\n6 likes\nReply\n2.3K\n9\nOctober 17\nLog in to like or comment.\nMore posts from 9ineesss\nSee more posts\nMeta\nAbout\nBlog\nJobs\nHelp\nAPI\nPrivacy\nTerms\nLocations\nPopular\nInstagram Lite\nMeta AI\nMuse\nThreads\nContact Uploading & Non-Users\nMeta Verified\nEnglish\nAfrikaans\nالعربية\nČeština\nDansk\nDeutsch\nΕλληνικά\nEnglish\nEnglish (UK)\nEspañol (España)\nEspañol\nفارسی\nSuomi\nFrançais\nעברית\nBahasa Indonesia\nItaliano\n日本語\n한국어\nBahasa Melayu\nNorsk\nNederlands\nPolski\nPortuguês (Brasil)\nPortuguês (Portugal)\nРусский\nSvenska\nภาษาไทย\nFilipino\nTürkçe\n中文(简体)\n中文(台灣)\nবাংলা\nગુજરાતી\nहिन्दी\nHrvatski\nMagyar\nಕನ್ನಡ\nമലയാളം\nमराठी\nनेपाली\nਪੰਜਾਬੀ\nසිංහල\nSlovenčina\nதமிழ்\nతెలుగు\nاردو\nTiếng Việt\n中文(香港)\nБългарски\nFrançais (Canada)\nRomână\nСрпски\nУкраїнська\n© 2026 Instagram from Meta",
+      "observed_details": {
+        "observed_at": "2026-10-29T02:23:09.421Z",
+        "date": "2026-10-17T17:58:14.000Z",
+        "date_precision": "timestamp",
+        "caption": "「あらゆる追いかけっこを繰り広げる#」",
+        "hashtags": [],
+        "mentions": [],
+        "likes": {
+          "value": 2321,
+          "raw": "2,321",
+          "approximate": false,
+          "source": "og_description_localized",
+          "observed_at": "2026-10-29T02:23:09.421Z"
+        },
+        "comments": {
+          "value": 9,
+          "raw": "9",
+          "approximate": false,
+          "source": "og_description_localized",
+          "observed_at": "2026-10-29T02:23:09.421Z"
+        },
+        "views": null,
+        "thumbnail_url": "https://scontent.cdninstagram.com/v/t51.82787-15/853932325_18135298075619901_85660930235449868_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=VabCeHx4_jEQ7kNvwFd8d4i&_nc_oc=Ado1Fjdz8DRQixnKRXVP9C7_1w1Zn6B822zyiXsxPMUKcAZQtorcyYbXr3mvNnLs3wgc_W8QTFgjI5yyOrmE763w&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=gFjuu7BNYXH_XgZz85yIVA&_nc_ss=7c689&oh=00_AQSWDKRve_zQhdVstOCZP5b5jcreTIZdmbufo5LvYQy6hA&oe=6AE88004",
+        "media_url": null,
+        "available_fields": [
+          "date",
+          "caption",
+          "likes",
+          "comments",
+          "thumbnail_url"
+        ],
+        "raw": {
+          "description": "2026年10月17日、「いいね！」2,321件、コメント9件 - 9ineesss: 「あらゆる追いかけっこを繰り広げる#」",
+          "page_title": "Instagram",
+          "meta": {
+            "og:type": "article",
+            "twitter:card": "summary_large_image",
+            "twitter:site": "@instagram",
+            "twitter:maxage": "86400",
+            "twitter:image": "https://scontent.cdninstagram.com/v/t51.82787-15/853932325_18135298075619901_85660930235449868_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=VabCeHx4_jEQ7kNvwFd8d4i&_nc_oc=Ado1Fjdz8DRQixnKRXVP9C7_1w1Zn6B822zyiXsxPMUKcAZQtorcyYbXr3mvNnLs3wgc_W8QTFgjI5yyOrmE763w&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=gFjuu7BNYXH_XgZz85yIVA&_nc_ss=7c689&oh=00_AQSWDKRve_zQhdVstOCZP5b5jcreTIZdmbufo5LvYQy6hA&oe=6AE88004",
+            "twitter:title": "爱。 (@9ineesss) • Instagram reel",
+            "description": "2026年10月17日、「いいね！」2,321件、コメント9件 - 9ineesss: 「あらゆる追いかけっこを繰り広げる#」",
+            "og:site_name": "Instagram",
+            "og:title": "爱。 on Instagram: \"あらゆる追いかけっこを繰り広げる#\"",
+            "og:image": "https://scontent.cdninstagram.com/v/t51.82787-15/853932325_18135298075619901_85660930235449868_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=VabCeHx4_jEQ7kNvwFd8d4i&_nc_oc=Ado1Fjdz8DRQixnKRXVP9C7_1w1Zn6B822zyiXsxPMUKcAZQtorcyYbXr3mvNnLs3wgc_W8QTFgjI5yyOrmE763w&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=gFjuu7BNYXH_XgZz85yIVA&_nc_ss=7c689&oh=00_AQSWDKRve_zQhdVstOCZP5b5jcreTIZdmbufo5LvYQy6hA&oe=6AE88004",
+            "og:url": "https://www.instagram.com/9ineesss/reel/DemspEgNjMh/",
+            "og:description": "2026年10月17日、「いいね！」2,321件、コメント9件 - 9ineesss: 「あらゆる追いかけっこを繰り広げる#」"
+          },
+          "article_text": "Never miss a post from 9ineesss\nSign up for Instagram to stay in the loop.\nBy continuing, you agree to Instagram's Terms of Use and Privacy Policy.\nSign up\nLog in\n9ineesss\n•\nFollow\nAI content\nOriginal audio\n9ineesss\n \n1w\nあらゆる追いかけっこを繰り広げる#\nzaheedoesntcare\n2 likes\nReply\njannath33glizzy\n \n5d\nbut both\nLike\nReply\n__abhinanduh__\n \n1w\nI’m one of the loud girls so please don’t look at me, love when men don’t look at all😂\n6 likes\nReply\n2.3K\n9\nOctober 17\nLog in to like or comment.\nMore posts from 9ineesss\nSee more posts",
+          "aria_text": "Close\nVideo player\nAdjust volume\nAudio is muted\nMore options\nOct 17, 2026\nLoad more comments\nOct 22, 2026\nOct 17, 2026\nLike\nComment\nShare\nSave\nOct 17, 2026\nClip\nClip\nClip\nClip\nClip\nClip\nClip\nClip",
+          "json_ld": {},
+          "json_ld_scripts": [],
+          "page_url": "https://www.instagram.com/reel/DemspEgNjMh/",
+          "links": [
+            {
+              "href": "https://help.instagram.com/581066165581870/?locale=en_US",
+              "text": "Terms of Use"
+            },
+            {
+              "href": "https://privacycenter.instagram.com/policy/",
+              "text": "Privacy Policy"
+            },
+            {
+              "href": "https://www.instagram.com/accounts/emailsignup/",
+              "text": "Sign up"
+            },
+            {
+              "href": "https://www.instagram.com/accounts/login/?source=desktop_dynamic_landing_dialog",
+              "text": "Log in"
+            },
+            {
+              "href": "https://www.instagram.com/9ineesss/",
+              "text": "9ineesss"
+            },
+            {
+              "href": "https://www.instagram.com/reels/audio/29366184342989108/",
+              "text": "Original audio"
+            },
+            {
+              "href": "https://www.instagram.com/9ineesss/",
+              "text": ""
+            },
+            {
+              "href": "https://www.instagram.com/9ineesss/",
+              "text": "9ineesss"
+            },
+            {
+              "href": "https://www.instagram.com/zaheedoesntcare/",
+              "text": ""
+            },
+            {
+              "href": "https://www.instagram.com/zaheedoesntcare/",
+              "text": "zaheedoesntcare"
+            },
+            {
+              "href": "https://www.instagram.com/jannath33glizzy/",
+              "text": ""
+            },
+            {
+              "href": "https://www.instagram.com/jannath33glizzy/",
+              "text": "jannath33glizzy"
+            },
+            {
+              "href": "https://www.instagram.com/p/DemspEgNjMh/c/17898126540610126/",
+              "text": "5d"
+            },
+            {
+              "href": "https://www.instagram.com/__abhinanduh__/",
+              "text": ""
+            },
+            {
+              "href": "https://www.instagram.com/__abhinanduh__/",
+              "text": "__abhinanduh__"
+            },
+            {
+              "href": "https://www.instagram.com/p/DemspEgNjMh/c/18108842420218965/",
+              "text": "1w"
+            },
+            {
+              "href": "https://www.instagram.com/9ineesss/reel/DemspEgNjMh/",
+              "text": "October 17"
+            },
+            {
+              "href": "https://www.instagram.com/accounts/login/?next=%2Freel%2FDemspEgNjMh%2F&source=post_comment_input",
+              "text": "Log in"
+            },
+            {
+              "href": "https://www.instagram.com/9ineesss/",
+              "text": "9ineesss"
+            },
+            {
+              "href": "https://www.instagram.com/9ineesss/reel/De961fto_gj/",
+              "text": ""
+            },
+            {
+              "href": "https://www.instagram.com/9ineesss/reel/De96wfmIC0l/",
+              "text": ""
+            },
+            {
+              "href": "https://www.instagram.com/9ineesss/reel/De96rbuIfL7/",
+              "text": ""
+            },
+            {
+              "href": "https://www.instagram.com/9ineesss/reel/De96js9o8fh/",
+              "text": ""
+            },
+            {
+              "href": "https://www.instagram.com/9ineesss/p/De96b97o_Fn/",
+              "text": ""
+            },
+            {
+              "href": "https://www.instagram.com/9ineesss/reel/Der1xZ0tyPZ/",
+              "text": ""
+            },
+            {
+              "href": "https://www.instagram.com/9ineesss/reel/Der1sPXNK8e/",
+              "text": ""
+            },
+            {
+              "href": "https://www.instagram.com/9ineesss/reel/Der1mpQt4Nh/",
+              "text": ""
+            },
+            {
+              "href": "https://www.instagram.com/9ineesss/reel/Der1fRztm3h/",
+              "text": ""
+            },
+            {
+              "href": "https://www.instagram.com/9ineesss/",
+              "text": "See more posts"
+            }
+          ]
+        },
+        "poster_username": "9ineesss",
+        "page_url": "https://www.instagram.com/reel/DemspEgNjMh/",
+        "source": "fresh_incognito_context"
+      }
     }
   },
   {
@@ -4860,10 +5157,189 @@
     "deletion_check": {
       "status": "exists",
       "reason": "The reel page opened without Instagram's unavailable-page message.",
-      "checked_at": "2026-10-29T01:57:30.958Z",
+      "checked_at": "2026-10-29T02:23:04.972Z",
       "page_url": "https://www.instagram.com/reel/DekHtr1t9oL/",
       "source": "fresh_incognito_context",
-      "evidence": "Log In\nSign Up\nNever miss a post from 9ineesss\nSign up for Instagram to stay in the loop.\nBy continuing, you agree to Instagram's Terms of Use and Privacy Policy.\nSign up\nLog in\n9ineesss\n•\nFollow\nAI content\nSummer Walker, Drake•Girls Need Love (Remix)\n9ineesss\n \n1w\n③ 魔王軍との全面戦争を繰り広げる！『勇者伝説 公式\n\nInstagramです！TVアニメ『聖剣のレガリア』放送中！\n\n『劇場版特別編』デジタル配信/ブルーレイ&DVD発売中\n416e7573686b61\n \n12h\nwould like but im 6'2\nLike\nReply\nvenicrashout\n \n21h\naura farming with green flies\nLike\nReply\ntomthebomb569\nLike\nReply\nmusta_fa.67\n \n4d\nAgreed (5 3 btw dms open)\nLike\nReply\nrithvikkrishnam\n \n6d\ninsta is recovering\nLike\nReply\n500daysofbarbaadift.avni\n \n1w\n2'0 btw\nLike\nReply\nagcthario\n \n1w\ni hate men and im 5’2 so its fine\nLike\nReply\nthat_guy_nixi\n \n1w\nsee how much considerate and caring women are.. thats what im saying like"
+      "evidence": "Log In\nSign Up\nNever miss a post from 9ineesss\nSign up for Instagram to stay in the loop.\nBy continuing, you agree to Instagram's Terms of Use and Privacy Policy.\nSign up\nLog in\n9ineesss\n•\nFollow\nAI content\nSummer Walker, Drake•Girls Need Love (Remix)\n9ineesss\n \n1w\n③ 魔王軍との全面戦争を繰り広げる！『勇者伝説 公式\n\nInstagramです！TVアニメ『聖剣のレガリア』放送中！\n\n『劇場版特別編』デジタル配信/ブルーレイ&DVD発売中\n416e7573686b61\n \n12h\nwould like but im 6'2\nLike\nReply\nvenicrashout\n \n22h\naura farming with green flies\nLike\nReply\ntomthebomb569\nLike\nReply\nmusta_fa.67\n \n4d\nAgreed (5 3 btw dms open)\nLike\nReply\nrithvikkrishnam\n \n6d\ninsta is recovering\nLike\nReply\n500daysofbarbaadift.avni\n \n1w\n2'0 btw\nLike\nReply\nagcthario\n \n1w\ni hate men and im 5’2 so its fine\nLike\nReply\nthat_guy_nixi\n \n1w\nsee how much considerate and caring women are.. thats what im saying like we genuinely need to end all women abuse as well as execute the person that invented cramps. gosh women go thru so much🙄🙄 Women embody an extraordinary blend of strength, intellect, and compassion that enriches every corner of our world. As innovators, caregivers, leaders, and thinkers, they drive human progress while fostering empathy and unity within our global community. Throughout history, women have continuously broken barriers, demonstrating a profound resilience that transforms obstacles into opportunities for collective growth. Their presence nurtures the present and inspires the future, instilling hope, wisdom, and grace in everyday life. To appreciate women is to honor the very heartbeat of humanity—a vital force that illuminates our shared journey and shapes a better, more balanced world for everyone.\nLike\nReply\nkyuensama\n \n1w\nIdk if this is satire, but I actually agree with this.\n1 like\nReply\nridiinlovesmadrid\n \n1w\n@diaryofwimpykashish 😭😭😭\nLike\nReply\nawosmium\n \n1w\nMene suna hai wo aye hai Punjab se\nLike\nReply\nrahhhh__link18\n \n1w\nAll men deserve rights or wtv (1’11 btw)\nLike\nReply\nsabari.shhh\n \n1w\nThose kinda women don't exist btw\nLike\nReply\nnigakawaii\n \n1w\nIt was ",
+      "observed_details": {
+        "observed_at": "2026-10-29T02:23:04.972Z",
+        "date": "2026-10-16T17:56:48.000Z",
+        "date_precision": "timestamp",
+        "caption": null,
+        "hashtags": [],
+        "mentions": [],
+        "likes": {
+          "value": 23000,
+          "raw": "23K",
+          "approximate": true,
+          "source": "og_description_localized",
+          "observed_at": "2026-10-29T02:23:04.972Z"
+        },
+        "comments": {
+          "value": 240,
+          "raw": "240",
+          "approximate": false,
+          "source": "og_description_localized",
+          "observed_at": "2026-10-29T02:23:04.972Z"
+        },
+        "views": null,
+        "thumbnail_url": "https://scontent.cdninstagram.com/v/t51.82787-15/853085434_18134935906619901_4301221567335017742_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=104&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=_fssAF7N-kIQ7kNvwHPB512&_nc_oc=AdrrFQ3icOAjVvG-jU7Dxuat8MdgpwXbp1QYm5jS_ARX8idwDw2Ois8Dlm6nNRGzfZ0RiwSvTDV2kkHtNQmkp_EJ&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=2ygJ7QqH0iG5uLwekOfX-g&_nc_ss=7c689&oh=00_AQTkLD1UQQMyRXSHgnEtKFklVl71wl7T3ADYDHMofKnrOg&oe=6AE87FC8",
+        "media_url": null,
+        "available_fields": [
+          "date",
+          "likes",
+          "comments",
+          "thumbnail_url"
+        ],
+        "raw": {
+          "description": "「③ 魔王軍との全面戦争を繰り広げる！『勇者伝説 公式\n\nInstagramです！TVアニメ『聖剣のレガリア』放送中！\n\n『劇場版特別編』デジタル配信/ブルーレイ&DVD発売中」 - 2026年10月16日、「いいね！」23K件、コメント240件 - 9ineesss",
+          "page_title": "Instagram",
+          "meta": {
+            "og:type": "article",
+            "twitter:card": "summary_large_image",
+            "twitter:site": "@instagram",
+            "twitter:maxage": "86400",
+            "twitter:image": "https://scontent.cdninstagram.com/v/t51.82787-15/853085434_18134935906619901_4301221567335017742_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=104&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=_fssAF7N-kIQ7kNvwHPB512&_nc_oc=AdrrFQ3icOAjVvG-jU7Dxuat8MdgpwXbp1QYm5jS_ARX8idwDw2Ois8Dlm6nNRGzfZ0RiwSvTDV2kkHtNQmkp_EJ&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=2ygJ7QqH0iG5uLwekOfX-g&_nc_ss=7c689&oh=00_AQTkLD1UQQMyRXSHgnEtKFklVl71wl7T3ADYDHMofKnrOg&oe=6AE87FC8",
+            "twitter:title": "爱。 (@9ineesss) • Instagram reel",
+            "description": "「③ 魔王軍との全面戦争を繰り広げる！『勇者伝説 公式\n\nInstagramです！TVアニメ『聖剣のレガリア』放送中！\n\n『劇場版特別編』デジタル配信/ブルーレイ&DVD発売中」 - 2026年10月16日、「いいね！」23K件、コメント240件 - 9ineesss",
+            "og:site_name": "Instagram",
+            "og:title": "爱。 on Instagram: \"③ 魔王軍との全面戦争を繰り広げる！『勇者伝説 公式\n\nInstagramです！TVアニメ『聖剣のレガリア』放送中！\n\n『劇場版特別編』デジタル配信/ブルーレイ&DVD発売中\"",
+            "og:image": "https://scontent.cdninstagram.com/v/t51.82787-15/853085434_18134935906619901_4301221567335017742_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=104&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=_fssAF7N-kIQ7kNvwHPB512&_nc_oc=AdrrFQ3icOAjVvG-jU7Dxuat8MdgpwXbp1QYm5jS_ARX8idwDw2Ois8Dlm6nNRGzfZ0RiwSvTDV2kkHtNQmkp_EJ&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=2ygJ7QqH0iG5uLwekOfX-g&_nc_ss=7c689&oh=00_AQTkLD1UQQMyRXSHgnEtKFklVl71wl7T3ADYDHMofKnrOg&oe=6AE87FC8",
+            "og:url": "https://www.instagram.com/9ineesss/reel/DekHtr1t9oL/",
+            "og:description": "「③ 魔王軍との全面戦争を繰り広げる！『勇者伝説 公式\n\nInstagramです！TVアニメ『聖剣のレガリア』放送中！\n\n『劇場版特別編』デジタル配信/ブルーレイ&DVD発売中」 - 2026年10月16日、「いいね！」23K件、コメント240件 - 9ineesss"
+          },
+          "article_text": "Never miss a post from 9ineesss\nSign up for Instagram to stay in the loop.\nBy continuing, you agree to Instagram's Terms of Use and Privacy Policy.\nSign up\nLog in\n9ineesss\n•\nFollow\nAI content\nSummer Walker, Drake•Girls Need Love (Remix)\n9ineesss\n \n1w\n③ 魔王軍との全面戦争を繰り広げる！『勇者伝説 公式\n\nInstagramです！TVアニメ『聖剣のレガリア』放送中！\n\n『劇場版特別編』デジタル配信/ブルーレイ&DVD発売中\n416e7573686b61\n \n12h\nwould like but im 6'2\nLike\nReply\nvenicrashout\n \n22h\naura farming with green flies\nLike\nReply\ntomthebomb569\nLike\nReply\nmusta_fa.67\n \n4d\nAgreed (5 3 btw dms open)\nLike\nReply\nrithvikkrishnam\n \n6d\ninsta is recovering\nLike\nReply\n500daysofbarbaadift.avni\n \n1w\n2'0 btw\nLike\nReply\nagcthario\n \n1w\ni hate men and im 5’2 so its fine\nLike\nReply\nthat_guy_nixi\n \n1w\nsee how much considerate and caring women are.. thats what im saying like we genuinely need to end all women abuse as well as execute the person that invented cramps. gosh women go thru so much🙄🙄 Women embody an extraordinary blend of strength, intellect, and compassion that enriches every corner of our world. As innovators, caregivers, leaders, and thinkers, they drive human progress while fostering empathy and unity within our global community. Throughout history, women have continuously broken barriers, demonstrating a profound resilience that transforms obstacles into opportunities for collective growth. Their presence nurtures the present and inspires the future, instilling hope, wisdom, and grace in everyday life. To appreciate women is to honor the very heartbeat of humanity—a vital force that illuminates our shared journey and shapes a better, more balanced world for everyone.\nLike\nReply\nkyuensama\n \n1w\nIdk if this is satire, but I actually agree with this.\n1 like\nReply\nridiinlovesmadrid\n \n1w\n@diaryofwimpykashish 😭😭😭\nLike\nReply\nawosmium\n \n1w\nMene suna hai wo aye hai Punjab se\nLike\nReply\nrahhhh__link18\n \n1w\nAll men deserve rights or wtv (1’11 btw)\nLike\nReply\nsabari.shhh\n \n1w\nThose kinda women don't exist btw\nLike\nReply\nnigakawaii\n \n1w\nIt was supposed to go down\nLike\nReply\nivnv.jpg\n \n1w\nHeight should be getting smaller not taller\nLike\nReply\n22.7K\n240\nOctober 16\nLog in to like or comment.\nMore posts from 9ineesss\nSee more posts",
+          "aria_text": "Close\nVideo player\nAdjust volume\nAudio is muted\nMore options\nOct 16, 2026\nLoad more comments\nOct 28, 2026\nOct 28, 2026\nOct 24, 2026\nOct 23, 2026\nOct 21, 2026\nOct 21, 2026\nOct 21, 2026\nOct 21, 2026\nOct 21, 2026\nOct 20, 2026\nOct 20, 2026\nOct 20, 2026\nOct 20, 2026\nOct 19, 2026\nLoading...\nLike\nComment\nShare\nSave\nOct 16, 2026\nClip\nClip\nClip\nClip\nClip\nClip\nClip\nClip",
+          "json_ld": {},
+          "json_ld_scripts": [],
+          "page_url": "https://www.instagram.com/reel/DekHtr1t9oL/",
+          "links": [
+            {
+              "href": "https://help.instagram.com/581066165581870/?locale=en_US",
+              "text": "Terms of Use"
+            },
+            {
+              "href": "https://privacycenter.instagram.com/policy/",
+              "text": "Privacy Policy"
+            },
+            {
+              "href": "https://www.instagram.com/accounts/emailsignup/",
+              "text": "Sign up"
+            },
+            {
+              "href": "https://www.instagram.com/accounts/login/?source=desktop_dynamic_landing_dialog",
+              "text": "Log in"
+            },
+            {
+              "href": "https://www.instagram.com/9ineesss/",
+              "text": "9ineesss"
+            },
+            {
+              "href": "https://www.instagram.com/reels/audio/865947060407164/",
+              "text": "Summer Walker, Drake•Girls Need Love (Remix)"
+            },
+            {
+              "href": "https://www.instagram.com/9ineesss/",
+              "text": ""
+            },
+            {
+              "href": "https://www.instagram.com/9ineesss/",
+              "text": "9ineesss"
+            },
+            {
+              "href": "https://www.instagram.com/416e7573686b61/",
+              "text": ""
+            },
+            {
+              "href": "https://www.instagram.com/416e7573686b61/",
+              "text": "416e7573686b61"
+            },
+            {
+              "href": "https://www.instagram.com/p/DekHtr1t9oL/c/17889734877479820/",
+              "text": "12h"
+            },
+            {
+              "href": "https://www.instagram.com/venicrashout/",
+              "text": ""
+            },
+            {
+              "href": "https://www.instagram.com/venicrashout/",
+              "text": "venicrashout"
+            },
+            {
+              "href": "https://www.instagram.com/p/DekHtr1t9oL/c/18108569711338321/",
+              "text": "22h"
+            },
+            {
+              "href": "https://www.instagram.com/tomthebomb569/",
+              "text": ""
+            },
+            {
+              "href": "https://www.instagram.com/tomthebomb569/",
+              "text": "tomthebomb569"
+            },
+            {
+              "href": "https://www.instagram.com/musta_fa.67/",
+              "text": ""
+            },
+            {
+              "href": "https://www.instagram.com/musta_fa.67/",
+              "text": "musta_fa.67"
+            },
+            {
+              "href": "https://www.instagram.com/p/DekHtr1t9oL/c/18013350341986666/",
+              "text": "4d"
+            },
+            {
+              "href": "https://www.instagram.com/rithvikkrishnam/",
+              "text": ""
+            },
+            {
+              "href": "https://www.instagram.com/rithvikkrishnam/",
+              "text": "rithvikkrishnam"
+            },
+            {
+              "href": "https://www.instagram.com/p/DekHtr1t9oL/c/18148193770495848/",
+              "text": "6d"
+            },
+            {
+              "href": "https://www.instagram.com/500daysofbarbaadift.avni/",
+              "text": ""
+            },
+            {
+              "href": "https://www.instagram.com/500daysofbarbaadift.avni/",
+              "text": "500daysofbarbaadift.avni"
+            },
+            {
+              "href": "https://www.instagram.com/p/DekHtr1t9oL/c/18119771624072360/",
+              "text": "1w"
+            },
+            {
+              "href": "https://www.instagram.com/agcthario/",
+              "text": ""
+            },
+            {
+              "href": "https://www.instagram.com/agcthario/",
+              "text": "agcthario"
+            },
+            {
+              "href": "https://www.instagram.com/p/DekHtr1t9oL/c/18127087802477360/",
+              "text": "1w"
+            },
+            {
+              "href": "https://www.instagram.com/that_guy_nixi/",
+              "text": ""
+            },
+            {
+              "href": "https://www.instagram.com/that_guy_nixi/",
+              "text": "that_guy_nixi"
+            }
+          ]
+        },
+        "poster_username": "9ineesss",
+        "page_url": "https://www.instagram.com/reel/DekHtr1t9oL/",
+        "source": "fresh_incognito_context"
+      }
     }
   },
   {
