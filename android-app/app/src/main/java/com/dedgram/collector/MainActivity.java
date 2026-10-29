@@ -259,8 +259,17 @@ public final class MainActivity extends Activity {
         brand.addView(UiStyles.utility(this, "PROFILE COLLECTOR"), margin(0, 3, 0, 0));
         header.addView(brand, new LinearLayout.LayoutParams(0, -2, 1));
 
+        LinearLayout versionAndCount = new LinearLayout(this);
+        versionAndCount.setGravity(Gravity.END);
+        versionAndCount.setOrientation(LinearLayout.VERTICAL);
+        TextView version = UiStyles.utility(this, "v" + BuildConfig.VERSION_NAME);
+        version.setGravity(Gravity.END);
+        version.setTextColor(0xFF555555);
+        versionAndCount.addView(version);
         headerCount = UiStyles.utility(this, "0 PROFILES");
-        header.addView(headerCount);
+        headerCount.setGravity(Gravity.END);
+        versionAndCount.addView(headerCount, margin(0, 3, 0, 0));
+        header.addView(versionAndCount);
         return header;
     }
 
