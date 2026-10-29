@@ -1,0 +1,49 @@
+{
+  "source_url": "https://www.instagram.com/reels/DeYH4uEIqYK/",
+  "canonical_url": "https://www.instagram.com/reel/DeYH4uEIqYK/",
+  "shortcode": "DeYH4uEIqYK",
+  "account": "coldex7.ae",
+  "captured_at": "2026-10-29",
+  "capture_method": "Instagram Android app over ADB; values read from the live reel UI",
+  "fields": {
+    "likes": {
+      "value": 446,
+      "error": null
+    },
+    "comments": {
+      "value": 20,
+      "error": null
+    },
+    "views_or_plays": {
+      "value": 21876,
+      "error": null
+    },
+    "shares": {
+      "value": 181,
+      "error": null
+    },
+    "reposts": {
+      "value": 20,
+      "error": null
+    },
+    "saves": {
+      "value": 41,
+      "error": null
+    },
+    "date_posted": {
+      "value": "12 October",
+      "error": null,
+      "displayed_by_instagram": true,
+      "year_not_displayed": true
+    },
+    "caption": {
+      "value": "③ 魔王軍との全面戦争を繰り広げる！『勇者伝説 公式\nInstagramです！TVアニメ『聖剣のレガリア』放送中！\n『劇場版特別編』デジタル配信/ブルーレイ＆DVD\n発売中",
+      "error": null
+    }
+  },
+  "notes": [
+    "The reel was opened successfully on the connected device.",
+    "The caption was expanded before reading it.",
+    "Counts are the values visible in the live UI at capture time."
+  ]
+}
