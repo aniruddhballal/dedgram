@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "username": "9ineesss",
+  "phase": "after-reel-deletion-check",
+  "snapshot_at": "2026-10-29T01:57:44.362Z",
+  "run_status": "partial",
+  "run_updated_at": "2026-10-29T01:57:44.362Z",
+  "profile_fetched_at": "2026-10-23T14:37:51.141Z",
+  "item_count": 120,
+  "complete_item_count": 37,
+  "discovery": {
+    "reel": {
+      "count": 120,
+      "complete": true,
+      "error": null,
+      "attempted_at": "2026-10-23T14:38:29.555Z"
+    }
+  }
+}

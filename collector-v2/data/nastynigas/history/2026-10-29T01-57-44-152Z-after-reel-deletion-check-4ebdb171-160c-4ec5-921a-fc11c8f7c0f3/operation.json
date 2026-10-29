@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "operation": "automated reel availability check",
+  "issue_type": "Missing date, likes, comments",
+  "performed_at": "2026-10-29T01:57:44.152Z",
+  "username": "nastynigas",
+  "source": "fresh incognito context",
+  "changes": [
+    {
+      "shortcode": "DexCipioR-T",
+      "status": "exists",
+      "checked_at": "2026-10-29T01:57:05.821Z",
+      "reason": "The reel page opened without Instagram's unavailable-page message."
+    }
+  ],
+  "before_snapshot": "D:\\post engg\\dedgram\\collector-v2\\data\\nastynigas\\history\\2026-10-29T01-57-04-255Z-before-reel-deletion-check-d1e6153b-d2dc-46eb-8417-c0558cfe46f4",
+  "after_snapshot": "D:\\post engg\\dedgram\\collector-v2\\data\\nastynigas\\history\\2026-10-29T01-57-44-152Z-after-reel-deletion-check-4ebdb171-160c-4ec5-921a-fc11c8f7c0f3"
+}

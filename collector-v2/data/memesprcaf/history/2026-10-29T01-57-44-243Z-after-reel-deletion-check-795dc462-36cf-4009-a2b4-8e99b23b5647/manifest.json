@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "username": "memesprcaf",
+  "phase": "after-reel-deletion-check",
+  "snapshot_at": "2026-10-29T01:57:44.243Z",
+  "run_status": "partial",
+  "run_updated_at": "2026-10-29T01:57:44.243Z",
+  "profile_fetched_at": "2026-10-23T15:57:22.483Z",
+  "item_count": 3048,
+  "complete_item_count": 36,
+  "discovery": {
+    "reel": {
+      "count": 3048,
+      "complete": true,
+      "error": null,
+      "attempted_at": "2026-10-23T16:14:10.227Z"
+    }
+  }
+}

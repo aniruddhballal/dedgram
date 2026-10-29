@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "operation": "automated reel availability check",
+  "issue_type": "Missing date, likes, comments",
+  "performed_at": "2026-10-29T01:57:44.243Z",
+  "username": "memesprcaf",
+  "source": "fresh incognito context",
+  "changes": [
+    {
+      "shortcode": "Dd2L0NtPH4L",
+      "status": "check_failed",
+      "checked_at": "2026-10-29T01:57:26.326Z",
+      "reason": "Instagram showed a login, checkpoint, or temporary-limit page."
+    }
+  ],
+  "before_snapshot": "D:\\post engg\\dedgram\\collector-v2\\data\\memesprcaf\\history\\2026-10-29T01-57-04-255Z-before-reel-deletion-check-8505eea9-077b-495e-a80a-9624d95e838c",
+  "after_snapshot": "D:\\post engg\\dedgram\\collector-v2\\data\\memesprcaf\\history\\2026-10-29T01-57-44-243Z-after-reel-deletion-check-795dc462-36cf-4009-a2b4-8e99b23b5647"
+}

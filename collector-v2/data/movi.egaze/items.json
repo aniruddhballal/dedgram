@@ -435,7 +435,15 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:32:13.839Z"
+    "last_attempt_at": "2026-10-28T11:32:13.839Z",
+    "deletion_check": {
+      "status": "exists",
+      "reason": "The reel page opened without Instagram's unavailable-page message.",
+      "checked_at": "2026-10-29T01:57:20.778Z",
+      "page_url": "https://www.instagram.com/reel/DeyW4IvuN_C/",
+      "source": "fresh_incognito_context",
+      "evidence": "Log In\nSign Up\nNever miss a post from movi.egaze\nSign up for Instagram to stay in the loop.\nBy continuing, you agree to Instagram's Terms of Use and Privacy Policy.\nSign up\nLog in\nmovi.egaze\n•\nFollow\nOriginal audio\nmovi.egaze\n \n6d\n花粉症シーズン 🌼トムの対策は犬の被り物!?⁉️ 花 粉は防げても、ジェリーは防げません...。\nNo comments yet.\nStart the conversation.\n108\n6 days ago\nLog in to like or comment.\nMore posts from movi.egaze\nSee more posts\nMeta\nAbout\nBlog\nJobs\nHelp\nAPI\nPrivacy\nTerms\nLocations\nPopular\nInstagram Lite\nMeta AI\nMuse\nThreads\nContact Uploading & Non-Users\nMeta Verified\nEnglish\nAfrikaans\nالعربية\nČeština\nDansk\nDeutsch\nΕλληνικά\nEnglish\nEnglish (UK)\nEspañol (España)\nEspañol\nفارسی\nSuomi\nFrançais\nעברית\nBahasa Indonesia\nItaliano\n日本語\n한국어\nBahasa Melayu\nNorsk\nNederlands\nPolski\nPortuguês (Brasil)\nPortuguês (Portugal)\nРусский\nSv"
+    }
   },
   {
     "kind": "reel",

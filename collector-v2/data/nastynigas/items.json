@@ -727,7 +727,15 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:54:59.990Z"
+    "last_attempt_at": "2026-10-28T11:54:59.990Z",
+    "deletion_check": {
+      "status": "exists",
+      "reason": "The reel page opened without Instagram's unavailable-page message.",
+      "checked_at": "2026-10-29T01:57:05.821Z",
+      "page_url": "https://www.instagram.com/reel/DexCipioR-T/",
+      "source": "fresh_incognito_context",
+      "evidence": "Log In\nSign Up\nNever miss a post from nastynigas\nSign up for Instagram to stay in the loop.\nBy continuing, you agree to Instagram's Terms of Use and Privacy Policy.\nSign up\nLog in\nnastynigas\n•\nFollow\nAI-generated profile\nOriginal audio\nnastynigas\n \n1w\n#TVアニメ『SPRINKLES』話題のトッピング最新情報がついに 解禁！！思わず目を奪われてしまうカラフルな瞬間を一挙公開！さらに、予想外の組み合わせや華やかな仕上がりに加え、誰も予想できなかった最高の「珍事件」まで飛び出しました！！◆今回の注目ポイント：\ninpraised\nLike\nReply\nthe_minister_of_laughter\n \n1w\nWho agrees that homeless people have the best drips\n7 likes\nReply\nholy_lebron_pick45\n \n1w\nHe was right though\n4 likes\nReply\nnastynigas\nLike\nReply\n583\n4\n7 days ago\nLog in to like or comment.\nMore posts from nastynigas\nSee more posts\nMeta\nAbout\nBlog\nJobs\nHelp\nAPI\nPrivacy\nTerms\nLocations\nPopular\nInstagram Lite\nMeta AI\nMuse\nThreads\nContact Uploading & Non-Users\nMeta Ve"
+    }
   },
   {
     "kind": "reel",

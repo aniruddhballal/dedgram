@@ -1,8 +1,8 @@
 {
   "started_at": "2026-10-28T11:24:58.024Z",
-  "updated_at": "2026-10-28T11:27:36.141Z",
-  "status": "running",
-  "phase": "item details",
+  "updated_at": "2026-10-29T01:57:44.243Z",
+  "status": "partial",
+  "phase": "done",
   "scope": [
     "reel"
   ],
@@ -19,5 +19,16 @@
     "current_item": null,
     "detail": "37 of 3048 reel pages processed",
     "updated_at": "2026-10-28T11:27:36.141Z"
+  },
+  "deletion_check": {
+    "operation": "automated reel availability check",
+    "issue_type": "Missing date, likes, comments",
+    "started_at": "2026-10-29T01:57:04.255Z",
+    "completed_at": "2026-10-29T01:57:44.243Z",
+    "counts": {
+      "deleted": 0,
+      "exists": 7,
+      "check_failed": 1
+    }
   }
 }

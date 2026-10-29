@@ -1035,7 +1035,15 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:50:43.534Z"
+    "last_attempt_at": "2026-10-28T11:50:43.534Z",
+    "deletion_check": {
+      "status": "exists",
+      "reason": "The reel page opened without Instagram's unavailable-page message.",
+      "checked_at": "2026-10-29T01:57:11.397Z",
+      "page_url": "https://www.instagram.com/reel/DesS5V6vwVU/",
+      "source": "fresh_incognito_context",
+      "evidence": "Log In\nSign Up\nNever miss a post from madarameme0\nSign up for Instagram to stay in the loop.\nBy continuing, you agree to Instagram's Terms of Use and Privacy Policy.\nSign up\nLog in\nmadarameme0\n•\nFollow\nAlemão do Forró•Fica Amor\nmadarameme0\n \n1w\n😂 ちょっと待って、このミーム面白すぎる！！🤣🔥\n\n最後まで見たら、きっと笑いが止まらない…！？💀💥\nこの瞬間、反則級のおもしろさ😂 あなたは何秒で吹き出した？👇\n\n友達にもシェアして、一緒に笑おう！📲🤣\n\n#ミーム #面白動画 #爆笑 #おもしろい #神回 ネットミーム 笑ったら負け リール バズ動画 MEMES\nNo comments yet.\nStart the conversation.\nOctober 20\nLog in to like or comment.\nMore posts from madarameme0\nSee more posts\nMeta\nAbout\nBlog\nJobs\nHelp\nAPI\nPrivacy\nTerms\nLocations\nPopular\nInstagram Lite\nMeta AI\nMuse\nThreads\nContact Uploading & Non-Users\nMeta Verified\nEnglish\nAfrikaans\nالعربية\nČeština\nDansk\nDeutsch\nΕλληνικά\nEnglish\nEnglish (UK)\nEspañol (España)\nEspañol\nفارسی\nSuomi\nFrançais"
+    }
   },
   {
     "kind": "reel",

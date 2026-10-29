@@ -131,7 +131,15 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:25:11.252Z"
+    "last_attempt_at": "2026-10-28T11:25:11.252Z",
+    "deletion_check": {
+      "status": "check_failed",
+      "reason": "Instagram showed a login, checkpoint, or temporary-limit page.",
+      "checked_at": "2026-10-29T01:57:26.326Z",
+      "page_url": "https://www.instagram.com/reel/Dd2L0NtPH4L/",
+      "source": "fresh_incognito_context",
+      "evidence": "Log In\nSign Up\nNever miss a post from memesprcaf\nSign up for Instagram to stay in the loop.\nBy continuing, you agree to Instagram's Terms of Use and Privacy Policy.\nSign up\nLog in\nAge-restricted content\nThis content is age-restricted based on your age or account settings. Log in to continue.\nLog in\nSign up\nMeta\nAbout\nBlog\nJobs\nHelp\nAPI\nPrivacy\nTerms\nLocations\nPopular\nInstagram Lite\nMeta AI\nMuse\nThreads\nContact Uploading & Non-Users\nMeta Verified\nEnglish\nAfrikaans\nالعربية\nČeština\nDansk\nDeutsch\nΕλληνικά\nEnglish\nEnglish (UK)\nEspañol (España)\nEspañol\nفارسی\nSuomi\nFrançais\nעברית\nBahasa Indonesia\nItaliano\n日本語\n한국어\nBahasa Melayu\nNorsk\nNederlands\nPolski\nPortuguês (Brasil)\nPortuguês (Portugal)\nРусский\nSvenska\nภาษาไทย\nFilipino\nTürkçe\n中文(简体)\n中文(台灣)\nবাংলা\nગુજરાતી\nहिन्दी\nHrvatski\nMagyar\nಕನ್ನಡ\nമലയാളം\nमराठ"
+    }
   },
   {
     "kind": "reel",
