@@ -20,7 +20,7 @@ const state = {
   order: ['selection', 'posts_ascending', 'reels_ascending'].includes(savedOrder) ? savedOrder : 'posts_ascending',
   workflow: savedWorkflow === 'username_migration' ? 'username_migration' : 'collection',
   setupStep: ['profiles', 'mode', 'order', 'review', 'progress'].includes(savedSetup) ? savedSetup : 'profiles',
-  itemSearch: '', itemFilter: 'all', itemSort: 'newest', failedReelProfile: 'all', failedReelReason: '', failedReelSort: 'newest', busy: false, error: null, readOnly: false, popup: null
+  itemSearch: '', itemFilter: 'all', itemSort: 'newest', failedReelProfile: 'all', failedReelIssueType: 'all', failedReelReason: '', failedReelSort: 'newest', busy: false, error: null, readOnly: false, popup: null
 };
 const observed = { batchId: null, batchStatus: null, usernameJobs: new Map(), usernameScan: null, usernameMigration: null };
 const sound = { context: null };
@@ -222,6 +222,7 @@ document.addEventListener('change', (event) => {
   if (target.id === 'item-filter') { state.itemFilter = target.value; render(); }
   if (target.id === 'item-sort') { state.itemSort = target.value; render(); }
   if (target.id === 'failed-reel-profile') { state.failedReelProfile = target.value; render(); }
+  if (target.id === 'failed-reel-issue-type') { state.failedReelIssueType = target.value; render(); }
   if (target.id === 'failed-reel-sort') { state.failedReelSort = target.value; render(); }
 });
 document.addEventListener('click', async (event) => {
