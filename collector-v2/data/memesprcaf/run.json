@@ -1,6 +1,6 @@
 {
   "started_at": "2026-10-28T11:24:58.024Z",
-  "updated_at": "2026-10-29T02:23:18.184Z",
+  "updated_at": "2026-10-29T02:27:40.849Z",
   "status": "partial",
   "phase": "done",
   "scope": [
@@ -30,5 +30,17 @@
       "exists": 7,
       "check_failed": 1
     }
+  },
+  "manual_review": {
+    "operation": "manual reel review",
+    "performed_at": "2026-10-29T02:27:40.849Z",
+    "source": "manual user review",
+    "resolved_items": [
+      {
+        "shortcode": "Dd2L0NtPH4L",
+        "resolution": "age_restricted",
+        "reason": "Instagram displayed age-restricted content; viewing requires viewers to be 25 or older. Full reel details should be retried after the rate limit clears."
+      }
+    ]
   }
 }

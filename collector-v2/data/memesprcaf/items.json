@@ -97,7 +97,7 @@
     "url": "https://www.instagram.com/reel/Dd2L0NtPH4L/",
     "grid_views_raw": "8.1M",
     "grid_views_issue": null,
-    "status": "partial",
+    "status": "age_restricted",
     "fetched_at": "2026-10-28T11:25:11.251Z",
     "date": null,
     "date_precision": null,
@@ -133,8 +133,8 @@
     "last_error": null,
     "last_attempt_at": "2026-10-28T11:25:11.252Z",
     "deletion_check": {
-      "status": "check_failed",
-      "reason": "Instagram showed a login, checkpoint, or temporary-limit page.",
+      "status": "age_restricted",
+      "reason": "Instagram reported that this reel is age-restricted and requires viewers to be 25 or older.",
       "checked_at": "2026-10-29T02:23:00.362Z",
       "page_url": "https://www.instagram.com/reel/Dd2L0NtPH4L/",
       "source": "fresh_incognito_context",
@@ -216,7 +216,22 @@
         "poster_username": null,
         "page_url": "https://www.instagram.com/reel/Dd2L0NtPH4L/",
         "source": "fresh_incognito_context"
+      },
+      "manually_resolved_at": "2026-10-29T02:27:40.849Z",
+      "manual_resolution": {
+        "source": "manual_user_review",
+        "observed_at": "2026-10-29T02:27:40.849Z",
+        "resolution": "age_restricted",
+        "reason": "Instagram displayed age-restricted content; viewing requires viewers to be 25 or older. Full reel details should be retried after the rate limit clears.",
+        "requires_detail_retry": true
       }
+    },
+    "manual_observation": {
+      "source": "manual_user_review",
+      "observed_at": "2026-10-29T02:27:40.849Z",
+      "resolution": "age_restricted",
+      "reason": "Instagram displayed age-restricted content; viewing requires viewers to be 25 or older. Full reel details should be retried after the rate limit clears.",
+      "requires_detail_retry": true
     }
   },
   {

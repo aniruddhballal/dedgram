@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "operation": "manual reel review",
+  "performed_at": "2026-10-29T02:27:40.849Z",
+  "username": "memesprcaf",
+  "source": "manual user review",
+  "changes": [
+    {
+      "shortcode": "Dd2L0NtPH4L",
+      "resolution": "age_restricted",
+      "reason": "Instagram displayed age-restricted content; viewing requires viewers to be 25 or older. Full reel details should be retried after the rate limit clears."
+    }
+  ],
+  "before_snapshot": "D:\\post engg\\dedgram\\collector-v2\\data\\memesprcaf\\history\\2026-10-29T02-27-40-849Z-before-manual-reel-review-64713f5f-1b31-4695-b394-1c4df4786812",
+  "after_snapshot": "D:\\post engg\\dedgram\\collector-v2\\data\\memesprcaf\\history\\2026-10-29T02-27-40-849Z-after-manual-reel-review-280a1eab-e761-45f5-88ea-b1737e208b28"
+}

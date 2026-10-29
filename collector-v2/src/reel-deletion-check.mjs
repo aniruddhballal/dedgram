@@ -20,6 +20,9 @@ function classifyPage(pageUrl, statusCode, text) {
   if (statusCode === 404 || /sorry, this page isn't available|page may have been removed|this page is unavailable/.test(lower)) {
     return { status: 'deleted', reason: 'Instagram reported this reel page as unavailable.' };
   }
+  if (/age-restricted content|this content is age-restricted|based on your age or account settings/.test(lower)) {
+    return { status: 'age_restricted', reason: 'Instagram reported that this reel is age-restricted and requires viewers to be 25 or older.' };
+  }
   if (/\/accounts\/login|\/challenge\//.test(pageUrl)
     || /please wait a few minutes|try again later|challenge_required|checkpoint_required|log in to continue|log in to see/.test(lower)) {
     return { status: 'check_failed', reason: 'Instagram showed a login, checkpoint, or temporary-limit page.' };
@@ -143,6 +146,10 @@ function applyResult(item, result) {
     next.last_error = null;
     next.missing = [];
     next.missing_reasons = {};
+  }
+  if (result.status === 'age_restricted') {
+    next.status = 'age_restricted';
+    next.last_error = null;
   }
   return next;
 }

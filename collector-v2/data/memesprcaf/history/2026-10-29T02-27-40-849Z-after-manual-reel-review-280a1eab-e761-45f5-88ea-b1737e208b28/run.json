@@ -1,0 +1,46 @@
+{
+  "started_at": "2026-10-28T11:24:58.024Z",
+  "updated_at": "2026-10-29T02:27:40.849Z",
+  "status": "partial",
+  "phase": "done",
+  "scope": [
+    "reel"
+  ],
+  "current_url": null,
+  "error": null,
+  "progress": {
+    "task": "item_details",
+    "label": "Reel details",
+    "action": "Opening reel pages and extracting dates, captions, views, likes and comments",
+    "completed": 37,
+    "total": 3048,
+    "percent": 1,
+    "remaining": 3011,
+    "current_item": null,
+    "detail": "37 of 3048 reel pages processed",
+    "updated_at": "2026-10-28T11:27:36.141Z"
+  },
+  "deletion_check": {
+    "operation": "automated reel availability check",
+    "issue_type": "Missing date, likes, comments",
+    "started_at": "2026-10-29T02:22:39.804Z",
+    "completed_at": "2026-10-29T02:23:18.184Z",
+    "counts": {
+      "deleted": 0,
+      "exists": 7,
+      "check_failed": 1
+    }
+  },
+  "manual_review": {
+    "operation": "manual reel review",
+    "performed_at": "2026-10-29T02:27:40.849Z",
+    "source": "manual user review",
+    "resolved_items": [
+      {
+        "shortcode": "Dd2L0NtPH4L",
+        "resolution": "age_restricted",
+        "reason": "Instagram displayed age-restricted content; viewing requires viewers to be 25 or older. Full reel details should be retried after the rate limit clears."
+      }
+    ]
+  }
+}

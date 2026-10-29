@@ -200,7 +200,7 @@ function failedReelIssueSummary(reels) {
 }
 
 function deletionCheckLabel(status) {
-  return status === 'deleted' ? 'Deleted' : status === 'exists' ? 'Exists' : 'Unable to check';
+  return status === 'deleted' ? 'Deleted' : status === 'age_restricted' ? 'Age restricted (25+)' : status === 'exists' ? 'Exists' : 'Unable to check';
 }
 
 function deletionMetric(value) {
@@ -229,7 +229,7 @@ function renderDeletionCheckProgress(job) {
   const percent = total ? Math.round(completed / total * 100) : 0;
   const current = job.current ? `Currently checking @${job.current.username} / ${job.current.shortcode}` : '';
   const stateLabel = job.status === 'running' ? 'CHECKING REEL AVAILABILITY' : job.status === 'complete' ? 'AVAILABILITY CHECK COMPLETE' : 'AVAILABILITY CHECK FAILED';
-  return `<section class="notice soft failed-reel-check-progress"><div class="failed-reel-check-heading"><div><span class="eyebrow">${stateLabel}</span><h2>${number(completed)} / ${number(total)} checked</h2><p>${esc(current || job.error || 'The selected reels were checked one at a time in fresh private contexts.')}</p></div><strong>${percent}%</strong></div><div class="failed-reel-check-track"><span style="width:${percent}%"></span></div>${job.counts ? `<div class="failed-reel-check-counts"><span><strong>${number(job.counts.deleted || 0)}</strong> deleted</span><span><strong>${number(job.counts.exists || 0)}</strong> exists</span><span><strong>${number(job.counts.check_failed || 0)}</strong> unable to check</span></div>` : ''}</section>`;
+  return `<section class="notice soft failed-reel-check-progress"><div class="failed-reel-check-heading"><div><span class="eyebrow">${stateLabel}</span><h2>${number(completed)} / ${number(total)} checked</h2><p>${esc(current || job.error || 'The selected reels were checked one at a time in fresh private contexts.')}</p></div><strong>${percent}%</strong></div><div class="failed-reel-check-track"><span style="width:${percent}%"></span></div>${job.counts ? `<div class="failed-reel-check-counts"><span><strong>${number(job.counts.deleted || 0)}</strong> deleted</span><span><strong>${number(job.counts.age_restricted || 0)}</strong> age restricted</span><span><strong>${number(job.counts.exists || 0)}</strong> exists</span><span><strong>${number(job.counts.check_failed || 0)}</strong> unable to check</span></div>` : ''}</section>`;
 }
 
 export function renderFailedReels(state) {
