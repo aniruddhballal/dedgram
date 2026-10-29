@@ -10,10 +10,20 @@ export function count(raw) {
 }
 
 function metric(text, names) {
-  for (const name of names) {
-    const forward = new RegExp(`(\\d[\\d,.]*\\s*[KMB]?)\\s+${name}\\b`, 'i').exec(text);
-    const reverse = new RegExp(`${name}\\s*[:：]?\\s*(\\d[\\d,.]*\\s*[KMB]?)\\b`, 'i').exec(text);
+  for (const line of String(text).split(/\r?\n/)) for (const name of names) {
+    const forward = new RegExp(`(\\d[\\d,.]*\\s*[KMB]?)[ \\t]+${name}\\b`, 'i').exec(line);
+    const reverse = new RegExp(`${name}[ \\t]*[:：]?[ \\t]*(\\d[\\d,.]*\\s*[KMB]?)\\b`, 'i').exec(line);
     const parsed = count((forward || reverse)?.[1]);
+    if (parsed) return parsed;
+  }
+  return null;
+}
+
+function localizedMetric(text, labels) {
+  for (const label of labels) {
+    const escaped = label.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const match = new RegExp(`${escaped}[!！]?[」”"']?[ \\t]*[:：]?[ \\t]*(\\d[\\d,.]*\\s*[KMB]?)(?:件)?`, 'i').exec(text);
+    const parsed = count(match?.[1]);
     if (parsed) return parsed;
   }
   return null;
@@ -185,11 +195,17 @@ export function itemFromSnapshot(item, snapshot) {
   };
   let likes = findMetric(['likes?']);
   if (!likes) {
+    const parsed = localizedMetric(description, ['いいね']);
+    if (parsed) likes = { ...parsed, source: 'og_description_localized' };
+  }
+  if (!likes) {
     const others = /\band\s+(\d[\d,.]*\s*[KMB]?)\s+others?\b/i.exec(fields.join('\n'));
     const parsed = count(others?.[1]);
     if (parsed) likes = { ...parsed, value: parsed.value + 1, source: 'others_plus_one' };
   }
   const comments = findMetric(['comments?']);
+  const localizedComments = localizedMetric(description, ['コメント']);
+  const resolvedComments = comments || (localizedComments ? { ...localizedComments, source: 'og_description_localized' } : null);
   const views = findMetric(['views?', 'plays?']) || (snapshot.grid_views_raw
     ? { ...count(snapshot.grid_views_raw), source: 'profile_grid' } : null);
   const dateRaw = snapshot.datetime || structured.uploadDate || structured.datePublished || null;
@@ -202,7 +218,7 @@ export function itemFromSnapshot(item, snapshot) {
   const caption = snapshot.caption || structured.caption || structured.description || ogCaption || null;
   const hashtags = [...new Set((caption || '').match(/#[\p{L}\p{N}_]+/gu) || [])];
   const mentions = [...new Set((caption || '').match(/@[A-Za-z0-9._]+/g) || [])];
-  const missing = [!date && 'date', !likes && 'likes', !comments && 'comments', !views && 'views'].filter(Boolean);
+  const missing = [!date && 'date', !likes && 'likes', !resolvedComments && 'comments', !views && 'views'].filter(Boolean);
   return {
     ...item,
     fetched_at: now(),
@@ -213,7 +229,7 @@ export function itemFromSnapshot(item, snapshot) {
     hashtags,
     mentions,
     likes,
-    comments,
+    comments: resolvedComments,
     views,
     thumbnail_url: snapshot.og_image || null,
     media_url: snapshot.og_video || null,

@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { count, exactPostCount, gridCount, gridCountError, postCountError, profileFromSnapshot, profileHeaderComplete, profileLevelComplete, canonicalItemUrl, itemFromSnapshot, publicDetailsFromSnapshot } from '../src/model.mjs';
 import { mergeDiscoveryItems, mergeItem, mergeProfile, syncGridViews } from '../src/store.mjs';
+import { posterUsername } from '../src/reel-deletion-check.mjs';
 
 test('counts retain whether the source displayed a rounded value', () => {
   assert.deepEqual(count('20.7K'), { value: 20700, raw: '20.7K', approximate: true });
@@ -140,6 +141,35 @@ test('public incognito details preserve available fields without changing the sa
   assert.equal(result.views.raw, '9.2K');
   assert.equal(result.thumbnail_url, 'https://example.test/image.jpg');
   assert.equal(result.media_url, 'https://example.test/video.mp4');
+});
+
+test('public details parse localized Japanese engagement labels', () => {
+  const result = publicDetailsFromSnapshot({ kind: 'reel' }, {
+    og_description: '「Caption」 - 2026年10月17日、「いいね！」7,486件、コメント8件 - edlt.shox',
+    article_text: '',
+    aria_text: 'Oct 17, 2026\nLike\nComment',
+    json_ld: []
+  });
+  assert.equal(result.likes.value, 7486);
+  assert.equal(result.comments.value, 8);
+  assert.equal(result.likes.source, 'og_description_localized');
+  assert.equal(result.comments.source, 'og_description_localized');
+});
+
+test('metric parsing does not use a date before a separate Like label', () => {
+  const result = itemFromSnapshot({ kind: 'reel' }, {
+    aria_text: 'Oct 17, 2026\nLike\nComment',
+    article_text: '',
+    og_description: ''
+  });
+  assert.equal(result.likes, null);
+});
+
+test('poster detection ignores non-Instagram numeric links', () => {
+  assert.equal(posterUsername({ og_description: '', links: [
+    { href: 'https://help.instagram.com/581066165581870/' },
+    { href: 'https://www.instagram.com/9ineesss/' }
+  ] }), '9ineesss');
 });
 
 test('a grid view estimate keeps its original rounded notation', () => {

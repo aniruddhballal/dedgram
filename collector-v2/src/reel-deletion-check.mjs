@@ -35,12 +35,14 @@ function profileUsernameFromPath(pathname) {
     && !/^(accounts|about|direct|explore|reel|reels|p|stories|web)$/i.test(username) ? username : null;
 }
 
-function posterUsername(snapshot) {
+export function posterUsername(snapshot) {
   const descriptionMatch = String(snapshot.og_description || '').match(/(?:likes?|comments?)[\s\S]*?[-–]\s*([A-Za-z0-9._]{1,30})(?:\s+on\b|:)/i);
   if (descriptionMatch?.[1]) return descriptionMatch[1];
   for (const link of snapshot.links || []) {
     try {
-      const username = profileUsernameFromPath(new URL(link.href).pathname);
+      const url = new URL(link.href);
+      if (!['www.instagram.com', 'instagram.com'].includes(url.hostname.toLowerCase())) continue;
+      const username = profileUsernameFromPath(url.pathname);
       if (username) return username;
     } catch { /* Invalid links are not useful evidence. */ }
   }
