@@ -46,3 +46,21 @@ android {
 dependencies {
     testImplementation 'junit:junit:4.13.2'
 }
+
+def syncDebugApkToRepoRoot = tasks.register('syncDebugApkToRepoRoot', DefaultTask) {
+    doNotTrackState('The destination is the repository root, outside the build directory.')
+    def builtApk = layout.buildDirectory.file('outputs/apk/debug/app-debug.apk')
+    dependsOn('packageDebug')
+    inputs.file(builtApk)
+    doLast {
+        java.nio.file.Files.copy(
+                builtApk.get().asFile.toPath(),
+                rootProject.file('../dedgram.apk').toPath(),
+                java.nio.file.StandardCopyOption.REPLACE_EXISTING
+        )
+    }
+}
+
+tasks.matching { it.name == 'assembleDebug' }.configureEach {
+    finalizedBy(syncDebugApkToRepoRoot)
+}
