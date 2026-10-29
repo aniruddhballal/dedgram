@@ -35,7 +35,7 @@ public final class CaptureBubbleDrawable extends Drawable {
 
     public CaptureBubbleDrawable(Context context) {
         backgroundPaint.setColor(Color.BLACK);
-        mark = context.getDrawable(R.drawable.dedgram_mark);
+        mark = context.getDrawable(R.drawable.alien_mark);
     }
 
     @Override

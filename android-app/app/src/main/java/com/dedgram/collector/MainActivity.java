@@ -25,8 +25,14 @@ import java.util.Locale;
 
 public final class MainActivity extends Activity {
     private LinearLayout profileList;
+    private LinearLayout reelList;
+    private LinearLayout profileModeContainer;
+    private LinearLayout reelModeContainer;
     private TextView headerCount;
     private TextView profileCount;
+    private TextView reelCount;
+    private TextView profileModeButton;
+    private TextView reelModeButton;
     private TextView overlayStatus;
     private TextView accessibilityStatus;
     private TextView storageStatus;
@@ -34,6 +40,7 @@ public final class MainActivity extends Activity {
     private List<Profile> loadedProfiles = new ArrayList<>();
     private boolean keyboardVisible;
     private int scrollBeforeKeyboard;
+    private boolean reelMode;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -87,21 +94,59 @@ public final class MainActivity extends Activity {
 
         content.addView(buildHeader());
         content.addView(UiStyles.rule(this, Color.BLACK, 1));
-        content.addView(spacer(20));
-        content.addView(UiStyles.utility(this, "PROFILE CATALOG"));
+        content.addView(buildModeSwitcher(), margin(0, 16, 0, 0));
+        profileModeContainer = buildProfileMode();
+        reelModeContainer = buildReelMode();
+        content.addView(profileModeContainer);
+        content.addView(reelModeContainer);
+        applyMode();
+        return scroll;
+    }
+
+    private LinearLayout buildModeSwitcher() {
+        LinearLayout switcher = new LinearLayout(this);
+        switcher.setOrientation(LinearLayout.HORIZONTAL);
+        switcher.setPadding(0, 0, 0, UiStyles.dp(this, 2));
+        profileModeButton = modeButton("PROFILE DETECTION", false);
+        reelModeButton = modeButton("REEL COLLECTION", true);
+        profileModeButton.setOnClickListener(ignored -> {
+            reelMode = false;
+            applyMode();
+        });
+        reelModeButton.setOnClickListener(ignored -> {
+            reelMode = true;
+            applyMode();
+        });
+        switcher.addView(profileModeButton, new LinearLayout.LayoutParams(0, UiStyles.dp(this, 48), 1));
+        switcher.addView(reelModeButton, new LinearLayout.LayoutParams(0, UiStyles.dp(this, 48), 1));
+        return switcher;
+    }
+
+    private TextView modeButton(String label, boolean reel) {
+        TextView button = UiStyles.text(this, label, 10, reel ? Color.WHITE : Color.BLACK, true);
+        button.setGravity(Gravity.CENTER);
+        button.setLetterSpacing(0.06f);
+        button.setContentDescription(label);
+        button.setBackground(UiStyles.outline(this, reel ? 0xFF4F46E5 : Color.WHITE, reel ? 0xFFFBBF24 : Color.BLACK));
+        return button;
+    }
+
+    private LinearLayout buildProfileMode() {
+        LinearLayout container = new LinearLayout(this);
+        container.setOrientation(LinearLayout.VERTICAL);
+        container.addView(spacer(20));
+        container.addView(UiStyles.utility(this, "PROFILE CATALOG"));
         TextView title = UiStyles.text(this, "Capture profiles", 24, Color.BLACK, true);
         title.setLetterSpacing(-0.02f);
-        content.addView(title, margin(0, 5, 0, 0));
-        TextView description = UiStyles.text(this, "Keep a clean, deduplicated list of Instagram usernames. Tap the small dedgram circle while a profile is open.", 15, Color.BLACK, false);
+        container.addView(title, margin(0, 5, 0, 0));
+        TextView description = UiStyles.text(this, "Keep a clean, deduplicated list of Instagram usernames. Tap the black dedgram circle while a profile is open.", 15, Color.BLACK, false);
         description.setLineSpacing(UiStyles.dp(this, 2), 1.0f);
-        content.addView(description, margin(0, 10, 0, 0));
-
-        content.addView(spacer(20));
-        content.addView(UiStyles.utility(this, "CAPTURE SETUP"));
-        content.addView(buildPermissionRow("OVERLAY PERMISSION", "Allows the dedgram circle to stay visible over Instagram.", true));
-        content.addView(buildPermissionRow("ACCESSIBILITY ACCESS", "Reads only the visible profile UI after you tap the circle.", false));
-
-        content.addView(spacer(22));
+        container.addView(description, margin(0, 10, 0, 0));
+        container.addView(spacer(20));
+        container.addView(UiStyles.utility(this, "CAPTURE SETUP"));
+        container.addView(buildPermissionRow("OVERLAY PERMISSION", "Allows both dedgram mode controls to stay visible over Instagram.", true));
+        container.addView(buildPermissionRow("ACCESSIBILITY ACCESS", "Reads only the visible Instagram UI after you tap a mode control.", false));
+        container.addView(spacer(22));
         LinearLayout heading = new LinearLayout(this);
         heading.setGravity(Gravity.CENTER_VERTICAL);
         heading.setOrientation(LinearLayout.HORIZONTAL);
@@ -110,26 +155,77 @@ public final class MainActivity extends Activity {
         heading.addView(saved, new LinearLayout.LayoutParams(0, -2, 1));
         profileCount = UiStyles.utility(this, "0 PROFILES");
         heading.addView(profileCount);
-        content.addView(heading);
-
+        container.addView(heading);
         searchInput = buildSearchInput();
         LinearLayout.LayoutParams searchParams = new LinearLayout.LayoutParams(-1, UiStyles.dp(this, 56));
         searchParams.setMargins(0, UiStyles.dp(this, 10), 0, 0);
-        content.addView(searchInput, searchParams);
-
+        container.addView(searchInput, searchParams);
         profileList = new LinearLayout(this);
         profileList.setOrientation(LinearLayout.VERTICAL);
-        content.addView(profileList, margin(0, 10, 0, 0));
-
-        content.addView(spacer(18));
-        content.addView(UiStyles.rule(this, Color.BLACK, 1));
+        container.addView(profileList, margin(0, 10, 0, 0));
+        container.addView(spacer(18));
+        container.addView(UiStyles.rule(this, Color.BLACK, 1));
         storageStatus = UiStyles.text(this, "Stored in Documents/dedgram/profiles.json", 11, 0xFF555555, false);
         storageStatus.setLineSpacing(UiStyles.dp(this, 2), 1.0f);
-        content.addView(storageStatus, margin(0, 10, 0, 0));
-        TextView privacy = UiStyles.text(this, "dedgram does not save screenshots, captions, bios, or direct messages.", 11, 0xFF555555, false);
+        container.addView(storageStatus, margin(0, 10, 0, 0));
+        TextView privacy = UiStyles.text(this, "Profile mode does not save screenshots, captions, bios, or direct messages.", 11, 0xFF555555, false);
         privacy.setLineSpacing(UiStyles.dp(this, 2), 1.0f);
-        content.addView(privacy, margin(0, 4, 0, 0));
-        return scroll;
+        container.addView(privacy, margin(0, 4, 0, 0));
+        return container;
+    }
+
+    private LinearLayout buildReelMode() {
+        LinearLayout container = new LinearLayout(this);
+        container.setOrientation(LinearLayout.VERTICAL);
+        container.addView(spacer(20));
+        container.addView(UiStyles.utility(this, "REEL COLLECTION"));
+        TextView title = UiStyles.text(this, "Capture reels", 24, 0xFF312E81, true);
+        title.setLetterSpacing(-0.02f);
+        container.addView(title, margin(0, 5, 0, 0));
+        TextView description = UiStyles.text(this, "Open an individual reel in Instagram, then tap the dedgram logo control. Reel mode opens Likes and plays and records every requested field separately.", 15, Color.BLACK, false);
+        description.setLineSpacing(UiStyles.dp(this, 2), 1.0f);
+        container.addView(description, margin(0, 10, 0, 0));
+        container.addView(spacer(20));
+        container.addView(UiStyles.utility(this, "REEL CAPTURE SETUP"));
+        container.addView(buildPermissionRow("OVERLAY PERMISSION", "Keeps the dedgram logo reel control above Instagram.", true));
+        container.addView(buildPermissionRow("ACCESSIBILITY ACCESS", "Reads only the active reel and taps its likes count to open Likes and plays.", false));
+        container.addView(spacer(22));
+        LinearLayout heading = new LinearLayout(this);
+        heading.setGravity(Gravity.CENTER_VERTICAL);
+        heading.setOrientation(LinearLayout.HORIZONTAL);
+        TextView saved = UiStyles.text(this, "Saved reels", 24, 0xFF312E81, true);
+        saved.setLetterSpacing(-0.02f);
+        heading.addView(saved, new LinearLayout.LayoutParams(0, -2, 1));
+        reelCount = UiStyles.utility(this, "0 REELS");
+        heading.addView(reelCount);
+        container.addView(heading);
+        reelList = new LinearLayout(this);
+        reelList.setOrientation(LinearLayout.VERTICAL);
+        container.addView(reelList, margin(0, 10, 0, 0));
+        container.addView(spacer(18));
+        container.addView(UiStyles.rule(this, 0xFF4F46E5, 1));
+        TextView storage = UiStyles.text(this, "Stored in " + ReelStore.storageLocation(), 11, 0xFF555555, false);
+        storage.setLineSpacing(UiStyles.dp(this, 2), 1.0f);
+        container.addView(storage, margin(0, 10, 0, 0));
+        TextView privacy = UiStyles.text(this, "Captions are stored as UTF-8, including non-Latin scripts, emojis, and special characters.", 11, 0xFF555555, false);
+        privacy.setLineSpacing(UiStyles.dp(this, 2), 1.0f);
+        container.addView(privacy, margin(0, 4, 0, 0));
+        return container;
+    }
+
+    private void applyMode() {
+        if (profileModeContainer == null || reelModeContainer == null) return;
+        profileModeContainer.setVisibility(reelMode ? View.GONE : View.VISIBLE);
+        reelModeContainer.setVisibility(reelMode ? View.VISIBLE : View.GONE);
+        if (profileModeButton != null) {
+            profileModeButton.setTextColor(reelMode ? Color.BLACK : Color.WHITE);
+            profileModeButton.setBackground(UiStyles.outline(this, reelMode ? Color.WHITE : Color.BLACK, Color.BLACK));
+        }
+        if (reelModeButton != null) {
+            reelModeButton.setTextColor(reelMode ? Color.WHITE : 0xFF312E81);
+            reelModeButton.setBackground(UiStyles.outline(this, reelMode ? 0xFF4F46E5 : Color.WHITE, 0xFFFBBF24));
+        }
+        if (reelMode) renderReels();
     }
 
     private void updateKeyboardState(ScrollView scroll, boolean nowVisible) {
@@ -203,6 +299,7 @@ public final class MainActivity extends Activity {
         if (accessibilityStatus != null) accessibilityStatus.setText(isAccessibilityEnabled() ? "READY" : "NEEDS ACCESS");
         if (storageStatus != null) storageStatus.setText("Stored in " + ProfileStore.storageLocation());
         renderProfiles();
+        renderReels();
     }
 
     private EditText buildSearchInput() {
@@ -264,6 +361,54 @@ public final class MainActivity extends Activity {
             return;
         }
         for (Profile profile : matches) profileList.addView(buildProfileRow(profile));
+    }
+
+    private void renderReels() {
+        if (reelList == null) return;
+        reelList.removeAllViews();
+        List<Reel> reels = ReelStore.read(this);
+        if (reelCount != null) reelCount.setText(reels.size() + (reels.size() == 1 ? " REEL" : " REELS"));
+        if (reels.isEmpty()) {
+            reelList.addView(UiStyles.text(this, "Nothing saved yet", 24, 0xFF312E81, true), margin(0, 20, 0, 0));
+            reelList.addView(UiStyles.text(this, "Open an Instagram reel, then tap the dedgram logo control.", 15, Color.BLACK, false), margin(0, 10, 0, 0));
+            return;
+        }
+        for (Reel reel : reels) reelList.addView(buildReelRow(reel));
+    }
+
+    private View buildReelRow(Reel reel) {
+        LinearLayout row = new LinearLayout(this);
+        row.setOrientation(LinearLayout.VERTICAL);
+        row.setPadding(0, UiStyles.dp(this, 16), 0, UiStyles.dp(this, 16));
+        String title = reel.shortcode.isEmpty() ? "Reel capture" : reel.shortcode;
+        row.addView(UiStyles.text(this, title, 17, 0xFF312E81, true));
+        String account = reel.account.isEmpty() ? "Account unavailable" : "@" + reel.account;
+        row.addView(UiStyles.text(this, account, 12, 0xFF555555, false), margin(0, 4, 0, 0));
+        String summary = "Likes " + metric(reel.likes, reel.likesError)
+                + "  ·  Plays " + metric(reel.viewsOrPlays, reel.viewsOrPlaysError)
+                + "  ·  Comments " + metric(reel.comments, reel.commentsError);
+        row.addView(UiStyles.text(this, summary, 13, Color.BLACK, true), margin(0, 10, 0, 0));
+        String caption = reel.caption.isEmpty() ? (reel.captionError == null ? "Caption unavailable" : reel.captionError) : reel.caption;
+        TextView captionView = UiStyles.text(this, caption, 14, Color.BLACK, false);
+        captionView.setLineSpacing(UiStyles.dp(this, 2), 1.0f);
+        row.addView(captionView, margin(0, 8, 0, 0));
+        String details = "Date " + (reel.datePosted.isEmpty() ? (reel.datePostedError == null ? "Unavailable" : "ERROR") : reel.datePosted)
+                + "  ·  Shares " + metric(reel.shares, reel.sharesError)
+                + "  ·  Reposts " + metric(reel.reposts, reel.repostsError)
+                + "  ·  Saves " + metric(reel.saves, reel.savesError);
+        row.addView(UiStyles.text(this, details, 11, 0xFF555555, false), margin(0, 8, 0, 0));
+        if (reel.hasErrors()) {
+            TextView warning = UiStyles.text(this, "Some fields contain capture errors; inspect reels.json for field-level details.", 11, 0xFF9A3412, true);
+            warning.setLineSpacing(UiStyles.dp(this, 2), 1.0f);
+            row.addView(warning, margin(0, 8, 0, 0));
+        }
+        row.addView(UiStyles.rule(this, 0xFFE0E0E0, 1), ruleMargin(0xFFE0E0E0, 1, 0, 14, 0, 0));
+        return row;
+    }
+
+    private String metric(Long value, String error) {
+        if (value != null) return Long.toString(value);
+        return error == null ? "Unavailable" : "ERROR";
     }
 
     private String normalizeSearchQuery(String query) {

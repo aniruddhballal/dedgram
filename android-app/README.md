@@ -1,6 +1,6 @@
 # dedgram Android
 
-dedgram is a native Android companion for collecting Instagram profile usernames. It places a small capture bubble over Instagram, reads the visible accessibility tree only after the user taps it, and maintains a searchable saved-profile catalog.
+dedgram is a native Android companion for collecting Instagram profile usernames and reel metrics. It places two distinct capture controls over Instagram, reads the visible accessibility tree only after the matching control is tapped, and maintains separate searchable profile and reel catalogs.
 
 ## Current features
 
@@ -22,14 +22,28 @@ dedgram is a native Android companion for collecting Instagram profile usernames
 - Search matches usernames, `@username`, and Instagram profile URLs. It shows match counts and a no-match state.
 - The search field has keyboard-aware insets: results stay above the keyboard, the catalog remains scrollable while the keyboard is open, and the previous scroll position is restored when it closes.
 - The catalog has a fixed-height search field with spacing from the section heading and no decorative empty-state bar.
+- The app has separate **PROFILE DETECTION** and **REEL COLLECTION** modes with visually distinct controls.
+- The original black profile control remains available over Instagram unchanged.
+- The reel control is a separate dedgram target/logo control that stays visible alongside the alien profile control.
+- Reel capture reads likes, comments, reposts, shares, saves, posted date, and UTF-8 caption text from the active reel.
+- Reel capture taps the visible likes count to open Instagram's **Likes and plays** panel and reads the exact plays value there.
+- Reel fields are saved independently with a `value` and `error`, so an unreadable field is never silently omitted.
 
 ## Capture setup
 
 1. Install the APK.
 2. Open dedgram and grant **Overlay permission**.
 3. Open Android **Accessibility settings** and enable **dedgram profile capture**.
-4. Open an individual Instagram profile.
-5. Tap the dedgram bubble once.
+4. Open an individual Instagram profile or reel.
+5. Tap the alien profile control for profile detection, or the dedgram logo control for reel collection.
+
+Reel records are stored at:
+
+```text
+Documents/dedgram/reels.json
+```
+
+Reel collection does not navigate to the poster's profile. It works from the active reel UI, expands the caption when needed, taps the reel's likes count, waits for **Likes and plays**, and records field-level errors if Instagram does not expose a requested value.
 
 The service only attempts capture when the active accessibility window belongs to Instagram. It stores the username after successful validation; it does not save screenshots, captions, bios, follower counts, post counts, direct messages, or surrounding UI text.
 
