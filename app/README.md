@@ -67,19 +67,20 @@ Requirements: JDK 17, Android SDK platform 36, and Build Tools 36.
 cd app
 .\gradlew.bat :app:testDebugUnitTest
 .\gradlew.bat :app:assembleDebug
+.\gradlew.bat :app:assemblePreview
 .\gradlew.bat :app:assembleRelease
 ```
 
-Debug and local release APKs are written under:
+Debug, optimized preview, and optimized release APKs are written under:
 
 ```text
 app/build/outputs/apk/
 ```
 
-The local release build uses the generated debug signing key and is intended for device testing. To install the debug build on a connected device:
+The preview build enables R8 code shrinking and resource shrinking, is non-debuggable, and uses the generated debug signing key so it can upgrade the installed testing app without changing its package identity. A successful preview build also refreshes the repository artifact at `app/dedgram.apk`. To install the optimized preview build on a connected device:
 
 ```powershell
-adb install -r app\build\outputs\apk\debug\app-debug.apk
+adb install -r app\build\outputs\apk\preview\app-preview.apk
 ```
 
 Reinstalling an APK can cause Android to reset the accessibility-service toggle. If the capture bubble disappears after reinstalling, check dedgram in Accessibility settings again.

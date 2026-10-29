@@ -163,10 +163,11 @@ Requirements: JDK 17, Android SDK platform 36, and Build Tools 36.
 cd app
 .\gradlew.bat :app:testDebugUnitTest
 .\gradlew.bat :app:assembleDebug
+.\gradlew.bat :app:assemblePreview
 .\gradlew.bat :app:assembleRelease
 ```
 
-Build outputs are written under `app/app/build/outputs/apk/`. The local release build uses the generated debug signing key and is intended for device testing. Detailed instructions are in [`app/README.md`](app/README.md).
+Build outputs are written under `app/app/build/outputs/apk/`. The optimized preview build uses R8/resource shrinking and the generated debug signing key for device testing; it also synchronizes the installable artifact to [`app/dedgram.apk`](app/dedgram.apk). Detailed instructions are in [`app/README.md`](app/README.md).
 
 ## Repository conventions
 

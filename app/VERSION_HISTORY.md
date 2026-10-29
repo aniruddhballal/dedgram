@@ -43,3 +43,7 @@ Key commit: `9f0118e`.
 Restored the historical AInsta pixel-alien profile control and applied the current rounded-square presentation.
 
 Key commit: `c911084`.
+
+## 2.2.1 - Optimized installable build
+
+Enabled R8 code shrinking and resource shrinking for optimized release/preview builds, added a debug-signed non-debuggable preview variant for device testing, and synchronized the repository APK from that optimized preview build.

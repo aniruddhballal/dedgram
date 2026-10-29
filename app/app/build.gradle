@@ -32,8 +32,17 @@ android {
     buildTypes {
         release {
             signingConfig signingConfigs.debug
-            minifyEnabled false
+            minifyEnabled true
+            shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
+        // Optimized installable build for device testing. It uses the debug key so
+        // upgrades preserve the installed app's local data and accessibility state.
+        create('preview') {
+            initWith release
+            signingConfig signingConfigs.debug
+            matchingFallbacks += ['release']
         }
     }
 
@@ -47,10 +56,10 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
 }
 
-def syncDebugApkToAppRoot = tasks.register('syncDebugApkToAppRoot', DefaultTask) {
+def syncPreviewApkToAppRoot = tasks.register('syncPreviewApkToAppRoot', DefaultTask) {
     doNotTrackState('The destination is the app project root, outside the build directory.')
-    def builtApk = layout.buildDirectory.file('outputs/apk/debug/app-debug.apk')
-    dependsOn('packageDebug')
+    def builtApk = layout.buildDirectory.file('outputs/apk/preview/app-preview.apk')
+    dependsOn('packagePreview')
     inputs.file(builtApk)
     doLast {
         java.nio.file.Files.copy(
@@ -61,6 +70,6 @@ def syncDebugApkToAppRoot = tasks.register('syncDebugApkToAppRoot', DefaultTask)
     }
 }
 
-tasks.matching { it.name == 'assembleDebug' }.configureEach {
-    finalizedBy(syncDebugApkToAppRoot)
+tasks.matching { it.name == 'assemblePreview' }.configureEach {
+    finalizedBy(syncPreviewApkToAppRoot)
 }
