@@ -20,7 +20,7 @@ const state = {
   order: ['selection', 'posts_ascending', 'reels_ascending'].includes(savedOrder) ? savedOrder : 'posts_ascending',
   workflow: savedWorkflow === 'username_migration' ? 'username_migration' : 'collection',
   setupStep: ['profiles', 'mode', 'order', 'review', 'progress'].includes(savedSetup) ? savedSetup : 'profiles',
-  itemSearch: '', itemFilter: 'all', itemSort: 'newest', failedReelProfile: 'all', failedReelIssueType: 'all', failedReelReason: '', failedReelSort: 'newest', busy: false, error: null, readOnly: false, popup: null
+  itemSearch: '', itemFilter: 'all', itemSort: 'newest', failedReelProfile: 'all', failedReelIssueType: 'all', failedReelSort: 'newest', busy: false, error: null, readOnly: false, popup: null
 };
 const observed = { batchId: null, batchStatus: null, usernameJobs: new Map(), usernameScan: null, usernameMigration: null };
 const sound = { context: null };
@@ -211,7 +211,6 @@ async function refresh() {
 document.addEventListener('input', (event) => {
   if (event.target.id === 'catalog-search') { state.search = event.target.value; render(); }
   if (event.target.id === 'item-search') { state.itemSearch = event.target.value; render(); }
-  if (event.target.id === 'failed-reel-reason') { state.failedReelReason = event.target.value; render(); }
 });
 document.addEventListener('change', (event) => {
   const target = event.target;
@@ -222,7 +221,6 @@ document.addEventListener('change', (event) => {
   if (target.id === 'item-filter') { state.itemFilter = target.value; render(); }
   if (target.id === 'item-sort') { state.itemSort = target.value; render(); }
   if (target.id === 'failed-reel-profile') { state.failedReelProfile = target.value; render(); }
-  if (target.id === 'failed-reel-issue-type') { state.failedReelIssueType = target.value; render(); }
   if (target.id === 'failed-reel-sort') { state.failedReelSort = target.value; render(); }
 });
 document.addEventListener('click', async (event) => {
@@ -231,6 +229,8 @@ document.addEventListener('click', async (event) => {
   const action = button.dataset.action;
   if (action === 'dismiss') { state.error = null; render(); return; }
   if (action === 'dismiss-popup') { state.popup = null; render(); return; }
+  if (action === 'filter-failed-issue') { state.failedReelIssueType = button.dataset.issueType || 'all'; render(); return; }
+  if (action === 'reset-failed-reel-filters') { state.failedReelIssueType = 'all'; render(); return; }
   if (action === 'setup-progress' && state.batch) { setSetupStep('progress'); return; }
   if (action === 'setup-new') { state.workflow = 'collection'; sessionStorage.setItem(workflowKey, 'collection'); setSetupStep('profiles'); return; }
   if (action === 'scan-usernames') {
