@@ -218,9 +218,13 @@ export function renderFailedReels(state) {
   const profiles = allReels ? [...new Map(allReels.map((reel) => [reel.username, reel])).values()]
     .sort((a, b) => (a.current_username || a.username).localeCompare(b.current_username || b.username)) : [];
   const issueTypes = failedReelIssueSummary(allReels);
-  const deletionJob = state.deletionCheck;
   const selectedIssueType = state.failedReelIssueType || 'all';
-  const deletionCheckRunning = deletionJob?.status === 'running';
+  const selectedProfile = state.failedReelProfile || 'all';
+  const latestDeletionJob = state.deletionCheck;
+  const deletionCheckRunning = latestDeletionJob?.status === 'running';
+  const deletionJob = latestDeletionJob && selectedIssueType !== 'all'
+    && latestDeletionJob.issue_type === selectedIssueType
+    && latestDeletionJob.profile === selectedProfile ? latestDeletionJob : null;
   const reels = allReels?.filter((reel) => (state.failedReelProfile === 'all' || reel.username === state.failedReelProfile)
     && ((state.failedReelIssueType || 'all') === 'all' || failedReelIssueType(reel.reason) === state.failedReelIssueType)
   )
