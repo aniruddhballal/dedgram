@@ -77,7 +77,7 @@ Debug, optimized preview, and optimized release APKs are written under:
 app/build/outputs/apk/
 ```
 
-The preview build enables R8 code shrinking and resource shrinking, is non-debuggable, and uses the generated debug signing key so it can upgrade the installed testing app without changing its package identity. A successful preview build also refreshes the repository artifact at `app/dedgram.apk`. To install the optimized preview build on a connected device:
+Optimized APKs are the default delivery format for Android apps in this repository. The preview build enables R8 code shrinking and resource shrinking, is non-debuggable, and uses the generated debug signing key so it can upgrade the installed testing app without changing its package identity. A successful preview build also refreshes the repository artifact at `app/dedgram.apk`. Debug builds are reserved for development and tests. To install the optimized preview build on a connected device:
 
 ```powershell
 adb install -r app\build\outputs\apk\preview\app-preview.apk

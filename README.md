@@ -169,6 +169,8 @@ cd app
 
 Build outputs are written under `app/app/build/outputs/apk/`. The optimized preview build uses R8/resource shrinking and the generated debug signing key for device testing; it also synchronizes the installable artifact to [`app/dedgram.apk`](app/dedgram.apk). Detailed instructions are in [`app/README.md`](app/README.md).
 
+Optimized APKs are the default delivery format for Android projects in this repository: artifact builds must enable R8 code shrinking and resource shrinking. Debug builds are reserved for development and tests; installable and shared APKs should come from an optimized preview or release variant.
+
 ## Repository conventions
 
 - Keep source records and generated public snapshots separate.
