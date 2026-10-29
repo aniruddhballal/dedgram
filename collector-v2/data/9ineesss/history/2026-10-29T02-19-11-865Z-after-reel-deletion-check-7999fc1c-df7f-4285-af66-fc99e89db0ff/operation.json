@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "operation": "automated reel availability check",
+  "issue_type": "Missing date, comments",
+  "performed_at": "2026-10-29T02:19:11.865Z",
+  "username": "9ineesss",
+  "source": "fresh incognito context",
+  "changes": [
+    {
+      "shortcode": "DemF44bOhLI",
+      "status": "exists",
+      "checked_at": "2026-10-29T02:18:59.114Z",
+      "reason": "The reel page opened without Instagram's unavailable-page message."
+    },
+    {
+      "shortcode": "DepX5e5y6mX",
+      "status": "exists",
+      "checked_at": "2026-10-29T02:19:06.500Z",
+      "reason": "The reel page opened without Instagram's unavailable-page message."
+    }
+  ],
+  "before_snapshot": "D:\\post engg\\dedgram\\collector-v2\\data\\9ineesss\\history\\2026-10-29T02-18-56-814Z-before-reel-deletion-check-f37ae27b-0404-40e1-8a2f-5c6291c7654f",
+  "after_snapshot": "D:\\post engg\\dedgram\\collector-v2\\data\\9ineesss\\history\\2026-10-29T02-19-11-865Z-after-reel-deletion-check-7999fc1c-df7f-4285-af66-fc99e89db0ff"
+}
