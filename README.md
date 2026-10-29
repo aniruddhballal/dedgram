@@ -12,7 +12,7 @@ The public project explores a question rather than asserting a conclusion: how m
 | [`data/`](data/) | Shared catalog indexes and persisted profile analysis records. | Shared research data |
 | [`collector/`](collector/README.md) | Playwright-based local collector, local UI, staged runs, reports, retries, and immutable run history. | Current analysis workspace |
 | [`website/`](website/README.md) | Static-site source, committed public snapshot, build scripts, and generated Vercel output. | Current public website |
-| [`profiles.json`](profiles.json) | Repository copy or working export of the captured profile catalog. | Catalog handoff/reference file |
+| [`data/dedgram-catalog.json`](data/dedgram-catalog.json) | Canonical repository catalog of captured profile records. | Shared catalog |
 | [`app/dedgram.apk`](app/dedgram.apk) | APK snapshot for transferring or installing the Android collector. | Installation artifact |
 | [`vercel.json`](vercel.json) | Root Vercel configuration. It builds `website` and serves `website/dist`. | Public deployment configuration |
 
@@ -24,7 +24,7 @@ The recommended workflow is:
 
 1. Capture candidate usernames with the Android app.
 2. Copy or merge the phone catalog into the repository catalog when new captures are ready.
-3. Run Collector v2 locally to collect profile information, reel URLs, and reel details.
+3. Run the collector locally to collect profile information, reel URLs, and reel details.
 4. Review saved JSON, CSV, HTML reports, progress, failures, and history in the local Collector UI.
 5. Refresh the public snapshot and build the Vercel showcase when a new set of records is ready to publish.
 
@@ -52,7 +52,7 @@ The shared catalog and database are stored in the repository under `data/`:
 - Confirmed username migrations mirror updated profile records into `data/database/profiles/`.
 - The Android app writes the user-visible phone file at `Documents/dedgram/profiles.json`.
 
-## 3. Use Collector v2 locally
+## 3. Use the collector locally
 
 From the collector directory:
 
@@ -65,7 +65,7 @@ npm run ui
 
 Open `http://127.0.0.1:5174/`.
 
-Collector v2 provides:
+The collector provides:
 
 - Profile-level details, including bio, followers, following, country, join information, and the exact visible post count when available.
 - Reel URL discovery, which scrolls the profile’s Reels grid and saves a finalized reel count only after the scan reaches a stable end.
@@ -83,7 +83,7 @@ profile details → reel URLs and count → reel details
 
 The local UI supports profile-only, reel-grid-only, reel-details-only, reels-only, depth-first, and breadth-first strategies. The post count is collected as a profile header value for ordering and context; post-level detail collection is not part of the current public analysis scope.
 
-### Collector v2 commands
+### Collector commands
 
 ```powershell
 cd collector
@@ -98,7 +98,7 @@ npm test                   # run parser and browser-adapter tests
 
 Useful command-line flags include `--username=NAME`, `--headless`, `--profile-only`, `--reel-grid-only`, `--reels-only`, `--skip-profile`, `--refresh`, and `--limit=N`. Credentials in `collector/.auth/` are ignored and must not be committed.
 
-### Collector v2 data model
+### Collector data model
 
 Each profile directory under `collector/data/<username>/` contains:
 
@@ -130,7 +130,7 @@ Current routes:
 
 The public Overview includes profile performance, profile country and join information, reel counts, analyzed reel counts, total reel likes/comments/views, most-viewed reels, local reel cover images, and resolved unavailable-or-renamed, age-restricted, and false-identification records. Engagement totals are displayed compactly with hover text containing the full stored value. The public site hides uncollected candidates from its first view.
 
-To refresh and build the showcase after new Collector v2 outputs are ready:
+To refresh and build the showcase after new collector outputs are ready:
 
 ```powershell
 cd website
@@ -150,7 +150,7 @@ The former React/Vite dashboard and Firefox extension have been removed. Current
 ## Privacy and operational boundaries
 
 - Android reads Instagram’s visible accessibility tree only after an explicit capture tap.
-- Collector v2 reads visible Instagram pages through a local browser session and does not use undocumented Instagram endpoints or bypass login, checkpoints, consent screens, rate limits, or age restrictions.
+- The collector reads visible Instagram pages through a local browser session and does not use undocumented Instagram endpoints or bypass login, checkpoints, consent screens, rate limits, or age restrictions.
 - Browser credentials, authentication profiles, and temporary screenshots are ignored and must not be committed.
 - Public Vercel files are static snapshots. They contain only the records intentionally copied into `website/snapshot/`.
 - Instagram’s UI and labels can change. When identity, counts, or item fields cannot be verified, the collectors preserve the issue instead of guessing.

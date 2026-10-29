@@ -5,7 +5,7 @@ dedgram is a native Android companion for collecting Instagram profile usernames
 ## Current features
 
 - The capture bubble appears only while Instagram is the active app.
-- The bubble uses the black-and-white dedgram mark: a circle within a circle with a dot at the center.
+- The profile control uses the historical rounded-square AInsta alien mark; the reel control uses the black-and-white dedgram target/logo mark.
 - Drag the bubble to any position on the screen. Its position is remembered for later sessions.
 - A tap and a drag are distinguished, so repositioning the bubble does not accidentally save a profile.
 - The bubble uses an accessibility overlay when available and falls back to an accessibility-service overlay when needed.
@@ -42,6 +42,8 @@ Reel records are stored at:
 ```text
 Documents/dedgram/reels.json
 ```
+
+The repository sample format for reel records is [`reel_capture.json`](reel_capture.json).
 
 Reel collection does not navigate to the poster's profile. It works from the active reel UI, expands the caption when needed, taps the reel's likes count, waits for **Likes and plays**, and records field-level errors if Instagram does not expose a requested value.
 
