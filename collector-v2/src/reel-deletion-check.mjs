@@ -1,6 +1,6 @@
 import { join } from 'node:path';
 import { chromium } from 'playwright';
-import { now } from './model.mjs';
+import { now, publicDetailsFromSnapshot } from './model.mjs';
 import { paths, readJson, writeJson, writeSnapshot } from './store.mjs';
 import { writeReport } from './report.mjs';
 
@@ -28,6 +28,70 @@ function classifyPage(pageUrl, statusCode, text) {
   return { status: 'exists', reason: 'The reel page opened without Instagram\'s unavailable-page message.' };
 }
 
+function profileUsernameFromPath(pathname) {
+  const parts = String(pathname || '').split('/').filter(Boolean);
+  const username = parts.length === 1 ? parts[0] : null;
+  return username && /^[A-Za-z0-9._]{1,30}$/.test(username)
+    && !/^(accounts|about|direct|explore|reel|reels|p|stories|web)$/i.test(username) ? username : null;
+}
+
+function posterUsername(snapshot) {
+  const descriptionMatch = String(snapshot.og_description || '').match(/(?:likes?|comments?)[\s\S]*?[-–]\s*([A-Za-z0-9._]{1,30})(?:\s+on\b|:)/i);
+  if (descriptionMatch?.[1]) return descriptionMatch[1];
+  for (const link of snapshot.links || []) {
+    try {
+      const username = profileUsernameFromPath(new URL(link.href).pathname);
+      if (username) return username;
+    } catch { /* Invalid links are not useful evidence. */ }
+  }
+  return null;
+}
+
+async function publicSnapshot(page) {
+  return page.evaluate(() => {
+    const article = document.querySelector('main article, [role="dialog"] article, article')
+      || document.querySelector('main') || document.body;
+    const meta = (selector) => document.querySelector(selector)?.content || '';
+    const time = article.querySelector('time[datetime]') || document.querySelector('time[datetime]');
+    return {
+      page_url: location.href,
+      page_title: document.title || '',
+      datetime: time?.getAttribute('datetime') || '',
+      article_text: article.innerText || '',
+      aria_text: [...article.querySelectorAll('[aria-label], [title]')].slice(0, 300)
+        .map((element) => [element.getAttribute('aria-label'), element.getAttribute('title')].filter(Boolean).join(' ')).join('\n'),
+      caption: article.querySelector('h1')?.innerText || '',
+      og_description: meta('meta[property="og:description"]'),
+      og_image: meta('meta[property="og:image"]'),
+      og_video: meta('meta[property="og:video"]'),
+      meta: Object.fromEntries([...document.querySelectorAll('meta[property], meta[name]')]
+        .map((element) => [element.getAttribute('property') || element.getAttribute('name'), element.content || ''])
+        .filter(([name, value]) => /^(description|keywords|og:|twitter:)/i.test(name) && value)
+        .slice(0, 100)),
+      json_ld: [...document.querySelectorAll('script[type="application/ld+json"]')]
+        .map((element) => element.textContent || '').slice(0, 20),
+      links: [...article.querySelectorAll('a[href]')].slice(0, 100)
+        .map((anchor) => ({ href: anchor.href, text: anchor.innerText || '' }))
+    };
+  }).catch(() => ({}));
+}
+
+function observedDetails(item, snapshot, checkedAt, pageUrl) {
+  const details = publicDetailsFromSnapshot(item, snapshot, checkedAt);
+  return {
+    ...details,
+    poster_username: posterUsername(snapshot),
+    page_url: pageUrl || snapshot.page_url || null,
+    source: 'fresh_incognito_context',
+    raw: {
+      ...details.raw,
+      page_url: pageUrl || snapshot.page_url || null,
+      page_title: snapshot.page_title || '',
+      links: (snapshot.links || []).slice(0, 30)
+    }
+  };
+}
+
 async function checkOne(browser, item) {
   const checkedAt = now();
   const context = await browser.newContext({ viewport: { width: 1320, height: 950 }, locale: 'en-US', timezoneId: 'Asia/Kolkata' });
@@ -38,12 +102,14 @@ async function checkOne(browser, item) {
     const pageUrl = page.url();
     const text = await page.locator('body').innerText().catch(() => '');
     const classification = classifyPage(pageUrl, response?.status() || null, text);
+    const snapshot = await publicSnapshot(page);
     return {
       ...classification,
       checked_at: checkedAt,
       page_url: pageUrl,
       source: 'fresh_incognito_context',
-      evidence: text.slice(0, 800)
+      evidence: text.slice(0, 2000),
+      observed_details: observedDetails(item, snapshot, checkedAt, pageUrl)
     };
   } catch (error) {
     return {
@@ -52,7 +118,8 @@ async function checkOne(browser, item) {
       checked_at: checkedAt,
       page_url: page.url(),
       source: 'fresh_incognito_context',
-      evidence: ''
+      evidence: '',
+      observed_details: null
     };
   } finally {
     await context.close().catch(() => {});

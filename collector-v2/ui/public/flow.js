@@ -203,6 +203,25 @@ function deletionCheckLabel(status) {
   return status === 'deleted' ? 'Deleted' : status === 'exists' ? 'Exists' : 'Unable to check';
 }
 
+function deletionMetric(value) {
+  return value?.raw || (Number.isFinite(value?.value) ? String(value.value) : null);
+}
+
+function deletionObservedDetails(check) {
+  const details = check?.observed_details;
+  if (!details) return '';
+  const parts = [
+    details.poster_username && `@${details.poster_username}`,
+    details.date && `Date ${details.date.slice(0, 10)}`,
+    deletionMetric(details.likes) && `Likes ${deletionMetric(details.likes)}`,
+    deletionMetric(details.comments) && `Comments ${deletionMetric(details.comments)}`,
+    deletionMetric(details.views) && `Views ${deletionMetric(details.views)}`,
+    details.caption && `Caption: ${details.caption.slice(0, 160)}`
+  ].filter(Boolean);
+  if (!parts.length) return '';
+  return `<small class="cell-note availability-details" title="${esc(details.caption || '')}">Public details: ${esc(parts.join(' · '))}</small>`;
+}
+
 function renderDeletionCheckProgress(job) {
   if (!job) return '';
   const total = Number(job.total || 0);
@@ -237,7 +256,7 @@ export function renderFailedReels(state) {
     <td><a href="${esc(reel.url || '#')}" target="_blank" rel="noreferrer">${esc(reel.shortcode)} ↗</a><small class="cell-note">${esc(statusText(reel.status))}</small>${reel.deletion_check ? `<small class="cell-note availability-note">Availability: ${esc(deletionCheckLabel(reel.deletion_check.status))}</small>` : ''}</td>
     <td><a href="${profileHref(reel.username, reel.current_username)}">@${esc(reel.current_username || reel.username)}</a>${reel.current_username && reel.current_username !== reel.username ? `<small class="cell-note">Saved as @${esc(reel.username)}</small>` : ''}</td>
     <td>${esc(failedReelDate(reel.failed_at))}</td>
-    <td class="failed-reel-reason">${esc(reel.reason)}</td>
+    <td class="failed-reel-reason">${esc(reel.reason)}${reel.deletion_check ? deletionObservedDetails(reel.deletion_check) : ''}</td>
     <td><button type="button" class="button secondary small" data-action="open-reel-private" data-url="${esc(reel.url || '')}">Open reel ↗</button></td>
   </tr>`).join('') : '';
   return `<section class="setup-header failed-reels-header"><div><span class="eyebrow">REEL REVIEW INDEX</span><h1>Failed reels</h1><p>Manually open each reel that could not be fully captured. This list includes failed and incomplete reel records from the saved collection runs.</p></div><div class="setup-header-actions"><a class="button secondary" href="/">Back to collection</a></div></section>

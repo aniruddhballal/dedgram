@@ -17,14 +17,21 @@ const reviewText = (item) => [
 
 export async function writeReport(paths, profile, discovery, items, run) {
   await mkdir(paths.base, { recursive: true });
-  const rows = [['kind', 'shortcode', 'url', 'date', 'date_precision', 'caption', 'hashtags', 'likes', 'comments', 'views', 'views_displayed', 'views_approximate', 'views_source', 'views_observed_at', 'status', 'missing', 'last_error', 'fetched_at', 'likes_displayed', 'likes_approximate', 'likes_source', 'manual_review_reason', 'deletion_check_status', 'deletion_checked_at', 'deletion_check_reason']];
+  const rows = [['kind', 'shortcode', 'url', 'date', 'date_precision', 'caption', 'hashtags', 'likes', 'comments', 'views', 'views_displayed', 'views_approximate', 'views_source', 'views_observed_at', 'status', 'missing', 'last_error', 'fetched_at', 'likes_displayed', 'likes_approximate', 'likes_source', 'manual_review_reason', 'deletion_check_status', 'deletion_checked_at', 'deletion_check_reason', 'deletion_check_evidence', 'deletion_observed_at', 'deletion_poster_username', 'deletion_observed_date', 'deletion_observed_date_precision', 'deletion_observed_caption', 'deletion_observed_likes', 'deletion_observed_comments', 'deletion_observed_views', 'deletion_observed_thumbnail_url', 'deletion_observed_media_url', 'deletion_observed_fields', 'deletion_observed_page_url']];
   for (const item of items) rows.push([
     item.kind, item.shortcode, item.url, item.date, item.date_precision, item.caption, (item.hashtags || []).join(' '),
     item.likes?.value, item.comments?.value, item.views?.value, item.views?.raw,
     item.views?.approximate, item.views?.source, item.views?.observed_at, item.status,
     (item.missing || []).join('|'), item.last_error, item.fetched_at,
     displayedCount(item.likes), item.likes?.approximate, item.likes?.source,
-    reviewText(item), item.deletion_check?.status, item.deletion_check?.checked_at, item.deletion_check?.reason
+    reviewText(item), item.deletion_check?.status, item.deletion_check?.checked_at, item.deletion_check?.reason,
+    item.deletion_check?.evidence, item.deletion_check?.observed_details?.observed_at,
+    item.deletion_check?.observed_details?.poster_username, item.deletion_check?.observed_details?.date,
+    item.deletion_check?.observed_details?.date_precision, item.deletion_check?.observed_details?.caption,
+    item.deletion_check?.observed_details?.likes?.raw, item.deletion_check?.observed_details?.comments?.raw,
+    item.deletion_check?.observed_details?.views?.raw, item.deletion_check?.observed_details?.thumbnail_url,
+    item.deletion_check?.observed_details?.media_url, item.deletion_check?.observed_details?.available_fields?.join('|'),
+    item.deletion_check?.observed_details?.page_url
   ]);
   await writeFile(paths.csv, rows.map((row) => row.map(csv).join(',')).join('\n') + '\n', 'utf8');
   const profileRows = [

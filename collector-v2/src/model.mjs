@@ -222,3 +222,35 @@ export function itemFromSnapshot(item, snapshot) {
     raw: { description, article_text: text.slice(0, 20000), aria_text: aria.slice(0, 10000), json_ld: structured }
   };
 }
+
+function observedMetric(metricValue, observedAt) {
+  return metricValue ? { ...metricValue, observed_at: observedAt } : null;
+}
+
+export function publicDetailsFromSnapshot(item, snapshot, observedAt = now()) {
+  const parsed = itemFromSnapshot(item, snapshot);
+  return {
+    observed_at: observedAt,
+    date: parsed.date || null,
+    date_precision: parsed.date_precision || null,
+    caption: parsed.caption || null,
+    hashtags: parsed.hashtags || [],
+    mentions: parsed.mentions || [],
+    likes: observedMetric(parsed.likes, observedAt),
+    comments: observedMetric(parsed.comments, observedAt),
+    views: observedMetric(parsed.views, observedAt),
+    thumbnail_url: parsed.thumbnail_url || null,
+    media_url: parsed.media_url || null,
+    available_fields: ['date', 'caption', 'likes', 'comments', 'views', 'thumbnail_url', 'media_url']
+      .filter((field) => parsed[field] != null),
+    raw: {
+      description: snapshot.og_description || '',
+      page_title: snapshot.page_title || '',
+      meta: snapshot.meta || {},
+      article_text: (snapshot.article_text || '').slice(0, 20000),
+      aria_text: (snapshot.aria_text || '').slice(0, 10000),
+      json_ld: parsed.raw?.json_ld || {},
+      json_ld_scripts: (snapshot.json_ld || []).map((source) => String(source).slice(0, 10000)).slice(0, 20)
+    }
+  };
+}

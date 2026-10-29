@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { count, exactPostCount, gridCount, gridCountError, postCountError, profileFromSnapshot, profileHeaderComplete, profileLevelComplete, canonicalItemUrl, itemFromSnapshot } from '../src/model.mjs';
+import { count, exactPostCount, gridCount, gridCountError, postCountError, profileFromSnapshot, profileHeaderComplete, profileLevelComplete, canonicalItemUrl, itemFromSnapshot, publicDetailsFromSnapshot } from '../src/model.mjs';
 import { mergeDiscoveryItems, mergeItem, mergeProfile, syncGridViews } from '../src/store.mjs';
 
 test('counts retain whether the source displayed a rounded value', () => {
@@ -120,6 +120,26 @@ test('item keeps date-only evidence at day precision', () => {
   assert.equal(result.date, '2026-10-22');
   assert.equal(result.date_precision, 'day');
   assert.equal(result.status, 'complete');
+});
+
+test('public incognito details preserve available fields without changing the saved item', () => {
+  const observedAt = '2026-10-29T02:00:00.000Z';
+  const result = publicDetailsFromSnapshot({ kind: 'reel' }, {
+    datetime: '2026-10-01T02:00:00.000Z',
+    og_description: '1,234 likes, 56 comments - edlt.shox on October 1, 2026: "Hello #world @friend"',
+    article_text: '9.2K views',
+    aria_text: '',
+    json_ld: [],
+    og_image: 'https://example.test/image.jpg',
+    og_video: 'https://example.test/video.mp4'
+  }, observedAt);
+  assert.deepEqual(result.available_fields, ['date', 'caption', 'likes', 'comments', 'views', 'thumbnail_url', 'media_url']);
+  assert.equal(result.date, '2026-10-01T02:00:00.000Z');
+  assert.equal(result.likes.raw, '1,234');
+  assert.equal(result.likes.observed_at, observedAt);
+  assert.equal(result.views.raw, '9.2K');
+  assert.equal(result.thumbnail_url, 'https://example.test/image.jpg');
+  assert.equal(result.media_url, 'https://example.test/video.mp4');
 });
 
 test('a grid view estimate keeps its original rounded notation', () => {
