@@ -179,10 +179,31 @@ function failedReelDate(value) {
   return new Intl.DateTimeFormat('en-IN', { dateStyle: 'long', timeStyle: 'medium' }).format(new Date(value));
 }
 
+function failedReelIssueType(reason) {
+  const text = String(reason || 'Unknown issue');
+  if (text.includes('Instagram rendered an empty page.')) return 'Instagram rendered an empty page';
+  if (text.includes('Instagram reports this page is unavailable.')) return 'Instagram reported the reel page as unavailable';
+  const fields = [...text.matchAll(/(?:^|;\s*)(date|likes|comments|views):/g)]
+    .map((match) => match[1])
+    .filter((field, index, values) => values.indexOf(field) === index);
+  if (fields.length) return `Missing ${fields.join(', ')}`;
+  return text;
+}
+
+function failedReelIssueSummary(reels) {
+  const counts = new Map();
+  for (const reel of reels || []) {
+    const type = failedReelIssueType(reel.reason);
+    counts.set(type, (counts.get(type) || 0) + 1);
+  }
+  return [...counts].sort((left, right) => right[1] - left[1] || left[0].localeCompare(right[0]));
+}
+
 export function renderFailedReels(state) {
   const allReels = state.failedReels;
   const profiles = allReels ? [...new Map(allReels.map((reel) => [reel.username, reel])).values()]
     .sort((a, b) => (a.current_username || a.username).localeCompare(b.current_username || b.username)) : [];
+  const issueTypes = failedReelIssueSummary(allReels);
   const reasonQuery = (state.failedReelReason || '').trim().toLowerCase();
   const reels = allReels?.filter((reel) => (state.failedReelProfile === 'all' || reel.username === state.failedReelProfile)
     && (!reasonQuery || reel.reason.toLowerCase().includes(reasonQuery)))
@@ -200,7 +221,8 @@ export function renderFailedReels(state) {
   </tr>`).join('') : '';
   return `<section class="setup-header failed-reels-header"><div><span class="eyebrow">REEL REVIEW INDEX</span><h1>Failed reels</h1><p>Manually open each reel that could not be fully captured. This list includes failed and incomplete reel records from the saved collection runs.</p></div><div class="setup-header-actions"><a class="button secondary" href="/">Back to collection</a></div></section>
     <section class="notice soft failed-reels-note"><h2>${allReels ? `${number(reels.length)} shown · ${number(allReels.length)} total need review` : 'Loading failed reels…'}</h2><p>Each row shows the profile, the reel ID, when its latest capture attempt happened, and why the record was left incomplete. Opening a link does not change the saved data.</p></section>
-    ${allReels ? `<section class="failed-reels-filters" aria-label="Filter failed reels"><label>PROFILE<select id="failed-reel-profile"><option value="all" ${state.failedReelProfile === 'all' ? 'selected' : ''}>All profiles (${number(profiles.length)})</option>${profiles.map((profile) => `<option value="${esc(profile.username)}" ${state.failedReelProfile === profile.username ? 'selected' : ''}>@${esc(profile.current_username || profile.username)} (${number(allReels.filter((reel) => reel.username === profile.username).length)})</option>`).join('')}</select></label><label>WHY IT NEEDS REVIEW<input id="failed-reel-reason" type="search" placeholder="Search failure reason…" value="${esc(state.failedReelReason || '')}"></label><label>SORT BY CAPTURE ATTEMPT<select id="failed-reel-sort"><option value="newest" ${state.failedReelSort !== 'oldest' ? 'selected' : ''}>Newest first</option><option value="oldest" ${state.failedReelSort === 'oldest' ? 'selected' : ''}>Oldest first</option></select></label></section>` : ''}
+    ${allReels ? `<section class="notice soft failed-reel-issues"><div class="failed-reel-issues-intro"><span class="eyebrow">CURRENT ISSUE TYPES / ALL AFFECTED PROFILES</span><h2>${number(issueTypes.length)} issue ${issueTypes.length === 1 ? 'type' : 'types'}</h2><p>This summary covers all ${number(allReels.length)} review records across ${number(profiles.length)} affected profiles. Counts are grouped by the saved reason combination, so each record appears once.</p></div><div class="failed-reel-issue-grid">${issueTypes.map(([type, count]) => `<div class="failed-reel-issue"><strong>${number(count)}</strong><span>${esc(type)}</span></div>`).join('')}</div></section>` : ''}
+    ${allReels ? `<section class="failed-reels-filters" aria-label="Filter failed reels"><label>PROFILE<select id="failed-reel-profile"><option value="all" ${state.failedReelProfile === 'all' ? 'selected' : ''}>All affected profiles (${number(profiles.length)})</option>${profiles.map((profile) => `<option value="${esc(profile.username)}" ${state.failedReelProfile === profile.username ? 'selected' : ''}>@${esc(profile.current_username || profile.username)} (${number(allReels.filter((reel) => reel.username === profile.username).length)})</option>`).join('')}</select></label><label>WHY IT NEEDS REVIEW<input id="failed-reel-reason" type="search" placeholder="Search failure reason…" value="${esc(state.failedReelReason || '')}"></label><label>SORT BY CAPTURE ATTEMPT<select id="failed-reel-sort"><option value="newest" ${state.failedReelSort !== 'oldest' ? 'selected' : ''}>Newest first</option><option value="oldest" ${state.failedReelSort === 'oldest' ? 'selected' : ''}>Oldest first</option></select></label></section>` : ''}
     ${reels ? (rows ? `<section class="failed-reels-section"><div class="table-wrap"><table class="failed-reels-table"><thead><tr><th>REEL ID</th><th>PROFILE</th><th>CAPTURE ATTEMPT</th><th>WHY IT NEEDS REVIEW</th><th>ACTION</th></tr></thead><tbody>${rows}</tbody></table></div></section>` : '<p class="empty-state">No failed or incomplete reel captures are currently saved.</p>') : '<p class="loading">Reading saved reel results…</p>'}`;
 }
 
