@@ -10,13 +10,13 @@ The public project explores a question rather than asserting a conclusion: how m
 | --- | --- | --- |
 | [`app/`](app/README.md) | Native Android app and accessibility service used to capture Instagram profiles and reels from the visible Instagram UI. | Active phone collection tool |
 | [`data/`](data/) | Shared catalog indexes and persisted profile analysis records. | Shared research data |
-| [`collectorV2/`](collectorV2/README.md) | Playwright-based local collector, local UI, staged runs, reports, retries, and immutable run history. | Current analysis workspace |
+| [`collector/`](collector/README.md) | Playwright-based local collector, local UI, staged runs, reports, retries, and immutable run history. | Current analysis workspace |
 | [`profile-showcase/`](profile-showcase/README.md) | Static-site source, committed public snapshot, build scripts, and generated Vercel output. | Current public website |
 | [`profiles.json`](profiles.json) | Repository copy or working export of the captured profile catalog. | Catalog handoff/reference file |
 | [`app/dedgram.apk`](app/dedgram.apk) | APK snapshot for transferring or installing the Android collector. | Installation artifact |
 | [`vercel.json`](vercel.json) | Root Vercel configuration. It builds `profile-showcase` and serves `profile-showcase/dist`. | Public deployment configuration |
 
-The Android app, CollectorV2, shared data store, and public showcase have separate responsibilities. The public website is built from a snapshot; it does not run the collector or access Instagram.
+The Android app, collector, shared data store, and public showcase have separate responsibilities. The public website is built from a snapshot; it does not run the collector or access Instagram.
 
 ## Current workflow
 
@@ -48,7 +48,7 @@ There is no automatic phone-to-computer sync. Copy the phone catalog to the comp
 
 The shared catalog and database are stored in the repository under `data/`:
 
-- CollectorV2 reads the profile index at `data/database/profiles/index.json`.
+- The collector reads the profile index at `data/database/profiles/index.json`.
 - Confirmed username migrations mirror updated profile records into `data/database/profiles/`.
 - The Android app writes the user-visible phone file at `Documents/dedgram/profiles.json`.
 
@@ -57,7 +57,7 @@ The shared catalog and database are stored in the repository under `data/`:
 From the collector directory:
 
 ```powershell
-cd collectorV2
+cd collector
 npm install
 npx playwright install chromium
 npm run ui
@@ -86,7 +86,7 @@ The local UI supports profile-only, reel-grid-only, reel-details-only, reels-onl
 ### Collector v2 commands
 
 ```powershell
-cd collectorV2
+cd collector
 npm run ui                 # local workspace at http://127.0.0.1:5174/
 npm run login              # sign in through a persistent Chromium session
 npm run import-firefox    # optionally import Instagram cookies from Firefox
@@ -96,11 +96,11 @@ npm run report             # regenerate its local report
 npm test                   # run parser and browser-adapter tests
 ```
 
-Useful command-line flags include `--username=NAME`, `--headless`, `--profile-only`, `--reel-grid-only`, `--reels-only`, `--skip-profile`, `--refresh`, and `--limit=N`. Credentials in `collectorV2/.auth/` are ignored and must not be committed.
+Useful command-line flags include `--username=NAME`, `--headless`, `--profile-only`, `--reel-grid-only`, `--reels-only`, `--skip-profile`, `--refresh`, and `--limit=N`. Credentials in `collector/.auth/` are ignored and must not be committed.
 
 ### Collector v2 data model
 
-Each profile directory under `collectorV2/data/<username>/` contains:
+Each profile directory under `collector/data/<username>/` contains:
 
 | File | Purpose |
 | --- | --- |
@@ -145,7 +145,7 @@ See [`profile-showcase/README.md`](profile-showcase/README.md) for the publicati
 
 ## Retired workflows
 
-The former React/Vite dashboard and Firefox extension have been removed. Current desktop analysis runs through `collectorV2`, while direct phone capture runs through the Android app in `app/`.
+The former React/Vite dashboard and Firefox extension have been removed. Current desktop analysis runs through `collector`, while direct phone capture runs through the Android app in `app/`.
 
 ## Privacy and operational boundaries
 

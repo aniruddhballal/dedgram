@@ -62,7 +62,7 @@ const mediaDir = join(snapshot, 'media');
 await mkdir(mediaDir, { recursive: true });
 const images = [];
 for (const username of [...fullProfiles, ...profileLevelProfiles]) {
-  const source = join(repo, 'collectorV2', 'data', sourceUsername(username));
+  const source = join(repo, 'collector', 'data', sourceUsername(username));
   await mkdir(join(snapshot, username), { recursive: true });
   for (const file of files) {
     if (file === 'profile.json' || file === 'profile.csv') continue;

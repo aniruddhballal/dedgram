@@ -76,7 +76,7 @@ async function status() {
 async function login() {
   const { context, page } = await launch(root);
   await page.goto('https://www.instagram.com/', { waitUntil: 'domcontentloaded' });
-  log('Sign in in the opened Chromium window, then close that window. The session remains in collectorV2/.auth/browser.');
+  log('Sign in in the opened Chromium window, then close that window. The session remains in collector/.auth/browser.');
   await new Promise((done) => context.once('close', done));
 }
 
