@@ -178,6 +178,18 @@ function renderAfterRefresh() {
   render();
 }
 
+function confirmDeletionCheckFilterChange(nextIssueType, nextProfile) {
+  const job = state.deletionCheck;
+  if (!job || job.status === 'running') return true;
+  const sameSelection = job.issue_type === (nextIssueType || 'all') && job.profile === (nextProfile || 'all');
+  if (sameSelection) return true;
+  const label = job.issue_type || 'the previous issue type';
+  const completed = `${job.completed || 0} / ${job.total || 0}`;
+  const clear = window.confirm(`A previous deletion check for ${label} is complete (${completed}). Clear its details from the UI before changing filters?`);
+  if (clear) state.deletionCheck = null;
+  return clear;
+}
+
 async function refresh() {
   const current = path();
   const calls = [
@@ -223,7 +235,10 @@ document.addEventListener('change', (event) => {
   if (target.id === 'catalog-filter') { state.filter = target.value; render(); }
   if (target.id === 'item-filter') { state.itemFilter = target.value; render(); }
   if (target.id === 'item-sort') { state.itemSort = target.value; render(); }
-  if (target.id === 'failed-reel-profile') { state.failedReelProfile = target.value; render(); }
+  if (target.id === 'failed-reel-profile') {
+    if (!confirmDeletionCheckFilterChange(state.failedReelIssueType, target.value)) { render(); return; }
+    state.failedReelProfile = target.value; render();
+  }
   if (target.id === 'failed-reel-sort') { state.failedReelSort = target.value; render(); }
 });
 document.addEventListener('click', async (event) => {
@@ -239,8 +254,15 @@ document.addEventListener('click', async (event) => {
     } catch (error) { state.error = error.message; render(); }
     return;
   }
-  if (action === 'filter-failed-issue') { state.failedReelIssueType = button.dataset.issueType || 'all'; render(); return; }
-  if (action === 'reset-failed-reel-filters') { state.failedReelIssueType = 'all'; render(); return; }
+  if (action === 'filter-failed-issue') {
+    const nextIssueType = button.dataset.issueType || 'all';
+    if (!confirmDeletionCheckFilterChange(nextIssueType, state.failedReelProfile)) { render(); return; }
+    state.failedReelIssueType = nextIssueType; render(); return;
+  }
+  if (action === 'reset-failed-reel-filters') {
+    if (!confirmDeletionCheckFilterChange('all', state.failedReelProfile)) { render(); return; }
+    state.failedReelIssueType = 'all'; render(); return;
+  }
   if (action === 'start-failed-reel-deletion-check') {
     state.busy = true; state.error = null;
     notify('Deletion check started. Each selected reel will be opened one at a time in a fresh private context.');
