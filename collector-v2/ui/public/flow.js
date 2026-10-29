@@ -199,11 +199,28 @@ function failedReelIssueSummary(reels) {
   return [...counts].sort((left, right) => right[1] - left[1] || left[0].localeCompare(right[0]));
 }
 
+function deletionCheckLabel(status) {
+  return status === 'deleted' ? 'Deleted' : status === 'exists' ? 'Exists' : 'Unable to check';
+}
+
+function renderDeletionCheckProgress(job) {
+  if (!job) return '';
+  const total = Number(job.total || 0);
+  const completed = Math.min(total, Number(job.completed || 0));
+  const percent = total ? Math.round(completed / total * 100) : 0;
+  const current = job.current ? `Currently checking @${job.current.username} / ${job.current.shortcode}` : '';
+  const stateLabel = job.status === 'running' ? 'CHECKING REEL AVAILABILITY' : job.status === 'complete' ? 'AVAILABILITY CHECK COMPLETE' : 'AVAILABILITY CHECK FAILED';
+  return `<section class="notice soft failed-reel-check-progress"><div class="failed-reel-check-heading"><div><span class="eyebrow">${stateLabel}</span><h2>${number(completed)} / ${number(total)} checked</h2><p>${esc(current || job.error || 'The selected reels were checked one at a time in fresh private contexts.')}</p></div><strong>${percent}%</strong></div><div class="failed-reel-check-track"><span style="width:${percent}%"></span></div>${job.counts ? `<div class="failed-reel-check-counts"><span><strong>${number(job.counts.deleted || 0)}</strong> deleted</span><span><strong>${number(job.counts.exists || 0)}</strong> exists</span><span><strong>${number(job.counts.check_failed || 0)}</strong> unable to check</span></div>` : ''}</section>`;
+}
+
 export function renderFailedReels(state) {
   const allReels = state.failedReels;
   const profiles = allReels ? [...new Map(allReels.map((reel) => [reel.username, reel])).values()]
     .sort((a, b) => (a.current_username || a.username).localeCompare(b.current_username || b.username)) : [];
   const issueTypes = failedReelIssueSummary(allReels);
+  const deletionJob = state.deletionCheck;
+  const selectedIssueType = state.failedReelIssueType || 'all';
+  const deletionCheckRunning = deletionJob?.status === 'running';
   const reels = allReels?.filter((reel) => (state.failedReelProfile === 'all' || reel.username === state.failedReelProfile)
     && ((state.failedReelIssueType || 'all') === 'all' || failedReelIssueType(reel.reason) === state.failedReelIssueType)
   )
@@ -213,7 +230,7 @@ export function renderFailedReels(state) {
       return state.failedReelSort === 'oldest' ? left - right : right - left;
     });
   const rows = reels?.length ? reels.map((reel) => `<tr>
-    <td><a href="${esc(reel.url || '#')}" target="_blank" rel="noreferrer">${esc(reel.shortcode)} ↗</a><small class="cell-note">${esc(statusText(reel.status))}</small></td>
+    <td><a href="${esc(reel.url || '#')}" target="_blank" rel="noreferrer">${esc(reel.shortcode)} ↗</a><small class="cell-note">${esc(statusText(reel.status))}</small>${reel.deletion_check ? `<small class="cell-note availability-note">Availability: ${esc(deletionCheckLabel(reel.deletion_check.status))}</small>` : ''}</td>
     <td><a href="${profileHref(reel.username, reel.current_username)}">@${esc(reel.current_username || reel.username)}</a>${reel.current_username && reel.current_username !== reel.username ? `<small class="cell-note">Saved as @${esc(reel.username)}</small>` : ''}</td>
     <td>${esc(failedReelDate(reel.failed_at))}</td>
     <td class="failed-reel-reason">${esc(reel.reason)}</td>
@@ -222,7 +239,8 @@ export function renderFailedReels(state) {
   return `<section class="setup-header failed-reels-header"><div><span class="eyebrow">REEL REVIEW INDEX</span><h1>Failed reels</h1><p>Manually open each reel that could not be fully captured. This list includes failed and incomplete reel records from the saved collection runs.</p></div><div class="setup-header-actions"><a class="button secondary" href="/">Back to collection</a></div></section>
     <section class="notice soft failed-reels-note"><h2>${allReels ? `${number(reels.length)} shown · ${number(allReels.length)} total need review` : 'Loading failed reels…'}</h2><p>Each row shows the profile, the reel ID, when its latest capture attempt happened, and why the record was left incomplete. Opening a link does not change the saved data.</p></section>
     ${allReels ? `<section class="notice soft failed-reel-issues"><div class="failed-reel-issues-intro"><span class="eyebrow">CURRENT ISSUE TYPES / ALL AFFECTED PROFILES</span><h2>${number(issueTypes.length)} issue ${issueTypes.length === 1 ? 'type' : 'types'}</h2><p>This summary covers all ${number(allReels.length)} review records across ${number(profiles.length)} affected profiles. Tap an issue card to filter the table.</p></div><div class="failed-reel-issue-grid">${issueTypes.map(([type, count]) => `<button type="button" class="failed-reel-issue ${state.failedReelIssueType === type ? 'selected' : ''}" data-action="filter-failed-issue" data-issue-type="${esc(type)}" aria-pressed="${state.failedReelIssueType === type ? 'true' : 'false'}"><strong>${number(count)}</strong><span>${esc(type)}</span></button>`).join('')}</div></section>` : ''}
-    ${allReels ? `<section class="failed-reels-filters" aria-label="Filter failed reels"><label>PROFILE<select id="failed-reel-profile"><option value="all" ${state.failedReelProfile === 'all' ? 'selected' : ''}>All affected profiles (${number(profiles.length)})</option>${profiles.map((profile) => `<option value="${esc(profile.username)}" ${state.failedReelProfile === profile.username ? 'selected' : ''}>@${esc(profile.current_username || profile.username)} (${number(allReels.filter((reel) => reel.username === profile.username).length)})</option>`).join('')}</select></label><label>SORT BY CAPTURE ATTEMPT<select id="failed-reel-sort"><option value="newest" ${state.failedReelSort !== 'oldest' ? 'selected' : ''}>Newest first</option><option value="oldest" ${state.failedReelSort === 'oldest' ? 'selected' : ''}>Oldest first</option></select></label><button type="button" class="button secondary failed-reel-filter-reset" data-action="reset-failed-reel-filters">Reset issue filter</button></section>` : ''}
+    ${allReels ? `<section class="failed-reels-filters" aria-label="Filter failed reels"><label>PROFILE<select id="failed-reel-profile"><option value="all" ${state.failedReelProfile === 'all' ? 'selected' : ''}>All affected profiles (${number(profiles.length)})</option>${profiles.map((profile) => `<option value="${esc(profile.username)}" ${state.failedReelProfile === profile.username ? 'selected' : ''}>@${esc(profile.current_username || profile.username)} (${number(allReels.filter((reel) => reel.username === profile.username).length)})</option>`).join('')}</select></label><label>SORT BY CAPTURE ATTEMPT<select id="failed-reel-sort"><option value="newest" ${state.failedReelSort !== 'oldest' ? 'selected' : ''}>Newest first</option><option value="oldest" ${state.failedReelSort === 'oldest' ? 'selected' : ''}>Oldest first</option></select></label><button type="button" class="button secondary failed-reel-filter-reset" data-action="reset-failed-reel-filters">Reset issue filter</button><button type="button" class="button primary failed-reel-check-button" data-action="start-failed-reel-deletion-check" data-issue-type="${esc(selectedIssueType)}" ${selectedIssueType === 'all' || deletionCheckRunning || state.busy || state.readOnly ? 'disabled' : ''}>${deletionCheckRunning ? 'Checking reels…' : selectedIssueType === 'all' ? 'Select an issue card first' : 'Check selected type for deletion'}</button></section>` : ''}
+    ${renderDeletionCheckProgress(deletionJob)}
     ${reels ? (rows ? `<section class="failed-reels-section"><div class="table-wrap"><table class="failed-reels-table"><thead><tr><th>REEL ID</th><th>PROFILE</th><th>CAPTURE ATTEMPT</th><th>WHY IT NEEDS REVIEW</th><th>ACTION</th></tr></thead><tbody>${rows}</tbody></table></div></section>` : '<p class="empty-state">No failed or incomplete reel captures are currently saved.</p>') : '<p class="loading">Reading saved reel results…</p>'}`;
 }
 

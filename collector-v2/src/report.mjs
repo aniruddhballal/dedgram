@@ -17,14 +17,14 @@ const reviewText = (item) => [
 
 export async function writeReport(paths, profile, discovery, items, run) {
   await mkdir(paths.base, { recursive: true });
-  const rows = [['kind', 'shortcode', 'url', 'date', 'date_precision', 'caption', 'hashtags', 'likes', 'comments', 'views', 'views_displayed', 'views_approximate', 'views_source', 'views_observed_at', 'status', 'missing', 'last_error', 'fetched_at', 'likes_displayed', 'likes_approximate', 'likes_source', 'manual_review_reason']];
+  const rows = [['kind', 'shortcode', 'url', 'date', 'date_precision', 'caption', 'hashtags', 'likes', 'comments', 'views', 'views_displayed', 'views_approximate', 'views_source', 'views_observed_at', 'status', 'missing', 'last_error', 'fetched_at', 'likes_displayed', 'likes_approximate', 'likes_source', 'manual_review_reason', 'deletion_check_status', 'deletion_checked_at', 'deletion_check_reason']];
   for (const item of items) rows.push([
     item.kind, item.shortcode, item.url, item.date, item.date_precision, item.caption, (item.hashtags || []).join(' '),
     item.likes?.value, item.comments?.value, item.views?.value, item.views?.raw,
     item.views?.approximate, item.views?.source, item.views?.observed_at, item.status,
     (item.missing || []).join('|'), item.last_error, item.fetched_at,
     displayedCount(item.likes), item.likes?.approximate, item.likes?.source,
-    reviewText(item)
+    reviewText(item), item.deletion_check?.status, item.deletion_check?.checked_at, item.deletion_check?.reason
   ]);
   await writeFile(paths.csv, rows.map((row) => row.map(csv).join(',')).join('\n') + '\n', 'utf8');
   const profileRows = [

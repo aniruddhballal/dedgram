@@ -5,11 +5,12 @@ import { readFile } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { randomUUID } from 'node:crypto';
-import { catalog, detail, failedReels, profileData, profileSummary, resolveUsername, root, summary, usernames } from './data.mjs';
+import { catalog, detail, failedReelIssueType, failedReels, profileData, profileSummary, resolveUsername, root, summary, usernames } from './data.mjs';
 import { MODES, ORDERS, orderProfiles, resultStatus, stepsFor, terminal } from './plan.mjs';
 import { paths, readJson, writeJson } from '../src/store.mjs';
 import { exactPostCount, gridCount, profileHeaderComplete, profileLevelComplete } from '../src/model.mjs';
 import { applyUsernameChange, checkUsernameChange } from '../src/username-change.mjs';
+import { runReelDeletionCheck } from '../src/reel-deletion-check.mjs';
 
 const publicDir = join(dirname(fileURLToPath(import.meta.url)), 'public');
 const showcaseMediaDir = join(root, '..', 'profile-showcase', 'snapshot', 'media');
@@ -19,6 +20,7 @@ const preview = process.env.COLLECTOR_UI_PREVIEW === '1';
 const usernameJobs = new Map();
 let usernameScanJob = null;
 let usernameMigrationJob = null;
+let reelDeletionCheckJob = null;
 
 function privateBrowserCommand() {
   if (process.platform === 'win32') {
@@ -260,6 +262,53 @@ function usernameWorkRunning() {
   return usernameScanJob?.status === 'running' || usernameMigrationJob?.status === 'running';
 }
 
+function ensureDeletionCheckAvailable() {
+  if (runner.active) throw Object.assign(new Error('Finish or stop the collection run before checking reel availability.'), { status: 409 });
+  if (usernameWorkRunning()) throw Object.assign(new Error('Finish the username workflow before checking reel availability.'), { status: 409 });
+  if (reelDeletionCheckJob?.status === 'running') throw Object.assign(new Error('A reel availability check is already running.'), { status: 409 });
+}
+
+async function startReelDeletionCheck(input) {
+  ensureDeletionCheckAvailable();
+  const issueType = typeof input?.issue_type === 'string' ? input.issue_type : '';
+  if (!issueType || issueType === 'all') throw Object.assign(new Error('Select one issue-type card before starting the deletion check.'), { status: 400 });
+  const requestedProfile = input?.profile && input.profile !== 'all' ? await resolveUsername(input.profile) : 'all';
+  if (input?.profile && input.profile !== 'all' && !requestedProfile) throw Object.assign(new Error('Profile is not in the catalog.'), { status: 404 });
+  const candidates = (await failedReels()).filter((reel) => (requestedProfile === 'all' || reel.username === requestedProfile)
+    && failedReelIssueType(reel.reason) === issueType);
+  if (!candidates.length) throw Object.assign(new Error('No failed reels match the selected profile and issue type.'), { status: 400 });
+  const startedAt = new Date().toISOString();
+  reelDeletionCheckJob = {
+    kind: 'reel-deletion-check',
+    status: 'running',
+    started_at: startedAt,
+    updated_at: startedAt,
+    issue_type: issueType,
+    profile: requestedProfile,
+    total: candidates.length,
+    completed: 0,
+    current: null,
+    counts: { deleted: 0, exists: 0, check_failed: 0 },
+    results: [],
+    error: null
+  };
+  void runReelDeletionCheck(root, candidates, {
+    issueType,
+    startedAt,
+    onProgress: (progress) => Object.assign(reelDeletionCheckJob, progress, { updated_at: new Date().toISOString() })
+  }).then((result) => {
+    Object.assign(reelDeletionCheckJob, {
+      status: 'complete', completed: candidates.length, current: null, counts: result.counts,
+      results: result.results, finished_at: new Date().toISOString(), updated_at: new Date().toISOString()
+    });
+  }).catch((error) => {
+    Object.assign(reelDeletionCheckJob, {
+      status: 'failed', current: null, error: error.message, finished_at: new Date().toISOString(), updated_at: new Date().toISOString()
+    });
+  });
+  return reelDeletionCheckJob;
+}
+
 function ensureUsernameWorkAvailable() {
   if (runner.active) throw Object.assign(new Error('Finish or stop the collection run before starting username work.'), { status: 409 });
   if (usernameWorkRunning()) throw Object.assign(new Error('Another username workflow is already running.'), { status: 409 });
@@ -434,6 +483,10 @@ const server = createServer(async (request, response) => {
       }
       if (pathname === '/api/runs/stop') return json(response, 200, await runner.stop());
       if (pathname === '/api/username-scan') return json(response, 202, startUsernameScan());
+      if (pathname === '/api/deletion-check') {
+        const input = await body(request);
+        return json(response, 202, await startReelDeletionCheck(input));
+      }
       if (pathname === '/api/username-change/bulk') {
         const input = await body(request);
         return json(response, 202, await startUsernameMigration(input));
@@ -465,6 +518,7 @@ const server = createServer(async (request, response) => {
     if (pathname === '/api/summary') return json(response, 200, await summary());
     if (pathname === '/api/username-scan') return json(response, 200, usernameScanJob);
     if (pathname === '/api/username-migration') return json(response, 200, usernameMigrationJob);
+    if (pathname === '/api/deletion-check') return json(response, 200, reelDeletionCheckJob);
     if (pathname === '/api/run') {
       if (preview) runner.batch = await readJson(jobPath);
       const profiles = runner.batch?.profiles || [];

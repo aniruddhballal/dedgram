@@ -13,7 +13,7 @@ const savedOrder = localStorage.getItem('dedgram-order-v2');
 const savedSetup = sessionStorage.getItem(setupKey);
 const savedWorkflow = sessionStorage.getItem(workflowKey);
 const state = {
-  catalog: [], batch: null, batchProfiles: [], detail: null, overview: null, failedReels: null, usernameScan: null, usernameMigration: null,
+  catalog: [], batch: null, batchProfiles: [], detail: null, overview: null, failedReels: null, deletionCheck: null, usernameScan: null, usernameMigration: null,
   selected: new Set(Array.isArray(saved) ? saved : []),
   search: '', filter: 'all', layout: 'grid',
   mode: ['profile_header', 'reel_grid', 'profile_only', 'depth_first', 'breadth_first', 'reels_only'].includes(savedMode) ? savedMode : 'depth_first',
@@ -193,7 +193,10 @@ async function refresh() {
     api('/api/username-migration').then((result) => { state.usernameMigration = result; })
   ];
   if (current === '/overview') calls.push(api('/api/summary').then((result) => { state.overview = result; }));
-  if (current === '/failed-reels' || current === '/failed-reels/') calls.push(api('/api/failed-reels').then(({ reels }) => { state.failedReels = reels; }));
+  if (current === '/failed-reels' || current === '/failed-reels/') {
+    calls.push(api('/api/failed-reels').then(({ reels }) => { state.failedReels = reels; }));
+    calls.push(api('/api/deletion-check').then((result) => { state.deletionCheck = result; }));
+  }
   if (current.startsWith('/profiles/')) calls.push(api(`/api/profiles/${encodeURIComponent(decodeURIComponent(current.slice('/profiles/'.length)))}`).then((result) => { state.detail = result; }));
   await Promise.all(calls);
   if (!sessionStorage.getItem(setupKey) && state.batch?.status === 'running') {
@@ -238,6 +241,18 @@ document.addEventListener('click', async (event) => {
   }
   if (action === 'filter-failed-issue') { state.failedReelIssueType = button.dataset.issueType || 'all'; render(); return; }
   if (action === 'reset-failed-reel-filters') { state.failedReelIssueType = 'all'; render(); return; }
+  if (action === 'start-failed-reel-deletion-check') {
+    state.busy = true; state.error = null;
+    notify('Deletion check started. Each selected reel will be opened one at a time in a fresh private context.');
+    try {
+      const accepted = await api('/api/deletion-check', { method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ issue_type: button.dataset.issueType, profile: state.failedReelProfile }) });
+      state.deletionCheck = accepted;
+      await refresh();
+    } catch (error) { state.error = error.message; }
+    finally { state.busy = false; render(); }
+    return;
+  }
   if (action === 'setup-progress' && state.batch) { setSetupStep('progress'); return; }
   if (action === 'setup-new') { state.workflow = 'collection'; sessionStorage.setItem(workflowKey, 'collection'); setSetupStep('profiles'); return; }
   if (action === 'scan-usernames') {

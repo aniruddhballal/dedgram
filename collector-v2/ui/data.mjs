@@ -114,10 +114,22 @@ export async function failedReels() {
         url: item.url || null,
         status: item.last_error ? 'failed' : item.status || 'partial',
         failed_at: item.last_attempt_at || item.fetched_at || null,
-        reason: item.last_error || missing.join('; ') || 'Incomplete reel record.'
+        reason: item.last_error || missing.join('; ') || 'Incomplete reel record.',
+        deletion_check: item.deletion_check || null
       };
     }))
     .sort((a, b) => (Date.parse(b.failed_at || '') || 0) - (Date.parse(a.failed_at || '') || 0));
+}
+
+export function failedReelIssueType(reason) {
+  const text = String(reason || 'Unknown issue');
+  if (text.includes('Instagram rendered an empty page.')) return 'Instagram rendered an empty page';
+  if (text.includes('Instagram reports this page is unavailable.')) return 'Instagram reported the reel page as unavailable';
+  const fields = [...text.matchAll(/(?:^|;\s*)(date|likes|comments|views):/g)]
+    .map((match) => match[1])
+    .filter((field, index, values) => values.indexOf(field) === index);
+  if (fields.length) return `Missing ${fields.join(', ')}`;
+  return text;
 }
 
 export async function summary() {
