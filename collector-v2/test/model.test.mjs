@@ -146,7 +146,7 @@ test('public incognito details preserve available fields without changing the sa
 test('public details parse localized Japanese engagement labels', () => {
   const result = publicDetailsFromSnapshot({ kind: 'reel' }, {
     og_description: '「Caption」 - 2026年10月17日、「いいね！」7,486件、コメント8件 - edlt.shox',
-    article_text: '',
+    article_text: 'a commenter\n1 like\nReply',
     aria_text: 'Oct 17, 2026\nLike\nComment',
     json_ld: []
   });

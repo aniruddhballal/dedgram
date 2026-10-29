@@ -193,19 +193,16 @@ export function itemFromSnapshot(item, snapshot) {
     }
     return null;
   };
-  let likes = findMetric(['likes?']);
-  if (!likes) {
-    const parsed = localizedMetric(description, ['いいね']);
-    if (parsed) likes = { ...parsed, source: 'og_description_localized' };
-  }
+  const localizedLikes = localizedMetric(description, ['いいね']);
+  let likes = localizedLikes ? { ...localizedLikes, source: 'og_description_localized' } : findMetric(['likes?']);
   if (!likes) {
     const others = /\band\s+(\d[\d,.]*\s*[KMB]?)\s+others?\b/i.exec(fields.join('\n'));
     const parsed = count(others?.[1]);
     if (parsed) likes = { ...parsed, value: parsed.value + 1, source: 'others_plus_one' };
   }
-  const comments = findMetric(['comments?']);
   const localizedComments = localizedMetric(description, ['コメント']);
-  const resolvedComments = comments || (localizedComments ? { ...localizedComments, source: 'og_description_localized' } : null);
+  const comments = findMetric(['comments?']);
+  const resolvedComments = localizedComments ? { ...localizedComments, source: 'og_description_localized' } : comments;
   const views = findMetric(['views?', 'plays?']) || (snapshot.grid_views_raw
     ? { ...count(snapshot.grid_views_raw), source: 'profile_grid' } : null);
   const dateRaw = snapshot.datetime || structured.uploadDate || structured.datePublished || null;
