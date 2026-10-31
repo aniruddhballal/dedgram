@@ -1,13 +1,19 @@
 package com.dedgram.collector;
 
 import android.accessibilityservice.AccessibilityService;
+import android.app.KeyguardManager;
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
 import android.graphics.PixelFormat;
 import android.os.Handler;
 import android.os.Looper;
+import android.os.SystemClock;
+import android.os.PowerManager;
 import android.os.Build;
 import android.os.VibrationEffect;
 import android.os.Vibrator;
-import android.provider.Settings;
 import android.view.Gravity;
 import android.view.MotionEvent;
 import android.view.View;
@@ -20,9 +26,15 @@ import android.widget.Toast;
 
 import java.util.HashSet;
 import java.util.Set;
+import java.lang.ref.WeakReference;
 
 public final class ProfileAccessibilityService extends AccessibilityService {
-    private static final String INSTAGRAM_PACKAGE = "com.instagram.android";
+    private static final String INSTAGRAM_PACKAGE = CaptureSession.INSTAGRAM_PACKAGE;
+    private static final long FOREGROUND_CHECK_INTERVAL_MS = 250L;
+    private static final String SESSION_REQUEST_PREFS = "capture_session_request";
+    private static final String REQUESTED_AT = "requested_at";
+    private static final long REQUEST_VALIDITY_MS = 2 * 60_000L;
+    private static WeakReference<ProfileAccessibilityService> activeService = new WeakReference<>(null);
     private static final String BUBBLE_POSITION_PREFS = "capture_bubble_position";
     private static final String REEL_BUBBLE_POSITION_PREFS = "reel_bubble_position";
     private static final String BUBBLE_X = "x";
@@ -34,6 +46,15 @@ public final class ProfileAccessibilityService extends AccessibilityService {
     private final Handler mainHandler = new Handler(Looper.getMainLooper());
     private final Set<String> savedUsernames = new HashSet<>();
     private final Runnable savedProfileStateUpdate = this::updateSavedProfileState;
+    private final Runnable foregroundCheck = this::checkForeground;
+    private CaptureSession session;
+    private boolean reelCaptureInProgress;
+    private boolean screenReceiverRegistered;
+    private final BroadcastReceiver screenReceiver = new BroadcastReceiver() {
+        @Override public void onReceive(Context context, Intent intent) {
+            if (Intent.ACTION_SCREEN_OFF.equals(intent.getAction())) stopCaptureSession();
+        }
+    };
     private WindowManager windowManager;
     private TextView bubble;
     private TextView reelBubble;
@@ -44,47 +65,124 @@ public final class ProfileAccessibilityService extends AccessibilityService {
     @Override
     protected void onServiceConnected() {
         super.onServiceConnected();
+        clearSession();
+        if (!consumeSessionRequest()) {
+            disableSelf();
+            return;
+        }
+        session = new CaptureSession(SystemClock.elapsedRealtime());
+        activeService = new WeakReference<>(this);
+        IntentFilter screenOff = new IntentFilter(Intent.ACTION_SCREEN_OFF);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            registerReceiver(screenReceiver, screenOff, Context.RECEIVER_NOT_EXPORTED);
+        } else {
+            registerReceiver(screenReceiver, screenOff);
+        }
+        screenReceiverRegistered = true;
         windowManager = (WindowManager) getSystemService(WINDOW_SERVICE);
         refreshSavedUsernames();
-        mainHandler.post(this::syncBubbleVisibility);
+        mainHandler.post(foregroundCheck);
     }
 
     @Override
     public void onAccessibilityEvent(AccessibilityEvent event) {
-        if (event == null) return;
+        if (event == null || session == null || session.isStopped()) return;
         boolean instagramEvent = INSTAGRAM_PACKAGE.equals(String.valueOf(event.getPackageName()));
         if (instagramEvent) {
-            if (bubble == null) mainHandler.post(this::showBubble);
-            if (reelBubble == null) mainHandler.post(this::showReelBubble);
+            syncBubbleVisibility();
+            if (session.isStopped()) return;
             if (event.getEventType() == AccessibilityEvent.TYPE_WINDOW_STATE_CHANGED) {
                 mainHandler.removeCallbacks(savedProfileStateUpdate);
                 mainHandler.post(savedProfileStateUpdate);
             } else {
                 scheduleSavedProfileStateUpdate();
             }
-        } else if (event.getEventType() == AccessibilityEvent.TYPE_WINDOW_STATE_CHANGED
-                || event.getEventType() == AccessibilityEvent.TYPE_WINDOWS_CHANGED) {
-            mainHandler.post(this::syncBubbleVisibility);
         }
     }
 
     @Override
     public void onInterrupt() {
-        // The service has no active gesture or speech operation to cancel.
+        stopCaptureSession();
     }
 
     @Override
     public boolean onUnbind(android.content.Intent intent) {
-        removeBubble();
-        removeReelBubble();
+        clearSession();
         return super.onUnbind(intent);
     }
 
     @Override
     public void onDestroy() {
+        clearSession();
+        super.onDestroy();
+    }
+
+    /** Called on the main thread by the catalog's stop control. */
+    public static boolean stopCapture() {
+        ProfileAccessibilityService service = activeService.get();
+        if (service == null) return false;
+        service.stopCaptureSession();
+        return true;
+    }
+
+    /** A fresh user action in the app permits exactly one settings-enabled connection. */
+    static void prepareCaptureSession(Context context) {
+        context.getSharedPreferences(SESSION_REQUEST_PREFS, MODE_PRIVATE).edit()
+                .putLong(REQUESTED_AT, System.currentTimeMillis()).commit();
+    }
+
+    private boolean consumeSessionRequest() {
+        android.content.SharedPreferences preferences =
+                getSharedPreferences(SESSION_REQUEST_PREFS, MODE_PRIVATE);
+        long requestedAt = preferences.getLong(REQUESTED_AT, 0L);
+        // Commit consumption before starting: process death must not replay the request.
+        boolean consumed = preferences.edit().remove(REQUESTED_AT).commit();
+        long age = System.currentTimeMillis() - requestedAt;
+        return consumed && requestedAt > 0L && age >= 0L && age <= REQUEST_VALIDITY_MS;
+    }
+
+    private void stopCaptureSession() {
+        clearSession();
+        // Hiding overlays or stopSelf() would leave accessibility enabled.
+        disableSelf();
+    }
+
+    private void clearSession() {
+        if (session != null) session.stop();
+        mainHandler.removeCallbacksAndMessages(null);
+        reelCaptureInProgress = false;
+        if (screenReceiverRegistered) {
+            unregisterReceiver(screenReceiver);
+            screenReceiverRegistered = false;
+        }
         removeBubble();
         removeReelBubble();
-        super.onDestroy();
+        if (activeService.get() == this) activeService.clear();
+    }
+
+    private void checkForeground() {
+        syncBubbleVisibility();
+        if (session != null && !session.isStopped()) {
+            mainHandler.postDelayed(foregroundCheck, FOREGROUND_CHECK_INTERVAL_MS);
+        }
+    }
+
+    /** Never traverse a foreign app, and never fall back to a background Instagram window. */
+    private AccessibilityNodeInfo currentInstagramRoot() {
+        if (session == null || session.isStopped()) return null;
+        KeyguardManager keyguard = (KeyguardManager) getSystemService(KEYGUARD_SERVICE);
+        PowerManager power = (PowerManager) getSystemService(POWER_SERVICE);
+        if ((keyguard != null && keyguard.isKeyguardLocked())
+                || (power != null && !power.isInteractive())) {
+            stopCaptureSession();
+            return null;
+        }
+        AccessibilityNodeInfo root = getRootInActiveWindow();
+        String packageName = root == null ? null : String.valueOf(root.getPackageName());
+        if (session.observeForeground(packageName, SystemClock.elapsedRealtime())) return root;
+        if (root != null) root.recycle();
+        if (session.isStopped()) stopCaptureSession();
+        return null;
     }
 
     private void showBubble() {
@@ -161,16 +259,13 @@ public final class ProfileAccessibilityService extends AccessibilityService {
             bubbleAttached = true;
             scheduleSavedProfileStateUpdate();
         } catch (WindowManager.BadTokenException | SecurityException ignored) {
-            if (overlayType() == WindowManager.LayoutParams.TYPE_APPLICATION_OVERLAY) {
-                addAccessibilityOverlay(view, params);
-            }
+            // The session may be ending; never fall back to a general application overlay.
         }
     }
 
     private void syncBubbleVisibility() {
-        AccessibilityNodeInfo root = getRootInActiveWindow();
-        boolean instagramActive = root != null
-                && INSTAGRAM_PACKAGE.equals(String.valueOf(root.getPackageName()));
+        AccessibilityNodeInfo root = currentInstagramRoot();
+        boolean instagramActive = root != null;
         if (root != null) root.recycle();
         if (instagramActive) {
             showBubble();
@@ -251,35 +346,12 @@ public final class ProfileAccessibilityService extends AccessibilityService {
             reelBubble = view;
             reelBubbleAttached = true;
         } catch (WindowManager.BadTokenException | SecurityException ignored) {
-            if (overlayType() == WindowManager.LayoutParams.TYPE_APPLICATION_OVERLAY) {
-                params.type = WindowManager.LayoutParams.TYPE_ACCESSIBILITY_OVERLAY;
-                try {
-                    windowManager.addView(view, params);
-                    reelBubble = view;
-                    reelBubbleAttached = true;
-                } catch (RuntimeException ignoredAgain) {
-                    // The system may be tearing the accessibility service down.
-                }
-            }
-        }
-    }
-
-    private void addAccessibilityOverlay(TextView view, WindowManager.LayoutParams params) {
-        params.type = WindowManager.LayoutParams.TYPE_ACCESSIBILITY_OVERLAY;
-        try {
-            windowManager.addView(view, params);
-            bubble = view;
-            bubbleAttached = true;
-            scheduleSavedProfileStateUpdate();
-        } catch (RuntimeException ignored) {
             // The system may be tearing the accessibility service down.
         }
     }
 
     private int overlayType() {
-        return Build.VERSION.SDK_INT >= Build.VERSION_CODES.O && Settings.canDrawOverlays(this)
-                ? WindowManager.LayoutParams.TYPE_APPLICATION_OVERLAY
-                : WindowManager.LayoutParams.TYPE_ACCESSIBILITY_OVERLAY;
+        return WindowManager.LayoutParams.TYPE_ACCESSIBILITY_OVERLAY;
     }
 
     private void captureCurrentProfile(TextView source) {
@@ -293,7 +365,7 @@ public final class ProfileAccessibilityService extends AccessibilityService {
 
     private void updateSavedProfileState() {
         if (bubble == null || !bubbleAttached) return;
-        AccessibilityNodeInfo root = getRootInActiveWindow();
+        AccessibilityNodeInfo root = currentInstagramRoot();
         if (root == null || !INSTAGRAM_PACKAGE.equals(String.valueOf(root.getPackageName()))) {
             if (root != null) root.recycle();
             observedUsername = "";
@@ -322,7 +394,9 @@ public final class ProfileAccessibilityService extends AccessibilityService {
     }
 
     private void captureCurrentProfile(TextView source, int attempt) {
-        AccessibilityNodeInfo root = getRootInActiveWindow();
+        if (session == null || session.isStopped()) return;
+        AccessibilityNodeInfo root = currentInstagramRoot();
+        if (session.isStopped()) return;
         if (root == null || !INSTAGRAM_PACKAGE.equals(String.valueOf(root.getPackageName()))) {
             if (root != null) root.recycle();
             if (attempt < MAX_CAPTURE_ATTEMPTS) {
@@ -361,11 +435,14 @@ public final class ProfileAccessibilityService extends AccessibilityService {
     }
 
     private void captureCurrentReel(TextView source) {
+        if (reelCaptureInProgress || session == null || session.isStopped()) return;
+        reelCaptureInProgress = true;
         captureCurrentReel(source, 0);
     }
 
     private void captureCurrentReel(TextView source, int attempt) {
-        AccessibilityNodeInfo root = currentInstagramRoot(true, false);
+        AccessibilityNodeInfo root = currentInstagramRoot();
+        if (session == null || session.isStopped()) return;
         if (root == null || !INSTAGRAM_PACKAGE.equals(String.valueOf(root.getPackageName()))) {
             if (root != null) root.recycle();
             retryOrFailReel(source, attempt, "Open an Instagram reel first");
@@ -378,10 +455,11 @@ public final class ProfileAccessibilityService extends AccessibilityService {
             return;
         }
         Reel reel = buildReel(snapshot);
-        boolean openedLikesAndPlays = ReelAccessibilityExtractor.clickLikesCount(root, this);
+        // Node actions remain bound to Instagram; never inject a tap at screen coordinates.
+        boolean openedLikesAndPlays = ReelAccessibilityExtractor.clickLikesCount(root);
         root.recycle();
         if (!openedLikesAndPlays) {
-            reel.viewsOrPlaysError = "Could not open the reel's Likes and plays panel by tapping the likes count.";
+            reel.viewsOrPlaysError = "Could not open Likes and plays from this reel.";
             saveReel(source, reel);
             return;
         }
@@ -389,7 +467,8 @@ public final class ProfileAccessibilityService extends AccessibilityService {
     }
 
     private void finishReelCapture(TextView source, Reel reel, int attempt) {
-        AccessibilityNodeInfo root = currentInstagramRoot(false, true);
+        AccessibilityNodeInfo root = currentInstagramRoot();
+        if (session == null || session.isStopped()) return;
         if (root == null || !INSTAGRAM_PACKAGE.equals(String.valueOf(root.getPackageName()))) {
             if (root != null) root.recycle();
             if (attempt < MAX_CAPTURE_ATTEMPTS) {
@@ -424,67 +503,7 @@ public final class ProfileAccessibilityService extends AccessibilityService {
         }
         if (reel.likes == null) reel.likes = snapshot.metric("like");
         root.recycle();
-        if (reel.caption.endsWith("...") || reel.caption.endsWith("…") || reel.caption.contains("…")) {
-            performGlobalAction(GLOBAL_ACTION_BACK);
-            mainHandler.postDelayed(() -> expandCaptionAndSave(source, reel, 0), 450L);
-        } else {
-            saveReel(source, reel);
-        }
-    }
-
-    private void expandCaptionAndSave(TextView source, Reel reel, int attempt) {
-        AccessibilityNodeInfo root = currentInstagramRoot(true, false);
-        if (root == null) {
-            reel.captionError = "Could not reopen the reel to expand its caption.";
-            saveReel(source, reel);
-            return;
-        }
-        ReelAccessibilityExtractor.Snapshot snapshot = ReelAccessibilityExtractor.snapshot(root);
-        boolean expanded = ReelAccessibilityExtractor.clickCaptionExpansion(root, this);
-        root.recycle();
-        if (expanded && attempt < MAX_CAPTURE_ATTEMPTS) {
-            mainHandler.postDelayed(() -> readExpandedCaption(source, reel, attempt + 1), CAPTURE_RETRY_DELAY_MS);
-            return;
-        }
-        if (!snapshot.caption().isEmpty() && !snapshot.captionLooksTruncated()) {
-            reel.caption = snapshot.caption();
-            reel.captionError = null;
-        }
         saveReel(source, reel);
-    }
-
-    private void readExpandedCaption(TextView source, Reel reel, int attempt) {
-        AccessibilityNodeInfo root = currentInstagramRoot(false, false);
-        if (root == null) {
-            if (attempt < MAX_CAPTURE_ATTEMPTS) {
-                mainHandler.postDelayed(() -> readExpandedCaption(source, reel, attempt + 1), CAPTURE_RETRY_DELAY_MS);
-            } else {
-                reel.captionError = "The expanded reel caption was not available.";
-                saveReel(source, reel);
-            }
-            return;
-        }
-        ReelAccessibilityExtractor.Snapshot snapshot = ReelAccessibilityExtractor.snapshot(root);
-        String caption = snapshot.caption();
-        if (!caption.isEmpty() && !snapshot.captionLooksTruncated()) {
-            reel.caption = stripCommentPrefix(caption, reel.account);
-            reel.captionError = null;
-            if (!snapshot.datePosted().isEmpty()) {
-                reel.datePosted = snapshot.datePosted();
-                reel.datePostedError = null;
-            }
-            root.recycle();
-            performGlobalAction(GLOBAL_ACTION_BACK);
-            saveReel(source, reel);
-            return;
-        }
-        root.recycle();
-        if (attempt < MAX_CAPTURE_ATTEMPTS) {
-            mainHandler.postDelayed(() -> readExpandedCaption(source, reel, attempt + 1), CAPTURE_RETRY_DELAY_MS);
-        } else {
-            reel.captionError = "The expanded reel caption was not available.";
-            saveReel(source, reel);
-        }
     }
 
     private Reel buildReel(ReelAccessibilityExtractor.Snapshot snapshot) {
@@ -506,6 +525,9 @@ public final class ProfileAccessibilityService extends AccessibilityService {
         if (reel.saves == null) reel.savesError = "Could not read the saves count from the reel UI.";
         if (reel.datePosted.isEmpty()) reel.datePostedError = "Could not read the posted date from the reel UI.";
         if (reel.caption.isEmpty()) reel.captionError = "Could not read the caption from the reel UI.";
+        else if (snapshot.captionLooksTruncated()) {
+            reel.captionError = "Caption is truncated. Expand it in Instagram before capturing.";
+        }
         if (reel.account.isEmpty()) reel.account = "Unknown";
         return reel;
     }
@@ -528,40 +550,9 @@ public final class ProfileAccessibilityService extends AccessibilityService {
         }
     }
 
-    /**
-     * Instagram can expose its reel surface through a secondary interactive window while
-     * the URL-handler activity remains focused. Prefer the window containing reel semantics.
-     */
-    private AccessibilityNodeInfo currentInstagramRoot(boolean preferReel, boolean preferLikesAndPlays) {
-        AccessibilityNodeInfo fallback = null;
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            for (android.view.accessibility.AccessibilityWindowInfo window : getWindows()) {
-                AccessibilityNodeInfo candidate = window.getRoot();
-                if (candidate == null || !INSTAGRAM_PACKAGE.equals(String.valueOf(candidate.getPackageName()))) {
-                    if (candidate != null) candidate.recycle();
-                    continue;
-                }
-                ReelAccessibilityExtractor.Snapshot snapshot = ReelAccessibilityExtractor.snapshot(candidate);
-                boolean preferred;
-                if (preferLikesAndPlays) preferred = snapshot.hasLikesAndPlaysSheet();
-                else if (preferReel) preferred = snapshot.isLikelyReel();
-                else preferred = !snapshot.datePosted().isEmpty() || snapshot.caption().length() > 40;
-                if (preferred) {
-                    if (fallback != null) fallback.recycle();
-                    return candidate;
-                }
-                if (fallback == null) fallback = candidate;
-                else candidate.recycle();
-            }
-        }
-        if (fallback != null) return fallback;
-        AccessibilityNodeInfo active = getRootInActiveWindow();
-        if (active != null && INSTAGRAM_PACKAGE.equals(String.valueOf(active.getPackageName()))) return active;
-        if (active != null) active.recycle();
-        return null;
-    }
-
     private void saveReel(TextView source, Reel reel) {
+        reelCaptureInProgress = false;
+        if (session == null || session.isStopped()) return;
         if (ReelStore.addOrReplace(getApplicationContext(), reel)) {
             if (reel.hasErrors()) showMessage("Reel saved with field errors");
             else showMessage("Reel saved");
@@ -570,11 +561,6 @@ public final class ProfileAccessibilityService extends AccessibilityService {
             showMessage("Could not save reel JSON");
             showReelFailureFeedback();
         }
-    }
-
-    private String stripCommentPrefix(String value, String account) {
-        String prefix = account == null || account.isEmpty() ? "" : account + " said ";
-        return !prefix.isEmpty() && value.startsWith(prefix) ? value.substring(prefix.length()) : value;
     }
 
     private void showReelSuccessFeedback() {

@@ -1,9 +1,5 @@
 package com.dedgram.collector;
 
-import android.accessibilityservice.AccessibilityService;
-import android.accessibilityservice.GestureDescription;
-import android.graphics.Rect;
-import android.os.Build;
 import android.view.accessibility.AccessibilityNodeInfo;
 
 import java.util.ArrayList;
@@ -146,7 +142,9 @@ public final class ReelAccessibilityExtractor {
         }
     }
 
-    public static boolean clickLikesCount(AccessibilityNodeInfo root, AccessibilityService service) {
+    public static boolean clickLikesCount(AccessibilityNodeInfo root) {
+        if (root == null || !CaptureSession.INSTAGRAM_PACKAGE.contentEquals(
+                root.getPackageName() == null ? "" : root.getPackageName())) return false;
         Snapshot snapshot = snapshot(root);
         int label = snapshot.findLabel("like");
         if (label < 0) return false;
@@ -155,40 +153,26 @@ public final class ReelAccessibilityExtractor {
             String description = entry.display().toLowerCase(Locale.ROOT);
             if (parseCount(entry.display()) == null && !description.contains("like number")
                     && !description.contains("view likes")) continue;
-            return click(entry, service);
+            return click(entry);
         }
         return false;
     }
 
-    public static boolean clickCaptionExpansion(AccessibilityNodeInfo root, AccessibilityService service) {
-        Snapshot snapshot = snapshot(root);
-        for (Entry entry : snapshot.entries) {
-            String value = entry.text().trim();
-            if ((value.endsWith("...") || value.endsWith("…")) && isCaptionCandidate(value)) {
-                return click(entry, service);
-            }
-        }
-        return false;
-    }
-
-    private static boolean click(Entry entry, AccessibilityService service) {
-        Rect bounds = new Rect();
-        entry.node.getBoundsInScreen(bounds);
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N && !bounds.isEmpty()) {
-            GestureDescription.Builder builder = new GestureDescription.Builder();
-            android.graphics.Path path = new android.graphics.Path();
-            path.moveTo(bounds.centerX(), bounds.centerY());
-            builder.addStroke(new GestureDescription.StrokeDescription(path, 0, 80));
-            if (service.dispatchGesture(builder.build(), null, null)) return true;
-        }
+    private static boolean click(Entry entry) {
+        if (!isInstagramNode(entry.node)) return false;
         if (entry.node.isClickable() && entry.node.performAction(AccessibilityNodeInfo.ACTION_CLICK)) return true;
         AccessibilityNodeInfo parent = entry.node.getParent();
         if (parent != null) {
-            boolean clicked = parent.isClickable() && parent.performAction(AccessibilityNodeInfo.ACTION_CLICK);
+            boolean clicked = isInstagramNode(parent) && parent.isClickable()
+                    && parent.performAction(AccessibilityNodeInfo.ACTION_CLICK);
             parent.recycle();
             if (clicked) return true;
         }
         return false;
+    }
+
+    private static boolean isInstagramNode(AccessibilityNodeInfo node) {
+        return CaptureSession.INSTAGRAM_PACKAGE.equals(String.valueOf(node.getPackageName()));
     }
 
     private static void collect(AccessibilityNodeInfo node, List<Entry> entries) {
