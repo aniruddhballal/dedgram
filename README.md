@@ -32,13 +32,13 @@ The public showcase focuses on collected reel research. Profile post counts rema
 
 ## 1. Capture profiles on Android
 
-Install the app, grant overlay permission, enable the dedgram accessibility service, open an Instagram profile, and tap the capture bubble. The app validates the visible identity, rejects common interface labels, de-duplicates usernames, and saves successful captures to:
+Install the app, enable a temporary dedgram capture session in Android accessibility settings, open an Instagram profile within 60 seconds, and tap the capture bubble. Capture turns accessibility off when you leave Instagram, lock the phone, stop capture, or reach 30 minutes. Verify capture is OFF before using payment apps; see the [Google Pay compatibility issue](app/issues/2026-10-31-google-pay-payments-blocked/README.md). The app validates the visible identity, rejects common interface labels, de-duplicates usernames, and saves successful captures to:
 
 ```text
 Documents/dedgram/profiles.json
 ```
 
-The service reads the active Instagram accessibility tree only after the user taps the bubble. It stores usernames and timestamps, not screenshots, bios, captions, follower counts, direct messages, or surrounding UI text.
+Profile capture stores usernames and timestamps. Saved-profile highlighting also inspects the active Instagram tree on relevant events; reel capture saves captions, dates, and visible reel metrics separately. The service's event filter includes only Instagram, and captures never search background app windows.
 
 See [`app/README.md`](app/README.md) for permissions, platform limitations, build commands, and device installation instructions.
 
@@ -149,7 +149,7 @@ The former React/Vite dashboard and Firefox extension have been removed. Current
 
 ## Privacy and operational boundaries
 
-- Android reads Instagram’s visible accessibility tree only after an explicit capture tap.
+- Android captures Instagram data after an explicit tap and also reads the active Instagram tree for saved-profile highlighting during a bounded capture session.
 - The collector reads visible Instagram pages through a local browser session and does not use undocumented Instagram endpoints or bypass login, checkpoints, consent screens, rate limits, or age restrictions.
 - Browser credentials, authentication profiles, and temporary screenshots are ignored and must not be committed.
 - Public Vercel files are static snapshots. They contain only the records intentionally copied into `website/snapshot/`.

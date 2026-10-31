@@ -47,3 +47,7 @@ Key commit: `c911084`.
 ## 2.2.1 - Optimized installable build
 
 Enabled R8 code shrinking and resource shrinking for optimized release/preview builds, added a debug-signed non-debuggable preview variant for device testing, and synchronized the repository APK from that optimized preview build.
+
+## 2.2.2 - Bound accessibility sessions after Google Pay compatibility report
+
+Recorded the [payment-blocking issue and original screenshot](issues/2026-10-31-google-pay-payments-blocked/README.md), with a [commit-level investigation](issues/2026-10-31-google-pay-payments-blocked/INVESTIGATION.md). Removed coordinate gesture capability, global Back actions, general overlay permission, and background interactive-window searches. Restored Instagram-only event filtering and added active-window checks, cancellation of pending work, and complete accessibility disablement when leaving Instagram, locking the phone, stopping capture, or reaching the session limit. Added an in-app stop control, single-use start requests to reject automatic service restarts, and payment compatibility guidance. Captions must be expanded before capture; unavailable semantic controls produce field errors. Google Pay recovery remains unverified on the affected phone.
