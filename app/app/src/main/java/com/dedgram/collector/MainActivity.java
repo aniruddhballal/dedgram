@@ -4,9 +4,10 @@ import android.app.Activity;
 import android.content.ComponentName;
 import android.content.Intent;
 import android.graphics.Color;
-import android.net.Uri;
 import android.os.Bundle;
 import android.os.Build;
+import android.os.Handler;
+import android.os.Looper;
 import android.provider.Settings;
 import android.text.Editable;
 import android.text.TextUtils;
@@ -33,8 +34,15 @@ public final class MainActivity extends Activity {
     private TextView reelCount;
     private TextView profileModeButton;
     private TextView reelModeButton;
-    private TextView overlayStatus;
     private TextView accessibilityStatus;
+    private TextView stopCaptureButton;
+    private final Handler statusHandler = new Handler(Looper.getMainLooper());
+    private final Runnable statusUpdate = new Runnable() {
+        @Override public void run() {
+            refreshCaptureStatus();
+            statusHandler.postDelayed(this, 500L);
+        }
+    };
     private TextView storageStatus;
     private EditText searchInput;
     private List<Profile> loadedProfiles = new ArrayList<>();
@@ -56,6 +64,13 @@ public final class MainActivity extends Activity {
     protected void onResume() {
         super.onResume();
         if (profileList != null) refreshScreen();
+        statusHandler.post(statusUpdate);
+    }
+
+    @Override
+    protected void onPause() {
+        statusHandler.removeCallbacksAndMessages(null);
+        super.onPause();
     }
 
     private View buildScreen() {
@@ -94,6 +109,7 @@ public final class MainActivity extends Activity {
 
         content.addView(buildHeader());
         content.addView(UiStyles.rule(this, Color.BLACK, 1));
+        content.addView(buildCaptureSessionControls(), margin(0, 16, 0, 0));
         content.addView(buildModeSwitcher(), margin(0, 16, 0, 0));
         profileModeContainer = buildProfileMode();
         reelModeContainer = buildReelMode();
@@ -139,13 +155,12 @@ public final class MainActivity extends Activity {
         TextView title = UiStyles.text(this, "Capture profiles", 24, Color.BLACK, true);
         title.setLetterSpacing(-0.02f);
         container.addView(title, margin(0, 5, 0, 0));
-        TextView description = UiStyles.text(this, "Keep a clean, deduplicated list of Instagram usernames. Tap the black dedgram circle while a profile is open.", 15, Color.BLACK, false);
+        TextView description = UiStyles.text(this, "Keep a clean, deduplicated list of Instagram usernames. Tap the alien profile control while a profile is open.", 15, Color.BLACK, false);
         description.setLineSpacing(UiStyles.dp(this, 2), 1.0f);
         container.addView(description, margin(0, 10, 0, 0));
         container.addView(spacer(20));
         container.addView(UiStyles.utility(this, "CAPTURE SETUP"));
-        container.addView(buildPermissionRow("OVERLAY PERMISSION", "Allows both dedgram mode controls to stay visible over Instagram.", true));
-        container.addView(buildPermissionRow("ACCESSIBILITY ACCESS", "Reads only the visible Instagram UI after you tap a mode control.", false));
+        container.addView(UiStyles.text(this, "Enable a capture session above, open Instagram, then tap the alien profile control. Saved profiles are highlighted while Instagram is open.", 12, 0xFF555555, false));
         container.addView(spacer(22));
         LinearLayout heading = new LinearLayout(this);
         heading.setGravity(Gravity.CENTER_VERTICAL);
@@ -187,8 +202,7 @@ public final class MainActivity extends Activity {
         container.addView(description, margin(0, 10, 0, 0));
         container.addView(spacer(20));
         container.addView(UiStyles.utility(this, "REEL CAPTURE SETUP"));
-        container.addView(buildPermissionRow("OVERLAY PERMISSION", "Keeps the dedgram logo reel control above Instagram.", true));
-        container.addView(buildPermissionRow("ACCESSIBILITY ACCESS", "Reads only the active reel and taps its likes count to open Likes and plays.", false));
+        container.addView(UiStyles.text(this, "Enable a capture session above. Expand the caption before capture. The reel control opens Likes and plays when Instagram exposes its likes button. Fields that cannot be read are saved with errors.", 12, 0xFF555555, false));
         container.addView(spacer(22));
         LinearLayout heading = new LinearLayout(this);
         heading.setGravity(Gravity.CENTER_VERTICAL);
@@ -273,7 +287,7 @@ public final class MainActivity extends Activity {
         return header;
     }
 
-    private View buildPermissionRow(String heading, String explanation, boolean overlay) {
+    private View buildCaptureSessionControls() {
         LinearLayout row = new LinearLayout(this);
         row.setOrientation(LinearLayout.VERTICAL);
         row.setPadding(0, UiStyles.dp(this, 14), 0, UiStyles.dp(this, 14));
@@ -281,21 +295,26 @@ public final class MainActivity extends Activity {
 
         LinearLayout top = new LinearLayout(this);
         top.setGravity(Gravity.CENTER_VERTICAL);
-        TextView title = UiStyles.text(this, heading, 15, Color.BLACK, true);
+        TextView title = UiStyles.text(this, "CAPTURE SESSION", 15, Color.BLACK, true);
         title.setLetterSpacing(0.02f);
         top.addView(title, new LinearLayout.LayoutParams(0, -2, 1));
         TextView status = UiStyles.utility(this, "CHECKING");
         top.addView(status);
-        if (overlay) overlayStatus = status; else accessibilityStatus = status;
+        accessibilityStatus = status;
         row.addView(top);
 
-        TextView copy = UiStyles.text(this, explanation, 12, 0xFF555555, false);
+        TextView copy = UiStyles.text(this, "Payment apps such as Google Pay may block payments while accessibility is enabled. Stop capture and verify it is OFF before making payments.\n\nStart here, enable dedgram in Accessibility settings within 2 minutes, then open Instagram within 60 seconds. Capture turns off when you leave Instagram, lock your phone, or reach 30 minutes. Return here to start another session.", 12, 0xFF555555, false);
         copy.setLineSpacing(UiStyles.dp(this, 2), 1.0f);
         row.addView(copy, margin(0, 5, 0, 10));
-        String action = overlay ? "GRANT OVERLAY" : "OPEN ACCESSIBILITY SETTINGS";
-        row.addView(UiStyles.button(this, action, ignored -> {
-            if (overlay) openOverlaySettings(); else openAccessibilitySettings();
-        }, true), new LinearLayout.LayoutParams(-1, UiStyles.dp(this, 48)));
+        row.addView(UiStyles.button(this, "OPEN ACCESSIBILITY SETTINGS", ignored ->
+                openAccessibilitySettings(), true), new LinearLayout.LayoutParams(-1, UiStyles.dp(this, 48)));
+        stopCaptureButton = UiStyles.button(this, "STOP CAPTURE AND TURN ACCESS OFF", ignored -> {
+            if (!ProfileAccessibilityService.stopCapture() && isAccessibilityEnabled()) {
+                openAccessibilitySettings();
+            }
+            refreshCaptureStatus();
+        }, false);
+        row.addView(stopCaptureButton, margin(0, 8, 0, 0));
         row.addView(UiStyles.rule(this, 0xFFDDDDDD, 1), ruleMargin(0xFFDDDDDD, 1, 0, 14, 0, 0));
         return row;
     }
@@ -304,11 +323,16 @@ public final class MainActivity extends Activity {
         loadedProfiles = ProfileStore.read(this);
         String count = loadedProfiles.size() + (loadedProfiles.size() == 1 ? " PROFILE" : " PROFILES");
         if (headerCount != null) headerCount.setText(count);
-        if (overlayStatus != null) overlayStatus.setText(Settings.canDrawOverlays(this) ? "READY" : "NEEDS ACCESS");
-        if (accessibilityStatus != null) accessibilityStatus.setText(isAccessibilityEnabled() ? "READY" : "NEEDS ACCESS");
+        refreshCaptureStatus();
         if (storageStatus != null) storageStatus.setText("Stored in " + ProfileStore.storageLocation());
         renderProfiles();
         renderReels();
+    }
+
+    private void refreshCaptureStatus() {
+        boolean enabled = isAccessibilityEnabled();
+        if (accessibilityStatus != null) accessibilityStatus.setText(enabled ? "ACCESS ON" : "OFF");
+        if (stopCaptureButton != null) stopCaptureButton.setEnabled(enabled);
     }
 
     private EditText buildSearchInput() {
@@ -457,23 +481,18 @@ public final class MainActivity extends Activity {
         return row;
     }
 
-    private void openOverlaySettings() {
-        try {
-            startActivity(new Intent(Settings.ACTION_MANAGE_OVERLAY_PERMISSION, Uri.parse("package:" + getPackageName())));
-        } catch (RuntimeException error) {
-            startActivity(new Intent(Settings.ACTION_MANAGE_OVERLAY_PERMISSION));
-        }
-    }
-
     private void openAccessibilitySettings() {
+        if (!isAccessibilityEnabled()) ProfileAccessibilityService.prepareCaptureSession(this);
         startActivity(new Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS));
     }
 
     private boolean isAccessibilityEnabled() {
         String enabled = Settings.Secure.getString(getContentResolver(), Settings.Secure.ENABLED_ACCESSIBILITY_SERVICES);
         if (TextUtils.isEmpty(enabled)) return false;
-        String expected = new ComponentName(this, ProfileAccessibilityService.class).flattenToString();
-        for (String service : enabled.split(":")) if (expected.equalsIgnoreCase(service)) return true;
+        ComponentName expected = new ComponentName(this, ProfileAccessibilityService.class);
+        for (String service : enabled.split(":")) {
+            if (expected.equals(ComponentName.unflattenFromString(service))) return true;
+        }
         return false;
     }
 

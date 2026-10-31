@@ -1,9 +1,9 @@
 <accessibility-service xmlns:android="http://schemas.android.com/apk/res/android"
-    android:accessibilityEventTypes="typeWindowStateChanged|typeWindowsChanged|typeWindowContentChanged"
+    android:accessibilityEventTypes="typeWindowStateChanged|typeWindowContentChanged"
     android:accessibilityFeedbackType="feedbackGeneric"
-    android:accessibilityFlags="flagReportViewIds|flagRetrieveInteractiveWindows"
+    android:accessibilityFlags="flagReportViewIds"
     android:canRetrieveWindowContent="true"
-    android:canPerformGestures="true"
+    android:packageNames="com.instagram.android"
     android:description="@string/accessibility_service_description"
     android:notificationTimeout="100"
     />
