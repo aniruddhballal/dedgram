@@ -1,0 +1,38 @@
+{
+  "started_at": "2026-10-28T11:28:32.883Z",
+  "updated_at": "2026-10-28T16:09:05.687Z",
+  "status": "complete",
+  "phase": "done",
+  "scope": [
+    "reel"
+  ],
+  "current_url": null,
+  "error": null,
+  "progress": {
+    "task": "item_details",
+    "label": "Reel details",
+    "action": "Manual reel review and resolution",
+    "completed": 2,
+    "total": 2,
+    "percent": 100,
+    "remaining": 0,
+    "current_item": null,
+    "detail": "Stage complete after manually resolving 2 unavailable reels",
+    "updated_at": "2026-10-28T16:09:05.687Z"
+  },
+  "manual_review": {
+    "operation": "manual reel review",
+    "performed_at": "2026-10-28T16:09:05.687Z",
+    "source": "manual user review",
+    "resolved_items": [
+      {
+        "shortcode": "De1ay0qOEJX",
+        "resolution": "deleted"
+      },
+      {
+        "shortcode": "De19Z73O_ol",
+        "resolution": "deleted"
+      }
+    ]
+  }
+}

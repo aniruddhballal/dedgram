@@ -1,0 +1,108 @@
+{
+  "username": "nhiftbl",
+  "url": "https://www.instagram.com/nhiftbl/",
+  "fetched_at": "2026-10-28T09:01:27.694Z",
+  "display_name": "￴NHI",
+  "bio": "魔王軍との全面戦争を繰り広げる! 「勇者伝説公式Instagramです! TVアニメ『聖剣のレガリア」放送中!『劇場版特別編』 デジタル配信中/ブルーレイ&DVD発売中",
+  "posts_count": {
+    "value": 29,
+    "raw": "29",
+    "approximate": false
+  },
+  "posts_count_observed_at": "2026-10-28T09:01:27.694Z",
+  "followers_count": {
+    "value": 1838,
+    "raw": "1,838",
+    "approximate": false,
+    "source": "header_title"
+  },
+  "following_count": {
+    "value": 0,
+    "raw": "0",
+    "approximate": false,
+    "source": "header_text"
+  },
+  "count_evidence": {
+    "followers": {
+      "header": {
+        "value": 1838,
+        "raw": "1,838",
+        "approximate": false
+      },
+      "exact_title": {
+        "value": 1838,
+        "raw": "1,838",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 1828,
+        "raw": "1,828",
+        "approximate": false
+      }
+    },
+    "following": {
+      "header": {
+        "value": 0,
+        "raw": "0",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 4,
+        "raw": "4",
+        "approximate": false
+      },
+      "conflict": true
+    },
+    "posts": {
+      "header": {
+        "value": 29,
+        "raw": "29",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 29,
+        "raw": "29",
+        "approximate": false
+      }
+    }
+  },
+  "category": "Reel creator",
+  "ai_generated_profile": false,
+  "profile_picture_url": "https://instagram.fblr1-4.fna.fbcdn.net/v/t51.82787-19/818583972_17896948443607629_2365858688141727140_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=zRFXThwR7wIQ7kNvwFMVRXU&_nc_oc=AdpfyF009YLVrj6rVvjXaUCxlE99PI0_LzGjAX89q5FFa_8KisuUYQuLrMG-7VHlBAqbI4i3bC251E63iJfXYoyP&_nc_zt=24&_nc_ht=instagram.fblr1-4.fna&_nc_gid=cMaRxMASCGrCmkEsOLJ3Eg&_nc_ss=7f6a8&oh=00_AQTJQ1sYXMj2BFAIjCrH0iAyvgrySeVvDQmAFTT_2RsOvA&oe=6AE78F21",
+  "date_joined": "November 2025",
+  "account_based_in": "Pakistan",
+  "former_usernames_count": {
+    "value": 2,
+    "raw": "2",
+    "approximate": false
+  },
+  "raw": {
+    "header_text": "nhiftbl\n￴NHI\n29 posts\n1,838 followers\n0 following\nReel creator\n魔王軍との全面戦争を繰り広げる! 「勇者伝説公式Instagramです! TVアニメ『聖剣のレガリア」放送中!『劇場版特別編』 デジタル配信中/ブルーレイ&DVD発売中\nFollow\nMessage",
+    "about_text": "About this account\nnhiftbl\nTo help keep our community authentic, we’re showing information about profiles on Instagram. See why this information is important.\nDate joined\nNovember 2025\nAccount based in\nPakistan\nFormer usernames\n2\nClose",
+    "description": "1,828 Followers, 4 Following, 29 Posts - ￴NHI (@nhiftbl) on Instagram: \"魔王軍との全面戦争を繰り広げる! 「勇者伝説公式Instagramです! TVアニメ『聖剣のレガリア」放送中!『劇場版特別編』 デジタル配信中/ブルーレイ&DVD発売中\"",
+    "stat_evidence": {
+      "posts": {
+        "label": "",
+        "exact_title": ""
+      },
+      "followers": {
+        "label": "1,838 followers",
+        "exact_title": "1,838"
+      },
+      "following": {
+        "label": "0 following",
+        "exact_title": ""
+      }
+    }
+  },
+  "issues": [],
+  "current_username": "nhiftbl",
+  "username_history": [
+    {
+      "username": "nhiftbl",
+      "role": "current username",
+      "first_seen_at": "2026-10-28T09:01:27.691Z"
+    }
+  ],
+  "username_change_observed_at": null
+}

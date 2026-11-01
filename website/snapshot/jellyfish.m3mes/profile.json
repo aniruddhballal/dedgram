@@ -1,0 +1,104 @@
+{
+  "username": "jellyfish.m3mes",
+  "url": "https://www.instagram.com/jellyfish.m3mes/",
+  "fetched_at": "2026-10-28T09:05:22.256Z",
+  "display_name": "mem3s",
+  "bio": "公式Instagramでは、ドタバタ追いかけっこのすべてをお届 け!\nCartoon Networkでは「まいにちトムとジェリー』を放送中。 さらに『映画トムとジェリー」はデジタル配備中&ブルーレイ・ DVDも好評発売中です!",
+  "posts_count": {
+    "value": 28,
+    "raw": "28",
+    "approximate": false
+  },
+  "posts_count_observed_at": "2026-10-28T09:05:22.256Z",
+  "followers_count": {
+    "value": 840,
+    "raw": "840",
+    "approximate": false,
+    "source": "header_title"
+  },
+  "following_count": {
+    "value": 0,
+    "raw": "0",
+    "approximate": false,
+    "source": "header_text"
+  },
+  "count_evidence": {
+    "followers": {
+      "header": {
+        "value": 840,
+        "raw": "840",
+        "approximate": false
+      },
+      "exact_title": {
+        "value": 840,
+        "raw": "840",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 384,
+        "raw": "384",
+        "approximate": false
+      }
+    },
+    "following": {
+      "header": {
+        "value": 0,
+        "raw": "0",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 0,
+        "raw": "0",
+        "approximate": false
+      },
+      "conflict": false
+    },
+    "posts": {
+      "header": {
+        "value": 28,
+        "raw": "28",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 28,
+        "raw": "28",
+        "approximate": false
+      }
+    }
+  },
+  "category": null,
+  "ai_generated_profile": false,
+  "profile_picture_url": "https://instagram.fblr1-6.fna.fbcdn.net/v/t51.82787-19/858088393_18149109052526106_4241798520634334768_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=1&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy43MzYuQzMifQ%3D%3D&_nc_ohc=KoSFBXn7oeYQ7kNvwFU3GWv&_nc_oc=Adq8BTKFI8eC5UK2AyBemXj-CC66SjPlcDWw8yJO0GTw05OEmugsjjKwWVjd1V35XJ1S9Iesk5Q0DOEIfNs1ehGS&_nc_zt=24&_nc_ht=instagram.fblr1-6.fna&_nc_gid=DQ3_FFVoQq-hxGyOdAbwcg&_nc_ss=7f6a8&oh=00_AQTOFsNJ0aqegloIQeVgthMoLyg_uzODV0LDpnOF8B0wGg&oe=6AE79DE3",
+  "date_joined": "October 2026",
+  "account_based_in": "India",
+  "former_usernames_count": null,
+  "raw": {
+    "header_text": "jellyfish.m3mes\nmem3s\n28 posts\n840 followers\n0 following\n公式Instagramでは、ドタバタ追いかけっこのすべてをお届 け!\nCartoon Networkでは「まいにちトムとジェリー』を放送中。 さらに『映画トムとジェリー」はデジタル配備中&ブルーレイ・ DVDも好評発売中です!\nFollow",
+    "about_text": "About this account\njellyfish.m3mes\nTo help keep our community authentic, we’re showing information about profiles on Instagram. See why this information is important.\nDate joined\nOctober 2026\nAccount based in\nIndia\nClose",
+    "description": "384 Followers, 0 Following, 28 Posts - mem3s (@jellyfish.m3mes) on Instagram: \"公式Instagramでは、ドタバタ追いかけっこのすべてをお届 け!\nCartoon Networkでは「まいにちトムとジェリー』を放送中。 さらに『映画トムとジェリー」はデジタル配備中&ブルーレイ・ DVDも好評発売中です!\"",
+    "stat_evidence": {
+      "posts": {
+        "label": "",
+        "exact_title": ""
+      },
+      "followers": {
+        "label": "840 followers",
+        "exact_title": "840"
+      },
+      "following": {
+        "label": "0 following",
+        "exact_title": ""
+      }
+    }
+  },
+  "issues": [],
+  "current_username": "jellyfish.m3mes",
+  "username_history": [
+    {
+      "username": "jellyfish.m3mes",
+      "role": "current username",
+      "first_seen_at": "2026-10-28T09:05:22.252Z"
+    }
+  ],
+  "username_change_observed_at": null
+}
