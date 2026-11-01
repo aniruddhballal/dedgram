@@ -54,6 +54,19 @@ main { max-width: 1360px; margin: auto; padding: 0 32px; }
 .metric-note p { margin: 0; color: var(--muted); font-size: 12px; }
 .compact-total { cursor: help; text-decoration: underline dotted; text-underline-offset: 3px; }
 .overview-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin: 68px 0 90px; }
+.profile-status-breakdown { margin: 68px 0 90px; border-top: 2px solid #000; padding-top: 16px; }
+.profile-status-breakdown .section-head { margin-bottom: 24px; }
+.profile-status-bar { display: flex; height: 22px; margin: 28px 0 24px; border: 1px solid #000; background: #eee; }
+.profile-status-segment { display: block; min-width: 0; height: 100%; border-right: 1px solid #fff; }
+.profile-status-segment.pending, .profile-status-swatch.pending { background: #000; }
+.profile-status-segment.analyzed, .profile-status-swatch.analyzed { background: #555; }
+.profile-status-segment.zero, .profile-status-swatch.zero { background: #aaa; }
+.profile-status-segment.excluded, .profile-status-swatch.excluded { background: #ddd; }
+.profile-status-legend { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.profile-status-key > div { display: flex; align-items: center; gap: 8px; font-size: 12px; }
+.profile-status-key strong { font-size: 24px; font-weight: 750; letter-spacing: -.04em; }
+.profile-status-key small { display: block; margin-top: 4px; color: var(--muted); font-size: 11px; }
+.profile-status-swatch { width: 10px; height: 10px; flex: 0 0 10px; border: 1px solid #000; }
 .overview-panel { min-width: 0; border-top: 2px solid #000; padding-top: 16px; }
 .overview-panel h2 { margin: 12px 0 28px; font-size: 30px; font-weight: 740; letter-spacing: -.04em; }
 .bar-row { margin: 0 0 15px; }
@@ -222,6 +235,7 @@ a.profile-internal:hover .row-title strong { text-decoration: underline; text-un
   .profile-context { grid-template-columns: 1fr; gap: 45px; }
   .overview-stat-strip { grid-template-columns: 1fr 1fr; }
   .overview-grid { grid-template-columns: 1fr; gap: 45px; }
+  .profile-status-legend { grid-template-columns: 1fr 1fr; gap: 18px 12px; }
   .status-panel-grid { grid-template-columns: 1fr; gap: 45px; }
   .status-panel-full { grid-column: auto; }
   .overview-table { padding-bottom: 55px; }
