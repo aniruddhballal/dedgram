@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "username": "yearning.ok",
+  "phase": "after",
+  "snapshot_at": "2026-11-01T12:18:54.127Z",
+  "run_status": "complete",
+  "run_updated_at": "2026-11-01T12:18:54.115Z",
+  "profile_fetched_at": "2026-11-01T12:17:00.848Z",
+  "item_count": 0,
+  "complete_item_count": 0,
+  "discovery": {
+    "reel": {
+      "count": 326,
+      "complete": true,
+      "error": null,
+      "attempted_at": "2026-11-01T12:18:54.107Z"
+    }
+  }
+}
