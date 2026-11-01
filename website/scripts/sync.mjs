@@ -163,6 +163,12 @@ const profileLevelProfiles = [
   'zkyus_',
   'zoya._100x',
   'zyr1x1',
+  'turtle.4223253',
+  'damon.maxx',
+  'yearning.ok',
+  'oproceve.br',
+  'u1tron7',
+  'herogram_50k',
 ];
 const excludedProfiles = ['hnvx.07', 'prime_senchui', 'vlad.aep_', 'nxx._.nmercy', 'dexea.100k', 'igpostinggang', 'rzk.mp4', 'renyajichu', 'hammergag', 'caodogsfofo', 'back', 'short_vibesz', 'oooiway', 'zuxxie.pov', 'extreme.laugh8', 'iron_block2', 'memes.fatafat'];
 const publishedProfiles = [...fullProfiles, ...profileLevelProfiles, ...excludedProfiles];

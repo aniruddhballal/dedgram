@@ -1,0 +1,104 @@
+{
+  "username": "oproceve.br",
+  "url": "https://www.instagram.com/oproceve.br/",
+  "fetched_at": "2026-11-01T12:19:00.960Z",
+  "display_name": null,
+  "bio": "#TVアニメ\n『笑いの神回』🤣🔥\n最新エピソードがついに解禁!!\n爆笑必至の名シーンや、まさかのハプニングが続々登場！😂💥\nさらに、最後には予想を裏切る衝撃の展開も…!?\n◆フォローして次回もお楽しみに！",
+  "posts_count": {
+    "value": 162,
+    "raw": "162",
+    "approximate": false
+  },
+  "posts_count_observed_at": "2026-11-01T12:19:00.960Z",
+  "followers_count": {
+    "value": 15775,
+    "raw": "15,775",
+    "approximate": false,
+    "source": "header_title"
+  },
+  "following_count": {
+    "value": 7,
+    "raw": "7",
+    "approximate": false,
+    "source": "header_text"
+  },
+  "count_evidence": {
+    "followers": {
+      "header": {
+        "value": 15700,
+        "raw": "15.7K",
+        "approximate": true
+      },
+      "exact_title": {
+        "value": 15775,
+        "raw": "15,775",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 16000,
+        "raw": "16K",
+        "approximate": true
+      }
+    },
+    "following": {
+      "header": {
+        "value": 7,
+        "raw": "7",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 8,
+        "raw": "8",
+        "approximate": false
+      },
+      "conflict": true
+    },
+    "posts": {
+      "header": {
+        "value": 162,
+        "raw": "162",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 162,
+        "raw": "162",
+        "approximate": false
+      }
+    }
+  },
+  "category": null,
+  "ai_generated_profile": true,
+  "profile_picture_url": "https://instagram.fblr1-7.fna.fbcdn.net/v/t51.82787-19/843324485_17882800959524201_7253755156712914930_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=pnTdwFEdqB0Q7kNvwEh79y8&_nc_oc=Adp0OM8ZejmRWHOmrb-cfoL_3dDtG9Cx8AiDpdG_O9RJdZbMp3XFFE30B-EM4-GdEvc_a6SFKJ8Cvl6KeMr8Ichh&_nc_zt=24&_nc_ht=instagram.fblr1-7.fna&_nc_gid=J01xx22_X_qmIsi-9zZeXQ&_nc_ss=7f6a8&oh=00_AQQyIbu90JQ3RhffIFLztvNOG4pZ-Vcq9PRoPQEoM4iXeA&oe=6AECED5B",
+  "date_joined": "October 2026",
+  "account_based_in": "Brazil",
+  "former_usernames_count": null,
+  "raw": {
+    "header_text": "oproceve.br\n162 posts\n15.7K followers\n7 following\nAI-generated profile\n#TVアニメ\n『笑いの神回』🤣🔥\n最新エピソードがついに解禁!!\n爆笑必至の名シーンや、まさかのハプニングが続々登場！😂💥\nさらに... \nmore\nFollow\nMessage\n10K❤️\nDireitos",
+    "about_text": "About this account\noproceve.br\n • AI-generated profile\nTo help keep our community authentic, we’re showing information about profiles on Instagram. See why this information is important.\nDate joined\nOctober 2026\nAccount based in\nBrazil\nClose",
+    "description": "16K Followers, 8 Following, 162 Posts - @oproceve.br on Instagram: \"#TVアニメ\n『笑いの神回』🤣🔥\n最新エピソードがついに解禁!!\n爆笑必至の名シーンや、まさかのハプニングが続々登場！😂💥\nさらに、最後には予想を裏切る衝撃の展開も…!?\n◆フォローして次回もお楽しみに！\"",
+    "stat_evidence": {
+      "posts": {
+        "label": "",
+        "exact_title": ""
+      },
+      "followers": {
+        "label": "15.7K followers",
+        "exact_title": "15,775"
+      },
+      "following": {
+        "label": "7 following",
+        "exact_title": ""
+      }
+    }
+  },
+  "issues": [],
+  "current_username": "oproceve.br",
+  "username_history": [
+    {
+      "username": "oproceve.br",
+      "role": "current username",
+      "first_seen_at": "2026-11-01T12:19:00.954Z"
+    }
+  ],
+  "username_change_observed_at": null
+}

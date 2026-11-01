@@ -1,0 +1,108 @@
+{
+  "username": "u1tron7",
+  "url": "https://www.instagram.com/u1tron7/",
+  "fetched_at": "2026-11-01T12:19:58.857Z",
+  "display_name": "Ultron ⚡",
+  "bio": "様々なアニメ・ゲーム・音楽などの企画製作・事業展開を行い、世界中に感動を届ける、総合エンタテインメントカンパニー アニプレックスの公式アカウントです。アニプレックス作品の最新情報やグッズ情報などをご紹介いたします。#アニプレックス #aniplex",
+  "posts_count": {
+    "value": 93,
+    "raw": "93",
+    "approximate": false
+  },
+  "posts_count_observed_at": "2026-11-01T12:19:58.857Z",
+  "followers_count": {
+    "value": 4158,
+    "raw": "4,158",
+    "approximate": false,
+    "source": "header_title"
+  },
+  "following_count": {
+    "value": 1,
+    "raw": "1",
+    "approximate": false,
+    "source": "header_text"
+  },
+  "count_evidence": {
+    "followers": {
+      "header": {
+        "value": 4158,
+        "raw": "4,158",
+        "approximate": false
+      },
+      "exact_title": {
+        "value": 4158,
+        "raw": "4,158",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 2000,
+        "raw": "2,000",
+        "approximate": false
+      }
+    },
+    "following": {
+      "header": {
+        "value": 1,
+        "raw": "1",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 1,
+        "raw": "1",
+        "approximate": false
+      },
+      "conflict": false
+    },
+    "posts": {
+      "header": {
+        "value": 93,
+        "raw": "93",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 93,
+        "raw": "93",
+        "approximate": false
+      }
+    }
+  },
+  "category": "Editor",
+  "ai_generated_profile": true,
+  "profile_picture_url": "https://instagram.fblr1-3.fna.fbcdn.net/v/t51.82787-19/867836137_17984336886066250_3848763918981128043_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=1&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=0Tcae2WJENwQ7kNvwHIH9Gb&_nc_oc=AdojwQj3cSgZo99hKTUPSNDbk6EQ2lyiGVWBJSb9eBpPgR9gN5FgU8JcJFoGuSDtg_JnoUyBS20y0konigQTgl4p&_nc_zt=24&_nc_ht=instagram.fblr1-3.fna&_nc_gid=hfVTDzKTmYaGYb4vMUbEKw&_nc_ss=7f6a8&oh=00_AQTuRnuxS0yM1jmswxTQIo_dXiD7SpJmeA-hK4KU0QQklw&oe=6AECE5D6",
+  "date_joined": "October 2026",
+  "account_based_in": "India",
+  "former_usernames_count": {
+    "value": 2,
+    "raw": "2",
+    "approximate": false
+  },
+  "raw": {
+    "header_text": "u1tron7\nUltron ⚡\n93 posts\n4,158 followers\n1 following\nEditor • \nAI-generated profile\n様々なアニメ・ゲーム・音楽などの企画製作・事業展開を行い、世界中に感動を届ける、総合エンタテインメントカンパニー アニプレックスの公式アカウントです。アニプレックス作品の最新情報やグッズ情報などをご紹介いたします。#アニプレックス... \nmore\nFollow\nMessage\n500 🤍",
+    "about_text": "About this account\nu1tron7\n • AI-generated profile\nTo help keep our community authentic, we’re showing information about profiles on Instagram. See why this information is important.\nDate joined\nOctober 2026\nAccount based in\nIndia\nFormer usernames\n2\nClose",
+    "description": "2,000 Followers, 1 Following, 93 Posts - Ultron ⚡ (@u1tron7) on Instagram: \"様々なアニメ・ゲーム・音楽などの企画製作・事業展開を行い、世界中に感動を届ける、総合エンタテインメントカンパニー アニプレックスの公式アカウントです。アニプレックス作品の最新情報やグッズ情報などをご紹介いたします。#アニプレックス #aniplex\"",
+    "stat_evidence": {
+      "posts": {
+        "label": "",
+        "exact_title": ""
+      },
+      "followers": {
+        "label": "4,158 followers",
+        "exact_title": "4,158"
+      },
+      "following": {
+        "label": "1 following",
+        "exact_title": ""
+      }
+    }
+  },
+  "issues": [],
+  "current_username": "u1tron7",
+  "username_history": [
+    {
+      "username": "u1tron7",
+      "role": "current username",
+      "first_seen_at": "2026-11-01T12:19:58.852Z"
+    }
+  ],
+  "username_change_observed_at": null
+}

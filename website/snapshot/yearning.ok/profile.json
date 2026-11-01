@@ -1,0 +1,104 @@
+{
+  "username": "yearning.ok",
+  "url": "https://www.instagram.com/yearning.ok/",
+  "fetched_at": "2026-11-01T12:17:00.848Z",
+  "display_name": null,
+  "bio": "loving someone is never a waste.\ncredits to original owners.",
+  "posts_count": {
+    "value": 298,
+    "raw": "298",
+    "approximate": false
+  },
+  "posts_count_observed_at": "2026-11-01T12:17:00.848Z",
+  "followers_count": {
+    "value": 19717,
+    "raw": "19,717",
+    "approximate": false,
+    "source": "header_title"
+  },
+  "following_count": {
+    "value": 9,
+    "raw": "9",
+    "approximate": false,
+    "source": "header_text"
+  },
+  "count_evidence": {
+    "followers": {
+      "header": {
+        "value": 19700,
+        "raw": "19.7K",
+        "approximate": true
+      },
+      "exact_title": {
+        "value": 19717,
+        "raw": "19,717",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 19000,
+        "raw": "19K",
+        "approximate": true
+      }
+    },
+    "following": {
+      "header": {
+        "value": 9,
+        "raw": "9",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 52,
+        "raw": "52",
+        "approximate": false
+      },
+      "conflict": true
+    },
+    "posts": {
+      "header": {
+        "value": 298,
+        "raw": "298",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 298,
+        "raw": "298",
+        "approximate": false
+      }
+    }
+  },
+  "category": null,
+  "ai_generated_profile": false,
+  "profile_picture_url": "https://instagram.fblr1-3.fna.fbcdn.net/v/t51.82787-19/760484266_18139010530566777_7278709328979833881_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=1&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=PZxuAuheR4sQ7kNvwGGV7Hc&_nc_oc=AdopEPTMj0wI4Uoqvi1ns75sm7Dbes-UIzyv34WFOSESes8YpXFeDP0-Vm3Nx8SNhtOSfSwK-Jz30X-UsZSVs36E&_nc_zt=24&_nc_ht=instagram.fblr1-3.fna&_nc_gid=xxtqUGQUxeWmqp1GA6J70g&_nc_ss=7f6a8&oh=00_AQTwHUwdSo0kaMXRTyAz-PTRayDIoeloTGE0D_4TiLreHg&oe=6AECEFDC",
+  "date_joined": "July 2026",
+  "account_based_in": "Not shared",
+  "former_usernames_count": null,
+  "raw": {
+    "header_text": "yearning.ok\n298 posts\n19.7K followers\n9 following\nloving someone is never a waste.\ncredits to original owners.\nFollow\nMessage\n.",
+    "about_text": "About this account\nyearning.ok\nTo help keep our community authentic, we’re showing information about profiles on Instagram. See why this information is important.\nDate joined\nJuly 2026\nAccount based in\nNot shared\nClose",
+    "description": "19K Followers, 52 Following, 298 Posts - @yearning.ok on Instagram: \"loving someone is never a waste.\ncredits to original owners.\"",
+    "stat_evidence": {
+      "posts": {
+        "label": "",
+        "exact_title": ""
+      },
+      "followers": {
+        "label": "19.7K followers",
+        "exact_title": "19,717"
+      },
+      "following": {
+        "label": "9 following",
+        "exact_title": ""
+      }
+    }
+  },
+  "issues": [],
+  "current_username": "yearning.ok",
+  "username_history": [
+    {
+      "username": "yearning.ok",
+      "role": "current username",
+      "first_seen_at": "2026-11-01T12:17:00.844Z"
+    }
+  ],
+  "username_change_observed_at": null
+}
