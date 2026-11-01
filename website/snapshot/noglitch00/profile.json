@@ -1,0 +1,94 @@
+{
+  "username": "noglitch00",
+  "url": "https://www.instagram.com/noglitch00/",
+  "fetched_at": "2026-10-23T16:27:13.501Z",
+  "display_name": "noglitch00",
+  "bio": "TVアニメ『佐々木とピーちゃん Season2』 第1話は1時間スペシャル! 新キャラクタ\nーのキャストが解禁! さらにOP主題歌&メインPVも公開!",
+  "posts_count": {
+    "value": 80,
+    "raw": "80",
+    "approximate": false
+  },
+  "followers_count": {
+    "value": 4404,
+    "raw": "4,404",
+    "approximate": false,
+    "source": "header_title"
+  },
+  "following_count": {
+    "value": 0,
+    "raw": "0",
+    "approximate": false,
+    "source": "header_text"
+  },
+  "count_evidence": {
+    "followers": {
+      "header": {
+        "value": 4404,
+        "raw": "4,404",
+        "approximate": false
+      },
+      "exact_title": {
+        "value": 4404,
+        "raw": "4,404",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 4282,
+        "raw": "4,282",
+        "approximate": false
+      }
+    },
+    "following": {
+      "header": {
+        "value": 0,
+        "raw": "0",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 0,
+        "raw": "0",
+        "approximate": false
+      },
+      "conflict": false
+    },
+    "posts": {
+      "header": {
+        "value": 80,
+        "raw": "80",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 80,
+        "raw": "80",
+        "approximate": false
+      }
+    }
+  },
+  "category": null,
+  "ai_generated_profile": false,
+  "profile_picture_url": "https://instagram.fblr1-9.fna.fbcdn.net/v/t51.82787-19/857289223_18145020646538740_8164085148053093792_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=1&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=h52jr8PeiicQ7kNvwE4k_Tj&_nc_oc=AdpKaEvRvMPd0K54_BObXWvMxVbIsbXltMCdyj9sPwciwgWmnuL_cDv19zbEtwjoc1o2aNFeXUSrqS-gAZ4KtQVq&_nc_zt=24&_nc_ht=instagram.fblr1-9.fna&_nc_gid=4IZv_0HGCHF3EIxwNC8OqQ&_nc_ss=7f6a8&oh=00_AQNTQjZcp8H2vPvGt8b82afiupbuxEh3CqkZOPofQYNYzg&oe=6AE14266",
+  "date_joined": "October 2026",
+  "account_based_in": "Brazil",
+  "former_usernames_count": null,
+  "raw": {
+    "header_text": "noglitch00\nnoglitch00\n80 posts\n4,404 followers\n0 following\nTVアニメ『佐々木とピーちゃん Season2』 第1話は1時間スペシャル! 新キャラクタ\nーのキャストが解禁! さらにOP主題歌&メインPVも公開!\nFollow\nMessage",
+    "about_text": "About this account\nnoglitch00\nTo help keep our community authentic, we’re showing information about profiles on Instagram. See why this information is important.\nDate joined\nOctober 2026\nAccount based in\nBrazil\nClose",
+    "description": "4,282 Followers, 0 Following, 80 Posts - @noglitch00 on Instagram: \"TVアニメ『佐々木とピーちゃん Season2』 第1話は1時間スペシャル! 新キャラクタ\nーのキャストが解禁! さらにOP主題歌&メインPVも公開!\"",
+    "stat_evidence": {
+      "posts": {
+        "label": "",
+        "exact_title": ""
+      },
+      "followers": {
+        "label": "4,404 followers",
+        "exact_title": "4,404"
+      },
+      "following": {
+        "label": "0 following",
+        "exact_title": ""
+      }
+    }
+  },
+  "issues": []
+}

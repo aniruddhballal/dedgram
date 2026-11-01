@@ -1,0 +1,108 @@
+{
+  "username": "manas.8x_",
+  "url": "https://www.instagram.com/manas.8x_/",
+  "fetched_at": "2026-10-28T09:03:36.654Z",
+  "display_name": "🖤",
+  "bio": "有村架純が自分自身と向き合い、得た気づき。俳優業を通じて 「自分とは何なんだろう」と向き合ってきた彼女が、自分自身を 知ることの大切さや、最新作『さとこはいつも』について語る。",
+  "posts_count": {
+    "value": 172,
+    "raw": "172",
+    "approximate": false
+  },
+  "posts_count_observed_at": "2026-10-28T09:03:36.654Z",
+  "followers_count": {
+    "value": 79774,
+    "raw": "79,774",
+    "approximate": false,
+    "source": "header_title"
+  },
+  "following_count": {
+    "value": 0,
+    "raw": "0",
+    "approximate": false,
+    "source": "header_text"
+  },
+  "count_evidence": {
+    "followers": {
+      "header": {
+        "value": 79700,
+        "raw": "79.7K",
+        "approximate": true
+      },
+      "exact_title": {
+        "value": 79774,
+        "raw": "79,774",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 80000,
+        "raw": "80K",
+        "approximate": true
+      }
+    },
+    "following": {
+      "header": {
+        "value": 0,
+        "raw": "0",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 0,
+        "raw": "0",
+        "approximate": false
+      },
+      "conflict": false
+    },
+    "posts": {
+      "header": {
+        "value": 172,
+        "raw": "172",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 172,
+        "raw": "172",
+        "approximate": false
+      }
+    }
+  },
+  "category": "Digital creator",
+  "ai_generated_profile": false,
+  "profile_picture_url": "https://instagram.fblr1-6.fna.fbcdn.net/v/t51.82787-19/765060095_18076495589382741_5437903988099219152_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=1&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=Cuh2HawOlhcQ7kNvwHvkR-Y&_nc_oc=Adoun0X5GwL7DPbjKdwWDLKU-gLZc00ieaJPAnFq-E2t6o0-66x_PAplDiTpiEU88X8r2sJTUfO47iyo6qRNEP0H&_nc_zt=24&_nc_ht=instagram.fblr1-6.fna&_nc_gid=Sog1x8hp1Zdrsszn_ZdI-A&_nc_ss=7f6a8&oh=00_AQQTWE4uTG_tcrhNWWdhiAPzvr-GjG9wy-XTiNToD8sBEw&oe=6AE79FEC",
+  "date_joined": "July 2026",
+  "account_based_in": "India",
+  "former_usernames_count": {
+    "value": 3,
+    "raw": "3",
+    "approximate": false
+  },
+  "raw": {
+    "header_text": "manas.8x_\n🖤\n172 posts\n79.7K followers\n0 following\nDigital creator\n有村架純が自分自身と向き合い、得た気づき。俳優業を通じて 「自分とは何なんだろう」と向き合ってきた彼女が、自分自身を 知ることの大切さや、最新作『さとこはいつも』について語る。\nFollow\nMessage\nHighlights",
+    "about_text": "About this account\nmanas.8x_\nTo help keep our community authentic, we’re showing information about profiles on Instagram. See why this information is important.\nDate joined\nJuly 2026\nAccount based in\nIndia\nFormer usernames\n3\nClose",
+    "description": "80K Followers, 0 Following, 172 Posts - 🖤 (@manas.8x_) on Instagram: \"有村架純が自分自身と向き合い、得た気づき。俳優業を通じて 「自分とは何なんだろう」と向き合ってきた彼女が、自分自身を 知ることの大切さや、最新作『さとこはいつも』について語る。\"",
+    "stat_evidence": {
+      "posts": {
+        "label": "",
+        "exact_title": ""
+      },
+      "followers": {
+        "label": "79.7K followers",
+        "exact_title": "79,774"
+      },
+      "following": {
+        "label": "0 following",
+        "exact_title": ""
+      }
+    }
+  },
+  "issues": [],
+  "current_username": "manas.8x_",
+  "username_history": [
+    {
+      "username": "manas.8x_",
+      "role": "current username",
+      "first_seen_at": "2026-10-28T09:03:36.649Z"
+    }
+  ],
+  "username_change_observed_at": null
+}

@@ -1,0 +1,104 @@
+{
+  "username": "twinkiewinkie3",
+  "url": "https://www.instagram.com/twinkiewinkie3/",
+  "fetched_at": "2026-10-28T09:01:19.354Z",
+  "display_name": null,
+  "bio": "TVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開！",
+  "posts_count": {
+    "value": 92,
+    "raw": "92",
+    "approximate": false
+  },
+  "posts_count_observed_at": "2026-10-28T09:01:19.354Z",
+  "followers_count": {
+    "value": 3744,
+    "raw": "3,744",
+    "approximate": false,
+    "source": "header_title"
+  },
+  "following_count": {
+    "value": 0,
+    "raw": "0",
+    "approximate": false,
+    "source": "header_text"
+  },
+  "count_evidence": {
+    "followers": {
+      "header": {
+        "value": 3744,
+        "raw": "3,744",
+        "approximate": false
+      },
+      "exact_title": {
+        "value": 3744,
+        "raw": "3,744",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 3739,
+        "raw": "3,739",
+        "approximate": false
+      }
+    },
+    "following": {
+      "header": {
+        "value": 0,
+        "raw": "0",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 0,
+        "raw": "0",
+        "approximate": false
+      },
+      "conflict": false
+    },
+    "posts": {
+      "header": {
+        "value": 92,
+        "raw": "92",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 92,
+        "raw": "92",
+        "approximate": false
+      }
+    }
+  },
+  "category": null,
+  "ai_generated_profile": false,
+  "profile_picture_url": "https://instagram.fblr1-4.fna.fbcdn.net/v/t51.82787-19/858088758_18135777958665000_2700412161231161924_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy43MzYuQzMifQ%3D%3D&_nc_ohc=gRYy6TIlMBoQ7kNvwHW6dT-&_nc_oc=Ado1jfYLJZ12niPp7STkLRU4QeeHVSeRi91vP8M50jKYqL1TQiZ3LEGS9l8fPBQjRoKFAk1lMxXhrPJS1ns2alTl&_nc_zt=24&_nc_ht=instagram.fblr1-4.fna&_nc_gid=hDWnOi3BceW4N0j84VpFSg&_nc_ss=7f6a8&oh=00_AQSnF8ZpHASgGwEVoPnOSOuKWdGqczAk84yPBJZDmNc5zg&oe=6AE7A4A0",
+  "date_joined": "October 2026",
+  "account_based_in": "Not shared",
+  "former_usernames_count": null,
+  "raw": {
+    "header_text": "twinkiewinkie3\n92 posts\n3,744 followers\n0 following\nTVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開！\nFollow",
+    "about_text": "About this account\ntwinkiewinkie3\nTo help keep our community authentic, we’re showing information about profiles on Instagram. See why this information is important.\nDate joined\nOctober 2026\nAccount based in\nNot shared\nClose",
+    "description": "3,739 Followers, 0 Following, 92 Posts - @twinkiewinkie3 on Instagram: \"TVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開！\"",
+    "stat_evidence": {
+      "posts": {
+        "label": "",
+        "exact_title": ""
+      },
+      "followers": {
+        "label": "3,744 followers",
+        "exact_title": "3,744"
+      },
+      "following": {
+        "label": "0 following",
+        "exact_title": ""
+      }
+    }
+  },
+  "issues": [],
+  "current_username": "twinkiewinkie3",
+  "username_history": [
+    {
+      "username": "twinkiewinkie3",
+      "role": "current username",
+      "first_seen_at": "2026-10-28T09:01:19.350Z"
+    }
+  ],
+  "username_change_observed_at": null
+}

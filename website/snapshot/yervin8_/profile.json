@@ -1,0 +1,108 @@
+{
+  "username": "yervin8_",
+  "url": "https://www.instagram.com/yervin8_/",
+  "fetched_at": "2026-10-28T09:01:01.200Z",
+  "display_name": null,
+  "bio": "TVアニメ『SPRINKLES』話題のトッピング最新情報がついに解禁🍬思わず目を奪われてしまうカラフルな瞬間を一挙公開！さらに、予想外の組み合わせや華やかな仕上がりに加え、誰も予想できなかった...",
+  "posts_count": {
+    "value": 48,
+    "raw": "48",
+    "approximate": false
+  },
+  "posts_count_observed_at": "2026-10-28T09:01:01.200Z",
+  "followers_count": {
+    "value": 6590,
+    "raw": "6,590",
+    "approximate": false,
+    "source": "header_title"
+  },
+  "following_count": {
+    "value": 0,
+    "raw": "0",
+    "approximate": false,
+    "source": "header_text"
+  },
+  "count_evidence": {
+    "followers": {
+      "header": {
+        "value": 6590,
+        "raw": "6,590",
+        "approximate": false
+      },
+      "exact_title": {
+        "value": 6590,
+        "raw": "6,590",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 6363,
+        "raw": "6,363",
+        "approximate": false
+      }
+    },
+    "following": {
+      "header": {
+        "value": 0,
+        "raw": "0",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 3,
+        "raw": "3",
+        "approximate": false
+      },
+      "conflict": true
+    },
+    "posts": {
+      "header": {
+        "value": 48,
+        "raw": "48",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 48,
+        "raw": "48",
+        "approximate": false
+      }
+    }
+  },
+  "category": "Editor",
+  "ai_generated_profile": false,
+  "profile_picture_url": "https://instagram.fblr1-6.fna.fbcdn.net/v/t51.82787-19/853000459_17939995674386716_7827207516431139123_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=1&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=NjKD0oR43-8Q7kNvwHEA-Sq&_nc_oc=Adp_tCdJhkhVNz71JNkLhyzEVD8ol92FLSXzqySeb8sKre9mkoNmHC37UiZDCcjizJigr_wvI8O3j2dDlyLKrjBs&_nc_zt=24&_nc_ht=instagram.fblr1-6.fna&_nc_gid=sO0FBDk0WmjWD16qTyNyHQ&_nc_ss=7f6a8&oh=00_AQRuIiaP863GMeO0PloZ_D-fHDm3V7XNmrc4drY0G5bE_A&oe=6AE78B6A",
+  "date_joined": "December 2024",
+  "account_based_in": "India",
+  "former_usernames_count": {
+    "value": 1,
+    "raw": "1",
+    "approximate": false
+  },
+  "raw": {
+    "header_text": "yervin8_\n48 posts\n6,590 followers\n0 following\nEditor\nTVアニメ『SPRINKLES』話題のトッピング最新情報がついに解禁🍬思わず目を奪われてしまうカラフルな瞬間を一挙公開！さらに、予想外の組み合わせや華やかな仕上がりに加え、誰も予想できなかった...\nFollow\nMessage",
+    "about_text": "About this account\nyervin8_\nTo help keep our community authentic, we’re showing information about profiles on Instagram. See why this information is important.\nDate joined\nDecember 2024\nAccount based in\nIndia\nFormer usernames\n1\nClose",
+    "description": "6,363 Followers, 3 Following, 48 Posts - @yervin8_ on Instagram: \"TVアニメ『SPRINKLES』話題のトッピング最新情報がついに解禁🍬思わず目を奪われてしまうカラフルな瞬間を一挙公開！さらに、予想外の組み合わせや華やかな仕上がりに加え、誰も予想できなかった...\"",
+    "stat_evidence": {
+      "posts": {
+        "label": "",
+        "exact_title": ""
+      },
+      "followers": {
+        "label": "6,590 followers",
+        "exact_title": "6,590"
+      },
+      "following": {
+        "label": "0 following",
+        "exact_title": ""
+      }
+    }
+  },
+  "issues": [],
+  "current_username": "yervin8_",
+  "username_history": [
+    {
+      "username": "yervin8_",
+      "role": "current username",
+      "first_seen_at": "2026-10-28T09:01:01.195Z"
+    }
+  ],
+  "username_change_observed_at": null
+}

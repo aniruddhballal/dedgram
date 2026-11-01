@@ -1,0 +1,108 @@
+{
+  "username": "melonphernelia",
+  "url": "https://www.instagram.com/melonphernelia/",
+  "fetched_at": "2026-10-28T09:05:35.252Z",
+  "display_name": "🍈",
+  "bio": "i like pierce the veil. allegedly",
+  "posts_count": {
+    "value": 315,
+    "raw": "315",
+    "approximate": false
+  },
+  "posts_count_observed_at": "2026-10-28T09:05:35.252Z",
+  "followers_count": {
+    "value": 1857,
+    "raw": "1,857",
+    "approximate": false,
+    "source": "header_title"
+  },
+  "following_count": {
+    "value": 66,
+    "raw": "66",
+    "approximate": false,
+    "source": "header_text"
+  },
+  "count_evidence": {
+    "followers": {
+      "header": {
+        "value": 1857,
+        "raw": "1,857",
+        "approximate": false
+      },
+      "exact_title": {
+        "value": 1857,
+        "raw": "1,857",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 1848,
+        "raw": "1,848",
+        "approximate": false
+      }
+    },
+    "following": {
+      "header": {
+        "value": 66,
+        "raw": "66",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 67,
+        "raw": "67",
+        "approximate": false
+      },
+      "conflict": true
+    },
+    "posts": {
+      "header": {
+        "value": 315,
+        "raw": "315",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 315,
+        "raw": "315",
+        "approximate": false
+      }
+    }
+  },
+  "category": null,
+  "ai_generated_profile": false,
+  "profile_picture_url": "https://instagram.fblr1-6.fna.fbcdn.net/v/t51.82787-19/780949616_17897474262584966_6141643651755650207_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=9oxMcbx4l30Q7kNvwHyoWFz&_nc_oc=AdrMSP-6V2MXgbGtOb6hgWqq4-3mX50_etQF-DjsnlD9Fe7QPQA5xEMlv57nBEv9E_lHggATQwg1V89LIuI0ge_p&_nc_zt=24&_nc_ht=instagram.fblr1-6.fna&_nc_gid=tWXuQkXz0Q-TThJ1bSQCzQ&_nc_ss=7f6a8&oh=00_AQRFd4W9xdR8Qqrnc37D8XZ-tT101BGVenrvTV3TOe2RKg&oe=6AE7898A",
+  "date_joined": "October 2025",
+  "account_based_in": "Australia",
+  "former_usernames_count": {
+    "value": 1,
+    "raw": "1",
+    "approximate": false
+  },
+  "raw": {
+    "header_text": "melonphernelia\n🍈\n315 posts\n1,857 followers\n66 following\ni like pierce the veil. allegedly\nFollow",
+    "about_text": "About this account\nmelonphernelia\nTo help keep our community authentic, we’re showing information about profiles on Instagram. See why this information is important.\nDate joined\nOctober 2025\nAccount based in\nAustralia\nFormer usernames\n1\nClose",
+    "description": "1,848 Followers, 67 Following, 315 Posts - 🍈 (@melonphernelia) on Instagram: \"i like pierce the veil. allegedly\"",
+    "stat_evidence": {
+      "posts": {
+        "label": "",
+        "exact_title": ""
+      },
+      "followers": {
+        "label": "1,857 followers",
+        "exact_title": "1,857"
+      },
+      "following": {
+        "label": "66 following",
+        "exact_title": ""
+      }
+    }
+  },
+  "issues": [],
+  "current_username": "melonphernelia",
+  "username_history": [
+    {
+      "username": "melonphernelia",
+      "role": "current username",
+      "first_seen_at": "2026-10-28T09:05:35.248Z"
+    }
+  ],
+  "username_change_observed_at": null
+}

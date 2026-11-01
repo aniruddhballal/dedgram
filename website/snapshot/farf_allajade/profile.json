@@ -1,0 +1,104 @@
+{
+  "username": "farf_allajade",
+  "url": "https://www.instagram.com/farf_allajade/",
+  "fetched_at": "2026-10-28T09:00:33.297Z",
+  "display_name": "Jade Ember",
+  "bio": "Fort Lauderdale at heart\nstardew valley took my whole month ♡",
+  "posts_count": {
+    "value": 380,
+    "raw": "380",
+    "approximate": false
+  },
+  "posts_count_observed_at": "2026-10-28T09:00:33.297Z",
+  "followers_count": {
+    "value": 43,
+    "raw": "43",
+    "approximate": false,
+    "source": "header_title"
+  },
+  "following_count": {
+    "value": 0,
+    "raw": "0",
+    "approximate": false,
+    "source": "header_text"
+  },
+  "count_evidence": {
+    "followers": {
+      "header": {
+        "value": 43,
+        "raw": "43",
+        "approximate": false
+      },
+      "exact_title": {
+        "value": 43,
+        "raw": "43",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 43,
+        "raw": "43",
+        "approximate": false
+      }
+    },
+    "following": {
+      "header": {
+        "value": 0,
+        "raw": "0",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 0,
+        "raw": "0",
+        "approximate": false
+      },
+      "conflict": false
+    },
+    "posts": {
+      "header": {
+        "value": 380,
+        "raw": "380",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 380,
+        "raw": "380",
+        "approximate": false
+      }
+    }
+  },
+  "category": null,
+  "ai_generated_profile": true,
+  "profile_picture_url": "https://instagram.fblr24-3.fna.fbcdn.net/v/t51.82787-19/856546652_18126971056788642_6305805796690003922_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy45MzcuQzMifQ%3D%3D&_nc_ohc=hw-8Gel-xBcQ7kNvwGrIyip&_nc_oc=AdplC5BByvnR_oxKKFCN2NDK4CSO0H0h4YGIfclLDSQhzZxblqlVRODILCA7U2fEVbCncqyaoOEy3J8H-OMmR1tO&_nc_zt=24&_nc_ht=instagram.fblr24-3.fna&_nc_gid=v7eLwhxHgO7SAds9tAJDXg&_nc_ss=7f6a8&oh=00_AQT4suJVNf3ACtj6FfLk1fIdefgLs-FO1_7ZXrjk0-J8rQ&oe=6AE7730E",
+  "date_joined": "October 2026",
+  "account_based_in": "Albania",
+  "former_usernames_count": null,
+  "raw": {
+    "header_text": "farf_allajade\nJade Ember\n380 posts\n43 followers\n0 following\nAI-generated profile\nFort Lauderdale at heart\nstardew valley took my whole month ♡\nFollow\nMore of me🫦",
+    "about_text": "About this account\nfarf_allajade\n • AI-generated profile\nTo help keep our community authentic, we’re showing information about profiles on Instagram. See why this information is important.\nDate joined\nOctober 2026\nAccount based in\nAlbania\nClose",
+    "description": "43 Followers, 0 Following, 380 Posts - Jade Ember (@farf_allajade) on Instagram: \"Fort Lauderdale at heart\nstardew valley took my whole month ♡\"",
+    "stat_evidence": {
+      "posts": {
+        "label": "",
+        "exact_title": ""
+      },
+      "followers": {
+        "label": "43 followers",
+        "exact_title": "43"
+      },
+      "following": {
+        "label": "0 following",
+        "exact_title": ""
+      }
+    }
+  },
+  "issues": [],
+  "current_username": "farf_allajade",
+  "username_history": [
+    {
+      "username": "farf_allajade",
+      "role": "current username",
+      "first_seen_at": "2026-10-28T09:00:33.293Z"
+    }
+  ],
+  "username_change_observed_at": null
+}

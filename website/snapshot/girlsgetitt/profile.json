@@ -1,0 +1,104 @@
+{
+  "username": "girlsgetitt",
+  "url": "https://www.instagram.com/girlsgetitt/",
+  "fetched_at": "2026-10-28T09:03:00.384Z",
+  "display_name": null,
+  "bio": "TVアニメ『紫禁・御猫房』10月10日放送開始！宮廷に隠された秘密とは？みんなは観たい？コメントで教えてね！\n#紫禁御猫房 #新作アニメ #拡散希望 #猫\n《紫禁・御猫房》\n#紫禁御猫房\n新作アニメ\n拡散希望\n猫",
+  "posts_count": {
+    "value": 891,
+    "raw": "891",
+    "approximate": false
+  },
+  "posts_count_observed_at": "2026-10-28T09:03:00.384Z",
+  "followers_count": {
+    "value": 58815,
+    "raw": "58,815",
+    "approximate": false,
+    "source": "header_title"
+  },
+  "following_count": {
+    "value": 0,
+    "raw": "0",
+    "approximate": false,
+    "source": "header_text"
+  },
+  "count_evidence": {
+    "followers": {
+      "header": {
+        "value": 58800,
+        "raw": "58.8K",
+        "approximate": true
+      },
+      "exact_title": {
+        "value": 58815,
+        "raw": "58,815",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 56000,
+        "raw": "56K",
+        "approximate": true
+      }
+    },
+    "following": {
+      "header": {
+        "value": 0,
+        "raw": "0",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 0,
+        "raw": "0",
+        "approximate": false
+      },
+      "conflict": false
+    },
+    "posts": {
+      "header": {
+        "value": 891,
+        "raw": "891",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 891,
+        "raw": "891",
+        "approximate": false
+      }
+    }
+  },
+  "category": null,
+  "ai_generated_profile": false,
+  "profile_picture_url": "https://instagram.fblr1-6.fna.fbcdn.net/v/t51.82787-19/813966428_18108152425957157_5201627225171105204_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=1&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=pR14ZR1ubdkQ7kNvwHJcYFl&_nc_oc=AdqcqWaCweulqDHzh_t-d9PsHdUj-OWLhTZoZtR5W85ES9ak5fOvZ_XjKXrszjEjLuH01ed7bS2CPpgQAEet6mQS&_nc_zt=24&_nc_ht=instagram.fblr1-6.fna&_nc_gid=WaEEGoY6WMGVW4-bO3yJpA&_nc_ss=7f6a8&oh=00_AQRfQQyLeRf1jMTLXBSc1w4nqUq50AAY6Fk3mOP9rkG0rg&oe=6AE793E7",
+  "date_joined": "September 2026",
+  "account_based_in": "Not shared",
+  "former_usernames_count": null,
+  "raw": {
+    "header_text": "girlsgetitt\n891 posts\n58.8K followers\n0 following\nTVアニメ『紫禁・御猫房』10月10日放送開始！宮廷に隠された秘密とは？みんなは観たい？コメントで教えてね！\n#紫禁御猫房 #新作アニメ #拡散希望 #猫\n《紫禁・御猫房》\n#紫禁御猫房... \nmore\nFollow\n📈🫶🏽",
+    "about_text": "About this account\ngirlsgetitt\nTo help keep our community authentic, we’re showing information about profiles on Instagram. See why this information is important.\nDate joined\nSeptember 2026\nAccount based in\nNot shared\nClose",
+    "description": "56K Followers, 0 Following, 891 Posts - @girlsgetitt on Instagram: \"TVアニメ『紫禁・御猫房』10月10日放送開始！宮廷に隠された秘密とは？みんなは観たい？コメントで教えてね！\n#紫禁御猫房 #新作アニメ #拡散希望 #猫\n《紫禁・御猫房》\n#紫禁御猫房\n新作アニメ\n拡散希望\n猫\"",
+    "stat_evidence": {
+      "posts": {
+        "label": "",
+        "exact_title": ""
+      },
+      "followers": {
+        "label": "58.8K followers",
+        "exact_title": "58,815"
+      },
+      "following": {
+        "label": "0 following",
+        "exact_title": ""
+      }
+    }
+  },
+  "issues": [],
+  "current_username": "girlsgetitt",
+  "username_history": [
+    {
+      "username": "girlsgetitt",
+      "role": "current username",
+      "first_seen_at": "2026-10-28T09:03:00.377Z"
+    }
+  ],
+  "username_change_observed_at": null
+}

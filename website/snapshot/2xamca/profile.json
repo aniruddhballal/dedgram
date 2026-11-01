@@ -1,0 +1,94 @@
+{
+  "username": "2xamca",
+  "url": "https://www.instagram.com/2xamca/",
+  "fetched_at": "2026-10-23T14:59:10.326Z",
+  "display_name": "²ˣᴀᴍᴄᴀ",
+  "bio": "Entertainment website\n#TVアニメ 『SPRINKLES』話題のトッピング最新情報がついに解禁!! 思わず目を奪われてしまうカラフルな瞬間を一挙公開! さらに、予想外の組み合わせや華やかな仕上がりに加え、誰も予想できなかっ...",
+  "posts_count": {
+    "value": 417,
+    "raw": "417",
+    "approximate": false
+  },
+  "followers_count": {
+    "value": 18499,
+    "raw": "18,499",
+    "approximate": false,
+    "source": "header_title"
+  },
+  "following_count": {
+    "value": 0,
+    "raw": "0",
+    "approximate": false,
+    "source": "header_text"
+  },
+  "count_evidence": {
+    "followers": {
+      "header": {
+        "value": 18400,
+        "raw": "18.4K",
+        "approximate": true
+      },
+      "exact_title": {
+        "value": 18499,
+        "raw": "18,499",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 17000,
+        "raw": "17K",
+        "approximate": true
+      }
+    },
+    "following": {
+      "header": {
+        "value": 0,
+        "raw": "0",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 0,
+        "raw": "0",
+        "approximate": false
+      },
+      "conflict": false
+    },
+    "posts": {
+      "header": {
+        "value": 417,
+        "raw": "417",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 417,
+        "raw": "417",
+        "approximate": false
+      }
+    }
+  },
+  "category": null,
+  "ai_generated_profile": false,
+  "profile_picture_url": "https://instagram.fblr1-9.fna.fbcdn.net/v/t51.82787-19/846528976_18142398610528495_8454265540517558717_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=1&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=kRNO1kpJL0IQ7kNvwGFcqn7&_nc_oc=Adrr_6vbQTqwa03aSJbNsrjhsjoxUm2PYFISxXDvsIhbeQaVLHoLHpzO_c7mKijVOQS9LKSJ2lpGnOuRdi2P_P8q&_nc_zt=24&_nc_ht=instagram.fblr1-9.fna&_nc_gid=ZAUSr5D8R5F-xJYUPuw4nQ&_nc_ss=7f6a8&oh=00_AQOOUXBssF8dVVDPziZa4iFGDhkbS5L9dymeUOsRP8LK8A&oe=6AE13739",
+  "date_joined": "October 2026",
+  "account_based_in": "Turkey",
+  "former_usernames_count": null,
+  "raw": {
+    "header_text": "2xamca\n²ˣᴀᴍᴄᴀ\n417 posts\n18.4K followers\n0 following\nEntertainment website\n#TVアニメ 『SPRINKLES』話題のトッピング最新情報がついに解禁!! 思わず目を奪われてしまうカラフルな瞬間を一挙公開! さらに、予想外の組み合わせや華やかな仕上がりに加え、誰も予想できなかっ...\nFollow\nMessage\n10.000 🎊🎈\n💯 🙏🫶",
+    "about_text": "About this account\n2xamca\nTo help keep our community authentic, we’re showing information about profiles on Instagram. See why this information is important.\nDate joined\nOctober 2026\nAccount based in\nTurkey\nClose",
+    "description": "17K Followers, 0 Following, 417 Posts - ²ˣᴀᴍᴄᴀ (@2xamca) on Instagram: \"#TVアニメ 『SPRINKLES』話題のトッピング最新情報がついに解禁!! 思わず目を奪われてしまうカラフルな瞬間を一挙公開! さらに、予想外の組み合わせや華やかな仕上がりに加え、誰も予想できなかっ...\"",
+    "stat_evidence": {
+      "posts": {
+        "label": "",
+        "exact_title": ""
+      },
+      "followers": {
+        "label": "18.4K followers",
+        "exact_title": "18,499"
+      },
+      "following": {
+        "label": "0 following",
+        "exact_title": ""
+      }
+    }
+  },
+  "issues": []
+}

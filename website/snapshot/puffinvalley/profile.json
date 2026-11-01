@@ -1,0 +1,104 @@
+{
+  "username": "puffinvalley",
+  "url": "https://www.instagram.com/puffinvalley/",
+  "fetched_at": "2026-10-28T09:02:23.466Z",
+  "display_name": null,
+  "bio": "@pauprint #TVアニメ『世界に隠された驚異の宇宙現象』🌌 知られざる宇宙の秘密を一挙公開！ 銀河の彼方に広がる謎やブラックホールの不思議な現象、想像を超える宇宙の発見も明らかに！ 最後まで見逃すな!! 👀🔥\nlinktr.ee/pauprint",
+  "posts_count": {
+    "value": 245,
+    "raw": "245",
+    "approximate": false
+  },
+  "posts_count_observed_at": "2026-10-28T09:02:23.466Z",
+  "followers_count": {
+    "value": 11727,
+    "raw": "11,727",
+    "approximate": false,
+    "source": "header_title"
+  },
+  "following_count": {
+    "value": 1,
+    "raw": "1",
+    "approximate": false,
+    "source": "header_text"
+  },
+  "count_evidence": {
+    "followers": {
+      "header": {
+        "value": 11700,
+        "raw": "11.7K",
+        "approximate": true
+      },
+      "exact_title": {
+        "value": 11727,
+        "raw": "11,727",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 11000,
+        "raw": "11K",
+        "approximate": true
+      }
+    },
+    "following": {
+      "header": {
+        "value": 1,
+        "raw": "1",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 1,
+        "raw": "1",
+        "approximate": false
+      },
+      "conflict": false
+    },
+    "posts": {
+      "header": {
+        "value": 245,
+        "raw": "245",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 245,
+        "raw": "245",
+        "approximate": false
+      }
+    }
+  },
+  "category": null,
+  "ai_generated_profile": false,
+  "profile_picture_url": "https://instagram.fblr1-4.fna.fbcdn.net/v/t51.82787-19/801786229_18098222342134904_6156419680028372232_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy40MTUuQzMifQ%3D%3D&_nc_ohc=2hMJf93iwzoQ7kNvwHoZp1f&_nc_oc=AdpbN5ABrodSMeouyGB-lMamsmJP19thcoJBgWooQYCpCERGDuXhVg_zTXk-GI9OXPmWJG8bc22ys1tKJ2n15oUm&_nc_zt=24&_nc_ht=instagram.fblr1-4.fna&_nc_gid=UTtXbnEW3cynzn92kCZnmA&_nc_ss=7f6a8&oh=00_AQRnttD-1I9MST54i4PuV5vsc5ciNBLpWvPh3ySmckMVCQ&oe=6AE7A854",
+  "date_joined": "September 2026",
+  "account_based_in": "United States",
+  "former_usernames_count": null,
+  "raw": {
+    "header_text": "puffinvalley\n245 posts\n11.7K followers\n1 following\n@pauprint #TVアニメ『世界に隠された驚異の宇宙現象』🌌 知られざる宇宙の秘密を一挙公開！ 銀河の彼方に広がる謎やブラックホールの不思議な現象、想像を超える宇宙の発見も明らかに！ 最後まで見逃すな!! 👀🔥\nlinktr.ee/pauprint\nFollow",
+    "about_text": "About this account\npuffinvalley\nTo help keep our community authentic, we’re showing information about profiles on Instagram. See why this information is important.\nDate joined\nSeptember 2026\nAccount based in\nUnited States\nClose",
+    "description": "11K Followers, 1 Following, 245 Posts - @puffinvalley on Instagram: \"@pauprint #TVアニメ『世界に隠された驚異の宇宙現象』🌌 知られざる宇宙の秘密を一挙公開！ 銀河の彼方に広がる謎やブラックホールの不思議な現象、想像を超える宇宙の発見も明らかに！ 最後まで見逃すな!! 👀🔥\"",
+    "stat_evidence": {
+      "posts": {
+        "label": "",
+        "exact_title": ""
+      },
+      "followers": {
+        "label": "11.7K followers",
+        "exact_title": "11,727"
+      },
+      "following": {
+        "label": "1 following",
+        "exact_title": ""
+      }
+    }
+  },
+  "issues": [],
+  "current_username": "puffinvalley",
+  "username_history": [
+    {
+      "username": "puffinvalley",
+      "role": "current username",
+      "first_seen_at": "2026-10-28T09:02:23.460Z"
+    }
+  ],
+  "username_change_observed_at": null
+}
