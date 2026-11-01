@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "username": "guywithbadmemes69",
+  "phase": "after",
+  "snapshot_at": "2026-11-01T12:30:48.416Z",
+  "run_status": "partial",
+  "run_updated_at": "2026-11-01T12:30:48.410Z",
+  "profile_fetched_at": "2026-10-28T09:02:10.678Z",
+  "item_count": 0,
+  "complete_item_count": 0,
+  "discovery": {
+    "reel": {
+      "count": 0,
+      "complete": false,
+      "error": "Grid made no progress for 60 seconds at scroll 23/973 with 0 reel links.",
+      "attempted_at": "2026-11-01T12:30:48.400Z"
+    }
+  }
+}

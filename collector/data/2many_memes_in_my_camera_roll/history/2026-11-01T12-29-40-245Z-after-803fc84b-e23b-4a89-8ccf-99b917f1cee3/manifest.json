@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "username": "2many_memes_in_my_camera_roll",
+  "phase": "after",
+  "snapshot_at": "2026-11-01T12:29:40.245Z",
+  "run_status": "partial",
+  "run_updated_at": "2026-11-01T12:29:40.239Z",
+  "profile_fetched_at": "2026-10-28T09:02:04.806Z",
+  "item_count": 0,
+  "complete_item_count": 0,
+  "discovery": {
+    "reel": {
+      "count": 0,
+      "complete": false,
+      "error": "Grid made no progress for 60 seconds at scroll 23/973 with 0 reel links.",
+      "attempted_at": "2026-11-01T12:29:40.231Z"
+    }
+  }
+}

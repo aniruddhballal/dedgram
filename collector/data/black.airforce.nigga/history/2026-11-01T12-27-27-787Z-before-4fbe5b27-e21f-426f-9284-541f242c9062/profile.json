@@ -1,0 +1,94 @@
+{
+  "username": "black.airforce.nigga",
+  "url": "https://www.instagram.com/black.airforce.nigga/",
+  "fetched_at": "2026-10-23T17:11:28.434Z",
+  "display_name": null,
+  "bio": null,
+  "posts_count": {
+    "value": 516,
+    "raw": "516",
+    "approximate": false
+  },
+  "followers_count": {
+    "value": 175289,
+    "raw": "175,289",
+    "approximate": false,
+    "source": "header_title"
+  },
+  "following_count": {
+    "value": 147,
+    "raw": "147",
+    "approximate": false,
+    "source": "header_text"
+  },
+  "count_evidence": {
+    "followers": {
+      "header": {
+        "value": 175000,
+        "raw": "175K",
+        "approximate": true
+      },
+      "exact_title": {
+        "value": 175289,
+        "raw": "175,289",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 175000,
+        "raw": "175K",
+        "approximate": true
+      }
+    },
+    "following": {
+      "header": {
+        "value": 147,
+        "raw": "147",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 177,
+        "raw": "177",
+        "approximate": false
+      },
+      "conflict": true
+    },
+    "posts": {
+      "header": {
+        "value": 516,
+        "raw": "516",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 516,
+        "raw": "516",
+        "approximate": false
+      }
+    }
+  },
+  "category": null,
+  "ai_generated_profile": false,
+  "profile_picture_url": "https://instagram.fblr1-9.fna.fbcdn.net/v/t51.82787-19/583132032_17843989407613731_7524344784064414707_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=1&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy40MDQuQzMifQ%3D%3D&_nc_ohc=frmyW2jUc8AQ7kNvwGQmcxd&_nc_oc=Adq6WNTaO_s0xkp_pHs5smzp51FIclT3XVR3XXKq9gbTUzEH_rd_IxOmhw4zkZKezqMAMtMO1WSTZpyAt8qn-1GK&_nc_zt=24&_nc_ht=instagram.fblr1-9.fna&_nc_gid=-tUBs9DAv7dgQkAi9BilEg&_nc_ss=7f6a8&oh=00_AQOlUiQHkCl1plQFFFsWPKraT329wLAWn7ULDa9rxYWYxQ&oe=6AE1508C",
+  "date_joined": "November 2025",
+  "account_based_in": "United States",
+  "former_usernames_count": null,
+  "raw": {
+    "header_text": "black.airforce.nigga\n516 posts\n175K followers\n147 following\nFollow\nMessage",
+    "about_text": "About this account\nblack.airforce.nigga\nTo help keep our community authentic, we’re showing information about profiles on Instagram. See why this information is important.\nDate joined\nNovember 2025\nAccount based in\nUnited States\nClose",
+    "description": "175K Followers, 177 Following, 516 Posts - @black.airforce.nigga on Instagram: \"\"",
+    "stat_evidence": {
+      "posts": {
+        "label": "",
+        "exact_title": ""
+      },
+      "followers": {
+        "label": "175K followers",
+        "exact_title": "175,289"
+      },
+      "following": {
+        "label": "147 following",
+        "exact_title": ""
+      }
+    }
+  },
+  "issues": []
+}

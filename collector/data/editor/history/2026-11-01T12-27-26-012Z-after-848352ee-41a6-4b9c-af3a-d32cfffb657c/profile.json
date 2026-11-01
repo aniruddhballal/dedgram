@@ -1,0 +1,96 @@
+{
+  "username": "editor",
+  "url": "https://www.instagram.com/editor/",
+  "fetched_at": "2026-10-23T14:44:59.503Z",
+  "display_name": "editor",
+  "bio": null,
+  "posts_count": {
+    "value": 19,
+    "raw": "19",
+    "approximate": false
+  },
+  "followers_count": {
+    "value": 6892,
+    "raw": "6,892",
+    "approximate": false,
+    "source": "header_title"
+  },
+  "following_count": {
+    "value": 446,
+    "raw": "446",
+    "approximate": false,
+    "source": "header_text"
+  },
+  "count_evidence": {
+    "followers": {
+      "header": {
+        "value": 6892,
+        "raw": "6,892",
+        "approximate": false
+      },
+      "exact_title": {
+        "value": 6892,
+        "raw": "6,892",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 6891,
+        "raw": "6,891",
+        "approximate": false
+      }
+    },
+    "following": {
+      "header": {
+        "value": 446,
+        "raw": "446",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 454,
+        "raw": "454",
+        "approximate": false
+      },
+      "conflict": true
+    },
+    "posts": {
+      "header": {
+        "value": 19,
+        "raw": "19",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 19,
+        "raw": "19",
+        "approximate": false
+      }
+    }
+  },
+  "category": null,
+  "ai_generated_profile": false,
+  "profile_picture_url": "https://instagram.fblr1-6.fna.fbcdn.net/v/t51.2885-19/269591835_709747806661831_7426642526786617779_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy45NjAuQzMifQ%3D%3D&_nc_ohc=HiyZ-nCttrYQ7kNvwGiifGJ&_nc_oc=Adq3v8FlzI4DBmrM-5smRg-NYi4s2L0gYkKBU02jqavKkrJtY0mphNFxIa3sWYt8-cFhr9CZunTxbvEMXSfFkwv6&_nc_zt=24&_nc_ht=instagram.fblr1-6.fna&_nc_ss=7f6a8&oh=00_AQPycNzB56-FWG0mWGFWnKB1jyV2iDgJ-gO98eK85VYeXA&oe=6AE14B17",
+  "date_joined": "November 2010",
+  "account_based_in": "Belgium",
+  "former_usernames_count": null,
+  "raw": {
+    "header_text": "editor\neditor\n19 posts\n6,892 followers\n446 following\nFollow",
+    "about_text": "About this account\neditor\nTo help keep our community authentic, we’re showing information about profiles on Instagram. See why this information is important.\nDate joined\nNovember 2010\nAccount based in\nBelgium\nClose",
+    "description": "6,891 Followers, 454 Following, 19 Posts - @editor on Instagram: \"\"",
+    "stat_evidence": {
+      "posts": {
+        "label": "",
+        "exact_title": ""
+      },
+      "followers": {
+        "label": "6,892 followers",
+        "exact_title": "6,892"
+      },
+      "following": {
+        "label": "446 following",
+        "exact_title": ""
+      }
+    }
+  },
+  "issues": [
+    "Page metadata says 454 following; current profile header says 446, which is used for the count."
+  ]
+}
