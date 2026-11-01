@@ -24,8 +24,8 @@ const fullProfiles = [
   'blunt.fun4'
 ];
 const profileLevelProfiles = ['coldex7.ae', 'illmisguideyou'];
-const resolvedProfiles = ['hnvx.07', 'prime_senchui', 'vlad.aep_', 'nxx._.nmercy', 'dexea.100k', 'igpostinggang', 'rzk.mp4', 'renyajichu', 'hammergag', 'caodogsfofo', 'back', 'short_vibesz', 'oooiway', 'zuxxie.pov', 'extreme.laugh8', 'iron_block2', 'memes.fatafat'];
-const publishedProfiles = [...fullProfiles, ...profileLevelProfiles, ...resolvedProfiles];
+const excludedProfiles = ['hnvx.07', 'prime_senchui', 'vlad.aep_', 'nxx._.nmercy', 'dexea.100k', 'igpostinggang', 'rzk.mp4', 'renyajichu', 'hammergag', 'caodogsfofo', 'back', 'short_vibesz', 'oooiway', 'zuxxie.pov', 'extreme.laugh8', 'iron_block2', 'memes.fatafat'];
+const publishedProfiles = [...fullProfiles, ...profileLevelProfiles, ...excludedProfiles];
 const files = ['profile.json', 'discovery.json', 'items.json', 'run.json', 'profile.csv', 'items.csv', 'report.html'];
 const sourceCatalog = JSON.parse(await readFile(join(repo, 'data', 'database', 'profiles', 'index.json'), 'utf8'));
 const catalog = {
@@ -36,10 +36,10 @@ if (!Array.isArray(catalog.profile_keys) || publishedProfiles.some((username) =>
   throw new Error(`The profile catalog must contain ${publishedProfiles.join(', ')}.`);
 }
 await writeFile(join(snapshot, 'index.json'), JSON.stringify(catalog, null, 2) + '\n', 'utf8');
-const resolved = {};
-for (const username of resolvedProfiles) {
+const excludedRecords = {};
+for (const username of excludedProfiles) {
   const profile = JSON.parse(await readFile(join(repo, 'data', 'database', 'profiles', `profile-${username}.json`), 'utf8'));
-  resolved[username] = {
+  excludedRecords[username] = {
     username,
     status: profile.status,
     observed_at: profile.account_status_observed_at || profile.last_fetched_at,
@@ -57,7 +57,7 @@ for (const username of resolvedProfiles) {
     reason: profile.last_error || null
   };
 }
-await writeFile(join(snapshot, 'resolutions.json'), JSON.stringify({ schema_version: 1, profiles: resolved }, null, 2) + '\n', 'utf8');
+await writeFile(join(snapshot, 'resolutions.json'), JSON.stringify({ schema_version: 1, profiles: excludedRecords }, null, 2) + '\n', 'utf8');
 const mediaDir = join(snapshot, 'media');
 await mkdir(mediaDir, { recursive: true });
 const images = [];
@@ -99,4 +99,4 @@ for (let i = 0; i < images.length; i += 6) {
     }
   }));
 }
-console.log(`Snapshot updated: ${catalog.profile_keys.length} profiles, ${publishedProfiles.length} published records (${resolvedProfiles.length} resolved), ${saved} images saved, ${failed} unavailable.`);
+console.log(`Snapshot updated: ${catalog.profile_keys.length} profiles, ${publishedProfiles.length} published records (${excludedProfiles.length} excluded after initial collection), ${saved} images saved, ${failed} unavailable.`);

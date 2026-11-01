@@ -117,7 +117,7 @@ Reruns merge new information into the current record without deleting older vali
 
 ## 4. Public Vercel showcase
 
-The public site is built from [`website/snapshot/`](website/snapshot/), not directly from a live collector process. It contains a curated public snapshot of profile records, reel records, resolved account outcomes, thumbnails, reports, and aggregate statistics.
+The public site is built from [`website/snapshot/`](website/snapshot/), not directly from a live collector process. It contains a curated public snapshot of profile records, reel records, account outcomes excluded after initial collection, thumbnails, reports, and aggregate statistics.
 
 Live site: [dedgram.vercel.app](https://dedgram.vercel.app/)
 
@@ -128,7 +128,7 @@ Current routes:
 - `/profiles/<username>/` — individual published profile record.
 - `/overview/` — compatibility alias for the Overview.
 
-The public Overview includes profile performance, profile country and join information, reel counts, analyzed reel counts, total reel likes/comments/views, most-viewed reels, local reel cover images, and resolved unavailable-or-renamed, age-restricted, and false-identification records. Engagement totals are displayed compactly with hover text containing the full stored value. The public site hides uncollected candidates from its first view.
+The public Overview includes profile performance, profile country and join information, reel counts, analyzed reel counts, total reel likes/comments/views, most-viewed reels, local reel cover images, and records excluded after initial collection because they were unavailable-or-renamed, age-restricted, or falsely identified. Engagement totals are displayed compactly with hover text containing the full stored value. The public site hides uncollected candidates from its first view.
 
 To refresh and build the showcase after new collector outputs are ready:
 

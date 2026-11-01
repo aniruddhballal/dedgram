@@ -1,9 +1,9 @@
 import { badge, errorBanner, esc, gridLabel, number, profileHref, progress, statusText, time } from './shared.js';
 
-const resolvedStatuses = new Set(['deleted', 'age_restricted', 'false_identification']);
+const excludedStatuses = new Set(['deleted', 'age_restricted', 'false_identification']);
 
-export function resolvedProfile(profile) {
-  return resolvedStatuses.has(profile?.account_status);
+export function excludedProfile(profile) {
+  return excludedStatuses.has(profile?.account_status);
 }
 
 export function profileDetailsReady(profile) {
@@ -33,7 +33,7 @@ export function runFailed(profile) {
 }
 
 export function needsReview(profile) {
-  return !resolvedProfile(profile) && (runFailed(profile) || (profile?.reels?.review || 0) > 0);
+  return !excludedProfile(profile) && (runFailed(profile) || (profile?.reels?.review || 0) > 0);
 }
 
 export function stageModeForFilter(filter) {
@@ -46,13 +46,13 @@ export function usernameChangeFlagged(profile) {
 
 const filterDefinitions = [
   ['all', 'All profiles', () => true],
-  ['profile_missing', 'Profile details missing', (profile) => !resolvedProfile(profile) && !profileDetailsReady(profile)],
-  ['reel_count_missing', 'Reel count missing', (profile) => !resolvedProfile(profile) && profileDetailsReady(profile) && !reelCountReady(profile)],
-  ['reel_count_ready', 'Reel count ready', (profile) => !resolvedProfile(profile) && reelCountReady(profile) && !reelDetailsComplete(profile)],
-  ['reel_details_complete', 'Reel details complete', (profile) => !resolvedProfile(profile) && reelDetailsComplete(profile)],
+  ['profile_missing', 'Profile details missing', (profile) => !excludedProfile(profile) && !profileDetailsReady(profile)],
+  ['reel_count_missing', 'Reel count missing', (profile) => !excludedProfile(profile) && profileDetailsReady(profile) && !reelCountReady(profile)],
+  ['reel_count_ready', 'Reel count ready', (profile) => !excludedProfile(profile) && reelCountReady(profile) && !reelDetailsComplete(profile)],
+  ['reel_details_complete', 'Reel details complete', (profile) => !excludedProfile(profile) && reelDetailsComplete(profile)],
   ['username_changed', 'Username change flagged', usernameChangeFlagged],
   ['review', 'Needs review / failed', (profile) => needsReview(profile)],
-  ['resolved', 'Resolved / no collection needed', (profile) => resolvedProfile(profile)]
+  ['excluded', 'Excluded after initial collection', (profile) => excludedProfile(profile)]
 ];
 
 export function filterOptions(state) {

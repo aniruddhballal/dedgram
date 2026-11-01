@@ -59,14 +59,14 @@ test('catalog filters expose the next missing collection stage', () => {
     { username: 'count_missing', profile_header_complete: true, posts_count: 10, profile_complete: false, run: { status: 'complete' }, reels: { processed: 0, review: 0 } },
     { username: 'details_pending', profile_header_complete: true, posts_count: 10, profile_complete: true, reels: { discovered: 5, processed: 2, review: 0 }, run: { status: 'complete' } },
     { username: 'details_complete', profile_header_complete: true, posts_count: 10, profile_complete: true, reels: { discovered: 5, processed: 5, review: 0 }, run: { status: 'complete' } },
-    { username: 'resolved', account_status: 'deleted', profile_header_complete: false, posts_count: null, profile_complete: false, run: { status: 'complete' }, reels: { processed: 0, review: 0 } },
+    { username: 'excluded', account_status: 'deleted', profile_header_complete: false, posts_count: null, profile_complete: false, run: { status: 'complete' }, reels: { processed: 0, review: 0 } },
     { username: 'failed', profile_header_complete: false, posts_count: null, profile_complete: false, run: { status: 'failed' }, reels: { processed: 0, review: 0 } }
   ];
   assert.deepEqual(filteredCatalog({ catalog: profiles, search: '', filter: 'profile_missing' }).map(({ username }) => username), ['profile_missing', 'failed']);
   assert.deepEqual(filteredCatalog({ catalog: profiles, search: '', filter: 'reel_count_missing' }).map(({ username }) => username), ['count_missing']);
   assert.deepEqual(filteredCatalog({ catalog: profiles, search: '', filter: 'reel_count_ready' }).map(({ username }) => username), ['details_pending']);
   assert.deepEqual(filteredCatalog({ catalog: profiles, search: '', filter: 'reel_details_complete' }).map(({ username }) => username), ['details_complete']);
-  assert.deepEqual(filteredCatalog({ catalog: profiles, search: '', filter: 'resolved' }).map(({ username }) => username), ['resolved']);
+  assert.deepEqual(filteredCatalog({ catalog: profiles, search: '', filter: 'excluded' }).map(({ username }) => username), ['excluded']);
   assert.deepEqual(filteredCatalog({ catalog: profiles, search: '', filter: 'review' }).map(({ username }) => username), ['failed']);
 });
 

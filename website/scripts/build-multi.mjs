@@ -21,13 +21,13 @@ const fullProfiles = [
   'coldex7.ae'
 ];
 const profileLevelProfiles = ['illmisguideyou'];
-const resolvedProfiles = ['hnvx.07', 'prime_senchui', 'vlad.aep_', 'nxx._.nmercy', 'dexea.100k', 'igpostinggang', 'rzk.mp4', 'renyajichu', 'hammergag', 'caodogsfofo', 'back', 'short_vibesz', 'oooiway', 'zuxxie.pov', 'extreme.laugh8', 'iron_block2', 'memes.fatafat'];
-const publishedProfiles = [...fullProfiles, ...profileLevelProfiles, ...resolvedProfiles];
+const excludedProfiles = ['hnvx.07', 'prime_senchui', 'vlad.aep_', 'nxx._.nmercy', 'dexea.100k', 'igpostinggang', 'rzk.mp4', 'renyajichu', 'hammergag', 'caodogsfofo', 'back', 'short_vibesz', 'oooiway', 'zuxxie.pov', 'extreme.laugh8', 'iron_block2', 'memes.fatafat'];
+const publishedProfiles = [...fullProfiles, ...profileLevelProfiles, ...excludedProfiles];
 const profileLevelSet = new Set(profileLevelProfiles);
-const resolvedSet = new Set(resolvedProfiles);
+const excludedSet = new Set(excludedProfiles);
 const files = ['profile.json', 'discovery.json', 'items.json', 'run.json', 'profile.csv', 'items.csv', 'report.html'];
 const readJson = async (name) => JSON.parse(await readFile(join(source, name), 'utf8'));
-const resolutions = await readJson('resolutions.json');
+const exclusionRecords = await readJson('resolutions.json');
 const plainText = (value) => String(value ?? '').replace(/[\p{Extended_Pictographic}\p{Regional_Indicator}\p{Emoji_Modifier}\uFE0E\uFE0F\u200D\u20E3]/gu, '');
 const esc = (value) => plainText(value).replace(/[&<>"']/g, (ch) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[ch]);
 const fmt = (value) => Number.isFinite(value) ? new Intl.NumberFormat('en-IN').format(value) : 'Unavailable';
@@ -115,7 +115,7 @@ const exactPostRows = publishedSnapshotProfiles.map((username) => snapshotData.g
 const overview = {
   publicRecords: publishedProfiles.length,
   profileRecords: publishedSnapshotProfiles.length,
-  resolvedRecords: resolvedProfiles.length,
+  excludedRecords: excludedProfiles.length,
   futureCandidates: index.profile_keys.length - publishedProfiles.length,
   nearTerm: [...partialPublishedProfiles, ...profileLevelProfiles].length,
   reelUrls: publishedReelUrls,
@@ -139,9 +139,9 @@ function shell({ title, description, base, active, profileKey, content }) {
 
 const publishedSet = new Set(publishedProfiles);
 const catalogCard = (username, i, ready) => {
-  const resolved = resolutions.profiles?.[username];
-  const label = resolved ? `Account status: ${resolved.status}` : profileLevelSet.has(username) ? 'Profile saved; reel analysis pending' : partialPublishedProfiles.has(username) ? 'Some reels analyzed' : ready ? 'Profile and reels analyzed' : 'Not analyzed yet';
-  const tag = resolved ? 'Status confirmed' : profileLevelSet.has(username) ? 'Profile saved' : ready ? 'View record' : 'Not analyzed';
+  const excludedRecord = exclusionRecords.profiles?.[username];
+  const label = excludedRecord ? `Excluded after initial collection: ${excludedRecord.status}` : profileLevelSet.has(username) ? 'Profile saved; reel analysis pending' : partialPublishedProfiles.has(username) ? 'Some reels analyzed' : ready ? 'Profile and reels analyzed' : 'Not analyzed yet';
+  const tag = excludedRecord ? 'Excluded from analysis' : profileLevelSet.has(username) ? 'Profile saved' : ready ? 'View record' : 'Not analyzed';
   const inner = `<span class="row-number">${String(i + 1).padStart(3, '0')}</span><span class="row-title"><strong>@${esc(username)}</strong><small>${esc(label)}</small></span><span class="row-tag ${ready ? 'live' : ''}">${esc(tag)}</span>`;
   return `<article class="profile-row" data-catalog-row><div class="profile-row-main">${ready ? `<a class="profile-internal" href="./profiles/${username}/" aria-label="View saved profile data for @${username}">${inner}</a>` : `<div class="profile-internal">${inner}</div>`}</div><div class="row-external">${external(profileInstagramUrl(username), 'Instagram', 'external-link')}</div></article>`;
 };
@@ -153,8 +153,8 @@ const catalogCards = `${publishedCards}<details class="future-directory" data-ca
 const catalogHtml = shell({ title: 'Profiles Â· dedgram atlas', description: 'Explore the dedgram profile catalog and the published research profiles.', base: './', active: 'catalog', content: `<section class="hero catalog-hero"><div class="hero-copy"><div class="eyebrow">PROFILE INDEX / PUBLIC PREVIEW</div><h1>Profiles,<br>on record.</h1><p>${fmt(index.profile_keys.length)} accounts indexed. ${fmt(publishedCount)} profile records are available; the rest are being collected.</p><div class="hero-actions"><a class="button primary" href="#published">View published profiles</a><a class="button secondary" href="#directory">Browse profiles</a></div></div><div class="hero-count" aria-label="${fmt(publishedCount)} of ${fmt(index.profile_keys.length)} profiles published"><strong>${String(publishedCount).padStart(2, '0')}</strong><span>/ ${fmt(index.profile_keys.length)} PUBLISHED</span></div></section><section class="stat-strip" aria-label="Publishing status"><div><span>CATALOG</span><strong>${fmt(index.profile_keys.length)}</strong><small>profile URLs indexed</small></div><div><span>PUBLISHED</span><strong>${fmt(publishedCount)}</strong><small>profile records available</small></div><div><span>IN PROGRESS</span><strong>${fmt(index.profile_keys.length - publishedCount)}</strong><small>more profiles to publish</small></div></section><section class="process-note"><div><h2>Collection in progress</h2><p>More profile records will appear here as they are checked.</p></div></section><section class="directory" id="published"><div class="section-head"><div><span class="overline">01 / PUBLISHED RECORDS</span><h2>Ready to explore</h2><p>Completed records and partial reel coverage are labeled below.</p></div></div><div class="profile-list">${publishedProfiles.map((username) => `<article class="profile-row"><div class="profile-row-main"><a class="profile-internal" href="./profiles/${username}/" aria-label="View saved profile data for @${username}"><span class="row-title"><strong>@${esc(username)}</strong><small>${partialPublishedProfiles.has(username) ? 'Partial reel coverage' : 'Profile and reel analysis complete'}</small></span><span class="row-tag live">View record</span></a></div><div class="row-external">${external(profileInstagramUrl(username), 'Instagram', 'external-link')}</div></article>`).join('')}</div></section><section class="directory" id="directory"><div class="section-head"><div><span class="overline">02 / DIRECTORY</span><h2>Profile index</h2><p>Direct Instagram links for all ${fmt(index.profile_keys.length)} accounts.</p></div><div class="directory-search"><label for="catalog-search">Find a profile</label><input id="catalog-search" type="search" placeholder="Search @username" autocomplete="off"></div></div><div class="directory-toolbar"><span id="catalog-count">${fmt(index.profile_keys.length)} profiles shown</span><span>SAVED RECORDS APPEAR WHEN READY</span></div><div class="profile-list" id="profile-list">${catalogCards}</div><p class="empty-state" id="catalog-empty" hidden>No profiles match that search.</p></section>` });
 
 const catalogHtmlForOutput = publishedProfiles.reduce((html, username) => {
-  const resolved = resolutions.profiles?.[username];
-  const label = resolved ? `Account status: ${resolved.status}` : profileLevelSet.has(username) ? 'Profile saved; reel analysis pending' : partialPublishedProfiles.has(username) ? 'Some reels analyzed' : 'Profile and reels analyzed';
+  const excludedRecord = exclusionRecords.profiles?.[username];
+  const label = excludedRecord ? `Excluded after initial collection: ${excludedRecord.status}` : profileLevelSet.has(username) ? 'Profile saved; reel analysis pending' : partialPublishedProfiles.has(username) ? 'Some reels analyzed' : 'Profile and reels analyzed';
   const escapedUsername = username.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
   return html.replace(new RegExp(`(<strong>@${escapedUsername}<\\/strong><small>)[^<]*(</small>)`, 'g'), `$1${esc(label)}$2`);
 }, catalogHtml);
@@ -163,7 +163,7 @@ const publicCatalogHtml = catalogHtmlForOutput
   .replace('<strong>@illmisguideyou</strong><small>Profile and reel analysis complete</small>', '<strong>@illmisguideyou</strong><small>Profile saved; reel analysis pending</small>')
   .replaceAll('Profile and reel analysis complete', 'Profile and reels analyzed')
   .replaceAll('Partial reel coverage', 'Some reels analyzed')
-  .replaceAll('Resolved:', 'Account status:')
+  .replaceAll('Resolved:', 'Excluded after initial collection:')
   .replace('<a class="brand" href="./"', '<a class="brand" href="../"')
   .replace('<a class="active" href="./profiles/">Profiles', '<a class="active" href="../profiles/">Profiles')
   .replace('<a class="" href="./">Overview', '<a class="" href="../">Overview')
@@ -184,23 +184,23 @@ const overviewAccountRows = publishedSnapshotProfiles.map((username) => {
   const reelViews = metricTotal(items, 'reel', 'views');
   return `<tr><td><a href="../profiles/${username}/">@${esc(username)}</a><small class="cell-note">${esc(status)}</small></td><td>${esc(profile.account_based_in || 'Unavailable')}</td><td>${esc(profile.date_joined || 'Unavailable')}</td><td>${esc(metric(profile.posts_count))}</td><td>${fmt(reels.length)}</td><td>${fmt(handled)} / ${fmt(reels.length)}</td><td>${totalCell(reelLikes, 'Total reel likes')}</td><td>${totalCell(reelComments, 'Total reel comments')}</td><td>${totalCell(reelViews, 'Total reel views')}</td><td>${esc(metric(profile.followers_count))}</td></tr>`;
 }).join('');
-const deletedProfiles = resolvedProfiles.filter((username) => resolutions.profiles?.[username]?.status === 'Deleted or username changed');
-const ageRestrictedProfiles = resolvedProfiles.filter((username) => resolutions.profiles?.[username]?.status === 'Age restricted');
-const falseIdentificationProfiles = resolvedProfiles.filter((username) => resolutions.profiles?.[username]?.status === 'False identification');
+const deletedProfiles = excludedProfiles.filter((username) => exclusionRecords.profiles?.[username]?.status === 'Deleted or username changed');
+const ageRestrictedProfiles = excludedProfiles.filter((username) => exclusionRecords.profiles?.[username]?.status === 'Age restricted');
+const falseIdentificationProfiles = excludedProfiles.filter((username) => exclusionRecords.profiles?.[username]?.status === 'False identification');
 const overviewDeletedRow = (username) => {
-  const resolved = resolutions.profiles?.[username] || {};
-  const firstUnavailable = resolved.deletion_date_range?.before_first_unavailable_at || resolved.observed_at;
-  return `<tr><td><a href="../profiles/${username}/">@${esc(username)}</a></td><td>${esc(date(resolved.last_fetched_at || resolved.observed_at))}</td><td>${esc(date(firstUnavailable))}</td></tr>`;
+  const excludedRecord = exclusionRecords.profiles?.[username] || {};
+  const firstUnavailable = excludedRecord.deletion_date_range?.before_first_unavailable_at || excludedRecord.observed_at;
+  return `<tr><td><a href="../profiles/${username}/">@${esc(username)}</a></td><td>${esc(date(excludedRecord.last_fetched_at || excludedRecord.observed_at))}</td><td>${esc(date(firstUnavailable))}</td></tr>`;
 };
 const overviewDeletedRows = deletedProfiles.map(overviewDeletedRow).join('');
 const overviewAgeRestrictedRows = ageRestrictedProfiles.map((username) => {
-  const resolved = resolutions.profiles?.[username] || {};
-  const firstRestricted = resolved.age_restriction?.before_initial_blocked_or_failed_at || resolved.observed_at;
-  return `<tr><td><a href="../profiles/${username}/">@${esc(username)}</a></td><td>${resolved.minimum_age ? `${fmt(resolved.minimum_age)}+` : 'Age restricted'}</td><td>${esc(date(resolved.last_fetched_at || resolved.observed_at))}</td><td>${esc(date(firstRestricted))}</td></tr>`;
+  const excludedRecord = exclusionRecords.profiles?.[username] || {};
+  const firstRestricted = excludedRecord.age_restriction?.before_initial_blocked_or_failed_at || excludedRecord.observed_at;
+  return `<tr><td><a href="../profiles/${username}/">@${esc(username)}</a></td><td>${excludedRecord.minimum_age ? `${fmt(excludedRecord.minimum_age)}+` : 'Age restricted'}</td><td>${esc(date(excludedRecord.last_fetched_at || excludedRecord.observed_at))}</td><td>${esc(date(firstRestricted))}</td></tr>`;
 }).join('');
 const overviewFalseIdentificationRows = falseIdentificationProfiles.map((username) => {
-  const resolved = resolutions.profiles?.[username] || {};
-  return `<tr><td><a href="../profiles/${username}/">@${esc(username)}</a></td><td>${esc(date(resolved.last_fetched_at || resolved.observed_at))}</td><td>${esc(date(resolved.false_identification?.identified_at || resolved.observed_at))}</td><td>${esc(resolved.false_identification?.reason || 'Manual review')}</td></tr>`;
+  const excludedRecord = exclusionRecords.profiles?.[username] || {};
+  return `<tr><td><a href="../profiles/${username}/">@${esc(username)}</a></td><td>${esc(date(excludedRecord.last_fetched_at || excludedRecord.observed_at))}</td><td>${esc(date(excludedRecord.false_identification?.identified_at || excludedRecord.observed_at))}</td><td>${esc(excludedRecord.false_identification?.reason || 'Manual review')}</td></tr>`;
 }).join('');
 const overviewReelRows = (await Promise.all(topReels.map(async (item) => {
   const thumb = await localImage(`${item.shortcode}.jpg`);
@@ -209,7 +209,7 @@ const overviewReelRows = (await Promise.all(topReels.map(async (item) => {
 }))).join('');
 const overviewHtml = shell({ title: 'How dead is the internet? One reel at a time. · dedgram atlas', description: 'A public snapshot testing the theory that bot accounts are creating an internet of bots, one reel at a time.', base: '../', active: 'overview', content: `
   <section class="hero overview-hero"><div class="hero-copy"><div class="eyebrow">BOT CULTURE / PUBLIC SNAPSHOT</div><h1><span class="headline-line">How dead is the <em>internet?</em></span><br><span class="headline-line"><em>One reel at a time.</em></span></h1><p>This atlas tests a theory: the internet is filling with bot accounts posting for other bot accounts, manufacturing the views and likes that keep the cycle going. These totals reflect the research records currently available on the public site.</p><div class="hero-actions"><a class="button primary" href="../">View published profiles</a><a class="button secondary" href="../#future">Show future candidates</a></div></div><div class="hero-count" aria-label="${fmt(overview.publicRecords)} public records"><strong>${String(overview.publicRecords).padStart(2, '0')}</strong><span>PUBLIC RECORDS</span></div></section>
-  <section class="stat-strip overview-stat-strip" aria-label="Overall collection statistics"><div><span>PROFILES WITH DATA</span><strong>${fmt(overview.profileRecords)}</strong><small>Saved profile information</small></div><div><span>REELS FOUND</span><strong>${fmt(overview.reelUrls)}</strong><small>Reels found on profile pages</small></div><div><span>REELS ANALYZED</span><strong>${fmt(overview.reelDetails)}</strong><small>Full reel information captured</small></div><div><span>PARTIALLY ANALYZED</span><strong>${fmt(overview.reelReview)}</strong><small>Reels with some information missing</small></div><div><span>ACCOUNT STATUS CONFIRMED</span><strong>${fmt(overview.resolvedRecords)}</strong><small>Finished account outcomes</small></div></section>
+  <section class="stat-strip overview-stat-strip" aria-label="Overall collection statistics"><div><span>PROFILES WITH DATA</span><strong>${fmt(overview.profileRecords)}</strong><small>Saved profile information</small></div><div><span>REELS FOUND</span><strong>${fmt(overview.reelUrls)}</strong><small>Reels found on profile pages</small></div><div><span>REELS ANALYZED</span><strong>${fmt(overview.reelDetails)}</strong><small>Full reel information captured</small></div><div><span>PARTIALLY ANALYZED</span><strong>${fmt(overview.reelReview)}</strong><small>Reels with some information missing</small></div><div><span>EXCLUDED AFTER INITIAL COLLECTION</span><strong>${fmt(overview.excludedRecords)}</strong><small>Collected first, then excluded from analysis</small></div></section>
   <section class="metric-note"><span class="overline">ACTUAL STORED NUMBERS</span><h2>Engagement totals are not rounded estimates</h2><p>They are the values stored from the collected reel records. Hover over a compact total to see the full stored number.</p></section>
   <section class="stat-strip overview-stat-strip secondary-stats" aria-label="Collected metrics"><div><span>INSTAGRAM POSTS</span><strong>${fmt(overview.posts)}</strong><small>${fmt(overview.profileRecords)} profiles with saved counts</small></div><div><span>TOTAL REEL VIEWS</span><strong class="compact-total" title="Full stored total: ${fmt(overview.views)}${overview.viewsApproximate ? ' · Some source labels were abbreviated by Instagram.' : ''}" aria-label="Total reel views: ${fmt(overview.views)}">${compactTotal(overview.views)}</strong><small>${fmt(overview.viewsCovered)} reels with readable views</small></div><div><span>TOTAL REEL LIKES</span><strong class="compact-total" title="Full stored total: ${fmt(overview.likes)}${overview.likesApproximate ? ' · Some source labels were abbreviated by Instagram.' : ''}" aria-label="Total reel likes: ${fmt(overview.likes)}">${compactTotal(overview.likes)}</strong><small>${fmt(overview.likesCovered)} reels with readable likes</small></div><div><span>TOTAL REEL COMMENTS</span><strong class="compact-total" title="Full stored total: ${fmt(overview.comments)}${overview.commentsApproximate ? ' · Some source labels were abbreviated by Instagram.' : ''}" aria-label="Total reel comments: ${fmt(overview.comments)}">${compactTotal(overview.comments)}</strong><small>${fmt(overview.commentsCovered)} reels with readable comments</small></div><div><span>NEXT TO ANALYZE</span><strong>${fmt(overview.nearTerm)}</strong><small>Published profiles with more work queued</small></div></section>
   <section class="overview-grid"><div class="overview-panel"><span class="overline">PROFILE MAP</span><h2>Accounts by country</h2>${overviewBars(countryRows, overview.profileRecords)}</div><div class="overview-panel"><span class="overline">REEL LANGUAGE</span><h2>Frequent hashtags</h2>${overviewBars(hashtagRows, completeReels.length)}<p class="panel-foot">From completed reel captions.</p></div></section>
@@ -221,7 +221,13 @@ const overviewHtml = shell({ title: 'How dead is the internet? One reel at a tim
 const overviewAliasHtml = overviewHtml
   .replace('href="../">View published profiles', 'href="../profiles/">View published profiles')
   .replace('href="../#future"', 'href="../profiles/#future"');
-const overviewHomeHtml = overviewAliasHtml.replaceAll('../', './');
+const overviewWithExclusionTerminology = overviewAliasHtml
+  .replaceAll('PROFILES NO LONGER AVAILABLE FOR ANALYSIS', 'EXCLUDED AFTER INITIAL COLLECTION')
+  .replaceAll('These profiles were available during the initial scan. They were later found unavailable under the original username, age-restricted, or incorrectly identified, so they are kept as status records and excluded from the analysis totals below.', 'These profiles were collected initially, then stopped from active analysis because they became unavailable under the original username, age-restricted, or were identified as false captures. Their original evidence is preserved as status records, but they are excluded from the analysis totals below.')
+  .replaceAll('Collected first, then found unavailable under the original username.', 'Collected first, then excluded after the original username became unavailable.')
+  .replaceAll('Collected first, then found behind Instagram', 'Collected first, then excluded after Instagram')
+  .replaceAll('This capture did not provide enough evidence that the username represented a real Instagram profile.', 'This capture did not provide enough evidence that the username represented a real Instagram profile, so it was excluded after initial collection.');
+const overviewHomeHtml = overviewWithExclusionTerminology.replaceAll('../', './');
 
 const publicProfileHtml = (html) => html
   .replaceAll('PROFILE LEVEL RECORD', 'PROFILE SNAPSHOT')
@@ -235,6 +241,17 @@ const publicProfileHtml = (html) => html
   .replaceAll('Needs review', 'Partially analyzed')
   .replaceAll('need review', 'partially analyzed')
   .replaceAll('Manual review needed', 'Some information is missing')
+  .replaceAll('RESOLVED RECORD', 'EXCLUDED RECORD')
+  .replaceAll('RESOLVED ', 'EXCLUDED AFTER INITIAL COLLECTION ')
+  .replaceAll('RESOLUTION RECORD', 'EXCLUSION RECORD')
+  .replaceAll('Collection resolved', 'Excluded from analysis')
+  .replaceAll('Resolution status', 'Exclusion status')
+  .replaceAll('RESOLUTION DETAILS', 'EXCLUSION DETAILS')
+  .replaceAll('Why this record is finished', 'Why this record is excluded')
+  .replaceAll('Resolution preserved', 'Initial collection preserved')
+  .replaceAll('No further collection required', 'Collection stopped after initial capture')
+  .replaceAll('This profile is included as a resolved record because its final state is known. It is not counted as an unfinished profile in the public catalog.', 'This profile was collected initially, then excluded from active analysis because its final state is known. The original evidence is preserved.')
+  .replaceAll('resolution record', 'exclusion record')
   .replaceAll('Record details', 'More information')
   .replaceAll('Individual reel pages have not been scraped yet', 'The individual reels have not been analyzed yet')
   .replaceAll('the saved discovery JSON is ready for the next reel-details run', 'the saved reel list is ready for the next analysis')
@@ -242,8 +259,9 @@ const publicProfileHtml = (html) => html
   .replaceAll('Profile-level record', 'Saved profile information')
   .replaceAll('profile-level record', 'saved profile information');
 
-function resolvedProfilePage(resolved, recordNumber) {
-  const status = resolved.status || 'Resolved';
+function excludedProfilePage(excludedRecord, recordNumber) {
+  const resolved = excludedRecord;
+  const status = resolved.status || 'Excluded after initial collection';
   const range = resolved.deletion_date_range || resolved.age_restriction;
   const reason = status === 'Deleted or username changed' ? (resolved.resolution_note || 'The original username was unavailable during the follow-up check. The account may have been deleted or the username may have changed.')
     : status === 'Age restricted' ? `Instagram access was age restricted to users ${resolved.minimum_age || 25}+.`
@@ -265,9 +283,9 @@ async function profileLevelPage(published, profile, discovery, items, run, recor
 
 const profilePages = [];
 for (const published of publishedProfiles) {
-  const resolved = resolutions.profiles?.[published];
-  if (resolved) {
-    profilePages.push({ published, html: resolvedProfilePage(resolved, String(publishedProfiles.indexOf(published) + 1).padStart(3, '0')) });
+  const excludedRecord = exclusionRecords.profiles?.[published];
+  if (excludedRecord) {
+    profilePages.push({ published, html: excludedProfilePage(excludedRecord, String(publishedProfiles.indexOf(published) + 1).padStart(3, '0')) });
     continue;
   }
   const profile = await readJson(`${published}/profile.json`);
@@ -321,13 +339,13 @@ await mkdir(join(output, 'media'), { recursive: true });
 await mkdir(join(output, 'overview'), { recursive: true });
 await mkdir(join(output, 'profiles'), { recursive: true });
 await writeFile(join(output, 'index.html'), overviewHomeHtml);
-await writeFile(join(output, 'overview', 'index.html'), overviewAliasHtml);
+await writeFile(join(output, 'overview', 'index.html'), overviewWithExclusionTerminology);
 await writeFile(join(output, 'profiles', 'index.html'), publicCatalogHtml);
 for (const page of profilePages) {
   await mkdir(join(output, 'profiles', page.published), { recursive: true });
   await mkdir(join(output, 'downloads', page.published), { recursive: true });
   await writeFile(join(output, 'profiles', page.published, 'index.html'), publicProfileHtml(page.html));
-  if (!resolvedSet.has(page.published)) {
+  if (!excludedSet.has(page.published)) {
     for (const file of files) await copyFile(join(source, page.published, file), join(output, 'downloads', page.published, file));
   }
 }
