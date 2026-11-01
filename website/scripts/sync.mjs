@@ -163,6 +163,13 @@ const profileLevelProfiles = [
   'zkyus_',
   'zoya._100x',
   'zyr1x1',
+  'editor',
+  'black.airforce.nigga',
+  '2many_memes_in_my_camera_roll',
+  'guywithbadmemes69',
+  'zosttfeed',
+  'slopfeed100m',
+  'zosttified',
   'turtle.4223253',
   'damon.maxx',
   'yearning.ok',
@@ -170,7 +177,7 @@ const profileLevelProfiles = [
   'u1tron7',
   'herogram_50k',
 ];
-const excludedProfiles = ['hnvx.07', 'prime_senchui', 'vlad.aep_', 'nxx._.nmercy', 'dexea.100k', 'igpostinggang', 'rzk.mp4', 'renyajichu', 'hammergag', 'caodogsfofo', 'back', 'short_vibesz', 'oooiway', 'zuxxie.pov', 'extreme.laugh8', 'iron_block2', 'memes.fatafat'];
+const excludedProfiles = ['hnvx.07', 'prime_senchui', 'vlad.aep_', 'nxx._.nmercy', 'dexea.100k', 'igpostinggang', 'rzk.mp4', 'renyajichu', 'hammergag', 'caodogsfofo', 'back', '41.3k', 'short_vibesz', 'oooiway', 'zuxxie.pov', 'extreme.laugh8', 'iron_block2', 'memes.fatafat'];
 const publishedProfiles = [...fullProfiles, ...profileLevelProfiles, ...excludedProfiles];
 const files = ['profile.json', 'discovery.json', 'items.json', 'run.json', 'profile.csv', 'items.csv', 'report.html'];
 const sourceCatalog = JSON.parse(await readFile(join(repo, 'data', 'database', 'profiles', 'index.json'), 'utf8'));

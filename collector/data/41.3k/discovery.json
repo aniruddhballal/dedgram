@@ -1,8 +1,9 @@
 {
   "reel": {
     "items": [],
-    "complete": false,
-    "error": "Grid made no progress for 60 seconds at scroll 13/963 with 0 reel links.",
+    "complete": true,
+    "error": "",
+    "user_verified_zero_reels": true,
     "attempted_at": "2026-11-01T12:35:17.479Z"
   }
 }

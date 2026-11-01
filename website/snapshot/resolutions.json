@@ -234,6 +234,27 @@
       "resolution_note": null,
       "reason": "Instagram reports that this profile is unavailable."
     },
+    "41.3k": {
+      "username": "41.3k",
+      "status": "False identification",
+      "observed_at": "2026-10-28T09:00:39.126Z",
+      "last_fetched_at": "2026-10-28T09:00:39.126Z",
+      "profile_text": null,
+      "bio": "Not shown",
+      "country": "Not shown",
+      "date_joined": "Not shown",
+      "posts_count": "Not shown",
+      "deletion_date_range": null,
+      "age_restriction": null,
+      "minimum_age": null,
+      "false_identification": {
+        "identified_at": "2026-10-28T10:53:22.131Z",
+        "reason": "Manual review: @41.3k was marked as a false profile report and should not be treated as a confirmed account in the collection.",
+        "username_is_syntactically_valid": true
+      },
+      "resolution_note": null,
+      "reason": "Manual review marked this profile report as a false identification."
+    },
     "short_vibesz": {
       "username": "short_vibesz",
       "status": "Deleted or username changed",

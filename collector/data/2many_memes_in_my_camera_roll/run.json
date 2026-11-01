@@ -1,13 +1,13 @@
 {
   "started_at": "2026-11-01T12:28:33.884Z",
   "updated_at": "2026-11-01T12:29:40.239Z",
-  "status": "partial",
+  "status": "complete",
   "phase": "done",
   "scope": [
     "reel_grid"
   ],
   "current_url": null,
-  "error": "reel grid: Grid made no progress for 60 seconds at scroll 23/973 with 0 reel links.",
+  "error": null,
   "progress": {
     "task": "reel_grid",
     "label": "Reel URL discovery",
@@ -17,7 +17,7 @@
     "percent": 100,
     "remaining": 0,
     "current_item": null,
-    "detail": "Stage finished with review required",
+    "detail": "Stage complete — user verified zero reels",
     "updated_at": "2026-11-01T12:29:40.239Z"
   }
 }
