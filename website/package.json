@@ -3,6 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "dev": "node scripts/dev.mjs",
     "sync": "node scripts/sync.mjs",
     "build": "node scripts/build.mjs",
     "refresh": "npm run sync && npm run build"
