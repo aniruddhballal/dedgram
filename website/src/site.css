@@ -48,6 +48,7 @@ main { max-width: 1360px; margin: auto; padding: 0 32px; }
 .process-note h2 { display: inline; font-size: 13px; font-weight: 750; margin: 0 12px 0 0; }
 .process-note p { display: inline; font-size: 13px; color: var(--muted); margin: 0; }
 .overview-stat-strip { grid-template-columns: repeat(5, 1fr); }
+.availability-stat-strip { grid-template-columns: repeat(4, 1fr); }
 .secondary-stats { border-top: 1px solid var(--line); }
 .metric-note { border-top: 1px solid var(--line); padding: 18px 0 16px; }
 .metric-note h2 { margin: 7px 0 2px; font-size: 18px; font-weight: 740; letter-spacing: -.03em; }
