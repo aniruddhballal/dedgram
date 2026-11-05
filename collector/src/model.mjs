@@ -162,7 +162,8 @@ export function reasonsForMissing(missing, item = {}) {
       : 'No readable view count was found on the content page.'
   };
   return Object.fromEntries(missing.map((field) => [field,
-    field === 'views' && item.grid_views_issue ? item.grid_views_issue : defaults[field] || 'No readable value was found.']));
+    field === 'likes' && item.likes_visibility === 'not_shown' ? 'The like control displayed no numeric like count; nearby comment or reshare counts are not likes.'
+      : field === 'views' && item.grid_views_issue ? item.grid_views_issue : defaults[field] || 'No readable value was found.']));
 }
 
 function jsonLdData(scripts) {
@@ -183,26 +184,38 @@ export function itemFromSnapshot(item, snapshot) {
   const description = snapshot.og_description || '';
   const text = snapshot.article_text || '';
   const aria = snapshot.aria_text || '';
-  const fields = [description, aria, text];
-  const findMetric = (names) => {
-    for (let i = 0; i < fields.length; i++) {
+  // A caption may mention counts; only parse the metadata's engagement summary.
+  const localizedDate = [...description.matchAll(/\d{4}年\d{1,2}月\d{1,2}日/g)].at(-1);
+  const engagementDescription = localizedDate ? description.slice(localizedDate.index + localizedDate[0].length)
+    : description.split(/\s[-–]\s/).findLast((part) => /^\d[\d,.]*\s*[KMB]?\s+(likes?|comments?|views?|plays?|reposts?|reshares?)\b|^Liked by\b/i.test(part.trim())) || '';
+  const fields = [engagementDescription, aria, text];
+  const findMetric = (names, includeBody = false) => {
+    // Unscoped body/ARIA text can include comments and recommended reels.
+    for (let i = 0; i < (includeBody ? fields.length : 1); i++) {
       const parsed = metric(fields[i], names);
       if (parsed) return { ...parsed, source: ['og_description', 'aria_label', 'visible_text'][i] };
     }
     return null;
   };
-  const localizedLikes = localizedMetric(description, ['いいね']);
-  let likes = localizedLikes ? { ...localizedLikes, source: 'og_description_localized' } : findMetric(['likes?']);
+  const controlMetric = (kind) => {
+    const evidence = snapshot.engagement?.[kind];
+    const parsed = count(evidence?.raw);
+    return parsed ? { ...parsed, source: 'dom_action_control', label: evidence.label } : null;
+  };
+  const localizedLikes = localizedMetric(engagementDescription, ['いいね']);
+  let likes = controlMetric('likes') || (localizedLikes ? { ...localizedLikes, source: 'og_description_localized' } : findMetric(['likes?']));
   if (!likes) {
-    const others = /\band\s+(\d[\d,.]*\s*[KMB]?)\s+others?\b/i.exec(fields.join('\n'));
+    const others = /\band\s+(\d[\d,.]*\s*[KMB]?)\s+others?\b/i.exec(engagementDescription);
     const parsed = count(others?.[1]);
     if (parsed) likes = { ...parsed, value: parsed.value + 1, source: 'others_plus_one' };
   }
-  const localizedComments = localizedMetric(description, ['コメント']);
+  const localizedComments = localizedMetric(engagementDescription, ['コメント']);
   const comments = findMetric(['comments?']);
-  const resolvedComments = localizedComments ? { ...localizedComments, source: 'og_description_localized' } : comments;
+  const resolvedComments = controlMetric('comments') || (localizedComments ? { ...localizedComments, source: 'og_description_localized' } : comments);
+  const reshares = controlMetric('reshares') || findMetric(['reposts?', 'reshares?']);
+  const shares = controlMetric('shares');
   const views = findMetric(['views?', 'plays?']) || (snapshot.grid_views_raw
-    ? { ...count(snapshot.grid_views_raw), source: 'profile_grid' } : null);
+    ? { ...count(snapshot.grid_views_raw), source: 'profile_grid' } : null) || findMetric(['views?', 'plays?'], true);
   const dateEvidence = resolveReelDate({ ...snapshot, json_ld: structured });
   const date = dateEvidence?.date || null;
   const date_precision = dateEvidence?.date_precision || null;
@@ -224,12 +237,16 @@ export function itemFromSnapshot(item, snapshot) {
     mentions,
     likes,
     comments: resolvedComments,
+    reshares,
+    shares,
+    likes_visibility: snapshot.engagement?.likes_visibility || (likes ? 'count_available' : 'unknown'),
     views,
     thumbnail_url: snapshot.og_image || null,
     media_url: snapshot.og_video || null,
     missing,
-    missing_reasons: reasonsForMissing(missing, item),
-    raw: { description, article_text: text.slice(0, 20000), aria_text: aria.slice(0, 10000), json_ld: structured }
+    missing_reasons: reasonsForMissing(missing, { ...item, likes_visibility: snapshot.engagement?.likes_visibility }),
+    raw: { description, article_text: text.slice(0, 20000), aria_text: aria.slice(0, 10000), json_ld: structured,
+      engagement: snapshot.engagement || null }
   };
 }
 
@@ -256,10 +273,13 @@ export function publicDetailsFromSnapshot(item, snapshot, observedAt = now()) {
     mentions: parsed.mentions || [],
     likes: observedMetric(parsed.likes, observedAt),
     comments: observedMetric(parsed.comments, observedAt),
+    reshares: observedMetric(parsed.reshares, observedAt),
+    shares: observedMetric(parsed.shares, observedAt),
+    likes_visibility: parsed.likes_visibility,
     views: observedMetric(parsed.views, observedAt),
     thumbnail_url: parsed.thumbnail_url || null,
     media_url: parsed.media_url || null,
-    available_fields: ['date', 'caption', 'likes', 'comments', 'views', 'thumbnail_url', 'media_url']
+    available_fields: ['date', 'caption', 'likes', 'comments', 'views', 'reshares', 'shares', 'thumbnail_url', 'media_url']
       .filter((field) => parsed[field] != null),
     raw: {
       description: snapshot.og_description || '',
@@ -268,6 +288,7 @@ export function publicDetailsFromSnapshot(item, snapshot, observedAt = now()) {
       article_text: (snapshot.article_text || '').slice(0, 20000),
       aria_text: (snapshot.aria_text || '').slice(0, 10000),
       json_ld: parsed.raw?.json_ld || {},
+      engagement: snapshot.engagement || null,
       json_ld_scripts: (snapshot.json_ld || []).map((source) => String(source).slice(0, 10000)).slice(0, 20)
     }
   };

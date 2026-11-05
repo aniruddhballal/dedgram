@@ -4,6 +4,7 @@ import { now, publicDetailsFromSnapshot } from './model.mjs';
 import { paths, readJson, writeJson, writeSnapshot } from './store.mjs';
 import { writeReport } from './report.mjs';
 import { normalizeReelDate } from '../../website/lib/reel-date.mjs';
+import { engagementFromDocument } from './reel-engagement.mjs';
 
 const pause = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 const operation = 'automated reel availability check';
@@ -53,8 +54,8 @@ export function posterUsername(snapshot) {
   return null;
 }
 
-async function publicSnapshot(page) {
-  return page.evaluate(() => {
+async function publicSnapshot(page, item) {
+  const snapshot = await page.evaluate(() => {
     const article = document.querySelector('main article, [role="dialog"] article, article')
       || document.querySelector('main') || document.body;
     const meta = (selector) => document.querySelector(selector)?.content || '';
@@ -80,6 +81,8 @@ async function publicSnapshot(page) {
         .map((anchor) => ({ href: anchor.href, text: anchor.innerText || '' }))
     };
   }).catch(() => ({}));
+  snapshot.engagement = await page.evaluate(engagementFromDocument, { shortcode: item.shortcode }).catch(() => ({}));
+  return snapshot;
 }
 
 function observedDetails(item, snapshot, checkedAt, pageUrl) {
@@ -108,7 +111,7 @@ async function checkOne(browser, item) {
     const pageUrl = page.url();
     const text = await page.locator('body').innerText().catch(() => '');
     const classification = classifyPage(pageUrl, response?.status() || null, text);
-    const snapshot = await publicSnapshot(page);
+    const snapshot = await publicSnapshot(page, item);
     return {
       ...classification,
       checked_at: checkedAt,

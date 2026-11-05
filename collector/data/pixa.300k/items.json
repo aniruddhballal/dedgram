@@ -12,13 +12,14 @@
     "caption": "『ONE PIECE』 エルバフ編 最新情報を発表&最 新PV公開 オープニング主題歌&エンディング主題歌、さら にエルバフ編の重要キャラクター「ロキ」のキャストが決 定しました!! ◆オープニング主題歌",
     "hashtags": [],
     "mentions": [],
-    "likes": {
+    "likes": null,
+    "comments": {
       "value": 1,
       "raw": "1",
       "approximate": false,
-      "source": "visible_text"
+      "source": "user_manual_check",
+      "observed_at": "2026-11-05T18:22:41.465Z"
     },
-    "comments": null,
     "views": {
       "value": 12700,
       "raw": "12.7K",
@@ -28,10 +29,10 @@
     "thumbnail_url": "https://instagram.fblr1-5.fna.fbcdn.net/v/t51.82787-15/773589694_17902348746511690_3552448510269267207_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=l-s2K2NTZgIQ7kNvwHw9pid&_nc_oc=AdryygyL6yrdzAHIxHieEyWyf5p-ex1hoa5v2cOZe_3Coop5VcFTCIPZ9xPaO7FA4Mi9pcpNQKkruI_a8E8FJef-&_nc_zt=23&_nc_ht=instagram.fblr1-5.fna&_nc_gid=37KF50fWJ-cJM3eol4rkOA&_nc_ss=7e6a8&oh=00_AQSCWDOmDwjk2HX-Enbo_GlvAgqTr1DeTIelSyZ-GWM9NA&oe=6AE7C669&ig_cache_key=MDJSQVF6QnI0S0hDNEhGNW8tQUVwVnJtRUhHZFZNTVFjZGR6RTpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
     "missing": [
-      "comments"
+      "likes"
     ],
     "missing_reasons": {
-      "comments": "No readable comment count was found on the content page or in its metadata."
+      "likes": "No numeric like count was shown; the previously stored value was manually identified as a comment count."
     },
     "raw": {
       "description": "pixa.300k on August 13, 2026: \"『ONE PIECE』 エルバフ編 最新情報を発表&最 新PV公開 オープニング主題歌&エンディング主題歌、さら にエルバフ編の重要キャラクター「ロキ」のキャストが決 定しました!! ◆オープニング主題歌\". ",
@@ -40,7 +41,28 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:58:15.214Z"
+    "last_attempt_at": "2026-10-28T11:58:15.214Z",
+    "likes_visibility": "not_shown",
+    "metric_corrections": {
+      "likes": {
+        "previous": {
+          "value": 1,
+          "raw": "1",
+          "approximate": false,
+          "source": "visible_text"
+        },
+        "corrected_at": "2026-11-05T18:22:41.465Z",
+        "source": "user_manual_check",
+        "reason": "User confirmed the number stored as likes was the comment count."
+      }
+    },
+    "manual_verification": {
+      "comments": {
+        "value": 1,
+        "verified_by": "user",
+        "verified_at": "2026-11-05T18:22:41.465Z"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -55,13 +77,14 @@
     "caption": "『ONE PIECE』 エルバフ編 最新情報を発表&最 新PV公開 オープニング主題歌&エンディング主題歌、さら にエルバフ編の重要キャラクター「ロキ」のキャストが決 定しました!! ◆オープニング主題歌",
     "hashtags": [],
     "mentions": [],
-    "likes": {
+    "likes": null,
+    "comments": {
       "value": 5,
       "raw": "5",
       "approximate": false,
-      "source": "visible_text"
+      "source": "user_manual_check",
+      "observed_at": "2026-11-05T18:22:41.465Z"
     },
-    "comments": null,
     "views": {
       "value": 9898,
       "raw": "9,898",
@@ -71,10 +94,10 @@
     "thumbnail_url": "https://instagram.fblr24-1.fna.fbcdn.net/v/t51.82787-15/772955235_17902348935511690_7189665635391968635_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=l5sf3Kfku0kQ7kNvwEo8BJt&_nc_oc=Adoz5hnKTMzN_b1169oOYavnL7fPU7gMGnBMX2CMmfssFE64f5OqX8vUAHvSfN4lWW2NUq9u72iGuZ2iVSjvALv9&_nc_zt=23&_nc_ht=instagram.fblr24-1.fna&_nc_gid=1RXyYJChKh_rEozfsZS4Gw&_nc_ss=7f6a8&oh=00_AQQJym3VseQcIm8wVhIJBkOaYnsR__HyK1xK2VeGPpT1xg&oe=6AE7B8EC&ig_cache_key=MDJSQVF6Qm1OY0VpNEhGNW8tQUlvXzhtd0h6ZExHWTNzVlg0czpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
     "missing": [
-      "comments"
+      "likes"
     ],
     "missing_reasons": {
-      "comments": "No readable comment count was found on the content page or in its metadata."
+      "likes": "No numeric like count was shown; the previously stored value was manually identified as a comment count."
     },
     "raw": {
       "description": "pixa.300k on August 13, 2026: \"『ONE PIECE』 エルバフ編 最新情報を発表&最 新PV公開 オープニング主題歌&エンディング主題歌、さら にエルバフ編の重要キャラクター「ロキ」のキャストが決 定しました!! ◆オープニング主題歌\". ",
@@ -83,7 +106,40 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:58:19.151Z"
+    "last_attempt_at": "2026-10-28T11:58:19.151Z",
+    "likes_visibility": "not_shown",
+    "metric_corrections": {
+      "likes": {
+        "previous": {
+          "value": 5,
+          "raw": "5",
+          "approximate": false,
+          "source": "visible_text"
+        },
+        "corrected_at": "2026-11-05T18:22:41.465Z",
+        "source": "user_manual_check",
+        "reason": "User confirmed the number stored as likes was the comment count."
+      }
+    },
+    "manual_verification": {
+      "comments": {
+        "value": 5,
+        "verified_by": "user",
+        "verified_at": "2026-11-05T18:22:41.465Z"
+      },
+      "reshares": {
+        "value": 3,
+        "verified_by": "user",
+        "verified_at": "2026-11-05T18:22:41.465Z"
+      }
+    },
+    "reshares": {
+      "value": 3,
+      "raw": "3",
+      "approximate": false,
+      "source": "user_manual_check",
+      "observed_at": "2026-11-05T18:22:41.465Z"
+    }
   },
   {
     "kind": "reel",
@@ -98,12 +154,7 @@
     "caption": "『ONE PIECE』 エルバフ編 最新情報を発表&最 新PV公開 オープニング主題歌&エンディング主題歌、さら にエルバフ編の重要キャラクター「ロキ」のキャストが決 定しました!! ◆オープニング主題歌",
     "hashtags": [],
     "mentions": [],
-    "likes": {
-      "value": 85,
-      "raw": "85",
-      "approximate": false,
-      "source": "visible_text"
-    },
+    "likes": null,
     "comments": null,
     "views": {
       "value": 160000,
@@ -114,10 +165,12 @@
     "thumbnail_url": "https://instagram.fblr1-3.fna.fbcdn.net/v/t51.82787-15/774281563_17902348629511690_8412360914885815373_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=xaCctuvYWVcQ7kNvwHJNTh9&_nc_oc=Adq2JGMtEGzlDElj0mNDGJ7O6HZedG8Vig9LWCc6mzlDDP_5J0NNTsh_8Lsv_F4aTjwsq3DtWg2jYBvaeJpvWAp4&_nc_zt=23&_nc_ht=instagram.fblr1-3.fna&_nc_gid=9mP7hRTzaR5XAg4mJkwneQ&_nc_ss=7f6a8&oh=00_AQQtsDmtNWmjs9A-o7rMIOkrRWTcq8lxEN9bH2Z9TR-YLg&oe=6AE7BB47&ig_cache_key=MDJSQVF6Qmx1WkppNEhGNW8tQUFvT3RWb0hycldfZEUwc0puWTpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
     "missing": [
+      "likes",
       "comments"
     ],
     "missing_reasons": {
-      "comments": "No readable comment count was found on the content page or in its metadata."
+      "comments": "No readable comment count was found on the content page or in its metadata.",
+      "likes": "Legacy like count is unverified; it may be a comment count incorrectly extracted after the Likes placeholder."
     },
     "raw": {
       "description": "pixa.300k on August 13, 2026: \"『ONE PIECE』 エルバフ編 最新情報を発表&最 新PV公開 オープニング主題歌&エンディング主題歌、さら にエルバフ編の重要キャラクター「ロキ」のキャストが決 定しました!! ◆オープニング主題歌\". ",
@@ -126,7 +179,21 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:58:23.339Z"
+    "last_attempt_at": "2026-10-28T11:58:23.339Z",
+    "likes_visibility": "unverified",
+    "metric_corrections": {
+      "likes": {
+        "previous": {
+          "value": 85,
+          "raw": "85",
+          "approximate": false,
+          "source": "visible_text"
+        },
+        "corrected_at": "2026-11-05T18:22:41.465Z",
+        "source": "offline_evidence_validation",
+        "reason": "Legacy visible-text extraction assigned an unlabeled number after the Likes placeholder to likes; this value is unverified and withheld pending review."
+      }
+    }
   },
   {
     "kind": "reel",
@@ -141,12 +208,7 @@
     "caption": "『ONE PIECE』 エルバフ編 最新情報を発表&最 新PV公開 オープニング主題歌&エンディング主題歌、さら にエルバフ編の重要キャラクター「ロキ」のキャストが決 定しました!! ◆オープニング主題歌",
     "hashtags": [],
     "mentions": [],
-    "likes": {
-      "value": 5,
-      "raw": "5",
-      "approximate": false,
-      "source": "visible_text"
-    },
+    "likes": null,
     "comments": null,
     "views": {
       "value": 60900,
@@ -157,10 +219,12 @@
     "thumbnail_url": "https://instagram.fblr24-4.fna.fbcdn.net/v/t51.82787-15/774280968_17902348278511690_138640147511582339_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=vPQguv2eGY8Q7kNvwGD-CAb&_nc_oc=AdoDVxrtBGX2YjKwQvvHxiKuMMxLu_fHdF7ybT5q1PTToZb3HS4YP0bNlNOPvkdj7xf9E0bUpJ6aXn2f2cTvfbTp&_nc_zt=23&_nc_ht=instagram.fblr24-4.fna&_nc_gid=7nitO5R2O8pbX87ONJ0v7w&_nc_ss=7f6a8&oh=00_AQRx1uY6WZS8KhD_yjGFmE6HtskT5xjHxAKD6TugHpsvUg&oe=6AE7AD74&ig_cache_key=MDJSQVF6QmdpWEppNEhGNW8tQUVvNHlVVUhlb3pzQVlNZUNjZzpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
     "missing": [
+      "likes",
       "comments"
     ],
     "missing_reasons": {
-      "comments": "No readable comment count was found on the content page or in its metadata."
+      "comments": "No readable comment count was found on the content page or in its metadata.",
+      "likes": "Legacy like count is unverified; it may be a comment count incorrectly extracted after the Likes placeholder."
     },
     "raw": {
       "description": "pixa.300k on August 13, 2026: \"『ONE PIECE』 エルバフ編 最新情報を発表&最 新PV公開 オープニング主題歌&エンディング主題歌、さら にエルバフ編の重要キャラクター「ロキ」のキャストが決 定しました!! ◆オープニング主題歌\". ",
@@ -169,7 +233,21 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:58:27.548Z"
+    "last_attempt_at": "2026-10-28T11:58:27.548Z",
+    "likes_visibility": "unverified",
+    "metric_corrections": {
+      "likes": {
+        "previous": {
+          "value": 5,
+          "raw": "5",
+          "approximate": false,
+          "source": "visible_text"
+        },
+        "corrected_at": "2026-11-05T18:22:41.465Z",
+        "source": "offline_evidence_validation",
+        "reason": "Legacy visible-text extraction assigned an unlabeled number after the Likes placeholder to likes; this value is unverified and withheld pending review."
+      }
+    }
   },
   {
     "kind": "reel",
@@ -184,12 +262,7 @@
     "caption": "『ONE PIECE』 エルバフ編 最新情報を発表&最 新PV公開 オープニング主題歌&エンディング主題歌、さら にエルバフ編の重要キャラクター「ロキ」のキャストが決 定しました!! ◆オープニング主題歌",
     "hashtags": [],
     "mentions": [],
-    "likes": {
-      "value": 5,
-      "raw": "5",
-      "approximate": false,
-      "source": "visible_text"
-    },
+    "likes": null,
     "comments": null,
     "views": {
       "value": 29700,
@@ -200,10 +273,12 @@
     "thumbnail_url": "https://instagram.fblr24-1.fna.fbcdn.net/v/t51.82787-15/773981561_17902348368511690_7911240583526254838_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=0WpmEIOI3W4Q7kNvwFm4gfZ&_nc_oc=AdrtzMg7rw_j6BD3RG2iqxErZ2tgWA0_EiaJPCWsWKJqTJ6cH4CXGaTrEUBmf5733nEJ5DhHf22hbc9ZOuJePmEs&_nc_zt=23&_nc_ht=instagram.fblr24-1.fna&_nc_gid=xUq8pfNNJCNY5yDqjmQDaw&_nc_ss=7f6a8&oh=00_AQSy-uZaVjrwYS79fArT9CSQ7FVmB9Di77FQ3NbCePT2ng&oe=6AE7B209&ig_cache_key=MDJSQVF6Qm5rRklpNEhGNW8tQU1xQ0prc0haVi1LYmZhSXZDazpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
     "missing": [
+      "likes",
       "comments"
     ],
     "missing_reasons": {
-      "comments": "No readable comment count was found on the content page or in its metadata."
+      "comments": "No readable comment count was found on the content page or in its metadata.",
+      "likes": "Legacy like count is unverified; it may be a comment count incorrectly extracted after the Likes placeholder."
     },
     "raw": {
       "description": "pixa.300k on August 13, 2026: \"『ONE PIECE』 エルバフ編 最新情報を発表&最 新PV公開 オープニング主題歌&エンディング主題歌、さら にエルバフ編の重要キャラクター「ロキ」のキャストが決 定しました!! ◆オープニング主題歌\". ",
@@ -212,7 +287,21 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:58:32.140Z"
+    "last_attempt_at": "2026-10-28T11:58:32.140Z",
+    "likes_visibility": "unverified",
+    "metric_corrections": {
+      "likes": {
+        "previous": {
+          "value": 5,
+          "raw": "5",
+          "approximate": false,
+          "source": "visible_text"
+        },
+        "corrected_at": "2026-11-05T18:22:41.465Z",
+        "source": "offline_evidence_validation",
+        "reason": "Legacy visible-text extraction assigned an unlabeled number after the Likes placeholder to likes; this value is unverified and withheld pending review."
+      }
+    }
   },
   {
     "kind": "reel",
@@ -227,12 +316,7 @@
     "caption": "『ONE PIECE』 エルバフ編 最新情報を発表&最 新PV公開 オープニング主題歌&エンディング主題歌、さら にエルバフ編の重要キャラクター「ロキ」のキャストが決 定しました!! ◆オープニング主題歌",
     "hashtags": [],
     "mentions": [],
-    "likes": {
-      "value": 4,
-      "raw": "4",
-      "approximate": false,
-      "source": "visible_text"
-    },
+    "likes": null,
     "comments": null,
     "views": {
       "value": 4811,
@@ -243,10 +327,12 @@
     "thumbnail_url": "https://instagram.fblr1-9.fna.fbcdn.net/v/t51.82787-15/772263926_17902347498511690_7462311988359114011_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=A4lv7yTfq2wQ7kNvwFRJ5zy&_nc_oc=AdrL3mghiOtMV0ODY1aPikrZKyCOqVlm2K55nSlBZPNZGdE97kGJclbs9o1TiqS0WhcfAtsNUB87IDyZw8jHQUMw&_nc_zt=23&_nc_ht=instagram.fblr1-9.fna&_nc_gid=n3la8LkBQXguddHDttYQIw&_nc_ss=7f6a8&oh=00_AQQdb7nUe9QTK4Z_qW9GctxKHRYSL76lRx0OhQDE9janVg&oe=6AE7C918&ig_cache_key=MDJSQVF6QnZiUEJ5NEhGNW8tQUVwZFN4Y0hOM1dQWnh1dFNHVTpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
     "missing": [
+      "likes",
       "comments"
     ],
     "missing_reasons": {
-      "comments": "No readable comment count was found on the content page or in its metadata."
+      "comments": "No readable comment count was found on the content page or in its metadata.",
+      "likes": "Legacy like count is unverified; it may be a comment count incorrectly extracted after the Likes placeholder."
     },
     "raw": {
       "description": "pixa.300k on August 13, 2026: \"『ONE PIECE』 エルバフ編 最新情報を発表&最 新PV公開 オープニング主題歌&エンディング主題歌、さら にエルバフ編の重要キャラクター「ロキ」のキャストが決 定しました!! ◆オープニング主題歌\". ",
@@ -255,7 +341,21 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:58:36.569Z"
+    "last_attempt_at": "2026-10-28T11:58:36.569Z",
+    "likes_visibility": "unverified",
+    "metric_corrections": {
+      "likes": {
+        "previous": {
+          "value": 4,
+          "raw": "4",
+          "approximate": false,
+          "source": "visible_text"
+        },
+        "corrected_at": "2026-11-05T18:22:41.465Z",
+        "source": "offline_evidence_validation",
+        "reason": "Legacy visible-text extraction assigned an unlabeled number after the Likes placeholder to likes; this value is unverified and withheld pending review."
+      }
+    }
   },
   {
     "kind": "reel",
@@ -270,12 +370,7 @@
     "caption": "『ONE PIECE』 エルバフ編 最新情報を発表&最 新PV公開 オープニング主題歌&エンディング主題歌、さら にエルバフ編の重要キャラクター「ロキ」のキャストが決 定しました!! ◆オープニング主題歌",
     "hashtags": [],
     "mentions": [],
-    "likes": {
-      "value": 787,
-      "raw": "787",
-      "approximate": false,
-      "source": "visible_text"
-    },
+    "likes": null,
     "comments": null,
     "views": {
       "value": 3900000,
@@ -286,10 +381,12 @@
     "thumbnail_url": "https://instagram.fblr1-7.fna.fbcdn.net/v/t51.82787-15/773603494_17902347117511690_8001859374282453121_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=hSevOPyzu5AQ7kNvwE5mwsz&_nc_oc=Adp4BJQIzTmtl-qpNvDNk6Q8q3hFkpXI0OukutmogsGw0nkL2BI_RJ-oDFuRII5y3TazmBrih-fE9-waiEtewsqc&_nc_zt=23&_nc_ht=instagram.fblr1-7.fna&_nc_gid=TuUiQYxwET1kSVGV_AOaSg&_nc_ss=7f6a8&oh=00_AQQi93BlEdmVC8LZo6wky8ewrizNlMZhf47ixHx6c8dWCw&oe=6AE7A5E7&ig_cache_key=MDJSQVF6QnFaQUhDNEhGNW8tQUFyRWxRQUh0RkFNYjRFd3ZJbzpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
     "missing": [
+      "likes",
       "comments"
     ],
     "missing_reasons": {
-      "comments": "No readable comment count was found on the content page or in its metadata."
+      "comments": "No readable comment count was found on the content page or in its metadata.",
+      "likes": "Legacy like count is unverified; it may be a comment count incorrectly extracted after the Likes placeholder."
     },
     "raw": {
       "description": "pixa.300k on August 13, 2026: \"『ONE PIECE』 エルバフ編 最新情報を発表&最 新PV公開 オープニング主題歌&エンディング主題歌、さら にエルバフ編の重要キャラクター「ロキ」のキャストが決 定しました!! ◆オープニング主題歌\". ",
@@ -298,7 +395,21 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:58:40.568Z"
+    "last_attempt_at": "2026-10-28T11:58:40.568Z",
+    "likes_visibility": "unverified",
+    "metric_corrections": {
+      "likes": {
+        "previous": {
+          "value": 787,
+          "raw": "787",
+          "approximate": false,
+          "source": "visible_text"
+        },
+        "corrected_at": "2026-11-05T18:22:41.465Z",
+        "source": "offline_evidence_validation",
+        "reason": "Legacy visible-text extraction assigned an unlabeled number after the Likes placeholder to likes; this value is unverified and withheld pending review."
+      }
+    }
   },
   {
     "kind": "reel",
@@ -313,12 +424,7 @@
     "caption": "『ONE PIECE』 エルバフ編 最新情報を発表&最 新PV公開 オープニング主題歌&エンディング主題歌、さら にエルバフ編の重要キャラクター「ロキ」のキャストが決 定しました!! ◆オープニング主題歌",
     "hashtags": [],
     "mentions": [],
-    "likes": {
-      "value": 5,
-      "raw": "5",
-      "approximate": false,
-      "source": "visible_text"
-    },
+    "likes": null,
     "comments": null,
     "views": {
       "value": 39900,
@@ -329,10 +435,12 @@
     "thumbnail_url": "https://instagram.fblr1-8.fna.fbcdn.net/v/t51.82787-15/773052287_17902347036511690_5669669181949175443_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=2Iohznq-RwEQ7kNvwG6AlZv&_nc_oc=AdrgDpIaxzi3643voeB3Ctccxyj2YTlVCwPuV5V0jPoeJ2VZvZCVaOxGd6lbxIt8NIO2NLE0z3oYNax8F-7QayYh&_nc_zt=23&_nc_ht=instagram.fblr1-8.fna&_nc_gid=1H9ZMmL_EyzCYv4q36Vhlg&_nc_ss=7f6a8&oh=00_AQT2vAUdcWFlgQcHKh2i-ZeNAhTQH6LtWoxUvq9Vhdsgrw&oe=6AE7CC5A&ig_cache_key=MDJSQVF6Qm4tWEV5NEhGcG8tQU1yTndmc0hGTGF1VHBObUQtQTpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
     "missing": [
+      "likes",
       "comments"
     ],
     "missing_reasons": {
-      "comments": "No readable comment count was found on the content page or in its metadata."
+      "comments": "No readable comment count was found on the content page or in its metadata.",
+      "likes": "Legacy like count is unverified; it may be a comment count incorrectly extracted after the Likes placeholder."
     },
     "raw": {
       "description": "pixa.300k on August 13, 2026: \"『ONE PIECE』 エルバフ編 最新情報を発表&最 新PV公開 オープニング主題歌&エンディング主題歌、さら にエルバフ編の重要キャラクター「ロキ」のキャストが決 定しました!! ◆オープニング主題歌\". ",
@@ -341,7 +449,21 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:58:44.529Z"
+    "last_attempt_at": "2026-10-28T11:58:44.529Z",
+    "likes_visibility": "unverified",
+    "metric_corrections": {
+      "likes": {
+        "previous": {
+          "value": 5,
+          "raw": "5",
+          "approximate": false,
+          "source": "visible_text"
+        },
+        "corrected_at": "2026-11-05T18:22:41.465Z",
+        "source": "offline_evidence_validation",
+        "reason": "Legacy visible-text extraction assigned an unlabeled number after the Likes placeholder to likes; this value is unverified and withheld pending review."
+      }
+    }
   },
   {
     "kind": "reel",
@@ -356,12 +478,7 @@
     "caption": "『ONE PIECE』 エルバフ編 最新情報を発表&最新PV公 開 オープニング主題歌&エンディング主題歌、さらに エルバフ編の重要キャラクター 「ロキ」のキャストが 決定しました!! ◆オープニング主題歌",
     "hashtags": [],
     "mentions": [],
-    "likes": {
-      "value": 1,
-      "raw": "1",
-      "approximate": false,
-      "source": "visible_text"
-    },
+    "likes": null,
     "comments": null,
     "views": {
       "value": 11700,
@@ -372,10 +489,12 @@
     "thumbnail_url": "https://instagram.fblr24-4.fna.fbcdn.net/v/t51.82787-15/774267534_17902295190511690_5570981260600603673_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=4IZ5G2B-M50Q7kNvwEVG3uh&_nc_oc=AdpLxnWVUdzK_9UjcJGHsczNu8yQzFrQW7xKWl66umkDYtK3EkWEMYs4ADDSB-LE92KcgNsjtEuzesqJakU612vk&_nc_zt=23&_nc_ht=instagram.fblr24-4.fna&_nc_gid=6guTIBaWT9MbSpjqzcsQIQ&_nc_ss=7f6a8&oh=00_AQTWj85hZvWuWoquDnMydI147GJThF7-knzu_nqrhkm4gA&oe=6AE7B366&ig_cache_key=MDJSQVF6Qm81aUppNEhDcG8tQUVxZ2Z1a0g4QmxRVFJuMGRMQTpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
     "missing": [
+      "likes",
       "comments"
     ],
     "missing_reasons": {
-      "comments": "No readable comment count was found on the content page or in its metadata."
+      "comments": "No readable comment count was found on the content page or in its metadata.",
+      "likes": "Legacy like count is unverified; it may be a comment count incorrectly extracted after the Likes placeholder."
     },
     "raw": {
       "description": "pixa.300k on August 13, 2026: \"『ONE PIECE』 エルバフ編 最新情報を発表&最新PV公 開 オープニング主題歌&エンディング主題歌、さらに エルバフ編の重要キャラクター 「ロキ」のキャストが 決定しました!! ◆オープニング主題歌\". ",
@@ -384,7 +503,21 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:58:48.530Z"
+    "last_attempt_at": "2026-10-28T11:58:48.530Z",
+    "likes_visibility": "unverified",
+    "metric_corrections": {
+      "likes": {
+        "previous": {
+          "value": 1,
+          "raw": "1",
+          "approximate": false,
+          "source": "visible_text"
+        },
+        "corrected_at": "2026-11-05T18:22:41.465Z",
+        "source": "offline_evidence_validation",
+        "reason": "Legacy visible-text extraction assigned an unlabeled number after the Likes placeholder to likes; this value is unverified and withheld pending review."
+      }
+    }
   },
   {
     "kind": "reel",
@@ -402,12 +535,7 @@
       "#神の騎士団1"
     ],
     "mentions": [],
-    "likes": {
-      "value": 1,
-      "raw": "1",
-      "approximate": false,
-      "source": "visible_text"
-    },
+    "likes": null,
     "comments": null,
     "views": {
       "value": 9637,
@@ -418,10 +546,12 @@
     "thumbnail_url": "https://instagram.fblr1-9.fna.fbcdn.net/v/t51.82787-15/764863290_17901361950511690_7711569425727829583_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=BhZyaNY2-8gQ7kNvwFFtGgE&_nc_oc=AdpGPss9frhnsFgv79q3JfKAsqIaolcQMfPLX5C7qMB8e22UPKPEn3zL2-u3ASYLZhJog16Z8F6ehLovYXHjdSEq&_nc_zt=23&_nc_ht=instagram.fblr1-9.fna&_nc_gid=F2mvfNak4KtKOIptdWDepw&_nc_ss=7f6a8&oh=00_AQQ-3LwoCH0acpcovFGOGu4FxbKsyQ5a2WWTyG8CfuPsVA&oe=6AE7A97B&ig_cache_key=MDJSQVF6QmpyamxpMEhNWmstQUVwU0RxQUhpUDhFYTA4MlJmazpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
     "missing": [
+      "likes",
       "comments"
     ],
     "missing_reasons": {
-      "comments": "No readable comment count was found on the content page or in its metadata."
+      "comments": "No readable comment count was found on the content page or in its metadata.",
+      "likes": "Legacy like count is unverified; it may be a comment count incorrectly extracted after the Likes placeholder."
     },
     "raw": {
       "description": "pixa.300k on August 7, 2026: \"TVアニメ『ONE PIECE』 神の騎士団\n\nキャスト解禁&最新PVを公開\n\n現在、アニメ「エルバフ編」が放送中!\n\n今後アニメに登場予定の神の騎士団、4人の映像と、 軍子宮、ソマーズ聖、キリンガム聖のキャストを公開!\n\n◆軍子宮:\n\n上坂すみれさん\n\n◆ソマーズ聖:\n\n安元洋貴さん\n\n◆キリンガム聖: 立花慎之介さん\n\nそして神の騎士団団長 シャムロック聖は、以前発表し たとおり、津田健次郎さんが演じます。ルフィ達の新たな冒険が描かれる「エルバフ編」!今後 の放送も、ぜひご注目ください。\n\nTVアニメ『ONE PIECE』\n\nエルバフ編\n\n毎週日曜よる11:15~\n\n全国フジテレビ系列にて放送中\n\n#ONEPIECE #神の騎士団1\". ",
@@ -430,7 +560,21 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:58:52.600Z"
+    "last_attempt_at": "2026-10-28T11:58:52.600Z",
+    "likes_visibility": "unverified",
+    "metric_corrections": {
+      "likes": {
+        "previous": {
+          "value": 1,
+          "raw": "1",
+          "approximate": false,
+          "source": "visible_text"
+        },
+        "corrected_at": "2026-11-05T18:22:41.465Z",
+        "source": "offline_evidence_validation",
+        "reason": "Legacy visible-text extraction assigned an unlabeled number after the Likes placeholder to likes; this value is unverified and withheld pending review."
+      }
+    }
   },
   {
     "kind": "reel",
@@ -448,12 +592,7 @@
       "#ウルフドッグス名古屋"
     ],
     "mentions": [],
-    "likes": {
-      "value": 1,
-      "raw": "1",
-      "approximate": false,
-      "source": "visible_text"
-    },
+    "likes": null,
     "comments": null,
     "views": {
       "value": 7929,
@@ -464,10 +603,12 @@
     "thumbnail_url": "https://instagram.fblr24-3.fna.fbcdn.net/v/t51.82787-15/766287675_17901360816511690_7641068152467413856_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=mO1bETdv6xgQ7kNvwHrOJA4&_nc_oc=AdoE1c4cGLCDiZknW4jRPjb9tukhReZDMdgaWTzfQ0NFXKIfN9TRAiwzc25na5U7_-rF8hiflDhkFEChtJoyF4ps&_nc_zt=23&_nc_ht=instagram.fblr24-3.fna&_nc_gid=NDHmoo8CC_2kD4eGp0p3ZQ&_nc_ss=7f6a8&oh=00_AQTqtqd9-GjBZneBWBZm4Z8SzPL5DNGZYOMSN7HyaXhcyA&oe=6AE7C00D&ig_cache_key=MDJSQVF6Qmp1ZnJDMEhNWmstQU1yYWRsd0hBSWNLYW1EYlhpUTpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
     "missing": [
+      "likes",
       "comments"
     ],
     "missing_reasons": {
-      "comments": "No readable comment count was found on the content page or in its metadata."
+      "comments": "No readable comment count was found on the content page or in its metadata.",
+      "likes": "Legacy like count is unverified; it may be a comment count incorrectly extracted after the Likes placeholder."
     },
     "raw": {
       "description": "pixa.300k on August 7, 2026: \"この落ち方よ..\n\nジャンプスピンサーブってやつかなジャンプ\n\nスピンサーブ\n\n(トップスピン強め)+ほんの少しサイド回\n\n転混ざりって感じなのかな横から見たら絶対\n\n落ちてるんだろうなバレー\n\nボールちゃんと勉強しよ.....\n\n#宮浦健人選手 #ウルフドッグス名古屋\". ",
@@ -476,7 +617,21 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:58:56.626Z"
+    "last_attempt_at": "2026-10-28T11:58:56.626Z",
+    "likes_visibility": "unverified",
+    "metric_corrections": {
+      "likes": {
+        "previous": {
+          "value": 1,
+          "raw": "1",
+          "approximate": false,
+          "source": "visible_text"
+        },
+        "corrected_at": "2026-11-05T18:22:41.465Z",
+        "source": "offline_evidence_validation",
+        "reason": "Legacy visible-text extraction assigned an unlabeled number after the Likes placeholder to likes; this value is unverified and withheld pending review."
+      }
+    }
   },
   {
     "kind": "reel",
@@ -494,12 +649,7 @@
       "#ウルフドッグス名古屋"
     ],
     "mentions": [],
-    "likes": {
-      "value": 3,
-      "raw": "3",
-      "approximate": false,
-      "source": "visible_text"
-    },
+    "likes": null,
     "comments": null,
     "views": {
       "value": 15600,
@@ -510,10 +660,12 @@
     "thumbnail_url": "https://instagram.fblr1-9.fna.fbcdn.net/v/t51.82787-15/766221163_17901360750511690_8709433119363754385_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=pvefQFO4QPkQ7kNvwHvGGcL&_nc_oc=Adp_5sscIDZ20xP0OFRnaUOX1tnjMjUwGdFgyLNbnydwDKH0mcLB2JrQRbNeuqnppunLFkidacL9AF9saQ9bh1CO&_nc_zt=23&_nc_ht=instagram.fblr1-9.fna&_nc_gid=xF5YE2-V7c8pzRF2znilJg&_nc_ss=7f6a8&oh=00_AQScxYvgjbUcqBVXAPcuy-hHrRUByzcskDN-aY31QgNGVg&oe=6AE7A9F6&ig_cache_key=MDJSQVF6Qm11YnF5MEhNWmstQUVyR2gxZ0hSeC1lZUpIcHNnbzpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
     "missing": [
+      "likes",
       "comments"
     ],
     "missing_reasons": {
-      "comments": "No readable comment count was found on the content page or in its metadata."
+      "comments": "No readable comment count was found on the content page or in its metadata.",
+      "likes": "Legacy like count is unverified; it may be a comment count incorrectly extracted after the Likes placeholder."
     },
     "raw": {
       "description": "pixa.300k on August 7, 2026: \"この落ち方よ...\n\nジャンプスピンサーブってやつかな\n\nジャンプスピンサーブ(トップスピン強め)+ほんの少し サイド回転 混ざりって感じなのかな 横から見たら絶対落ちてるんだろうな バレーボールちゃんと勉強しよ...\n\n#宮浦健人選手 #ウルフドッグス名古屋\". ",
@@ -522,7 +674,21 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:59:00.622Z"
+    "last_attempt_at": "2026-10-28T11:59:00.622Z",
+    "likes_visibility": "unverified",
+    "metric_corrections": {
+      "likes": {
+        "previous": {
+          "value": 3,
+          "raw": "3",
+          "approximate": false,
+          "source": "visible_text"
+        },
+        "corrected_at": "2026-11-05T18:22:41.465Z",
+        "source": "offline_evidence_validation",
+        "reason": "Legacy visible-text extraction assigned an unlabeled number after the Likes placeholder to likes; this value is unverified and withheld pending review."
+      }
+    }
   },
   {
     "kind": "reel",
@@ -540,12 +706,7 @@
       "#ウルフドッグス名古屋"
     ],
     "mentions": [],
-    "likes": {
-      "value": 8,
-      "raw": "8",
-      "approximate": false,
-      "source": "visible_text"
-    },
+    "likes": null,
     "comments": null,
     "views": {
       "value": 19200,
@@ -556,10 +717,12 @@
     "thumbnail_url": "https://instagram.fblr24-2.fna.fbcdn.net/v/t51.82787-15/765248372_17901204048511690_6466130119768888826_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=jxyYulVUbk0Q7kNvwFjp0jk&_nc_oc=AdpuVVLw8Sdi4r_cKGHF1IGvXbZQbwaM_B43-FStqGk2Z4nznulWW3KF5GeTjOOIvZE4MvBhTXITdLZSogZhhNsO&_nc_zt=23&_nc_ht=instagram.fblr24-2.fna&_nc_gid=edMQyRUWf6i2LbBpNk6m0w&_nc_ss=7f6a8&oh=00_AQSHBqbi1Rvnu1-VBQT5TTeFkpdPS9v-sRJUuNmFdWFLJg&oe=6AE7C360&ig_cache_key=MDJSQVF6Qm5URG5DMEhESmstQU1vQ1hkd0hGVV84V2ZwVlI3dzpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
     "missing": [
+      "likes",
       "comments"
     ],
     "missing_reasons": {
-      "comments": "No readable comment count was found on the content page or in its metadata."
+      "comments": "No readable comment count was found on the content page or in its metadata.",
+      "likes": "Legacy like count is unverified; it may be a comment count incorrectly extracted after the Likes placeholder."
     },
     "raw": {
       "description": "pixa.300k on August 6, 2026: \"この落ち方よ..\n\nジャンプスピンサーブってやつかなジャンプ\n\nスピンサーブ\n\n(トップスピン強め)+ほんの少しサイド回\n\n転混ざりって感じなのかな横から見たら絶対\n\n落ちてるんだろうなバレー\n\nボールちゃんと勉強しよ.....\n\n#宮浦健人選手 #ウルフドッグス名古屋\". ",
@@ -568,7 +731,21 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:59:04.613Z"
+    "last_attempt_at": "2026-10-28T11:59:04.613Z",
+    "likes_visibility": "unverified",
+    "metric_corrections": {
+      "likes": {
+        "previous": {
+          "value": 8,
+          "raw": "8",
+          "approximate": false,
+          "source": "visible_text"
+        },
+        "corrected_at": "2026-11-05T18:22:41.465Z",
+        "source": "offline_evidence_validation",
+        "reason": "Legacy visible-text extraction assigned an unlabeled number after the Likes placeholder to likes; this value is unverified and withheld pending review."
+      }
+    }
   },
   {
     "kind": "reel",
@@ -586,12 +763,7 @@
       "#ウルフドッグス名古屋"
     ],
     "mentions": [],
-    "likes": {
-      "value": 3,
-      "raw": "3",
-      "approximate": false,
-      "source": "visible_text"
-    },
+    "likes": null,
     "comments": null,
     "views": {
       "value": 15400,
@@ -602,10 +774,12 @@
     "thumbnail_url": "https://instagram.fblr1-6.fna.fbcdn.net/v/t51.82787-15/768704064_17901184272511690_6037406148180605662_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=MrLjh8dlgwwQ7kNvwFSgkN4&_nc_oc=AdrRj6H28CdIlt58-FOoEMBY6NhasWR_FoSoAZJkdu2iPN_jrSep_N0twyNYPqZ9yB6dRm2eTRqB1SwxvkID8min&_nc_zt=23&_nc_ht=instagram.fblr1-6.fna&_nc_gid=fBWNYTOsOTZNLeomMK7HYg&_nc_ss=7f6a8&oh=00_AQQcLoAAYx6SXYf4gxVxwDL52AejR7bYJNcJ-BT2qgi18w&oe=6AE79F3B&ig_cache_key=MDJSQVF6QmtCXzBTMEhDSmstQU1veW4wRUg1eXpKVTk1NkVIczpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
     "missing": [
+      "likes",
       "comments"
     ],
     "missing_reasons": {
-      "comments": "No readable comment count was found on the content page or in its metadata."
+      "comments": "No readable comment count was found on the content page or in its metadata.",
+      "likes": "Legacy like count is unverified; it may be a comment count incorrectly extracted after the Likes placeholder."
     },
     "raw": {
       "description": "pixa.300k on August 6, 2026: \"この落ち方よ..\n\nジャンプスピンサーブってやつかなジャンプ\n\nスピンサーブ\n\n(トップスピン強め)+ほんの少しサイド回\n\n転混ざりって感じなのかな横から見たら絶対\n\n落ちてるんだろうなバレー\n\nボールちゃんと勉強しよ.....\n\n#宮浦健人選手 #ウルフドッグス名古屋\". ",
@@ -614,7 +788,21 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:59:08.896Z"
+    "last_attempt_at": "2026-10-28T11:59:08.896Z",
+    "likes_visibility": "unverified",
+    "metric_corrections": {
+      "likes": {
+        "previous": {
+          "value": 3,
+          "raw": "3",
+          "approximate": false,
+          "source": "visible_text"
+        },
+        "corrected_at": "2026-11-05T18:22:41.465Z",
+        "source": "offline_evidence_validation",
+        "reason": "Legacy visible-text extraction assigned an unlabeled number after the Likes placeholder to likes; this value is unverified and withheld pending review."
+      }
+    }
   },
   {
     "kind": "reel",
@@ -632,12 +820,7 @@
       "#ウルフドッグス名古屋"
     ],
     "mentions": [],
-    "likes": {
-      "value": 2,
-      "raw": "2",
-      "approximate": false,
-      "source": "visible_text"
-    },
+    "likes": null,
     "comments": null,
     "views": {
       "value": 35100,
@@ -648,10 +831,12 @@
     "thumbnail_url": "https://instagram.fblr24-1.fna.fbcdn.net/v/t51.82787-15/766723816_17901184317511690_1291872163535502018_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=pynpbEXOfSIQ7kNvwElIhog&_nc_oc=AdpPaZAXtOT2VMcJtSI3IEc03DUP5yuzZhhItIUCMX-rGirvqabuo6NJ9XwJb6FUY62Md89mE90RlODyArBD_8Gj&_nc_zt=23&_nc_ht=instagram.fblr24-1.fna&_nc_gid=zUzs9JaM4wPZzJI4SM6iUQ&_nc_ss=7f6a8&oh=00_AQRX0Hx2FblP-B_oVWHDDI0p-QtAxWHuO7VmokYpiqy3kw&oe=6AE7B953&ig_cache_key=MDJSQVF6QnVoR3N5MEhDSmstQUFyWVRVUUg0NmJ0RWNLNnYxbzpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
     "missing": [
+      "likes",
       "comments"
     ],
     "missing_reasons": {
-      "comments": "No readable comment count was found on the content page or in its metadata."
+      "comments": "No readable comment count was found on the content page or in its metadata.",
+      "likes": "Legacy like count is unverified; it may be a comment count incorrectly extracted after the Likes placeholder."
     },
     "raw": {
       "description": "pixa.300k on August 5, 2026: \"この落ち方よ...\n\nジャンプスピンサーブってやつかな\n\nジャンプスピンサーブ(トップスピン強め)+ほんの少し サイド回転 混ざりって感じなのかな 横から見たら絶対落ちてるんだろうな バレーボールちゃんと勉強しよ...\n\n#宮浦健人選手 #ウルフドッグス名古屋\". ",
@@ -660,7 +845,21 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:59:13.139Z"
+    "last_attempt_at": "2026-10-28T11:59:13.139Z",
+    "likes_visibility": "unverified",
+    "metric_corrections": {
+      "likes": {
+        "previous": {
+          "value": 2,
+          "raw": "2",
+          "approximate": false,
+          "source": "visible_text"
+        },
+        "corrected_at": "2026-11-05T18:22:41.465Z",
+        "source": "offline_evidence_validation",
+        "reason": "Legacy visible-text extraction assigned an unlabeled number after the Likes placeholder to likes; this value is unverified and withheld pending review."
+      }
+    }
   },
   {
     "kind": "reel",
@@ -678,12 +877,7 @@
       "#ウルフドッグス名古屋"
     ],
     "mentions": [],
-    "likes": {
-      "value": 11,
-      "raw": "11",
-      "approximate": false,
-      "source": "visible_text"
-    },
+    "likes": null,
     "comments": null,
     "views": {
       "value": 43800,
@@ -694,10 +888,12 @@
     "thumbnail_url": "https://instagram.fblr1-10.fna.fbcdn.net/v/t51.82787-15/766320686_17901184353511690_7458590336864731557_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=3ntOO_PoyN0Q7kNvwFIrV_k&_nc_oc=Adq0-3W_Sci2RhzrY9nD8jtWD8gniDzS3o-RcLdb7Nn4w2xsEaT0qWKdBrLwa6UDS2IdzATqw8lzDqhL2Mh3QwYk&_nc_zt=23&_nc_ht=instagram.fblr1-10.fna&_nc_gid=6JIa-IL9LBCd8Bd1qgLTRQ&_nc_ss=7f6a8&oh=00_AQS4qkOlZkyAdwEvOhIT7dmegF7L0OTCDNJgIpAOtbB83w&oe=6AE7CE64&ig_cache_key=MDJSQVF6Qmk0Z3JTMEhDSmstQUFvcGMwWUhaRHlDWjZYQl9fRTpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
     "missing": [
+      "likes",
       "comments"
     ],
     "missing_reasons": {
-      "comments": "No readable comment count was found on the content page or in its metadata."
+      "comments": "No readable comment count was found on the content page or in its metadata.",
+      "likes": "Legacy like count is unverified; it may be a comment count incorrectly extracted after the Likes placeholder."
     },
     "raw": {
       "description": "pixa.300k on August 5, 2026: \"この落ち方よ...\n\nジャンプスピンサーブってやつかな\n\nジャンプスピンサーブ(トップスピン強め)+ほんの少し サイド回転 混ざりって感じなのかな 横から見たら絶対落ちてるんだろうな バレーボールちゃんと勉強しよ...\n\n#宮浦健人選手 #ウルフドッグス名古屋\". ",
@@ -706,7 +902,21 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:59:18.021Z"
+    "last_attempt_at": "2026-10-28T11:59:18.021Z",
+    "likes_visibility": "unverified",
+    "metric_corrections": {
+      "likes": {
+        "previous": {
+          "value": 11,
+          "raw": "11",
+          "approximate": false,
+          "source": "visible_text"
+        },
+        "corrected_at": "2026-11-05T18:22:41.465Z",
+        "source": "offline_evidence_validation",
+        "reason": "Legacy visible-text extraction assigned an unlabeled number after the Likes placeholder to likes; this value is unverified and withheld pending review."
+      }
+    }
   },
   {
     "kind": "reel",
@@ -767,12 +977,7 @@
       "#ウルフドッグス名古屋"
     ],
     "mentions": [],
-    "likes": {
-      "value": 4,
-      "raw": "4",
-      "approximate": false,
-      "source": "visible_text"
-    },
+    "likes": null,
     "comments": null,
     "views": {
       "value": 45800,
@@ -783,10 +988,12 @@
     "thumbnail_url": "https://instagram.fblr1-10.fna.fbcdn.net/v/t51.82787-15/764937999_17901186273511690_8244183539798934200_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=-IqeznrAvGIQ7kNvwGoqxZK&_nc_oc=AdoaGTNfMc2ujdfazvy41Y6FImMf0Ci9wFpYvVVjqXOBK1V1ywf7Zkv9A9c6UMIROmMf4hdfzgkgsTssLOTXs20Y&_nc_zt=23&_nc_ht=instagram.fblr1-10.fna&_nc_gid=u8QYTegdffzjU6gDxcy3UQ&_nc_ss=7f6a8&oh=00_AQRTiSjYSuuZgxU5KhQRx2NzrZ8jadStzT1qD055AWqa7Q&oe=6AE7C7FB&ig_cache_key=MDJSQVF6Qmc4SG1DMEhDSmstQUFvSjVMZ0hQemxwY3JpQzF2ZzpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
     "missing": [
+      "likes",
       "comments"
     ],
     "missing_reasons": {
-      "comments": "No readable comment count was found on the content page or in its metadata."
+      "comments": "No readable comment count was found on the content page or in its metadata.",
+      "likes": "Legacy like count is unverified; it may be a comment count incorrectly extracted after the Likes placeholder."
     },
     "raw": {
       "description": "pixa.300k on August 5, 2026: \"この落ち方よ...\n\nジャンプスピンサーブってやつかな\n\nジャンプスピンサーブ(トップスピン強め)+ほんの少し サイド回転 混ざりって感じなのかな 横から見たら絶対落ちてるんだろうな バレーボールちゃんと勉強しよ...\n\n#宮浦健人選手 #ウルフドッグス名古屋\". ",
@@ -795,7 +1002,21 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:59:26.588Z"
+    "last_attempt_at": "2026-10-28T11:59:26.588Z",
+    "likes_visibility": "unverified",
+    "metric_corrections": {
+      "likes": {
+        "previous": {
+          "value": 4,
+          "raw": "4",
+          "approximate": false,
+          "source": "visible_text"
+        },
+        "corrected_at": "2026-11-05T18:22:41.465Z",
+        "source": "offline_evidence_validation",
+        "reason": "Legacy visible-text extraction assigned an unlabeled number after the Likes placeholder to likes; this value is unverified and withheld pending review."
+      }
+    }
   },
   {
     "kind": "reel",
@@ -813,12 +1034,7 @@
       "#ウルフドッグス名古屋"
     ],
     "mentions": [],
-    "likes": {
-      "value": 361,
-      "raw": "361",
-      "approximate": false,
-      "source": "visible_text"
-    },
+    "likes": null,
     "comments": null,
     "views": {
       "value": 1000000,
@@ -829,10 +1045,12 @@
     "thumbnail_url": "https://instagram.fblr24-1.fna.fbcdn.net/v/t51.82787-15/765175467_17901186246511690_7163805066869861943_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=VkTqvb2MOzwQ7kNvwGVN9JA&_nc_oc=Adr2w5qJ43JQHxBEJK-DPSySXR7fau0E8NAsa_qFgvqdU6_L4y8h9v3peQpbwoU7JPAQ8PXx3N827cDIeTWgaueB&_nc_zt=23&_nc_ht=instagram.fblr24-1.fna&_nc_gid=Vbw2JMM6C_V_mfk-ZQQVtA&_nc_ss=7f6a8&oh=00_AQTqCTqXcvCOPjCGOF2V26PaIfAxa5K7-MOeYLAP7A5fhw&oe=6AE7BAFC&ig_cache_key=MDJSQVF6QnF1bW15MEhDSmstQUVvTVNMY0h3UEpxWXpmdTY3bzpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
     "missing": [
+      "likes",
       "comments"
     ],
     "missing_reasons": {
-      "comments": "No readable comment count was found on the content page or in its metadata."
+      "comments": "No readable comment count was found on the content page or in its metadata.",
+      "likes": "Legacy like count is unverified; it may be a comment count incorrectly extracted after the Likes placeholder."
     },
     "raw": {
       "description": "pixa.300k on August 4, 2026: \"この落ち方よ...\n\nジャンプスピンサーブってやつかな\n\nジャンプスピンサーブ(トップスピン強め)+ほんの少し サイド回転 混ざりって感じなのかな 横から見たら絶対落ちてるんだろうな バレーボールちゃんと勉強しよ...\n\n#宮浦健人選手 #ウルフドッグス名古屋\". ",
@@ -841,7 +1059,21 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:59:31.313Z"
+    "last_attempt_at": "2026-10-28T11:59:31.313Z",
+    "likes_visibility": "unverified",
+    "metric_corrections": {
+      "likes": {
+        "previous": {
+          "value": 361,
+          "raw": "361",
+          "approximate": false,
+          "source": "visible_text"
+        },
+        "corrected_at": "2026-11-05T18:22:41.465Z",
+        "source": "offline_evidence_validation",
+        "reason": "Legacy visible-text extraction assigned an unlabeled number after the Likes placeholder to likes; this value is unverified and withheld pending review."
+      }
+    }
   },
   {
     "kind": "reel",
@@ -859,12 +1091,7 @@
       "#ウルフドッグス名古屋"
     ],
     "mentions": [],
-    "likes": {
-      "value": 7,
-      "raw": "7",
-      "approximate": false,
-      "source": "visible_text"
-    },
+    "likes": null,
     "comments": null,
     "views": {
       "value": 24100,
@@ -875,10 +1102,12 @@
     "thumbnail_url": "https://instagram.fblr1-10.fna.fbcdn.net/v/t51.82787-15/765247788_17901186126511690_7696844939965851934_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=mbrzKquHa1sQ7kNvwFZMRfX&_nc_oc=AdrqhEVgHGZZ7URI9ypBG5LBzjdEBClOO7P93GK1be__Z1N2x3RnCrq6TsE0F-75VxwqpdzCt8yl50I6MCwC-Aqr&_nc_zt=23&_nc_ht=instagram.fblr1-10.fna&_nc_gid=Xypd4BUtebgJ7ehVOmGm0Q&_nc_ss=7f6a8&oh=00_AQRoTLFwB1nH722WxX_xOd70iPm6EC_PM72TkJAT4M_EkQ&oe=6AE7B578&ig_cache_key=MDJSQVF6Qml6Qm5DMEhDSmstQUVyX0lMQUhzYS1RYWg1cDdYazpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
     "missing": [
+      "likes",
       "comments"
     ],
     "missing_reasons": {
-      "comments": "No readable comment count was found on the content page or in its metadata."
+      "comments": "No readable comment count was found on the content page or in its metadata.",
+      "likes": "Legacy like count is unverified; it may be a comment count incorrectly extracted after the Likes placeholder."
     },
     "raw": {
       "description": "pixa.300k on August 4, 2026: \"この落ち方よ...\n\nジャンプスピンサーブってやつかな\n\nジャンプスピンサーブ(トップスピン強め)+ほんの少し サイド回転 混ざりって感じなのかな 横から見たら絶対落ちてるんだろうな バレーボールちゃんと勉強しよ...\n\n#宮浦健人選手 #ウルフドッグス名古屋\". ",
@@ -887,7 +1116,21 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:59:35.579Z"
+    "last_attempt_at": "2026-10-28T11:59:35.579Z",
+    "likes_visibility": "unverified",
+    "metric_corrections": {
+      "likes": {
+        "previous": {
+          "value": 7,
+          "raw": "7",
+          "approximate": false,
+          "source": "visible_text"
+        },
+        "corrected_at": "2026-11-05T18:22:41.465Z",
+        "source": "offline_evidence_validation",
+        "reason": "Legacy visible-text extraction assigned an unlabeled number after the Likes placeholder to likes; this value is unverified and withheld pending review."
+      }
+    }
   },
   {
     "kind": "reel",
@@ -902,12 +1145,7 @@
     "caption": "Tonight, V stepped into the crowd, taking in live performances at Vogue World: Hollywood. Known for his own standout fashion moments, he kept it effortlessly stylish in a look worthy of the runway.",
     "hashtags": [],
     "mentions": [],
-    "likes": {
-      "value": 1672,
-      "raw": "1,672",
-      "approximate": false,
-      "source": "visible_text"
-    },
+    "likes": null,
     "comments": null,
     "views": {
       "value": 2000000,
@@ -918,10 +1156,12 @@
     "thumbnail_url": "https://instagram.fblr24-4.fna.fbcdn.net/v/t51.82787-15/766562085_17901186099511690_3648685335723112068_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=9BuHlWHBja8Q7kNvwH56qgq&_nc_oc=Adoa8HjLHwj7PfAo5RrE-h0kdbNCoBtk-quMj3wkpXETUUSRNE1Uthdx4_b78kSwLJnlEgM1JX_h9jiycywz_F-U&_nc_zt=23&_nc_ht=instagram.fblr24-4.fna&_nc_gid=RHDjZpqkDe5S8v50K5Ge0w&_nc_ss=7f6a8&oh=00_AQS6vfuml9tUQNo2_aRKd5f1ozmYyC-lHgdt3tX82HyLgg&oe=6AE7AEAB&ig_cache_key=MDJSQVF6QmlYUHNDMEhDSmstQUlvQmhhNEhfN3VpTW9UMjh6UTpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
     "missing": [
+      "likes",
       "comments"
     ],
     "missing_reasons": {
-      "comments": "No readable comment count was found on the content page or in its metadata."
+      "comments": "No readable comment count was found on the content page or in its metadata.",
+      "likes": "Legacy like count is unverified; it may be a comment count incorrectly extracted after the Likes placeholder."
     },
     "raw": {
       "description": "pixa.300k on August 4, 2026: \"Tonight, V stepped into the crowd, taking in live performances at Vogue World: Hollywood. Known for his own standout fashion moments, he kept it effortlessly stylish in a look worthy of the runway.\". ",
@@ -930,7 +1170,21 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:59:39.584Z"
+    "last_attempt_at": "2026-10-28T11:59:39.584Z",
+    "likes_visibility": "unverified",
+    "metric_corrections": {
+      "likes": {
+        "previous": {
+          "value": 1672,
+          "raw": "1,672",
+          "approximate": false,
+          "source": "visible_text"
+        },
+        "corrected_at": "2026-11-05T18:22:41.465Z",
+        "source": "offline_evidence_validation",
+        "reason": "Legacy visible-text extraction assigned an unlabeled number after the Likes placeholder to likes; this value is unverified and withheld pending review."
+      }
+    }
   },
   {
     "kind": "reel",
@@ -948,12 +1202,7 @@
       "#ウルフドッグス名古屋"
     ],
     "mentions": [],
-    "likes": {
-      "value": 238,
-      "raw": "238",
-      "approximate": false,
-      "source": "visible_text"
-    },
+    "likes": null,
     "comments": null,
     "views": {
       "value": 628000,
@@ -964,10 +1213,12 @@
     "thumbnail_url": "https://instagram.fblr1-10.fna.fbcdn.net/v/t51.82787-15/766008183_17901185826511690_7200254435491297553_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=y_YEEXLvA18Q7kNvwGZig59&_nc_oc=AdpCkvhdecXbzQMAtMuiIkFCp3S9KYXenvBUckC3Y1KsqFAwaH09C0fHt3bY3OUF9x5ZpWbiuedFGDs0KAuLrsha&_nc_zt=23&_nc_ht=instagram.fblr1-10.fna&_nc_gid=uUsysiLMpHdpI49qtdQrNw&_nc_ss=7f6a8&oh=00_AQRuB9RD5XIiEsIR6qzJF4EeGzHALkc2njRNvdn_MZWO1g&oe=6AE79ED8&ig_cache_key=MDJSQVF6Qm5kYnFDMEhDSmstQUVwYlA1NEhRbkhzWXhHNTQ2ODpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
     "missing": [
+      "likes",
       "comments"
     ],
     "missing_reasons": {
-      "comments": "No readable comment count was found on the content page or in its metadata."
+      "comments": "No readable comment count was found on the content page or in its metadata.",
+      "likes": "Legacy like count is unverified; it may be a comment count incorrectly extracted after the Likes placeholder."
     },
     "raw": {
       "description": "pixa.300k on August 4, 2026: \"この落ち方よ...\n\nジャンプスピンサーブってやつかな\n\nジャンプスピンサーブ(トップスピン強め)+ほんの少し サイド回転 混ざりって感じなのかな 横から見たら絶対落ちてるんだろうな バレーボールちゃんと勉強しよ...\n\n#宮浦健人選手 #ウルフドッグス名古屋\". ",
@@ -976,7 +1227,21 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:59:43.592Z"
+    "last_attempt_at": "2026-10-28T11:59:43.592Z",
+    "likes_visibility": "unverified",
+    "metric_corrections": {
+      "likes": {
+        "previous": {
+          "value": 238,
+          "raw": "238",
+          "approximate": false,
+          "source": "visible_text"
+        },
+        "corrected_at": "2026-11-05T18:22:41.465Z",
+        "source": "offline_evidence_validation",
+        "reason": "Legacy visible-text extraction assigned an unlabeled number after the Likes placeholder to likes; this value is unverified and withheld pending review."
+      }
+    }
   },
   {
     "kind": "reel",

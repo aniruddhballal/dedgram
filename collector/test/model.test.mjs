@@ -4,6 +4,19 @@ import { itemAnalysisHandled, count, dayFromDescription, exactPostCount, gridCou
 import { mergeDiscoveryItems, mergeItem, mergeProfile, syncGridViews } from '../src/store.mjs';
 import { posterUsername } from '../src/reel-deletion-check.mjs';
 
+test('a legacy ambiguous like value is not restored after the like control shows no count', () => {
+  const previous = { kind: 'reel', likes: { value: 5, raw: '5', source: 'visible_text' },
+    raw: { article_text: 'Likes\n5\n3' }, comments: null };
+  const result = mergeItem(previous, { likes: null, likes_visibility: 'not_shown',
+    comments: { value: 5, raw: '5', source: 'dom_action_control' },
+    reshares: { value: 3, raw: '3', source: 'dom_action_control' } });
+  assert.equal(result.likes, null);
+  assert.equal(result.comments.value, 5);
+  assert.equal(result.reshares.value, 3);
+  assert.equal(result.metric_corrections.likes.previous.value, 5);
+  assert.deepEqual(result.missing.includes('likes'), true);
+});
+
 test('main and secondary extraction reuse a metadata date without a second date capture', () => {
   const snapshot = { og_description: 'Caption - @positive.mpire on August 8, 2026', json_ld: [] };
   const primary = itemFromSnapshot({ kind: 'reel' }, snapshot);

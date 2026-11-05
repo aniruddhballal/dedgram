@@ -77,8 +77,16 @@ export async function writeSnapshot(pathSet, { username, phase, snapshotAt, prof
 export function mergeItem(previous, current) {
   if (!previous) return normalizeReelDate(current);
   const result = { ...previous, ...current };
-  for (const field of ['date', 'caption', 'likes', 'comments', 'views', 'thumbnail_url', 'media_url']) {
+  for (const field of ['date', 'caption', 'likes', 'comments', 'views', 'reshares', 'shares', 'thumbnail_url', 'media_url']) {
     if (result[field] == null && previous[field] != null) result[field] = previous[field];
+  }
+  const legacyLikeLabel = previous.raw?.article_text?.match(/(?:^|\n)Likes[ \t]*\r?\n[ \t]*(\d[\d,.]*[ \t]*[KMB]?)/i);
+  if (current.likes == null && current.likes_visibility === 'not_shown' && previous.likes?.source === 'visible_text'
+    && count(legacyLikeLabel?.[1])?.value === previous.likes.value) {
+    result.likes = null;
+    result.metric_corrections = { ...result.metric_corrections, likes: {
+      previous: previous.likes, reason: 'Legacy adjacent-text count was ambiguous; the current like control has no numeric count.'
+    } };
   }
   if (!current.date && previous.date) {
     result.date_precision = previous.date_precision;

@@ -2,6 +2,7 @@ import { join } from 'node:path';
 import { writeFile } from 'node:fs/promises';
 import { chromium } from 'playwright';
 import { canonicalItemUrl, clean } from './model.mjs';
+import { engagementFromDocument } from './reel-engagement.mjs';
 
 const pause = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
@@ -203,6 +204,7 @@ export async function captureItem(page, item) {
       json_ld: [...document.querySelectorAll('script[type="application/ld+json"]')].map((element) => element.textContent || '')
     };
   });
+  snapshot.engagement = await page.evaluate(engagementFromDocument, { shortcode: item.shortcode });
   if (!clean(snapshot.article_text)) throw new Error('Item page rendered no readable content.');
   return snapshot;
 }

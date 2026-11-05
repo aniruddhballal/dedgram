@@ -1,6 +1,6 @@
 {
   "started_at": "2026-10-28T11:58:09.625Z",
-  "updated_at": "2026-11-05T18:08:25.363Z",
+  "updated_at": "2026-11-05T18:24:54.764Z",
   "status": "partial",
   "phase": "done",
   "scope": [
@@ -17,8 +17,8 @@
     "percent": 0,
     "remaining": 34,
     "current_item": null,
-    "detail": "11 previously failed reels manually confirmed to exist and ready for retry; 22 partial reels and 1 unavailable-page failure still need review. No scraping has started.",
-    "updated_at": "2026-11-05T18:08:25.363Z"
+    "detail": "11 reels await retry; 22 partial reels and 1 unavailable-page failure need review. Two comment counts and one reshare count manually corrected; 19 other legacy like counts flagged as unverified.",
+    "updated_at": "2026-11-05T18:24:54.764Z"
   },
   "manual_availability_review": {
     "checked_at": "2026-11-05T18:08:25.363Z",
@@ -42,5 +42,17 @@
     "partial_reels": 22,
     "remaining_failed_reels": 1,
     "previous_run_status": "partial"
+  },
+  "engagement_repair": {
+    "updated_at": "2026-11-05T18:24:54.764Z",
+    "manually_verified_comments": {
+      "Db-8EIIzY-9": 1,
+      "Db-8FENzkc_": 5
+    },
+    "manually_verified_reshares": {
+      "Db-8FENzkc_": 3
+    },
+    "unverified_legacy_like_counts": 19,
+    "reason": "Comment counts were previously assigned to likes by legacy visible-text extraction. Confirmed values are corrected; other ambiguous like counts are withheld and retained in metric_corrections."
   }
 }
