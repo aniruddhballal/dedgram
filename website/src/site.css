@@ -35,9 +35,9 @@ main { max-width: 1360px; margin: auto; padding: 0 32px; }
 .hero-copy > p { max-width: 610px; margin: 0; font-size: 17px; line-height: 1.55; }
 .hero-copy > p a { text-decoration: underline; text-underline-offset: 3px; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 32px; }
-.hero-count { display: flex; flex-direction: column; align-items: flex-end; gap: 12px; line-height: 1; padding-bottom: 8px; }
-.hero-count strong { font-size: clamp(72px, 9vw, 128px); line-height: .86; letter-spacing: -.09em; font-weight: 750; }
-.hero-count span { font-size: 10px; line-height: 1.25; font-weight: 800; letter-spacing: .1em; text-align: right; white-space: nowrap; }
+.hero-count { display: flex; flex-direction: column; align-items: flex-end; gap: 28px; line-height: 1; padding-bottom: 5px; }
+.hero-count strong { font-size: clamp(80px, 11vw, 150px); letter-spacing: -.09em; font-weight: 750; }
+.hero-count span { font-size: 10px; font-weight: 800; letter-spacing: .1em; white-space: nowrap; }
 .stat-strip { display: grid; grid-template-columns: repeat(3, 1fr); border-bottom: 1px solid #000; }
 .stat-strip > div { display: flex; flex-direction: column; align-items: start; padding: 25px 28px; border-left: 1px solid var(--line); }
 .stat-strip > div:first-child { padding-left: 0; border-left: 0; }
@@ -220,8 +220,7 @@ a.profile-internal:hover .row-title strong { text-decoration: underline; text-un
   main { padding: 0 18px; }
   .hero { grid-template-columns: 1fr; gap: 30px; padding: 60px 0 35px; }
   .hero-count { align-items: start; }
-  .hero-count { gap: 10px; }
-  .hero-count strong { font-size: 88px; }
+  .hero-count strong { font-size: 90px; }
   .stat-strip strong { font-size: 34px; }
   .stat-strip > div { padding: 19px 12px; }
   .stat-strip > div:first-child { padding-left: 0; }
