@@ -1202,10 +1202,13 @@
         "previous_value": null,
         "previous_missing_reason": "No readable timestamp or calendar date was found on the content page or in its metadata.",
         "saved_metadata_date": "2026-10-14",
-        "note": "User manually checked the publication date as 15 October 2026. The original saved metadata says 14 October 2026 and is preserved unchanged as conflicting evidence."
+        "timezone": "Asia/Kolkata",
+        "resolution_status": "resolved",
+        "note": "Resolved by the user's manual confirmation: the publication date is 15 October 2026 in IST (Asia/Kolkata). The saved metadata date of 14 October is retained as historical source evidence and does not leave an outstanding date conflict. No exact publication time is inferred."
       }
     },
-    "date_source": "user_manual_check"
+    "date_source": "user_manual_check",
+    "date_timezone": "Asia/Kolkata"
   },
   {
     "kind": "reel",
