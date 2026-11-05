@@ -5,10 +5,30 @@
     "url": "https://www.instagram.com/reel/Dewt3HZAPPu/",
     "grid_views_raw": "181",
     "grid_views_issue": null,
-    "status": "failed",
-    "last_error": "Instagram rendered an empty page.",
+    "status": "pending",
+    "last_error": null,
     "last_attempt_at": "2026-10-24T15:58:49.876Z",
-    "attempts": 1
+    "attempts": 1,
+    "deletion_check": {
+      "status": "exists",
+      "checked_at": "2026-11-05T17:54:20.269Z",
+      "source": "user_manual_check",
+      "verified_by": "user",
+      "reason": "User manually confirmed this reel still exists on Instagram.",
+      "evidence": "User confirmed all 11 listed reels exist and requested a later full reel-detail retry. No automated availability check was performed.",
+      "observed_details": null
+    },
+    "retry_review": {
+      "reviewed_at": "2026-11-05T17:54:20.269Z",
+      "verified_by": "user",
+      "action": "retry_reel_details",
+      "reason": "Reel exists; full reel-level data still needs collection.",
+      "previous_status": "failed",
+      "previous_error": "Instagram rendered an empty page.",
+      "previous_attempt_at": "2026-10-24T15:58:49.876Z",
+      "suspected_cause": "possible_rate_limiting",
+      "cause_confirmed": false
+    }
   },
   {
     "kind": "reel",
@@ -16,10 +36,30 @@
     "url": "https://www.instagram.com/reel/Dewt1f4gVUd/",
     "grid_views_raw": "296",
     "grid_views_issue": null,
-    "status": "failed",
-    "last_error": "Instagram rendered an empty page.",
+    "status": "pending",
+    "last_error": null,
     "last_attempt_at": "2026-10-24T15:59:12.818Z",
-    "attempts": 1
+    "attempts": 1,
+    "deletion_check": {
+      "status": "exists",
+      "checked_at": "2026-11-05T17:54:20.269Z",
+      "source": "user_manual_check",
+      "verified_by": "user",
+      "reason": "User manually confirmed this reel still exists on Instagram.",
+      "evidence": "User confirmed all 11 listed reels exist and requested a later full reel-detail retry. No automated availability check was performed.",
+      "observed_details": null
+    },
+    "retry_review": {
+      "reviewed_at": "2026-11-05T17:54:20.269Z",
+      "verified_by": "user",
+      "action": "retry_reel_details",
+      "reason": "Reel exists; full reel-level data still needs collection.",
+      "previous_status": "failed",
+      "previous_error": "Instagram rendered an empty page.",
+      "previous_attempt_at": "2026-10-24T15:59:12.818Z",
+      "suspected_cause": "possible_rate_limiting",
+      "cause_confirmed": false
+    }
   },
   {
     "kind": "reel",
@@ -27,10 +67,30 @@
     "url": "https://www.instagram.com/reel/Dewt0PrgTgM/",
     "grid_views_raw": "321",
     "grid_views_issue": null,
-    "status": "failed",
-    "last_error": "Instagram rendered an empty page.",
+    "status": "pending",
+    "last_error": null,
     "last_attempt_at": "2026-10-24T15:59:35.729Z",
-    "attempts": 1
+    "attempts": 1,
+    "deletion_check": {
+      "status": "exists",
+      "checked_at": "2026-11-05T17:54:20.269Z",
+      "source": "user_manual_check",
+      "verified_by": "user",
+      "reason": "User manually confirmed this reel still exists on Instagram.",
+      "evidence": "User confirmed all 11 listed reels exist and requested a later full reel-detail retry. No automated availability check was performed.",
+      "observed_details": null
+    },
+    "retry_review": {
+      "reviewed_at": "2026-11-05T17:54:20.269Z",
+      "verified_by": "user",
+      "action": "retry_reel_details",
+      "reason": "Reel exists; full reel-level data still needs collection.",
+      "previous_status": "failed",
+      "previous_error": "Instagram rendered an empty page.",
+      "previous_attempt_at": "2026-10-24T15:59:35.729Z",
+      "suspected_cause": "possible_rate_limiting",
+      "cause_confirmed": false
+    }
   },
   {
     "kind": "reel",
@@ -38,10 +98,30 @@
     "url": "https://www.instagram.com/reel/DewtyNEAHps/",
     "grid_views_raw": "440",
     "grid_views_issue": null,
-    "status": "failed",
-    "last_error": "Instagram rendered an empty page.",
+    "status": "pending",
+    "last_error": null,
     "last_attempt_at": "2026-10-24T15:59:58.735Z",
-    "attempts": 1
+    "attempts": 1,
+    "deletion_check": {
+      "status": "exists",
+      "checked_at": "2026-11-05T17:54:20.269Z",
+      "source": "user_manual_check",
+      "verified_by": "user",
+      "reason": "User manually confirmed this reel still exists on Instagram.",
+      "evidence": "User confirmed all 11 listed reels exist and requested a later full reel-detail retry. No automated availability check was performed.",
+      "observed_details": null
+    },
+    "retry_review": {
+      "reviewed_at": "2026-11-05T17:54:20.269Z",
+      "verified_by": "user",
+      "action": "retry_reel_details",
+      "reason": "Reel exists; full reel-level data still needs collection.",
+      "previous_status": "failed",
+      "previous_error": "Instagram rendered an empty page.",
+      "previous_attempt_at": "2026-10-24T15:59:58.735Z",
+      "suspected_cause": "possible_rate_limiting",
+      "cause_confirmed": false
+    }
   },
   {
     "kind": "reel",
@@ -49,10 +129,30 @@
     "url": "https://www.instagram.com/reel/DewtrMNAa7N/",
     "grid_views_raw": "190",
     "grid_views_issue": null,
-    "status": "failed",
-    "last_error": "Instagram rendered an empty page.",
+    "status": "pending",
+    "last_error": null,
     "last_attempt_at": "2026-10-24T16:00:21.780Z",
-    "attempts": 1
+    "attempts": 1,
+    "deletion_check": {
+      "status": "exists",
+      "checked_at": "2026-11-05T17:54:20.269Z",
+      "source": "user_manual_check",
+      "verified_by": "user",
+      "reason": "User manually confirmed this reel still exists on Instagram.",
+      "evidence": "User confirmed all 11 listed reels exist and requested a later full reel-detail retry. No automated availability check was performed.",
+      "observed_details": null
+    },
+    "retry_review": {
+      "reviewed_at": "2026-11-05T17:54:20.269Z",
+      "verified_by": "user",
+      "action": "retry_reel_details",
+      "reason": "Reel exists; full reel-level data still needs collection.",
+      "previous_status": "failed",
+      "previous_error": "Instagram rendered an empty page.",
+      "previous_attempt_at": "2026-10-24T16:00:21.780Z",
+      "suspected_cause": "possible_rate_limiting",
+      "cause_confirmed": false
+    }
   },
   {
     "kind": "reel",
@@ -60,10 +160,30 @@
     "url": "https://www.instagram.com/reel/DewtpqoggfY/",
     "grid_views_raw": "247",
     "grid_views_issue": null,
-    "status": "failed",
-    "last_error": "Instagram rendered an empty page.",
+    "status": "pending",
+    "last_error": null,
     "last_attempt_at": "2026-10-24T16:00:44.996Z",
-    "attempts": 1
+    "attempts": 1,
+    "deletion_check": {
+      "status": "exists",
+      "checked_at": "2026-11-05T17:54:20.269Z",
+      "source": "user_manual_check",
+      "verified_by": "user",
+      "reason": "User manually confirmed this reel still exists on Instagram.",
+      "evidence": "User confirmed all 11 listed reels exist and requested a later full reel-detail retry. No automated availability check was performed.",
+      "observed_details": null
+    },
+    "retry_review": {
+      "reviewed_at": "2026-11-05T17:54:20.269Z",
+      "verified_by": "user",
+      "action": "retry_reel_details",
+      "reason": "Reel exists; full reel-level data still needs collection.",
+      "previous_status": "failed",
+      "previous_error": "Instagram rendered an empty page.",
+      "previous_attempt_at": "2026-10-24T16:00:44.996Z",
+      "suspected_cause": "possible_rate_limiting",
+      "cause_confirmed": false
+    }
   },
   {
     "kind": "reel",
@@ -71,10 +191,30 @@
     "url": "https://www.instagram.com/reel/Dewtlf7AgsY/",
     "grid_views_raw": "132",
     "grid_views_issue": null,
-    "status": "failed",
-    "last_error": "Instagram rendered an empty page.",
+    "status": "pending",
+    "last_error": null,
     "last_attempt_at": "2026-10-24T16:01:08.197Z",
-    "attempts": 1
+    "attempts": 1,
+    "deletion_check": {
+      "status": "exists",
+      "checked_at": "2026-11-05T17:54:20.269Z",
+      "source": "user_manual_check",
+      "verified_by": "user",
+      "reason": "User manually confirmed this reel still exists on Instagram.",
+      "evidence": "User confirmed all 11 listed reels exist and requested a later full reel-detail retry. No automated availability check was performed.",
+      "observed_details": null
+    },
+    "retry_review": {
+      "reviewed_at": "2026-11-05T17:54:20.269Z",
+      "verified_by": "user",
+      "action": "retry_reel_details",
+      "reason": "Reel exists; full reel-level data still needs collection.",
+      "previous_status": "failed",
+      "previous_error": "Instagram rendered an empty page.",
+      "previous_attempt_at": "2026-10-24T16:01:08.197Z",
+      "suspected_cause": "possible_rate_limiting",
+      "cause_confirmed": false
+    }
   },
   {
     "kind": "reel",
@@ -82,10 +222,30 @@
     "url": "https://www.instagram.com/reel/DeuINNTAjzR/",
     "grid_views_raw": "557",
     "grid_views_issue": null,
-    "status": "failed",
-    "last_error": "Instagram rendered an empty page.",
+    "status": "pending",
+    "last_error": null,
     "last_attempt_at": "2026-10-24T16:01:31.195Z",
-    "attempts": 1
+    "attempts": 1,
+    "deletion_check": {
+      "status": "exists",
+      "checked_at": "2026-11-05T17:54:20.269Z",
+      "source": "user_manual_check",
+      "verified_by": "user",
+      "reason": "User manually confirmed this reel still exists on Instagram.",
+      "evidence": "User confirmed all 11 listed reels exist and requested a later full reel-detail retry. No automated availability check was performed.",
+      "observed_details": null
+    },
+    "retry_review": {
+      "reviewed_at": "2026-11-05T17:54:20.269Z",
+      "verified_by": "user",
+      "action": "retry_reel_details",
+      "reason": "Reel exists; full reel-level data still needs collection.",
+      "previous_status": "failed",
+      "previous_error": "Instagram rendered an empty page.",
+      "previous_attempt_at": "2026-10-24T16:01:31.195Z",
+      "suspected_cause": "possible_rate_limiting",
+      "cause_confirmed": false
+    }
   },
   {
     "kind": "reel",
@@ -93,10 +253,30 @@
     "url": "https://www.instagram.com/reel/DeuIL4rgpFm/",
     "grid_views_raw": "552",
     "grid_views_issue": null,
-    "status": "failed",
-    "last_error": "Instagram rendered an empty page.",
+    "status": "pending",
+    "last_error": null,
     "last_attempt_at": "2026-10-24T16:01:54.277Z",
-    "attempts": 1
+    "attempts": 1,
+    "deletion_check": {
+      "status": "exists",
+      "checked_at": "2026-11-05T17:54:20.269Z",
+      "source": "user_manual_check",
+      "verified_by": "user",
+      "reason": "User manually confirmed this reel still exists on Instagram.",
+      "evidence": "User confirmed all 11 listed reels exist and requested a later full reel-detail retry. No automated availability check was performed.",
+      "observed_details": null
+    },
+    "retry_review": {
+      "reviewed_at": "2026-11-05T17:54:20.269Z",
+      "verified_by": "user",
+      "action": "retry_reel_details",
+      "reason": "Reel exists; full reel-level data still needs collection.",
+      "previous_status": "failed",
+      "previous_error": "Instagram rendered an empty page.",
+      "previous_attempt_at": "2026-10-24T16:01:54.277Z",
+      "suspected_cause": "possible_rate_limiting",
+      "cause_confirmed": false
+    }
   },
   {
     "kind": "reel",
@@ -104,10 +284,30 @@
     "url": "https://www.instagram.com/reel/DeuIKPKAFmE/",
     "grid_views_raw": "260",
     "grid_views_issue": null,
-    "status": "failed",
-    "last_error": "Instagram rendered an empty page.",
+    "status": "pending",
+    "last_error": null,
     "last_attempt_at": "2026-10-24T16:02:17.285Z",
-    "attempts": 1
+    "attempts": 1,
+    "deletion_check": {
+      "status": "exists",
+      "checked_at": "2026-11-05T17:54:20.269Z",
+      "source": "user_manual_check",
+      "verified_by": "user",
+      "reason": "User manually confirmed this reel still exists on Instagram.",
+      "evidence": "User confirmed all 11 listed reels exist and requested a later full reel-detail retry. No automated availability check was performed.",
+      "observed_details": null
+    },
+    "retry_review": {
+      "reviewed_at": "2026-11-05T17:54:20.269Z",
+      "verified_by": "user",
+      "action": "retry_reel_details",
+      "reason": "Reel exists; full reel-level data still needs collection.",
+      "previous_status": "failed",
+      "previous_error": "Instagram rendered an empty page.",
+      "previous_attempt_at": "2026-10-24T16:02:17.285Z",
+      "suspected_cause": "possible_rate_limiting",
+      "cause_confirmed": false
+    }
   },
   {
     "kind": "reel",
@@ -115,10 +315,30 @@
     "url": "https://www.instagram.com/reel/DeuIIzNACJK/",
     "grid_views_raw": "691",
     "grid_views_issue": null,
-    "status": "failed",
-    "last_error": "Instagram rendered an empty page.",
+    "status": "pending",
+    "last_error": null,
     "last_attempt_at": "2026-10-24T16:02:40.317Z",
-    "attempts": 1
+    "attempts": 1,
+    "deletion_check": {
+      "status": "exists",
+      "checked_at": "2026-11-05T17:54:20.269Z",
+      "source": "user_manual_check",
+      "verified_by": "user",
+      "reason": "User manually confirmed this reel still exists on Instagram.",
+      "evidence": "User confirmed all 11 listed reels exist and requested a later full reel-detail retry. No automated availability check was performed.",
+      "observed_details": null
+    },
+    "retry_review": {
+      "reviewed_at": "2026-11-05T17:54:20.269Z",
+      "verified_by": "user",
+      "action": "retry_reel_details",
+      "reason": "Reel exists; full reel-level data still needs collection.",
+      "previous_status": "failed",
+      "previous_error": "Instagram rendered an empty page.",
+      "previous_attempt_at": "2026-10-24T16:02:40.317Z",
+      "suspected_cause": "possible_rate_limiting",
+      "cause_confirmed": false
+    }
   },
   {
     "kind": "reel",
