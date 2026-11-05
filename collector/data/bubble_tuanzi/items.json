@@ -1155,10 +1155,10 @@
     "url": "https://www.instagram.com/reel/Def7hOFM9GK/",
     "grid_views_raw": "299K",
     "grid_views_issue": null,
-    "status": "partial",
+    "status": "complete",
     "fetched_at": "2026-11-05T15:07:50.623Z",
-    "date": null,
-    "date_precision": null,
+    "date": "2026-10-15",
+    "date_precision": "day",
     "caption": null,
     "hashtags": [],
     "mentions": [],
@@ -1182,12 +1182,8 @@
     },
     "thumbnail_url": "https://instagram.fblr1-5.fna.fbcdn.net/v/t51.82787-15/848761499_17898305064611812_201852722494944896_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=yl664FEFU3YQ7kNvwHQThlI&_nc_oc=AdrQStM9KgB8vCLoN8ahGRQl1bZOE8evjWq3RLnp2VcoQzSY4xWqwE_Ie4F1Ommus8aK-Z8ezOiptT1rYjl4owjG&_nc_zt=23&_nc_ht=instagram.fblr1-5.fna&_nc_gid=Vk5d-Qwnu0bC1_b23Zqf3A&_nc_ss=7f6a8&oh=00_AQTf-Rz1heWVUZI_U0xOvCtAxkCsdgoPEUt3jBcdXblpFg&oe=6AF25C58&ig_cache_key=MDJSQVF6QnBzU2x6SUhhWlktQU9RdmRlTUhfeC1OQW9DMlFVMDpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
-    "missing": [
-      "date"
-    ],
-    "missing_reasons": {
-      "date": "No readable timestamp or calendar date was found on the content page or in its metadata."
-    },
+    "missing": [],
+    "missing_reasons": {},
     "raw": {
       "description": "尊嘟吗 嘿嘿（Really? Heheh 😆）#cute #cat #kitty #fyp #meow - 35K likes, 143 comments - @bubble_tuanzi on October 14, 2026",
       "article_text": "bubble_tuanzi\n•\nFollow\n• AI-generated profile\n• AI content\n尊嘟吗 嘿嘿（Really? Heheh 😆）#cute #cat #kitty #fyp #meow\n35K\n143\n1,492\nsamromeugtr\n•\nFollow\nLondon, United Kingdom\nRadiohead moment\n\n#guitarcover\n103K\n171\n5,386",
@@ -1195,7 +1191,21 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-11-05T15:07:50.623Z"
+    "last_attempt_at": "2026-11-05T15:07:50.623Z",
+    "manual_verification": {
+      "date": {
+        "value": "2026-10-15",
+        "precision": "day",
+        "verified_by": "user",
+        "verified_at": "2026-11-05T17:14:47.606Z",
+        "source": "user_manual_check",
+        "previous_value": null,
+        "previous_missing_reason": "No readable timestamp or calendar date was found on the content page or in its metadata.",
+        "saved_metadata_date": "2026-10-14",
+        "note": "User manually checked the publication date as 15 October 2026. The original saved metadata says 14 October 2026 and is preserved unchanged as conflicting evidence."
+      }
+    },
+    "date_source": "user_manual_check"
   },
   {
     "kind": "reel",
