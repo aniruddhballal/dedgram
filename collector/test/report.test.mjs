@@ -5,6 +5,31 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { writeReport } from '../src/report.mjs';
 
+test('excluded reels retain URLs and metrics without becoming review or complete records', async () => {
+  const base = await mkdtemp(join(tmpdir(), 'dedgram-report-excluded-'));
+  const paths = { base, csv: join(base, 'items.csv'), profileCsv: join(base, 'profile.csv'), report: join(base, 'report.html') };
+  const item = { kind: 'reel', shortcode: 'saved-reel', url: 'https://www.instagram.com/reel/saved-reel/',
+    status: 'archived', excluded_from_analysis: true, grid_views_raw: '35.4K',
+    exclusion: { reason: 'Suspected profile deletion; reel no longer available.', previous_status: 'failed' } };
+  try {
+    await writeReport(paths, { username: 'example', excluded_from_analysis: true, resolution_note: 'User reported the account unavailable.' },
+      { reel: { items: [item], complete: true } }, [item], { status: 'excluded' });
+    const html = await readFile(paths.report, 'utf8');
+    const csv = await readFile(paths.csv, 'utf8');
+    assert.match(html, /0\/1 complete records/);
+    assert.match(html, /Discovered reels<\/dt><dd>1/);
+    assert.match(html, /Suspected profile deletion; reel no longer available/);
+    assert.match(html, /35\.4K/);
+    assert.match(csv, /saved-reel/);
+    assert.match(csv, /archived/);
+    assert.match(csv, /35\.4K/);
+    assert.doesNotMatch(html, /Needs manual review|Check manually|<tr class="review"/);
+  } finally {
+    await Promise.all([paths.csv, paths.profileCsv, paths.report].map((file) => unlink(file).catch(() => {})));
+    await rmdir(base);
+  }
+});
+
 test('profile-only exports grid counts without item records', async () => {
   const base = await mkdtemp(join(tmpdir(), 'dedgram-report-'));
   const paths = { base, csv: join(base, 'items.csv'), profileCsv: join(base, 'profile.csv'), report: join(base, 'report.html') };

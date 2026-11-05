@@ -48,7 +48,6 @@ const fullProfiles = [
   'herogram_50k',
   'luffytheegear5',
   'sallusmemer',
-  'waytoway__',
   'bubble_tuanzi',
   'fun_fineee',
   'notmemezz',
@@ -174,7 +173,7 @@ const profileLevelProfiles = [
   'oproceve.br',
   'u1tron7',
 ];
-const excludedProfiles = ['hnvx.07', 'prime_senchui', 'vlad.aep_', 'nxx._.nmercy', 'dexea.100k', 'igpostinggang', 'rzk.mp4', 'renyajichu', 'hammergag', 'caodogsfofo', 'back', '41.3k', 'short_vibesz', 'oooiway', 'zuxxie.pov', 'extreme.laugh8', 'iron_block2', 'memes.fatafat'];
+const excludedProfiles = ['hnvx.07', 'prime_senchui', 'vlad.aep_', 'nxx._.nmercy', 'dexea.100k', 'igpostinggang', 'rzk.mp4', 'renyajichu', 'hammergag', 'caodogsfofo', 'back', '41.3k', 'short_vibesz', 'oooiway', 'zuxxie.pov', 'extreme.laugh8', 'iron_block2', 'memes.fatafat', 'waytoway__'];
 const publishedProfiles = [...fullProfiles, ...profileLevelProfiles, ...excludedProfiles];
 const profileLevelSet = new Set(profileLevelProfiles);
 const excludedSet = new Set(excludedProfiles);
@@ -208,7 +207,9 @@ if (new Set(index.profile_keys).size !== index.profile_keys.length) throw new Er
 const buildDate = new Intl.DateTimeFormat('en-IN', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'Asia/Kolkata' }).format(new Date());
 
 const snapshotData = new Map();
-for (const username of [...fullProfiles, ...profileLevelProfiles]) {
+const excludedSnapshotProfiles = excludedProfiles.filter((username) => exclusionRecords.profiles?.[username]?.saved_data_available);
+const snapshotProfiles = [...fullProfiles, ...profileLevelProfiles, ...excludedSnapshotProfiles];
+for (const username of snapshotProfiles) {
   const [profile, discovery, items, run] = await Promise.all([
     readJson(`${username}/profile.json`), readJson(`${username}/discovery.json`),
     readJson(`${username}/items.json`), readJson(`${username}/run.json`)
@@ -227,7 +228,8 @@ const publishedReelRows = publishedSnapshotProfiles.flatMap((username) => {
   const snapshot = snapshotData.get(username);
   return (snapshot.items || []).filter((item) => item.kind === 'reel').map((item) => ({ username, ...item }));
 });
-const publishedReelUrls = publishedSnapshotProfiles.reduce((sum, username) => sum + (snapshotData.get(username).discovery.reel.items || []).length, 0);
+// Discovery is historical: excluding an account must not erase its saved URLs.
+const publishedReelUrls = snapshotProfiles.reduce((sum, username) => sum + (snapshotData.get(username).discovery.reel.items || []).length, 0);
 const resolvedReelStatuses = new Set(['archived', 'age_restricted']);
 const isCompleteReel = (item) => item.status === 'complete' && !item.last_error;
 const isResolvedReel = (item) => resolvedReelStatuses.has(item.status);
@@ -308,7 +310,7 @@ function shell({ title, description, base, active, profileKey, content }) {
 const publishedSet = new Set(publishedProfiles);
 const catalogCard = (username, i, ready) => {
   const excludedRecord = exclusionRecords.profiles?.[username];
-  const label = excludedRecord ? `Excluded after initial collection: ${excludedRecord.status}` : profileLevelSet.has(username) ? 'Profile saved; reel analysis pending' : partialPublishedProfiles.has(username) ? 'Some reels analyzed' : ready ? 'Profile and reels analyzed' : 'Not analyzed yet';
+  const label = excludedRecord ? (excludedRecord.deletion_assessment?.status === 'suspected_deleted' ? 'Unavailable; suspected deleted' : `Excluded after initial collection: ${excludedRecord.status}`) : profileLevelSet.has(username) ? 'Profile saved; reel analysis pending' : partialPublishedProfiles.has(username) ? 'Some reels analyzed' : ready ? 'Profile and reels analyzed' : 'Not analyzed yet';
   const tag = excludedRecord ? 'Excluded from analysis' : profileLevelSet.has(username) ? 'Profile saved' : ready ? 'View record' : 'Not analyzed';
   const inner = `<span class="row-number">${String(i + 1).padStart(3, '0')}</span><span class="row-title"><strong>@${esc(username)}</strong><small>${esc(label)}</small></span><span class="row-tag ${ready ? 'live' : ''}">${esc(tag)}</span>`;
   return `<article class="profile-row" data-catalog-row><div class="profile-row-main">${ready ? `<a class="profile-internal" href="./profiles/${username}/" aria-label="View saved profile data for @${username}">${inner}</a>` : `<div class="profile-internal">${inner}</div>`}</div><div class="row-external">${external(profileInstagramUrl(username), 'Instagram', 'external-link')}</div></article>`;
@@ -326,7 +328,7 @@ const zeroReelLabelledCatalogHtml = [...zeroReelProfiles].reduce((html, username
 }, catalogHtml);
 const catalogHtmlForOutput = publishedProfiles.reduce((html, username) => {
   const excludedRecord = exclusionRecords.profiles?.[username];
-  const label = excludedRecord ? `Excluded after initial collection: ${excludedRecord.status}` : profileLevelSet.has(username) ? 'Profile saved; reel analysis pending' : partialPublishedProfiles.has(username) ? 'Some reels analyzed' : 'Profile and reels analyzed';
+  const label = excludedRecord ? (excludedRecord.deletion_assessment?.status === 'suspected_deleted' ? 'Unavailable; suspected deleted' : `Excluded after initial collection: ${excludedRecord.status}`) : profileLevelSet.has(username) ? 'Profile saved; reel analysis pending' : partialPublishedProfiles.has(username) ? 'Some reels analyzed' : 'Profile and reels analyzed';
   const escapedUsername = username.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
   return html.replace(new RegExp(`(<strong>@${escapedUsername}<\\/strong><small>)[^<]*(</small>)`, 'g'), `$1${esc(label)}$2`);
 }, zeroReelLabelledCatalogHtml);
@@ -447,6 +449,32 @@ const publicProfileHtml = (html) => html
   .replaceAll('Profile-level record', 'Saved profile information')
   .replaceAll('profile-level record', 'saved profile information');
 
+async function excludedSnapshotPage(excludedRecord, recordNumber) {
+  const username = excludedRecord.username;
+  const { profile, discovery, items } = snapshotData.get(username);
+  const reels = discovery.reel.items || [];
+  const savedItems = new Map(items.map((item) => [item.url, item]));
+  const suspectedDeleted = excludedRecord.deletion_assessment?.status === 'suspected_deleted';
+  const status = suspectedDeleted ? 'Suspected deleted' : excludedRecord.status;
+  const reason = excludedRecord.resolution_note || 'This profile is unavailable and excluded from analysis.';
+  const missingDetail = suspectedDeleted ? 'Unavailable — suspected profile deletion' : 'Unavailable — profile excluded from analysis';
+  const savedMetric = (value) => numberMetric(value) === null ? esc(missingDetail) : esc(metric(value));
+  const avatarFile = await localImage(`avatar-${username}.jpg`);
+  const avatar = avatarFile ? `<img src="../../media/${esc(avatarFile)}" alt="Saved profile picture of @${esc(username)}" width="92" height="92">` : '<span aria-hidden="true">@</span>';
+  const evidence = (excludedRecord.deletion_assessment?.checked_urls || []).map((url) => `<li>${external(url, url)}</li>`).join('');
+  const rows = reels.map((reel) => {
+    const item = savedItems.get(reel.url) || reel;
+    return `<tr><td>${external(reel.url, reel.shortcode)}</td><td>${item.date ? esc(date(item.date, item.date_precision)) : esc(missingDetail)}</td><td>${item.caption ? esc(item.caption) : esc(missingDetail)}</td><td>${item.views ? savedMetric(item.views) : esc(item.grid_views_raw || missingDetail)}</td><td>${savedMetric(item.likes)}</td><td>${savedMetric(item.comments)}</td><td>${esc(missingDetail)}</td></tr>`;
+  }).join('');
+  return shell({ title: `@${username} · dedgram atlas`, description: `Saved information and ${reels.length} discovered reel URLs for @${username}, excluded from analysis: ${status}.`, base: '../../', active: 'profile', profileKey: username, content: `
+    <section class="profile-hero"><div class="profile-hero-top"><a class="back-link" href="../../profiles/">All profiles</a><span class="snapshot-label">LAST SAVED ${esc(date(profile.fetched_at))}</span></div><div class="profile-title-row"><div class="profile-avatar">${avatar}</div><div><div class="eyebrow">EXCLUSION RECORD / ${recordNumber}</div><h1>@${esc(username)}</h1>${profile.display_name ? `<p>${esc(profile.display_name)}</p>` : ''}</div><div class="profile-hero-link">${external(profile.url || instagram(username), 'Instagram profile', 'button secondary')}</div></div><div class="profile-meta"><span>UNAVAILABLE — ${esc(status)}</span><span>EXCLUDED FROM ANALYSIS</span><span>Manually reported ${esc(date(excludedRecord.observed_at))}</span></div></section>
+    <section class="evidence-note"><span class="note-symbol">!</span><div><h2>${esc(status)} — analysis stopped</h2><p>${esc(reason)}</p><p>The figures below are historical saved data. These reels are excluded because the profile is unavailable; they are not completed analysis or pending work.</p>${evidence ? `<details><summary>Links checked manually by the user</summary><ul>${evidence}</ul></details>` : ''}</div></section>
+    <section class="profile-stats" aria-label="Historical saved profile metrics"><div><span>FOLLOWERS</span><strong>${esc(metric(profile.followers_count))}</strong><small>Last saved count</small></div><div><span>FOLLOWING</span><strong>${esc(metric(profile.following_count))}</strong><small>Last saved count</small></div><div><span>POSTS</span><strong>${esc(metric(profile.posts_count))}</strong><small>Last saved count</small></div><div><span>REELS DISCOVERED</span><strong>${fmt(reels.length)}</strong><small>Saved URLs retained in discovery totals</small></div></section>
+    <section class="profile-context"><div class="context-card"><span class="overline">SAVED ACCOUNT DETAILS</span><h2>Historical profile information</h2><dl class="account-facts">${field('Category', profile.category)}${field('Account based in', profile.account_based_in)}${field('Date joined', profile.date_joined)}${field('Former usernames', metric(profile.former_usernames_count))}${field('AI-generated label', profile.ai_generated_profile ? 'Shown on Instagram' : 'Not shown')}${field('Last profile scan', date(profile.fetched_at))}${field('Reel grid saved', date(discovery.reel.attempted_at))}${field('Availability', status)}${field('Assessment source', 'User manual check')}${field('Observed', date(excludedRecord.observed_at))}</dl></div><div class="context-card bio-card"><span class="overline">SAVED PROFILE BIO</span><h2>Bio</h2><p class="bio-text">${esc(profile.bio || 'No bio captured.')}</p>${profile.issues?.length ? `<ul>${profile.issues.map((issue) => `<li>${esc(issue)}</li>`).join('')}</ul>` : ''}</div></section>
+    <section class="overview-table"><div class="section-head"><div><span class="overline">PRESERVED REEL URLS</span><h2>${fmt(reels.length)} discovered reels</h2><p>Saved values remain visible. Missing details are unavailable because the profile is suspected deleted.</p></div></div><div class="table-wrap"><table><thead><tr><th>REEL</th><th>DATE</th><th>CAPTION</th><th>SAVED VIEWS</th><th>SAVED LIKES</th><th>SAVED COMMENTS</th><th>STATUS</th></tr></thead><tbody>${rows}</tbody></table></div></section>
+    <section class="downloads"><div><span class="overline">SOURCE FILES</span><h2>Preserved records</h2><p>Saved profile information, reel URLs, raw evidence and exclusion details.</p></div><div class="download-links">${files.map((name) => `<a href="../../downloads/${username}/${name}" ${name.endsWith('.json') || name.endsWith('.csv') ? 'download' : ''}>${esc(name)}</a>`).join('')}</div></section>` });
+}
+
 function excludedProfilePage(excludedRecord, recordNumber) {
   const resolved = excludedRecord;
   const status = resolved.status || 'Excluded after initial collection';
@@ -482,7 +510,8 @@ const profilePages = [];
 for (const published of publishedProfiles) {
   const excludedRecord = exclusionRecords.profiles?.[published];
   if (excludedRecord) {
-    profilePages.push({ published, html: excludedProfilePage(excludedRecord, String(publishedProfiles.indexOf(published) + 1).padStart(3, '0')) });
+    const recordNumber = String(publishedProfiles.indexOf(published) + 1).padStart(3, '0');
+    profilePages.push({ published, html: snapshotData.has(published) ? await excludedSnapshotPage(excludedRecord, recordNumber) : excludedProfilePage(excludedRecord, recordNumber) });
     continue;
   }
   const profile = await readJson(`${published}/profile.json`);
@@ -542,7 +571,7 @@ for (const page of profilePages) {
   await mkdir(join(output, 'profiles', page.published), { recursive: true });
   await mkdir(join(output, 'downloads', page.published), { recursive: true });
   await writeFile(join(output, 'profiles', page.published, 'index.html'), publicProfileHtml(page.html));
-  if (!excludedSet.has(page.published)) {
+  if (!excludedSet.has(page.published) || snapshotData.has(page.published)) {
     for (const file of files) await copyFile(join(source, page.published, file), join(output, 'downloads', page.published, file));
   }
 }

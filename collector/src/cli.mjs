@@ -125,6 +125,10 @@ async function collect() {
   const limit = limitArg ? Number(limitArg.slice(8)) : Infinity;
   if (!Number.isInteger(limit) && limit !== Infinity || limit < 0) throw new Error('--limit must be a nonnegative integer.');
   let { profile, discovery, items, run } = await files();
+  if (profile?.excluded_from_analysis || run.excluded_from_analysis) {
+    log(`Skipping @${username}: ${profile?.resolution_note || run.resolution_note || 'Profile excluded from analysis.'}`);
+    return;
+  }
   if (skipProfile && !profileLevelComplete(profile, discovery)) throw new Error(`Collect an exact @${username} post count and a complete reel count before running reels only.`);
   const hadPreviousState = profile !== null || items.length > 0 || Object.keys(discovery).length > 0 || Object.keys(run).length > 0;
   if (hadPreviousState) await snapshot('before', { profile, discovery, items, run });

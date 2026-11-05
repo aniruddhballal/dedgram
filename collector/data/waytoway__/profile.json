@@ -90,5 +90,27 @@
       }
     }
   },
-  "issues": []
+  "issues": [],
+  "account_status": "deleted",
+  "account_status_observed_at": "2026-11-05T16:53:36.000Z",
+  "excluded_from_analysis": true,
+  "resolution_note": "Suspected deleted (most likely), based on the user's manual check on 5 November 2026: the profile is unavailable and the checked saved reel URLs redirect to the profile instead of displaying a reel. The user considers deletion more likely than a username change because reel URLs would normally remain accessible after a rename. This is a user-reported assessment, not an Instagram-confirmed deletion. All 39 discovered reel URLs and previously saved profile and reel information are preserved; missing reel details are attributed to the unavailable profile and are excluded from further analysis.",
+  "deletion_assessment": {
+    "status": "suspected_deleted",
+    "confidence": "most_likely",
+    "source": "user_manual_check",
+    "observed_at": "2026-11-05T16:53:36.000Z",
+    "reason": "Suspected deleted (most likely), based on the user's manual check on 5 November 2026: the profile is unavailable and the checked saved reel URLs redirect to the profile instead of displaying a reel. The user considers deletion more likely than a username change because reel URLs would normally remain accessible after a rename. This is a user-reported assessment, not an Instagram-confirmed deletion. All 39 discovered reel URLs and previously saved profile and reel information are preserved; missing reel details are attributed to the unavailable profile and are excluded from further analysis.",
+    "checked_urls": [
+      "https://www.instagram.com/waytoway__/",
+      "https://www.instagram.com/reel/DezjE8FyJLJ/",
+      "https://www.instagram.com/reel/DezjDOMyxeD/"
+    ],
+    "network_verification_performed": false
+  },
+  "deletion_date_range": {
+    "after_classified_at": "2026-10-23T16:18:54.831Z",
+    "before_first_unavailable_at": "2026-11-05T16:53:36.000Z",
+    "exact_timestamp_known": false
+  }
 }

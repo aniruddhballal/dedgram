@@ -51,7 +51,6 @@ const fullProfiles = [
   'herogram_50k',
   'luffytheegear5',
   'sallusmemer',
-  'waytoway__',
   'bubble_tuanzi',
   'fun_fineee',
   'notmemezz',
@@ -178,7 +177,7 @@ const profileLevelProfiles = [
   'oproceve.br',
   'u1tron7',
 ];
-const excludedProfiles = ['hnvx.07', 'prime_senchui', 'vlad.aep_', 'nxx._.nmercy', 'dexea.100k', 'igpostinggang', 'rzk.mp4', 'renyajichu', 'hammergag', 'caodogsfofo', 'back', '41.3k', 'short_vibesz', 'oooiway', 'zuxxie.pov', 'extreme.laugh8', 'iron_block2', 'memes.fatafat'];
+const excludedProfiles = ['hnvx.07', 'prime_senchui', 'vlad.aep_', 'nxx._.nmercy', 'dexea.100k', 'igpostinggang', 'rzk.mp4', 'renyajichu', 'hammergag', 'caodogsfofo', 'back', '41.3k', 'short_vibesz', 'oooiway', 'zuxxie.pov', 'extreme.laugh8', 'iron_block2', 'memes.fatafat', 'waytoway__'];
 const publishedProfiles = [...fullProfiles, ...profileLevelProfiles, ...excludedProfiles];
 const files = ['profile.json', 'discovery.json', 'items.json', 'run.json', 'profile.csv', 'items.csv', 'report.html'];
 const sourceCatalog = JSON.parse(await readFile(join(repo, 'data', 'database', 'profiles', 'index.json'), 'utf8'));
@@ -208,6 +207,8 @@ for (const username of excludedProfiles) {
     minimum_age: profile.minimum_age || profile.age_restriction?.minimum_age || null,
     false_identification: profile.false_identification || null,
     resolution_note: profile.resolution_note || null,
+    saved_data_available: profile.saved_data_available || false,
+    deletion_assessment: profile.deletion_assessment || null,
     reason: profile.last_error || null
   };
 }
@@ -215,7 +216,8 @@ await writeFile(join(snapshot, 'resolutions.json'), JSON.stringify({ schema_vers
 const mediaDir = join(snapshot, 'media');
 await mkdir(mediaDir, { recursive: true });
 const images = [];
-for (const username of [...fullProfiles, ...profileLevelProfiles]) {
+const excludedSnapshotProfiles = excludedProfiles.filter((username) => excludedRecords[username].saved_data_available);
+for (const username of [...fullProfiles, ...profileLevelProfiles, ...excludedSnapshotProfiles]) {
   const source = join(repo, 'collector', 'data', sourceUsername(username));
   await mkdir(join(snapshot, username), { recursive: true });
   for (const file of files) {
