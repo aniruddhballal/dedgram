@@ -1,29 +1,44 @@
 {
   "started_at": "2026-10-28T12:04:13.053Z",
-  "updated_at": "2026-10-28T12:08:07.909Z",
-  "status": "running",
-  "phase": "item details",
+  "updated_at": "2026-11-05T18:00:36.731Z",
+  "status": "partial",
+  "phase": "done",
   "scope": [
     "reel"
   ],
-  "current_url": "https://www.instagram.com/reel/De05UJsxJD1/",
+  "current_url": null,
   "error": null,
   "progress": {
     "task": "item_details",
     "label": "Reel details",
-    "action": "Extracting date, caption, views, likes and comments from the current reel",
-    "completed": 10,
-    "total": 35,
-    "percent": 29,
-    "remaining": 25,
-    "current_item": {
-      "index": 11,
-      "total": 35,
-      "kind": "reel",
-      "shortcode": "De05UJsxJD1",
-      "url": "https://www.instagram.com/reel/De05UJsxJD1/"
-    },
-    "detail": "Opening reel De05UJsxJD1",
-    "updated_at": "2026-10-28T12:08:07.906Z"
+    "action": "Ready for collection or retry",
+    "completed": 0,
+    "total": 26,
+    "percent": 0,
+    "remaining": 26,
+    "current_item": null,
+    "detail": "9 reels manually confirmed deleted; 1 existing reel ready for retry; 25 additional reels remain pending. Analysis is not complete and no scraping has started.",
+    "updated_at": "2026-11-05T18:00:36.731Z"
+  },
+  "manual_availability_review": {
+    "checked_at": "2026-11-05T18:00:36.731Z",
+    "verified_by": "user",
+    "deleted_reels": [
+      "DfBUmZFRtzT",
+      "DfApcP_zp-6",
+      "De2WJ40zK8V",
+      "De2AaBIxyDG",
+      "De1QpMJRmZV",
+      "De1HPVrx0wr",
+      "De1E_0PRpBB",
+      "De1E5jlxtIt",
+      "De0_xrJRbdV"
+    ],
+    "existing_reels": [
+      "De2OYSFTK7z"
+    ],
+    "action": "retry_reel_details",
+    "remaining_reel_details": 26,
+    "previous_run_status": "running"
   }
 }
