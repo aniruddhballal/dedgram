@@ -1,7 +1,7 @@
 {
   "started_at": "2026-11-05T15:11:40.204Z",
-  "updated_at": "2026-11-05T15:14:27.548Z",
-  "status": "partial",
+  "updated_at": "2026-11-05T17:24:39.692Z",
+  "status": "complete",
   "phase": "done",
   "scope": [
     "reel"
@@ -17,7 +17,20 @@
     "percent": 100,
     "remaining": 0,
     "current_item": null,
-    "detail": "Stage finished with review required",
-    "updated_at": "2026-11-05T15:14:27.548Z"
+    "detail": "Analysis complete for all available data: 37 complete reels; 5 manually marked deleted; no reels awaiting review.",
+    "updated_at": "2026-11-05T17:24:39.692Z"
+  },
+  "completion_basis": "All available reel data analyzed; 37 reels complete and 5 reels manually marked deleted by the user.",
+  "manual_review": {
+    "completed_at": "2026-11-05T17:24:39.692Z",
+    "verified_by": "user",
+    "deleted_reels": [
+      "De0Rst1KYG2",
+      "DezUJgVIO0Z",
+      "Dey3DRHodik",
+      "Dey2wJhI7qX",
+      "Dexcmv-IXgx"
+    ],
+    "remaining_review_reels": 0
   }
 }
