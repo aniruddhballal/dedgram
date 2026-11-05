@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "username": "relatable.fun1",
+  "phase": "after",
+  "snapshot_at": "2026-11-05T14:54:01.243Z",
+  "run_status": "complete",
+  "run_updated_at": "2026-11-05T14:54:01.234Z",
+  "profile_fetched_at": "2026-11-05T14:53:40.911Z",
+  "item_count": 0,
+  "complete_item_count": 0,
+  "discovery": {
+    "reel": {
+      "count": 53,
+      "complete": true,
+      "error": null,
+      "attempted_at": "2026-11-05T14:54:01.223Z"
+    }
+  }
+}

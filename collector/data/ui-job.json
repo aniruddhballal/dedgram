@@ -1,35 +1,12 @@
 {
-  "id": "72dd5bba-0fb2-4887-b7c8-459333b42ab1",
+  "id": "9bbf12fa-a606-4b14-8ec3-b8f9fbc439c5",
   "mode": "reels_only",
   "order": "reels_ascending",
-  "status": "interrupted",
+  "status": "stopped",
   "profiles": [
-    "james_basas",
-    "dark_man1__",
-    "renee30287",
-    "reelrestock",
-    "kanika_s.0711",
-    "the.ravshanbek_",
-    "coopyyz",
-    "mikre_film",
-    "movi.egaze",
-    "dank.meemz420",
-    "extreme_laugh_07",
-    "scoobyjacks_",
-    "damn_nigas",
-    "bollyxedit.7",
-    "pranto_harryson",
-    "crick_video_07",
-    "not.yourtyppee",
-    "hazelxpost",
-    "blunt.fun4",
-    "nhiftbl",
-    "madarameme0",
-    "jellyfish.m3mes",
-    "nastynigas",
-    "prxctm0l",
-    "pixa.300k",
-    "funny.exe07",
+    "damon.maxx",
+    "turtle.4223253",
+    "herogram_50k",
     "luffytheegear5",
     "sallusmemer",
     "waytoway__",
@@ -38,9 +15,9 @@
     "notmemezz",
     "memeehubx69",
     "0ggyyyy__07",
-    "hulksmash.exe",
     "positive.mpire",
     "kabir.chaudhary69",
+    "relatable.fun1",
     "cartoon_.xhub",
     "memesupreme.tv",
     "natsukisubaru.exe",
@@ -65,12 +42,11 @@
     "bingomovie_",
     "borrsack",
     "twinkiewinkie3",
-    "diamond_bl0ckk",
+    "u1tron7",
     "pinkjohnrp",
     "slleep91",
     "rokymental.1",
     "pop.lore_x",
-    "9ineesss",
     "kiddcat68",
     "camilaboucheryamamoto",
     "777.psps",
@@ -81,6 +57,7 @@
     "yervin8_",
     "zoya._100x",
     "manas.8x_",
+    "oproceve.br",
     "zkyus_",
     "vviennteru",
     "memekarbo",
@@ -106,6 +83,7 @@
     "me_me_s31",
     "reelscantheal",
     "melonphernelia",
+    "yearning.ok",
     "mugiwaramemez",
     "farf_allajade",
     "memeswithsanju",
@@ -138,7 +116,6 @@
     "thoughtsby.div",
     "ballsitchingshi",
     "ijuggminors",
-    "not.your.ordinary.nga",
     "femtaility",
     "asapcoder.exe",
     "futureshock3272",
@@ -147,112 +124,19 @@
     "intr0vert.viks",
     "kujo__o",
     "iblamealanz",
-    "memesprcaf",
     "nixk.xyz"
   ],
   "steps": [
     {
-      "username": "james_basas",
+      "username": "damon.maxx",
       "stage": "reels"
     },
     {
-      "username": "dark_man1__",
+      "username": "turtle.4223253",
       "stage": "reels"
     },
     {
-      "username": "renee30287",
-      "stage": "reels"
-    },
-    {
-      "username": "reelrestock",
-      "stage": "reels"
-    },
-    {
-      "username": "kanika_s.0711",
-      "stage": "reels"
-    },
-    {
-      "username": "the.ravshanbek_",
-      "stage": "reels"
-    },
-    {
-      "username": "coopyyz",
-      "stage": "reels"
-    },
-    {
-      "username": "mikre_film",
-      "stage": "reels"
-    },
-    {
-      "username": "movi.egaze",
-      "stage": "reels"
-    },
-    {
-      "username": "dank.meemz420",
-      "stage": "reels"
-    },
-    {
-      "username": "extreme_laugh_07",
-      "stage": "reels"
-    },
-    {
-      "username": "scoobyjacks_",
-      "stage": "reels"
-    },
-    {
-      "username": "damn_nigas",
-      "stage": "reels"
-    },
-    {
-      "username": "bollyxedit.7",
-      "stage": "reels"
-    },
-    {
-      "username": "pranto_harryson",
-      "stage": "reels"
-    },
-    {
-      "username": "crick_video_07",
-      "stage": "reels"
-    },
-    {
-      "username": "not.yourtyppee",
-      "stage": "reels"
-    },
-    {
-      "username": "hazelxpost",
-      "stage": "reels"
-    },
-    {
-      "username": "blunt.fun4",
-      "stage": "reels"
-    },
-    {
-      "username": "nhiftbl",
-      "stage": "reels"
-    },
-    {
-      "username": "madarameme0",
-      "stage": "reels"
-    },
-    {
-      "username": "jellyfish.m3mes",
-      "stage": "reels"
-    },
-    {
-      "username": "nastynigas",
-      "stage": "reels"
-    },
-    {
-      "username": "prxctm0l",
-      "stage": "reels"
-    },
-    {
-      "username": "pixa.300k",
-      "stage": "reels"
-    },
-    {
-      "username": "funny.exe07",
+      "username": "herogram_50k",
       "stage": "reels"
     },
     {
@@ -288,15 +172,15 @@
       "stage": "reels"
     },
     {
-      "username": "hulksmash.exe",
-      "stage": "reels"
-    },
-    {
       "username": "positive.mpire",
       "stage": "reels"
     },
     {
       "username": "kabir.chaudhary69",
+      "stage": "reels"
+    },
+    {
+      "username": "relatable.fun1",
       "stage": "reels"
     },
     {
@@ -396,7 +280,7 @@
       "stage": "reels"
     },
     {
-      "username": "diamond_bl0ckk",
+      "username": "u1tron7",
       "stage": "reels"
     },
     {
@@ -413,10 +297,6 @@
     },
     {
       "username": "pop.lore_x",
-      "stage": "reels"
-    },
-    {
-      "username": "9ineesss",
       "stage": "reels"
     },
     {
@@ -457,6 +337,10 @@
     },
     {
       "username": "manas.8x_",
+      "stage": "reels"
+    },
+    {
+      "username": "oproceve.br",
       "stage": "reels"
     },
     {
@@ -557,6 +441,10 @@
     },
     {
       "username": "melonphernelia",
+      "stage": "reels"
+    },
+    {
+      "username": "yearning.ok",
       "stage": "reels"
     },
     {
@@ -688,10 +576,6 @@
       "stage": "reels"
     },
     {
-      "username": "not.your.ordinary.nga",
-      "stage": "reels"
-    },
-    {
       "username": "femtaility",
       "stage": "reels"
     },
@@ -724,530 +608,204 @@
       "stage": "reels"
     },
     {
-      "username": "memesprcaf",
-      "stage": "reels"
-    },
-    {
       "username": "nixk.xyz",
       "stage": "reels"
     }
   ],
   "results": {
-    "james_basas": {
+    "damon.maxx": {
+      "status": "needs_review",
+      "started_at": "2026-11-05T14:55:24.340Z",
+      "finished_at": "2026-11-05T14:55:34.279Z",
+      "error": null,
+      "stages": {
+        "reels": {
+          "status": "needs_review",
+          "started_at": "2026-11-05T14:55:24.340Z",
+          "finished_at": "2026-11-05T14:55:34.279Z",
+          "error": null
+        }
+      }
+    },
+    "turtle.4223253": {
       "status": "complete",
-      "started_at": "2026-10-28T11:28:23.153Z",
-      "finished_at": "2026-10-28T11:28:31.844Z",
+      "started_at": "2026-11-05T14:55:34.284Z",
+      "finished_at": "2026-11-05T14:56:49.349Z",
       "error": null,
       "stages": {
         "reels": {
           "status": "complete",
-          "started_at": "2026-10-28T11:28:23.153Z",
-          "finished_at": "2026-10-28T11:28:31.844Z",
+          "started_at": "2026-11-05T14:55:34.284Z",
+          "finished_at": "2026-11-05T14:56:49.349Z",
           "error": null
         }
       }
     },
-    "dark_man1__": {
-      "status": "needs_review",
-      "started_at": "2026-10-28T11:28:31.850Z",
-      "finished_at": "2026-10-28T11:28:42.696Z",
-      "error": null,
-      "stages": {
-        "reels": {
-          "status": "needs_review",
-          "started_at": "2026-10-28T11:28:31.850Z",
-          "finished_at": "2026-10-28T11:28:42.696Z",
-          "error": null
-        }
-      }
-    },
-    "renee30287": {
-      "status": "needs_review",
-      "started_at": "2026-10-28T11:28:42.700Z",
-      "finished_at": "2026-10-28T11:29:08.018Z",
-      "error": null,
-      "stages": {
-        "reels": {
-          "status": "needs_review",
-          "started_at": "2026-10-28T11:28:42.700Z",
-          "finished_at": "2026-10-28T11:29:08.018Z",
-          "error": null
-        }
-      }
-    },
-    "reelrestock": {
-      "status": "needs_review",
-      "started_at": "2026-10-28T11:29:08.023Z",
-      "finished_at": "2026-10-28T11:29:32.543Z",
-      "error": null,
-      "stages": {
-        "reels": {
-          "status": "needs_review",
-          "started_at": "2026-10-28T11:29:08.023Z",
-          "finished_at": "2026-10-28T11:29:32.543Z",
-          "error": null
-        }
-      }
-    },
-    "kanika_s.0711": {
-      "status": "needs_review",
-      "started_at": "2026-10-28T11:29:32.548Z",
-      "finished_at": "2026-10-28T11:29:56.111Z",
-      "error": null,
-      "stages": {
-        "reels": {
-          "status": "needs_review",
-          "started_at": "2026-10-28T11:29:32.548Z",
-          "finished_at": "2026-10-28T11:29:56.111Z",
-          "error": null
-        }
-      }
-    },
-    "the.ravshanbek_": {
+    "herogram_50k": {
       "status": "complete",
-      "started_at": "2026-10-28T11:29:56.117Z",
-      "finished_at": "2026-10-28T11:30:23.988Z",
+      "started_at": "2026-11-05T14:56:49.356Z",
+      "finished_at": "2026-11-05T14:59:00.490Z",
       "error": null,
       "stages": {
         "reels": {
           "status": "complete",
-          "started_at": "2026-10-28T11:29:56.117Z",
-          "finished_at": "2026-10-28T11:30:23.988Z",
-          "error": null
-        }
-      }
-    },
-    "coopyyz": {
-      "status": "needs_review",
-      "started_at": "2026-10-28T11:30:23.993Z",
-      "finished_at": "2026-10-28T11:30:54.007Z",
-      "error": null,
-      "stages": {
-        "reels": {
-          "status": "needs_review",
-          "started_at": "2026-10-28T11:30:23.993Z",
-          "finished_at": "2026-10-28T11:30:54.007Z",
-          "error": null
-        }
-      }
-    },
-    "mikre_film": {
-      "status": "complete",
-      "started_at": "2026-10-28T11:30:54.012Z",
-      "finished_at": "2026-10-28T11:31:31.053Z",
-      "error": null,
-      "stages": {
-        "reels": {
-          "status": "complete",
-          "started_at": "2026-10-28T11:30:54.012Z",
-          "finished_at": "2026-10-28T11:31:31.053Z",
-          "error": null
-        }
-      }
-    },
-    "movi.egaze": {
-      "status": "needs_review",
-      "started_at": "2026-10-28T11:31:31.071Z",
-      "finished_at": "2026-10-28T11:32:25.235Z",
-      "error": null,
-      "stages": {
-        "reels": {
-          "status": "needs_review",
-          "started_at": "2026-10-28T11:31:31.071Z",
-          "finished_at": "2026-10-28T11:32:25.235Z",
-          "error": null
-        }
-      }
-    },
-    "dank.meemz420": {
-      "status": "needs_review",
-      "started_at": "2026-10-28T11:32:25.243Z",
-      "finished_at": "2026-10-28T11:33:17.038Z",
-      "error": null,
-      "stages": {
-        "reels": {
-          "status": "needs_review",
-          "started_at": "2026-10-28T11:32:25.243Z",
-          "finished_at": "2026-10-28T11:33:17.038Z",
-          "error": null
-        }
-      }
-    },
-    "extreme_laugh_07": {
-      "status": "needs_review",
-      "started_at": "2026-10-28T11:33:17.043Z",
-      "finished_at": "2026-10-28T11:34:21.918Z",
-      "error": null,
-      "stages": {
-        "reels": {
-          "status": "needs_review",
-          "started_at": "2026-10-28T11:33:17.043Z",
-          "finished_at": "2026-10-28T11:34:21.918Z",
-          "error": null
-        }
-      }
-    },
-    "scoobyjacks_": {
-      "status": "complete",
-      "started_at": "2026-10-28T11:34:21.922Z",
-      "finished_at": "2026-10-28T11:35:42.295Z",
-      "error": null,
-      "stages": {
-        "reels": {
-          "status": "complete",
-          "started_at": "2026-10-28T11:34:21.922Z",
-          "finished_at": "2026-10-28T11:35:42.295Z",
-          "error": null
-        }
-      }
-    },
-    "damn_nigas": {
-      "status": "complete",
-      "started_at": "2026-10-28T11:35:42.300Z",
-      "finished_at": "2026-10-28T11:36:58.610Z",
-      "error": null,
-      "stages": {
-        "reels": {
-          "status": "complete",
-          "started_at": "2026-10-28T11:35:42.300Z",
-          "finished_at": "2026-10-28T11:36:58.610Z",
-          "error": null
-        }
-      }
-    },
-    "bollyxedit.7": {
-      "status": "needs_review",
-      "started_at": "2026-10-28T11:36:58.616Z",
-      "finished_at": "2026-10-28T11:38:35.942Z",
-      "error": null,
-      "stages": {
-        "reels": {
-          "status": "needs_review",
-          "started_at": "2026-10-28T11:36:58.616Z",
-          "finished_at": "2026-10-28T11:38:35.942Z",
-          "error": null
-        }
-      }
-    },
-    "pranto_harryson": {
-      "status": "needs_review",
-      "started_at": "2026-10-28T11:38:35.948Z",
-      "finished_at": "2026-10-28T11:40:16.736Z",
-      "error": null,
-      "stages": {
-        "reels": {
-          "status": "needs_review",
-          "started_at": "2026-10-28T11:38:35.948Z",
-          "finished_at": "2026-10-28T11:40:16.736Z",
-          "error": null
-        }
-      }
-    },
-    "crick_video_07": {
-      "status": "complete",
-      "started_at": "2026-10-28T11:40:16.742Z",
-      "finished_at": "2026-10-28T11:41:53.164Z",
-      "error": null,
-      "stages": {
-        "reels": {
-          "status": "complete",
-          "started_at": "2026-10-28T11:40:16.742Z",
-          "finished_at": "2026-10-28T11:41:53.164Z",
-          "error": null
-        }
-      }
-    },
-    "not.yourtyppee": {
-      "status": "needs_review",
-      "started_at": "2026-10-28T11:41:53.169Z",
-      "finished_at": "2026-10-28T11:43:32.768Z",
-      "error": null,
-      "stages": {
-        "reels": {
-          "status": "needs_review",
-          "started_at": "2026-10-28T11:41:53.169Z",
-          "finished_at": "2026-10-28T11:43:32.768Z",
-          "error": null
-        }
-      }
-    },
-    "hazelxpost": {
-      "status": "needs_review",
-      "started_at": "2026-10-28T11:43:32.775Z",
-      "finished_at": "2026-10-28T11:45:16.189Z",
-      "error": null,
-      "stages": {
-        "reels": {
-          "status": "needs_review",
-          "started_at": "2026-10-28T11:43:32.775Z",
-          "finished_at": "2026-10-28T11:45:16.189Z",
-          "error": null
-        }
-      }
-    },
-    "blunt.fun4": {
-      "status": "complete",
-      "started_at": "2026-10-28T11:45:16.201Z",
-      "finished_at": "2026-10-28T11:47:04.071Z",
-      "error": null,
-      "stages": {
-        "reels": {
-          "status": "complete",
-          "started_at": "2026-10-28T11:45:16.201Z",
-          "finished_at": "2026-10-28T11:47:04.071Z",
-          "error": null
-        }
-      }
-    },
-    "nhiftbl": {
-      "status": "needs_review",
-      "started_at": "2026-10-28T11:47:04.076Z",
-      "finished_at": "2026-10-28T11:49:13.868Z",
-      "error": null,
-      "stages": {
-        "reels": {
-          "status": "needs_review",
-          "started_at": "2026-10-28T11:47:04.076Z",
-          "finished_at": "2026-10-28T11:49:13.868Z",
-          "error": null
-        }
-      }
-    },
-    "madarameme0": {
-      "status": "needs_review",
-      "started_at": "2026-10-28T11:49:13.873Z",
-      "finished_at": "2026-10-28T11:51:25.655Z",
-      "error": null,
-      "stages": {
-        "reels": {
-          "status": "needs_review",
-          "started_at": "2026-10-28T11:49:13.873Z",
-          "finished_at": "2026-10-28T11:51:25.655Z",
-          "error": null
-        }
-      }
-    },
-    "jellyfish.m3mes": {
-      "status": "needs_review",
-      "started_at": "2026-10-28T11:51:25.666Z",
-      "finished_at": "2026-10-28T11:53:34.088Z",
-      "error": null,
-      "stages": {
-        "reels": {
-          "status": "needs_review",
-          "started_at": "2026-10-28T11:51:25.666Z",
-          "finished_at": "2026-10-28T11:53:34.088Z",
-          "error": null
-        }
-      }
-    },
-    "nastynigas": {
-      "status": "needs_review",
-      "started_at": "2026-10-28T11:53:34.092Z",
-      "finished_at": "2026-10-28T11:55:48.193Z",
-      "error": null,
-      "stages": {
-        "reels": {
-          "status": "needs_review",
-          "started_at": "2026-10-28T11:53:34.092Z",
-          "finished_at": "2026-10-28T11:55:48.193Z",
-          "error": null
-        }
-      }
-    },
-    "prxctm0l": {
-      "status": "needs_review",
-      "started_at": "2026-10-28T11:55:48.198Z",
-      "finished_at": "2026-10-28T11:58:08.462Z",
-      "error": null,
-      "stages": {
-        "reels": {
-          "status": "needs_review",
-          "started_at": "2026-10-28T11:55:48.198Z",
-          "finished_at": "2026-10-28T11:58:08.462Z",
-          "error": null
-        }
-      }
-    },
-    "pixa.300k": {
-      "status": "needs_review",
-      "started_at": "2026-10-28T11:58:08.479Z",
-      "finished_at": "2026-10-28T12:04:11.899Z",
-      "error": null,
-      "stages": {
-        "reels": {
-          "status": "needs_review",
-          "started_at": "2026-10-28T11:58:08.479Z",
-          "finished_at": "2026-10-28T12:04:11.899Z",
-          "error": null
-        }
-      }
-    },
-    "funny.exe07": {
-      "status": "interrupted",
-      "started_at": "2026-10-28T12:04:11.911Z",
-      "finished_at": null,
-      "error": null,
-      "stages": {
-        "reels": {
-          "status": "interrupted",
-          "started_at": "2026-10-28T12:04:11.911Z",
-          "finished_at": null,
+          "started_at": "2026-11-05T14:56:49.356Z",
+          "finished_at": "2026-11-05T14:59:00.490Z",
           "error": null
         }
       }
     },
     "luffytheegear5": {
-      "status": "queued",
-      "started_at": null,
-      "finished_at": null,
+      "status": "needs_review",
+      "started_at": "2026-11-05T14:59:00.495Z",
+      "finished_at": "2026-11-05T15:01:17.378Z",
       "error": null,
       "stages": {
         "reels": {
-          "status": "queued",
-          "started_at": null,
-          "finished_at": null,
+          "status": "needs_review",
+          "started_at": "2026-11-05T14:59:00.495Z",
+          "finished_at": "2026-11-05T15:01:17.378Z",
           "error": null
         }
       }
     },
     "sallusmemer": {
-      "status": "queued",
-      "started_at": null,
-      "finished_at": null,
+      "status": "needs_review",
+      "started_at": "2026-11-05T15:01:17.392Z",
+      "finished_at": "2026-11-05T15:03:46.055Z",
       "error": null,
       "stages": {
         "reels": {
-          "status": "queued",
-          "started_at": null,
-          "finished_at": null,
+          "status": "needs_review",
+          "started_at": "2026-11-05T15:01:17.392Z",
+          "finished_at": "2026-11-05T15:03:46.055Z",
           "error": null
         }
       }
     },
     "waytoway__": {
-      "status": "queued",
-      "started_at": null,
-      "finished_at": null,
+      "status": "needs_review",
+      "started_at": "2026-11-05T15:03:46.061Z",
+      "finished_at": "2026-11-05T15:06:13.219Z",
       "error": null,
       "stages": {
         "reels": {
-          "status": "queued",
-          "started_at": null,
-          "finished_at": null,
+          "status": "needs_review",
+          "started_at": "2026-11-05T15:03:46.061Z",
+          "finished_at": "2026-11-05T15:06:13.219Z",
           "error": null
         }
       }
     },
     "bubble_tuanzi": {
-      "status": "queued",
-      "started_at": null,
-      "finished_at": null,
+      "status": "needs_review",
+      "started_at": "2026-11-05T15:06:13.231Z",
+      "finished_at": "2026-11-05T15:08:53.809Z",
       "error": null,
       "stages": {
         "reels": {
-          "status": "queued",
-          "started_at": null,
-          "finished_at": null,
+          "status": "needs_review",
+          "started_at": "2026-11-05T15:06:13.231Z",
+          "finished_at": "2026-11-05T15:08:53.809Z",
           "error": null
         }
       }
     },
     "fun_fineee": {
-      "status": "queued",
-      "started_at": null,
-      "finished_at": null,
+      "status": "needs_review",
+      "started_at": "2026-11-05T15:08:53.814Z",
+      "finished_at": "2026-11-05T15:11:39.129Z",
       "error": null,
       "stages": {
         "reels": {
-          "status": "queued",
-          "started_at": null,
-          "finished_at": null,
+          "status": "needs_review",
+          "started_at": "2026-11-05T15:08:53.814Z",
+          "finished_at": "2026-11-05T15:11:39.129Z",
           "error": null
         }
       }
     },
     "notmemezz": {
-      "status": "queued",
-      "started_at": null,
-      "finished_at": null,
+      "status": "needs_review",
+      "started_at": "2026-11-05T15:11:39.136Z",
+      "finished_at": "2026-11-05T15:14:29.138Z",
       "error": null,
       "stages": {
         "reels": {
-          "status": "queued",
-          "started_at": null,
-          "finished_at": null,
+          "status": "needs_review",
+          "started_at": "2026-11-05T15:11:39.136Z",
+          "finished_at": "2026-11-05T15:14:29.138Z",
           "error": null
         }
       }
     },
     "memeehubx69": {
-      "status": "queued",
-      "started_at": null,
-      "finished_at": null,
+      "status": "needs_review",
+      "started_at": "2026-11-05T15:14:29.143Z",
+      "finished_at": "2026-11-05T15:17:23.017Z",
       "error": null,
       "stages": {
         "reels": {
-          "status": "queued",
-          "started_at": null,
-          "finished_at": null,
+          "status": "needs_review",
+          "started_at": "2026-11-05T15:14:29.143Z",
+          "finished_at": "2026-11-05T15:17:23.017Z",
           "error": null
         }
       }
     },
     "0ggyyyy__07": {
-      "status": "queued",
-      "started_at": null,
-      "finished_at": null,
+      "status": "needs_review",
+      "started_at": "2026-11-05T15:17:23.025Z",
+      "finished_at": "2026-11-05T15:20:29.531Z",
       "error": null,
       "stages": {
         "reels": {
-          "status": "queued",
-          "started_at": null,
-          "finished_at": null,
-          "error": null
-        }
-      }
-    },
-    "hulksmash.exe": {
-      "status": "queued",
-      "started_at": null,
-      "finished_at": null,
-      "error": null,
-      "stages": {
-        "reels": {
-          "status": "queued",
-          "started_at": null,
-          "finished_at": null,
+          "status": "needs_review",
+          "started_at": "2026-11-05T15:17:23.025Z",
+          "finished_at": "2026-11-05T15:20:29.531Z",
           "error": null
         }
       }
     },
     "positive.mpire": {
-      "status": "queued",
-      "started_at": null,
-      "finished_at": null,
+      "status": "needs_review",
+      "started_at": "2026-11-05T15:20:29.535Z",
+      "finished_at": "2026-11-05T15:24:00.663Z",
       "error": null,
       "stages": {
         "reels": {
-          "status": "queued",
-          "started_at": null,
-          "finished_at": null,
+          "status": "needs_review",
+          "started_at": "2026-11-05T15:20:29.535Z",
+          "finished_at": "2026-11-05T15:24:00.663Z",
           "error": null
         }
       }
     },
     "kabir.chaudhary69": {
-      "status": "queued",
-      "started_at": null,
-      "finished_at": null,
+      "status": "complete",
+      "started_at": "2026-11-05T15:24:00.671Z",
+      "finished_at": "2026-11-05T15:27:24.120Z",
       "error": null,
       "stages": {
         "reels": {
-          "status": "queued",
-          "started_at": null,
-          "finished_at": null,
+          "status": "complete",
+          "started_at": "2026-11-05T15:24:00.671Z",
+          "finished_at": "2026-11-05T15:27:24.120Z",
           "error": null
+        }
+      }
+    },
+    "relatable.fun1": {
+      "status": "failed",
+      "started_at": "2026-11-05T15:27:24.126Z",
+      "finished_at": "2026-11-05T15:30:02.342Z",
+      "error": "Instagram returned HTTP 429 (rate limit).",
+      "stages": {
+        "reels": {
+          "status": "failed",
+          "started_at": "2026-11-05T15:27:24.126Z",
+          "finished_at": "2026-11-05T15:30:02.342Z",
+          "error": "Instagram returned HTTP 429 (rate limit)."
         }
       }
     },
@@ -1587,7 +1145,7 @@
         }
       }
     },
-    "diamond_bl0ckk": {
+    "u1tron7": {
       "status": "queued",
       "started_at": null,
       "finished_at": null,
@@ -1644,20 +1202,6 @@
       }
     },
     "pop.lore_x": {
-      "status": "queued",
-      "started_at": null,
-      "finished_at": null,
-      "error": null,
-      "stages": {
-        "reels": {
-          "status": "queued",
-          "started_at": null,
-          "finished_at": null,
-          "error": null
-        }
-      }
-    },
-    "9ineesss": {
       "status": "queued",
       "started_at": null,
       "finished_at": null,
@@ -1798,6 +1342,20 @@
       }
     },
     "manas.8x_": {
+      "status": "queued",
+      "started_at": null,
+      "finished_at": null,
+      "error": null,
+      "stages": {
+        "reels": {
+          "status": "queued",
+          "started_at": null,
+          "finished_at": null,
+          "error": null
+        }
+      }
+    },
+    "oproceve.br": {
       "status": "queued",
       "started_at": null,
       "finished_at": null,
@@ -2148,6 +1706,20 @@
       }
     },
     "melonphernelia": {
+      "status": "queued",
+      "started_at": null,
+      "finished_at": null,
+      "error": null,
+      "stages": {
+        "reels": {
+          "status": "queued",
+          "started_at": null,
+          "finished_at": null,
+          "error": null
+        }
+      }
+    },
+    "yearning.ok": {
       "status": "queued",
       "started_at": null,
       "finished_at": null,
@@ -2609,20 +2181,6 @@
         }
       }
     },
-    "not.your.ordinary.nga": {
-      "status": "queued",
-      "started_at": null,
-      "finished_at": null,
-      "error": null,
-      "stages": {
-        "reels": {
-          "status": "queued",
-          "started_at": null,
-          "finished_at": null,
-          "error": null
-        }
-      }
-    },
     "femtaility": {
       "status": "queued",
       "started_at": null,
@@ -2735,20 +2293,6 @@
         }
       }
     },
-    "memesprcaf": {
-      "status": "queued",
-      "started_at": null,
-      "finished_at": null,
-      "error": null,
-      "stages": {
-        "reels": {
-          "status": "queued",
-          "started_at": null,
-          "finished_at": null,
-          "error": null
-        }
-      }
-    },
     "nixk.xyz": {
       "status": "queued",
       "started_at": null,
@@ -2766,70 +2310,70 @@
   },
   "current": null,
   "current_stage": null,
-  "started_at": "2026-10-28T11:28:23.049Z",
-  "updated_at": "2026-10-28T12:04:11.911Z",
-  "finished_at": null,
-  "stop_requested": false,
+  "started_at": "2026-11-05T14:55:24.328Z",
+  "updated_at": "2026-11-05T15:30:02.345Z",
+  "finished_at": "2026-11-05T15:30:02.345Z",
+  "stop_requested": true,
   "logs": [
-    "[17:27:50] 29: reel Dd8mpONTATD",
-    "[17:27:54] 30: reel Dd8NCA-zQ9I",
-    "[17:27:59] 31: reel Dd7IVgoCxes",
-    "[17:28:03] 32: reel Dd7DG0zSYUt",
-    "[17:28:06] Saved after history snapshot: D:\\post engg\\dedgram\\collector-v2\\data\\prxctm0l\\history\\2026-10-28T11-58-06-973Z-after-a569f72c-1fbc-46d7-a8c7-9927663972b4",
-    "[17:28:06] Done: 32 items. Report: D:\\post engg\\dedgram\\collector-v2\\data\\prxctm0l\\report.html",
-    "Finished @prxctm0l reels: needs_review",
-    "Starting @pixa.300k reels",
-    "[17:28:09] Saved before history snapshot: D:\\post engg\\dedgram\\collector-v2\\data\\pixa.300k\\history\\2026-10-28T11-58-09-566Z-before-36724345-4604-4bc4-8a3f-0eeef296489b",
-    "[17:28:09] Using saved pixa.300k profile details",
-    "[17:28:10] Using saved reel grid",
-    "[17:28:10] 1: reel Db-8EIIzY-9",
-    "[17:28:16] 2: reel Db-8FENzkc_",
-    "[17:28:20] 3: reel Db-78V8zEPk",
-    "[17:28:24] 4: reel Db-71q0zV9T",
-    "[17:28:29] 5: reel Db-73JPzj9B",
-    "[17:28:33] 6: reel Db-7Q1fzMRS",
-    "[17:28:38] 7: reel Db-7GNvTL2h",
-    "[17:28:42] 8: reel Db-7DQBzJcV",
-    "[17:28:46] 9: reel Db-LNQqTYu1",
-    "[17:28:50] 10: reel Dbv8sl7zgkE",
-    "[17:28:54] 11: reel Dbv7h_GyoUO",
-    "[17:28:58] 12: reel Dbv7ZJkS5Hj",
-    "[17:29:02] 13: reel DbtNBpcygmg",
-    "[17:29:06] 14: reel Dbs8nHDyn4N",
-    "[17:29:10] 15: reel DbqUt5WTDNo",
-    "[17:29:14] 16: reel DbqUqZszqJO",
-    "[17:29:19] 17: reel DbqUnivz0yb",
-    "[17:29:23] 18: reel DbqT0cpzvF5",
-    "[17:29:28] 19: reel DboGIQIS8DS",
-    "[17:29:32] 20: reel DboF4rCyLaL",
-    "[17:29:37] 21: reel DboF01eS2Ds",
-    "[17:29:41] 22: reel DboAKnDyqUm",
-    "[17:29:45] 23: reel DbjP0_dzKi7",
-    "[17:30:06] Item issue: Instagram rendered an empty page.",
-    "[17:30:08] 24: reel DbjPaQJzWi-",
-    "[17:30:29] Item issue: Instagram rendered an empty page.",
-    "[17:30:31] 25: reel Dbg1Srkz6Gy",
-    "[17:30:52] Item issue: Instagram rendered an empty page.",
-    "[17:30:54] 26: reel DbgOq_my9hl",
-    "[17:31:15] Item issue: Instagram rendered an empty page.",
-    "[17:31:17] 27: reel Dbd7Qy0SmJG",
-    "[17:31:39] Item issue: Instagram rendered an empty page.",
-    "[17:31:40] 28: reel Dbdk5OYyhO9",
-    "[17:32:02] Item issue: Instagram rendered an empty page.",
-    "[17:32:03] 29: reel DbdkwzAyuR8",
-    "[17:32:25] Item issue: Instagram rendered an empty page.",
-    "[17:32:27] 30: reel DbdQzNBzR-6",
-    "[17:32:48] Item issue: Instagram rendered an empty page.",
-    "[17:32:50] 31: reel DbcjazGyXG9",
-    "[17:33:13] Item issue: Instagram rendered an empty page.",
-    "[17:33:14] 32: reel DbcgApEyHCZ",
-    "[17:33:36] Item issue: Instagram rendered an empty page.",
-    "[17:33:37] 33: reel DbbblxUS1-A",
-    "[17:33:45] Item issue: Instagram reports this page is unavailable.",
-    "[17:33:47] 34: reel DbbbNjGy2nY",
-    "[17:34:08] Item issue: Instagram rendered an empty page.",
-    "[17:34:10] Saved after history snapshot: D:\\post engg\\dedgram\\collector-v2\\data\\pixa.300k\\history\\2026-10-28T12-04-10-256Z-after-08ae59a5-e25a-4100-acf3-9e2c04177936",
-    "[17:34:10] Done: 34 items. Report: D:\\post engg\\dedgram\\collector-v2\\data\\pixa.300k\\report.html",
-    "Finished @pixa.300k reels: needs_review"
+    "[20:57:03] 42: reel Ddj50cuT2aY",
+    "[20:57:07] 43: reel DdjoDWby3tS",
+    "[20:57:11] 44: reel DdhZhSsT49a",
+    "[20:57:15] 45: reel DdhV7SDTC6Z",
+    "[20:57:19] 46: reel DdhHPL0yJZR",
+    "[20:57:23] Saved after history snapshot: D:\\post engg\\dedgram\\collector\\data\\kabir.chaudhary69\\history\\2026-11-05T15-27-22-985Z-after-bd9864ef-6c5d-4624-b28e-9dde1a9d37c9",
+    "[20:57:23] Done: 46 items. Report: D:\\post engg\\dedgram\\collector\\data\\kabir.chaudhary69\\report.html",
+    "Finished @kabir.chaudhary69 reels: complete",
+    "Starting @relatable.fun1 reels",
+    "[20:57:25] Saved before history snapshot: D:\\post engg\\dedgram\\collector\\data\\relatable.fun1\\history\\2026-11-05T15-27-25-361Z-before-fcfef002-9c2d-46e7-ba5e-0714934dda8b",
+    "[20:57:26] Using saved relatable.fun1 profile details",
+    "[20:57:26] Using saved reel grid",
+    "[20:57:26] 1: reel DfXO6u0pN94",
+    "[20:57:30] 2: reel DfXMfY9pUwV",
+    "[20:57:35] 3: reel DfOwvSjhhmM",
+    "[20:57:40] 4: reel DfJ-clwhx_N",
+    "[20:57:44] 5: reel DfHpBVGhydl",
+    "[20:57:48] 6: reel DfHoZEQv1dt",
+    "[20:57:52] 7: reel DfGxCafhmif",
+    "[20:57:57] 8: reel DfFirJTucr-",
+    "[20:58:01] 9: reel DfEwH0sA8aC",
+    "[20:58:05] 10: reel DfCt6nKBgNn",
+    "[20:58:10] 11: reel DfCaaQQupkc",
+    "[20:58:14] 12: reel DfBvSIGBN8Y",
+    "[20:58:18] 13: reel DfBuOe9JA0z",
+    "[20:58:22] 14: reel DfBa8j7taGb",
+    "[20:58:26] 15: reel DfAgyMzS6Nk",
+    "[20:58:30] 16: reel DfADu-CgBp5",
+    "[20:58:34] 17: reel De_4V8RNsLB",
+    "[20:58:38] 18: reel De_1D98tSkA",
+    "[20:58:42] 19: reel De_tuyQvTDI",
+    "[20:58:46] 20: reel De_c6B7vFMj",
+    "[20:58:50] 21: reel De-_qYzhNc8",
+    "[20:58:54] 22: reel De91TTbybY-",
+    "[20:58:58] 23: reel De9ZrEQvWVd",
+    "[20:59:02] 24: reel De9YZ95sGn4",
+    "[20:59:06] 25: reel De9T_chBjfe",
+    "[20:59:10] 26: reel De85wjuhScp",
+    "[20:59:14] 27: reel De82qPiN8HS",
+    "[20:59:18] 28: reel De7S_byS2GU",
+    "[20:59:22] 29: reel De6dMC1BREs",
+    "[20:59:26] 30: reel De6ODmOBG6n",
+    "[20:59:31] 31: reel De6AWzzM29W",
+    "[20:59:35] 32: reel De52ijiJacy",
+    "[20:59:41] 33: reel De4gA75hk3-",
+    "[20:59:46] 34: reel De4WogEg6tK",
+    "[20:59:51] 35: reel De34__CulQk",
+    "[20:59:55] 36: reel De34k4KhsTI",
+    "[20:59:59] 37: reel De3283phNbV",
+    "[21:00:00] Item issue: Instagram returned HTTP 429 (rate limit).",
+    "[21:00:00] Saved after history snapshot: D:\\post engg\\dedgram\\collector\\data\\relatable.fun1\\history\\2026-11-05T15-30-00-402Z-after-29fbc5e1-f426-49b2-82ff-5bcbc23acba2",
+    "Error: Instagram returned HTTP 429 (rate limit).",
+    "at open (file:///D:/post%20engg/dedgram/collector/src/browser.mjs:41:41)",
+    "at runNextTicks (node:internal/process/task_queues:65:5)",
+    "at process.processImmediate (node:internal/timers:453:9)",
+    "at process.callbackTrampoline (node:internal/async_hooks:130:17)",
+    "at async captureItem (file:///D:/post%20engg/dedgram/collector/src/browser.mjs:188:3)",
+    "at async collect (file:///D:/post%20engg/dedgram/collector/src/cli.mjs:258:25)",
+    "at async file:///D:/post%20engg/dedgram/collector/src/cli.mjs:309:35",
+    "Finished @relatable.fun1 reels: failed"
   ]
 }

@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "username": "notmemezz",
+  "phase": "after",
+  "snapshot_at": "2026-11-05T15:14:27.562Z",
+  "run_status": "partial",
+  "run_updated_at": "2026-11-05T15:14:27.548Z",
+  "profile_fetched_at": "2026-10-23T14:55:02.791Z",
+  "item_count": 42,
+  "complete_item_count": 37,
+  "discovery": {
+    "reel": {
+      "count": 42,
+      "complete": true,
+      "error": null,
+      "attempted_at": "2026-10-23T14:55:18.490Z"
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "username": "kabir.chaudhary69",
+  "url": "https://www.instagram.com/kabir.chaudhary69/",
+  "fetched_at": "2026-10-28T09:03:06.394Z",
+  "display_name": "Kabir",
+  "bio": "あらゆる追いかけっこを繰り広げる!「トムとジェリー公式Instagramです! CartoonNetworkにて『まいにちトムとジェリー』放送中!『映画トムとジェリー』デジタル配信中/ブルーレイ&DVD発売中TEC (s23)",
+  "posts_count": {
+    "value": 47,
+    "raw": "47",
+    "approximate": false
+  },
+  "posts_count_observed_at": "2026-10-28T09:03:06.394Z",
+  "followers_count": {
+    "value": 401,
+    "raw": "401",
+    "approximate": false,
+    "source": "header_title"
+  },
+  "following_count": {
+    "value": 34,
+    "raw": "34",
+    "approximate": false,
+    "source": "header_text"
+  },
+  "count_evidence": {
+    "followers": {
+      "header": {
+        "value": 401,
+        "raw": "401",
+        "approximate": false
+      },
+      "exact_title": {
+        "value": 401,
+        "raw": "401",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 399,
+        "raw": "399",
+        "approximate": false
+      }
+    },
+    "following": {
+      "header": {
+        "value": 34,
+        "raw": "34",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 38,
+        "raw": "38",
+        "approximate": false
+      },
+      "conflict": true
+    },
+    "posts": {
+      "header": {
+        "value": 47,
+        "raw": "47",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 47,
+        "raw": "47",
+        "approximate": false
+      }
+    }
+  },
+  "category": "Digital creator",
+  "ai_generated_profile": false,
+  "profile_picture_url": "https://instagram.fblr1-4.fna.fbcdn.net/v/t51.82787-19/839524714_18109236896059934_4238583205380900053_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=hxLv0v7eATIQ7kNvwFC5FgR&_nc_oc=AdqdgWof7-vurDRjFpmKaIPgNp0bWOQBcjNS934nTM9dEdF7di4KwhWWVBH53M70gKy4IP2cc9R4iG6r-dqQNDja&_nc_zt=24&_nc_ht=instagram.fblr1-4.fna&_nc_gid=5xd0zynPYrNT6oxwHtMmQQ&_nc_ss=7f6a8&oh=00_AQSpTeuAS3YoLYVDGlzDQNX_9o-pw2YFzMAiVjzwTy_40w&oe=6AE77B6A",
+  "date_joined": "September 2026",
+  "account_based_in": "India",
+  "former_usernames_count": {
+    "value": 1,
+    "raw": "1",
+    "approximate": false
+  },
+  "raw": {
+    "header_text": "kabir.chaudhary69\nKabir\n47 posts\n401 followers\n34 following\nDigital creator\nあらゆる追いかけっこを繰り広げる!「トムとジェリー公式Instagramです! CartoonNetworkにて『まいにちトムとジェリー』放送中!『映画トムとジェリー』デジタル配信中/ブルーレイ&DVD発売中TEC (s23)\nFollow\nMessage",
+    "about_text": "About this account\nkabir.chaudhary69\nTo help keep our community authentic, we’re showing information about profiles on Instagram. See why this information is important.\nDate joined\nSeptember 2026\nAccount based in\nIndia\nFormer usernames\n1\nClose",
+    "description": "399 Followers, 38 Following, 47 Posts - Kabir (@kabir.chaudhary69) on Instagram: \"あらゆる追いかけっこを繰り広げる!「トムとジェリー公式Instagramです! CartoonNetworkにて『まいにちトムとジェリー』放送中!『映画トムとジェリー』デジタル配信中/ブルーレイ&DVD発売中TEC (s23)\"",
+    "stat_evidence": {
+      "posts": {
+        "label": "",
+        "exact_title": ""
+      },
+      "followers": {
+        "label": "401 followers",
+        "exact_title": "401"
+      },
+      "following": {
+        "label": "34 following",
+        "exact_title": ""
+      }
+    }
+  },
+  "issues": [],
+  "current_username": "kabir.chaudhary69",
+  "username_history": [
+    {
+      "username": "kabir.chaudhary69",
+      "role": "current username",
+      "first_seen_at": "2026-10-28T09:03:06.390Z"
+    }
+  ],
+  "username_change_observed_at": null
+}

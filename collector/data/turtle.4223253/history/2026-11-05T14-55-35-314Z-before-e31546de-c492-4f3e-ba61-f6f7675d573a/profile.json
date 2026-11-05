@@ -1,0 +1,104 @@
+{
+  "username": "turtle.4223253",
+  "url": "https://www.instagram.com/turtle.4223253/",
+  "fetched_at": "2026-11-01T12:16:29.798Z",
+  "display_name": ".",
+  "bio": "映画「マスク」のユニークな世界と驚きの冒険を存分に楽しもう！愉快なシーンや忘れられない物語が満載・デジタル配サービスでも視聴可能。Blu-ray& DVDも好評発売中。",
+  "posts_count": {
+    "value": 18,
+    "raw": "18",
+    "approximate": false
+  },
+  "posts_count_observed_at": "2026-11-01T12:16:29.798Z",
+  "followers_count": {
+    "value": 3635,
+    "raw": "3,635",
+    "approximate": false,
+    "source": "header_title"
+  },
+  "following_count": {
+    "value": 1,
+    "raw": "1",
+    "approximate": false,
+    "source": "header_text"
+  },
+  "count_evidence": {
+    "followers": {
+      "header": {
+        "value": 3635,
+        "raw": "3,635",
+        "approximate": false
+      },
+      "exact_title": {
+        "value": 3635,
+        "raw": "3,635",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 3597,
+        "raw": "3,597",
+        "approximate": false
+      }
+    },
+    "following": {
+      "header": {
+        "value": 1,
+        "raw": "1",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 1,
+        "raw": "1",
+        "approximate": false
+      },
+      "conflict": false
+    },
+    "posts": {
+      "header": {
+        "value": 18,
+        "raw": "18",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 18,
+        "raw": "18",
+        "approximate": false
+      }
+    }
+  },
+  "category": null,
+  "ai_generated_profile": false,
+  "profile_picture_url": "https://instagram.fblr1-5.fna.fbcdn.net/v/t51.82787-19/867611350_18119535485081326_69403223537857243_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy43MzYuQzMifQ%3D%3D&_nc_ohc=7DTE80G14rkQ7kNvwE6RaBE&_nc_oc=Adr5UY2B3CajXv8b1hxWcRzSn9uckI6sOy1sR-d8M8y7VX6LHbX5J_RyRupqk0-KGHgoIyx7l_VctHdT6lbD2Yqo&_nc_zt=24&_nc_ht=instagram.fblr1-5.fna&_nc_gid=D0AzvpOqyttzbGCdSW3LkQ&_nc_ss=7f6a8&oh=00_AQRVe15MvM0oNvSSvmDAr3nbGvX4glr2faS2yesIbyT1Xw&oe=6AED09E2",
+  "date_joined": "October 2026",
+  "account_based_in": "Somalia",
+  "former_usernames_count": null,
+  "raw": {
+    "header_text": "turtle.4223253\n.\n18 posts\n3,635 followers\n1 following\n映画「マスク」のユニークな世界と驚きの冒険を存分に楽しもう！愉快なシーンや忘れられない物語が満載・デジタル配サービスでも視聴可能。Blu-ray& DVDも好評発売中。\nFollow\nMessage",
+    "about_text": "About this account\nturtle.4223253\nTo help keep our community authentic, we’re showing information about profiles on Instagram. See why this information is important.\nDate joined\nOctober 2026\nAccount based in\nSomalia\nClose",
+    "description": "3,597 Followers, 1 Following, 18 Posts - . (@turtle.4223253) on Instagram: \"映画「マスク」のユニークな世界と驚きの冒険を存分に楽しもう！愉快なシーンや忘れられない物語が満載・デジタル配サービスでも視聴可能。Blu-ray& DVDも好評発売中。\"",
+    "stat_evidence": {
+      "posts": {
+        "label": "",
+        "exact_title": ""
+      },
+      "followers": {
+        "label": "3,635 followers",
+        "exact_title": "3,635"
+      },
+      "following": {
+        "label": "1 following",
+        "exact_title": ""
+      }
+    }
+  },
+  "issues": [],
+  "current_username": "turtle.4223253",
+  "username_history": [
+    {
+      "username": "turtle.4223253",
+      "role": "current username",
+      "first_seen_at": "2026-11-01T12:16:29.791Z"
+    }
+  ],
+  "username_change_observed_at": null
+}

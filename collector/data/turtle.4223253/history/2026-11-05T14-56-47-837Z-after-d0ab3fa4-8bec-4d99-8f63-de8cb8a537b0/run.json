@@ -1,0 +1,23 @@
+{
+  "started_at": "2026-11-05T14:55:35.367Z",
+  "updated_at": "2026-11-05T14:56:47.828Z",
+  "status": "complete",
+  "phase": "done",
+  "scope": [
+    "reel"
+  ],
+  "current_url": null,
+  "error": null,
+  "progress": {
+    "task": "item_details",
+    "label": "Reel details",
+    "action": "Opening reel pages and extracting dates, captions, views, likes and comments",
+    "completed": 18,
+    "total": 18,
+    "percent": 100,
+    "remaining": 0,
+    "current_item": null,
+    "detail": "Stage complete",
+    "updated_at": "2026-11-05T14:56:47.828Z"
+  }
+}
