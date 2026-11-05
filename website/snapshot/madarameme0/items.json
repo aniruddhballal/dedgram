@@ -997,8 +997,8 @@
     "grid_views_issue": null,
     "status": "partial",
     "fetched_at": "2026-10-28T11:50:43.534Z",
-    "date": null,
-    "date_precision": null,
+    "date": "2026-10-19",
+    "date_precision": "day",
     "caption": "「😂 ちょっと待って、このミーム面白すぎる！！🤣🔥\n\n最後まで見たら、きっと笑いが止まらない…！？💀💥\nこの瞬間、反則級のおもしろさ😂 あなたは何秒で吹き出した？👇\n\n友達にもシェアして、一緒に笑おう！📲🤣\n\n#ミーム #面白動画 #爆笑 #おもしろい #神回 ネットミーム 笑ったら負け リール バズ動画 MEMES」",
     "hashtags": [
       "#ミーム",
@@ -1019,12 +1019,10 @@
     "thumbnail_url": "https://instagram.fblr1-7.fna.fbcdn.net/v/t51.82787-15/858313076_1129160909667319_6413212707423965893_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=f706ERLRqmcQ7kNvwGtykmg&_nc_oc=AdqwHPber233w79EPEh5bRGXfNejdL1FSHsh4gzFx8PsN6zjzhUpjsxtw3wtwEz0YSFmpKMAwh_1c9KeHhleP2Q3&_nc_zt=23&_nc_ht=instagram.fblr1-7.fna&_nc_gid=Yr8daCwGcmFdVg3kO1Ek2w&_nc_ss=7f6a8&oh=00_AQSS4gDn9b1S-kU_y7BKz54Rrn7LLTW3qKD73INVvJZ6Uw&oe=6AE7B0F0&ig_cache_key=MDJSQVF6Qm5UUktETUg5d0lFQVBjNzZrSUhfazRBV2NYU0JvODpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
     "missing": [
-      "date",
       "likes",
       "comments"
     ],
     "missing_reasons": {
-      "date": "No readable timestamp or calendar date was found on the content page or in its metadata.",
       "likes": "No readable like count was found on the content page or in its metadata.",
       "comments": "No readable comment count was found on the content page or in its metadata."
     },
@@ -1213,7 +1211,8 @@
         "page_url": "https://www.instagram.com/reel/DesS5V6vwVU/",
         "source": "fresh_incognito_context"
       }
-    }
+    },
+    "date_source": "og_description_localized"
   },
   {
     "kind": "reel",

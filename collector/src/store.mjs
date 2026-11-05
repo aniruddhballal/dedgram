@@ -3,6 +3,7 @@ import { dirname, join } from 'node:path';
 import { randomUUID } from 'node:crypto';
 import { setTimeout as delay } from 'node:timers/promises';
 import { count, reasonsForMissing } from './model.mjs';
+import { normalizeReelDate } from '../../website/lib/reel-date.mjs';
 
 export async function readJson(path, fallback = null) {
   try { return JSON.parse(await readFile(path, 'utf8')); }
@@ -74,20 +75,25 @@ export async function writeSnapshot(pathSet, { username, phase, snapshotAt, prof
 }
 
 export function mergeItem(previous, current) {
-  if (!previous) return current;
+  if (!previous) return normalizeReelDate(current);
   const result = { ...previous, ...current };
   for (const field of ['date', 'caption', 'likes', 'comments', 'views', 'thumbnail_url', 'media_url']) {
     if (result[field] == null && previous[field] != null) result[field] = previous[field];
+  }
+  if (!current.date && previous.date) {
+    result.date_precision = previous.date_precision;
+    result.date_source = previous.date_source;
   }
   if ((previous.date_precision === 'timestamp' || /^\d{4}-\d{2}-\d{2}T/.test(previous.date || ''))
     && current.date_precision !== 'timestamp') {
     result.date = previous.date;
     result.date_precision = 'timestamp';
+    result.date_source = previous.date_source || null;
   }
   result.status = ['date', 'likes', 'comments', 'views'].every((field) => result[field] != null) ? 'complete' : 'partial';
   result.missing = ['date', 'likes', 'comments', 'views'].filter((field) => result[field] == null);
   result.missing_reasons = reasonsForMissing(result.missing, result);
-  return result;
+  return normalizeReelDate(result);
 }
 
 export function syncGridViews(previous, discovered, observedAt) {

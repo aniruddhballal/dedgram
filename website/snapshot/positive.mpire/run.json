@@ -1,6 +1,6 @@
 {
   "started_at": "2026-11-05T15:20:30.626Z",
-  "updated_at": "2026-11-05T15:23:58.961Z",
+  "updated_at": "2026-11-05T17:36:32.208Z",
   "status": "partial",
   "phase": "done",
   "scope": [
@@ -17,7 +17,15 @@
     "percent": 100,
     "remaining": 0,
     "current_item": null,
-    "detail": "Stage finished with review required",
-    "updated_at": "2026-11-05T15:23:58.962Z"
+    "detail": "1 reel dates recovered from saved evidence. 1 reels still need analysis or review.",
+    "updated_at": "2026-11-05T17:36:32.208Z"
+  },
+  "metadata_date_recovery": {
+    "updated_at": "2026-11-05T17:36:32.208Z",
+    "recovered_reels": [
+      "DbyGzDLBb8M"
+    ],
+    "newly_complete_reels": 0,
+    "network_requests": 0
   }
 }

@@ -1,6 +1,6 @@
 {
   "started_at": "2026-10-28T11:24:58.024Z",
-  "updated_at": "2026-10-29T02:27:40.849Z",
+  "updated_at": "2026-11-05T17:36:32.208Z",
   "status": "partial",
   "phase": "done",
   "scope": [
@@ -17,8 +17,8 @@
     "percent": 1,
     "remaining": 3011,
     "current_item": null,
-    "detail": "37 of 3048 reel pages processed",
-    "updated_at": "2026-10-28T11:27:36.141Z"
+    "detail": "1 reel dates recovered from saved evidence. 3011 reels still need analysis or review.",
+    "updated_at": "2026-11-05T17:36:32.208Z"
   },
   "deletion_check": {
     "operation": "automated reel availability check",
@@ -42,5 +42,13 @@
         "reason": "Instagram displayed age-restricted content; viewing requires viewers to be 25 or older. Full reel details should be retried after the rate limit clears."
       }
     ]
+  },
+  "metadata_date_recovery": {
+    "updated_at": "2026-11-05T17:36:32.208Z",
+    "recovered_reels": [
+      "Dd2L0NtPH4L"
+    ],
+    "newly_complete_reels": 0,
+    "network_requests": 0
   }
 }

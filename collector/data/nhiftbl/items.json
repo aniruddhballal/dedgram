@@ -1235,10 +1235,10 @@
     "url": "https://www.instagram.com/reel/DVgIcUODMtK/",
     "grid_views_raw": "1,809",
     "grid_views_issue": null,
-    "status": "partial",
+    "status": "complete",
     "fetched_at": "2026-10-28T11:49:06.385Z",
-    "date": null,
-    "date_precision": null,
+    "date": "2026-03-05",
+    "date_precision": "day",
     "caption": null,
     "hashtags": [],
     "mentions": [],
@@ -1262,12 +1262,8 @@
     },
     "thumbnail_url": "https://instagram.fblr24-3.fna.fbcdn.net/v/t51.71878-15/645898367_4361921727377023_7397974524671919749_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=BrXJ24M4nAAQ7kNvwFzeSIO&_nc_oc=Ado8RQLKnwdR_A1C5heE36MWjlwhoBN4nov3GL-DefH22nKieeygOdH1AaJpx6YPjtLqKDXFphzE6NV-tvTHTFE-&_nc_zt=23&_nc_ht=instagram.fblr24-3.fna&_nc_gid=dWMkwQRP3CrXVRNlXbTB8w&_nc_ss=7f6a8&oh=00_AQTq8etNcHdbvahJVbBOhW5Z3m885yd0cyzCf8SUGL_iEw&oe=6AE7CD6B&ig_cache_key=MDJSQVF6Qm5fZ2Z5WUhKWDhQQUg4dUdRc0hvdUtxWm9XR2RWQTpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
-    "missing": [
-      "date"
-    ],
-    "missing_reasons": {
-      "date": "No readable timestamp or calendar date was found on the content page or in its metadata."
-    },
+    "missing": [],
+    "missing_reasons": {},
     "raw": {
       "description": "98 likes, 0 comments - nhiftbl on March 5, 2026",
       "article_text": "nhiftbl\n•\nFollow\n98\n3\nmohhfitt\n•\nFollow\nMXZI, Dj Samir, DJ Javi26 · MONTAGEM XONADA (Mega Slowed 8D)\nMXZI, Dj Samir, DJ Javi26 · MONTAGEM XONADA (Mega Slowed 8D)\nwant to start Calisthenics? comment “START” and you’ll get next beginner plan no excuses!!\na strong core is very important in calisthenics #calisthenics #calisthenicstraining #calisthenicsworkout #calisthenicsbeginner #calisthenicsgirls\nLikes\n15\n12",
@@ -1275,7 +1271,8 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:49:06.385Z"
+    "last_attempt_at": "2026-10-28T11:49:06.385Z",
+    "date_source": "og_description"
   },
   {
     "kind": "reel",
@@ -1283,10 +1280,10 @@
     "url": "https://www.instagram.com/reel/DVfnRgPDLSj/",
     "grid_views_raw": "1,694",
     "grid_views_issue": null,
-    "status": "partial",
+    "status": "complete",
     "fetched_at": "2026-10-28T11:49:10.686Z",
-    "date": null,
-    "date_precision": null,
+    "date": "2026-03-04",
+    "date_precision": "day",
     "caption": null,
     "hashtags": [],
     "mentions": [],
@@ -1310,12 +1307,8 @@
     },
     "thumbnail_url": "https://instagram.fblr1-7.fna.fbcdn.net/v/t51.71878-15/640424468_891173453748132_2724958455578544212_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=4M72_uK6lxEQ7kNvwGMDNW9&_nc_oc=Adrf3sxcEqQTVjJO6FQpbfhidwZ_d50M1xo3z-twiILgO_coRyYE2FLgCMRhRTr2w1KYVHvoZ1xs8VFgkQ4A1_di&_nc_zt=23&_nc_ht=instagram.fblr1-7.fna&_nc_gid=0z8xsICQ5SDKJMoXaLGl4Q&_nc_ss=7f6a8&oh=00_AQSrhUI9Mi6__cT8nWv36CM1-0czAe07tXLoftdOuEDWuw&oe=6AE7B7F4&ig_cache_key=MDJSQVF6QmhRYUxDWUhoQ29EQUtUWEpIMEhSLS1RSlZUSWRDUTpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
-    "missing": [
-      "date"
-    ],
-    "missing_reasons": {
-      "date": "No readable timestamp or calendar date was found on the content page or in its metadata."
-    },
+    "missing": [],
+    "missing_reasons": {},
     "raw": {
       "description": "63 likes, 0 comments - nhiftbl on March 4, 2026",
       "article_text": "nhiftbl\n•\nFollow\n63\n2\nabhiinavsanthosh\n•\nFollow\nCreep — Radiohead🖤\n#radiohead #creep #radioheadcover #rockcover #alternativerock\n214\n31\n12",
@@ -1323,6 +1316,7 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:49:10.686Z"
+    "last_attempt_at": "2026-10-28T11:49:10.686Z",
+    "date_source": "og_description"
   }
 ]

@@ -1,6 +1,7 @@
 import { access, copyFile, mkdir, readdir, readFile, rm, writeFile } from 'node:fs/promises';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { normalizeReelDate } from '../lib/reel-date.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const source = join(root, 'snapshot');
@@ -177,7 +178,10 @@ const publishedProfiles = [...fullProfiles, ...profileLevelProfiles, ...excluded
 const profileLevelSet = new Set(profileLevelProfiles);
 const excludedSet = new Set(excludedProfiles);
 const files = ['profile.json', 'discovery.json', 'items.json', 'run.json', 'profile.csv', 'items.csv', 'report.html'];
-const readJson = async (name) => JSON.parse(await readFile(join(source, name), 'utf8'));
+const readJson = async (name) => {
+  const value = JSON.parse(await readFile(join(source, name), 'utf8'));
+  return name.endsWith('/items.json') ? value.map(normalizeReelDate) : value;
+};
 const exclusionRecords = await readJson('resolutions.json');
 const plainText = (value) => String(value ?? '').replace(/[\p{Extended_Pictographic}\p{Regional_Indicator}\p{Emoji_Modifier}\uFE0E\uFE0F\u200D\u20E3]/gu, '');
 const esc = (value) => plainText(value).replace(/[&<>"']/g, (ch) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[ch]);
@@ -571,7 +575,11 @@ for (const page of profilePages) {
   await mkdir(join(output, 'downloads', page.published), { recursive: true });
   await writeFile(join(output, 'profiles', page.published, 'index.html'), publicProfileHtml(page.html));
   if (!excludedSet.has(page.published) || snapshotData.has(page.published)) {
-    for (const file of files) await copyFile(join(source, page.published, file), join(output, 'downloads', page.published, file));
+    for (const file of files) {
+      const destination = join(output, 'downloads', page.published, file);
+      if (file === 'items.json') await writeFile(destination, JSON.stringify(snapshotData.get(page.published).items, null, 2) + '\n');
+      else await copyFile(join(source, page.published, file), destination);
+    }
   }
 }
 for (const file of ['site.css', 'site.js', 'favicon.svg']) await copyFile(join(root, 'src', file), join(output, 'assets', file));

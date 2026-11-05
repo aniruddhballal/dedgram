@@ -1,3 +1,6 @@
+import { dayFromDescription, normalizeReelDate, resolveReelDate } from '../../website/lib/reel-date.mjs';
+export { dayFromDescription, normalizeReelDate };
+
 export const now = () => new Date().toISOString();
 export const itemAnalysisHandled = (item) => ['complete', 'archived', 'age_restricted'].includes(item?.status) && !item.last_error;
 export const clean = (value) => String(value ?? '').replace(/\u00a0/g, ' ').replace(/[\t ]+/g, ' ').trim();
@@ -148,21 +151,6 @@ export function canonicalItemUrl(href) {
   } catch { return null; }
 }
 
-export function dayFromDescription(description) {
-  const match = String(description || '').match(/\bon\s+([A-Za-z]+\s+\d{1,2},\s+\d{4})\s*:/);
-  if (match) {
-    const parsed = new Date(`${match[1]} 00:00:00 GMT`);
-    if (!Number.isNaN(parsed.getTime())) return parsed.toISOString().slice(0, 10);
-  }
-  const localized = String(description || '').match(/(\d{4})年(\d{1,2})月(\d{1,2})日/);
-  if (!localized) return null;
-  const year = Number(localized[1]);
-  const month = Number(localized[2]);
-  const day = Number(localized[3]);
-  const parsed = new Date(Date.UTC(year, month - 1, day));
-  return parsed.getUTCFullYear() === year && parsed.getUTCMonth() === month - 1 && parsed.getUTCDate() === day
-    ? parsed.toISOString().slice(0, 10) : null;
-}
 
 export function reasonsForMissing(missing, item = {}) {
   const defaults = {
@@ -215,11 +203,9 @@ export function itemFromSnapshot(item, snapshot) {
   const resolvedComments = localizedComments ? { ...localizedComments, source: 'og_description_localized' } : comments;
   const views = findMetric(['views?', 'plays?']) || (snapshot.grid_views_raw
     ? { ...count(snapshot.grid_views_raw), source: 'profile_grid' } : null);
-  const dateRaw = snapshot.datetime || structured.uploadDate || structured.datePublished || null;
-  const calendarDay = dayFromDescription(description);
-  const date = dateRaw && !Number.isNaN(Date.parse(dateRaw)) ? new Date(dateRaw).toISOString()
-    : calendarDay;
-  const date_precision = dateRaw && date ? 'timestamp' : date ? 'day' : null;
+  const dateEvidence = resolveReelDate({ ...snapshot, json_ld: structured });
+  const date = dateEvidence?.date || null;
+  const date_precision = dateEvidence?.date_precision || null;
   const ogCaption = description.match(/:\s*[“"']([\s\S]*)[”"']\.?\s*$/)?.[1]
     || description.match(/:\s*([\s\S]+)$/)?.[1]?.trim();
   const caption = snapshot.caption || structured.caption || structured.description || ogCaption || null;
@@ -232,6 +218,7 @@ export function itemFromSnapshot(item, snapshot) {
     status: missing.length ? 'partial' : 'complete',
     date,
     date_precision,
+    date_source: dateEvidence?.date_source || null,
     caption,
     hashtags,
     mentions,
@@ -252,14 +239,18 @@ function observedMetric(metricValue, observedAt) {
 
 export function publicDetailsFromSnapshot(item, snapshot, observedAt = now()) {
   const parsed = itemFromSnapshot(item, snapshot);
+  const savedDate = resolveReelDate(item);
+  if (savedDate && (!parsed.date || item.manual_verification?.date || savedDate.date_precision === 'timestamp'
+    || parsed.date_precision !== 'timestamp')) Object.assign(parsed, savedDate);
   const localizedDate = String(snapshot.og_description || '').match(/(\d{4}年\d{1,2}月\d{1,2}日)/);
   return {
     observed_at: observedAt,
     date: parsed.date || null,
     date_precision: parsed.date_precision || null,
-    date_source: parsed.date ? (snapshot.datetime ? 'page_timestamp' : localizedDate ? 'og_description_localized' : 'og_description') : null,
+    date_source: parsed.date_source || (parsed.date ? 'saved_record' : null),
+    date_timezone: parsed.date_source === 'user_manual_check' ? item.manual_verification?.date?.timezone || item.date_timezone || null : null,
     date_original: localizedDate?.[1] || null,
-    date_translation: localizedDate ? parsed.date || null : null,
+    date_translation: localizedDate ? dayFromDescription(snapshot.og_description) : null,
     caption: parsed.caption || null,
     hashtags: parsed.hashtags || [],
     mentions: parsed.mentions || [],

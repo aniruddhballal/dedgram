@@ -5,10 +5,10 @@
     "url": "https://www.instagram.com/reel/Chvet4QtNWL/",
     "grid_views_raw": "19.9K",
     "grid_views_issue": null,
-    "status": "partial",
+    "status": "complete",
     "fetched_at": "2026-10-28T11:29:12.738Z",
-    "date": null,
-    "date_precision": null,
+    "date": "2022-08-26",
+    "date_precision": "day",
     "caption": null,
     "hashtags": [],
     "mentions": [],
@@ -32,12 +32,8 @@
     },
     "thumbnail_url": "https://instagram.fblr24-4.fna.fbcdn.net/v/t51.71878-15/501547657_2104050276773402_3172624081012260436_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=sYENxI8ZPCMQ7kNvwH5ft8m&_nc_oc=AdogTiMvO727VZhOVXaQZSjGY1jenBMFdonzXOlu92FRh_5q-R23lj00vx1PW7ankKYR11UEXX3jTdwubDC7UrFB&_nc_zt=23&_nc_ht=instagram.fblr24-4.fna&_nc_gid=1QSaNBc0j785OQsMhrs1zQ&_nc_ss=7e6a8&oh=00_AQRgsnftiweM88wN3RkkhvQvhGKR5MDJRv3SrVUq_1pzZg&oe=6AE7953A&ig_cache_key=MDJSQVF6Qm9rQzVSMEhuM2tIQUJvdVZtRUh5bXdITEZUX2xkbzpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
-    "missing": [
-      "date"
-    ],
-    "missing_reasons": {
-      "date": "No readable timestamp or calendar date was found on the content page or in its metadata."
-    },
+    "missing": [],
+    "missing_reasons": {},
     "raw": {
       "description": "1,298 likes, 59 comments - reelrestock on August 26, 2022",
       "article_text": "reelrestock\n•\nFollow\n1,298\n59\n2\nhecallsmejames\n•\nFollow\nADÉLA · Nicole Kidman\nEvery single night 😘\n\n#adela #nicolekidman\n#fyp #dancetrend\n#fyp\n667\n49\n9",
@@ -45,7 +41,8 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:29:12.739Z"
+    "last_attempt_at": "2026-10-28T11:29:12.739Z",
+    "date_source": "og_description"
   },
   {
     "kind": "reel",
@@ -97,10 +94,10 @@
     "url": "https://www.instagram.com/reel/CWoxOhLpW4t/",
     "grid_views_raw": "28.1K",
     "grid_views_issue": null,
-    "status": "partial",
+    "status": "complete",
     "fetched_at": "2026-10-28T11:29:21.641Z",
-    "date": null,
-    "date_precision": null,
+    "date": "2021-11-23",
+    "date_precision": "day",
     "caption": null,
     "hashtags": [],
     "mentions": [],
@@ -124,12 +121,8 @@
     },
     "thumbnail_url": "https://instagram.fblr24-3.fna.fbcdn.net/v/t51.71878-15/642157153_2420703068359793_4974004795675892849_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uSUdUVi42NDB4NjQwLkMzIn0%3D&_nc_ohc=tfYGzhH8GaQQ7kNvwERoizO&_nc_oc=AdpyuOyoUnaPse5KUR_JM0haTit6jyFycX6K3_diGKDExhdy5SFOQq4IF-_2xqZHW8ZBzZ6nRVKSer-1y5IC0Gbm&_nc_zt=23&_nc_ht=instagram.fblr24-3.fna&_nc_gid=my3Oir494mpdPifeVBn2uw&_nc_ss=7f6a8&oh=00_AQTFpvIve_Ks-EdePxdCWQqx7djvkucI5tetMjqXsyK_4A&oe=6AE7C926&ig_cache_key=MDJSQVF6Qm1HS1JpWUhuWmtJQUhFTWY5b0hBamNIUlhIY1dSMDpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": "https://instagram.fblr1-4.fna.fbcdn.net/o1/v/t16/f2/m84/AQObDphEFAhpRYuoqYOEtj95i-IsfWMHgHDi5mSlGP7V3CXdViOTrxpdzmVPWvnl_QCbfnYo_bMB-efIaridC3gMFkCiGhPNl4odQaY.mp4?_nc_cat=106&_nc_oc=AdoZmkmoAzOmsxAXD0l_t8MYVJiV9la3Ri0r2TPhmHNZCkvdqLfA4LCP6gpYCZtiIpRdTNSm7EI0E_z4KRuf0seA&_nc_sid=5e9851&_nc_ht=instagram.fblr1-4.fna.fbcdn.net&_nc_ohc=eoi8kwqdwv0Q7kNvwGHg184&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uSUdUVi5DMy42NDAuZGFzaF9iYXNlbGluZV8xX3YxIiwieHB2X2Fzc2V0X2lkIjoxNzcxMTQ2NjE5OTgyMTExLCJhc3NldF9hZ2VfZGF5cyI6MTc5OSwidmlfdXNlY2FzZV9pZCI6MTAxNDUsImR1cmF0aW9uX3MiOjYsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=2b3bbe18279ca7aa&_nc_vs=HBksFQIYTGlnX2JhY2tmaWxsX3RpbWVsaW5lX3ZvZC8wQzQ4OTNEOUY4NTU4MkU4NDYwQzU1QjM0QUIxNTI4MF92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYOnBhc3N0aHJvdWdoX2V2ZXJzdG9yZS9HUHdmZVJmUkpKRS1jb0FDQUJ4YXBQeEI3TXRwYnBrd0FBQUYVAgLIARIAKAAYABsCiAd1c2Vfb2lsATEScHJvZ3Jlc3NpdmVfcmVjaXBlATEVAAAmvsSI0qa2pQYVAigCQzMsF0AaqfvnbItEGBJkYXNoX2Jhc2VsaW5lXzFfdjERAHXsB2XCngEA&_nc_gid=my3Oir494mpdPifeVBn2uw&_nc_ss=7f6a8&_nc_map=urlgen_bucketless&_nc_zt=28&oh=00_AQRKIiJtzNTdoyEEjO7R3R6VFn0Wz-CgNp3M8r6-PTOKhg&oe=6AE3C336",
-    "missing": [
-      "date"
-    ],
-    "missing_reasons": {
-      "date": "No readable timestamp or calendar date was found on the content page or in its metadata."
-    },
+    "missing": [],
+    "missing_reasons": {},
     "raw": {
       "description": "8,440 likes, 28 comments - reelrestock on November 23, 2021",
       "article_text": "reelrestock\n•\nFollow\n8,440\n28\nhecallsmejames\n•\nFollow\nADÉLA · Nicole Kidman\nEvery single night 😘\n\n#adela #nicolekidman\n#fyp #dancetrend\n#fyp\n667\n49\n9",
@@ -137,7 +130,8 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:29:21.641Z"
+    "last_attempt_at": "2026-10-28T11:29:21.641Z",
+    "date_source": "og_description"
   },
   {
     "kind": "reel",
@@ -145,10 +139,10 @@
     "url": "https://www.instagram.com/reel/CWj8D6ON6ka/",
     "grid_views_raw": "11.6K",
     "grid_views_issue": null,
-    "status": "partial",
+    "status": "complete",
     "fetched_at": "2026-10-28T11:29:25.691Z",
-    "date": null,
-    "date_precision": null,
+    "date": "2021-11-21",
+    "date_precision": "day",
     "caption": null,
     "hashtags": [],
     "mentions": [],
@@ -172,12 +166,8 @@
     },
     "thumbnail_url": "https://instagram.fblr1-10.fna.fbcdn.net/v/t51.71878-15/642858066_1442112230644048_513873928569665312_n.jpg?stp=cmp1_dst-jpg_e35_tt6&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uSUdUVi42NDB4NjQwLkMzIn0%3D&_nc_ohc=odObcrWmwhIQ7kNvwEnbqlS&_nc_oc=Adoxb84V37GU3L5OltZe2YK6nhv-ngMu9wOvMf6jL4tUVapDAfVFOJ0evZ5YtRcm0--d0iert0q3GPjLn3ob04cQ&_nc_zt=23&_nc_ht=instagram.fblr1-10.fna&_nc_gid=oqgbHvhW_iZG5joh5OMpOA&_nc_ss=7f6a8&oh=00_AQQJlyC_eIV4IroiafJAOvzjmjYIAlgkB6CkihxIM304ug&oe=6AE7B97B&ig_cache_key=MDJSQVF6QmxJOFVTWUhseDhGQUZEWk9fc0huYVVoQnlDM3VvczpjbXAxX2RzdC1qcGdfZTM1X3R0Ng%3D%3D",
     "media_url": "https://instagram.fblr1-6.fna.fbcdn.net/o1/v/t16/f2/m84/AQMmtZEl7FW3XjayKIlChM3822CItSfNPCjVhZr4I1YrlNyJdroR6iTnazUzf8MY0QH7XFFpMB26rw7vdG31a0Q8uOTg_stJBdhFu_Y.mp4?_nc_cat=100&_nc_oc=Adp7XP873t__i8yKRCk12odQ5uutPORkiuETBKJi7OEwQT0-WjJeQiziMteWkqdORKvAZTnUWmetkuONFyQg_SNE&_nc_sid=5e9851&_nc_ht=instagram.fblr1-6.fna.fbcdn.net&_nc_ohc=C6Sx13oZHAsQ7kNvwESY7DP&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uSUdUVi5DMy40ODAuZGFzaF9iYXNlbGluZV8xX3YxIiwieHB2X2Fzc2V0X2lkIjo4NTQ2MzI2OTkzOTIwMDcsImFzc2V0X2FnZV9kYXlzIjoxODAxLCJ2aV91c2VjYXNlX2lkIjoxMDE0NSwiZHVyYXRpb25fcyI6NiwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=78df1a2c58c99740&_nc_vs=HBksFQIYTGlnX2JhY2tmaWxsX3RpbWVsaW5lX3ZvZC9CNTREQzFGQTEzMDk5MkIzRUJCQzcyNEMxM0M4NEQ4Rl92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYOnBhc3N0aHJvdWdoX2V2ZXJzdG9yZS9HR0RTTWhlLWdLZnBndTRGQU1fTVZwdnlMWUZCYnBrd0FBQUYVAgLIARIAKAAYABsCiAd1c2Vfb2lsATEScHJvZ3Jlc3NpdmVfcmVjaXBlATEVAAAmjsCv55XShAMVAigCQzMsF0AYzMzMzMzNGBJkYXNoX2Jhc2VsaW5lXzFfdjERAHXsB2XCngEA&_nc_gid=oqgbHvhW_iZG5joh5OMpOA&_nc_ss=7f6a8&_nc_map=urlgen_bucketless&_nc_zt=28&oh=00_AQSXMjtF9FMyUAJEB115AtkxgCp0fxaJn_jfKXn1N2n2nA&oe=6AE3AC64",
-    "missing": [
-      "date"
-    ],
-    "missing_reasons": {
-      "date": "No readable timestamp or calendar date was found on the content page or in its metadata."
-    },
+    "missing": [],
+    "missing_reasons": {},
     "raw": {
       "description": "2,372 likes, 4 comments - reelrestock on November 21, 2021",
       "article_text": "reelrestock\n•\nFollow\n2,372\n4\nmaddy.lol.factory\n•\nFollow\nO'lEan · Leaving\nAnna nana bitbidu nan enuu madillaaa🥲🥸\n.\n.\nKannadaMemes #BengaluruMemes #KannadaComedy #CollegeMemes #RelatableMemes\n.\n.\nKannada boys memes, dingerbilli memes, cringe boyfriend, Kannada college comedy, notes texting meme, Bengaluru meme page, overprotective boyfriend 😂\n16.3K\n80\n55",
@@ -185,7 +175,8 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:29:25.691Z"
+    "last_attempt_at": "2026-10-28T11:29:25.691Z",
+    "date_source": "og_description"
   },
   {
     "kind": "reel",
@@ -193,10 +184,10 @@
     "url": "https://www.instagram.com/reel/CWL1p2AMxei/",
     "grid_views_raw": "11.3K",
     "grid_views_issue": null,
-    "status": "partial",
+    "status": "complete",
     "fetched_at": "2026-10-28T11:29:29.832Z",
-    "date": null,
-    "date_precision": null,
+    "date": "2021-11-12",
+    "date_precision": "day",
     "caption": null,
     "hashtags": [],
     "mentions": [],
@@ -220,12 +211,8 @@
     },
     "thumbnail_url": "https://instagram.fblr24-4.fna.fbcdn.net/v/t51.71878-15/641281794_1853031238748248_5704807563663925170_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uSUdUVi42NDB4NjQwLkMzIn0%3D&_nc_ohc=bhXXErG7MqYQ7kNvwHNLbXF&_nc_oc=Adq62xuDnfis2hg60BlDy6JFckEru4vAbVCk05fTJeL5wSmY5ueshScn-OJALqspEIc6PrhV-9aDDX4fhh78NXVt&_nc_zt=23&_nc_ht=instagram.fblr24-4.fna&_nc_gid=CNDnncj6DTrh0GNPWpqI8A&_nc_ss=7f6a8&oh=00_AQQ-wnwQfAFxSED5Tuquoj_ZSshAx4W8y_NoqPrxWxN0OQ&oe=6AE7ACF3&ig_cache_key=MDJSQVF6QmdJdk9TWUhVcFVHQUZoSXZuUUhRSXdyVDdKZkp2ZzpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": "https://instagram.fblr1-5.fna.fbcdn.net/o1/v/t16/f2/m84/AQOwwiTq60uj1ah34TTScn4e0Rtcw5r0xMCCvnywmUxOhPyyIZ9_9CMLTNH3rHSBgCANXPqXLDmVZ4VQdjRByTSm-3WGnKpfG6RGE68.mp4?_nc_cat=106&_nc_oc=AdrXvPfbzNZ1fgxqreDHqK4V_1r6csianctS86r9VWZ2UkHzILi-0-MyO8Azgx7CLBNjB62BqH3PS67AxYQNc9Yf&_nc_sid=5e9851&_nc_ht=instagram.fblr1-5.fna.fbcdn.net&_nc_ohc=pfVZzXf1AMoQ7kNvwEt5AVf&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uSUdUVi5DMy42NDAuZGFzaF9iYXNlbGluZV8xX3YxIiwieHB2X2Fzc2V0X2lkIjoxMjk1NjY2MDQ3ODE4MTA2LCJhc3NldF9hZ2VfZGF5cyI6MTgxMCwidmlfdXNlY2FzZV9pZCI6MTAxNDUsImR1cmF0aW9uX3MiOjYsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=8ae145ff14d4fbfd&_nc_vs=HBksFQIYTGlnX2JhY2tmaWxsX3RpbWVsaW5lX3ZvZC8zRDQ3RkMzRTQ1OUJBMEIwQzU1RTlDQ0IzMTZGRjc4Q192aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYOnBhc3N0aHJvdWdoX2V2ZXJzdG9yZS9HRXZKY1JkSzNQbEx4djRBQUluelJBeS1vTUVTYnBrd0FBQUYVAgLIARIAKAAYABsCiAd1c2Vfb2lsATEScHJvZ3Jlc3NpdmVfcmVjaXBlATEVAAAm9OW4qNiZzQQVAigCQzMsF0AYiDEm6XjVGBJkYXNoX2Jhc2VsaW5lXzFfdjERAHXsB2XCngEA&_nc_gid=CNDnncj6DTrh0GNPWpqI8A&_nc_ss=7f6a8&_nc_map=urlgen_bucketless&_nc_zt=28&oh=00_AQSZhizK3QSXsNMk-oA3sSqe6YoLkWB8LhwEcJhFXkPhbg&oe=6AE3A486",
-    "missing": [
-      "date"
-    ],
-    "missing_reasons": {
-      "date": "No readable timestamp or calendar date was found on the content page or in its metadata."
-    },
+    "missing": [],
+    "missing_reasons": {},
     "raw": {
       "description": "2,733 likes, 6 comments - reelrestock on November 12, 2021",
       "article_text": "reelrestock\n•\nFollow\n2,733\n6\nmaddy.lol.factory\n•\nFollow\nO'lEan · Leaving\nAnna nana bitbidu nan enuu madillaaa🥲🥸\n.\n.\nKannadaMemes #BengaluruMemes #KannadaComedy #CollegeMemes #RelatableMemes\n.\n.\nKannada boys memes, dingerbilli memes, cringe boyfriend, Kannada college comedy, notes texting meme, Bengaluru meme page, overprotective boyfriend 😂\n16.3K\n80\n55",
@@ -233,6 +220,7 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:29:29.832Z"
+    "last_attempt_at": "2026-10-28T11:29:29.832Z",
+    "date_source": "og_description"
   }
 ]

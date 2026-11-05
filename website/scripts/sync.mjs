@@ -1,6 +1,7 @@
 import { copyFile, mkdir, readFile, rm, writeFile } from 'node:fs/promises';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { normalizeReelDate } from '../lib/reel-date.mjs';
 
 const site = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const repo = resolve(site, '..');
@@ -220,7 +221,7 @@ for (const username of [...fullProfiles, ...profileLevelProfiles, ...excludedSna
   const source = join(repo, 'collector', 'data', sourceUsername(username));
   await mkdir(join(snapshot, username), { recursive: true });
   for (const file of files) {
-    if (file === 'profile.json' || file === 'profile.csv') continue;
+    if (file === 'profile.json' || file === 'profile.csv' || file === 'items.json') continue;
     await copyFile(join(source, file), join(snapshot, username, file));
   }
   const profile = JSON.parse(await readFile(join(source, 'profile.json'), 'utf8'));
@@ -230,7 +231,8 @@ for (const username of [...fullProfiles, ...profileLevelProfiles, ...excludedSna
   const profileCsvLines = profileCsv.split(/\r?\n/);
   if (profileCsvLines[1]) profileCsvLines[1] = profileCsvLines[1].replace(/^"[^"]*"/, JSON.stringify(username));
   await writeFile(join(snapshot, username, 'profile.csv'), profileCsvLines.join('\n'), 'utf8');
-  const items = JSON.parse(await readFile(join(source, 'items.json'), 'utf8'));
+  const items = JSON.parse(await readFile(join(source, 'items.json'), 'utf8')).map(normalizeReelDate);
+  await writeFile(join(snapshot, username, 'items.json'), JSON.stringify(items, null, 2) + '\n', 'utf8');
   images.push({ file: `avatar-${username}.jpg`, url: profile.profile_picture_url });
   images.push(...items.filter((item) => item.kind === 'reel' && /^[\w-]+$/.test(item.shortcode))
     .map((item) => ({ file: `${item.shortcode}.jpg`, url: item.thumbnail_url })));

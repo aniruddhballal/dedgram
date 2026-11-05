@@ -192,10 +192,10 @@
     "url": "https://www.instagram.com/reel/DePmSoJS1vv/",
     "grid_views_raw": "134K",
     "grid_views_issue": null,
-    "status": "partial",
+    "status": "complete",
     "fetched_at": "2026-10-28T11:56:11.474Z",
-    "date": null,
-    "date_precision": null,
+    "date": "2026-10-08",
+    "date_precision": "day",
     "caption": null,
     "hashtags": [],
     "mentions": [],
@@ -219,12 +219,8 @@
     },
     "thumbnail_url": "https://instagram.fblr1-6.fna.fbcdn.net/v/t51.71878-15/838817802_1667458695020949_3597692724803396231_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=MGTYDQxXne0Q7kNvwHxtAPM&_nc_oc=AdoF3zr_s7hz7QaXrSGpdVAtdyZ3LnBl4CUx-q4d6m_WYfEfgYL2hhWHX_q033fkdt2XPTYD_NeimuAkFMakx7hw&_nc_zt=23&_nc_ht=instagram.fblr1-6.fna&_nc_gid=dNBCsB5dsDawEZQiCp_tcA&_nc_ss=7f6a8&oh=00_AQS4bVA_py78FfSYPWjsu8Z7-qyN6sp5N6mjzkSWGXFi-g&oe=6AE7B4EF&ig_cache_key=MDJSQVF6QmdwWS16RUhpX3dGQUpYQk1Yc0hlSkx0TVlmaTZjZzpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
-    "missing": [
-      "date"
-    ],
-    "missing_reasons": {
-      "date": "No readable timestamp or calendar date was found on the content page or in its metadata."
-    },
+    "missing": [],
+    "missing_reasons": {},
     "raw": {
       "description": "10K likes, 101 comments - prxctm0l on October 8, 2026",
       "article_text": "prxctm0l\n•\nFollow\n10.4K\n101\n297\nlizzieguitarstuff\n•\nFollow\nmy ARE WE STILL FRIENDS? solo\nwith a twist at the end!\n\n@feliciathegoat\n\n@tufting_studio_slur - purple guitar\n#guitar #fender #tylerthecreator #lizzieguitarstuff #arewestillfriendssolo\n\nthank you for all the love on this solo!\n117K\n812\n5,114",
@@ -232,7 +228,8 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:56:11.474Z"
+    "last_attempt_at": "2026-10-28T11:56:11.474Z",
+    "date_source": "og_description"
   },
   {
     "kind": "reel",
@@ -240,10 +237,10 @@
     "url": "https://www.instagram.com/reel/DePK1I6z1s6/",
     "grid_views_raw": "82.4K",
     "grid_views_issue": null,
-    "status": "partial",
+    "status": "complete",
     "fetched_at": "2026-10-28T11:56:15.972Z",
-    "date": null,
-    "date_precision": null,
+    "date": "2026-10-08",
+    "date_precision": "day",
     "caption": null,
     "hashtags": [],
     "mentions": [],
@@ -267,12 +264,8 @@
     },
     "thumbnail_url": "https://instagram.fblr1-8.fna.fbcdn.net/v/t51.71878-15/839884686_1743425316714513_1343402809651887630_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=zJG8pRb6UVMQ7kNvwFH7O31&_nc_oc=AdpK2AI-f2NmZrdeMGeMB5hR7ptTJAdJsTE1w6-a9SQdeonIkofygk2QZBN2CZ0NPMwsdKoy-4Neb_R0FipxAymJ&_nc_zt=23&_nc_ht=instagram.fblr1-8.fna&_nc_gid=TiVFJeKmjIPyTwiGVrj8_w&_nc_ss=7f6a8&oh=00_AQQVliHNLB4ukYmGAOidPXiT2YzBQhI_dFnpWj0wVhnulQ&oe=6AE7BDFA&ig_cache_key=MDJSQVF6Qm82ZkR6SUhvakVHQUJINHNkWUh2TG1rRWc3X2o5czpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
-    "missing": [
-      "date"
-    ],
-    "missing_reasons": {
-      "date": "No readable timestamp or calendar date was found on the content page or in its metadata."
-    },
+    "missing": [],
+    "missing_reasons": {},
     "raw": {
       "description": "11K likes, 65 comments - prxctm0l on October 8, 2026",
       "article_text": "prxctm0l\n•\nFollow\n10.9K\n65\n222\nlizzieguitarstuff\n•\nFollow\nmy ARE WE STILL FRIENDS? solo\nwith a twist at the end!\n\n@feliciathegoat\n\n@tufting_studio_slur - purple guitar\n#guitar #fender #tylerthecreator #lizzieguitarstuff #arewestillfriendssolo\n\nthank you for all the love on this solo!\n117K\n812\n5,114",
@@ -280,7 +273,8 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:56:15.972Z"
+    "last_attempt_at": "2026-10-28T11:56:15.972Z",
+    "date_source": "og_description"
   },
   {
     "kind": "reel",
@@ -802,10 +796,10 @@
     "url": "https://www.instagram.com/reel/Dd_Wwzqz_R8/",
     "grid_views_raw": "500K",
     "grid_views_issue": null,
-    "status": "partial",
+    "status": "complete",
     "fetched_at": "2026-10-28T11:57:11.521Z",
-    "date": null,
-    "date_precision": null,
+    "date": "2026-10-02",
+    "date_precision": "day",
     "caption": null,
     "hashtags": [],
     "mentions": [],
@@ -829,12 +823,8 @@
     },
     "thumbnail_url": "https://instagram.fblr24-3.fna.fbcdn.net/v/t51.71878-15/834038182_2789932488074110_4346765337127299511_n.jpg?stp=cmp1_dst-jpg_e35_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=nNM55uUNK9kQ7kNvwHZ_Jrv&_nc_oc=Adrqd54T6IX_l-cBSII25C5ljXhEl5jL1pAZw8usj47VThgmF6pXzn65kf6ff1b9JXGhwYf3JjxkT6s33gSC8rY_&_nc_zt=23&_nc_ht=instagram.fblr24-3.fna&_nc_gid=ASEdPLnp0yPdrdDQg8JtNw&_nc_ss=7f6a8&oh=00_AQTvJ4iVNy428IoeYva8VZiZcDy2LtsldXvIXyWogT4OXw&oe=6AE7BCA9&ig_cache_key=MDJSQVF6QnFacHRqRUhiZWtKQUg0ajVzWUhDOUJTUExjcGRFRTpjbXAxX2RzdC1qcGdfZTM1X3R0Ng%3D%3D",
     "media_url": null,
-    "missing": [
-      "date"
-    ],
-    "missing_reasons": {
-      "date": "No readable timestamp or calendar date was found on the content page or in its metadata."
-    },
+    "missing": [],
+    "missing_reasons": {},
     "raw": {
       "description": "41K likes, 1,204 comments - prxctm0l on October 2, 2026",
       "article_text": "prxctm0l\n•\nFollow\n40.8K\n1,204\n4,691\nlizzieguitarstuff\n•\nFollow\nmy ARE WE STILL FRIENDS? solo\nwith a twist at the end!\n\n@feliciathegoat\n\n@tufting_studio_slur - purple guitar\n#guitar #fender #tylerthecreator #lizzieguitarstuff #arewestillfriendssolo\n\nthank you for all the love on this solo!\n117K\n815\n5,120",
@@ -842,7 +832,8 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:57:11.521Z"
+    "last_attempt_at": "2026-10-28T11:57:11.521Z",
+    "date_source": "og_description"
   },
   {
     "kind": "reel",
@@ -985,10 +976,10 @@
     "url": "https://www.instagram.com/reel/Dd9psfFSC98/",
     "grid_views_raw": "250K",
     "grid_views_issue": null,
-    "status": "partial",
+    "status": "complete",
     "fetched_at": "2026-10-28T11:57:28.216Z",
-    "date": null,
-    "date_precision": null,
+    "date": "2026-10-01",
+    "date_precision": "day",
     "caption": null,
     "hashtags": [],
     "mentions": [],
@@ -1012,12 +1003,8 @@
     },
     "thumbnail_url": "https://instagram.fblr24-1.fna.fbcdn.net/v/t51.71878-15/830510986_1992664224766269_2105380165496818798_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=7h4pLidRpskQ7kNvwHSTKQ3&_nc_oc=AdotuHu5523i81NK5z54Pbl-cm2wGg-siIwZRGFdEkQTeoZOfSr-h3HwbskuTutUIGPGZwZt_9bhxi_4k_tmDQD9&_nc_zt=23&_nc_ht=instagram.fblr24-1.fna&_nc_gid=j_ZQEl1I9ypoAFne0FQS8Q&_nc_ss=7f6a8&oh=00_AQSMcSxxF21R5drPyPWXQgLQLNdx2xbCZMsydRQE61_LRQ&oe=6AE7D16B&ig_cache_key=MDJSQVF6Qm9xWGdERUhVUlFIQUQwWlJrc0hHOUEzSFc1TWx4RTpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
-    "missing": [
-      "date"
-    ],
-    "missing_reasons": {
-      "date": "No readable timestamp or calendar date was found on the content page or in its metadata."
-    },
+    "missing": [],
+    "missing_reasons": {},
     "raw": {
       "description": "34K likes, 197 comments - prxctm0l on October 1, 2026",
       "article_text": "prxctm0l\n•\nFollow\n33.7K\n197\n745\nollejnsn\n•\nFollow\nLL Clawz · 24 Songs\nTurning page effect\n\nThis I a book I created, btw\n\nS/o @baz.art.club\n13.6K\n9\n164",
@@ -1025,7 +1012,8 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:57:28.216Z"
+    "last_attempt_at": "2026-10-28T11:57:28.216Z",
+    "date_source": "og_description"
   },
   {
     "kind": "reel",
@@ -1080,10 +1068,10 @@
     "url": "https://www.instagram.com/reel/Dd8_t94TSgL/",
     "grid_views_raw": "430K",
     "grid_views_issue": null,
-    "status": "partial",
+    "status": "complete",
     "fetched_at": "2026-10-28T11:57:36.489Z",
-    "date": null,
-    "date_precision": null,
+    "date": "2026-10-01",
+    "date_precision": "day",
     "caption": null,
     "hashtags": [],
     "mentions": [],
@@ -1107,12 +1095,8 @@
     },
     "thumbnail_url": "https://instagram.fblr1-6.fna.fbcdn.net/v/t51.71878-15/833261495_1879489803034788_3105323829124328288_n.jpg?stp=cmp1_dst-jpg_e35_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=7mFaiPAJu2kQ7kNvwHSHkdS&_nc_oc=AdrGmVJmyu0Kby1eRsM3R8p6WZi5ENPPG7DYXEf2S9YZnajIFhyyjxk_KZSKOiHE0HE6fJuow2VSJiFG4TLvSttG&_nc_zt=23&_nc_ht=instagram.fblr1-6.fna&_nc_gid=ii7jAgskH_mFJB6JURpx0g&_nc_ss=7f6a8&oh=00_AQSPnc-EURrJi4lJKbm90PhZUZ1EsFa2oQtYfmu-__tL_w&oe=6AE7A517&ig_cache_key=MDJSQVF6QnJlUHFqRUhZcTBHQUtTZ0VkSUhrVk1ZSzJEcmd1TTpjbXAxX2RzdC1qcGdfZTM1X3R0Ng%3D%3D",
     "media_url": null,
-    "missing": [
-      "date"
-    ],
-    "missing_reasons": {
-      "date": "No readable timestamp or calendar date was found on the content page or in its metadata."
-    },
+    "missing": [],
+    "missing_reasons": {},
     "raw": {
       "description": "48K likes, 391 comments - prxctm0l on October 1, 2026",
       "article_text": "prxctm0l\n•\nFollow\n47.8K\n391\n916\nollejnsn\n•\nFollow\nLL Clawz · 24 Songs\nTurning page effect\n\nThis I a book I created, btw\n\nS/o @baz.art.club\n13.6K\n9\n164",
@@ -1120,7 +1104,8 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:57:36.489Z"
+    "last_attempt_at": "2026-10-28T11:57:36.489Z",
+    "date_source": "og_description"
   },
   {
     "kind": "reel",
@@ -1172,10 +1157,10 @@
     "url": "https://www.instagram.com/reel/Dd85d3Lz9tg/",
     "grid_views_raw": "327K",
     "grid_views_issue": null,
-    "status": "partial",
+    "status": "complete",
     "fetched_at": "2026-10-28T11:57:44.906Z",
-    "date": null,
-    "date_precision": null,
+    "date": "2026-10-01",
+    "date_precision": "day",
     "caption": null,
     "hashtags": [],
     "mentions": [],
@@ -1199,12 +1184,8 @@
     },
     "thumbnail_url": "https://instagram.fblr1-7.fna.fbcdn.net/v/t51.71878-15/830467007_2386234042180987_18159500939556175_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=MpgnsbE57gIQ7kNvwGrMUqn&_nc_oc=AdoJvw7eMj5r2mY3cjDMRlsRyn5vx49xlaV6LCh1dPiDZgvO-dqz4G8n_uPRw40N81PME-1yJeXT91eEPTJFdIA9&_nc_zt=23&_nc_ht=instagram.fblr1-7.fna&_nc_gid=IQEfyNaoh1MCaH0KO_vNpg&_nc_ss=7f6a8&oh=00_AQSjUNTkeZ4e-4ev083rhsd7tapNx5sMWrzDKd4BTifmig&oe=6AE7ACF5&ig_cache_key=MDJSQVF6QnItcmZ6RUhSSG9JQUh0bGIyZ0hfSU5BQUUtMXpFbzpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
-    "missing": [
-      "date"
-    ],
-    "missing_reasons": {
-      "date": "No readable timestamp or calendar date was found on the content page or in its metadata."
-    },
+    "missing": [],
+    "missing_reasons": {},
     "raw": {
       "description": "34K likes, 128 comments - prxctm0l on October 1, 2026",
       "article_text": "prxctm0l\n•\nFollow\n33.7K\n128\n1,218\nollejnsn\n•\nFollow\nLL Clawz · 24 Songs\nTurning page effect\n\nThis I a book I created, btw\n\nS/o @baz.art.club\n13.6K\n9\n164",
@@ -1212,7 +1193,8 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:57:44.906Z"
+    "last_attempt_at": "2026-10-28T11:57:44.906Z",
+    "date_source": "og_description"
   },
   {
     "kind": "reel",
@@ -1220,10 +1202,10 @@
     "url": "https://www.instagram.com/reel/Dd8zZC-TpDh/",
     "grid_views_raw": "128K",
     "grid_views_issue": null,
-    "status": "partial",
+    "status": "complete",
     "fetched_at": "2026-10-28T11:57:48.948Z",
-    "date": null,
-    "date_precision": null,
+    "date": "2026-10-01",
+    "date_precision": "day",
     "caption": null,
     "hashtags": [],
     "mentions": [],
@@ -1247,12 +1229,8 @@
     },
     "thumbnail_url": "https://instagram.fblr24-2.fna.fbcdn.net/v/t51.71878-15/831103125_945143934846953_2031147788365644734_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=OTiGmnkX4BQQ7kNvwGxsycZ&_nc_oc=AdqNoXcUtHxmtk9f06NFmf4BHublAdu9kBGs9irnD_u3g_9Mqa_yqt05Ai12qHnlpNdfkzldmmC2yA8kQEXrpaUu&_nc_zt=23&_nc_ht=instagram.fblr24-2.fna&_nc_gid=wkci5CYEXaZqak0HtPjP_Q&_nc_ss=7f6a8&oh=00_AQTD1G2df4c6BkttCLYCGQCeN2Z8Ba5jWhPqRfiegxWWwg&oe=6AE79C10&ig_cache_key=MDJSQVF6QnBXZ2lURUhtbHNEQU9tSGYzZ0hKaFl3SEw3RDJ1czpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
-    "missing": [
-      "date"
-    ],
-    "missing_reasons": {
-      "date": "No readable timestamp or calendar date was found on the content page or in its metadata."
-    },
+    "missing": [],
+    "missing_reasons": {},
     "raw": {
       "description": "18K likes, 73 comments - prxctm0l on October 1, 2026",
       "article_text": "prxctm0l\n•\nFollow\n17.8K\n73\n413\nollejnsn\n•\nFollow\nLL Clawz · 24 Songs\nTurning page effect\n\nThis I a book I created, btw\n\nS/o @baz.art.club\n13.6K\n9\n164",
@@ -1260,7 +1238,8 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:57:48.949Z"
+    "last_attempt_at": "2026-10-28T11:57:48.949Z",
+    "date_source": "og_description"
   },
   {
     "kind": "reel",
@@ -1355,10 +1334,10 @@
     "url": "https://www.instagram.com/reel/Dd7IVgoCxes/",
     "grid_views_raw": "144K",
     "grid_views_issue": null,
-    "status": "partial",
+    "status": "complete",
     "fetched_at": "2026-10-28T11:58:01.491Z",
-    "date": null,
-    "date_precision": null,
+    "date": "2026-09-30",
+    "date_precision": "day",
     "caption": null,
     "hashtags": [],
     "mentions": [],
@@ -1382,12 +1361,8 @@
     },
     "thumbnail_url": "https://instagram.fblr24-3.fna.fbcdn.net/v/t51.71878-15/830540591_954519257728707_8710132094802837352_n.jpg?stp=cmp1_dst-jpg_e35_tt6&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=ktd51b4Kh7IQ7kNvwHxXUFL&_nc_oc=AdpoJlmpRh4GkuscjicfBns8R7hicLMYx507CXZz9YX5MBntWBasc8cgBv-eeGV4dfIHKFhRl1oIiGMfOHdpITFW&_nc_zt=23&_nc_ht=instagram.fblr24-3.fna&_nc_gid=gloGqQ7SGgDKQx6PfXgVGQ&_nc_ss=7f6a8&oh=00_AQQ6EZkJsmTG4c9EMxJFFvHCfr4TyahHeAkL82vRFmCFYg&oe=6AE7A255&ig_cache_key=MDJSQVF6Qmk4TGdURUhJV1FEQU1QR1NWVUgtWnJnZUdpLWMtRTpjbXAxX2RzdC1qcGdfZTM1X3R0Ng%3D%3D",
     "media_url": null,
-    "missing": [
-      "date"
-    ],
-    "missing_reasons": {
-      "date": "No readable timestamp or calendar date was found on the content page or in its metadata."
-    },
+    "missing": [],
+    "missing_reasons": {},
     "raw": {
       "description": "13K likes, 50 comments - prxctm0l on September 30, 2026",
       "article_text": "prxctm0l\n•\nFollow\nMika Singh, Shefali Alvares · Subha Hone Na De\nMika Singh, Shefali Alvares · Subha Hone Na De\n13.2K\n50\n662\nollejnsn\n•\nFollow\nLL Clawz · 24 Songs\nTurning page effect\n\nThis I a book I created, btw\n\nS/o @baz.art.club\n13.6K\n9\n164",
@@ -1395,7 +1370,8 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:58:01.491Z"
+    "last_attempt_at": "2026-10-28T11:58:01.491Z",
+    "date_source": "og_description"
   },
   {
     "kind": "reel",
@@ -1403,10 +1379,10 @@
     "url": "https://www.instagram.com/reel/Dd7DG0zSYUt/",
     "grid_views_raw": "99.3K",
     "grid_views_issue": null,
-    "status": "partial",
+    "status": "complete",
     "fetched_at": "2026-10-28T11:58:05.343Z",
-    "date": null,
-    "date_precision": null,
+    "date": "2026-09-30",
+    "date_precision": "day",
     "caption": null,
     "hashtags": [],
     "mentions": [],
@@ -1430,12 +1406,8 @@
     },
     "thumbnail_url": "https://instagram.fblr24-1.fna.fbcdn.net/v/t51.71878-15/831400909_1626253055789333_523857673370460409_n.jpg?stp=cmp1_dst-jpg_e35_tt6&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=_ZpmKg33r90Q7kNvwGRSB9U&_nc_oc=Adr45Uj77Isrpc4bt7WPPIqncsfX24C3UWdHp7JASMOTAe3QtkmoVsLkk5v75vDWjt2YNjzg5r1Qj5tr04M_OZtp&_nc_zt=23&_nc_ht=instagram.fblr24-1.fna&_nc_gid=bxfS_gwnfy4Li_u0JNNgpQ&_nc_ss=7f6a8&oh=00_AQQX6vaU0Kd4guZBeKjPtc0AFuKIz16MZz9-SWoel16v1g&oe=6AE7A411&ig_cache_key=MDJSQVF6QnMwcmpqRUhFY2NGQUJXSnRJc0h4eDFGQi1uZ0cwWTpjbXAxX2RzdC1qcGdfZTM1X3R0Ng%3D%3D",
     "media_url": null,
-    "missing": [
-      "date"
-    ],
-    "missing_reasons": {
-      "date": "No readable timestamp or calendar date was found on the content page or in its metadata."
-    },
+    "missing": [],
+    "missing_reasons": {},
     "raw": {
       "description": "14K likes, 170 comments - prxctm0l on September 30, 2026",
       "article_text": "prxctm0l\n•\nFollow\nSia · Snowman\n14.3K\n170\n652\nollejnsn\n•\nFollow\nLL Clawz · 24 Songs\nTurning page effect\n\nThis I a book I created, btw\n\nS/o @baz.art.club\n13.6K\n9\n164",
@@ -1443,6 +1415,7 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:58:05.344Z"
+    "last_attempt_at": "2026-10-28T11:58:05.344Z",
+    "date_source": "og_description"
   }
 ]

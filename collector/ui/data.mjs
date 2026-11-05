@@ -1,6 +1,7 @@
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { paths, readJson } from '../src/store.mjs';
+import { normalizeReelDate } from '../../website/lib/reel-date.mjs';
 import { exactPostCount, gridCount, gridCountError, postCountError, profileHeaderComplete, profileLevelComplete } from '../src/model.mjs';
 
 export const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
@@ -31,7 +32,7 @@ export async function profileData(username) {
   const [profile, discovery, items, run] = await Promise.all([
     readJson(path.profile), readJson(path.discovery, {}), readJson(path.items, []), readJson(path.run, {})
   ]);
-  return { username, profile, discovery, items, run };
+  return { username, profile, discovery, items: items.map(normalizeReelDate), run };
 }
 
 export function profileSummary(data) {

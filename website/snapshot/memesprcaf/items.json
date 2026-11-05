@@ -99,8 +99,8 @@
     "grid_views_issue": null,
     "status": "age_restricted",
     "fetched_at": "2026-10-28T11:25:11.251Z",
-    "date": null,
-    "date_precision": null,
+    "date": "2026-09-28",
+    "date_precision": "day",
     "caption": null,
     "hashtags": [],
     "mentions": [],
@@ -115,12 +115,10 @@
     "thumbnail_url": "https://instagram.fblr1-7.fna.fbcdn.net/v/t51.82787-15/847495276_18117138496938921_6850486167244014952_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=kwiTFfFmIfwQ7kNvwF35JIe&_nc_oc=AdoHvTzc3JntTRYoNRNXa6rGK878c7tpkwjT0Dbo3F7C5dwsxfheGmrLzy93tLkV-X_Miw_nX7yTIxjKKg2BPZBK&_nc_zt=23&_nc_ht=instagram.fblr1-7.fna&_nc_gid=rhLVt9fSCtFiJbNdSQKDGA&_nc_ss=7f6a8&oh=00_AQSjjT6DzWF884N4eS8pZ58rEnXJ0aHiEfkd2ePXx9OMEA&oe=6AE7A678&ig_cache_key=MDJSQVF6Qm16QWd6SUhjVjFBQUtuamRBUUgzOUFSWDJpRlRxazpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
     "missing": [
-      "date",
       "likes",
       "comments"
     ],
     "missing_reasons": {
-      "date": "No readable timestamp or calendar date was found on the content page or in its metadata.",
       "likes": "No readable like count was found on the content page or in its metadata.",
       "comments": "No readable comment count was found on the content page or in its metadata."
     },
@@ -244,7 +242,8 @@
       "resolution": "age_restricted",
       "reason": "Instagram displayed age-restricted content; viewing requires viewers to be 25 or older. Full reel details should be retried after the rate limit clears.",
       "requires_detail_retry": true
-    }
+    },
+    "date_source": "og_description_localized"
   },
   {
     "kind": "reel",

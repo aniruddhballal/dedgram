@@ -275,8 +275,8 @@
     "grid_views_issue": null,
     "status": "partial",
     "fetched_at": "2026-11-05T15:20:59.490Z",
-    "date": null,
-    "date_precision": null,
+    "date": "2026-08-08",
+    "date_precision": "day",
     "caption": "Hollywood. Known for his own standout fashion moments, he kept it effortlessly stylish in a look worthy of the runway. #taehyung - @positive.mpire on August 8, 2026",
     "hashtags": [
       "#taehyung"
@@ -295,12 +295,10 @@
     "thumbnail_url": "https://instagram.fblr1-3.fna.fbcdn.net/v/t51.71878-15/767101303_4400073563644016_4720022451837040558_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=Go3flBbo8p0Q7kNvwFIITye&_nc_oc=AdqIaLpkhOJTOy3kO4ghC8Tw-JvSfn7XgEqbMoc9DYQ4LAppBVweRnbaWEGftUlrOrJwIKo4pVEJ_uRQjAQclSRH&_nc_zt=23&_nc_ht=instagram.fblr1-3.fna&_nc_gid=4cPxSW4ysL2tG4Usq0Gl3w&_nc_ss=7f6a8&oh=00_AQQIXO1GQvEgvhgIcndcdngucWyYKCjyKAIjIp0Qcq4ZoA&oe=6AF26CD9&ig_cache_key=MDJSQVF6Qm5jSnVTMEgxNkVQQUhBZ3YtVUhhZU9BUWE1M25ZVTpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
     "missing": [
-      "date",
       "likes",
       "comments"
     ],
     "missing_reasons": {
-      "date": "No readable timestamp or calendar date was found on the content page or in its metadata.",
       "likes": "No readable like count was found on the content page or in its metadata.",
       "comments": "No readable comment count was found on the content page or in its metadata."
     },
@@ -311,7 +309,8 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-11-05T15:20:59.491Z"
+    "last_attempt_at": "2026-11-05T15:20:59.491Z",
+    "date_source": "og_description"
   },
   {
     "kind": "reel",

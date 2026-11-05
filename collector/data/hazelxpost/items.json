@@ -975,8 +975,8 @@
     "grid_views_issue": null,
     "status": "partial",
     "fetched_at": "2026-10-28T11:45:13.060Z",
-    "date": null,
-    "date_precision": null,
+    "date": "2026-10-15",
+    "date_precision": "day",
     "caption": null,
     "hashtags": [],
     "mentions": [],
@@ -991,12 +991,10 @@
     "thumbnail_url": "https://instagram.fblr24-2.fna.fbcdn.net/v/t51.82787-15/849211939_17994402372051991_6982289655727300358_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=Q8yI6sxUOn0Q7kNvwH14yZ_&_nc_oc=Adp-3Wigs3FnJlkqJ1JeOCAdNgAv-Mm-HRb0Aj1Bhu64-Udct84qN0c7672uq5BRZJSfBMGZlH5voRTs0YaSuipa&_nc_zt=23&_nc_ht=instagram.fblr24-2.fna&_nc_gid=HDzxTsOS9hlE_gxgCFrCZQ&_nc_ss=7f6a8&oh=00_AQShj8B_UL6ZUCHQLFYba-zqVbWqmj5mhg_ZHBfnsAtM2w&oe=6AE7BBF4&ig_cache_key=MDJSQVF6QmlQeW5USUgwTzAtQUJma1ZFa0hjaFBtWUFhZmdyZzpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
     "missing": [
-      "date",
       "likes",
       "comments"
     ],
     "missing_reasons": {
-      "date": "No readable timestamp or calendar date was found on the content page or in its metadata.",
       "likes": "No readable like count was found on the content page or in its metadata.",
       "comments": "No readable comment count was found on the content page or in its metadata."
     },
@@ -1144,6 +1142,7 @@
         "page_url": "https://www.instagram.com/reel/Degf-wAoeNT/",
         "source": "fresh_incognito_context"
       }
-    }
+    },
+    "date_source": "og_description"
   }
 ]

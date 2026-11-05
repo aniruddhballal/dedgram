@@ -3,6 +3,7 @@ import { chromium } from 'playwright';
 import { now, publicDetailsFromSnapshot } from './model.mjs';
 import { paths, readJson, writeJson, writeSnapshot } from './store.mjs';
 import { writeReport } from './report.mjs';
+import { normalizeReelDate } from '../../website/lib/reel-date.mjs';
 
 const pause = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 const operation = 'automated reel availability check';
@@ -151,7 +152,7 @@ function applyResult(item, result) {
     next.status = 'age_restricted';
     next.last_error = null;
   }
-  return next;
+  return normalizeReelDate(next);
 }
 
 function runAfterCheck(run, items, issueType, startedAt, completedAt, counts) {

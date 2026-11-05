@@ -4,6 +4,30 @@ import { itemAnalysisHandled, count, dayFromDescription, exactPostCount, gridCou
 import { mergeDiscoveryItems, mergeItem, mergeProfile, syncGridViews } from '../src/store.mjs';
 import { posterUsername } from '../src/reel-deletion-check.mjs';
 
+test('main and secondary extraction reuse a metadata date without a second date capture', () => {
+  const snapshot = { og_description: 'Caption - @positive.mpire on August 8, 2026', json_ld: [] };
+  const primary = itemFromSnapshot({ kind: 'reel' }, snapshot);
+  const secondary = publicDetailsFromSnapshot({ kind: 'reel' }, snapshot);
+  assert.equal(primary.date, '2026-08-08');
+  assert.equal(primary.date_source, 'og_description');
+  assert.equal(secondary.date, primary.date);
+  const reused = publicDetailsFromSnapshot(primary, { og_description: '', json_ld: [] });
+  assert.equal(reused.date, primary.date);
+  assert.equal(reused.date_precision, 'day');
+  const exact = publicDetailsFromSnapshot(primary, { datetime: '2026-08-08T12:30:00Z', json_ld: [] });
+  assert.equal(exact.date, '2026-08-08T12:30:00.000Z');
+  assert.equal(exact.date_precision, 'timestamp');
+});
+
+test('a later capture cannot overwrite a manually verified IST date', () => {
+  const previous = { date: '2026-10-15', date_precision: 'day', date_source: 'user_manual_check',
+    date_timezone: 'Asia/Kolkata', manual_verification: { date: { value: '2026-10-15', timezone: 'Asia/Kolkata' } } };
+  const current = { date: '2026-10-14', date_precision: 'day', date_source: 'og_description',
+    raw: { description: 'example on October 14, 2026' } };
+  assert.equal(mergeItem(previous, current).date, '2026-10-15');
+  assert.equal(publicDetailsFromSnapshot(previous, { og_description: current.raw.description, json_ld: [] }).date, '2026-10-15');
+});
+
 test('manually resolved reels count as handled and grid refreshes do not reopen them', () => {
   assert.equal(itemAnalysisHandled({ status: 'complete' }), true);
   assert.equal(itemAnalysisHandled({ status: 'archived', last_error: null }), true);

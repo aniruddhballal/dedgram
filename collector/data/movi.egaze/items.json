@@ -403,8 +403,8 @@
     "grid_views_issue": null,
     "status": "partial",
     "fetched_at": "2026-10-28T11:32:13.839Z",
-    "date": null,
-    "date_precision": null,
+    "date": "2026-10-21",
+    "date_precision": "day",
     "caption": "「花粉症シーズン 🌼トムの対策は犬の被り物!?⁉️ 花 粉は防げても、ジェリーは防げません...。」",
     "hashtags": [],
     "mentions": [],
@@ -419,12 +419,10 @@
     "thumbnail_url": "https://instagram.fblr24-3.fna.fbcdn.net/v/t51.82787-15/858593918_17979741209939952_6278376563647067773_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=DgVhI8X2YMQQ7kNvwEg5mAj&_nc_oc=Adq1g5GEyDrDsRMDfPrADHDI1uQgXB5UKBgX768Hm0fHb944Zk5XzCkqSGOaZqi6NUQcS7buDX5gF7wSjcj7D8Wg&_nc_zt=23&_nc_ht=instagram.fblr24-3.fna&_nc_gid=Uz2AkaSdTRUbE7Hr40SSwA&_nc_ss=7f6a8&oh=00_AQSVDON9PZD2o-f-ogaM1gHipVB9TfJ6CRJuuQTaiDx3lA&oe=6AE7B309&ig_cache_key=MDJSQVF6Qm40YUxUTUhldUEtQVBEUF9MY0hPRVloVjMwMlVtbzpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
     "missing": [
-      "date",
       "likes",
       "comments"
     ],
     "missing_reasons": {
-      "date": "No readable timestamp or calendar date was found on the content page or in its metadata.",
       "likes": "No readable like count was found on the content page or in its metadata.",
       "comments": "No readable comment count was found on the content page or in its metadata."
     },
@@ -587,7 +585,8 @@
         "page_url": "https://www.instagram.com/reel/DeyW4IvuN_C/",
         "source": "fresh_incognito_context"
       }
-    }
+    },
+    "date_source": "og_description_localized"
   },
   {
     "kind": "reel",

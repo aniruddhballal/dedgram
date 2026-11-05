@@ -1,4 +1,5 @@
 import { mkdir, writeFile } from 'node:fs/promises';
+import { normalizeReelDate } from '../../website/lib/reel-date.mjs';
 import { exactPostCount, gridCount, gridCountError, postCountError } from './model.mjs';
 
 const esc = (value) => String(value ?? '').replace(/[&<>"']/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[char]);
@@ -16,6 +17,7 @@ const reviewText = (item) => item.excluded_from_analysis ? '' : [
 ].join(' | ');
 
 export async function writeReport(paths, profile, discovery, items, run) {
+  items = items.map(normalizeReelDate);
   await mkdir(paths.base, { recursive: true });
   const rows = [['kind', 'shortcode', 'url', 'date', 'date_precision', 'caption', 'hashtags', 'likes', 'comments', 'views', 'views_displayed', 'views_approximate', 'views_source', 'views_observed_at', 'status', 'missing', 'last_error', 'fetched_at', 'likes_displayed', 'likes_approximate', 'likes_source', 'manual_review_reason', 'deletion_check_status', 'deletion_checked_at', 'deletion_check_reason', 'deletion_check_evidence', 'deletion_observed_at', 'deletion_poster_username', 'deletion_observed_date', 'deletion_observed_date_precision', 'deletion_observed_caption', 'deletion_observed_likes', 'deletion_observed_comments', 'deletion_observed_views', 'deletion_observed_thumbnail_url', 'deletion_observed_media_url', 'deletion_observed_fields', 'deletion_observed_page_url']];
   for (const item of items) rows.push([

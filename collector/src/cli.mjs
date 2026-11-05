@@ -4,7 +4,7 @@ import { fileURLToPath } from 'node:url';
 import { execFile } from 'node:child_process';
 import { promisify } from 'node:util';
 import { launch, captureProfile, discover, captureItem, saveProfilePicture } from './browser.mjs';
-import { itemAnalysisHandled, dayFromDescription, exactPostCount, gridCount, gridCountError, itemFromSnapshot, now, postCountError, profileFromSnapshot, profileHeaderComplete, profileLevelComplete } from './model.mjs';
+import { itemAnalysisHandled, normalizeReelDate, exactPostCount, gridCount, gridCountError, itemFromSnapshot, now, postCountError, profileFromSnapshot, profileHeaderComplete, profileLevelComplete } from './model.mjs';
 import { paths, readJson, writeJson, writeSnapshot, mergeDiscoveryItems, mergeItem, mergeProfile, syncGridViews } from './store.mjs';
 import { writeReport } from './report.mjs';
 
@@ -27,7 +27,7 @@ async function files() {
   return {
     profile: await readJson(path.profile),
     discovery: await readJson(path.discovery, {}),
-    items: await readJson(path.items, []),
+    items: (await readJson(path.items, [])).map(normalizeReelDate),
     run: await readJson(path.run, {})
   };
 }
@@ -136,20 +136,8 @@ async function collect() {
   const initialProgress = initialTask === 'profile'
     ? progressState({ task: 'profile', label: 'Profile details', action: 'Reading the profile header, account details and exact post count', total: 1, detail: 'Preparing profile page' })
     : progressState({ task: 'reel_grid', label: 'Reel URL discovery', action: 'Finding every reel URL in the profile grid', total: 1, detail: 'Preparing reel grid scan' });
-  let corrected = false;
-  items = items.map((item) => {
-    const day = item.date_precision === 'day' ? dayFromDescription(item.raw?.description) : null;
-    if (!day || day === item.date) {
-      if (!item.date_precision && /^\d{4}-\d{2}-\d{2}T/.test(item.date || '')) {
-        corrected = true;
-        return { ...item, date_precision: 'timestamp' };
-      }
-      return item;
-    }
-    corrected = true;
-    return { ...item, date: day };
-  });
-  if (corrected) await writeJson(path.items, items);
+  items = items.map(normalizeReelDate);
+  await writeJson(path.items, items);
   run = { ...run, started_at: now(), updated_at: now(), status: 'running',
     phase: skipProfile || reelGridOnly ? 'reel discovery' : 'profile',
     scope: headerOnly ? ['profile'] : reelGridOnly ? ['reel_grid'] : profileOnly ? ['profile', 'reel_grid'] : skipProfile ? kinds : ['profile', ...kinds],

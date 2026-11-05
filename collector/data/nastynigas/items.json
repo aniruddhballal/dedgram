@@ -693,8 +693,8 @@
     "grid_views_issue": null,
     "status": "partial",
     "fetched_at": "2026-10-28T11:54:59.989Z",
-    "date": null,
-    "date_precision": null,
+    "date": "2026-10-21",
+    "date_precision": "day",
     "caption": "「#TVアニメ『SPRINKLES』話題のトッピング最新情報がついに 解禁！！思わず目を奪われてしまうカラフルな瞬間を一挙公開！さらに、予想外の組み合わせや華やかな仕上がりに加え、誰も予想できなかった最高の「珍事件」まで飛び出しました！！◆今回の注目ポイント：」",
     "hashtags": [
       "#TVアニメ"
@@ -711,12 +711,10 @@
     "thumbnail_url": "https://instagram.fblr1-7.fna.fbcdn.net/v/t51.82787-15/858263539_1116734130936621_8016231431976299560_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=wzD0GYBBrZ0Q7kNvwFdOaUn&_nc_oc=Adqp8pRWjKxYpO8M_MgXHAY7anCToS2buLLJxKkk_HP3omNK5WI0n63Y5dtIOrltbzEXy6UWmVOUX_OqFT6W0Izi&_nc_zt=23&_nc_ht=instagram.fblr1-7.fna&_nc_gid=7qzTAiUpJasXAZSXy8FrfA&_nc_ss=7f6a8&oh=00_AQQvzLPWeSjQw6YE1W2Ao_g-IA8shusxbVqB27il5_Rlmw&oe=6AE7A195&ig_cache_key=MDJSQVF6QnZNUEtETUhxZmNEQUMzYkx1MEhBMkEtYnlpc1JQdzpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
     "missing": [
-      "date",
       "likes",
       "comments"
     ],
     "missing_reasons": {
-      "date": "No readable timestamp or calendar date was found on the content page or in its metadata.",
       "likes": "No readable like count was found on the content page or in its metadata.",
       "comments": "No readable comment count was found on the content page or in its metadata."
     },
@@ -918,7 +916,8 @@
         "page_url": "https://www.instagram.com/reel/DexCipioR-T/",
         "source": "fresh_incognito_context"
       }
-    }
+    },
+    "date_source": "og_description_localized"
   },
   {
     "kind": "reel",
