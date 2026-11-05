@@ -1,1 +1,42 @@
-[]
+[
+  {
+    "kind": "reel",
+    "shortcode": "DfCCtM3ypuy",
+    "url": "https://www.instagram.com/reel/DfCCtM3ypuy/",
+    "grid_views_raw": "24.2K",
+    "grid_views_issue": null,
+    "status": "partial",
+    "fetched_at": "2026-11-05T14:55:31.691Z",
+    "date": "2026-10-28",
+    "date_precision": "day",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": null,
+    "comments": null,
+    "views": {
+      "value": 24200,
+      "raw": "24.2K",
+      "approximate": true,
+      "source": "profile_grid"
+    },
+    "thumbnail_url": "https://instagram.fblr1-3.fna.fbcdn.net/v/t51.71878-15/867376823_1779056206704428_8491341009305876638_n.jpg?stp=cmp1_dst-jpg_e35_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=2Pf3-hWz0xQQ7kNvwHCmwob&_nc_oc=Adr_stI6PxUWWmKLtPRzeoRV7810lSiMM5S2DLDeywwcLtxw3Bw_SOrKSfGQyrnIjltf96z15TepQULROzu23sjr&_nc_zt=23&_nc_ht=instagram.fblr1-3.fna&_nc_gid=XDNCwdVnbo8UuPRhwHJU2g&_nc_ss=7e6a8&oh=00_AQQoVaflt__W0TsrENIwexJ7qjTPdWfm2qHuuuWTRwHZbQ&oe=6AF26285&ig_cache_key=MDJSQVF6QnJjZXN6TUhDbElHQUN4dlBNMEhxRTNYZFo0NFlxNDpjbXAxX2RzdC1qcGdfZTM1X3R0Ng%3D%3D",
+    "media_url": null,
+    "missing": [
+      "likes",
+      "comments"
+    ],
+    "missing_reasons": {
+      "likes": "No readable like count was found on the content page or in its metadata.",
+      "comments": "No readable comment count was found on the content page or in its metadata."
+    },
+    "raw": {
+      "description": "「\"有村架純が自分自身と向き合い、得た気づき。俳優業を通して「自分とは何なんだろう」と向き合ってきた彼女が、自分自身を知ることの大切さや、最新作『さとこはいつも』について語る。\".」 - 2026年10月28日、damon.maxx",
+      "article_text": "damon.maxx\n•\nFollow\nUSA\n\"有村架純が自分自身と向き合い、得た気づき。俳優業を通して「自分とは何なんだろう」と向き合ってきた彼女が、自分自身を知ることの大切さや、最新作『さとこはいつも』について語る。\".\nLikes\n4\n2\nofficial_ashim_933\n•\nFollow\n• AI-generated profile\nPritam, Atif Aslam, Alisha Chinai · Tera Hone Laga Hoon (Dreamy)\nPritam, Atif Aslam, Alisha Chinai · Tera Hone Laga Hoon (Dreamy)\n💗🤭\n\n#viral #viralvideos\n333K\n12.3K\n11.8K",
+      "aria_text": "damon.maxx reels\ndamon.maxx reels\nLocation\nLocation\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nofficial_ashim_933 reels\nofficial_ashim_933 reels\nAudio image\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {}
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-11-05T14:55:31.692Z"
+  }
+]
