@@ -46,7 +46,6 @@ const fullProfiles = [
   'damon.maxx',
   'turtle.4223253',
   'herogram_50k',
-  'luffytheegear5',
   'sallusmemer',
   'bubble_tuanzi',
   'fun_fineee',
@@ -173,7 +172,7 @@ const profileLevelProfiles = [
   'oproceve.br',
   'u1tron7',
 ];
-const excludedProfiles = ['hnvx.07', 'prime_senchui', 'vlad.aep_', 'nxx._.nmercy', 'dexea.100k', 'igpostinggang', 'rzk.mp4', 'renyajichu', 'hammergag', 'caodogsfofo', 'back', '41.3k', 'short_vibesz', 'oooiway', 'zuxxie.pov', 'extreme.laugh8', 'iron_block2', 'memes.fatafat', 'waytoway__'];
+const excludedProfiles = ['hnvx.07', 'prime_senchui', 'vlad.aep_', 'nxx._.nmercy', 'dexea.100k', 'igpostinggang', 'rzk.mp4', 'renyajichu', 'hammergag', 'caodogsfofo', 'back', '41.3k', 'short_vibesz', 'oooiway', 'zuxxie.pov', 'extreme.laugh8', 'iron_block2', 'memes.fatafat', 'waytoway__', 'luffytheegear5'];
 const publishedProfiles = [...fullProfiles, ...profileLevelProfiles, ...excludedProfiles];
 const profileLevelSet = new Set(profileLevelProfiles);
 const excludedSet = new Set(excludedProfiles);
