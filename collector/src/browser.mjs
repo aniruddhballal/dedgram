@@ -30,13 +30,15 @@ export async function launch(root, { headless = false } = {}) {
 
 function blocked(url, text) {
   if (/\/accounts\/login|\/challenge\//.test(new URL(url).pathname)) return 'Instagram requires login or a security checkpoint.';
+  if (/\b429\b|too many requests|rate limit/i.test(text)) return 'Instagram returned HTTP 429 (rate limit).';
   if (/please wait a few minutes|try again later|challenge_required|checkpoint_required/i.test(text)) return 'Instagram showed a temporary limit or checkpoint.';
   if (/sorry, this page isn't available|page may have been removed/i.test(text)) return 'Instagram reports this page is unavailable.';
   return '';
 }
 
 async function open(page, url) {
-  await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 45000 });
+  const response = await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 45000 });
+  if (response?.status() === 429) throw new Error('Instagram returned HTTP 429 (rate limit).');
   await page.locator('main, [role="main"]').first().waitFor({ state: 'visible', timeout: 20000 }).catch(() => {});
   await pause(900);
   const text = await page.locator('body').innerText().catch(() => '');

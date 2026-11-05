@@ -264,7 +264,7 @@ async function collect() {
           status: old?.status === 'complete' || old?.status === 'partial' ? old.status : 'failed', last_error: message,
           last_attempt_at: now(), attempts: (old?.attempts || 0) + 1 });
         log(`Item issue: ${message}`);
-        if (/login|checkpoint|temporary limit/i.test(message)) throw error;
+        if (/\b429\b|rate limit|too many requests|throttl|login|checkpoint|temporary limit/i.test(message)) throw error;
       }
       items = [...existing.values()];
       await writeJson(path.items, items);

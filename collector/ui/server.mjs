@@ -21,6 +21,7 @@ const usernameJobs = new Map();
 let usernameScanJob = null;
 let usernameMigrationJob = null;
 let reelDeletionCheckJob = null;
+const rateLimitSignal = (...values) => values.find((value) => /\b429\b|rate limit|too many requests|throttl|temporary limit|checkpoint/i.test(String(value || ''))) || null;
 
 function privateBrowserCommand() {
   if (process.platform === 'win32') {
@@ -221,12 +222,21 @@ class BatchRunner {
       });
       const collected = await profileData(username);
       stage.finished_at = new Date().toISOString();
+      const rateLimitReason = rateLimitSignal(exit.error?.message, collected.run?.error);
       const stageComplete = level === 'profile_header' ? profileHeaderComplete(collected.profile) && exactPostCount(collected.profile) !== null
         : level === 'reel_grid' ? collected.discovery?.reel?.complete === true
         : level === 'profile' ? Boolean(collected.profile?.fetched_at) : collected.run.status === 'complete';
       stage.status = exit.code === 0 ? stageComplete && collected.run.status === 'complete' ? 'complete' : 'needs_review' : 'failed';
       stage.error = exit.error?.message || (exit.code === 0 ? collected.run.error || null
         : collected.run.error || `Collector exited with code ${exit.code}.`);
+      if (rateLimitReason) {
+        stage.status = 'failed';
+        stage.error = rateLimitReason;
+        this.batch.stop_requested = true;
+        this.batch.stop_reason = 'rate_limited';
+        this.batch.error = `Batch stopped immediately: ${rateLimitReason}`;
+        this.log(`RATE LIMIT DETECTED; stopping before the next profile: ${rateLimitReason}`);
+      }
       result.status = resultStatus(result.stages);
       result.error = stage.error || result.error;
       if (Object.values(result.stages).every((value) => terminal(value.status))) result.finished_at = stage.finished_at;
@@ -235,8 +245,9 @@ class BatchRunner {
       this.batch.current_stage = null;
       this.batch.updated_at = stage.finished_at;
       await this.save();
+      if (rateLimitReason) break;
     }
-    this.batch.status = this.batch.stop_requested ? 'stopped' : 'complete';
+    this.batch.status = this.batch.stop_reason === 'rate_limited' || this.batch.stop_requested ? 'stopped' : 'complete';
     this.batch.finished_at = new Date().toISOString();
     this.batch.updated_at = this.batch.finished_at;
     await this.save();
