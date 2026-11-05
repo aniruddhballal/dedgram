@@ -1,6 +1,6 @@
 {
   "started_at": "2026-10-28T11:58:09.625Z",
-  "updated_at": "2026-10-28T12:04:10.245Z",
+  "updated_at": "2026-11-05T18:08:25.363Z",
   "status": "partial",
   "phase": "done",
   "scope": [
@@ -11,13 +11,36 @@
   "progress": {
     "task": "item_details",
     "label": "Reel details",
-    "action": "Opening reel pages and extracting dates, captions, views, likes and comments",
-    "completed": 34,
+    "action": "Ready for retry and further review",
+    "completed": 0,
     "total": 34,
-    "percent": 100,
-    "remaining": 0,
+    "percent": 0,
+    "remaining": 34,
     "current_item": null,
-    "detail": "Stage finished with review required",
-    "updated_at": "2026-10-28T12:04:10.245Z"
+    "detail": "11 previously failed reels manually confirmed to exist and ready for retry; 22 partial reels and 1 unavailable-page failure still need review. No scraping has started.",
+    "updated_at": "2026-11-05T18:08:25.363Z"
+  },
+  "manual_availability_review": {
+    "checked_at": "2026-11-05T18:08:25.363Z",
+    "verified_by": "user",
+    "status": "exists",
+    "confirmed_reels": [
+      "DbjP0_dzKi7",
+      "DbjPaQJzWi-",
+      "Dbg1Srkz6Gy",
+      "DbgOq_my9hl",
+      "Dbd7Qy0SmJG",
+      "Dbdk5OYyhO9",
+      "DbdkwzAyuR8",
+      "DbdQzNBzR-6",
+      "DbcjazGyXG9",
+      "DbcgApEyHCZ",
+      "DbbbNjGy2nY"
+    ],
+    "action": "retry_reel_details",
+    "retry_reels": 11,
+    "partial_reels": 22,
+    "remaining_failed_reels": 1,
+    "previous_run_status": "partial"
   }
 }

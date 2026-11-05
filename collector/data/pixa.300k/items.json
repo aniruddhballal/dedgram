@@ -984,10 +984,29 @@
     "url": "https://www.instagram.com/reel/DbjP0_dzKi7/",
     "grid_views_raw": "269K",
     "grid_views_issue": null,
-    "status": "failed",
-    "last_error": "Instagram rendered an empty page.",
+    "status": "pending",
+    "last_error": null,
     "last_attempt_at": "2026-10-28T12:00:06.594Z",
-    "attempts": 1
+    "attempts": 1,
+    "deletion_check": {
+      "status": "exists",
+      "checked_at": "2026-11-05T18:08:25.363Z",
+      "source": "user_manual_check",
+      "verified_by": "user",
+      "reason": "User manually confirmed this reel still exists on Instagram.",
+      "evidence": "User confirmed all 11 listed pixa.300k empty-page failures exist. No automated check was performed.",
+      "observed_details": null
+    },
+    "retry_review": {
+      "reviewed_at": "2026-11-05T18:08:25.363Z",
+      "verified_by": "user",
+      "action": "retry_reel_details",
+      "reason": "Reel exists; full reel-level data still needs collection.",
+      "previous_status": "failed",
+      "previous_error": "Instagram rendered an empty page.",
+      "previous_attempt_at": "2026-10-28T12:00:06.594Z",
+      "cause_confirmed": false
+    }
   },
   {
     "kind": "reel",
@@ -995,10 +1014,29 @@
     "url": "https://www.instagram.com/reel/DbjPaQJzWi-/",
     "grid_views_raw": "155K",
     "grid_views_issue": null,
-    "status": "failed",
-    "last_error": "Instagram rendered an empty page.",
+    "status": "pending",
+    "last_error": null,
     "last_attempt_at": "2026-10-28T12:00:29.641Z",
-    "attempts": 1
+    "attempts": 1,
+    "deletion_check": {
+      "status": "exists",
+      "checked_at": "2026-11-05T18:08:25.363Z",
+      "source": "user_manual_check",
+      "verified_by": "user",
+      "reason": "User manually confirmed this reel still exists on Instagram.",
+      "evidence": "User confirmed all 11 listed pixa.300k empty-page failures exist. No automated check was performed.",
+      "observed_details": null
+    },
+    "retry_review": {
+      "reviewed_at": "2026-11-05T18:08:25.363Z",
+      "verified_by": "user",
+      "action": "retry_reel_details",
+      "reason": "Reel exists; full reel-level data still needs collection.",
+      "previous_status": "failed",
+      "previous_error": "Instagram rendered an empty page.",
+      "previous_attempt_at": "2026-10-28T12:00:29.641Z",
+      "cause_confirmed": false
+    }
   },
   {
     "kind": "reel",
@@ -1006,10 +1044,29 @@
     "url": "https://www.instagram.com/reel/Dbg1Srkz6Gy/",
     "grid_views_raw": "29.4K",
     "grid_views_issue": null,
-    "status": "failed",
-    "last_error": "Instagram rendered an empty page.",
+    "status": "pending",
+    "last_error": null,
     "last_attempt_at": "2026-10-28T12:00:52.712Z",
-    "attempts": 1
+    "attempts": 1,
+    "deletion_check": {
+      "status": "exists",
+      "checked_at": "2026-11-05T18:08:25.363Z",
+      "source": "user_manual_check",
+      "verified_by": "user",
+      "reason": "User manually confirmed this reel still exists on Instagram.",
+      "evidence": "User confirmed all 11 listed pixa.300k empty-page failures exist. No automated check was performed.",
+      "observed_details": null
+    },
+    "retry_review": {
+      "reviewed_at": "2026-11-05T18:08:25.363Z",
+      "verified_by": "user",
+      "action": "retry_reel_details",
+      "reason": "Reel exists; full reel-level data still needs collection.",
+      "previous_status": "failed",
+      "previous_error": "Instagram rendered an empty page.",
+      "previous_attempt_at": "2026-10-28T12:00:52.712Z",
+      "cause_confirmed": false
+    }
   },
   {
     "kind": "reel",
@@ -1017,10 +1074,29 @@
     "url": "https://www.instagram.com/reel/DbgOq_my9hl/",
     "grid_views_raw": "1.8M",
     "grid_views_issue": null,
-    "status": "failed",
-    "last_error": "Instagram rendered an empty page.",
+    "status": "pending",
+    "last_error": null,
     "last_attempt_at": "2026-10-28T12:01:15.937Z",
-    "attempts": 1
+    "attempts": 1,
+    "deletion_check": {
+      "status": "exists",
+      "checked_at": "2026-11-05T18:08:25.363Z",
+      "source": "user_manual_check",
+      "verified_by": "user",
+      "reason": "User manually confirmed this reel still exists on Instagram.",
+      "evidence": "User confirmed all 11 listed pixa.300k empty-page failures exist. No automated check was performed.",
+      "observed_details": null
+    },
+    "retry_review": {
+      "reviewed_at": "2026-11-05T18:08:25.363Z",
+      "verified_by": "user",
+      "action": "retry_reel_details",
+      "reason": "Reel exists; full reel-level data still needs collection.",
+      "previous_status": "failed",
+      "previous_error": "Instagram rendered an empty page.",
+      "previous_attempt_at": "2026-10-28T12:01:15.937Z",
+      "cause_confirmed": false
+    }
   },
   {
     "kind": "reel",
@@ -1028,10 +1104,29 @@
     "url": "https://www.instagram.com/reel/Dbd7Qy0SmJG/",
     "grid_views_raw": "5.1M",
     "grid_views_issue": null,
-    "status": "failed",
-    "last_error": "Instagram rendered an empty page.",
+    "status": "pending",
+    "last_error": null,
     "last_attempt_at": "2026-10-28T12:01:39.188Z",
-    "attempts": 1
+    "attempts": 1,
+    "deletion_check": {
+      "status": "exists",
+      "checked_at": "2026-11-05T18:08:25.363Z",
+      "source": "user_manual_check",
+      "verified_by": "user",
+      "reason": "User manually confirmed this reel still exists on Instagram.",
+      "evidence": "User confirmed all 11 listed pixa.300k empty-page failures exist. No automated check was performed.",
+      "observed_details": null
+    },
+    "retry_review": {
+      "reviewed_at": "2026-11-05T18:08:25.363Z",
+      "verified_by": "user",
+      "action": "retry_reel_details",
+      "reason": "Reel exists; full reel-level data still needs collection.",
+      "previous_status": "failed",
+      "previous_error": "Instagram rendered an empty page.",
+      "previous_attempt_at": "2026-10-28T12:01:39.188Z",
+      "cause_confirmed": false
+    }
   },
   {
     "kind": "reel",
@@ -1039,10 +1134,29 @@
     "url": "https://www.instagram.com/reel/Dbdk5OYyhO9/",
     "grid_views_raw": "20.6K",
     "grid_views_issue": null,
-    "status": "failed",
-    "last_error": "Instagram rendered an empty page.",
+    "status": "pending",
+    "last_error": null,
     "last_attempt_at": "2026-10-28T12:02:02.335Z",
-    "attempts": 1
+    "attempts": 1,
+    "deletion_check": {
+      "status": "exists",
+      "checked_at": "2026-11-05T18:08:25.363Z",
+      "source": "user_manual_check",
+      "verified_by": "user",
+      "reason": "User manually confirmed this reel still exists on Instagram.",
+      "evidence": "User confirmed all 11 listed pixa.300k empty-page failures exist. No automated check was performed.",
+      "observed_details": null
+    },
+    "retry_review": {
+      "reviewed_at": "2026-11-05T18:08:25.363Z",
+      "verified_by": "user",
+      "action": "retry_reel_details",
+      "reason": "Reel exists; full reel-level data still needs collection.",
+      "previous_status": "failed",
+      "previous_error": "Instagram rendered an empty page.",
+      "previous_attempt_at": "2026-10-28T12:02:02.335Z",
+      "cause_confirmed": false
+    }
   },
   {
     "kind": "reel",
@@ -1050,10 +1164,29 @@
     "url": "https://www.instagram.com/reel/DbdkwzAyuR8/",
     "grid_views_raw": "21.5K",
     "grid_views_issue": null,
-    "status": "failed",
-    "last_error": "Instagram rendered an empty page.",
+    "status": "pending",
+    "last_error": null,
     "last_attempt_at": "2026-10-28T12:02:25.562Z",
-    "attempts": 1
+    "attempts": 1,
+    "deletion_check": {
+      "status": "exists",
+      "checked_at": "2026-11-05T18:08:25.363Z",
+      "source": "user_manual_check",
+      "verified_by": "user",
+      "reason": "User manually confirmed this reel still exists on Instagram.",
+      "evidence": "User confirmed all 11 listed pixa.300k empty-page failures exist. No automated check was performed.",
+      "observed_details": null
+    },
+    "retry_review": {
+      "reviewed_at": "2026-11-05T18:08:25.363Z",
+      "verified_by": "user",
+      "action": "retry_reel_details",
+      "reason": "Reel exists; full reel-level data still needs collection.",
+      "previous_status": "failed",
+      "previous_error": "Instagram rendered an empty page.",
+      "previous_attempt_at": "2026-10-28T12:02:25.562Z",
+      "cause_confirmed": false
+    }
   },
   {
     "kind": "reel",
@@ -1061,10 +1194,29 @@
     "url": "https://www.instagram.com/reel/DbdQzNBzR-6/",
     "grid_views_raw": "272K",
     "grid_views_issue": null,
-    "status": "failed",
-    "last_error": "Instagram rendered an empty page.",
+    "status": "pending",
+    "last_error": null,
     "last_attempt_at": "2026-10-28T12:02:48.600Z",
-    "attempts": 1
+    "attempts": 1,
+    "deletion_check": {
+      "status": "exists",
+      "checked_at": "2026-11-05T18:08:25.363Z",
+      "source": "user_manual_check",
+      "verified_by": "user",
+      "reason": "User manually confirmed this reel still exists on Instagram.",
+      "evidence": "User confirmed all 11 listed pixa.300k empty-page failures exist. No automated check was performed.",
+      "observed_details": null
+    },
+    "retry_review": {
+      "reviewed_at": "2026-11-05T18:08:25.363Z",
+      "verified_by": "user",
+      "action": "retry_reel_details",
+      "reason": "Reel exists; full reel-level data still needs collection.",
+      "previous_status": "failed",
+      "previous_error": "Instagram rendered an empty page.",
+      "previous_attempt_at": "2026-10-28T12:02:48.600Z",
+      "cause_confirmed": false
+    }
   },
   {
     "kind": "reel",
@@ -1072,10 +1224,29 @@
     "url": "https://www.instagram.com/reel/DbcjazGyXG9/",
     "grid_views_raw": "20K",
     "grid_views_issue": null,
-    "status": "failed",
-    "last_error": "Instagram rendered an empty page.",
+    "status": "pending",
+    "last_error": null,
     "last_attempt_at": "2026-10-28T12:03:13.006Z",
-    "attempts": 1
+    "attempts": 1,
+    "deletion_check": {
+      "status": "exists",
+      "checked_at": "2026-11-05T18:08:25.363Z",
+      "source": "user_manual_check",
+      "verified_by": "user",
+      "reason": "User manually confirmed this reel still exists on Instagram.",
+      "evidence": "User confirmed all 11 listed pixa.300k empty-page failures exist. No automated check was performed.",
+      "observed_details": null
+    },
+    "retry_review": {
+      "reviewed_at": "2026-11-05T18:08:25.363Z",
+      "verified_by": "user",
+      "action": "retry_reel_details",
+      "reason": "Reel exists; full reel-level data still needs collection.",
+      "previous_status": "failed",
+      "previous_error": "Instagram rendered an empty page.",
+      "previous_attempt_at": "2026-10-28T12:03:13.006Z",
+      "cause_confirmed": false
+    }
   },
   {
     "kind": "reel",
@@ -1083,10 +1254,29 @@
     "url": "https://www.instagram.com/reel/DbcgApEyHCZ/",
     "grid_views_raw": "194K",
     "grid_views_issue": null,
-    "status": "failed",
-    "last_error": "Instagram rendered an empty page.",
+    "status": "pending",
+    "last_error": null,
     "last_attempt_at": "2026-10-28T12:03:36.274Z",
-    "attempts": 1
+    "attempts": 1,
+    "deletion_check": {
+      "status": "exists",
+      "checked_at": "2026-11-05T18:08:25.363Z",
+      "source": "user_manual_check",
+      "verified_by": "user",
+      "reason": "User manually confirmed this reel still exists on Instagram.",
+      "evidence": "User confirmed all 11 listed pixa.300k empty-page failures exist. No automated check was performed.",
+      "observed_details": null
+    },
+    "retry_review": {
+      "reviewed_at": "2026-11-05T18:08:25.363Z",
+      "verified_by": "user",
+      "action": "retry_reel_details",
+      "reason": "Reel exists; full reel-level data still needs collection.",
+      "previous_status": "failed",
+      "previous_error": "Instagram rendered an empty page.",
+      "previous_attempt_at": "2026-10-28T12:03:36.274Z",
+      "cause_confirmed": false
+    }
   },
   {
     "kind": "reel",
@@ -1105,9 +1295,28 @@
     "url": "https://www.instagram.com/reel/DbbbNjGy2nY/",
     "grid_views_raw": "3.1M",
     "grid_views_issue": null,
-    "status": "failed",
-    "last_error": "Instagram rendered an empty page.",
+    "status": "pending",
+    "last_error": null,
     "last_attempt_at": "2026-10-28T12:04:08.633Z",
-    "attempts": 1
+    "attempts": 1,
+    "deletion_check": {
+      "status": "exists",
+      "checked_at": "2026-11-05T18:08:25.363Z",
+      "source": "user_manual_check",
+      "verified_by": "user",
+      "reason": "User manually confirmed this reel still exists on Instagram.",
+      "evidence": "User confirmed all 11 listed pixa.300k empty-page failures exist. No automated check was performed.",
+      "observed_details": null
+    },
+    "retry_review": {
+      "reviewed_at": "2026-11-05T18:08:25.363Z",
+      "verified_by": "user",
+      "action": "retry_reel_details",
+      "reason": "Reel exists; full reel-level data still needs collection.",
+      "previous_status": "failed",
+      "previous_error": "Instagram rendered an empty page.",
+      "previous_attempt_at": "2026-10-28T12:04:08.633Z",
+      "cause_confirmed": false
+    }
   }
 ]
