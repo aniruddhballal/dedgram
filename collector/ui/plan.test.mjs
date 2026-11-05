@@ -4,6 +4,15 @@ import { orderProfiles, resultStatus, stepsFor } from './plan.mjs';
 import { filteredCatalog, profileDetailsReady, reelCountReady, reelDetailsComplete, reelsNeedWork } from './public/queue.js';
 
 const selected = ['alpha', 'beta'];
+
+test('available-data completion includes manually resolved reels without double counting', () => {
+  const profile = { username: 'checked', profile_complete: true,
+    reels: { grid_complete: true, discovered: 40, processed: 32, complete: 32, resolved: 8, review: 0 } };
+  assert.equal(reelDetailsComplete(profile), true);
+  assert.equal(reelsNeedWork(profile), false);
+  assert.equal(reelDetailsComplete({ ...profile, reels: { ...profile.reels, processed: 40, complete: 31 } }), false);
+  assert.equal(reelDetailsComplete({ ...profile, reels: { ...profile.reels, review: 1 } }), false);
+});
 const labels = (mode) => stepsFor(selected, mode).map(({ username, stage }) => `${username}:${stage}`);
 
 test('collection strategies schedule profile and reel stages in the requested order', () => {

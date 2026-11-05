@@ -16,11 +16,13 @@ export function reelCountReady(profile) {
 
 export function reelDetailsComplete(profile) {
   const reels = profile?.reels || {};
+  const handled = Number.isFinite(reels.complete)
+    ? reels.complete + (reels.resolved || 0) : reels.processed || 0;
   return reelCountReady(profile)
     && reels.grid_complete !== false
     && reels.discovered !== null
     && reels.discovered !== undefined
-    && (reels.processed || 0) >= reels.discovered
+    && handled >= reels.discovered
     && (reels.review || 0) === 0;
 }
 

@@ -1,8 +1,21 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { count, dayFromDescription, exactPostCount, gridCount, gridCountError, postCountError, profileFromSnapshot, profileHeaderComplete, profileLevelComplete, canonicalItemUrl, itemFromSnapshot, publicDetailsFromSnapshot } from '../src/model.mjs';
+import { itemAnalysisHandled, count, dayFromDescription, exactPostCount, gridCount, gridCountError, postCountError, profileFromSnapshot, profileHeaderComplete, profileLevelComplete, canonicalItemUrl, itemFromSnapshot, publicDetailsFromSnapshot } from '../src/model.mjs';
 import { mergeDiscoveryItems, mergeItem, mergeProfile, syncGridViews } from '../src/store.mjs';
 import { posterUsername } from '../src/reel-deletion-check.mjs';
+
+test('manually resolved reels count as handled and grid refreshes do not reopen them', () => {
+  assert.equal(itemAnalysisHandled({ status: 'complete' }), true);
+  assert.equal(itemAnalysisHandled({ status: 'archived', last_error: null }), true);
+  assert.equal(itemAnalysisHandled({ status: 'age_restricted', last_error: null }), true);
+  assert.equal(itemAnalysisHandled({ status: 'archived', last_error: 'Unresolved error' }), false);
+  assert.equal(itemAnalysisHandled({ status: 'partial' }), false);
+  assert.equal(itemAnalysisHandled({ status: 'pending' }), false);
+  assert.equal(itemAnalysisHandled(undefined), false);
+  const archived = { status: 'archived', last_error: null, grid_views_raw: '299K',
+    deletion_check: { source: 'user_manual_check', status: 'deleted' } };
+  assert.deepEqual(syncGridViews(archived, { grid_views_raw: '300K' }, '2026-11-05T00:00:00Z'), archived);
+});
 
 test('counts retain whether the source displayed a rounded value', () => {
   assert.deepEqual(count('20.7K'), { value: 20700, raw: '20.7K', approximate: true });

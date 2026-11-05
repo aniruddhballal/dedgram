@@ -4,7 +4,7 @@ import { fileURLToPath } from 'node:url';
 import { execFile } from 'node:child_process';
 import { promisify } from 'node:util';
 import { launch, captureProfile, discover, captureItem, saveProfilePicture } from './browser.mjs';
-import { dayFromDescription, exactPostCount, gridCount, gridCountError, itemFromSnapshot, now, postCountError, profileFromSnapshot, profileHeaderComplete, profileLevelComplete } from './model.mjs';
+import { itemAnalysisHandled, dayFromDescription, exactPostCount, gridCount, gridCountError, itemFromSnapshot, now, postCountError, profileFromSnapshot, profileHeaderComplete, profileLevelComplete } from './model.mjs';
 import { paths, readJson, writeJson, writeSnapshot, mergeDiscoveryItems, mergeItem, mergeProfile, syncGridViews } from './store.mjs';
 import { writeReport } from './report.mjs';
 
@@ -240,7 +240,7 @@ async function collect() {
     }
     items = [...existing.values()];
     await writeJson(path.items, items);
-    const workItems = [...queued.values()].filter((item) => refresh || existing.get(item.url)?.status !== 'complete');
+    const workItems = [...queued.values()].filter((item) => refresh || !itemAnalysisHandled(existing.get(item.url)));
     if (workItems.length) {
       await saveProgress({ task: 'item_details', label: 'Reel details', action: 'Opening reel pages and extracting dates, captions, views, likes and comments',
         total: workItems.length, detail: `${workItems.length} reel page${workItems.length === 1 ? '' : 's'} queued` });
@@ -248,7 +248,7 @@ async function collect() {
     let attempted = 0;
     for (const item of queued.values()) {
       const old = existing.get(item.url);
-      if (!refresh && old?.status === 'complete') continue;
+      if (!refresh && itemAnalysisHandled(old)) continue;
       if (attempted >= limit) break;
       attempted++;
       run = { ...run, phase: 'item details', current_url: item.url };
@@ -278,7 +278,7 @@ async function collect() {
       await new Promise((done) => setTimeout(done, 1600));
     }
     const complete = (reelGridOnly || profileStageComplete) && discoveryKinds.every((kind) => gridCount(discovery[kind]) !== null)
-      && [...queued.keys()].every((url) => existing.get(url)?.status === 'complete' && !existing.get(url)?.last_error);
+      && [...queued.keys()].every((url) => itemAnalysisHandled(existing.get(url)));
     const gridErrors = discoveryKinds.filter((kind) => gridCount(discovery[kind]) === null)
       .map((kind) => `${kind} grid: ${gridCountError(discovery[kind])}`);
     run = { ...run, phase: 'done', current_url: null, updated_at: now(), status: complete ? 'complete' : 'partial',

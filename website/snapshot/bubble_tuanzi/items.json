@@ -1615,10 +1615,22 @@
     "url": "https://www.instagram.com/reel/Dd7wsSXOAGV/",
     "grid_views_raw": "29.6K",
     "grid_views_issue": null,
-    "status": "failed",
-    "last_error": "Instagram reports this page is unavailable.",
+    "status": "archived",
+    "last_error": null,
     "last_attempt_at": "2026-11-05T15:08:27.049Z",
-    "attempts": 1
+    "attempts": 1,
+    "missing": [],
+    "missing_reasons": {},
+    "deletion_check": {
+      "status": "deleted",
+      "checked_at": "2026-11-05T17:19:34.461Z",
+      "source": "user_manual_check",
+      "verified_by": "user",
+      "reason": "User manually confirmed this reel is deleted/unavailable on Instagram.",
+      "evidence": "User explicitly confirmed all eight listed reel URLs as deleted. No automated Instagram check was performed.",
+      "previous_status": "failed",
+      "previous_last_error": "Instagram reports this page is unavailable."
+    }
   },
   {
     "kind": "reel",
@@ -1626,10 +1638,22 @@
     "url": "https://www.instagram.com/reel/DddWq12OAiW/",
     "grid_views_raw": "23.3K",
     "grid_views_issue": null,
-    "status": "failed",
-    "last_error": "Instagram reports this page is unavailable.",
+    "status": "archived",
+    "last_error": null,
     "last_attempt_at": "2026-11-05T15:08:30.346Z",
-    "attempts": 1
+    "attempts": 1,
+    "missing": [],
+    "missing_reasons": {},
+    "deletion_check": {
+      "status": "deleted",
+      "checked_at": "2026-11-05T17:19:34.461Z",
+      "source": "user_manual_check",
+      "verified_by": "user",
+      "reason": "User manually confirmed this reel is deleted/unavailable on Instagram.",
+      "evidence": "User explicitly confirmed all eight listed reel URLs as deleted. No automated Instagram check was performed.",
+      "previous_status": "failed",
+      "previous_last_error": "Instagram reports this page is unavailable."
+    }
   },
   {
     "kind": "reel",
@@ -1637,10 +1661,22 @@
     "url": "https://www.instagram.com/reel/DddVvOKuTzD/",
     "grid_views_raw": "22.9K",
     "grid_views_issue": null,
-    "status": "failed",
-    "last_error": "Instagram reports this page is unavailable.",
+    "status": "archived",
+    "last_error": null,
     "last_attempt_at": "2026-11-05T15:08:33.698Z",
-    "attempts": 1
+    "attempts": 1,
+    "missing": [],
+    "missing_reasons": {},
+    "deletion_check": {
+      "status": "deleted",
+      "checked_at": "2026-11-05T17:19:34.461Z",
+      "source": "user_manual_check",
+      "verified_by": "user",
+      "reason": "User manually confirmed this reel is deleted/unavailable on Instagram.",
+      "evidence": "User explicitly confirmed all eight listed reel URLs as deleted. No automated Instagram check was performed.",
+      "previous_status": "failed",
+      "previous_last_error": "Instagram reports this page is unavailable."
+    }
   },
   {
     "kind": "reel",
@@ -1648,10 +1684,22 @@
     "url": "https://www.instagram.com/reel/DcxSZaXMh1c/",
     "grid_views_raw": "14K",
     "grid_views_issue": null,
-    "status": "failed",
-    "last_error": "Instagram reports this page is unavailable.",
+    "status": "archived",
+    "last_error": null,
     "last_attempt_at": "2026-11-05T15:08:37.060Z",
-    "attempts": 1
+    "attempts": 1,
+    "missing": [],
+    "missing_reasons": {},
+    "deletion_check": {
+      "status": "deleted",
+      "checked_at": "2026-11-05T17:19:34.461Z",
+      "source": "user_manual_check",
+      "verified_by": "user",
+      "reason": "User manually confirmed this reel is deleted/unavailable on Instagram.",
+      "evidence": "User explicitly confirmed all eight listed reel URLs as deleted. No automated Instagram check was performed.",
+      "previous_status": "failed",
+      "previous_last_error": "Instagram reports this page is unavailable."
+    }
   },
   {
     "kind": "reel",
@@ -1659,10 +1707,22 @@
     "url": "https://www.instagram.com/reel/Dcv988iOEoC/",
     "grid_views_raw": "12.4K",
     "grid_views_issue": null,
-    "status": "failed",
-    "last_error": "Instagram reports this page is unavailable.",
+    "status": "archived",
+    "last_error": null,
     "last_attempt_at": "2026-11-05T15:08:40.428Z",
-    "attempts": 1
+    "attempts": 1,
+    "missing": [],
+    "missing_reasons": {},
+    "deletion_check": {
+      "status": "deleted",
+      "checked_at": "2026-11-05T17:19:34.461Z",
+      "source": "user_manual_check",
+      "verified_by": "user",
+      "reason": "User manually confirmed this reel is deleted/unavailable on Instagram.",
+      "evidence": "User explicitly confirmed all eight listed reel URLs as deleted. No automated Instagram check was performed.",
+      "previous_status": "failed",
+      "previous_last_error": "Instagram reports this page is unavailable."
+    }
   },
   {
     "kind": "reel",
@@ -1670,10 +1730,22 @@
     "url": "https://www.instagram.com/reel/DcTlnZzOuw8/",
     "grid_views_raw": "8,698",
     "grid_views_issue": null,
-    "status": "failed",
-    "last_error": "Instagram reports this page is unavailable.",
+    "status": "archived",
+    "last_error": null,
     "last_attempt_at": "2026-11-05T15:08:43.746Z",
-    "attempts": 1
+    "attempts": 1,
+    "missing": [],
+    "missing_reasons": {},
+    "deletion_check": {
+      "status": "deleted",
+      "checked_at": "2026-11-05T17:19:34.461Z",
+      "source": "user_manual_check",
+      "verified_by": "user",
+      "reason": "User manually confirmed this reel is deleted/unavailable on Instagram.",
+      "evidence": "User explicitly confirmed all eight listed reel URLs as deleted. No automated Instagram check was performed.",
+      "previous_status": "failed",
+      "previous_last_error": "Instagram reports this page is unavailable."
+    }
   },
   {
     "kind": "reel",
@@ -1681,10 +1753,22 @@
     "url": "https://www.instagram.com/reel/DcTd4mSxRLz/",
     "grid_views_raw": "8,770",
     "grid_views_issue": null,
-    "status": "failed",
-    "last_error": "Instagram reports this page is unavailable.",
+    "status": "archived",
+    "last_error": null,
     "last_attempt_at": "2026-11-05T15:08:47.203Z",
-    "attempts": 1
+    "attempts": 1,
+    "missing": [],
+    "missing_reasons": {},
+    "deletion_check": {
+      "status": "deleted",
+      "checked_at": "2026-11-05T17:19:34.461Z",
+      "source": "user_manual_check",
+      "verified_by": "user",
+      "reason": "User manually confirmed this reel is deleted/unavailable on Instagram.",
+      "evidence": "User explicitly confirmed all eight listed reel URLs as deleted. No automated Instagram check was performed.",
+      "previous_status": "failed",
+      "previous_last_error": "Instagram reports this page is unavailable."
+    }
   },
   {
     "kind": "reel",
@@ -1692,9 +1776,21 @@
     "url": "https://www.instagram.com/reel/DcRTKAnMUz_/",
     "grid_views_raw": "8,501",
     "grid_views_issue": null,
-    "status": "failed",
-    "last_error": "Instagram reports this page is unavailable.",
+    "status": "archived",
+    "last_error": null,
     "last_attempt_at": "2026-11-05T15:08:50.527Z",
-    "attempts": 1
+    "attempts": 1,
+    "missing": [],
+    "missing_reasons": {},
+    "deletion_check": {
+      "status": "deleted",
+      "checked_at": "2026-11-05T17:19:34.461Z",
+      "source": "user_manual_check",
+      "verified_by": "user",
+      "reason": "User manually confirmed this reel is deleted/unavailable on Instagram.",
+      "evidence": "User explicitly confirmed all eight listed reel URLs as deleted. No automated Instagram check was performed.",
+      "previous_status": "failed",
+      "previous_last_error": "Instagram reports this page is unavailable."
+    }
   }
 ]

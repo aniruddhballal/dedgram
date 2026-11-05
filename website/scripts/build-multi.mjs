@@ -231,14 +231,14 @@ const publishedReelRows = publishedSnapshotProfiles.flatMap((username) => {
 const publishedReelUrls = snapshotProfiles.reduce((sum, username) => sum + (snapshotData.get(username).discovery.reel.items || []).length, 0);
 const resolvedReelStatuses = new Set(['archived', 'age_restricted']);
 const isCompleteReel = (item) => item.status === 'complete' && !item.last_error;
-const isResolvedReel = (item) => resolvedReelStatuses.has(item.status);
+const isResolvedReel = (item) => resolvedReelStatuses.has(item.status) && !item.last_error;
 const completelyAnalyzedProfiles = new Set(publishedSnapshotProfiles.filter((username) => {
   const snapshot = snapshotData.get(username);
   const discoveredReels = snapshot.discovery.reel.items || [];
   const reelItems = (snapshot.items || []).filter((item) => item.kind === 'reel');
   return snapshot.discovery.reel.complete === true
     && discoveredReels.length === reelItems.length
-    && reelItems.every(isCompleteReel);
+    && reelItems.every((item) => isCompleteReel(item) || isResolvedReel(item));
 }));
 const partialPublishedProfiles = new Set([...fullProfiles, ...profileLevelProfiles].filter((username) => {
   const snapshot = snapshotData.get(username);
