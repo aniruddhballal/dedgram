@@ -1,0 +1,104 @@
+{
+  "username": "yappersteak",
+  "url": "https://www.instagram.com/yappersteak/",
+  "fetched_at": "2026-11-13T02:25:21.951Z",
+  "display_name": "Charlie the Steak",
+  "bio": "あらゆる追いかけっこを繰り広げる! 「トムとジェリ - 公式Instagramです! Cartoon Networkにて『まいにちトムとジェリー』放送中! 『映画トムとジェリー』デジタル配信中/ブルーレイ&D VD発売中TEC (s23)",
+  "posts_count": {
+    "value": 7302,
+    "raw": "7,302",
+    "approximate": false
+  },
+  "posts_count_observed_at": "2026-11-13T02:25:21.951Z",
+  "followers_count": {
+    "value": 193255,
+    "raw": "193,255",
+    "approximate": false,
+    "source": "header_title"
+  },
+  "following_count": {
+    "value": 1,
+    "raw": "1",
+    "approximate": false,
+    "source": "header_text"
+  },
+  "count_evidence": {
+    "followers": {
+      "header": {
+        "value": 193000,
+        "raw": "193K",
+        "approximate": true
+      },
+      "exact_title": {
+        "value": 193255,
+        "raw": "193,255",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 193000,
+        "raw": "193K",
+        "approximate": true
+      }
+    },
+    "following": {
+      "header": {
+        "value": 1,
+        "raw": "1",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 2,
+        "raw": "2",
+        "approximate": false
+      },
+      "conflict": true
+    },
+    "posts": {
+      "header": {
+        "value": 7302,
+        "raw": "7,302",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 7302,
+        "raw": "7,302",
+        "approximate": false
+      }
+    }
+  },
+  "category": null,
+  "ai_generated_profile": true,
+  "profile_picture_url": "https://instagram.fixe1-3.fna.fbcdn.net/v/t51.82787-19/883300479_17957076810280011_3159498453783040228_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=1&ig_cache_key=GH8YpjRLLHvA3cs-AORQIp4ay9grbmNDAQAB1501500j-ccb7-5&ccb=7-5&_nc_sid=669407&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy42MDIuQzMifQ%3D%3D&_nc_ohc=yRc7-NiVkP8Q7kNvwHHaBSu&_nc_oc=AdoZVvJICAe_hlytWoOpXoSIis9h1Etq3uaEgcIB1gb0SdlEDuQq5nBV4lVhQm3enayXnH5RTowTXEbxtV72oqxC&_nc_zt=24&_nc_ht=instagram.fixe1-3.fna&_nc_gid=NniaYopw7O3ZwZP5vpM1MQ&_nc_ss=7f6a8&oh=00_AQRoMTLCuVvcrEBG_yAk7oKe9lsZeK2anYTjO-DkrfNv7A&oe=6AFC48F7",
+  "date_joined": "August 2024",
+  "account_based_in": "Germany",
+  "former_usernames_count": null,
+  "raw": {
+    "header_text": "yappersteak\nCharlie the Steak\n7,302 posts\n193K followers\n1 following\nAI-generated profile\nあらゆる追いかけっこを繰り広げる! 「トムとジェリ - 公式Instagramです! Cartoon Networkにて『まいにちトムとジェリー』放送中! 『映画トムとジェリー』デジタル配信中/ブルーレイ&D VD発売中TEC (s23)\nFollow\nMessage",
+    "about_text": "About this account\nyappersteak\n • AI-generated profile\nTo help keep our community authentic, we’re showing information about profiles on Instagram. See why this information is important.\nDate joined\nAugust 2024\nAccount based in\nGermany\nClose",
+    "description": "193K Followers, 2 Following, 7,302 Posts - Charlie the Steak (@yappersteak) on Instagram: \"あらゆる追いかけっこを繰り広げる! 「トムとジェリ - 公式Instagramです! Cartoon Networkにて『まいにちトムとジェリー』放送中! 『映画トムとジェリー』デジタル配信中/ブルーレイ&D VD発売中TEC (s23)\"",
+    "stat_evidence": {
+      "posts": {
+        "label": "",
+        "exact_title": ""
+      },
+      "followers": {
+        "label": "193K followers",
+        "exact_title": "193,255"
+      },
+      "following": {
+        "label": "1 following",
+        "exact_title": ""
+      }
+    }
+  },
+  "issues": [],
+  "current_username": "yappersteak",
+  "username_history": [
+    {
+      "username": "yappersteak",
+      "role": "current username",
+      "first_seen_at": "2026-11-13T02:25:21.941Z"
+    }
+  ],
+  "username_change_observed_at": null
+}

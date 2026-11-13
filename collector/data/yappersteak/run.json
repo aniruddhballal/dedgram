@@ -1,24 +1,21 @@
 {
-  "started_at": "2026-11-13T03:27:35.425Z",
-  "updated_at": "2026-11-13T03:30:27.805Z",
-  "status": "blocked",
-  "phase": "reel discovery",
+  "started_at": "2026-11-13T15:47:17.146Z",
+  "updated_at": "2026-11-13T16:23:54.000Z",
+  "status": "complete",
+  "phase": "done",
   "scope": [
     "reel_grid"
   ],
   "current_url": null,
-  "error": "Instagram returned HTTP 429 (rate limit). Reel grid recovery stopped after 3 retries. URL: https://www.instagram.com/yappersteak/reels/",
+  "error": null,
   "progress": {
     "task": "reel_grid",
-    "label": "Reel URL discovery",
-    "action": "Finding every reel URL in the profile grid",
-    "completed": 1,
-    "total": 1,
-    "percent": 100,
-    "remaining": 0,
-    "current_item": null,
-    "detail": "Blocked: Instagram returned HTTP 429 (rate limit). Reel grid recovery stopped after 3 retries. URL: https://www.instagram.com/yappersteak/reels/",
-    "updated_at": "2026-11-13T03:30:27.805Z"
+    "label": "Resume retained grid with overlap",
+    "completed": 5895,
+    "total": null,
+    "percent": null,
+    "detail": "Complete inventory connected by recorded overlap and confirmed grid bottom"
   },
-  "browser_left_open": true
+  "browser_left_open": true,
+  "strategy": "resume_with_overlap_bridge"
 }

@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "username": "yappersteak",
+  "phase": "after-overlap-resume",
+  "snapshot_at": "2026-11-13T16:23:54.025Z",
+  "run_status": "complete",
+  "run_updated_at": "2026-11-13T16:23:54.000Z",
+  "profile_fetched_at": "2026-11-13T02:25:21.951Z",
+  "item_count": 0,
+  "complete_item_count": 0,
+  "discovery": {
+    "reel": {
+      "count": 5895,
+      "complete": true,
+      "error": null,
+      "attempted_at": "2026-11-13T16:23:54.000Z"
+    }
+  }
+}

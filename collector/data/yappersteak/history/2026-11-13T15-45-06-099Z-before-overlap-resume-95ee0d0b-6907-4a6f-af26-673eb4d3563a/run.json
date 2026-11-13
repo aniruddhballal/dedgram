@@ -1,0 +1,21 @@
+{
+  "started_at": "2026-11-13T15:36:24.347Z",
+  "updated_at": "2026-11-13T15:36:47.501Z",
+  "status": "blocked",
+  "phase": "done",
+  "scope": [
+    "reel_grid"
+  ],
+  "current_url": null,
+  "error": "Instagram returned HTTP 429 (rate limit). Resume stopped after 3 retries. URL: https://www.instagram.com/yappersteak/reels/",
+  "progress": {
+    "task": "reel_grid",
+    "label": "Resume existing reel grid",
+    "completed": 522,
+    "total": null,
+    "percent": null,
+    "detail": "Instagram returned HTTP 429 (rate limit). Resume stopped after 3 retries. URL: https://www.instagram.com/yappersteak/reels/"
+  },
+  "browser_left_open": true,
+  "strategy": "resume_existing_tab_down_then_up"
+}

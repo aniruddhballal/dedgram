@@ -1,0 +1,21 @@
+{
+  "started_at": "2026-11-13T15:47:17.146Z",
+  "updated_at": "2026-11-13T16:23:54.000Z",
+  "status": "complete",
+  "phase": "done",
+  "scope": [
+    "reel_grid"
+  ],
+  "current_url": null,
+  "error": null,
+  "progress": {
+    "task": "reel_grid",
+    "label": "Resume retained grid with overlap",
+    "completed": 5895,
+    "total": null,
+    "percent": null,
+    "detail": "Complete inventory connected by recorded overlap and confirmed grid bottom"
+  },
+  "browser_left_open": true,
+  "strategy": "resume_with_overlap_bridge"
+}
