@@ -1,0 +1,104 @@
+{
+  "username": "cusohln",
+  "url": "https://www.instagram.com/cusohln/",
+  "fetched_at": "2026-11-13T02:05:42.002Z",
+  "display_name": "cusohln",
+  "bio": "#TVアニメ『POV MEMES』🪎⚡️\n最新情報ついに解禁!!\n華やかなトッピング、驚きの仕上がり、そして予想外のサプライズまで…😱\n最後まで見逃すな!! 👀🔥",
+  "posts_count": {
+    "value": 261,
+    "raw": "261",
+    "approximate": false
+  },
+  "posts_count_observed_at": "2026-11-13T02:05:42.002Z",
+  "followers_count": {
+    "value": 40938,
+    "raw": "40,938",
+    "approximate": false,
+    "source": "header_title"
+  },
+  "following_count": {
+    "value": 0,
+    "raw": "0",
+    "approximate": false,
+    "source": "header_text"
+  },
+  "count_evidence": {
+    "followers": {
+      "header": {
+        "value": 40900,
+        "raw": "40.9K",
+        "approximate": true
+      },
+      "exact_title": {
+        "value": 40938,
+        "raw": "40,938",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 41000,
+        "raw": "41K",
+        "approximate": true
+      }
+    },
+    "following": {
+      "header": {
+        "value": 0,
+        "raw": "0",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 0,
+        "raw": "0",
+        "approximate": false
+      },
+      "conflict": false
+    },
+    "posts": {
+      "header": {
+        "value": 261,
+        "raw": "261",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 261,
+        "raw": "261",
+        "approximate": false
+      }
+    }
+  },
+  "category": null,
+  "ai_generated_profile": false,
+  "profile_picture_url": "https://instagram.fixe1-3.fna.fbcdn.net/v/t51.82787-19/881275808_18122084839941513_8432228422389632120_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=1&ig_cache_key=GKAzhzSJZXmt8GFAAHiMfAUTSwV1bmNDAQAB1501500j-ccb7-5&ccb=7-5&_nc_sid=669407&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=AoWO6PzkbyMQ7kNvwEOEN3H&_nc_oc=AdoADZyPH_-9vueut_U8qNr3mX3u50dAFYnRJnqPn0MY7z1rcoXG8ncshKeN9k5sCPibXs8gdwlMthIi9fQnwQDx&_nc_zt=24&_nc_ht=instagram.fixe1-3.fna&_nc_gid=bAQig2syieqEeZI48iJWNQ&_nc_ss=7f6a8&oh=00_AQRk7E3eIez7x9Wt9XRxgd8TzOYhvDlgbGlLn_4i8JHWag&oe=6AFC393C",
+  "date_joined": "November 2026",
+  "account_based_in": "Uzbekistan",
+  "former_usernames_count": null,
+  "raw": {
+    "header_text": "cusohln\ncusohln\n261 posts\n40.9K followers\n0 following\n#TVアニメ『POV MEMES』🪎⚡️\n最新情報ついに解禁!!\n華やかなトッピング、驚きの仕上がり、そして予想外のサプライズまで…😱\n最後まで見逃すな!! 👀🔥\nFollow\nMessage",
+    "about_text": "About this account\ncusohln\nTo help keep our community authentic, we’re showing information about profiles on Instagram. See why this information is important.\nDate joined\nNovember 2026\nAccount based in\nUzbekistan\nClose",
+    "description": "41K Followers, 0 Following, 261 Posts - @cusohln on Instagram: \"#TVアニメ『POV MEMES』🪎⚡️\n最新情報ついに解禁!!\n華やかなトッピング、驚きの仕上がり、そして予想外のサプライズまで…😱\n最後まで見逃すな!! 👀🔥\"",
+    "stat_evidence": {
+      "posts": {
+        "label": "",
+        "exact_title": ""
+      },
+      "followers": {
+        "label": "40.9K followers",
+        "exact_title": "40,938"
+      },
+      "following": {
+        "label": "0 following",
+        "exact_title": ""
+      }
+    }
+  },
+  "issues": [],
+  "current_username": "cusohln",
+  "username_history": [
+    {
+      "username": "cusohln",
+      "role": "current username",
+      "first_seen_at": "2026-11-13T02:05:41.995Z"
+    }
+  ],
+  "username_change_observed_at": null
+}
