@@ -1,0 +1,24 @@
+{
+  "started_at": "2026-11-13T16:47:41.075Z",
+  "updated_at": "2026-11-13T16:47:48.154Z",
+  "status": "blocked",
+  "phase": "profile",
+  "scope": [
+    "profile"
+  ],
+  "current_url": null,
+  "error": "Instagram reports this page is unavailable.",
+  "progress": {
+    "task": "profile",
+    "label": "Profile details",
+    "action": "Reading the profile header, account details and exact post count",
+    "completed": 0,
+    "total": 1,
+    "percent": 0,
+    "remaining": 1,
+    "current_item": null,
+    "detail": "Blocked: Instagram reports this page is unavailable.",
+    "updated_at": "2026-11-13T16:47:48.154Z"
+  },
+  "browser_left_open": false
+}
