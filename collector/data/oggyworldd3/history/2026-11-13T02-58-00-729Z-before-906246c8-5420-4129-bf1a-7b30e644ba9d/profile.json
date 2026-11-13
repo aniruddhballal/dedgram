@@ -1,0 +1,104 @@
+{
+  "username": "oggyworldd3",
+  "url": "https://www.instagram.com/oggyworldd3/",
+  "fetched_at": "2026-11-13T02:26:22.127Z",
+  "display_name": "OggytheOg",
+  "bio": "『オギー&コックローチ』の公式Instagramアカウントです! 家のなかで繰り広げられる、いたずらやドタバタの追いかけっこにご注目ください! 『オギ -&コックローチ』はカートゥーンネットワークやニコロデオンで放送中! デジタル配信も行われています。Blu-ray・DVDはTECより発売中です。",
+  "posts_count": {
+    "value": 90,
+    "raw": "90",
+    "approximate": false
+  },
+  "posts_count_observed_at": "2026-11-13T02:26:22.127Z",
+  "followers_count": {
+    "value": 5925,
+    "raw": "5,925",
+    "approximate": false,
+    "source": "header_title"
+  },
+  "following_count": {
+    "value": 0,
+    "raw": "0",
+    "approximate": false,
+    "source": "header_text"
+  },
+  "count_evidence": {
+    "followers": {
+      "header": {
+        "value": 5925,
+        "raw": "5,925",
+        "approximate": false
+      },
+      "exact_title": {
+        "value": 5925,
+        "raw": "5,925",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 4819,
+        "raw": "4,819",
+        "approximate": false
+      }
+    },
+    "following": {
+      "header": {
+        "value": 0,
+        "raw": "0",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 0,
+        "raw": "0",
+        "approximate": false
+      },
+      "conflict": false
+    },
+    "posts": {
+      "header": {
+        "value": 90,
+        "raw": "90",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 90,
+        "raw": "90",
+        "approximate": false
+      }
+    }
+  },
+  "category": null,
+  "ai_generated_profile": true,
+  "profile_picture_url": "https://instagram.fixe1-3.fna.fbcdn.net/v/t51.82787-19/891867556_18025574480745603_3632522259945298503_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=1&ig_cache_key=GKTRKDWDFMwbKgpAAEcavd6-T2kybmNDAQAB1501500j-ccb7-5&ccb=7-5&_nc_sid=669407&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=k2PSfFQDNZ4Q7kNvwFWqhrD&_nc_oc=AdqBx2vEnIhQL4-dTkKjx0CW6q8CenyJZUeg4woPKxTAulHpOhaEB9X5FGVG5Y71vWvCCgXPH--oN5fjcMVpmNgA&_nc_zt=24&_nc_ht=instagram.fixe1-3.fna&_nc_gid=F_NbpNtLfVV2DHkpQnuaQw&_nc_ss=7f2a8&oh=00_AQTWiesl98kdLee5nPBI7xJc9GDaOKeDvQCb-nX6SVaddg&oe=6AFC4C79",
+  "date_joined": "October 2026",
+  "account_based_in": "India",
+  "former_usernames_count": null,
+  "raw": {
+    "header_text": "oggyworldd3\nOggytheOg\n90 posts\n5,925 followers\n0 following\nAI-generated profile\n『オギー&コックローチ』の公式Instagramアカウントです! 家のなかで繰り広げられる、いたずらやドタバタの追いかけっこにご注目ください! 『オギ -&コックローチ』はカートゥーンネットワークやニコロデオンで放送中!... \nmore\nt.me/shinchanworldd\nFollow\nMessage",
+    "about_text": "About this account\noggyworldd3\n • AI-generated profile\nTo help keep our community authentic, we’re showing information about profiles on Instagram. See why this information is important.\nDate joined\nOctober 2026\nAccount based in\nIndia\nClose",
+    "description": "4,819 Followers, 0 Following, 90 Posts - OggytheOg (@oggyworldd3) on Instagram: \"『オギー&コックローチ』の公式Instagramアカウントです! 家のなかで繰り広げられる、いたずらやドタバタの追いかけっこにご注目ください! 『オギ -&コックローチ』はカートゥーンネットワークやニコロデオンで放送中! デジタル配信も行われています。Blu-ray・DVDはTECより発売中です。\"",
+    "stat_evidence": {
+      "posts": {
+        "label": "",
+        "exact_title": ""
+      },
+      "followers": {
+        "label": "5,925 followers",
+        "exact_title": "5,925"
+      },
+      "following": {
+        "label": "0 following",
+        "exact_title": ""
+      }
+    }
+  },
+  "issues": [],
+  "current_username": "oggyworldd3",
+  "username_history": [
+    {
+      "username": "oggyworldd3",
+      "role": "current username",
+      "first_seen_at": "2026-11-13T02:26:22.121Z"
+    }
+  ],
+  "username_change_observed_at": null
+}

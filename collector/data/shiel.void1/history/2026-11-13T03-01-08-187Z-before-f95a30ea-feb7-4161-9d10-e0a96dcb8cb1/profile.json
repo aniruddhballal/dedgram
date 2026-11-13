@@ -1,0 +1,104 @@
+{
+  "username": "shiel.void1",
+  "url": "https://www.instagram.com/shiel.void1/",
+  "fetched_at": "2026-11-13T02:26:08.662Z",
+  "display_name": "fallen",
+  "bio": "有村架純が自分自身と向き合い、得た気づき。俳優 業を通じて「自分とは何なんだろう」と向き合って きた彼女が、自分自身を知ることの大切さや、最新 作『さとこはいつも』について語る。",
+  "posts_count": {
+    "value": 299,
+    "raw": "299",
+    "approximate": false
+  },
+  "posts_count_observed_at": "2026-11-13T02:26:08.662Z",
+  "followers_count": {
+    "value": 1169,
+    "raw": "1,169",
+    "approximate": false,
+    "source": "header_title"
+  },
+  "following_count": {
+    "value": 7,
+    "raw": "7",
+    "approximate": false,
+    "source": "header_text"
+  },
+  "count_evidence": {
+    "followers": {
+      "header": {
+        "value": 1169,
+        "raw": "1,169",
+        "approximate": false
+      },
+      "exact_title": {
+        "value": 1169,
+        "raw": "1,169",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 1169,
+        "raw": "1,169",
+        "approximate": false
+      }
+    },
+    "following": {
+      "header": {
+        "value": 7,
+        "raw": "7",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 7,
+        "raw": "7",
+        "approximate": false
+      },
+      "conflict": false
+    },
+    "posts": {
+      "header": {
+        "value": 299,
+        "raw": "299",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 299,
+        "raw": "299",
+        "approximate": false
+      }
+    }
+  },
+  "category": null,
+  "ai_generated_profile": false,
+  "profile_picture_url": "https://instagram.fixe1-3.fna.fbcdn.net/v/t51.82787-19/872105588_18187001551412008_8264945329333297820_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ig_cache_key=GHRG_zMoWwBH_5xAAJxi78r8_7JybmNDAQAB1501500j-ccb7-5&ccb=7-5&_nc_sid=669407&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=LnWkSxsHZg4Q7kNvwGTqq8M&_nc_oc=Ado9i1AkIozVXy7ZvsmMWMbqdgaZMyFfpLsLfrSYZmLkaEkjC0dMd_dRfBsFXBWEm0osz_K4YGW8v3nkVhEM-PmN&_nc_zt=24&_nc_ht=instagram.fixe1-3.fna&_nc_gid=-yKiYcx5xK9d7J2tepNI4Q&_nc_ss=7f6a8&oh=00_AQQACqtnidj4kf0WEVWO_3QwnevP_QLvZVPf6P6APMRIAg&oe=6AFC440B",
+  "date_joined": "October 2026",
+  "account_based_in": "India",
+  "former_usernames_count": null,
+  "raw": {
+    "header_text": "shiel.void1\nfallen\n299 posts\n1,169 followers\n7 following\n有村架純が自分自身と向き合い、得た気づき。俳優 業を通じて「自分とは何なんだろう」と向き合って きた彼女が、自分自身を知ることの大切さや、最新 作『さとこはいつも』について語る。\nFollow",
+    "about_text": "About this account\nshiel.void1\nTo help keep our community authentic, we’re showing information about profiles on Instagram. See why this information is important.\nDate joined\nOctober 2026\nAccount based in\nIndia\nClose",
+    "description": "1,169 Followers, 7 Following, 299 Posts - fallen (@shiel.void1) on Instagram: \"有村架純が自分自身と向き合い、得た気づき。俳優 業を通じて「自分とは何なんだろう」と向き合って きた彼女が、自分自身を知ることの大切さや、最新 作『さとこはいつも』について語る。\"",
+    "stat_evidence": {
+      "posts": {
+        "label": "",
+        "exact_title": ""
+      },
+      "followers": {
+        "label": "1,169 followers",
+        "exact_title": "1,169"
+      },
+      "following": {
+        "label": "7 following",
+        "exact_title": ""
+      }
+    }
+  },
+  "issues": [],
+  "current_username": "shiel.void1",
+  "username_history": [
+    {
+      "username": "shiel.void1",
+      "role": "current username",
+      "first_seen_at": "2026-11-13T02:26:08.655Z"
+    }
+  ],
+  "username_change_observed_at": null
+}

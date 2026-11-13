@@ -1,0 +1,104 @@
+{
+  "username": "witchmasuka",
+  "url": "https://www.instagram.com/witchmasuka/",
+  "fetched_at": "2026-11-13T02:27:43.172Z",
+  "display_name": "masuka",
+  "bio": "Church of Jesus Christ of Latter-day Saints •\n⚔️闇の軍勢に立ち向かう新たな冒険が始まる! 『星詠みの戦士」公式Instagramへようこそ✨TVアニメ 新シーズン放送中! 最新PV&限定グッズ情報をお届け 中🎬",
+  "posts_count": {
+    "value": 340,
+    "raw": "340",
+    "approximate": false
+  },
+  "posts_count_observed_at": "2026-11-13T02:27:43.172Z",
+  "followers_count": {
+    "value": 3808,
+    "raw": "3,808",
+    "approximate": false,
+    "source": "header_title"
+  },
+  "following_count": {
+    "value": 2,
+    "raw": "2",
+    "approximate": false,
+    "source": "header_text"
+  },
+  "count_evidence": {
+    "followers": {
+      "header": {
+        "value": 3808,
+        "raw": "3,808",
+        "approximate": false
+      },
+      "exact_title": {
+        "value": 3808,
+        "raw": "3,808",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 3362,
+        "raw": "3,362",
+        "approximate": false
+      }
+    },
+    "following": {
+      "header": {
+        "value": 2,
+        "raw": "2",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 4,
+        "raw": "4",
+        "approximate": false
+      },
+      "conflict": true
+    },
+    "posts": {
+      "header": {
+        "value": 340,
+        "raw": "340",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 340,
+        "raw": "340",
+        "approximate": false
+      }
+    }
+  },
+  "category": null,
+  "ai_generated_profile": true,
+  "profile_picture_url": "https://instagram.fixe1-3.fna.fbcdn.net/v/t51.82787-19/888268197_18016239422790811_5032689240307294453_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=1&ig_cache_key=GKXl8TSb3PuerAFAAPVgciEztNdFbmNDAQAB1501500j-ccb7-5&ccb=7-5&_nc_sid=669407&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy45MDAuQzMifQ%3D%3D&_nc_ohc=XKC9_iO_Cd0Q7kNvwF1lM-e&_nc_oc=Ado_SX5IodjBQ-nvCK_Fjn3Renu4WXN7TpmrBiKKebZDAEuX8mpylfVZzzjQ00jbZP0DK_nZXxg-n7EX1JUCAaRK&_nc_zt=24&_nc_ht=instagram.fixe1-3.fna&_nc_gid=1pSRUQi46tzDJrQQ6W29-w&_nc_ss=7f6a8&oh=00_AQRiOSaCppajIBQ5yIwqTtOGKcMi6uH_RORAOKa5UR64bA&oe=6AFC463F",
+  "date_joined": "November 2026",
+  "account_based_in": "India",
+  "former_usernames_count": null,
+  "raw": {
+    "header_text": "witchmasuka\nmasuka\n340 posts\n3,808 followers\n2 following\nChurch of Jesus Christ of Latter-day Saints • \nAI-generated profile\n⚔️闇の軍勢に立ち向かう新たな冒険が始まる! 『星詠みの戦士」公式Instagramへようこそ✨TVアニメ 新シーズン放送中! 最新PV&限定グッズ情報をお届け 中🎬\nFollow",
+    "about_text": "About this account\nwitchmasuka\n • AI-generated profile\nTo help keep our community authentic, we’re showing information about profiles on Instagram. See why this information is important.\nDate joined\nNovember 2026\nAccount based in\nIndia\nClose",
+    "description": "3,362 Followers, 4 Following, 340 Posts - masuka (@witchmasuka) on Instagram: \"⚔️闇の軍勢に立ち向かう新たな冒険が始まる! 『星詠みの戦士」公式Instagramへようこそ✨TVアニメ 新シーズン放送中! 最新PV&限定グッズ情報をお届け 中🎬\"",
+    "stat_evidence": {
+      "posts": {
+        "label": "",
+        "exact_title": ""
+      },
+      "followers": {
+        "label": "3,808 followers",
+        "exact_title": "3,808"
+      },
+      "following": {
+        "label": "2 following",
+        "exact_title": ""
+      }
+    }
+  },
+  "issues": [],
+  "current_username": "witchmasuka",
+  "username_history": [
+    {
+      "username": "witchmasuka",
+      "role": "current username",
+      "first_seen_at": "2026-11-13T02:27:43.166Z"
+    }
+  ],
+  "username_change_observed_at": null
+}

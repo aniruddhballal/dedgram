@@ -1,0 +1,104 @@
+{
+  "username": "vega.sandy_800",
+  "url": "https://www.instagram.com/vega.sandy_800/",
+  "fetched_at": "2026-11-13T02:27:29.999Z",
+  "display_name": null,
+  "bio": "#TVアニメスパイダーマン」\n最新情報がついに解禁されたよ!!🚀🔥\n待望のキービジュアルが公開!新キャラや新しい能カはも\nちろん、ストーリーの鍵",
+  "posts_count": {
+    "value": 19,
+    "raw": "19",
+    "approximate": false
+  },
+  "posts_count_observed_at": "2026-11-13T02:27:29.999Z",
+  "followers_count": {
+    "value": 323,
+    "raw": "323",
+    "approximate": false,
+    "source": "header_title"
+  },
+  "following_count": {
+    "value": 0,
+    "raw": "0",
+    "approximate": false,
+    "source": "header_text"
+  },
+  "count_evidence": {
+    "followers": {
+      "header": {
+        "value": 323,
+        "raw": "323",
+        "approximate": false
+      },
+      "exact_title": {
+        "value": 323,
+        "raw": "323",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 267,
+        "raw": "267",
+        "approximate": false
+      }
+    },
+    "following": {
+      "header": {
+        "value": 0,
+        "raw": "0",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 0,
+        "raw": "0",
+        "approximate": false
+      },
+      "conflict": false
+    },
+    "posts": {
+      "header": {
+        "value": 19,
+        "raw": "19",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 19,
+        "raw": "19",
+        "approximate": false
+      }
+    }
+  },
+  "category": null,
+  "ai_generated_profile": false,
+  "profile_picture_url": "https://instagram.fixe1-4.fna.fbcdn.net/v/t51.82787-19/891843616_17997563870876164_3519236719957704265_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=111&_nc_map=urlgen_bucketless&ig_cache_key=GCB0KDUEklhhsPA-AEn_lq0m19YwbmNDAQAB1501500j-ccb7-5&ccb=7-5&_nc_sid=669407&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy43MjcuQzMifQ%3D%3D&_nc_ohc=J_6jdFKE58wQ7kNvwFzPkg4&_nc_oc=AdorMgnir11tIHQ7Vyf6Ls_xZGeiKcX1_nj4n6VvHsioyy4SCpTRFwBZEXqNUliD_cQ_yUP-pBT0_nS_uKcQ3Oxi&_nc_zt=24&_nc_ht=instagram.fixe1-4.fna&_nc_gid=RdmXNiwhfSrF2A61-b_ebw&_nc_ss=7f6a8&oh=00_AQQ9KX1cQDSUNCdDo8MYIK3wa7qgxhZ3EZ4IsWYCEGrAfw&oe=6AFC3CC1",
+  "date_joined": "November 2026",
+  "account_based_in": "United Kingdom",
+  "former_usernames_count": null,
+  "raw": {
+    "header_text": "vega.sandy_800\n19 posts\n323 followers\n0 following\n#TVアニメスパイダーマン」\n最新情報がついに解禁されたよ!!🚀🔥\n待望のキービジュアルが公開!新キャラや新しい能カはも\nちろん、ストーリーの鍵\nFollow\nMessage\nTelegram\nTelegram",
+    "about_text": "About this account\nvega.sandy_800\nTo help keep our community authentic, we’re showing information about profiles on Instagram. See why this information is important.\nDate joined\nNovember 2026\nAccount based in\nUnited Kingdom\nClose",
+    "description": "267 Followers, 0 Following, 19 Posts - @vega.sandy_800 on Instagram: \"#TVアニメスパイダーマン」\n最新情報がついに解禁されたよ!!🚀🔥\n待望のキービジュアルが公開!新キャラや新しい能カはも\nちろん、ストーリーの鍵\"",
+    "stat_evidence": {
+      "posts": {
+        "label": "",
+        "exact_title": ""
+      },
+      "followers": {
+        "label": "323 followers",
+        "exact_title": "323"
+      },
+      "following": {
+        "label": "0 following",
+        "exact_title": ""
+      }
+    }
+  },
+  "issues": [],
+  "current_username": "vega.sandy_800",
+  "username_history": [
+    {
+      "username": "vega.sandy_800",
+      "role": "current username",
+      "first_seen_at": "2026-11-13T02:27:29.991Z"
+    }
+  ],
+  "username_change_observed_at": null
+}

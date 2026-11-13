@@ -1,0 +1,104 @@
+{
+  "username": "chipmunk.46149483",
+  "url": "https://www.instagram.com/chipmunk.46149483/",
+  "fetched_at": "2026-11-13T02:27:49.940Z",
+  "display_name": null,
+  "bio": "1998年から2018年まで放送された、テレビシリーズ 『オギー& コックローチ』の公式チャンネルです! 終わりのないドタバタの追いかけっこを、ぜひご覧ください! 現在、『オギー&コックローチ』はカートゥーンネットワークのほか、デジタル配信やブルーレイ・DVDでもお楽しみいただけます。",
+  "posts_count": {
+    "value": 13,
+    "raw": "13",
+    "approximate": false
+  },
+  "posts_count_observed_at": "2026-11-13T02:27:49.940Z",
+  "followers_count": {
+    "value": 383,
+    "raw": "383",
+    "approximate": false,
+    "source": "header_title"
+  },
+  "following_count": {
+    "value": 13,
+    "raw": "13",
+    "approximate": false,
+    "source": "header_text"
+  },
+  "count_evidence": {
+    "followers": {
+      "header": {
+        "value": 383,
+        "raw": "383",
+        "approximate": false
+      },
+      "exact_title": {
+        "value": 383,
+        "raw": "383",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 0,
+        "raw": "0",
+        "approximate": false
+      }
+    },
+    "following": {
+      "header": {
+        "value": 13,
+        "raw": "13",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 13,
+        "raw": "13",
+        "approximate": false
+      },
+      "conflict": false
+    },
+    "posts": {
+      "header": {
+        "value": 13,
+        "raw": "13",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 14,
+        "raw": "14",
+        "approximate": false
+      }
+    }
+  },
+  "category": null,
+  "ai_generated_profile": true,
+  "profile_picture_url": "https://instagram.fixe1-3.fna.fbcdn.net/v/t51.82787-19/901840639_18028342193715378_5290671582506571583_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=1&ig_cache_key=GP-_wDWyeFiErgxAAD-XjurFPWxJbmNDAQAB1501500j-ccb7-5&ccb=7-5&_nc_sid=669407&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy41ODUuQzMifQ%3D%3D&_nc_ohc=p3Qtu7x2Ew4Q7kNvwHpadv7&_nc_oc=AdrvqWUDUPCKBmKRfeo2k3llBIgHKLS7wkgFHbf-GVKY6s4aDwKF0KvUsYPTHh97PvtF-GKD6Cdqx0mXEmLStjwI&_nc_zt=24&_nc_ht=instagram.fixe1-3.fna&_nc_gid=xSIrH-odsj0VzPzK509xsw&_nc_ss=7f6a8&oh=00_AQQHfPj3HfiuaOsFNyeYv56qwwbT4Qa7ya6FzjP66VICAg&oe=6AFC5022",
+  "date_joined": "November 2026",
+  "account_based_in": null,
+  "former_usernames_count": null,
+  "raw": {
+    "header_text": "chipmunk.46149483\n13 posts\n383 followers\n13 following\nAI-generated profile\n1998年から2018年まで放送された、テレビシリーズ 『オギー& コックローチ』の公式チャンネルです! 終わりのないドタバタの追いかけっこを、ぜひご覧ください!... \nmore\nt.me/pumpkinseed65\nFollow\nvideo link",
+    "about_text": "About this account\nchipmunk.46149483\n • AI-generated profile\nTo help keep our community authentic, we’re showing information about profiles on Instagram. See why this information is important.\nDate joined\nNovember 2026\nClose",
+    "description": "0 Followers, 13 Following, 14 Posts - @chipmunk.46149483 on Instagram: \"1998年から2018年まで放送された、テレビシリーズ 『オギー& コックローチ』の公式チャンネルです! 終わりのないドタバタの追いかけっこを、ぜひご覧ください! 現在、『オギー&コックローチ』はカートゥーンネットワークのほか、デジタル配信やブルーレイ・DVDでもお楽しみいただけます。\"",
+    "stat_evidence": {
+      "posts": {
+        "label": "",
+        "exact_title": ""
+      },
+      "followers": {
+        "label": "383 followers",
+        "exact_title": "383"
+      },
+      "following": {
+        "label": "13 following",
+        "exact_title": ""
+      }
+    }
+  },
+  "issues": [],
+  "current_username": "chipmunk.46149483",
+  "username_history": [
+    {
+      "username": "chipmunk.46149483",
+      "role": "current username",
+      "first_seen_at": "2026-11-13T02:27:49.934Z"
+    }
+  ],
+  "username_change_observed_at": null
+}

@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "username": "zozo_phio",
+  "phase": "before",
+  "snapshot_at": "2026-11-13T02:59:09.275Z",
+  "run_status": "complete",
+  "run_updated_at": "2026-11-13T02:25:55.136Z",
+  "profile_fetched_at": "2026-11-13T02:25:55.127Z",
+  "item_count": 0,
+  "complete_item_count": 0,
+  "discovery": {}
+}

@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "username": "npcahhdiary",
+  "phase": "after",
+  "snapshot_at": "2026-11-13T02:56:15.319Z",
+  "run_status": "complete",
+  "run_updated_at": "2026-11-13T02:56:15.312Z",
+  "profile_fetched_at": "2026-11-13T02:25:28.513Z",
+  "item_count": 0,
+  "complete_item_count": 0,
+  "discovery": {
+    "reel": {
+      "count": 44,
+      "complete": true,
+      "error": null,
+      "attempted_at": "2026-11-13T02:56:15.305Z"
+    }
+  }
+}

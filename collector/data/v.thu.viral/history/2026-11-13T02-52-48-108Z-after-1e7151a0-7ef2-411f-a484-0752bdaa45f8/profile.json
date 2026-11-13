@@ -1,0 +1,108 @@
+{
+  "username": "v.thu.viral",
+  "url": "https://www.instagram.com/v.thu.viral/",
+  "fetched_at": "2026-11-13T02:24:42.064Z",
+  "display_name": "Ｖ੮Һυ",
+  "bio": "1998年から2018年まで放送された、テレビシリーズ『オ ギー&コックローチの公式チャンネルです! 終わりのない ドタバタの追いかけっこを、ぜひご覧ください!現在、 『オギー&コックローチはカートゥーンネットワークのほ か、デジタル配信やブルーレイ・DVDでもお楽しみいた だけます。",
+  "posts_count": {
+    "value": 0,
+    "raw": "0",
+    "approximate": false
+  },
+  "posts_count_observed_at": "2026-11-13T02:24:42.064Z",
+  "followers_count": {
+    "value": 202227,
+    "raw": "202,227",
+    "approximate": false,
+    "source": "header_title"
+  },
+  "following_count": {
+    "value": 0,
+    "raw": "0",
+    "approximate": false,
+    "source": "header_text"
+  },
+  "count_evidence": {
+    "followers": {
+      "header": {
+        "value": 202000,
+        "raw": "202K",
+        "approximate": true
+      },
+      "exact_title": {
+        "value": 202227,
+        "raw": "202,227",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 201000,
+        "raw": "201K",
+        "approximate": true
+      }
+    },
+    "following": {
+      "header": {
+        "value": 0,
+        "raw": "0",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 0,
+        "raw": "0",
+        "approximate": false
+      },
+      "conflict": false
+    },
+    "posts": {
+      "header": {
+        "value": 0,
+        "raw": "0",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 0,
+        "raw": "0",
+        "approximate": false
+      }
+    }
+  },
+  "category": null,
+  "ai_generated_profile": false,
+  "profile_picture_url": "https://instagram.fixe1-3.fna.fbcdn.net/v/t51.82787-19/856302861_18121352935977860_3641010275447934927_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=1&ig_cache_key=GA0lCjOEM5lERmFAAM8Pn-uNd4cybmNDAQAB1501500j-ccb7-5&ccb=7-5&_nc_sid=669407&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=TAxBrBxpJ30Q7kNvwGHnxIn&_nc_oc=Adr4d1hH3WvBx9RJn9Y1LkQTdlNYkJEOuZihAI4S6zcJv3hJ7CHWgAfEk1rbMZwxHuP-TExKaPSpByWWVILdHXQ_&_nc_zt=24&_nc_ht=instagram.fixe1-3.fna&_nc_gid=8KyeR03o7al3lORsUKv3Fg&_nc_ss=7f6a8&oh=00_AQRw_YHzRAZlTI8Bb4Z6Dlp7b42P7rfw_c9s8LzzRL1sFQ&oe=6AFC2B87",
+  "date_joined": "August 2026",
+  "account_based_in": null,
+  "former_usernames_count": {
+    "value": 1,
+    "raw": "1",
+    "approximate": false
+  },
+  "raw": {
+    "header_text": "v.thu.viral\nＶ੮Һυ\n0 posts\n202K followers\n0 following\n1998年から2018年まで放送された、テレビシリーズ『オ ギー&コックローチの公式チャンネルです! 終わりのない ドタバタの追いかけっこを、ぜひご覧ください!現在、 『オギー&コックローチはカートゥーンネットワークのほ... \nmore\nFollow",
+    "about_text": "About this account\nv.thu.viral\nTo help keep our community authentic, we’re showing information about profiles on Instagram. See why this information is important.\nDate joined\nAugust 2026\nFormer usernames\n1\nClose",
+    "description": "201K Followers, 0 Following, 0 Posts - Ｖ੮Һυ (@v.thu.viral) on Instagram: \"1998年から2018年まで放送された、テレビシリーズ『オ ギー&コックローチの公式チャンネルです! 終わりのない ドタバタの追いかけっこを、ぜひご覧ください!現在、 『オギー&コックローチはカートゥーンネットワークのほ か、デジタル配信やブルーレイ・DVDでもお楽しみいた だけます。\"",
+    "stat_evidence": {
+      "posts": {
+        "label": "",
+        "exact_title": ""
+      },
+      "followers": {
+        "label": "202K followers",
+        "exact_title": "202,227"
+      },
+      "following": {
+        "label": "0 following",
+        "exact_title": ""
+      }
+    }
+  },
+  "issues": [],
+  "current_username": "v.thu.viral",
+  "username_history": [
+    {
+      "username": "v.thu.viral",
+      "role": "current username",
+      "first_seen_at": "2026-11-13T02:24:42.058Z"
+    }
+  ],
+  "username_change_observed_at": null
+}

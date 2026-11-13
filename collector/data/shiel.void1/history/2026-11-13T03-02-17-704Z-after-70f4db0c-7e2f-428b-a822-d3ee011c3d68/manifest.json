@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "username": "shiel.void1",
+  "phase": "after",
+  "snapshot_at": "2026-11-13T03:02:17.704Z",
+  "run_status": "complete",
+  "run_updated_at": "2026-11-13T03:02:17.696Z",
+  "profile_fetched_at": "2026-11-13T02:26:08.662Z",
+  "item_count": 0,
+  "complete_item_count": 0,
+  "discovery": {
+    "reel": {
+      "count": 219,
+      "complete": true,
+      "error": null,
+      "attempted_at": "2026-11-13T03:02:17.688Z"
+    }
+  }
+}

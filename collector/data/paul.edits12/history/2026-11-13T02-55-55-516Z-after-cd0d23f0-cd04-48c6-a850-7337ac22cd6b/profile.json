@@ -1,0 +1,104 @@
+{
+  "username": "paul.edits12",
+  "url": "https://www.instagram.com/paul.edits12/",
+  "fetched_at": "2026-11-13T02:27:16.341Z",
+  "display_name": null,
+  "bio": "映画「マスク」のユニークで楽しい冒険をいつでも楽しもう！しかも Cartoon Network CEM+でもお楽しみいただけます。映画はデジタル配サービスでも視聴可能。Blu-ray&DVDも引き続き好評発売中。",
+  "posts_count": {
+    "value": 36,
+    "raw": "36",
+    "approximate": false
+  },
+  "posts_count_observed_at": "2026-11-13T02:27:16.341Z",
+  "followers_count": {
+    "value": 6996,
+    "raw": "6,996",
+    "approximate": false,
+    "source": "header_title"
+  },
+  "following_count": {
+    "value": 0,
+    "raw": "0",
+    "approximate": false,
+    "source": "header_text"
+  },
+  "count_evidence": {
+    "followers": {
+      "header": {
+        "value": 6996,
+        "raw": "6,996",
+        "approximate": false
+      },
+      "exact_title": {
+        "value": 6996,
+        "raw": "6,996",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 1324,
+        "raw": "1,324",
+        "approximate": false
+      }
+    },
+    "following": {
+      "header": {
+        "value": 0,
+        "raw": "0",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 0,
+        "raw": "0",
+        "approximate": false
+      },
+      "conflict": false
+    },
+    "posts": {
+      "header": {
+        "value": 36,
+        "raw": "36",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 36,
+        "raw": "36",
+        "approximate": false
+      }
+    }
+  },
+  "category": null,
+  "ai_generated_profile": true,
+  "profile_picture_url": "https://instagram.fixe1-3.fna.fbcdn.net/v/t51.82787-19/899670578_18033825287697159_4034310750704968536_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=1&ig_cache_key=GDLinzUH8zYmqxFAAFgjT8lAwPw3bmNDAQAB1501500j-ccb7-5&ccb=7-5&_nc_sid=669407&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy43MzYuQzMifQ%3D%3D&_nc_ohc=UGYlTLvTAuQQ7kNvwFI_F03&_nc_oc=AdornFM-4JKT8OdgXJb0c_4z6Pn_Yr_6mTKWnTM5MrlGu16lgpKuQNgVlWFJCkeDP3KOA2bKUSUazSKMb8_FChTS&_nc_zt=24&_nc_ht=instagram.fixe1-3.fna&_nc_gid=5lEGpoMFnQnMPpvnCU4qPQ&_nc_ss=7f6a8&oh=00_AQSXaDhUeZiN4NWWKU4rABwoLCsqFyCh4OBWub4gPEuGgg&oe=6AFC4554",
+  "date_joined": "November 2026",
+  "account_based_in": null,
+  "former_usernames_count": null,
+  "raw": {
+    "header_text": "paul.edits12\n36 posts\n6,996 followers\n0 following\nAI-generated profile\n映画「マスク」のユニークで楽しい冒険をいつでも楽しもう！しかも Cartoon Network CEM+でもお楽しみいただけます。映画はデジタル配サービスでも視聴可能。Blu-ray&DVDも引き続き好評発売中。\nFollow",
+    "about_text": "About this account\npaul.edits12\n • AI-generated profile\nTo help keep our community authentic, we’re showing information about profiles on Instagram. See why this information is important.\nDate joined\nNovember 2026\nClose",
+    "description": "1,324 Followers, 0 Following, 36 Posts - @paul.edits12 on Instagram: \"映画「マスク」のユニークで楽しい冒険をいつでも楽しもう！しかも Cartoon Network CEM+でもお楽しみいただけます。映画はデジタル配サービスでも視聴可能。Blu-ray&DVDも引き続き好評発売中。\"",
+    "stat_evidence": {
+      "posts": {
+        "label": "",
+        "exact_title": ""
+      },
+      "followers": {
+        "label": "6,996 followers",
+        "exact_title": "6,996"
+      },
+      "following": {
+        "label": "0 following",
+        "exact_title": ""
+      }
+    }
+  },
+  "issues": [],
+  "current_username": "paul.edits12",
+  "username_history": [
+    {
+      "username": "paul.edits12",
+      "role": "current username",
+      "first_seen_at": "2026-11-13T02:27:16.334Z"
+    }
+  ],
+  "username_change_observed_at": null
+}

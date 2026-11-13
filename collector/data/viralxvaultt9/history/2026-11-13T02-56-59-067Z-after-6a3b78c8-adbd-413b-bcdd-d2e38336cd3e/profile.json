@@ -1,0 +1,104 @@
+{
+  "username": "viralxvaultt9",
+  "url": "https://www.instagram.com/viralxvaultt9/",
+  "fetched_at": "2026-11-13T02:24:48.415Z",
+  "display_name": "🧿",
+  "bio": "1998年から2018年まで放送された、テレビシリーズ『オギー& コックローチの公式チャンネルです! 終わりのないドタバタの追いかけっこを、ぜひご覧ください! 現在、『オギー&コックローチはカートゥーンネットワークのほか、デジタル配信やブルーレイ・DVDでもお楽しみいただけます。",
+  "posts_count": {
+    "value": 56,
+    "raw": "56",
+    "approximate": false
+  },
+  "posts_count_observed_at": "2026-11-13T02:24:48.415Z",
+  "followers_count": {
+    "value": 1788,
+    "raw": "1,788",
+    "approximate": false,
+    "source": "header_title"
+  },
+  "following_count": {
+    "value": 0,
+    "raw": "0",
+    "approximate": false,
+    "source": "header_text"
+  },
+  "count_evidence": {
+    "followers": {
+      "header": {
+        "value": 1788,
+        "raw": "1,788",
+        "approximate": false
+      },
+      "exact_title": {
+        "value": 1788,
+        "raw": "1,788",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 1757,
+        "raw": "1,757",
+        "approximate": false
+      }
+    },
+    "following": {
+      "header": {
+        "value": 0,
+        "raw": "0",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 1,
+        "raw": "1",
+        "approximate": false
+      },
+      "conflict": true
+    },
+    "posts": {
+      "header": {
+        "value": 56,
+        "raw": "56",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 56,
+        "raw": "56",
+        "approximate": false
+      }
+    }
+  },
+  "category": null,
+  "ai_generated_profile": false,
+  "profile_picture_url": "https://instagram.fixe1-2.fna.fbcdn.net/v/t51.82787-19/898586634_17966759147998989_867056998710368322_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=109&_nc_map=urlgen_bucketless&ig_cache_key=GApYjzUND8gYrNQ-AELYJRi-ZwgMbmNDAQAB1501500j-ccb7-5&ccb=7-5&_nc_sid=669407&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=Vw503f90OoQQ7kNvwFX72mY&_nc_oc=AdrtAoNMzr75DLazPZUTjOC3xHDfvUprRXItjMx3D3Fpg0P4ni_CuAU8c5xUzO4-gQQh9bJCOGvuMg1MfkZmlDRo&_nc_zt=24&_nc_ht=instagram.fixe1-2.fna&_nc_gid=PI2nHRsWBK6CViztkNVt-A&_nc_ss=7f6a8&oh=00_AQTVJdXAuJ074vxnGsHETdLsNdNVgG_G5YrVXrLpDdXfpQ&oe=6AFC2CB3",
+  "date_joined": "November 2026",
+  "account_based_in": "India",
+  "former_usernames_count": null,
+  "raw": {
+    "header_text": "viralxvaultt9\n🧿\n56 posts\n1,788 followers\n0 following\n1998年から2018年まで放送された、テレビシリーズ『オギー& コックローチの公式チャンネルです! 終わりのないドタバタの追いかけっこを、ぜひご覧ください!... \nmore\nFollow\nMessage",
+    "about_text": "About this account\nviralxvaultt9\nTo help keep our community authentic, we’re showing information about profiles on Instagram. See why this information is important.\nDate joined\nNovember 2026\nAccount based in\nIndia\nClose",
+    "description": "1,757 Followers, 1 Following, 56 Posts - 🧿 (@viralxvaultt9) on Instagram: \"1998年から2018年まで放送された、テレビシリーズ『オギー& コックローチの公式チャンネルです! 終わりのないドタバタの追いかけっこを、ぜひご覧ください! 現在、『オギー&コックローチはカートゥーンネットワークのほか、デジタル配信やブルーレイ・DVDでもお楽しみいただけます。\"",
+    "stat_evidence": {
+      "posts": {
+        "label": "",
+        "exact_title": ""
+      },
+      "followers": {
+        "label": "1,788 followers",
+        "exact_title": "1,788"
+      },
+      "following": {
+        "label": "0 following",
+        "exact_title": ""
+      }
+    }
+  },
+  "issues": [],
+  "current_username": "viralxvaultt9",
+  "username_history": [
+    {
+      "username": "viralxvaultt9",
+      "role": "current username",
+      "first_seen_at": "2026-11-13T02:24:48.408Z"
+    }
+  ],
+  "username_change_observed_at": null
+}

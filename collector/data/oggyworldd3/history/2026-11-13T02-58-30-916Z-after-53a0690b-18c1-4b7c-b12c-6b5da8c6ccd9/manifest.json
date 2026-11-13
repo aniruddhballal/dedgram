@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "username": "oggyworldd3",
+  "phase": "after",
+  "snapshot_at": "2026-11-13T02:58:30.916Z",
+  "run_status": "complete",
+  "run_updated_at": "2026-11-13T02:58:30.909Z",
+  "profile_fetched_at": "2026-11-13T02:26:22.127Z",
+  "item_count": 0,
+  "complete_item_count": 0,
+  "discovery": {
+    "reel": {
+      "count": 89,
+      "complete": true,
+      "error": null,
+      "attempted_at": "2026-11-13T02:58:30.902Z"
+    }
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "username": "dina4988542",
+  "url": "https://www.instagram.com/dina4988542/",
+  "fetched_at": "2026-11-13T02:28:30.571Z",
+  "display_name": "Dina",
+  "bio": "TVアニメ『紫禁城・御猫房』10月10日放送開始！宮廷に隠された秘密とは？ みんなは観たい？ コメントで教えてね",
+  "posts_count": {
+    "value": 21,
+    "raw": "21",
+    "approximate": false
+  },
+  "posts_count_observed_at": "2026-11-13T02:28:30.571Z",
+  "followers_count": {
+    "value": 699,
+    "raw": "699",
+    "approximate": false,
+    "source": "header_title"
+  },
+  "following_count": {
+    "value": 44,
+    "raw": "44",
+    "approximate": false,
+    "source": "header_text"
+  },
+  "count_evidence": {
+    "followers": {
+      "header": {
+        "value": 699,
+        "raw": "699",
+        "approximate": false
+      },
+      "exact_title": {
+        "value": 699,
+        "raw": "699",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 0,
+        "raw": "0",
+        "approximate": false
+      }
+    },
+    "following": {
+      "header": {
+        "value": 44,
+        "raw": "44",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 44,
+        "raw": "44",
+        "approximate": false
+      },
+      "conflict": false
+    },
+    "posts": {
+      "header": {
+        "value": 21,
+        "raw": "21",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 21,
+        "raw": "21",
+        "approximate": false
+      }
+    }
+  },
+  "category": null,
+  "ai_generated_profile": false,
+  "profile_picture_url": "https://instagram.fixe1-3.fna.fbcdn.net/v/t51.82787-19/899689921_18010970786814206_1894268307981844952_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=1&ig_cache_key=GMEtoDX_2M7r4fw-ANjBiWb9ykkabmNDAQAB1501500j-ccb7-5&ccb=7-5&_nc_sid=669407&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDI0LkMzIn0%3D&_nc_ohc=B-o8qzvkkW4Q7kNvwHgtBTj&_nc_oc=AdrXXC9Rn5MIWNWMHtgFuEFz_CdGzDYRYhv6gNigdFP6NEDfQ-9MmPKE7ynEUcap8agc8J-WKO6SQl_v4U8BmSL9&_nc_zt=24&_nc_ht=instagram.fixe1-3.fna&_nc_gid=N72wnmgxpQOCK0aNpxnxXQ&_nc_ss=7f6a8&oh=00_AQRxhHKAiLAPWocykpKfvttdCrMBrkTMBDGBv4kwKdqF9w&oe=6AFC2C9E",
+  "date_joined": "November 2026",
+  "account_based_in": null,
+  "former_usernames_count": null,
+  "raw": {
+    "header_text": "dina4988542\nDina\n21 posts\n699 followers\n44 following\nTVアニメ『紫禁城・御猫房』10月10日放送開始！宮廷に隠された秘密とは？ みんなは観たい？ コメントで教えてね\nFollow\n💋❤️",
+    "about_text": "About this account\ndina4988542\nTo help keep our community authentic, we’re showing information about profiles on Instagram. See why this information is important.\nDate joined\nNovember 2026\nClose",
+    "description": "0 Followers, 44 Following, 21 Posts - Dina (@dina4988542) on Instagram: \"TVアニメ『紫禁城・御猫房』10月10日放送開始！宮廷に隠された秘密とは？ みんなは観たい？ コメントで教えてね\"",
+    "stat_evidence": {
+      "posts": {
+        "label": "",
+        "exact_title": ""
+      },
+      "followers": {
+        "label": "699 followers",
+        "exact_title": "699"
+      },
+      "following": {
+        "label": "44 following",
+        "exact_title": ""
+      }
+    }
+  },
+  "issues": [],
+  "current_username": "dina4988542",
+  "username_history": [
+    {
+      "username": "dina4988542",
+      "role": "current username",
+      "first_seen_at": "2026-11-13T02:28:30.565Z"
+    }
+  ],
+  "username_change_observed_at": null
+}

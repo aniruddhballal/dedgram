@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "username": "ksoso_78",
+  "phase": "after",
+  "snapshot_at": "2026-11-13T02:59:07.020Z",
+  "run_status": "complete",
+  "run_updated_at": "2026-11-13T02:59:07.013Z",
+  "profile_fetched_at": "2026-11-13T02:28:09.838Z",
+  "item_count": 0,
+  "complete_item_count": 0,
+  "discovery": {
+    "reel": {
+      "count": 99,
+      "complete": true,
+      "error": null,
+      "attempted_at": "2026-11-13T02:59:07.006Z"
+    }
+  }
+}

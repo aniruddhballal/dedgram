@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "username": "duck.1197157",
+  "phase": "after",
+  "snapshot_at": "2026-11-13T02:53:09.357Z",
+  "run_status": "complete",
+  "run_updated_at": "2026-11-13T02:53:09.352Z",
+  "profile_fetched_at": "2026-11-13T02:26:42.875Z",
+  "item_count": 0,
+  "complete_item_count": 0,
+  "discovery": {
+    "reel": {
+      "count": 12,
+      "complete": true,
+      "error": null,
+      "attempted_at": "2026-11-13T02:53:09.345Z"
+    }
+  }
+}

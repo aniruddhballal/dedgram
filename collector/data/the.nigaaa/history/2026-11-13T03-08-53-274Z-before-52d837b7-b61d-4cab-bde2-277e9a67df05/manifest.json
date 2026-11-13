@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "username": "the.nigaaa",
+  "phase": "before",
+  "snapshot_at": "2026-11-13T03:08:53.274Z",
+  "run_status": "partial",
+  "run_updated_at": "2026-11-13T02:17:06.972Z",
+  "profile_fetched_at": "2026-11-13T02:07:34.756Z",
+  "item_count": 0,
+  "complete_item_count": 0,
+  "discovery": {
+    "reel": {
+      "count": 1887,
+      "complete": false,
+      "error": "Instagram returned HTTP 429 (rate limit).",
+      "attempted_at": "2026-11-13T02:17:06.953Z"
+    }
+  }
+}

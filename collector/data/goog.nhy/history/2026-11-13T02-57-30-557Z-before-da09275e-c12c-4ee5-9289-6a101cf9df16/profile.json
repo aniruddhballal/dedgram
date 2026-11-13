@@ -1,0 +1,104 @@
+{
+  "username": "goog.nhy",
+  "url": "https://www.instagram.com/goog.nhy/",
+  "fetched_at": "2026-11-13T02:27:36.580Z",
+  "display_name": "goog.nhy",
+  "bio": "#tvアニメ箱根湯本駅からアクセスしやすい天成園は、開放感あふれる天空露天風呂、源泉かけ流しの温泉、美しい滝と庭園、さらに食べ放題の豪華バイキングまで楽しめる人気宿。チェックインからチェックアウトまで館内だけで充実した時間を過ごせるので、カップルや夫婦はもちろん、女子旅や家族旅行にもぴったりです。",
+  "posts_count": {
+    "value": 80,
+    "raw": "80",
+    "approximate": false
+  },
+  "posts_count_observed_at": "2026-11-13T02:27:36.580Z",
+  "followers_count": {
+    "value": 24,
+    "raw": "24",
+    "approximate": false,
+    "source": "header_title"
+  },
+  "following_count": {
+    "value": 4,
+    "raw": "4",
+    "approximate": false,
+    "source": "header_text"
+  },
+  "count_evidence": {
+    "followers": {
+      "header": {
+        "value": 24,
+        "raw": "24",
+        "approximate": false
+      },
+      "exact_title": {
+        "value": 24,
+        "raw": "24",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 0,
+        "raw": "0",
+        "approximate": false
+      }
+    },
+    "following": {
+      "header": {
+        "value": 4,
+        "raw": "4",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 4,
+        "raw": "4",
+        "approximate": false
+      },
+      "conflict": false
+    },
+    "posts": {
+      "header": {
+        "value": 80,
+        "raw": "80",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 80,
+        "raw": "80",
+        "approximate": false
+      }
+    }
+  },
+  "category": null,
+  "ai_generated_profile": false,
+  "profile_picture_url": "https://instagram.fixe1-3.fna.fbcdn.net/v/t51.82787-19/896559525_17871311910679367_5921719068758286765_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=1&ig_cache_key=GKVpcDVHMxsO3X0-AK2h-lAeLC5SbmNDAQAB1501500j-ccb7-5&ccb=7-5&_nc_sid=669407&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=9Ilcv2hYOCgQ7kNvwEUzS_B&_nc_oc=Adp9sqkkeHvzEG-zh5SGV2GDSvNPmQjElWmzGB_xbrFWyjbiC5itVczmAB08Gs_NpdlCvLtBH4UfCQCfnVlfpQHi&_nc_zt=24&_nc_ht=instagram.fixe1-3.fna&_nc_gid=kOHfJeshg4GealUSAjUThg&_nc_ss=7f6a8&oh=00_AQTwhUJDL1H8LQvhaEI3daaWiTvT-h_w8Ta3KgmMnKxnlw&oe=6AFC6126",
+  "date_joined": "November 2026",
+  "account_based_in": null,
+  "former_usernames_count": null,
+  "raw": {
+    "header_text": "goog.nhy\ngoog.nhy\n80 posts\n24 followers\n4 following\n#tvアニメ箱根湯本駅からアクセスしやすい天成園は、開放感あふれる天空露天風呂、源泉かけ流しの温泉、美しい滝と庭園、さらに食べ放題の豪華バイキングまで楽しめる人気宿。チェックインからチェックアウトまで館内だけで充実した時間を過ごせるので、カ... \nmore\nFollow\nMessage",
+    "about_text": "About this account\ngoog.nhy\nTo help keep our community authentic, we’re showing information about profiles on Instagram. See why this information is important.\nDate joined\nNovember 2026\nClose",
+    "description": "0 Followers, 4 Following, 80 Posts - @goog.nhy on Instagram: \"#tvアニメ箱根湯本駅からアクセスしやすい天成園は、開放感あふれる天空露天風呂、源泉かけ流しの温泉、美しい滝と庭園、さらに食べ放題の豪華バイキングまで楽しめる人気宿。チェックインからチェックアウトまで館内だけで充実した時間を過ごせるので、カップルや夫婦はもちろん、女子旅や家族旅行にもぴったりです。\"",
+    "stat_evidence": {
+      "posts": {
+        "label": "",
+        "exact_title": ""
+      },
+      "followers": {
+        "label": "24 followers",
+        "exact_title": "24"
+      },
+      "following": {
+        "label": "4 following",
+        "exact_title": ""
+      }
+    }
+  },
+  "issues": [],
+  "current_username": "goog.nhy",
+  "username_history": [
+    {
+      "username": "goog.nhy",
+      "role": "current username",
+      "first_seen_at": "2026-11-13T02:27:36.574Z"
+    }
+  ],
+  "username_change_observed_at": null
+}

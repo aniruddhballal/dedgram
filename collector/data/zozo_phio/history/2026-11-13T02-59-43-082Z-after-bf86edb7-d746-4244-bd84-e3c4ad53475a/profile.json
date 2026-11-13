@@ -1,0 +1,104 @@
+{
+  "username": "zozo_phio",
+  "url": "https://www.instagram.com/zozo_phio/",
+  "fetched_at": "2026-11-13T02:25:55.127Z",
+  "display_name": "Zozo_phio",
+  "bio": "☀️ #TVアニメ『SPRINKLES』話題のトッピング最新情報がついに解禁!! 🍬 思わず目を奪われてしまうカラフルな瞬間を一挙公開！さらに、予想外の組み合わせや華やかな仕上がりに加え、誰も予想できなかった最高の「珍事件」まで飛び出しました!!◆今回の注目ポイント：",
+  "posts_count": {
+    "value": 101,
+    "raw": "101",
+    "approximate": false
+  },
+  "posts_count_observed_at": "2026-11-13T02:25:55.127Z",
+  "followers_count": {
+    "value": 662,
+    "raw": "662",
+    "approximate": false,
+    "source": "header_title"
+  },
+  "following_count": {
+    "value": 0,
+    "raw": "0",
+    "approximate": false,
+    "source": "header_text"
+  },
+  "count_evidence": {
+    "followers": {
+      "header": {
+        "value": 662,
+        "raw": "662",
+        "approximate": false
+      },
+      "exact_title": {
+        "value": 662,
+        "raw": "662",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 281,
+        "raw": "281",
+        "approximate": false
+      }
+    },
+    "following": {
+      "header": {
+        "value": 0,
+        "raw": "0",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 0,
+        "raw": "0",
+        "approximate": false
+      },
+      "conflict": false
+    },
+    "posts": {
+      "header": {
+        "value": 101,
+        "raw": "101",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 101,
+        "raw": "101",
+        "approximate": false
+      }
+    }
+  },
+  "category": null,
+  "ai_generated_profile": false,
+  "profile_picture_url": "https://instagram.fixe1-3.fna.fbcdn.net/v/t51.82787-19/892529076_18010849364990658_716454860828427825_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=1&ig_cache_key=GLTpMjXC2oCmxfw-ADHGR2XmW-EJbmNDAQAB1501500j-ccb7-5&ccb=7-5&_nc_sid=669407&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=wd_RuNYz8qwQ7kNvwE5QpJz&_nc_oc=AdrYANnH9quxLVpAce9rWwss7XYxo2cR4PX4mt0h8x1r4hD77oSpxAmMyDWPkvwEtPA-7-0JCINJokCWNgrzl637&_nc_zt=24&_nc_ht=instagram.fixe1-3.fna&_nc_gid=yiwTw4bT0x2J3B-L9GSzKA&_nc_ss=7f6a8&oh=00_AQQtcU5Dn1G1rWTmtpsthDkjSZh2KVsDTWUiL3zzzAo54A&oe=6AFC4866",
+  "date_joined": "November 2026",
+  "account_based_in": "India",
+  "former_usernames_count": null,
+  "raw": {
+    "header_text": "zozo_phio\nZozo_phio\n101 posts\n662 followers\n0 following\n☀️ #TVアニメ『SPRINKLES』話題のトッピング最新情報がついに解禁!! 🍬... \nmore\nFollow\nMessage",
+    "about_text": "About this account\nzozo_phio\nTo help keep our community authentic, we’re showing information about profiles on Instagram. See why this information is important.\nDate joined\nNovember 2026\nAccount based in\nIndia\nClose",
+    "description": "281 Followers, 0 Following, 101 Posts - Zozo_phio (@zozo_phio) on Instagram: \"☀️ #TVアニメ『SPRINKLES』話題のトッピング最新情報がついに解禁!! 🍬 思わず目を奪われてしまうカラフルな瞬間を一挙公開！さらに、予想外の組み合わせや華やかな仕上がりに加え、誰も予想できなかった最高の「珍事件」まで飛び出しました!!◆今回の注目ポイント：\"",
+    "stat_evidence": {
+      "posts": {
+        "label": "",
+        "exact_title": ""
+      },
+      "followers": {
+        "label": "662 followers",
+        "exact_title": "662"
+      },
+      "following": {
+        "label": "0 following",
+        "exact_title": ""
+      }
+    }
+  },
+  "issues": [],
+  "current_username": "zozo_phio",
+  "username_history": [
+    {
+      "username": "zozo_phio",
+      "role": "current username",
+      "first_seen_at": "2026-11-13T02:25:55.122Z"
+    }
+  ],
+  "username_change_observed_at": null
+}
