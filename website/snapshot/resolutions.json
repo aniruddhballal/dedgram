@@ -20,7 +20,10 @@
       "minimum_age": null,
       "false_identification": null,
       "resolution_note": "The original username was unavailable during the follow-up check. The account may have been deleted or the username may have changed.",
-      "reason": "Instagram reports this page is unavailable."
+      "saved_data_available": false,
+      "deletion_assessment": null,
+      "reason": "The original username was unavailable during the follow-up check. The account may have been deleted or the username may have changed.",
+      "exclusion": null
     },
     "prime_senchui": {
       "username": "prime_senchui",
@@ -41,7 +44,10 @@
       "minimum_age": null,
       "false_identification": null,
       "resolution_note": "The original username was unavailable during the follow-up check. The account may have been deleted or the username may have changed.",
-      "reason": "Instagram reports this page is unavailable."
+      "saved_data_available": false,
+      "deletion_assessment": null,
+      "reason": "The original username was unavailable during the follow-up check. The account may have been deleted or the username may have changed.",
+      "exclusion": null
     },
     "vlad.aep_": {
       "username": "vlad.aep_",
@@ -62,7 +68,10 @@
       "minimum_age": null,
       "false_identification": null,
       "resolution_note": "The original username was unavailable during the follow-up check. The account may have been deleted or the username may have changed.",
-      "reason": null
+      "saved_data_available": false,
+      "deletion_assessment": null,
+      "reason": "The original username was unavailable during the follow-up check. The account may have been deleted or the username may have changed.",
+      "exclusion": null
     },
     "nxx._.nmercy": {
       "username": "nxx._.nmercy",
@@ -83,7 +92,10 @@
       "minimum_age": null,
       "false_identification": null,
       "resolution_note": "The original username was unavailable during the follow-up check. The account may have been deleted or the username may have changed.",
-      "reason": "Instagram reports that this profile is unavailable."
+      "saved_data_available": false,
+      "deletion_assessment": null,
+      "reason": "The original username was unavailable during the follow-up check. The account may have been deleted or the username may have changed.",
+      "exclusion": null
     },
     "dexea.100k": {
       "username": "dexea.100k",
@@ -104,7 +116,10 @@
       "minimum_age": null,
       "false_identification": null,
       "resolution_note": "The original username was unavailable during the follow-up check. The account may have been deleted or the username may have changed.",
-      "reason": null
+      "saved_data_available": false,
+      "deletion_assessment": null,
+      "reason": "The original username was unavailable during the follow-up check. The account may have been deleted or the username may have changed.",
+      "exclusion": null
     },
     "igpostinggang": {
       "username": "igpostinggang",
@@ -125,7 +140,10 @@
       "minimum_age": null,
       "false_identification": null,
       "resolution_note": "The original username was unavailable during the follow-up check. The account may have been deleted or the username may have changed.",
-      "reason": "Instagram reports that this profile is unavailable."
+      "saved_data_available": false,
+      "deletion_assessment": null,
+      "reason": "The original username was unavailable during the follow-up check. The account may have been deleted or the username may have changed.",
+      "exclusion": null
     },
     "rzk.mp4": {
       "username": "rzk.mp4",
@@ -146,7 +164,10 @@
       "minimum_age": null,
       "false_identification": null,
       "resolution_note": "The original username was unavailable during the follow-up check. The account may have been deleted or the username may have changed.",
-      "reason": "Instagram reports that this profile is unavailable."
+      "saved_data_available": false,
+      "deletion_assessment": null,
+      "reason": "The original username was unavailable during the follow-up check. The account may have been deleted or the username may have changed.",
+      "exclusion": null
     },
     "renyajichu": {
       "username": "renyajichu",
@@ -167,7 +188,10 @@
       "minimum_age": null,
       "false_identification": null,
       "resolution_note": "The original username was unavailable during the follow-up check. The account may have been deleted or the username may have changed.",
-      "reason": "Instagram reports that this profile is unavailable."
+      "saved_data_available": false,
+      "deletion_assessment": null,
+      "reason": "The original username was unavailable during the follow-up check. The account may have been deleted or the username may have changed.",
+      "exclusion": null
     },
     "hammergag": {
       "username": "hammergag",
@@ -189,7 +213,10 @@
       "minimum_age": 25,
       "false_identification": null,
       "resolution_note": null,
-      "reason": null
+      "saved_data_available": false,
+      "deletion_assessment": null,
+      "reason": null,
+      "exclusion": null
     },
     "caodogsfofo": {
       "username": "caodogsfofo",
@@ -211,7 +238,10 @@
       "minimum_age": 25,
       "false_identification": null,
       "resolution_note": null,
-      "reason": "Profile options button was not found."
+      "saved_data_available": false,
+      "deletion_assessment": null,
+      "reason": "Profile options button was not found.",
+      "exclusion": null
     },
     "back": {
       "username": "back",
@@ -232,7 +262,10 @@
         "username_is_syntactically_valid": true
       },
       "resolution_note": null,
-      "reason": "Instagram reports that this profile is unavailable."
+      "saved_data_available": false,
+      "deletion_assessment": null,
+      "reason": "Instagram reports that this profile is unavailable.",
+      "exclusion": null
     },
     "41.3k": {
       "username": "41.3k",
@@ -253,7 +286,10 @@
         "username_is_syntactically_valid": true
       },
       "resolution_note": null,
-      "reason": "Manual review marked this profile report as a false identification."
+      "saved_data_available": false,
+      "deletion_assessment": null,
+      "reason": "Manual review marked this profile report as a false identification.",
+      "exclusion": null
     },
     "short_vibesz": {
       "username": "short_vibesz",
@@ -274,7 +310,10 @@
       "minimum_age": null,
       "false_identification": null,
       "resolution_note": "The original username was unavailable during the latest profile-level collection. The account may have been deleted or the username may have changed.",
-      "reason": "Instagram reports this page is unavailable."
+      "saved_data_available": false,
+      "deletion_assessment": null,
+      "reason": "The original username was unavailable during the latest profile-level collection. The account may have been deleted or the username may have changed.",
+      "exclusion": null
     },
     "oooiway": {
       "username": "oooiway",
@@ -295,7 +334,10 @@
       "minimum_age": null,
       "false_identification": null,
       "resolution_note": "The original username was unavailable during the latest profile-level collection. The account may have been deleted or the username may have changed.",
-      "reason": "Instagram reports this page is unavailable."
+      "saved_data_available": false,
+      "deletion_assessment": null,
+      "reason": "The original username was unavailable during the latest profile-level collection. The account may have been deleted or the username may have changed.",
+      "exclusion": null
     },
     "zuxxie.pov": {
       "username": "zuxxie.pov",
@@ -316,7 +358,10 @@
       "minimum_age": null,
       "false_identification": null,
       "resolution_note": "The original username was unavailable during the latest profile-level collection. The account may have been deleted or the username may have changed.",
-      "reason": "Instagram reports this page is unavailable."
+      "saved_data_available": false,
+      "deletion_assessment": null,
+      "reason": "The original username was unavailable during the latest profile-level collection. The account may have been deleted or the username may have changed.",
+      "exclusion": null
     },
     "extreme.laugh8": {
       "username": "extreme.laugh8",
@@ -337,7 +382,10 @@
       "minimum_age": null,
       "false_identification": null,
       "resolution_note": "The original username was unavailable during the latest profile-level collection. The account may have been deleted or the username may have changed.",
-      "reason": "Instagram reports this page is unavailable."
+      "saved_data_available": false,
+      "deletion_assessment": null,
+      "reason": "The original username was unavailable during the latest profile-level collection. The account may have been deleted or the username may have changed.",
+      "exclusion": null
     },
     "iron_block2": {
       "username": "iron_block2",
@@ -359,7 +407,10 @@
       "minimum_age": 25,
       "false_identification": null,
       "resolution_note": null,
-      "reason": "Instagram did not show the profile header."
+      "saved_data_available": false,
+      "deletion_assessment": null,
+      "reason": "Instagram did not show the profile header.",
+      "exclusion": null
     },
     "memes.fatafat": {
       "username": "memes.fatafat",
@@ -380,7 +431,10 @@
       "minimum_age": null,
       "false_identification": null,
       "resolution_note": "The original username was unavailable during the latest profile-level collection. The account may have been deleted or the username may have changed.",
-      "reason": "Instagram reports this page is unavailable."
+      "saved_data_available": false,
+      "deletion_assessment": null,
+      "reason": "The original username was unavailable during the latest profile-level collection. The account may have been deleted or the username may have changed.",
+      "exclusion": null
     },
     "waytoway__": {
       "username": "waytoway__",
@@ -415,7 +469,8 @@
         ],
         "network_verification_performed": false
       },
-      "reason": null
+      "reason": "Suspected deleted (most likely), based on the user's manual check on 5 November 2026: the profile is unavailable and the checked saved reel URLs redirect to the profile instead of displaying a reel. The user considers deletion more likely than a username change because reel URLs would normally remain accessible after a rename. This is a user-reported assessment, not an Instagram-confirmed deletion. All 39 discovered reel URLs and previously saved profile and reel information are preserved; missing reel details are attributed to the unavailable profile and are excluded from further analysis.",
+      "exclusion": null
     },
     "luffytheegear5": {
       "username": "luffytheegear5",
@@ -449,7 +504,39 @@
         ],
         "network_verification_performed": false
       },
-      "reason": null
+      "reason": "Suspected deleted (most likely), based on the user's manual check on 5 November 2026: the user reports the same behavior as waytoway__ — the profile is unavailable and the checked saved reel URL redirects to the profile instead of displaying a reel. The user considers deletion more likely than a username change because reel URLs would normally remain accessible after a rename. This is a user-reported assessment, not an Instagram-confirmed deletion. All 36 discovered reel URLs and previously saved profile and reel information are preserved; missing reel details are attributed to the unavailable profile and are excluded from further analysis.",
+      "exclusion": null
+    },
+    "chir.eze": {
+      "username": "chir.eze",
+      "status": "Deleted or username changed",
+      "observed_at": "2026-11-13T02:24:55.000Z",
+      "last_fetched_at": null,
+      "profile_text": null,
+      "bio": null,
+      "country": null,
+      "date_joined": null,
+      "posts_count": null,
+      "deletion_date_range": null,
+      "age_restriction": null,
+      "minimum_age": null,
+      "false_identification": null,
+      "resolution_note": "Permanently excluded at the user's request on 13 November 2026. Instagram reported this profile unavailable during initial collection. Account deletion and a username change cannot be distinguished because no reel URLs or profile details were captured. No confirmed deletion is asserted. Preserve the failed collection evidence; do not collect, retry, review, or analyze this account.",
+      "saved_data_available": false,
+      "deletion_assessment": null,
+      "reason": "Permanently excluded at the user's request on 13 November 2026. Instagram reported this profile unavailable during initial collection. Account deletion and a username change cannot be distinguished because no reel URLs or profile details were captured. No confirmed deletion is asserted. Preserve the failed collection evidence; do not collect, retry, review, or analyze this account.",
+      "exclusion": {
+        "permanent": true,
+        "reason": "unavailable_deleted_or_renamed",
+        "source": "user_instruction",
+        "recorded_at": "2026-11-13T02:30:00.566Z",
+        "first_unavailable_at": "2026-11-13T02:24:55.000Z",
+        "previous_error": "Instagram reports this page is unavailable.",
+        "deleted_confirmed": false,
+        "username_change_confirmed": false,
+        "saved_reel_urls": 0,
+        "network_verification_performed": false
+      }
     }
   }
 }

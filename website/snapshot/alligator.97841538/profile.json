@@ -1,0 +1,104 @@
+{
+  "username": "alligator.97841538",
+  "url": "https://www.instagram.com/alligator.97841538/",
+  "fetched_at": "2026-11-13T02:26:02.095Z",
+  "display_name": null,
+  "bio": "TVアニメ『紫禁城・御猫房』10月10日放送開始！宮廷に隠された秘密とは？\nみんなは観たい？\nコメントで教えてね",
+  "posts_count": {
+    "value": 18,
+    "raw": "18",
+    "approximate": false
+  },
+  "posts_count_observed_at": "2026-11-13T02:26:02.095Z",
+  "followers_count": {
+    "value": 634,
+    "raw": "634",
+    "approximate": false,
+    "source": "header_title"
+  },
+  "following_count": {
+    "value": 0,
+    "raw": "0",
+    "approximate": false,
+    "source": "header_text"
+  },
+  "count_evidence": {
+    "followers": {
+      "header": {
+        "value": 634,
+        "raw": "634",
+        "approximate": false
+      },
+      "exact_title": {
+        "value": 634,
+        "raw": "634",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 0,
+        "raw": "0",
+        "approximate": false
+      }
+    },
+    "following": {
+      "header": {
+        "value": 0,
+        "raw": "0",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 0,
+        "raw": "0",
+        "approximate": false
+      },
+      "conflict": false
+    },
+    "posts": {
+      "header": {
+        "value": 18,
+        "raw": "18",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 18,
+        "raw": "18",
+        "approximate": false
+      }
+    }
+  },
+  "category": null,
+  "ai_generated_profile": false,
+  "profile_picture_url": "https://instagram.fixe1-3.fna.fbcdn.net/v/t51.82787-19/894140758_18170703379485946_7563305137518331228_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=1&ig_cache_key=GFaBSzX61ECQKI5AAFzFqlHzQfZobmNDAQAB1501500j-ccb7-5&ccb=7-5&_nc_sid=669407&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=p-4kghE-UKwQ7kNvwGrQXhE&_nc_oc=AdqsVdmZ7cUvjBbljSvZkejGCPxv1XbLSIdX1_xrrBDusqvl8j6xI6RJ66g7d-OnwdL8JRzYHvMi_amEC62j0fZf&_nc_zt=24&_nc_ht=instagram.fixe1-3.fna&_nc_gid=3TLZlorU-98gOHZUUEuygQ&_nc_ss=7f6a8&oh=00_AQQ8JzJCgTQo_hVGnenJeA3e4CR3PkkuuBwQ0yOP96Xs-Q&oe=6AFC509B",
+  "date_joined": "November 2026",
+  "account_based_in": null,
+  "former_usernames_count": null,
+  "raw": {
+    "header_text": "alligator.97841538\n18 posts\n634 followers\n0 following\nTVアニメ『紫禁城・御猫房』10月10日放送開始！宮廷に隠された秘密とは？\nみんなは観たい？\nコメントで教えてね\nFollow\nclick. link 🔗\n2nd link 🖇️\n3rd link 🖇️\n4th link 🖇️",
+    "about_text": "About this account\nalligator.97841538\nTo help keep our community authentic, we’re showing information about profiles on Instagram. See why this information is important.\nDate joined\nNovember 2026\nClose",
+    "description": "0 Followers, 0 Following, 18 Posts - @alligator.97841538 on Instagram: \"TVアニメ『紫禁城・御猫房』10月10日放送開始！宮廷に隠された秘密とは？\nみんなは観たい？\nコメントで教えてね\"",
+    "stat_evidence": {
+      "posts": {
+        "label": "",
+        "exact_title": ""
+      },
+      "followers": {
+        "label": "634 followers",
+        "exact_title": "634"
+      },
+      "following": {
+        "label": "0 following",
+        "exact_title": ""
+      }
+    }
+  },
+  "issues": [],
+  "current_username": "alligator.97841538",
+  "username_history": [
+    {
+      "username": "alligator.97841538",
+      "role": "current username",
+      "first_seen_at": "2026-11-13T02:26:02.089Z"
+    }
+  ],
+  "username_change_observed_at": null
+}

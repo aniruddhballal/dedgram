@@ -1,0 +1,104 @@
+{
+  "username": "salmahayekfeetluvr",
+  "url": "https://www.instagram.com/salmahayekfeetluvr/",
+  "fetched_at": "2026-11-13T02:27:03.000Z",
+  "display_name": null,
+  "bio": "⚔️闇の軍勢に立ち向かう新たな冒険が始まる! 『星詠みの戦士」公式Instagramへようこそ✨TVアニメ 新シーズン放送中! 最新PV&限定グッズ情報をお届け 中🎬",
+  "posts_count": {
+    "value": 14,
+    "raw": "14",
+    "approximate": false
+  },
+  "posts_count_observed_at": "2026-11-13T02:27:03.000Z",
+  "followers_count": {
+    "value": 67,
+    "raw": "67",
+    "approximate": false,
+    "source": "header_title"
+  },
+  "following_count": {
+    "value": 1,
+    "raw": "1",
+    "approximate": false,
+    "source": "header_text"
+  },
+  "count_evidence": {
+    "followers": {
+      "header": {
+        "value": 67,
+        "raw": "67",
+        "approximate": false
+      },
+      "exact_title": {
+        "value": 67,
+        "raw": "67",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 6,
+        "raw": "6",
+        "approximate": false
+      }
+    },
+    "following": {
+      "header": {
+        "value": 1,
+        "raw": "1",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 1,
+        "raw": "1",
+        "approximate": false
+      },
+      "conflict": false
+    },
+    "posts": {
+      "header": {
+        "value": 14,
+        "raw": "14",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 14,
+        "raw": "14",
+        "approximate": false
+      }
+    }
+  },
+  "category": null,
+  "ai_generated_profile": true,
+  "profile_picture_url": "https://instagram.fixe1-3.fna.fbcdn.net/v/t51.82787-19/900564389_17915101365333572_8531931227826757891_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=1&ig_cache_key=GKWFrTVE7v6UsKU-AAMhrWI-gmd2bmNDAQAB1501500j-ccb7-5&ccb=7-5&_nc_sid=669407&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy45MDAuQzMifQ%3D%3D&_nc_ohc=IhOf74JqgDUQ7kNvwHl3ARB&_nc_oc=AdrsIKDTwsz9eS7eGkRHnm2osjH9zxKPYctr849GLEzUTVHnV42TggtLez7zbniY2LLsvnWTdyJUV7E6PNCWqo4E&_nc_zt=24&_nc_ht=instagram.fixe1-3.fna&_nc_gid=-P5UK5NT770z6zWlj1_ZMw&_nc_ss=7f6a8&oh=00_AQT2Dz7iDpe_hpBSyPKypZkNV4s8Cv8y_dvC4yuvoF3jhg&oe=6AFC4085",
+  "date_joined": "November 2026",
+  "account_based_in": null,
+  "former_usernames_count": null,
+  "raw": {
+    "header_text": "salmahayekfeetluvr\n14 posts\n67 followers\n1 following\nAI-generated profile\n⚔️闇の軍勢に立ち向かう新たな冒険が始まる! 『星詠みの戦士」公式Instagramへようこそ✨TVアニメ 新シーズン放送中! 最新PV&限定グッズ情報をお届け 中🎬\nFollow\nMessage",
+    "about_text": "About this account\nsalmahayekfeetluvr\n • AI-generated profile\nTo help keep our community authentic, we’re showing information about profiles on Instagram. See why this information is important.\nDate joined\nNovember 2026\nClose",
+    "description": "6 Followers, 1 Following, 14 Posts - @salmahayekfeetluvr on Instagram: \"⚔️闇の軍勢に立ち向かう新たな冒険が始まる! 『星詠みの戦士」公式Instagramへようこそ✨TVアニメ 新シーズン放送中! 最新PV&限定グッズ情報をお届け 中🎬\"",
+    "stat_evidence": {
+      "posts": {
+        "label": "",
+        "exact_title": ""
+      },
+      "followers": {
+        "label": "67 followers",
+        "exact_title": "67"
+      },
+      "following": {
+        "label": "1 following",
+        "exact_title": ""
+      }
+    }
+  },
+  "issues": [],
+  "current_username": "salmahayekfeetluvr",
+  "username_history": [
+    {
+      "username": "salmahayekfeetluvr",
+      "role": "current username",
+      "first_seen_at": "2026-11-13T02:27:02.993Z"
+    }
+  ],
+  "username_change_observed_at": null
+}

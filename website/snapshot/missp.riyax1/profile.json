@@ -1,0 +1,104 @@
+{
+  "username": "missp.riyax1",
+  "url": "https://www.instagram.com/missp.riyax1/",
+  "fetched_at": "2026-11-13T02:26:36.240Z",
+  "display_name": null,
+  "bio": "③あらゆる追いかけっこを繰り広げる! 「トムとジエリー公式\nInstagramです! Cartoon Networkにて『まいにちトムとジェリー』放送中! 『映画トムとジェリー』\nデジタル配信中/ブルーレイ&DVD発売中\nt.me/addlist/BEwxtMVQQf45MmE1",
+  "posts_count": {
+    "value": 7,
+    "raw": "7",
+    "approximate": false
+  },
+  "posts_count_observed_at": "2026-11-13T02:26:36.240Z",
+  "followers_count": {
+    "value": 402,
+    "raw": "402",
+    "approximate": false,
+    "source": "header_title"
+  },
+  "following_count": {
+    "value": 0,
+    "raw": "0",
+    "approximate": false,
+    "source": "header_text"
+  },
+  "count_evidence": {
+    "followers": {
+      "header": {
+        "value": 402,
+        "raw": "402",
+        "approximate": false
+      },
+      "exact_title": {
+        "value": 402,
+        "raw": "402",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 402,
+        "raw": "402",
+        "approximate": false
+      }
+    },
+    "following": {
+      "header": {
+        "value": 0,
+        "raw": "0",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 0,
+        "raw": "0",
+        "approximate": false
+      },
+      "conflict": false
+    },
+    "posts": {
+      "header": {
+        "value": 7,
+        "raw": "7",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 7,
+        "raw": "7",
+        "approximate": false
+      }
+    }
+  },
+  "category": null,
+  "ai_generated_profile": false,
+  "profile_picture_url": "https://instagram.fixe1-3.fna.fbcdn.net/v/t51.89012-19/573323465_1219825463302212_7278921664109726296_n.png?stp=dst-jpg_tt6&_nc_cat=1&ig_cache_key=YW5vbnltb3VzX3Byb2ZpbGVfcGlj.3-ccb7-5&ccb=7-5&_nc_sid=669407&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xNTAuQzMifQ%3D%3D&_nc_ohc=GWCwwzMErI4Q7kNvwFTbq7d&_nc_oc=AdqCDluLv__zaawGkVQRx6lYx68qOUCVlVawUNV4SDG4O1GIP6XcivYQWO1fyu4_jN0cRAysaTzB532xBLLeA2MB&_nc_zt=24&_nc_ht=instagram.fixe1-3.fna&_nc_gid=ORRtfjssKP07PdW8VePQtA&_nc_ss=7f6a8&oh=00_AQQHMy6zcfOCk5pzFUJdFq8vd7FabhlHIaDZzm6Ywb45Aw&oe=6AFC5B99",
+  "date_joined": "October 2026",
+  "account_based_in": "India",
+  "former_usernames_count": null,
+  "raw": {
+    "header_text": "missp.riyax1\n7 posts\n402 followers\n0 following\n③あらゆる追いかけっこを繰り広げる! 「トムとジエリー公式\nInstagramです! Cartoon Networkにて『まいにちトムとジェリー』放送中! 『映画トムとジェリー』\nデジタル配信中/ブルーレイ&DVD発売中\nt.me/addlist/BEwxtMVQQf45MmE1\nFollow\ntap now 🤤",
+    "about_text": "About this account\nmissp.riyax1\nTo help keep our community authentic, we’re showing information about profiles on Instagram. See why this information is important.\nDate joined\nOctober 2026\nAccount based in\nIndia\nClose",
+    "description": "402 Followers, 0 Following, 7 Posts - @missp.riyax1 on Instagram: \"③あらゆる追いかけっこを繰り広げる! 「トムとジエリー公式\nInstagramです! Cartoon Networkにて『まいにちトムとジェリー』放送中! 『映画トムとジェリー』\nデジタル配信中/ブルーレイ&DVD発売中\"",
+    "stat_evidence": {
+      "posts": {
+        "label": "",
+        "exact_title": ""
+      },
+      "followers": {
+        "label": "402 followers",
+        "exact_title": "402"
+      },
+      "following": {
+        "label": "0 following",
+        "exact_title": ""
+      }
+    }
+  },
+  "issues": [],
+  "current_username": "missp.riyax1",
+  "username_history": [
+    {
+      "username": "missp.riyax1",
+      "role": "current username",
+      "first_seen_at": "2026-11-13T02:26:36.235Z"
+    }
+  ],
+  "username_change_observed_at": null
+}

@@ -1,0 +1,104 @@
+{
+  "username": "reelsorax",
+  "url": "https://www.instagram.com/reelsorax/",
+  "fetched_at": "2026-11-13T02:26:15.277Z",
+  "display_name": "reelsorax",
+  "bio": "不思議な出来事が次々と起こる帝都で、壮絶な戦いが今、始まるーー！\nこれは、妖怪と人々が織りなす和風ファンタジーアニメの世界。\n奇妙な物語と迫力ある戦いをお楽しみください！\nにて「物の怪の怪奇譚」放送中！\n劇場版総集編、デジタル配信・Blu-ray&DVDも好評発売中。",
+  "posts_count": {
+    "value": 26,
+    "raw": "26",
+    "approximate": false
+  },
+  "posts_count_observed_at": "2026-11-13T02:26:15.277Z",
+  "followers_count": {
+    "value": 10807,
+    "raw": "10,807",
+    "approximate": false,
+    "source": "header_title"
+  },
+  "following_count": {
+    "value": 0,
+    "raw": "0",
+    "approximate": false,
+    "source": "header_text"
+  },
+  "count_evidence": {
+    "followers": {
+      "header": {
+        "value": 10800,
+        "raw": "10.8K",
+        "approximate": true
+      },
+      "exact_title": {
+        "value": 10807,
+        "raw": "10,807",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 3735,
+        "raw": "3,735",
+        "approximate": false
+      }
+    },
+    "following": {
+      "header": {
+        "value": 0,
+        "raw": "0",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 0,
+        "raw": "0",
+        "approximate": false
+      },
+      "conflict": false
+    },
+    "posts": {
+      "header": {
+        "value": 26,
+        "raw": "26",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 26,
+        "raw": "26",
+        "approximate": false
+      }
+    }
+  },
+  "category": null,
+  "ai_generated_profile": false,
+  "profile_picture_url": "https://instagram.fixe1-3.fna.fbcdn.net/v/t51.82787-19/889651157_17920269726308836_8781265092741720356_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=1&ig_cache_key=GNX-BjXk2VDvY6o-ACRpaKMTUt15bmNDAQAB1501500j-ccb7-5&ccb=7-5&_nc_sid=669407&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=_2uZjM6vJqoQ7kNvwFppXz6&_nc_oc=Adoq-MXGORh_XugFj2jYY_ZHZjzWuIeiC5IGy0p0lAP6Z0if8Uv_LDmQ1f4JH_bBDzhThavAbSzgABI7T_BBHWE7&_nc_zt=24&_nc_ht=instagram.fixe1-3.fna&_nc_gid=UU0RJa7RpfVBfV83lzQ-sg&_nc_ss=7f6a8&oh=00_AQS8RCbLtYiwXv3DmQ6xYOHLWK1bPR22GweG8vPLKcpjKg&oe=6AFC4AE1",
+  "date_joined": "November 2026",
+  "account_based_in": "Russia",
+  "former_usernames_count": null,
+  "raw": {
+    "header_text": "reelsorax\nreelsorax\n26 posts\n10.8K followers\n0 following\n不思議な出来事が次々と起こる帝都で、壮絶な戦いが今、始まるーー！\nこれは、妖怪と人々が織りなす和風ファンタジーアニメの世界。\n奇妙な物語と迫力ある戦いをお楽しみください！\nにて「物の怪の怪奇譚」放送中！... \nmore\nFollow\nMessage",
+    "about_text": "About this account\nreelsorax\nTo help keep our community authentic, we’re showing information about profiles on Instagram. See why this information is important.\nDate joined\nNovember 2026\nAccount based in\nRussia\nClose",
+    "description": "3,735 Followers, 0 Following, 26 Posts - @reelsorax on Instagram: \"不思議な出来事が次々と起こる帝都で、壮絶な戦いが今、始まるーー！\nこれは、妖怪と人々が織りなす和風ファンタジーアニメの世界。\n奇妙な物語と迫力ある戦いをお楽しみください！\nにて「物の怪の怪奇譚」放送中！\n劇場版総集編、デジタル配信・Blu-ray&DVDも好評発売中。\"",
+    "stat_evidence": {
+      "posts": {
+        "label": "",
+        "exact_title": ""
+      },
+      "followers": {
+        "label": "10.8K followers",
+        "exact_title": "10,807"
+      },
+      "following": {
+        "label": "0 following",
+        "exact_title": ""
+      }
+    }
+  },
+  "issues": [],
+  "current_username": "reelsorax",
+  "username_history": [
+    {
+      "username": "reelsorax",
+      "role": "current username",
+      "first_seen_at": "2026-11-13T02:26:15.270Z"
+    }
+  ],
+  "username_change_observed_at": null
+}

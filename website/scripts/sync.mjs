@@ -6,6 +6,7 @@ import { normalizeReelDate } from '../lib/reel-date.mjs';
 const site = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const repo = resolve(site, '..');
 const snapshot = join(site, 'snapshot');
+const offline = process.argv.includes('--offline');
 const usernameAliases = {
   'edlt.shox': 'coldex7.ae'
 };
@@ -176,8 +177,41 @@ const profileLevelProfiles = [
   'yearning.ok',
   'oproceve.br',
   'u1tron7',
+  'cusohln',
+  'the.nigaaa',
+  'v.thu.viral',
+  'viralxvaultt9',
+  'yappersteak',
+  'npcahhdiary',
+  'xerrt.x6',
+  'lookcrezz',
+  'nkaze.kage',
+  'zozo_phio',
+  'alligator.97841538',
+  'shiel.void1',
+  'reelsorax',
+  'oggyworldd3',
+  'daskx.psl',
+  'missp.riyax1',
+  'duck.1197157',
+  'cora.deep_125',
+  'robloxmavix',
+  'salmahayekfeetluvr',
+  'kairooo605',
+  'paul.edits12',
+  'rayimov_04k',
+  'vega.sandy_800',
+  'goog.nhy',
+  'witchmasuka',
+  'chipmunk.46149483',
+  'alligator.3224328',
+  'frow.den',
+  'ksoso_78',
+  'gifted.camille_692',
+  'emilily_ss',
+  'dina4988542',
 ];
-const excludedProfiles = ['hnvx.07', 'prime_senchui', 'vlad.aep_', 'nxx._.nmercy', 'dexea.100k', 'igpostinggang', 'rzk.mp4', 'renyajichu', 'hammergag', 'caodogsfofo', 'back', '41.3k', 'short_vibesz', 'oooiway', 'zuxxie.pov', 'extreme.laugh8', 'iron_block2', 'memes.fatafat', 'waytoway__', 'luffytheegear5'];
+const excludedProfiles = ['hnvx.07', 'prime_senchui', 'vlad.aep_', 'nxx._.nmercy', 'dexea.100k', 'igpostinggang', 'rzk.mp4', 'renyajichu', 'hammergag', 'caodogsfofo', 'back', '41.3k', 'short_vibesz', 'oooiway', 'zuxxie.pov', 'extreme.laugh8', 'iron_block2', 'memes.fatafat', 'waytoway__', 'luffytheegear5', 'chir.eze'];
 const publishedProfiles = [...fullProfiles, ...profileLevelProfiles, ...excludedProfiles];
 const files = ['profile.json', 'discovery.json', 'items.json', 'run.json', 'profile.csv', 'items.csv', 'report.html'];
 const sourceCatalog = JSON.parse(await readFile(join(repo, 'data', 'database', 'profiles', 'index.json'), 'utf8'));
@@ -194,7 +228,7 @@ for (const username of excludedProfiles) {
   const profile = JSON.parse(await readFile(join(repo, 'data', 'database', 'profiles', `profile-${username}.json`), 'utf8'));
   excludedRecords[username] = {
     username,
-    status: profile.status,
+    status: profile.account_status === 'deleted' ? 'Deleted or username changed' : profile.status,
     observed_at: profile.account_status_observed_at || profile.last_fetched_at,
     last_fetched_at: profile.last_fetched_at,
     profile_text: profile.profile_text || null,
@@ -209,7 +243,8 @@ for (const username of excludedProfiles) {
     resolution_note: profile.resolution_note || null,
     saved_data_available: profile.saved_data_available || false,
     deletion_assessment: profile.deletion_assessment || null,
-    reason: profile.last_error || null
+    reason: profile.resolution_note || profile.last_error || null,
+    exclusion: profile.exclusion || null
   };
 }
 await writeFile(join(snapshot, 'resolutions.json'), JSON.stringify({ schema_version: 1, profiles: excludedRecords }, null, 2) + '\n', 'utf8');
@@ -222,6 +257,14 @@ for (const username of [...fullProfiles, ...profileLevelProfiles, ...excludedSna
   await mkdir(join(snapshot, username), { recursive: true });
   for (const file of files) {
     if (file === 'profile.json' || file === 'profile.csv' || file === 'items.json') continue;
+    if (file === 'discovery.json') {
+      try { await copyFile(join(source, file), join(snapshot, username, file)); }
+      catch (error) {
+        if (error.code !== 'ENOENT') throw error;
+        await writeFile(join(snapshot, username, file), JSON.stringify({ reel: { items: [], complete: false, error: 'Grid has not been scanned.', attempted_at: null } }, null, 2) + '\n');
+      }
+      continue;
+    }
     await copyFile(join(source, file), join(snapshot, username, file));
   }
   const profile = JSON.parse(await readFile(join(source, 'profile.json'), 'utf8'));
@@ -234,6 +277,10 @@ for (const username of [...fullProfiles, ...profileLevelProfiles, ...excludedSna
   const items = JSON.parse(await readFile(join(source, 'items.json'), 'utf8')).map(normalizeReelDate);
   await writeFile(join(snapshot, username, 'items.json'), JSON.stringify(items, null, 2) + '\n', 'utf8');
   images.push({ file: `avatar-${username}.jpg`, url: profile.profile_picture_url });
+  if (offline) {
+    try { await copyFile(join(source, 'profile.jpg'), join(mediaDir, `avatar-${username}.jpg`)); }
+    catch (error) { if (error.code !== 'ENOENT') throw error; }
+  }
   images.push(...items.filter((item) => item.kind === 'reel' && /^[\w-]+$/.test(item.shortcode))
     .map((item) => ({ file: `${item.shortcode}.jpg`, url: item.thumbnail_url })));
 }
@@ -242,7 +289,7 @@ for (const previousUsername of Object.keys(usernameAliases)) {
 }
 let saved = 0;
 let failed = 0;
-for (let i = 0; i < images.length; i += 6) {
+for (let i = 0; !offline && i < images.length; i += 6) {
   await Promise.all(images.slice(i, i + 6).map(async ({ file, url }) => {
     if (!url) { failed++; return; }
     try {

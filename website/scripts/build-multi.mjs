@@ -172,8 +172,41 @@ const profileLevelProfiles = [
   'yearning.ok',
   'oproceve.br',
   'u1tron7',
+  'cusohln',
+  'the.nigaaa',
+  'v.thu.viral',
+  'viralxvaultt9',
+  'yappersteak',
+  'npcahhdiary',
+  'xerrt.x6',
+  'lookcrezz',
+  'nkaze.kage',
+  'zozo_phio',
+  'alligator.97841538',
+  'shiel.void1',
+  'reelsorax',
+  'oggyworldd3',
+  'daskx.psl',
+  'missp.riyax1',
+  'duck.1197157',
+  'cora.deep_125',
+  'robloxmavix',
+  'salmahayekfeetluvr',
+  'kairooo605',
+  'paul.edits12',
+  'rayimov_04k',
+  'vega.sandy_800',
+  'goog.nhy',
+  'witchmasuka',
+  'chipmunk.46149483',
+  'alligator.3224328',
+  'frow.den',
+  'ksoso_78',
+  'gifted.camille_692',
+  'emilily_ss',
+  'dina4988542',
 ];
-const excludedProfiles = ['hnvx.07', 'prime_senchui', 'vlad.aep_', 'nxx._.nmercy', 'dexea.100k', 'igpostinggang', 'rzk.mp4', 'renyajichu', 'hammergag', 'caodogsfofo', 'back', '41.3k', 'short_vibesz', 'oooiway', 'zuxxie.pov', 'extreme.laugh8', 'iron_block2', 'memes.fatafat', 'waytoway__', 'luffytheegear5'];
+const excludedProfiles = ['hnvx.07', 'prime_senchui', 'vlad.aep_', 'nxx._.nmercy', 'dexea.100k', 'igpostinggang', 'rzk.mp4', 'renyajichu', 'hammergag', 'caodogsfofo', 'back', '41.3k', 'short_vibesz', 'oooiway', 'zuxxie.pov', 'extreme.laugh8', 'iron_block2', 'memes.fatafat', 'waytoway__', 'luffytheegear5', 'chir.eze'];
 const publishedProfiles = [...fullProfiles, ...profileLevelProfiles, ...excludedProfiles];
 const profileLevelSet = new Set(profileLevelProfiles);
 const excludedSet = new Set(excludedProfiles);
@@ -291,7 +324,11 @@ const overview = {
   nearTerm: [...partialPublishedProfiles, ...profileLevelProfiles].length,
   reelUrls: publishedReelUrls,
   reelDetails: completeReels.length,
-  reelPending: reviewReels.filter((item) => item.status === 'pending').length,
+  reelPending: publishedSnapshotProfiles.reduce((total, username) => {
+    const saved = snapshotData.get(username);
+    const detailed = new Map(saved.items.filter((item) => item.kind === 'reel').map((item) => [item.url, item]));
+    return total + (saved.discovery.reel.items || []).filter((item) => !detailed.has(item.url) || detailed.get(item.url).status === 'pending').length;
+  }, 0),
   reelPartial: reviewReels.filter((item) => item.status === 'partial').length,
   reelFailed: reviewReels.filter((item) => item.status === 'failed').length,
   posts: exactPostRows.reduce((sum, value) => sum + numberMetric(value), 0),
@@ -355,11 +392,11 @@ const overviewAccountRows = publishedSnapshotProfiles.map((username) => {
   const details = items.filter((item) => item.kind === 'reel');
   const complete = details.filter(isCompleteReel).length;
   const handled = details.filter((item) => isCompleteReel(item) || isResolvedReel(item)).length;
-  const status = profileLevelSet.has(username) ? 'Profile level complete' : partialPublishedProfiles.has(username) ? 'Partial reel coverage' : 'Reel analysis complete';
+  const status = profileLevelSet.has(username) ? (discovery.reel.complete ? 'Profile and reel grid complete' : 'Profile details complete; reel grid pending') : partialPublishedProfiles.has(username) ? 'Partial reel coverage' : 'Reel analysis complete';
   const reelLikes = metricTotal(items, 'reel', 'likes');
   const reelComments = metricTotal(items, 'reel', 'comments');
   const reelViews = metricTotal(items, 'reel', 'views');
-  return `<tr><td><a href="../profiles/${username}/">@${esc(username)}</a><small class="cell-note">${esc(status)}</small></td><td>${esc(profile.account_based_in || 'Unavailable')}</td><td>${esc(profile.date_joined || 'Unavailable')}</td><td>${esc(metric(profile.posts_count))}</td><td>${fmt(reels.length)}</td><td>${fmt(handled)} / ${fmt(reels.length)}</td><td>${totalCell(reelLikes, 'Total reel likes')}</td><td>${totalCell(reelComments, 'Total reel comments')}</td><td>${totalCell(reelViews, 'Total reel views')}</td><td>${esc(metric(profile.followers_count))}</td></tr>`;
+  return `<tr><td><a href="../profiles/${username}/">@${esc(username)}</a><small class="cell-note">${esc(status)}</small></td><td>${esc(profile.account_based_in || 'Unavailable')}</td><td>${esc(profile.date_joined || 'Unavailable')}</td><td>${esc(metric(profile.posts_count))}</td><td>${discovery.reel.complete ? fmt(reels.length) : discovery.reel.attempted_at ? `${fmt(reels.length)}+ (partial)` : 'Not scanned'}</td><td>${fmt(handled)} / ${discovery.reel.complete ? fmt(reels.length) : 'unknown'}</td><td>${totalCell(reelLikes, 'Total reel likes')}</td><td>${totalCell(reelComments, 'Total reel comments')}</td><td>${totalCell(reelViews, 'Total reel views')}</td><td>${esc(metric(profile.followers_count))}</td></tr>`;
 }).join('');
 const deletedProfiles = excludedProfiles.filter((username) => exclusionRecords.profiles?.[username]?.status === 'Deleted or username changed');
 const ageRestrictedProfiles = excludedProfiles.filter((username) => exclusionRecords.profiles?.[username]?.status === 'Age restricted');
@@ -495,9 +532,15 @@ async function profileLevelPage(published, profile, discovery, items, run, recor
   const avatarFile = await localImage(`avatar-${published}.jpg`);
   const avatar = avatarFile ? `<img src="../../media/${avatarFile}" alt="Profile picture of @${published}" width="92" height="92">` : `<span aria-hidden="true">@</span>`;
   const currentUsername = profile.current_username && profile.current_username !== published ? profile.current_username : null;
-  const gridLabel = discovery.reel?.refresh_required ? 'Previous grid saved; current username grid refresh available' : discovery.reel?.complete ? 'Full grid confirmed' : 'Previous grid retained; current username grid not scanned';
-  const gridNote = discovery.reel?.refresh_required ? `${fmt(reels.length)} reel URLs from the previous username are retained. Run a new reel URL scan to discover additions for the current username.` : discovery.reel?.complete ? `${fmt(reels.length)} reel URLs are saved and counted.` : `${fmt(reels.length)} reel URLs from the previous username are retained. Run a new reel URL scan to discover additions for the current username.`;
-  return shell({ title: `@${published} · dedgram atlas`, description: `Profile-level record and ${reels.length} saved reel URLs for @${published}.`, base: '../../', active: 'profile', profileKey: published, content: `<section class="profile-hero"><div class="profile-hero-top"><a class="back-link" href="../../">All profiles</a><span class="snapshot-label">SAVED ${esc(date(profile.fetched_at))}</span></div><div class="profile-title-row"><div class="profile-avatar">${avatar}</div><div><div class="eyebrow">PROFILE LEVEL RECORD / ${recordNumber}</div><h1>@${published}</h1>${currentUsername ? `<p>Current username: @${esc(currentUsername)}</p>` : profile.category ? `<p>${esc(profile.category)}</p>` : ''}</div><div class="profile-hero-link">${external(profile.url || instagram(published), 'Instagram profile', 'button secondary')}</div></div><div class="profile-meta"><span>PROFILE LEVEL COMPLETE</span><span>REEL DETAILS PENDING</span><span>Collected ${esc(date(profile.fetched_at))}</span></div></section><section class="profile-stats" aria-label="Profile metrics"><div><span>FOLLOWERS</span><strong>${esc(metric(profile.followers_count))}</strong><small>Saved count</small></div><div><span>FOLLOWING</span><strong>${esc(metric(profile.following_count))}</strong><small>Profile header</small></div><div><span>POSTS</span><strong>${esc(metric(profile.posts_count))}</strong><small>Exact header count</small></div><div><span>REEL URLS</span><strong>${fmt(reels.length)}</strong><small>${gridLabel}</small></div></section><section class="profile-context"><div class="context-card"><span class="overline">02 / ACCOUNT DETAILS</span><h2>Profile level complete</h2><dl class="account-facts">${field('Category', profile.category)}${field('Account based in', profile.account_based_in)}${field('Date joined', profile.date_joined)}${currentUsername ? field('Current username', `@${currentUsername}`) : ''}${field('Last profile scan', date(profile.fetched_at))}${field('Reel grid verified', date(discovery.reel.attempted_at))}${field('Collection run', `${run.status || 'Unknown'} · ${reelDetails.length}/${reels.length} reel details complete`)}</dl></div><div class="context-card bio-card"><span class="overline">PROFILE BIO</span><h2>What the account says</h2><p class="bio-text">${esc(profile.bio || 'No bio captured.')}</p></div></section><section class="evidence-note"><span class="note-symbol">i</span><div><h2>Reel-level analysis pending</h2><p>${gridNote} Individual reel pages have not been scraped yet; the saved discovery JSON is ready for the next reel-details run.</p></div></section><section class="downloads"><div><span class="overline">03 / SOURCE FILES</span><h2>Source files</h2><p>Original profile-level records and exports.</p></div><div class="download-links">${files.map((name) => `<a href="../../downloads/${published}/${name}" ${name.endsWith('.json') || name.endsWith('.csv') ? 'download' : ''}>${esc(name)}</a>`).join('')}</div></section>` });
+  const gridComplete = discovery.reel?.complete === true;
+  const gridAttempted = Boolean(discovery.reel?.attempted_at);
+  const gridLabel = discovery.reel?.refresh_required ? 'Previous grid saved; refresh pending' : gridComplete ? 'Full grid confirmed' : gridAttempted ? 'Partial inventory; final count unknown' : 'Grid not scanned; count unknown';
+  const gridNote = discovery.reel?.refresh_required ? `${fmt(reels.length)} previously discovered reel URLs are retained; a fresh scan is pending.` : gridComplete ? `${fmt(reels.length)} reel URLs are saved and counted.` : gridAttempted ? `${fmt(reels.length)} reel URLs are preserved from an incomplete scan. The final reel count is unknown. ${discovery.reel?.error || ''}` : 'Profile details and the exact post count are saved. Reel URL discovery has not started; the reel count is unknown.';
+  const reelCountLabel = gridComplete || gridAttempted ? fmt(reels.length) : 'Not scanned';
+  const stageLabel = gridComplete ? 'PROFILE AND REEL GRID COMPLETE' : 'PROFILE DETAILS COMPLETE';
+  const nextStage = gridComplete ? 'REEL DETAILS PENDING' : 'REEL URL DISCOVERY PENDING';
+  const gridVerified = gridComplete ? date(discovery.reel.attempted_at) : 'Not verified';
+  return shell({ title: `@${published} · dedgram atlas`, description: `Profile-level record and ${reels.length} saved reel URLs for @${published}.`, base: '../../', active: 'profile', profileKey: published, content: `<section class="profile-hero"><div class="profile-hero-top"><a class="back-link" href="../../">All profiles</a><span class="snapshot-label">SAVED ${esc(date(profile.fetched_at))}</span></div><div class="profile-title-row"><div class="profile-avatar">${avatar}</div><div><div class="eyebrow">PROFILE LEVEL RECORD / ${recordNumber}</div><h1>@${published}</h1>${currentUsername ? `<p>Current username: @${esc(currentUsername)}</p>` : profile.category ? `<p>${esc(profile.category)}</p>` : ''}</div><div class="profile-hero-link">${external(profile.url || instagram(published), 'Instagram profile', 'button secondary')}</div></div><div class="profile-meta"><span>${stageLabel}</span><span>${nextStage}</span><span>Collected ${esc(date(profile.fetched_at))}</span></div></section><section class="profile-stats" aria-label="Profile metrics"><div><span>FOLLOWERS</span><strong>${esc(metric(profile.followers_count))}</strong><small>Saved count</small></div><div><span>FOLLOWING</span><strong>${esc(metric(profile.following_count))}</strong><small>Profile header</small></div><div><span>POSTS</span><strong>${esc(metric(profile.posts_count))}</strong><small>Exact header count</small></div><div><span>REEL URLS</span><strong>${reelCountLabel}</strong><small>${gridLabel}</small></div></section><section class="profile-context"><div class="context-card"><span class="overline">02 / ACCOUNT DETAILS</span><h2>Profile level complete</h2><dl class="account-facts">${field('Category', profile.category)}${field('Account based in', profile.account_based_in)}${field('Date joined', profile.date_joined)}${currentUsername ? field('Current username', `@${currentUsername}`) : ''}${field('Last profile scan', date(profile.fetched_at))}${field('Reel grid verified', gridVerified)}${field('Collection run', `${run.status || 'Unknown'} · ${reelDetails.length}/${reels.length} reel details complete`)}</dl></div><div class="context-card bio-card"><span class="overline">PROFILE BIO</span><h2>What the account says</h2><p class="bio-text">${esc(profile.bio || 'No bio captured.')}</p></div></section><section class="evidence-note"><span class="note-symbol">i</span><div><h2>Reel-level analysis pending</h2><p>${gridNote} Individual reel details have not been collected. Finish reel URL discovery before starting reel-detail analysis.</p></div></section><section class="downloads"><div><span class="overline">03 / SOURCE FILES</span><h2>Source files</h2><p>Original profile-level records and exports.</p></div><div class="download-links">${files.map((name) => `<a href="../../downloads/${published}/${name}" ${name.endsWith('.json') || name.endsWith('.csv') ? 'download' : ''}>${esc(name)}</a>`).join('')}</div></section>` });
 }
 
 async function zeroAwareProfileLevelPage(published, profile, discovery, items, run, recordNumber) {
@@ -505,6 +548,7 @@ async function zeroAwareProfileLevelPage(published, profile, discovery, items, r
   if (discovery.reel?.complete !== true || (discovery.reel.items || []).length !== 0) return html;
   return html
     .replaceAll('REEL DETAILS PENDING', 'NO REELS FOUND')
+    .replaceAll('Individual reel details have not been collected. Finish reel URL discovery before starting reel-detail analysis.', 'The completed reel scan found no reels; no reel-detail analysis applies.')
     .replaceAll('Reel-level analysis pending', 'No reels posted')
     .replaceAll('Individual reel pages have not been scraped yet; the saved discovery JSON is ready for the next reel-details run.', 'The completed reel scan found no reels posted; no reel-level analysis applies.');
 }
