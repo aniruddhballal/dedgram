@@ -5,8 +5,6 @@ https://www.instagram.com/viralxvaultt9/
 https://www.instagram.com/chir.eze/
 https://www.instagram.com/yappersteak/
 https://www.instagram.com/npcahhdiary/
-https://www.instagram.com/relatable.fun1
-https://www.instagram.com/npcahhdiary/
 https://www.instagram.com/xerrt.x6/
 https://www.instagram.com/lookcrezz/
 https://www.instagram.com/nkaze.kage/
@@ -18,7 +16,6 @@ https://www.instagram.com/oggyworldd3/
 https://www.instagram.com/daskx.psl/
 https://www.instagram.com/missp.riyax1/
 https://www.instagram.com/duck.1197157/
-https://www.instagram.com/nkaze.kage/
 https://www.instagram.com/cora.deep_125/
 https://www.instagram.com/robloxmavix/
 https://www.instagram.com/salmahayekfeetluvr/
@@ -29,7 +26,6 @@ https://www.instagram.com/vega.sandy_800/
 https://www.instagram.com/goog.nhy/
 https://www.instagram.com/witchmasuka/
 https://www.instagram.com/chipmunk.46149483/
-https://www.instagram.com/reelsorax/
 https://www.instagram.com/alligator.3224328/
 https://www.instagram.com/frow.den/
 https://www.instagram.com/ksoso_78/
