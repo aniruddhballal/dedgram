@@ -113,6 +113,8 @@ async function collect() {
   const profileOnly = flags.has('--profile-only');
   const headerOnly = flags.has('--header-only');
   const reelGridOnly = flags.has('--reel-grid-only');
+  const bottomUp = flags.has('--bottom-up');
+  if (bottomUp && !reelGridOnly) throw new Error('--bottom-up requires --reel-grid-only.');
   const skipProfile = flags.has('--skip-profile');
   if ([profileOnly, headerOnly, reelGridOnly].filter(Boolean).length > 1) throw new Error('Choose one collection stage.');
   if (profileOnly && (flags.has('--reels-only') || skipProfile)) throw new Error('--profile-only cannot be combined with reel flags.');
@@ -209,13 +211,13 @@ async function collect() {
         continue;
       }
       log(`Scanning ${kind} grid`);
-      const result = await discover(page, profile?.url || username, kind, async (found, complete, error = '') => {
+      const result = await discover(page, profile?.url || username, kind, async (found, complete, error = '', scan = {}) => {
         discovery[kind] = { items: mergeDiscoveryItems(discovery[kind]?.items || [], found, complete),
           complete, error, attempted_at: now() };
         await writeJson(path.discovery, discovery);
         await saveProgress({ task: `${kind}_grid`, label: `${kind === 'reel' ? 'Reel' : 'Post'} URL discovery`, action: `Finding every ${kind} URL in the profile grid`,
-          completed: found.length, total: null, detail: error || `${found.length} ${kind} URLs found so far` });
-      });
+          completed: found.length, total: null, detail: error || (scan.phase === 'seeking_bottom' ? `Seeking bottom: scroll ${Math.round(scan.scroll_y)}/${Math.round(scan.scroll_height)}; URL collection deferred` : `${found.length} ${kind} URLs found so far`) });
+      }, { bottomUp, ...(bottomUp ? { pauseMs: 1000 } : {}) });
       await saveProgress({ task: `${kind}_grid`, label: `${kind === 'reel' ? 'Reel' : 'Post'} URL discovery`, action: `Finding every ${kind} URL in the profile grid`, completed: 1, total: 1,
         detail: result.complete ? `Grid scan complete — ${result.items.length} ${kind} URLs found` : `${result.items.length} ${kind} URLs saved; scan incomplete` });
       log(result.complete ? `${kind}: ${result.items.length} confirmed` : `${kind} count unavailable: ${result.error}`);

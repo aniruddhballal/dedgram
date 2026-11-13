@@ -4,6 +4,28 @@ import { chromium } from 'playwright';
 import { captureProfile, captureItemOwner, discover, captureItem } from '../src/browser.mjs';
 import { profileFromSnapshot, itemFromSnapshot } from '../src/model.mjs';
 
+test('bottom-up discovery defers URLs until the bottom and finishes at the top', async () => {
+  const browser = await chromium.launch({ headless: true });
+  const page = await browser.newPage();
+  await page.route('https://www.instagram.com/**', route => route.fulfill({
+    contentType: 'text/html',
+    body: '<main><a href="/reel/NEW/">new</a><div style="height:2500px"></div><a href="/reel/OLD/">old</a></main>'
+  }));
+  try {
+    let firstCaptureY = null;
+    let seekingUpdates = 0;
+    const result = await discover(page, 'example', 'reel', async (items, complete, error, scan) => {
+      if (scan?.phase === 'seeking_bottom') { seekingUpdates++; assert.equal(items.length, 0); }
+      if (items.length && firstCaptureY === null) firstCaptureY = await page.evaluate(() => window.scrollY);
+    }, { bottomUp: true, pauseMs: 0, maxPasses: 40 });
+    assert.equal(result.complete, true);
+    assert(firstCaptureY > 0);
+    assert(seekingUpdates > 0);
+    assert.deepEqual(result.items.map(item => item.shortcode), ['OLD', 'NEW']);
+    assert.equal(await page.evaluate(() => window.scrollY), 0);
+  } finally { await browser.close(); }
+});
+
 test('browser adapter collects a profile, both grids, and a direct item page', async () => {
   const browser = await chromium.launch({ headless: true });
   const context = await browser.newContext();

@@ -50,6 +50,8 @@ During an already loaded reel-grid scan, an HTTP 429 triggers a 5–10 second pa
 
 On a reel-grid rate-limit failure, collection stops and saves the failure, but leaves the browser and its loaded tab open at the current scroll position for manual inspection. Reel-grid scans use a visible browser even when `--headless` was supplied. No automatic collection continues in the preserved tab. Close that browser manually before starting another run; the UI blocks another batch while its preserved browser is open. Initial grid-page 429 failures also preserve their tab, although no grid may have loaded. Profile capture and individual reel-detail failures retain their normal browser cleanup.
 
+For an experimental bottom-up inventory, use `node src/cli.mjs collect --username=NAME --reel-grid-only --bottom-up`. It first scrolls down without extracting reel URLs, confirms a stable end, then extracts URLs while scrolling upward to the top. This still loads Instagram's grid pages during the downward phase and can hit the same rate limits before any new URLs are collected. Previously saved URLs remain preserved if the downward phase fails.
+
 ```powershell
 npm run collect
 npm run status

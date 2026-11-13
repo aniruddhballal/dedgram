@@ -152,7 +152,7 @@ export async function discover(page, username, kind, onProgress,
 }
 
 async function discoverGrid(page, username, kind, onProgress,
-  { maxPasses = Infinity, maxIdleMs = 60_000, pauseMs = 850,
+  { maxPasses = Infinity, maxIdleMs = 60_000, pauseMs = 850, bottomUp = false,
     rateLimitWaitMs = () => 5000 + Math.floor(Math.random() * 5001), wait = pause } = {}, recovery) {
   const target = profileTarget(username);
   const url = `${target.url}${kind === 'reel' ? 'reels/' : ''}`;
@@ -165,13 +165,19 @@ async function discoverGrid(page, username, kind, onProgress,
   let lastY = -1;
   let lastHeight = -1;
   let awaitingRecoveryProgress = false;
+  let seekingBottom = bottomUp && kind === 'reel';
+  const scroll = () => page.evaluate(({ seekingBottom, bottomUp }) => {
+    if (seekingBottom) window.scrollTo(0, Math.max(document.body.scrollHeight, document.documentElement.scrollHeight));
+    else window.scrollBy(0, (bottomUp ? -1 : 1) * Math.max(500, Math.floor(window.innerHeight * .8)));
+  }, { seekingBottom, bottomUp: bottomUp && kind === 'reel' });
   for (let pass = 0; pass < maxPasses; pass++) {
-    const raw = await page.evaluate(() => [...document.querySelectorAll('main a[href]')].map((anchor) => ({
+    const raw = seekingBottom ? [] : await page.evaluate(() => [...document.querySelectorAll('main a[href]')].map((anchor) => ({
       href: anchor.href,
       label: anchor.getAttribute('aria-label') || '',
       text: anchor.innerText || '',
       sensitive_overlay: !!anchor.querySelector('[aria-label*="sensitive content" i]')
     })));
+    if (bottomUp) raw.reverse();
     const sizeBefore = found.size;
     for (const anchor of raw) {
       const pathname = new URL(anchor.href).pathname;
@@ -194,7 +200,8 @@ async function discoverGrid(page, username, kind, onProgress,
       viewport: window.innerHeight,
       loading: !!document.querySelector('[role="progressbar"]'),
       text: (document.querySelector('main')?.innerText || '').slice(0, 1500),
-      gate: /Sign up and never miss a post|See photos, videos and more from/i.test(document.body.innerText || '')
+      gate: /Sign up and never miss a post|See photos, videos and more from/i.test(document.body.innerText || ''),
+      tiles: document.querySelectorAll('main a[href]').length
     }));
     reason = blocked(page.url(), state.text);
     if (recovery && (recovery.pending || /429|rate limit|too many requests/i.test(reason))) {
@@ -210,7 +217,7 @@ async function discoverGrid(page, username, kind, onProgress,
       console.log(`Reel grid HTTP 429: waiting ${delay / 1000}s before scroll retry ${recovery.attempts}/3. URL: ${recovery.lastUrl}`);
       await onProgress([...found.values()], false, `Reel grid HTTP 429: waiting ${delay / 1000}s before scroll retry ${recovery.attempts}/3. URL: ${recovery.lastUrl}`);
       await wait(delay);
-      await page.evaluate(() => window.scrollBy(0, Math.max(500, Math.floor(window.innerHeight * .8))));
+      await scroll();
       await pause(pauseMs);
       stable = 0;
       lastProgressAt = Date.now();
@@ -219,27 +226,39 @@ async function discoverGrid(page, username, kind, onProgress,
       continue;
     }
     if (reason) break;
-    if (found.size > sizeBefore) awaitingRecoveryProgress = false;
+    if (found.size > sizeBefore || (seekingBottom && state.height > lastHeight && lastHeight >= 0)) awaitingRecoveryProgress = false;
     if (state.gate) { reason = 'The logged out preview showed a limited grid. Sign in to discover the full list.'; break; }
     const empty = kind === 'reel' ? /no reels|hasn't posted any reels|no content to show/i.test(state.text)
       : /no posts yet|hasn't posted/i.test(state.text);
     if (!found.size && empty) { complete = true; break; }
     const atBottom = state.y + state.viewport >= state.height - 12;
-    stable = atBottom && found.size === sizeBefore && !state.loading ? stable + 1 : 0;
-    if (!awaitingRecoveryProgress && stable >= 5 && (found.size > 0 || raw.some((anchor) => canonicalItemUrl(anchor.href)))) {
+    const atEnd = bottomUp && !seekingBottom ? state.y <= 1 : atBottom;
+    stable = atEnd && state.height === lastHeight && found.size === sizeBefore && !state.loading ? stable + 1 : 0;
+    if (!awaitingRecoveryProgress && stable >= 5 && (found.size > 0 || state.tiles > 0)) {
+      if (seekingBottom) {
+        seekingBottom = false;
+        stable = 0;
+        lastProgressAt = Date.now();
+        console.log('Bottom confirmed. Starting reel URL collection from the bottom upward.');
+        continue;
+      }
       complete = true;
       break;
     }
-    if (found.size > sizeBefore || state.y > lastY + 1 || state.height > lastHeight + 1) {
+    if (found.size > sizeBefore || Math.abs(state.y - lastY) > 1 || state.height > lastHeight + 1) {
       lastProgressAt = Date.now();
     }
     lastY = state.y;
     lastHeight = state.height;
+    if (seekingBottom && pass % 20 === 0) {
+      console.log(`Seeking grid bottom: scroll ${Math.round(state.y)}/${Math.round(state.height)}; URL collection deferred.`);
+      await onProgress([...found.values()], false, '', { phase: 'seeking_bottom', scroll_y: state.y, scroll_height: state.height });
+    }
     if (Date.now() - lastProgressAt >= maxIdleMs) {
       reason = `${awaitingRecoveryProgress ? `Instagram returned HTTP 429 (rate limit); no new reel URLs after recovery. URL: ${recovery.lastUrl}. ` : ''}Grid made no progress for ${Math.round(maxIdleMs / 1000)} seconds at scroll ${Math.round(state.y)}/${Math.round(state.height)} with ${found.size} ${kind} links${state.loading ? ' while Instagram showed a loading indicator' : ''}.`;
       break;
     }
-    await page.evaluate(() => window.scrollBy(0, Math.max(500, Math.floor(window.innerHeight * .8))));
+    await scroll();
     await pause(pauseMs);
   }
   if (!complete && !reason) reason = `${awaitingRecoveryProgress ? `Instagram returned HTTP 429 (rate limit); recovery did not confirm further reel URLs. URL: ${recovery.lastUrl}. ` : ''}Grid reached the configured ${maxPasses}-pass limit before confirming the last item.`;
