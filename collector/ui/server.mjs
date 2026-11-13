@@ -99,6 +99,7 @@ class BatchRunner {
   async save() { await writeJson(jobPath, this.batch); }
 
   async start(requested, mode = 'depth_first', order = 'selection') {
+    if (this.heldBrowser) throw Object.assign(new Error('Close the preserved rate-limited browser before starting another batch.'), { status: 409 });
     if (this.active) throw Object.assign(new Error('A batch is already running.'), { status: 409 });
     if (!Array.isArray(requested) || !requested.length) throw Object.assign(new Error('Select at least one profile.'), { status: 400 });
     if (!Object.hasOwn(MODES, mode)) throw Object.assign(new Error('Choose a valid collection mode.'), { status: 400 });
@@ -204,6 +205,8 @@ class BatchRunner {
       const child = spawn(process.execPath,
         ['src/cli.mjs', 'collect', `--username=${username}`, ...flags, '--headless'],
         { cwd: root, windowsHide: true, stdio: ['ignore', 'pipe', 'pipe'] });
+      let resolveHeld;
+      const heldExit = new Promise((resolveExit) => { resolveHeld = resolveExit; });
       for (const stream of [child.stdout, child.stderr]) {
         stream.setEncoding('utf8');
         let pending = '';
@@ -211,15 +214,22 @@ class BatchRunner {
           pending += chunk;
           const lines = pending.split(/\r?\n/);
           pending = lines.pop() || '';
-          for (const line of lines) this.log(line);
+          for (const line of lines) {
+            this.log(line);
+            if (line.includes('REEL_GRID_BROWSER_LEFT_OPEN:')) {
+              this.heldBrowser = child;
+              child.once('close', () => { if (this.heldBrowser === child) this.heldBrowser = null; });
+              resolveHeld({ code: 1, error: null });
+            }
+          }
         });
         stream.on('end', () => { if (pending) this.log(pending); });
       }
-      const exit = await new Promise((resolveExit) => {
+      const exit = await Promise.race([heldExit, new Promise((resolveExit) => {
         let error = null;
         child.once('error', (value) => { error = value; });
         child.once('close', (code) => resolveExit({ code, error }));
-      });
+      })]);
       const collected = await profileData(username);
       stage.finished_at = new Date().toISOString();
       const rateLimitReason = rateLimitSignal(exit.error?.message, collected.run?.error);

@@ -8,6 +8,7 @@ const pause = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 export function installRateLimitHandling(context) {
   context.on('response', (response) => {
+    if (context.preserveReelGridOnRateLimit) return;
     if (response.status() !== 429 || !/(^|\.)instagram\.com$/.test(new URL(response.url()).hostname)) return;
     const headers = response.headers();
     const retryAfter = headers['retry-after'];
@@ -135,7 +136,14 @@ export async function discover(page, username, kind, onProgress,
   const context = page.context();
   const recovery = kind === 'reel' ? { pending: null, attempts: 0, lastUrl: null } : null;
   if (recovery) context.reelGridRecovery = recovery;
-  try { return await discoverGrid(page, username, kind, onProgress, options, recovery); }
+  try {
+    const result = await discoverGrid(page, username, kind, onProgress, options, recovery);
+    if (recovery && /429|rate limit|too many requests/i.test(result.error || '')) context.preserveReelGridOnRateLimit = true;
+    return result;
+  } catch (error) {
+    if (recovery && (recovery.pending || /429|rate limit|too many requests/i.test(error.message))) context.preserveReelGridOnRateLimit = true;
+    throw error;
+  }
   finally { if (recovery) delete context.reelGridRecovery; }
 }
 

@@ -151,7 +151,9 @@ async function collect() {
   let context;
   let profileStageComplete = skipProfile;
   try {
-    const launched = await launch(root, { headless });
+    const needsReelGrid = discoveryKinds.includes('reel') && (refresh || gridCount(discovery.reel) === null);
+    if (headless && needsReelGrid) log('Opening a visible browser so a rate-limited reel grid can remain available for manual inspection.');
+    const launched = await launch(root, { headless: headless && !needsReelGrid });
     context = launched.context;
     const page = launched.page;
     if (!skipProfile && !reelGridOnly) {
@@ -286,7 +288,8 @@ async function collect() {
       : `Done: ${items.length} items. Report: ${path.report}`);
   } catch (error) {
     if (context?.rateLimitError) error = new Error(context.rateLimitError);
-    run = { ...run, status: 'blocked', updated_at: now(), error: error instanceof Error ? error.message : String(error) };
+    run = { ...run, status: 'blocked', updated_at: now(), error: error instanceof Error ? error.message : String(error),
+      browser_left_open: Boolean(context?.preserveReelGridOnRateLimit) };
     if (run.progress) run.progress = { ...run.progress, current_item: null, detail: `Blocked: ${run.error}`, updated_at: run.updated_at };
     try { await writeJson(path.run, run); }
     catch (saveError) { log(`Could not save failure status: ${saveError.message}`); }
@@ -294,7 +297,11 @@ async function collect() {
     catch (saveError) { log(`Could not save failure report: ${saveError.message}`); }
     await snapshot('after', { profile, discovery, items, run });
     throw error;
-  } finally { if (context) await context.close(); }
+  } finally {
+    if (context?.preserveReelGridOnRateLimit) {
+      log('REEL_GRID_BROWSER_LEFT_OPEN: Collection stopped. The scrolled tab is preserved for manual inspection. Close this browser before starting another collector run.');
+    } else if (context) await context.close();
+  }
 }
 
 try {

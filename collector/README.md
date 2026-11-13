@@ -48,6 +48,8 @@ The command-line collector is also available:
 
 During an already loaded reel-grid scan, an HTTP 429 triggers a 5–10 second pause followed by another downward scroll, with at most three recovery attempts per account scan. Saved URLs survive each pause. New reel URLs must appear before the scan can be considered recovered; persistent limits or stalled recovery leave the inventory incomplete and stop the batch before another account or reel-detail stage. A server `Retry-After` longer than ten seconds stops short recovery rather than retrying early. The console and saved discovery/progress records show recovery waits and the failing request URL when available. Profile capture, initial grid-page navigation failures, post grids, and individual reel-detail requests still stop on the first 429. This policy does not reload a failed grid page or change browser sessions.
 
+On a reel-grid rate-limit failure, collection stops and saves the failure, but leaves the browser and its loaded tab open at the current scroll position for manual inspection. Reel-grid scans use a visible browser even when `--headless` was supplied. No automatic collection continues in the preserved tab. Close that browser manually before starting another run; the UI blocks another batch while its preserved browser is open. Initial grid-page 429 failures also preserve their tab, although no grid may have loaded. Profile capture and individual reel-detail failures retain their normal browser cleanup.
+
 ```powershell
 npm run collect
 npm run status

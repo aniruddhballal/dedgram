@@ -60,6 +60,13 @@ for (const scenario of ['recovers', 'persistent', 'no-progress', 'retry-after'])
       if (scenario === 'retry-after') assert.match(result.error, /Retry-After/);
       assert.equal(context.reelGridRecovery, undefined);
       assert.equal(context.rateLimitError, undefined);
+      assert.equal(Boolean(context.preserveReelGridOnRateLimit), scenario !== 'recovers');
+      if (scenario !== 'recovers') {
+        const scrollBefore = await page.evaluate(() => window.scrollY);
+        context.emit('response', limitedResponse());
+        assert.equal(await page.evaluate(() => window.scrollY), scrollBefore);
+        assert.equal(page.isClosed(), false);
+      }
     } finally { await browser.close(); }
   });
 }
