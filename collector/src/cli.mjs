@@ -212,11 +212,12 @@ async function collect() {
           complete, error, attempted_at: now() };
         await writeJson(path.discovery, discovery);
         await saveProgress({ task: `${kind}_grid`, label: `${kind === 'reel' ? 'Reel' : 'Post'} URL discovery`, action: `Finding every ${kind} URL in the profile grid`,
-          completed: found.length, total: null, detail: `${found.length} ${kind} URLs found so far` });
+          completed: found.length, total: null, detail: error || `${found.length} ${kind} URLs found so far` });
       });
       await saveProgress({ task: `${kind}_grid`, label: `${kind === 'reel' ? 'Reel' : 'Post'} URL discovery`, action: `Finding every ${kind} URL in the profile grid`, completed: 1, total: 1,
         detail: result.complete ? `Grid scan complete — ${result.items.length} ${kind} URLs found` : `${result.items.length} ${kind} URLs saved; scan incomplete` });
       log(result.complete ? `${kind}: ${result.items.length} confirmed` : `${kind} count unavailable: ${result.error}`);
+      if (/\b429\b|rate limit|too many requests/i.test(result.error || '')) throw new Error(result.error);
     }
     const queued = new Map();
     for (const kind of kinds) for (const item of discovery[kind]?.items || []) queued.set(item.url, item);

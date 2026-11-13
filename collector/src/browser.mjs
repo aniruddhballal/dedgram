@@ -6,6 +6,22 @@ import { engagementFromDocument } from './reel-engagement.mjs';
 
 const pause = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
+export function installRateLimitHandling(context) {
+  context.on('response', (response) => {
+    if (response.status() !== 429 || !/(^|\.)instagram\.com$/.test(new URL(response.url()).hostname)) return;
+    const headers = response.headers();
+    const retryAfter = headers['retry-after'];
+    const retryAfterMs = retryAfter ? (/^\d+$/.test(retryAfter) ? Number(retryAfter) * 1000 : Math.max(0, Date.parse(retryAfter) - Date.now())) : 0;
+    const event = { url: response.url(), retryAfterMs: Number.isFinite(retryAfterMs) ? retryAfterMs : 0 };
+    if (context.reelGridRecovery) {
+      context.reelGridRecovery.pending = event;
+      return;
+    }
+    context.rateLimitError = `Instagram returned HTTP 429 (rate limit). URL: ${event.url}`;
+    void context.close().catch(() => {});
+  });
+}
+
 function profileTarget(value) {
   const raw = String(value || '').trim();
   const parsed = /^https?:\/\//i.test(raw)
@@ -26,11 +42,7 @@ export async function launch(root, { headless = false } = {}) {
   });
   const page = context.pages()[0] || await context.newPage();
   page.setDefaultTimeout(15000);
-  context.on('response', (response) => {
-    if (response.status() !== 429 || !/(^|\.)instagram\.com$/.test(new URL(response.url()).hostname)) return;
-    context.rateLimitError = 'Instagram returned HTTP 429 (rate limit).';
-    void context.close().catch(() => {});
-  });
+  installRateLimitHandling(context);
   return { context, page };
 }
 
@@ -119,7 +131,17 @@ export async function saveProfilePicture(page, destination) {
 }
 
 export async function discover(page, username, kind, onProgress,
-  { maxPasses = Infinity, maxIdleMs = 60_000, pauseMs = 850 } = {}) {
+  options = {}) {
+  const context = page.context();
+  const recovery = kind === 'reel' ? { pending: null, attempts: 0, lastUrl: null } : null;
+  if (recovery) context.reelGridRecovery = recovery;
+  try { return await discoverGrid(page, username, kind, onProgress, options, recovery); }
+  finally { if (recovery) delete context.reelGridRecovery; }
+}
+
+async function discoverGrid(page, username, kind, onProgress,
+  { maxPasses = Infinity, maxIdleMs = 60_000, pauseMs = 850,
+    rateLimitWaitMs = () => 5000 + Math.floor(Math.random() * 5001), wait = pause } = {}, recovery) {
   const target = profileTarget(username);
   const url = `${target.url}${kind === 'reel' ? 'reels/' : ''}`;
   await open(page, url);
@@ -130,6 +152,7 @@ export async function discover(page, username, kind, onProgress,
   let lastProgressAt = Date.now();
   let lastY = -1;
   let lastHeight = -1;
+  let awaitingRecoveryProgress = false;
   for (let pass = 0; pass < maxPasses; pass++) {
     const raw = await page.evaluate(() => [...document.querySelectorAll('main a[href]')].map((anchor) => ({
       href: anchor.href,
@@ -162,14 +185,36 @@ export async function discover(page, username, kind, onProgress,
       gate: /Sign up and never miss a post|See photos, videos and more from/i.test(document.body.innerText || '')
     }));
     reason = blocked(page.url(), state.text);
+    if (recovery && (recovery.pending || /429|rate limit|too many requests/i.test(reason))) {
+      const event = recovery.pending;
+      recovery.lastUrl = event?.url || recovery.lastUrl || page.url();
+      if (recovery.attempts >= 3 || event?.retryAfterMs > 10_000) {
+        reason = `Instagram returned HTTP 429 (rate limit). Reel grid recovery stopped after ${recovery.attempts} retries. URL: ${recovery.lastUrl}${event?.retryAfterMs > 10_000 ? ' Server Retry-After exceeds the short recovery window.' : ''}`;
+        break;
+      }
+      const delay = Math.max(5000, Math.min(10_000, rateLimitWaitMs()), event?.retryAfterMs || 0);
+      recovery.pending = null;
+      recovery.attempts++;
+      console.log(`Reel grid HTTP 429: waiting ${delay / 1000}s before scroll retry ${recovery.attempts}/3. URL: ${recovery.lastUrl}`);
+      await onProgress([...found.values()], false, `Reel grid HTTP 429: waiting ${delay / 1000}s before scroll retry ${recovery.attempts}/3. URL: ${recovery.lastUrl}`);
+      await wait(delay);
+      await page.evaluate(() => window.scrollBy(0, Math.max(500, Math.floor(window.innerHeight * .8))));
+      await pause(pauseMs);
+      stable = 0;
+      lastProgressAt = Date.now();
+      awaitingRecoveryProgress = true;
+      reason = '';
+      continue;
+    }
     if (reason) break;
+    if (found.size > sizeBefore) awaitingRecoveryProgress = false;
     if (state.gate) { reason = 'The logged out preview showed a limited grid. Sign in to discover the full list.'; break; }
     const empty = kind === 'reel' ? /no reels|hasn't posted any reels|no content to show/i.test(state.text)
       : /no posts yet|hasn't posted/i.test(state.text);
     if (!found.size && empty) { complete = true; break; }
     const atBottom = state.y + state.viewport >= state.height - 12;
     stable = atBottom && found.size === sizeBefore && !state.loading ? stable + 1 : 0;
-    if (stable >= 5 && (found.size > 0 || raw.some((anchor) => canonicalItemUrl(anchor.href)))) {
+    if (!awaitingRecoveryProgress && stable >= 5 && (found.size > 0 || raw.some((anchor) => canonicalItemUrl(anchor.href)))) {
       complete = true;
       break;
     }
@@ -179,13 +224,13 @@ export async function discover(page, username, kind, onProgress,
     lastY = state.y;
     lastHeight = state.height;
     if (Date.now() - lastProgressAt >= maxIdleMs) {
-      reason = `Grid made no progress for ${Math.round(maxIdleMs / 1000)} seconds at scroll ${Math.round(state.y)}/${Math.round(state.height)} with ${found.size} ${kind} links${state.loading ? ' while Instagram showed a loading indicator' : ''}.`;
+      reason = `${awaitingRecoveryProgress ? `Instagram returned HTTP 429 (rate limit); no new reel URLs after recovery. URL: ${recovery.lastUrl}. ` : ''}Grid made no progress for ${Math.round(maxIdleMs / 1000)} seconds at scroll ${Math.round(state.y)}/${Math.round(state.height)} with ${found.size} ${kind} links${state.loading ? ' while Instagram showed a loading indicator' : ''}.`;
       break;
     }
     await page.evaluate(() => window.scrollBy(0, Math.max(500, Math.floor(window.innerHeight * .8))));
     await pause(pauseMs);
   }
-  if (!complete && !reason) reason = `Grid reached the configured ${maxPasses}-pass limit before confirming the last item.`;
+  if (!complete && !reason) reason = `${awaitingRecoveryProgress ? `Instagram returned HTTP 429 (rate limit); recovery did not confirm further reel URLs. URL: ${recovery.lastUrl}. ` : ''}Grid reached the configured ${maxPasses}-pass limit before confirming the last item.`;
   await onProgress([...found.values()], complete, reason);
   return { items: [...found.values()], complete, error: reason };
 }

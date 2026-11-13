@@ -46,6 +46,8 @@ Open `http://127.0.0.1:5174/profiles/edlt.shox` for a profile report with its fi
 
 The command-line collector is also available:
 
+During an already loaded reel-grid scan, an HTTP 429 triggers a 5–10 second pause followed by another downward scroll, with at most three recovery attempts per account scan. Saved URLs survive each pause. New reel URLs must appear before the scan can be considered recovered; persistent limits or stalled recovery leave the inventory incomplete and stop the batch before another account or reel-detail stage. A server `Retry-After` longer than ten seconds stops short recovery rather than retrying early. The console and saved discovery/progress records show recovery waits and the failing request URL when available. Profile capture, initial grid-page navigation failures, post grids, and individual reel-detail requests still stop on the first 429. This policy does not reload a failed grid page or change browser sessions.
+
 ```powershell
 npm run collect
 npm run status
