@@ -284,6 +284,7 @@ async function collect() {
       : profileOnly ? `Done: Instagram posts ${exactPostCount(profile) ?? `error (${postCountError(profile)})`}, reels ${gridCount(discovery.reel) ?? `error (${gridCountError(discovery.reel)})`}. Report: ${path.report}`
       : `Done: ${items.length} items. Report: ${path.report}`);
   } catch (error) {
+    if (context?.rateLimitError) error = new Error(context.rateLimitError);
     run = { ...run, status: 'blocked', updated_at: now(), error: error instanceof Error ? error.message : String(error) };
     if (run.progress) run.progress = { ...run.progress, current_item: null, detail: `Blocked: ${run.error}`, updated_at: run.updated_at };
     try { await writeJson(path.run, run); }

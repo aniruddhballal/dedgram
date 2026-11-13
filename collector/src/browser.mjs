@@ -26,6 +26,11 @@ export async function launch(root, { headless = false } = {}) {
   });
   const page = context.pages()[0] || await context.newPage();
   page.setDefaultTimeout(15000);
+  context.on('response', (response) => {
+    if (response.status() !== 429 || !/(^|\.)instagram\.com$/.test(new URL(response.url()).hostname)) return;
+    context.rateLimitError = 'Instagram returned HTTP 429 (rate limit).';
+    void context.close().catch(() => {});
+  });
   return { context, page };
 }
 
