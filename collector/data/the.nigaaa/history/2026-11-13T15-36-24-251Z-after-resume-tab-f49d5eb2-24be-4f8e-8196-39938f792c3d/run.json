@@ -1,0 +1,21 @@
+{
+  "started_at": "2026-11-13T15:15:31.056Z",
+  "updated_at": "2026-11-13T15:36:24.233Z",
+  "status": "complete",
+  "phase": "done",
+  "scope": [
+    "reel_grid"
+  ],
+  "current_url": null,
+  "error": null,
+  "progress": {
+    "task": "reel_grid",
+    "label": "Resume existing reel grid",
+    "completed": 4636,
+    "total": null,
+    "percent": null,
+    "detail": "Complete grid confirmed after resumed downward and upward traversal"
+  },
+  "strategy": "resume_existing_tab_down_then_up",
+  "browser_left_open": true
+}

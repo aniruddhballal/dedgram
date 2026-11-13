@@ -1,0 +1,108 @@
+{
+  "username": "the.nigaaa",
+  "url": "https://www.instagram.com/the.nigaaa/",
+  "fetched_at": "2026-11-13T02:07:34.756Z",
+  "display_name": "the_nigaaa",
+  "bio": "#TVアニメ\nrLINDINHA PODEROSA\n王都魔法祭編の最新情報がついに解禁！！\n待望の最新キービジュアルを公開！\nさらに、新キャラクター＆新たな魔法の情報に加え、王都魔法祭編の物語を大きく動かす重要人物「ルミナ」の登場も決定しました！！\n◆新キャラクター",
+  "posts_count": {
+    "value": 2081,
+    "raw": "2,081",
+    "approximate": false
+  },
+  "posts_count_observed_at": "2026-11-13T02:07:34.756Z",
+  "followers_count": {
+    "value": 258803,
+    "raw": "258,803",
+    "approximate": false,
+    "source": "header_title"
+  },
+  "following_count": {
+    "value": 4,
+    "raw": "4",
+    "approximate": false,
+    "source": "header_text"
+  },
+  "count_evidence": {
+    "followers": {
+      "header": {
+        "value": 258000,
+        "raw": "258K",
+        "approximate": true
+      },
+      "exact_title": {
+        "value": 258803,
+        "raw": "258,803",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 259000,
+        "raw": "259K",
+        "approximate": true
+      }
+    },
+    "following": {
+      "header": {
+        "value": 4,
+        "raw": "4",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 9,
+        "raw": "9",
+        "approximate": false
+      },
+      "conflict": true
+    },
+    "posts": {
+      "header": {
+        "value": 2081,
+        "raw": "2,081",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 2081,
+        "raw": "2,081",
+        "approximate": false
+      }
+    }
+  },
+  "category": null,
+  "ai_generated_profile": true,
+  "profile_picture_url": "https://instagram.fixe1-3.fna.fbcdn.net/v/t51.82787-19/809209723_18089348066383649_1715571114051215812_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=1&ig_cache_key=GHuPOzAhF7eNKkRAAMSh8bfW7s4XbmNDAQAB1501500j-ccb7-5&ccb=7-5&_nc_sid=669407&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=9c5agWFnpTgQ7kNvwHtBvt4&_nc_oc=AdqbqOe79fxVoIFQ3f3XpWeP0iLukwiBa6dB2TaAJkg0WmPtaoTU3U6E3obrysQvjNsUYjRxlFiMGJd8nog0ZyM_&_nc_zt=24&_nc_ht=instagram.fixe1-3.fna&_nc_gid=BdbmMYWRNJjdnshSUNSXKw&_nc_ss=7f6a8&oh=00_AQRniXONPPs6hpcHznY_QfW7KOmrNd8Tf6fwZ5P5vDNzDg&oe=6AFC3E1C",
+  "date_joined": "July 2026",
+  "account_based_in": "India",
+  "former_usernames_count": {
+    "value": 4,
+    "raw": "4",
+    "approximate": false
+  },
+  "raw": {
+    "header_text": "the.nigaaa\nthe_nigaaa\n2,081 posts\n258K followers\n4 following\nAI-generated profile\n#TVアニメ\nrLINDINHA PODEROSA\n王都魔法祭編の最新情報がついに解禁！！\n待望の最新キービジュアルを公開！... \nmore\nFollow\nMessage\n♥️",
+    "about_text": "About this account\nthe.nigaaa\n • AI-generated profile\nTo help keep our community authentic, we’re showing information about profiles on Instagram. See why this information is important.\nDate joined\nJuly 2026\nAccount based in\nIndia\nFormer usernames\n4\nClose",
+    "description": "259K Followers, 9 Following, 2,081 Posts - the_nigaaa (@the.nigaaa) on Instagram: \"#TVアニメ\nrLINDINHA PODEROSA\n王都魔法祭編の最新情報がついに解禁！！\n待望の最新キービジュアルを公開！\nさらに、新キャラクター＆新たな魔法の情報に加え、王都魔法祭編の物語を大きく動かす重要人物「ルミナ」の登場も決定しました！！\n◆新キャラクター\"",
+    "stat_evidence": {
+      "posts": {
+        "label": "",
+        "exact_title": ""
+      },
+      "followers": {
+        "label": "258K followers",
+        "exact_title": "258,803"
+      },
+      "following": {
+        "label": "4 following",
+        "exact_title": ""
+      }
+    }
+  },
+  "issues": [],
+  "current_username": "the.nigaaa",
+  "username_history": [
+    {
+      "username": "the.nigaaa",
+      "role": "current username",
+      "first_seen_at": "2026-11-13T02:07:34.750Z"
+    }
+  ],
+  "username_change_observed_at": null
+}

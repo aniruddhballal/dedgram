@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "username": "the.nigaaa",
+  "phase": "after-bottom-up",
+  "snapshot_at": "2026-11-13T14:54:14.141Z",
+  "run_status": "blocked",
+  "run_updated_at": "2026-11-13T14:54:14.096Z",
+  "profile_fetched_at": "2026-11-13T02:07:34.756Z",
+  "item_count": 0,
+  "complete_item_count": 0,
+  "discovery": {
+    "reel": {
+      "count": 1896,
+      "complete": false,
+      "error": "Instagram returned HTTP 429 (rate limit). Reel grid recovery stopped after 3 retries. URL: https://www.instagram.com/the.nigaaa/reels/",
+      "attempted_at": "2026-11-13T14:54:14.088Z"
+    }
+  }
+}
