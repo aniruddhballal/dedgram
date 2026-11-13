@@ -1,14 +1,13 @@
 {
-  "started_at": "2026-11-13T02:07:29.984Z",
-  "updated_at": "2026-11-13T02:17:06.972Z",
-  "status": "partial",
-  "phase": "done",
+  "started_at": "2026-11-13T03:08:53.365Z",
+  "updated_at": "2026-11-13T03:18:33.071Z",
+  "status": "blocked",
+  "phase": "reel discovery",
   "scope": [
-    "profile",
     "reel_grid"
   ],
   "current_url": null,
-  "error": "reel grid: Instagram returned HTTP 429 (rate limit).",
+  "error": "Instagram returned HTTP 429 (rate limit). Reel grid recovery stopped after 3 retries. URL: https://www.instagram.com/the.nigaaa/reels/",
   "progress": {
     "task": "reel_grid",
     "label": "Reel URL discovery",
@@ -18,7 +17,7 @@
     "percent": 100,
     "remaining": 0,
     "current_item": null,
-    "detail": "Stage finished with review required",
-    "updated_at": "2026-11-13T02:17:06.972Z"
+    "detail": "Blocked: Instagram returned HTTP 429 (rate limit). Reel grid recovery stopped after 3 retries. URL: https://www.instagram.com/the.nigaaa/reels/",
+    "updated_at": "2026-11-13T03:18:33.071Z"
   }
 }

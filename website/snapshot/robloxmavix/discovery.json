@@ -1,8 +1,149 @@
 {
   "reel": {
-    "items": [],
-    "complete": false,
-    "error": "Grid has not been scanned.",
-    "attempted_at": null
+    "items": [
+      {
+        "kind": "reel",
+        "shortcode": "DfplEPcSdG0",
+        "url": "https://www.instagram.com/reel/DfplEPcSdG0/",
+        "grid_views_raw": "5,591",
+        "grid_views_issue": null
+      },
+      {
+        "kind": "reel",
+        "shortcode": "DfpkiF2SRGU",
+        "url": "https://www.instagram.com/reel/DfpkiF2SRGU/",
+        "grid_views_raw": "3,381",
+        "grid_views_issue": null
+      },
+      {
+        "kind": "reel",
+        "shortcode": "DfpkZgYy6CP",
+        "url": "https://www.instagram.com/reel/DfpkZgYy6CP/",
+        "grid_views_raw": "15.3K",
+        "grid_views_issue": null
+      },
+      {
+        "kind": "reel",
+        "shortcode": "DfpkJSRSgZY",
+        "url": "https://www.instagram.com/reel/DfpkJSRSgZY/",
+        "grid_views_raw": "351",
+        "grid_views_issue": null
+      },
+      {
+        "kind": "reel",
+        "shortcode": "DfpjOnIy1nT",
+        "url": "https://www.instagram.com/reel/DfpjOnIy1nT/",
+        "grid_views_raw": "3,474",
+        "grid_views_issue": null
+      },
+      {
+        "kind": "reel",
+        "shortcode": "DfpihKESRzM",
+        "url": "https://www.instagram.com/reel/DfpihKESRzM/",
+        "grid_views_raw": "88.4K",
+        "grid_views_issue": null
+      },
+      {
+        "kind": "reel",
+        "shortcode": "DfpTt-6yG2i",
+        "url": "https://www.instagram.com/reel/DfpTt-6yG2i/",
+        "grid_views_raw": "1,538",
+        "grid_views_issue": null
+      },
+      {
+        "kind": "reel",
+        "shortcode": "DfpToh4yaKX",
+        "url": "https://www.instagram.com/reel/DfpToh4yaKX/",
+        "grid_views_raw": "1,889",
+        "grid_views_issue": null
+      },
+      {
+        "kind": "reel",
+        "shortcode": "DfpTjW6y4dn",
+        "url": "https://www.instagram.com/reel/DfpTjW6y4dn/",
+        "grid_views_raw": "428",
+        "grid_views_issue": null
+      },
+      {
+        "kind": "reel",
+        "shortcode": "DfpTeSGSfnt",
+        "url": "https://www.instagram.com/reel/DfpTeSGSfnt/",
+        "grid_views_raw": "4,085",
+        "grid_views_issue": null
+      },
+      {
+        "kind": "reel",
+        "shortcode": "DfpTRpDSuSd",
+        "url": "https://www.instagram.com/reel/DfpTRpDSuSd/",
+        "grid_views_raw": "15.6K",
+        "grid_views_issue": null
+      },
+      {
+        "kind": "reel",
+        "shortcode": "DfpAHXOSnx4",
+        "url": "https://www.instagram.com/reel/DfpAHXOSnx4/",
+        "grid_views_raw": "1M",
+        "grid_views_issue": null
+      },
+      {
+        "kind": "reel",
+        "shortcode": "DfpABL1yQS_",
+        "url": "https://www.instagram.com/reel/DfpABL1yQS_/",
+        "grid_views_raw": "1,784",
+        "grid_views_issue": null
+      },
+      {
+        "kind": "reel",
+        "shortcode": "Dfo_yQbSxf7",
+        "url": "https://www.instagram.com/reel/Dfo_yQbSxf7/",
+        "grid_views_raw": "1,614",
+        "grid_views_issue": null
+      },
+      {
+        "kind": "reel",
+        "shortcode": "Dfo_qx5y5E0",
+        "url": "https://www.instagram.com/reel/Dfo_qx5y5E0/",
+        "grid_views_raw": "5,289",
+        "grid_views_issue": null
+      },
+      {
+        "kind": "reel",
+        "shortcode": "DfoiNqOy6ZP",
+        "url": "https://www.instagram.com/reel/DfoiNqOy6ZP/",
+        "grid_views_raw": "248K",
+        "grid_views_issue": null
+      },
+      {
+        "kind": "reel",
+        "shortcode": "DfoiKSKSkBQ",
+        "url": "https://www.instagram.com/reel/DfoiKSKSkBQ/",
+        "grid_views_raw": "22.9K",
+        "grid_views_issue": null
+      },
+      {
+        "kind": "reel",
+        "shortcode": "DfoiIAySksq",
+        "url": "https://www.instagram.com/reel/DfoiIAySksq/",
+        "grid_views_raw": "372K",
+        "grid_views_issue": null
+      },
+      {
+        "kind": "reel",
+        "shortcode": "DfohvqJS5HA",
+        "url": "https://www.instagram.com/reel/DfohvqJS5HA/",
+        "grid_views_raw": "1,519",
+        "grid_views_issue": null
+      },
+      {
+        "kind": "reel",
+        "shortcode": "Dfohm_5y0en",
+        "url": "https://www.instagram.com/reel/Dfohm_5y0en/",
+        "grid_views_raw": "12K",
+        "grid_views_issue": null
+      }
+    ],
+    "complete": true,
+    "error": "",
+    "attempted_at": "2026-11-13T02:54:34.430Z"
   }
 }

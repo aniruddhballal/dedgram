@@ -1,8 +1,93 @@
 {
   "reel": {
-    "items": [],
-    "complete": false,
-    "error": "Grid has not been scanned.",
-    "attempted_at": null
+    "items": [
+      {
+        "kind": "reel",
+        "shortcode": "Dfp4XF3zJ4L",
+        "url": "https://www.instagram.com/reel/Dfp4XF3zJ4L/",
+        "grid_views_raw": "2,710",
+        "grid_views_issue": null
+      },
+      {
+        "kind": "reel",
+        "shortcode": "Dfp4MoHzlOV",
+        "url": "https://www.instagram.com/reel/Dfp4MoHzlOV/",
+        "grid_views_raw": "3,180",
+        "grid_views_issue": null
+      },
+      {
+        "kind": "reel",
+        "shortcode": "Dfp4KcyzIF6",
+        "url": "https://www.instagram.com/reel/Dfp4KcyzIF6/",
+        "grid_views_raw": "4,008",
+        "grid_views_issue": null
+      },
+      {
+        "kind": "reel",
+        "shortcode": "Dfp4GdUTbUq",
+        "url": "https://www.instagram.com/reel/Dfp4GdUTbUq/",
+        "grid_views_raw": "16.3K",
+        "grid_views_issue": null
+      },
+      {
+        "kind": "reel",
+        "shortcode": "Dfp3_1zzALk",
+        "url": "https://www.instagram.com/reel/Dfp3_1zzALk/",
+        "grid_views_raw": "6,987",
+        "grid_views_issue": null
+      },
+      {
+        "kind": "reel",
+        "shortcode": "Dfp3-xiznWV",
+        "url": "https://www.instagram.com/reel/Dfp3-xiznWV/",
+        "grid_views_raw": "5,880",
+        "grid_views_issue": null
+      },
+      {
+        "kind": "reel",
+        "shortcode": "DfpwvSxzFLT",
+        "url": "https://www.instagram.com/reel/DfpwvSxzFLT/",
+        "grid_views_raw": "3,933",
+        "grid_views_issue": null
+      },
+      {
+        "kind": "reel",
+        "shortcode": "DfpwqGAzKGR",
+        "url": "https://www.instagram.com/reel/DfpwqGAzKGR/",
+        "grid_views_raw": "4,390",
+        "grid_views_issue": null
+      },
+      {
+        "kind": "reel",
+        "shortcode": "DfptIJozRZC",
+        "url": "https://www.instagram.com/reel/DfptIJozRZC/",
+        "grid_views_raw": "22.3K",
+        "grid_views_issue": null
+      },
+      {
+        "kind": "reel",
+        "shortcode": "DfptD-TzYgn",
+        "url": "https://www.instagram.com/reel/DfptD-TzYgn/",
+        "grid_views_raw": "29.7K",
+        "grid_views_issue": null
+      },
+      {
+        "kind": "reel",
+        "shortcode": "DfptCVUTmLT",
+        "url": "https://www.instagram.com/reel/DfptCVUTmLT/",
+        "grid_views_raw": "204K",
+        "grid_views_issue": null
+      },
+      {
+        "kind": "reel",
+        "shortcode": "Dfps-ESzun7",
+        "url": "https://www.instagram.com/reel/Dfps-ESzun7/",
+        "grid_views_raw": "6,476",
+        "grid_views_issue": null
+      }
+    ],
+    "complete": true,
+    "error": "",
+    "attempted_at": "2026-11-13T02:53:20.320Z"
   }
 }
