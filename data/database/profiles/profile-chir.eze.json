@@ -1,0 +1,26 @@
+{
+  "username": "chir.eze",
+  "url": "https://www.instagram.com/chir.eze/",
+  "status": "Excluded",
+  "ignored": true,
+  "added_at": "2026-11-12T20:43:00.169Z",
+  "catalog_first_seen_at": "2026-11-12T20:43:00.169Z",
+  "last_fetched_at": null,
+  "saved_data_available": false,
+  "account_status": "deleted",
+  "account_status_observed_at": "2026-11-13T02:24:55.000Z",
+  "excluded_from_analysis": true,
+  "resolution_note": "Permanently excluded at the user's request on 13 November 2026. Instagram reported this profile unavailable during initial collection. Account deletion and a username change cannot be distinguished because no reel URLs or profile details were captured. No confirmed deletion is asserted. Preserve the failed collection evidence; do not collect, retry, review, or analyze this account.",
+  "exclusion": {
+    "permanent": true,
+    "reason": "unavailable_deleted_or_renamed",
+    "source": "user_instruction",
+    "recorded_at": "2026-11-13T02:30:00.566Z",
+    "first_unavailable_at": "2026-11-13T02:24:55.000Z",
+    "previous_error": "Instagram reports this page is unavailable.",
+    "deleted_confirmed": false,
+    "username_change_confirmed": false,
+    "saved_reel_urls": 0,
+    "network_verification_performed": false
+  }
+}

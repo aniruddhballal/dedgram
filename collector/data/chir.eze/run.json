@@ -1,13 +1,13 @@
 {
   "started_at": "2026-11-13T02:24:50.329Z",
-  "updated_at": "2026-11-13T02:24:55.000Z",
-  "status": "blocked",
-  "phase": "profile",
+  "updated_at": "2026-11-13T02:30:00.566Z",
+  "status": "excluded",
+  "phase": "done",
   "scope": [
     "profile"
   ],
   "current_url": null,
-  "error": "Instagram reports this page is unavailable.",
+  "error": null,
   "progress": {
     "task": "profile",
     "label": "Profile details",
@@ -17,7 +17,23 @@
     "percent": 0,
     "remaining": 1,
     "current_item": null,
-    "detail": "Blocked: Instagram reports this page is unavailable.",
-    "updated_at": "2026-11-13T02:24:55.000Z"
+    "detail": "Permanently excluded: unavailable; deleted or renamed, unable to distinguish.",
+    "updated_at": "2026-11-13T02:30:00.566Z"
+  },
+  "account_status": "deleted",
+  "account_status_observed_at": "2026-11-13T02:24:55.000Z",
+  "excluded_from_analysis": true,
+  "resolution_note": "Permanently excluded at the user's request on 13 November 2026. Instagram reported this profile unavailable during initial collection. Account deletion and a username change cannot be distinguished because no reel URLs or profile details were captured. No confirmed deletion is asserted. Preserve the failed collection evidence; do not collect, retry, review, or analyze this account.",
+  "exclusion": {
+    "permanent": true,
+    "reason": "unavailable_deleted_or_renamed",
+    "source": "user_instruction",
+    "recorded_at": "2026-11-13T02:30:00.566Z",
+    "first_unavailable_at": "2026-11-13T02:24:55.000Z",
+    "previous_error": "Instagram reports this page is unavailable.",
+    "deleted_confirmed": false,
+    "username_change_confirmed": false,
+    "saved_reel_urls": 0,
+    "network_verification_performed": false
   }
 }
