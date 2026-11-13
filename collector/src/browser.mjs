@@ -6,6 +6,10 @@ import { engagementFromDocument } from './reel-engagement.mjs';
 
 const pause = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
+export function isRateLimitText(text) {
+  return /\b(?:HTTP(?:\s+error)?|error(?:\s+code)?|status(?:\s+code)?)\s*[:=-]?\s*429\b|\b429\s*[:=-]?\s*too many requests\b|\btoo many requests\b|\brate[ -]?limit(?:ed|ing)?\b/i.test(String(text || ''));
+}
+
 export function installRateLimitHandling(context) {
   context.on('response', (response) => {
     if (context.preserveReelGridOnRateLimit) return;
@@ -49,7 +53,7 @@ export async function launch(root, { headless = false } = {}) {
 
 function blocked(url, text) {
   if (/\/accounts\/login|\/challenge\//.test(new URL(url).pathname)) return 'Instagram requires login or a security checkpoint.';
-  if (/\b429\b|too many requests|rate limit/i.test(text)) return 'Instagram returned HTTP 429 (rate limit).';
+  if (isRateLimitText(text)) return 'Instagram returned HTTP 429 (rate limit).';
   if (/please wait a few minutes|try again later|challenge_required|checkpoint_required/i.test(text)) return 'Instagram showed a temporary limit or checkpoint.';
   if (/sorry, this page isn't available|page may have been removed/i.test(text)) return 'Instagram reports this page is unavailable.';
   return '';

@@ -2,7 +2,12 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { EventEmitter } from 'node:events';
 import { chromium } from 'playwright';
-import { discover, installRateLimitHandling } from '../src/browser.mjs';
+import { discover, installRateLimitHandling, isRateLimitText } from '../src/browser.mjs';
+
+test('reel view counts containing 429 are not rate-limit messages', () => {
+  for (const text of ['429', '5,429', '429K', '5,429 views', 'Follow\nMessage\n10.8K\n5,429\n3,395']) assert.equal(isRateLimitText(text), false, text);
+  for (const text of ['HTTP 429', 'HTTP error 429', 'Error 429', 'Status code: 429', '429 Too Many Requests', 'Too many requests', 'Rate limited']) assert.equal(isRateLimitText(text), true, text);
+});
 
 const limitedResponse = (retryAfter = null) => ({
   status: () => 429,
