@@ -537,6 +537,37 @@
         "saved_reel_urls": 0,
         "network_verification_performed": false
       }
+    },
+    "dinosaur.24252627": {
+      "username": "dinosaur.24252627",
+      "status": "Deleted or username changed",
+      "observed_at": "2026-11-13T16:47:48.154Z",
+      "last_fetched_at": null,
+      "profile_text": null,
+      "bio": null,
+      "country": null,
+      "date_joined": null,
+      "posts_count": null,
+      "deletion_date_range": null,
+      "age_restriction": null,
+      "minimum_age": null,
+      "false_identification": null,
+      "resolution_note": "Permanently excluded at the user's request on 13 November 2026. Instagram reported this profile unavailable during initial collection. Account deletion and a username change cannot be distinguished because no reel URLs or profile details were captured. No confirmed deletion is asserted. Preserve the failed collection evidence; do not collect, retry, review, or analyze this account.",
+      "saved_data_available": false,
+      "deletion_assessment": null,
+      "reason": "Permanently excluded at the user's request on 13 November 2026. Instagram reported this profile unavailable during initial collection. Account deletion and a username change cannot be distinguished because no reel URLs or profile details were captured. No confirmed deletion is asserted. Preserve the failed collection evidence; do not collect, retry, review, or analyze this account.",
+      "exclusion": {
+        "permanent": true,
+        "reason": "unavailable_deleted_or_renamed",
+        "source": "user_instruction",
+        "recorded_at": "2026-11-13T16:49:19.373Z",
+        "first_unavailable_at": "2026-11-13T16:47:48.154Z",
+        "previous_error": "Instagram reports this page is unavailable.",
+        "deleted_confirmed": false,
+        "username_change_confirmed": false,
+        "saved_reel_urls": 0,
+        "network_verification_performed": false
+      }
     }
   }
 }
