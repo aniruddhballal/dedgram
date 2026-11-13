@@ -1,0 +1,104 @@
+{
+  "username": "emilily_ss",
+  "url": "https://www.instagram.com/emilily_ss/",
+  "fetched_at": "2026-11-13T02:28:23.673Z",
+  "display_name": null,
+  "bio": "For DMs: @gianna.4spm\n不思議な出来事が次々と起こる帝都で、壮絶な戦いが今、始まるーー！\nこれは、妖怪と人々が織りなす和風ファンタジーアニメの世界。\n奇妙な物語と迫力ある戦いをお楽しみください！\nにて「物の怪の怪奇譚」放送中！\n劇場版総集編、デジタル配信・Blu-ray＆DVD",
+  "posts_count": {
+    "value": 134,
+    "raw": "134",
+    "approximate": false
+  },
+  "posts_count_observed_at": "2026-11-13T02:28:23.673Z",
+  "followers_count": {
+    "value": 3552,
+    "raw": "3,552",
+    "approximate": false,
+    "source": "header_title"
+  },
+  "following_count": {
+    "value": 12,
+    "raw": "12",
+    "approximate": false,
+    "source": "header_text"
+  },
+  "count_evidence": {
+    "followers": {
+      "header": {
+        "value": 3552,
+        "raw": "3,552",
+        "approximate": false
+      },
+      "exact_title": {
+        "value": 3552,
+        "raw": "3,552",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 1190,
+        "raw": "1,190",
+        "approximate": false
+      }
+    },
+    "following": {
+      "header": {
+        "value": 12,
+        "raw": "12",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 13,
+        "raw": "13",
+        "approximate": false
+      },
+      "conflict": true
+    },
+    "posts": {
+      "header": {
+        "value": 134,
+        "raw": "134",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 134,
+        "raw": "134",
+        "approximate": false
+      }
+    }
+  },
+  "category": null,
+  "ai_generated_profile": true,
+  "profile_picture_url": "https://instagram.fixe1-3.fna.fbcdn.net/v/t51.82787-19/902825829_17923300650242324_1446477624418304636_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=1&ig_cache_key=GGUH0DUU0XWgJa0-AHwCAVO86xIUbmNDAQAB1501500j-ccb7-5&ccb=7-5&_nc_sid=669407&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy42MjkuQzMifQ%3D%3D&_nc_ohc=xA9uL8OgF3kQ7kNvwFQ7VQn&_nc_oc=Adrc2jon82V9JzuvhKnKIZp2OZcqV2X27lURoT6uLxddNGK_bfG9vEulUfZbrMdkQZHx7JIFcWoJ0sClELHUX93B&_nc_zt=24&_nc_ht=instagram.fixe1-3.fna&_nc_gid=VS2MIlFpZ5Tuk89gwfv8xw&_nc_ss=7f6a8&oh=00_AQQ4qoXH2oKpzq3xlQKPquK6-3M-yuktWDjn6nEFetW5Sw&oe=6AFC438C",
+  "date_joined": "November 2026",
+  "account_based_in": "India",
+  "former_usernames_count": null,
+  "raw": {
+    "header_text": "emilily_ss\n134 posts\n3,552 followers\n12 following\nAI-generated profile\nFor DMs: @gianna.4spm\n不思議な出来事が次々と起こる帝都で、壮絶な戦いが今、始まるーー！\nこれは、妖怪と人々が織りなす和風ファンタジーアニメの世界。\n奇妙な物語と迫力ある戦いをお楽しみください！... \nmore\nFollow",
+    "about_text": "About this account\nemilily_ss\n • AI-generated profile\nTo help keep our community authentic, we’re showing information about profiles on Instagram. See why this information is important.\nDate joined\nNovember 2026\nAccount based in\nIndia\nClose",
+    "description": "1,190 Followers, 13 Following, 134 Posts - @emilily_ss on Instagram: \"For DMs: @gianna.4spm\n不思議な出来事が次々と起こる帝都で、壮絶な戦いが今、始まるーー！\nこれは、妖怪と人々が織りなす和風ファンタジーアニメの世界。\n奇妙な物語と迫力ある戦いをお楽しみください！\nにて「物の怪の怪奇譚」放送中！\n劇場版総集編、デジタル配信・Blu-ray＆DVD\"",
+    "stat_evidence": {
+      "posts": {
+        "label": "",
+        "exact_title": ""
+      },
+      "followers": {
+        "label": "3,552 followers",
+        "exact_title": "3,552"
+      },
+      "following": {
+        "label": "12 following",
+        "exact_title": ""
+      }
+    }
+  },
+  "issues": [],
+  "current_username": "emilily_ss",
+  "username_history": [
+    {
+      "username": "emilily_ss",
+      "role": "current username",
+      "first_seen_at": "2026-11-13T02:28:23.667Z"
+    }
+  ],
+  "username_change_observed_at": null
+}

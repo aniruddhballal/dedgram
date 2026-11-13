@@ -1,0 +1,108 @@
+{
+  "username": "robloxmavix",
+  "url": "https://www.instagram.com/robloxmavix/",
+  "fetched_at": "2026-11-13T02:26:56.196Z",
+  "display_name": "YO! ROBLOX",
+  "bio": "​#TVアニメ「O grilo」\n待望の最新エピソードがついに公開!! ⚡\n森の仲間たちが繰り広げる楽しい物語を公開！\nさらに、かわいい動物たちのやり取り&予想外のハプニングに加え、\n誰も予想できなかった最高に楽しい「一言」まで飛び出しました!!\n♦今回の注目ポイント！",
+  "posts_count": {
+    "value": 20,
+    "raw": "20",
+    "approximate": false
+  },
+  "posts_count_observed_at": "2026-11-13T02:26:56.196Z",
+  "followers_count": {
+    "value": 479,
+    "raw": "479",
+    "approximate": false,
+    "source": "header_title"
+  },
+  "following_count": {
+    "value": 1,
+    "raw": "1",
+    "approximate": false,
+    "source": "header_text"
+  },
+  "count_evidence": {
+    "followers": {
+      "header": {
+        "value": 479,
+        "raw": "479",
+        "approximate": false
+      },
+      "exact_title": {
+        "value": 479,
+        "raw": "479",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 0,
+        "raw": "0",
+        "approximate": false
+      }
+    },
+    "following": {
+      "header": {
+        "value": 1,
+        "raw": "1",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 1,
+        "raw": "1",
+        "approximate": false
+      },
+      "conflict": false
+    },
+    "posts": {
+      "header": {
+        "value": 20,
+        "raw": "20",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 20,
+        "raw": "20",
+        "approximate": false
+      }
+    }
+  },
+  "category": null,
+  "ai_generated_profile": false,
+  "profile_picture_url": "https://instagram.fixe1-3.fna.fbcdn.net/v/t51.82787-19/903770176_18100409906555771_4928753462792401425_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=1&ig_cache_key=GEBw3jV768QWOk5AABGyNycpc2ZEbmNDAQAB1501500j-ccb7-5&ccb=7-5&_nc_sid=669407&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=y9eqFoU9uWAQ7kNvwEtGMgh&_nc_oc=AdrkwWtpZ-QeDellGbzHxZLFS8MQ0K66xAl6g67hDf1Y-rqtPbXY9nYxx_V3-awMON-nS8-339X5hXI7AiqkqTph&_nc_zt=24&_nc_ht=instagram.fixe1-3.fna&_nc_gid=8AsTEb0gEk7SjX5rxUZvww&_nc_ss=7f6a8&oh=00_AQS05lhjGEEbQWRGHyyz3YhWAkRaIowSa_fN7ZJKMPOXlw&oe=6AFC3483",
+  "date_joined": "November 2026",
+  "account_based_in": null,
+  "former_usernames_count": {
+    "value": 1,
+    "raw": "1",
+    "approximate": false
+  },
+  "raw": {
+    "header_text": "robloxmavix\nYO! ROBLOX\n20 posts\n479 followers\n1 following\n​#TVアニメ「O grilo」\n待望の最新エピソードがついに公開!! ⚡\n森の仲間たちが繰り広げる楽しい物語を公開！\nさらに、かわいい動物たちのやり取り&予想外のハプニングに加え、... \nmore\nFollow\nMessage",
+    "about_text": "About this account\nrobloxmavix\nTo help keep our community authentic, we’re showing information about profiles on Instagram. See why this information is important.\nDate joined\nNovember 2026\nFormer usernames\n1\nClose",
+    "description": "0 Followers, 1 Following, 20 Posts - YO! ROBLOX (@robloxmavix) on Instagram: \"​#TVアニメ「O grilo」\n待望の最新エピソードがついに公開!! ⚡\n森の仲間たちが繰り広げる楽しい物語を公開！\nさらに、かわいい動物たちのやり取り&予想外のハプニングに加え、\n誰も予想できなかった最高に楽しい「一言」まで飛び出しました!!\n♦今回の注目ポイント！\"",
+    "stat_evidence": {
+      "posts": {
+        "label": "",
+        "exact_title": ""
+      },
+      "followers": {
+        "label": "479 followers",
+        "exact_title": "479"
+      },
+      "following": {
+        "label": "1 following",
+        "exact_title": ""
+      }
+    }
+  },
+  "issues": [],
+  "current_username": "robloxmavix",
+  "username_history": [
+    {
+      "username": "robloxmavix",
+      "role": "current username",
+      "first_seen_at": "2026-11-13T02:26:56.189Z"
+    }
+  ],
+  "username_change_observed_at": null
+}

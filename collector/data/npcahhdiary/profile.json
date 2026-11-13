@@ -1,0 +1,104 @@
+{
+  "username": "npcahhdiary",
+  "url": "https://www.instagram.com/npcahhdiary/",
+  "fetched_at": "2026-11-13T02:25:28.513Z",
+  "display_name": null,
+  "bio": "⚔️闇の軍勢に立ち向かう新たな冒険が始まる! 『星詠みの戦士」公式Instagramへようこそ✨TVアニメ 新シーズン放送中! 最新PV&限定グッズ情報をお届け 中🎬",
+  "posts_count": {
+    "value": 44,
+    "raw": "44",
+    "approximate": false
+  },
+  "posts_count_observed_at": "2026-11-13T02:25:28.513Z",
+  "followers_count": {
+    "value": 515,
+    "raw": "515",
+    "approximate": false,
+    "source": "header_title"
+  },
+  "following_count": {
+    "value": 3,
+    "raw": "3",
+    "approximate": false,
+    "source": "header_text"
+  },
+  "count_evidence": {
+    "followers": {
+      "header": {
+        "value": 515,
+        "raw": "515",
+        "approximate": false
+      },
+      "exact_title": {
+        "value": 515,
+        "raw": "515",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 424,
+        "raw": "424",
+        "approximate": false
+      }
+    },
+    "following": {
+      "header": {
+        "value": 3,
+        "raw": "3",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 3,
+        "raw": "3",
+        "approximate": false
+      },
+      "conflict": false
+    },
+    "posts": {
+      "header": {
+        "value": 44,
+        "raw": "44",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 44,
+        "raw": "44",
+        "approximate": false
+      }
+    }
+  },
+  "category": null,
+  "ai_generated_profile": false,
+  "profile_picture_url": "https://instagram.fixe1-3.fna.fbcdn.net/v/t51.89012-19/573323465_1219825463302212_7278921664109726296_n.png?stp=dst-jpg_tt6&_nc_cat=1&ig_cache_key=YW5vbnltb3VzX3Byb2ZpbGVfcGlj.3-ccb7-5&ccb=7-5&_nc_sid=669407&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xNTAuQzMifQ%3D%3D&_nc_ohc=GWCwwzMErI4Q7kNvwFTbq7d&_nc_oc=AdqCDluLv__zaawGkVQRx6lYx68qOUCVlVawUNV4SDG4O1GIP6XcivYQWO1fyu4_jN0cRAysaTzB532xBLLeA2MB&_nc_zt=24&_nc_ht=instagram.fixe1-3.fna&_nc_gid=36KEMPlrxk-IUp10pWEh-Q&_nc_ss=7f6a8&oh=00_AQR4ltJlHHvkpUXgWy3F_O8vnyGo2oYm_mlJqaxACWh8FQ&oe=6AFC5B99",
+  "date_joined": "November 2026",
+  "account_based_in": "India",
+  "former_usernames_count": null,
+  "raw": {
+    "header_text": "npcahhdiary\n44 posts\n515 followers\n3 following\n⚔️闇の軍勢に立ち向かう新たな冒険が始まる! 『星詠みの戦士」公式Instagramへようこそ✨TVアニメ 新シーズン放送中! 最新PV&限定グッズ情報をお届け 中🎬\nFollow\nMessage",
+    "about_text": "About this account\nnpcahhdiary\nTo help keep our community authentic, we’re showing information about profiles on Instagram. See why this information is important.\nDate joined\nNovember 2026\nAccount based in\nIndia\nClose",
+    "description": "424 Followers, 3 Following, 44 Posts - @npcahhdiary on Instagram: \"⚔️闇の軍勢に立ち向かう新たな冒険が始まる! 『星詠みの戦士」公式Instagramへようこそ✨TVアニメ 新シーズン放送中! 最新PV&限定グッズ情報をお届け 中🎬\"",
+    "stat_evidence": {
+      "posts": {
+        "label": "",
+        "exact_title": ""
+      },
+      "followers": {
+        "label": "515 followers",
+        "exact_title": "515"
+      },
+      "following": {
+        "label": "3 following",
+        "exact_title": ""
+      }
+    }
+  },
+  "issues": [],
+  "current_username": "npcahhdiary",
+  "username_history": [
+    {
+      "username": "npcahhdiary",
+      "role": "current username",
+      "first_seen_at": "2026-11-13T02:25:28.506Z"
+    }
+  ],
+  "username_change_observed_at": null
+}

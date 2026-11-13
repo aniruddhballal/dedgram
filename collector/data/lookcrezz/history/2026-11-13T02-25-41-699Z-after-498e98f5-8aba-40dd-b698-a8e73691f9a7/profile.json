@@ -1,0 +1,108 @@
+{
+  "username": "lookcrezz",
+  "url": "https://www.instagram.com/lookcrezz/",
+  "fetched_at": "2026-11-13T02:25:41.679Z",
+  "display_name": "🩻",
+  "bio": "不思議な出来事が次々と起こる帝都で、壮絶な戦いが今、始まるーー！\nこれは、妖怪と人々が織りなす和風ファンタジーアニメの世界。\n奇妙な物語と迫力ある戦いをお楽しみください！\nにて「物の怪の怪奇譚」放送中！\n劇場版総集編、デジタル配信・Blu-ray＆DVDも好評発売中。",
+  "posts_count": {
+    "value": 68,
+    "raw": "68",
+    "approximate": false
+  },
+  "posts_count_observed_at": "2026-11-13T02:25:41.679Z",
+  "followers_count": {
+    "value": 63843,
+    "raw": "63,843",
+    "approximate": false,
+    "source": "header_title"
+  },
+  "following_count": {
+    "value": 7,
+    "raw": "7",
+    "approximate": false,
+    "source": "header_text"
+  },
+  "count_evidence": {
+    "followers": {
+      "header": {
+        "value": 63800,
+        "raw": "63.8K",
+        "approximate": true
+      },
+      "exact_title": {
+        "value": 63843,
+        "raw": "63,843",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 47000,
+        "raw": "47K",
+        "approximate": true
+      }
+    },
+    "following": {
+      "header": {
+        "value": 7,
+        "raw": "7",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 7,
+        "raw": "7",
+        "approximate": false
+      },
+      "conflict": false
+    },
+    "posts": {
+      "header": {
+        "value": 68,
+        "raw": "68",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 68,
+        "raw": "68",
+        "approximate": false
+      }
+    }
+  },
+  "category": null,
+  "ai_generated_profile": false,
+  "profile_picture_url": "https://instagram.fixe1-3.fna.fbcdn.net/v/t51.82787-19/879813462_18154252315550280_7159056333150104505_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=1&ig_cache_key=GFbjcDRIYm5AMn9AALkrbADOE1pjbmNDAQAB1501500j-ccb7-5&ccb=7-5&_nc_sid=669407&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=aNuJyMeKy-kQ7kNvwFNegaf&_nc_oc=AdpDyRxIHWsJEheoXtX3xJkswRBYMru1qiT8KDtdds_XABPCPYJT-behWaES-2bdI8tkmvDbS-YL3UomePovzwEz&_nc_zt=24&_nc_ht=instagram.fixe1-3.fna&_nc_gid=TRNySb2KR9OPJ1vQI0hcEw&_nc_ss=7f6a8&oh=00_AQTiDoolF0AyV7mYHh4CEO79Fq17EMw5CTzUqRpj5pVheg&oe=6AFC582A",
+  "date_joined": "November 2026",
+  "account_based_in": "Uzbekistan",
+  "former_usernames_count": {
+    "value": 1,
+    "raw": "1",
+    "approximate": false
+  },
+  "raw": {
+    "header_text": "lookcrezz\n🩻\n68 posts\n63.8K followers\n7 following\n不思議な出来事が次々と起こる帝都で、壮絶な戦いが今、始まるーー！\nこれは、妖怪と人々が織りなす和風ファンタジーアニメの世界。\n奇妙な物語と迫力ある戦いをお楽しみください！\nにて「物の怪の怪奇譚」放送中！... \nmore\nFollow\n📈\n📈",
+    "about_text": "About this account\nlookcrezz\nTo help keep our community authentic, we’re showing information about profiles on Instagram. See why this information is important.\nDate joined\nNovember 2026\nAccount based in\nUzbekistan\nFormer usernames\n1\nClose",
+    "description": "47K Followers, 7 Following, 68 Posts - 🩻 (@lookcrezz) on Instagram: \"不思議な出来事が次々と起こる帝都で、壮絶な戦いが今、始まるーー！\nこれは、妖怪と人々が織りなす和風ファンタジーアニメの世界。\n奇妙な物語と迫力ある戦いをお楽しみください！\nにて「物の怪の怪奇譚」放送中！\n劇場版総集編、デジタル配信・Blu-ray＆DVDも好評発売中。\"",
+    "stat_evidence": {
+      "posts": {
+        "label": "",
+        "exact_title": ""
+      },
+      "followers": {
+        "label": "63.8K followers",
+        "exact_title": "63,843"
+      },
+      "following": {
+        "label": "7 following",
+        "exact_title": ""
+      }
+    }
+  },
+  "issues": [],
+  "current_username": "lookcrezz",
+  "username_history": [
+    {
+      "username": "lookcrezz",
+      "role": "current username",
+      "first_seen_at": "2026-11-13T02:25:41.672Z"
+    }
+  ],
+  "username_change_observed_at": null
+}

@@ -1,0 +1,104 @@
+{
+  "username": "cora.deep_125",
+  "url": "https://www.instagram.com/cora.deep_125/",
+  "fetched_at": "2026-11-13T02:26:49.535Z",
+  "display_name": null,
+  "bio": "#TVアニメスパイダーマン」\n最新情報がついに解禁されたよ!!🚀🔥\n待望のキービジュアルが公開!新キャラや新しい能カはも\nちろん、ストーリーの鍵",
+  "posts_count": {
+    "value": 19,
+    "raw": "19",
+    "approximate": false
+  },
+  "posts_count_observed_at": "2026-11-13T02:26:49.535Z",
+  "followers_count": {
+    "value": 630,
+    "raw": "630",
+    "approximate": false,
+    "source": "header_title"
+  },
+  "following_count": {
+    "value": 0,
+    "raw": "0",
+    "approximate": false,
+    "source": "header_text"
+  },
+  "count_evidence": {
+    "followers": {
+      "header": {
+        "value": 630,
+        "raw": "630",
+        "approximate": false
+      },
+      "exact_title": {
+        "value": 630,
+        "raw": "630",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 550,
+        "raw": "550",
+        "approximate": false
+      }
+    },
+    "following": {
+      "header": {
+        "value": 0,
+        "raw": "0",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 0,
+        "raw": "0",
+        "approximate": false
+      },
+      "conflict": false
+    },
+    "posts": {
+      "header": {
+        "value": 19,
+        "raw": "19",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 19,
+        "raw": "19",
+        "approximate": false
+      }
+    }
+  },
+  "category": null,
+  "ai_generated_profile": false,
+  "profile_picture_url": "https://instagram.fixe1-2.fna.fbcdn.net/v/t51.82787-19/882487921_17927934243220971_4951130818134181031_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ig_cache_key=GHGymTTrrR94XLE-AKeEYDM-87VEbmNDAQAB1501500j-ccb7-5&ccb=7-5&_nc_sid=669407&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy42ODIuQzMifQ%3D%3D&_nc_ohc=5fbvjYU13j4Q7kNvwGjTew7&_nc_oc=AdpBER_CXF3YxdqA6GmDZz-RdGtFW5KwS8g-sMvR6sh6bqJZabh7B2uP0qS8AJnT_5mlk47k6lNfHMEu0UKvYdle&_nc_zt=24&_nc_ht=instagram.fixe1-2.fna&_nc_gid=4vS1sw8Oro1y7WWm31fmGg&_nc_ss=7f6a8&oh=00_AQQmrZ0GydH6JjM5xSkKBpTduRNB8shX_TF4JmEMKYXpgA&oe=6AFC5D0A",
+  "date_joined": "November 2026",
+  "account_based_in": "Germany",
+  "former_usernames_count": null,
+  "raw": {
+    "header_text": "cora.deep_125\n19 posts\n630 followers\n0 following\n#TVアニメスパイダーマン」\n最新情報がついに解禁されたよ!!🚀🔥\n待望のキービジュアルが公開!新キャラや新しい能カはも\nちろん、ストーリーの鍵\nFollow\nMessage\nTelegram\nTelegram",
+    "about_text": "About this account\ncora.deep_125\nTo help keep our community authentic, we’re showing information about profiles on Instagram. See why this information is important.\nDate joined\nNovember 2026\nAccount based in\nGermany\nClose",
+    "description": "550 Followers, 0 Following, 19 Posts - @cora.deep_125 on Instagram: \"#TVアニメスパイダーマン」\n最新情報がついに解禁されたよ!!🚀🔥\n待望のキービジュアルが公開!新キャラや新しい能カはも\nちろん、ストーリーの鍵\"",
+    "stat_evidence": {
+      "posts": {
+        "label": "",
+        "exact_title": ""
+      },
+      "followers": {
+        "label": "630 followers",
+        "exact_title": "630"
+      },
+      "following": {
+        "label": "0 following",
+        "exact_title": ""
+      }
+    }
+  },
+  "issues": [],
+  "current_username": "cora.deep_125",
+  "username_history": [
+    {
+      "username": "cora.deep_125",
+      "role": "current username",
+      "first_seen_at": "2026-11-13T02:26:49.524Z"
+    }
+  ],
+  "username_change_observed_at": null
+}

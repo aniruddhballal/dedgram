@@ -1,0 +1,108 @@
+{
+  "username": "daskx.psl",
+  "url": "https://www.instagram.com/daskx.psl/",
+  "fetched_at": "2026-11-13T02:26:29.067Z",
+  "display_name": "SAIRIK",
+  "bio": "あらゆる追いかけっこを繰り広げる! 「トムとジェリー」公式Instagramです! Cartoon Networkにて『まいにちトムとジェリー』放送中! 『映画トムとジェリー』 デジタル配信中/ブルーレイ&DVD発売中TEC (s23)\nyoutube.com/@sairiklangneh?si=0xx7il0vVe4hbN8K",
+  "posts_count": {
+    "value": 508,
+    "raw": "508",
+    "approximate": false
+  },
+  "posts_count_observed_at": "2026-11-13T02:26:29.067Z",
+  "followers_count": {
+    "value": 17487,
+    "raw": "17,487",
+    "approximate": false,
+    "source": "header_title"
+  },
+  "following_count": {
+    "value": 34,
+    "raw": "34",
+    "approximate": false,
+    "source": "header_text"
+  },
+  "count_evidence": {
+    "followers": {
+      "header": {
+        "value": 17400,
+        "raw": "17.4K",
+        "approximate": true
+      },
+      "exact_title": {
+        "value": 17487,
+        "raw": "17,487",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 17000,
+        "raw": "17K",
+        "approximate": true
+      }
+    },
+    "following": {
+      "header": {
+        "value": 34,
+        "raw": "34",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 44,
+        "raw": "44",
+        "approximate": false
+      },
+      "conflict": true
+    },
+    "posts": {
+      "header": {
+        "value": 508,
+        "raw": "508",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 508,
+        "raw": "508",
+        "approximate": false
+      }
+    }
+  },
+  "category": "Reel creator",
+  "ai_generated_profile": false,
+  "profile_picture_url": "https://instagram.fixe1-3.fna.fbcdn.net/v/t51.82787-19/894243794_18120355805078188_4806662992740768030_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=1&ig_cache_key=GNITTTWsIvcaXmBAAB5ZVG2GsrRCbmNDAQAB1501500j-ccb7-5&ccb=7-5&_nc_sid=669407&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=N_4Jh2N5UusQ7kNvwEmdRet&_nc_oc=AdqFg1zhjjR03VRGl6btH8kNfplosLwsB06Ny_EsOZKkI5bTMOQ3OhIbOloxaMZeJiLfiGkIgXk2px-eAmhaLQVN&_nc_zt=24&_nc_ht=instagram.fixe1-3.fna&_nc_gid=PPVfj44kTHNw2DCfL4a7Pg&_nc_ss=7f6a8&oh=00_AQQCwA9QA1hMcVnjNotAa7ZGtpKgyBLg5sCal0znDnuv5w&oe=6AFC63AB",
+  "date_joined": "April 2026",
+  "account_based_in": "India",
+  "former_usernames_count": {
+    "value": 6,
+    "raw": "6",
+    "approximate": false
+  },
+  "raw": {
+    "header_text": "daskx.psl\nSAIRIK\n508 posts\n17.4K followers\n34 following\nReel creator\nあらゆる追いかけっこを繰り広げる! 「トムとジェリー」公式Instagramです! Cartoon Networkにて『まいにちトムとジェリー』放送中! 『映画トムとジェリー』 デジタル配信中/ブルーレイ&DVD発売中TEC (s23)\nyoutube.com/@sairiklangneh?si=0xx7il0vVe4hbN8K\nFollow\nMessage\nGrowth\nTIKTOK\nYT CHANNEL\nDMs.",
+    "about_text": "About this account\ndaskx.psl\nTo help keep our community authentic, we’re showing information about profiles on Instagram. See why this information is important.\nDate joined\nApril 2026\nAccount based in\nIndia\nFormer usernames\n6\nClose",
+    "description": "17K Followers, 44 Following, 508 Posts - SAIRIK (@daskx.psl) on Instagram: \"あらゆる追いかけっこを繰り広げる! 「トムとジェリー」公式Instagramです! Cartoon Networkにて『まいにちトムとジェリー』放送中! 『映画トムとジェリー』 デジタル配信中/ブルーレイ&DVD発売中TEC (s23)\"",
+    "stat_evidence": {
+      "posts": {
+        "label": "",
+        "exact_title": ""
+      },
+      "followers": {
+        "label": "17.4K followers",
+        "exact_title": "17,487"
+      },
+      "following": {
+        "label": "34 following",
+        "exact_title": ""
+      }
+    }
+  },
+  "issues": [],
+  "current_username": "daskx.psl",
+  "username_history": [
+    {
+      "username": "daskx.psl",
+      "role": "current username",
+      "first_seen_at": "2026-11-13T02:26:29.058Z"
+    }
+  ],
+  "username_change_observed_at": null
+}

@@ -1,0 +1,104 @@
+{
+  "username": "kairooo605",
+  "url": "https://www.instagram.com/kairooo605/",
+  "fetched_at": "2026-11-13T02:27:10.079Z",
+  "display_name": "kairooo",
+  "bio": "公式) アニメ「ミニオンズ」 各種プラットフォームにて絶賛配信中! 「ミニオンズ フィーバー」 ブルーレイ&DVD好評発売中!\n(GNXF-2804)\n無断転載を固く禁じます。",
+  "posts_count": {
+    "value": 466,
+    "raw": "466",
+    "approximate": false
+  },
+  "posts_count_observed_at": "2026-11-13T02:27:10.079Z",
+  "followers_count": {
+    "value": 5172,
+    "raw": "5,172",
+    "approximate": false,
+    "source": "header_title"
+  },
+  "following_count": {
+    "value": 1,
+    "raw": "1",
+    "approximate": false,
+    "source": "header_text"
+  },
+  "count_evidence": {
+    "followers": {
+      "header": {
+        "value": 5172,
+        "raw": "5,172",
+        "approximate": false
+      },
+      "exact_title": {
+        "value": 5172,
+        "raw": "5,172",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 3877,
+        "raw": "3,877",
+        "approximate": false
+      }
+    },
+    "following": {
+      "header": {
+        "value": 1,
+        "raw": "1",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 1,
+        "raw": "1",
+        "approximate": false
+      },
+      "conflict": false
+    },
+    "posts": {
+      "header": {
+        "value": 466,
+        "raw": "466",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 466,
+        "raw": "466",
+        "approximate": false
+      }
+    }
+  },
+  "category": null,
+  "ai_generated_profile": false,
+  "profile_picture_url": "https://instagram.fixe1-3.fna.fbcdn.net/v/t51.82787-19/878539969_17961139707035444_8138067922285705111_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=1&ig_cache_key=GMF0XTQ0v-_3j88-AJc313GoOfBwbmNDAQAB1501500j-ccb7-5&ccb=7-5&_nc_sid=669407&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=w2cVlSOUGOkQ7kNvwEZRws_&_nc_oc=Adrj_tax76Dlg0RVnK3GpNvEf7cgNAQNRZy0wc8k21sPWqW-g98fthliaoRNMjwNri1Xkx0yTdxAOWxUyfYFw33l&_nc_zt=24&_nc_ht=instagram.fixe1-3.fna&_nc_gid=d0zsZGORO7sBE8QxJCDA3g&_nc_ss=7f6a8&oh=00_AQT4dWVU5e0EiWkOmQdGfYRjttqRo2b6St-5KUKRBSYoHA&oe=6AFC51ED",
+  "date_joined": "November 2026",
+  "account_based_in": "India",
+  "former_usernames_count": null,
+  "raw": {
+    "header_text": "kairooo605\nkairooo\n466 posts\n5,172 followers\n1 following\n公式) アニメ「ミニオンズ」 各種プラットフォームにて絶賛配信中! 「ミニオンズ フィーバー」 ブルーレイ&DVD好評発売中!\n(GNXF-2804)\n無断転載を固く禁じます。\nFollow\nMessage",
+    "about_text": "About this account\nkairooo605\nTo help keep our community authentic, we’re showing information about profiles on Instagram. See why this information is important.\nDate joined\nNovember 2026\nAccount based in\nIndia\nClose",
+    "description": "3,877 Followers, 1 Following, 466 Posts - kairooo (@kairooo605) on Instagram: \"公式) アニメ「ミニオンズ」 各種プラットフォームにて絶賛配信中! 「ミニオンズ フィーバー」 ブルーレイ&DVD好評発売中!\n(GNXF-2804)\n無断転載を固く禁じます。\"",
+    "stat_evidence": {
+      "posts": {
+        "label": "",
+        "exact_title": ""
+      },
+      "followers": {
+        "label": "5,172 followers",
+        "exact_title": "5,172"
+      },
+      "following": {
+        "label": "1 following",
+        "exact_title": ""
+      }
+    }
+  },
+  "issues": [],
+  "current_username": "kairooo605",
+  "username_history": [
+    {
+      "username": "kairooo605",
+      "role": "current username",
+      "first_seen_at": "2026-11-13T02:27:10.070Z"
+    }
+  ],
+  "username_change_observed_at": null
+}

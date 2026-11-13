@@ -1,0 +1,104 @@
+{
+  "username": "nkaze.kage",
+  "url": "https://www.instagram.com/nkaze.kage/",
+  "fetched_at": "2026-11-13T02:25:48.363Z",
+  "display_name": null,
+  "bio": "有村架純が自分自身と向き合い、得た気づき。俳優業を通じて「自分とは何なんだろう」と向き合ってきた彼女が、自分自身を知ることの大切さや、最新作『さとこはいつも』について語る。",
+  "posts_count": {
+    "value": 54,
+    "raw": "54",
+    "approximate": false
+  },
+  "posts_count_observed_at": "2026-11-13T02:25:48.363Z",
+  "followers_count": {
+    "value": 147,
+    "raw": "147",
+    "approximate": false,
+    "source": "header_title"
+  },
+  "following_count": {
+    "value": 0,
+    "raw": "0",
+    "approximate": false,
+    "source": "header_text"
+  },
+  "count_evidence": {
+    "followers": {
+      "header": {
+        "value": 147,
+        "raw": "147",
+        "approximate": false
+      },
+      "exact_title": {
+        "value": 147,
+        "raw": "147",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 0,
+        "raw": "0",
+        "approximate": false
+      }
+    },
+    "following": {
+      "header": {
+        "value": 0,
+        "raw": "0",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 0,
+        "raw": "0",
+        "approximate": false
+      },
+      "conflict": false
+    },
+    "posts": {
+      "header": {
+        "value": 54,
+        "raw": "54",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 54,
+        "raw": "54",
+        "approximate": false
+      }
+    }
+  },
+  "category": null,
+  "ai_generated_profile": false,
+  "profile_picture_url": "https://instagram.fixe1-3.fna.fbcdn.net/v/t51.82787-19/899990505_17990463323902323_3124626667988215310_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=1&ig_cache_key=GOnDpDVzEcQnO_o-AA5mJklm51wrbmNDAQAB1501500j-ccb7-5&ccb=7-5&_nc_sid=669407&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=KBR4pY2usAkQ7kNvwErS4oj&_nc_oc=AdriJPZwohTtDt5-T5P_TJwfL2b_mRYCzvETx_GoJSWzg3nBgOH0AwBejHPNNL3NKzu0XRrsBSC-fnZtzxVlRMJp&_nc_zt=24&_nc_ht=instagram.fixe1-3.fna&_nc_gid=IDtADzY761aelOIIxWUL2A&_nc_ss=7f6a8&oh=00_AQTYMwKCqgq4w8xorkLGzEQ1WjFPb7n6E2KD_577hbmiyQ&oe=6AFC3F9D",
+  "date_joined": "November 2026",
+  "account_based_in": null,
+  "former_usernames_count": null,
+  "raw": {
+    "header_text": "nkaze.kage\n54 posts\n147 followers\n0 following\n有村架純が自分自身と向き合い、得た気づき。俳優業を通じて「自分とは何なんだろう」と向き合ってきた彼女が、自分自身を知ることの大切さや、最新作『さとこはいつも』について語る。\nFollow",
+    "about_text": "About this account\nnkaze.kage\nTo help keep our community authentic, we’re showing information about profiles on Instagram. See why this information is important.\nDate joined\nNovember 2026\nClose",
+    "description": "0 Followers, 0 Following, 54 Posts - @nkaze.kage on Instagram: \"有村架純が自分自身と向き合い、得た気づき。俳優業を通じて「自分とは何なんだろう」と向き合ってきた彼女が、自分自身を知ることの大切さや、最新作『さとこはいつも』について語る。\"",
+    "stat_evidence": {
+      "posts": {
+        "label": "",
+        "exact_title": ""
+      },
+      "followers": {
+        "label": "147 followers",
+        "exact_title": "147"
+      },
+      "following": {
+        "label": "0 following",
+        "exact_title": ""
+      }
+    }
+  },
+  "issues": [],
+  "current_username": "nkaze.kage",
+  "username_history": [
+    {
+      "username": "nkaze.kage",
+      "role": "current username",
+      "first_seen_at": "2026-11-13T02:25:48.357Z"
+    }
+  ],
+  "username_change_observed_at": null
+}

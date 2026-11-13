@@ -1,0 +1,104 @@
+{
+  "username": "duck.1197157",
+  "url": "https://www.instagram.com/duck.1197157/",
+  "fetched_at": "2026-11-13T02:26:42.875Z",
+  "display_name": null,
+  "bio": "映画「マスク」のユニークな世界と驚きの冒険を存分に楽しもう! 愉快なシーンや忘れられない物語が満載。デジタル配信サービスでも視聴可能。 Blu-ray & DVDも好評発売中。\nt.me/+1eGXs33nB9JlNjky",
+  "posts_count": {
+    "value": 12,
+    "raw": "12",
+    "approximate": false
+  },
+  "posts_count_observed_at": "2026-11-13T02:26:42.875Z",
+  "followers_count": {
+    "value": 165,
+    "raw": "165",
+    "approximate": false,
+    "source": "header_title"
+  },
+  "following_count": {
+    "value": 1,
+    "raw": "1",
+    "approximate": false,
+    "source": "header_text"
+  },
+  "count_evidence": {
+    "followers": {
+      "header": {
+        "value": 165,
+        "raw": "165",
+        "approximate": false
+      },
+      "exact_title": {
+        "value": 165,
+        "raw": "165",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 0,
+        "raw": "0",
+        "approximate": false
+      }
+    },
+    "following": {
+      "header": {
+        "value": 1,
+        "raw": "1",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 1,
+        "raw": "1",
+        "approximate": false
+      },
+      "conflict": false
+    },
+    "posts": {
+      "header": {
+        "value": 12,
+        "raw": "12",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 12,
+        "raw": "12",
+        "approximate": false
+      }
+    }
+  },
+  "category": null,
+  "ai_generated_profile": false,
+  "profile_picture_url": "https://instagram.fixe1-2.fna.fbcdn.net/v/t51.82787-19/902308622_18097234520234512_5489184780106846798_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ig_cache_key=GA4jyDUQ2v7CVktAAE7Sv3x5gC1MbmNDAQAB1501500j-ccb7-5&ccb=7-5&_nc_sid=669407&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=qxhMsiE0fWUQ7kNvwE3LQvq&_nc_oc=AdoEMqUA2-8Xr7QWQMbkYHlaNaTQ67CiAXwfxRi-CR5JdJa6CE-NBpFtKvSBtjLyiGRTSpufJWCpJDOwQUJgk4DY&_nc_zt=24&_nc_ht=instagram.fixe1-2.fna&_nc_gid=E0q98BMZuQ3L2xHleG0jTw&_nc_ss=7f6a8&oh=00_AQRgxyFmH1xcTwqWMJit0Sa0tVzjntrF-tVFNnJiDQzwPA&oe=6AFC5E3D",
+  "date_joined": "November 2026",
+  "account_based_in": null,
+  "former_usernames_count": null,
+  "raw": {
+    "header_text": "duck.1197157\n12 posts\n165 followers\n1 following\n映画「マスク」のユニークな世界と驚きの冒険を存分に楽しもう! 愉快なシーンや忘れられない物語が満載。デジタル配信サービスでも視聴可能。 Blu-ray & DVDも好評発売中。\nt.me/+1eGXs33nB9JlNjky\nFollow\nMessage\nvideos download",
+    "about_text": "About this account\nduck.1197157\nTo help keep our community authentic, we’re showing information about profiles on Instagram. See why this information is important.\nDate joined\nNovember 2026\nClose",
+    "description": "0 Followers, 1 Following, 12 Posts - @duck.1197157 on Instagram: \"映画「マスク」のユニークな世界と驚きの冒険を存分に楽しもう! 愉快なシーンや忘れられない物語が満載。デジタル配信サービスでも視聴可能。 Blu-ray & DVDも好評発売中。\"",
+    "stat_evidence": {
+      "posts": {
+        "label": "",
+        "exact_title": ""
+      },
+      "followers": {
+        "label": "165 followers",
+        "exact_title": "165"
+      },
+      "following": {
+        "label": "1 following",
+        "exact_title": ""
+      }
+    }
+  },
+  "issues": [],
+  "current_username": "duck.1197157",
+  "username_history": [
+    {
+      "username": "duck.1197157",
+      "role": "current username",
+      "first_seen_at": "2026-11-13T02:26:42.869Z"
+    }
+  ],
+  "username_change_observed_at": null
+}

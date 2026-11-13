@@ -1,0 +1,104 @@
+{
+  "username": "frow.den",
+  "url": "https://www.instagram.com/frow.den/",
+  "fetched_at": "2026-11-13T02:28:03.007Z",
+  "display_name": null,
+  "bio": "⚔️闇の軍勢に立ち向かう新たな冒険が始まる! 『星詠みの戦士」公式Instagramへようこそ✨TVアニメ 新シーズン放送中! 最新PV&限定グッズ情報をお届け 中🎬",
+  "posts_count": {
+    "value": 25,
+    "raw": "25",
+    "approximate": false
+  },
+  "posts_count_observed_at": "2026-11-13T02:28:03.007Z",
+  "followers_count": {
+    "value": 549,
+    "raw": "549",
+    "approximate": false,
+    "source": "header_title"
+  },
+  "following_count": {
+    "value": 2,
+    "raw": "2",
+    "approximate": false,
+    "source": "header_text"
+  },
+  "count_evidence": {
+    "followers": {
+      "header": {
+        "value": 549,
+        "raw": "549",
+        "approximate": false
+      },
+      "exact_title": {
+        "value": 549,
+        "raw": "549",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 0,
+        "raw": "0",
+        "approximate": false
+      }
+    },
+    "following": {
+      "header": {
+        "value": 2,
+        "raw": "2",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 2,
+        "raw": "2",
+        "approximate": false
+      },
+      "conflict": false
+    },
+    "posts": {
+      "header": {
+        "value": 25,
+        "raw": "25",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 25,
+        "raw": "25",
+        "approximate": false
+      }
+    }
+  },
+  "category": null,
+  "ai_generated_profile": false,
+  "profile_picture_url": "https://instagram.fixe1-3.fna.fbcdn.net/v/t51.82787-19/898652787_17973646448962008_4595798119715243279_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=1&ig_cache_key=GHNakDXYqeir79o-AA8FCVEKjsc-bmNDAQAB1501500j-ccb7-5&ccb=7-5&_nc_sid=669407&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=-aiJOku1yPoQ7kNvwFKX7N7&_nc_oc=AdoeKPLkFJ2B4VbzCaf9QPdmXgp3oebpbF-LvRjQ551P1HT4BqmRWTWds23C-ce2n1t8I4MKerwrpMT0MnXZ8MVs&_nc_zt=24&_nc_ht=instagram.fixe1-3.fna&_nc_gid=lHIjvSc0HitdVUUz2lsk8w&_nc_ss=7f6a8&oh=00_AQR258ohoib-fDdkA6f9QFbNkyzz3E6bgIEh5aGOU2R22A&oe=6AFC46A4",
+  "date_joined": "November 2026",
+  "account_based_in": null,
+  "former_usernames_count": null,
+  "raw": {
+    "header_text": "frow.den\n25 posts\n549 followers\n2 following\n⚔️闇の軍勢に立ち向かう新たな冒険が始まる! 『星詠みの戦士」公式Instagramへようこそ✨TVアニメ 新シーズン放送中! 最新PV&限定グッズ情報をお届け 中🎬\nFollow",
+    "about_text": "About this account\nfrow.den\nTo help keep our community authentic, we’re showing information about profiles on Instagram. See why this information is important.\nDate joined\nNovember 2026\nClose",
+    "description": "0 Followers, 2 Following, 25 Posts - @frow.den on Instagram: \"⚔️闇の軍勢に立ち向かう新たな冒険が始まる! 『星詠みの戦士」公式Instagramへようこそ✨TVアニメ 新シーズン放送中! 最新PV&限定グッズ情報をお届け 中🎬\"",
+    "stat_evidence": {
+      "posts": {
+        "label": "",
+        "exact_title": ""
+      },
+      "followers": {
+        "label": "549 followers",
+        "exact_title": "549"
+      },
+      "following": {
+        "label": "2 following",
+        "exact_title": ""
+      }
+    }
+  },
+  "issues": [],
+  "current_username": "frow.den",
+  "username_history": [
+    {
+      "username": "frow.den",
+      "role": "current username",
+      "first_seen_at": "2026-11-13T02:28:03.000Z"
+    }
+  ],
+  "username_change_observed_at": null
+}
