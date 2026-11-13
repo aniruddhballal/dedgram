@@ -426,13 +426,21 @@ const reelAnalysisPendingCount = publishedSnapshotProfiles.filter((username) => 
   return (discovery.reel.items || []).length > 0 && !items.some((item) => item.kind === 'reel');
 }).length;
 const reelRecordProfileCount = publishedSnapshotProfiles.filter((username) => snapshotData.get(username).items.some((item) => item.kind === 'reel')).length;
+const profileDetailsOnlyCount = publishedSnapshotProfiles.filter((username) => {
+  const { discovery, items } = snapshotData.get(username);
+  return !zeroReelProfiles.has(username) && !(discovery.reel.items || []).length
+    && !items.some((item) => item.kind === 'reel');
+}).length;
 const profileStatusRows = [
+  { label: 'Reel discovery pending', count: profileDetailsOnlyCount, note: 'Profile details saved; reel count not verified', className: 'discovery' },
   { label: 'Reel analysis pending', count: reelAnalysisPendingCount, note: 'URLs saved; reel pages not analyzed', className: 'pending' },
   { label: 'Reel records collected', count: reelRecordProfileCount, note: 'Reel-level records exist', className: 'analyzed' },
   { label: 'Confirmed zero reels', count: zeroReelProfiles.size, note: 'Profile details saved; no reels posted', className: 'zero' },
   { label: 'Excluded after initial collection', count: excludedProfiles.length, note: 'Status records kept outside analysis', className: 'excluded' }
 ];
+if (overview.futureCandidates) profileStatusRows.push({ label: 'Not collected', count: overview.futureCandidates, note: 'Cataloged; profile details not collected', className: 'uncollected' });
 const profileStatusTotal = profileStatusRows.reduce((sum, row) => sum + row.count, 0);
+if (profileStatusTotal !== index.profile_keys.length) throw new Error(`Profile status breakdown covers ${profileStatusTotal} of ${index.profile_keys.length} catalog records.`);
 const profileStatusBar = profileStatusRows.map((row) => `<span class="profile-status-segment ${row.className}" style="width:${row.count / Math.max(profileStatusTotal, 1) * 100}%" title="${esc(`${row.label}: ${row.count}`)}"></span>`).join('');
 const profileStatusLegend = profileStatusRows.map((row) => `<div class="profile-status-key"><div><span class="profile-status-swatch ${row.className}" aria-hidden="true"></span><strong>${fmt(row.count)}</strong><span>${esc(row.label)}</span></div><small>${esc(row.note)}</small></div>`).join('');
 const profileStatusBreakdownHtml = `<section class="profile-status-breakdown" aria-labelledby="profile-status-heading"><div class="section-head"><div><span class="overline">PROFILE STATUS / ${fmt(profileStatusTotal)} RECORDS</span><h2 id="profile-status-heading">Where every profile stands.</h2><p>The complete catalog, separated by the deepest collection state currently saved.</p></div></div><div class="profile-status-bar" role="img" aria-label="${esc(profileStatusRows.map((row) => `${row.label}: ${row.count}`).join('; '))}">${profileStatusBar}</div><div class="profile-status-legend">${profileStatusLegend}</div></section>`;
