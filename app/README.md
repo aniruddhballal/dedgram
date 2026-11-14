@@ -36,7 +36,7 @@ dedgram is a native Android companion for collecting Instagram profile usernames
 1. Install the APK and open dedgram. Catalog viewing needs no capture permissions.
 2. Read the **Capture session** notice and tap **Open accessibility settings**. This authorizes one start; enable the service within two minutes.
 3. Enable **dedgram profile and reel capture**, then open Instagram within 60 seconds.
-4. Open an individual Instagram profile or reel. Expand a truncated reel caption before capturing.
+4. Open an individual Instagram profile or reel. Leave the reel in its normal viewing state; the reel control expands its caption automatically.
 5. Tap the alien profile control or the dedgram reel control.
 6. When finished, leave Instagram or use **Stop capture and turn access off** in dedgram. Verify the status is **OFF** before using Google Pay or another payment app. Starting another session requires returning to dedgram, opening accessibility settings from its session control, and enabling the service again. Direct enablement in Settings without this fresh start request is rejected.
 
@@ -50,7 +50,7 @@ Documents/dedgram/reels.json
 
 The repository sample format for reel records is [`reel_capture.json`](reel_capture.json).
 
-Reel collection uses the active reel UI and its accessible likes-count action, waits for **Likes and plays**, and records field-level errors when Instagram does not expose a value or semantic click. Expand captions before capture; dedgram does not automatically close panels or navigate Back. Close the panel yourself after capture.
+Reel collection reads the active reel, opens the caption through its accessible control, waits for a stable caption and publication footer, then dismisses that sheet through Instagram's own controls before opening **Likes and plays**. The capture stores the posting label verbatim (including relative ages and any displayed year), its UTC observation time, device timezone and locale; it does not invent an exact publication time. Metrics-sheet dismiss controls are preferred. The tested caption sheet requires one guarded Back action after its text and date match the capture; the reel identity is checked again before reading metrics. No coordinate gestures or background-window searches are used. Unknown selectors, unexposed metrics, and unsuccessful panel transitions remain explicit field errors. Owner-only likes are identified separately from extraction failures. A missing count is never assumed to be zero; an explicit empty comments message may establish zero comments.
 
 The service captures only when the active accessibility root belongs to Instagram. Profile capture saves usernames and timestamps; reel capture also saves captions, dates, and visible metrics. Saved-profile highlighting inspects Instagram's tree automatically on relevant events. It does not collect other apps' text, screenshots, or direct messages.
 
@@ -95,3 +95,9 @@ Reinstalling an APK can cause Android to reset the accessibility-service toggle.
 A user-enabled `AccessibilityService` is required for this capture workflow. Its XML event filter includes only Instagram. A 250 ms session watchdog checks the active root's package without traversing foreign-app content, since the package filter suppresses other apps' events. A foreign/unknown foreground after Instagram ends the session. Screen-off/lock checks also stop capture. Each start requires a single-use request from the app, consumed before connecting, so service restarts cannot silently start another session. Accessibility disablement is asynchronous, so verify OFF before opening payment apps. This is not a bypass of payment-app security checks.
 
 Instagram can change its UI structure and accessibility labels. If the profile header is ambiguous, inaccessible, or not yet rendered, dedgram refuses to guess and reports a capture failure instead.
+
+### One-tap capture evidence (2.3.0)
+
+`date_posted.value` preserves the displayed publication label. `publication_observation` stores `raw_text`, UTC `observed_at`, `observed_at_epoch_ms`, device `timezone`, `locale` and source. `exact_publication_time` stays null unless separately established; the app does not assume a year for labels without one or a rounding rule for relative ages. `caption_expanded` records successful expanded-caption verification, `likes_availability: owner_only` records explicit hidden-count evidence, and `navigation_error` records a failed sheet verification. Existing JSON records remain readable.
+
+The app cannot guarantee fields Instagram does not expose. In particular, some reels expose no share/repost/save count, and ordinary FYP accessibility nodes may expose no reel URL/shortcode. Those captures do not gain a fabricated link or count. Exact shortcode matching remains unavailable in that case; timestamp-based record identity prevents overwriting a different reel.

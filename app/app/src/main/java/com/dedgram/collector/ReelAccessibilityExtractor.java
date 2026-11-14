@@ -13,10 +13,11 @@ public final class ReelAccessibilityExtractor {
     private static final Pattern URL_PATTERN = Pattern.compile(
             "instagram\\.com/(?:reel|reels)/([A-Za-z0-9_-]+)", Pattern.CASE_INSENSITIVE);
     private static final Pattern DATE_PATTERN = Pattern.compile(
-            "(?i)\\b(?:[0-9]{1,2}\\s+(?:January|February|March|April|May|June|July|August|September|October|November|December)|"
-                    + "(?:January|February|March|April|May|June|July|August|September|October|November|December)\\s+[0-9]{1,2})\\b");
+            "(?i)^(?:[0-9]{1,2}(?:st|nd|rd|th)?\\s+(?:January|February|March|April|May|June|July|August|September|October|November|December)(?:,?\\s+[0-9]{4})?|"
+            + "(?:January|February|March|April|May|June|July|August|September|October|November|December)\\s+[0-9]{1,2}(?:,?\\s+[0-9]{4})?|"
+            + "[0-9]+\\s*(?:s|m|h|d|w|seconds?|minutes?|hours?|days?|weeks?|months?|years?)(?:\\s+ago)?|yesterday|today|just now)$");
     private static final Pattern COUNT_PATTERN = Pattern.compile(
-            "(?i)^\\s*([0-9][0-9,.]*)(?:\\s*)([KMB])?\\b.*$");
+            "(?i)^\\s*([0-9][0-9,.]*)(?:\\s*)([KMB])?\\s*$");
     private static final Pattern EMBEDDED_COUNT_PATTERN = Pattern.compile(
             "(?i)(?:number is|reposted|reshare number is|save number is)\\s*([0-9][0-9,.]*)(?:\\s*)([KMB])?");
     private static final String[] MONTHS = {
@@ -28,7 +29,9 @@ public final class ReelAccessibilityExtractor {
 
     public static Snapshot snapshot(AccessibilityNodeInfo root) {
         List<Entry> entries = new ArrayList<>();
-        collect(root, entries);
+        android.graphics.Rect viewport = new android.graphics.Rect();
+        if (root != null) root.getBoundsInScreen(viewport);
+        collect(root, entries, viewport);
         return new Snapshot(entries);
     }
 
@@ -44,7 +47,7 @@ public final class ReelAccessibilityExtractor {
         }
 
         public boolean hasLikesAndPlaysSheet() {
-            return indexContaining("likes and plays") >= 0;
+            return indexContaining("likes and plays") >= 0 || indexContaining("reactions and plays") >= 0;
         }
 
         public Long metric(String label) {
@@ -52,22 +55,29 @@ public final class ReelAccessibilityExtractor {
         }
 
         public Long playsFromSheet() {
+            for (Entry e : entries) if (String.valueOf(e.node.getViewIdResourceName()).endsWith(":id/video_view_count_text")) return parseCount(e.text());
             int title = indexContaining("likes and plays");
+            if (title < 0) title = indexContaining("reactions and plays");
             if (title < 0) return null;
-            Long second = null;
-            int found = 0;
-            for (int index = title + 1; index < entries.size() && index < title + 100; index++) {
-                Long count = parseCount(entries.get(index).display());
-                if (count == null) continue;
-                if (found++ == 1) {
-                    second = count;
-                    break;
-                }
+            for (Entry e : entries) {
+                Matcher count = Pattern.compile("(?i)^([0-9][0-9,.]*\\s*[KMB]?)\\s+(?:views|plays)$").matcher(e.description.trim());
+                if (count.matches()) return parseCount(count.group(1));
             }
-            return second;
+            return null;
+        }
+
+        public boolean noCommentsYet() { return indexContaining("no comments yet") >= 0; }
+        public boolean likesHidden() { return indexContaining("can see the total number of likes") >= 0; }
+        public boolean hasCaptionSheet() {
+            for (Entry e : entries) if (String.valueOf(e.node.getViewIdResourceName()).endsWith(":id/layout_container_bottom_sheet")) return !hasLikesAndPlaysSheet();
+            return false;
         }
 
         public String account() {
+            for (Entry entry : entries) {
+                String id = String.valueOf(entry.node.getViewIdResourceName());
+                if (id.contains("username") && !entry.text().isEmpty()) return entry.text().replace("@", "").replace("\u00a0", " ").trim();
+            }
             for (Entry entry : entries) {
                 String value = entry.text().trim();
                 if (value.startsWith("@")) value = value.substring(1);
@@ -88,12 +98,23 @@ public final class ReelAccessibilityExtractor {
         public String datePosted() {
             for (Entry entry : entries) {
                 Matcher matcher = DATE_PATTERN.matcher(entry.display());
-                if (matcher.find()) return matcher.group();
+                if (matcher.matches()) return entry.display().trim();
             }
             return "";
         }
 
         public String caption() {
+            for (Entry entry : entries) if (entry.description.contains(" said ")) return entry.text().trim();
+            for (Entry entry : entries) {
+                String id = String.valueOf(entry.node.getViewIdResourceName());
+                String text = entry.text().trim();
+                if (entry.node.isClickable() && (id.equals("null") || id.isEmpty())
+                        && (text.endsWith("\u2026") || text.endsWith("...")) && isCaptionCandidate(text)) return text;
+            }
+            for (Entry entry : entries) {
+                String id = String.valueOf(entry.node.getViewIdResourceName());
+                if (id.contains("caption") && !entry.text().trim().isEmpty() && !DATE_PATTERN.matcher(entry.text().trim()).matches()) return entry.text().trim();
+            }
             Entry best = null;
             int bestScore = 0;
             for (Entry entry : entries) {
@@ -137,20 +158,75 @@ public final class ReelAccessibilityExtractor {
             for (int index = start; index < entries.size() && index <= start + maxDistance; index++) {
                 Long count = parseCount(entries.get(index).display());
                 if (count != null) return count;
+                if (index > start && isActionLabel(entries.get(index).display())) break;
             }
             return null;
         }
+    }
+
+    private static boolean isActionLabel(String text) {
+        return text.toLowerCase(Locale.ROOT).matches("(?:like|unlike|comment|repost|share|save)(?:,.*)?");
+    }
+
+    public static boolean dismissSheet(AccessibilityNodeInfo root) {
+        if (root == null || !isInstagramNode(root)) return false;
+        if (dismissNode(root)) return true;
+        Snapshot s = snapshot(root);
+        for (Entry e : s.entries) {
+            String id = String.valueOf(e.node.getViewIdResourceName());
+            if ((id.endsWith(":id/background_dimmer") || e.description.equalsIgnoreCase("Dismiss")
+                    || e.description.equalsIgnoreCase("Close")) && click(e)) return true;
+        }
+        return false;
+    }
+
+    private static boolean dismissNode(AccessibilityNodeInfo node) {
+        if (!isInstagramNode(node) || !node.isVisibleToUser()) return false;
+        if (node.getActionList().contains(AccessibilityNodeInfo.AccessibilityAction.ACTION_DISMISS)
+                && node.performAction(AccessibilityNodeInfo.ACTION_DISMISS)) return true;
+        for (int i = 0; i < node.getChildCount(); i++) {
+            AccessibilityNodeInfo child = node.getChild(i); if (child == null) continue;
+            boolean dismissed = dismissNode(child); child.recycle(); if (dismissed) return true;
+        }
+        return false;
+    }
+
+    public static boolean clickCaption(AccessibilityNodeInfo root) {
+        if (root == null || !isInstagramNode(root)) return false;
+        Snapshot s = snapshot(root);
+        for (Entry e : s.entries) {
+            String id = String.valueOf(e.node.getViewIdResourceName());
+            if (id.contains("caption") && !e.text().isEmpty() && click(e)) return true;
+        }
+        String caption = s.caption();
+        for (Entry e : s.entries) if (!caption.isEmpty() && e.text().equals(caption) && click(e)) return true;
+        return false;
+    }
+
+    public static boolean scrollCaption(AccessibilityNodeInfo root) {
+        if (root == null || !isInstagramNode(root)) return false;
+        String id = String.valueOf(root.getViewIdResourceName()).toLowerCase(Locale.ROOT);
+        if (root.isScrollable() && (id.contains("caption") || id.contains("description") || id.endsWith(":id/sticky_header_list")))
+            return root.performAction(AccessibilityNodeInfo.ACTION_SCROLL_FORWARD);
+        for (int i = 0; i < root.getChildCount(); i++) {
+            AccessibilityNodeInfo child = root.getChild(i);
+            if (child == null) continue;
+            boolean result = scrollCaption(child); child.recycle(); if (result) return true;
+        }
+        return false;
     }
 
     public static boolean clickLikesCount(AccessibilityNodeInfo root) {
         if (root == null || !CaptureSession.INSTAGRAM_PACKAGE.contentEquals(
                 root.getPackageName() == null ? "" : root.getPackageName())) return false;
         Snapshot snapshot = snapshot(root);
+        for (Entry e : snapshot.entries) if (String.valueOf(e.node.getViewIdResourceName()).endsWith(":id/like_count")) return click(e);
         int label = snapshot.findLabel("like");
         if (label < 0) return false;
         for (int index = label + 1; index < snapshot.entries.size() && index <= label + 8; index++) {
             Entry entry = snapshot.entries.get(index);
             String description = entry.display().toLowerCase(Locale.ROOT);
+            if (isActionLabel(description)) break;
             if (parseCount(entry.display()) == null && !description.contains("like number")
                     && !description.contains("view likes")) continue;
             return click(entry);
@@ -159,7 +235,7 @@ public final class ReelAccessibilityExtractor {
     }
 
     private static boolean click(Entry entry) {
-        if (!isInstagramNode(entry.node)) return false;
+        if (!isInstagramNode(entry.node) || !entry.node.isVisibleToUser()) return false;
         if (entry.node.isClickable() && entry.node.performAction(AccessibilityNodeInfo.ACTION_CLICK)) return true;
         AccessibilityNodeInfo parent = entry.node.getParent();
         if (parent != null) {
@@ -175,12 +251,14 @@ public final class ReelAccessibilityExtractor {
         return CaptureSession.INSTAGRAM_PACKAGE.equals(String.valueOf(node.getPackageName()));
     }
 
-    private static void collect(AccessibilityNodeInfo node, List<Entry> entries) {
-        if (node == null) return;
+    private static void collect(AccessibilityNodeInfo node, List<Entry> entries, android.graphics.Rect viewport) {
+        if (node == null || !node.isVisibleToUser()) return;
+        android.graphics.Rect bounds = new android.graphics.Rect(); node.getBoundsInScreen(bounds);
+        if (!viewport.isEmpty() && !bounds.isEmpty() && !android.graphics.Rect.intersects(viewport, bounds)) return;
         String text = node.getText() == null ? "" : node.getText().toString();
         String description = node.getContentDescription() == null ? "" : node.getContentDescription().toString();
-        if (!text.trim().isEmpty() || !description.trim().isEmpty()) entries.add(new Entry(node, text, description));
-        for (int index = 0; index < node.getChildCount(); index++) collect(node.getChild(index), entries);
+        if (!text.trim().isEmpty() || !description.trim().isEmpty() || node.getViewIdResourceName() != null) entries.add(new Entry(node, text, description));
+        for (int index = 0; index < node.getChildCount(); index++) collect(node.getChild(index), entries, viewport);
     }
 
     private static Long parseCount(String value) {
@@ -206,11 +284,11 @@ public final class ReelAccessibilityExtractor {
     }
 
     private static boolean isCaptionCandidate(String value) {
-        if (value.length() < 12 || value.length() > 4000) return false;
+        if (value.length() < 3 || value.length() > 10000) return false;
         String lower = value.toLowerCase(Locale.ROOT);
         String[] excluded = {"add comment", "what do you think", "see translation", "follow", "try it",
                 "likes and plays", "liked by", "video player", "adjust volume", "press to play",
-                "reels navigation", "navigate to", "ai-generated profile", "instagram.com"};
+                "reel by ", "double-tap", "followed by", "reels navigation", "navigate to", "ai-generated profile", "instagram.com"};
         for (String item : excluded) if (lower.contains(item)) return false;
         if (lower.contains("profile picture of ")) return false;
         if (parseCount(value) != null) return false;

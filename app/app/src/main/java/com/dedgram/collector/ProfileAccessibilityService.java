@@ -455,14 +455,100 @@ public final class ProfileAccessibilityService extends AccessibilityService {
             return;
         }
         Reel reel = buildReel(snapshot);
-        // Node actions remain bound to Instagram; never inject a tap at screen coordinates.
-        boolean openedLikesAndPlays = ReelAccessibilityExtractor.clickLikesCount(root);
+        boolean expanded = ReelAccessibilityExtractor.clickCaption(root);
         root.recycle();
-        if (!openedLikesAndPlays) {
-            reel.viewsOrPlaysError = "Could not open Likes and plays from this reel.";
-            saveReel(source, reel);
+        reel.captureStage = "caption";
+        if (expanded) mainHandler.postDelayed(() -> readExpandedCaption(source, reel, 0, ""), 700L);
+        else {
+            reel.captionError = "Could not open the full caption using its accessible control.";
+            reel.datePostedError = "Publication footer was not exposed.";
+            openReelMetrics(source, reel, 0);
+        }
+    }
+
+    private void readExpandedCaption(TextView source, Reel reel, int attempt, String previous) {
+        AccessibilityNodeInfo root = currentInstagramRoot();
+        if (root == null || session == null || session.isStopped()) { if (root != null) root.recycle(); return; }
+        ReelAccessibilityExtractor.Snapshot snapshot = ReelAccessibilityExtractor.snapshot(root);
+        String caption = snapshot.caption(), date = snapshot.datePosted();
+        String observed = caption + "\n" + date;
+        if (!date.isEmpty() && !caption.isEmpty() && observed.equals(previous)) {
+            reel.caption = caption.startsWith(reel.account + " said ") ? caption.substring(reel.account.length() + 6) : caption; reel.captionError = null; reel.captionExpanded = true;
+            reel.datePosted = date; reel.datePostedError = null;
+            try {
+                org.json.JSONObject evidence = new org.json.JSONObject();
+                evidence.put("raw_text", date);
+                java.text.SimpleDateFormat utc = new java.text.SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'", java.util.Locale.ROOT);
+                utc.setTimeZone(java.util.TimeZone.getTimeZone("UTC"));
+                evidence.put("observed_at", utc.format(new java.util.Date()));
+                evidence.put("observed_at_epoch_ms", System.currentTimeMillis());
+                evidence.put("timezone", java.util.TimeZone.getDefault().getID());
+                evidence.put("locale", java.util.Locale.getDefault().toLanguageTag());
+                evidence.put("source", "instagram_android_expanded_caption_footer");
+                evidence.put("exact_publication_time", org.json.JSONObject.NULL);
+                reel.publicationObservation = evidence;
+            } catch (org.json.JSONException ignored) { }
+            if (reel.comments == null && snapshot.noCommentsYet()) { reel.comments = 0L; reel.commentsError = null; }
+            root.recycle();
+            closeCapturedSheet(reel, true);
+            mainHandler.postDelayed(() -> openReelMetrics(source, reel, 0), 500L);
             return;
         }
+        if (attempt < 12) {
+            if (attempt > 3 && date.isEmpty()) ReelAccessibilityExtractor.scrollCaption(root);
+            root.recycle();
+            mainHandler.postDelayed(() -> readExpandedCaption(source, reel, attempt + 1, observed), CAPTURE_RETRY_DELAY_MS);
+            return;
+        }
+        reel.captionError = "Expanded caption could not be verified as complete.";
+        reel.datePostedError = "Publication footer could not be read reliably.";
+        boolean sheet = snapshot.hasCaptionSheet(); root.recycle();
+        if (sheet) closeCapturedSheet(reel, true);
+        mainHandler.postDelayed(() -> openReelMetrics(source, reel, 0), 500L);
+    }
+
+    private boolean closeCapturedSheet(Reel reel, boolean caption) {
+        AccessibilityNodeInfo root = currentInstagramRoot();
+        if (root == null) return false;
+        ReelAccessibilityExtractor.Snapshot state = ReelAccessibilityExtractor.snapshot(root);
+        String currentCaption = state.caption();
+        if (currentCaption.startsWith(reel.account + " said ")) currentCaption = currentCaption.substring(reel.account.length() + 6);
+        boolean owned = caption ? reel.captionExpanded && (state.hasCaptionSheet() || !state.isLikelyReel())
+                && currentCaption.equals(reel.caption) && state.datePosted().equals(reel.datePosted)
+                : state.hasLikesAndPlaysSheet();
+        if (!owned) {
+            reel.navigationError = "Could not verify the opened " + (caption ? "caption" : "metrics") + " sheet before dismissal.";
+            root.recycle(); return false;
+        }
+        boolean closed;
+        if (caption) {
+            if (reel.captionBackUsed) { root.recycle(); return false; }
+            reel.captionBackUsed = true;
+            closed = performGlobalAction(GLOBAL_ACTION_BACK);
+        } else {
+            closed = ReelAccessibilityExtractor.dismissSheet(root);
+            if (!closed) closed = performGlobalAction(GLOBAL_ACTION_BACK);
+        }
+        root.recycle(); return closed;
+    }
+
+    private void openReelMetrics(TextView source, Reel reel, int attempt) {
+        AccessibilityNodeInfo root = currentInstagramRoot();
+        if (root == null || session == null || session.isStopped()) { if (root != null) root.recycle(); return; }
+        ReelAccessibilityExtractor.Snapshot snapshot = ReelAccessibilityExtractor.snapshot(root);
+        if (!snapshot.isLikelyReel()) {
+            root.recycle();
+            if (attempt < 4) mainHandler.postDelayed(() -> openReelMetrics(source, reel, attempt + 1), 350L);
+            else { reel.viewsOrPlaysError = "Could not return to the original reel after caption capture."; saveReel(source, reel); }
+            return;
+        }
+        String account = snapshot.account();
+        if (!reel.account.equals("Unknown") && !account.equals(reel.account)) {
+            root.recycle(); reel.viewsOrPlaysError = "Reel identity changed during capture; metrics were not read."; saveReel(source, reel); return;
+        }
+        reel.captureStage = "metrics";
+        boolean opened = ReelAccessibilityExtractor.clickLikesCount(root); root.recycle();
+        if (!opened) { reel.viewsOrPlaysError = "Could not open Likes and plays from this reel."; saveReel(source, reel); return; }
         mainHandler.postDelayed(() -> finishReelCapture(source, reel, 0), 700L);
     }
 
@@ -501,9 +587,12 @@ public final class ProfileAccessibilityService extends AccessibilityService {
             reel.viewsOrPlays = plays;
             reel.viewsOrPlaysError = null;
         }
-        if (reel.likes == null) reel.likes = snapshot.metric("like");
+        if (snapshot.likesHidden()) { reel.likesAvailability = "owner_only"; reel.likesError = null; }
+        else if (reel.likes == null) { reel.likes = snapshot.metric("like"); if (reel.likes != null) reel.likesError = null; }
         root.recycle();
-        saveReel(source, reel);
+        reel.captureStage = "finished";
+        closeCapturedSheet(reel, false);
+        mainHandler.postDelayed(() -> saveReel(source, reel), 350L);
     }
 
     private Reel buildReel(ReelAccessibilityExtractor.Snapshot snapshot) {

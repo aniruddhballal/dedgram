@@ -16,6 +16,12 @@ public final class Reel {
     public Long saves;
     public String datePosted = "";
     public String caption = "";
+    public JSONObject publicationObservation;
+    public boolean captionExpanded;
+    boolean captionBackUsed;
+    public String navigationError;
+    public String captureStage = "initial";
+    public String likesAvailability = "unknown";
     public String likesError;
     public String commentsError;
     public String viewsOrPlaysError;
@@ -46,6 +52,12 @@ public final class Reel {
         reel.savesError = fieldError(object, "saves");
         reel.datePostedError = fieldError(object, "date_posted");
         reel.captionError = fieldError(object, "caption");
+        reel.publicationObservation = object.optJSONObject("publication_observation");
+        reel.navigationError = object.optString("navigation_error", "");
+        if (reel.navigationError.isEmpty()) reel.navigationError = null;
+        reel.captionExpanded = object.optBoolean("caption_expanded", false);
+        reel.captureStage = object.optString("capture_stage", "legacy");
+        reel.likesAvailability = object.optString("likes_availability", "unknown");
         return reel;
     }
 
@@ -62,6 +74,11 @@ public final class Reel {
         object.put("saves", field(saves, savesError));
         object.put("date_posted", field(datePosted, datePostedError));
         object.put("caption", field(caption, captionError));
+        object.put("publication_observation", publicationObservation == null ? JSONObject.NULL : publicationObservation);
+        object.put("caption_expanded", captionExpanded);
+        object.put("navigation_error", navigationError == null ? JSONObject.NULL : navigationError);
+        object.put("capture_stage", captureStage);
+        object.put("likes_availability", likesAvailability);
         return object;
     }
 

@@ -202,7 +202,7 @@ public final class MainActivity extends Activity {
         container.addView(description, margin(0, 10, 0, 0));
         container.addView(spacer(20));
         container.addView(UiStyles.utility(this, "REEL CAPTURE SETUP"));
-        container.addView(UiStyles.text(this, "Enable a capture session above. Expand the caption before capture. The reel control opens Likes and plays when Instagram exposes its likes button. Fields that cannot be read are saved with errors.", 12, 0xFF555555, false));
+        container.addView(UiStyles.text(this, "Enable a capture session above, then tap the reel control. It expands the caption, records the displayed posting date with its observation time, and opens Likes and plays. Unreadable fields are saved with errors.", 12, 0xFF555555, false));
         container.addView(spacer(22));
         LinearLayout heading = new LinearLayout(this);
         heading.setGravity(Gravity.CENTER_VERTICAL);
