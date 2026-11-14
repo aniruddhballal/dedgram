@@ -5,15 +5,21 @@
     "url": "https://www.instagram.com/reel/DezXTLltPah/",
     "grid_views_raw": "1,310",
     "grid_views_issue": null,
-    "status": "partial",
-    "fetched_at": "2026-11-14T05:15:00.875Z",
+    "status": "metrics_unavailable",
+    "fetched_at": "2026-11-14T08:54:00.659Z",
     "date": "2026-10-22",
     "date_precision": "day",
     "caption": "TVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開！",
     "hashtags": [],
     "mentions": [],
     "likes": null,
-    "comments": null,
+    "comments": {
+      "value": 0,
+      "raw": "0",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "No comments yet."
+    },
     "views": {
       "value": 1310,
       "raw": "1,310",
@@ -21,33 +27,76 @@
       "source": "profile_grid",
       "observed_at": "2026-10-23T16:18:07.272Z"
     },
-    "thumbnail_url": "https://instagram.fblr1-3.fna.fbcdn.net/v/t51.82787-15/859669589_18107812973215907_8090230443264903047_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=oHYGy9YijBgQ7kNvwEhGBfA&_nc_oc=AdpqgBdop1h0_rS66iQ7HAu3VsqDK2_3a-qP-X5p2Ye02viW4PTduNDacc8oCxCcIWelELmCGgcYUf7cuNwSnBst&_nc_zt=23&_nc_ht=instagram.fblr1-3.fna&_nc_gid=kVqDnFCcGOee50o6MneMaQ&_nc_ss=7b6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQSgigCDk-1BvelyIi9slbd0ehi4McfVKAiGukoVi4rXLQ&oe=6AFDC637",
+    "thumbnail_url": "https://instagram.fblr1-3.fna.fbcdn.net/v/t51.82787-15/859669589_18107812973215907_8090230443264903047_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=oHYGy9YijBgQ7kNvwGHR_mN&_nc_oc=AdopZNWIbq4glvPOFXGlHw4MaEndSNp3XKGreBaF0IKUjy-p21WyZ-HtSxFMN6l0B7Y6V3m8VbyGWlrRqdSDH0Wr&_nc_zt=23&_nc_ht=instagram.fblr1-3.fna&_nc_gid=roH-s0R_-95GiyXUTFBKhw&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQS0_3hlIjI01OBtojzT9vWlMZBRbJuAgzXJMl2IzRL0gw&oe=6AFDFE77",
     "media_url": null,
     "missing": [
-      "likes",
-      "comments"
+      "likes"
     ],
     "missing_reasons": {
-      "likes": "The like control displayed no numeric like count; nearby comment or reshare counts are not likes.",
-      "comments": "No readable comment count was found on the content page or in its metadata."
+      "likes": "The like control displayed no numeric like count; nearby comment or reshare counts are not likes."
     },
     "raw": {
       "description": "「TVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開！」 - 2026年10月22日、md.khan_070",
-      "article_text": "md.khan_070\nFollow\nAI-generated profile\n• AI-generated profile\nTVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開！\nSee translation\nLikes\n1\nxbrownbaddie\nFollow\nMiami XO · Bazooka (Sequel)\nkabloom\n18K\n515\n412\n9,302",
-      "aria_text": "md.khan_070 reels\nmd.khan_070 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nxbrownbaddie reels\nxbrownbaddie reels\nAudio image\nExplicit\nAudio image\nExplicit\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "article_text": "md.khan_070\nFollow\nAI-generated profile\n• AI-generated profile\nTVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開！\nSee translation\nLikes\n1\nsanchowatchez\nFollow\nAnother day. Another battle.\n\n#viral #cinema #trending #moviereview #theamazingbulk\n52.3K\n422\n690\n13.1K",
+      "aria_text": "md.khan_070 reels\nmd.khan_070 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nsanchowatchez reels\nsanchowatchez reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
       "json_ld": {},
       "engagement": {
         "scope": "reel_action_controls",
+        "availability": {
+          "likes": {
+            "state": "explicitly_hidden",
+            "evidence": "Likes\nmd.khan_070 can see the total number of people who liked this post.\nvi.snu780\nVishnu Devi Pujak\nFollow\n_j4wwxx\nج\nFollow\ntantan51109\nNa Rong\nFollow\ndiivyy.x\n𝘿𝙄𝙑𝙔𝙍𝘼𝙅𝙎𝙄𝙉𝙃 ⚡\nFollow\nofficial_rohit_dabi\nROHIT DXBI 😎\nFollow\nmehra_jashan_1044\nJashan_mehra❤️\nFollow\nim_shivam_22_\nSʜɪ֟፝ᴠᴀᴍ ⸙\nFollow\nwho.is.ronit\n𝙍 𝙊 𝙉 𝙄 𝙏 🥀\nFollow\nel_chiinoo27\nFollow\n_ador__17k\nAD OR\nFollow\nshaasariul\nshaaa\nFollow\nvarun58407\nναяυи...\nFollow\nscar_neva_gaf\nSCAR\nFollow\n_axelrecalde_\nAxel Recalde\nFollow\nyx_x_10\n_Daniel_\nFollow\nchristopher.ralte_\n👑\nFollow\navijit_chaudhary_\nब्राह्मण 🚩\nFollow",
+            "source": "metric_dialog"
+          },
+          "comments": {
+            "state": "measured",
+            "evidence": "No comments yet.",
+            "source": "metric_dialog"
+          },
+          "reshares": {
+            "state": "measured",
+            "evidence": "Repost"
+          },
+          "shares": {
+            "state": "not_captured",
+            "evidence": "Control located but no reliable numeric value parsed."
+          }
+        },
         "likes_visibility": "not_shown",
         "reshares": {
           "raw": "1",
           "source": "dom_action_control",
           "label": "Repost"
+        },
+        "comments": {
+          "raw": "0",
+          "source": "dom_comments_panel",
+          "label": "No comments yet."
         }
+      },
+      "capture_checks": {
+        "access_clear": true,
+        "stable": true,
+        "read_passes": 2,
+        "access_attempts": [],
+        "metric_panels": [
+          {
+            "field": "likes",
+            "stable": true,
+            "access_clear": true,
+            "evidence": "Likes\nmd.khan_070 can see the total number of people who liked this post.\nvi.snu780\nVishnu Devi Pujak\nFollow\n_j4wwxx\nج\nFollow\ntantan51109\nNa Rong\nFollow\ndiivyy.x\n𝘿𝙄𝙑𝙔𝙍𝘼𝙅𝙎𝙄𝙉𝙃 ⚡\nFollow\nofficial_rohit_dabi\nROHIT DXBI 😎\nFollow\nmehra_jashan_1044\nJashan_mehra❤️\nFollow\nim_shivam_22_\nSʜɪ֟፝ᴠᴀᴍ ⸙\nFollow\nwho.is.ronit\n𝙍 𝙊 𝙉 𝙄 𝙏 🥀\nFollow\nel_chiinoo27\nFollow\n_ador__17k\nAD OR\nFollow\nshaasariul\nshaaa\nFollow\nvarun58407\nναяυи...\nFollow\nscar_neva_gaf\nSCAR\nFollow\n_axelrecalde_\nAxel Recalde\nFollow\nyx_x_10\n_Daniel_\nFollow\nchristopher.ralte_\n👑\nFollow\navijit_chaudhary_\nब्राह्मण 🚩\nFollow"
+          },
+          {
+            "field": "comments",
+            "stable": true,
+            "access_clear": true,
+            "evidence": "Comments\nNo comments yet.\nStart the conversation."
+          }
+        ]
       }
     },
     "last_error": null,
-    "last_attempt_at": "2026-11-14T05:15:00.876Z",
+    "last_attempt_at": "2026-11-14T08:54:00.659Z",
     "date_source": "og_description_localized",
     "reshares": {
       "value": 1,
@@ -70,18 +119,17 @@
       }
     },
     "analysis_resolution": {
-      "status": "requires_verification",
-      "source": "visible_page_capture",
-      "recorded_at": "2026-11-14T05:15:00.876Z",
-      "reason": "Previous automatic resolution lacked explicit evidence that the metric was hidden or disabled. Saved values retained; extraction requires verification.",
+      "status": "resolved",
+      "source": "explicit_visibility_evidence",
+      "recorded_at": "2026-11-14T08:54:00.659Z",
+      "reason": "Unavailable metrics resolved using explicit visibility evidence or user assessment. Saved observations remain valid; missing values are unknown, not zero.",
       "unavailable_fields": [
-        "likes",
-        "comments"
+        "likes"
       ],
       "previous_status": "partial",
       "policy_checked_at": "2026-11-14T08:26:03.802Z"
     },
-    "extraction_review": "Metric extraction is incomplete; absence has not been confirmed. Inspect or retry rather than assume hidden counts.",
+    "extraction_review": null,
     "previous_analysis_resolution": {
       "status": "resolved",
       "source": "visible_page_capture",
@@ -92,7 +140,8 @@
         "comments"
       ],
       "previous_status": "partial"
-    }
+    },
+    "access_review": null
   },
   {
     "kind": "reel",
@@ -100,15 +149,21 @@
     "url": "https://www.instagram.com/reel/DeydGoftRxW/",
     "grid_views_raw": "1,660",
     "grid_views_issue": null,
-    "status": "partial",
-    "fetched_at": "2026-11-14T05:15:05.433Z",
+    "status": "metrics_unavailable",
+    "fetched_at": "2026-11-14T08:54:09.894Z",
     "date": "2026-10-22",
     "date_precision": "day",
     "caption": "#チェンソーマン マキマ 🥋\n\n公安対魔特異4課を率いる謎めいた女性「マキマ」。デンジとの出会いをきっかけに彼を導きながら、物語の裏で暗躍し、チェンソーマンを象徴する存在として強い印象を残す人気キャラクターです。",
     "hashtags": [],
     "mentions": [],
     "likes": null,
-    "comments": null,
+    "comments": {
+      "value": 0,
+      "raw": "0",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "No comments yet."
+    },
     "views": {
       "value": 1660,
       "raw": "1,660",
@@ -116,33 +171,76 @@
       "source": "profile_grid",
       "observed_at": "2026-10-23T16:18:07.272Z"
     },
-    "thumbnail_url": "https://instagram.fblr24-4.fna.fbcdn.net/v/t51.82787-15/859087564_2163810320877172_4341334158516538037_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=m5XpQ2vGLuYQ7kNvwGT1fOJ&_nc_oc=Adp7-a0E2EPmUgy7R2wdHXCUT0vrQnz0ZR4rys-MUWAiOOFbf2Hk3gD32H5d3KMJUkwvDdbQBPaRUlNrCQs81vgH&_nc_zt=23&_nc_ht=instagram.fblr24-4.fna&_nc_gid=bhs1CWithKonXFSM9L_CQQ&_nc_ss=7b6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQTObfRfiY4A3dWPYF1AmQgeik6-9AAw9V-YDIez93Thow&oe=6AFDC1E3",
+    "thumbnail_url": "https://instagram.fblr24-4.fna.fbcdn.net/v/t51.82787-15/859087564_2163810320877172_4341334158516538037_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=m5XpQ2vGLuYQ7kNvwE5l8Oh&_nc_oc=AdquVoZcx6dtEEDMxQrtOS3a0XqtMU6co3j49IpO6Y319Yl86qKO5jdddZjLbdIkHS9qPBwYtgnAza51lSbyUyrc&_nc_zt=23&_nc_ht=instagram.fblr24-4.fna&_nc_gid=z8osbFWNVIn8zKpGnqt3EA&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQThu2QJdo8yduOPiMKplRzDof39BU8oysPnfnGB7ZL3PQ&oe=6AFDFA23",
     "media_url": null,
     "missing": [
-      "likes",
-      "comments"
+      "likes"
     ],
     "missing_reasons": {
-      "likes": "The like control displayed no numeric like count; nearby comment or reshare counts are not likes.",
-      "comments": "No readable comment count was found on the content page or in its metadata."
+      "likes": "The like control displayed no numeric like count; nearby comment or reshare counts are not likes."
     },
     "raw": {
       "description": "「#チェンソーマン マキマ 🥋\n\n公安対魔特異4課を率いる謎めいた女性「マキマ」。デンジとの出会いをきっかけに彼を導きながら、物語の裏で暗躍し、チェンソーマンを象徴する存在として強い印象を残す人気キャラクターです。」 - 2026年10月22日、md.khan_070",
-      "article_text": "md.khan_070\nFollow\nAI-generated profile\n• AI content\n#チェンソーマン マキマ 🥋\n\n公安対魔特異4課を率いる謎めいた女性「マキマ」。デンジとの出会いをきっかけに彼を導きながら、物語の裏で暗躍し、チェンソーマンを象徴する存在として強い印象を残す人気キャラクターです。\nSee translation\nLikes\n4\ndev247.dhun\nFollow\n5 people\nहाय रामा · Hai Rama, every swara mapped 🎶\n\n@amritharajan.official ’s Hai Rama on Indian Idol, turned into a live sargam graph.\n270 swaras in 51 seconds, peaking at 10 notes a second. Every taan lands on the strings as she sings it.\n\nRaag Puriya Dhanashree · Sa = C\n_ = komal · ‘ = tivra\n\nWhich taan gave you goosebumps? Comment the timestamp 👇\nSave this for your next riyaz 🔁\n\n🎤 Vocals: @amritharajan.official\n📺 Indian Idol · @sonytvofficial\n🎼 Original: A.R. Rahman (@arrahman ) · Rangeela\n\n#hairama #amritharajan #indianidol #puriyadhanashree #sargam\n34.3K\n448\n1,267\n7,005",
-      "aria_text": "md.khan_070 reels\nmd.khan_070 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\ndev247.dhun reels\ndev247.dhun reels\nVerified\nTagged users\nTagged users\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "article_text": "md.khan_070\nFollow\nAI-generated profile\n• AI content\n#チェンソーマン マキマ 🥋\n\n公安対魔特異4課を率いる謎めいた女性「マキマ」。デンジとの出会いをきっかけに彼を導きながら、物語の裏で暗躍し、チェンソーマンを象徴する存在として強い印象を残す人気キャラクターです。\nSee translation\nLikes\n4\ntrick0815\nFollow\nMount Kimbie, Kai Campos · Zone 3 (City Limits)\nMount Kimbie, Kai Campos · Zone 3 (City Limits)\nMist over Vienna\n\n#objectmanipulation #spinnin #sticknation #circus #balancing\n32.7K\n383\n838\n4,932",
+      "aria_text": "md.khan_070 reels\nmd.khan_070 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\ntrick0815 reels\ntrick0815 reels\nAudio image\nLocation\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
       "json_ld": {},
       "engagement": {
         "scope": "reel_action_controls",
+        "availability": {
+          "likes": {
+            "state": "explicitly_hidden",
+            "evidence": "Likes\nmd.khan_070 can see the total number of people who liked this post.\ndomstei2007\nDominic Steinmetz\nFollow\nalligator.514166\nAbbas Radhi Lafta\nFollow\nwega___nokrek\nWega💝\nFollow\naslbekivamaryam\nAslbekiva Maryam\nFollow\ndarkroberto\nRoberto Dark\nFollow\nkmrii_18\nturteee\nFollow\nitsmj.717\n🖤MJay🖤\nFollow\nofficial_rohit_dabi\nROHIT DXBI 😎\nFollow\nmr__dev__sa__4141\n꧁༒♛ महाकाल📿 का🙏 दिवाना🔱♛༒꧂\nFollow\nwho.is.ronit\n𝙍 𝙊 𝙉 𝙄 𝙏 🥀\nFollow\nvarun58407\nναяυи...\nFollow\n_ador__17k\nAD OR\nFollow\nnorovbexeuz\nNorov Bexruz\nFollow\nsubratababu8\nSubrata Babu\nFollow\nmr.__tom__01\n🔰​🇹​​🇴​​🇲🔰\nFollow\nshaasariul\nshaaa\nFollow\nnoo77.75_r\nnoor\nFollow",
+            "source": "metric_dialog"
+          },
+          "comments": {
+            "state": "measured",
+            "evidence": "No comments yet.",
+            "source": "metric_dialog"
+          },
+          "reshares": {
+            "state": "measured",
+            "evidence": "Repost"
+          },
+          "shares": {
+            "state": "not_captured",
+            "evidence": "Control located but no reliable numeric value parsed."
+          }
+        },
         "likes_visibility": "not_shown",
         "reshares": {
           "raw": "4",
           "source": "dom_action_control",
           "label": "Repost"
+        },
+        "comments": {
+          "raw": "0",
+          "source": "dom_comments_panel",
+          "label": "No comments yet."
         }
+      },
+      "capture_checks": {
+        "access_clear": true,
+        "stable": true,
+        "read_passes": 2,
+        "access_attempts": [],
+        "metric_panels": [
+          {
+            "field": "likes",
+            "stable": true,
+            "access_clear": true,
+            "evidence": "Likes\nmd.khan_070 can see the total number of people who liked this post.\ndomstei2007\nDominic Steinmetz\nFollow\nalligator.514166\nAbbas Radhi Lafta\nFollow\nwega___nokrek\nWega💝\nFollow\naslbekivamaryam\nAslbekiva Maryam\nFollow\ndarkroberto\nRoberto Dark\nFollow\nkmrii_18\nturteee\nFollow\nitsmj.717\n🖤MJay🖤\nFollow\nofficial_rohit_dabi\nROHIT DXBI 😎\nFollow\nmr__dev__sa__4141\n꧁༒♛ महाकाल📿 का🙏 दिवाना🔱♛༒꧂\nFollow\nwho.is.ronit\n𝙍 𝙊 𝙉 𝙄 𝙏 🥀\nFollow\nvarun58407\nναяυи...\nFollow\n_ador__17k\nAD OR\nFollow\nnorovbexeuz\nNorov Bexruz\nFollow\nsubratababu8\nSubrata Babu\nFollow\nmr.__tom__01\n🔰​🇹​​🇴​​🇲🔰\nFollow\nshaasariul\nshaaa\nFollow\nnoo77.75_r\nnoor\nFollow"
+          },
+          {
+            "field": "comments",
+            "stable": true,
+            "access_clear": true,
+            "evidence": "Comments\nNo comments yet.\nStart the conversation."
+          }
+        ]
       }
     },
     "last_error": null,
-    "last_attempt_at": "2026-11-14T05:15:05.434Z",
+    "last_attempt_at": "2026-11-14T08:54:09.894Z",
     "date_source": "og_description_localized",
     "reshares": {
       "value": 4,
@@ -165,18 +263,17 @@
       }
     },
     "analysis_resolution": {
-      "status": "requires_verification",
-      "source": "visible_page_capture",
-      "recorded_at": "2026-11-14T05:15:05.434Z",
-      "reason": "Previous automatic resolution lacked explicit evidence that the metric was hidden or disabled. Saved values retained; extraction requires verification.",
+      "status": "resolved",
+      "source": "explicit_visibility_evidence",
+      "recorded_at": "2026-11-14T08:54:09.894Z",
+      "reason": "Unavailable metrics resolved using explicit visibility evidence or user assessment. Saved observations remain valid; missing values are unknown, not zero.",
       "unavailable_fields": [
-        "likes",
-        "comments"
+        "likes"
       ],
       "previous_status": "partial",
       "policy_checked_at": "2026-11-14T08:26:03.802Z"
     },
-    "extraction_review": "Metric extraction is incomplete; absence has not been confirmed. Inspect or retry rather than assume hidden counts.",
+    "extraction_review": null,
     "previous_analysis_resolution": {
       "status": "resolved",
       "source": "visible_page_capture",
@@ -187,7 +284,8 @@
         "comments"
       ],
       "previous_status": "partial"
-    }
+    },
+    "access_review": null
   },
   {
     "kind": "reel",
@@ -242,8 +340,8 @@
     "url": "https://www.instagram.com/reel/Dert0aINgjh/",
     "grid_views_raw": "26K",
     "grid_views_issue": null,
-    "status": "partial",
-    "fetched_at": "2026-11-14T05:15:09.560Z",
+    "status": "metrics_unavailable",
+    "fetched_at": "2026-11-14T08:54:17.943Z",
     "date": "2026-10-19",
     "date_precision": "day",
     "caption": "#チェンソーマン マキマ 🥋\n\n公安対魔特異4課を率いる謎めいた女性「マキマ」。デンジとの出会いをきっかけに彼を導きながら、物語の裏で暗躍し、チェンソーマンを象徴する存在として強い印象を残す人気キャラクターです。",
@@ -264,7 +362,7 @@
       "source": "profile_grid",
       "observed_at": "2026-10-23T16:18:07.272Z"
     },
-    "thumbnail_url": "https://instagram.fblr1-5.fna.fbcdn.net/v/t51.82787-15/859766300_2104776920405276_8677503834845398509_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=idXGy54S9vwQ7kNvwHUibxR&_nc_oc=Adp8ppikkHnFdMWpV_tbcomZ00OISo3DiQaXyQNVCcUhaY3Ez9ZExB38rJMmaFS-fQaDwTx8I7LxMZIvmiykea4C&_nc_zt=23&_nc_ht=instagram.fblr1-5.fna&_nc_gid=GdWMbboVS1_OhdARjNmErg&_nc_ss=7b6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQTY3A2i9q-U4IEK-r6AmfuiNE5trKy7TUa3XMB-SvJu9A&oe=6AFDACEA",
+    "thumbnail_url": "https://instagram.fblr1-5.fna.fbcdn.net/v/t51.82787-15/859766300_2104776920405276_8677503834845398509_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=idXGy54S9vwQ7kNvwGe-Hp5&_nc_oc=AdrcpdT4xyNDQQWGSxWf9bdyLFst_hBqmjBf9-gfL5L-kn_n3Qy3DhfAM-jC2X8g3or9rL0--0GKGIAJy6UlDdKL&_nc_zt=23&_nc_ht=instagram.fblr1-5.fna&_nc_gid=wgQYF_nQZmCXqW6Nn4N9wQ&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQS7q9dv14Bj3YoTh8dDV0jLIzchCRGKUbiRktAs4WPEnA&oe=6AFDE52A",
     "media_url": null,
     "missing": [
       "likes"
@@ -274,11 +372,30 @@
     },
     "raw": {
       "description": "「#チェンソーマン マキマ 🥋\n\n公安対魔特異4課を率いる謎めいた女性「マキマ」。デンジとの出会いをきっかけに彼を導きながら、物語の裏で暗躍し、チェンソーマンを象徴する存在として強い印象を残す人気キャラクターです。」 - 2026年10月19日、md.khan_070",
-      "article_text": "md.khan_070\nFollow\nAI-generated profile\n#チェンソーマン マキマ 🥋\n\n公安対魔特異4課を率いる謎めいた女性「マキマ」。デンジとの出会いをきっかけに彼を導きながら、物語の裏で暗躍し、チェンソーマンを象徴する存在として強い印象を残す人気キャラクターです。\nSee translation\nLikes\n5\n7\ndev247.dhun\nFollow\n5 people\nहाय रामा · Hai Rama, every swara mapped 🎶\n\n@amritharajan.official ’s Hai Rama on Indian Idol, turned into a live sargam graph.\n270 swaras in 51 seconds, peaking at 10 notes a second. Every taan lands on the strings as she sings it.\n\nRaag Puriya Dhanashree · Sa = C\n_ = komal · ‘ = tivra\n\nWhich taan gave you goosebumps? Comment the timestamp 👇\nSave this for your next riyaz 🔁\n\n🎤 Vocals: @amritharajan.official\n📺 Indian Idol · @sonytvofficial\n🎼 Original: A.R. Rahman (@arrahman ) · Rangeela\n\n#hairama #amritharajan #indianidol #puriyadhanashree #sargam\n34.3K\n448\n1,267\n7,005",
-      "aria_text": "md.khan_070 reels\nmd.khan_070 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\ndev247.dhun reels\ndev247.dhun reels\nVerified\nTagged users\nTagged users\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "article_text": "md.khan_070\nFollow\nAI-generated profile\n#チェンソーマン マキマ 🥋\n\n公安対魔特異4課を率いる謎めいた女性「マキマ」。デンジとの出会いをきっかけに彼を導きながら、物語の裏で暗躍し、チェンソーマンを象徴する存在として強い印象を残す人気キャラクターです。\nSee translation\nLikes\n5\n7\nstudio.ashill\nFollow\nNo one cared … 🥷🏿🦇\n\n#fypart #batmanartist #batmanart #batmanartwork #batman🦇\n118K\n844\n3,955\n19.5K",
+      "aria_text": "md.khan_070 reels\nmd.khan_070 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nstudio.ashill reels\nstudio.ashill reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
       "json_ld": {},
       "engagement": {
         "scope": "reel_action_controls",
+        "availability": {
+          "likes": {
+            "state": "explicitly_hidden",
+            "evidence": "Likes\nmd.khan_070 can see the total number of people who liked this post.\nwega___nokrek\nWega💝\nFollow\ncarlos_cano31\nCarlos Cano\nFollow\nvikkuuuu908\nVIvekkk !!\nFollow\ns7_a7_enn\n° 𝐴𝑙𝑎𝑙𝑖 °\nFollow\nzaideyyyyy\nZaid Sheikh\nFollow\nneko_0311\n笑笑💙\nFollow\nofficial_rohit_dabi\nROHIT DXBI 😎\nFollow\nraisharoy663\n13 Niki895\nFollow\nrandom_kukuyt\nRandom KuKu\nFollow\ngabrielsilva_01_1\nGabriel lima�\nFollow\n_ador__17k\nAD OR\nFollow\nhadiveysi461\nhadi vaisi\nFollow\nbrucewayne1897\nBruce Wayne\nFollow\narunodoy_das\nArunodoy Das🇮🇳\nFollow\nvasu_sngh\nVasu Singh\nFollow\nsupachai_.frank\nศุภชัย เกิดดำรงกุล\nFollow\nas_shaikh1245\n🌸ایس آصف شیخا\nFollow",
+            "source": "metric_dialog"
+          },
+          "comments": {
+            "state": "measured",
+            "evidence": "Comment"
+          },
+          "reshares": {
+            "state": "measured",
+            "evidence": "Repost"
+          },
+          "shares": {
+            "state": "not_captured",
+            "evidence": "Control located but no reliable numeric value parsed."
+          }
+        },
         "likes_visibility": "not_shown",
         "comments": {
           "raw": "5",
@@ -290,10 +407,24 @@
           "source": "dom_action_control",
           "label": "Repost"
         }
+      },
+      "capture_checks": {
+        "access_clear": true,
+        "stable": true,
+        "read_passes": 2,
+        "access_attempts": [],
+        "metric_panels": [
+          {
+            "field": "likes",
+            "stable": true,
+            "access_clear": true,
+            "evidence": "Likes\nmd.khan_070 can see the total number of people who liked this post.\nwega___nokrek\nWega💝\nFollow\ncarlos_cano31\nCarlos Cano\nFollow\nvikkuuuu908\nVIvekkk !!\nFollow\ns7_a7_enn\n° 𝐴𝑙𝑎𝑙𝑖 °\nFollow\nzaideyyyyy\nZaid Sheikh\nFollow\nneko_0311\n笑笑💙\nFollow\nofficial_rohit_dabi\nROHIT DXBI 😎\nFollow\nraisharoy663\n13 Niki895\nFollow\nrandom_kukuyt\nRandom KuKu\nFollow\ngabrielsilva_01_1\nGabriel lima�\nFollow\n_ador__17k\nAD OR\nFollow\nhadiveysi461\nhadi vaisi\nFollow\nbrucewayne1897\nBruce Wayne\nFollow\narunodoy_das\nArunodoy Das🇮🇳\nFollow\nvasu_sngh\nVasu Singh\nFollow\nsupachai_.frank\nศุภชัย เกิดดำรงกุล\nFollow\nas_shaikh1245\n🌸ایس آصف شیخا\nFollow"
+          }
+        ]
       }
     },
     "last_error": null,
-    "last_attempt_at": "2026-11-14T05:15:09.560Z",
+    "last_attempt_at": "2026-11-14T08:54:17.943Z",
     "date_source": "og_description_localized",
     "reshares": {
       "value": 7,
@@ -316,17 +447,17 @@
       }
     },
     "analysis_resolution": {
-      "status": "requires_verification",
-      "source": "visible_page_capture",
-      "recorded_at": "2026-11-14T05:15:09.560Z",
-      "reason": "Previous automatic resolution lacked explicit evidence that the metric was hidden or disabled. Saved values retained; extraction requires verification.",
+      "status": "resolved",
+      "source": "explicit_visibility_evidence",
+      "recorded_at": "2026-11-14T08:54:17.943Z",
+      "reason": "Unavailable metrics resolved using explicit visibility evidence or user assessment. Saved observations remain valid; missing values are unknown, not zero.",
       "unavailable_fields": [
         "likes"
       ],
       "previous_status": "partial",
       "policy_checked_at": "2026-11-14T08:26:03.802Z"
     },
-    "extraction_review": "Metric extraction is incomplete; absence has not been confirmed. Inspect or retry rather than assume hidden counts.",
+    "extraction_review": null,
     "previous_analysis_resolution": {
       "status": "resolved",
       "source": "visible_page_capture",
@@ -336,7 +467,8 @@
         "likes"
       ],
       "previous_status": "partial"
-    }
+    },
+    "access_review": null
   },
   {
     "kind": "reel",
@@ -344,8 +476,8 @@
     "url": "https://www.instagram.com/reel/DerrkZ8t1ym/",
     "grid_views_raw": "41.1K",
     "grid_views_issue": null,
-    "status": "partial",
-    "fetched_at": "2026-11-14T05:15:13.581Z",
+    "status": "metrics_unavailable",
+    "fetched_at": "2026-11-14T08:54:25.000Z",
     "date": "2026-10-19",
     "date_precision": "day",
     "caption": "#チェンソーマン マキマ 🥋\n\n公安対魔特異4課を率いる謎めいた女性「マキマ」。デンジとの出会いをきっかけに彼を導きながら、物語の裏で暗躍し、チェンソーマンを象徴する存在として強い印象を残す人気キャラクターです。",
@@ -366,7 +498,7 @@
       "source": "profile_grid",
       "observed_at": "2026-10-23T16:18:07.272Z"
     },
-    "thumbnail_url": "https://instagram.fblr1-5.fna.fbcdn.net/v/t51.82787-15/853876822_1021897546975604_4659208004458226227_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=u5IfrmREoh4Q7kNvwG9msw8&_nc_oc=AdqvhxAKbQmTVz_7WWEujIEpHK2uYrYVZiNtJ-w43tHxR_uPZwmHn_666BDp7T1Y22EbmSt3nhOkEJlqiWlalBuH&_nc_zt=23&_nc_ht=instagram.fblr1-5.fna&_nc_gid=sVaVGA49MDU7aXidv3VxpA&_nc_ss=7b6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQQF4igJpEERLqm5bTx85Wzmg17H8aNZ6j8ZrUUYu6MbUw&oe=6AFDC492",
+    "thumbnail_url": "https://instagram.fblr1-5.fna.fbcdn.net/v/t51.82787-15/853876822_1021897546975604_4659208004458226227_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=u5IfrmREoh4Q7kNvwFEjwJl&_nc_oc=Adr5Kh7dCqT5jkyR-g-MiAOCm09ImGwdckFL7AtMI5fba2GO2iI8KwXDvz1M1mHnSYox8Uy1a-YXvpuLWy6jM-Dq&_nc_zt=23&_nc_ht=instagram.fblr1-5.fna&_nc_gid=0engaZuNM_nZLotd7cMM-g&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQTXa0a--obh75-gyzhDB5Jk9_f3ezlNZV5vZ3vn7rhOWQ&oe=6AFDFCD2",
     "media_url": null,
     "missing": [
       "likes"
@@ -376,11 +508,30 @@
     },
     "raw": {
       "description": "「#チェンソーマン マキマ 🥋\n\n公安対魔特異4課を率いる謎めいた女性「マキマ」。デンジとの出会いをきっかけに彼を導きながら、物語の裏で暗躍し、チェンソーマンを象徴する存在として強い印象を残す人気キャラクターです。」 - 2026年10月19日、md.khan_070",
-      "article_text": "md.khan_070\nFollow\nAI-generated profile\n#チェンソーマン マキマ 🥋\n\n公安対魔特異4課を率いる謎めいた女性「マキマ」。デンジとの出会いをきっかけに彼を導きながら、物語の裏で暗躍し、チェンソーマンを象徴する存在として強い印象を残す人気キャラクターです。\nSee translation\nLikes\n12\n14\njxs7100\nFollow\nFilmmaker · Doppelbanger\nI GOT A CRTTTT MONITHAAAA\n248K\n903\n5,648\n22.3K",
-      "aria_text": "md.khan_070 reels\nmd.khan_070 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\njxs7100 reels\njxs7100 reels\nAudio image\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "article_text": "md.khan_070\nFollow\nAI-generated profile\n#チェンソーマン マキマ 🥋\n\n公安対魔特異4課を率いる謎めいた女性「マキマ」。デンジとの出会いをきっかけに彼を導きながら、物語の裏で暗躍し、チェンソーマンを象徴する存在として強い印象を残す人気キャラクターです。\nSee translation\nLikes\n12\n14\nleonphamdk\nFollow\nCarb addiction needs to be studied🫪\n51.2K\n387\n504\n7,157",
+      "aria_text": "md.khan_070 reels\nmd.khan_070 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nleonphamdk reels\nleonphamdk reels\nVerified\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
       "json_ld": {},
       "engagement": {
         "scope": "reel_action_controls",
+        "availability": {
+          "likes": {
+            "state": "explicitly_hidden",
+            "evidence": "Likes\nmd.khan_070 can see the total number of people who liked this post.\ny2k_____koushiiiiiiiiiiiiii\n@ y2k koushiiiiii\nFollow\nadil_ait_02\nMohammed_adil_016\nFollow\nitss_ricardo__\nRicardo Gamez\nFollow\nits_mchiru\nCHIRU 👑\nFollow\nadiel.zxz_16\nAdiel Mejia\nFollow\nbeing_tohituuu\nBeing.Tohit.Mansuri.\nFollow\nmelly__camposano\nMel christian camposano\nFollow\nno1._.oxann\nᏦᴀʀᴛɪᴋ🍁\nFollow\nchandan__cs__009\nChandan__cs__009\nFollow\n_ador__17k\nAD OR\nFollow\nvikas_bind_00\n🇻‌🇮‌🇰‌🇦‌🇸‌vs 🇵‌🇦‌🇹‌🇪‌🇱‌\nFollow\n_mr_candy_rx_\nMAHIIII..\nFollow\n___rahul_smiley___\nRahul 20/06🧿\nFollow\nsupachai_.frank\nศุภชัย เกิดดำรงกุล\nFollow\ns4nu_s.s\ns4nuuu !!\nFollow\neffected_mind_0\nرِفْعَتْ أَحْمَدْ\nFollow\ndewa_of_darkness\nburung 👻\nFollow",
+            "source": "metric_dialog"
+          },
+          "comments": {
+            "state": "measured",
+            "evidence": "Comment"
+          },
+          "reshares": {
+            "state": "measured",
+            "evidence": "Repost"
+          },
+          "shares": {
+            "state": "not_captured",
+            "evidence": "Control located but no reliable numeric value parsed."
+          }
+        },
         "likes_visibility": "not_shown",
         "comments": {
           "raw": "12",
@@ -392,10 +543,24 @@
           "source": "dom_action_control",
           "label": "Repost"
         }
+      },
+      "capture_checks": {
+        "access_clear": true,
+        "stable": true,
+        "read_passes": 2,
+        "access_attempts": [],
+        "metric_panels": [
+          {
+            "field": "likes",
+            "stable": true,
+            "access_clear": true,
+            "evidence": "Likes\nmd.khan_070 can see the total number of people who liked this post.\ny2k_____koushiiiiiiiiiiiiii\n@ y2k koushiiiiii\nFollow\nadil_ait_02\nMohammed_adil_016\nFollow\nitss_ricardo__\nRicardo Gamez\nFollow\nits_mchiru\nCHIRU 👑\nFollow\nadiel.zxz_16\nAdiel Mejia\nFollow\nbeing_tohituuu\nBeing.Tohit.Mansuri.\nFollow\nmelly__camposano\nMel christian camposano\nFollow\nno1._.oxann\nᏦᴀʀᴛɪᴋ🍁\nFollow\nchandan__cs__009\nChandan__cs__009\nFollow\n_ador__17k\nAD OR\nFollow\nvikas_bind_00\n🇻‌🇮‌🇰‌🇦‌🇸‌vs 🇵‌🇦‌🇹‌🇪‌🇱‌\nFollow\n_mr_candy_rx_\nMAHIIII..\nFollow\n___rahul_smiley___\nRahul 20/06🧿\nFollow\nsupachai_.frank\nศุภชัย เกิดดำรงกุล\nFollow\ns4nu_s.s\ns4nuuu !!\nFollow\neffected_mind_0\nرِفْعَتْ أَحْمَدْ\nFollow\ndewa_of_darkness\nburung 👻\nFollow"
+          }
+        ]
       }
     },
     "last_error": null,
-    "last_attempt_at": "2026-11-14T05:15:13.582Z",
+    "last_attempt_at": "2026-11-14T08:54:25.001Z",
     "date_source": "og_description_localized",
     "reshares": {
       "value": 14,
@@ -418,17 +583,17 @@
       }
     },
     "analysis_resolution": {
-      "status": "requires_verification",
-      "source": "visible_page_capture",
-      "recorded_at": "2026-11-14T05:15:13.582Z",
-      "reason": "Previous automatic resolution lacked explicit evidence that the metric was hidden or disabled. Saved values retained; extraction requires verification.",
+      "status": "resolved",
+      "source": "explicit_visibility_evidence",
+      "recorded_at": "2026-11-14T08:54:25.000Z",
+      "reason": "Unavailable metrics resolved using explicit visibility evidence or user assessment. Saved observations remain valid; missing values are unknown, not zero.",
       "unavailable_fields": [
         "likes"
       ],
       "previous_status": "partial",
       "policy_checked_at": "2026-11-14T08:26:03.802Z"
     },
-    "extraction_review": "Metric extraction is incomplete; absence has not been confirmed. Inspect or retry rather than assume hidden counts.",
+    "extraction_review": null,
     "previous_analysis_resolution": {
       "status": "resolved",
       "source": "visible_page_capture",
@@ -438,7 +603,8 @@
         "likes"
       ],
       "previous_status": "partial"
-    }
+    },
+    "access_review": null
   },
   {
     "kind": "reel",
@@ -634,8 +800,8 @@
     "url": "https://www.instagram.com/reel/DeqojA6NyUT/",
     "grid_views_raw": "23K",
     "grid_views_issue": null,
-    "status": "partial",
-    "fetched_at": "2026-11-14T05:15:18.263Z",
+    "status": "metrics_unavailable",
+    "fetched_at": "2026-11-14T08:54:31.739Z",
     "date": "2026-10-18",
     "date_precision": "day",
     "caption": "#チェンソーマン マキマ 🥋\n\n公安対魔特異4課を率いる謎めいた女性「マキマ」。デンジとの出会いをきっかけに彼を導きながら、物語の裏で暗躍し、チェンソーマンを象徴する存在として強い印象を残す人気キャラクターです。",
@@ -656,7 +822,7 @@
       "source": "profile_grid",
       "observed_at": "2026-10-23T16:18:07.272Z"
     },
-    "thumbnail_url": "https://instagram.fblr1-6.fna.fbcdn.net/v/t51.82787-15/852709327_1105465525306742_8604217767541697099_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=pOEmRiQbDNgQ7kNvwF6ZeXK&_nc_oc=AdpxE7lWExqqIGzvlePRihrAZuabPNeolS-Fec0kGcDN3iQRcBFHgEpIkGuh_PeRcxUa7jpG3WARxlGGnZJBdxJl&_nc_zt=23&_nc_ht=instagram.fblr1-6.fna&_nc_gid=SX4foz_oIKvoM40CFvNMuw&_nc_ss=7b6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQTubB9_ki0NMvxjtR46p8yIOPQIMVcxti7UqLfYTOyxtQ&oe=6AFDA9E4",
+    "thumbnail_url": "https://instagram.fblr1-6.fna.fbcdn.net/v/t51.82787-15/852709327_1105465525306742_8604217767541697099_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=pOEmRiQbDNgQ7kNvwGWLf74&_nc_oc=AdochrOy-zfKLQShBD_HhKPJ7XgtVbwLF0vb6uByahzmKS-3-vi3FlJWfCgCUS4mSyVeSsOaPvVMLPiqnEZ_W2Vc&_nc_zt=23&_nc_ht=instagram.fblr1-6.fna&_nc_gid=-zHRaUaoBZ-FBQxikGyN7A&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQT5BoVVS3zl9AbEp6bj2HLiegLn2oQ2TAK67LYJhSOcnA&oe=6AFDE224",
     "media_url": null,
     "missing": [
       "likes"
@@ -666,11 +832,30 @@
     },
     "raw": {
       "description": "「#チェンソーマン マキマ 🥋\n\n公安対魔特異4課を率いる謎めいた女性「マキマ」。デンジとの出会いをきっかけに彼を導きながら、物語の裏で暗躍し、チェンソーマンを象徴する存在として強い印象を残す人気キャラクターです。」 - 2026年10月18日、md.khan_070",
-      "article_text": "md.khan_070\nFollow\nAI-generated profile\n#チェンソーマン マキマ 🥋\n\n公安対魔特異4課を率いる謎めいた女性「マキマ」。デンジとの出会いをきっかけに彼を導きながら、物語の裏で暗躍し、チェンソーマンを象徴する存在として強い印象を残す人気キャラクターです。\nSee translation\nLikes\n11\n14\njxs7100\nFollow\nFilmmaker · Doppelbanger\nI GOT A CRTTTT MONITHAAAA\n248K\n903\n5,648\n22.3K",
-      "aria_text": "md.khan_070 reels\nmd.khan_070 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\njxs7100 reels\njxs7100 reels\nAudio image\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "article_text": "md.khan_070\nFollow\nAI-generated profile\n#チェンソーマン マキマ 🥋\n\n公安対魔特異4課を率いる謎めいた女性「マキマ」。デンジとの出会いをきっかけに彼を導きながら、物語の裏で暗躍し、チェンソーマンを象徴する存在として強い印象を残す人気キャラクターです。\nSee translation\nLikes\n11\n14\nmaxefrt\nFollow\nAram Bajakian · The Poet's Inner World\nAram Bajakian · The Poet's Inner World\nSteadfast 🗡️\n25.8K\n191\n642\n2,741",
+      "aria_text": "md.khan_070 reels\nmd.khan_070 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nmaxefrt reels\nmaxefrt reels\nVerified\nAudio image\nLocation\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
       "json_ld": {},
       "engagement": {
         "scope": "reel_action_controls",
+        "availability": {
+          "likes": {
+            "state": "explicitly_hidden",
+            "evidence": "Likes\nmd.khan_070 can see the total number of people who liked this post.\nwega___nokrek\nWega💝\nFollow\ntantan51109\nNa Rong\nFollow\nkapusta__andrey\nKapusta_ Andrey⚽️\nFollow\nsergiovillabon\nSergio Villabon Sanchez\nFollow\nkevinnolii\nKevin🐉\nFollow\n31jasonb\nJason b\nFollow\nzakaria._.belkhiri\nzakaria\nFollow\nt_hiru20\nThiru\nFollow\n_ador__17k\nAD OR\nFollow\nan_iconic_username\nFollow\ntarranttrace619\ntrace tarrant\nFollow\nofcsxbha\nFollow\n_dhaveedh_22_\nDhaveedh🖇️\nFollow\n_karthiiiiiiii___\n🐢\nFollow\npreamispeam\nFollow\niamthecat6\nIAmthecat\nFollow\nbeat_the_duck\nFollow",
+            "source": "metric_dialog"
+          },
+          "comments": {
+            "state": "measured",
+            "evidence": "Comment"
+          },
+          "reshares": {
+            "state": "measured",
+            "evidence": "Repost"
+          },
+          "shares": {
+            "state": "not_captured",
+            "evidence": "Control located but no reliable numeric value parsed."
+          }
+        },
         "likes_visibility": "not_shown",
         "comments": {
           "raw": "11",
@@ -682,10 +867,24 @@
           "source": "dom_action_control",
           "label": "Repost"
         }
+      },
+      "capture_checks": {
+        "access_clear": true,
+        "stable": true,
+        "read_passes": 2,
+        "access_attempts": [],
+        "metric_panels": [
+          {
+            "field": "likes",
+            "stable": true,
+            "access_clear": true,
+            "evidence": "Likes\nmd.khan_070 can see the total number of people who liked this post.\nwega___nokrek\nWega💝\nFollow\ntantan51109\nNa Rong\nFollow\nkapusta__andrey\nKapusta_ Andrey⚽️\nFollow\nsergiovillabon\nSergio Villabon Sanchez\nFollow\nkevinnolii\nKevin🐉\nFollow\n31jasonb\nJason b\nFollow\nzakaria._.belkhiri\nzakaria\nFollow\nt_hiru20\nThiru\nFollow\n_ador__17k\nAD OR\nFollow\nan_iconic_username\nFollow\ntarranttrace619\ntrace tarrant\nFollow\nofcsxbha\nFollow\n_dhaveedh_22_\nDhaveedh🖇️\nFollow\n_karthiiiiiiii___\n🐢\nFollow\npreamispeam\nFollow\niamthecat6\nIAmthecat\nFollow\nbeat_the_duck\nFollow"
+          }
+        ]
       }
     },
     "last_error": null,
-    "last_attempt_at": "2026-11-14T05:15:18.263Z",
+    "last_attempt_at": "2026-11-14T08:54:31.739Z",
     "date_source": "og_description_localized",
     "reshares": {
       "value": 14,
@@ -708,17 +907,17 @@
       }
     },
     "analysis_resolution": {
-      "status": "requires_verification",
-      "source": "visible_page_capture",
-      "recorded_at": "2026-11-14T05:15:18.263Z",
-      "reason": "Previous automatic resolution lacked explicit evidence that the metric was hidden or disabled. Saved values retained; extraction requires verification.",
+      "status": "resolved",
+      "source": "explicit_visibility_evidence",
+      "recorded_at": "2026-11-14T08:54:31.739Z",
+      "reason": "Unavailable metrics resolved using explicit visibility evidence or user assessment. Saved observations remain valid; missing values are unknown, not zero.",
       "unavailable_fields": [
         "likes"
       ],
       "previous_status": "partial",
       "policy_checked_at": "2026-11-14T08:26:03.802Z"
     },
-    "extraction_review": "Metric extraction is incomplete; absence has not been confirmed. Inspect or retry rather than assume hidden counts.",
+    "extraction_review": null,
     "previous_analysis_resolution": {
       "status": "resolved",
       "source": "visible_page_capture",
@@ -728,7 +927,8 @@
         "likes"
       ],
       "previous_status": "partial"
-    }
+    },
+    "access_review": null
   },
   {
     "kind": "reel",
@@ -830,8 +1030,8 @@
     "url": "https://www.instagram.com/reel/DepQ5JftNOy/",
     "grid_views_raw": "29.2K",
     "grid_views_issue": null,
-    "status": "partial",
-    "fetched_at": "2026-11-14T05:15:22.920Z",
+    "status": "metrics_unavailable",
+    "fetched_at": "2026-11-14T08:54:38.848Z",
     "date": "2026-10-18",
     "date_precision": "day",
     "caption": "#チェンソーマン マキマ 🥋\n\n公安対魔特異4課を率いる謎めいた女性「マキマ」。デンジとの出会いをきっかけに彼を導きながら、物語の裏で暗躍し、チェンソーマンを象徴する存在として強い印象を残す人気キャラクターです。",
@@ -852,7 +1052,7 @@
       "source": "profile_grid",
       "observed_at": "2026-10-23T16:18:07.272Z"
     },
-    "thumbnail_url": "https://instagram.fblr24-3.fna.fbcdn.net/v/t51.82787-15/856770517_1496235739003141_1045198923104887464_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=kCcSQPSWWaAQ7kNvwGdeRhm&_nc_oc=AdoY8FtLi6PZGOWVTPlA6uBtseiiknO1Pe-0lP144ZWbgElrzjxzuOKwIWjXbi11oeuxL_WmaO4toFhhSfu94GmB&_nc_zt=23&_nc_ht=instagram.fblr24-3.fna&_nc_gid=e2ChJTMuICHxNHAPPgQgxA&_nc_ss=7b6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQSsJUbQ2uSw8jqaaC3n23IWeaG4KBaVrn7umpbFfv6Bhg&oe=6AFDBF46",
+    "thumbnail_url": "https://instagram.fblr24-3.fna.fbcdn.net/v/t51.82787-15/856770517_1496235739003141_1045198923104887464_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=kCcSQPSWWaAQ7kNvwFwL1EA&_nc_oc=Adp3jJb_0t4RT7VpHSgUj6iSnY2XgT0yTRxAbB09vCdqq8Y0GDgCgEoK40yTkbKz4jkYnCG9mUADajPz8kuWfZtk&_nc_zt=23&_nc_ht=instagram.fblr24-3.fna&_nc_gid=DEXLxWQzJ_EgGKePWQ92TA&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQTTKhtOlXCZJHfEsWNCb-hK0VdbFQKaEJ-wyBjqB2I0Pw&oe=6AFDF786",
     "media_url": null,
     "missing": [
       "likes"
@@ -862,11 +1062,30 @@
     },
     "raw": {
       "description": "「#チェンソーマン マキマ 🥋\n\n公安対魔特異4課を率いる謎めいた女性「マキマ」。デンジとの出会いをきっかけに彼を導きながら、物語の裏で暗躍し、チェンソーマンを象徴する存在として強い印象を残す人気キャラクターです。」 - 2026年10月18日、md.khan_070",
-      "article_text": "md.khan_070\nFollow\nAI-generated profile\n#チェンソーマン マキマ 🥋\n\n公安対魔特異4課を率いる謎めいた女性「マキマ」。デンジとの出会いをきっかけに彼を導きながら、物語の裏で暗躍し、チェンソーマンを象徴する存在として強い印象を残す人気キャラクターです。\nSee translation\nLikes\n3\n6\njxs7100\nFollow\nFilmmaker · Doppelbanger\nI GOT A CRTTTT MONITHAAAA\n248K\n903\n5,648\n22.3K",
-      "aria_text": "md.khan_070 reels\nmd.khan_070 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\njxs7100 reels\njxs7100 reels\nAudio image\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "article_text": "md.khan_070\nFollow\nAI-generated profile\n#チェンソーマン マキマ 🥋\n\n公安対魔特異4課を率いる謎めいた女性「マキマ」。デンジとの出会いをきっかけに彼を導きながら、物語の裏で暗躍し、チェンソーマンを象徴する存在として強い印象を残す人気キャラクターです。\nSee translation\nLikes\n3\n6\navicii\nFollow\nAvicii · Silhouettes\nWhere it all began – the opening of Avicii’s first Tomorrowland MainStage set ◢ ◤\n\nOn July 23, 2011, Avicii took the Tomorrowland crowd through a set that would be regarded as one of the most iconic performances in EDM history, from “Silhouettes” to an early play of “Levels” months before its release.\n\nExperience the full performance on Avicii Community, the official home for fans worldwide. Watch the entire 2011 Tomorrowland set on avicii.com/community or through the link in bio.\n82.2K\n879\n4,408\n3,966",
+      "aria_text": "md.khan_070 reels\nmd.khan_070 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\navicii reels\navicii reels\nVerified\nAudio image\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
       "json_ld": {},
       "engagement": {
         "scope": "reel_action_controls",
+        "availability": {
+          "likes": {
+            "state": "explicitly_hidden",
+            "evidence": "Likes\nmd.khan_070 can see the total number of people who liked this post.\nwega___nokrek\nWega💝\nFollow\nbibbyb767\nBibby Bob\nFollow\nmuhammad_538899\nМухаммад\nFollow\nnotfuckingxavii\ntoto\nFollow\nranjith132_rj.bpm\nRanjith Ranjan\nFollow\n31jasonb\nJason b\nFollow\nalex._.0107\nAlex\nFollow\ndilushan450\nDilushan\nFollow\ntapa.donz\n𝕯.✞︎\nFollow\nnasu_ri53\nنصرالله♟️\nFollow\n_ador__17k\nAD OR\nFollow\n_estebanferrer_\nCharmander\nFollow\n_dhaveedh_22_\nDhaveedh🖇️\nFollow\nnatth_asi\n!\nFollow\njayyjayy.nyc_\n_𝖎𝖒𝖜𝖎𝖙𝖏𝖆𝖞𝖞_\nFollow\nradjabov.m.05\nМарат\nFollow\n_nettebruno\nBruno Otavio\nFollow",
+            "source": "metric_dialog"
+          },
+          "comments": {
+            "state": "measured",
+            "evidence": "Comment"
+          },
+          "reshares": {
+            "state": "measured",
+            "evidence": "Repost"
+          },
+          "shares": {
+            "state": "not_captured",
+            "evidence": "Control located but no reliable numeric value parsed."
+          }
+        },
         "likes_visibility": "not_shown",
         "comments": {
           "raw": "3",
@@ -878,10 +1097,24 @@
           "source": "dom_action_control",
           "label": "Repost"
         }
+      },
+      "capture_checks": {
+        "access_clear": true,
+        "stable": true,
+        "read_passes": 2,
+        "access_attempts": [],
+        "metric_panels": [
+          {
+            "field": "likes",
+            "stable": true,
+            "access_clear": true,
+            "evidence": "Likes\nmd.khan_070 can see the total number of people who liked this post.\nwega___nokrek\nWega💝\nFollow\nbibbyb767\nBibby Bob\nFollow\nmuhammad_538899\nМухаммад\nFollow\nnotfuckingxavii\ntoto\nFollow\nranjith132_rj.bpm\nRanjith Ranjan\nFollow\n31jasonb\nJason b\nFollow\nalex._.0107\nAlex\nFollow\ndilushan450\nDilushan\nFollow\ntapa.donz\n𝕯.✞︎\nFollow\nnasu_ri53\nنصرالله♟️\nFollow\n_ador__17k\nAD OR\nFollow\n_estebanferrer_\nCharmander\nFollow\n_dhaveedh_22_\nDhaveedh🖇️\nFollow\nnatth_asi\n!\nFollow\njayyjayy.nyc_\n_𝖎𝖒𝖜𝖎𝖙𝖏𝖆𝖞𝖞_\nFollow\nradjabov.m.05\nМарат\nFollow\n_nettebruno\nBruno Otavio\nFollow"
+          }
+        ]
       }
     },
     "last_error": null,
-    "last_attempt_at": "2026-11-14T05:15:22.920Z",
+    "last_attempt_at": "2026-11-14T08:54:38.849Z",
     "date_source": "og_description_localized",
     "reshares": {
       "value": 6,
@@ -904,17 +1137,17 @@
       }
     },
     "analysis_resolution": {
-      "status": "requires_verification",
-      "source": "visible_page_capture",
-      "recorded_at": "2026-11-14T05:15:22.920Z",
-      "reason": "Previous automatic resolution lacked explicit evidence that the metric was hidden or disabled. Saved values retained; extraction requires verification.",
+      "status": "resolved",
+      "source": "explicit_visibility_evidence",
+      "recorded_at": "2026-11-14T08:54:38.848Z",
+      "reason": "Unavailable metrics resolved using explicit visibility evidence or user assessment. Saved observations remain valid; missing values are unknown, not zero.",
       "unavailable_fields": [
         "likes"
       ],
       "previous_status": "partial",
       "policy_checked_at": "2026-11-14T08:26:03.802Z"
     },
-    "extraction_review": "Metric extraction is incomplete; absence has not been confirmed. Inspect or retry rather than assume hidden counts.",
+    "extraction_review": null,
     "previous_analysis_resolution": {
       "status": "resolved",
       "source": "visible_page_capture",
@@ -924,7 +1157,8 @@
         "likes"
       ],
       "previous_status": "partial"
-    }
+    },
+    "access_review": null
   },
   {
     "kind": "reel",
@@ -979,8 +1213,8 @@
     "url": "https://www.instagram.com/reel/DepKwruNQoE/",
     "grid_views_raw": "47.8K",
     "grid_views_issue": null,
-    "status": "partial",
-    "fetched_at": "2026-11-14T05:15:27.380Z",
+    "status": "metrics_unavailable",
+    "fetched_at": "2026-11-14T08:54:45.642Z",
     "date": "2026-10-18",
     "date_precision": "day",
     "caption": "#チェンソーマン マキマ 🥋\n\n公安対魔特異4課を率いる謎めいた女性「マキマ」。デンジとの出会いをきっかけに彼を導きながら、物語の裏で暗躍し、チェンソーマンを象徴する存在として強い印象を残す人気キャラクターです。",
@@ -1001,7 +1235,7 @@
       "source": "profile_grid",
       "observed_at": "2026-10-23T16:18:07.272Z"
     },
-    "thumbnail_url": "https://instagram.fblr1-8.fna.fbcdn.net/v/t51.82787-15/853671387_1154390110486779_5988467974641588098_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=NdcgLv2yIvwQ7kNvwG3iK7_&_nc_oc=AdqCOB_xMT2ixRxTuEYr-ppaG_KYUdFajDElVp7IQcWtV37wfJ7APwizfpwJUqzAM6Q0oqgk78v8-3kHrEj5E9ro&_nc_zt=23&_nc_ht=instagram.fblr1-8.fna&_nc_gid=VfCIGywX7-XOCm6Y7nsgMw&_nc_ss=7b6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQREQc1F7g4oa8lO84u_mrHgjkV4Fz5RQupgOi7BFHOuug&oe=6AFDB7FC",
+    "thumbnail_url": "https://instagram.fblr1-8.fna.fbcdn.net/v/t51.82787-15/853671387_1154390110486779_5988467974641588098_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=NdcgLv2yIvwQ7kNvwEC3e3g&_nc_oc=AdqfP4npMER5L7rhhv0eOmMxkv9w0VEbCmHmdSTJ6maIc5dwKOnuBE9Z0m0Qw4grgIlgFCbBhUNIyp04PwkSvN-C&_nc_zt=23&_nc_ht=instagram.fblr1-8.fna&_nc_gid=twWx-aldBB8PQ-f4i5O2Ag&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQQfrCeP9hB6jZY2Vc44zjyUisiL6-uF7TjrkMBXa4laRg&oe=6AFDF03C",
     "media_url": null,
     "missing": [
       "likes"
@@ -1011,11 +1245,30 @@
     },
     "raw": {
       "description": "「#チェンソーマン マキマ 🥋\n\n公安対魔特異4課を率いる謎めいた女性「マキマ」。デンジとの出会いをきっかけに彼を導きながら、物語の裏で暗躍し、チェンソーマンを象徴する存在として強い印象を残す人気キャラクターです。」 - 2026年10月18日、md.khan_070",
-      "article_text": "md.khan_070\nFollow\nAI-generated profile\n#チェンソーマン マキマ 🥋\n\n公安対魔特異4課を率いる謎めいた女性「マキマ」。デンジとの出会いをきっかけに彼を導きながら、物語の裏で暗躍し、チェンソーマンを象徴する存在として強い印象を残す人気キャラクターです。\nSee translation\nLikes\n10\n44\ntulunada_sogasu\nFollow\n20 people\nಹುಲ್ಲು ಕಡಿಯುವಾಗ ಅನಿರೀಕ್ಷಿತವಾಗಿ ಕಣ್ಣಿಗೆ ಬಿದ್ದ ಕಂದೋಡಿ ಹಾವು! 🐍\nನಾವು ಪ್ರತಿದಿನ ಕೃಷಿ ಕೆಲಸ ಮಾಡುವಾಗ ಇಂತಹ ಅಪಾಯಕಾರಿ ಜೀವಿಗಳು ಹುಲ್ಲಿನ ನಡುವೆ ಅಡಗಿರಬಹುದು.\nಆದ್ದರಿಂದ ಎಲ್ಲರೂ ಎಚ್ಚರಿಕೆಯಿಂದಿರಿ. ಕೃಷಿ ಕೆಲಸಕ್ಕೆ ಹೋಗುವಾಗ ಗಮ್‌ಬೂಟ್ಸ್ ಧರಿಸಿ, ಕೈಗಳಿಗೆ ಸೂಕ್ತ ರಕ್ಷಣೆ ಒದಗಿಸಿಕೊಳ್ಳಿ.\nಹಾವನ್ನು ಕಂಡರೆ ಮುಟ್ಟಲು ಅಥವಾ ಹಿಡಿಯಲು ಪ್ರಯತ್ನಿಸಬೇಡಿ. ಸುರಕ್ಷಿತ ಅಂತರ ಕಾಯ್ದುಕೊಳ್ಳಿ.\nನಿಮ್ಮ ಸುರಕ್ಷತೆ ನಿಮ್ಮ ಕೈಯಲ್ಲಿದೆ. 🙏\n📌\n#SnakeAwareness #SnakeSafety #Kandodi #TulunadaSogasu #Tulunadu SnakeRescue VillageLife Agriculture FarmSafety NatureLovers KannadaReels TuluReels StaySafe WildlifeAwareness\nSee translation\n9,068\n180\n106\n4,500",
-      "aria_text": "md.khan_070 reels\nmd.khan_070 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\ntulunada_sogasu reels\ntulunada_sogasu reels\nTagged users\nTagged users\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "article_text": "md.khan_070\nFollow\nAI-generated profile\n#チェンソーマン マキマ 🥋\n\n公安対魔特異4課を率いる謎めいた女性「マキマ」。デンジとの出会いをきっかけに彼を導きながら、物語の裏で暗躍し、チェンソーマンを象徴する存在として強い印象を残す人気キャラクターです。\nSee translation\nLikes\n10\n44\nonechampionship\nFollow\n2 people\nKeep your head up 🙏 @rodtang_jimungnon @nongogaiyanghadao\n \n#TheInnerCircle38\n🔴 Join The Inner Circle for only USD9.99/month at live.onefc.com.\n🟢 NEW 👉 Log in with LINE! No account? Sign up to watch select past events from 2026 for FREE\n125K\n648\n2,996\n6,087",
+      "aria_text": "md.khan_070 reels\nmd.khan_070 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nonechampionship reels\nonechampionship reels\nVerified\nTagged users\nTagged users\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
       "json_ld": {},
       "engagement": {
         "scope": "reel_action_controls",
+        "availability": {
+          "likes": {
+            "state": "explicitly_hidden",
+            "evidence": "Likes\nmd.khan_070 can see the total number of people who liked this post.\nnatsu___ts\nFollow\ntom_leblanc13\nTom LeBlanc\nFollow\nramiroosanchezz\nRamiro Sanchez\nFollow\nrelatewith_panwarji\nSachin\nFollow\nsujan_2006_\nSujan Thakur\nFollow\nyas3nsworld_\nmarquisarchives\nFollow\ntimur.rectifier\nТимур\nFollow\n_ador__17k\nAD OR\nFollow\nabyylp_\nAbigail León\nFollow\naskat_bayishov\nАскат Байышов🇰🇬\nFollow\ngreg_pontes_\nGregory\nFollow\nrasik_batman\n🗿⚡\nFollow\nkeafear\nСережа\nFollow\nqhungng.exe\nMARTIAN*16\nFollow\n_louiz.carlos\nLuiz Carlos Nascimento\nFollow\njustenough.jpeg\nHeadZache\nFollow\nkezya_a0\nFollow",
+            "source": "metric_dialog"
+          },
+          "comments": {
+            "state": "measured",
+            "evidence": "Comment"
+          },
+          "reshares": {
+            "state": "measured",
+            "evidence": "Repost"
+          },
+          "shares": {
+            "state": "not_captured",
+            "evidence": "Control located but no reliable numeric value parsed."
+          }
+        },
         "likes_visibility": "not_shown",
         "comments": {
           "raw": "10",
@@ -1027,10 +1280,24 @@
           "source": "dom_action_control",
           "label": "Repost"
         }
+      },
+      "capture_checks": {
+        "access_clear": true,
+        "stable": true,
+        "read_passes": 2,
+        "access_attempts": [],
+        "metric_panels": [
+          {
+            "field": "likes",
+            "stable": true,
+            "access_clear": true,
+            "evidence": "Likes\nmd.khan_070 can see the total number of people who liked this post.\nnatsu___ts\nFollow\ntom_leblanc13\nTom LeBlanc\nFollow\nramiroosanchezz\nRamiro Sanchez\nFollow\nrelatewith_panwarji\nSachin\nFollow\nsujan_2006_\nSujan Thakur\nFollow\nyas3nsworld_\nmarquisarchives\nFollow\ntimur.rectifier\nТимур\nFollow\n_ador__17k\nAD OR\nFollow\nabyylp_\nAbigail León\nFollow\naskat_bayishov\nАскат Байышов🇰🇬\nFollow\ngreg_pontes_\nGregory\nFollow\nrasik_batman\n🗿⚡\nFollow\nkeafear\nСережа\nFollow\nqhungng.exe\nMARTIAN*16\nFollow\n_louiz.carlos\nLuiz Carlos Nascimento\nFollow\njustenough.jpeg\nHeadZache\nFollow\nkezya_a0\nFollow"
+          }
+        ]
       }
     },
     "last_error": null,
-    "last_attempt_at": "2026-11-14T05:15:27.381Z",
+    "last_attempt_at": "2026-11-14T08:54:45.642Z",
     "date_source": "og_description_localized",
     "reshares": {
       "value": 44,
@@ -1053,17 +1320,17 @@
       }
     },
     "analysis_resolution": {
-      "status": "requires_verification",
-      "source": "visible_page_capture",
-      "recorded_at": "2026-11-14T05:15:27.381Z",
-      "reason": "Previous automatic resolution lacked explicit evidence that the metric was hidden or disabled. Saved values retained; extraction requires verification.",
+      "status": "resolved",
+      "source": "explicit_visibility_evidence",
+      "recorded_at": "2026-11-14T08:54:45.642Z",
+      "reason": "Unavailable metrics resolved using explicit visibility evidence or user assessment. Saved observations remain valid; missing values are unknown, not zero.",
       "unavailable_fields": [
         "likes"
       ],
       "previous_status": "partial",
       "policy_checked_at": "2026-11-14T08:26:03.802Z"
     },
-    "extraction_review": "Metric extraction is incomplete; absence has not been confirmed. Inspect or retry rather than assume hidden counts.",
+    "extraction_review": null,
     "previous_analysis_resolution": {
       "status": "resolved",
       "source": "visible_page_capture",
@@ -1073,7 +1340,8 @@
         "likes"
       ],
       "previous_status": "partial"
-    }
+    },
+    "access_review": null
   },
   {
     "kind": "reel",

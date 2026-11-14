@@ -279,8 +279,8 @@
     "url": "https://www.instagram.com/reel/DbyGzDLBb8M/",
     "grid_views_raw": "17K",
     "grid_views_issue": null,
-    "status": "partial",
-    "fetched_at": "2026-11-14T05:09:24.274Z",
+    "status": "complete",
+    "fetched_at": "2026-11-14T08:48:26.390Z",
     "date": "2026-08-08",
     "date_precision": "day",
     "caption": "Hollywood. Known for his own standout fashion moments, he kept it effortlessly stylish in a look worthy of the runway. #taehyung - @positive.mpire on August 8, 2026",
@@ -290,7 +290,13 @@
     "mentions": [
       "@positive.mpire"
     ],
-    "likes": null,
+    "likes": {
+      "value": 1091,
+      "raw": "1,091",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Like"
+    },
     "comments": {
       "value": 5,
       "raw": "5",
@@ -305,22 +311,40 @@
       "source": "profile_grid",
       "observed_at": "2026-10-23T15:33:38.681Z"
     },
-    "thumbnail_url": "https://instagram.fblr1-3.fna.fbcdn.net/v/t51.71878-15/767101303_4400073563644016_4720022451837040558_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=cOAZGKgLjJ0Q7kNvwHxPZZs&_nc_oc=AdpWIZS_GHALBOWSSgGBxx3wdH0L-T_alCdNazC2nXvXCwilgDsGlmmOTh_II4nw0QFSkNZvg6dPkoGi7uPNR-a3&_nc_zt=23&_nc_ht=instagram.fblr1-3.fna&_nc_gid=kUboc0RGZq7IHFoJ1pu87g&_nc_ss=7b6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQRGS0gcT-17UyPByRwSJFznVS8Mt9Q2ts6iJqz0rUcaWQ&oe=6AFDD9D9",
+    "thumbnail_url": "https://instagram.fblr1-3.fna.fbcdn.net/v/t51.71878-15/767101303_4400073563644016_4720022451837040558_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=cOAZGKgLjJ0Q7kNvwFUIDua&_nc_oc=AdqEA4sx9u_gbyiLyumLzIy9NoCKpSyTiepis1VBjNfUk4ztUO4O3cVISkzdW2c8MzPVUB1BU2gtebaOSZ-jh8l6&_nc_zt=23&_nc_ht=instagram.fblr1-3.fna&_nc_gid=sZ8KdWqMZTSYb2IHhrju1A&_nc_ss=7e6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQQfc8oyxrgJcHlfvpz4iE_5legmDXqVLysgDVhXER4uOA&oe=6AFDD9D9",
     "media_url": null,
-    "missing": [
-      "likes"
-    ],
-    "missing_reasons": {
-      "likes": "The like control displayed no numeric like count; nearby comment or reshare counts are not likes."
-    },
+    "missing": [],
+    "missing_reasons": {},
     "raw": {
       "description": "V stepped into the crowd, taking in live performances at Vogue World: Hollywood. Known for his own standout fashion moments, he kept it effortlessly stylish in a look worthy of the runway. #taehyung - @positive.mpire on August 8, 2026",
-      "article_text": "positive.mpire\nFollow\nAI-generated profile\n• AI content\nV stepped into the crowd, taking in live performances at Vogue World: Hollywood. Known for his own standout fashion moments, he kept it effortlessly stylish in a look worthy of the runway. #taehyung\n1,091\n5\n38\n88\nshubham2peak\nFollow\nHELLBLADE, MATORO · ACIDTEKK (Super Slowed)\nHELLBLADE, MATORO · ACIDTEKK (Super Slowed)\nBrah\n16.7K\n36\n175\n1,259",
-      "aria_text": "positive.mpire reels\npositive.mpire reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nshubham2peak reels\nshubham2peak reels\nAudio image\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "article_text": "positive.mpire\nFollow\nAI-generated profile\n• AI content\nV stepped into the crowd, taking in live performances at Vogue World: Hollywood. Known for his own standout fashion moments, he kept it effortlessly stylish in a look worthy of the runway. #taehyung\n1,091\n5\n38\n88\nsai.tanvi and don_tanvi_312\nFollow\n\"Tera kutta Plank kar raha hai\"🗣🗣😭@don_tanvi_312\nSee translation\n286K\n1,059\n1,556\n110K",
+      "aria_text": "positive.mpire reels\npositive.mpire reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nsai.tanvi reels\nsai.tanvi reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
       "json_ld": {},
       "engagement": {
         "scope": "reel_action_controls",
-        "likes_visibility": "not_shown",
+        "availability": {
+          "likes": {
+            "state": "measured",
+            "evidence": "Like"
+          },
+          "comments": {
+            "state": "measured",
+            "evidence": "Comment"
+          },
+          "reshares": {
+            "state": "measured",
+            "evidence": "Repost"
+          },
+          "shares": {
+            "state": "measured",
+            "evidence": "Share"
+          }
+        },
+        "likes": {
+          "raw": "1,091",
+          "source": "dom_action_control",
+          "label": "Like"
+        },
         "comments": {
           "raw": "5",
           "source": "dom_action_control",
@@ -336,10 +360,16 @@
           "source": "dom_action_control",
           "label": "Share"
         }
+      },
+      "capture_checks": {
+        "access_clear": true,
+        "stable": true,
+        "read_passes": 2,
+        "access_attempts": []
       }
     },
     "last_error": null,
-    "last_attempt_at": "2026-11-14T05:09:24.275Z",
+    "last_attempt_at": "2026-11-14T08:48:26.391Z",
     "date_source": "og_description",
     "reshares": {
       "value": 38,
@@ -355,7 +385,7 @@
       "source": "dom_action_control",
       "label": "Share"
     },
-    "likes_visibility": "not_shown",
+    "likes_visibility": "count_available",
     "analysis_resolution": {
       "status": "requires_verification",
       "source": "visible_page_capture",
@@ -367,7 +397,7 @@
       "previous_status": "partial",
       "policy_checked_at": "2026-11-14T08:26:03.802Z"
     },
-    "extraction_review": "Metric extraction is incomplete; absence has not been confirmed. Inspect or retry rather than assume hidden counts.",
+    "extraction_review": null,
     "previous_analysis_resolution": {
       "status": "resolved",
       "source": "visible_page_capture",
@@ -377,7 +407,8 @@
         "likes"
       ],
       "previous_status": "partial"
-    }
+    },
+    "access_review": null
   },
   {
     "kind": "reel",

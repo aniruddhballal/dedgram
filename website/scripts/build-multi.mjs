@@ -29,13 +29,10 @@ const fullProfiles = [
   'not.yourtyppee',
   'renee30287',
   'reelrestock',
-  'bollyxedit.7',
   'dark_man1__',
   'hazelxpost',
   'pranto_harryson',
   'nastynigas',
-  'dank.meemz420',
-  'funny.exe07',
   'nhiftbl',
   'movi.egaze',
   'kanika_s.0711',
@@ -203,7 +200,7 @@ const profileLevelProfiles = [
   'emilily_ss',
   'dina4988542',
 ];
-const retainedMetricProfiles = ['jellyfish.m3mes', 'prxctm0l', 'coopyyz', 'extreme_laugh_07'];
+const retainedMetricProfiles = ['jellyfish.m3mes', 'prxctm0l', 'coopyyz', 'extreme_laugh_07', 'dank.meemz420', 'bollyxedit.7', 'funny.exe07'];
 const retainedMetricSet = new Set(retainedMetricProfiles);
 const excludedProfiles = ['hnvx.07', 'prime_senchui', 'vlad.aep_', 'nxx._.nmercy', 'dexea.100k', 'igpostinggang', 'rzk.mp4', 'renyajichu', 'hammergag', 'caodogsfofo', 'back', '41.3k', 'short_vibesz', 'oooiway', 'zuxxie.pov', 'extreme.laugh8', 'iron_block2', 'memes.fatafat', 'waytoway__', 'luffytheegear5', 'chir.eze', 'dinosaur.24252627'];
 const publishedProfiles = [...fullProfiles, ...profileLevelProfiles, ...retainedMetricProfiles, ...excludedProfiles];
@@ -431,11 +428,13 @@ const overviewReelRows = (await Promise.all(topReels.map(async (item) => {
   const image = thumb ? `<img class="overview-reel-thumb" src="../media/${esc(thumb)}" alt="Cover image for reel ${esc(item.shortcode)}" loading="lazy">` : '<span class="overview-thumb-fallback" aria-hidden="true">REEL</span>';
   return `<tr><td><div class="content-cell">${image}<a href="${esc(item.url)}" target="_blank" rel="noopener noreferrer">${esc(item.shortcode)} ↗</a></div></td><td><a href="../profiles/${item.username}/">@${esc(item.username)}</a></td><td>${esc(date(item.date, item.date_precision))}</td><td><strong>${esc(metric(item.views))}</strong></td><td>${esc(metric(item.likes))}</td><td>${esc(metric(item.comments))}</td></tr>`;
 }))).join('');
+const hasReelDetailAttempt = (items) => items.some((item) => item.kind === 'reel'
+  && (item.fetched_at || item.last_attempt_at || ['complete', 'partial', 'failed', 'needs_review', 'age_restricted', 'archived', 'metrics_unavailable'].includes(item.status)));
 const reelAnalysisPendingCount = publishedSnapshotProfiles.filter((username) => {
   const { discovery, items } = snapshotData.get(username);
-  return (discovery.reel.items || []).length > 0 && !items.some((item) => item.kind === 'reel');
+  return !retainedMetricSet.has(username) && (discovery.reel.items || []).length > 0 && !hasReelDetailAttempt(items);
 }).length;
-const reelRecordProfileCount = publishedSnapshotProfiles.filter((username) => !retainedMetricSet.has(username) && snapshotData.get(username).items.some((item) => item.kind === 'reel')).length;
+const reelRecordProfileCount = publishedSnapshotProfiles.filter((username) => !retainedMetricSet.has(username) && hasReelDetailAttempt(snapshotData.get(username).items)).length;
 const profileDetailsOnlyCount = publishedSnapshotProfiles.filter((username) => {
   const { discovery, items } = snapshotData.get(username);
   return !zeroReelProfiles.has(username) && !(discovery.reel.items || []).length

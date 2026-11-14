@@ -5,10 +5,23 @@
     "url": "https://www.instagram.com/reel/Dewf760IR4k/",
     "grid_views_raw": "8,525",
     "grid_views_issue": null,
-    "status": "failed",
-    "last_error": "Instagram reports this page is unavailable.",
-    "last_attempt_at": "2026-10-28T11:32:29.596Z",
+    "status": "archived",
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T08:54:53.568Z",
     "attempts": 1,
+    "missing": [],
+    "missing_reasons": {},
+    "deletion_check": {
+      "status": "deleted",
+      "reason": "Instagram explicitly reported the reel page unavailable; deletion versus archiving is unconfirmed.",
+      "checked_at": "2026-11-14T08:54:53.568Z",
+      "source": "live_reel_and_parent_check",
+      "parent": {
+        "status": "unavailable",
+        "error": "Instagram reports this page is unavailable.",
+        "checked_at": "2026-11-14T08:54:53.568Z"
+      }
+    },
     "views": {
       "value": 8525,
       "raw": "8,525",

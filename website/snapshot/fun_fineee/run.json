@@ -1,23 +1,19 @@
 {
-  "started_at": "2026-11-05T15:08:54.854Z",
-  "updated_at": "2026-11-05T15:11:37.663Z",
-  "status": "partial",
-  "phase": "done",
+  "started_at": "2026-11-14T09:54:32.120Z",
+  "updated_at": "2026-11-14T09:54:39.647Z",
+  "status": "blocked",
+  "phase": "item details",
   "scope": [
     "reel"
   ],
-  "current_url": null,
-  "error": null,
+  "current_url": "https://www.instagram.com/reel/DddW5GHyKy_/",
+  "error": "Instagram returned HTTP 429 (rate limit). URL: https://www.instagram.com/reel/DddW5GHyKy_/",
   "progress": {
     "task": "item_details",
-    "label": "Reel details",
-    "action": "Opening reel pages and extracting dates, captions, views, likes and comments",
-    "completed": 40,
-    "total": 40,
-    "percent": 100,
-    "remaining": 0,
-    "current_item": null,
-    "detail": "Stage finished with review required",
-    "updated_at": "2026-11-05T15:11:37.663Z"
+    "label": "Verify incomplete reel details",
+    "completed": 1,
+    "total": 2,
+    "detail": "DddW5GHyKy_",
+    "updated_at": "2026-11-14T09:54:39.124Z"
   }
 }

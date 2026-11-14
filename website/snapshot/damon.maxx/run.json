@@ -1,7 +1,7 @@
 {
-  "started_at": "2026-11-14T05:09:50.068Z",
-  "updated_at": "2026-11-14T08:26:03.802Z",
-  "status": "partial",
+  "started_at": "2026-11-14T09:53:44.697Z",
+  "updated_at": "2026-11-14T09:53:52.961Z",
+  "status": "complete",
   "phase": "done",
   "scope": [
     "reel"
@@ -10,12 +10,11 @@
   "error": null,
   "progress": {
     "task": "item_details",
-    "label": "Detail resolution",
+    "label": "Verify incomplete reel details",
     "completed": 1,
     "total": 1,
-    "percent": 100,
-    "detail": "Policy audit: access or missing-metric evidence requires verification. All saved values preserved.",
-    "updated_at": "2026-11-14T08:26:03.802Z"
+    "detail": "All reels complete or explicitly resolved",
+    "updated_at": "2026-11-14T09:53:52.961Z"
   },
   "browser_left_open": true
 }

@@ -5,8 +5,8 @@
     "url": "https://www.instagram.com/reel/DfCCtM3ypuy/",
     "grid_views_raw": "24.2K",
     "grid_views_issue": null,
-    "status": "partial",
-    "fetched_at": "2026-11-14T05:09:54.027Z",
+    "status": "metrics_unavailable",
+    "fetched_at": "2026-11-14T09:53:50.453Z",
     "date": "2026-10-28",
     "date_precision": "day",
     "caption": null,
@@ -27,7 +27,7 @@
       "source": "profile_grid",
       "observed_at": "2026-11-01T12:16:54.336Z"
     },
-    "thumbnail_url": "https://instagram.fblr1-3.fna.fbcdn.net/v/t51.71878-15/867376823_1779056206704428_8491341009305876638_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=IcDZG1MNNTUQ7kNvwEFcCfA&_nc_oc=AdrjekCh8eekOVblfpmLPHQZSR8TI0vA9uQPsS6rT9gmaLvjHYaI0p0AETu1iYBFmr072PXdLv23WznIl3oQrNHn&_nc_zt=23&_nc_ht=instagram.fblr1-3.fna&_nc_gid=KdAabZM6YIGPjCeiaCqpPA&_nc_ss=7b6a8&_nc_ct=RQosPBUKFQgAAAA&oh=00_AQQrsoJuHgBSIe_BnC88UwBfHfBi_PE_KC4WQ14kYVm-bQ&oe=6AFDCF85",
+    "thumbnail_url": "https://instagram.fblr1-3.fna.fbcdn.net/v/t51.71878-15/867376823_1779056206704428_8491341009305876638_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=IcDZG1MNNTUQ7kNvwG8C6EC&_nc_oc=AdpqS5QBeq7McT9_MZZsnJOjOZgg9I2aMf6Q03nkSEy3JYN7hupxlhowOnJjAPAjHtlOGkd1OLZM8VRCD3fmAaj2&_nc_zt=23&_nc_ht=instagram.fblr1-3.fna&_nc_gid=dh9YsQ-fQIKg_uNbpw7-kA&_nc_ss=7e6a8&_nc_ct=RQosPBUKFQgAAAA&oh=00_AQTWepR4OXQW2bl8WLieJ0uxMisi4en5BAh7WHXAt-7pjA&oe=6AFE07C5",
     "media_url": null,
     "missing": [
       "likes"
@@ -37,11 +37,30 @@
     },
     "raw": {
       "description": "「\"有村架純が自分自身と向き合い、得た気づき。俳優業を通して「自分とは何なんだろう」と向き合ってきた彼女が、自分自身を知ることの大切さや、最新作『さとこはいつも』について語る。\".」 - 2026年10月28日、damon.maxx",
-      "article_text": "damon.maxx\nFollow\nUSA\n\"有村架純が自分自身と向き合い、得た気づき。俳優業を通して「自分とは何なんだろう」と向き合ってきた彼女が、自分自身を知ることの大切さや、最新作『さとこはいつも』について語る。\".\nSee translation\nLikes\n4\n2\njxs7100\nFollow\nFilmmaker · Doppelbanger\nI GOT A CRTTTT MONITHAAAA\n248K\n903\n5,647\n22.3K",
-      "aria_text": "damon.maxx reels\ndamon.maxx reels\nLocation\nLocation\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\njxs7100 reels\njxs7100 reels\nAudio image\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "article_text": "damon.maxx\nFollow\nUSA\n\"有村架純が自分自身と向き合い、得た気づき。俳優業を通して「自分とは何なんだろう」と向き合ってきた彼女が、自分自身を知ることの大切さや、最新作『さとこはいつも』について語る。\".\nSee translation\nLikes\n4\n2\nraahavy_\nFollow\nEminem · Venom\nbeen moving🤏🏽\n\n- @bulk code: RAAHAVY to save 💸\nad #bulk2026\n25.8K\n217\n261\n1,244",
+      "aria_text": "damon.maxx reels\ndamon.maxx reels\nLocation\nLocation\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nraahavy_ reels\nraahavy_ reels\nAudio image\nExplicit\nAudio image\nExplicit\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
       "json_ld": {},
       "engagement": {
         "scope": "reel_action_controls",
+        "availability": {
+          "likes": {
+            "state": "explicitly_hidden",
+            "evidence": "damon.maxx can see the total number of people who liked this post.",
+            "source": "metric_dialog"
+          },
+          "comments": {
+            "state": "measured",
+            "evidence": "Comment"
+          },
+          "reshares": {
+            "state": "measured",
+            "evidence": "Repost"
+          },
+          "shares": {
+            "state": "not_captured",
+            "evidence": "Control located but no reliable numeric value parsed."
+          }
+        },
         "likes_visibility": "not_shown",
         "comments": {
           "raw": "4",
@@ -53,10 +72,27 @@
           "source": "dom_action_control",
           "label": "Repost"
         }
+      },
+      "capture_checks": {
+        "access_clear": true,
+        "stable": true,
+        "read_passes": 2,
+        "access_attempts": [],
+        "metric_panels": [
+          {
+            "field": "likes",
+            "stable": true,
+            "access_clear": true,
+            "evidence": "damon.maxx can see the total number of people who liked this post.",
+            "repeated_evidence": "damon.maxx can see the total number of people who liked this post.",
+            "panel_changed": false,
+            "read_passes": 3
+          }
+        ]
       }
     },
     "last_error": null,
-    "last_attempt_at": "2026-11-14T05:09:54.028Z",
+    "last_attempt_at": "2026-11-14T09:53:50.454Z",
     "date_source": "og_description_localized",
     "reshares": {
       "value": 2,
@@ -68,17 +104,17 @@
     "shares": null,
     "likes_visibility": "not_shown",
     "analysis_resolution": {
-      "status": "requires_verification",
-      "source": "visible_page_capture",
-      "recorded_at": "2026-11-14T05:09:54.028Z",
-      "reason": "Previous automatic resolution lacked explicit evidence that the metric was hidden or disabled. Saved values retained; extraction requires verification.",
+      "status": "resolved",
+      "source": "explicit_visibility_evidence",
+      "recorded_at": "2026-11-14T09:53:50.453Z",
+      "reason": "Unavailable metrics resolved using explicit visibility evidence or user assessment. Saved observations remain valid; missing values are unknown, not zero.",
       "unavailable_fields": [
         "likes"
       ],
       "previous_status": "partial",
       "policy_checked_at": "2026-11-14T08:26:03.802Z"
     },
-    "extraction_review": "Metric extraction is incomplete; absence has not been confirmed. Inspect or retry rather than assume hidden counts.",
+    "extraction_review": null,
     "previous_analysis_resolution": {
       "status": "resolved",
       "source": "visible_page_capture",
@@ -88,6 +124,7 @@
         "likes"
       ],
       "previous_status": "partial"
-    }
+    },
+    "access_review": null
   }
 ]

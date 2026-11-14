@@ -1,7 +1,7 @@
 {
-  "started_at": "2026-10-28T11:36:59.741Z",
-  "updated_at": "2026-10-28T11:38:34.451Z",
-  "status": "partial",
+  "started_at": "2026-11-14T08:58:32.959Z",
+  "updated_at": "2026-11-14T08:59:55.968Z",
+  "status": "excluded",
   "phase": "done",
   "scope": [
     "reel"
@@ -10,14 +10,24 @@
   "error": null,
   "progress": {
     "task": "item_details",
-    "label": "Reel details",
-    "action": "Opening reel pages and extracting dates, captions, views, likes and comments",
-    "completed": 21,
-    "total": 21,
-    "percent": 100,
-    "remaining": 0,
-    "current_item": null,
-    "detail": "Stage finished with review required",
-    "updated_at": "2026-10-28T11:38:34.451Z"
+    "label": "Verify incomplete reel details",
+    "completed": 12,
+    "total": 19,
+    "detail": "Uncertain metrics and access gates remain reviewable",
+    "updated_at": "2026-11-14T08:59:55.968Z"
+  },
+  "account_status": "deleted_or_username_changed",
+  "account_status_observed_at": "2026-11-14T08:59:55.957Z",
+  "excluded_from_collection": true,
+  "excluded_from_analysis": false,
+  "retained_metrics_in_analysis": true,
+  "resolution_note": "Reel and parent profile unavailable during live verification. Deletion versus username change is unconfirmed. Saved observations retained for historical analysis; further collection stopped.",
+  "availability_evidence": {
+    "reel_url": "https://www.instagram.com/reel/DefD157NfkT/",
+    "parent": {
+      "status": "unavailable",
+      "error": "Instagram reports this page is unavailable.",
+      "checked_at": "2026-11-14T08:59:55.957Z"
+    }
   }
 }

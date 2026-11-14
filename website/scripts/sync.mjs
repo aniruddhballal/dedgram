@@ -54,13 +54,10 @@ const fullProfiles = [
   'not.yourtyppee',
   'renee30287',
   'reelrestock',
-  'bollyxedit.7',
   'dark_man1__',
   'hazelxpost',
   'pranto_harryson',
   'nastynigas',
-  'dank.meemz420',
-  'funny.exe07',
   'nhiftbl',
   'movi.egaze',
   'kanika_s.0711',
@@ -229,7 +226,7 @@ const profileLevelProfiles = [
   'emilily_ss',
   'dina4988542',
 ];
-const retainedMetricProfiles = ['jellyfish.m3mes', 'prxctm0l', 'coopyyz', 'extreme_laugh_07'];
+const retainedMetricProfiles = ['jellyfish.m3mes', 'prxctm0l', 'coopyyz', 'extreme_laugh_07', 'dank.meemz420', 'bollyxedit.7', 'funny.exe07'];
 const excludedProfiles = ['hnvx.07', 'prime_senchui', 'vlad.aep_', 'nxx._.nmercy', 'dexea.100k', 'igpostinggang', 'rzk.mp4', 'renyajichu', 'hammergag', 'caodogsfofo', 'back', '41.3k', 'short_vibesz', 'oooiway', 'zuxxie.pov', 'extreme.laugh8', 'iron_block2', 'memes.fatafat', 'waytoway__', 'luffytheegear5', 'chir.eze', 'dinosaur.24252627'];
 const publishedProfiles = [...fullProfiles, ...profileLevelProfiles, ...retainedMetricProfiles, ...excludedProfiles];
 const files = ['profile.json', 'discovery.json', 'items.json', 'run.json', 'profile.csv', 'items.csv', 'report.html'];
@@ -247,9 +244,9 @@ for (const username of [...excludedProfiles, ...retainedMetricProfiles]) {
   const profile = JSON.parse(await readFile(join(repo, 'data', 'database', 'profiles', `profile-${username}.json`), 'utf8'));
   excludedRecords[username] = {
     username,
-    status: profile.account_status === 'deleted' ? 'Deleted or username changed' : profile.status,
+    status: ['deleted', 'deleted_or_username_changed'].includes(profile.account_status) ? 'Deleted or username changed' : profile.status,
     observed_at: profile.account_status_observed_at || profile.last_fetched_at,
-    last_fetched_at: profile.last_fetched_at,
+    last_fetched_at: profile.last_fetched_at || profile.fetched_at,
     profile_text: profile.profile_text || null,
     bio: profile.bio || null,
     country: profile.country || null,

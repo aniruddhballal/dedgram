@@ -1,23 +1,19 @@
 {
-  "started_at": "2026-11-05T15:27:25.413Z",
-  "updated_at": "2026-11-05T15:30:00.386Z",
-  "status": "blocked",
-  "phase": "item details",
+  "started_at": "2026-11-14T08:57:00.012Z",
+  "updated_at": "2026-11-14T08:58:32.860Z",
+  "status": "complete",
+  "phase": "done",
   "scope": [
     "reel"
   ],
-  "current_url": "https://www.instagram.com/reel/De3283phNbV/",
-  "error": "Instagram returned HTTP 429 (rate limit).",
+  "current_url": null,
+  "error": null,
   "progress": {
     "task": "item_details",
-    "label": "Reel details",
-    "action": "Extracting date, caption, views, likes and comments from the current reel",
-    "completed": 36,
-    "total": 53,
-    "percent": 68,
-    "remaining": 17,
-    "current_item": null,
-    "detail": "Blocked: Instagram returned HTTP 429 (rate limit).",
-    "updated_at": "2026-11-05T15:30:00.386Z"
+    "label": "Verify incomplete reel details",
+    "completed": 17,
+    "total": 17,
+    "detail": "All reels complete or explicitly resolved",
+    "updated_at": "2026-11-14T08:58:32.860Z"
   }
 }

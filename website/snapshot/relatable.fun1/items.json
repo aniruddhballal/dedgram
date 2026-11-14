@@ -1636,7 +1636,45 @@
     "url": "https://www.instagram.com/reel/De3283phNbV/",
     "grid_views_raw": "456K",
     "grid_views_issue": null,
-    "status": "pending",
+    "status": "complete",
+    "fetched_at": "2026-11-14T08:57:03.138Z",
+    "access_review": null,
+    "extraction_review": null,
+    "date": "2026-10-24",
+    "date_precision": "day",
+    "date_source": "og_description_localized",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 12400,
+      "raw": "12.4K",
+      "approximate": true,
+      "source": "dom_action_control",
+      "label": "Like"
+    },
+    "comments": {
+      "value": 187,
+      "raw": "187",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Comment"
+    },
+    "reshares": {
+      "value": 115,
+      "raw": "115",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Repost"
+    },
+    "shares": {
+      "value": 10000,
+      "raw": "10K",
+      "approximate": true,
+      "source": "dom_action_control",
+      "label": "Share"
+    },
+    "likes_visibility": "count_available",
     "views": {
       "value": 456000,
       "raw": "456K",
@@ -1644,13 +1682,66 @@
       "source": "profile_grid",
       "observed_at": "2026-11-05T14:54:01.223Z"
     },
-    "saved_observations": {
-      "views": {
-        "source": "profile_grid",
-        "observed_at": "2026-11-05T14:54:01.223Z",
-        "retained_from": "previous_website_snapshot"
+    "thumbnail_url": "https://instagram.fblr24-3.fna.fbcdn.net/v/t51.82787-15/862036245_1076731961854676_8928269200377401364_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=ndDM5h4UnWYQ7kNvwE-KVAM&_nc_oc=Adr7PH7gGZecaAXbexCEqB50mBV-iarHfcOxx1DKc8wm0XqfSCwfVLZSqN7KPpioswRkznGUhJ50D5ybpNEXcLmF&_nc_zt=23&_nc_ht=instagram.fblr24-3.fna&_nc_gid=zfdpEnZ3vAEYGlFecnrQ3g&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQTIhdxWjOBTUzT0e3DzerQ-vZ5SQIrlqkN6YBqP_G2JKg&oe=6AFDEC1D",
+    "media_url": null,
+    "missing": [],
+    "missing_reasons": {},
+    "raw": {
+      "description": "「③魔王軍との全面戦争を繰り広げる! 「勇者伝説公式 Instagramです! TVアニメ『聖剣のレガリア」放送中! 『劇場版特別\n\n編』 デジタル配信中/ブルーレイ&DVD発売中」 - 2026年10月24日、「いいね！」12K件、コメント187件 - relatable.fun1",
+      "article_text": "relatable.fun1\nFollow\nAI-generated profile\n• AI content\n③魔王軍との全面戦争を繰り広げる! 「勇者伝説公式 Instagramです! TVアニメ『聖剣のレガリア」放送中! 『劇場版特別\n\n編』 デジタル配信中/ブルーレイ&DVD発売中\nSee translation\n12.4K\n187\n115\n10K\nsamkamvisuals\nFollow\nAI content\n2 people\n“Captured with passion, created with Alpha. If this deserves a spot on @sonyalpha @sonyalphain #createwithsony , tag them and let’s make it happen!”\n.\n.\n.\n.\n.\n#samkamphotography #samkamvisuals #yakshagana\n8,235\n56\n118\n637",
+      "aria_text": "relatable.fun1 reels\nrelatable.fun1 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nsamkamvisuals reels\nsamkamvisuals reels\nTagged users\nLocation\nTagged users\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "availability": {
+          "likes": {
+            "state": "measured",
+            "evidence": "Like"
+          },
+          "comments": {
+            "state": "measured",
+            "evidence": "Comment"
+          },
+          "reshares": {
+            "state": "measured",
+            "evidence": "Repost"
+          },
+          "shares": {
+            "state": "measured",
+            "evidence": "Share"
+          }
+        },
+        "likes": {
+          "raw": "12.4K",
+          "source": "dom_action_control",
+          "label": "Like"
+        },
+        "comments": {
+          "raw": "187",
+          "source": "dom_action_control",
+          "label": "Comment"
+        },
+        "reshares": {
+          "raw": "115",
+          "source": "dom_action_control",
+          "label": "Repost"
+        },
+        "shares": {
+          "raw": "10K",
+          "source": "dom_action_control",
+          "label": "Share"
+        }
+      },
+      "capture_checks": {
+        "access_clear": true,
+        "stable": true,
+        "read_passes": 2,
+        "access_attempts": [],
+        "metric_panels": []
       }
-    }
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T08:57:03.138Z"
   },
   {
     "kind": "reel",
@@ -1658,7 +1749,45 @@
     "url": "https://www.instagram.com/reel/De3TLElvHam/",
     "grid_views_raw": "1.8M",
     "grid_views_issue": null,
-    "status": "pending",
+    "status": "complete",
+    "fetched_at": "2026-11-14T08:57:08.329Z",
+    "access_review": null,
+    "extraction_review": null,
+    "date": "2026-10-23",
+    "date_precision": "day",
+    "date_source": "og_description_localized",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 36000,
+      "raw": "36K",
+      "approximate": true,
+      "source": "dom_action_control",
+      "label": "Like"
+    },
+    "comments": {
+      "value": 3542,
+      "raw": "3,542",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Comment"
+    },
+    "reshares": {
+      "value": 989,
+      "raw": "989",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Repost"
+    },
+    "shares": {
+      "value": 252000,
+      "raw": "252K",
+      "approximate": true,
+      "source": "dom_action_control",
+      "label": "Share"
+    },
+    "likes_visibility": "count_available",
     "views": {
       "value": 1800000,
       "raw": "1.8M",
@@ -1666,13 +1795,66 @@
       "source": "profile_grid",
       "observed_at": "2026-11-05T14:54:01.223Z"
     },
-    "saved_observations": {
-      "views": {
-        "source": "profile_grid",
-        "observed_at": "2026-11-05T14:54:01.223Z",
-        "retained_from": "previous_website_snapshot"
+    "thumbnail_url": "https://instagram.fblr1-9.fna.fbcdn.net/v/t51.82787-15/864469168_4595209484054183_2159692291670360487_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=YBdMo5zsKusQ7kNvwHeUuUK&_nc_oc=Adry2IbB_Z59otIVOW2eQyXMVc0UApNunMlupsoy0Jd8UL0foYoCr1MTj22r0oOEBCgmr0SoeHjPTeK_R7eRHlEz&_nc_zt=23&_nc_ht=instagram.fblr1-9.fna&_nc_gid=aiHPS5n70UcAlcCsalyJIg&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQReH1Yx_3S4ODr916-ivQQWjT2RSv4AhPLk2qTJ-zJq-w&oe=6AFDE49A",
+    "media_url": null,
+    "missing": [],
+    "missing_reasons": {},
+    "raw": {
+      "description": "「③魔王軍との全面戦争を繰り広げる! 「勇者伝説公式 Instagramです! TVアニメ『聖剣のレガリア」放送中! 『劇場版特別\n\n編』 デジタル配信中/ブルーレイ&DVD発売中」 - 2026年10月23日、「いいね！」36K件、コメント3,542件 - relatable.fun1",
+      "article_text": "relatable.fun1\nFollow\nAI-generated profile\n• AI content\n③魔王軍との全面戦争を繰り広げる! 「勇者伝説公式 Instagramです! TVアニメ『聖剣のレガリア」放送中! 『劇場版特別\n\n編』 デジタル配信中/ブルーレイ&DVD発売中\nSee translation\n36K\n3,542\n989\n252K\nabharana_kakal\nFollow\nOoratti, M.S. Subbulakshmi · Ennaga Manasu - Divine Lofi\nOoratti, M.S. Subbulakshmi · Ennaga Manasu - Divine Lofi\nThey all wore\nThin cotton saree & with no blouse 🌸\n\nSharing a small piece I wrote :\n\nBuild that accent,\nOh no! It shouldn’t be fake.\nDress whatever you want , be confident\nBut be careful about the neckline\n\nBe ambitious\nBe passionate\nBut not too much\nYou just have to get married anyway\n\nFocus on beauty ,\ntake care of your skin\nNo I meant be fairer\nApply that cream to become fair\n\nAnd loose weight\nOh I meant thin waist & flat stomach.\nNow gain weight, to be perfect!\nBe pretty, perfect & look happy\nJust to fit into our world.\n\nCheer up , wipe your tears\nSmile now , to the camera:)\n16.3K\n366\n348\n2,185",
+      "aria_text": "relatable.fun1 reels\nrelatable.fun1 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nabharana_kakal reels\nabharana_kakal reels\nVerified\nAudio image\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "availability": {
+          "likes": {
+            "state": "measured",
+            "evidence": "Like"
+          },
+          "comments": {
+            "state": "measured",
+            "evidence": "Comment"
+          },
+          "reshares": {
+            "state": "measured",
+            "evidence": "Repost"
+          },
+          "shares": {
+            "state": "measured",
+            "evidence": "Share"
+          }
+        },
+        "likes": {
+          "raw": "36K",
+          "source": "dom_action_control",
+          "label": "Like"
+        },
+        "comments": {
+          "raw": "3,542",
+          "source": "dom_action_control",
+          "label": "Comment"
+        },
+        "reshares": {
+          "raw": "989",
+          "source": "dom_action_control",
+          "label": "Repost"
+        },
+        "shares": {
+          "raw": "252K",
+          "source": "dom_action_control",
+          "label": "Share"
+        }
+      },
+      "capture_checks": {
+        "access_clear": true,
+        "stable": true,
+        "read_passes": 2,
+        "access_attempts": [],
+        "metric_panels": []
       }
-    }
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T08:57:08.329Z"
   },
   {
     "kind": "reel",
@@ -1680,7 +1862,45 @@
     "url": "https://www.instagram.com/reel/De3TAXAp8lG/",
     "grid_views_raw": "11.9M",
     "grid_views_issue": null,
-    "status": "pending",
+    "status": "complete",
+    "fetched_at": "2026-11-14T08:57:13.556Z",
+    "access_review": null,
+    "extraction_review": null,
+    "date": "2026-10-23",
+    "date_precision": "day",
+    "date_source": "og_description_localized",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 437000,
+      "raw": "437K",
+      "approximate": true,
+      "source": "dom_action_control",
+      "label": "Like"
+    },
+    "comments": {
+      "value": 2657,
+      "raw": "2,657",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Comment"
+    },
+    "reshares": {
+      "value": 4541,
+      "raw": "4,541",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Repost"
+    },
+    "shares": {
+      "value": 287000,
+      "raw": "287K",
+      "approximate": true,
+      "source": "dom_action_control",
+      "label": "Share"
+    },
+    "likes_visibility": "count_available",
     "views": {
       "value": 11900000,
       "raw": "11.9M",
@@ -1688,13 +1908,66 @@
       "source": "profile_grid",
       "observed_at": "2026-11-05T14:54:01.223Z"
     },
-    "saved_observations": {
-      "views": {
-        "source": "profile_grid",
-        "observed_at": "2026-11-05T14:54:01.223Z",
-        "retained_from": "previous_website_snapshot"
+    "thumbnail_url": "https://instagram.fblr1-5.fna.fbcdn.net/v/t51.82787-15/861786454_1480202134016312_8646604902693696961_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=lWiP2vzthBIQ7kNvwGRZBAE&_nc_oc=AdrhhWm6lV8K6uo-KFSb1RGCtcGWIdJ9GSEhcp12N7F3BlYAnNEfAs01O85TnmFyqzW4ckIwVjugMLsRQ0Hoft0q&_nc_zt=23&_nc_ht=instagram.fblr1-5.fna&_nc_gid=UAL1M7z6yzDIgQm2U17_7Q&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQT_DWnC-1Jg4Xwdw5S0YE_drjjeTnL-7koG1JW6m0BJSg&oe=6AFE109A",
+    "media_url": null,
+    "missing": [],
+    "missing_reasons": {},
+    "raw": {
+      "description": "「③魔王軍との全面戦争を繰り広げる! 「勇者伝説公式 Instagramです! TVアニメ『聖剣のレガリア」放送中! 『劇場版特別\n\n編』 デジタル配信中/ブルーレイ&DVD発売中」 - 2026年10月23日、「いいね！」438K件、コメント2,657件 - relatable.fun1",
+      "article_text": "relatable.fun1\nFollow\nAI-generated profile\n• AI content\n③魔王軍との全面戦争を繰り広げる! 「勇者伝説公式 Instagramです! TVアニメ『聖剣のレガリア」放送中! 『劇場版特別\n\n編』 デジタル配信中/ブルーレイ&DVD発売中\nSee translation\n437K\n2,657\n4,541\n287K\nabharana_kakal\nFollow\nOoratti, M.S. Subbulakshmi · Ennaga Manasu - Divine Lofi\nOoratti, M.S. Subbulakshmi · Ennaga Manasu - Divine Lofi\nThey all wore\nThin cotton saree & with no blouse 🌸\n\nSharing a small piece I wrote :\n\nBuild that accent,\nOh no! It shouldn’t be fake.\nDress whatever you want , be confident\nBut be careful about the neckline\n\nBe ambitious\nBe passionate\nBut not too much\nYou just have to get married anyway\n\nFocus on beauty ,\ntake care of your skin\nNo I meant be fairer\nApply that cream to become fair\n\nAnd loose weight\nOh I meant thin waist & flat stomach.\nNow gain weight, to be perfect!\nBe pretty, perfect & look happy\nJust to fit into our world.\n\nCheer up , wipe your tears\nSmile now , to the camera:)\n16.3K\n366\n348\n2,185",
+      "aria_text": "relatable.fun1 reels\nrelatable.fun1 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nabharana_kakal reels\nabharana_kakal reels\nVerified\nAudio image\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "availability": {
+          "likes": {
+            "state": "measured",
+            "evidence": "Like"
+          },
+          "comments": {
+            "state": "measured",
+            "evidence": "Comment"
+          },
+          "reshares": {
+            "state": "measured",
+            "evidence": "Repost"
+          },
+          "shares": {
+            "state": "measured",
+            "evidence": "Share"
+          }
+        },
+        "likes": {
+          "raw": "437K",
+          "source": "dom_action_control",
+          "label": "Like"
+        },
+        "comments": {
+          "raw": "2,657",
+          "source": "dom_action_control",
+          "label": "Comment"
+        },
+        "reshares": {
+          "raw": "4,541",
+          "source": "dom_action_control",
+          "label": "Repost"
+        },
+        "shares": {
+          "raw": "287K",
+          "source": "dom_action_control",
+          "label": "Share"
+        }
+      },
+      "capture_checks": {
+        "access_clear": true,
+        "stable": true,
+        "read_passes": 2,
+        "access_attempts": [],
+        "metric_panels": []
       }
-    }
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T08:57:13.556Z"
   },
   {
     "kind": "reel",
@@ -1702,21 +1975,112 @@
     "url": "https://www.instagram.com/reel/De3S1H6NohW/",
     "grid_views_raw": "65.4K",
     "grid_views_issue": null,
-    "status": "pending",
+    "status": "complete",
+    "fetched_at": "2026-11-14T08:57:19.129Z",
+    "access_review": null,
+    "extraction_review": null,
+    "date": "2026-10-23",
+    "date_precision": "day",
+    "date_source": "og_description",
+    "caption": "③魔王軍との全面戦争を繰り広げる! 「勇者伝説公式 Instagramです! TVアニメ『聖剣のレガリア」放送中! 『劇場版特別\n\n編』 デジタル配信中/ブルーレイ&DVD発売中",
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 293,
+      "raw": "293",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Like"
+    },
+    "comments": {
+      "value": 8,
+      "raw": "8",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Comment"
+    },
+    "reshares": {
+      "value": 5,
+      "raw": "5",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Repost"
+    },
+    "shares": {
+      "value": 361,
+      "raw": "361",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Share"
+    },
+    "likes_visibility": "count_available",
     "views": {
-      "value": 65400.00000000001,
+      "value": 65400,
       "raw": "65.4K",
       "approximate": true,
       "source": "profile_grid",
       "observed_at": "2026-11-05T14:54:01.223Z"
     },
-    "saved_observations": {
-      "views": {
-        "source": "profile_grid",
-        "observed_at": "2026-11-05T14:54:01.223Z",
-        "retained_from": "previous_website_snapshot"
+    "thumbnail_url": "https://instagram.fblr1-4.fna.fbcdn.net/v/t51.82787-15/860692567_1177195481636172_6994100119257431691_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=A_Q6iJYsMrAQ7kNvwEtjjsl&_nc_oc=AdpkCR1YdYDXAT1hfkj-EohT6CrBGpUPiyn6jzVB_CDC3QonoC7bOpzEU2xu1Q7XapXcAVcMzD7sHSkOhjjccyPe&_nc_zt=23&_nc_ht=instagram.fblr1-4.fna&_nc_gid=uugiTg3dqB2wiLgOf0m8fw&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQTSkDW-HYNz6pEjfLIMrPOeY61-ZKZgI_XZHZqvcn65EQ&oe=6AFDE440",
+    "media_url": null,
+    "missing": [],
+    "missing_reasons": {},
+    "raw": {
+      "description": "293 likes, 8 comments - relatable.fun1 on October 23, 2026: \"③魔王軍との全面戦争を繰り広げる! 「勇者伝説公式 Instagramです! TVアニメ『聖剣のレガリア」放送中! 『劇場版特別\n\n編』 デジタル配信中/ブルーレイ&DVD発売中\". ",
+      "article_text": "relatable.fun1\nFollow\nAI-generated profile\n• AI content\n③魔王軍との全面戦争を繰り広げる! 「勇者伝説公式 Instagramです! TVアニメ『聖剣のレガリア」放送中! 『劇場版特別\n\n編』 デジタル配信中/ブルーレイ&DVD発売中\nSee translation\n293\n8\n5\n361\nstudio.ashill\nFollow\nNo one cared … 🥷🏿🦇\n\n#fypart #batmanartist #batmanart #batmanartwork #batman🦇\n119K\n844\n3,955\n19.5K",
+      "aria_text": "relatable.fun1 reels\nrelatable.fun1 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nstudio.ashill reels\nstudio.ashill reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "availability": {
+          "likes": {
+            "state": "measured",
+            "evidence": "Like"
+          },
+          "comments": {
+            "state": "measured",
+            "evidence": "Comment"
+          },
+          "reshares": {
+            "state": "measured",
+            "evidence": "Repost"
+          },
+          "shares": {
+            "state": "measured",
+            "evidence": "Share"
+          }
+        },
+        "likes": {
+          "raw": "293",
+          "source": "dom_action_control",
+          "label": "Like"
+        },
+        "comments": {
+          "raw": "8",
+          "source": "dom_action_control",
+          "label": "Comment"
+        },
+        "reshares": {
+          "raw": "5",
+          "source": "dom_action_control",
+          "label": "Repost"
+        },
+        "shares": {
+          "raw": "361",
+          "source": "dom_action_control",
+          "label": "Share"
+        }
+      },
+      "capture_checks": {
+        "access_clear": true,
+        "stable": true,
+        "read_passes": 2,
+        "access_attempts": [],
+        "metric_panels": []
       }
-    }
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T08:57:19.129Z"
   },
   {
     "kind": "reel",
@@ -1724,7 +2088,45 @@
     "url": "https://www.instagram.com/reel/De3SucsvWJo/",
     "grid_views_raw": "10.9M",
     "grid_views_issue": null,
-    "status": "pending",
+    "status": "complete",
+    "fetched_at": "2026-11-14T08:57:24.517Z",
+    "access_review": null,
+    "extraction_review": null,
+    "date": "2026-10-23",
+    "date_precision": "day",
+    "date_source": "og_description_localized",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 601000,
+      "raw": "601K",
+      "approximate": true,
+      "source": "dom_action_control",
+      "label": "Like"
+    },
+    "comments": {
+      "value": 2624,
+      "raw": "2,624",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Comment"
+    },
+    "reshares": {
+      "value": 4716,
+      "raw": "4,716",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Repost"
+    },
+    "shares": {
+      "value": 414000,
+      "raw": "414K",
+      "approximate": true,
+      "source": "dom_action_control",
+      "label": "Share"
+    },
+    "likes_visibility": "count_available",
     "views": {
       "value": 10900000,
       "raw": "10.9M",
@@ -1732,13 +2134,66 @@
       "source": "profile_grid",
       "observed_at": "2026-11-05T14:54:01.223Z"
     },
-    "saved_observations": {
-      "views": {
-        "source": "profile_grid",
-        "observed_at": "2026-11-05T14:54:01.223Z",
-        "retained_from": "previous_website_snapshot"
+    "thumbnail_url": "https://instagram.fblr24-4.fna.fbcdn.net/v/t51.82787-15/863104118_1389728382929646_7393112251271326105_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=nzLNof7AlnsQ7kNvwF8LPed&_nc_oc=AdqvRtWobZ4HBGTPmDBW7eZaz394k0Q4JaY9_mkqCy3xKfZ-jZJ8_RXyiCMDgbAaYGAdzOr5vd0dbE9tKYC4dgE_&_nc_zt=23&_nc_ht=instagram.fblr24-4.fna&_nc_gid=9DiC84WuLJw8QYqG_BRxhA&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQTKiCMypf5YkGjft5tsjZoMWG3FpdXKz0TTgQYyYq4zkQ&oe=6AFE0B4F",
+    "media_url": null,
+    "missing": [],
+    "missing_reasons": {},
+    "raw": {
+      "description": "「③魔王軍との全面戦争を繰り広げる! 「勇者伝説公式 Instagramです! TVアニメ『聖剣のレガリア」放送中! 『劇場版特別\n\n編』 デジタル配信中/ブルーレイ&DVD発売中」 - 2026年10月23日、「いいね！」601K件、コメント2,624件 - relatable.fun1",
+      "article_text": "relatable.fun1\nFollow\nAI-generated profile\n• AI content\n③魔王軍との全面戦争を繰り広げる! 「勇者伝説公式 Instagramです! TVアニメ『聖剣のレガリア」放送中! 『劇場版特別\n\n編』 デジタル配信中/ブルーレイ&DVD発売中\nSee translation\n601K\n2,624\n4,716\n414K\ngenos_vp_\nFollow\nsuitup.pe\nMy Amazing Spider-Man Suit!\n\nSuit by @suitup.pe | #spiderman #foryoupage #foryou #tasm1 #theamazingspiderman\n235K\n724\n4,208\n18.2K",
+      "aria_text": "relatable.fun1 reels\nrelatable.fun1 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\ngenos_vp_ reels\ngenos_vp_ reels\nTagged users\nTagged users\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "availability": {
+          "likes": {
+            "state": "measured",
+            "evidence": "Like"
+          },
+          "comments": {
+            "state": "measured",
+            "evidence": "Comment"
+          },
+          "reshares": {
+            "state": "measured",
+            "evidence": "Repost"
+          },
+          "shares": {
+            "state": "measured",
+            "evidence": "Share"
+          }
+        },
+        "likes": {
+          "raw": "601K",
+          "source": "dom_action_control",
+          "label": "Like"
+        },
+        "comments": {
+          "raw": "2,624",
+          "source": "dom_action_control",
+          "label": "Comment"
+        },
+        "reshares": {
+          "raw": "4,716",
+          "source": "dom_action_control",
+          "label": "Repost"
+        },
+        "shares": {
+          "raw": "414K",
+          "source": "dom_action_control",
+          "label": "Share"
+        }
+      },
+      "capture_checks": {
+        "access_clear": true,
+        "stable": true,
+        "read_passes": 2,
+        "access_attempts": [],
+        "metric_panels": []
       }
-    }
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T08:57:24.517Z"
   },
   {
     "kind": "reel",
@@ -1746,7 +2201,45 @@
     "url": "https://www.instagram.com/reel/De3EkxOvWcx/",
     "grid_views_raw": "2.9M",
     "grid_views_issue": null,
-    "status": "pending",
+    "status": "complete",
+    "fetched_at": "2026-11-14T08:57:29.906Z",
+    "access_review": null,
+    "extraction_review": null,
+    "date": "2026-10-23",
+    "date_precision": "day",
+    "date_source": "og_description_localized",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 110000,
+      "raw": "110K",
+      "approximate": true,
+      "source": "dom_action_control",
+      "label": "Like"
+    },
+    "comments": {
+      "value": 741,
+      "raw": "741",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Comment"
+    },
+    "reshares": {
+      "value": 1131,
+      "raw": "1,131",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Repost"
+    },
+    "shares": {
+      "value": 32000,
+      "raw": "32K",
+      "approximate": true,
+      "source": "dom_action_control",
+      "label": "Share"
+    },
+    "likes_visibility": "count_available",
     "views": {
       "value": 2900000,
       "raw": "2.9M",
@@ -1754,13 +2247,66 @@
       "source": "profile_grid",
       "observed_at": "2026-11-05T14:54:01.223Z"
     },
-    "saved_observations": {
-      "views": {
-        "source": "profile_grid",
-        "observed_at": "2026-11-05T14:54:01.223Z",
-        "retained_from": "previous_website_snapshot"
+    "thumbnail_url": "https://instagram.fblr1-3.fna.fbcdn.net/v/t51.82787-15/865972650_1848998526237535_4902774746558070885_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=xuxBsgUiwlkQ7kNvwHAirky&_nc_oc=AdrxGO14k8K-gwTiRM-mvJHZZshJK6DiFuBgOFiVeW1zwI1xlnfLynx44hhJI4EGRJvTBKSFM9KoyoR5dy4m-GxV&_nc_zt=23&_nc_ht=instagram.fblr1-3.fna&_nc_gid=RWa6i14KbXrj5tSyWJ_vlA&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQRy76hccX7aeLkTXdbAwHqOEpzBe3-nn-NZCPxo9PRU8g&oe=6AFE0D95",
+    "media_url": null,
+    "missing": [],
+    "missing_reasons": {},
+    "raw": {
+      "description": "「③魔王軍との全面戦争を繰り広げる! 「勇者伝説公式 Instagramです! TVアニメ『聖剣のレガリア」放送中! 『劇場版特別\n\n編』 デジタル配信中/ブルーレイ&DVD発売中」 - 2026年10月23日、「いいね！」110K件、コメント741件 - relatable.fun1",
+      "article_text": "relatable.fun1\nFollow\nAI-generated profile\n• AI content\n③魔王軍との全面戦争を繰り広げる! 「勇者伝説公式 Instagramです! TVアニメ『聖剣のレガリア」放送中! 『劇場版特別\n\n編』 デジタル配信中/ブルーレイ&DVD発売中\nSee translation\n110K\n741\n1,131\n32K\ncherry.music.in\nFollow\n3 people\nReposting coz this posting it once wasn't enough 🫶🏻\n\nChatpate gaane, marathi gaani, lavani, ajay atul, Apsara aali, marathi gani, lavnya, Bela Shende, guru thakur, Sonali Kulkarni, for you, music, piano music, musicians, musician life, jamming sessions, practice, music practice, piano, keyboard, fusion, western classical, classical, hindustani classical, Indian music, marathi songs, popular music, zee marathi, natrang\n#ajayatul #popularmusic #cherrymusic #marathisong #apsaraaali @sonalee18588\n@ajayatulofficial l @guruthakurofficial @shendebelareal\n8,100\n268\n178\n944",
+      "aria_text": "relatable.fun1 reels\nrelatable.fun1 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\ncherry.music.in reels\ncherry.music.in reels\nTagged users\nLocation\nTagged users\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "availability": {
+          "likes": {
+            "state": "measured",
+            "evidence": "Like"
+          },
+          "comments": {
+            "state": "measured",
+            "evidence": "Comment"
+          },
+          "reshares": {
+            "state": "measured",
+            "evidence": "Repost"
+          },
+          "shares": {
+            "state": "measured",
+            "evidence": "Share"
+          }
+        },
+        "likes": {
+          "raw": "110K",
+          "source": "dom_action_control",
+          "label": "Like"
+        },
+        "comments": {
+          "raw": "741",
+          "source": "dom_action_control",
+          "label": "Comment"
+        },
+        "reshares": {
+          "raw": "1,131",
+          "source": "dom_action_control",
+          "label": "Repost"
+        },
+        "shares": {
+          "raw": "32K",
+          "source": "dom_action_control",
+          "label": "Share"
+        }
+      },
+      "capture_checks": {
+        "access_clear": true,
+        "stable": true,
+        "read_passes": 2,
+        "access_attempts": [],
+        "metric_panels": []
       }
-    }
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T08:57:29.906Z"
   },
   {
     "kind": "reel",
@@ -1768,7 +2314,45 @@
     "url": "https://www.instagram.com/reel/De3EUplhP6y/",
     "grid_views_raw": "3.9M",
     "grid_views_issue": null,
-    "status": "pending",
+    "status": "complete",
+    "fetched_at": "2026-11-14T08:57:35.757Z",
+    "access_review": null,
+    "extraction_review": null,
+    "date": "2026-10-23",
+    "date_precision": "day",
+    "date_source": "og_description_localized",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 158000,
+      "raw": "158K",
+      "approximate": true,
+      "source": "dom_action_control",
+      "label": "Like"
+    },
+    "comments": {
+      "value": 281,
+      "raw": "281",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Comment"
+    },
+    "reshares": {
+      "value": 766,
+      "raw": "766",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Repost"
+    },
+    "shares": {
+      "value": 30800,
+      "raw": "30.8K",
+      "approximate": true,
+      "source": "dom_action_control",
+      "label": "Share"
+    },
+    "likes_visibility": "count_available",
     "views": {
       "value": 3900000,
       "raw": "3.9M",
@@ -1776,13 +2360,66 @@
       "source": "profile_grid",
       "observed_at": "2026-11-05T14:54:01.223Z"
     },
-    "saved_observations": {
-      "views": {
-        "source": "profile_grid",
-        "observed_at": "2026-11-05T14:54:01.223Z",
-        "retained_from": "previous_website_snapshot"
+    "thumbnail_url": "https://instagram.fblr1-5.fna.fbcdn.net/v/t51.82787-15/862455218_1088467837345250_3125273165909718375_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=OqyeXOmbppYQ7kNvwGz8wzT&_nc_oc=AdoKTxs33DcesIPOjHEmFHfwYQKajekqHSu5kD6FUyaNco4pwgSZyGzjaIyITsI500WhvZG0UMEXyLwubRorW77p&_nc_zt=23&_nc_ht=instagram.fblr1-5.fna&_nc_gid=lqS0lRyGvhmqOBVSz9kE1w&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQTab7sO7XWq7eZ3UNKn89yfagql9Uyu69g6XAOFEhxFcw&oe=6AFDDC30",
+    "media_url": null,
+    "missing": [],
+    "missing_reasons": {},
+    "raw": {
+      "description": "「③魔王軍との全面戦争を繰り広げる! 「勇者伝説公式 Instagramです! TVアニメ『聖剣のレガリア」放送中! 『劇場版特別\n\n編』 デジタル配信中/ブルーレイ&DVD発売中」 - 2026年10月23日、「いいね！」159K件、コメント281件 - relatable.fun1",
+      "article_text": "relatable.fun1\nFollow\nAI-generated profile\n• AI content\n③魔王軍との全面戦争を繰り広げる! 「勇者伝説公式 Instagramです! TVアニメ『聖剣のレガリア」放送中! 『劇場版特別\n\n編』 デジタル配信中/ブルーレイ&DVD発売中\nSee translation\n158K\n281\n766\n30.8K\nmaxefrt\nFollow\nAram Bajakian · The Poet's Inner World\nAram Bajakian · The Poet's Inner World\nSteadfast 🗡️\n25.8K\n191\n642\n2,741",
+      "aria_text": "relatable.fun1 reels\nrelatable.fun1 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nmaxefrt reels\nmaxefrt reels\nVerified\nAudio image\nLocation\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "availability": {
+          "likes": {
+            "state": "measured",
+            "evidence": "Like"
+          },
+          "comments": {
+            "state": "measured",
+            "evidence": "Comment"
+          },
+          "reshares": {
+            "state": "measured",
+            "evidence": "Repost"
+          },
+          "shares": {
+            "state": "measured",
+            "evidence": "Share"
+          }
+        },
+        "likes": {
+          "raw": "158K",
+          "source": "dom_action_control",
+          "label": "Like"
+        },
+        "comments": {
+          "raw": "281",
+          "source": "dom_action_control",
+          "label": "Comment"
+        },
+        "reshares": {
+          "raw": "766",
+          "source": "dom_action_control",
+          "label": "Repost"
+        },
+        "shares": {
+          "raw": "30.8K",
+          "source": "dom_action_control",
+          "label": "Share"
+        }
+      },
+      "capture_checks": {
+        "access_clear": true,
+        "stable": true,
+        "read_passes": 2,
+        "access_attempts": [],
+        "metric_panels": []
       }
-    }
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T08:57:35.757Z"
   },
   {
     "kind": "reel",
@@ -1790,7 +2427,45 @@
     "url": "https://www.instagram.com/reel/De3EH94MpBS/",
     "grid_views_raw": "92.1K",
     "grid_views_issue": null,
-    "status": "pending",
+    "status": "complete",
+    "fetched_at": "2026-11-14T08:57:41.258Z",
+    "access_review": null,
+    "extraction_review": null,
+    "date": "2026-10-23",
+    "date_precision": "day",
+    "date_source": "og_description_localized",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 891,
+      "raw": "891",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Like"
+    },
+    "comments": {
+      "value": 18,
+      "raw": "18",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Comment"
+    },
+    "reshares": {
+      "value": 27,
+      "raw": "27",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Repost"
+    },
+    "shares": {
+      "value": 1526,
+      "raw": "1,526",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Share"
+    },
+    "likes_visibility": "count_available",
     "views": {
       "value": 92100,
       "raw": "92.1K",
@@ -1798,13 +2473,66 @@
       "source": "profile_grid",
       "observed_at": "2026-11-05T14:54:01.223Z"
     },
-    "saved_observations": {
-      "views": {
-        "source": "profile_grid",
-        "observed_at": "2026-11-05T14:54:01.223Z",
-        "retained_from": "previous_website_snapshot"
+    "thumbnail_url": "https://instagram.fblr1-6.fna.fbcdn.net/v/t51.82787-15/862427157_1084746997693263_4207368305884718304_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=NQdEAAk2X7MQ7kNvwGFPRGW&_nc_oc=AdoP_jVvqxqiSfEdUL-zbi27yVq9bJ9Wu_E1E9bQmMNfUJh3DECPct618txca4tWgscGx8HgkoOTYSspa7v5Ygv3&_nc_zt=23&_nc_ht=instagram.fblr1-6.fna&_nc_gid=3mElNoZ7ZeBykKldO8b0tA&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQQcbBvK-LXTGly2SVlCSaj-0URuV6R5S6pbsm363qMWnA&oe=6AFE026D",
+    "media_url": null,
+    "missing": [],
+    "missing_reasons": {},
+    "raw": {
+      "description": "「③魔王軍との全面戦争を繰り広げる! 「勇者伝説公式 Instagramです! TVアニメ『聖剣のレガリア」放送中! 『劇場版特別\n\n編』 デジタル配信中/ブルーレイ&DVD発売中」 - 2026年10月23日、「いいね！」891件、コメント18件 - relatable.fun1",
+      "article_text": "relatable.fun1\nFollow\nAI-generated profile\n• AI content\n③魔王軍との全面戦争を繰り広げる! 「勇者伝説公式 Instagramです! TVアニメ『聖剣のレガリア」放送中! 『劇場版特別\n\n編』 デジタル配信中/ブルーレイ&DVD発売中\nSee translation\n891\n18\n27\n1,526\ngittaione\nFollow\nTame Impala · New Person, Same Old Mistakes\nTame Impala · New Person, Same Old Mistakes\nPicked up my drunk friend from a bar\n166K\n395\n8,889\n16.4K",
+      "aria_text": "relatable.fun1 reels\nrelatable.fun1 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\ngittaione reels\ngittaione reels\nAudio image\nTagged users\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "availability": {
+          "likes": {
+            "state": "measured",
+            "evidence": "Like"
+          },
+          "comments": {
+            "state": "measured",
+            "evidence": "Comment"
+          },
+          "reshares": {
+            "state": "measured",
+            "evidence": "Repost"
+          },
+          "shares": {
+            "state": "measured",
+            "evidence": "Share"
+          }
+        },
+        "likes": {
+          "raw": "891",
+          "source": "dom_action_control",
+          "label": "Like"
+        },
+        "comments": {
+          "raw": "18",
+          "source": "dom_action_control",
+          "label": "Comment"
+        },
+        "reshares": {
+          "raw": "27",
+          "source": "dom_action_control",
+          "label": "Repost"
+        },
+        "shares": {
+          "raw": "1,526",
+          "source": "dom_action_control",
+          "label": "Share"
+        }
+      },
+      "capture_checks": {
+        "access_clear": true,
+        "stable": true,
+        "read_passes": 2,
+        "access_attempts": [],
+        "metric_panels": []
       }
-    }
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T08:57:41.258Z"
   },
   {
     "kind": "reel",
@@ -1812,7 +2540,45 @@
     "url": "https://www.instagram.com/reel/De3D8smOdm4/",
     "grid_views_raw": "5.3M",
     "grid_views_issue": null,
-    "status": "pending",
+    "status": "complete",
+    "fetched_at": "2026-11-14T08:57:46.549Z",
+    "access_review": null,
+    "extraction_review": null,
+    "date": "2026-10-23",
+    "date_precision": "day",
+    "date_source": "og_description_localized",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 174000,
+      "raw": "174K",
+      "approximate": true,
+      "source": "dom_action_control",
+      "label": "Like"
+    },
+    "comments": {
+      "value": 2377,
+      "raw": "2,377",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Comment"
+    },
+    "reshares": {
+      "value": 2429,
+      "raw": "2,429",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Repost"
+    },
+    "shares": {
+      "value": 34200,
+      "raw": "34.2K",
+      "approximate": true,
+      "source": "dom_action_control",
+      "label": "Share"
+    },
+    "likes_visibility": "count_available",
     "views": {
       "value": 5300000,
       "raw": "5.3M",
@@ -1820,13 +2586,66 @@
       "source": "profile_grid",
       "observed_at": "2026-11-05T14:54:01.223Z"
     },
-    "saved_observations": {
-      "views": {
-        "source": "profile_grid",
-        "observed_at": "2026-11-05T14:54:01.223Z",
-        "retained_from": "previous_website_snapshot"
+    "thumbnail_url": "https://instagram.fblr1-4.fna.fbcdn.net/v/t51.82787-15/863173414_1130562276582960_5406338898189557452_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=2Rp9oKQSH1IQ7kNvwEM66yg&_nc_oc=AdpvI6FJCg774Jx3hczDCEh7PvHWsvkQifLG83-bMWNtKkr9wSB7BESTdCWS282W8RJhjrQL4AL8LYdz05KdvxwS&_nc_zt=23&_nc_ht=instagram.fblr1-4.fna&_nc_gid=JSMAwhQg0emD3nHBX8OxnQ&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQR59W7mjLGbq5P0Au0S4Rar-9KB7Xw7EU1y7R_DEOYkiA&oe=6AFDDCD2",
+    "media_url": null,
+    "missing": [],
+    "missing_reasons": {},
+    "raw": {
+      "description": "「③魔王軍との全面戦争を繰り広げる! 「勇者伝説公式 Instagramです! TVアニメ『聖剣のレガリア」放送中! 『劇場版特別\n\n編』 デジタル配信中/ブルーレイ&DVD発売中」 - 2026年10月23日、「いいね！」175K件、コメント2,377件 - relatable.fun1",
+      "article_text": "relatable.fun1\nFollow\nAI-generated profile\n• AI content\n③魔王軍との全面戦争を繰り広げる! 「勇者伝説公式 Instagramです! TVアニメ『聖剣のレガリア」放送中! 『劇場版特別\n\n編』 デジタル配信中/ブルーレイ&DVD発売中\nSee translation\n174K\n2,377\n2,429\n34.2K\ntrick0815\nFollow\nMount Kimbie, Kai Campos · Zone 3 (City Limits)\nMount Kimbie, Kai Campos · Zone 3 (City Limits)\nMist over Vienna\n\n#objectmanipulation #spinnin #sticknation #circus #balancing\n32.7K\n383\n838\n4,932",
+      "aria_text": "relatable.fun1 reels\nrelatable.fun1 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\ntrick0815 reels\ntrick0815 reels\nAudio image\nLocation\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "availability": {
+          "likes": {
+            "state": "measured",
+            "evidence": "Like"
+          },
+          "comments": {
+            "state": "measured",
+            "evidence": "Comment"
+          },
+          "reshares": {
+            "state": "measured",
+            "evidence": "Repost"
+          },
+          "shares": {
+            "state": "measured",
+            "evidence": "Share"
+          }
+        },
+        "likes": {
+          "raw": "174K",
+          "source": "dom_action_control",
+          "label": "Like"
+        },
+        "comments": {
+          "raw": "2,377",
+          "source": "dom_action_control",
+          "label": "Comment"
+        },
+        "reshares": {
+          "raw": "2,429",
+          "source": "dom_action_control",
+          "label": "Repost"
+        },
+        "shares": {
+          "raw": "34.2K",
+          "source": "dom_action_control",
+          "label": "Share"
+        }
+      },
+      "capture_checks": {
+        "access_clear": true,
+        "stable": true,
+        "read_passes": 2,
+        "access_attempts": [],
+        "metric_panels": []
       }
-    }
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T08:57:46.549Z"
   },
   {
     "kind": "reel",
@@ -1834,7 +2653,45 @@
     "url": "https://www.instagram.com/reel/De3DwfhhrGV/",
     "grid_views_raw": "3.4M",
     "grid_views_issue": null,
-    "status": "pending",
+    "status": "complete",
+    "fetched_at": "2026-11-14T08:57:51.850Z",
+    "access_review": null,
+    "extraction_review": null,
+    "date": "2026-10-23",
+    "date_precision": "day",
+    "date_source": "og_description_localized",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 77100,
+      "raw": "77.1K",
+      "approximate": true,
+      "source": "dom_action_control",
+      "label": "Like"
+    },
+    "comments": {
+      "value": 852,
+      "raw": "852",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Comment"
+    },
+    "reshares": {
+      "value": 1593,
+      "raw": "1,593",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Repost"
+    },
+    "shares": {
+      "value": 102000,
+      "raw": "102K",
+      "approximate": true,
+      "source": "dom_action_control",
+      "label": "Share"
+    },
+    "likes_visibility": "count_available",
     "views": {
       "value": 3400000,
       "raw": "3.4M",
@@ -1842,13 +2699,66 @@
       "source": "profile_grid",
       "observed_at": "2026-11-05T14:54:01.223Z"
     },
-    "saved_observations": {
-      "views": {
-        "source": "profile_grid",
-        "observed_at": "2026-11-05T14:54:01.223Z",
-        "retained_from": "previous_website_snapshot"
+    "thumbnail_url": "https://instagram.fblr1-6.fna.fbcdn.net/v/t51.82787-15/866498038_1168948099002966_4302413910038976538_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=sE1B72ZZqNwQ7kNvwGJHzAk&_nc_oc=AdpgqtFQ9CobW7u6sE2aNVuo3oU62wonZ3i70j5ZzLY9q4Z_3qPV3zH4l84k7qcnWWsTWzSGbb0kw9lvqnGQSe2I&_nc_zt=23&_nc_ht=instagram.fblr1-6.fna&_nc_gid=rPmMUoIHbdnYGjNvbV0VIQ&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQSUR6qGwEsUv1TeO1H80BmTWW85MbKE3_iTCj_8uVUk9Q&oe=6AFDEB31",
+    "media_url": null,
+    "missing": [],
+    "missing_reasons": {},
+    "raw": {
+      "description": "「③魔王軍との全面戦争を繰り広げる! 「勇者伝説公式 Instagramです! TVアニメ『聖剣のレガリア」放送中! 『劇場版特別\n\n編』 デジタル配信中/ブルーレイ&DVD発売中」 - 2026年10月23日、「いいね！」77K件、コメント852件 - relatable.fun1",
+      "article_text": "relatable.fun1\nFollow\nAI-generated profile\n• AI content\n③魔王軍との全面戦争を繰り広げる! 「勇者伝説公式 Instagramです! TVアニメ『聖剣のレガリア」放送中! 『劇場版特別\n\n編』 デジタル配信中/ブルーレイ&DVD発売中\nSee translation\n77.1K\n852\n1,593\n102K\nmaxefrt\nFollow\nAram Bajakian · The Poet's Inner World\nAram Bajakian · The Poet's Inner World\nSteadfast 🗡️\n25.8K\n191\n642\n2,741",
+      "aria_text": "relatable.fun1 reels\nrelatable.fun1 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nmaxefrt reels\nmaxefrt reels\nVerified\nAudio image\nLocation\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "availability": {
+          "likes": {
+            "state": "measured",
+            "evidence": "Like"
+          },
+          "comments": {
+            "state": "measured",
+            "evidence": "Comment"
+          },
+          "reshares": {
+            "state": "measured",
+            "evidence": "Repost"
+          },
+          "shares": {
+            "state": "measured",
+            "evidence": "Share"
+          }
+        },
+        "likes": {
+          "raw": "77.1K",
+          "source": "dom_action_control",
+          "label": "Like"
+        },
+        "comments": {
+          "raw": "852",
+          "source": "dom_action_control",
+          "label": "Comment"
+        },
+        "reshares": {
+          "raw": "1,593",
+          "source": "dom_action_control",
+          "label": "Repost"
+        },
+        "shares": {
+          "raw": "102K",
+          "source": "dom_action_control",
+          "label": "Share"
+        }
+      },
+      "capture_checks": {
+        "access_clear": true,
+        "stable": true,
+        "read_passes": 2,
+        "access_attempts": [],
+        "metric_panels": []
       }
-    }
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T08:57:51.850Z"
   },
   {
     "kind": "reel",
@@ -1856,7 +2766,45 @@
     "url": "https://www.instagram.com/reel/De3Bd6SRv32/",
     "grid_views_raw": "121K",
     "grid_views_issue": null,
-    "status": "pending",
+    "status": "complete",
+    "fetched_at": "2026-11-14T08:57:57.230Z",
+    "access_review": null,
+    "extraction_review": null,
+    "date": "2026-10-23",
+    "date_precision": "day",
+    "date_source": "og_description_localized",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 2133,
+      "raw": "2,133",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Like"
+    },
+    "comments": {
+      "value": 12,
+      "raw": "12",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Comment"
+    },
+    "reshares": {
+      "value": 32,
+      "raw": "32",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Repost"
+    },
+    "shares": {
+      "value": 300,
+      "raw": "300",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Share"
+    },
+    "likes_visibility": "count_available",
     "views": {
       "value": 121000,
       "raw": "121K",
@@ -1864,13 +2812,66 @@
       "source": "profile_grid",
       "observed_at": "2026-11-05T14:54:01.223Z"
     },
-    "saved_observations": {
-      "views": {
-        "source": "profile_grid",
-        "observed_at": "2026-11-05T14:54:01.223Z",
-        "retained_from": "previous_website_snapshot"
+    "thumbnail_url": "https://instagram.fblr1-10.fna.fbcdn.net/v/t51.82787-15/866342794_2708355922955793_4908679516766299698_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=8uDOlsUiWdIQ7kNvwHQ7Uou&_nc_oc=AdrkBdFh_NNEjh4ysiEUKO19Exk8dfLLeSkqicNOL-bPGf1mVYD7X1fnkAp2nSXcurJKQIG5_M-N-vQv1fYrsfuq&_nc_zt=23&_nc_ht=instagram.fblr1-10.fna&_nc_gid=rkjlwhZDBiPXpn0t1xd9-A&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQRvTeqOqXbzhu7_5BraNWLcgnZj0jFJeVZOQ-IeJ-51qg&oe=6AFDFDCF",
+    "media_url": null,
+    "missing": [],
+    "missing_reasons": {},
+    "raw": {
+      "description": "「③魔王軍との全面戦争を繰り広げる! 「勇者伝説公式 Instagramです! TVアニメ『聖剣のレガリア」放送中! 『劇場版特別\n\n編』 デジタル配信中/ブルーレイ&DVD発売中」 - 2026年10月23日、「いいね！」2,133件、コメント12件 - relatable.fun1",
+      "article_text": "relatable.fun1\nFollow\nAI-generated profile\n• AI content\n③魔王軍との全面戦争を繰り広げる! 「勇者伝説公式 Instagramです! TVアニメ『聖剣のレガリア」放送中! 『劇場版特別\n\n編』 デジタル配信中/ブルーレイ&DVD発売中\nSee translation\n2,133\n12\n32\n300\nonechampionship\nFollow\n2 people\nKeep your head up 🙏 @rodtang_jimungnon @nongogaiyanghadao\n \n#TheInnerCircle38\n🔴 Join The Inner Circle for only USD9.99/month at live.onefc.com.\n🟢 NEW 👉 Log in with LINE! No account? Sign up to watch select past events from 2026 for FREE\n125K\n650\n2,998\n6,087",
+      "aria_text": "relatable.fun1 reels\nrelatable.fun1 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nonechampionship reels\nonechampionship reels\nVerified\nTagged users\nTagged users\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "availability": {
+          "likes": {
+            "state": "measured",
+            "evidence": "Like"
+          },
+          "comments": {
+            "state": "measured",
+            "evidence": "Comment"
+          },
+          "reshares": {
+            "state": "measured",
+            "evidence": "Repost"
+          },
+          "shares": {
+            "state": "measured",
+            "evidence": "Share"
+          }
+        },
+        "likes": {
+          "raw": "2,133",
+          "source": "dom_action_control",
+          "label": "Like"
+        },
+        "comments": {
+          "raw": "12",
+          "source": "dom_action_control",
+          "label": "Comment"
+        },
+        "reshares": {
+          "raw": "32",
+          "source": "dom_action_control",
+          "label": "Repost"
+        },
+        "shares": {
+          "raw": "300",
+          "source": "dom_action_control",
+          "label": "Share"
+        }
+      },
+      "capture_checks": {
+        "access_clear": true,
+        "stable": true,
+        "read_passes": 2,
+        "access_attempts": [],
+        "metric_panels": []
       }
-    }
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T08:57:57.230Z"
   },
   {
     "kind": "reel",
@@ -1878,7 +2879,45 @@
     "url": "https://www.instagram.com/reel/De2PbMGSsGy/",
     "grid_views_raw": "939K",
     "grid_views_issue": null,
-    "status": "pending",
+    "status": "complete",
+    "fetched_at": "2026-11-14T08:58:02.466Z",
+    "access_review": null,
+    "extraction_review": null,
+    "date": "2026-10-23",
+    "date_precision": "day",
+    "date_source": "og_description_localized",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 26100,
+      "raw": "26.1K",
+      "approximate": true,
+      "source": "dom_action_control",
+      "label": "Like"
+    },
+    "comments": {
+      "value": 355,
+      "raw": "355",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Comment"
+    },
+    "reshares": {
+      "value": 459,
+      "raw": "459",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Repost"
+    },
+    "shares": {
+      "value": 39900,
+      "raw": "39.9K",
+      "approximate": true,
+      "source": "dom_action_control",
+      "label": "Share"
+    },
+    "likes_visibility": "count_available",
     "views": {
       "value": 939000,
       "raw": "939K",
@@ -1886,13 +2925,66 @@
       "source": "profile_grid",
       "observed_at": "2026-11-05T14:54:01.223Z"
     },
-    "saved_observations": {
-      "views": {
-        "source": "profile_grid",
-        "observed_at": "2026-11-05T14:54:01.223Z",
-        "retained_from": "previous_website_snapshot"
+    "thumbnail_url": "https://instagram.fblr24-3.fna.fbcdn.net/v/t51.82787-15/864541493_1417908476668154_3179455160310220156_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=CwMllELMi9IQ7kNvwFYnWB7&_nc_oc=AdpPCXHeqTVaDW9i3sZ5dWgI4OTIaHtW8p8Mh23hu5_ZHjbMGCyYlz8kk-7SXqceLFO9_TmVxlojIl3oC8q-ahmo&_nc_zt=23&_nc_ht=instagram.fblr24-3.fna&_nc_gid=vrQOTgdkk6gOwXE3lE2TWw&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQT7g1qUZq_hJbv4IW9ikd_GtRisVcdKEoJv-0gTrSkoOg&oe=6AFE0595",
+    "media_url": null,
+    "missing": [],
+    "missing_reasons": {},
+    "raw": {
+      "description": "「③魔王軍との全面戦争を繰り広げる! 「勇者伝説公式 Instagramです! TVアニメ『聖剣のレガリア」放送中! 『劇場版特別\n\n編』 デジタル配信中/ブルーレイ&DVD発売中」 - 2026年10月23日、「いいね！」26K件、コメント355件 - relatable.fun1",
+      "article_text": "relatable.fun1\nFollow\nAI-generated profile\n• AI content\n③魔王軍との全面戦争を繰り広げる! 「勇者伝説公式 Instagramです! TVアニメ『聖剣のレガリア」放送中! 『劇場版特別\n\n編』 デジタル配信中/ブルーレイ&DVD発売中\nSee translation\n26.1K\n355\n459\n39.9K\ndev247.dhun\nFollow\n5 people\nहाय रामा · Hai Rama, every swara mapped 🎶\n\n@amritharajan.official ’s Hai Rama on Indian Idol, turned into a live sargam graph.\n270 swaras in 51 seconds, peaking at 10 notes a second. Every taan lands on the strings as she sings it.\n\nRaag Puriya Dhanashree · Sa = C\n_ = komal · ‘ = tivra\n\nWhich taan gave you goosebumps? Comment the timestamp 👇\nSave this for your next riyaz 🔁\n\n🎤 Vocals: @amritharajan.official\n📺 Indian Idol · @sonytvofficial\n🎼 Original: A.R. Rahman (@arrahman ) · Rangeela\n\n#hairama #amritharajan #indianidol #puriyadhanashree #sargam\n53.3K\n647\n1,868\n9,848",
+      "aria_text": "relatable.fun1 reels\nrelatable.fun1 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\ndev247.dhun reels\ndev247.dhun reels\nVerified\nTagged users\nTagged users\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "availability": {
+          "likes": {
+            "state": "measured",
+            "evidence": "Like"
+          },
+          "comments": {
+            "state": "measured",
+            "evidence": "Comment"
+          },
+          "reshares": {
+            "state": "measured",
+            "evidence": "Repost"
+          },
+          "shares": {
+            "state": "measured",
+            "evidence": "Share"
+          }
+        },
+        "likes": {
+          "raw": "26.1K",
+          "source": "dom_action_control",
+          "label": "Like"
+        },
+        "comments": {
+          "raw": "355",
+          "source": "dom_action_control",
+          "label": "Comment"
+        },
+        "reshares": {
+          "raw": "459",
+          "source": "dom_action_control",
+          "label": "Repost"
+        },
+        "shares": {
+          "raw": "39.9K",
+          "source": "dom_action_control",
+          "label": "Share"
+        }
+      },
+      "capture_checks": {
+        "access_clear": true,
+        "stable": true,
+        "read_passes": 2,
+        "access_attempts": [],
+        "metric_panels": []
       }
-    }
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T08:58:02.466Z"
   },
   {
     "kind": "reel",
@@ -1900,7 +2992,45 @@
     "url": "https://www.instagram.com/reel/De2PS9ZS0W-/",
     "grid_views_raw": "5.6M",
     "grid_views_issue": null,
-    "status": "pending",
+    "status": "complete",
+    "fetched_at": "2026-11-14T08:58:07.839Z",
+    "access_review": null,
+    "extraction_review": null,
+    "date": "2026-10-23",
+    "date_precision": "day",
+    "date_source": "og_description_localized",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 188000,
+      "raw": "188K",
+      "approximate": true,
+      "source": "dom_action_control",
+      "label": "Like"
+    },
+    "comments": {
+      "value": 820,
+      "raw": "820",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Comment"
+    },
+    "reshares": {
+      "value": 1078,
+      "raw": "1,078",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Repost"
+    },
+    "shares": {
+      "value": 87700,
+      "raw": "87.7K",
+      "approximate": true,
+      "source": "dom_action_control",
+      "label": "Share"
+    },
+    "likes_visibility": "count_available",
     "views": {
       "value": 5600000,
       "raw": "5.6M",
@@ -1908,13 +3038,66 @@
       "source": "profile_grid",
       "observed_at": "2026-11-05T14:54:01.223Z"
     },
-    "saved_observations": {
-      "views": {
-        "source": "profile_grid",
-        "observed_at": "2026-11-05T14:54:01.223Z",
-        "retained_from": "previous_website_snapshot"
+    "thumbnail_url": "https://instagram.fblr24-4.fna.fbcdn.net/v/t51.82787-15/858283466_1473678198051433_4019840001158098047_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=0c76MonglcAQ7kNvwE-b0E9&_nc_oc=AdoDv0RLBYHGrhPnkBze1emxw5A2EXyIrWskC5QC8vRBNPFoRN45kWoGFn37XHAOMwJkTfw-nVFZCgzzc_W4uPO_&_nc_zt=23&_nc_ht=instagram.fblr24-4.fna&_nc_gid=I_qjzctycKn6bbaF5FhXtw&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQQKXOr8ojPjvUkFL9esymLsFg-Jr7ApWljmo2EF1hTTvA&oe=6AFDEA4C",
+    "media_url": null,
+    "missing": [],
+    "missing_reasons": {},
+    "raw": {
+      "description": "「③魔王軍との全面戦争を繰り広げる! 「勇者伝説公式 Instagramです! TVアニメ『聖剣のレガリア」放送中! 『劇場版特別\n\n編』 デジタル配信中/ブルーレイ&DVD発売中」 - 2026年10月23日、「いいね！」188K件、コメント820件 - relatable.fun1",
+      "article_text": "relatable.fun1\nFollow\nAI-generated profile\n• AI content\n③魔王軍との全面戦争を繰り広げる! 「勇者伝説公式 Instagramです! TVアニメ『聖剣のレガリア」放送中! 『劇場版特別\n\n編』 デジタル配信中/ブルーレイ&DVD発売中\nSee translation\n188K\n820\n1,078\n87.7K\nla_loutre_geante\nFollow\nTool “Right in two” 🧘\n\n#acousticguitars #prsguitars #prspulseartist #toolcover\n7,793\n233\n261\n591",
+      "aria_text": "relatable.fun1 reels\nrelatable.fun1 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nla_loutre_geante reels\nla_loutre_geante reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "availability": {
+          "likes": {
+            "state": "measured",
+            "evidence": "Like"
+          },
+          "comments": {
+            "state": "measured",
+            "evidence": "Comment"
+          },
+          "reshares": {
+            "state": "measured",
+            "evidence": "Repost"
+          },
+          "shares": {
+            "state": "measured",
+            "evidence": "Share"
+          }
+        },
+        "likes": {
+          "raw": "188K",
+          "source": "dom_action_control",
+          "label": "Like"
+        },
+        "comments": {
+          "raw": "820",
+          "source": "dom_action_control",
+          "label": "Comment"
+        },
+        "reshares": {
+          "raw": "1,078",
+          "source": "dom_action_control",
+          "label": "Repost"
+        },
+        "shares": {
+          "raw": "87.7K",
+          "source": "dom_action_control",
+          "label": "Share"
+        }
+      },
+      "capture_checks": {
+        "access_clear": true,
+        "stable": true,
+        "read_passes": 2,
+        "access_attempts": [],
+        "metric_panels": []
       }
-    }
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T08:58:07.839Z"
   },
   {
     "kind": "reel",
@@ -1922,7 +3105,45 @@
     "url": "https://www.instagram.com/reel/De2PJ_MycaM/",
     "grid_views_raw": "41.2K",
     "grid_views_issue": null,
-    "status": "pending",
+    "status": "complete",
+    "fetched_at": "2026-11-14T08:58:13.189Z",
+    "access_review": null,
+    "extraction_review": null,
+    "date": "2026-10-23",
+    "date_precision": "day",
+    "date_source": "og_description_localized",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 263,
+      "raw": "263",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Like"
+    },
+    "comments": {
+      "value": 2,
+      "raw": "2",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Comment"
+    },
+    "reshares": {
+      "value": 7,
+      "raw": "7",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Repost"
+    },
+    "shares": {
+      "value": 250,
+      "raw": "250",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Share"
+    },
+    "likes_visibility": "count_available",
     "views": {
       "value": 41200,
       "raw": "41.2K",
@@ -1930,13 +3151,66 @@
       "source": "profile_grid",
       "observed_at": "2026-11-05T14:54:01.223Z"
     },
-    "saved_observations": {
-      "views": {
-        "source": "profile_grid",
-        "observed_at": "2026-11-05T14:54:01.223Z",
-        "retained_from": "previous_website_snapshot"
+    "thumbnail_url": "https://instagram.fblr1-3.fna.fbcdn.net/v/t51.82787-15/859145232_1129261692970989_5515229969846134921_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=Sr_TlvW2axcQ7kNvwG2lp8K&_nc_oc=AdpbHdLAsnf4mcgK6qlSI3ib1EYAIKcFNeoQbzUVNy9u78v9uNqgNJ7-6zcrT4G6G3Zdx6fC-QX6Gnj4b4YjyQkX&_nc_zt=23&_nc_ht=instagram.fblr1-3.fna&_nc_gid=S01C1QR2HxWTSwXl_qXHOw&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQTTxoC8iKDv1whwSOoMIEwBBsVAvemIhkdTixbcTRHYCw&oe=6AFDFDE1",
+    "media_url": null,
+    "missing": [],
+    "missing_reasons": {},
+    "raw": {
+      "description": "「③魔王軍との全面戦争を繰り広げる! 「勇者伝説公式 Instagramです! TVアニメ『聖剣のレガリア」放送中! 『劇場版特別\n\n編』 デジタル配信中/ブルーレイ&DVD発売中」 - 2026年10月23日、「いいね！」263件、コメント2件 - relatable.fun1",
+      "article_text": "relatable.fun1\nFollow\nAI-generated profile\n• AI content\n③魔王軍との全面戦争を繰り広げる! 「勇者伝説公式 Instagramです! TVアニメ『聖剣のレガリア」放送中! 『劇場版特別\n\n編』 デジタル配信中/ブルーレイ&DVD発売中\nSee translation\n263\n2\n7\n250\njackkiczales\nFollow\nGenerational riff\n-\n-\nAerials - System Of A Down\n-\n-\n#guitarist #electricguitar #systemofadown #rock #guitar\n57.8K\n228\n3,624\n5,481",
+      "aria_text": "relatable.fun1 reels\nrelatable.fun1 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\njackkiczales reels\njackkiczales reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "availability": {
+          "likes": {
+            "state": "measured",
+            "evidence": "Like"
+          },
+          "comments": {
+            "state": "measured",
+            "evidence": "Comment"
+          },
+          "reshares": {
+            "state": "measured",
+            "evidence": "Repost"
+          },
+          "shares": {
+            "state": "measured",
+            "evidence": "Share"
+          }
+        },
+        "likes": {
+          "raw": "263",
+          "source": "dom_action_control",
+          "label": "Like"
+        },
+        "comments": {
+          "raw": "2",
+          "source": "dom_action_control",
+          "label": "Comment"
+        },
+        "reshares": {
+          "raw": "7",
+          "source": "dom_action_control",
+          "label": "Repost"
+        },
+        "shares": {
+          "raw": "250",
+          "source": "dom_action_control",
+          "label": "Share"
+        }
+      },
+      "capture_checks": {
+        "access_clear": true,
+        "stable": true,
+        "read_passes": 2,
+        "access_attempts": [],
+        "metric_panels": []
       }
-    }
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T08:58:13.189Z"
   },
   {
     "kind": "reel",
@@ -1944,7 +3218,45 @@
     "url": "https://www.instagram.com/reel/De2PC18S3B6/",
     "grid_views_raw": "3.8M",
     "grid_views_issue": null,
-    "status": "pending",
+    "status": "complete",
+    "fetched_at": "2026-11-14T08:58:18.850Z",
+    "access_review": null,
+    "extraction_review": null,
+    "date": "2026-10-23",
+    "date_precision": "day",
+    "date_source": "og_description_localized",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 70500,
+      "raw": "70.5K",
+      "approximate": true,
+      "source": "dom_action_control",
+      "label": "Like"
+    },
+    "comments": {
+      "value": 1180,
+      "raw": "1,180",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Comment"
+    },
+    "reshares": {
+      "value": 1608,
+      "raw": "1,608",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Repost"
+    },
+    "shares": {
+      "value": 148000,
+      "raw": "148K",
+      "approximate": true,
+      "source": "dom_action_control",
+      "label": "Share"
+    },
+    "likes_visibility": "count_available",
     "views": {
       "value": 3800000,
       "raw": "3.8M",
@@ -1952,13 +3264,66 @@
       "source": "profile_grid",
       "observed_at": "2026-11-05T14:54:01.223Z"
     },
-    "saved_observations": {
-      "views": {
-        "source": "profile_grid",
-        "observed_at": "2026-11-05T14:54:01.223Z",
-        "retained_from": "previous_website_snapshot"
+    "thumbnail_url": "https://instagram.fblr1-7.fna.fbcdn.net/v/t51.82787-15/859887606_1870298564137280_8036605906922067175_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=gx2wec65gZ4Q7kNvwGif27d&_nc_oc=AdoW9-olijrOo0v2DBTEREafqgSsej78P9SU35YzzQQjP29gaesjrzyqIu6GeDwDWEYdl_0yCkzunkli5BMZx61b&_nc_zt=23&_nc_ht=instagram.fblr1-7.fna&_nc_gid=Rl-e5zYGD0j4145SVTmpag&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQTdUSgPC-olqXTsuuhjied9HlseCoht323fIdZcLFriRQ&oe=6AFDE5FF",
+    "media_url": null,
+    "missing": [],
+    "missing_reasons": {},
+    "raw": {
+      "description": "「③魔王軍との全面戦争を繰り広げる! 「勇者伝説公式 Instagramです! TVアニメ『聖剣のレガリア」放送中! 『劇場版特別\n\n編』 デジタル配信中/ブルーレイ&DVD発売中」 - 2026年10月23日、「いいね！」71K件、コメント1,180件 - relatable.fun1",
+      "article_text": "relatable.fun1\nFollow\nAI-generated profile\n• AI content\n③魔王軍との全面戦争を繰り広げる! 「勇者伝説公式 Instagramです! TVアニメ『聖剣のレガリア」放送中! 『劇場版特別\n\n編』 デジタル配信中/ブルーレイ&DVD発売中\nSee translation\n70.5K\n1,180\n1,608\n148K\nmaxefrt\nFollow\nAram Bajakian · The Poet's Inner World\nAram Bajakian · The Poet's Inner World\nSteadfast 🗡️\n25.8K\n191\n642\n2,741",
+      "aria_text": "relatable.fun1 reels\nrelatable.fun1 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nmaxefrt reels\nmaxefrt reels\nVerified\nAudio image\nLocation\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "availability": {
+          "likes": {
+            "state": "measured",
+            "evidence": "Like"
+          },
+          "comments": {
+            "state": "measured",
+            "evidence": "Comment"
+          },
+          "reshares": {
+            "state": "measured",
+            "evidence": "Repost"
+          },
+          "shares": {
+            "state": "measured",
+            "evidence": "Share"
+          }
+        },
+        "likes": {
+          "raw": "70.5K",
+          "source": "dom_action_control",
+          "label": "Like"
+        },
+        "comments": {
+          "raw": "1,180",
+          "source": "dom_action_control",
+          "label": "Comment"
+        },
+        "reshares": {
+          "raw": "1,608",
+          "source": "dom_action_control",
+          "label": "Repost"
+        },
+        "shares": {
+          "raw": "148K",
+          "source": "dom_action_control",
+          "label": "Share"
+        }
+      },
+      "capture_checks": {
+        "access_clear": true,
+        "stable": true,
+        "read_passes": 2,
+        "access_attempts": [],
+        "metric_panels": []
       }
-    }
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T08:58:18.850Z"
   },
   {
     "kind": "reel",
@@ -1966,7 +3331,45 @@
     "url": "https://www.instagram.com/reel/De2O49ny9vH/",
     "grid_views_raw": "1.3M",
     "grid_views_issue": null,
-    "status": "pending",
+    "status": "complete",
+    "fetched_at": "2026-11-14T08:58:24.176Z",
+    "access_review": null,
+    "extraction_review": null,
+    "date": "2026-10-23",
+    "date_precision": "day",
+    "date_source": "og_description_localized",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 61200,
+      "raw": "61.2K",
+      "approximate": true,
+      "source": "dom_action_control",
+      "label": "Like"
+    },
+    "comments": {
+      "value": 198,
+      "raw": "198",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Comment"
+    },
+    "reshares": {
+      "value": 983,
+      "raw": "983",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Repost"
+    },
+    "shares": {
+      "value": 43100,
+      "raw": "43.1K",
+      "approximate": true,
+      "source": "dom_action_control",
+      "label": "Share"
+    },
+    "likes_visibility": "count_available",
     "views": {
       "value": 1300000,
       "raw": "1.3M",
@@ -1974,13 +3377,66 @@
       "source": "profile_grid",
       "observed_at": "2026-11-05T14:54:01.223Z"
     },
-    "saved_observations": {
-      "views": {
-        "source": "profile_grid",
-        "observed_at": "2026-11-05T14:54:01.223Z",
-        "retained_from": "previous_website_snapshot"
+    "thumbnail_url": "https://instagram.fblr1-9.fna.fbcdn.net/v/t51.82787-15/860254602_1783261662945294_3597989320919252211_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=5SI36NKxKxEQ7kNvwHweWbx&_nc_oc=Adr4_-CDb5W_M0ivJUSJfkLtCGpGxLxO0ImBUy_iRKg51zbXHKIhGlfwS2hT93vp5IKVMKyLSTLvohGSa7iQfeM_&_nc_zt=23&_nc_ht=instagram.fblr1-9.fna&_nc_gid=Mze-AGxiCLq_a_rZLj_WQw&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQTxS0yjvEPi9qp0_HKDwKIy84MXZGcjVTrW-DYLzJX4Eg&oe=6AFE1069",
+    "media_url": null,
+    "missing": [],
+    "missing_reasons": {},
+    "raw": {
+      "description": "「③魔王軍との全面戦争を繰り広げる! 「勇者伝説公式 Instagramです! TVアニメ『聖剣のレガリア」放送中! 『劇場版特別\n\n編』 デジタル配信中/ブルーレイ&DVD発売中」 - 2026年10月23日、「いいね！」61K件、コメント198件 - relatable.fun1",
+      "article_text": "relatable.fun1\nFollow\nAI-generated profile\n• AI content\n③魔王軍との全面戦争を繰り広げる! 「勇者伝説公式 Instagramです! TVアニメ『聖剣のレガリア」放送中! 『劇場版特別\n\n編』 デジタル配信中/ブルーレイ&DVD発売中\nSee translation\n61.2K\n198\n983\n43.1K\ntrick0815\nFollow\nMount Kimbie, Kai Campos · Zone 3 (City Limits)\nMount Kimbie, Kai Campos · Zone 3 (City Limits)\nMist over Vienna\n\n#objectmanipulation #spinnin #sticknation #circus #balancing\n32.7K\n383\n838\n4,932",
+      "aria_text": "relatable.fun1 reels\nrelatable.fun1 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\ntrick0815 reels\ntrick0815 reels\nAudio image\nLocation\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "availability": {
+          "likes": {
+            "state": "measured",
+            "evidence": "Like"
+          },
+          "comments": {
+            "state": "measured",
+            "evidence": "Comment"
+          },
+          "reshares": {
+            "state": "measured",
+            "evidence": "Repost"
+          },
+          "shares": {
+            "state": "measured",
+            "evidence": "Share"
+          }
+        },
+        "likes": {
+          "raw": "61.2K",
+          "source": "dom_action_control",
+          "label": "Like"
+        },
+        "comments": {
+          "raw": "198",
+          "source": "dom_action_control",
+          "label": "Comment"
+        },
+        "reshares": {
+          "raw": "983",
+          "source": "dom_action_control",
+          "label": "Repost"
+        },
+        "shares": {
+          "raw": "43.1K",
+          "source": "dom_action_control",
+          "label": "Share"
+        }
+      },
+      "capture_checks": {
+        "access_clear": true,
+        "stable": true,
+        "read_passes": 2,
+        "access_attempts": [],
+        "metric_panels": []
       }
-    }
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T08:58:24.176Z"
   },
   {
     "kind": "reel",
@@ -1988,7 +3444,45 @@
     "url": "https://www.instagram.com/reel/De2Opz1SgYt/",
     "grid_views_raw": "814K",
     "grid_views_issue": null,
-    "status": "pending",
+    "status": "complete",
+    "fetched_at": "2026-11-14T08:58:30.347Z",
+    "access_review": null,
+    "extraction_review": null,
+    "date": "2026-10-23",
+    "date_precision": "day",
+    "date_source": "og_description",
+    "caption": "③魔王軍との全面戦争を繰り広げる! 「勇者伝説公式 Instagramです! TVアニメ『聖剣のレガリア」放送中! 『劇場版特別\n\n編』 デジタル配信中/ブルーレイ&DVD発売中",
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 26100,
+      "raw": "26.1K",
+      "approximate": true,
+      "source": "dom_action_control",
+      "label": "Like"
+    },
+    "comments": {
+      "value": 62,
+      "raw": "62",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Comment"
+    },
+    "reshares": {
+      "value": 271,
+      "raw": "271",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Repost"
+    },
+    "shares": {
+      "value": 14400,
+      "raw": "14.4K",
+      "approximate": true,
+      "source": "dom_action_control",
+      "label": "Share"
+    },
+    "likes_visibility": "count_available",
     "views": {
       "value": 814000,
       "raw": "814K",
@@ -1996,12 +3490,65 @@
       "source": "profile_grid",
       "observed_at": "2026-11-05T14:54:01.223Z"
     },
-    "saved_observations": {
-      "views": {
-        "source": "profile_grid",
-        "observed_at": "2026-11-05T14:54:01.223Z",
-        "retained_from": "previous_website_snapshot"
+    "thumbnail_url": "https://instagram.fblr1-8.fna.fbcdn.net/v/t51.82787-15/859933280_1122272987246521_2405253577255165751_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=qBLQUHQoqf0Q7kNvwG01uor&_nc_oc=AdpNZjT37-tbtcx0JhVsSnYbRfYO9kZjpk9zIEE9jaNxBJA8H9e51PbErciuPB-_wXsla3xUuibORLnbb0He5UY2&_nc_zt=23&_nc_ht=instagram.fblr1-8.fna&_nc_gid=Niz9fgX1BBocOEJy--fZkw&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQQlWjEimMPEEX_avaN42bpQvUXw9tWJXvcQLyt8BmOgOg&oe=6AFDFAA2",
+    "media_url": null,
+    "missing": [],
+    "missing_reasons": {},
+    "raw": {
+      "description": "26K likes, 62 comments - relatable.fun1 on October 23, 2026: \"③魔王軍との全面戦争を繰り広げる! 「勇者伝説公式 Instagramです! TVアニメ『聖剣のレガリア」放送中! 『劇場版特別\n\n編』 デジタル配信中/ブルーレイ&DVD発売中\". ",
+      "article_text": "relatable.fun1\nFollow\nAI-generated profile\n• AI content\n③魔王軍との全面戦争を繰り広げる! 「勇者伝説公式 Instagramです! TVアニメ『聖剣のレガリア」放送中! 『劇場版特別\n\n編』 デジタル配信中/ブルーレイ&DVD発売中\nSee translation\n26.1K\n62\n271\n14.4K\nla_loutre_geante\nFollow\nTool “Right in two” 🧘\n\n#acousticguitars #prsguitars #prspulseartist #toolcover\n7,795\n233\n261\n591",
+      "aria_text": "relatable.fun1 reels\nrelatable.fun1 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nla_loutre_geante reels\nla_loutre_geante reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "availability": {
+          "likes": {
+            "state": "measured",
+            "evidence": "Like"
+          },
+          "comments": {
+            "state": "measured",
+            "evidence": "Comment"
+          },
+          "reshares": {
+            "state": "measured",
+            "evidence": "Repost"
+          },
+          "shares": {
+            "state": "measured",
+            "evidence": "Share"
+          }
+        },
+        "likes": {
+          "raw": "26.1K",
+          "source": "dom_action_control",
+          "label": "Like"
+        },
+        "comments": {
+          "raw": "62",
+          "source": "dom_action_control",
+          "label": "Comment"
+        },
+        "reshares": {
+          "raw": "271",
+          "source": "dom_action_control",
+          "label": "Repost"
+        },
+        "shares": {
+          "raw": "14.4K",
+          "source": "dom_action_control",
+          "label": "Share"
+        }
+      },
+      "capture_checks": {
+        "access_clear": true,
+        "stable": true,
+        "read_passes": 2,
+        "access_attempts": [],
+        "metric_panels": []
       }
-    }
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T08:58:30.347Z"
   }
 ]

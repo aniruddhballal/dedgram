@@ -1,6 +1,6 @@
 {
-  "started_at": "2026-10-24T09:32:47.593Z",
-  "updated_at": "2026-11-05T17:36:32.208Z",
+  "started_at": "2026-11-14T09:49:09.303Z",
+  "updated_at": "2026-11-14T09:50:05.561Z",
   "status": "partial",
   "phase": "done",
   "scope": [
@@ -30,5 +30,13 @@
     ],
     "newly_complete_reels": 0,
     "network_requests": 0
+  },
+  "progress": {
+    "task": "item_details",
+    "label": "Verify incomplete reel details",
+    "completed": 6,
+    "total": 6,
+    "detail": "Uncertain metrics and access gates remain reviewable",
+    "updated_at": "2026-11-14T09:50:05.561Z"
   }
 }

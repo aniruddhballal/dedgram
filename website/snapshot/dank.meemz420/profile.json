@@ -90,5 +90,19 @@
       }
     }
   },
-  "issues": []
+  "issues": [],
+  "account_status": "deleted_or_username_changed",
+  "account_status_observed_at": "2026-11-14T08:54:53.568Z",
+  "excluded_from_collection": true,
+  "excluded_from_analysis": false,
+  "retained_metrics_in_analysis": true,
+  "resolution_note": "Reel and parent profile unavailable during live verification. Deletion versus username change is unconfirmed. Saved observations retained for historical analysis; further collection stopped.",
+  "availability_evidence": {
+    "reel_url": "https://www.instagram.com/reel/Dewf760IR4k/",
+    "parent": {
+      "status": "unavailable",
+      "error": "Instagram reports this page is unavailable.",
+      "checked_at": "2026-11-14T08:54:53.568Z"
+    }
+  }
 }
