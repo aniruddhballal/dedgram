@@ -2,7 +2,7 @@ import { dayFromDescription, normalizeReelDate, resolveReelDate } from '../../we
 export { dayFromDescription, normalizeReelDate };
 
 export const now = () => new Date().toISOString();
-export const itemAnalysisHandled = (item) => ['complete', 'archived', 'age_restricted'].includes(item?.status) && !item.last_error;
+export const itemAnalysisHandled = (item) => ['complete', 'archived', 'age_restricted', 'metrics_unavailable'].includes(item?.status) && !item.last_error;
 export const clean = (value) => String(value ?? '').replace(/\u00a0/g, ' ').replace(/[\t ]+/g, ' ').trim();
 
 export function count(raw) {

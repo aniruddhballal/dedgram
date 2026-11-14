@@ -45,6 +45,8 @@ test('manually resolved reels count as handled and grid refreshes do not reopen 
   assert.equal(itemAnalysisHandled({ status: 'complete' }), true);
   assert.equal(itemAnalysisHandled({ status: 'archived', last_error: null }), true);
   assert.equal(itemAnalysisHandled({ status: 'age_restricted', last_error: null }), true);
+  assert.equal(itemAnalysisHandled({ status: 'metrics_unavailable', last_error: null }), true);
+  assert.equal(itemAnalysisHandled({ status: 'metrics_unavailable', last_error: 'Retry failed' }), false);
   assert.equal(itemAnalysisHandled({ status: 'archived', last_error: 'Unresolved error' }), false);
   assert.equal(itemAnalysisHandled({ status: 'partial' }), false);
   assert.equal(itemAnalysisHandled({ status: 'pending' }), false);
@@ -52,6 +54,9 @@ test('manually resolved reels count as handled and grid refreshes do not reopen 
   const archived = { status: 'archived', last_error: null, grid_views_raw: '299K',
     deletion_check: { source: 'user_manual_check', status: 'deleted' } };
   assert.deepEqual(syncGridViews(archived, { grid_views_raw: '300K' }, '2026-11-05T00:00:00Z'), archived);
+  const unavailable = { status: 'metrics_unavailable', last_error: null, likes: null,
+    views: { value: 52500, raw: '52.5K', source: 'profile_grid' }, missing: ['likes'] };
+  assert.deepEqual(syncGridViews(unavailable, { grid_views_raw: '53K' }, '2026-11-14T00:00:00Z'), unavailable);
 });
 
 test('counts retain whether the source displayed a rounded value', () => {

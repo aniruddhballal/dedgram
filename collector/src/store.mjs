@@ -106,7 +106,7 @@ export function mergeItem(previous, current) {
 
 export function syncGridViews(previous, discovered, observedAt) {
   // A saved grid label cannot reopen a manually resolved unavailable reel.
-  if (['archived', 'age_restricted'].includes(previous.status)) return { ...previous };
+  if (['archived', 'age_restricted', 'metrics_unavailable'].includes(previous.status)) return { ...previous };
   const raw = discovered.grid_views_raw;
   if (!raw) {
     const result = { ...previous, grid_views_raw: previous.grid_views_raw || null,

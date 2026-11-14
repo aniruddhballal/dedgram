@@ -137,7 +137,7 @@ async function checkOne(browser, item) {
 
 function handled(item) {
   return (item.status === 'complete' && !item.last_error)
-    || (['archived', 'age_restricted'].includes(item.status) && !item.last_error);
+    || (['archived', 'age_restricted', 'metrics_unavailable'].includes(item.status) && !item.last_error);
 }
 
 function applyResult(item, result) {
