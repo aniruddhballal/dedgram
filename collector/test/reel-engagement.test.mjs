@@ -53,6 +53,14 @@ test('count extraction uses the target reel controls, never adjacent counts or r
     assert.equal(rail.likes, undefined);
     assert.equal(rail.comments.raw, '1');
     assert.equal(rail.reshares.raw, '2');
+
+    await page.setContent(`<article data-shortcode="TARGET"><h1>Caption mentions 777</h1>
+      <section><div><div><div role="button"><span><svg aria-label="Like"></svg></span></div></div></div><span>1,091</span></section>
+      <section><button aria-label="Comment"></button><span>5</span></section>
+      </article><article><button aria-label="999 likes"></button></article>`);
+    const nested = await page.evaluate(engagementFromDocument, { shortcode: 'TARGET' });
+    assert.equal(nested.likes.raw, '1,091');
+    assert.equal(nested.comments.raw, '5');
   } finally { await browser.close(); }
 });
 

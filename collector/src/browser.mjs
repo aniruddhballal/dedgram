@@ -315,6 +315,59 @@ export async function captureItem(page, item) {
   snapshot.engagement = await page.evaluate(engagementFromDocument, { shortcode: item.shortcode });
   snapshot.capture_checks = { access_clear: !contentBarrier(await page.locator('body').innerText()),
     stable: JSON.stringify(firstRead) === JSON.stringify(snapshot.engagement), read_passes: 2, access_attempts: accessAttempts };
+  // Inspect read-only panels when a control has no count. Never click the heart,
+  // and never infer zero or hidden metrics merely from a blank action label.
+  if (snapshot.capture_checks.access_clear && snapshot.capture_checks.stable) {
+    snapshot.capture_checks.metric_panels = [];
+    for (const field of ['likes', 'comments']) {
+      if (snapshot.engagement[field]) continue;
+      const marked = await page.evaluate(({ field, shortcode }) => {
+        const label = field === 'likes' ? /^(Like|Unlike)$/i : /^Comment$/i;
+        const articles = [...document.querySelectorAll('article')];
+        const scope = [...document.querySelectorAll('[data-shortcode]')].find(n => n.getAttribute('data-shortcode') === shortcode)
+          || articles.find(n => [...n.querySelectorAll('a[href]')].some(a => new URL(a.href).pathname.match(/\/(?:reel|reels|p)\/([\w-]+)/)?.[1] === shortcode))
+          || articles[0] || document.querySelector('main') || document.body;
+        const marker = [...scope.querySelectorAll('[aria-label]')].find(n => label.test(n.getAttribute('aria-label')));
+        const control = marker?.closest('button,[role="button"],a');
+        if (!control) return false;
+        let target = field === 'comments' ? control : null;
+        if (field === 'likes') for (let n = control.parentElement, depth = 0; n && depth < 5; n = n.parentElement, depth++) {
+          if (n.matches('article,main,body') || n.querySelector('h1,[data-caption]')) break;
+          if ([...n.querySelectorAll('[aria-label]')].some(m => /^(Comment|Share|Repost)$/i.test(m.getAttribute('aria-label')))) break;
+          target = [...n.querySelectorAll('span,div,a')].find(m => m.textContent.trim() === 'Likes' && !m.contains(control) && !control.contains(m) && !m.querySelector('svg'));
+          if (target) break;
+        }
+        if (!target) return false;
+        target.setAttribute('data-collector-metric-inspection', field);
+        return true;
+      }, { field, shortcode: item.shortcode });
+      if (!marked) continue;
+      await page.locator(`[data-collector-metric-inspection="${field}"]`).click();
+      await pause(800);
+      const dialog = page.getByRole('dialog').last();
+      if (!await dialog.isVisible().catch(() => false)) continue;
+      const text = await dialog.innerText();
+      await pause(500);
+      const repeated = await dialog.innerText();
+      const clear = !contentBarrier(await page.locator('body').innerText());
+      snapshot.capture_checks.metric_panels.push({ field, stable: text === repeated, access_clear: clear, evidence: text.slice(0, 1500) });
+      if (text === repeated && clear) {
+        const hidden = field === 'likes' && /can see the total number of people who liked this post/i.test(text);
+        const zero = field === 'comments' && /No comments yet\./i.test(text);
+        const disabled = field === 'comments' && /comments are turned off|commenting is turned off/i.test(text);
+        if (hidden || disabled) snapshot.engagement.availability[field] = { state: hidden ? 'explicitly_hidden' : 'disabled', evidence: text.slice(0, 1500), source: 'metric_dialog' };
+        if (zero) {
+          snapshot.engagement.comments = { raw: '0', source: 'dom_comments_panel', label: 'No comments yet.' };
+          snapshot.engagement.availability.comments = { state: 'measured', evidence: 'No comments yet.', source: 'metric_dialog' };
+        }
+      }
+      await page.keyboard.press('Escape');
+      if (!clear) {
+        snapshot.capture_checks.access_clear = false;
+        break;
+      }
+    }
+  }
   if (!clean(snapshot.article_text)) throw new Error('Item page rendered no readable content.');
   return snapshot;
 }

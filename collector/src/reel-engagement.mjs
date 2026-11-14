@@ -52,7 +52,16 @@ export function engagementFromDocument({ shortcode } = {}) {
       || label.match(/^[A-Za-z]+[\s:：]+([\d,.]+\s*[KMB]?)$/i)?.[1];
     let raw = number(labelCount);
     const control = marker.closest('button, [role="button"], a') || marker;
-    const candidates = [control, control.parentElement];
+    const candidates = [];
+    for (let node = control, depth = 0; node && scope.contains(node) && depth < 6; node = node.parentElement, depth++) {
+      // Counts can be siblings of several nested icon wrappers. Stop before
+      // crossing into another action, caption, article or recommended reel.
+      if (node.matches('article, main, body') || node.querySelector('h1, [data-caption]')) break;
+      const localMarkers = [...(kindOf(node.getAttribute('aria-label')) ? [node] : []), ...markersIn(node)];
+      const controls = new Set(localMarkers.map(marker => marker.closest('button, [role="button"], a') || marker));
+      if (controls.size !== 1 || !controls.has(control)) break;
+      candidates.push(node);
+    }
     if (!raw) for (const candidate of candidates) {
       if (!candidate || !scope.contains(candidate)) continue;
       const controls = new Set(markersIn(candidate).map((node) => kindOf(node.getAttribute('aria-label'))));
