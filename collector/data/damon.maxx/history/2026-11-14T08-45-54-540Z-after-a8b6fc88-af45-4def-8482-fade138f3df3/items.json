@@ -1,0 +1,117 @@
+[
+  {
+    "kind": "reel",
+    "shortcode": "DfCCtM3ypuy",
+    "url": "https://www.instagram.com/reel/DfCCtM3ypuy/",
+    "grid_views_raw": "24.2K",
+    "grid_views_issue": null,
+    "status": "partial",
+    "fetched_at": "2026-11-14T08:45:52.906Z",
+    "date": "2026-10-28",
+    "date_precision": "day",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": null,
+    "comments": {
+      "value": 4,
+      "raw": "4",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Comment"
+    },
+    "views": {
+      "value": 24200,
+      "raw": "24.2K",
+      "approximate": true,
+      "source": "profile_grid"
+    },
+    "thumbnail_url": "https://instagram.fblr1-3.fna.fbcdn.net/v/t51.71878-15/867376823_1779056206704428_8491341009305876638_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=IcDZG1MNNTUQ7kNvwFYqhDr&_nc_oc=Adog1FVcmRxhQvdGvNxasATnZU4_ujLIHi4sGAF3zeArneW41Xur-ajujt4kLuCONIHSw3XYbLBCfbEBtBFB1osN&_nc_zt=23&_nc_ht=instagram.fblr1-3.fna&_nc_gid=kq5Ma3Juw8hFUH47vRFs7g&_nc_ss=7e6a8&_nc_ct=RQosPBUKFQgAAAA&oh=00_AQT-pwAgGyZrBAu9PpDaCBa7_-ZgPBFWoLRPOv4atFbPKA&oe=6AFE07C5",
+    "media_url": null,
+    "missing": [
+      "likes"
+    ],
+    "missing_reasons": {
+      "likes": "The like control displayed no numeric like count; nearby comment or reshare counts are not likes."
+    },
+    "raw": {
+      "description": "「\"有村架純が自分自身と向き合い、得た気づき。俳優業を通して「自分とは何なんだろう」と向き合ってきた彼女が、自分自身を知ることの大切さや、最新作『さとこはいつも』について語る。\".」 - 2026年10月28日、damon.maxx",
+      "article_text": "damon.maxx\nFollow\nUSA\n\"有村架純が自分自身と向き合い、得た気づき。俳優業を通して「自分とは何なんだろう」と向き合ってきた彼女が、自分自身を知ることの大切さや、最新作『さとこはいつも』について語る。\".\nSee translation\nLikes\n4\n2\nWatch full feature\n15:49\nsweetambs\nFollow\nHudson Valley, NY\nI recently completed an order for a fall wedding and was feeling very inspired by the icing colors that I'd made for the cookies, so I created these personalized favor boxes that can be filled with small treats. I think they would be really nice for a (small) Thanksgiving gathering.\n\nMusic: Where Everything Is Known by Premium Beat on Envato\n\n#decoratedcookies #fallvibes #customcookies #hudsonvalleywedding #sweetambscookies\n328K\n1,171\n3,464\n6,138",
+      "aria_text": "damon.maxx reels\ndamon.maxx reels\nLocation\nLocation\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\n\nsweetambs reels\nsweetambs reels\nVerified\nLocation\nLocation\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "availability": {
+          "likes": {
+            "state": "not_captured",
+            "evidence": "Control located but no reliable numeric value parsed."
+          },
+          "comments": {
+            "state": "measured",
+            "evidence": "Comment"
+          },
+          "reshares": {
+            "state": "measured",
+            "evidence": "Repost"
+          },
+          "shares": {
+            "state": "not_captured",
+            "evidence": "Control located but no reliable numeric value parsed."
+          }
+        },
+        "likes_visibility": "not_shown",
+        "comments": {
+          "raw": "4",
+          "source": "dom_action_control",
+          "label": "Comment"
+        },
+        "reshares": {
+          "raw": "2",
+          "source": "dom_action_control",
+          "label": "Repost"
+        }
+      },
+      "capture_checks": {
+        "access_clear": true,
+        "stable": true,
+        "read_passes": 2,
+        "access_attempts": []
+      }
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T08:45:52.908Z",
+    "date_source": "og_description_localized",
+    "reshares": {
+      "value": 2,
+      "raw": "2",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Repost"
+    },
+    "shares": null,
+    "likes_visibility": "not_shown",
+    "analysis_resolution": {
+      "status": "requires_verification",
+      "source": "visible_page_capture",
+      "recorded_at": "2026-11-14T05:09:54.028Z",
+      "reason": "Previous automatic resolution lacked explicit evidence that the metric was hidden or disabled. Saved values retained; extraction requires verification.",
+      "unavailable_fields": [
+        "likes"
+      ],
+      "previous_status": "partial",
+      "policy_checked_at": "2026-11-14T08:26:03.802Z"
+    },
+    "extraction_review": "Metric extraction is incomplete; absence has not been confirmed. Inspect or retry rather than assume hidden counts.",
+    "previous_analysis_resolution": {
+      "status": "resolved",
+      "source": "visible_page_capture",
+      "recorded_at": "2026-11-14T05:09:54.028Z",
+      "reason": "Reel loads, but numeric values for these fields are not exposed by the page or captured metadata. Missing values remain unknown; saved observations are retained.",
+      "unavailable_fields": [
+        "likes"
+      ],
+      "previous_status": "partial"
+    },
+    "access_review": null
+  }
+]

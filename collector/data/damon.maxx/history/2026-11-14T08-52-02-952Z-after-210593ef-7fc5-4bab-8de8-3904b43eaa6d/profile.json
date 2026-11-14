@@ -1,0 +1,104 @@
+{
+  "username": "damon.maxx",
+  "url": "https://www.instagram.com/damon.maxx/",
+  "fetched_at": "2026-11-01T12:16:47.404Z",
+  "display_name": "damonmax🦇",
+  "bio": "Solo Leveling & V/L In開!! 新たなる戦い、ついに開幕ーー。主三人公「水In旬」の最新ビジュアルも解禁!! さらなる進化を遂げる「SoloLeveling」にご期待ください!!",
+  "posts_count": {
+    "value": 1,
+    "raw": "1",
+    "approximate": false
+  },
+  "posts_count_observed_at": "2026-11-01T12:16:47.404Z",
+  "followers_count": {
+    "value": 69,
+    "raw": "69",
+    "approximate": false,
+    "source": "header_title"
+  },
+  "following_count": {
+    "value": 1,
+    "raw": "1",
+    "approximate": false,
+    "source": "header_text"
+  },
+  "count_evidence": {
+    "followers": {
+      "header": {
+        "value": 69,
+        "raw": "69",
+        "approximate": false
+      },
+      "exact_title": {
+        "value": 69,
+        "raw": "69",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 70,
+        "raw": "70",
+        "approximate": false
+      }
+    },
+    "following": {
+      "header": {
+        "value": 1,
+        "raw": "1",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 1,
+        "raw": "1",
+        "approximate": false
+      },
+      "conflict": false
+    },
+    "posts": {
+      "header": {
+        "value": 1,
+        "raw": "1",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 1,
+        "raw": "1",
+        "approximate": false
+      }
+    }
+  },
+  "category": "Reel creator",
+  "ai_generated_profile": false,
+  "profile_picture_url": "https://instagram.fblr24-2.fna.fbcdn.net/v/t51.82787-19/866336557_18106945433005333_4016018956832485983_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=6HfM3c-HgLcQ7kNvwEJ-GcF&_nc_oc=AdqNjeZh6dR5OwZBH38xisK2xanCni2Wl43UXkDgtcCJwQiYkigWs4AWOndhOY4OGqefBD1yg81FwCXeNLU9b8wg&_nc_zt=24&_nc_ht=instagram.fblr24-2.fna&_nc_gid=Be5mjoLwBYiZR988RCbIVw&_nc_ss=7f6a8&oh=00_AQTpMsqIVKAHzqKGsJ2HV0_zADfNCvk6ICRVTKvICaoBhA&oe=6AED15C6",
+  "date_joined": "October 2026",
+  "account_based_in": "India",
+  "former_usernames_count": null,
+  "raw": {
+    "header_text": "damon.maxx\ndamonmax🦇\n1 post\n69 followers\n1 following\nReel creator\nSolo Leveling & V/L In開!! 新たなる戦い、ついに開幕ーー。主三人公「水In旬」の最新ビジュアルも解禁!! さらなる進化を遂げる「SoloLeveling」にご期待ください!!\nFollow\nMessage",
+    "about_text": "About this account\ndamon.maxx\nTo help keep our community authentic, we’re showing information about profiles on Instagram. See why this information is important.\nDate joined\nOctober 2026\nAccount based in\nIndia\nClose",
+    "description": "70 Followers, 1 Following, 1 Posts - damonmax🦇 (@damon.maxx) on Instagram: \"Solo Leveling & V/L In開!! 新たなる戦い、ついに開幕ーー。主三人公「水In旬」の最新ビジュアルも解禁!! さらなる進化を遂げる「SoloLeveling」にご期待ください!!\"",
+    "stat_evidence": {
+      "posts": {
+        "label": "",
+        "exact_title": ""
+      },
+      "followers": {
+        "label": "69 followers",
+        "exact_title": "69"
+      },
+      "following": {
+        "label": "1 following",
+        "exact_title": ""
+      }
+    }
+  },
+  "issues": [],
+  "current_username": "damon.maxx",
+  "username_history": [
+    {
+      "username": "damon.maxx",
+      "role": "current username",
+      "first_seen_at": "2026-11-01T12:16:47.398Z"
+    }
+  ],
+  "username_change_observed_at": null
+}

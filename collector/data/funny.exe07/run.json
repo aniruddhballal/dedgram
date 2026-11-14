@@ -1,7 +1,7 @@
 {
-  "started_at": "2026-10-28T12:04:13.053Z",
-  "updated_at": "2026-11-05T18:00:36.731Z",
-  "status": "partial",
+  "started_at": "2026-11-14T09:02:39.416Z",
+  "updated_at": "2026-11-14T09:02:43.614Z",
+  "status": "excluded",
   "phase": "done",
   "scope": [
     "reel"
@@ -10,15 +10,11 @@
   "error": null,
   "progress": {
     "task": "item_details",
-    "label": "Reel details",
-    "action": "Ready for collection or retry",
-    "completed": 0,
+    "label": "Verify incomplete reel details",
+    "completed": 1,
     "total": 26,
-    "percent": 0,
-    "remaining": 26,
-    "current_item": null,
-    "detail": "9 reels manually confirmed deleted; 1 existing reel ready for retry; 25 additional reels remain pending. Analysis is not complete and no scraping has started.",
-    "updated_at": "2026-11-05T18:00:36.731Z"
+    "detail": "Uncertain metrics and access gates remain reviewable",
+    "updated_at": "2026-11-14T09:02:43.614Z"
   },
   "manual_availability_review": {
     "checked_at": "2026-11-05T18:00:36.731Z",
@@ -40,5 +36,19 @@
     "action": "retry_reel_details",
     "remaining_reel_details": 26,
     "previous_run_status": "running"
+  },
+  "account_status": "deleted_or_username_changed",
+  "account_status_observed_at": "2026-11-14T09:02:43.604Z",
+  "excluded_from_collection": true,
+  "excluded_from_analysis": false,
+  "retained_metrics_in_analysis": true,
+  "resolution_note": "Reel and parent profile unavailable during live verification. Deletion versus username change is unconfirmed. Saved observations retained for historical analysis; further collection stopped.",
+  "availability_evidence": {
+    "reel_url": "https://www.instagram.com/reel/De2OYSFTK7z/",
+    "parent": {
+      "status": "unavailable",
+      "error": "Instagram reports this page is unavailable.",
+      "checked_at": "2026-11-14T09:02:43.604Z"
+    }
   }
 }

@@ -1,0 +1,32 @@
+{
+  "started_at": "2026-11-14T08:48:22.842Z",
+  "updated_at": "2026-11-14T08:48:28.014Z",
+  "status": "complete",
+  "phase": "done",
+  "scope": [
+    "reel"
+  ],
+  "current_url": null,
+  "error": null,
+  "progress": {
+    "task": "item_details",
+    "label": "Reel details",
+    "action": "Opening reel pages and extracting dates, captions, views, likes and comments",
+    "completed": 1,
+    "total": 1,
+    "percent": 100,
+    "remaining": 0,
+    "current_item": null,
+    "detail": "Stage complete",
+    "updated_at": "2026-11-14T08:48:28.014Z"
+  },
+  "metadata_date_recovery": {
+    "updated_at": "2026-11-05T17:36:32.208Z",
+    "recovered_reels": [
+      "DbyGzDLBb8M"
+    ],
+    "newly_complete_reels": 0,
+    "network_requests": 0
+  },
+  "browser_left_open": true
+}

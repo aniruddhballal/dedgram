@@ -1,0 +1,19 @@
+{
+  "started_at": "2026-11-14T08:57:00.012Z",
+  "updated_at": "2026-11-14T08:58:32.860Z",
+  "status": "complete",
+  "phase": "done",
+  "scope": [
+    "reel"
+  ],
+  "current_url": null,
+  "error": null,
+  "progress": {
+    "task": "item_details",
+    "label": "Verify incomplete reel details",
+    "completed": 17,
+    "total": 17,
+    "detail": "All reels complete or explicitly resolved",
+    "updated_at": "2026-11-14T08:58:32.860Z"
+  }
+}

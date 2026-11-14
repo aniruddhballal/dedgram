@@ -1,6 +1,6 @@
 {
-  "started_at": "2026-11-05T15:08:54.854Z",
-  "updated_at": "2026-11-05T15:11:37.663Z",
+  "started_at": "2026-11-14T08:54:53.623Z",
+  "updated_at": "2026-11-14T08:56:59.922Z",
   "status": "partial",
   "phase": "done",
   "scope": [
@@ -10,14 +10,10 @@
   "error": null,
   "progress": {
     "task": "item_details",
-    "label": "Reel details",
-    "action": "Opening reel pages and extracting dates, captions, views, likes and comments",
-    "completed": 40,
-    "total": 40,
-    "percent": 100,
-    "remaining": 0,
-    "current_item": null,
-    "detail": "Stage finished with review required",
-    "updated_at": "2026-11-05T15:11:37.663Z"
+    "label": "Verify incomplete reel details",
+    "completed": 14,
+    "total": 14,
+    "detail": "Uncertain metrics and access gates remain reviewable",
+    "updated_at": "2026-11-14T08:56:59.922Z"
   }
 }

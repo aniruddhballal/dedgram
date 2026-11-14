@@ -1,0 +1,33 @@
+{
+  "started_at": "2026-11-14T08:54:48.200Z",
+  "updated_at": "2026-11-14T08:54:53.582Z",
+  "status": "excluded",
+  "phase": "done",
+  "scope": [
+    "reel"
+  ],
+  "current_url": null,
+  "error": null,
+  "progress": {
+    "task": "item_details",
+    "label": "Verify incomplete reel details",
+    "completed": 1,
+    "total": 13,
+    "detail": "Uncertain metrics and access gates remain reviewable",
+    "updated_at": "2026-11-14T08:54:53.582Z"
+  },
+  "account_status": "deleted_or_username_changed",
+  "account_status_observed_at": "2026-11-14T08:54:53.568Z",
+  "excluded_from_collection": true,
+  "excluded_from_analysis": false,
+  "retained_metrics_in_analysis": true,
+  "resolution_note": "Reel and parent profile unavailable during live verification. Deletion versus username change is unconfirmed. Saved observations retained for historical analysis; further collection stopped.",
+  "availability_evidence": {
+    "reel_url": "https://www.instagram.com/reel/Dewf760IR4k/",
+    "parent": {
+      "status": "unavailable",
+      "error": "Instagram reports this page is unavailable.",
+      "checked_at": "2026-11-14T08:54:53.568Z"
+    }
+  }
+}

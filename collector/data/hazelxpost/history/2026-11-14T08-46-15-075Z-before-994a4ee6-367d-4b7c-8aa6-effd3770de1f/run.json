@@ -1,0 +1,40 @@
+{
+  "started_at": "2026-11-14T05:09:26.054Z",
+  "updated_at": "2026-11-14T08:26:03.802Z",
+  "status": "partial",
+  "phase": "done",
+  "scope": [
+    "reel"
+  ],
+  "current_url": null,
+  "error": null,
+  "progress": {
+    "task": "item_details",
+    "label": "Detail resolution",
+    "completed": 1,
+    "total": 1,
+    "percent": 100,
+    "detail": "Policy audit: access or missing-metric evidence requires verification. All saved values preserved.",
+    "updated_at": "2026-11-14T08:26:03.802Z"
+  },
+  "deletion_check": {
+    "operation": "automated reel availability check",
+    "issue_type": "Missing date, likes, comments",
+    "started_at": "2026-10-29T02:22:39.804Z",
+    "completed_at": "2026-10-29T02:23:18.148Z",
+    "counts": {
+      "deleted": 0,
+      "exists": 7,
+      "check_failed": 1
+    }
+  },
+  "metadata_date_recovery": {
+    "updated_at": "2026-11-05T17:36:32.208Z",
+    "recovered_reels": [
+      "Degf-wAoeNT"
+    ],
+    "newly_complete_reels": 0,
+    "network_requests": 0
+  },
+  "browser_left_open": true
+}

@@ -1,0 +1,33 @@
+{
+  "started_at": "2026-11-14T08:58:32.959Z",
+  "updated_at": "2026-11-14T08:59:55.968Z",
+  "status": "excluded",
+  "phase": "done",
+  "scope": [
+    "reel"
+  ],
+  "current_url": null,
+  "error": null,
+  "progress": {
+    "task": "item_details",
+    "label": "Verify incomplete reel details",
+    "completed": 12,
+    "total": 19,
+    "detail": "Uncertain metrics and access gates remain reviewable",
+    "updated_at": "2026-11-14T08:59:55.968Z"
+  },
+  "account_status": "deleted_or_username_changed",
+  "account_status_observed_at": "2026-11-14T08:59:55.957Z",
+  "excluded_from_collection": true,
+  "excluded_from_analysis": false,
+  "retained_metrics_in_analysis": true,
+  "resolution_note": "Reel and parent profile unavailable during live verification. Deletion versus username change is unconfirmed. Saved observations retained for historical analysis; further collection stopped.",
+  "availability_evidence": {
+    "reel_url": "https://www.instagram.com/reel/DefD157NfkT/",
+    "parent": {
+      "status": "unavailable",
+      "error": "Instagram reports this page is unavailable.",
+      "checked_at": "2026-11-14T08:59:55.957Z"
+    }
+  }
+}

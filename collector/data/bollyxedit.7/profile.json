@@ -92,5 +92,19 @@
   },
   "issues": [
     "Page metadata says 102 following; current profile header says 101, which is used for the count."
-  ]
+  ],
+  "account_status": "deleted_or_username_changed",
+  "account_status_observed_at": "2026-11-14T08:59:55.957Z",
+  "excluded_from_collection": true,
+  "excluded_from_analysis": false,
+  "retained_metrics_in_analysis": true,
+  "resolution_note": "Reel and parent profile unavailable during live verification. Deletion versus username change is unconfirmed. Saved observations retained for historical analysis; further collection stopped.",
+  "availability_evidence": {
+    "reel_url": "https://www.instagram.com/reel/DefD157NfkT/",
+    "parent": {
+      "status": "unavailable",
+      "error": "Instagram reports this page is unavailable.",
+      "checked_at": "2026-11-14T08:59:55.957Z"
+    }
+  }
 }

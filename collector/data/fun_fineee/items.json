@@ -140,38 +140,90 @@
     "grid_views_raw": "65",
     "grid_views_issue": null,
     "status": "partial",
-    "fetched_at": "2026-11-05T15:09:10.344Z",
+    "fetched_at": "2026-11-14T08:54:57.977Z",
     "date": "2026-10-25",
     "date_precision": "day",
     "caption": "Tarakh mehta ka ultta chashman",
     "hashtags": [],
     "mentions": [],
     "likes": null,
-    "comments": null,
+    "comments": {
+      "value": 0,
+      "raw": "0",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "No comments yet."
+    },
     "views": {
       "value": 65,
       "raw": "65",
       "approximate": false,
       "source": "profile_grid"
     },
-    "thumbnail_url": "https://instagram.fblr1-7.fna.fbcdn.net/v/t15.5256-10/868782814_1534566522024407_3958942103969499066_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=ysi34KRK9pYQ7kNvwHsz5BD&_nc_oc=AdpMNkytrpowHBlx_ORGDxIVPBfCH8pbsaKHNcFgMi8uFxYQpdLYAcfzD3BROqZxs17OZCs01U_XU7feg9QYqWoJ&_nc_zt=23&_nc_ht=instagram.fblr1-7.fna&_nc_gid=QCRY4uk1eUczwMYHIbWKdw&_nc_ss=7f6a8&oh=00_AQSJUQ9CAf8sNcxPJuXanpvjmgvQnko5z0zS9w33FhGcNQ&oe=6AF2652A&ig_cache_key=MDJSd1FQQnQ2U3lETUhybk1GQU5meGJSd0hybk1GQU5meGJSd0gzdnp3TnJxSGNFR0JiZ0E6Y21wMV9kc3QtanBnX2UzNV9zNjQweDY0MF90dDY%3D",
+    "thumbnail_url": "https://instagram.fblr1-7.fna.fbcdn.net/v/t15.5256-10/868782814_1534566522024407_3958942103969499066_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=9x6WtO_7feIQ7kNvwH5WwJz&_nc_oc=AdqMSUZjFLUiuh2Wlew6OIi273MIhaUPkYsTFj1oZUV3TfInqzoX_3neGf4YLVr43JFobgDq8Ut49KeuIYyH6THI&_nc_zt=23&_nc_ht=instagram.fblr1-7.fna&_nc_gid=9lQVThRA_g6kocEEJVAV1w&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQSefs_PuS4964jhAZM5Ns49aMQCaXvx1rcAPuxKux_1mQ&oe=6AFE0A6A",
     "media_url": null,
     "missing": [
-      "likes",
-      "comments"
+      "likes"
     ],
     "missing_reasons": {
-      "likes": "No readable like count was found on the content page or in its metadata.",
-      "comments": "No readable comment count was found on the content page or in its metadata."
+      "likes": "The like control displayed no numeric like count; nearby comment or reshare counts are not likes."
     },
     "raw": {
-      "description": "fun_fineee on October 25, 2026: \"Tarakh mehta ka ultta chashman\". ",
-      "article_text": "fun_fineee\n•\nFollow\n• AI content\nTarakh mehta ka ultta chashman\nalberta.tech\n•\nFollow\nasistilli\nThe category is code ….\n25.4K\n223\n336",
-      "aria_text": "fun_fineee reels\nfun_fineee reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nalberta.tech reels\nalberta.tech reels\nVerified\nTagged users\nTagged users\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
-      "json_ld": {}
+      "description": "Tarakh mehta ka ultta chashman - @fun_fineee on October 25, 2026",
+      "article_text": "fun_fineee\nFollow\nAI content\nTarakh mehta ka ultta chashman\nSee translation\nabharana_kakal\nFollow\nOoratti, M.S. Subbulakshmi · Ennaga Manasu - Divine Lofi\nOoratti, M.S. Subbulakshmi · Ennaga Manasu - Divine Lofi\nThey all wore\nThin cotton saree & with no blouse 🌸\n\nSharing a small piece I wrote :\n\nBuild that accent,\nOh no! It shouldn’t be fake.\nDress whatever you want , be confident\nBut be careful about the neckline\n\nBe ambitious\nBe passionate\nBut not too much\nYou just have to get married anyway\n\nFocus on beauty ,\ntake care of your skin\nNo I meant be fairer\nApply that cream to become fair\n\nAnd loose weight\nOh I meant thin waist & flat stomach.\nNow gain weight, to be perfect!\nBe pretty, perfect & look happy\nJust to fit into our world.\n\nCheer up , wipe your tears\nSmile now , to the camera:)\n16.3K\n366\n348\n2,185",
+      "aria_text": "fun_fineee reels\nfun_fineee reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nabharana_kakal reels\nabharana_kakal reels\nVerified\nAudio image\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "availability": {
+          "likes": {
+            "state": "not_captured",
+            "evidence": "Control located but no reliable numeric value parsed."
+          },
+          "comments": {
+            "state": "measured",
+            "evidence": "No comments yet.",
+            "source": "metric_dialog"
+          },
+          "reshares": {
+            "state": "not_captured",
+            "evidence": "Control located but no reliable numeric value parsed."
+          },
+          "shares": {
+            "state": "not_captured",
+            "evidence": "Control located but no reliable numeric value parsed."
+          }
+        },
+        "likes_visibility": "not_shown",
+        "comments": {
+          "raw": "0",
+          "source": "dom_comments_panel",
+          "label": "No comments yet."
+        }
+      },
+      "capture_checks": {
+        "access_clear": true,
+        "stable": true,
+        "read_passes": 2,
+        "access_attempts": [],
+        "metric_panels": [
+          {
+            "field": "comments",
+            "stable": true,
+            "access_clear": true,
+            "evidence": "Comments\nNo comments yet.\nStart the conversation."
+          }
+        ]
+      }
     },
     "last_error": null,
-    "last_attempt_at": "2026-11-05T15:09:10.344Z"
+    "last_attempt_at": "2026-11-14T08:54:57.978Z",
+    "access_review": null,
+    "extraction_review": "Metric extraction is incomplete; absence has not been confirmed. Inspect or retry rather than assume hidden counts.",
+    "date_source": "og_description",
+    "reshares": null,
+    "shares": null,
+    "likes_visibility": "not_shown"
   },
   {
     "kind": "reel",
@@ -179,41 +231,107 @@
     "url": "https://www.instagram.com/reel/DeobDKbS_kw/",
     "grid_views_raw": "176",
     "grid_views_issue": null,
-    "status": "partial",
-    "fetched_at": "2026-11-05T15:09:14.329Z",
+    "status": "metrics_unavailable",
+    "fetched_at": "2026-11-14T08:55:07.025Z",
     "date": "2026-10-18",
     "date_precision": "day",
     "caption": "#sourabhjoshivlog 😅😅",
-    "hashtags": [
-      "#sourabhjoshivlog"
-    ],
+    "hashtags": [],
     "mentions": [],
     "likes": null,
-    "comments": null,
+    "comments": {
+      "value": 0,
+      "raw": "0",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "No comments yet."
+    },
     "views": {
       "value": 176,
       "raw": "176",
       "approximate": false,
       "source": "profile_grid"
     },
-    "thumbnail_url": "https://instagram.fblr1-7.fna.fbcdn.net/v/t15.5256-10/856400450_1138311341992818_1142890756006749448_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=g-eqZZTMOscQ7kNvwHRr3a6&_nc_oc=Adr2hK8zwAfoyOsvKzthQ9zdIa4S2Dl6tDKhVfOU1DZbWvy_F_78hjHzxuDysXb0dOOXioPgzv2DmItKW4_3WWEE&_nc_zt=23&_nc_ht=instagram.fblr1-7.fna&_nc_gid=aV1bFWmsAuq1pOyPDRAc3Q&_nc_ss=7f6a8&oh=00_AQR_8LvTYUw_GZ3_RRaYxAd8h-d3F58bEMYlMrW2RXv9CA&oe=6AF2580D&ig_cache_key=MDJSd1FQQmtLaUN6TUhTUXNFQUhMckxzTUhTUXNFQUhMckxzTUhGbDNjRHdnbDNGaUJiZ0E6Y21wMV9kc3QtanBnX2UzNV9zNjQweDY0MF90dDY%3D",
+    "thumbnail_url": "https://instagram.fblr1-7.fna.fbcdn.net/v/t15.5256-10/856400450_1138311341992818_1142890756006749448_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=9sp7TqqV6sEQ7kNvwFNn3pT&_nc_oc=AdqrkyUCJ23YCBUgqMzhU0owMJzU_gWWZVHbFaFT_Opbhd22HojacFFhh4yWasZ99zUYylN8M6A9cARzB3_sJv1U&_nc_zt=23&_nc_ht=instagram.fblr1-7.fna&_nc_gid=2IJDhEm4YR1ynJdZDHwuKA&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQQEBcxE37DqT7ew4lUq3ZT16UaGjdBTjbBh7Tnk_DDHeg&oe=6AFDFD4D",
     "media_url": null,
     "missing": [
-      "likes",
-      "comments"
+      "likes"
     ],
     "missing_reasons": {
-      "likes": "No readable like count was found on the content page or in its metadata.",
-      "comments": "No readable comment count was found on the content page or in its metadata."
+      "likes": "The like control displayed no numeric like count; nearby comment or reshare counts are not likes."
     },
     "raw": {
-      "description": "fun_fineee on October 18, 2026: \"#sourabhjoshivlog 😅😅\". ",
-      "article_text": "fun_fineee\n•\nFollow\n• AI content\n#sourabhjoshivlog 😅😅\nLikes\nbish.op\n•\nFollow\nCrystal Castles · Vanished\ndoes my work look like video games?\n-\n#creativephotography #photography #photographer #editorial #explore\n196K\n218\n4,256",
-      "aria_text": "fun_fineee reels\nfun_fineee reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nbish.op reels\nbish.op reels\nAudio image\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
-      "json_ld": {}
+      "description": "#sourabhjoshivlog 😅😅 - @fun_fineee on October 18, 2026",
+      "article_text": "fun_fineee\nFollow\nAI content\n#sourabhjoshivlog 😅😅\nLikes\nim_roshanvaishnav\nFollow\nUdupi\nHappens only in udupi 🤣🙌\nDaily observations 🤣\n.\n.\n.\nFollow for more\n@im_roshanvaishnav\n.\n.\n.\n#udupi #udupidiaries #royalenfield #himalayan #explore\n14K\n97\n59\n3,715",
+      "aria_text": "fun_fineee reels\nfun_fineee reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nim_roshanvaishnav reels\nim_roshanvaishnav reels\nLocation\nLocation\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "availability": {
+          "likes": {
+            "state": "explicitly_hidden",
+            "evidence": "Likes\nfun_fineee can see the total number of people who liked this post.\nsnaren0069\nbaba tillu\nFollow\nnaitik_kashyap_up_95\nnaitik kashyap\nFollow",
+            "source": "metric_dialog"
+          },
+          "comments": {
+            "state": "measured",
+            "evidence": "No comments yet.",
+            "source": "metric_dialog"
+          },
+          "reshares": {
+            "state": "not_captured",
+            "evidence": "Control located but no reliable numeric value parsed."
+          },
+          "shares": {
+            "state": "not_captured",
+            "evidence": "Control located but no reliable numeric value parsed."
+          }
+        },
+        "likes_visibility": "not_shown",
+        "comments": {
+          "raw": "0",
+          "source": "dom_comments_panel",
+          "label": "No comments yet."
+        }
+      },
+      "capture_checks": {
+        "access_clear": true,
+        "stable": true,
+        "read_passes": 2,
+        "access_attempts": [],
+        "metric_panels": [
+          {
+            "field": "likes",
+            "stable": true,
+            "access_clear": true,
+            "evidence": "Likes\nfun_fineee can see the total number of people who liked this post.\nsnaren0069\nbaba tillu\nFollow\nnaitik_kashyap_up_95\nnaitik kashyap\nFollow"
+          },
+          {
+            "field": "comments",
+            "stable": true,
+            "access_clear": true,
+            "evidence": "Comments\nNo comments yet.\nStart the conversation."
+          }
+        ]
+      }
     },
     "last_error": null,
-    "last_attempt_at": "2026-11-05T15:09:14.330Z"
+    "last_attempt_at": "2026-11-14T08:55:07.025Z",
+    "access_review": null,
+    "extraction_review": null,
+    "date_source": "og_description",
+    "reshares": null,
+    "shares": null,
+    "likes_visibility": "not_shown",
+    "analysis_resolution": {
+      "status": "resolved",
+      "source": "explicit_visibility_evidence",
+      "recorded_at": "2026-11-14T08:55:07.025Z",
+      "reason": "Unavailable metrics resolved using explicit visibility evidence or user assessment. Saved observations remain valid; missing values are unknown, not zero.",
+      "unavailable_fields": [
+        "likes"
+      ]
+    }
   },
   {
     "kind": "reel",
@@ -221,41 +339,107 @@
     "url": "https://www.instagram.com/reel/DelyqlByJ8y/",
     "grid_views_raw": "157",
     "grid_views_issue": null,
-    "status": "partial",
-    "fetched_at": "2026-11-05T15:09:18.428Z",
+    "status": "metrics_unavailable",
+    "fetched_at": "2026-11-14T08:55:16.444Z",
     "date": "2026-10-17",
     "date_precision": "day",
     "caption": "#sourabhjoshivlog",
-    "hashtags": [
-      "#sourabhjoshivlog"
-    ],
+    "hashtags": [],
     "mentions": [],
     "likes": null,
-    "comments": null,
+    "comments": {
+      "value": 0,
+      "raw": "0",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "No comments yet."
+    },
     "views": {
       "value": 157,
       "raw": "157",
       "approximate": false,
       "source": "profile_grid"
     },
-    "thumbnail_url": "https://instagram.fblr1-10.fna.fbcdn.net/v/t51.71878-15/849272161_2560081541126163_6151641004709213488_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=9Dn8BfiWRaQQ7kNvwFmiOJt&_nc_oc=AdohqL6xMLhMd77pbGF6PxZGjS63ROiNqkCBRl9vTy4Q4LX2cLrgQhBm2US1mTMYJ_XWKyXTdYml_QiFr590x0UV&_nc_zt=23&_nc_ht=instagram.fblr1-10.fna&_nc_gid=QLACj7JfTpwRFCuRlZdq-w&_nc_ss=7f6a8&oh=00_AQSMOLS9J-qxyFPm_TuoJMrFJQj9u-kPl13LP3cWgl_7_A&oe=6AF28323&ig_cache_key=MDJSQVF6Qm1IZG5qSUhZUmdKQUJQWTJtNEg1Z1JmVlRCMWE2YzpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
+    "thumbnail_url": "https://instagram.fblr1-10.fna.fbcdn.net/v/t51.71878-15/849272161_2560081541126163_6151641004709213488_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=kwXeXZ8FApsQ7kNvwEGwL9K&_nc_oc=AdrcFp-JE6D06z06KUerdSypcb3wg1cZKv01LJ8d5peAHFhwp3LUwddAaoAZD1dTcstdbNPkqLqCfFZEykDxKjtP&_nc_zt=23&_nc_ht=instagram.fblr1-10.fna&_nc_gid=v4RYZEFTNDzW2rLAC_9PWw&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQR9jRkH_8aa7IlyJVq3w2LA1IN5ZBeikYk1DgEle4ZyWg&oe=6AFDF023",
     "media_url": null,
     "missing": [
-      "likes",
-      "comments"
+      "likes"
     ],
     "missing_reasons": {
-      "likes": "No readable like count was found on the content page or in its metadata.",
-      "comments": "No readable comment count was found on the content page or in its metadata."
+      "likes": "The like control displayed no numeric like count; nearby comment or reshare counts are not likes."
     },
     "raw": {
-      "description": "fun_fineee on October 17, 2026: \"#sourabhjoshivlog\". ",
-      "article_text": "fun_fineee\n•\nFollow\n• AI content\n#sourabhjoshivlog\nLikes\nbish.op\n•\nFollow\nCrystal Castles · Vanished\ndoes my work look like video games?\n-\n#creativephotography #photography #photographer #editorial #explore\n196K\n218\n4,256",
-      "aria_text": "fun_fineee reels\nfun_fineee reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nbish.op reels\nbish.op reels\nAudio image\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
-      "json_ld": {}
+      "description": "#sourabhjoshivlog - @fun_fineee on October 17, 2026",
+      "article_text": "fun_fineee\nFollow\nAI content\n#sourabhjoshivlog\nLikes\nitssmitterb\nFollow\nSouth Boston\nBuilt like a rock #goldenretriever #dogsofinstagram #goldendays\n279K\n630\n3,557\n47.4K",
+      "aria_text": "fun_fineee reels\nfun_fineee reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nitssmitterb reels\nitssmitterb reels\nLocation\nLocation\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "availability": {
+          "likes": {
+            "state": "explicitly_hidden",
+            "evidence": "Likes\nfun_fineee can see the total number of people who liked this post.\nbarik.5019\nDeepak Barik\nFollow",
+            "source": "metric_dialog"
+          },
+          "comments": {
+            "state": "measured",
+            "evidence": "No comments yet.",
+            "source": "metric_dialog"
+          },
+          "reshares": {
+            "state": "not_captured",
+            "evidence": "Control located but no reliable numeric value parsed."
+          },
+          "shares": {
+            "state": "not_captured",
+            "evidence": "Control located but no reliable numeric value parsed."
+          }
+        },
+        "likes_visibility": "not_shown",
+        "comments": {
+          "raw": "0",
+          "source": "dom_comments_panel",
+          "label": "No comments yet."
+        }
+      },
+      "capture_checks": {
+        "access_clear": true,
+        "stable": true,
+        "read_passes": 2,
+        "access_attempts": [],
+        "metric_panels": [
+          {
+            "field": "likes",
+            "stable": true,
+            "access_clear": true,
+            "evidence": "Likes\nfun_fineee can see the total number of people who liked this post.\nbarik.5019\nDeepak Barik\nFollow"
+          },
+          {
+            "field": "comments",
+            "stable": true,
+            "access_clear": true,
+            "evidence": "Comments\nNo comments yet.\nStart the conversation."
+          }
+        ]
+      }
     },
     "last_error": null,
-    "last_attempt_at": "2026-11-05T15:09:18.429Z"
+    "last_attempt_at": "2026-11-14T08:55:16.445Z",
+    "access_review": null,
+    "extraction_review": null,
+    "date_source": "og_description",
+    "reshares": null,
+    "shares": null,
+    "likes_visibility": "not_shown",
+    "analysis_resolution": {
+      "status": "resolved",
+      "source": "explicit_visibility_evidence",
+      "recorded_at": "2026-11-14T08:55:16.444Z",
+      "reason": "Unavailable metrics resolved using explicit visibility evidence or user assessment. Saved observations remain valid; missing values are unknown, not zero.",
+      "unavailable_fields": [
+        "likes"
+      ]
+    }
   },
   {
     "kind": "reel",
@@ -263,8 +447,8 @@
     "url": "https://www.instagram.com/reel/DededmlSKoF/",
     "grid_views_raw": "196",
     "grid_views_issue": null,
-    "status": "partial",
-    "fetched_at": "2026-11-05T15:09:22.967Z",
+    "status": "metrics_unavailable",
+    "fetched_at": "2026-11-14T08:55:25.882Z",
     "date": "2026-10-13",
     "date_precision": "day",
     "caption": "gullu❤️vs💙Nakul #biggboss20",
@@ -273,31 +457,99 @@
     ],
     "mentions": [],
     "likes": null,
-    "comments": null,
+    "comments": {
+      "value": 0,
+      "raw": "0",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "No comments yet."
+    },
     "views": {
       "value": 196,
       "raw": "196",
       "approximate": false,
       "source": "profile_grid"
     },
-    "thumbnail_url": "https://instagram.fblr1-4.fna.fbcdn.net/v/t51.71878-15/847859713_1379770750813324_5295383616810370367_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=BZWzqdmvMnIQ7kNvwHTYjY_&_nc_oc=AdpqS7--OqNgU3pws5m2FHXtT1sNADJ7HH-sKvXAWUNqZC1Fj00nfkcHfrbOgiytF5V5gvI66mkUnpG6JK93Ntkz&_nc_zt=23&_nc_ht=instagram.fblr1-4.fna&_nc_gid=QkK3MUoS-QN6iEDYrsO7YA&_nc_ss=7f6a8&oh=00_AQTnJUP6HCAp7xWWN1S1mMFCGp0SKG3K1Lk9TFUU3aYN0A&oe=6AF262B0&ig_cache_key=MDJSQVF6QmdGUWlUSUg1T1lFQUl4RWVla0hWLXQ4U1QtRlpfVTpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
+    "thumbnail_url": "https://instagram.fblr1-4.fna.fbcdn.net/v/t51.71878-15/847859713_1379770750813324_5295383616810370367_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=P37jThX3AA8Q7kNvwFIvdIF&_nc_oc=AdqJFFcH8JAc4pxUDY3qd5g6cj9svQ0hJP1e5jGjPz6yA9b1chk5oXuW1Xg7qjAcEA0b3YFRYbRsrkMPdVOnDrcY&_nc_zt=23&_nc_ht=instagram.fblr1-4.fna&_nc_gid=7zp59uyMzDB1J3ZSZPJl-w&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQSkhSTichl96mY_NS6yAM-UmrN3Y7-LbDE-1DIZMLd0eQ&oe=6AFE07F0",
     "media_url": null,
     "missing": [
-      "likes",
-      "comments"
+      "likes"
     ],
     "missing_reasons": {
-      "likes": "No readable like count was found on the content page or in its metadata.",
-      "comments": "No readable comment count was found on the content page or in its metadata."
+      "likes": "The like control displayed no numeric like count; nearby comment or reshare counts are not likes."
     },
     "raw": {
       "description": "fun_fineee on October 13, 2026: \"gullu❤️vs💙Nakul #biggboss20\". ",
-      "article_text": "fun_fineee\n•\nFollow\n• AI content\nMasoom Sharma, Ashu Twinkle · Baba VS Kand (feat. Nidhi Sharma & Manjeet Mor)\nMasoom Sharma, Ashu Twinkle · Baba VS Kand (feat. Nidhi Sharma & Manjeet Mor)\ngullu❤️vs💙Nakul #biggboss20\nLikes\nsamromeugtr\n•\nFollow\nLondon, United Kingdom\nRadiohead moment\n\n#guitarcover\n103K\n171\n5,407",
-      "aria_text": "fun_fineee reels\nfun_fineee reels\nAudio image\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nsamromeugtr reels\nsamromeugtr reels\nLocation\nLocation\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
-      "json_ld": {}
+      "article_text": "fun_fineee\nFollow\nAI content\nMasoom Sharma, Ashu Twinkle · Baba VS Kand (feat. Nidhi Sharma & Manjeet Mor)\nMasoom Sharma, Ashu Twinkle · Baba VS Kand (feat. Nidhi Sharma & Manjeet Mor)\ngullu❤️vs💙Nakul #biggboss20\nLikes\navicii\nFollow\nAvicii · Silhouettes\nWhere it all began – the opening of Avicii’s first Tomorrowland MainStage set ◢ ◤\n\nOn July 23, 2011, Avicii took the Tomorrowland crowd through a set that would be regarded as one of the most iconic performances in EDM history, from “Silhouettes” to an early play of “Levels” months before its release.\n\nExperience the full performance on Avicii Community, the official home for fans worldwide. Watch the entire 2011 Tomorrowland set on avicii.com/community or through the link in bio.\n82.3K\n879\n4,408\n3,966",
+      "aria_text": "fun_fineee reels\nfun_fineee reels\nAudio image\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\navicii reels\navicii reels\nVerified\nAudio image\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "availability": {
+          "likes": {
+            "state": "explicitly_hidden",
+            "evidence": "Likes\nfun_fineee can see the total number of people who liked this post.\nbarik.5019\nDeepak Barik\nFollow",
+            "source": "metric_dialog"
+          },
+          "comments": {
+            "state": "measured",
+            "evidence": "No comments yet.",
+            "source": "metric_dialog"
+          },
+          "reshares": {
+            "state": "not_captured",
+            "evidence": "Control located but no reliable numeric value parsed."
+          },
+          "shares": {
+            "state": "not_captured",
+            "evidence": "Control located but no reliable numeric value parsed."
+          }
+        },
+        "likes_visibility": "not_shown",
+        "comments": {
+          "raw": "0",
+          "source": "dom_comments_panel",
+          "label": "No comments yet."
+        }
+      },
+      "capture_checks": {
+        "access_clear": true,
+        "stable": true,
+        "read_passes": 2,
+        "access_attempts": [],
+        "metric_panels": [
+          {
+            "field": "likes",
+            "stable": true,
+            "access_clear": true,
+            "evidence": "Likes\nfun_fineee can see the total number of people who liked this post.\nbarik.5019\nDeepak Barik\nFollow"
+          },
+          {
+            "field": "comments",
+            "stable": true,
+            "access_clear": true,
+            "evidence": "Comments\nNo comments yet.\nStart the conversation."
+          }
+        ]
+      }
     },
     "last_error": null,
-    "last_attempt_at": "2026-11-05T15:09:22.967Z"
+    "last_attempt_at": "2026-11-14T08:55:25.882Z",
+    "access_review": null,
+    "extraction_review": null,
+    "date_source": "og_description",
+    "reshares": null,
+    "shares": null,
+    "likes_visibility": "not_shown",
+    "analysis_resolution": {
+      "status": "resolved",
+      "source": "explicit_visibility_evidence",
+      "recorded_at": "2026-11-14T08:55:25.882Z",
+      "reason": "Unavailable metrics resolved using explicit visibility evidence or user assessment. Saved observations remain valid; missing values are unknown, not zero.",
+      "unavailable_fields": [
+        "likes"
+      ]
+    }
   },
   {
     "kind": "reel",
@@ -306,7 +558,7 @@
     "grid_views_raw": "250",
     "grid_views_issue": null,
     "status": "partial",
-    "fetched_at": "2026-11-05T15:09:27.134Z",
+    "fetched_at": "2026-11-14T08:55:34.554Z",
     "date": "2026-10-03",
     "date_precision": "day",
     "caption": null,
@@ -320,24 +572,73 @@
       "approximate": false,
       "source": "profile_grid"
     },
-    "thumbnail_url": "https://instagram.fblr1-7.fna.fbcdn.net/v/t51.71878-15/834437394_1453273053438785_4230147043210496223_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=xVXQ1StunHwQ7kNvwFbhAKZ&_nc_oc=AdrZV_n4YYh1J7vxikf_90iXLHm92SD6X1UYEQu1Yrp0Vq14p5HkCRJhRSlKgvlfFBPXM3Qc93mnyxPjaT3Cd0jI&_nc_zt=23&_nc_ht=instagram.fblr1-7.fna&_nc_gid=bWi1licV5SqXJfSzyPtSRw&_nc_ss=7f6a8&oh=00_AQRTA0JTGBnXxyULZu5x_oOb_2nup2s5krsOMnCJj4Iugg&oe=6AF268FC&ig_cache_key=MDJSQVF6QmhLQnZERUh2aWtGQUVHakhJQUhVb0MwT3Q4SU85STpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
+    "thumbnail_url": "https://instagram.fblr1-7.fna.fbcdn.net/v/t51.71878-15/834437394_1453273053438785_4230147043210496223_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=-GgPghcYAbgQ7kNvwHzDDCb&_nc_oc=Adr1DXOZoL2XTjiBjfStZYNENAjtP9gDbRuT-5Xfl9ER6VH3GGVHS9fa1dTDEHHW07JbGfcpVya4UZHzSA-gZbaF&_nc_zt=23&_nc_ht=instagram.fblr1-7.fna&_nc_gid=LUZrIr5Z-jkhofII1rFkBA&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQSY3KL7Pfo6I-Ej1TnuRjQA6aHOU_CKjfmhkMRW8ftSUw&oe=6AFE0E3C",
     "media_url": null,
     "missing": [
       "likes",
       "comments"
     ],
     "missing_reasons": {
-      "likes": "No readable like count was found on the content page or in its metadata.",
+      "likes": "The like control displayed no numeric like count; nearby comment or reshare counts are not likes.",
       "comments": "No readable comment count was found on the content page or in its metadata."
     },
     "raw": {
       "description": "「Chalua pandey \n\n#tvアニメ」 - 2026年10月3日、fun_fineee",
-      "article_text": "fun_fineee\n•\nFollow\n• AI content\nChalua pandey\n\n#tvアニメ\nLikes\nalberta.tech\n•\nFollow\nasistilli\nThe category is code ….\n25.4K\n223\n337",
-      "aria_text": "fun_fineee reels\nfun_fineee reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nalberta.tech reels\nalberta.tech reels\nVerified\nTagged users\nTagged users\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
-      "json_ld": {}
+      "article_text": "fun_fineee\nFollow\nAI content\nChalua pandey\n\n#tvアニメ\nSee translation\nLikes\nai_man_and_art\nFollow\nAI-generated profile\n1,491\n1\n25\n1,228",
+      "aria_text": "fun_fineee reels\nfun_fineee reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nai_man_and_art reels\nai_man_and_art reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "availability": {
+          "likes": {
+            "state": "explicitly_hidden",
+            "evidence": "Likes\nfun_fineee can see the total number of people who liked this post.\nfun_fineee\nFun_fine\nFollow\nvish_monster_2.0\ndeepa143_2.0\nFollow\nbarik.5019\nDeepak Barik\nFollow\nvishal_k_737\nVishal\nFollow\nmr.perfect_man_01432\nRamesh Kumar\nFollow\nmr_ankit_jaiswal302\nAnkit Jaiswal\nFollow\nnaitik_kashyap_up_95\nnaitik kashyap\nFollow",
+            "source": "metric_dialog"
+          },
+          "comments": {
+            "state": "not_captured",
+            "evidence": "Control located but no reliable numeric value parsed."
+          },
+          "reshares": {
+            "state": "not_captured",
+            "evidence": "Control located but no reliable numeric value parsed."
+          },
+          "shares": {
+            "state": "not_captured",
+            "evidence": "Control located but no reliable numeric value parsed."
+          }
+        },
+        "likes_visibility": "not_shown"
+      },
+      "capture_checks": {
+        "access_clear": true,
+        "stable": true,
+        "read_passes": 2,
+        "access_attempts": [],
+        "metric_panels": [
+          {
+            "field": "likes",
+            "stable": true,
+            "access_clear": true,
+            "evidence": "Likes\nfun_fineee can see the total number of people who liked this post.\nfun_fineee\nFun_fine\nFollow\nvish_monster_2.0\ndeepa143_2.0\nFollow\nbarik.5019\nDeepak Barik\nFollow\nvishal_k_737\nVishal\nFollow\nmr.perfect_man_01432\nRamesh Kumar\nFollow\nmr_ankit_jaiswal302\nAnkit Jaiswal\nFollow\nnaitik_kashyap_up_95\nnaitik kashyap\nFollow"
+          },
+          {
+            "field": "comments",
+            "stable": false,
+            "access_clear": true,
+            "evidence": "Comments"
+          }
+        ]
+      }
     },
     "last_error": null,
-    "last_attempt_at": "2026-11-05T15:09:27.134Z"
+    "last_attempt_at": "2026-11-14T08:55:34.554Z",
+    "access_review": null,
+    "extraction_review": "Metric extraction is incomplete; absence has not been confirmed. Inspect or retry rather than assume hidden counts.",
+    "date_source": "og_description_localized",
+    "reshares": null,
+    "shares": null,
+    "likes_visibility": "not_shown"
   },
   {
     "kind": "reel",
@@ -345,39 +646,107 @@
     "url": "https://www.instagram.com/reel/Ddx1eD3SCLZ/",
     "grid_views_raw": "134",
     "grid_views_issue": null,
-    "status": "partial",
-    "fetched_at": "2026-11-05T15:09:31.094Z",
+    "status": "metrics_unavailable",
+    "fetched_at": "2026-11-14T08:55:43.638Z",
     "date": "2026-09-26",
     "date_precision": "day",
     "caption": "🤣🤣😁",
     "hashtags": [],
     "mentions": [],
     "likes": null,
-    "comments": null,
+    "comments": {
+      "value": 0,
+      "raw": "0",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "No comments yet."
+    },
     "views": {
       "value": 134,
       "raw": "134",
       "approximate": false,
       "source": "profile_grid"
     },
-    "thumbnail_url": "https://instagram.fblr1-4.fna.fbcdn.net/v/t51.71878-15/827532926_4023239051316428_657823932767232117_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=M46wWnBM_i0Q7kNvwHqhoab&_nc_oc=AdqhGBKn6u9QrcatbpAf10XaXU9dKBH6XBVAeiEIzj0kfdEThITot3-3dnDaX2MkKUW2inQW_1XwuBo4RuTqMums&_nc_zt=23&_nc_ht=instagram.fblr1-4.fna&_nc_gid=VyWC7ynxEKyv8N--RhQeow&_nc_ss=7f6a8&oh=00_AQR0zUAsYuKIfrWJZYtZFkooE3p2WYDcQFhMeopU8n9ObA&oe=6AF26465&ig_cache_key=MDJSQVF6Qm40bVV6RUhIVXNPQU13TWdGWUhZUThoQ1hWZ1Y2MDpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
+    "thumbnail_url": "https://instagram.fblr1-4.fna.fbcdn.net/v/t51.71878-15/827532926_4023239051316428_657823932767232117_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=LFZBBr8aVOYQ7kNvwGch7Oj&_nc_oc=AdoGucoO2kIYN8vbTwafhjTp4uDSZi4-dHQvD7n-37r3OjL17_vE83X5I59QIqP1wRLEEbXK6N6bshVBGlcJnQii&_nc_zt=23&_nc_ht=instagram.fblr1-4.fna&_nc_gid=N0_vFIhq8vOfBDm7et4uBw&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQTzwkstSVlzCIFogudzbonU_rZdPsMe7c4DXp-K-VAWng&oe=6AFE09A5",
     "media_url": null,
     "missing": [
-      "likes",
-      "comments"
+      "likes"
     ],
     "missing_reasons": {
-      "likes": "No readable like count was found on the content page or in its metadata.",
-      "comments": "No readable comment count was found on the content page or in its metadata."
+      "likes": "The like control displayed no numeric like count; nearby comment or reshare counts are not likes."
     },
     "raw": {
-      "description": "fun_fineee on September 26, 2026: \"🤣🤣😁\". ",
-      "article_text": "fun_fineee\n•\nFollow\n• AI content\n🤣🤣😁\nLikes\nalberta.tech\n•\nFollow\nasistilli\nThe category is code ….\n25.4K\n224\n337",
-      "aria_text": "fun_fineee reels\nfun_fineee reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nalberta.tech reels\nalberta.tech reels\nVerified\nTagged users\nTagged users\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
-      "json_ld": {}
+      "description": "🤣🤣😁 - @fun_fineee on September 26, 2026",
+      "article_text": "fun_fineee\nFollow\nAI content\n🤣🤣😁\nLikes\ntrick0815\nFollow\nMount Kimbie, Kai Campos · Zone 3 (City Limits)\nMount Kimbie, Kai Campos · Zone 3 (City Limits)\nMist over Vienna\n\n#objectmanipulation #spinnin #sticknation #circus #balancing\n32.7K\n383\n838\n4,932",
+      "aria_text": "fun_fineee reels\nfun_fineee reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\ntrick0815 reels\ntrick0815 reels\nAudio image\nLocation\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "availability": {
+          "likes": {
+            "state": "explicitly_hidden",
+            "evidence": "Likes\nfun_fineee can see the total number of people who liked this post.\nbarik.5019\nDeepak Barik\nFollow\nnaitik_kashyap_up_95\nnaitik kashyap\nFollow",
+            "source": "metric_dialog"
+          },
+          "comments": {
+            "state": "measured",
+            "evidence": "No comments yet.",
+            "source": "metric_dialog"
+          },
+          "reshares": {
+            "state": "not_captured",
+            "evidence": "Control located but no reliable numeric value parsed."
+          },
+          "shares": {
+            "state": "not_captured",
+            "evidence": "Control located but no reliable numeric value parsed."
+          }
+        },
+        "likes_visibility": "not_shown",
+        "comments": {
+          "raw": "0",
+          "source": "dom_comments_panel",
+          "label": "No comments yet."
+        }
+      },
+      "capture_checks": {
+        "access_clear": true,
+        "stable": true,
+        "read_passes": 2,
+        "access_attempts": [],
+        "metric_panels": [
+          {
+            "field": "likes",
+            "stable": true,
+            "access_clear": true,
+            "evidence": "Likes\nfun_fineee can see the total number of people who liked this post.\nbarik.5019\nDeepak Barik\nFollow\nnaitik_kashyap_up_95\nnaitik kashyap\nFollow"
+          },
+          {
+            "field": "comments",
+            "stable": true,
+            "access_clear": true,
+            "evidence": "Comments\nNo comments yet.\nStart the conversation."
+          }
+        ]
+      }
     },
     "last_error": null,
-    "last_attempt_at": "2026-11-05T15:09:31.094Z"
+    "last_attempt_at": "2026-11-14T08:55:43.639Z",
+    "access_review": null,
+    "extraction_review": null,
+    "date_source": "og_description",
+    "reshares": null,
+    "shares": null,
+    "likes_visibility": "not_shown",
+    "analysis_resolution": {
+      "status": "resolved",
+      "source": "explicit_visibility_evidence",
+      "recorded_at": "2026-11-14T08:55:43.638Z",
+      "reason": "Unavailable metrics resolved using explicit visibility evidence or user assessment. Saved observations remain valid; missing values are unknown, not zero.",
+      "unavailable_fields": [
+        "likes"
+      ]
+    }
   },
   {
     "kind": "reel",
@@ -385,39 +754,107 @@
     "url": "https://www.instagram.com/reel/DdrhqjkSylZ/",
     "grid_views_raw": "214",
     "grid_views_issue": null,
-    "status": "partial",
-    "fetched_at": "2026-11-05T15:09:35.214Z",
+    "status": "metrics_unavailable",
+    "fetched_at": "2026-11-14T08:55:52.660Z",
     "date": "2026-09-24",
     "date_precision": "day",
     "caption": "🤣🤣",
     "hashtags": [],
     "mentions": [],
     "likes": null,
-    "comments": null,
+    "comments": {
+      "value": 0,
+      "raw": "0",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "No comments yet."
+    },
     "views": {
       "value": 214,
       "raw": "214",
       "approximate": false,
       "source": "profile_grid"
     },
-    "thumbnail_url": "https://instagram.fblr24-4.fna.fbcdn.net/v/t51.82787-15/824093567_18026440211911366_2594636535848715997_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=a8Xyd9vsta0Q7kNvwFnmefE&_nc_oc=Adoiv8W_Hb31KA7wvhZSZ-13CMUqihTk3nTZYYreKmKkheWU6BY3GK17DJbJeCOEFOUl3HiMqMcEVhbYpIVuCan8&_nc_zt=23&_nc_ht=instagram.fblr24-4.fna&_nc_gid=SDO_zDW4ZY8ONFL24yQJvQ&_nc_ss=7f6a8&oh=00_AQRD0Gqvy-EQW5j01ydIw54smHSI6LzYRwj2leAtgwS69g&oe=6AF25BA7&ig_cache_key=MDJSQVF6Qm5fckhqRUg4d3BBQU1aU1phMEhMZ0FDSk4xR2c3QTpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
+    "thumbnail_url": "https://instagram.fblr24-4.fna.fbcdn.net/v/t51.82787-15/824093567_18026440211911366_2594636535848715997_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=lJsJfZ87xYAQ7kNvwF5kkCM&_nc_oc=Ado6v19vvLiS4pDjb4IlAEntfN5q6TcrAxGy_YcSmpCO_QY1-1Il35DrhQM94hegGM4TITDDIGN-OoIvYirSOslO&_nc_zt=23&_nc_ht=instagram.fblr24-4.fna&_nc_gid=-XAwaNpXkZY3f9ejmEds6g&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQRn9VpC2JkfyJgx4_NLOKZvfG-YyESoOXNdPScN6fKvrg&oe=6AFE00E7",
     "media_url": null,
     "missing": [
-      "likes",
-      "comments"
+      "likes"
     ],
     "missing_reasons": {
-      "likes": "No readable like count was found on the content page or in its metadata.",
-      "comments": "No readable comment count was found on the content page or in its metadata."
+      "likes": "The like control displayed no numeric like count; nearby comment or reshare counts are not likes."
     },
     "raw": {
       "description": "fun_fineee on September 24, 2026: \"🤣🤣\". ",
-      "article_text": "fun_fineee\n•\nFollow\n• AI content\nlndia\n🤣🤣\nLikes\nloganntannerr\n•\nFollow\nMac Miller · Cinderella (feat. Ty Dolla $ign)\nMac Miller · Cinderella (feat. Ty Dolla $ign)\nNah, God saw it. I’m good. 🤝\n\n#reels #explore #foryou #fyp\n39.8K\n91\n3,494",
-      "aria_text": "fun_fineee reels\nfun_fineee reels\nLocation\nLocation\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nloganntannerr reels\nloganntannerr reels\nVerified\nAudio image\nExplicit\nExplicit\nAudio image\nExplicit\nExplicit\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
-      "json_ld": {}
+      "article_text": "fun_fineee\nFollow\nAI content\nlndia\n🤣🤣\nLikes\nsamkamvisuals\nFollow\nAI content\n2 people\n“Captured with passion, created with Alpha. If this deserves a spot on @sonyalpha @sonyalphain #createwithsony , tag them and let’s make it happen!”\n.\n.\n.\n.\n.\n#samkamphotography #samkamvisuals #yakshagana\n8,228\n56\n118\n637",
+      "aria_text": "fun_fineee reels\nfun_fineee reels\nLocation\nLocation\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nsamkamvisuals reels\nsamkamvisuals reels\nTagged users\nLocation\nTagged users\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "availability": {
+          "likes": {
+            "state": "explicitly_hidden",
+            "evidence": "Likes\nfun_fineee can see the total number of people who liked this post.\nbarik.5019\nDeepak Barik\nFollow\nnaitik_kashyap_up_95\nnaitik kashyap\nFollow",
+            "source": "metric_dialog"
+          },
+          "comments": {
+            "state": "measured",
+            "evidence": "No comments yet.",
+            "source": "metric_dialog"
+          },
+          "reshares": {
+            "state": "not_captured",
+            "evidence": "Control located but no reliable numeric value parsed."
+          },
+          "shares": {
+            "state": "not_captured",
+            "evidence": "Control located but no reliable numeric value parsed."
+          }
+        },
+        "likes_visibility": "not_shown",
+        "comments": {
+          "raw": "0",
+          "source": "dom_comments_panel",
+          "label": "No comments yet."
+        }
+      },
+      "capture_checks": {
+        "access_clear": true,
+        "stable": true,
+        "read_passes": 2,
+        "access_attempts": [],
+        "metric_panels": [
+          {
+            "field": "likes",
+            "stable": true,
+            "access_clear": true,
+            "evidence": "Likes\nfun_fineee can see the total number of people who liked this post.\nbarik.5019\nDeepak Barik\nFollow\nnaitik_kashyap_up_95\nnaitik kashyap\nFollow"
+          },
+          {
+            "field": "comments",
+            "stable": true,
+            "access_clear": true,
+            "evidence": "Comments\nNo comments yet.\nStart the conversation."
+          }
+        ]
+      }
     },
     "last_error": null,
-    "last_attempt_at": "2026-11-05T15:09:35.214Z"
+    "last_attempt_at": "2026-11-14T08:55:52.660Z",
+    "access_review": null,
+    "extraction_review": null,
+    "date_source": "og_description",
+    "reshares": null,
+    "shares": null,
+    "likes_visibility": "not_shown",
+    "analysis_resolution": {
+      "status": "resolved",
+      "source": "explicit_visibility_evidence",
+      "recorded_at": "2026-11-14T08:55:52.660Z",
+      "reason": "Unavailable metrics resolved using explicit visibility evidence or user assessment. Saved observations remain valid; missing values are unknown, not zero.",
+      "unavailable_fields": [
+        "likes"
+      ]
+    }
   },
   {
     "kind": "reel",
@@ -425,39 +862,118 @@
     "url": "https://www.instagram.com/reel/Ddgrsuhy5Pa/",
     "grid_views_raw": "272",
     "grid_views_issue": null,
-    "status": "partial",
-    "fetched_at": "2026-11-05T15:09:39.050Z",
+    "status": "metrics_unavailable",
+    "fetched_at": "2026-11-14T08:56:02.066Z",
     "date": "2026-09-20",
     "date_precision": "day",
     "caption": "🤣🤣🤣😂 Follow me 👉 \nPlease \n..\n..🤣😂",
     "hashtags": [],
     "mentions": [],
     "likes": null,
-    "comments": null,
+    "comments": {
+      "value": 0,
+      "raw": "0",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "No comments yet."
+    },
     "views": {
       "value": 272,
       "raw": "272",
       "approximate": false,
       "source": "profile_grid"
     },
-    "thumbnail_url": "https://instagram.fblr1-6.fna.fbcdn.net/v/t51.71878-15/819002887_1084484961107858_1768017369374243027_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=zS9eBclHW1MQ7kNvwEx7SgB&_nc_oc=AdoQodeCgtZlu4H5-tFKxE4yyMFDw-s8ldDSAGWFSU9jHC_F9cNHAJ9EQURoucy7FCOiTLZHCzol6_dIIJ_sqb7z&_nc_zt=23&_nc_ht=instagram.fblr1-6.fna&_nc_gid=5iCcLJf0-pvZz77AGIhlBQ&_nc_ss=7f6a8&oh=00_AQSKudp1x61gZuoyHyTugnQnz7sF0XQF_UsJGhq0nhtq6Q&oe=6AF28855&ig_cache_key=MDJSQVF6QmdmXzBEQUhWZG9EQUpMLTNsUUhia0tKR05PNFJSbzpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
+    "thumbnail_url": "https://instagram.fblr1-6.fna.fbcdn.net/v/t51.71878-15/819002887_1084484961107858_1768017369374243027_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=UKNLkLdi-MAQ7kNvwE6AkId&_nc_oc=Ado1Znsf3YH5vm5jkUZXugcrLw9635N6xn1gdGpiS8fq55IRK6QNFKBFsdQT_tcG8YVyept5E-kslc2D45TnsPZo&_nc_zt=23&_nc_ht=instagram.fblr1-6.fna&_nc_gid=Tfe-Romu_LfY451_qIeW2g&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQSX8bSZyzeBjSUK4YAcSMoilyM0mTO7FQ1grdtqwZE59Q&oe=6AFDF555",
     "media_url": null,
     "missing": [
-      "likes",
-      "comments"
+      "likes"
     ],
     "missing_reasons": {
-      "likes": "No readable like count was found on the content page or in its metadata.",
-      "comments": "No readable comment count was found on the content page or in its metadata."
+      "likes": "The like control displayed no numeric like count; nearby comment or reshare counts are not likes."
     },
     "raw": {
-      "description": "fun_fineee on September 20, 2026: \"🤣🤣🤣😂 Follow me 👉 \nPlease \n..\n..🤣😂\". ",
-      "article_text": "fun_fineee\n•\nFollow\n• AI content\nlndia\n🤣🤣🤣😂 Follow me 👉\nPlease\n..\n..🤣😂\nLikes\n1\nsamromeugtr\n•\nFollow\nLondon, United Kingdom\nRadiohead moment\n\n#guitarcover\n104K\n171\n5,410",
-      "aria_text": "fun_fineee reels\nfun_fineee reels\nLocation\nLocation\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nsamromeugtr reels\nsamromeugtr reels\nLocation\nLocation\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
-      "json_ld": {}
+      "description": "🤣🤣🤣😂 Follow me 👉 \nPlease \n..\n..🤣😂 - @fun_fineee on September 20, 2026",
+      "article_text": "fun_fineee\nFollow\nAI content\nlndia\n🤣🤣🤣😂 Follow me 👉\nPlease\n..\n..🤣😂\nLikes\n1\nmaxefrt\nFollow\nAram Bajakian · The Poet's Inner World\nAram Bajakian · The Poet's Inner World\nSteadfast 🗡️\n25.8K\n191\n642\n2,741",
+      "aria_text": "fun_fineee reels\nfun_fineee reels\nLocation\nLocation\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nmaxefrt reels\nmaxefrt reels\nVerified\nAudio image\nLocation\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "availability": {
+          "likes": {
+            "state": "explicitly_hidden",
+            "evidence": "Likes\nfun_fineee can see the total number of people who liked this post.\nbaglejayeshbhaskar\njayesh bhaskar Bagle\nFollow\nnaitik_kashyap_up_95\nnaitik kashyap\nFollow",
+            "source": "metric_dialog"
+          },
+          "comments": {
+            "state": "measured",
+            "evidence": "No comments yet.",
+            "source": "metric_dialog"
+          },
+          "reshares": {
+            "state": "measured",
+            "evidence": "Repost"
+          },
+          "shares": {
+            "state": "not_captured",
+            "evidence": "Control located but no reliable numeric value parsed."
+          }
+        },
+        "likes_visibility": "not_shown",
+        "reshares": {
+          "raw": "1",
+          "source": "dom_action_control",
+          "label": "Repost"
+        },
+        "comments": {
+          "raw": "0",
+          "source": "dom_comments_panel",
+          "label": "No comments yet."
+        }
+      },
+      "capture_checks": {
+        "access_clear": true,
+        "stable": true,
+        "read_passes": 2,
+        "access_attempts": [],
+        "metric_panels": [
+          {
+            "field": "likes",
+            "stable": true,
+            "access_clear": true,
+            "evidence": "Likes\nfun_fineee can see the total number of people who liked this post.\nbaglejayeshbhaskar\njayesh bhaskar Bagle\nFollow\nnaitik_kashyap_up_95\nnaitik kashyap\nFollow"
+          },
+          {
+            "field": "comments",
+            "stable": true,
+            "access_clear": true,
+            "evidence": "Comments\nNo comments yet.\nStart the conversation."
+          }
+        ]
+      }
     },
     "last_error": null,
-    "last_attempt_at": "2026-11-05T15:09:39.050Z"
+    "last_attempt_at": "2026-11-14T08:56:02.066Z",
+    "access_review": null,
+    "extraction_review": null,
+    "date_source": "og_description",
+    "reshares": {
+      "value": 1,
+      "raw": "1",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Repost"
+    },
+    "shares": null,
+    "likes_visibility": "not_shown",
+    "analysis_resolution": {
+      "status": "resolved",
+      "source": "explicit_visibility_evidence",
+      "recorded_at": "2026-11-14T08:56:02.066Z",
+      "reason": "Unavailable metrics resolved using explicit visibility evidence or user assessment. Saved observations remain valid; missing values are unknown, not zero.",
+      "unavailable_fields": [
+        "likes"
+      ]
+    }
   },
   {
     "kind": "reel",
@@ -465,39 +981,107 @@
     "url": "https://www.instagram.com/reel/DdgabSnyYbe/",
     "grid_views_raw": "410",
     "grid_views_issue": null,
-    "status": "partial",
-    "fetched_at": "2026-11-05T15:09:42.937Z",
+    "status": "metrics_unavailable",
+    "fetched_at": "2026-11-14T08:56:11.405Z",
     "date": "2026-09-20",
     "date_precision": "day",
     "caption": "Kismat hi kharab hai 😭😭\n.\n.\n.🤣🤣🤣",
     "hashtags": [],
     "mentions": [],
     "likes": null,
-    "comments": null,
+    "comments": {
+      "value": 0,
+      "raw": "0",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "No comments yet."
+    },
     "views": {
       "value": 410,
       "raw": "410",
       "approximate": false,
       "source": "profile_grid"
     },
-    "thumbnail_url": "https://instagram.fblr1-7.fna.fbcdn.net/v/t51.71878-15/818062298_1097687602844821_2344895572302492861_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=09fkihzX8usQ7kNvwEU1K03&_nc_oc=AdpoY2nLRHSVLN_F9mtWbvom_fdeoiNnt0XRrrdNyoqITpsKX4pc-it6Ysda3YyI5d1ECA-b_e1rhl9WqoEZTRHv&_nc_zt=23&_nc_ht=instagram.fblr1-7.fna&_nc_gid=XEeX7-GpLmASbYzOWPyaWw&_nc_ss=7f6a8&oh=00_AQSjlFmq7C6nGTwuueP3M-vmnyqC-Y0RMUxSzn3u0gAb6A&oe=6AF25AF8&ig_cache_key=MDJSQVF6QnRxandqQUhWX1lEQUpWVXBFOEhHYjZLSUwzMGVXWTpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
+    "thumbnail_url": "https://instagram.fblr1-7.fna.fbcdn.net/v/t51.71878-15/818062298_1097687602844821_2344895572302492861_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=YyNu8zfevjcQ7kNvwFFDZuB&_nc_oc=AdrlUr4P4FvnAWGQGTSErU3ObGZHO2ubKt5hGPKaQ7HjzdXSBaTG-epvBbxLXQDC6WfxvNEgTe4uDOMXVoribr9i&_nc_zt=23&_nc_ht=instagram.fblr1-7.fna&_nc_gid=ivVEwarBUbTj1iqp9ejOIQ&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQgAAAA&oh=00_AQQK5bMuAZUrh4XO16jHJGoXrV8Edf2sSXSrI5Kv9fBP7w&oe=6AFE0038",
     "media_url": null,
     "missing": [
-      "likes",
-      "comments"
+      "likes"
     ],
     "missing_reasons": {
-      "likes": "No readable like count was found on the content page or in its metadata.",
-      "comments": "No readable comment count was found on the content page or in its metadata."
+      "likes": "The like control displayed no numeric like count; nearby comment or reshare counts are not likes."
     },
     "raw": {
       "description": "fun_fineee on September 20, 2026: \"Kismat hi kharab hai 😭😭\n.\n.\n.🤣🤣🤣\". ",
-      "article_text": "fun_fineee\n•\nFollow\n• AI content\nlndia\nKismat hi kharab hai 😭😭\n.\n.\n.🤣🤣🤣\nLikes\nsamromeugtr\n•\nFollow\nLondon, United Kingdom\nRadiohead moment\n\n#guitarcover\n104K\n171\n5,411",
-      "aria_text": "fun_fineee reels\nfun_fineee reels\nLocation\nLocation\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nsamromeugtr reels\nsamromeugtr reels\nLocation\nLocation\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
-      "json_ld": {}
+      "article_text": "fun_fineee\nFollow\nAI content\nlndia\nKismat hi kharab hai 😭😭\n.\n.\n.🤣🤣🤣\nLikes\navicii\nFollow\nAvicii · Silhouettes\nWhere it all began – the opening of Avicii’s first Tomorrowland MainStage set ◢ ◤\n\nOn July 23, 2011, Avicii took the Tomorrowland crowd through a set that would be regarded as one of the most iconic performances in EDM history, from “Silhouettes” to an early play of “Levels” months before its release.\n\nExperience the full performance on Avicii Community, the official home for fans worldwide. Watch the entire 2011 Tomorrowland set on avicii.com/community or through the link in bio.\n82.3K\n879\n4,408\n3,966",
+      "aria_text": "fun_fineee reels\nfun_fineee reels\nLocation\nLocation\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\navicii reels\navicii reels\nVerified\nAudio image\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "availability": {
+          "likes": {
+            "state": "explicitly_hidden",
+            "evidence": "Likes\nfun_fineee can see the total number of people who liked this post.\n__son__of__pandit___\nAnkit Pandit\nFollow\ndeep.__001x\nD.. C..\nFollow\nnaitik_kashyap_up_95\nnaitik kashyap\nFollow",
+            "source": "metric_dialog"
+          },
+          "comments": {
+            "state": "measured",
+            "evidence": "No comments yet.",
+            "source": "metric_dialog"
+          },
+          "reshares": {
+            "state": "not_captured",
+            "evidence": "Control located but no reliable numeric value parsed."
+          },
+          "shares": {
+            "state": "not_captured",
+            "evidence": "Control located but no reliable numeric value parsed."
+          }
+        },
+        "likes_visibility": "not_shown",
+        "comments": {
+          "raw": "0",
+          "source": "dom_comments_panel",
+          "label": "No comments yet."
+        }
+      },
+      "capture_checks": {
+        "access_clear": true,
+        "stable": true,
+        "read_passes": 2,
+        "access_attempts": [],
+        "metric_panels": [
+          {
+            "field": "likes",
+            "stable": true,
+            "access_clear": true,
+            "evidence": "Likes\nfun_fineee can see the total number of people who liked this post.\n__son__of__pandit___\nAnkit Pandit\nFollow\ndeep.__001x\nD.. C..\nFollow\nnaitik_kashyap_up_95\nnaitik kashyap\nFollow"
+          },
+          {
+            "field": "comments",
+            "stable": true,
+            "access_clear": true,
+            "evidence": "Comments\nNo comments yet.\nStart the conversation."
+          }
+        ]
+      }
     },
     "last_error": null,
-    "last_attempt_at": "2026-11-05T15:09:42.937Z"
+    "last_attempt_at": "2026-11-14T08:56:11.405Z",
+    "access_review": null,
+    "extraction_review": null,
+    "date_source": "og_description",
+    "reshares": null,
+    "shares": null,
+    "likes_visibility": "not_shown",
+    "analysis_resolution": {
+      "status": "resolved",
+      "source": "explicit_visibility_evidence",
+      "recorded_at": "2026-11-14T08:56:11.405Z",
+      "reason": "Unavailable metrics resolved using explicit visibility evidence or user assessment. Saved observations remain valid; missing values are unknown, not zero.",
+      "unavailable_fields": [
+        "likes"
+      ]
+    }
   },
   {
     "kind": "reel",
@@ -505,39 +1089,107 @@
     "url": "https://www.instagram.com/reel/Ddf-jtASDiw/",
     "grid_views_raw": "107",
     "grid_views_issue": null,
-    "status": "partial",
-    "fetched_at": "2026-11-05T15:09:46.844Z",
+    "status": "metrics_unavailable",
+    "fetched_at": "2026-11-14T08:56:20.144Z",
     "date": "2026-09-19",
     "date_precision": "day",
     "caption": "Full Time Blockbuster\n😂😂🤣🤣🤣\nComedy Video\n..😂\n..",
     "hashtags": [],
     "mentions": [],
     "likes": null,
-    "comments": null,
+    "comments": {
+      "value": 0,
+      "raw": "0",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "No comments yet."
+    },
     "views": {
       "value": 107,
       "raw": "107",
       "approximate": false,
       "source": "profile_grid"
     },
-    "thumbnail_url": "https://instagram.fblr1-7.fna.fbcdn.net/v/t51.71878-15/817341806_1694823529319116_3549949496738725487_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=OgBEUWx-wikQ7kNvwHOmOUA&_nc_oc=Adq8NDprdJtiZLW97prFccmHjyqD17M5jTsDV4z2o7x4bXfyW9SOEPqdIiW4ow62XloplkI_Reu4IBEwudcRX8Z9&_nc_zt=23&_nc_ht=instagram.fblr1-7.fna&_nc_gid=7iTSVJg5tzbCq-31Jklurw&_nc_ss=7f6a8&oh=00_AQT_1bn0ikZUmQd3f53WIQMDUMcmPNiXG70vknWynYbBNQ&oe=6AF26BCA&ig_cache_key=MDJSQVF6Qm02bHR6QUhiZ1VHQU13S2JOb0hRdlJETVc4X3NFTTpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
+    "thumbnail_url": "https://instagram.fblr1-7.fna.fbcdn.net/v/t51.71878-15/817341806_1694823529319116_3549949496738725487_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=maU5mq2eT80Q7kNvwH3IA78&_nc_oc=AdqQ2b5yyITIXOzAcTysQNMyMkRexeGg_ewdl7pQG82uDUOUwcoYEfsJ3KNHQ1oH6yakXb0gkOHUuN5Z6KDvvX8s&_nc_zt=23&_nc_ht=instagram.fblr1-7.fna&_nc_gid=eYZPQRQsdcwTERFvR9pZZw&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQQnkppsHVMZvcjK4OS5afxPyltgqgqwUJGNz_2an4Aexg&oe=6AFDD8CA",
     "media_url": null,
     "missing": [
-      "likes",
-      "comments"
+      "likes"
     ],
     "missing_reasons": {
-      "likes": "No readable like count was found on the content page or in its metadata.",
-      "comments": "No readable comment count was found on the content page or in its metadata."
+      "likes": "The like control displayed no numeric like count; nearby comment or reshare counts are not likes."
     },
     "raw": {
-      "description": "fun_fineee on September 19, 2026: \"Full Time Blockbuster\n😂😂🤣🤣🤣\nComedy Video\n..😂\n..\". ",
-      "article_text": "fun_fineee\n•\nFollow\nlndia\nFull Time Blockbuster\n😂😂🤣🤣🤣\nComedy Video\n..😂\n..\nLikes\nbish.op\n•\nFollow\nCrystal Castles · Vanished\ndoes my work look like video games?\n-\n#creativephotography #photography #photographer #editorial #explore\n196K\n218\n4,259",
-      "aria_text": "fun_fineee reels\nfun_fineee reels\nLocation\nLocation\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nbish.op reels\nbish.op reels\nAudio image\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
-      "json_ld": {}
+      "description": "Full Time Blockbuster\n😂😂🤣🤣🤣\nComedy Video\n..😂\n.. - @fun_fineee on September 19, 2026",
+      "article_text": "fun_fineee\nFollow\nlndia\nFull Time Blockbuster\n😂😂🤣🤣🤣\nComedy Video\n..😂\n..\nLikes\nsatirical_citizen\nFollow\nOn popular demand from my story, posting it here\n\nHappy Diwali 💣🧨🎇🪔\n62.2K\n212\n1,060\n10.7K",
+      "aria_text": "fun_fineee reels\nfun_fineee reels\nLocation\nLocation\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nsatirical_citizen reels\nsatirical_citizen reels\nVerified\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "availability": {
+          "likes": {
+            "state": "explicitly_hidden",
+            "evidence": "Likes\nfun_fineee can see the total number of people who liked this post.",
+            "source": "metric_dialog"
+          },
+          "comments": {
+            "state": "measured",
+            "evidence": "No comments yet.",
+            "source": "metric_dialog"
+          },
+          "reshares": {
+            "state": "not_captured",
+            "evidence": "Control located but no reliable numeric value parsed."
+          },
+          "shares": {
+            "state": "not_captured",
+            "evidence": "Control located but no reliable numeric value parsed."
+          }
+        },
+        "likes_visibility": "not_shown",
+        "comments": {
+          "raw": "0",
+          "source": "dom_comments_panel",
+          "label": "No comments yet."
+        }
+      },
+      "capture_checks": {
+        "access_clear": true,
+        "stable": true,
+        "read_passes": 2,
+        "access_attempts": [],
+        "metric_panels": [
+          {
+            "field": "likes",
+            "stable": true,
+            "access_clear": true,
+            "evidence": "Likes\nfun_fineee can see the total number of people who liked this post."
+          },
+          {
+            "field": "comments",
+            "stable": true,
+            "access_clear": true,
+            "evidence": "Comments\nNo comments yet.\nStart the conversation."
+          }
+        ]
+      }
     },
     "last_error": null,
-    "last_attempt_at": "2026-11-05T15:09:46.844Z"
+    "last_attempt_at": "2026-11-14T08:56:20.144Z",
+    "access_review": null,
+    "extraction_review": null,
+    "date_source": "og_description",
+    "reshares": null,
+    "shares": null,
+    "likes_visibility": "not_shown",
+    "analysis_resolution": {
+      "status": "resolved",
+      "source": "explicit_visibility_evidence",
+      "recorded_at": "2026-11-14T08:56:20.144Z",
+      "reason": "Unavailable metrics resolved using explicit visibility evidence or user assessment. Saved observations remain valid; missing values are unknown, not zero.",
+      "unavailable_fields": [
+        "likes"
+      ]
+    }
   },
   {
     "kind": "reel",
@@ -545,39 +1197,107 @@
     "url": "https://www.instagram.com/reel/DdeGawIS7je/",
     "grid_views_raw": "409",
     "grid_views_issue": null,
-    "status": "partial",
-    "fetched_at": "2026-11-05T15:09:51.010Z",
+    "status": "metrics_unavailable",
+    "fetched_at": "2026-11-14T08:56:29.804Z",
     "date": "2026-09-19",
     "date_precision": "day",
     "caption": "gym🤣mein utra kachcha🤣🤣🤣\n..\n..\n..🤣🤣😂😂😂😂😂\nFollow please 🙏 \nNew video",
     "hashtags": [],
     "mentions": [],
     "likes": null,
-    "comments": null,
+    "comments": {
+      "value": 0,
+      "raw": "0",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "No comments yet."
+    },
     "views": {
       "value": 409,
       "raw": "409",
       "approximate": false,
       "source": "profile_grid"
     },
-    "thumbnail_url": "https://instagram.fblr1-4.fna.fbcdn.net/v/t51.82787-15/818172132_18025691027911366_9144986563547849178_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=WwyHUBTYt3oQ7kNvwGhBZIl&_nc_oc=AdqYyZHuAvPBqRuJVLSr77rUQNtL1CGwrODiZOO4RyQZzrWyd-sGoQyGkUsEHeU-vzQlQNk5bpbiTzOTee2nZ77p&_nc_zt=23&_nc_ht=instagram.fblr1-4.fna&_nc_gid=nRwY0_N9lJb-wfGdSSA1kA&_nc_ss=7f6a8&oh=00_AQTtZtRDhMMU_Hno0hSCUmBv9NLv64KYH0wmHg-0Xn2B0w&oe=6AF2723B&ig_cache_key=MDJSQVF6QnVSUXhEQUhSUXBBQU1heWpENEgwNFRwZnRwaC1jczpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
+    "thumbnail_url": "https://instagram.fblr1-4.fna.fbcdn.net/v/t51.82787-15/818172132_18025691027911366_9144986563547849178_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=rc8Tp9HqWZQQ7kNvwHGwtpk&_nc_oc=AdoYMSmP5xtqkB83i2ZI5uoSAHgJk6UboSw6OdRA7QEHQzeMd9OX55ssbQ0gVuT656YGngzswZI8ExB_w-CGaTP9&_nc_zt=23&_nc_ht=instagram.fblr1-4.fna&_nc_gid=HZ3Ns1ncJQwNZK8a8965Mg&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQTIyklmJ7xQd-Ycx6SS4SHBlZL1o78GptwuzW-OM2xOQw&oe=6AFDDF3B",
     "media_url": null,
     "missing": [
-      "likes",
-      "comments"
+      "likes"
     ],
     "missing_reasons": {
-      "likes": "No readable like count was found on the content page or in its metadata.",
-      "comments": "No readable comment count was found on the content page or in its metadata."
+      "likes": "The like control displayed no numeric like count; nearby comment or reshare counts are not likes."
     },
     "raw": {
-      "description": "fun_fineee on September 19, 2026: \"gym🤣mein utra kachcha🤣🤣🤣\n..\n..\n..🤣🤣😂😂😂😂😂\nFollow please 🙏 \nNew video\". ",
-      "article_text": "fun_fineee\n•\nFollow\ngym🤣mein utra kachcha🤣🤣🤣\n..\n..\n..🤣🤣😂😂😂😂😂\nFollow please 🙏\nNew video\nLikes\nlizard.wizzard\n•\nFollow\nRadiohead · Let Down\nя бью классные татуировки в питере! смотрите работы в аккаунте @lizard.tatts\n462K\n970\n38.5K",
-      "aria_text": "fun_fineee reels\nfun_fineee reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nlizard.wizzard reels\nlizard.wizzard reels\nAudio image\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
-      "json_ld": {}
+      "description": "gym🤣mein utra kachcha🤣🤣🤣\n..\n..\n..🤣🤣😂😂😂😂😂\nFollow please 🙏 \nNew video - @fun_fineee on September 19, 2026",
+      "article_text": "fun_fineee\nFollow\ngym🤣mein utra kachcha🤣🤣🤣\n..\n..\n..🤣🤣😂😂😂😂😂\nFollow please 🙏\nNew video\nLikes\navicii\nFollow\nAvicii · Silhouettes\nWhere it all began – the opening of Avicii’s first Tomorrowland MainStage set ◢ ◤\n\nOn July 23, 2011, Avicii took the Tomorrowland crowd through a set that would be regarded as one of the most iconic performances in EDM history, from “Silhouettes” to an early play of “Levels” months before its release.\n\nExperience the full performance on Avicii Community, the official home for fans worldwide. Watch the entire 2011 Tomorrowland set on avicii.com/community or through the link in bio.\n82.3K\n879\n4,408\n3,966",
+      "aria_text": "fun_fineee reels\nfun_fineee reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\navicii reels\navicii reels\nVerified\nAudio image\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "availability": {
+          "likes": {
+            "state": "explicitly_hidden",
+            "evidence": "Likes\nfun_fineee can see the total number of people who liked this post.\nsanju_rehli7622\nSanju Rehli\nFollow\n_mukesh_x08\nRAJPUROHIT 🦅❤️‍🔥\nFollow\nrahulattractiveboy\nRahul Rajak\nFollow\nsam_sameer_soni_999\n$UMIT ,,$ONI\nFollow\nrehmani.004\nRehman Ali Rehmani\nFollow",
+            "source": "metric_dialog"
+          },
+          "comments": {
+            "state": "measured",
+            "evidence": "No comments yet.",
+            "source": "metric_dialog"
+          },
+          "reshares": {
+            "state": "not_captured",
+            "evidence": "Control located but no reliable numeric value parsed."
+          },
+          "shares": {
+            "state": "not_captured",
+            "evidence": "Control located but no reliable numeric value parsed."
+          }
+        },
+        "likes_visibility": "not_shown",
+        "comments": {
+          "raw": "0",
+          "source": "dom_comments_panel",
+          "label": "No comments yet."
+        }
+      },
+      "capture_checks": {
+        "access_clear": true,
+        "stable": true,
+        "read_passes": 2,
+        "access_attempts": [],
+        "metric_panels": [
+          {
+            "field": "likes",
+            "stable": true,
+            "access_clear": true,
+            "evidence": "Likes\nfun_fineee can see the total number of people who liked this post.\nsanju_rehli7622\nSanju Rehli\nFollow\n_mukesh_x08\nRAJPUROHIT 🦅❤️‍🔥\nFollow\nrahulattractiveboy\nRahul Rajak\nFollow\nsam_sameer_soni_999\n$UMIT ,,$ONI\nFollow\nrehmani.004\nRehman Ali Rehmani\nFollow"
+          },
+          {
+            "field": "comments",
+            "stable": true,
+            "access_clear": true,
+            "evidence": "Comments\nNo comments yet.\nStart the conversation."
+          }
+        ]
+      }
     },
     "last_error": null,
-    "last_attempt_at": "2026-11-05T15:09:51.010Z"
+    "last_attempt_at": "2026-11-14T08:56:29.805Z",
+    "access_review": null,
+    "extraction_review": null,
+    "date_source": "og_description",
+    "reshares": null,
+    "shares": null,
+    "likes_visibility": "not_shown",
+    "analysis_resolution": {
+      "status": "resolved",
+      "source": "explicit_visibility_evidence",
+      "recorded_at": "2026-11-14T08:56:29.804Z",
+      "reason": "Unavailable metrics resolved using explicit visibility evidence or user assessment. Saved observations remain valid; missing values are unknown, not zero.",
+      "unavailable_fields": [
+        "likes"
+      ]
+    }
   },
   {
     "kind": "reel",
@@ -630,7 +1350,7 @@
     "grid_views_raw": "128",
     "grid_views_issue": null,
     "status": "partial",
-    "fetched_at": "2026-11-05T15:09:58.928Z",
+    "fetched_at": "2026-11-14T08:56:39.057Z",
     "date": "2026-09-18",
     "date_precision": "day",
     "caption": "CID funny 😁 😂 \n...\n...\n😂😂🤣 daya",
@@ -644,24 +1364,72 @@
       "approximate": false,
       "source": "profile_grid"
     },
-    "thumbnail_url": "https://instagram.fblr24-1.fna.fbcdn.net/v/t51.82787-15/797337082_18025648955911366_2261755383080346418_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=WnTj3CLfnAgQ7kNvwGgTc39&_nc_oc=Adpf1yLrEtqiqq2OI1e4bbYxHTiXs3ymodCgOLhGXyjoa50GoZADnrql5sx6pqgj6m9A1a1zgfAlAfzY6W7dT34d&_nc_zt=23&_nc_ht=instagram.fblr24-1.fna&_nc_gid=IZEpBk4x6jJdBPLsuNEDiQ&_nc_ss=7f6a8&oh=00_AQTEiqgbTvJRiZ114juHLG5C_Mic9lm2GrlL0sRaHC-0Mw&oe=6AF25A0B&ig_cache_key=MDJSQVF6QnZwbGhpOEhPd3BBQU1iczNISUhpVjVqSHpMalZLRTpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
+    "thumbnail_url": "https://instagram.fblr24-1.fna.fbcdn.net/v/t51.82787-15/797337082_18025648955911366_2261755383080346418_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=cpglGvWA5o8Q7kNvwEPBP7i&_nc_oc=AdoXnMmdaN8LQynM6QBm0243JbrtXh54YAHQS_NU-QSVrgewY6V8ACrG_f_WT4-aaMPhMvN8MiXLHP6JugWZ51-p&_nc_zt=23&_nc_ht=instagram.fblr24-1.fna&_nc_gid=RqDX5TJfzdxZuXwblpVUEA&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQT6pExCwc8j4riPHdaKoa1Az8r0iwuc2etwsi6_eoVv8Q&oe=6AFDFF4B",
     "media_url": null,
     "missing": [
       "likes",
       "comments"
     ],
     "missing_reasons": {
-      "likes": "No readable like count was found on the content page or in its metadata.",
+      "likes": "The like control displayed no numeric like count; nearby comment or reshare counts are not likes.",
       "comments": "No readable comment count was found on the content page or in its metadata."
     },
     "raw": {
-      "description": "fun_fineee on September 18, 2026: \"CID funny 😁 😂 \n...\n...\n😂😂🤣 daya\". ",
-      "article_text": "fun_fineee\n•\nFollow\nCID funny 😁 😂\n...\n...\n😂😂🤣 daya\nLikes\nsamromeugtr\n•\nFollow\nLondon, United Kingdom\nRadiohead moment\n\n#guitarcover\n104K\n171\n5,413",
-      "aria_text": "fun_fineee reels\nfun_fineee reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nsamromeugtr reels\nsamromeugtr reels\nLocation\nLocation\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
-      "json_ld": {}
+      "description": "CID funny 😁 😂 \n...\n...\n😂😂🤣 daya - @fun_fineee on September 18, 2026",
+      "article_text": "fun_fineee\nFollow\nCID funny 😁 😂\n...\n...\n😂😂🤣 daya\nLikes\nmaxefrt\nFollow\nAram Bajakian · The Poet's Inner World\nAram Bajakian · The Poet's Inner World\nSteadfast 🗡️\n25.8K\n191\n642\n2,741",
+      "aria_text": "fun_fineee reels\nfun_fineee reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nmaxefrt reels\nmaxefrt reels\nVerified\nAudio image\nLocation\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "availability": {
+          "likes": {
+            "state": "not_captured",
+            "evidence": "Control located but no reliable numeric value parsed."
+          },
+          "comments": {
+            "state": "not_captured",
+            "evidence": "Control located but no reliable numeric value parsed."
+          },
+          "reshares": {
+            "state": "not_captured",
+            "evidence": "Control located but no reliable numeric value parsed."
+          },
+          "shares": {
+            "state": "not_captured",
+            "evidence": "Control located but no reliable numeric value parsed."
+          }
+        },
+        "likes_visibility": "not_shown"
+      },
+      "capture_checks": {
+        "access_clear": true,
+        "stable": true,
+        "read_passes": 2,
+        "access_attempts": [],
+        "metric_panels": [
+          {
+            "field": "likes",
+            "stable": false,
+            "access_clear": true,
+            "evidence": "Likes"
+          },
+          {
+            "field": "comments",
+            "stable": false,
+            "access_clear": true,
+            "evidence": "Comments"
+          }
+        ]
+      }
     },
     "last_error": null,
-    "last_attempt_at": "2026-11-05T15:09:58.928Z"
+    "last_attempt_at": "2026-11-14T08:56:39.057Z",
+    "access_review": null,
+    "extraction_review": "Metric extraction is incomplete; absence has not been confirmed. Inspect or retry rather than assume hidden counts.",
+    "date_source": "og_description",
+    "reshares": null,
+    "shares": null,
+    "likes_visibility": "not_shown"
   },
   {
     "kind": "reel",
@@ -669,39 +1437,107 @@
     "url": "https://www.instagram.com/reel/DdbfvqVy8f9/",
     "grid_views_raw": "1,671",
     "grid_views_issue": null,
-    "status": "partial",
-    "fetched_at": "2026-11-05T15:10:03.116Z",
+    "status": "metrics_unavailable",
+    "fetched_at": "2026-11-14T08:56:48.760Z",
     "date": "2026-09-18",
     "date_precision": "day",
     "caption": "🤣🤣🤣 \n\n.",
     "hashtags": [],
     "mentions": [],
     "likes": null,
-    "comments": null,
+    "comments": {
+      "value": 0,
+      "raw": "0",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "No comments yet."
+    },
     "views": {
       "value": 1671,
       "raw": "1,671",
       "approximate": false,
       "source": "profile_grid"
     },
-    "thumbnail_url": "https://instagram.fblr1-10.fna.fbcdn.net/v/t51.82787-15/814971395_18025534478911366_398356434715125865_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=K_oGgeCHSBQQ7kNvwFwzOuG&_nc_oc=AdpNzE3sqypHLH7CHNQg9vg-trwlXP5hJNgpCreoUKkmLI8qDXMHnC_6lNrG2x3WT3oeZh8n1IeIxLmCNc5eYp7a&_nc_zt=23&_nc_ht=instagram.fblr1-10.fna&_nc_gid=R9gBorYSoTPSwQwmhRB_5A&_nc_ss=7f6a8&oh=00_AQScxEbm_iSvyOctxuX--wLrJgrcpTVrgs35EtsvEkfAeg&oe=6AF27045&ig_cache_key=MDJSQVF6QmdONmt6QUhJQXBBQUlhSGdNc0hFVF9IQldtb0x4azpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
+    "thumbnail_url": "https://instagram.fblr1-10.fna.fbcdn.net/v/t51.82787-15/814971395_18025534478911366_398356434715125865_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=GOA2cFdGsbUQ7kNvwEGWmHr&_nc_oc=AdpcshZgP_NqFXkWOnyeY2AqWcDB9CohwUBMNlJ7vQHb9CvOus4lBxF1CVSq6uW2jYwocMT2sH-9lk-J7pk7HJej&_nc_zt=23&_nc_ht=instagram.fblr1-10.fna&_nc_gid=dvxgDgP3gnEdOT79MenB2A&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQRAqGWHhvNVTJbdxHYdejDLHJlB3zPo02ixC86z3yS4MA&oe=6AFDDD45",
     "media_url": null,
     "missing": [
-      "likes",
-      "comments"
+      "likes"
     ],
     "missing_reasons": {
-      "likes": "No readable like count was found on the content page or in its metadata.",
-      "comments": "No readable comment count was found on the content page or in its metadata."
+      "likes": "The like control displayed no numeric like count; nearby comment or reshare counts are not likes."
     },
     "raw": {
       "description": "fun_fineee on September 18, 2026: \"🤣🤣🤣 \n\n.\". ",
-      "article_text": "fun_fineee\n•\nFollow\nDehli,India\n🤣🤣🤣\n\n.\nLikes\nvladmikaelson\n•\nFollow\n@twentyonepilots performing Drag Path at @electriccastle was an outer body experience 😭😭😭\n58.2K\n174\n3,521",
-      "aria_text": "fun_fineee reels\nfun_fineee reels\nLocation\nLocation\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nvladmikaelson reels\nvladmikaelson reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
-      "json_ld": {}
+      "article_text": "fun_fineee\nFollow\nDehli,India\n🤣🤣🤣\n\n.\nLikes\nsammyd94\nFollow\nHe is literally obsessed 🥹\n36.8K\n660\n1,050\n6,836",
+      "aria_text": "fun_fineee reels\nfun_fineee reels\nLocation\nLocation\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nsammyd94 reels\nsammyd94 reels\nVerified\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "availability": {
+          "likes": {
+            "state": "explicitly_hidden",
+            "evidence": "Likes\nfun_fineee can see the total number of people who liked this post.\nolivia__3256\nPragya\nFollow\n_zuhaib._1\nZHK💀\nFollow\nvishudhaliwal37\nVishu....editz\nFollow\n___varunnn___22\nVarun Vaidya\nFollow\nkes_havkl\nkeshav 🫶\nFollow\nbanti______________7\nबंटी मिश्र\nFollow\n__piyush__1108\nMr.PiYuSh\nFollow\nguruu_ji_08\nDavid dagor\nFollow\nsujitshilll\n𝒮𝓊𝒿𝒾𝓉 𝒮𝒽𝒾𝓁\nFollow\nkinectic_sahil\nSahil tirath kumar bansal\nFollow\nitz_karan__0x\n𝘬ꪖ𝘳ꪖꪀ🤍\nFollow\nluciferrrr712\nLuciferrrr🧛\nFollow\nsuman_rajbongshi_\n𝕾𝖚𝖒𝖆𝖓 𝖗𝖆𝖏𝖇𝖔𝖓𝖌𝖘𝖍𝖎\nFollow\nr__a__star_00\n꧁༒☬🅰🅳🅸🆃🆈🅰 🅺🅸🆂🅺🆄☬༒꧂\nFollow\nlingaraj_js\nLingaraj Saunshi\nFollow\nsam_sameer_soni_999\n$UMIT ,,$ONI\nFollow\nofficial_raja_chishty\nRaja Chishty\nFollow",
+            "source": "metric_dialog"
+          },
+          "comments": {
+            "state": "measured",
+            "evidence": "No comments yet.",
+            "source": "metric_dialog"
+          },
+          "reshares": {
+            "state": "not_captured",
+            "evidence": "Control located but no reliable numeric value parsed."
+          },
+          "shares": {
+            "state": "not_captured",
+            "evidence": "Control located but no reliable numeric value parsed."
+          }
+        },
+        "likes_visibility": "not_shown",
+        "comments": {
+          "raw": "0",
+          "source": "dom_comments_panel",
+          "label": "No comments yet."
+        }
+      },
+      "capture_checks": {
+        "access_clear": true,
+        "stable": true,
+        "read_passes": 2,
+        "access_attempts": [],
+        "metric_panels": [
+          {
+            "field": "likes",
+            "stable": true,
+            "access_clear": true,
+            "evidence": "Likes\nfun_fineee can see the total number of people who liked this post.\nolivia__3256\nPragya\nFollow\n_zuhaib._1\nZHK💀\nFollow\nvishudhaliwal37\nVishu....editz\nFollow\n___varunnn___22\nVarun Vaidya\nFollow\nkes_havkl\nkeshav 🫶\nFollow\nbanti______________7\nबंटी मिश्र\nFollow\n__piyush__1108\nMr.PiYuSh\nFollow\nguruu_ji_08\nDavid dagor\nFollow\nsujitshilll\n𝒮𝓊𝒿𝒾𝓉 𝒮𝒽𝒾𝓁\nFollow\nkinectic_sahil\nSahil tirath kumar bansal\nFollow\nitz_karan__0x\n𝘬ꪖ𝘳ꪖꪀ🤍\nFollow\nluciferrrr712\nLuciferrrr🧛\nFollow\nsuman_rajbongshi_\n𝕾𝖚𝖒𝖆𝖓 𝖗𝖆𝖏𝖇𝖔𝖓𝖌𝖘𝖍𝖎\nFollow\nr__a__star_00\n꧁༒☬🅰🅳🅸🆃🆈🅰 🅺🅸🆂🅺🆄☬༒꧂\nFollow\nlingaraj_js\nLingaraj Saunshi\nFollow\nsam_sameer_soni_999\n$UMIT ,,$ONI\nFollow\nofficial_raja_chishty\nRaja Chishty\nFollow"
+          },
+          {
+            "field": "comments",
+            "stable": true,
+            "access_clear": true,
+            "evidence": "Comments\nNo comments yet.\nStart the conversation."
+          }
+        ]
+      }
     },
     "last_error": null,
-    "last_attempt_at": "2026-11-05T15:10:03.116Z"
+    "last_attempt_at": "2026-11-14T08:56:48.760Z",
+    "access_review": null,
+    "extraction_review": null,
+    "date_source": "og_description",
+    "reshares": null,
+    "shares": null,
+    "likes_visibility": "not_shown",
+    "analysis_resolution": {
+      "status": "resolved",
+      "source": "explicit_visibility_evidence",
+      "recorded_at": "2026-11-14T08:56:48.760Z",
+      "reason": "Unavailable metrics resolved using explicit visibility evidence or user assessment. Saved observations remain valid; missing values are unknown, not zero.",
+      "unavailable_fields": [
+        "likes"
+      ]
+    }
   },
   {
     "kind": "reel",
@@ -709,39 +1545,107 @@
     "url": "https://www.instagram.com/reel/DdafSisyERU/",
     "grid_views_raw": "229",
     "grid_views_issue": null,
-    "status": "partial",
-    "fetched_at": "2026-11-05T15:10:07.069Z",
+    "status": "metrics_unavailable",
+    "fetched_at": "2026-11-14T08:56:57.412Z",
     "date": "2026-09-17",
     "date_precision": "day",
     "caption": null,
     "hashtags": [],
     "mentions": [],
     "likes": null,
-    "comments": null,
+    "comments": {
+      "value": 0,
+      "raw": "0",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "No comments yet."
+    },
     "views": {
       "value": 229,
       "raw": "229",
       "approximate": false,
       "source": "profile_grid"
     },
-    "thumbnail_url": "https://instagram.fblr1-3.fna.fbcdn.net/v/t51.82787-15/814749952_18025476239911366_654431021560337778_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=fT-1BQSklV0Q7kNvwEmisMz&_nc_oc=Adp6ZPKHdjIO32QW54fVl6jaBV8Mw5Hrm4fiup4NZd59-u1F4Lc9EJ2FlirGtGxqQGaxFh_yI5AMhGboxdJ17wX7&_nc_zt=23&_nc_ht=instagram.fblr1-3.fna&_nc_gid=T42Z0WksQzjAFkoZ5ZnO-A&_nc_ss=7f6a8&oh=00_AQQMqsyWozFei4CCY3UrFWvJQB3MZLzBTOUCWWdrHdBlmA&oe=6AF25E47&ig_cache_key=MDJSQVF6QmdBWmtEQUhFd3BBQU1icEx6d0hpd0VWQ1hLVkdmbzpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
+    "thumbnail_url": "https://instagram.fblr1-3.fna.fbcdn.net/v/t51.82787-15/814749952_18025476239911366_654431021560337778_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=--d_XxN4VoYQ7kNvwGaNZkg&_nc_oc=AdogoQPEyvG9xYxEWLeBTnM-gtgDSl-49JbCekxVc2b50KfeUot8uetsZ9nSzcNWWvnBoWJXDLwSb2fya5e-oggH&_nc_zt=23&_nc_ht=instagram.fblr1-3.fna&_nc_gid=oicfhPvlXj3cGCkrZtuU8g&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQSLszUAkNLmfbdu_4KXTGUv1KZ3nvX_vrwyj5RGSOmJBw&oe=6AFE0387",
     "media_url": null,
     "missing": [
-      "likes",
-      "comments"
+      "likes"
     ],
     "missing_reasons": {
-      "likes": "No readable like count was found on the content page or in its metadata.",
-      "comments": "No readable comment count was found on the content page or in its metadata."
+      "likes": "The like control displayed no numeric like count; nearby comment or reshare counts are not likes."
     },
     "raw": {
       "description": "「🤣🤣🤣\n.....\n....\n.....\n\n#TVアニメ『ONE PIECE』 エルバフ編 最新情報を 発表 & 最新PV公開 オープニング主題歌&エンディ ング主題歌 さらに重要キャラクター「ロキ」の キャスト決定!! 公式最新情報」 - 2026年9月17日、fun_fineee",
-      "article_text": "fun_fineee\n•\nFollow\n🤣🤣🤣\n.....\n....\n.....\n\n#TVアニメ『ONE PIECE』 エルバフ編 最新情報を 発表 & 最新PV公開 オープニング主題歌&エンディ ング主題歌 さらに重要キャラクター「ロキ」の キャスト決定!! 公式最新情報\nLikes\nlizard.wizzard\n•\nFollow\nRadiohead · Let Down\nя бью классные татуировки в питере! смотрите работы в аккаунте @lizard.tatts\n462K\n970\n38.5K",
-      "aria_text": "fun_fineee reels\nfun_fineee reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nlizard.wizzard reels\nlizard.wizzard reels\nAudio image\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
-      "json_ld": {}
+      "article_text": "fun_fineee\nFollow\n🤣🤣🤣\n.....\n....\n.....\n\n#TVアニメ『ONE PIECE』 エルバフ編 最新情報を 発表 & 最新PV公開 オープニング主題歌&エンディ ング主題歌 さらに重要キャラクター「ロキ」の キャスト決定!! 公式最新情報\nSee translation\nLikes\nmaxefrt\nFollow\nAram Bajakian · The Poet's Inner World\nAram Bajakian · The Poet's Inner World\nSteadfast 🗡️\n25.8K\n191\n642\n2,741",
+      "aria_text": "fun_fineee reels\nfun_fineee reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nmaxefrt reels\nmaxefrt reels\nVerified\nAudio image\nLocation\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "availability": {
+          "likes": {
+            "state": "explicitly_hidden",
+            "evidence": "Likes\nfun_fineee can see the total number of people who liked this post.\nsyedsalmanrazashahnaqvi\nSalman Shah\nFollow\nvishwas.vivek\nVisHwäs Acharya\nFollow\nsam_sameer_soni_999\n$UMIT ,,$ONI\nFollow\nbhavukdefaulter\nBhãvűķDëfäüłťěř\nFollow\nshekhar342897\ntiger Abhi Zinda Hai\nFollow\nanuj_chautala_\nचौटाला 𝐣𝐢 ❤️\nFollow\nvishu9041\nVishal Verma\nFollow",
+            "source": "metric_dialog"
+          },
+          "comments": {
+            "state": "measured",
+            "evidence": "No comments yet.",
+            "source": "metric_dialog"
+          },
+          "reshares": {
+            "state": "not_captured",
+            "evidence": "Control located but no reliable numeric value parsed."
+          },
+          "shares": {
+            "state": "not_captured",
+            "evidence": "Control located but no reliable numeric value parsed."
+          }
+        },
+        "likes_visibility": "not_shown",
+        "comments": {
+          "raw": "0",
+          "source": "dom_comments_panel",
+          "label": "No comments yet."
+        }
+      },
+      "capture_checks": {
+        "access_clear": true,
+        "stable": true,
+        "read_passes": 2,
+        "access_attempts": [],
+        "metric_panels": [
+          {
+            "field": "likes",
+            "stable": true,
+            "access_clear": true,
+            "evidence": "Likes\nfun_fineee can see the total number of people who liked this post.\nsyedsalmanrazashahnaqvi\nSalman Shah\nFollow\nvishwas.vivek\nVisHwäs Acharya\nFollow\nsam_sameer_soni_999\n$UMIT ,,$ONI\nFollow\nbhavukdefaulter\nBhãvűķDëfäüłťěř\nFollow\nshekhar342897\ntiger Abhi Zinda Hai\nFollow\nanuj_chautala_\nचौटाला 𝐣𝐢 ❤️\nFollow\nvishu9041\nVishal Verma\nFollow"
+          },
+          {
+            "field": "comments",
+            "stable": true,
+            "access_clear": true,
+            "evidence": "Comments\nNo comments yet.\nStart the conversation."
+          }
+        ]
+      }
     },
     "last_error": null,
-    "last_attempt_at": "2026-11-05T15:10:07.069Z"
+    "last_attempt_at": "2026-11-14T08:56:57.412Z",
+    "access_review": null,
+    "extraction_review": null,
+    "date_source": "og_description_localized",
+    "reshares": null,
+    "shares": null,
+    "likes_visibility": "not_shown",
+    "analysis_resolution": {
+      "status": "resolved",
+      "source": "explicit_visibility_evidence",
+      "recorded_at": "2026-11-14T08:56:57.412Z",
+      "reason": "Unavailable metrics resolved using explicit visibility evidence or user assessment. Saved observations remain valid; missing values are unknown, not zero.",
+      "unavailable_fields": [
+        "likes"
+      ]
+    }
   },
   {
     "kind": "reel",

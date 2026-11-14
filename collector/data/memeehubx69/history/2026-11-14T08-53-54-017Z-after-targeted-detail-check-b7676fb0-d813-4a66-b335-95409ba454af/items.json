@@ -1,0 +1,2262 @@
+[
+  {
+    "kind": "reel",
+    "shortcode": "DeY5crXtbSy",
+    "url": "https://www.instagram.com/reel/DeY5crXtbSy/",
+    "grid_views_raw": "51.9K",
+    "grid_views_issue": null,
+    "status": "partial",
+    "fetched_at": "2026-11-14T08:53:21.221Z",
+    "date": "2026-10-12",
+    "date_precision": "day",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": null,
+    "comments": {
+      "value": 4,
+      "raw": "4",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Comment"
+    },
+    "views": {
+      "value": 51900,
+      "raw": "51.9K",
+      "approximate": true,
+      "source": "profile_grid"
+    },
+    "thumbnail_url": "https://instagram.fblr1-3.fna.fbcdn.net/v/t51.82787-15/849697780_18115372414991214_7958506602361601700_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=dwRT1o1ltFgQ7kNvwHF3G6B&_nc_oc=AdpUoWykBNHwZlRpSKa_j3-n9y1nqDcdOwOCBEEapRmR3w-HHxyLIUi8oDE2M_7-LWMNcFKz_1dmq2a4EGtwN6JU&_nc_zt=23&_nc_ht=instagram.fblr1-3.fna&_nc_gid=Q_KZL8cOd8Wjp4etRVEo8g&_nc_ss=7e6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQRPaHW9ev99HVgCNstuGznNG_NnfW91w6J5A5sDkZZjHA&oe=6AFDE187",
+    "media_url": null,
+    "missing": [
+      "likes"
+    ],
+    "missing_reasons": {
+      "likes": "The like control displayed no numeric like count; nearby comment or reshare counts are not likes."
+    },
+    "raw": {
+      "description": "「#あらゆる追いかけっこを繰り広げる」 - 2026年10月12日、memeehubx69",
+      "article_text": "memeehubx69\nFollow\n#あらゆる追いかけっこを繰り広げる\nLikes\n4\n1\nanuraag__d\nFollow\nLed Zeppelin · Stairway to Heaven (Remaster)\nLed Zeppelin · Stairway to Heaven (Remaster)\ncultural impact\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n#kolkata_calcutta_city #mumbai_diaries #artinmotion #mumbai_ig #indiangods\n\n(viral 2027, reels cinema, filmmaking, cinematography, cinematic, reels viral, 2027 viral, art collective, street visuals, visual art, street collective, art in making, art motion, cinematic visuals, content creators, Mumbai viral, Mumbai reels, Kolkata visual, Kolkata reels, Kolkata viral, Varanasi, gods of india, Indiaj Gods? Varanasi reels, Mumbai reels, art form, crazy visuals, crazy aesthetics)\n3,819\n15\n178\n415",
+      "aria_text": "memeehubx69 reels\nmemeehubx69 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nanuraag__d reels\nanuraag__d reels\nVerified\nAudio image\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "availability": {
+          "likes": {
+            "state": "not_captured",
+            "evidence": "Control located but no reliable numeric value parsed."
+          },
+          "comments": {
+            "state": "measured",
+            "evidence": "Comment"
+          },
+          "reshares": {
+            "state": "measured",
+            "evidence": "Repost"
+          },
+          "shares": {
+            "state": "not_captured",
+            "evidence": "Control located but no reliable numeric value parsed."
+          }
+        },
+        "likes_visibility": "not_shown",
+        "comments": {
+          "raw": "4",
+          "source": "dom_action_control",
+          "label": "Comment"
+        },
+        "reshares": {
+          "raw": "1",
+          "source": "dom_action_control",
+          "label": "Repost"
+        }
+      },
+      "capture_checks": {
+        "access_clear": true,
+        "stable": true,
+        "read_passes": 2,
+        "access_attempts": [],
+        "metric_panels": [
+          {
+            "field": "likes",
+            "stable": false,
+            "access_clear": true,
+            "evidence": "Likes"
+          }
+        ]
+      }
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T08:53:21.223Z",
+    "date_source": "og_description_localized",
+    "reshares": {
+      "value": 1,
+      "raw": "1",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Repost"
+    },
+    "shares": null,
+    "likes_visibility": "not_shown",
+    "analysis_resolution": {
+      "status": "requires_verification",
+      "source": "visible_page_capture",
+      "recorded_at": "2026-11-14T05:14:37.883Z",
+      "reason": "Previous automatic resolution lacked explicit evidence that the metric was hidden or disabled. Saved values retained; extraction requires verification.",
+      "unavailable_fields": [
+        "likes"
+      ],
+      "previous_status": "partial",
+      "policy_checked_at": "2026-11-14T08:26:03.802Z"
+    },
+    "extraction_review": "Metric extraction is incomplete; absence has not been confirmed. Inspect or retry rather than assume hidden counts.",
+    "previous_analysis_resolution": {
+      "status": "resolved",
+      "source": "visible_page_capture",
+      "recorded_at": "2026-11-14T05:14:37.883Z",
+      "reason": "Reel loads but these numeric fields are not exposed in the page or captured metadata. Missing values remain unknown; existing saved observations remain valid.",
+      "unavailable_fields": [
+        "likes"
+      ],
+      "previous_status": "partial"
+    },
+    "access_review": null
+  },
+  {
+    "kind": "reel",
+    "shortcode": "DeY3jxytR7p",
+    "url": "https://www.instagram.com/reel/DeY3jxytR7p/",
+    "grid_views_raw": "43.9K",
+    "grid_views_issue": null,
+    "status": "metrics_unavailable",
+    "fetched_at": "2026-11-14T08:53:30.253Z",
+    "date": "2026-10-12",
+    "date_precision": "day",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": null,
+    "comments": {
+      "value": 0,
+      "raw": "0",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "No comments yet."
+    },
+    "views": {
+      "value": 43900,
+      "raw": "43.9K",
+      "approximate": true,
+      "source": "profile_grid"
+    },
+    "thumbnail_url": "https://instagram.fblr24-2.fna.fbcdn.net/v/t51.82787-15/851331223_18115372462991214_6934592891340793378_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=30Ao-CRRo7UQ7kNvwG9KZj9&_nc_oc=AdqfBy8qN8HCPFCGoUH_L3x92S92mlWKrHpOlr4KoHw1wsyTzJXBHov7HMrC2DXRrSVbN_WEt9VnGWXECvGZezgN&_nc_zt=23&_nc_ht=instagram.fblr24-2.fna&_nc_gid=jDKbJkDfRqJMFmXEG3U2LQ&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQSSM_EvQyFQjVP4gYiigvcePsJ6lqhLbEZ8P2hkt9XTfg&oe=6AFDFA6A",
+    "media_url": null,
+    "missing": [
+      "likes"
+    ],
+    "missing_reasons": {
+      "likes": "The like control displayed no numeric like count; nearby comment or reshare counts are not likes."
+    },
+    "raw": {
+      "description": "「#あらゆる追いかけっこを繰り広げる」 - 2026年10月12日、memeehubx69",
+      "article_text": "memeehubx69\nFollow\n#あらゆる追いかけっこを繰り広げる\nLikes\n2\nshubham2peak\nFollow\nBrah\n4,863\n63\n14\n396",
+      "aria_text": "memeehubx69 reels\nmemeehubx69 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nshubham2peak reels\nshubham2peak reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "availability": {
+          "likes": {
+            "state": "explicitly_hidden",
+            "evidence": "Likes\nmemeehubx69 can see the total number of people who liked this post.\nmanika_grg1\nManika 🎀ྀི\nFollow\n_.pantuaaaa.___\n🐼\nFollow\nanam.offcl\naنam.⭐\nFollow\ntaiyebamuskan\nTaiyeba Muskan\nFollow\nsaniya455727\nit's me.....sanu\nFollow\njasmineparveen308\nJasmin Parvin\nFollow\nyamini_ydv31\nयामिनी यादव✌🏻\nFollow\nfatima_kola26\n✨️فاطمہ کولا✨️\nFollow\n_pvtlifeof.sree_\nরীতশ্রী 🤍\nFollow\nsahil_sharma0909\nसाहिल शर्मा\nFollow\nonlyy.anki_\nA N K I T A\nFollow\n__musfika_mim__\nMusfika Jannat Mim\nFollow\nfurwaharif_274\nFurwah Arif\nFollow\nbaddy.women.99\n♡\nFollow\ntuhin_111_\nTuhin\nFollow\n_itx_afnan\nitx_afnan\nFollow\natiyan__rani_00\nAtiya Rani\nFollow",
+            "source": "metric_dialog"
+          },
+          "comments": {
+            "state": "measured",
+            "evidence": "No comments yet.",
+            "source": "metric_dialog"
+          },
+          "reshares": {
+            "state": "measured",
+            "evidence": "Repost"
+          },
+          "shares": {
+            "state": "not_captured",
+            "evidence": "Control located but no reliable numeric value parsed."
+          }
+        },
+        "likes_visibility": "not_shown",
+        "reshares": {
+          "raw": "2",
+          "source": "dom_action_control",
+          "label": "Repost"
+        },
+        "comments": {
+          "raw": "0",
+          "source": "dom_comments_panel",
+          "label": "No comments yet."
+        }
+      },
+      "capture_checks": {
+        "access_clear": true,
+        "stable": true,
+        "read_passes": 2,
+        "access_attempts": [],
+        "metric_panels": [
+          {
+            "field": "likes",
+            "stable": true,
+            "access_clear": true,
+            "evidence": "Likes\nmemeehubx69 can see the total number of people who liked this post.\nmanika_grg1\nManika 🎀ྀི\nFollow\n_.pantuaaaa.___\n🐼\nFollow\nanam.offcl\naنam.⭐\nFollow\ntaiyebamuskan\nTaiyeba Muskan\nFollow\nsaniya455727\nit's me.....sanu\nFollow\njasmineparveen308\nJasmin Parvin\nFollow\nyamini_ydv31\nयामिनी यादव✌🏻\nFollow\nfatima_kola26\n✨️فاطمہ کولا✨️\nFollow\n_pvtlifeof.sree_\nরীতশ্রী 🤍\nFollow\nsahil_sharma0909\nसाहिल शर्मा\nFollow\nonlyy.anki_\nA N K I T A\nFollow\n__musfika_mim__\nMusfika Jannat Mim\nFollow\nfurwaharif_274\nFurwah Arif\nFollow\nbaddy.women.99\n♡\nFollow\ntuhin_111_\nTuhin\nFollow\n_itx_afnan\nitx_afnan\nFollow\natiyan__rani_00\nAtiya Rani\nFollow"
+          },
+          {
+            "field": "comments",
+            "stable": true,
+            "access_clear": true,
+            "evidence": "Comments\nNo comments yet.\nStart the conversation."
+          }
+        ]
+      }
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T08:53:30.254Z",
+    "date_source": "og_description_localized",
+    "reshares": {
+      "value": 2,
+      "raw": "2",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Repost"
+    },
+    "shares": null,
+    "likes_visibility": "not_shown",
+    "analysis_resolution": {
+      "status": "resolved",
+      "source": "explicit_visibility_evidence",
+      "recorded_at": "2026-11-14T08:53:30.253Z",
+      "reason": "Unavailable metrics resolved using explicit visibility evidence or user assessment. Saved observations remain valid; missing values are unknown, not zero.",
+      "unavailable_fields": [
+        "likes"
+      ],
+      "previous_status": "partial",
+      "policy_checked_at": "2026-11-14T08:26:03.802Z"
+    },
+    "extraction_review": null,
+    "previous_analysis_resolution": {
+      "status": "resolved",
+      "source": "visible_page_capture",
+      "recorded_at": "2026-11-14T05:14:41.956Z",
+      "reason": "Reel loads but these numeric fields are not exposed in the page or captured metadata. Missing values remain unknown; existing saved observations remain valid.",
+      "unavailable_fields": [
+        "likes",
+        "comments"
+      ],
+      "previous_status": "partial"
+    },
+    "access_review": null
+  },
+  {
+    "kind": "reel",
+    "shortcode": "DeO6YXQtEGk",
+    "url": "https://www.instagram.com/reel/DeO6YXQtEGk/",
+    "grid_views_raw": "28.5K",
+    "grid_views_issue": null,
+    "status": "complete",
+    "fetched_at": "2026-11-05T15:14:42.702Z",
+    "date": "2026-10-08",
+    "date_precision": "day",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 906,
+      "raw": "906",
+      "approximate": false,
+      "source": "og_description_localized"
+    },
+    "comments": {
+      "value": 2,
+      "raw": "2",
+      "approximate": false,
+      "source": "og_description_localized"
+    },
+    "views": {
+      "value": 28500,
+      "raw": "28.5K",
+      "approximate": true,
+      "source": "profile_grid"
+    },
+    "thumbnail_url": "https://instagram.fblr24-2.fna.fbcdn.net/v/t51.82787-15/850269536_18115372543991214_1722518841863119828_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=8aEsYvyn684Q7kNvwHPGBkn&_nc_oc=AdokITTrazFSKKqqfAfS6xGvy97WmsSf-tJVv2YtEy_0ryrifbFHblFO8f4fmwecz-S7R1pJ4IJXSvQqe7AqP6nA&_nc_zt=23&_nc_ht=instagram.fblr24-2.fna&_nc_gid=2emRQ5RcgJLe2vsRetbxrg&_nc_ss=7f6a8&oh=00_AQTXu5rCvSEf8znSAgmFpI7feyfX31CYQTkQP-KCAPQCkg&oe=6AF267BA&ig_cache_key=MDJSQVF6Qm1BVnJqSUgxVnRBQUs1ZGRka0h3cDNuRjlRaks2ZzpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
+    "media_url": null,
+    "missing": [],
+    "missing_reasons": {},
+    "raw": {
+      "description": "「#あらゆる追いかけっこを繰り広げる」 - 2026年10月8日、「いいね！」906件、コメント2件 - memeehubx69",
+      "article_text": "memeehubx69\n•\nFollow\n#あらゆる追いかけっこを繰り広げる\n906\n2\n10\nitsgammaworld\n•\nFollow\n•\n•\n•\n•\n•\n•\n•\n#twentyonepilots #dragpath #tøp #musicreels #musicvibes\n76.9K\n181\n7,935",
+      "aria_text": "memeehubx69 reels\nmemeehubx69 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nitsgammaworld reels\nitsgammaworld reels\nVerified\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {}
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-11-05T15:14:42.702Z"
+  },
+  {
+    "kind": "reel",
+    "shortcode": "DeMDoBotKml",
+    "url": "https://www.instagram.com/reel/DeMDoBotKml/",
+    "grid_views_raw": "62.7K",
+    "grid_views_issue": null,
+    "status": "complete",
+    "fetched_at": "2026-11-05T15:14:46.494Z",
+    "date": "2026-10-07",
+    "date_precision": "day",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 395,
+      "raw": "395",
+      "approximate": false,
+      "source": "og_description_localized"
+    },
+    "comments": {
+      "value": 7,
+      "raw": "7",
+      "approximate": false,
+      "source": "og_description_localized"
+    },
+    "views": {
+      "value": 62700,
+      "raw": "62.7K",
+      "approximate": true,
+      "source": "profile_grid"
+    },
+    "thumbnail_url": "https://instagram.fblr24-2.fna.fbcdn.net/v/t51.82787-15/850070324_18115372516991214_8499968004513346231_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=Hlh_YBfNI3gQ7kNvwHCj1-G&_nc_oc=AdpIjgML2uVeqinPjt9UATfnZzXgcsSEthvehbeh_G1uU0P7a4UFvxO-C1GFJGgiUZG2SOOwu-uccbOGtYbejfhu&_nc_zt=23&_nc_ht=instagram.fblr24-2.fna&_nc_gid=SKXHGTkQf7S924bvHF7rPg&_nc_ss=7f6a8&oh=00_AQRCgswbnsPqyiDrn2vejtoy_olCKpjb_m3w-pLfUnKZgA&oe=6AF273BF&ig_cache_key=MDJSQVF6QmpRTHF6SUgxVnRBQU81ZzJkY0gzZlAxZGJjeU5JYzpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
+    "media_url": null,
+    "missing": [],
+    "missing_reasons": {},
+    "raw": {
+      "description": "「#あらゆる追いかけっこを繰り広げる」 - 2026年10月7日、「いいね！」395件、コメント7件 - memeehubx69",
+      "article_text": "memeehubx69\n•\nFollow\n#あらゆる追いかけっこを繰り広げる\n395\n7\n6\nloganntannerr\n•\nFollow\nMac Miller · Cinderella (feat. Ty Dolla $ign)\nMac Miller · Cinderella (feat. Ty Dolla $ign)\nNah, God saw it. I’m good. 🤝\n\n#reels #explore #foryou #fyp\n39.9K\n91\n3,495",
+      "aria_text": "memeehubx69 reels\nmemeehubx69 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nloganntannerr reels\nloganntannerr reels\nVerified\nAudio image\nExplicit\nExplicit\nAudio image\nExplicit\nExplicit\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {}
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-11-05T15:14:46.495Z"
+  },
+  {
+    "kind": "reel",
+    "shortcode": "DeKZpw7tQK1",
+    "url": "https://www.instagram.com/reel/DeKZpw7tQK1/",
+    "grid_views_raw": "167K",
+    "grid_views_issue": null,
+    "status": "complete",
+    "fetched_at": "2026-11-05T15:14:50.692Z",
+    "date": "2026-10-06",
+    "date_precision": "day",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 5353,
+      "raw": "5,353",
+      "approximate": false,
+      "source": "og_description_localized"
+    },
+    "comments": {
+      "value": 34,
+      "raw": "34",
+      "approximate": false,
+      "source": "og_description_localized"
+    },
+    "views": {
+      "value": 167000,
+      "raw": "167K",
+      "approximate": true,
+      "source": "profile_grid"
+    },
+    "thumbnail_url": "https://instagram.fblr1-5.fna.fbcdn.net/v/t51.82787-15/851685995_18115372558991214_2614381279551906849_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=KARIo7i2XacQ7kNvwHq-7ZL&_nc_oc=AdosC7qozpHULFyONnCR1W4Ka01Y454O-ABeVG9nRAyn2Ax7tyowA0MZzNV-bdk8_TewqluDo-ujbrahDUHm1Y0k&_nc_zt=23&_nc_ht=instagram.fblr1-5.fna&_nc_gid=BR3ANZKoKXzB6VqAsLgKow&_nc_ss=7f6a8&oh=00_AQTNPoO1utuiD1DVUyePZb2vA8U_E0xSzi5BX7g7m7nlZg&oe=6AF25E19&ig_cache_key=MDJSQVF6Qm11eXd6SUgxVnRBQUc0LVd0b0g3Q1ZJSkNGa0h4TTpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
+    "media_url": null,
+    "missing": [],
+    "missing_reasons": {},
+    "raw": {
+      "description": "「#あらゆる追いかけっこを繰り広げる」 - 2026年10月6日、「いいね！」5,353件、コメント34件 - memeehubx69",
+      "article_text": "memeehubx69\n•\nFollow\n#あらゆる追いかけっこを繰り広げる\n5,353\n34\n28\nmaxcison\n•\nFollow\nD A N N Y · TAKE ME\nPractice. Presence.\n16.9K\n55\n251",
+      "aria_text": "memeehubx69 reels\nmemeehubx69 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nmaxcison reels\nmaxcison reels\nAudio image\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {}
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-11-05T15:14:50.692Z"
+  },
+  {
+    "kind": "reel",
+    "shortcode": "DeKIoBntfSR",
+    "url": "https://www.instagram.com/reel/DeKIoBntfSR/",
+    "grid_views_raw": "76.9K",
+    "grid_views_issue": null,
+    "status": "complete",
+    "fetched_at": "2026-11-05T15:14:54.607Z",
+    "date": "2026-10-06",
+    "date_precision": "day",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 2132,
+      "raw": "2,132",
+      "approximate": false,
+      "source": "og_description_localized"
+    },
+    "comments": {
+      "value": 62,
+      "raw": "62",
+      "approximate": false,
+      "source": "og_description_localized"
+    },
+    "views": {
+      "value": 76900,
+      "raw": "76.9K",
+      "approximate": true,
+      "source": "profile_grid"
+    },
+    "thumbnail_url": "https://instagram.fblr24-1.fna.fbcdn.net/v/t51.82787-15/851837016_18115372657991214_6904748133299413085_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=YTvaetg2GAoQ7kNvwFgAHlA&_nc_oc=AdqG_Sez-zjzAYHd6RWKGuSZOs9g8UMCxSdhy0Y9_fQ-bGhOuc_-6H21_VjJG-wjd7sqasFWiE4o3Xc9Q50c334p&_nc_zt=23&_nc_ht=instagram.fblr24-1.fna&_nc_gid=tDpINRrPK3enevEAnDPOGg&_nc_ss=7f6a8&oh=00_AQTVEDo75fD1jjt3CuqmelRcMKWTsTNpFE8V8kT6ILzdLw&oe=6AF27CC1&ig_cache_key=MDJSQVF6QmxnQXhqSUgxVnRBQUM3ZVFPQUgySmZTWDExZzJpUTpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
+    "media_url": null,
+    "missing": [],
+    "missing_reasons": {},
+    "raw": {
+      "description": "「#あらゆる追いかけっこを繰り広げる」 - 2026年10月6日、「いいね！」2,132件、コメント62件 - memeehubx69",
+      "article_text": "memeehubx69\n•\nFollow\n#あらゆる追いかけっこを繰り広げる\n2,132\n62\n30\nbish.op\n•\nFollow\nCrystal Castles · Vanished\ndoes my work look like video games?\n-\n#creativephotography #photography #photographer #editorial #explore\n198K\n221\n4,306",
+      "aria_text": "memeehubx69 reels\nmemeehubx69 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nbish.op reels\nbish.op reels\nAudio image\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {}
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-11-05T15:14:54.607Z"
+  },
+  {
+    "kind": "reel",
+    "shortcode": "DeJNxc2vSpt",
+    "url": "https://www.instagram.com/reel/DeJNxc2vSpt/",
+    "grid_views_raw": "129K",
+    "grid_views_issue": null,
+    "status": "complete",
+    "fetched_at": "2026-11-05T15:14:58.446Z",
+    "date": "2026-10-06",
+    "date_precision": "day",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 2910,
+      "raw": "2,910",
+      "approximate": false,
+      "source": "og_description_localized"
+    },
+    "comments": {
+      "value": 93,
+      "raw": "93",
+      "approximate": false,
+      "source": "og_description_localized"
+    },
+    "views": {
+      "value": 129000,
+      "raw": "129K",
+      "approximate": true,
+      "source": "profile_grid"
+    },
+    "thumbnail_url": "https://instagram.fblr24-1.fna.fbcdn.net/v/t51.82787-15/852644202_18115372696991214_6986740283651263838_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=oUhFLCBx4pMQ7kNvwHGsXMM&_nc_oc=AdqpUIz-B2W1lEbpYLHLPEfMX4ezXbsFqyyc6DsBZnMIpntE_tcoAHHdEFND-_yjZjcS8kXRjzubAsGJkP6uUpZ-&_nc_zt=23&_nc_ht=instagram.fblr24-1.fna&_nc_gid=9HOkwIT8nUJy7b3xUBzt8A&_nc_ss=7f6a8&oh=00_AQQWX2geh5_hKaZZDqf7EfOCObFsgSBwM7wUI8HCxjlfHQ&oe=6AF27A65&ig_cache_key=MDJSQVF6Qm1wUjBqSUgxVnRBQU83MWtfSUhSZVAxWUY0TjhrZzpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
+    "media_url": null,
+    "missing": [],
+    "missing_reasons": {},
+    "raw": {
+      "description": "「#あらゆる追いかけっこを繰り広げる」 - 2026年10月6日、「いいね！」2,910件、コメント93件 - memeehubx69",
+      "article_text": "memeehubx69\n•\nFollow\n#あらゆる追いかけっこを繰り広げる\n2,910\n93\n91\ngavin.ward_\n•\nFollow\nLove is in the air.. #obsessionmovie #guitartutorial\n12.6K\n19\n656",
+      "aria_text": "memeehubx69 reels\nmemeehubx69 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\ngavin.ward_ reels\ngavin.ward_ reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {}
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-11-05T15:14:58.446Z"
+  },
+  {
+    "kind": "reel",
+    "shortcode": "DeG48drNOZP",
+    "url": "https://www.instagram.com/reel/DeG48drNOZP/",
+    "grid_views_raw": "24.3K",
+    "grid_views_issue": null,
+    "status": "complete",
+    "fetched_at": "2026-11-05T15:15:02.263Z",
+    "date": "2026-10-05",
+    "date_precision": "day",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 1178,
+      "raw": "1,178",
+      "approximate": false,
+      "source": "og_description_localized"
+    },
+    "comments": {
+      "value": 7,
+      "raw": "7",
+      "approximate": false,
+      "source": "og_description_localized"
+    },
+    "views": {
+      "value": 24300,
+      "raw": "24.3K",
+      "approximate": true,
+      "source": "profile_grid"
+    },
+    "thumbnail_url": "https://instagram.fblr1-5.fna.fbcdn.net/v/t51.82787-15/849396833_18115372864991214_4464713797515078634_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=ydNQZvQbNGQQ7kNvwHyWdea&_nc_oc=Adpv9Cm1dcLokKf9UIDYIEarLDKl7ym9P8Fm4Bm-_WZ7602_SPAWbfGDS_7e_-4oqU3R9yjUih0p58y5FNfBJXif&_nc_zt=23&_nc_ht=instagram.fblr1-5.fna&_nc_gid=3ZAe_EJhIa7cLR36WTymBw&_nc_ss=7f6a8&oh=00_AQQtENL3IV4yR_s3AZoh8qraZxxeXBtZtGSfmVGdWxaR3w&oe=6AF2759F&ig_cache_key=MDJSQVF6Qm1IRW9ESUgxVnRBQU81dmxfd0hpOW4xUGVycnF6UTpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
+    "media_url": null,
+    "missing": [],
+    "missing_reasons": {},
+    "raw": {
+      "description": "「#あらゆる追いかけっこを繰り広げる」 - 2026年10月5日、「いいね！」1,178件、コメント7件 - memeehubx69",
+      "article_text": "memeehubx69\n•\nFollow\n#あらゆる追いかけっこを繰り広げる\n1,178\n7\n23\nsamromeugtr\n•\nFollow\nLondon, United Kingdom\nRadiohead moment\n\n#guitarcover\n105K\n172\n5,485",
+      "aria_text": "memeehubx69 reels\nmemeehubx69 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nsamromeugtr reels\nsamromeugtr reels\nLocation\nLocation\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {}
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-11-05T15:15:02.263Z"
+  },
+  {
+    "kind": "reel",
+    "shortcode": "DeFLQQyNeed",
+    "url": "https://www.instagram.com/reel/DeFLQQyNeed/",
+    "grid_views_raw": "1.6M",
+    "grid_views_issue": null,
+    "status": "complete",
+    "fetched_at": "2026-11-05T15:15:06.117Z",
+    "date": "2026-10-04",
+    "date_precision": "day",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 69000,
+      "raw": "69K",
+      "approximate": true,
+      "source": "og_description_localized"
+    },
+    "comments": {
+      "value": 361,
+      "raw": "361",
+      "approximate": false,
+      "source": "og_description_localized"
+    },
+    "views": {
+      "value": 1600000,
+      "raw": "1.6M",
+      "approximate": true,
+      "source": "profile_grid"
+    },
+    "thumbnail_url": "https://instagram.fblr24-3.fna.fbcdn.net/v/t51.82787-15/850726879_18115372915991214_8419920623956393472_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=ZhftXeEymf4Q7kNvwFNxlrF&_nc_oc=AdoOVEvY0zRx2IXxvYTX350i1bH2zrcY6DTbyXfbdl6jePmFUXHdTaZoBIq7RSE91JUdBuSHhvu0_cD5yTRqHiso&_nc_zt=23&_nc_ht=instagram.fblr24-3.fna&_nc_gid=Ca8Frxv13w48FO_clToTVg&_nc_ss=7f6a8&oh=00_AQT6elT1ZkL20wMCla1W3N0KARX3kzZpePFEnyBlUHcz0Q&oe=6AF283C2&ig_cache_key=MDJSQVF6QnQ4UHRUSUgxVnRBQUs2aW9lOEhNcEhaZEFEXzUyTTpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
+    "media_url": null,
+    "missing": [],
+    "missing_reasons": {},
+    "raw": {
+      "description": "「#あらゆる追いかけっこを繰り広げる」 - 2026年10月4日、「いいね！」69K件、コメント361件 - memeehubx69",
+      "article_text": "memeehubx69\n•\nFollow\n#あらゆる追いかけっこを繰り広げる\n68.8K\n361\n2,267\nvladmikaelson\n•\nFollow\n@twentyonepilots performing Drag Path at @electriccastle was an outer body experience 😭😭😭\n58.6K\n176\n3,535",
+      "aria_text": "memeehubx69 reels\nmemeehubx69 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nvladmikaelson reels\nvladmikaelson reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {}
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-11-05T15:15:06.117Z"
+  },
+  {
+    "kind": "reel",
+    "shortcode": "DeESEtatqB0",
+    "url": "https://www.instagram.com/reel/DeESEtatqB0/",
+    "grid_views_raw": "114K",
+    "grid_views_issue": null,
+    "status": "complete",
+    "fetched_at": "2026-11-05T15:15:10.098Z",
+    "date": "2026-10-04",
+    "date_precision": "day",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 7039,
+      "raw": "7,039",
+      "approximate": false,
+      "source": "og_description_localized"
+    },
+    "comments": {
+      "value": 11,
+      "raw": "11",
+      "approximate": false,
+      "source": "og_description_localized"
+    },
+    "views": {
+      "value": 114000,
+      "raw": "114K",
+      "approximate": true,
+      "source": "profile_grid"
+    },
+    "thumbnail_url": "https://instagram.fblr1-10.fna.fbcdn.net/v/t51.82787-15/852558653_18115373164991214_3479929558472545799_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=9XrwTjNmJi4Q7kNvwFVf69N&_nc_oc=AdrukOHFppBs9HHDSN39XIfThDFgKyo9InFBTMe9IIZtD63OQZ0C_QSvaua7d_cmScBA4MYenpbG_275QZZsLe3X&_nc_zt=23&_nc_ht=instagram.fblr1-10.fna&_nc_gid=E0HVW86wAiBlrpIYxJUmyw&_nc_ss=7f6a8&oh=00_AQQhBg0OTd4QTc6x_EYMRcy6comr43EocvI34FjOapGxfA&oe=6AF25417&ig_cache_key=MDJSQVF6QmowRDBUSUgxVnRBQU80U2VmNEhmakZMTUFkV0ktZzpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
+    "media_url": null,
+    "missing": [],
+    "missing_reasons": {},
+    "raw": {
+      "description": "「#あらゆる追いかけっこを繰り広げる」 - 2026年10月4日、「いいね！」7,039件、コメント11件 - memeehubx69",
+      "article_text": "memeehubx69\n•\nFollow\n#あらゆる追いかけっこを繰り広げる\n7,039\n11\n36\ngavin.ward_\n•\nFollow\nLove is in the air.. #obsessionmovie #guitartutorial\n12.6K\n19\n656",
+      "aria_text": "memeehubx69 reels\nmemeehubx69 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\ngavin.ward_ reels\ngavin.ward_ reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {}
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-11-05T15:15:10.098Z"
+  },
+  {
+    "kind": "reel",
+    "shortcode": "DeCs9zwNNki",
+    "url": "https://www.instagram.com/reel/DeCs9zwNNki/",
+    "grid_views_raw": "1.1M",
+    "grid_views_issue": null,
+    "status": "complete",
+    "fetched_at": "2026-11-05T15:15:14.109Z",
+    "date": "2026-10-03",
+    "date_precision": "day",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 42000,
+      "raw": "42K",
+      "approximate": true,
+      "source": "og_description_localized"
+    },
+    "comments": {
+      "value": 359,
+      "raw": "359",
+      "approximate": false,
+      "source": "og_description_localized"
+    },
+    "views": {
+      "value": 1100000,
+      "raw": "1.1M",
+      "approximate": true,
+      "source": "profile_grid"
+    },
+    "thumbnail_url": "https://instagram.fblr24-1.fna.fbcdn.net/v/t51.82787-15/850098265_18115373287991214_7395875227626535426_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=kyXFRld8uY8Q7kNvwEEb5Kw&_nc_oc=AdrK2mDFIlORDjOBH8dQKFcoP18dsw8TrQIgGMiyj8OcqzO2GyA0Pg0tVkXvk4OnjYfbkEQb3qOcNBB1XmQxJ1z5&_nc_zt=23&_nc_ht=instagram.fblr24-1.fna&_nc_gid=PK-O_XtVUla1pDD0QVfQyg&_nc_ss=7f6a8&oh=00_AQTvgA2kkRnC8CG624csgSxhyYWiFYHsTos2j1LSEGliMQ&oe=6AF26466&ig_cache_key=MDJSQVF6QmxsNHF6SUgxbHRBQUs3bnpRVUhWVzJqWmdKNnlxRTpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
+    "media_url": null,
+    "missing": [],
+    "missing_reasons": {},
+    "raw": {
+      "description": "「#あらゆる追いかけっこを繰り広げる」 - 2026年10月3日、「いいね！」42K件、コメント359件 - memeehubx69",
+      "article_text": "memeehubx69\n•\nFollow\nSaad Lamjarred · Mal Hbibi\n#あらゆる追いかけっこを繰り広げる\n41.6K\n359\n800\nbish.op\n•\nFollow\nCrystal Castles · Vanished\ndoes my work look like video games?\n-\n#creativephotography #photography #photographer #editorial #explore\n198K\n221\n4,308",
+      "aria_text": "memeehubx69 reels\nmemeehubx69 reels\nAudio image\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nbish.op reels\nbish.op reels\nAudio image\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {}
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-11-05T15:15:14.109Z"
+  },
+  {
+    "kind": "reel",
+    "shortcode": "DeAUw5ytJGl",
+    "url": "https://www.instagram.com/reel/DeAUw5ytJGl/",
+    "grid_views_raw": "961K",
+    "grid_views_issue": null,
+    "status": "complete",
+    "fetched_at": "2026-11-05T15:15:18.023Z",
+    "date": "2026-10-02",
+    "date_precision": "day",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 17000,
+      "raw": "17K",
+      "approximate": true,
+      "source": "og_description_localized"
+    },
+    "comments": {
+      "value": 157,
+      "raw": "157",
+      "approximate": false,
+      "source": "og_description_localized"
+    },
+    "views": {
+      "value": 961000,
+      "raw": "961K",
+      "approximate": true,
+      "source": "profile_grid"
+    },
+    "thumbnail_url": "https://instagram.fblr1-7.fna.fbcdn.net/v/t51.82787-15/851685905_18115373719991214_277158450024289304_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=Fq1ubQXiZXoQ7kNvwHtFFMS&_nc_oc=Adqkm0LHCMYplPa_56s8fjixwoVEqQt1X1m_M0VG3lSsY3SZjZQoZzHzIhul_U0sHaeWaIRQWvQqZGWdfMfLC64G&_nc_zt=23&_nc_ht=instagram.fblr1-7.fna&_nc_gid=4szGsB99oZ7DqyqSluR_gg&_nc_ss=7f6a8&oh=00_AQQeh9pBA37JC_2YljqzdqxA4r6LLor6CEVS8dwxFkfD0Q&oe=6AF2595F&ig_cache_key=MDJSQVF6QmhHeXd6SUgxbHRBQUs2empSOEhKS3JZQXhnVU1sQTpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
+    "media_url": null,
+    "missing": [],
+    "missing_reasons": {},
+    "raw": {
+      "description": "「#あらゆる追いかけっこを繰り広げる」 - 2026年10月2日、「いいね！」17K件、コメント157件 - memeehubx69",
+      "article_text": "memeehubx69\n•\nFollow\n#あらゆる追いかけっこを繰り広げる\n17K\n157\n134\ndang_richy\n•\nFollow\nNo caption today\n#animation #relatable #reels #artist #trending\n71.2K\n526\n3,387",
+      "aria_text": "memeehubx69 reels\nmemeehubx69 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\ndang_richy reels\ndang_richy reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {}
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-11-05T15:15:18.023Z"
+  },
+  {
+    "kind": "reel",
+    "shortcode": "Dd8Q0LPNLMF",
+    "url": "https://www.instagram.com/reel/Dd8Q0LPNLMF/",
+    "grid_views_raw": "148K",
+    "grid_views_issue": null,
+    "status": "complete",
+    "fetched_at": "2026-11-05T15:15:22.245Z",
+    "date": "2026-09-30",
+    "date_precision": "day",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 5125,
+      "raw": "5,125",
+      "approximate": false,
+      "source": "og_description_localized"
+    },
+    "comments": {
+      "value": 67,
+      "raw": "67",
+      "approximate": false,
+      "source": "og_description_localized"
+    },
+    "views": {
+      "value": 148000,
+      "raw": "148K",
+      "approximate": true,
+      "source": "profile_grid"
+    },
+    "thumbnail_url": "https://instagram.fblr1-5.fna.fbcdn.net/v/t51.82787-15/851222233_18115373770991214_7991457374422507133_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=DKUpl5wRg_YQ7kNvwGf9Usb&_nc_oc=AdqmZWQSJGpU4dLa33bAJfUbp-hBwqThwpZO4bvKcIndbGTZCgMMR2nZbQ0X6UcK0UMRX5huZlvpIOkKeE3L4keD&_nc_zt=23&_nc_ht=instagram.fblr1-5.fna&_nc_gid=PP1yszhPAE6pOqzV3tn8jg&_nc_ss=7f6a8&oh=00_AQQGm0qc5xwWkz6JlapkOdhnpVwFl9_-9VIKUoJMnHtN5Q&oe=6AF26E82&ig_cache_key=MDJSQVF6QnRtZXZESUgxbHRBQUc3bWx5SUhKRnpuYm4wZUlUZzpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
+    "media_url": null,
+    "missing": [],
+    "missing_reasons": {},
+    "raw": {
+      "description": "「#あらゆる追いかけっこを繰り広げる」 - 2026年9月30日、「いいね！」5,125件、コメント67件 - memeehubx69",
+      "article_text": "memeehubx69\n•\nFollow\n#あらゆる追いかけっこを繰り広げる\n5,125\n67\n36\ngregotero\n•\nFollow\nPrince & The Revolution · Purple Rain (2015 Paisley Park Remaster)\nPrince & The Revolution · Purple Rain (2015 Paisley Park Remaster)\nSteel is real. #cycling #cyclinglife #roadcycling #vintagebike\n964\n12\n23",
+      "aria_text": "memeehubx69 reels\nmemeehubx69 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\ngregotero reels\ngregotero reels\nAudio image\nExplicit\nExplicit\nAudio image\nExplicit\nExplicit\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {}
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-11-05T15:15:22.245Z"
+  },
+  {
+    "kind": "reel",
+    "shortcode": "Dd7KbI0NmtZ",
+    "url": "https://www.instagram.com/reel/Dd7KbI0NmtZ/",
+    "grid_views_raw": "197K",
+    "grid_views_issue": null,
+    "status": "complete",
+    "fetched_at": "2026-11-05T15:15:26.095Z",
+    "date": "2026-09-30",
+    "date_precision": "day",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 17000,
+      "raw": "17K",
+      "approximate": true,
+      "source": "og_description_localized"
+    },
+    "comments": {
+      "value": 195,
+      "raw": "195",
+      "approximate": false,
+      "source": "og_description_localized"
+    },
+    "views": {
+      "value": 197000,
+      "raw": "197K",
+      "approximate": true,
+      "source": "profile_grid"
+    },
+    "thumbnail_url": "https://instagram.fblr24-4.fna.fbcdn.net/v/t51.82787-15/850032146_18115373824991214_5409773838115740086_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=neHsZerCc78Q7kNvwG90F9f&_nc_oc=AdpbePc5KgI_-H8qYNkfD5i9Tsz5iX7DX-zOGZNtC3rbNi1mCkhg8Qzc_kXS3kqBwoimUktyf5MKWX-2iBtYluBn&_nc_zt=23&_nc_ht=instagram.fblr24-4.fna&_nc_gid=-VAS60o7K3Vae9_AuX7JxQ&_nc_ss=7f6a8&oh=00_AQTvxilYEqX844B1_0ZRVANXOltv8gURDXp1a8wJUJmk_Q&oe=6AF28546&ig_cache_key=MDJSQVF6QmhKMnFqSUgxbHRBQU83Znp5VUhwR0FUUzdZWkY4QTpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
+    "media_url": null,
+    "missing": [],
+    "missing_reasons": {},
+    "raw": {
+      "description": "「#あらゆる追いかけっこを繰り広げる」 - 2026年9月30日、「いいね！」17K件、コメント195件 - memeehubx69",
+      "article_text": "memeehubx69\n•\nFollow\n#あらゆる追いかけっこを繰り広げる\n16.9K\n195\n199\nnatavvva\n•\nFollow\nASCEND · Under Your Spell (Slowed)\nASCEND · Under Your Spell (Slowed)\ngame over❤️‍🩹\n\n#cycling #cyclistgirl #pinarello #heels\n1,594\n11\n46",
+      "aria_text": "memeehubx69 reels\nmemeehubx69 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nnatavvva reels\nnatavvva reels\nAudio image\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {}
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-11-05T15:15:26.095Z"
+  },
+  {
+    "kind": "reel",
+    "shortcode": "Dd62PW_te4L",
+    "url": "https://www.instagram.com/reel/Dd62PW_te4L/",
+    "grid_views_raw": "13.6K",
+    "grid_views_issue": null,
+    "status": "complete",
+    "fetched_at": "2026-11-05T15:15:30.771Z",
+    "date": "2026-09-30",
+    "date_precision": "day",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 121,
+      "raw": "121",
+      "approximate": false,
+      "source": "og_description_localized"
+    },
+    "comments": {
+      "value": 0,
+      "raw": "0",
+      "approximate": false,
+      "source": "og_description_localized"
+    },
+    "views": {
+      "value": 13600,
+      "raw": "13.6K",
+      "approximate": true,
+      "source": "profile_grid"
+    },
+    "thumbnail_url": "https://instagram.fblr1-9.fna.fbcdn.net/v/t51.82787-15/851843604_18115373857991214_5163161528657226077_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=N2_RJlOIROUQ7kNvwHdvXd5&_nc_oc=Adqg00si7lVchm_YtAMp6aXNJjKRd9wlChw2E43-Jqnz4mjwA9miLsYHh_W8Ws8cu3GyndEgDRHO12R9HOaMpR56&_nc_zt=23&_nc_ht=instagram.fblr1-9.fna&_nc_gid=3oMuXBJkQ2Y-OlCje-aIew&_nc_ss=7f6a8&oh=00_AQTrzFncr7BvblF5bEwsng90tgGM1N8TurgfMz2Shy4VYg&oe=6AF2575C&ig_cache_key=MDJSQVF6QmhRYXhqSUgxbHRBQUM1cXh5Y0hEanluUjEycGt3RTpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
+    "media_url": null,
+    "missing": [],
+    "missing_reasons": {},
+    "raw": {
+      "description": "「#あらゆる追いかけっこを繰り広げる」 - 2026年9月30日、「いいね！」121件、コメント0件 - memeehubx69",
+      "article_text": "memeehubx69\n•\nFollow\n#あらゆる追いかけっこを繰り広げる\n121\n2\niamdaanschel\n•\nFollow\nJAŸ-Z · 03' Bonnie & Clyde (feat. Beyoncé Knowles)\nJAŸ-Z · 03' Bonnie & Clyde (feat. Beyoncé Knowles)\n28.6K\n79\n610",
+      "aria_text": "memeehubx69 reels\nmemeehubx69 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\niamdaanschel reels\niamdaanschel reels\nAudio image\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {}
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-11-05T15:15:30.771Z"
+  },
+  {
+    "kind": "reel",
+    "shortcode": "Dd5u6asNMG6",
+    "url": "https://www.instagram.com/reel/Dd5u6asNMG6/",
+    "grid_views_raw": "39.7K",
+    "grid_views_issue": null,
+    "status": "complete",
+    "fetched_at": "2026-11-05T15:15:34.643Z",
+    "date": "2026-09-29",
+    "date_precision": "day",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 1246,
+      "raw": "1,246",
+      "approximate": false,
+      "source": "og_description_localized"
+    },
+    "comments": {
+      "value": 53,
+      "raw": "53",
+      "approximate": false,
+      "source": "og_description_localized"
+    },
+    "views": {
+      "value": 39700,
+      "raw": "39.7K",
+      "approximate": true,
+      "source": "profile_grid"
+    },
+    "thumbnail_url": "https://instagram.fblr1-5.fna.fbcdn.net/v/t51.82787-15/851891484_18115373905991214_4737251885265320264_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=YRU6veRCDSEQ7kNvwG8zqQF&_nc_oc=AdrOc5tUYbzL5tK-r2uuYRp2uwpq4yEsgLtZglQvD5_o_r8D6BWxh-cxC699rjltb6VTcvYyQmYxQ1HZcriY_nEC&_nc_zt=23&_nc_ht=instagram.fblr1-5.fna&_nc_gid=H__Xe6twVfckG4EKkwMABQ&_nc_ss=7f6a8&oh=00_AQQJf15ka6_ke59-214WdXIDJT5nOSA6QOxuOsb1Ci8dKQ&oe=6AF255F5&ig_cache_key=MDJSQVF6Qmh6VnhqSUgxbHRBQUM3V295b0hmUm1fUVVqNXlaZzpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
+    "media_url": null,
+    "missing": [],
+    "missing_reasons": {},
+    "raw": {
+      "description": "「#あらゆる追いかけっこを繰り広げる」 - 2026年9月29日、「いいね！」1,246件、コメント53件 - memeehubx69",
+      "article_text": "memeehubx69\n•\nFollow\n#あらゆる追いかけっこを繰り広げる\n1,246\n53\n47\niamdaanschel\n•\nFollow\nJAŸ-Z · 03' Bonnie & Clyde (feat. Beyoncé Knowles)\nJAŸ-Z · 03' Bonnie & Clyde (feat. Beyoncé Knowles)\n28.6K\n79\n610",
+      "aria_text": "memeehubx69 reels\nmemeehubx69 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\niamdaanschel reels\niamdaanschel reels\nAudio image\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {}
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-11-05T15:15:34.643Z"
+  },
+  {
+    "kind": "reel",
+    "shortcode": "Dd4qKGLNCFs",
+    "url": "https://www.instagram.com/reel/Dd4qKGLNCFs/",
+    "grid_views_raw": "139K",
+    "grid_views_issue": null,
+    "status": "complete",
+    "fetched_at": "2026-11-05T15:15:38.722Z",
+    "date": "2026-09-29",
+    "date_precision": "day",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 5266,
+      "raw": "5,266",
+      "approximate": false,
+      "source": "og_description_localized"
+    },
+    "comments": {
+      "value": 119,
+      "raw": "119",
+      "approximate": false,
+      "source": "og_description_localized"
+    },
+    "views": {
+      "value": 139000,
+      "raw": "139K",
+      "approximate": true,
+      "source": "profile_grid"
+    },
+    "thumbnail_url": "https://instagram.fblr1-5.fna.fbcdn.net/v/t51.82787-15/849058209_18115373950991214_8683071934666325027_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=bCpGKgFPnrUQ7kNvwEw6OAv&_nc_oc=Adp6-WKyNDwfnwraI_M1UE4ZRzeFW6kCnqJWq2BrVAnp2_jG0UITtWG-mXYJxM0acA6b_OYoqgbplcSacTqfoxdI&_nc_zt=23&_nc_ht=instagram.fblr1-5.fna&_nc_gid=1MZw1EEzNqVofMlQEYFucA&_nc_ss=7f6a8&oh=00_AQRpOGSb8kEB2_0Eadxm7OER5Qp3thHrbgwBGcK7m-dD2g&oe=6AF27CEA&ig_cache_key=MDJSQVF6QnFHWm16SUgxbHRBQUc1N1VpMEg2M2VBZUNNODgzQTpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
+    "media_url": null,
+    "missing": [],
+    "missing_reasons": {},
+    "raw": {
+      "description": "「#あらゆる追いかけっこを繰り広げる」 - 2026年9月29日、「いいね！」5,266件、コメント119件 - memeehubx69",
+      "article_text": "memeehubx69\n•\nFollow\n#あらゆる追いかけっこを繰り広げる\n5,266\n119\n103\nbish.op\n•\nFollow\nCrystal Castles · Vanished\ndoes my work look like video games?\n-\n#creativephotography #photography #photographer #editorial #explore\n198K\n221\n4,311",
+      "aria_text": "memeehubx69 reels\nmemeehubx69 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nbish.op reels\nbish.op reels\nAudio image\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {}
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-11-05T15:15:38.722Z"
+  },
+  {
+    "kind": "reel",
+    "shortcode": "Dd4AXETtGII",
+    "url": "https://www.instagram.com/reel/Dd4AXETtGII/",
+    "grid_views_raw": "16.3K",
+    "grid_views_issue": null,
+    "status": "complete",
+    "fetched_at": "2026-11-05T15:15:43.146Z",
+    "date": "2026-09-29",
+    "date_precision": "day",
+    "caption": "#あらゆる追いかけっこを繰り広げる",
+    "hashtags": [
+      "#あらゆる追いかけっこを繰り広げる"
+    ],
+    "mentions": [],
+    "likes": {
+      "value": 388,
+      "raw": "388",
+      "approximate": false,
+      "source": "og_description"
+    },
+    "comments": {
+      "value": 1,
+      "raw": "1",
+      "approximate": false,
+      "source": "og_description"
+    },
+    "views": {
+      "value": 16300,
+      "raw": "16.3K",
+      "approximate": true,
+      "source": "profile_grid"
+    },
+    "thumbnail_url": "https://instagram.fblr1-6.fna.fbcdn.net/v/t51.82787-15/850070327_18115374100991214_2347609236024265078_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=yQy6TWxjoa0Q7kNvwGw9-01&_nc_oc=AdoH8fRQWpNsWGMdrOlRAXbqEJgv1SD6wKwJiSTDTiJP4dkn7UcTdFEkGZ9ZH5s6XC_T-ZpGH0kPgPLav3CXjTH8&_nc_zt=23&_nc_ht=instagram.fblr1-6.fna&_nc_gid=YA0PvnOfFtZ-Su00N83log&_nc_ss=7f6a8&oh=00_AQRi614W-anhUahsG6xu6QgpoJ-pdfVOJuFFkJjw8QfJHA&oe=6AF254D9&ig_cache_key=MDJSQVF6QmpjTHF6SUgxbHRBQU81TVF6WUhLV0tVSUhZSnAzZzpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
+    "media_url": null,
+    "missing": [],
+    "missing_reasons": {},
+    "raw": {
+      "description": "388 likes, 1 comments - memeehubx69 on September 29, 2026: \"#あらゆる追いかけっこを繰り広げる\". ",
+      "article_text": "memeehubx69\n•\nFollow\n#あらゆる追いかけっこを繰り広げる\n388\n1\n9\nitsgammaworld\n•\nFollow\n•\n•\n•\n•\n•\n•\n•\n#twentyonepilots #dragpath #tøp #musicreels #musicvibes\n77K\n181\n7,942",
+      "aria_text": "memeehubx69 reels\nmemeehubx69 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nitsgammaworld reels\nitsgammaworld reels\nVerified\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {}
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-11-05T15:15:43.146Z"
+  },
+  {
+    "kind": "reel",
+    "shortcode": "Dd3m63gNpJp",
+    "url": "https://www.instagram.com/reel/Dd3m63gNpJp/",
+    "grid_views_raw": "1.1M",
+    "grid_views_issue": null,
+    "status": "complete",
+    "fetched_at": "2026-11-05T15:15:46.955Z",
+    "date": "2026-09-29",
+    "date_precision": "day",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 53000,
+      "raw": "53K",
+      "approximate": true,
+      "source": "og_description_localized"
+    },
+    "comments": {
+      "value": 169,
+      "raw": "169",
+      "approximate": false,
+      "source": "og_description_localized"
+    },
+    "views": {
+      "value": 1100000,
+      "raw": "1.1M",
+      "approximate": true,
+      "source": "profile_grid"
+    },
+    "thumbnail_url": "https://instagram.fblr1-5.fna.fbcdn.net/v/t51.82787-15/851718614_18115374121991214_2786713922460465474_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=_eBaanaoSF4Q7kNvwHHscGV&_nc_oc=Adpq4Am6t9Euqkahg5sVTQGGEp29CRtWXViGuOzlFVvXqg8dmSNbSj2bzprpFkU2V93ka53lN6o4AtlNPg9-ioQ3&_nc_zt=23&_nc_ht=instagram.fblr1-5.fna&_nc_gid=HwM75Wj9winR1Nuedh5lKw&_nc_ss=7f6a8&oh=00_AQSE_4bXCmcDzox3YTlLOJqeh7nbwujweZa2XNrgh3fNbA&oe=6AF28C03&ig_cache_key=MDJSQVF6QnRZeHhESUgxbHRBQUM2OGd6Y0hqR1dzSmtJNTVENDpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
+    "media_url": null,
+    "missing": [],
+    "missing_reasons": {},
+    "raw": {
+      "description": "「#あらゆる追いかけっこを繰り広げる」 - 2026年9月29日、「いいね！」53K件、コメント169件 - memeehubx69",
+      "article_text": "memeehubx69\n•\nFollow\n#あらゆる追いかけっこを繰り広げる\n53.2K\n169\n253\ngazi_screams\n•\nFollow\nFollow and DM for 1-on-1 Vocal Lessons\n#queen #freddie #bohemianrhapsody #freddiemercury #vocalcoach\n28.4K\n564\n1,257",
+      "aria_text": "memeehubx69 reels\nmemeehubx69 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\ngazi_screams reels\ngazi_screams reels\nVerified\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {}
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-11-05T15:15:46.956Z"
+  },
+  {
+    "kind": "reel",
+    "shortcode": "Dd2AgtXt-k3",
+    "url": "https://www.instagram.com/reel/Dd2AgtXt-k3/",
+    "grid_views_raw": "4.9M",
+    "grid_views_issue": null,
+    "status": "complete",
+    "fetched_at": "2026-11-05T15:15:50.831Z",
+    "date": "2026-09-28",
+    "date_precision": "day",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 169000,
+      "raw": "169K",
+      "approximate": true,
+      "source": "og_description_localized"
+    },
+    "comments": {
+      "value": 2178,
+      "raw": "2,178",
+      "approximate": false,
+      "source": "og_description_localized"
+    },
+    "views": {
+      "value": 4900000,
+      "raw": "4.9M",
+      "approximate": true,
+      "source": "profile_grid"
+    },
+    "thumbnail_url": "https://instagram.fblr24-3.fna.fbcdn.net/v/t51.82787-15/850698802_18115374151991214_50435887595207501_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=MLCGK8Q0OiMQ7kNvwGLRDP5&_nc_oc=AdrbcngxPl-ZYHf9fpGOtkiXLJOqm-rRfiuiGm6NZ08ChzsOpfpSE0DXYYfEMVXbFF8w7g-5XcuZm40t6-gtqBdl&_nc_zt=23&_nc_ht=instagram.fblr24-3.fna&_nc_gid=AyFtLKilTlkZsGXz_scNLg&_nc_ss=7f6a8&oh=00_AQR-_alo0QlOYHfBhAZ00QWO_pD-keyelcl6cLT-dRWR_w&oe=6AF2875A&ig_cache_key=MDJSQVF6QmpLaXRESUgxbHRBQUs1LVRUa0hMQ196QUUwN0N5dzpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
+    "media_url": null,
+    "missing": [],
+    "missing_reasons": {},
+    "raw": {
+      "description": "「#あらゆる追いかけっこを繰り広げる」 - 2026年9月28日、「いいね！」169K件、コメント2,178件 - memeehubx69",
+      "article_text": "memeehubx69\n•\nFollow\n#あらゆる追いかけっこを繰り広げる\n168K\n2,178\n1,159\nbish.op\n•\nFollow\nCrystal Castles · Vanished\ndoes my work look like video games?\n-\n#creativephotography #photography #photographer #editorial #explore\n198K\n221\n4,312",
+      "aria_text": "memeehubx69 reels\nmemeehubx69 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nbish.op reels\nbish.op reels\nAudio image\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {}
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-11-05T15:15:50.831Z"
+  },
+  {
+    "kind": "reel",
+    "shortcode": "Dd1sYGotp6p",
+    "url": "https://www.instagram.com/reel/Dd1sYGotp6p/",
+    "grid_views_raw": "2.9M",
+    "grid_views_issue": null,
+    "status": "complete",
+    "fetched_at": "2026-11-05T15:15:54.650Z",
+    "date": "2026-09-28",
+    "date_precision": "day",
+    "caption": "#あらゆる追いかけっこを繰り広げる",
+    "hashtags": [
+      "#あらゆる追いかけっこを繰り広げる"
+    ],
+    "mentions": [],
+    "likes": {
+      "value": 73000,
+      "raw": "73K",
+      "approximate": true,
+      "source": "og_description"
+    },
+    "comments": {
+      "value": 589,
+      "raw": "589",
+      "approximate": false,
+      "source": "og_description"
+    },
+    "views": {
+      "value": 2900000,
+      "raw": "2.9M",
+      "approximate": true,
+      "source": "profile_grid"
+    },
+    "thumbnail_url": "https://instagram.fblr1-7.fna.fbcdn.net/v/t51.82787-15/850412630_18115374283991214_4973251241921206191_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=75qVAXKbuewQ7kNvwE05ESy&_nc_oc=AdrlcCCF4HGrYVzaYKzlag-8sQoFzTGyfvDcKRZ5eivteU6daWm6Rx2zweghhzNoawCRruFMUkWZHWKqgwskgsRz&_nc_zt=23&_nc_ht=instagram.fblr1-7.fna&_nc_gid=2LoooZKWtxM7Zog1e4c1ww&_nc_ss=7f6a8&oh=00_AQQJI6GpY9t3v3UcMwYy9ZS10t20pfv9GvpKGVDEawYBZw&oe=6AF2755D&ig_cache_key=MDJSQVF6QmxaRXNESUgxbHRBQUs2b0swRUhwNGtFUmEtWGU3VTpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
+    "media_url": null,
+    "missing": [],
+    "missing_reasons": {},
+    "raw": {
+      "description": "73K likes, 589 comments - memeehubx69 on September 28, 2026: \"#あらゆる追いかけっこを繰り広げる\". ",
+      "article_text": "memeehubx69\n•\nFollow\n#あらゆる追いかけっこを繰り広げる\n73.3K\n589\n1,318\ndang_richy\n•\nFollow\nNo caption today\n#animation #relatable #reels #artist #trending\n71.6K\n527\n3,412",
+      "aria_text": "memeehubx69 reels\nmemeehubx69 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\ndang_richy reels\ndang_richy reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {}
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-11-05T15:15:54.650Z"
+  },
+  {
+    "kind": "reel",
+    "shortcode": "Dd0-K22tapk",
+    "url": "https://www.instagram.com/reel/Dd0-K22tapk/",
+    "grid_views_raw": "1.3M",
+    "grid_views_issue": null,
+    "status": "complete",
+    "fetched_at": "2026-11-05T15:15:58.776Z",
+    "date": "2026-09-28",
+    "date_precision": "day",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 20000,
+      "raw": "20K",
+      "approximate": true,
+      "source": "og_description_localized"
+    },
+    "comments": {
+      "value": 1010,
+      "raw": "1,010",
+      "approximate": false,
+      "source": "og_description_localized"
+    },
+    "views": {
+      "value": 1300000,
+      "raw": "1.3M",
+      "approximate": true,
+      "source": "profile_grid"
+    },
+    "thumbnail_url": "https://instagram.fblr1-3.fna.fbcdn.net/v/t51.82787-15/850319428_18115374070991214_8301525183345219490_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=uUcELVBQwwAQ7kNvwGF2Nnn&_nc_oc=Adpbpv2GVgdai6g7SWmFr4go3s7OLMNjHgf5J3rO5HOA75-ybObuN045pm8GyvPvzNL5qmObr0YoQGvFQO1zuryI&_nc_zt=23&_nc_ht=instagram.fblr1-3.fna&_nc_gid=stn2_TzdDxz5CYY50K5zvQ&_nc_ss=7f6a8&oh=00_AQRSUL-7KtWj1kcQ5a5WCGo2SourWqNljdazTFzBgi3RYQ&oe=6AF281B0&ig_cache_key=MDJSQVF6QmtUWXJqSUgxbHRBQUc2SmVUUUhLLUUwYzZKWFFMODpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
+    "media_url": null,
+    "missing": [],
+    "missing_reasons": {},
+    "raw": {
+      "description": "「#あらゆる追いかけっこを繰り広げる」 - 2026年9月28日、「いいね！」20K件、コメント1,010件 - memeehubx69",
+      "article_text": "memeehubx69\n•\nFollow\n#あらゆる追いかけっこを繰り広げる\n20K\n1,010\n208\nyousukeyukimatsu\n•\nFollow\nHong Kong!! Thank you for celebrating Halloween with me last weekend ☺️✨\n\n📹: @yokoching\n🎵: @sandystrace\n34.1K\n308\n823",
+      "aria_text": "memeehubx69 reels\nmemeehubx69 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nyousukeyukimatsu reels\nyousukeyukimatsu reels\nVerified\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {}
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-11-05T15:15:58.776Z"
+  },
+  {
+    "kind": "reel",
+    "shortcode": "DdzZrXdNBB1",
+    "url": "https://www.instagram.com/reel/DdzZrXdNBB1/",
+    "grid_views_raw": "677K",
+    "grid_views_issue": null,
+    "status": "complete",
+    "fetched_at": "2026-11-05T15:16:02.636Z",
+    "date": "2026-09-27",
+    "date_precision": "day",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 21000,
+      "raw": "21K",
+      "approximate": true,
+      "source": "og_description_localized"
+    },
+    "comments": {
+      "value": 222,
+      "raw": "222",
+      "approximate": false,
+      "source": "og_description_localized"
+    },
+    "views": {
+      "value": 677000,
+      "raw": "677K",
+      "approximate": true,
+      "source": "profile_grid"
+    },
+    "thumbnail_url": "https://instagram.fblr1-10.fna.fbcdn.net/v/t51.82787-15/850726875_18115374028991214_4607118725391284568_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=rFKh_DlQlQIQ7kNvwGQOgWf&_nc_oc=AdoNc4Yl2DQ3gavb5g91EMzFUwkcIFFi8O08eP3Mt5AOlkFksS-ENf8XIHQtUhBa330rcGHWAlQaHyOSHSnpCwCV&_nc_zt=23&_nc_ht=instagram.fblr1-10.fna&_nc_gid=GfGsAaxbqJEKBvEflb0vHQ&_nc_ss=7f6a8&oh=00_AQQg-418WJcSxjCSCkVNpeRrJ8wcAoqSLRdCHwiH7yVxFg&oe=6AF289D6&ig_cache_key=MDJSQVF6QnRzUHRUSUgxbHRBQU82cV9ERUhFc2J2UDFoNS16ZzpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
+    "media_url": null,
+    "missing": [],
+    "missing_reasons": {},
+    "raw": {
+      "description": "「#あらゆる追いかけっこを繰り広げる」 - 2026年9月27日、「いいね！」21K件、コメント222件 - memeehubx69",
+      "article_text": "memeehubx69\n•\nFollow\n#あらゆる追いかけっこを繰り広げる\n20.8K\n222\n164\nvioletnotviolet\n•\nFollow\n6 people\nTWENTY ONE PILOTS - DOUBT DEMO - DRUM COVER\n.\n@twentyonepilots @tylerrjoseph @joshuadun\n#twentyonepilots #drumcover #drummergirl #drums #drummer\n317K\n661\n19.5K",
+      "aria_text": "memeehubx69 reels\nmemeehubx69 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nvioletnotviolet reels\nvioletnotviolet reels\nVerified\nTagged users\nLocation\nTagged users\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {}
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-11-05T15:16:02.636Z"
+  },
+  {
+    "kind": "reel",
+    "shortcode": "DdzLxlQtO7P",
+    "url": "https://www.instagram.com/reel/DdzLxlQtO7P/",
+    "grid_views_raw": "239K",
+    "grid_views_issue": null,
+    "status": "complete",
+    "fetched_at": "2026-11-05T15:16:06.752Z",
+    "date": "2026-09-27",
+    "date_precision": "day",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 5423,
+      "raw": "5,423",
+      "approximate": false,
+      "source": "og_description_localized"
+    },
+    "comments": {
+      "value": 307,
+      "raw": "307",
+      "approximate": false,
+      "source": "og_description_localized"
+    },
+    "views": {
+      "value": 239000,
+      "raw": "239K",
+      "approximate": true,
+      "source": "profile_grid"
+    },
+    "thumbnail_url": "https://instagram.fblr1-5.fna.fbcdn.net/v/t51.82787-15/848751784_18115374007991214_796820012311701558_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=ffJew6PZq1wQ7kNvwEZBMOe&_nc_oc=AdrAwAn1Wkk82ckm-C2o1GG_0p078n5hPkWlu3DJuqUKHVk-quUSyLZ1Hl2nXMyReMeerdbTPZwxNVfa3yBbJDQI&_nc_zt=23&_nc_ht=instagram.fblr1-5.fna&_nc_gid=DUyepHEuCAvtm35BrMpBvg&_nc_ss=7f6a8&oh=00_AQSuSZfD9M7MPfHAd27BNtINR4a-SH1_hOmJpP_GVmOozA&oe=6AF254D7&ig_cache_key=MDJSQVF6QnFqc2xqSUgxbHRBQUs0N3VEQUhsTjhPQ3pib3dsYzpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
+    "media_url": null,
+    "missing": [],
+    "missing_reasons": {},
+    "raw": {
+      "description": "「#あらゆる追いかけっこを繰り広げる」 - 2026年9月27日、「いいね！」5,423件、コメント307件 - memeehubx69",
+      "article_text": "memeehubx69\n•\nFollow\n#あらゆる追いかけっこを繰り広げる\n5,423\n307\n239\nvioletnotviolet\n•\nFollow\n6 people\nTWENTY ONE PILOTS - DOUBT DEMO - DRUM COVER\n.\n@twentyonepilots @tylerrjoseph @joshuadun\n#twentyonepilots #drumcover #drummergirl #drums #drummer\n317K\n661\n19.5K",
+      "aria_text": "memeehubx69 reels\nmemeehubx69 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nvioletnotviolet reels\nvioletnotviolet reels\nVerified\nTagged users\nLocation\nTagged users\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {}
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-11-05T15:16:06.752Z"
+  },
+  {
+    "kind": "reel",
+    "shortcode": "Ddy54I4tpL9",
+    "url": "https://www.instagram.com/reel/Ddy54I4tpL9/",
+    "grid_views_raw": "740K",
+    "grid_views_issue": null,
+    "status": "complete",
+    "fetched_at": "2026-11-05T15:16:11.254Z",
+    "date": "2026-09-27",
+    "date_precision": "day",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 4666,
+      "raw": "4,666",
+      "approximate": false,
+      "source": "og_description_localized"
+    },
+    "comments": {
+      "value": 184,
+      "raw": "184",
+      "approximate": false,
+      "source": "og_description_localized"
+    },
+    "views": {
+      "value": 740000,
+      "raw": "740K",
+      "approximate": true,
+      "source": "profile_grid"
+    },
+    "thumbnail_url": "https://instagram.fblr1-7.fna.fbcdn.net/v/t51.82787-15/850269541_18115373986991214_7584686194279023903_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=wp9tuqxalA8Q7kNvwGbhKTI&_nc_oc=Adonx38shzoUPXGnuQEVarcwme7rJssBLbpo97nkEV6iS5dnX62-S2MGEkRZk8FDQ3FeezfwVuBQr_Utx3a8Eheq&_nc_zt=23&_nc_ht=instagram.fblr1-7.fna&_nc_gid=AnCupuNCqwBiD3XcFfn4bg&_nc_ss=7f6a8&oh=00_AQQnNs_UoMd7pDzxkSsqFGL3X7_1XXOKHIQt-7abCeeMjA&oe=6AF25669&ig_cache_key=MDJSQVF6Qm1VVnJqSUgxbHRBQUc3TWR5OEg2RGRDYVJfRno0WTpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
+    "media_url": null,
+    "missing": [],
+    "missing_reasons": {},
+    "raw": {
+      "description": "「#あらゆる追いかけっこを繰り広げる」 - 2026年9月27日、「いいね！」4,666件、コメント184件 - memeehubx69",
+      "article_text": "memeehubx69\n•\nFollow\n#あらゆる追いかけっこを繰り広げる\n4,666\n184\n119\nitsgammaworld\n•\nFollow\n•\n•\n•\n•\n•\n•\n•\n#twentyonepilots #dragpath #tøp #musicreels #musicvibes\n77K\n181\n7,946",
+      "aria_text": "memeehubx69 reels\nmemeehubx69 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nitsgammaworld reels\nitsgammaworld reels\nVerified\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {}
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-11-05T15:16:11.254Z"
+  },
+  {
+    "kind": "reel",
+    "shortcode": "Ddw2HR3tI_y",
+    "url": "https://www.instagram.com/reel/Ddw2HR3tI_y/",
+    "grid_views_raw": "4.5M",
+    "grid_views_issue": null,
+    "status": "complete",
+    "fetched_at": "2026-11-05T15:16:15.478Z",
+    "date": "2026-09-26",
+    "date_precision": "day",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 138000,
+      "raw": "138K",
+      "approximate": true,
+      "source": "og_description_localized"
+    },
+    "comments": {
+      "value": 2738,
+      "raw": "2,738",
+      "approximate": false,
+      "source": "og_description_localized"
+    },
+    "views": {
+      "value": 4500000,
+      "raw": "4.5M",
+      "approximate": true,
+      "source": "profile_grid"
+    },
+    "thumbnail_url": "https://instagram.fblr1-5.fna.fbcdn.net/v/t51.82787-15/849890988_18115373581991214_3010496973741424179_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=BxVfVKJWofwQ7kNvwEN2i3E&_nc_oc=AdpDvwSAMP7Q-M3mtsObhMg-idvcQCW09ulzUpJukPRhNWyF_XmycOWCLQCvxhnHF-X9G9waHAWJoCDjAX-5l4e9&_nc_zt=23&_nc_ht=instagram.fblr1-5.fna&_nc_gid=FaLSPhC2p8Z5oH_VjsCy6w&_nc_ss=7f6a8&oh=00_AQQfOup_5ls-jUrYdCb09ZWae4G_rNsLT4tWCHlJTMyYBA&oe=6AF26C73&ig_cache_key=MDJSQVF6QnF4T3FESUgxbHRBQUM3OVV4Y0hERy1IS1RQX1BoMDpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
+    "media_url": null,
+    "missing": [],
+    "missing_reasons": {},
+    "raw": {
+      "description": "「#あらゆる追いかけっこを繰り広げる」 - 2026年9月26日、「いいね！」138K件、コメント2,738件 - memeehubx69",
+      "article_text": "memeehubx69\n•\nFollow\n#あらゆる追いかけっこを繰り広げる\n137K\n2,738\n1,007\nvladmikaelson\n•\nFollow\n@twentyonepilots performing Drag Path at @electriccastle was an outer body experience 😭😭😭\n58.6K\n176\n3,545",
+      "aria_text": "memeehubx69 reels\nmemeehubx69 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nvladmikaelson reels\nvladmikaelson reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {}
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-11-05T15:16:15.478Z"
+  },
+  {
+    "kind": "reel",
+    "shortcode": "DdwxFJjN-8x",
+    "url": "https://www.instagram.com/reel/DdwxFJjN-8x/",
+    "grid_views_raw": "539K",
+    "grid_views_issue": null,
+    "status": "complete",
+    "fetched_at": "2026-11-05T15:16:19.211Z",
+    "date": "2026-09-26",
+    "date_precision": "day",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 35000,
+      "raw": "35K",
+      "approximate": true,
+      "source": "og_description_localized"
+    },
+    "comments": {
+      "value": 160,
+      "raw": "160",
+      "approximate": false,
+      "source": "og_description_localized"
+    },
+    "views": {
+      "value": 539000,
+      "raw": "539K",
+      "approximate": true,
+      "source": "profile_grid"
+    },
+    "thumbnail_url": "https://instagram.fblr1-4.fna.fbcdn.net/v/t51.82787-15/849477442_18115373557991214_2054604046209883714_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=0eNqVawhqdIQ7kNvwGxfIoO&_nc_oc=AdoWFISDCkiAFaBSlvfdAdP31DG5mZ8aoGLJbJf-JDBLxSXlc9WoutTdk8YDyMVXsIBU2CyC1_a2LfY0rvcGRWAi&_nc_zt=23&_nc_ht=instagram.fblr1-4.fna&_nc_gid=yZv53BkY31fTs3Y_bksznw&_nc_ss=7f6a8&oh=00_AQQ5Fsjo7R5LYnfBj_vEGgzlorVCqbjCPMgfPN_E7pBKHQ&oe=6AF2748A&ig_cache_key=MDJSQVF6QmtMLW9USUgxbHRBQUM3SDVSVUhmbXVESEVLZWE0ZzpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
+    "media_url": null,
+    "missing": [],
+    "missing_reasons": {},
+    "raw": {
+      "description": "「#あらゆる追いかけっこを繰り広げる」 - 2026年9月26日、「いいね！」35K件、コメント160件 - memeehubx69",
+      "article_text": "memeehubx69\n•\nFollow\n#あらゆる追いかけっこを繰り広げる\n35.2K\n160\n464\ngazi_screams\n•\nFollow\nFollow and DM for 1-on-1 Vocal Lessons\n#queen #freddie #bohemianrhapsody #freddiemercury #vocalcoach\n28.5K\n564\n1,257",
+      "aria_text": "memeehubx69 reels\nmemeehubx69 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\ngazi_screams reels\ngazi_screams reels\nVerified\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {}
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-11-05T15:16:19.211Z"
+  },
+  {
+    "kind": "reel",
+    "shortcode": "Ddv5ntQNCNz",
+    "url": "https://www.instagram.com/reel/Ddv5ntQNCNz/",
+    "grid_views_raw": "25.5K",
+    "grid_views_issue": null,
+    "status": "partial",
+    "fetched_at": "2026-11-14T08:53:37.297Z",
+    "date": "2026-09-26",
+    "date_precision": "day",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": null,
+    "comments": {
+      "value": 2,
+      "raw": "2",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Comment"
+    },
+    "views": {
+      "value": 25500,
+      "raw": "25.5K",
+      "approximate": true,
+      "source": "profile_grid"
+    },
+    "thumbnail_url": "https://instagram.fblr1-7.fna.fbcdn.net/v/t51.82787-15/849427405_18115373500991214_8632300979136910064_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=MxxIwZIbO8kQ7kNvwH2hL39&_nc_oc=AdrW9vjmPL8ozySIRkcxts5g0jubg4eE49CsKiXEEHzGKbStbo3nMkWnU9tN5RySEtGvr_Vc5eonTe7WQmsG-4Hl&_nc_zt=23&_nc_ht=instagram.fblr1-7.fna&_nc_gid=Nj01tBFFQSJUycDZeXZ3NQ&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQSHqX6_lZMi6AMYA1byZhQ_bUm9W9z-B5-6LyOqx3wWXg&oe=6AFDEAB4",
+    "media_url": null,
+    "missing": [
+      "likes"
+    ],
+    "missing_reasons": {
+      "likes": "The like control displayed no numeric like count; nearby comment or reshare counts are not likes."
+    },
+    "raw": {
+      "description": "「#あらゆる追いかけっこを繰り広げる」 - 2026年9月26日、memeehubx69",
+      "article_text": "memeehubx69\nFollow\n#あらゆる追いかけっこを繰り広げる\nSee translation\nLikes\n2\n8\nai_man_and_art\nFollow\nAI-generated profile\n1,490\n1\n25\n1,228",
+      "aria_text": "memeehubx69 reels\nmemeehubx69 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nai_man_and_art reels\nai_man_and_art reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "availability": {
+          "likes": {
+            "state": "not_captured",
+            "evidence": "Control located but no reliable numeric value parsed."
+          },
+          "comments": {
+            "state": "measured",
+            "evidence": "Comment"
+          },
+          "reshares": {
+            "state": "measured",
+            "evidence": "Repost"
+          },
+          "shares": {
+            "state": "not_captured",
+            "evidence": "Control located but no reliable numeric value parsed."
+          }
+        },
+        "likes_visibility": "not_shown",
+        "comments": {
+          "raw": "2",
+          "source": "dom_action_control",
+          "label": "Comment"
+        },
+        "reshares": {
+          "raw": "8",
+          "source": "dom_action_control",
+          "label": "Repost"
+        }
+      },
+      "capture_checks": {
+        "access_clear": true,
+        "stable": true,
+        "read_passes": 2,
+        "access_attempts": [],
+        "metric_panels": [
+          {
+            "field": "likes",
+            "stable": false,
+            "access_clear": true,
+            "evidence": "Likes\nmemeehubx69 can see the total number of people who liked this post.\nduh_im_xaynab\n⋆✮⋆˙\nFollow\nmehnoorkaur07\nMehnoor kaur 🌻\nFollow\nmuskan11_d\nMUSKAN🖤\nFollow\n_jannatul.ferdous.shanta_\nShanta....🐻\nFollow\nzoheehee_michealjacksonvers\nZohe 🥹\nFollow\nbrofiii.24\n.\nFollow\ner.fanaaa\nerfana🎀\nFollow\nitx.umaima.12\nitx.umaima.12\nFollow\nk.puneet_\n𝑷𝒖𝒏𝒆𝒆𝒕\nFollow\narshiya_sethiya\nArshiya\nFollow"
+          }
+        ]
+      }
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T08:53:37.297Z",
+    "date_source": "og_description_localized",
+    "reshares": {
+      "value": 8,
+      "raw": "8",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Repost"
+    },
+    "shares": null,
+    "likes_visibility": "not_shown",
+    "analysis_resolution": {
+      "status": "requires_verification",
+      "source": "visible_page_capture",
+      "recorded_at": "2026-11-14T05:14:46.787Z",
+      "reason": "Previous automatic resolution lacked explicit evidence that the metric was hidden or disabled. Saved values retained; extraction requires verification.",
+      "unavailable_fields": [
+        "likes"
+      ],
+      "previous_status": "partial",
+      "policy_checked_at": "2026-11-14T08:26:03.802Z"
+    },
+    "extraction_review": "Metric extraction is incomplete; absence has not been confirmed. Inspect or retry rather than assume hidden counts.",
+    "previous_analysis_resolution": {
+      "status": "resolved",
+      "source": "visible_page_capture",
+      "recorded_at": "2026-11-14T05:14:46.787Z",
+      "reason": "Reel loads but these numeric fields are not exposed in the page or captured metadata. Missing values remain unknown; existing saved observations remain valid.",
+      "unavailable_fields": [
+        "likes"
+      ],
+      "previous_status": "partial"
+    },
+    "access_review": null
+  },
+  {
+    "kind": "reel",
+    "shortcode": "Ddvk0CQt20_",
+    "url": "https://www.instagram.com/reel/Ddvk0CQt20_/",
+    "grid_views_raw": "7,553",
+    "grid_views_issue": null,
+    "status": "complete",
+    "fetched_at": "2026-11-05T15:16:27.352Z",
+    "date": "2026-09-26",
+    "date_precision": "day",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 268,
+      "raw": "268",
+      "approximate": false,
+      "source": "og_description_localized"
+    },
+    "comments": {
+      "value": 0,
+      "raw": "0",
+      "approximate": false,
+      "source": "og_description_localized"
+    },
+    "views": {
+      "value": 7553,
+      "raw": "7,553",
+      "approximate": false,
+      "source": "profile_grid"
+    },
+    "thumbnail_url": "https://instagram.fblr1-8.fna.fbcdn.net/v/t51.82787-15/852679203_18115373446991214_7915702786379909411_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=awgq_a6w61oQ7kNvwHzsC26&_nc_oc=AdrLdeTUoKcXqJ6eEGZWANVO5zTuuax9kYNhbWaAIOa7ICzCLF10mopbXmnJaMZGvEV1BlEqJI_DKt-dJlgwpMt6&_nc_zt=23&_nc_ht=instagram.fblr1-8.fna&_nc_gid=wZQ7j_eYkX7F1AdWjppXcQ&_nc_ss=7f6a8&oh=00_AQQEpBbwd81ozvXCi0PwlNEXf9araLDgX9KUQcKt0cgrgw&oe=6AF282DB&ig_cache_key=MDJSQVF6QmlQYTBqSUgxbHRBQUc0TlNBOEh2am5hYlNPSnZyazpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
+    "media_url": null,
+    "missing": [],
+    "missing_reasons": {},
+    "raw": {
+      "description": "「#あらゆる追いかけっこを繰り広げる」 - 2026年9月26日、「いいね！」268件、コメント0件 - memeehubx69",
+      "article_text": "memeehubx69\n•\nFollow\n#あらゆる追いかけっこを繰り広げる\n268\n5\nbrown_ahmad_\n•\nFollow\n62.4K\n159\n6,863",
+      "aria_text": "memeehubx69 reels\nmemeehubx69 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nbrown_ahmad_ reels\nbrown_ahmad_ reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {}
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-11-05T15:16:27.352Z"
+  },
+  {
+    "kind": "reel",
+    "shortcode": "DduPPO0NbvI",
+    "url": "https://www.instagram.com/reel/DduPPO0NbvI/",
+    "grid_views_raw": "3.1M",
+    "grid_views_issue": null,
+    "status": "complete",
+    "fetched_at": "2026-11-05T15:16:31.191Z",
+    "date": "2026-09-25",
+    "date_precision": "day",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 102000,
+      "raw": "102K",
+      "approximate": true,
+      "source": "og_description_localized"
+    },
+    "comments": {
+      "value": 936,
+      "raw": "936",
+      "approximate": false,
+      "source": "og_description_localized"
+    },
+    "views": {
+      "value": 3100000,
+      "raw": "3.1M",
+      "approximate": true,
+      "source": "profile_grid"
+    },
+    "thumbnail_url": "https://instagram.fblr1-6.fna.fbcdn.net/v/t51.82787-15/851353550_18115373419991214_8299958698904224375_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=MqTmFGjOpZAQ7kNvwGpTxnE&_nc_oc=Adq3-jkXpfOFB75TqErD9nRKSUWsXUqPRrXTBGAapOykxkIGbAsVPYVwDecdXq75AhT-HiP1B2x8XQJmfx__YXxU&_nc_zt=23&_nc_ht=instagram.fblr1-6.fna&_nc_gid=XNCUej-OhMmDbgxofmbfWw&_nc_ss=7f6a8&oh=00_AQSucZWR0QeZd_rCMsumR0Dkh3TQLeCx9xvFg-udB_6oTQ&oe=6AF27E4F&ig_cache_key=MDJSQVF6QnM2ZnZqSUgxbHRBQUs0UXJBMEhkbUF2YzNlQ21TbzpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
+    "media_url": null,
+    "missing": [],
+    "missing_reasons": {},
+    "raw": {
+      "description": "「#あらゆる追いかけっこを繰り広げる」 - 2026年9月25日、「いいね！」102K件、コメント936件 - memeehubx69",
+      "article_text": "memeehubx69\n•\nFollow\n#あらゆる追いかけっこを繰り広げる\n102K\n936\n1,355\nbenni_shootz\n•\nFollow\nJust gotta get out there #edit #colorgrading #hiking #natureedit #nature\n639K\n565\n43.4K",
+      "aria_text": "memeehubx69 reels\nmemeehubx69 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nbenni_shootz reels\nbenni_shootz reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {}
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-11-05T15:16:31.191Z"
+  },
+  {
+    "kind": "reel",
+    "shortcode": "Ddto-UANEx3",
+    "url": "https://www.instagram.com/reel/Ddto-UANEx3/",
+    "grid_views_raw": "881K",
+    "grid_views_issue": null,
+    "status": "complete",
+    "fetched_at": "2026-11-05T15:16:35.003Z",
+    "date": "2026-09-25",
+    "date_precision": "day",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 35000,
+      "raw": "35K",
+      "approximate": true,
+      "source": "og_description_localized"
+    },
+    "comments": {
+      "value": 607,
+      "raw": "607",
+      "approximate": false,
+      "source": "og_description_localized"
+    },
+    "views": {
+      "value": 881000,
+      "raw": "881K",
+      "approximate": true,
+      "source": "profile_grid"
+    },
+    "thumbnail_url": "https://instagram.fblr1-8.fna.fbcdn.net/v/t51.82787-15/849535029_18115373389991214_7826863834243703998_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=2VJGfvY9dqoQ7kNvwEEwbM5&_nc_oc=AdrvCzKmGR8I_9sjJAepOgboCgSXhNcfaypao8XB6DwUJGLPaaZpLxkF0Aujw7E_8T-amzEfhztrO56CuNPxG-gD&_nc_zt=23&_nc_ht=instagram.fblr1-8.fna&_nc_gid=czm4UgGAoSonlgnGv4JCgg&_nc_ss=7f6a8&oh=00_AQQf_nFskKVvu_Yoa5HsLqNhnX-ysb_ZLLT9gSPXwyP03w&oe=6AF25BAA&ig_cache_key=MDJSQVF6QmpYZ29qSUgxbHRBQUM1TjRnc0hNSnVlYkw2a2NsRTpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
+    "media_url": null,
+    "missing": [],
+    "missing_reasons": {},
+    "raw": {
+      "description": "「#あらゆる追いかけっこを繰り広げる」 - 2026年9月25日、「いいね！」35K件、コメント607件 - memeehubx69",
+      "article_text": "memeehubx69\n•\nFollow\n#あらゆる追いかけっこを繰り広げる\n34.7K\n607\n419\nbenni_shootz\n•\nFollow\nJust gotta get out there #edit #colorgrading #hiking #natureedit #nature\n639K\n565\n43.4K",
+      "aria_text": "memeehubx69 reels\nmemeehubx69 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nbenni_shootz reels\nbenni_shootz reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {}
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-11-05T15:16:35.003Z"
+  },
+  {
+    "kind": "reel",
+    "shortcode": "Dds0q2Ltpah",
+    "url": "https://www.instagram.com/reel/Dds0q2Ltpah/",
+    "grid_views_raw": "29.7K",
+    "grid_views_issue": null,
+    "status": "complete",
+    "fetched_at": "2026-11-05T15:16:39.084Z",
+    "date": "2026-09-24",
+    "date_precision": "day",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 430,
+      "raw": "430",
+      "approximate": false,
+      "source": "og_description_localized"
+    },
+    "comments": {
+      "value": 4,
+      "raw": "4",
+      "approximate": false,
+      "source": "og_description_localized"
+    },
+    "views": {
+      "value": 29700,
+      "raw": "29.7K",
+      "approximate": true,
+      "source": "profile_grid"
+    },
+    "thumbnail_url": "https://instagram.fblr1-7.fna.fbcdn.net/v/t51.82787-15/851843615_18115373350991214_5127969131541344460_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=bsBfIyz0f_wQ7kNvwEaTTbE&_nc_oc=AdqKahcs2KiYEId-u3wAuY5qRQ6kMpaESfHWaeYeuXRnz8xXUM_9NzuxlQYvLDksLJavOEhhScSSQzCTRnH5_1GN&_nc_zt=23&_nc_ht=instagram.fblr1-7.fna&_nc_gid=waZCqvveLISm6g3S5jlUZQ&_nc_ss=7f6a8&oh=00_AQR7v35ZglquxhRI-achlKttZj4TujTyjDn8iQJP4td5Xw&oe=6AF272A6&ig_cache_key=MDJSQVF6Qmg4YXhqSUgxbHRBQUc0MWp3a0h3VFFxUjh5d3NJZzpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
+    "media_url": null,
+    "missing": [],
+    "missing_reasons": {},
+    "raw": {
+      "description": "「#あらゆる追いかけっこを繰り広げる」 - 2026年9月24日、「いいね！」430件、コメント4件 - memeehubx69",
+      "article_text": "memeehubx69\n•\nFollow\n#あらゆる追いかけっこを繰り広げる\n430\n4\n10\nbish.op\n•\nFollow\nCrystal Castles · Vanished\ndoes my work look like video games?\n-\n#creativephotography #photography #photographer #editorial #explore\n198K\n221\n4,319",
+      "aria_text": "memeehubx69 reels\nmemeehubx69 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nbish.op reels\nbish.op reels\nAudio image\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {}
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-11-05T15:16:39.084Z"
+  },
+  {
+    "kind": "reel",
+    "shortcode": "Ddq3SUEtWKe",
+    "url": "https://www.instagram.com/reel/Ddq3SUEtWKe/",
+    "grid_views_raw": "164K",
+    "grid_views_issue": null,
+    "status": "complete",
+    "fetched_at": "2026-11-05T15:16:42.953Z",
+    "date": "2026-09-24",
+    "date_precision": "day",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 13000,
+      "raw": "13K",
+      "approximate": true,
+      "source": "og_description_localized"
+    },
+    "comments": {
+      "value": 94,
+      "raw": "94",
+      "approximate": false,
+      "source": "og_description_localized"
+    },
+    "views": {
+      "value": 164000,
+      "raw": "164K",
+      "approximate": true,
+      "source": "profile_grid"
+    },
+    "thumbnail_url": "https://instagram.fblr1-5.fna.fbcdn.net/v/t51.82787-15/851718665_18115371871991214_6731384203921212084_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=HNSE6-6XqlAQ7kNvwGOIWgo&_nc_oc=AdqweStydmUsIIy4e-DV_JFYI9EWTxBkHEBcq0ZSEznf-VrVn6LNbmj-oK3bzHqZNzjEBnS05gV54Hu8ycOMOXr4&_nc_zt=23&_nc_ht=instagram.fblr1-5.fna&_nc_gid=uwzA_guJvJ6Zn_rMDuoFlg&_nc_ss=7f6a8&oh=00_AQRHkyn7sFx6gE-WCPOyTLWJNyDasBQgClagTLtX5hsvMw&oe=6AF27264&ig_cache_key=MDJSQVF6QmdreXhESUgxVnRBQUs1MVo3RUhSSzVxWGJSQ1p1RTpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
+    "media_url": null,
+    "missing": [],
+    "missing_reasons": {},
+    "raw": {
+      "description": "「#あらゆる追いかけっこを繰り広げる」 - 2026年9月24日、「いいね！」13K件、コメント94件 - memeehubx69",
+      "article_text": "memeehubx69\n•\nFollow\n#あらゆる追いかけっこを繰り広げる\n12.9K\n94\n164\ndang_richy\n•\nFollow\nNo caption today\n#animation #relatable #reels #artist #trending\n72.1K\n528\n3,434",
+      "aria_text": "memeehubx69 reels\nmemeehubx69 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\ndang_richy reels\ndang_richy reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {}
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-11-05T15:16:42.953Z"
+  },
+  {
+    "kind": "reel",
+    "shortcode": "DdqYtmMNbqT",
+    "url": "https://www.instagram.com/reel/DdqYtmMNbqT/",
+    "grid_views_raw": "889K",
+    "grid_views_issue": null,
+    "status": "complete",
+    "fetched_at": "2026-11-05T15:16:46.978Z",
+    "date": "2026-09-24",
+    "date_precision": "day",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 7881,
+      "raw": "7,881",
+      "approximate": false,
+      "source": "og_description_localized"
+    },
+    "comments": {
+      "value": 300,
+      "raw": "300",
+      "approximate": false,
+      "source": "og_description_localized"
+    },
+    "views": {
+      "value": 889000,
+      "raw": "889K",
+      "approximate": true,
+      "source": "profile_grid"
+    },
+    "thumbnail_url": "https://instagram.fblr24-3.fna.fbcdn.net/v/t51.82787-15/851411167_18115371793991214_6536947933268713849_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=L0uXfkwtMfoQ7kNvwHXWM22&_nc_oc=AdojuQQAiKkUjR3PRlo3UN230KQsutTKA9x8wjwiCnRv25xnMeujMWh721O0gBKYP7lCBuWnl1q_M8v7sFcn6juu&_nc_zt=23&_nc_ht=instagram.fblr24-3.fna&_nc_gid=VYouvQfwobwtSL2yR42-Fg&_nc_ss=7f6a8&oh=00_AQSRKYMQq1q5ceLPTRSMCWTvbwzZ8X9gkxK8rLYLKfTfQg&oe=6AF286EB&ig_cache_key=MDJSQVF6QnRfQXZ6SUgxVnRBQUM1R3dhd0hndWUzV25taHROVTpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
+    "media_url": null,
+    "missing": [],
+    "missing_reasons": {},
+    "raw": {
+      "description": "「#あらゆる追いかけっこを繰り広げる」 - 2026年9月24日、「いいね！」7,881件、コメント300件 - memeehubx69",
+      "article_text": "memeehubx69\n•\nFollow\n#あらゆる追いかけっこを繰り広げる\n7,881\n300\n151\noma.uk\n•\nFollow\nNujabes’ hardest song to play? #hiphop #oma #nujabes\n9,878\n34\n318",
+      "aria_text": "memeehubx69 reels\nmemeehubx69 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\noma.uk reels\noma.uk reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {}
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-11-05T15:16:46.978Z"
+  },
+  {
+    "kind": "reel",
+    "shortcode": "DdpYBoNNiFZ",
+    "url": "https://www.instagram.com/reel/DdpYBoNNiFZ/",
+    "grid_views_raw": "190K",
+    "grid_views_issue": null,
+    "status": "complete",
+    "fetched_at": "2026-11-05T15:16:50.954Z",
+    "date": "2026-09-23",
+    "date_precision": "day",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 12000,
+      "raw": "12K",
+      "approximate": true,
+      "source": "og_description_localized"
+    },
+    "comments": {
+      "value": 57,
+      "raw": "57",
+      "approximate": false,
+      "source": "og_description_localized"
+    },
+    "views": {
+      "value": 190000,
+      "raw": "190K",
+      "approximate": true,
+      "source": "profile_grid"
+    },
+    "thumbnail_url": "https://instagram.fblr1-8.fna.fbcdn.net/v/t51.82787-15/849319893_18115371754991214_8817714288500502497_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=sCbW_AAeYnMQ7kNvwG5fFuJ&_nc_oc=Adrwl8UK5s_9jb_YjDOzHC5XC1nHQyVKuT8tUQcf_6QVT68-eO5ebJPhc8t58PyHy35GFRKzuSUplAZFelRWdQO8&_nc_zt=23&_nc_ht=instagram.fblr1-8.fna&_nc_gid=biN2tbflSLvXh91AsVzIqg&_nc_ss=7f6a8&oh=00_AQQ0QgyaxT1L2_Mmyn40W-dYr_NkEqjJeJuc5adtwxKgPg&oe=6AF284AA&ig_cache_key=MDJSQVF6QnRXWG56SUgxVnRBQUc0dWJxb0hiZEJlZXVGdjlWZzpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
+    "media_url": null,
+    "missing": [],
+    "missing_reasons": {},
+    "raw": {
+      "description": "「#あらゆる追いかけっこを繰り広げる」 - 2026年9月23日、「いいね！」12K件、コメント57件 - memeehubx69",
+      "article_text": "memeehubx69\n•\nFollow\n#あらゆる追いかけっこを繰り広げる\n11.8K\n57\n302\nbish.op\n•\nFollow\nCrystal Castles · Vanished\ndoes my work look like video games?\n-\n#creativephotography #photography #photographer #editorial #explore\n198K\n221\n4,321",
+      "aria_text": "memeehubx69 reels\nmemeehubx69 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nbish.op reels\nbish.op reels\nAudio image\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {}
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-11-05T15:16:50.954Z"
+  },
+  {
+    "kind": "reel",
+    "shortcode": "DdoS38tNZ2b",
+    "url": "https://www.instagram.com/reel/DdoS38tNZ2b/",
+    "grid_views_raw": "10.4K",
+    "grid_views_issue": null,
+    "status": "complete",
+    "fetched_at": "2026-11-05T15:16:54.866Z",
+    "date": "2026-09-23",
+    "date_precision": "day",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 138,
+      "raw": "138",
+      "approximate": false,
+      "source": "og_description_localized"
+    },
+    "comments": {
+      "value": 2,
+      "raw": "2",
+      "approximate": false,
+      "source": "og_description_localized"
+    },
+    "views": {
+      "value": 10400,
+      "raw": "10.4K",
+      "approximate": true,
+      "source": "profile_grid"
+    },
+    "thumbnail_url": "https://instagram.fblr1-5.fna.fbcdn.net/v/t51.82787-15/851449310_18115371712991214_6540262043602280635_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=fQRCNqDW8BYQ7kNvwFGfgus&_nc_oc=AdpaHp7VAzts3sy_ldRF4Ujvgs_ARd-ke5_Zoa83rELII5B4eR6Pc742wO67i8VMasVR6axwAKQxwz7CxpZJyXSg&_nc_zt=23&_nc_ht=instagram.fblr1-5.fna&_nc_gid=lZ6P4_1HKxDEou9pOVzdjg&_nc_ss=7f6a8&oh=00_AQQ_xEUUl8CQEwU83DcQ4BgB5o8zp6PYgY1W0zZbMq9xKg&oe=6AF25FB1&ig_cache_key=MDJSQVF6QnQ0VndESUgxVnRBQU81UDdhY0hyYTNEV3J0ZzRrWTpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
+    "media_url": null,
+    "missing": [],
+    "missing_reasons": {},
+    "raw": {
+      "description": "「#あらゆる追いかけっこを繰り広げる」 - 2026年9月23日、「いいね！」138件、コメント2件 - memeehubx69",
+      "article_text": "memeehubx69\n•\nFollow\n#あらゆる追いかけっこを繰り広げる\n138\n2\ngavin.ward_\n•\nFollow\nLove is in the air.. #obsessionmovie #guitartutorial\n12.6K\n19\n656",
+      "aria_text": "memeehubx69 reels\nmemeehubx69 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\ngavin.ward_ reels\ngavin.ward_ reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {}
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-11-05T15:16:54.866Z"
+  },
+  {
+    "kind": "reel",
+    "shortcode": "Ddny2nmt2ji",
+    "url": "https://www.instagram.com/reel/Ddny2nmt2ji/",
+    "grid_views_raw": "28.8K",
+    "grid_views_issue": null,
+    "status": "complete",
+    "fetched_at": "2026-11-05T15:16:59.057Z",
+    "date": "2026-09-23",
+    "date_precision": "day",
+    "caption": "#あらゆる追いかけっこを繰り広げる",
+    "hashtags": [
+      "#あらゆる追いかけっこを繰り広げる"
+    ],
+    "mentions": [],
+    "likes": {
+      "value": 241,
+      "raw": "241",
+      "approximate": false,
+      "source": "og_description"
+    },
+    "comments": {
+      "value": 0,
+      "raw": "0",
+      "approximate": false,
+      "source": "og_description"
+    },
+    "views": {
+      "value": 28800,
+      "raw": "28.8K",
+      "approximate": true,
+      "source": "profile_grid"
+    },
+    "thumbnail_url": "https://instagram.fblr24-4.fna.fbcdn.net/v/t51.82787-15/852693449_18115371568991214_2526143546394060726_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=ysAa46CUX04Q7kNvwEqUNhn&_nc_oc=Adq34MCXfNNWDNUtRd0cUDp9aZlW-31t5o-Vxi7s4yEE6v4oPZ8VTJTY4XQlGNurlSDzbX7TcOEVO5VOXrMdYCqX&_nc_zt=23&_nc_ht=instagram.fblr24-4.fna&_nc_gid=YVLV_dB8FS1xiU02-vmKwA&_nc_ss=7f6a8&oh=00_AQSdXFx1dgorh4r5_qpqT1---SsX6e2cwSmtpuSIwOfR3w&oe=6AF28C98&ig_cache_key=MDJSQVF6QnNrUjB6SUgxVnRBQU80TFdKOEhLNm9PSTdhbmR0NDpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
+    "media_url": null,
+    "missing": [],
+    "missing_reasons": {},
+    "raw": {
+      "description": "241 likes, 0 comments - memeehubx69 on September 23, 2026: \"#あらゆる追いかけっこを繰り広げる\". ",
+      "article_text": "memeehubx69\n•\nFollow\n#あらゆる追いかけっこを繰り広げる\n241\n1\nbenni_shootz\n•\nFollow\nJust gotta get out there #edit #colorgrading #hiking #natureedit #nature\n639K\n565\n43.4K",
+      "aria_text": "memeehubx69 reels\nmemeehubx69 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nbenni_shootz reels\nbenni_shootz reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {}
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-11-05T15:16:59.057Z"
+  },
+  {
+    "kind": "reel",
+    "shortcode": "Ddnm7xWtlVQ",
+    "url": "https://www.instagram.com/reel/Ddnm7xWtlVQ/",
+    "grid_views_raw": "232K",
+    "grid_views_issue": null,
+    "status": "complete",
+    "fetched_at": "2026-11-05T15:17:03.034Z",
+    "date": "2026-09-22",
+    "date_precision": "day",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 13000,
+      "raw": "13K",
+      "approximate": true,
+      "source": "og_description_localized"
+    },
+    "comments": {
+      "value": 71,
+      "raw": "71",
+      "approximate": false,
+      "source": "og_description_localized"
+    },
+    "views": {
+      "value": 232000,
+      "raw": "232K",
+      "approximate": true,
+      "source": "profile_grid"
+    },
+    "thumbnail_url": "https://instagram.fblr24-3.fna.fbcdn.net/v/t51.82787-15/850243640_18115371541991214_5611801452100233264_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=Du61qYnj0HsQ7kNvwHIkVjK&_nc_oc=AdqkbwbVnrJrj1d6njIiZDtB5Y-XgBUoNw_BoHlmXxYIHkP-aUWCKW8_F6hVR9799sKy_3lEH4H2zGTpFZvLA815&_nc_zt=23&_nc_ht=instagram.fblr24-3.fna&_nc_gid=y2SD1WSO8m3eUIE2GbEwNg&_nc_ss=7f6a8&oh=00_AQRAtgpoOAesQDR-wWIKyNWTvVfh-G1PrUf4Ba20Qh_3oA&oe=6AF28AD0&ig_cache_key=MDJSQVF6Qmppd3JUSUgxVnRBQUM0UHZKMEhzQi1oVFRDb2RDWTpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
+    "media_url": null,
+    "missing": [],
+    "missing_reasons": {},
+    "raw": {
+      "description": "「#あらゆる追いかけっこを繰り広げる」 - 2026年9月22日、「いいね！」13K件、コメント71件 - memeehubx69",
+      "article_text": "memeehubx69\n•\nFollow\n#あらゆる追いかけっこを繰り広げる\n12.7K\n71\n204\ngazi_screams\n•\nFollow\nFollow and DM for 1-on-1 Vocal Lessons\n#queen #freddie #bohemianrhapsody #freddiemercury #vocalcoach\n28.5K\n564\n1,257",
+      "aria_text": "memeehubx69 reels\nmemeehubx69 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\ngazi_screams reels\ngazi_screams reels\nVerified\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {}
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-11-05T15:17:03.034Z"
+  },
+  {
+    "kind": "reel",
+    "shortcode": "DdmwuqrNyn-",
+    "url": "https://www.instagram.com/reel/DdmwuqrNyn-/",
+    "grid_views_raw": "10.2K",
+    "grid_views_issue": null,
+    "status": "metrics_unavailable",
+    "fetched_at": "2026-11-14T08:53:44.648Z",
+    "date": "2026-09-22",
+    "date_precision": "day",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": null,
+    "comments": {
+      "value": 2,
+      "raw": "2",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Comment"
+    },
+    "views": {
+      "value": 10200,
+      "raw": "10.2K",
+      "approximate": true,
+      "source": "profile_grid"
+    },
+    "thumbnail_url": "https://instagram.fblr1-6.fna.fbcdn.net/v/t51.82787-15/851984967_18115371091991214_6028811928833959827_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=vlM32sYKz6kQ7kNvwEwiksv&_nc_oc=AdqB9DxehMOmH8k5JYzftkNx3Dwqtx5GcpKxAnb1jSyzZzkV04gNaCJK5K7vsDs_N68IlthgZ2zYpCIld6B72leU&_nc_zt=23&_nc_ht=instagram.fblr1-6.fna&_nc_gid=w_hOBik3NtxCRJxYasfe-w&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQTSbqD2hqY3Sk3ib51QP_TPozZ8RDkuOL0s5vOuEEcEmQ&oe=6AFE0C14",
+    "media_url": null,
+    "missing": [
+      "likes"
+    ],
+    "missing_reasons": {
+      "likes": "The like control displayed no numeric like count; nearby comment or reshare counts are not likes."
+    },
+    "raw": {
+      "description": "「#あらゆる追いかけっこを繰り広げる」 - 2026年9月22日、memeehubx69",
+      "article_text": "memeehubx69\nFollow\n#あらゆる追いかけっこを繰り広げる\nSee translation\nLikes\n2\n3\nmaxefrt\nFollow\nAram Bajakian · The Poet's Inner World\nAram Bajakian · The Poet's Inner World\nSteadfast 🗡️\n25.8K\n191\n642\n2,741",
+      "aria_text": "memeehubx69 reels\nmemeehubx69 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nmaxefrt reels\nmaxefrt reels\nVerified\nAudio image\nLocation\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "availability": {
+          "likes": {
+            "state": "explicitly_hidden",
+            "evidence": "Likes\nmemeehubx69 can see the total number of people who liked this post.\n_miss_comrade_\nsofia💫\nFollow\nsn__.ia__.bl\n𝔖𝔬𝔫𝔞𝔦𝔥𝔞🥂✨\nFollow\nzestykashaf_kitchen\nZesty kashaf's cloud kitchen\nFollow\nprasanna78924\nPrasanna aadi\nFollow\n__byrezi.kazmi__\n𝐂𝐚𝐧'𝐭 𝐟𝐢𝐧𝐝 𝐌𝐞⚡🧛🏻\nFollow\n__alinakhanf4\nAlina khan F4\nFollow\nlizyshkh_130\nAleezayWaseem🚩\nFollow\nnotorious_x95\nNaked Wolf\nFollow\nvayebreaks\nVayeBreaks\nFollow\nofficial_vishu_1200\nFollow\n_.rida_ali\n리다🩷\nFollow\nhijabtouuqeer\n—MANO—\nFollow\njackonweed_\nㅤ\nFollow\nh1xd0_0\nH🥀.\nFollow\nahsanbuttt_\nAhsann\nFollow\naryanharivansh_\n࣪ ִֶָ☾.𑣲Aryan🪽་༘\nFollow\na_y_u_s_h___0001\nAyush 🛠️\nFollow",
+            "source": "metric_dialog"
+          },
+          "comments": {
+            "state": "measured",
+            "evidence": "Comment"
+          },
+          "reshares": {
+            "state": "measured",
+            "evidence": "Repost"
+          },
+          "shares": {
+            "state": "not_captured",
+            "evidence": "Control located but no reliable numeric value parsed."
+          }
+        },
+        "likes_visibility": "not_shown",
+        "comments": {
+          "raw": "2",
+          "source": "dom_action_control",
+          "label": "Comment"
+        },
+        "reshares": {
+          "raw": "3",
+          "source": "dom_action_control",
+          "label": "Repost"
+        }
+      },
+      "capture_checks": {
+        "access_clear": true,
+        "stable": true,
+        "read_passes": 2,
+        "access_attempts": [],
+        "metric_panels": [
+          {
+            "field": "likes",
+            "stable": true,
+            "access_clear": true,
+            "evidence": "Likes\nmemeehubx69 can see the total number of people who liked this post.\n_miss_comrade_\nsofia💫\nFollow\nsn__.ia__.bl\n𝔖𝔬𝔫𝔞𝔦𝔥𝔞🥂✨\nFollow\nzestykashaf_kitchen\nZesty kashaf's cloud kitchen\nFollow\nprasanna78924\nPrasanna aadi\nFollow\n__byrezi.kazmi__\n𝐂𝐚𝐧'𝐭 𝐟𝐢𝐧𝐝 𝐌𝐞⚡🧛🏻\nFollow\n__alinakhanf4\nAlina khan F4\nFollow\nlizyshkh_130\nAleezayWaseem🚩\nFollow\nnotorious_x95\nNaked Wolf\nFollow\nvayebreaks\nVayeBreaks\nFollow\nofficial_vishu_1200\nFollow\n_.rida_ali\n리다🩷\nFollow\nhijabtouuqeer\n—MANO—\nFollow\njackonweed_\nㅤ\nFollow\nh1xd0_0\nH🥀.\nFollow\nahsanbuttt_\nAhsann\nFollow\naryanharivansh_\n࣪ ִֶָ☾.𑣲Aryan🪽་༘\nFollow\na_y_u_s_h___0001\nAyush 🛠️\nFollow"
+          }
+        ]
+      }
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T08:53:44.649Z",
+    "date_source": "og_description_localized",
+    "reshares": {
+      "value": 3,
+      "raw": "3",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Repost"
+    },
+    "shares": null,
+    "likes_visibility": "not_shown",
+    "analysis_resolution": {
+      "status": "resolved",
+      "source": "explicit_visibility_evidence",
+      "recorded_at": "2026-11-14T08:53:44.648Z",
+      "reason": "Unavailable metrics resolved using explicit visibility evidence or user assessment. Saved observations remain valid; missing values are unknown, not zero.",
+      "unavailable_fields": [
+        "likes"
+      ],
+      "previous_status": "partial",
+      "policy_checked_at": "2026-11-14T08:26:03.802Z"
+    },
+    "extraction_review": null,
+    "previous_analysis_resolution": {
+      "status": "resolved",
+      "source": "visible_page_capture",
+      "recorded_at": "2026-11-14T05:14:51.475Z",
+      "reason": "Reel loads but these numeric fields are not exposed in the page or captured metadata. Missing values remain unknown; existing saved observations remain valid.",
+      "unavailable_fields": [
+        "likes"
+      ],
+      "previous_status": "partial"
+    },
+    "access_review": null
+  },
+  {
+    "kind": "reel",
+    "shortcode": "DdmsQajtosN",
+    "url": "https://www.instagram.com/reel/DdmsQajtosN/",
+    "grid_views_raw": "45.8K",
+    "grid_views_issue": null,
+    "status": "complete",
+    "fetched_at": "2026-11-05T15:17:11.602Z",
+    "date": "2026-09-22",
+    "date_precision": "day",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 507,
+      "raw": "507",
+      "approximate": false,
+      "source": "og_description_localized"
+    },
+    "comments": {
+      "value": 1,
+      "raw": "1",
+      "approximate": false,
+      "source": "og_description_localized"
+    },
+    "views": {
+      "value": 45800,
+      "raw": "45.8K",
+      "approximate": true,
+      "source": "profile_grid"
+    },
+    "thumbnail_url": "https://instagram.fblr24-2.fna.fbcdn.net/v/t51.82787-15/850371826_18115371460991214_2331283471792409495_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=KNSGJWaTFNwQ7kNvwFgkz_4&_nc_oc=AdoUzgU81kLmAgHd7fofaX1teEEe7v1_uoiHRfBF6eOk32gnU6cZIHycOplQJ0kUvYd_gFO_dEIzX3BVZZOQQZCI&_nc_zt=23&_nc_ht=instagram.fblr24-2.fna&_nc_gid=2geI46WWcS25kRAZaP9YVA&_nc_ss=7f6a8&oh=00_AQTjZLIZjR6vW7Fky3spWglOA0-F8n9-kJ1ty16_F2HsKQ&oe=6AF277D7&ig_cache_key=MDJSQVF6QnZLa3J6SUgxVnRBQU80WTZKZ0g5MkZhSUpjTDdVWTpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
+    "media_url": null,
+    "missing": [],
+    "missing_reasons": {},
+    "raw": {
+      "description": "「#あらゆる追いかけっこを繰り広げる」 - 2026年9月22日、「いいね！」507件、コメント1件 - memeehubx69",
+      "article_text": "memeehubx69\n•\nFollow\n#あらゆる追いかけっこを繰り広げる\n507\n1\n13\nbenni_shootz\n•\nFollow\nJust gotta get out there #edit #colorgrading #hiking #natureedit #nature\n639K\n565\n43.4K",
+      "aria_text": "memeehubx69 reels\nmemeehubx69 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nbenni_shootz reels\nbenni_shootz reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {}
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-11-05T15:17:11.602Z"
+  },
+  {
+    "kind": "reel",
+    "shortcode": "DdmrsLqhf2J",
+    "url": "https://www.instagram.com/reel/DdmrsLqhf2J/",
+    "grid_views_raw": "1.3M",
+    "grid_views_issue": null,
+    "status": "complete",
+    "fetched_at": "2026-11-05T15:17:15.968Z",
+    "date": "2026-09-22",
+    "date_precision": "day",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 61000,
+      "raw": "61K",
+      "approximate": true,
+      "source": "og_description_localized"
+    },
+    "comments": {
+      "value": 216,
+      "raw": "216",
+      "approximate": false,
+      "source": "og_description_localized"
+    },
+    "views": {
+      "value": 1300000,
+      "raw": "1.3M",
+      "approximate": true,
+      "source": "profile_grid"
+    },
+    "thumbnail_url": "https://instagram.fblr1-8.fna.fbcdn.net/v/t51.82787-15/849978845_18115371427991214_5027573956124978541_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=CROT2LSmFHwQ7kNvwGxrFtj&_nc_oc=AdqFc6SL1IIABGtkuQANzXzkCow_gi3u0IlxppWiKhsPkto_wEmkq5RnWsvcQz8F2xBcvZCvz-gnp2nDx2jLzS5s&_nc_zt=23&_nc_ht=instagram.fblr1-8.fna&_nc_gid=loWJ0mDeb1fz1FmQyDaYWA&_nc_ss=7f6a8&oh=00_AQQV4TXtg6ivc52NCy1jX-ycPY_hfnA1ogrM0uxmO--JOQ&oe=6AF25D9F&ig_cache_key=MDJSQVF6QnQybHFUSUgxVnRBQUs2TzhKWUg0SWZGUlcydDFUZzpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
+    "media_url": null,
+    "missing": [],
+    "missing_reasons": {},
+    "raw": {
+      "description": "「#あらゆる追いかけっこを繰り広げる」 - 2026年9月22日、「いいね！」61K件、コメント216件 - memeehubx69",
+      "article_text": "memeehubx69\n•\nFollow\n#あらゆる追いかけっこを繰り広げる\n61.1K\n216\n627\nakelarebel\n•\nFollow\nIt’s time\n.\n#akelarebel\n10.7K\n112\n156",
+      "aria_text": "memeehubx69 reels\nmemeehubx69 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nakelarebel reels\nakelarebel reels\nVerified\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {}
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-11-05T15:17:15.968Z"
+  },
+  {
+    "kind": "reel",
+    "shortcode": "DdmoSndNcXj",
+    "url": "https://www.instagram.com/reel/DdmoSndNcXj/",
+    "grid_views_raw": "6,214",
+    "grid_views_issue": null,
+    "status": "metrics_unavailable",
+    "fetched_at": "2026-11-14T08:53:51.489Z",
+    "date": "2026-09-22",
+    "date_precision": "day",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": null,
+    "comments": {
+      "value": 1,
+      "raw": "1",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Comment"
+    },
+    "views": {
+      "value": 6214,
+      "raw": "6,214",
+      "approximate": false,
+      "source": "profile_grid"
+    },
+    "thumbnail_url": "https://instagram.fblr1-6.fna.fbcdn.net/v/t51.82787-15/850184955_18115370995991214_341172527896767120_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=xcFatakw5boQ7kNvwHMXzTs&_nc_oc=AdpLrM1MQSVWVGnSYAFuc6JB20dsIm2Xrq04yb_zYoQADGxjXcAepRc__0qMvF2SfFvLZIhiW0CgkI2a871TLsZe&_nc_zt=23&_nc_ht=instagram.fblr1-6.fna&_nc_gid=6sQzKMr15AsgM98NM30YSA&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQS9yYHcYuQAfTvud4VKqfyQh2r4c_6duwDeT1tpdH6qEw&oe=6AFDFBA5",
+    "media_url": null,
+    "missing": [
+      "likes"
+    ],
+    "missing_reasons": {
+      "likes": "The like control displayed no numeric like count; nearby comment or reshare counts are not likes."
+    },
+    "raw": {
+      "description": "「#あらゆる追いかけっこを繰り広げる」 - 2026年9月22日、memeehubx69",
+      "article_text": "memeehubx69\nFollow\nNusrat Fateh Ali Khan · Sanson Ki Mala Peh Simron Main Pee Ka Naam (Live Version)\nNusrat Fateh Ali Khan · Sanson Ki Mala Peh Simron Main Pee Ka Naam (Live Version)\n#あらゆる追いかけっこを繰り広げる\nSee translation\nLikes\n1\n13\nsamkamvisuals\nFollow\nAI content\n2 people\n“Captured with passion, created with Alpha. If this deserves a spot on @sonyalpha @sonyalphain #createwithsony , tag them and let’s make it happen!”\n.\n.\n.\n.\n.\n#samkamphotography #samkamvisuals #yakshagana\n8,220\n56\n118\n637",
+      "aria_text": "memeehubx69 reels\nmemeehubx69 reels\nAudio image\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nsamkamvisuals reels\nsamkamvisuals reels\nTagged users\nLocation\nTagged users\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "availability": {
+          "likes": {
+            "state": "explicitly_hidden",
+            "evidence": "Likes\nmemeehubx69 can see the total number of people who liked this post.\n_inshizzz_\nih!\nFollow\nprajjwal_chopra_17\nਪ੍ਰਜਵਲ\nFollow\ntass.ie__\n🤍✨\nFollow\njust_me_tannu__07\n★j.m★\nFollow\n_a_devi_\nAnnu D Singh\nFollow\nsubhaanshetty\nShashank Shetty\nFollow\nareejhehee\n🕷️🕸️\nFollow\nafrinnbanuu___\nkhushi 🫶🏻\nFollow\nhumi.mohm\nحمي\nFollow\nalyssa._347\n𝕬𝖑𝖙𝖍𝖊𝖆....🎀❤️‍🩹\nFollow\nhaiderrr07___\nHaider Usman\nFollow\nminaahpriv\n𝓜.\nFollow\nkiraith.exe\n𓆩 𝐕Ø𝐈𝐃 𝐊𝐈𝐑𝐀 .Ⅱ 𓆪\nFollow\nfierce_flyer748\n🌑🦢\nFollow\nalish___hoz___\nMozo??\nFollow\n_justsundaze\nSun\nFollow\naawez_siddiqui7\nAawez🍁\nFollow",
+            "source": "metric_dialog"
+          },
+          "comments": {
+            "state": "measured",
+            "evidence": "Comment"
+          },
+          "reshares": {
+            "state": "measured",
+            "evidence": "Repost"
+          },
+          "shares": {
+            "state": "not_captured",
+            "evidence": "Control located but no reliable numeric value parsed."
+          }
+        },
+        "likes_visibility": "not_shown",
+        "comments": {
+          "raw": "1",
+          "source": "dom_action_control",
+          "label": "Comment"
+        },
+        "reshares": {
+          "raw": "13",
+          "source": "dom_action_control",
+          "label": "Repost"
+        }
+      },
+      "capture_checks": {
+        "access_clear": true,
+        "stable": true,
+        "read_passes": 2,
+        "access_attempts": [],
+        "metric_panels": [
+          {
+            "field": "likes",
+            "stable": true,
+            "access_clear": true,
+            "evidence": "Likes\nmemeehubx69 can see the total number of people who liked this post.\n_inshizzz_\nih!\nFollow\nprajjwal_chopra_17\nਪ੍ਰਜਵਲ\nFollow\ntass.ie__\n🤍✨\nFollow\njust_me_tannu__07\n★j.m★\nFollow\n_a_devi_\nAnnu D Singh\nFollow\nsubhaanshetty\nShashank Shetty\nFollow\nareejhehee\n🕷️🕸️\nFollow\nafrinnbanuu___\nkhushi 🫶🏻\nFollow\nhumi.mohm\nحمي\nFollow\nalyssa._347\n𝕬𝖑𝖙𝖍𝖊𝖆....🎀❤️‍🩹\nFollow\nhaiderrr07___\nHaider Usman\nFollow\nminaahpriv\n𝓜.\nFollow\nkiraith.exe\n𓆩 𝐕Ø𝐈𝐃 𝐊𝐈𝐑𝐀 .Ⅱ 𓆪\nFollow\nfierce_flyer748\n🌑🦢\nFollow\nalish___hoz___\nMozo??\nFollow\n_justsundaze\nSun\nFollow\naawez_siddiqui7\nAawez🍁\nFollow"
+          }
+        ]
+      }
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T08:53:51.490Z",
+    "date_source": "og_description_localized",
+    "reshares": {
+      "value": 13,
+      "raw": "13",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Repost"
+    },
+    "shares": null,
+    "likes_visibility": "not_shown",
+    "analysis_resolution": {
+      "status": "resolved",
+      "source": "explicit_visibility_evidence",
+      "recorded_at": "2026-11-14T08:53:51.489Z",
+      "reason": "Unavailable metrics resolved using explicit visibility evidence or user assessment. Saved observations remain valid; missing values are unknown, not zero.",
+      "unavailable_fields": [
+        "likes"
+      ],
+      "previous_status": "partial",
+      "policy_checked_at": "2026-11-14T08:26:03.802Z"
+    },
+    "extraction_review": null,
+    "previous_analysis_resolution": {
+      "status": "resolved",
+      "source": "visible_page_capture",
+      "recorded_at": "2026-11-14T05:14:55.631Z",
+      "reason": "Reel loads but these numeric fields are not exposed in the page or captured metadata. Missing values remain unknown; existing saved observations remain valid.",
+      "unavailable_fields": [
+        "likes"
+      ],
+      "previous_status": "partial"
+    },
+    "access_review": null
+  }
+]

@@ -1,6 +1,6 @@
 {
-  "started_at": "2026-10-28T11:58:09.625Z",
-  "updated_at": "2026-11-14T04:44:19.844Z",
+  "started_at": "2026-11-14T09:06:56.721Z",
+  "updated_at": "2026-11-14T09:07:34.393Z",
   "status": "partial",
   "phase": "done",
   "scope": [
@@ -10,15 +10,11 @@
   "error": null,
   "progress": {
     "task": "item_details",
-    "label": "Reel details",
-    "action": "Ready for retry and further review",
-    "completed": 0,
-    "total": 34,
-    "percent": 0,
-    "remaining": 34,
-    "current_item": null,
-    "detail": "Target reel resolved: likes unavailable; historical grid views retained. Other pending and partial reels remain.",
-    "updated_at": "2026-11-14T04:44:19.844Z"
+    "label": "Verify incomplete reel details",
+    "completed": 5,
+    "total": 5,
+    "detail": "Uncertain metrics and access gates remain reviewable",
+    "updated_at": "2026-11-14T09:07:34.393Z"
   },
   "manual_availability_review": {
     "checked_at": "2026-11-05T18:08:25.363Z",

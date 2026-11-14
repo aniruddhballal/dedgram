@@ -1,0 +1,1828 @@
+[
+  {
+    "kind": "reel",
+    "shortcode": "Dez9CaCNtDN",
+    "url": "https://www.instagram.com/reel/Dez9CaCNtDN/",
+    "grid_views_raw": "40.7K",
+    "grid_views_issue": null,
+    "status": "metrics_unavailable",
+    "fetched_at": "2026-11-14T08:58:38.074Z",
+    "date": "2026-10-22",
+    "date_precision": "day",
+    "caption": "#あらゆる追いかけっこを繰り広げる",
+    "hashtags": [],
+    "mentions": [],
+    "likes": null,
+    "comments": {
+      "value": 26,
+      "raw": "26",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Comment"
+    },
+    "views": {
+      "value": 40700,
+      "raw": "40.7K",
+      "approximate": true,
+      "source": "profile_grid"
+    },
+    "thumbnail_url": "https://instagram.fblr24-2.fna.fbcdn.net/v/t51.71878-15/857843105_1382871563637199_8284342815762699918_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=3y32zo03Ow4Q7kNvwHuY2P4&_nc_oc=Adq94IG6WXq-oZSaYNRwc0qs9m7eelSdJKWbaswyJcIWux777UIKK5UaK3l-oDftDmdnr77xxZZ1q3MbMHJIRTJT&_nc_zt=23&_nc_ht=instagram.fblr24-2.fna&_nc_gid=lNsY7Ep0pDOvLZkWz0EcJQ&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQgAAAA&oh=00_AQQ6YP3As8yUNOQZDijdHAwtTxD394d_qT8rdfGURNABEQ&oe=6AFDD999",
+    "media_url": null,
+    "missing": [
+      "likes"
+    ],
+    "missing_reasons": {
+      "likes": "The like control displayed no numeric like count; nearby comment or reshare counts are not likes."
+    },
+    "raw": {
+      "description": "「#あらゆる追いかけっこを繰り広げる」 - 2026年10月22日、11.11_filmera",
+      "article_text": "11.11_filmera\nFollow\nAI content\n#あらゆる追いかけっこを繰り広げる\nLikes\n26\n124\ntrick0815\nFollow\nMount Kimbie, Kai Campos · Zone 3 (City Limits)\nMount Kimbie, Kai Campos · Zone 3 (City Limits)\nMist over Vienna\n\n#objectmanipulation #spinnin #sticknation #circus #balancing\n32.7K\n383\n838\n4,932",
+      "aria_text": "11.11_filmera reels\n11.11_filmera reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\ntrick0815 reels\ntrick0815 reels\nAudio image\nLocation\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "availability": {
+          "likes": {
+            "state": "explicitly_hidden",
+            "evidence": "Likes\n11.11_filmera can see the total number of people who liked this post.\npritrajeshbagade\nprit rajesh bagade\nFollow\nvaranasineha_10\nNeha\nFollow\nbtww_yourrsss\n★‽\nFollow\n____aaru111___\n🌙🌸\nFollow\nsaanvika_bharti\nSaanvika ruhi Bharti ❤️\nFollow\nvijay_rathod_3001\nvijayRathod\nFollow\nofficial_divuuu_1407\nDivu....👰🧿🖇️\nFollow\n_rushda_sheikh\nRushda_Siddiqua\nFollow\nnottty_girl_anu\n🎀Annu /♡\nFollow\njyoti.prajapati55\nJyoti Prajapati\nFollow\nits_jiya_kapoor_\njiya Kapoor\nFollow\nsushmita_phartiyal\nSush_mita🦋\nFollow\nshejalagarwal123\nShejal Vinod Agarwal\nFollow\n_chanchal_pwrr_\nchanchuu>>>>☃️🌸\nFollow\njaunelia1520\nFollow\n__llx__st__chuwa___123__ll\n_ßûpærñæ_Bàrlà_(°_ °)___🌸🦋\nFollow\n_it_is_kusum_\n✨\nFollow",
+            "source": "metric_dialog"
+          },
+          "comments": {
+            "state": "measured",
+            "evidence": "Comment"
+          },
+          "reshares": {
+            "state": "measured",
+            "evidence": "Repost"
+          },
+          "shares": {
+            "state": "not_captured",
+            "evidence": "Control located but no reliable numeric value parsed."
+          }
+        },
+        "likes_visibility": "not_shown",
+        "comments": {
+          "raw": "26",
+          "source": "dom_action_control",
+          "label": "Comment"
+        },
+        "reshares": {
+          "raw": "124",
+          "source": "dom_action_control",
+          "label": "Repost"
+        }
+      },
+      "capture_checks": {
+        "access_clear": true,
+        "stable": true,
+        "read_passes": 2,
+        "access_attempts": [],
+        "metric_panels": [
+          {
+            "field": "likes",
+            "stable": true,
+            "access_clear": true,
+            "evidence": "Likes\n11.11_filmera can see the total number of people who liked this post.\npritrajeshbagade\nprit rajesh bagade\nFollow\nvaranasineha_10\nNeha\nFollow\nbtww_yourrsss\n★‽\nFollow\n____aaru111___\n🌙🌸\nFollow\nsaanvika_bharti\nSaanvika ruhi Bharti ❤️\nFollow\nvijay_rathod_3001\nvijayRathod\nFollow\nofficial_divuuu_1407\nDivu....👰🧿🖇️\nFollow\n_rushda_sheikh\nRushda_Siddiqua\nFollow\nnottty_girl_anu\n🎀Annu /♡\nFollow\njyoti.prajapati55\nJyoti Prajapati\nFollow\nits_jiya_kapoor_\njiya Kapoor\nFollow\nsushmita_phartiyal\nSush_mita🦋\nFollow\nshejalagarwal123\nShejal Vinod Agarwal\nFollow\n_chanchal_pwrr_\nchanchuu>>>>☃️🌸\nFollow\njaunelia1520\nFollow\n__llx__st__chuwa___123__ll\n_ßûpærñæ_Bàrlà_(°_ °)___🌸🦋\nFollow\n_it_is_kusum_\n✨\nFollow"
+          }
+        ]
+      }
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T08:58:38.075Z",
+    "access_review": null,
+    "extraction_review": null,
+    "date_source": "og_description_localized",
+    "reshares": {
+      "value": 124,
+      "raw": "124",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Repost"
+    },
+    "shares": null,
+    "likes_visibility": "not_shown",
+    "analysis_resolution": {
+      "status": "resolved",
+      "source": "explicit_visibility_evidence",
+      "recorded_at": "2026-11-14T08:58:38.074Z",
+      "reason": "Unavailable metrics resolved using explicit visibility evidence or user assessment. Saved observations remain valid; missing values are unknown, not zero.",
+      "unavailable_fields": [
+        "likes"
+      ]
+    },
+    "metric_corrections": {
+      "likes": {
+        "previous": {
+          "value": 25,
+          "raw": "25",
+          "approximate": false,
+          "source": "visible_text"
+        },
+        "reason": "Legacy adjacent-text count was ambiguous; the current like control has no numeric count."
+      }
+    }
+  },
+  {
+    "kind": "reel",
+    "shortcode": "DezdEtfNjY7",
+    "url": "https://www.instagram.com/reel/DezdEtfNjY7/",
+    "grid_views_raw": "119K",
+    "grid_views_issue": null,
+    "status": "metrics_unavailable",
+    "fetched_at": "2026-11-14T08:58:44.848Z",
+    "date": "2026-10-22",
+    "date_precision": "day",
+    "caption": "When Salman walks in,\n the definition of swag changes.\n#あらゆる追いかけっこを繰り広げる",
+    "hashtags": [],
+    "mentions": [],
+    "likes": null,
+    "comments": {
+      "value": 53,
+      "raw": "53",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Comment"
+    },
+    "views": {
+      "value": 119000,
+      "raw": "119K",
+      "approximate": true,
+      "source": "profile_grid"
+    },
+    "thumbnail_url": "https://instagram.fblr24-1.fna.fbcdn.net/v/t51.71878-15/859801690_970862942471910_7123278336943110585_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=4j1JFPdV4K0Q7kNvwEZ_vlg&_nc_oc=AdrWPVHWeH15D1EWM6rvHcBSCLKsAOAUKPJjSgP2NhNrOmwzYIjI5knDvZ_C_9darx1ugm4Csfvz2hDUfmWS_uqP&_nc_zt=23&_nc_ht=instagram.fblr24-1.fna&_nc_gid=iPv31QUaBjuqgit3hXlZUQ&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQgAAAA&oh=00_AQSi4vHZEhW3zFkuKVegfVm9ZAGV9mKKW5Mp3TbBlFHVvw&oe=6AFDEFBB",
+    "media_url": null,
+    "missing": [
+      "likes"
+    ],
+    "missing_reasons": {
+      "likes": "The like control displayed no numeric like count; nearby comment or reshare counts are not likes."
+    },
+    "raw": {
+      "description": "「When Salman walks in,\n the definition of swag changes.\n#あらゆる追いかけっこを繰り広げる」 - 2026年10月22日、11.11_filmera",
+      "article_text": "11.11_filmera\nFollow\nAI content\nWhen Salman walks in,\nthe definition of swag changes.\n#あらゆる追いかけっこを繰り広げる\nLikes\n53\n636\nmaxefrt\nFollow\nAram Bajakian · The Poet's Inner World\nAram Bajakian · The Poet's Inner World\nSteadfast 🗡️\n25.8K\n191\n642\n2,741",
+      "aria_text": "11.11_filmera reels\n11.11_filmera reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nmaxefrt reels\nmaxefrt reels\nVerified\nAudio image\nLocation\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "availability": {
+          "likes": {
+            "state": "explicitly_hidden",
+            "evidence": "Likes\n11.11_filmera can see the total number of people who liked this post.\nhawadfarooq\nCall me HF\nFollow\n007sachinsingh\nSachin Singh\nFollow\nthat__is__rana\nARYAN\nFollow\npinkunial68\npinkunial\nFollow\nurban_mens_wear_jahageerganj\nmohammaddanish_urban_mens_wear_jahageerganj\nFollow\nnishant626singh\nNishnaat Singh\nFollow\nsalil_anand777\nSalil Anand\nFollow\nnotty4three\nຮȺQɪʙ♛\nFollow\nits_golu_85537773\ngolu\nFollow\nlakshay_patel_26\nLakshay 🍁\nFollow\nhussain._.shik._.14\nFollow\nafazilpasha\nFazil Pasha A\nFollow\n83.48619\n834861\nFollow\np_t_i_sarkaar\nMysterious_X_Malik\nFollow\nsanjay__makvana__ak_47\nSanjay Makvana\nFollow\nsamar_khan316\nSamar Khan\nFollow\nharish3585kumar\nHarish Kumar Sharma\nFollow",
+            "source": "metric_dialog"
+          },
+          "comments": {
+            "state": "measured",
+            "evidence": "Comment"
+          },
+          "reshares": {
+            "state": "measured",
+            "evidence": "Repost"
+          },
+          "shares": {
+            "state": "not_captured",
+            "evidence": "Control located but no reliable numeric value parsed."
+          }
+        },
+        "likes_visibility": "not_shown",
+        "comments": {
+          "raw": "53",
+          "source": "dom_action_control",
+          "label": "Comment"
+        },
+        "reshares": {
+          "raw": "636",
+          "source": "dom_action_control",
+          "label": "Repost"
+        }
+      },
+      "capture_checks": {
+        "access_clear": true,
+        "stable": true,
+        "read_passes": 2,
+        "access_attempts": [],
+        "metric_panels": [
+          {
+            "field": "likes",
+            "stable": true,
+            "access_clear": true,
+            "evidence": "Likes\n11.11_filmera can see the total number of people who liked this post.\nhawadfarooq\nCall me HF\nFollow\n007sachinsingh\nSachin Singh\nFollow\nthat__is__rana\nARYAN\nFollow\npinkunial68\npinkunial\nFollow\nurban_mens_wear_jahageerganj\nmohammaddanish_urban_mens_wear_jahageerganj\nFollow\nnishant626singh\nNishnaat Singh\nFollow\nsalil_anand777\nSalil Anand\nFollow\nnotty4three\nຮȺQɪʙ♛\nFollow\nits_golu_85537773\ngolu\nFollow\nlakshay_patel_26\nLakshay 🍁\nFollow\nhussain._.shik._.14\nFollow\nafazilpasha\nFazil Pasha A\nFollow\n83.48619\n834861\nFollow\np_t_i_sarkaar\nMysterious_X_Malik\nFollow\nsanjay__makvana__ak_47\nSanjay Makvana\nFollow\nsamar_khan316\nSamar Khan\nFollow\nharish3585kumar\nHarish Kumar Sharma\nFollow"
+          }
+        ]
+      }
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T08:58:44.849Z",
+    "access_review": null,
+    "extraction_review": null,
+    "date_source": "og_description_localized",
+    "reshares": {
+      "value": 636,
+      "raw": "636",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Repost"
+    },
+    "shares": null,
+    "likes_visibility": "not_shown",
+    "analysis_resolution": {
+      "status": "resolved",
+      "source": "explicit_visibility_evidence",
+      "recorded_at": "2026-11-14T08:58:44.848Z",
+      "reason": "Unavailable metrics resolved using explicit visibility evidence or user assessment. Saved observations remain valid; missing values are unknown, not zero.",
+      "unavailable_fields": [
+        "likes"
+      ]
+    },
+    "metric_corrections": {
+      "likes": {
+        "previous": {
+          "value": 46,
+          "raw": "46",
+          "approximate": false,
+          "source": "visible_text"
+        },
+        "reason": "Legacy adjacent-text count was ambiguous; the current like control has no numeric count."
+      }
+    }
+  },
+  {
+    "kind": "reel",
+    "shortcode": "DexLC_oN2aV",
+    "url": "https://www.instagram.com/reel/DexLC_oN2aV/",
+    "grid_views_raw": "18.9K",
+    "grid_views_issue": null,
+    "status": "metrics_unavailable",
+    "fetched_at": "2026-11-14T08:58:52.517Z",
+    "date": "2026-10-21",
+    "date_precision": "day",
+    "caption": "#あらゆる追いかけっこを繰り広げる",
+    "hashtags": [
+      "#あらゆる追いかけっこを繰り広げる"
+    ],
+    "mentions": [],
+    "likes": null,
+    "comments": {
+      "value": 5,
+      "raw": "5",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Comment"
+    },
+    "views": {
+      "value": 18900,
+      "raw": "18.9K",
+      "approximate": true,
+      "source": "profile_grid"
+    },
+    "thumbnail_url": "https://instagram.fblr1-3.fna.fbcdn.net/v/t51.71878-15/859933416_2352239825521821_2366834798833569753_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=f-UUF9In-C0Q7kNvwECZeE7&_nc_oc=AdoFnUTsfhAxvuQvm4BYPryUy27xCySvNnCGYCa98qIeuuf7ItDhWGclVVtVLQZeD2BDVSLR6XBqYvjCIB2lr1kL&_nc_zt=23&_nc_ht=instagram.fblr1-3.fna&_nc_gid=B7yNQmSwt8FWLI6pZwSjAQ&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQgAAAA&oh=00_AQSnNP3VBfrqaHeZB-9-CNaB_hviqMRQbBVDakW6krKnNw&oe=6AFDF9AE",
+    "media_url": null,
+    "missing": [
+      "likes"
+    ],
+    "missing_reasons": {
+      "likes": "The like control displayed no numeric like count; nearby comment or reshare counts are not likes."
+    },
+    "raw": {
+      "description": "11.11_filmera on October 21, 2026: \"#あらゆる追いかけっこを繰り広げる\". ",
+      "article_text": "11.11_filmera\nFollow\nAI content\n#あらゆる追いかけっこを繰り広げる\nLikes\n5\n18\nvishal.rao\nFollow\nPeace > Money 🤟🏻♾️\n\n#fitonwheels #fitness #gym #lifestyle #brahmin\n10.7K\n113\n61\n1,151",
+      "aria_text": "11.11_filmera reels\n11.11_filmera reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nvishal.rao reels\nvishal.rao reels\nVerified\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "availability": {
+          "likes": {
+            "state": "explicitly_hidden",
+            "evidence": "Likes\n11.11_filmera can see the total number of people who liked this post.\n__ankittt.__18\n🍁•ᴀɴᴋɪᴛᴛᴛ•🍁\nFollow\nthapliyal_astha\nASTHA❤\nFollow\nsengkhil.tekhil\nsengkhil tekhil\nFollow\nits__vaibhavi_11\nVB⚡️\nFollow\nb.vbalu18gmail.com9\nb.vbalu18@gmail.com\nFollow\ngo.pal7839\nG O P A L VAN\nFollow\ndiksha88873\nDiksha Singh\nFollow\nmayurbawaskar_28\nMayur Ramesh Bawaskar\nFollow\n_.saina_10\n@Pretty-blue_💙\nFollow\ndtoshibadtoshiba\nD Toshiba D Toshiba\nFollow\nhaanaamontana\nHaanaa\nFollow\ni_am__keyadutta\n𝙆 𝘿 🌙\nFollow\nbrindhadhamo_\nBrindha✨\nFollow\nankitasom02\nANKITA ✨\nFollow\nme_makbul\nMeeee😋\nFollow\nnehaverse_45\nHiral Dubey\nFollow\nshika115__\nFollow",
+            "source": "metric_dialog"
+          },
+          "comments": {
+            "state": "measured",
+            "evidence": "Comment"
+          },
+          "reshares": {
+            "state": "measured",
+            "evidence": "Repost"
+          },
+          "shares": {
+            "state": "not_captured",
+            "evidence": "Control located but no reliable numeric value parsed."
+          }
+        },
+        "likes_visibility": "not_shown",
+        "comments": {
+          "raw": "5",
+          "source": "dom_action_control",
+          "label": "Comment"
+        },
+        "reshares": {
+          "raw": "18",
+          "source": "dom_action_control",
+          "label": "Repost"
+        }
+      },
+      "capture_checks": {
+        "access_clear": true,
+        "stable": true,
+        "read_passes": 2,
+        "access_attempts": [],
+        "metric_panels": [
+          {
+            "field": "likes",
+            "stable": true,
+            "access_clear": true,
+            "evidence": "Likes\n11.11_filmera can see the total number of people who liked this post.\n__ankittt.__18\n🍁•ᴀɴᴋɪᴛᴛᴛ•🍁\nFollow\nthapliyal_astha\nASTHA❤\nFollow\nsengkhil.tekhil\nsengkhil tekhil\nFollow\nits__vaibhavi_11\nVB⚡️\nFollow\nb.vbalu18gmail.com9\nb.vbalu18@gmail.com\nFollow\ngo.pal7839\nG O P A L VAN\nFollow\ndiksha88873\nDiksha Singh\nFollow\nmayurbawaskar_28\nMayur Ramesh Bawaskar\nFollow\n_.saina_10\n@Pretty-blue_💙\nFollow\ndtoshibadtoshiba\nD Toshiba D Toshiba\nFollow\nhaanaamontana\nHaanaa\nFollow\ni_am__keyadutta\n𝙆 𝘿 🌙\nFollow\nbrindhadhamo_\nBrindha✨\nFollow\nankitasom02\nANKITA ✨\nFollow\nme_makbul\nMeeee😋\nFollow\nnehaverse_45\nHiral Dubey\nFollow\nshika115__\nFollow"
+          }
+        ]
+      }
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T08:58:52.518Z",
+    "access_review": null,
+    "extraction_review": null,
+    "date_source": "og_description",
+    "reshares": {
+      "value": 18,
+      "raw": "18",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Repost"
+    },
+    "shares": null,
+    "likes_visibility": "not_shown",
+    "analysis_resolution": {
+      "status": "resolved",
+      "source": "explicit_visibility_evidence",
+      "recorded_at": "2026-11-14T08:58:52.517Z",
+      "reason": "Unavailable metrics resolved using explicit visibility evidence or user assessment. Saved observations remain valid; missing values are unknown, not zero.",
+      "unavailable_fields": [
+        "likes"
+      ]
+    },
+    "metric_corrections": {
+      "likes": {
+        "previous": {
+          "value": 5,
+          "raw": "5",
+          "approximate": false,
+          "source": "visible_text"
+        },
+        "reason": "Legacy adjacent-text count was ambiguous; the current like control has no numeric count."
+      }
+    }
+  },
+  {
+    "kind": "reel",
+    "shortcode": "Dew0uVttK0k",
+    "url": "https://www.instagram.com/reel/Dew0uVttK0k/",
+    "grid_views_raw": "194K",
+    "grid_views_issue": null,
+    "status": "metrics_unavailable",
+    "fetched_at": "2026-11-14T08:58:59.318Z",
+    "date": "2026-10-21",
+    "date_precision": "day",
+    "caption": "#あらゆる追いかけっこを繰り広げる",
+    "hashtags": [],
+    "mentions": [],
+    "likes": null,
+    "comments": {
+      "value": 38,
+      "raw": "38",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Comment"
+    },
+    "views": {
+      "value": 194000,
+      "raw": "194K",
+      "approximate": true,
+      "source": "profile_grid"
+    },
+    "thumbnail_url": "https://instagram.fblr1-4.fna.fbcdn.net/v/t51.71878-15/861251782_40027811666863996_1939379571144688216_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=etWByqVJGq4Q7kNvwH1JfZ9&_nc_oc=AdorxwItYs7vZMJx44IWtjct8QIvCq6P3Qd_abk4s3Nub7-ulVjYiSQ-70X8TptNtJQb0MQiH9ZA6GQMMoJ5iKTf&_nc_zt=23&_nc_ht=instagram.fblr1-4.fna&_nc_gid=WcysVjmWyptVrzMuT79ZvQ&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQgAAAA&oh=00_AQSm8Gv08XDhCeaqACBO2nMlqb5Kj9J-K46bX47MmWTl0A&oe=6AFDFC29",
+    "media_url": null,
+    "missing": [
+      "likes"
+    ],
+    "missing_reasons": {
+      "likes": "The like control displayed no numeric like count; nearby comment or reshare counts are not likes."
+    },
+    "raw": {
+      "description": "「#あらゆる追いかけっこを繰り広げる」 - 2026年10月21日、11.11_filmera",
+      "article_text": "11.11_filmera\nFollow\nAI content\n#あらゆる追いかけっこを繰り広げる\nLikes\n38\n586\nim_roshanvaishnav\nFollow\nUdupi\nHappens only in udupi 🤣🙌\nDaily observations 🤣\n.\n.\n.\nFollow for more\n@im_roshanvaishnav\n.\n.\n.\n#udupi #udupidiaries #royalenfield #himalayan #explore\n14.1K\n97\n60\n3,715",
+      "aria_text": "11.11_filmera reels\n11.11_filmera reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nim_roshanvaishnav reels\nim_roshanvaishnav reels\nLocation\nLocation\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "availability": {
+          "likes": {
+            "state": "explicitly_hidden",
+            "evidence": "Likes\n11.11_filmera can see the total number of people who liked this post.\n_aavesh.ftbl\naavesh.\nFollow\nsuhailmangapramukh001\nSUHAIL BABA CHOUDHARY 👈❤️‍🔥\nFollow\nsaad_a1i_5911\nsaad____07\nFollow\ndbz._.sakib\nsakib ahmed chowdhury\nFollow\nsakshiisdead\nSakshi ☆彡\nFollow\nixl.nmn\n𝑁𝑎𝑚𝑎𝑛\nFollow\ni_jaskarannn\ni_jaskarannn\nFollow\nautisticmehar\nمہرماہ\nFollow\nh4ifa___\nᥫ᭡\nFollow\nmamaazotaaa\n🧟‍♀️\nFollow\n_bornto.diee\nᴀ ⛓️\nFollow\ndietpepsi.edits\nFollow\ncertified_me_fan\nMe\nFollow\nzzaidbinharis\n𝐙𝐚𝐢𝐝 𝐇𝐮𝐬𝐚𝐲𝐧\nFollow\nzeynaaabbass\n🕊️\nFollow\n__fxrhxnzz__\nFollow\nthe_rayyan_0.2\nمحمد ریان\nFollow",
+            "source": "metric_dialog"
+          },
+          "comments": {
+            "state": "measured",
+            "evidence": "Comment"
+          },
+          "reshares": {
+            "state": "measured",
+            "evidence": "Repost"
+          },
+          "shares": {
+            "state": "not_captured",
+            "evidence": "Control located but no reliable numeric value parsed."
+          }
+        },
+        "likes_visibility": "not_shown",
+        "comments": {
+          "raw": "38",
+          "source": "dom_action_control",
+          "label": "Comment"
+        },
+        "reshares": {
+          "raw": "586",
+          "source": "dom_action_control",
+          "label": "Repost"
+        }
+      },
+      "capture_checks": {
+        "access_clear": true,
+        "stable": true,
+        "read_passes": 2,
+        "access_attempts": [],
+        "metric_panels": [
+          {
+            "field": "likes",
+            "stable": true,
+            "access_clear": true,
+            "evidence": "Likes\n11.11_filmera can see the total number of people who liked this post.\n_aavesh.ftbl\naavesh.\nFollow\nsuhailmangapramukh001\nSUHAIL BABA CHOUDHARY 👈❤️‍🔥\nFollow\nsaad_a1i_5911\nsaad____07\nFollow\ndbz._.sakib\nsakib ahmed chowdhury\nFollow\nsakshiisdead\nSakshi ☆彡\nFollow\nixl.nmn\n𝑁𝑎𝑚𝑎𝑛\nFollow\ni_jaskarannn\ni_jaskarannn\nFollow\nautisticmehar\nمہرماہ\nFollow\nh4ifa___\nᥫ᭡\nFollow\nmamaazotaaa\n🧟‍♀️\nFollow\n_bornto.diee\nᴀ ⛓️\nFollow\ndietpepsi.edits\nFollow\ncertified_me_fan\nMe\nFollow\nzzaidbinharis\n𝐙𝐚𝐢𝐝 𝐇𝐮𝐬𝐚𝐲𝐧\nFollow\nzeynaaabbass\n🕊️\nFollow\n__fxrhxnzz__\nFollow\nthe_rayyan_0.2\nمحمد ریان\nFollow"
+          }
+        ]
+      }
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T08:58:59.318Z",
+    "access_review": null,
+    "extraction_review": null,
+    "date_source": "og_description_localized",
+    "reshares": {
+      "value": 586,
+      "raw": "586",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Repost"
+    },
+    "shares": null,
+    "likes_visibility": "not_shown",
+    "analysis_resolution": {
+      "status": "resolved",
+      "source": "explicit_visibility_evidence",
+      "recorded_at": "2026-11-14T08:58:59.318Z",
+      "reason": "Unavailable metrics resolved using explicit visibility evidence or user assessment. Saved observations remain valid; missing values are unknown, not zero.",
+      "unavailable_fields": [
+        "likes"
+      ]
+    },
+    "metric_corrections": {
+      "likes": {
+        "previous": {
+          "value": 38,
+          "raw": "38",
+          "approximate": false,
+          "source": "visible_text"
+        },
+        "reason": "Legacy adjacent-text count was ambiguous; the current like control has no numeric count."
+      }
+    }
+  },
+  {
+    "kind": "reel",
+    "shortcode": "Desat1aMlYd",
+    "url": "https://www.instagram.com/reel/Desat1aMlYd/",
+    "grid_views_raw": "36.8K",
+    "grid_views_issue": null,
+    "status": "metrics_unavailable",
+    "fetched_at": "2026-11-14T08:59:06.617Z",
+    "date": "2026-10-19",
+    "date_precision": "day",
+    "caption": "Happy dussehra (2026)\n#あらゆる追いかけっこを繰り広げる",
+    "hashtags": [],
+    "mentions": [],
+    "likes": null,
+    "comments": {
+      "value": 1,
+      "raw": "1",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Comment"
+    },
+    "views": {
+      "value": 36800,
+      "raw": "36.8K",
+      "approximate": true,
+      "source": "profile_grid"
+    },
+    "thumbnail_url": "https://instagram.fblr1-10.fna.fbcdn.net/v/t51.71878-15/857318159_1490731549561193_8519447589603562568_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=o6WOz-ceb7QQ7kNvwFT3mMD&_nc_oc=Adq2c-t4NA_wrHjiGm81OgnceDUJkYaZZM98PlPxjNnw_AzX9AypniIQx2ZjkBqZIIiJKuIosi_KvytN9mYseoB0&_nc_zt=23&_nc_ht=instagram.fblr1-10.fna&_nc_gid=ENQ68GKxvZTAQS2PFosERw&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQgAAAA&oh=00_AQQ4Js9ULkh_yEldnAQekArBXBMH1xEfI7rDVrADu4z6jA&oe=6AFDE2C7",
+    "media_url": null,
+    "missing": [
+      "likes"
+    ],
+    "missing_reasons": {
+      "likes": "The like control displayed no numeric like count; nearby comment or reshare counts are not likes."
+    },
+    "raw": {
+      "description": "「Happy dussehra (2026)\n#あらゆる追いかけっこを繰り広げる」 - 2026年10月19日、11.11_filmera",
+      "article_text": "11.11_filmera\nFollow\nAI content\nHappy dussehra (2026)\n#あらゆる追いかけっこを繰り広げる\nLikes\n1\n20\nalbertobarsiguitar\nFollow\nSynth riffs + guitar = 👨🏻‍🍳🤌\n23.6K\n111\n697\n3,790",
+      "aria_text": "11.11_filmera reels\n11.11_filmera reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nalbertobarsiguitar reels\nalbertobarsiguitar reels\nVerified\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "availability": {
+          "likes": {
+            "state": "explicitly_hidden",
+            "evidence": "Likes\n11.11_filmera can see the total number of people who liked this post.\nnilesh_tiwari.09\nAlways Nilesh 😎\nFollow\nitzhimanshu3\n॥ कृष्णं सदा सहायते ॥\nFollow\nbeingaman1_3\nAman\nFollow\nnabinkumar8331\nNabin Kumar\nFollow\nthakur_736392\nVikash Thakur\nFollow\nvinsmoke_prassu\nVinsmoke_prassu\nFollow\nurznakul\n♠︎.𝐍𝐚𝐤𝐮𝐥.♠︎\nFollow\nsahidsek345\nShahid Sekh\nFollow\nrajveer_valmik_01\nRajveer Walmiki\nFollow\ntrt_pvt02\n⚜️TRT⚜️\nFollow\nmd__d_a_n_i_s_h_0555\nدانش سالار\nFollow\nmayurbawaskar_28\nMayur Ramesh Bawaskar\nFollow\nbeinghasnain_313\nحسنین🥂🌒\nFollow\ngulkis_universe_\nMADAM SIR 💖💖\nFollow\n3.1428rohits\nRohit Sahu\nFollow\nzuber_creators\nMd Zuber\nFollow\nharjinder_singh1412\nHarjinder Singh\nFollow",
+            "source": "metric_dialog"
+          },
+          "comments": {
+            "state": "measured",
+            "evidence": "Comment"
+          },
+          "reshares": {
+            "state": "measured",
+            "evidence": "Repost"
+          },
+          "shares": {
+            "state": "not_captured",
+            "evidence": "Control located but no reliable numeric value parsed."
+          }
+        },
+        "likes_visibility": "not_shown",
+        "comments": {
+          "raw": "1",
+          "source": "dom_action_control",
+          "label": "Comment"
+        },
+        "reshares": {
+          "raw": "20",
+          "source": "dom_action_control",
+          "label": "Repost"
+        }
+      },
+      "capture_checks": {
+        "access_clear": true,
+        "stable": true,
+        "read_passes": 2,
+        "access_attempts": [],
+        "metric_panels": [
+          {
+            "field": "likes",
+            "stable": true,
+            "access_clear": true,
+            "evidence": "Likes\n11.11_filmera can see the total number of people who liked this post.\nnilesh_tiwari.09\nAlways Nilesh 😎\nFollow\nitzhimanshu3\n॥ कृष्णं सदा सहायते ॥\nFollow\nbeingaman1_3\nAman\nFollow\nnabinkumar8331\nNabin Kumar\nFollow\nthakur_736392\nVikash Thakur\nFollow\nvinsmoke_prassu\nVinsmoke_prassu\nFollow\nurznakul\n♠︎.𝐍𝐚𝐤𝐮𝐥.♠︎\nFollow\nsahidsek345\nShahid Sekh\nFollow\nrajveer_valmik_01\nRajveer Walmiki\nFollow\ntrt_pvt02\n⚜️TRT⚜️\nFollow\nmd__d_a_n_i_s_h_0555\nدانش سالار\nFollow\nmayurbawaskar_28\nMayur Ramesh Bawaskar\nFollow\nbeinghasnain_313\nحسنین🥂🌒\nFollow\ngulkis_universe_\nMADAM SIR 💖💖\nFollow\n3.1428rohits\nRohit Sahu\nFollow\nzuber_creators\nMd Zuber\nFollow\nharjinder_singh1412\nHarjinder Singh\nFollow"
+          }
+        ]
+      }
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T08:59:06.617Z",
+    "access_review": null,
+    "extraction_review": null,
+    "date_source": "og_description_localized",
+    "reshares": {
+      "value": 20,
+      "raw": "20",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Repost"
+    },
+    "shares": null,
+    "likes_visibility": "not_shown",
+    "analysis_resolution": {
+      "status": "resolved",
+      "source": "explicit_visibility_evidence",
+      "recorded_at": "2026-11-14T08:59:06.617Z",
+      "reason": "Unavailable metrics resolved using explicit visibility evidence or user assessment. Saved observations remain valid; missing values are unknown, not zero.",
+      "unavailable_fields": [
+        "likes"
+      ]
+    },
+    "metric_corrections": {
+      "likes": {
+        "previous": {
+          "value": 1,
+          "raw": "1",
+          "approximate": false,
+          "source": "visible_text"
+        },
+        "reason": "Legacy adjacent-text count was ambiguous; the current like control has no numeric count."
+      }
+    }
+  },
+  {
+    "kind": "reel",
+    "shortcode": "DesC-x5tGA3",
+    "url": "https://www.instagram.com/reel/DesC-x5tGA3/",
+    "grid_views_raw": "192K",
+    "grid_views_issue": null,
+    "status": "metrics_unavailable",
+    "fetched_at": "2026-11-14T08:59:13.967Z",
+    "date": "2026-10-19",
+    "date_precision": "day",
+    "caption": "Sanju (2018)\n⭐ Cast: Ranbir Kapoor\n🎬 Director: Rajkumar Hirani\n\n#Sanju #SanjayDutt #RanbirKapoor #BollywoodEdits\n#あらゆる追いかけっこを繰り広げる」 - 2026年10月19日、11.11_filmera",
+    "hashtags": [
+      "#Sanju",
+      "#SanjayDutt",
+      "#RanbirKapoor",
+      "#BollywoodEdits",
+      "#あらゆる追いかけっこを繰り広げる"
+    ],
+    "mentions": [],
+    "likes": null,
+    "comments": {
+      "value": 9,
+      "raw": "9",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Comment"
+    },
+    "views": {
+      "value": 192000,
+      "raw": "192K",
+      "approximate": true,
+      "source": "profile_grid"
+    },
+    "thumbnail_url": "https://instagram.fblr1-10.fna.fbcdn.net/v/t51.71878-15/847287244_1890478119047424_1195668042359158183_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=DQ1fzHpo72wQ7kNvwE4gNgO&_nc_oc=Adqnwo98H26ARYmFL0Vy7f0HAww9ITlhHNuqjOW6ELUplUUzJrI3P2SUfsO_ubOpGzx1kcWPfG5kWoUaL0mqIjxJ&_nc_zt=23&_nc_ht=instagram.fblr1-10.fna&_nc_gid=c_mwNzng0N9Tb8GvXjpEmg&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQgAAAA&oh=00_AQTNQx67vbZtucGTPAYt3U1wMphdsdEjvaatn8yGujO0jQ&oe=6AFDE126",
+    "media_url": null,
+    "missing": [
+      "likes"
+    ],
+    "missing_reasons": {
+      "likes": "The like control displayed no numeric like count; nearby comment or reshare counts are not likes."
+    },
+    "raw": {
+      "description": "「🎬 SANJU (2018) | A LIFE BEYOND THE SPOTLIGHT 🖤🥀\n\nBehind the fame, the success, and the superstar image was a man whose life was filled with struggles, mistakes, controversies, and countless second chances. ❤️‍🩹\n\nSanju isn't just a story about a Bollywood star; it's a journey through the highs and lows of a life lived under the spotlight. From losing control to facing the consequences of his choices, from being judged by the world to finding the strength to stand up again — his story shows that a person's life can never be defined by just one chapter. ✨\n\nRanbir Kapoor's powerful transformation brings Sanjay Dutt's journey to life, showing the human side behind the headlines. Because sometimes, the most complicated stories are the ones that remind us that nobody's life is as simple as it looks from the outside. 🎭🔥\n\n“A man is more than his mistakes, and a comeback is more than a second chance.” 🖤\n\n🎥 Movie: Sanju (2018)\n⭐ Cast: Ranbir Kapoor\n🎬 Director: Rajkumar Hirani\n\n#Sanju #SanjayDutt #RanbirKapoor #BollywoodEdits\n#あらゆる追いかけっこを繰り広げる」 - 2026年10月19日、11.11_filmera",
+      "article_text": "11.11_filmera\nFollow\nAI content\n🎬 SANJU (2018) | A LIFE BEYOND THE SPOTLIGHT 🖤🥀\n\nBehind the fame, the success, and the superstar image was a man whose life was filled with struggles, mistakes, controversies, and countless second chances. ❤️‍🩹\n\nSanju isn't just a story about a Bollywood star; it's a journey through the highs and lows of a life lived under the spotlight. From losing control to facing the consequences of his choices, from being judged by the world to finding the strength to stand up again — his story shows that a person's life can never be defined by just one chapter. ✨\n\nRanbir Kapoor's powerful transformation brings Sanjay Dutt's journey to life, showing the human side behind the headlines. Because sometimes, the most complicated stories are the ones that remind us that nobody's life is as simple as it looks from the outside. 🎭🔥\n\n“A man is more than his mistakes, and a comeback is more than a second chance.” 🖤\n\n🎥 Movie: Sanju (2018)\n⭐ Cast: Ranbir Kapoor\n🎬 Director: Rajkumar Hirani\n\n#Sanju #SanjayDutt #RanbirKapoor #BollywoodEdits\n#あらゆる追いかけっこを繰り広げる\nLikes\n9\n91\navicii\nFollow\nAvicii · Silhouettes\nWhere it all began – the opening of Avicii’s first Tomorrowland MainStage set ◢ ◤\n\nOn July 23, 2011, Avicii took the Tomorrowland crowd through a set that would be regarded as one of the most iconic performances in EDM history, from “Silhouettes” to an early play of “Levels” months before its release.\n\nExperience the full performance on Avicii Community, the official home for fans worldwide. Watch the entire 2011 Tomorrowland set on avicii.com/community or through the link in bio.\n82.4K\n881\n4,409\n3,966",
+      "aria_text": "11.11_filmera reels\n11.11_filmera reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\navicii reels\navicii reels\nVerified\nAudio image\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "availability": {
+          "likes": {
+            "state": "explicitly_hidden",
+            "evidence": "Likes\n11.11_filmera can see the total number of people who liked this post.\nkar_tikx11\n_Kartik.tamtt_1.1.1.\nFollow\nhryx_yadav_9987\nyadav\nFollow\nmr_gous_52_\n🇬‌🇴‌🇺‌🇸‌ 5²\nFollow\ntheycallme__zulfiqar\ntheycallme__zulfiqar\nFollow\n___an____3.108\n💎\nFollow\nwakeupp_dakshh\nsanju💊\nFollow\nviraj_v_93\nVijay Veldode\nFollow\nwhy.harshhhh\nFollow\nstar_dhanush_1047\nDHANUSH_yAdHuVaNsI🔥💪😈👿☠️\nFollow\nrajbir.denath07\nRAJBIR⚜️\nFollow\nvveer.1000\n𝓐𝓻𝔂𝓪𝓷♛\nFollow\ngufranmirza707\ngufran _mirza\nFollow\nbtw.kritaarth\n⚡\nFollow\nahmedjutt_0\n🚩احمد\nFollow\nsatveer__srann\nsatveer🖤\nFollow\njellyfish.i52\nFollow\nkaranmandal6434\n🕷️\nFollow",
+            "source": "metric_dialog"
+          },
+          "comments": {
+            "state": "measured",
+            "evidence": "Comment"
+          },
+          "reshares": {
+            "state": "measured",
+            "evidence": "Repost"
+          },
+          "shares": {
+            "state": "not_captured",
+            "evidence": "Control located but no reliable numeric value parsed."
+          }
+        },
+        "likes_visibility": "not_shown",
+        "comments": {
+          "raw": "9",
+          "source": "dom_action_control",
+          "label": "Comment"
+        },
+        "reshares": {
+          "raw": "91",
+          "source": "dom_action_control",
+          "label": "Repost"
+        }
+      },
+      "capture_checks": {
+        "access_clear": true,
+        "stable": true,
+        "read_passes": 2,
+        "access_attempts": [],
+        "metric_panels": [
+          {
+            "field": "likes",
+            "stable": true,
+            "access_clear": true,
+            "evidence": "Likes\n11.11_filmera can see the total number of people who liked this post.\nkar_tikx11\n_Kartik.tamtt_1.1.1.\nFollow\nhryx_yadav_9987\nyadav\nFollow\nmr_gous_52_\n🇬‌🇴‌🇺‌🇸‌ 5²\nFollow\ntheycallme__zulfiqar\ntheycallme__zulfiqar\nFollow\n___an____3.108\n💎\nFollow\nwakeupp_dakshh\nsanju💊\nFollow\nviraj_v_93\nVijay Veldode\nFollow\nwhy.harshhhh\nFollow\nstar_dhanush_1047\nDHANUSH_yAdHuVaNsI🔥💪😈👿☠️\nFollow\nrajbir.denath07\nRAJBIR⚜️\nFollow\nvveer.1000\n𝓐𝓻𝔂𝓪𝓷♛\nFollow\ngufranmirza707\ngufran _mirza\nFollow\nbtw.kritaarth\n⚡\nFollow\nahmedjutt_0\n🚩احمد\nFollow\nsatveer__srann\nsatveer🖤\nFollow\njellyfish.i52\nFollow\nkaranmandal6434\n🕷️\nFollow"
+          }
+        ]
+      }
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T08:59:13.968Z",
+    "access_review": null,
+    "extraction_review": null,
+    "date_source": "og_description_localized",
+    "reshares": {
+      "value": 91,
+      "raw": "91",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Repost"
+    },
+    "shares": null,
+    "likes_visibility": "not_shown",
+    "analysis_resolution": {
+      "status": "resolved",
+      "source": "explicit_visibility_evidence",
+      "recorded_at": "2026-11-14T08:59:13.967Z",
+      "reason": "Unavailable metrics resolved using explicit visibility evidence or user assessment. Saved observations remain valid; missing values are unknown, not zero.",
+      "unavailable_fields": [
+        "likes"
+      ]
+    },
+    "metric_corrections": {
+      "likes": {
+        "previous": {
+          "value": 7,
+          "raw": "7",
+          "approximate": false,
+          "source": "visible_text"
+        },
+        "reason": "Legacy adjacent-text count was ambiguous; the current like control has no numeric count."
+      }
+    }
+  },
+  {
+    "kind": "reel",
+    "shortcode": "DersT3PNOID",
+    "url": "https://www.instagram.com/reel/DersT3PNOID/",
+    "grid_views_raw": "721K",
+    "grid_views_issue": null,
+    "status": "complete",
+    "fetched_at": "2026-10-28T11:37:30.260Z",
+    "date": "2026-10-19",
+    "date_precision": "day",
+    "caption": "#あらゆる追いかけっこを繰り広げる",
+    "hashtags": [
+      "#あらゆる追いかけっこを繰り広げる"
+    ],
+    "mentions": [],
+    "likes": {
+      "value": 65000,
+      "raw": "65K",
+      "approximate": true,
+      "source": "og_description"
+    },
+    "comments": {
+      "value": 64,
+      "raw": "64",
+      "approximate": false,
+      "source": "og_description"
+    },
+    "views": {
+      "value": 721000,
+      "raw": "721K",
+      "approximate": true,
+      "source": "profile_grid"
+    },
+    "thumbnail_url": "https://instagram.fblr24-2.fna.fbcdn.net/v/t51.82787-15/858606634_18108914669240795_5903189836494078356_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=YTVQ5ETknsgQ7kNvwHOS84v&_nc_oc=AdqPUifnghMbe1Vd33bF9SAqOwSZqF6PhIqGxLIz4oPm2w0vwSAuv3_BChX5wm8h01i6E0idqzkc80HIQyBit9f7&_nc_zt=23&_nc_ht=instagram.fblr24-2.fna&_nc_gid=Q62yMYNp2quxqOu_n--PbA&_nc_ss=7f6a8&oh=00_AQTin8Z-V2ekNiUvk9OWS3PrxWjE6oGEiTzEV9P-ys4SpA&oe=6AE7A59C&ig_cache_key=MDJSQVF6QmlwTUxUTUg5bFZBQU52QklFSUg0VmZzVVpRQjdUMDpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
+    "media_url": null,
+    "missing": [],
+    "missing_reasons": {},
+    "raw": {
+      "description": "65K likes, 64 comments - bollyxedit.7 on October 19, 2026: \"#あらゆる追いかけっこを繰り広げる\". ",
+      "article_text": "bollyxedit.7\n•\nFollow\n• AI content\nNavaan Sandhu, Bir, Daaku · Deewane\nNavaan Sandhu, Bir, Daaku · Deewane\n#あらゆる追いかけっこを繰り広げる\n65K\n64\n1,692\njoey_biasotto\n•\nFollow\nSan Diego, California\ngenuinely speechless @nathanialpov #nathanialpov #sax #saxophone\n90.5K\n95\n1,823",
+      "aria_text": "bollyxedit.7 reels\nbollyxedit.7 reels\nAudio image\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\njoey_biasotto reels\njoey_biasotto reels\nLocation\nLocation\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {}
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-10-28T11:37:30.261Z"
+  },
+  {
+    "kind": "reel",
+    "shortcode": "DerolDRtmNf",
+    "url": "https://www.instagram.com/reel/DerolDRtmNf/",
+    "grid_views_raw": "198K",
+    "grid_views_issue": null,
+    "status": "metrics_unavailable",
+    "fetched_at": "2026-11-14T08:59:21.080Z",
+    "date": "2026-10-19",
+    "date_precision": "day",
+    "caption": "#あらゆる追いかけっこを繰り広げる",
+    "hashtags": [],
+    "mentions": [],
+    "likes": null,
+    "comments": {
+      "value": 8,
+      "raw": "8",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Comment"
+    },
+    "views": {
+      "value": 198000,
+      "raw": "198K",
+      "approximate": true,
+      "source": "profile_grid"
+    },
+    "thumbnail_url": "https://instagram.fblr1-5.fna.fbcdn.net/v/t51.82787-15/858523680_18108914381240795_6576957712687220433_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=DC4lx3Qh8qQQ7kNvwFTR0aj&_nc_oc=AdqONqAG74rJFE9B8oIv9ZZmEqush5S4B-fy74mwEQvlHRHyZHHx0zXs-xqaQwFoeBbkNj9QTrc20zDiJJFEslEF&_nc_zt=23&_nc_ht=instagram.fblr1-5.fna&_nc_gid=9oGhriLOH2iOYf1sLGQ0sQ&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQT7vwKqL8xIIwJtI_APviV5wS96bQlxYOBznJQSd6Dorw&oe=6AFDF579",
+    "media_url": null,
+    "missing": [
+      "likes"
+    ],
+    "missing_reasons": {
+      "likes": "The like control displayed no numeric like count; nearby comment or reshare counts are not likes."
+    },
+    "raw": {
+      "description": "「#あらゆる追いかけっこを繰り広げる」 - 2026年10月19日、11.11_filmera",
+      "article_text": "11.11_filmera\nFollow\nAI content\nNavaan Sandhu, Bir, Daaku · Deewane\nNavaan Sandhu, Bir, Daaku · Deewane\n#あらゆる追いかけっこを繰り広げる\nLikes\n8\n342\nbruisedinblack and 2 others\nFollow\nLestat · The Perfect Illusion\noriginal design seraphim by me! link in bio for inquiries & bookings. #seraphimtattoo\n264K\n429\n5,946\n31.1K",
+      "aria_text": "11.11_filmera reels\n11.11_filmera reels\nAudio image\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nbruisedinblack reels\nbruisedinblack reels\nAudio image\nLocation\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "availability": {
+          "likes": {
+            "state": "explicitly_hidden",
+            "evidence": "Likes\n11.11_filmera can see the total number of people who liked this post.\nheartrtsharma6\nFollow\n___.tamannaa.__001\n❤️\nFollow\nofficial_anil_verma__\nѦηїℓ__ṽ℮ґмѦ__(°•°)\nFollow\nkaifzzzz07\nᴍʀ 🄿🄷🄴🄽🄾🄼🄸🄽🄰🄻\nFollow\nyasxhhh_.60\nیاسیم🤍\nFollow\nf.urqan_\nFurey ❤\nFollow\nrohit_raj1185\nRohit Raj\nFollow\nbarelyhumannnnnn\n𓆉\nFollow\nkrish___nai_bsty\nकृशु...🪼\nFollow\nahsanahmedmashori\nAhsanahmed Mashori\nFollow\nujit1297\n꧁༒☬𝓤𝓳𝓲𝓽 𝓴𝓲𝓷𝓰☬༒꧂\nFollow\n_lakshay__.28x\nLakshay 🕷️🕸️\nFollow\nitz.samrat._._\nSamrat sk\nFollow\nr_e_h_a_n_k_h_a_n2370\n░▒▓█ریحان خ █▓▒░.\nFollow\n_crazy_monu__\nFollow\nyuvraj_marwaha\nYuvraj\nFollow\nsaud_48129\nمحمد سعود\nFollow",
+            "source": "metric_dialog"
+          },
+          "comments": {
+            "state": "measured",
+            "evidence": "Comment"
+          },
+          "reshares": {
+            "state": "measured",
+            "evidence": "Repost"
+          },
+          "shares": {
+            "state": "not_captured",
+            "evidence": "Control located but no reliable numeric value parsed."
+          }
+        },
+        "likes_visibility": "not_shown",
+        "comments": {
+          "raw": "8",
+          "source": "dom_action_control",
+          "label": "Comment"
+        },
+        "reshares": {
+          "raw": "342",
+          "source": "dom_action_control",
+          "label": "Repost"
+        }
+      },
+      "capture_checks": {
+        "access_clear": true,
+        "stable": true,
+        "read_passes": 2,
+        "access_attempts": [],
+        "metric_panels": [
+          {
+            "field": "likes",
+            "stable": true,
+            "access_clear": true,
+            "evidence": "Likes\n11.11_filmera can see the total number of people who liked this post.\nheartrtsharma6\nFollow\n___.tamannaa.__001\n❤️\nFollow\nofficial_anil_verma__\nѦηїℓ__ṽ℮ґмѦ__(°•°)\nFollow\nkaifzzzz07\nᴍʀ 🄿🄷🄴🄽🄾🄼🄸🄽🄰🄻\nFollow\nyasxhhh_.60\nیاسیم🤍\nFollow\nf.urqan_\nFurey ❤\nFollow\nrohit_raj1185\nRohit Raj\nFollow\nbarelyhumannnnnn\n𓆉\nFollow\nkrish___nai_bsty\nकृशु...🪼\nFollow\nahsanahmedmashori\nAhsanahmed Mashori\nFollow\nujit1297\n꧁༒☬𝓤𝓳𝓲𝓽 𝓴𝓲𝓷𝓰☬༒꧂\nFollow\n_lakshay__.28x\nLakshay 🕷️🕸️\nFollow\nitz.samrat._._\nSamrat sk\nFollow\nr_e_h_a_n_k_h_a_n2370\n░▒▓█ریحان خ █▓▒░.\nFollow\n_crazy_monu__\nFollow\nyuvraj_marwaha\nYuvraj\nFollow\nsaud_48129\nمحمد سعود\nFollow"
+          }
+        ]
+      }
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T08:59:21.081Z",
+    "access_review": null,
+    "extraction_review": null,
+    "date_source": "og_description_localized",
+    "reshares": {
+      "value": 342,
+      "raw": "342",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Repost"
+    },
+    "shares": null,
+    "likes_visibility": "not_shown",
+    "analysis_resolution": {
+      "status": "resolved",
+      "source": "explicit_visibility_evidence",
+      "recorded_at": "2026-11-14T08:59:21.080Z",
+      "reason": "Unavailable metrics resolved using explicit visibility evidence or user assessment. Saved observations remain valid; missing values are unknown, not zero.",
+      "unavailable_fields": [
+        "likes"
+      ]
+    },
+    "metric_corrections": {
+      "likes": {
+        "previous": {
+          "value": 8,
+          "raw": "8",
+          "approximate": false,
+          "source": "visible_text"
+        },
+        "reason": "Legacy adjacent-text count was ambiguous; the current like control has no numeric count."
+      }
+    }
+  },
+  {
+    "kind": "reel",
+    "shortcode": "DerR_gbt0Il",
+    "url": "https://www.instagram.com/reel/DerR_gbt0Il/",
+    "grid_views_raw": "60.1K",
+    "grid_views_issue": null,
+    "status": "metrics_unavailable",
+    "fetched_at": "2026-11-14T08:59:28.272Z",
+    "date": "2026-10-19",
+    "date_precision": "day",
+    "caption": "Baaghi (2016) 🎥 \nTiger Shroff ki popular action-romance film hai, jismein action, love story aur emotional moments ka combination dekhne ko milta hai.\n#あらゆる追いかけっこを繰り広げる",
+    "hashtags": [],
+    "mentions": [],
+    "likes": null,
+    "comments": {
+      "value": 25,
+      "raw": "25",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Comment"
+    },
+    "views": {
+      "value": 60100,
+      "raw": "60.1K",
+      "approximate": true,
+      "source": "profile_grid"
+    },
+    "thumbnail_url": "https://instagram.fblr1-10.fna.fbcdn.net/v/t51.71878-15/856886817_1135203632289714_3534156989332983588_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=VoCEawWuYC8Q7kNvwFhAqZj&_nc_oc=AdqsXexb9CKwiyyJf4EPqW7pMSSoRe9ituALX_RKshG5wQe6AV_2hjmSb_XOxqpDGtLmIZOT17CyRQBEFHT6a7ZI&_nc_zt=23&_nc_ht=instagram.fblr1-10.fna&_nc_gid=QEC3Tg6TLS_4NQz3Hb8WNA&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQgAAAA&oh=00_AQS71Gk9mQweoF_MzSUhx1gGc3y5XEjUTW3bF1VtdHS4yw&oe=6AFE0074",
+    "media_url": null,
+    "missing": [
+      "likes"
+    ],
+    "missing_reasons": {
+      "likes": "The like control displayed no numeric like count; nearby comment or reshare counts are not likes."
+    },
+    "raw": {
+      "description": "「Baaghi (2016) 🎥 \nTiger Shroff ki popular action-romance film hai, jismein action, love story aur emotional moments ka combination dekhne ko milta hai.\n#あらゆる追いかけっこを繰り広げる」 - 2026年10月19日、11.11_filmera",
+      "article_text": "11.11_filmera\nFollow\nAI content\nBaaghi (2016) 🎥\nTiger Shroff ki popular action-romance film hai, jismein action, love story aur emotional moments ka combination dekhne ko milta hai.\n#あらゆる追いかけっこを繰り広げる\nSee translation\nLikes\n25\n189\nformula.addict\nFollow\nCloser look at the front wing active aero mechanism 🔧🏎️\n153K\n199\n3,335\n8,754",
+      "aria_text": "11.11_filmera reels\n11.11_filmera reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nformula.addict reels\nformula.addict reels\nVerified\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "availability": {
+          "likes": {
+            "state": "explicitly_hidden",
+            "evidence": "Likes\n11.11_filmera can see the total number of people who liked this post.\nfcvkinnn\n𝘽𝙀𝘽𝙊\nFollow\nmr_kuldeep_parmar_00\n★𝓚𝓾𝓵𝓭𝓮𝓮𝓹★\nFollow\nmr._.dhruv_1988\nđhŕųv $\nFollow\nh_i_m_e_s_h_don_74\nhimessssssh!!❤️👑🍁💀\nFollow\nprvv__rida_9\nTUTTO PASSA☠️🤫\nFollow\nadarsh_45315\nFollow\nonly_prince_89\nJassi_oye❤️‍🔥👥\nFollow\nmohamedelhachtar\nmohmade El Hachtar\nFollow\nnatashaaa610\nFollow\n_s_a_k_i_b__07_x\ns　ᴀ　ᴋ　ɪ　ʙシ︎\nFollow\naaryan025\nFollow\nim_notxter_z\n..\nFollow\nltz_shubo________423514\nLtz Shubo\nFollow\nanas__.70\nAnas Khan🫀🖤\nFollow\nbadguy_yusuf10\nYÛSÚF MÂRCHÁNT\nFollow\nshivam_rathore.br09\nInkuuu.....🤞\nFollow\nspidey_shashwat30\nSpidey🕸️🕷️\nFollow",
+            "source": "metric_dialog"
+          },
+          "comments": {
+            "state": "measured",
+            "evidence": "Comment"
+          },
+          "reshares": {
+            "state": "measured",
+            "evidence": "Repost"
+          },
+          "shares": {
+            "state": "not_captured",
+            "evidence": "Control located but no reliable numeric value parsed."
+          }
+        },
+        "likes_visibility": "not_shown",
+        "comments": {
+          "raw": "25",
+          "source": "dom_action_control",
+          "label": "Comment"
+        },
+        "reshares": {
+          "raw": "189",
+          "source": "dom_action_control",
+          "label": "Repost"
+        }
+      },
+      "capture_checks": {
+        "access_clear": true,
+        "stable": true,
+        "read_passes": 2,
+        "access_attempts": [],
+        "metric_panels": [
+          {
+            "field": "likes",
+            "stable": true,
+            "access_clear": true,
+            "evidence": "Likes\n11.11_filmera can see the total number of people who liked this post.\nfcvkinnn\n𝘽𝙀𝘽𝙊\nFollow\nmr_kuldeep_parmar_00\n★𝓚𝓾𝓵𝓭𝓮𝓮𝓹★\nFollow\nmr._.dhruv_1988\nđhŕųv $\nFollow\nh_i_m_e_s_h_don_74\nhimessssssh!!❤️👑🍁💀\nFollow\nprvv__rida_9\nTUTTO PASSA☠️🤫\nFollow\nadarsh_45315\nFollow\nonly_prince_89\nJassi_oye❤️‍🔥👥\nFollow\nmohamedelhachtar\nmohmade El Hachtar\nFollow\nnatashaaa610\nFollow\n_s_a_k_i_b__07_x\ns　ᴀ　ᴋ　ɪ　ʙシ︎\nFollow\naaryan025\nFollow\nim_notxter_z\n..\nFollow\nltz_shubo________423514\nLtz Shubo\nFollow\nanas__.70\nAnas Khan🫀🖤\nFollow\nbadguy_yusuf10\nYÛSÚF MÂRCHÁNT\nFollow\nshivam_rathore.br09\nInkuuu.....🤞\nFollow\nspidey_shashwat30\nSpidey🕸️🕷️\nFollow"
+          }
+        ]
+      }
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T08:59:28.273Z",
+    "access_review": null,
+    "extraction_review": null,
+    "date_source": "og_description_localized",
+    "reshares": {
+      "value": 189,
+      "raw": "189",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Repost"
+    },
+    "shares": null,
+    "likes_visibility": "not_shown",
+    "analysis_resolution": {
+      "status": "resolved",
+      "source": "explicit_visibility_evidence",
+      "recorded_at": "2026-11-14T08:59:28.272Z",
+      "reason": "Unavailable metrics resolved using explicit visibility evidence or user assessment. Saved observations remain valid; missing values are unknown, not zero.",
+      "unavailable_fields": [
+        "likes"
+      ]
+    },
+    "metric_corrections": {
+      "likes": {
+        "previous": {
+          "value": 24,
+          "raw": "24",
+          "approximate": false,
+          "source": "visible_text"
+        },
+        "reason": "Legacy adjacent-text count was ambiguous; the current like control has no numeric count."
+      }
+    }
+  },
+  {
+    "kind": "reel",
+    "shortcode": "DeqhV9xNxEC",
+    "url": "https://www.instagram.com/reel/DeqhV9xNxEC/",
+    "grid_views_raw": "125K",
+    "grid_views_issue": null,
+    "status": "metrics_unavailable",
+    "fetched_at": "2026-11-14T08:59:35.245Z",
+    "date": "2026-10-18",
+    "date_precision": "day",
+    "caption": "#あらゆる追いかけっこを繰り広げる",
+    "hashtags": [],
+    "mentions": [],
+    "likes": null,
+    "comments": {
+      "value": 15,
+      "raw": "15",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Comment"
+    },
+    "views": {
+      "value": 125000,
+      "raw": "125K",
+      "approximate": true,
+      "source": "profile_grid"
+    },
+    "thumbnail_url": "https://instagram.fblr24-2.fna.fbcdn.net/v/t51.71878-15/851503285_1639245994255031_1783875462814897951_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=QvZ1XsvuDD4Q7kNvwHpZFsT&_nc_oc=AdpF2Ju4mtczOovirso123G0UaABYFdQvJJab2-A9K0rgwxrQ1HEFyih7IfgCi-IXE5rYFOUULeiOYigFrtqejXq&_nc_zt=23&_nc_ht=instagram.fblr24-2.fna&_nc_gid=2tJ8YymFm7qQasuXfEWLxQ&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQgAAAA&oh=00_AQQ6nzVwkBXxN3l2x60LmduGPHC1nzE1uBs3-gcWQfPksg&oe=6AFE0651",
+    "media_url": null,
+    "missing": [
+      "likes"
+    ],
+    "missing_reasons": {
+      "likes": "The like control displayed no numeric like count; nearby comment or reshare counts are not likes."
+    },
+    "raw": {
+      "description": "「#あらゆる追いかけっこを繰り広げる」 - 2026年10月18日、11.11_filmera",
+      "article_text": "11.11_filmera\nFollow\nAI content\nAastha Gill, Gurjit Gill, Lavish Dhiman · FAREBI\nAastha Gill, Gurjit Gill, Lavish Dhiman · FAREBI\n#あらゆる追いかけっこを繰り広げる\nLikes\n15\n66\nsamkamvisuals\nFollow\nAI content\n2 people\n“Captured with passion, created with Alpha. If this deserves a spot on @sonyalpha @sonyalphain #createwithsony , tag them and let’s make it happen!”\n.\n.\n.\n.\n.\n#samkamphotography #samkamvisuals #yakshagana\n8,246\n56\n118\n637",
+      "aria_text": "11.11_filmera reels\n11.11_filmera reels\nAudio image\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nsamkamvisuals reels\nsamkamvisuals reels\nTagged users\nLocation\nTagged users\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "availability": {
+          "likes": {
+            "state": "explicitly_hidden",
+            "evidence": "Likes\n11.11_filmera can see the total number of people who liked this post.\n___teresahkp\nFollow\nmirakhan3844\nDr. Faiza\nFollow\naarchibehl\naarchibehl\nFollow\nanjmanu80\nAnji\nFollow\ni_am_syeda_shamina\nSyeda shamina\nFollow\naaban_218\nFollow\nvishavashu_rana_2412\nVishav Rajput\nFollow\namanpreetkaur1612\nAmanpreet kaur\nFollow\nnahid_khan_12_8\nNahid Khan\nFollow\nrebal_yadav_55\nyaduvanshi Prince\nFollow\nsamra79063\nsamra\nFollow\naneeskhan232\nAneesh Kha\nFollow\nanand__bhoi__078\nanand__bhoi__07\nFollow\nsamyak2love_official\nSamyak Singh Bhati\nFollow\nsarfrarz237\nsarfra\nFollow\namirul__04x\nTRUST 💗\nFollow\nbestf_oryour\nBest_for_your\nFollow",
+            "source": "metric_dialog"
+          },
+          "comments": {
+            "state": "measured",
+            "evidence": "Comment"
+          },
+          "reshares": {
+            "state": "measured",
+            "evidence": "Repost"
+          },
+          "shares": {
+            "state": "not_captured",
+            "evidence": "Control located but no reliable numeric value parsed."
+          }
+        },
+        "likes_visibility": "not_shown",
+        "comments": {
+          "raw": "15",
+          "source": "dom_action_control",
+          "label": "Comment"
+        },
+        "reshares": {
+          "raw": "66",
+          "source": "dom_action_control",
+          "label": "Repost"
+        }
+      },
+      "capture_checks": {
+        "access_clear": true,
+        "stable": true,
+        "read_passes": 2,
+        "access_attempts": [],
+        "metric_panels": [
+          {
+            "field": "likes",
+            "stable": true,
+            "access_clear": true,
+            "evidence": "Likes\n11.11_filmera can see the total number of people who liked this post.\n___teresahkp\nFollow\nmirakhan3844\nDr. Faiza\nFollow\naarchibehl\naarchibehl\nFollow\nanjmanu80\nAnji\nFollow\ni_am_syeda_shamina\nSyeda shamina\nFollow\naaban_218\nFollow\nvishavashu_rana_2412\nVishav Rajput\nFollow\namanpreetkaur1612\nAmanpreet kaur\nFollow\nnahid_khan_12_8\nNahid Khan\nFollow\nrebal_yadav_55\nyaduvanshi Prince\nFollow\nsamra79063\nsamra\nFollow\naneeskhan232\nAneesh Kha\nFollow\nanand__bhoi__078\nanand__bhoi__07\nFollow\nsamyak2love_official\nSamyak Singh Bhati\nFollow\nsarfrarz237\nsarfra\nFollow\namirul__04x\nTRUST 💗\nFollow\nbestf_oryour\nBest_for_your\nFollow"
+          }
+        ]
+      }
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T08:59:35.246Z",
+    "access_review": null,
+    "extraction_review": null,
+    "date_source": "og_description_localized",
+    "reshares": {
+      "value": 66,
+      "raw": "66",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Repost"
+    },
+    "shares": null,
+    "likes_visibility": "not_shown",
+    "analysis_resolution": {
+      "status": "resolved",
+      "source": "explicit_visibility_evidence",
+      "recorded_at": "2026-11-14T08:59:35.245Z",
+      "reason": "Unavailable metrics resolved using explicit visibility evidence or user assessment. Saved observations remain valid; missing values are unknown, not zero.",
+      "unavailable_fields": [
+        "likes"
+      ]
+    },
+    "metric_corrections": {
+      "likes": {
+        "previous": {
+          "value": 15,
+          "raw": "15",
+          "approximate": false,
+          "source": "visible_text"
+        },
+        "reason": "Legacy adjacent-text count was ambiguous; the current like control has no numeric count."
+      }
+    }
+  },
+  {
+    "kind": "reel",
+    "shortcode": "DeotcT0NaOu",
+    "url": "https://www.instagram.com/reel/DeotcT0NaOu/",
+    "grid_views_raw": "9.1M",
+    "grid_views_issue": null,
+    "status": "complete",
+    "fetched_at": "2026-10-28T11:37:47.198Z",
+    "date": "2026-10-18",
+    "date_precision": "day",
+    "caption": "#あらゆる追いかけっこを繰り広げる",
+    "hashtags": [
+      "#あらゆる追いかけっこを繰り広げる"
+    ],
+    "mentions": [],
+    "likes": {
+      "value": 686000,
+      "raw": "686K",
+      "approximate": true,
+      "source": "og_description"
+    },
+    "comments": {
+      "value": 763,
+      "raw": "763",
+      "approximate": false,
+      "source": "og_description"
+    },
+    "views": {
+      "value": 9100000,
+      "raw": "9.1M",
+      "approximate": true,
+      "source": "profile_grid"
+    },
+    "thumbnail_url": "https://instagram.fblr1-9.fna.fbcdn.net/v/t51.71878-15/850319361_2225368578396695_4687386317070829677_n.jpg?stp=cmp1_dst-jpg_e35_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=3OFScE_FXT8Q7kNvwGN7GYP&_nc_oc=AdrvYKYwuUUq_1UCdv3XGvlyc-RZT2enSw2I8FksYgiwMUvAyLrJSGRq_l2-YRipkssKsrPRnp_naiw6BY439NeI&_nc_zt=23&_nc_ht=instagram.fblr1-9.fna&_nc_gid=nmwWGBdcz1NsoRCbMDOhag&_nc_ss=7f6a8&oh=00_AQQREVD8Nw3rG5cIfLHNn_D2f_juF4kSoXxlDljnwShxsg&oe=6AE7A0BA&ig_cache_key=MDJSQVF6QmdIWXJqSUg5ZWNIQUJjU25QOEhCZkVNUVcySUNFSTpjbXAxX2RzdC1qcGdfZTM1X3R0Ng%3D%3D",
+    "media_url": null,
+    "missing": [],
+    "missing_reasons": {},
+    "raw": {
+      "description": "686K likes, 763 comments - bollyxedit.7 on October 18, 2026: \"#あらゆる追いかけっこを繰り広げる\". ",
+      "article_text": "bollyxedit.7\n•\nFollow\n• AI content\n#あらゆる追いかけっこを繰り広げる\n686K\n763\n3,951\ncinematicportfoliomastery\n•\nFollow\ntrucky · win again (slowed)\ncomment ‘ratio’ and I’ll send it over for your own films & edits! 👇\n\neveryone can name two. here are fifteen, and the pixel sizes are the bit nobody memorises & always googles last minute (atleast I do lol)\n\n#director #cinematography #filmmakinglife #filmmakingtips\nLikes\n829\n333",
+      "aria_text": "bollyxedit.7 reels\nbollyxedit.7 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\ncinematicportfoliomastery reels\ncinematicportfoliomastery reels\nAudio image\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {}
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-10-28T11:37:47.198Z"
+  },
+  {
+    "kind": "reel",
+    "shortcode": "Dej_GwLNgEe",
+    "url": "https://www.instagram.com/reel/Dej_GwLNgEe/",
+    "grid_views_raw": "10.7K",
+    "grid_views_issue": null,
+    "status": "metrics_unavailable",
+    "fetched_at": "2026-11-14T08:59:42.214Z",
+    "date": "2026-10-16",
+    "date_precision": "day",
+    "caption": "❤️‍🔥 FITOOR (2016) | A STORY OF LOVE, OBSESSION & DESTINY\n\nStarring Aditya Roy Kapur, Katrina Kaif & Tabu, Fitoor is a beautiful tale of intense love, heartbreak and unfulfilled desires. ❤️‍🩹\n\nNoor’s love for Firdaus goes beyond beauty and distance, turning into a passion that shapes their lives. Inspired by Charles Dickens’ Great Expectations, this movie captures the pain of loving someone who feels both close and impossible to reach. 🥀✨\n\nSome love stories never find their ending… they just become a Fitoor. ❤️‍🔥\n\n#Fitoor #AdityaRoyKapur #KatrinaKaif #Tabu #BollywoodMovies MovieEdits LoveStory BollywoodRomance CinematicEdit",
+    "hashtags": [],
+    "mentions": [],
+    "likes": null,
+    "comments": {
+      "value": 7,
+      "raw": "7",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Comment"
+    },
+    "views": {
+      "value": 10700,
+      "raw": "10.7K",
+      "approximate": true,
+      "source": "profile_grid"
+    },
+    "thumbnail_url": "https://instagram.fblr1-3.fna.fbcdn.net/v/t51.71878-15/848696668_3252236894981766_2288805309693783541_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=_r35dvcyLdkQ7kNvwHUQu0u&_nc_oc=Ado6purBo3JDdd3XmZ_jz1hO3tpM2GXa7tH-IqVSfOabW7cxdEF5Kry-PTvMZW29uZO4Nl1vSEmQ9pJUhw7XyBOE&_nc_zt=23&_nc_ht=instagram.fblr1-3.fna&_nc_gid=NrEeTQXZq7l8ArEWU9EgDA&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQgAAAA&oh=00_AQQIwmrHJhu1nhEnsvpn8ZwQrvZjdKpARi_2SEYDPTSAIw&oe=6AFE029C",
+    "media_url": null,
+    "missing": [
+      "likes"
+    ],
+    "missing_reasons": {
+      "likes": "The like control displayed no numeric like count; nearby comment or reshare counts are not likes."
+    },
+    "raw": {
+      "description": "❤️‍🔥 FITOOR (2016) | A STORY OF LOVE, OBSESSION & DESTINY\n\nStarring Aditya Roy Kapur, Katrina Kaif & Tabu, Fitoor is a beautiful tale of intense love, heartbreak and unfulfilled desires. ❤️‍🩹\n\nNoor’s love for Firdaus goes beyond beauty and distance, turning into a passion that shapes their lives. Inspired by Charles Dickens’ Great Expectations, this movie captures the pain of loving someone who feels both close and impossible to reach. 🥀✨\n\nSome love stories never find their ending… they just become a Fitoor. ❤️‍🔥\n\n#Fitoor #AdityaRoyKapur #KatrinaKaif #Tabu #BollywoodMovies MovieEdits LoveStory BollywoodRomance CinematicEdit - @11.11_filmera on October 16, 2026",
+      "article_text": "11.11_filmera\nFollow\nAI content\n❤️‍🔥 FITOOR (2016) | A STORY OF LOVE, OBSESSION & DESTINY\n\nStarring Aditya Roy Kapur, Katrina Kaif & Tabu, Fitoor is a beautiful tale of intense love, heartbreak and unfulfilled desires. ❤️‍🩹\n\nNoor’s love for Firdaus goes beyond beauty and distance, turning into a passion that shapes their lives. Inspired by Charles Dickens’ Great Expectations, this movie captures the pain of loving someone who feels both close and impossible to reach. 🥀✨\n\nSome love stories never find their ending… they just become a Fitoor. ❤️‍🔥\n\n#Fitoor #AdityaRoyKapur #KatrinaKaif #Tabu #BollywoodMovies MovieEdits LoveStory BollywoodRomance CinematicEdit\nLikes\n7\n16\nitssmitterb\nFollow\nSouth Boston\nBuilt like a rock #goldenretriever #dogsofinstagram #goldendays\n280K\n630\n3,565\n47.4K",
+      "aria_text": "11.11_filmera reels\n11.11_filmera reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nitssmitterb reels\nitssmitterb reels\nLocation\nLocation\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "availability": {
+          "likes": {
+            "state": "explicitly_hidden",
+            "evidence": "Likes\n11.11_filmera can see the total number of people who liked this post.\n_kajolrajput03\nKAjOL\nFollow\nshalu9861singh\nShalu Thakur\nFollow\nmd.adil7776\nmd.adil\nFollow\nakash._.raj1400\nAkash Raj\nFollow\nmr__faizan___005\n🫀 فيضان ✨\nFollow\npeow_peow_tulsi00\nTULSI POWDER 😋🦄\nFollow\nseirra_bravo7\nShubham Bangde\nFollow\nkr_raz_04\n._RAZ_.⚜️\nFollow\ndanish__diamond__\ndanish^D\nFollow\npankaj__.0089\n🫶🏻🫀\nFollow\nfa_yaz7860\nFayaz Mallah\nFollow\nsaiyed121094\nFarhin Saiyed\nFollow\nroyal_suraj_thakur\n🦚Suraj Thakur🦚\nFollow\nmayurbawaskar_28\nMayur Ramesh Bawaskar\nFollow\n11.11_shibuuuu_\nShibu 🧸❤️‍🩹\nFollow\nhamidanifarha\nfarha hamidani\nFollow\nvishal___gadariya_____0000__1\nVishal Pal\nFollow",
+            "source": "metric_dialog"
+          },
+          "comments": {
+            "state": "measured",
+            "evidence": "Comment"
+          },
+          "reshares": {
+            "state": "measured",
+            "evidence": "Repost"
+          },
+          "shares": {
+            "state": "not_captured",
+            "evidence": "Control located but no reliable numeric value parsed."
+          }
+        },
+        "likes_visibility": "not_shown",
+        "comments": {
+          "raw": "7",
+          "source": "dom_action_control",
+          "label": "Comment"
+        },
+        "reshares": {
+          "raw": "16",
+          "source": "dom_action_control",
+          "label": "Repost"
+        }
+      },
+      "capture_checks": {
+        "access_clear": true,
+        "stable": true,
+        "read_passes": 2,
+        "access_attempts": [],
+        "metric_panels": [
+          {
+            "field": "likes",
+            "stable": true,
+            "access_clear": true,
+            "evidence": "Likes\n11.11_filmera can see the total number of people who liked this post.\n_kajolrajput03\nKAjOL\nFollow\nshalu9861singh\nShalu Thakur\nFollow\nmd.adil7776\nmd.adil\nFollow\nakash._.raj1400\nAkash Raj\nFollow\nmr__faizan___005\n🫀 فيضان ✨\nFollow\npeow_peow_tulsi00\nTULSI POWDER 😋🦄\nFollow\nseirra_bravo7\nShubham Bangde\nFollow\nkr_raz_04\n._RAZ_.⚜️\nFollow\ndanish__diamond__\ndanish^D\nFollow\npankaj__.0089\n🫶🏻🫀\nFollow\nfa_yaz7860\nFayaz Mallah\nFollow\nsaiyed121094\nFarhin Saiyed\nFollow\nroyal_suraj_thakur\n🦚Suraj Thakur🦚\nFollow\nmayurbawaskar_28\nMayur Ramesh Bawaskar\nFollow\n11.11_shibuuuu_\nShibu 🧸❤️‍🩹\nFollow\nhamidanifarha\nfarha hamidani\nFollow\nvishal___gadariya_____0000__1\nVishal Pal\nFollow"
+          }
+        ]
+      }
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T08:59:42.214Z",
+    "access_review": null,
+    "extraction_review": null,
+    "date_source": "og_description",
+    "reshares": {
+      "value": 16,
+      "raw": "16",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Repost"
+    },
+    "shares": null,
+    "likes_visibility": "not_shown",
+    "analysis_resolution": {
+      "status": "resolved",
+      "source": "explicit_visibility_evidence",
+      "recorded_at": "2026-11-14T08:59:42.214Z",
+      "reason": "Unavailable metrics resolved using explicit visibility evidence or user assessment. Saved observations remain valid; missing values are unknown, not zero.",
+      "unavailable_fields": [
+        "likes"
+      ]
+    },
+    "metric_corrections": {
+      "likes": {
+        "previous": {
+          "value": 7,
+          "raw": "7",
+          "approximate": false,
+          "source": "visible_text"
+        },
+        "reason": "Legacy adjacent-text count was ambiguous; the current like control has no numeric count."
+      }
+    }
+  },
+  {
+    "kind": "reel",
+    "shortcode": "DegV8asNXMA",
+    "url": "https://www.instagram.com/reel/DegV8asNXMA/",
+    "grid_views_raw": "6,251",
+    "grid_views_issue": null,
+    "status": "metrics_unavailable",
+    "fetched_at": "2026-11-14T08:59:49.547Z",
+    "date": "2026-10-14",
+    "date_precision": "day",
+    "caption": "🎬 SHIDDAT (2021) ❤️‍🔥 | A STORY OF OBSESSION, LOVE & DESTINY 🥀\n\nStarring Sunny Kaushal, Radhika Madan, Mohit Raina & Diana Penty.\n\nShiddat is a romantic drama about Jaggi, a passionate young man who believes that true love is worth fighting for, no matter how impossible the journey seems. When he meets Kartika, his world changes, and his heart becomes determined to find its way to her. ❤️‍🩹\n\nA story of intense emotions, endless longing, difficult choices and a love that refuses to give up. Shiddat explores the beautiful yet complicated side of love, where passion and destiny collide. ✨\n\n“Some love stories are written by destiny, while others are fought for with every heartbeat.” ❤️‍🔥🥀\n\n#Shiddat #ShiddatMovie #SunnyKaushal #RadhikaMadan #BollywoodRomance LoveStory MovieEdits",
+    "hashtags": [],
+    "mentions": [],
+    "likes": null,
+    "comments": {
+      "value": 5,
+      "raw": "5",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Comment"
+    },
+    "views": {
+      "value": 6251,
+      "raw": "6,251",
+      "approximate": false,
+      "source": "profile_grid"
+    },
+    "thumbnail_url": "https://instagram.fblr1-5.fna.fbcdn.net/v/t51.71878-15/851829612_1150557884206403_9088463088803472000_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=BnFFyD99iLUQ7kNvwGcLpDV&_nc_oc=AdoPFDFclkkVmoL_kMmvSugPmhrZgbw9t_eX5oZh76UoR3coMjXNmW1tLHnAIyzOR-2UH4AUbNt0TOr5ok7RBxci&_nc_zt=23&_nc_ht=instagram.fblr1-5.fna&_nc_gid=3YVp67cK28pqltsxjMGvtg&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQgAAAA&oh=00_AQTsf6ecfV0iAKk8Aq6kOr-u1xkmNsFKnd8q6GIbVuQYSg&oe=6AFDDFCA",
+    "media_url": null,
+    "missing": [
+      "likes"
+    ],
+    "missing_reasons": {
+      "likes": "The like control displayed no numeric like count; nearby comment or reshare counts are not likes."
+    },
+    "raw": {
+      "description": "🎬 SHIDDAT (2021) ❤️‍🔥 | A STORY OF OBSESSION, LOVE & DESTINY 🥀\n\nStarring Sunny Kaushal, Radhika Madan, Mohit Raina & Diana Penty.\n\nShiddat is a romantic drama about Jaggi, a passionate young man who believes that true love is worth fighting for, no matter how impossible the journey seems. When he meets Kartika, his world changes, and his heart becomes determined to find its way to her. ❤️‍🩹\n\nA story of intense emotions, endless longing, difficult choices and a love that refuses to give up. Shiddat explores the beautiful yet complicated side of love, where passion and destiny collide. ✨\n\n“Some love stories are written by destiny, while others are fought for with every heartbeat.” ❤️‍🔥🥀\n\n#Shiddat #ShiddatMovie #SunnyKaushal #RadhikaMadan #BollywoodRomance LoveStory MovieEdits - @11.11_filmera on October 14, 2026",
+      "article_text": "11.11_filmera\nFollow\nAI content\n🎬 SHIDDAT (2021) ❤️‍🔥 | A STORY OF OBSESSION, LOVE & DESTINY 🥀\n\nStarring Sunny Kaushal, Radhika Madan, Mohit Raina & Diana Penty.\n\nShiddat is a romantic drama about Jaggi, a passionate young man who believes that true love is worth fighting for, no matter how impossible the journey seems. When he meets Kartika, his world changes, and his heart becomes determined to find its way to her. ❤️‍🩹\n\nA story of intense emotions, endless longing, difficult choices and a love that refuses to give up. Shiddat explores the beautiful yet complicated side of love, where passion and destiny collide. ✨\n\n“Some love stories are written by destiny, while others are fought for with every heartbeat.” ❤️‍🔥🥀\n\n#Shiddat #ShiddatMovie #SunnyKaushal #RadhikaMadan #BollywoodRomance LoveStory MovieEdits\nLikes\n5\n18\nWatch full feature\n1:11:38\ncolinandsamir \n and mosseri\nFollow\nThe Future of Instagram according to @mosseri\n90.5K\n4,869\n5,050\n77.9K",
+      "aria_text": "11.11_filmera reels\n11.11_filmera reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\n\ncolinandsamir reels\ncolinandsamir reels\nVerified\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "availability": {
+          "likes": {
+            "state": "explicitly_hidden",
+            "evidence": "Likes\n11.11_filmera can see the total number of people who liked this post.\ndidar_42_\nDidar\nFollow\nsingal_boy_mr_raj_143\n🐼🧿🎀💗\nFollow\nsshar_adkori\nFollow\nomiii35_\nCʜᴀᴜᴅʜᴀʀɪ⚕️\nFollow\nmr__faizan___005\n🫀 فيضان ✨\nFollow\nmeghdip__1_4_3\n🤖robot heart🖤\nFollow\nox_chetan_.93\n𝗖𝗛𝗘𝗧𝗔𝗡 🦋🐾\nFollow\nmanish_maravi_05\nManish Singh Maravi\nFollow\npankaj__.0089\n🫶🏻🫀\nFollow\nmohdhaseen895866\nmohd haseen\nFollow\nmd_reja10\n💝💘 𝓜𝓭 𝓲𝓼𝓽𝓪𝓴💖🤍\nFollow\n_rini.k\nrinik\nFollow\narman_demrot_05\narman ❤️‍🩹😎\nFollow\nsanju_29_22_s\n22 29 ❤️‍🩹\nFollow\nme_makbul\nMeeee😋\nFollow\nthakur_aman_3004\nÃman Rajput\nFollow\n74pr.edit\npr_edits\nFollow",
+            "source": "metric_dialog"
+          },
+          "comments": {
+            "state": "measured",
+            "evidence": "Comment"
+          },
+          "reshares": {
+            "state": "measured",
+            "evidence": "Repost"
+          },
+          "shares": {
+            "state": "not_captured",
+            "evidence": "Control located but no reliable numeric value parsed."
+          }
+        },
+        "likes_visibility": "not_shown",
+        "comments": {
+          "raw": "5",
+          "source": "dom_action_control",
+          "label": "Comment"
+        },
+        "reshares": {
+          "raw": "18",
+          "source": "dom_action_control",
+          "label": "Repost"
+        }
+      },
+      "capture_checks": {
+        "access_clear": true,
+        "stable": true,
+        "read_passes": 2,
+        "access_attempts": [],
+        "metric_panels": [
+          {
+            "field": "likes",
+            "stable": true,
+            "access_clear": true,
+            "evidence": "Likes\n11.11_filmera can see the total number of people who liked this post.\ndidar_42_\nDidar\nFollow\nsingal_boy_mr_raj_143\n🐼🧿🎀💗\nFollow\nsshar_adkori\nFollow\nomiii35_\nCʜᴀᴜᴅʜᴀʀɪ⚕️\nFollow\nmr__faizan___005\n🫀 فيضان ✨\nFollow\nmeghdip__1_4_3\n🤖robot heart🖤\nFollow\nox_chetan_.93\n𝗖𝗛𝗘𝗧𝗔𝗡 🦋🐾\nFollow\nmanish_maravi_05\nManish Singh Maravi\nFollow\npankaj__.0089\n🫶🏻🫀\nFollow\nmohdhaseen895866\nmohd haseen\nFollow\nmd_reja10\n💝💘 𝓜𝓭 𝓲𝓼𝓽𝓪𝓴💖🤍\nFollow\n_rini.k\nrinik\nFollow\narman_demrot_05\narman ❤️‍🩹😎\nFollow\nsanju_29_22_s\n22 29 ❤️‍🩹\nFollow\nme_makbul\nMeeee😋\nFollow\nthakur_aman_3004\nÃman Rajput\nFollow\n74pr.edit\npr_edits\nFollow"
+          }
+        ]
+      }
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T08:59:49.548Z",
+    "access_review": null,
+    "extraction_review": null,
+    "date_source": "og_description",
+    "reshares": {
+      "value": 18,
+      "raw": "18",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Repost"
+    },
+    "shares": null,
+    "likes_visibility": "not_shown",
+    "analysis_resolution": {
+      "status": "resolved",
+      "source": "explicit_visibility_evidence",
+      "recorded_at": "2026-11-14T08:59:49.547Z",
+      "reason": "Unavailable metrics resolved using explicit visibility evidence or user assessment. Saved observations remain valid; missing values are unknown, not zero.",
+      "unavailable_fields": [
+        "likes"
+      ]
+    },
+    "metric_corrections": {
+      "likes": {
+        "previous": {
+          "value": 5,
+          "raw": "5",
+          "approximate": false,
+          "source": "visible_text"
+        },
+        "reason": "Legacy adjacent-text count was ambiguous; the current like control has no numeric count."
+      }
+    }
+  },
+  {
+    "kind": "reel",
+    "shortcode": "DefD157NfkT",
+    "url": "https://www.instagram.com/reel/DefD157NfkT/",
+    "grid_views_raw": "743K",
+    "grid_views_issue": null,
+    "status": "archived",
+    "fetched_at": "2026-10-28T11:38:00.127Z",
+    "date": "2026-10-14",
+    "date_precision": "day",
+    "caption": "#あらゆる追いかけっこを繰り広げる",
+    "hashtags": [
+      "#あらゆる追いかけっこを繰り広げる"
+    ],
+    "mentions": [],
+    "likes": {
+      "value": 135,
+      "raw": "135",
+      "approximate": false,
+      "source": "visible_text"
+    },
+    "comments": null,
+    "views": {
+      "value": 743000,
+      "raw": "743K",
+      "approximate": true,
+      "source": "profile_grid"
+    },
+    "thumbnail_url": "https://instagram.fblr1-3.fna.fbcdn.net/v/t51.71878-15/850336377_2301992437308184_239864579909966097_n.jpg?stp=cmp1_dst-jpg_e35_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=At60erG50iQQ7kNvwG65VBh&_nc_oc=AdoNY8AZBxZ6rkezwSj-ZMqmEnsXzgENHF2mtDaFkGw-_r6a0rDy-wSJm2U-jC7xvKjCEjkqk_BA3m2rOCLMDHEq&_nc_zt=23&_nc_ht=instagram.fblr1-3.fna&_nc_gid=nB02kAEAkOdmMN-ILdpM7Q&_nc_ss=7f6a8&oh=00_AQQuz8_Dnyx7AIIO-wOU4nmzJPE-r0-gDAqOWD2AjNSriw&oe=6AE7B83D&ig_cache_key=MDJSQVF6Qm5rYXJ6SUhwaTBJQUJoYmdHRUhrQ3RVQXhGWnU0YzpjbXAxX2RzdC1qcGdfZTM1X3R0Ng%3D%3D",
+    "media_url": null,
+    "missing": [],
+    "missing_reasons": {},
+    "raw": {
+      "description": "bollyxedit.7 on October 14, 2026: \"#あらゆる追いかけっこを繰り広げる\". ",
+      "article_text": "bollyxedit.7\n•\nFollow\n• AI content\n#あらゆる追いかけっこを繰り広げる\nLikes\n135\n672\nbigsacprints\n•\nFollow\n31.6K\n125\n284",
+      "aria_text": "bollyxedit.7 reels\nbollyxedit.7 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nbigsacprints reels\nbigsacprints reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {}
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T08:59:55.957Z",
+    "deletion_check": {
+      "status": "deleted",
+      "reason": "Instagram explicitly reported the reel page unavailable; deletion versus archiving is unconfirmed.",
+      "checked_at": "2026-11-14T08:59:55.957Z",
+      "source": "live_reel_and_parent_check",
+      "parent": {
+        "status": "unavailable",
+        "error": "Instagram reports this page is unavailable.",
+        "checked_at": "2026-11-14T08:59:55.957Z"
+      }
+    }
+  },
+  {
+    "kind": "reel",
+    "shortcode": "Deeh09HNwPH",
+    "url": "https://www.instagram.com/reel/Deeh09HNwPH/",
+    "grid_views_raw": "9,207",
+    "grid_views_issue": null,
+    "status": "partial",
+    "fetched_at": "2026-10-28T11:38:04.238Z",
+    "date": "2026-10-14",
+    "date_precision": "day",
+    "caption": "❤️‍🔥 FITOOR (2016) | A STORY OF LOVE, OBSESSION & DESTINY\n\nStarring Aditya Roy Kapur, Katrina Kaif & Tabu, Fitoor is a beautiful tale of intense love, heartbreak and unfulfilled desires. ❤️‍🩹\n\nNoor’s love for Firdaus goes beyond beauty and distance, turning into a passion that shapes their lives. Inspired by Charles Dickens’ Great Expectations, this movie captures the pain of loving someone who feels both close and impossible to reach. 🥀✨\n\nSome love stories never find their ending… they just become a Fitoor. ❤️‍🔥\n\n#Fitoor #AdityaRoyKapur #KatrinaKaif #Tabu #BollywoodMovies MovieEdits LoveStory BollywoodRomance CinematicEdit",
+    "hashtags": [
+      "#Fitoor",
+      "#AdityaRoyKapur",
+      "#KatrinaKaif",
+      "#Tabu",
+      "#BollywoodMovies"
+    ],
+    "mentions": [],
+    "likes": {
+      "value": 3,
+      "raw": "3",
+      "approximate": false,
+      "source": "visible_text"
+    },
+    "comments": null,
+    "views": {
+      "value": 9207,
+      "raw": "9,207",
+      "approximate": false,
+      "source": "profile_grid"
+    },
+    "thumbnail_url": "https://instagram.fblr24-3.fna.fbcdn.net/v/t51.71878-15/848774195_2569401760138789_6637716685443894184_n.jpg?stp=cmp1_dst-jpg_e35_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=dUatvqriy40Q7kNvwFExkwc&_nc_oc=AdpyqH_TCi4_JUvfSE5iq4gukDNskkKNkt23TaWn2KYJGUUinINVaTsRe-5HaVaVTWw2LVMBZBmrlmsMzxtt4fmC&_nc_zt=23&_nc_ht=instagram.fblr24-3.fna&_nc_gid=D6aJZNcLK5XcJ3flO7-Zuw&_nc_ss=7f6a8&oh=00_AQTaOqBVy42bTjEVH8WPfzLmmyP9cMhFxPggY1_ClzbKcA&oe=6AE7B2B9&ig_cache_key=MDJSQVF6QmpORWx6SUgyeUFKQUNYR01uY0hLT2dkWEtnTGtVTTpjbXAxX2RzdC1qcGdfZTM1X3R0Ng%3D%3D",
+    "media_url": null,
+    "missing": [
+      "comments"
+    ],
+    "missing_reasons": {
+      "comments": "No readable comment count was found on the content page or in its metadata."
+    },
+    "raw": {
+      "description": "bollyxedit.7 on October 14, 2026: \"❤️‍🔥 FITOOR (2016) | A STORY OF LOVE, OBSESSION & DESTINY\n\nStarring Aditya Roy Kapur, Katrina Kaif & Tabu, Fitoor is a beautiful tale of intense love, heartbreak and unfulfilled desires. ❤️‍🩹\n\nNoor’s love for Firdaus goes beyond beauty and distance, turning into a passion that shapes their lives. Inspired by Charles Dickens’ Great Expectations, this movie captures the pain of loving someone who feels both close and impossible to reach. 🥀✨\n\nSome love stories never find their ending… they just become a Fitoor. ❤️‍🔥\n\n#Fitoor #AdityaRoyKapur #KatrinaKaif #Tabu #BollywoodMovies MovieEdits LoveStory BollywoodRomance CinematicEdit\". ",
+      "article_text": "bollyxedit.7\n•\nFollow\n• AI content\n❤️‍🔥 FITOOR (2016) | A STORY OF LOVE, OBSESSION & DESTINY\n\nStarring Aditya Roy Kapur, Katrina Kaif & Tabu, Fitoor is a beautiful tale of intense love, heartbreak and unfulfilled desires. ❤️‍🩹\n\nNoor’s love for Firdaus goes beyond beauty and distance, turning into a passion that shapes their lives. Inspired by Charles Dickens’ Great Expectations, this movie captures the pain of loving someone who feels both close and impossible to reach. 🥀✨\n\nSome love stories never find their ending… they just become a Fitoor. ❤️‍🔥\n\n#Fitoor #AdityaRoyKapur #KatrinaKaif #Tabu #BollywoodMovies MovieEdits LoveStory BollywoodRomance CinematicEdit\nLikes\n3\n15\nalialdin07\n•\nFollow\nJika sebuah lagu masih ingin dinyanyikan setelah ribuan kali, mungkin ia sudah tidak lagi menjadi lagu melainkan menjadi bagian dari cara kita memahami hidup\n#fakeplastictrees #thomyorke #Radiohead\n15.5K\n334\n583",
+      "aria_text": "bollyxedit.7 reels\nbollyxedit.7 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nalialdin07 reels\nalialdin07 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {}
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-10-28T11:38:04.238Z"
+  },
+  {
+    "kind": "reel",
+    "shortcode": "DeeNpw9tBka",
+    "url": "https://www.instagram.com/reel/DeeNpw9tBka/",
+    "grid_views_raw": "32.3K",
+    "grid_views_issue": null,
+    "status": "partial",
+    "fetched_at": "2026-10-28T11:38:08.333Z",
+    "date": "2026-10-14",
+    "date_precision": "day",
+    "caption": "#あらゆる追いかけっこを繰り広げる\n#nakuldhull #biggboss",
+    "hashtags": [
+      "#あらゆる追いかけっこを繰り広げる",
+      "#nakuldhull",
+      "#biggboss"
+    ],
+    "mentions": [],
+    "likes": {
+      "value": 3,
+      "raw": "3",
+      "approximate": false,
+      "source": "visible_text"
+    },
+    "comments": null,
+    "views": {
+      "value": 32300,
+      "raw": "32.3K",
+      "approximate": true,
+      "source": "profile_grid"
+    },
+    "thumbnail_url": "https://instagram.fblr1-10.fna.fbcdn.net/v/t51.71878-15/848307455_1971978263497173_1858756220747768574_n.jpg?stp=cmp1_dst-jpg_e35_tt6&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=qGVjlWVHLsYQ7kNvwHdXoNN&_nc_oc=Adp3fxKfAazNfyPICYLrRPr4XGReMnl1psbYf8wP6JkbbF2nUpGXW9l6WEezHQTZGj8U69XZJMVho6A6IPBxleqb&_nc_zt=23&_nc_ht=instagram.fblr1-10.fna&_nc_gid=UrAjXSC5u8Cy_1pPAjutKw&_nc_ss=7f6a8&oh=00_AQTsgn1AihIZTPFx6E3zgmlqIpyvvP_OXWJHIglv9KQoxw&oe=6AE7A735&ig_cache_key=MDJSQVF6QnY4a2tESUhnQUVIQU5XSjV2Y0g3NkRMR2Y3aXQwVTpjbXAxX2RzdC1qcGdfZTM1X3R0Ng%3D%3D",
+    "media_url": null,
+    "missing": [
+      "comments"
+    ],
+    "missing_reasons": {
+      "comments": "No readable comment count was found on the content page or in its metadata."
+    },
+    "raw": {
+      "description": "bollyxedit.7 on October 14, 2026: \"#あらゆる追いかけっこを繰り広げる\n#nakuldhull #biggboss\". ",
+      "article_text": "bollyxedit.7\n•\nFollow\n• AI content\n#あらゆる追いかけっこを繰り広げる\n#nakuldhull #biggboss\nLikes\n3\n23\nalialdin07\n•\nFollow\nJika sebuah lagu masih ingin dinyanyikan setelah ribuan kali, mungkin ia sudah tidak lagi menjadi lagu melainkan menjadi bagian dari cara kita memahami hidup\n#fakeplastictrees #thomyorke #Radiohead\n15.5K\n334\n583",
+      "aria_text": "bollyxedit.7 reels\nbollyxedit.7 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nalialdin07 reels\nalialdin07 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {}
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-10-28T11:38:08.333Z"
+  },
+  {
+    "kind": "reel",
+    "shortcode": "DecnYAAMX46",
+    "url": "https://www.instagram.com/reel/DecnYAAMX46/",
+    "grid_views_raw": "143K",
+    "grid_views_issue": null,
+    "status": "partial",
+    "fetched_at": "2026-10-28T11:38:12.548Z",
+    "date": "2026-10-13",
+    "date_precision": "day",
+    "caption": "#あらゆる追いかけっこを繰り広げる",
+    "hashtags": [
+      "#あらゆる追いかけっこを繰り広げる"
+    ],
+    "mentions": [],
+    "likes": {
+      "value": 59,
+      "raw": "59",
+      "approximate": false,
+      "source": "visible_text"
+    },
+    "comments": null,
+    "views": {
+      "value": 143000,
+      "raw": "143K",
+      "approximate": true,
+      "source": "profile_grid"
+    },
+    "thumbnail_url": "https://instagram.fblr24-4.fna.fbcdn.net/v/t51.71878-15/849535030_1863089664828960_5739332940930894601_n.jpg?stp=cmp1_dst-jpg_e35_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=eD77Daus__wQ7kNvwFpEhGW&_nc_oc=Adr_rnckz-NrCbfWB2FOfPhwbkyORzLv0NHjwhimIwIhYenS7R2rxpX3JuBjwAEDBV4pkDEep4KWyUe7RnxTQe5G&_nc_zt=23&_nc_ht=instagram.fblr24-4.fna&_nc_gid=EdqGKb_nwEXQYjWiPsKMcA&_nc_ss=7f6a8&oh=00_AQRusIm6R6IxKU3iYqebNzS0UV5r5Z8HRsYjWtBmU_sbRA&oe=6AE79FCD&ig_cache_key=MDJSQVF6QmpiZ29qSUhlSjRHQUNBbXFGMEg1alNtVHdsTDRzYzpjbXAxX2RzdC1qcGdfZTM1X3R0Ng%3D%3D",
+    "media_url": null,
+    "missing": [
+      "comments"
+    ],
+    "missing_reasons": {
+      "comments": "No readable comment count was found on the content page or in its metadata."
+    },
+    "raw": {
+      "description": "bollyxedit.7 on October 13, 2026: \"#あらゆる追いかけっこを繰り広げる\". ",
+      "article_text": "bollyxedit.7\n•\nFollow\n• AI content\nKrish Rao · Wake Up\n#あらゆる追いかけっこを繰り広げる\nLikes\n59\n181\nbigsacprints\n•\nFollow\n31.7K\n125\n284",
+      "aria_text": "bollyxedit.7 reels\nbollyxedit.7 reels\nAudio image\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nbigsacprints reels\nbigsacprints reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {}
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-10-28T11:38:12.548Z"
+  },
+  {
+    "kind": "reel",
+    "shortcode": "DecKsbmMqOr",
+    "url": "https://www.instagram.com/reel/DecKsbmMqOr/",
+    "grid_views_raw": "515K",
+    "grid_views_issue": null,
+    "status": "partial",
+    "fetched_at": "2026-10-28T11:38:16.646Z",
+    "date": "2026-10-13",
+    "date_precision": "day",
+    "caption": "#あらゆる追いかけっこを繰り広げる",
+    "hashtags": [
+      "#あらゆる追いかけっこを繰り広げる"
+    ],
+    "mentions": [],
+    "likes": {
+      "value": 129,
+      "raw": "129",
+      "approximate": false,
+      "source": "visible_text"
+    },
+    "comments": null,
+    "views": {
+      "value": 515000,
+      "raw": "515K",
+      "approximate": true,
+      "source": "profile_grid"
+    },
+    "thumbnail_url": "https://instagram.fblr1-6.fna.fbcdn.net/v/t51.71878-15/847917946_1017139074721046_6317942132163423467_n.jpg?stp=cmp1_dst-jpg_e35_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=Zv2yMN2MQdgQ7kNvwEvDMWs&_nc_oc=AdrrLQz7HQz4w_cXUVcf8aGSrxjxiJLTqRMi9o07chy9Q-XKbpFewHY9mKB_DZy6xxiRq8pEAqA6k-NQg3zvvWC6&_nc_zt=23&_nc_ht=instagram.fblr1-6.fna&_nc_gid=jDgcWn2W3bdObJAgsPY6fA&_nc_ss=7f6a8&oh=00_AQQobZasEuIMlRkbOGvCUV6BIg8AN9Q-GCD3S6Vzl69j5A&oe=6AE7BCE9&ig_cache_key=MDJSQVF6Qm5vemlqSUhGWjBEQUJabFBDVUg1ZGF0Vl9zc0V6TTpjbXAxX2RzdC1qcGdfZTM1X3R0Ng%3D%3D",
+    "media_url": null,
+    "missing": [
+      "comments"
+    ],
+    "missing_reasons": {
+      "comments": "No readable comment count was found on the content page or in its metadata."
+    },
+    "raw": {
+      "description": "bollyxedit.7 on October 13, 2026: \"#あらゆる追いかけっこを繰り広げる\". ",
+      "article_text": "bollyxedit.7\n•\nFollow\n• AI content\n#あらゆる追いかけっこを繰り広げる\nLikes\n129\n409\nbigsacprints\n•\nFollow\n31.7K\n125\n284",
+      "aria_text": "bollyxedit.7 reels\nbollyxedit.7 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nbigsacprints reels\nbigsacprints reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {}
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-10-28T11:38:16.646Z"
+  },
+  {
+    "kind": "reel",
+    "shortcode": "DeXTtmWsK9A",
+    "url": "https://www.instagram.com/reel/DeXTtmWsK9A/",
+    "grid_views_raw": "6,622",
+    "grid_views_issue": null,
+    "status": "partial",
+    "fetched_at": "2026-10-28T11:38:23.242Z",
+    "date": "2026-10-11",
+    "date_precision": "day",
+    "caption": "#あらゆる追いかけっこを繰り広げる",
+    "hashtags": [
+      "#あらゆる追いかけっこを繰り広げる"
+    ],
+    "mentions": [],
+    "likes": {
+      "value": 8,
+      "raw": "8",
+      "approximate": false,
+      "source": "visible_text"
+    },
+    "comments": null,
+    "views": {
+      "value": 6622,
+      "raw": "6,622",
+      "approximate": false,
+      "source": "profile_grid"
+    },
+    "thumbnail_url": "https://instagram.fblr1-7.fna.fbcdn.net/v/t51.71878-15/844219917_1989499841720708_4652135771458316505_n.jpg?stp=cmp1_dst-jpg_e35_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=ocXF02SLgyUQ7kNvwGQ_r1X&_nc_oc=AdpyW88rXN63QnmjyuFVI-Ya4-ydH4SqWNCf52_uUi97yvL1EtkoXgzRveS7-9DqQOGHqPngnQL9_xGNwmoKGilP&_nc_zt=23&_nc_ht=instagram.fblr1-7.fna&_nc_gid=nZRSJHLturgNJekW-_g5Zw&_nc_ss=7f6a8&oh=00_AQQoNiZ2gVKGfDihXzXTwTHmMgEIu0g9o-nYv9Kf5FayXQ&oe=6AE7AC62&ig_cache_key=MDJSQVF6QmczR1VUSUhjQkVIQUlTeFdJY0gxclNQUU5rb3FRZzpjbXAxX2RzdC1qcGdfZTM1X3R0Ng%3D%3D",
+    "media_url": null,
+    "missing": [
+      "comments"
+    ],
+    "missing_reasons": {
+      "comments": "No readable comment count was found on the content page or in its metadata."
+    },
+    "raw": {
+      "description": "bollyxedit.7 on October 11, 2026: \"#あらゆる追いかけっこを繰り広げる\". ",
+      "article_text": "bollyxedit.7\n•\nFollow\n• AI content\n#あらゆる追いかけっこを繰り広げる\nLikes\n8\n16\nvioletnotviolet\n•\nFollow\n6 people\nTWENTY ONE PILOTS - DOUBT DEMO - DRUM COVER\n.\n@twentyonepilots @tylerrjoseph @joshuadun\n#twentyonepilots #drumcover #drummergirl #drums #drummer\n205K\n467\n12.5K",
+      "aria_text": "bollyxedit.7 reels\nbollyxedit.7 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nvioletnotviolet reels\nvioletnotviolet reels\nVerified\nTagged users\nLocation\nTagged users\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {}
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-10-28T11:38:23.242Z"
+  },
+  {
+    "kind": "reel",
+    "shortcode": "DeV-PZNsgtG",
+    "url": "https://www.instagram.com/reel/DeV-PZNsgtG/",
+    "grid_views_raw": "8,616",
+    "grid_views_issue": null,
+    "status": "partial",
+    "fetched_at": "2026-10-28T11:38:28.359Z",
+    "date": "2026-10-10",
+    "date_precision": "day",
+    "caption": "#あらゆる追いかけっこを繰り広げる",
+    "hashtags": [
+      "#あらゆる追いかけっこを繰り広げる"
+    ],
+    "mentions": [],
+    "likes": {
+      "value": 11,
+      "raw": "11",
+      "approximate": false,
+      "source": "visible_text"
+    },
+    "comments": null,
+    "views": {
+      "value": 8616,
+      "raw": "8,616",
+      "approximate": false,
+      "source": "profile_grid"
+    },
+    "thumbnail_url": "https://instagram.fblr1-3.fna.fbcdn.net/v/t51.71878-15/843763092_2273311506848600_5528159926539443279_n.jpg?stp=cmp1_dst-jpg_e35_tt6&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=NNR7AyokiOgQ7kNvwHX-P8O&_nc_oc=AdqS6fUnx3h3y-_gW44oAAptQs4b601NGGvQp4uYKO4CQvQ4Kip3PaQksune9sQgS6fna4kaVuSyo4381cEKOW2N&_nc_zt=23&_nc_ht=instagram.fblr1-3.fna&_nc_gid=YKtG2OmlMRF4R0JEyJ67iw&_nc_ss=7f6a8&oh=00_AQQhuaTgtISlmh_a_87CRF-xOhLE8WWa0OhPoY09kKn9Tg&oe=6AE7A353&ig_cache_key=MDJSQVF6QnBUTlNqSUhrQk1JQUZoYjFKUUhLZmkzVEUtYzd1bzpjbXAxX2RzdC1qcGdfZTM1X3R0Ng%3D%3D",
+    "media_url": null,
+    "missing": [
+      "comments"
+    ],
+    "missing_reasons": {
+      "comments": "No readable comment count was found on the content page or in its metadata."
+    },
+    "raw": {
+      "description": "bollyxedit.7 on October 10, 2026: \"#あらゆる追いかけっこを繰り広げる\". ",
+      "article_text": "bollyxedit.7\n•\nFollow\n#あらゆる追いかけっこを繰り広げる\nLikes\n11\n14\nvioletnotviolet\n•\nFollow\n6 people\nTWENTY ONE PILOTS - DOUBT DEMO - DRUM COVER\n.\n@twentyonepilots @tylerrjoseph @joshuadun\n#twentyonepilots #drumcover #drummergirl #drums #drummer\n205K\n467\n12.5K",
+      "aria_text": "bollyxedit.7 reels\nbollyxedit.7 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nvioletnotviolet reels\nvioletnotviolet reels\nVerified\nTagged users\nLocation\nTagged users\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {}
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-10-28T11:38:28.359Z"
+  },
+  {
+    "kind": "reel",
+    "shortcode": "DeUtqTFsIGW",
+    "url": "https://www.instagram.com/reel/DeUtqTFsIGW/",
+    "grid_views_raw": "78.7K",
+    "grid_views_issue": null,
+    "status": "partial",
+    "fetched_at": "2026-10-28T11:38:32.684Z",
+    "date": "2026-10-10",
+    "date_precision": "day",
+    "caption": "#あらゆる追いかけっこを繰り広げる",
+    "hashtags": [
+      "#あらゆる追いかけっこを繰り広げる"
+    ],
+    "mentions": [],
+    "likes": {
+      "value": 107,
+      "raw": "107",
+      "approximate": false,
+      "source": "visible_text"
+    },
+    "comments": null,
+    "views": {
+      "value": 78700,
+      "raw": "78.7K",
+      "approximate": true,
+      "source": "profile_grid"
+    },
+    "thumbnail_url": "https://instagram.fblr24-2.fna.fbcdn.net/v/t51.71878-15/843141934_2318737488886155_2894062364643418398_n.jpg?stp=cmp1_dst-jpg_e35_tt6&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=NEHdox0Rc0YQ7kNvwH0EMjW&_nc_oc=AdpL0vrZ1ijxclMKTRZzUGCH58bbJBE58BX_h_PE1q9rb2aR5tQD8YoxU7pvlsOhISL_mPJhgVNXB1rJmwttgGHo&_nc_zt=23&_nc_ht=instagram.fblr24-2.fna&_nc_gid=pzYnuHsuF1eUYHYz4tOQZA&_nc_ss=7f6a8&oh=00_AQTFGyB7IXFYfSA-uTVMjVvJ8-TXzTXiJ4mvnpkFIiyyPw&oe=6AE7C55D&ig_cache_key=MDJSQVF6Qmk1VFFUSUg0VHdJQUlzNVdpUUhZOFlwS0I3aFpTSTpjbXAxX2RzdC1qcGdfZTM1X3R0Ng%3D%3D",
+    "media_url": null,
+    "missing": [
+      "comments"
+    ],
+    "missing_reasons": {
+      "comments": "No readable comment count was found on the content page or in its metadata."
+    },
+    "raw": {
+      "description": "bollyxedit.7 on October 10, 2026: \"#あらゆる追いかけっこを繰り広げる\". ",
+      "article_text": "bollyxedit.7\n•\nFollow\n• AI content\n#あらゆる追いかけっこを繰り広げる\nLikes\n107\n237\ntravelwitheliisa\n•\nFollow\nJAŸ-Z, Kanye West · No Church In The Wild (feat. Frank Ocean, The-Dream)\nJAŸ-Z, Kanye West · No Church In The Wild (feat. Frank Ocean, The-Dream)\nOne of my favorite moments ever in the Alps - pure magic 🥹✨\n•\n•\n•\n•\n•\n#travel #arlberg #winterwonderland #winterhalo #skiseason\n834K\n889\n15K",
+      "aria_text": "bollyxedit.7 reels\nbollyxedit.7 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\ntravelwitheliisa reels\ntravelwitheliisa reels\nAudio image\nExplicit\nExplicit\nAudio image\nExplicit\nExplicit\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {}
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-10-28T11:38:32.684Z"
+  }
+]

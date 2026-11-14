@@ -74,18 +74,20 @@
     "url": "https://www.instagram.com/reel/De2OYSFTK7z/",
     "grid_views_raw": "54.5K",
     "grid_views_issue": null,
-    "status": "pending",
+    "status": "archived",
     "last_error": null,
-    "last_attempt_at": "2026-10-28T12:05:47.814Z",
+    "last_attempt_at": "2026-11-14T09:02:43.604Z",
     "attempts": 1,
     "deletion_check": {
-      "status": "exists",
-      "checked_at": "2026-11-05T18:00:36.731Z",
-      "source": "user_manual_check",
-      "verified_by": "user",
-      "reason": "User manually confirmed this reel still exists on Instagram.",
-      "evidence": "User identified De2OYSFTK7z as the one existing reel among the ten previously failed URLs. No automated check was performed.",
-      "observed_details": null
+      "status": "deleted",
+      "reason": "Instagram explicitly reported the reel page unavailable; deletion versus archiving is unconfirmed.",
+      "checked_at": "2026-11-14T09:02:43.604Z",
+      "source": "live_reel_and_parent_check",
+      "parent": {
+        "status": "unavailable",
+        "error": "Instagram reports this page is unavailable.",
+        "checked_at": "2026-11-14T09:02:43.604Z"
+      }
     },
     "retry_review": {
       "reviewed_at": "2026-11-05T18:00:36.731Z",
@@ -97,7 +99,9 @@
       "previous_attempt_at": "2026-10-28T12:05:47.814Z",
       "suspected_cause": "possible_rate_limiting",
       "cause_confirmed": false
-    }
+    },
+    "missing": [],
+    "missing_reasons": {}
   },
   {
     "kind": "reel",

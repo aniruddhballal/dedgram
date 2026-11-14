@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "username": "pixa.300k",
+  "phase": "before-targeted-detail-check",
+  "snapshot_at": "2026-11-14T09:02:43.652Z",
+  "run_status": "partial",
+  "run_updated_at": "2026-11-14T04:44:19.844Z",
+  "profile_fetched_at": "2026-10-28T09:04:34.336Z",
+  "item_count": 34,
+  "complete_item_count": 0,
+  "discovery": {
+    "reel": {
+      "count": 34,
+      "complete": true,
+      "error": null,
+      "attempted_at": "2026-10-28T09:42:48.126Z"
+    }
+  }
+}

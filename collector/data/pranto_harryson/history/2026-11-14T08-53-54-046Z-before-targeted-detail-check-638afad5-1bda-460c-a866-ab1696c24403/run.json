@@ -1,0 +1,21 @@
+{
+  "started_at": "2026-11-14T05:14:57.390Z",
+  "updated_at": "2026-11-14T08:26:03.802Z",
+  "status": "partial",
+  "phase": "done",
+  "scope": [
+    "reel"
+  ],
+  "current_url": null,
+  "error": null,
+  "progress": {
+    "task": "item_details",
+    "label": "Resolve incomplete reel details",
+    "completed": 7,
+    "total": 7,
+    "percent": 100,
+    "detail": "Policy audit: access or missing-metric evidence requires verification. All saved values preserved.",
+    "updated_at": "2026-11-14T08:26:03.802Z"
+  },
+  "browser_left_open": true
+}
