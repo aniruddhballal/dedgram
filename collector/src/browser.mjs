@@ -3,6 +3,7 @@ import { writeFile } from 'node:fs/promises';
 import { chromium } from 'playwright';
 import { canonicalItemUrl, clean } from './model.mjs';
 import { engagementFromDocument } from './reel-engagement.mjs';
+import { contentBarrier } from './content-access.mjs';
 
 const pause = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
@@ -269,8 +270,31 @@ async function discoverGrid(page, username, kind, onProgress,
 export async function captureItem(page, item) {
   await open(page, item.url);
   if (canonicalItemUrl(page.url())?.shortcode !== item.shortcode) throw new Error('Instagram redirected to a different item.');
-  const snapshot = await page.evaluate(() => {
-    const article = document.querySelector('main article, [role="dialog"] article, article, main') || document.body;
+  const accessAttempts = [];
+  for (let attempt = 0; attempt < 3; attempt++) {
+    const text = await page.locator('body').innerText();
+    const barrier = contentBarrier(text);
+    if (!barrier) break;
+    let clicked = false;
+    if (barrier === 'sensitive_content' && attempt < 2) {
+      const button = page.getByRole('button', { name: /^(?:(?:see|view) (?:reel|video|content)|continue|proceed|yes,? (?:continue|proceed))$/i }).first();
+      if (await button.isVisible().catch(() => false)) {
+        await button.click(); clicked = true; await pause(700);
+      }
+    }
+    accessAttempts.push({ kind: barrier, clicked });
+    if (!clicked) {
+      const error = new Error(`Manual review required: ${barrier.replaceAll('_', ' ')} access gate; reel details not fully accessible.`);
+      error.accessIssue = { kind: barrier, attempts: accessAttempts, reason: error.message, evidence: text.slice(0, 2000) };
+      throw error;
+    }
+  }
+  const snapshot = await page.evaluate(({ shortcode }) => {
+    const articles = [...document.querySelectorAll('article')];
+    const identified = [...document.querySelectorAll('[data-shortcode]')].find(node => node.getAttribute('data-shortcode') === shortcode)
+      || articles.find(node => [...node.querySelectorAll('a[href]')].some(link => new URL(link.href).pathname.match(/\/(?:reel|reels|p)\/([\w-]+)/)?.[1] === shortcode));
+    if (articles.length > 1 && !identified) return { article_text: '', scope_issue: 'Multiple reel articles are present; the target article could not be identified reliably.' };
+    const article = identified || articles[0] || document.querySelector('main') || document.body;
     const meta = (selector) => document.querySelector(selector)?.content || '';
     const time = article.querySelector('time[datetime]') || document.querySelector('time[datetime]');
     return {
@@ -284,8 +308,13 @@ export async function captureItem(page, item) {
       og_video: meta('meta[property="og:video"]'),
       json_ld: [...document.querySelectorAll('script[type="application/ld+json"]')].map((element) => element.textContent || '')
     };
-  });
+  }, { shortcode: item.shortcode });
+  if (snapshot.scope_issue) throw new Error(`Manual review required: ${snapshot.scope_issue}`);
+  const firstRead = await page.evaluate(engagementFromDocument, { shortcode: item.shortcode });
+  await pause(500);
   snapshot.engagement = await page.evaluate(engagementFromDocument, { shortcode: item.shortcode });
+  snapshot.capture_checks = { access_clear: !contentBarrier(await page.locator('body').innerText()),
+    stable: JSON.stringify(firstRead) === JSON.stringify(snapshot.engagement), read_passes: 2, access_attempts: accessAttempts };
   if (!clean(snapshot.article_text)) throw new Error('Item page rendered no readable content.');
   return snapshot;
 }

@@ -1,9 +1,45 @@
 import { dayFromDescription, normalizeReelDate, resolveReelDate } from '../../website/lib/reel-date.mjs';
+import { contentBarrier, confirmedMetricAbsence } from './content-access.mjs';
 export { dayFromDescription, normalizeReelDate };
 
 export const now = () => new Date().toISOString();
-export const itemAnalysisHandled = (item) => ['complete', 'archived', 'age_restricted', 'metrics_unavailable'].includes(item?.status) && !item.last_error;
+export const itemAnalysisHandled = (item) => {
+  if (!item || item.last_error || item.access_review) return false;
+  if (['complete', 'archived'].includes(item.status)) return true;
+  if (item.status !== 'metrics_unavailable' || item.date == null) return false;
+  const missing = ['likes', 'comments', 'views'].filter(field => item[field] == null);
+  const userResolved = /^user_/.test(item.analysis_resolution?.source || '') && item.analysis_resolution?.status === 'resolved';
+  return userResolved || missing.every(field => confirmedMetricAbsence(item, field));
+};
 export const clean = (value) => String(value ?? '').replace(/\u00a0/g, ' ').replace(/[\t ]+/g, ' ').trim();
+
+export function resolveMetricAvailability(record) {
+  const missing = ['date', 'likes', 'comments', 'views'].filter(field => record[field] == null);
+  const result = { ...record, missing, missing_reasons: reasonsForMissing(missing, record) };
+  const text = record.raw?.article_text?.trim() || '';
+  const barrier = record.access_review?.kind || contentBarrier(text);
+  if (barrier) return { ...result, status: 'needs_review', access_review: record.access_review || {
+    kind: barrier, reason: 'Access restriction requires confirmation or manual inspection before capture can be considered complete.'
+  } };
+  if (record.raw?.capture_checks?.access_clear === false || record.raw?.capture_checks?.stable === false) {
+    return { ...result, status: 'needs_review', extraction_review: 'Access or action-control readings did not stabilize; capture requires review.' };
+  }
+  if (!missing.length) return { ...result, status: 'complete' };
+  const gated = /log in to (?:continue|see|view)|log in or sign up|login required|checkpoint|please wait a few minutes|try again later|too many requests|HTTP\s*429/i.test(text);
+  const readableCapture = Boolean(record.fetched_at && text && !gated);
+  const userResolved = /^user_/.test(record.analysis_resolution?.source || '') && record.analysis_resolution?.status === 'resolved';
+  if (!record.last_error && readableCapture && !missing.includes('date')
+    && (userResolved || missing.every(field => confirmedMetricAbsence(record, field)))) {
+    return { ...result, status: 'metrics_unavailable', analysis_resolution: {
+      ...record.analysis_resolution, status: 'resolved', source: userResolved ? record.analysis_resolution.source : 'explicit_visibility_evidence',
+      recorded_at: record.fetched_at,
+      reason: 'Unavailable metrics resolved using explicit visibility evidence or user assessment. Saved observations remain valid; missing values are unknown, not zero.',
+      unavailable_fields: missing
+    } };
+  }
+  return { ...result, status: 'partial', extraction_review: missing.includes('date')
+    ? 'Publication date not captured.' : 'Metric extraction is incomplete; absence has not been confirmed. Inspect or retry rather than assume hidden counts.' };
+}
 
 export function count(raw) {
   const match = clean(raw).replace(/,/g, '').match(/^(\d+(?:\.\d+)?)\s*([KMB])?$/i);
@@ -225,9 +261,11 @@ export function itemFromSnapshot(item, snapshot) {
   const hashtags = [...new Set((caption || '').match(/#[\p{L}\p{N}_]+/gu) || [])];
   const mentions = [...new Set((caption || '').match(/@[A-Za-z0-9._]+/g) || [])];
   const missing = [!date && 'date', !likes && 'likes', !resolvedComments && 'comments', !views && 'views'].filter(Boolean);
-  return {
+  return resolveMetricAvailability({
     ...item,
     fetched_at: now(),
+    access_review: snapshot.capture_checks?.access_clear === true ? null : item.access_review,
+    extraction_review: snapshot.capture_checks?.access_clear && snapshot.capture_checks?.stable ? null : item.extraction_review,
     status: missing.length ? 'partial' : 'complete',
     date,
     date_precision,
@@ -246,8 +284,8 @@ export function itemFromSnapshot(item, snapshot) {
     missing,
     missing_reasons: reasonsForMissing(missing, { ...item, likes_visibility: snapshot.engagement?.likes_visibility }),
     raw: { description, article_text: text.slice(0, 20000), aria_text: aria.slice(0, 10000), json_ld: structured,
-      engagement: snapshot.engagement || null }
-  };
+      engagement: snapshot.engagement || null, capture_checks: snapshot.capture_checks || null }
+  });
 }
 
 function observedMetric(metricValue, observedAt) {

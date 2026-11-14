@@ -43,8 +43,8 @@ export function profileSummary(data) {
       discovered: gridCount(discovery[kind]),
       processed: records.filter((item) => !!item.fetched_at).length,
       complete: records.filter((item) => item.status === 'complete' && !item.last_error).length,
-      resolved: records.filter((item) => ['archived', 'age_restricted', 'metrics_unavailable'].includes(item.status) && !item.last_error).length,
-      review: records.filter((item) => item.status === 'partial' || item.status === 'failed' || !!item.last_error).length,
+      resolved: records.filter((item) => ['archived', 'metrics_unavailable'].includes(item.status) && !item.last_error).length,
+      review: records.filter((item) => ['partial', 'failed', 'needs_review', 'age_restricted'].includes(item.status) || !!item.last_error || !!item.access_review).length,
       grid_complete: gridCount(discovery[kind]) !== null,
       refresh_required: Boolean(discovery[kind]?.refresh_required),
       refresh_reason: discovery[kind]?.refresh_reason || null,
@@ -105,7 +105,7 @@ export async function failedReels() {
   const keys = await usernames();
   const profiles = await Promise.all(keys.map(profileData));
   return profiles.flatMap(({ username, profile, items }) => items
-    .filter((item) => !item.excluded_from_collection && item.kind === 'reel' && (item.status === 'partial' || item.status === 'failed' || item.last_error))
+    .filter((item) => !item.excluded_from_collection && item.kind === 'reel' && (['partial', 'failed', 'needs_review', 'age_restricted'].includes(item.status) || item.last_error || item.access_review))
     .map((item) => {
       const missing = (item.missing || []).map((field) => `${field}: ${item.missing_reasons?.[field] || 'No readable value was found.'}`);
       return {

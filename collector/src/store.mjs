@@ -2,7 +2,7 @@ import { mkdir, readFile, rename, unlink, writeFile } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
 import { randomUUID } from 'node:crypto';
 import { setTimeout as delay } from 'node:timers/promises';
-import { count, reasonsForMissing } from './model.mjs';
+import { count, reasonsForMissing, resolveMetricAvailability } from './model.mjs';
 import { normalizeReelDate } from '../../website/lib/reel-date.mjs';
 
 export async function readJson(path, fallback = null) {
@@ -75,7 +75,7 @@ export async function writeSnapshot(pathSet, { username, phase, snapshotAt, prof
 }
 
 export function mergeItem(previous, current) {
-  if (!previous) return normalizeReelDate(current);
+  if (!previous) return normalizeReelDate(resolveMetricAvailability(current));
   const result = { ...previous, ...current };
   for (const field of ['date', 'caption', 'likes', 'comments', 'views', 'reshares', 'shares', 'thumbnail_url', 'media_url']) {
     if (result[field] == null && previous[field] != null) result[field] = previous[field];
@@ -98,15 +98,13 @@ export function mergeItem(previous, current) {
     result.date_precision = 'timestamp';
     result.date_source = previous.date_source || null;
   }
-  result.status = ['date', 'likes', 'comments', 'views'].every((field) => result[field] != null) ? 'complete' : 'partial';
-  result.missing = ['date', 'likes', 'comments', 'views'].filter((field) => result[field] == null);
-  result.missing_reasons = reasonsForMissing(result.missing, result);
-  return normalizeReelDate(result);
+  if (current.fetched_at && current.raw?.article_text?.trim() && !current.last_error) result.last_error = null;
+  return normalizeReelDate(resolveMetricAvailability(result));
 }
 
 export function syncGridViews(previous, discovered, observedAt) {
   // A saved grid label cannot reopen a manually resolved unavailable reel.
-  if (['archived', 'age_restricted', 'metrics_unavailable'].includes(previous.status)) return { ...previous };
+  if (previous.access_review || ['archived', 'age_restricted', 'needs_review', 'metrics_unavailable'].includes(previous.status)) return { ...previous };
   const raw = discovered.grid_views_raw;
   if (!raw) {
     const result = { ...previous, grid_views_raw: previous.grid_views_raw || null,

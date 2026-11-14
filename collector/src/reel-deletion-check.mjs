@@ -1,6 +1,7 @@
 import { join } from 'node:path';
 import { chromium } from 'playwright';
-import { now, publicDetailsFromSnapshot } from './model.mjs';
+import { now, publicDetailsFromSnapshot, itemAnalysisHandled } from './model.mjs';
+import { contentBarrier } from './content-access.mjs';
 import { paths, readJson, writeJson, writeSnapshot } from './store.mjs';
 import { writeReport } from './report.mjs';
 import { normalizeReelDate } from '../../website/lib/reel-date.mjs';
@@ -19,6 +20,9 @@ async function profileFiles(root, username) {
 
 function classifyPage(pageUrl, statusCode, text) {
   const lower = String(text || '').toLowerCase();
+  const barrier = contentBarrier(text);
+  if (barrier) return { status: barrier === 'age_restricted' ? barrier : 'needs_review',
+    access_kind: barrier, reason: `Access confirmation requires manual review: ${barrier.replaceAll('_', ' ')}.` };
   if (statusCode === 404 || /sorry, this page isn't available|page may have been removed|this page is unavailable/.test(lower)) {
     return { status: 'deleted', reason: 'Instagram reported this reel page as unavailable.' };
   }
@@ -136,8 +140,7 @@ async function checkOne(browser, item) {
 }
 
 function handled(item) {
-  return (item.status === 'complete' && !item.last_error)
-    || (['archived', 'age_restricted', 'metrics_unavailable'].includes(item.status) && !item.last_error);
+  return itemAnalysisHandled(item);
 }
 
 function applyResult(item, result) {
@@ -151,9 +154,11 @@ function applyResult(item, result) {
     next.missing = [];
     next.missing_reasons = {};
   }
-  if (result.status === 'age_restricted') {
-    next.status = 'age_restricted';
+  if (['age_restricted', 'needs_review'].includes(result.status)) {
+    next.status = 'needs_review';
     next.last_error = null;
+    next.access_review = { kind: result.access_kind || 'age_restricted', reason: result.reason,
+      evidence: result.evidence || null, recorded_at: result.checked_at };
   }
   return normalizeReelDate(next);
 }

@@ -41,7 +41,7 @@ test('the profile page distinguishes profile-level completion from reel-detail c
   assert.match(html, /PROFILE DETAILS/);
   assert.match(html, /REEL URLS/);
   assert.match(html, /REEL DETAILS/);
-  assert.match(html, /0 of 2 reels fully extracted/);
+  assert.match(html, /0 fully extracted of 2 reels/);
 });
 
 test('the live batch strip shows extraction detail, percentage and remaining work', () => {

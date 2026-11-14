@@ -1,8 +1,31 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { itemAnalysisHandled, count, dayFromDescription, exactPostCount, gridCount, gridCountError, postCountError, profileFromSnapshot, profileHeaderComplete, profileLevelComplete, canonicalItemUrl, itemFromSnapshot, publicDetailsFromSnapshot } from '../src/model.mjs';
+import { itemAnalysisHandled, resolveMetricAvailability, count, dayFromDescription, exactPostCount, gridCount, gridCountError, postCountError, profileFromSnapshot, profileHeaderComplete, profileLevelComplete, canonicalItemUrl, itemFromSnapshot, publicDetailsFromSnapshot } from '../src/model.mjs';
 import { mergeDiscoveryItems, mergeItem, mergeProfile, syncGridViews } from '../src/store.mjs';
 import { posterUsername } from '../src/reel-deletion-check.mjs';
+
+test('only explicit absence evidence resolves missing numeric fields', () => {
+  const record = { kind: 'reel', fetched_at: '2026-11-14T00:00:00Z', date: '2026-11-01',
+    raw: { article_text: 'Like count hidden. Comments are turned off.', capture_checks: { access_clear: true, stable: true }, engagement: { availability: { likes: { state: 'explicitly_hidden', evidence: 'Like count hidden' }, comments: { state: 'disabled', evidence: 'Comments are turned off' } } } },
+    likes: null, comments: null, views: { value: 52500, raw: '52.5K', source: 'profile_grid' } };
+  const result = resolveMetricAvailability(record);
+  assert.equal(result.status, 'metrics_unavailable');
+  assert.equal(itemAnalysisHandled(result), true);
+  assert.equal(result.likes, null);
+  assert.equal(resolveMetricAvailability({ ...record, raw: { article_text: 'Like and comment controls' } }).status, 'partial');
+  assert.equal(resolveMetricAvailability({ ...record, raw: { ...record.raw, capture_checks: { access_clear: true, stable: false } } }).status, 'needs_review');
+  assert.deepEqual(result.views, record.views);
+  assert.deepEqual(result.analysis_resolution.unavailable_fields, ['likes', 'comments']);
+  assert.equal(resolveMetricAvailability({ ...record, date: null }).status, 'partial');
+  assert.equal(resolveMetricAvailability({ ...record, raw: { article_text: '' } }).status, 'partial');
+  assert.equal(resolveMetricAvailability({ ...record, raw: { article_text: 'Log in to continue' } }).status, 'needs_review');
+  assert.equal(resolveMetricAvailability({ ...record, last_error: 'HTTP 429' }).status, 'partial');
+  const merged = mergeItem({ ...record, last_error: 'Previously unavailable', likes: { value: 10, raw: '10' } }, record);
+  assert.equal(merged.likes.value, 10);
+  assert.equal(merged.last_error, null);
+  assert.equal(merged.status, 'metrics_unavailable');
+  assert.deepEqual(merged.analysis_resolution.unavailable_fields, ['comments']);
+});
 
 test('a legacy ambiguous like value is not restored after the like control shows no count', () => {
   const previous = { kind: 'reel', likes: { value: 5, raw: '5', source: 'visible_text' },
@@ -44,8 +67,9 @@ test('a later capture cannot overwrite a manually verified IST date', () => {
 test('manually resolved reels count as handled and grid refreshes do not reopen them', () => {
   assert.equal(itemAnalysisHandled({ status: 'complete' }), true);
   assert.equal(itemAnalysisHandled({ status: 'archived', last_error: null }), true);
-  assert.equal(itemAnalysisHandled({ status: 'age_restricted', last_error: null }), true);
-  assert.equal(itemAnalysisHandled({ status: 'metrics_unavailable', last_error: null }), true);
+  assert.equal(itemAnalysisHandled({ status: 'age_restricted', last_error: null }), false);
+  assert.equal(itemAnalysisHandled({ status: 'metrics_unavailable', last_error: null }), false);
+  assert.equal(itemAnalysisHandled({ status: 'metrics_unavailable', date: '2026-11-14', analysis_resolution: { source: 'user_manual_check', status: 'resolved' } }), true);
   assert.equal(itemAnalysisHandled({ status: 'metrics_unavailable', last_error: 'Retry failed' }), false);
   assert.equal(itemAnalysisHandled({ status: 'archived', last_error: 'Unresolved error' }), false);
   assert.equal(itemAnalysisHandled({ status: 'partial' }), false);

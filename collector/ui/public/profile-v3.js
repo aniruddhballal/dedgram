@@ -1,6 +1,8 @@
 import { badge, errorBanner, esc, gridLabel, metric, number, profileHref, renderStageStatus, reportHref, time } from './shared.js';
 
 function reviewReason(item) {
+  if (item.excluded_from_collection || (!item.last_error && ['archived', 'metrics_unavailable'].includes(item.status))) return '';
+  if (item.access_review || ['age_restricted', 'needs_review'].includes(item.status)) return item.access_review?.reason || item.extraction_review || 'Access restriction requires manual review.';
   const parts = (item.missing || []).map((field) => `${field}: ${item.missing_reasons?.[field] || 'No readable value found.'}`);
   if (item.last_error) parts.push(`Retry: ${item.last_error}`);
   return parts.join(' · ');

@@ -258,7 +258,8 @@ async function collect() {
       } catch (error) {
         const message = error instanceof Error ? error.message : String(error);
         existing.set(item.url, { ...old, ...item,
-          status: old?.status === 'complete' || old?.status === 'partial' ? old.status : 'failed', last_error: message,
+          status: error.accessIssue ? 'needs_review' : old?.status === 'complete' || old?.status === 'partial' ? old.status : 'failed', last_error: message,
+          ...(error.accessIssue ? { access_review: error.accessIssue } : {}),
           last_attempt_at: now(), attempts: (old?.attempts || 0) + 1 });
         log(`Item issue: ${message}`);
         if (/\b429\b|rate limit|too many requests|throttl|login|checkpoint|temporary limit/i.test(message)) throw error;

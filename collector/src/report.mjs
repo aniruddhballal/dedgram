@@ -10,7 +10,7 @@ const csv = (value) => {
 };
 const displayedCount = (metric) => metric?.source === 'others_plus_one'
   ? metric.value : metric?.raw ?? metric?.value ?? null;
-const reviewText = (item) => item.excluded_from_analysis || item.excluded_from_collection || item.status === 'metrics_unavailable' ? '' : [
+const reviewText = (item) => item.excluded_from_analysis || item.excluded_from_collection || item.status === 'metrics_unavailable' ? '' : item.access_review || ['age_restricted', 'needs_review'].includes(item.status) ? item.access_review?.reason || item.extraction_review || 'Access restriction requires manual review.' : [
   ...(item.missing || []).map((field) => `${field}: ${item.missing_reasons?.[field] || 'No readable value was found.'}`),
   ...(item.last_error ? [`Latest retry failed: ${item.last_error}`] : []),
   ...(item.status === 'failed' && !item.last_error ? ['Collection failed.'] : [])

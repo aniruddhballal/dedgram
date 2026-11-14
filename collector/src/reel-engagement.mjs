@@ -41,7 +41,7 @@ export function engagementFromDocument({ shortcode } = {}) {
   }
   const ownArticle = scope.closest('article');
   const markers = markersIn(scope).filter((node) => !ownArticle || node.closest('article') === ownArticle);
-  const result = { scope: 'reel_action_controls' };
+  const result = { scope: 'reel_action_controls', availability: {} };
   const seen = new Set();
   for (const marker of markers) {
     const label = marker.getAttribute('aria-label');
@@ -60,8 +60,20 @@ export function engagementFromDocument({ shortcode } = {}) {
       const numbers = (candidate.innerText || candidate.textContent || '').split(/\r?\n/).map(number).filter(Boolean);
       if (numbers.length === 1) { raw = numbers[0]; break; }
     }
-    if (raw !== null) result[kind] = { raw, source: 'dom_action_control', label };
-    else if (kind === 'likes') result.likes_visibility = 'not_shown';
+    if (raw !== null) {
+      result[kind] = { raw, source: 'dom_action_control', label };
+      result.availability[kind] = { state: 'measured', evidence: label };
+    } else {
+      const nearby = (control.parentElement?.innerText || control.innerText || '').trim();
+      const parent = control.parentElement;
+      const isolated = parent && !parent.matches('article, main, body') && !parent.querySelector('h1, [data-caption]')
+        && markersIn(parent).every(node => kindOf(node.getAttribute('aria-label')) === kind);
+      const hidden = isolated && kind === 'likes' && /^(?:like count hidden|likes? (?:are )?hidden|only .{1,100} can see (?:the )?(?:total )?(?:number of )?likes?)\.?$/im.test(nearby);
+      const disabled = isolated && kind === 'comments' && /^(?:comments are turned off|commenting is turned off|comments (?:are )?disabled)\.?$/im.test(nearby);
+      result.availability[kind] = { state: hidden ? 'explicitly_hidden' : disabled ? 'disabled' : 'not_captured',
+        evidence: hidden || disabled ? nearby.slice(0, 500) : 'Control located but no reliable numeric value parsed.' };
+      if (kind === 'likes') result.likes_visibility = 'not_shown';
+    }
   }
   return result;
 }
