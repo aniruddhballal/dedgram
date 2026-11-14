@@ -28,6 +28,20 @@
       "previous_attempt_at": "2026-10-24T15:58:49.876Z",
       "suspected_cause": "possible_rate_limiting",
       "cause_confirmed": false
+    },
+    "views": {
+      "value": 181,
+      "raw": "181",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
     }
   },
   {
@@ -59,6 +73,20 @@
       "previous_attempt_at": "2026-10-24T15:59:12.818Z",
       "suspected_cause": "possible_rate_limiting",
       "cause_confirmed": false
+    },
+    "views": {
+      "value": 296,
+      "raw": "296",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
     }
   },
   {
@@ -90,6 +118,20 @@
       "previous_attempt_at": "2026-10-24T15:59:35.729Z",
       "suspected_cause": "possible_rate_limiting",
       "cause_confirmed": false
+    },
+    "views": {
+      "value": 321,
+      "raw": "321",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
     }
   },
   {
@@ -121,6 +163,20 @@
       "previous_attempt_at": "2026-10-24T15:59:58.735Z",
       "suspected_cause": "possible_rate_limiting",
       "cause_confirmed": false
+    },
+    "views": {
+      "value": 440,
+      "raw": "440",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
     }
   },
   {
@@ -152,6 +208,20 @@
       "previous_attempt_at": "2026-10-24T16:00:21.780Z",
       "suspected_cause": "possible_rate_limiting",
       "cause_confirmed": false
+    },
+    "views": {
+      "value": 190,
+      "raw": "190",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
     }
   },
   {
@@ -183,6 +253,20 @@
       "previous_attempt_at": "2026-10-24T16:00:44.996Z",
       "suspected_cause": "possible_rate_limiting",
       "cause_confirmed": false
+    },
+    "views": {
+      "value": 247,
+      "raw": "247",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
     }
   },
   {
@@ -214,6 +298,20 @@
       "previous_attempt_at": "2026-10-24T16:01:08.197Z",
       "suspected_cause": "possible_rate_limiting",
       "cause_confirmed": false
+    },
+    "views": {
+      "value": 132,
+      "raw": "132",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
     }
   },
   {
@@ -245,6 +343,20 @@
       "previous_attempt_at": "2026-10-24T16:01:31.195Z",
       "suspected_cause": "possible_rate_limiting",
       "cause_confirmed": false
+    },
+    "views": {
+      "value": 557,
+      "raw": "557",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
     }
   },
   {
@@ -276,6 +388,20 @@
       "previous_attempt_at": "2026-10-24T16:01:54.277Z",
       "suspected_cause": "possible_rate_limiting",
       "cause_confirmed": false
+    },
+    "views": {
+      "value": 552,
+      "raw": "552",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
     }
   },
   {
@@ -307,6 +433,20 @@
       "previous_attempt_at": "2026-10-24T16:02:17.285Z",
       "suspected_cause": "possible_rate_limiting",
       "cause_confirmed": false
+    },
+    "views": {
+      "value": 260,
+      "raw": "260",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
     }
   },
   {
@@ -338,6 +478,20 @@
       "previous_attempt_at": "2026-10-24T16:02:40.317Z",
       "suspected_cause": "possible_rate_limiting",
       "cause_confirmed": false
+    },
+    "views": {
+      "value": 691,
+      "raw": "691",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
     }
   },
   {
@@ -346,7 +500,21 @@
     "url": "https://www.instagram.com/reel/DeuIHKzgRj7/",
     "grid_views_raw": "332",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 332,
+      "raw": "332",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -354,7 +522,21 @@
     "url": "https://www.instagram.com/reel/DeuIFt0gkO4/",
     "grid_views_raw": "333",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 333,
+      "raw": "333",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -362,7 +544,21 @@
     "url": "https://www.instagram.com/reel/DeuIC8ZgFsd/",
     "grid_views_raw": "314",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 314,
+      "raw": "314",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -370,7 +566,21 @@
     "url": "https://www.instagram.com/reel/DeuIBfYg52S/",
     "grid_views_raw": "895",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 895,
+      "raw": "895",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -378,7 +588,21 @@
     "url": "https://www.instagram.com/reel/DeuIAI8gQ3t/",
     "grid_views_raw": "230",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 230,
+      "raw": "230",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -386,7 +610,21 @@
     "url": "https://www.instagram.com/reel/DeuH--2ABfq/",
     "grid_views_raw": "611",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 611,
+      "raw": "611",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -394,7 +632,21 @@
     "url": "https://www.instagram.com/reel/DerEXJOAe5s/",
     "grid_views_raw": "581",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 581,
+      "raw": "581",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -402,7 +654,21 @@
     "url": "https://www.instagram.com/reel/DerEU8Eg6I8/",
     "grid_views_raw": "448",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 448,
+      "raw": "448",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -410,7 +676,21 @@
     "url": "https://www.instagram.com/reel/DerEQpggUuF/",
     "grid_views_raw": "408",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 408,
+      "raw": "408",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -418,7 +698,21 @@
     "url": "https://www.instagram.com/reel/DerERhbAHPQ/",
     "grid_views_raw": "547",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 547,
+      "raw": "547",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -426,7 +720,21 @@
     "url": "https://www.instagram.com/reel/DerEOgRAWXi/",
     "grid_views_raw": "423",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 423,
+      "raw": "423",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -434,7 +742,21 @@
     "url": "https://www.instagram.com/reel/DerENBcA_O-/",
     "grid_views_raw": "727",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 727,
+      "raw": "727",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -442,7 +764,21 @@
     "url": "https://www.instagram.com/reel/DerEJ28ATlf/",
     "grid_views_raw": "630",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 630,
+      "raw": "630",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -450,7 +786,21 @@
     "url": "https://www.instagram.com/reel/DerELOEAel-/",
     "grid_views_raw": "441",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 441,
+      "raw": "441",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -458,7 +808,21 @@
     "url": "https://www.instagram.com/reel/Deo6fRpgYlY/",
     "grid_views_raw": "1,005",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 1005,
+      "raw": "1,005",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -466,7 +830,21 @@
     "url": "https://www.instagram.com/reel/Deo6dhSgKts/",
     "grid_views_raw": "1,139",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 1139,
+      "raw": "1,139",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -474,7 +852,21 @@
     "url": "https://www.instagram.com/reel/Deo6cNQAS8d/",
     "grid_views_raw": "1,161",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 1161,
+      "raw": "1,161",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -482,7 +874,21 @@
     "url": "https://www.instagram.com/reel/Deo6ZcLAtxl/",
     "grid_views_raw": "1,697",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 1697,
+      "raw": "1,697",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -490,7 +896,21 @@
     "url": "https://www.instagram.com/reel/Deo6anSAJ3u/",
     "grid_views_raw": "579",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 579,
+      "raw": "579",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -498,7 +918,21 @@
     "url": "https://www.instagram.com/reel/Deo6XYJg75L/",
     "grid_views_raw": "890",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 890,
+      "raw": "890",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -506,7 +940,21 @@
     "url": "https://www.instagram.com/reel/Deo6YOWgb6J/",
     "grid_views_raw": "565",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 565,
+      "raw": "565",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -514,7 +962,21 @@
     "url": "https://www.instagram.com/reel/Den8DrWg40s/",
     "grid_views_raw": "922",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 922,
+      "raw": "922",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -522,7 +984,21 @@
     "url": "https://www.instagram.com/reel/Den8CGAgqAV/",
     "grid_views_raw": "1,029",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 1029,
+      "raw": "1,029",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -530,7 +1006,21 @@
     "url": "https://www.instagram.com/reel/Den8Ak6gp36/",
     "grid_views_raw": "1,162",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 1162,
+      "raw": "1,162",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -538,7 +1028,21 @@
     "url": "https://www.instagram.com/reel/Den7-Xkg-Mk/",
     "grid_views_raw": "800",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 800,
+      "raw": "800",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -546,7 +1050,21 @@
     "url": "https://www.instagram.com/reel/Den76tqgYrq/",
     "grid_views_raw": "792",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 792,
+      "raw": "792",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -554,7 +1072,21 @@
     "url": "https://www.instagram.com/reel/Den78ZXAoYj/",
     "grid_views_raw": "823",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 823,
+      "raw": "823",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -562,7 +1094,21 @@
     "url": "https://www.instagram.com/reel/Den75HcA00o/",
     "grid_views_raw": "771",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 771,
+      "raw": "771",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -570,7 +1116,21 @@
     "url": "https://www.instagram.com/reel/DembGEkgTqz/",
     "grid_views_raw": "6,161",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 6161,
+      "raw": "6,161",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -578,7 +1138,21 @@
     "url": "https://www.instagram.com/reel/DembDlMg9V5/",
     "grid_views_raw": "4,056",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 4056,
+      "raw": "4,056",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -586,7 +1160,21 @@
     "url": "https://www.instagram.com/reel/DembEdug2vM/",
     "grid_views_raw": "282K",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 282000,
+      "raw": "282K",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -594,7 +1182,21 @@
     "url": "https://www.instagram.com/reel/DembBh7Aqdo/",
     "grid_views_raw": "8,862",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 8862,
+      "raw": "8,862",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -602,7 +1204,21 @@
     "url": "https://www.instagram.com/reel/DembAUFAwdu/",
     "grid_views_raw": "545K",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 545000,
+      "raw": "545K",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -610,7 +1226,21 @@
     "url": "https://www.instagram.com/reel/Dema8aNA5xW/",
     "grid_views_raw": "17.1K",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 17100,
+      "raw": "17.1K",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -618,7 +1248,21 @@
     "url": "https://www.instagram.com/reel/Dema2y0AG7U/",
     "grid_views_raw": "606K",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 606000,
+      "raw": "606K",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -626,7 +1270,21 @@
     "url": "https://www.instagram.com/reel/Dema31xgE1i/",
     "grid_views_raw": "3,591",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 3591,
+      "raw": "3,591",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -634,7 +1292,21 @@
     "url": "https://www.instagram.com/reel/Dema1CUATTQ/",
     "grid_views_raw": "139K",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 139000,
+      "raw": "139K",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -642,7 +1314,21 @@
     "url": "https://www.instagram.com/reel/DemZb9cAeDv/",
     "grid_views_raw": "24.6K",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 24600,
+      "raw": "24.6K",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -650,7 +1336,21 @@
     "url": "https://www.instagram.com/reel/DemZYz-A4tp/",
     "grid_views_raw": "33.6K",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 33600,
+      "raw": "33.6K",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -658,7 +1358,21 @@
     "url": "https://www.instagram.com/reel/DemZXYNgw_d/",
     "grid_views_raw": "3,664",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 3664,
+      "raw": "3,664",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -666,7 +1380,21 @@
     "url": "https://www.instagram.com/reel/DemZWEqgcAD/",
     "grid_views_raw": "1,863",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 1863,
+      "raw": "1,863",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -674,7 +1402,21 @@
     "url": "https://www.instagram.com/reel/DemZUmuA7Ap/",
     "grid_views_raw": "283K",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 283000,
+      "raw": "283K",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -682,7 +1424,21 @@
     "url": "https://www.instagram.com/reel/DemZTZSgy4b/",
     "grid_views_raw": "2,838",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 2838,
+      "raw": "2,838",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -690,7 +1446,21 @@
     "url": "https://www.instagram.com/reel/DemZR3ygEW1/",
     "grid_views_raw": "2,690",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 2690,
+      "raw": "2,690",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -698,7 +1468,21 @@
     "url": "https://www.instagram.com/reel/DemZQfNA7Fm/",
     "grid_views_raw": "1,848",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 1848,
+      "raw": "1,848",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -706,7 +1490,21 @@
     "url": "https://www.instagram.com/reel/DemZPDcgKWq/",
     "grid_views_raw": "3,348",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 3348,
+      "raw": "3,348",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -714,7 +1512,21 @@
     "url": "https://www.instagram.com/reel/DelxTC5gjpx/",
     "grid_views_raw": "21K",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 21000,
+      "raw": "21K",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -722,7 +1534,21 @@
     "url": "https://www.instagram.com/reel/DelxRWZgNxJ/",
     "grid_views_raw": "4,271",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 4271,
+      "raw": "4,271",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -730,7 +1556,21 @@
     "url": "https://www.instagram.com/reel/DelxQLEABJe/",
     "grid_views_raw": "7,848",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 7848,
+      "raw": "7,848",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -738,7 +1578,21 @@
     "url": "https://www.instagram.com/reel/DelxOhrgfpK/",
     "grid_views_raw": "2,640",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 2640,
+      "raw": "2,640",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -746,7 +1600,21 @@
     "url": "https://www.instagram.com/reel/DelxNAhAIoY/",
     "grid_views_raw": "2,971",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 2971,
+      "raw": "2,971",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -754,7 +1622,21 @@
     "url": "https://www.instagram.com/reel/DelxL7RgOTL/",
     "grid_views_raw": "2,814",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 2814,
+      "raw": "2,814",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -762,7 +1644,21 @@
     "url": "https://www.instagram.com/reel/DelxKkvgsaf/",
     "grid_views_raw": "7,786",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 7786,
+      "raw": "7,786",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -770,7 +1666,21 @@
     "url": "https://www.instagram.com/reel/DelkWkmAtuN/",
     "grid_views_raw": "7,134",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 7134,
+      "raw": "7,134",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -778,7 +1688,21 @@
     "url": "https://www.instagram.com/reel/DelkU5JglEP/",
     "grid_views_raw": "1.3M",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 1300000,
+      "raw": "1.3M",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -786,7 +1710,21 @@
     "url": "https://www.instagram.com/reel/DelkS12gjpB/",
     "grid_views_raw": "3,932",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 3932,
+      "raw": "3,932",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -794,7 +1732,21 @@
     "url": "https://www.instagram.com/reel/DelkQvEApr9/",
     "grid_views_raw": "2,637",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 2637,
+      "raw": "2,637",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -802,7 +1754,21 @@
     "url": "https://www.instagram.com/reel/DelkPMCANh0/",
     "grid_views_raw": "436K",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 436000,
+      "raw": "436K",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -810,7 +1776,21 @@
     "url": "https://www.instagram.com/reel/DelkNTbgxal/",
     "grid_views_raw": "4,301",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 4301,
+      "raw": "4,301",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -818,7 +1798,21 @@
     "url": "https://www.instagram.com/reel/DelkMDUAKVb/",
     "grid_views_raw": "2,177",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 2177,
+      "raw": "2,177",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -826,7 +1820,21 @@
     "url": "https://www.instagram.com/reel/DelkK4RAJgt/",
     "grid_views_raw": "1,926",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 1926,
+      "raw": "1,926",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -834,7 +1842,21 @@
     "url": "https://www.instagram.com/reel/DelkJouAYLm/",
     "grid_views_raw": "1,952",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 1952,
+      "raw": "1,952",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -842,7 +1864,21 @@
     "url": "https://www.instagram.com/reel/DelEe7dgmVO/",
     "grid_views_raw": "312K",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 312000,
+      "raw": "312K",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -850,7 +1886,21 @@
     "url": "https://www.instagram.com/reel/DelEc63APSe/",
     "grid_views_raw": "142K",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 142000,
+      "raw": "142K",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -858,7 +1908,21 @@
     "url": "https://www.instagram.com/reel/DelEaMlA2Rs/",
     "grid_views_raw": "18.2K",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 18200,
+      "raw": "18.2K",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -866,7 +1930,21 @@
     "url": "https://www.instagram.com/reel/DelEYxGA1JY/",
     "grid_views_raw": "2,189",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 2189,
+      "raw": "2,189",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -874,7 +1952,21 @@
     "url": "https://www.instagram.com/reel/DelD8QRgMIv/",
     "grid_views_raw": "105K",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 105000,
+      "raw": "105K",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -882,7 +1974,21 @@
     "url": "https://www.instagram.com/reel/DelD6-Ng4R_/",
     "grid_views_raw": "413K",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 413000,
+      "raw": "413K",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -890,7 +1996,21 @@
     "url": "https://www.instagram.com/reel/DelD5ljgidg/",
     "grid_views_raw": "4,365",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 4365,
+      "raw": "4,365",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -898,7 +2018,21 @@
     "url": "https://www.instagram.com/reel/DelD3_4g6c7/",
     "grid_views_raw": "284K",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 284000,
+      "raw": "284K",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -906,7 +2040,21 @@
     "url": "https://www.instagram.com/reel/DejwDpQgHa6/",
     "grid_views_raw": "43.4K",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 43400,
+      "raw": "43.4K",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -914,7 +2062,21 @@
     "url": "https://www.instagram.com/reel/DejwCIigcmp/",
     "grid_views_raw": "2,533",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 2533,
+      "raw": "2,533",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -922,7 +2084,21 @@
     "url": "https://www.instagram.com/reel/Dejv_UNgAbm/",
     "grid_views_raw": "1,479",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 1479,
+      "raw": "1,479",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -930,7 +2106,21 @@
     "url": "https://www.instagram.com/reel/Dejv9yZgBa_/",
     "grid_views_raw": "2,132",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 2132,
+      "raw": "2,132",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -938,7 +2128,21 @@
     "url": "https://www.instagram.com/reel/Dejv8p9AS5g/",
     "grid_views_raw": "2,269",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 2269,
+      "raw": "2,269",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -946,7 +2150,21 @@
     "url": "https://www.instagram.com/reel/Dejv7gygM1t/",
     "grid_views_raw": "153K",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 153000,
+      "raw": "153K",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -954,7 +2172,21 @@
     "url": "https://www.instagram.com/reel/Dejv6RvACHb/",
     "grid_views_raw": "3.2M",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 3200000,
+      "raw": "3.2M",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -962,7 +2194,21 @@
     "url": "https://www.instagram.com/reel/Dejv5I0gwk1/",
     "grid_views_raw": "22.4K",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 22400,
+      "raw": "22.4K",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -970,7 +2216,21 @@
     "url": "https://www.instagram.com/reel/DejvFbagJxj/",
     "grid_views_raw": "2.4M",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 2400000,
+      "raw": "2.4M",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -978,7 +2238,21 @@
     "url": "https://www.instagram.com/reel/DejvBIxAf4Z/",
     "grid_views_raw": "3,508",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 3508,
+      "raw": "3,508",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -986,7 +2260,21 @@
     "url": "https://www.instagram.com/reel/Deju_2wgw7W/",
     "grid_views_raw": "137K",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 137000,
+      "raw": "137K",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -994,7 +2282,21 @@
     "url": "https://www.instagram.com/reel/Deju-BlAMWT/",
     "grid_views_raw": "30.3K",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 30300,
+      "raw": "30.3K",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -1002,7 +2304,21 @@
     "url": "https://www.instagram.com/reel/DejuwqrA6Ol/",
     "grid_views_raw": "9.1M",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 9100000,
+      "raw": "9.1M",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -1010,6 +2326,20 @@
     "url": "https://www.instagram.com/reel/DejuqqVgtys/",
     "grid_views_raw": "568K",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 568000,
+      "raw": "568K",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:44:52.943Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T14:44:52.943Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   }
 ]

@@ -20,6 +20,20 @@
       "evidence": "User confirmed all nine of the other listed failed reel URLs as deleted, explicitly excluding the existing De2OYSFTK7z. No automated check was performed.",
       "previous_status": "failed",
       "previous_last_error": "Instagram rendered an empty page."
+    },
+    "views": {
+      "value": 320,
+      "raw": "320",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-28T09:37:04.480Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-28T09:37:04.480Z",
+        "retained_from": "previous_website_snapshot"
+      }
     }
   },
   {
@@ -43,6 +57,20 @@
       "evidence": "User confirmed all nine of the other listed failed reel URLs as deleted, explicitly excluding the existing De2OYSFTK7z. No automated check was performed.",
       "previous_status": "failed",
       "previous_last_error": "Instagram rendered an empty page."
+    },
+    "views": {
+      "value": 695,
+      "raw": "695",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-28T09:37:04.480Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-28T09:37:04.480Z",
+        "retained_from": "previous_website_snapshot"
+      }
     }
   },
   {
@@ -66,6 +94,20 @@
       "evidence": "User confirmed all nine of the other listed failed reel URLs as deleted, explicitly excluding the existing De2OYSFTK7z. No automated check was performed.",
       "previous_status": "failed",
       "previous_last_error": "Instagram rendered an empty page."
+    },
+    "views": {
+      "value": 6032,
+      "raw": "6,032",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-28T09:37:04.480Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-28T09:37:04.480Z",
+        "retained_from": "previous_website_snapshot"
+      }
     }
   },
   {
@@ -97,6 +139,20 @@
       "previous_attempt_at": "2026-10-28T12:05:47.814Z",
       "suspected_cause": "possible_rate_limiting",
       "cause_confirmed": false
+    },
+    "views": {
+      "value": 54500,
+      "raw": "54.5K",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-28T09:37:04.480Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-28T09:37:04.480Z",
+        "retained_from": "previous_website_snapshot"
+      }
     }
   },
   {
@@ -120,6 +176,20 @@
       "evidence": "User confirmed all nine of the other listed failed reel URLs as deleted, explicitly excluding the existing De2OYSFTK7z. No automated check was performed.",
       "previous_status": "failed",
       "previous_last_error": "Instagram rendered an empty page."
+    },
+    "views": {
+      "value": 27500,
+      "raw": "27.5K",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-28T09:37:04.480Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-28T09:37:04.480Z",
+        "retained_from": "previous_website_snapshot"
+      }
     }
   },
   {
@@ -143,6 +213,20 @@
       "evidence": "User confirmed all nine of the other listed failed reel URLs as deleted, explicitly excluding the existing De2OYSFTK7z. No automated check was performed.",
       "previous_status": "failed",
       "previous_last_error": "Instagram rendered an empty page."
+    },
+    "views": {
+      "value": 11000,
+      "raw": "11K",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-28T09:37:04.480Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-28T09:37:04.480Z",
+        "retained_from": "previous_website_snapshot"
+      }
     }
   },
   {
@@ -166,6 +250,20 @@
       "evidence": "User confirmed all nine of the other listed failed reel URLs as deleted, explicitly excluding the existing De2OYSFTK7z. No automated check was performed.",
       "previous_status": "failed",
       "previous_last_error": "Instagram rendered an empty page."
+    },
+    "views": {
+      "value": 16100.000000000002,
+      "raw": "16.1K",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-28T09:37:04.480Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-28T09:37:04.480Z",
+        "retained_from": "previous_website_snapshot"
+      }
     }
   },
   {
@@ -189,6 +287,20 @@
       "evidence": "User confirmed all nine of the other listed failed reel URLs as deleted, explicitly excluding the existing De2OYSFTK7z. No automated check was performed.",
       "previous_status": "failed",
       "previous_last_error": "Instagram rendered an empty page."
+    },
+    "views": {
+      "value": 10100,
+      "raw": "10.1K",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-28T09:37:04.480Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-28T09:37:04.480Z",
+        "retained_from": "previous_website_snapshot"
+      }
     }
   },
   {
@@ -212,6 +324,20 @@
       "evidence": "User confirmed all nine of the other listed failed reel URLs as deleted, explicitly excluding the existing De2OYSFTK7z. No automated check was performed.",
       "previous_status": "failed",
       "previous_last_error": "Instagram rendered an empty page."
+    },
+    "views": {
+      "value": 54100,
+      "raw": "54.1K",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-28T09:37:04.480Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-28T09:37:04.480Z",
+        "retained_from": "previous_website_snapshot"
+      }
     }
   },
   {
@@ -235,6 +361,20 @@
       "evidence": "User confirmed all nine of the other listed failed reel URLs as deleted, explicitly excluding the existing De2OYSFTK7z. No automated check was performed.",
       "previous_status": "failed",
       "previous_last_error": "Instagram rendered an empty page."
+    },
+    "views": {
+      "value": 58400,
+      "raw": "58.4K",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-28T09:37:04.480Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-28T09:37:04.480Z",
+        "retained_from": "previous_website_snapshot"
+      }
     }
   },
   {
@@ -243,7 +383,21 @@
     "url": "https://www.instagram.com/reel/De05UJsxJD1/",
     "grid_views_raw": "8,884",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 8884,
+      "raw": "8,884",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-28T09:37:04.480Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-28T09:37:04.480Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -251,7 +405,21 @@
     "url": "https://www.instagram.com/reel/De0nCGsx2fz/",
     "grid_views_raw": "10.1K",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 10100,
+      "raw": "10.1K",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-28T09:37:04.480Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-28T09:37:04.480Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -259,7 +427,21 @@
     "url": "https://www.instagram.com/reel/De0X7b6TT2j/",
     "grid_views_raw": "10.1K",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 10100,
+      "raw": "10.1K",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-28T09:37:04.480Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-28T09:37:04.480Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -267,7 +449,21 @@
     "url": "https://www.instagram.com/reel/De0Xzq0zWVH/",
     "grid_views_raw": "8,368",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 8368,
+      "raw": "8,368",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-28T09:37:04.480Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-28T09:37:04.480Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -275,7 +471,21 @@
     "url": "https://www.instagram.com/reel/Dez3UFgzPg4/",
     "grid_views_raw": "12.1K",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 12100,
+      "raw": "12.1K",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-28T09:37:04.480Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-28T09:37:04.480Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -283,7 +493,21 @@
     "url": "https://www.instagram.com/reel/Dezzf38zgwf/",
     "grid_views_raw": "9.8M",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 9800000,
+      "raw": "9.8M",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-28T09:37:04.480Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-28T09:37:04.480Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -291,7 +515,21 @@
     "url": "https://www.instagram.com/reel/DeztLGizky8/",
     "grid_views_raw": "13.5K",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 13500,
+      "raw": "13.5K",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-28T09:37:04.480Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-28T09:37:04.480Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -299,7 +537,21 @@
     "url": "https://www.instagram.com/reel/DeztEeUT4Lj/",
     "grid_views_raw": "588K",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 588000,
+      "raw": "588K",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-28T09:37:04.480Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-28T09:37:04.480Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -307,7 +559,21 @@
     "url": "https://www.instagram.com/reel/DezRNVjRgA4/",
     "grid_views_raw": "712K",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 712000,
+      "raw": "712K",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-28T09:37:04.480Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-28T09:37:04.480Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -315,7 +581,21 @@
     "url": "https://www.instagram.com/reel/DezRF88RVpq/",
     "grid_views_raw": "13.6M",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 13600000,
+      "raw": "13.6M",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-28T09:37:04.480Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-28T09:37:04.480Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -323,7 +603,21 @@
     "url": "https://www.instagram.com/reel/DeyxhlRx1K5/",
     "grid_views_raw": "9,395",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 9395,
+      "raw": "9,395",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-28T09:37:04.480Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-28T09:37:04.480Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -331,7 +625,21 @@
     "url": "https://www.instagram.com/reel/DeyxcVsR73Y/",
     "grid_views_raw": "9,295",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 9295,
+      "raw": "9,295",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-28T09:37:04.480Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-28T09:37:04.480Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -339,7 +647,21 @@
     "url": "https://www.instagram.com/reel/Deyf47Ex2lO/",
     "grid_views_raw": "2.9M",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 2900000,
+      "raw": "2.9M",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-28T09:37:04.480Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-28T09:37:04.480Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -347,7 +669,21 @@
     "url": "https://www.instagram.com/reel/DeyfkzrR_Uk/",
     "grid_views_raw": "2M",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 2000000,
+      "raw": "2M",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-28T09:37:04.480Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-28T09:37:04.480Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -355,7 +691,21 @@
     "url": "https://www.instagram.com/reel/DeyWxB-xWcr/",
     "grid_views_raw": "33.6K",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 33600,
+      "raw": "33.6K",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-28T09:37:04.480Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-28T09:37:04.480Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -363,7 +713,21 @@
     "url": "https://www.instagram.com/reel/DeyWn4lxA7U/",
     "grid_views_raw": "3.2M",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 3200000,
+      "raw": "3.2M",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-28T09:37:04.480Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-28T09:37:04.480Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -371,7 +735,21 @@
     "url": "https://www.instagram.com/reel/DeySnNOxgZS/",
     "grid_views_raw": "7,221",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 7221,
+      "raw": "7,221",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-28T09:37:04.480Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-28T09:37:04.480Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -379,7 +757,21 @@
     "url": "https://www.instagram.com/reel/DeySjtdRR25/",
     "grid_views_raw": "6,403",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 6403,
+      "raw": "6,403",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-28T09:37:04.480Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-28T09:37:04.480Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -387,7 +779,21 @@
     "url": "https://www.instagram.com/reel/DeyKubBxlwU/",
     "grid_views_raw": "8,482",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 8482,
+      "raw": "8,482",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-28T09:37:04.480Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-28T09:37:04.480Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -395,7 +801,21 @@
     "url": "https://www.instagram.com/reel/DeyKivUx3vz/",
     "grid_views_raw": "91K",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 91000,
+      "raw": "91K",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-28T09:37:04.480Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-28T09:37:04.480Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -403,7 +823,21 @@
     "url": "https://www.instagram.com/reel/DeyFz6eRL_X/",
     "grid_views_raw": "34.7K",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 34700,
+      "raw": "34.7K",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-28T09:37:04.480Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-28T09:37:04.480Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -411,7 +845,21 @@
     "url": "https://www.instagram.com/reel/Dex04s2Rsxj/",
     "grid_views_raw": "8,067",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 8067,
+      "raw": "8,067",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-28T09:37:04.480Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-28T09:37:04.480Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -419,7 +867,21 @@
     "url": "https://www.instagram.com/reel/Dex0tVWxEFD/",
     "grid_views_raw": "4,786",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 4786,
+      "raw": "4,786",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-28T09:37:04.480Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-28T09:37:04.480Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -427,7 +889,21 @@
     "url": "https://www.instagram.com/reel/Dexz-z4R2yX/",
     "grid_views_raw": "5,817",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 5817,
+      "raw": "5,817",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-28T09:37:04.480Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-28T09:37:04.480Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -435,6 +911,20 @@
     "url": "https://www.instagram.com/reel/DexLScdz_Dd/",
     "grid_views_raw": "458K",
     "grid_views_issue": null,
-    "status": "pending"
+    "status": "pending",
+    "views": {
+      "value": 458000,
+      "raw": "458K",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-28T09:37:04.480Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-28T09:37:04.480Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   }
 ]

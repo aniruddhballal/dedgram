@@ -8,7 +8,21 @@
     "status": "failed",
     "last_error": "Instagram reports this page is unavailable.",
     "last_attempt_at": "2026-10-28T11:32:29.596Z",
-    "attempts": 1
+    "attempts": 1,
+    "views": {
+      "value": 8525,
+      "raw": "8,525",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:15:09.057Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T16:15:09.057Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -19,7 +33,21 @@
     "status": "failed",
     "last_error": "Instagram reports this page is unavailable.",
     "last_attempt_at": "2026-10-28T11:32:33.260Z",
-    "attempts": 1
+    "attempts": 1,
+    "views": {
+      "value": 222000,
+      "raw": "222K",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:15:09.057Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T16:15:09.057Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -30,7 +58,21 @@
     "status": "failed",
     "last_error": "Instagram reports this page is unavailable.",
     "last_attempt_at": "2026-10-28T11:32:37.009Z",
-    "attempts": 1
+    "attempts": 1,
+    "views": {
+      "value": 6378,
+      "raw": "6,378",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:15:09.057Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T16:15:09.057Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -41,7 +83,21 @@
     "status": "failed",
     "last_error": "Instagram reports this page is unavailable.",
     "last_attempt_at": "2026-10-28T11:32:40.648Z",
-    "attempts": 1
+    "attempts": 1,
+    "views": {
+      "value": 36500,
+      "raw": "36.5K",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:15:09.057Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T16:15:09.057Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -52,7 +108,21 @@
     "status": "failed",
     "last_error": "Instagram reports this page is unavailable.",
     "last_attempt_at": "2026-10-28T11:32:44.411Z",
-    "attempts": 1
+    "attempts": 1,
+    "views": {
+      "value": 62000,
+      "raw": "62K",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:15:09.057Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T16:15:09.057Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -63,7 +133,21 @@
     "status": "failed",
     "last_error": "Instagram reports this page is unavailable.",
     "last_attempt_at": "2026-10-28T11:32:48.077Z",
-    "attempts": 1
+    "attempts": 1,
+    "views": {
+      "value": 218000,
+      "raw": "218K",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:15:09.057Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T16:15:09.057Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -74,7 +158,21 @@
     "status": "failed",
     "last_error": "Instagram reports this page is unavailable.",
     "last_attempt_at": "2026-10-28T11:32:51.965Z",
-    "attempts": 1
+    "attempts": 1,
+    "views": {
+      "value": 493000,
+      "raw": "493K",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:15:09.057Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T16:15:09.057Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -85,7 +183,21 @@
     "status": "failed",
     "last_error": "Instagram reports this page is unavailable.",
     "last_attempt_at": "2026-10-28T11:32:55.553Z",
-    "attempts": 1
+    "attempts": 1,
+    "views": {
+      "value": 1800000,
+      "raw": "1.8M",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:15:09.057Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T16:15:09.057Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -96,7 +208,21 @@
     "status": "failed",
     "last_error": "Instagram reports this page is unavailable.",
     "last_attempt_at": "2026-10-28T11:32:59.102Z",
-    "attempts": 1
+    "attempts": 1,
+    "views": {
+      "value": 60600,
+      "raw": "60.6K",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:15:09.057Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T16:15:09.057Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -107,7 +233,21 @@
     "status": "failed",
     "last_error": "Instagram reports this page is unavailable.",
     "last_attempt_at": "2026-10-28T11:33:02.827Z",
-    "attempts": 1
+    "attempts": 1,
+    "views": {
+      "value": 6250,
+      "raw": "6,250",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:15:09.057Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T16:15:09.057Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -118,7 +258,21 @@
     "status": "failed",
     "last_error": "Instagram reports this page is unavailable.",
     "last_attempt_at": "2026-10-28T11:33:06.552Z",
-    "attempts": 1
+    "attempts": 1,
+    "views": {
+      "value": 18900,
+      "raw": "18.9K",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:15:09.057Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T16:15:09.057Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -129,7 +283,21 @@
     "status": "failed",
     "last_error": "Instagram reports this page is unavailable.",
     "last_attempt_at": "2026-10-28T11:33:10.382Z",
-    "attempts": 1
+    "attempts": 1,
+    "views": {
+      "value": 25000,
+      "raw": "25K",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:15:09.057Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T16:15:09.057Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -140,6 +308,20 @@
     "status": "failed",
     "last_error": "Instagram reports this page is unavailable.",
     "last_attempt_at": "2026-10-28T11:33:13.986Z",
-    "attempts": 1
+    "attempts": 1,
+    "views": {
+      "value": 95100,
+      "raw": "95.1K",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:15:09.057Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T16:15:09.057Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   }
 ]

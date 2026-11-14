@@ -23,6 +23,20 @@
       "source": "user_manual_profile_check",
       "reason": "Suspected deleted (most likely), based on the user's manual check on 5 November 2026: the profile is unavailable and the checked saved reel URLs redirect to the profile instead of displaying a reel. The user considers deletion more likely than a username change because reel URLs would normally remain accessible after a rename. This is a user-reported assessment, not an Instagram-confirmed deletion. All 39 discovered reel URLs and previously saved profile and reel information are preserved; missing reel details are attributed to the unavailable profile and are excluded from further analysis.",
       "evidence": "User checked the unavailable profile and two saved reel URLs. Exclusion of all 39 reels is based on the profile-level assessment; individual automated checks were not performed."
+    },
+    "views": {
+      "value": 35400,
+      "raw": "35.4K",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:19:09.217Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T16:19:09.217Z",
+        "retained_from": "previous_website_snapshot"
+      }
     }
   },
   {
@@ -49,6 +63,20 @@
       "source": "user_manual_profile_check",
       "reason": "Suspected deleted (most likely), based on the user's manual check on 5 November 2026: the profile is unavailable and the checked saved reel URLs redirect to the profile instead of displaying a reel. The user considers deletion more likely than a username change because reel URLs would normally remain accessible after a rename. This is a user-reported assessment, not an Instagram-confirmed deletion. All 39 discovered reel URLs and previously saved profile and reel information are preserved; missing reel details are attributed to the unavailable profile and are excluded from further analysis.",
       "evidence": "User checked the unavailable profile and two saved reel URLs. Exclusion of all 39 reels is based on the profile-level assessment; individual automated checks were not performed."
+    },
+    "views": {
+      "value": 1100000,
+      "raw": "1.1M",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:19:09.217Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T16:19:09.217Z",
+        "retained_from": "previous_website_snapshot"
+      }
     }
   },
   {
@@ -75,6 +103,20 @@
       "source": "user_manual_profile_check",
       "reason": "Suspected deleted (most likely), based on the user's manual check on 5 November 2026: the profile is unavailable and the checked saved reel URLs redirect to the profile instead of displaying a reel. The user considers deletion more likely than a username change because reel URLs would normally remain accessible after a rename. This is a user-reported assessment, not an Instagram-confirmed deletion. All 39 discovered reel URLs and previously saved profile and reel information are preserved; missing reel details are attributed to the unavailable profile and are excluded from further analysis.",
       "evidence": "User checked the unavailable profile and two saved reel URLs. Exclusion of all 39 reels is based on the profile-level assessment; individual automated checks were not performed."
+    },
+    "views": {
+      "value": 1600000,
+      "raw": "1.6M",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:19:09.217Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T16:19:09.217Z",
+        "retained_from": "previous_website_snapshot"
+      }
     }
   },
   {
@@ -101,6 +143,20 @@
       "source": "user_manual_profile_check",
       "reason": "Suspected deleted (most likely), based on the user's manual check on 5 November 2026: the profile is unavailable and the checked saved reel URLs redirect to the profile instead of displaying a reel. The user considers deletion more likely than a username change because reel URLs would normally remain accessible after a rename. This is a user-reported assessment, not an Instagram-confirmed deletion. All 39 discovered reel URLs and previously saved profile and reel information are preserved; missing reel details are attributed to the unavailable profile and are excluded from further analysis.",
       "evidence": "User checked the unavailable profile and two saved reel URLs. Exclusion of all 39 reels is based on the profile-level assessment; individual automated checks were not performed."
+    },
+    "views": {
+      "value": 172000,
+      "raw": "172K",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:19:09.217Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T16:19:09.217Z",
+        "retained_from": "previous_website_snapshot"
+      }
     }
   },
   {
@@ -127,6 +183,20 @@
       "source": "user_manual_profile_check",
       "reason": "Suspected deleted (most likely), based on the user's manual check on 5 November 2026: the profile is unavailable and the checked saved reel URLs redirect to the profile instead of displaying a reel. The user considers deletion more likely than a username change because reel URLs would normally remain accessible after a rename. This is a user-reported assessment, not an Instagram-confirmed deletion. All 39 discovered reel URLs and previously saved profile and reel information are preserved; missing reel details are attributed to the unavailable profile and are excluded from further analysis.",
       "evidence": "User checked the unavailable profile and two saved reel URLs. Exclusion of all 39 reels is based on the profile-level assessment; individual automated checks were not performed."
+    },
+    "views": {
+      "value": 413000,
+      "raw": "413K",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:19:09.217Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T16:19:09.217Z",
+        "retained_from": "previous_website_snapshot"
+      }
     }
   },
   {
@@ -153,6 +223,20 @@
       "source": "user_manual_profile_check",
       "reason": "Suspected deleted (most likely), based on the user's manual check on 5 November 2026: the profile is unavailable and the checked saved reel URLs redirect to the profile instead of displaying a reel. The user considers deletion more likely than a username change because reel URLs would normally remain accessible after a rename. This is a user-reported assessment, not an Instagram-confirmed deletion. All 39 discovered reel URLs and previously saved profile and reel information are preserved; missing reel details are attributed to the unavailable profile and are excluded from further analysis.",
       "evidence": "User checked the unavailable profile and two saved reel URLs. Exclusion of all 39 reels is based on the profile-level assessment; individual automated checks were not performed."
+    },
+    "views": {
+      "value": 2400000,
+      "raw": "2.4M",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:19:09.217Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T16:19:09.217Z",
+        "retained_from": "previous_website_snapshot"
+      }
     }
   },
   {
@@ -179,6 +263,20 @@
       "source": "user_manual_profile_check",
       "reason": "Suspected deleted (most likely), based on the user's manual check on 5 November 2026: the profile is unavailable and the checked saved reel URLs redirect to the profile instead of displaying a reel. The user considers deletion more likely than a username change because reel URLs would normally remain accessible after a rename. This is a user-reported assessment, not an Instagram-confirmed deletion. All 39 discovered reel URLs and previously saved profile and reel information are preserved; missing reel details are attributed to the unavailable profile and are excluded from further analysis.",
       "evidence": "User checked the unavailable profile and two saved reel URLs. Exclusion of all 39 reels is based on the profile-level assessment; individual automated checks were not performed."
+    },
+    "views": {
+      "value": 1100000,
+      "raw": "1.1M",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:19:09.217Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T16:19:09.217Z",
+        "retained_from": "previous_website_snapshot"
+      }
     }
   },
   {
@@ -205,6 +303,20 @@
       "source": "user_manual_profile_check",
       "reason": "Suspected deleted (most likely), based on the user's manual check on 5 November 2026: the profile is unavailable and the checked saved reel URLs redirect to the profile instead of displaying a reel. The user considers deletion more likely than a username change because reel URLs would normally remain accessible after a rename. This is a user-reported assessment, not an Instagram-confirmed deletion. All 39 discovered reel URLs and previously saved profile and reel information are preserved; missing reel details are attributed to the unavailable profile and are excluded from further analysis.",
       "evidence": "User checked the unavailable profile and two saved reel URLs. Exclusion of all 39 reels is based on the profile-level assessment; individual automated checks were not performed."
+    },
+    "views": {
+      "value": 21500,
+      "raw": "21.5K",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:19:09.217Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T16:19:09.217Z",
+        "retained_from": "previous_website_snapshot"
+      }
     }
   },
   {
@@ -231,6 +343,20 @@
       "source": "user_manual_profile_check",
       "reason": "Suspected deleted (most likely), based on the user's manual check on 5 November 2026: the profile is unavailable and the checked saved reel URLs redirect to the profile instead of displaying a reel. The user considers deletion more likely than a username change because reel URLs would normally remain accessible after a rename. This is a user-reported assessment, not an Instagram-confirmed deletion. All 39 discovered reel URLs and previously saved profile and reel information are preserved; missing reel details are attributed to the unavailable profile and are excluded from further analysis.",
       "evidence": "User checked the unavailable profile and two saved reel URLs. Exclusion of all 39 reels is based on the profile-level assessment; individual automated checks were not performed."
+    },
+    "views": {
+      "value": 8697,
+      "raw": "8,697",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:19:09.217Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T16:19:09.217Z",
+        "retained_from": "previous_website_snapshot"
+      }
     }
   },
   {
@@ -257,6 +383,20 @@
       "source": "user_manual_profile_check",
       "reason": "Suspected deleted (most likely), based on the user's manual check on 5 November 2026: the profile is unavailable and the checked saved reel URLs redirect to the profile instead of displaying a reel. The user considers deletion more likely than a username change because reel URLs would normally remain accessible after a rename. This is a user-reported assessment, not an Instagram-confirmed deletion. All 39 discovered reel URLs and previously saved profile and reel information are preserved; missing reel details are attributed to the unavailable profile and are excluded from further analysis.",
       "evidence": "User checked the unavailable profile and two saved reel URLs. Exclusion of all 39 reels is based on the profile-level assessment; individual automated checks were not performed."
+    },
+    "views": {
+      "value": 181000,
+      "raw": "181K",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:19:09.217Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T16:19:09.217Z",
+        "retained_from": "previous_website_snapshot"
+      }
     }
   },
   {
@@ -283,6 +423,20 @@
       "source": "user_manual_profile_check",
       "reason": "Suspected deleted (most likely), based on the user's manual check on 5 November 2026: the profile is unavailable and the checked saved reel URLs redirect to the profile instead of displaying a reel. The user considers deletion more likely than a username change because reel URLs would normally remain accessible after a rename. This is a user-reported assessment, not an Instagram-confirmed deletion. All 39 discovered reel URLs and previously saved profile and reel information are preserved; missing reel details are attributed to the unavailable profile and are excluded from further analysis.",
       "evidence": "User checked the unavailable profile and two saved reel URLs. Exclusion of all 39 reels is based on the profile-level assessment; individual automated checks were not performed."
+    },
+    "views": {
+      "value": 12500,
+      "raw": "12.5K",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:19:09.217Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T16:19:09.217Z",
+        "retained_from": "previous_website_snapshot"
+      }
     }
   },
   {
@@ -309,6 +463,20 @@
       "source": "user_manual_profile_check",
       "reason": "Suspected deleted (most likely), based on the user's manual check on 5 November 2026: the profile is unavailable and the checked saved reel URLs redirect to the profile instead of displaying a reel. The user considers deletion more likely than a username change because reel URLs would normally remain accessible after a rename. This is a user-reported assessment, not an Instagram-confirmed deletion. All 39 discovered reel URLs and previously saved profile and reel information are preserved; missing reel details are attributed to the unavailable profile and are excluded from further analysis.",
       "evidence": "User checked the unavailable profile and two saved reel URLs. Exclusion of all 39 reels is based on the profile-level assessment; individual automated checks were not performed."
+    },
+    "views": {
+      "value": 421000,
+      "raw": "421K",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:19:09.217Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T16:19:09.217Z",
+        "retained_from": "previous_website_snapshot"
+      }
     }
   },
   {
@@ -335,6 +503,20 @@
       "source": "user_manual_profile_check",
       "reason": "Suspected deleted (most likely), based on the user's manual check on 5 November 2026: the profile is unavailable and the checked saved reel URLs redirect to the profile instead of displaying a reel. The user considers deletion more likely than a username change because reel URLs would normally remain accessible after a rename. This is a user-reported assessment, not an Instagram-confirmed deletion. All 39 discovered reel URLs and previously saved profile and reel information are preserved; missing reel details are attributed to the unavailable profile and are excluded from further analysis.",
       "evidence": "User checked the unavailable profile and two saved reel URLs. Exclusion of all 39 reels is based on the profile-level assessment; individual automated checks were not performed."
+    },
+    "views": {
+      "value": 980000,
+      "raw": "980K",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:19:09.217Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T16:19:09.217Z",
+        "retained_from": "previous_website_snapshot"
+      }
     }
   },
   {
@@ -361,6 +543,20 @@
       "source": "user_manual_profile_check",
       "reason": "Suspected deleted (most likely), based on the user's manual check on 5 November 2026: the profile is unavailable and the checked saved reel URLs redirect to the profile instead of displaying a reel. The user considers deletion more likely than a username change because reel URLs would normally remain accessible after a rename. This is a user-reported assessment, not an Instagram-confirmed deletion. All 39 discovered reel URLs and previously saved profile and reel information are preserved; missing reel details are attributed to the unavailable profile and are excluded from further analysis.",
       "evidence": "User checked the unavailable profile and two saved reel URLs. Exclusion of all 39 reels is based on the profile-level assessment; individual automated checks were not performed."
+    },
+    "views": {
+      "value": 258000,
+      "raw": "258K",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:19:09.217Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T16:19:09.217Z",
+        "retained_from": "previous_website_snapshot"
+      }
     }
   },
   {
@@ -387,6 +583,20 @@
       "source": "user_manual_profile_check",
       "reason": "Suspected deleted (most likely), based on the user's manual check on 5 November 2026: the profile is unavailable and the checked saved reel URLs redirect to the profile instead of displaying a reel. The user considers deletion more likely than a username change because reel URLs would normally remain accessible after a rename. This is a user-reported assessment, not an Instagram-confirmed deletion. All 39 discovered reel URLs and previously saved profile and reel information are preserved; missing reel details are attributed to the unavailable profile and are excluded from further analysis.",
       "evidence": "User checked the unavailable profile and two saved reel URLs. Exclusion of all 39 reels is based on the profile-level assessment; individual automated checks were not performed."
+    },
+    "views": {
+      "value": 751000,
+      "raw": "751K",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:19:09.217Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T16:19:09.217Z",
+        "retained_from": "previous_website_snapshot"
+      }
     }
   },
   {
@@ -413,6 +623,20 @@
       "source": "user_manual_profile_check",
       "reason": "Suspected deleted (most likely), based on the user's manual check on 5 November 2026: the profile is unavailable and the checked saved reel URLs redirect to the profile instead of displaying a reel. The user considers deletion more likely than a username change because reel URLs would normally remain accessible after a rename. This is a user-reported assessment, not an Instagram-confirmed deletion. All 39 discovered reel URLs and previously saved profile and reel information are preserved; missing reel details are attributed to the unavailable profile and are excluded from further analysis.",
       "evidence": "User checked the unavailable profile and two saved reel URLs. Exclusion of all 39 reels is based on the profile-level assessment; individual automated checks were not performed."
+    },
+    "views": {
+      "value": 654000,
+      "raw": "654K",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:19:09.217Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T16:19:09.217Z",
+        "retained_from": "previous_website_snapshot"
+      }
     }
   },
   {
@@ -439,6 +663,20 @@
       "source": "user_manual_profile_check",
       "reason": "Suspected deleted (most likely), based on the user's manual check on 5 November 2026: the profile is unavailable and the checked saved reel URLs redirect to the profile instead of displaying a reel. The user considers deletion more likely than a username change because reel URLs would normally remain accessible after a rename. This is a user-reported assessment, not an Instagram-confirmed deletion. All 39 discovered reel URLs and previously saved profile and reel information are preserved; missing reel details are attributed to the unavailable profile and are excluded from further analysis.",
       "evidence": "User checked the unavailable profile and two saved reel URLs. Exclusion of all 39 reels is based on the profile-level assessment; individual automated checks were not performed."
+    },
+    "views": {
+      "value": 29900,
+      "raw": "29.9K",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:19:09.217Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T16:19:09.217Z",
+        "retained_from": "previous_website_snapshot"
+      }
     }
   },
   {
@@ -465,6 +703,20 @@
       "source": "user_manual_profile_check",
       "reason": "Suspected deleted (most likely), based on the user's manual check on 5 November 2026: the profile is unavailable and the checked saved reel URLs redirect to the profile instead of displaying a reel. The user considers deletion more likely than a username change because reel URLs would normally remain accessible after a rename. This is a user-reported assessment, not an Instagram-confirmed deletion. All 39 discovered reel URLs and previously saved profile and reel information are preserved; missing reel details are attributed to the unavailable profile and are excluded from further analysis.",
       "evidence": "User checked the unavailable profile and two saved reel URLs. Exclusion of all 39 reels is based on the profile-level assessment; individual automated checks were not performed."
+    },
+    "views": {
+      "value": 4900000,
+      "raw": "4.9M",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:19:09.217Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T16:19:09.217Z",
+        "retained_from": "previous_website_snapshot"
+      }
     }
   },
   {
@@ -491,6 +743,20 @@
       "source": "user_manual_profile_check",
       "reason": "Suspected deleted (most likely), based on the user's manual check on 5 November 2026: the profile is unavailable and the checked saved reel URLs redirect to the profile instead of displaying a reel. The user considers deletion more likely than a username change because reel URLs would normally remain accessible after a rename. This is a user-reported assessment, not an Instagram-confirmed deletion. All 39 discovered reel URLs and previously saved profile and reel information are preserved; missing reel details are attributed to the unavailable profile and are excluded from further analysis.",
       "evidence": "User checked the unavailable profile and two saved reel URLs. Exclusion of all 39 reels is based on the profile-level assessment; individual automated checks were not performed."
+    },
+    "views": {
+      "value": 728000,
+      "raw": "728K",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:19:09.217Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T16:19:09.217Z",
+        "retained_from": "previous_website_snapshot"
+      }
     }
   },
   {
@@ -517,6 +783,20 @@
       "source": "user_manual_profile_check",
       "reason": "Suspected deleted (most likely), based on the user's manual check on 5 November 2026: the profile is unavailable and the checked saved reel URLs redirect to the profile instead of displaying a reel. The user considers deletion more likely than a username change because reel URLs would normally remain accessible after a rename. This is a user-reported assessment, not an Instagram-confirmed deletion. All 39 discovered reel URLs and previously saved profile and reel information are preserved; missing reel details are attributed to the unavailable profile and are excluded from further analysis.",
       "evidence": "User checked the unavailable profile and two saved reel URLs. Exclusion of all 39 reels is based on the profile-level assessment; individual automated checks were not performed."
+    },
+    "views": {
+      "value": 1800000,
+      "raw": "1.8M",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:19:09.217Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T16:19:09.217Z",
+        "retained_from": "previous_website_snapshot"
+      }
     }
   },
   {
@@ -543,6 +823,20 @@
       "source": "user_manual_profile_check",
       "reason": "Suspected deleted (most likely), based on the user's manual check on 5 November 2026: the profile is unavailable and the checked saved reel URLs redirect to the profile instead of displaying a reel. The user considers deletion more likely than a username change because reel URLs would normally remain accessible after a rename. This is a user-reported assessment, not an Instagram-confirmed deletion. All 39 discovered reel URLs and previously saved profile and reel information are preserved; missing reel details are attributed to the unavailable profile and are excluded from further analysis.",
       "evidence": "User checked the unavailable profile and two saved reel URLs. Exclusion of all 39 reels is based on the profile-level assessment; individual automated checks were not performed."
+    },
+    "views": {
+      "value": 4099999.9999999995,
+      "raw": "4.1M",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:19:09.217Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T16:19:09.217Z",
+        "retained_from": "previous_website_snapshot"
+      }
     }
   },
   {
@@ -569,6 +863,20 @@
       "source": "user_manual_profile_check",
       "reason": "Suspected deleted (most likely), based on the user's manual check on 5 November 2026: the profile is unavailable and the checked saved reel URLs redirect to the profile instead of displaying a reel. The user considers deletion more likely than a username change because reel URLs would normally remain accessible after a rename. This is a user-reported assessment, not an Instagram-confirmed deletion. All 39 discovered reel URLs and previously saved profile and reel information are preserved; missing reel details are attributed to the unavailable profile and are excluded from further analysis.",
       "evidence": "User checked the unavailable profile and two saved reel URLs. Exclusion of all 39 reels is based on the profile-level assessment; individual automated checks were not performed."
+    },
+    "views": {
+      "value": 10300000,
+      "raw": "10.3M",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:19:09.217Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T16:19:09.217Z",
+        "retained_from": "previous_website_snapshot"
+      }
     }
   },
   {
@@ -595,6 +903,20 @@
       "source": "user_manual_profile_check",
       "reason": "Suspected deleted (most likely), based on the user's manual check on 5 November 2026: the profile is unavailable and the checked saved reel URLs redirect to the profile instead of displaying a reel. The user considers deletion more likely than a username change because reel URLs would normally remain accessible after a rename. This is a user-reported assessment, not an Instagram-confirmed deletion. All 39 discovered reel URLs and previously saved profile and reel information are preserved; missing reel details are attributed to the unavailable profile and are excluded from further analysis.",
       "evidence": "User checked the unavailable profile and two saved reel URLs. Exclusion of all 39 reels is based on the profile-level assessment; individual automated checks were not performed."
+    },
+    "views": {
+      "value": 2900000,
+      "raw": "2.9M",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:19:09.217Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T16:19:09.217Z",
+        "retained_from": "previous_website_snapshot"
+      }
     }
   },
   {
@@ -621,6 +943,20 @@
       "source": "user_manual_profile_check",
       "reason": "Suspected deleted (most likely), based on the user's manual check on 5 November 2026: the profile is unavailable and the checked saved reel URLs redirect to the profile instead of displaying a reel. The user considers deletion more likely than a username change because reel URLs would normally remain accessible after a rename. This is a user-reported assessment, not an Instagram-confirmed deletion. All 39 discovered reel URLs and previously saved profile and reel information are preserved; missing reel details are attributed to the unavailable profile and are excluded from further analysis.",
       "evidence": "User checked the unavailable profile and two saved reel URLs. Exclusion of all 39 reels is based on the profile-level assessment; individual automated checks were not performed."
+    },
+    "views": {
+      "value": 1100000,
+      "raw": "1.1M",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:19:09.217Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T16:19:09.217Z",
+        "retained_from": "previous_website_snapshot"
+      }
     }
   },
   {
@@ -647,6 +983,20 @@
       "source": "user_manual_profile_check",
       "reason": "Suspected deleted (most likely), based on the user's manual check on 5 November 2026: the profile is unavailable and the checked saved reel URLs redirect to the profile instead of displaying a reel. The user considers deletion more likely than a username change because reel URLs would normally remain accessible after a rename. This is a user-reported assessment, not an Instagram-confirmed deletion. All 39 discovered reel URLs and previously saved profile and reel information are preserved; missing reel details are attributed to the unavailable profile and are excluded from further analysis.",
       "evidence": "User checked the unavailable profile and two saved reel URLs. Exclusion of all 39 reels is based on the profile-level assessment; individual automated checks were not performed."
+    },
+    "views": {
+      "value": 7055,
+      "raw": "7,055",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:19:09.217Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T16:19:09.217Z",
+        "retained_from": "previous_website_snapshot"
+      }
     }
   },
   {
@@ -673,6 +1023,20 @@
       "source": "user_manual_profile_check",
       "reason": "Suspected deleted (most likely), based on the user's manual check on 5 November 2026: the profile is unavailable and the checked saved reel URLs redirect to the profile instead of displaying a reel. The user considers deletion more likely than a username change because reel URLs would normally remain accessible after a rename. This is a user-reported assessment, not an Instagram-confirmed deletion. All 39 discovered reel URLs and previously saved profile and reel information are preserved; missing reel details are attributed to the unavailable profile and are excluded from further analysis.",
       "evidence": "User checked the unavailable profile and two saved reel URLs. Exclusion of all 39 reels is based on the profile-level assessment; individual automated checks were not performed."
+    },
+    "views": {
+      "value": 2700000,
+      "raw": "2.7M",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:19:09.217Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T16:19:09.217Z",
+        "retained_from": "previous_website_snapshot"
+      }
     }
   },
   {
@@ -699,6 +1063,20 @@
       "source": "user_manual_profile_check",
       "reason": "Suspected deleted (most likely), based on the user's manual check on 5 November 2026: the profile is unavailable and the checked saved reel URLs redirect to the profile instead of displaying a reel. The user considers deletion more likely than a username change because reel URLs would normally remain accessible after a rename. This is a user-reported assessment, not an Instagram-confirmed deletion. All 39 discovered reel URLs and previously saved profile and reel information are preserved; missing reel details are attributed to the unavailable profile and are excluded from further analysis.",
       "evidence": "User checked the unavailable profile and two saved reel URLs. Exclusion of all 39 reels is based on the profile-level assessment; individual automated checks were not performed."
+    },
+    "views": {
+      "value": 369000,
+      "raw": "369K",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:19:09.217Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T16:19:09.217Z",
+        "retained_from": "previous_website_snapshot"
+      }
     }
   },
   {
@@ -725,6 +1103,20 @@
       "source": "user_manual_profile_check",
       "reason": "Suspected deleted (most likely), based on the user's manual check on 5 November 2026: the profile is unavailable and the checked saved reel URLs redirect to the profile instead of displaying a reel. The user considers deletion more likely than a username change because reel URLs would normally remain accessible after a rename. This is a user-reported assessment, not an Instagram-confirmed deletion. All 39 discovered reel URLs and previously saved profile and reel information are preserved; missing reel details are attributed to the unavailable profile and are excluded from further analysis.",
       "evidence": "User checked the unavailable profile and two saved reel URLs. Exclusion of all 39 reels is based on the profile-level assessment; individual automated checks were not performed."
+    },
+    "views": {
+      "value": 437000,
+      "raw": "437K",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:19:09.217Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T16:19:09.217Z",
+        "retained_from": "previous_website_snapshot"
+      }
     }
   },
   {
@@ -751,6 +1143,20 @@
       "source": "user_manual_profile_check",
       "reason": "Suspected deleted (most likely), based on the user's manual check on 5 November 2026: the profile is unavailable and the checked saved reel URLs redirect to the profile instead of displaying a reel. The user considers deletion more likely than a username change because reel URLs would normally remain accessible after a rename. This is a user-reported assessment, not an Instagram-confirmed deletion. All 39 discovered reel URLs and previously saved profile and reel information are preserved; missing reel details are attributed to the unavailable profile and are excluded from further analysis.",
       "evidence": "User checked the unavailable profile and two saved reel URLs. Exclusion of all 39 reels is based on the profile-level assessment; individual automated checks were not performed."
+    },
+    "views": {
+      "value": 760000,
+      "raw": "760K",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:19:09.217Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T16:19:09.217Z",
+        "retained_from": "previous_website_snapshot"
+      }
     }
   },
   {
@@ -777,6 +1183,20 @@
       "source": "user_manual_profile_check",
       "reason": "Suspected deleted (most likely), based on the user's manual check on 5 November 2026: the profile is unavailable and the checked saved reel URLs redirect to the profile instead of displaying a reel. The user considers deletion more likely than a username change because reel URLs would normally remain accessible after a rename. This is a user-reported assessment, not an Instagram-confirmed deletion. All 39 discovered reel URLs and previously saved profile and reel information are preserved; missing reel details are attributed to the unavailable profile and are excluded from further analysis.",
       "evidence": "User checked the unavailable profile and two saved reel URLs. Exclusion of all 39 reels is based on the profile-level assessment; individual automated checks were not performed."
+    },
+    "views": {
+      "value": 7438,
+      "raw": "7,438",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:19:09.217Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T16:19:09.217Z",
+        "retained_from": "previous_website_snapshot"
+      }
     }
   },
   {
@@ -803,6 +1223,20 @@
       "source": "user_manual_profile_check",
       "reason": "Suspected deleted (most likely), based on the user's manual check on 5 November 2026: the profile is unavailable and the checked saved reel URLs redirect to the profile instead of displaying a reel. The user considers deletion more likely than a username change because reel URLs would normally remain accessible after a rename. This is a user-reported assessment, not an Instagram-confirmed deletion. All 39 discovered reel URLs and previously saved profile and reel information are preserved; missing reel details are attributed to the unavailable profile and are excluded from further analysis.",
       "evidence": "User checked the unavailable profile and two saved reel URLs. Exclusion of all 39 reels is based on the profile-level assessment; individual automated checks were not performed."
+    },
+    "views": {
+      "value": 639000,
+      "raw": "639K",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:19:09.217Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T16:19:09.217Z",
+        "retained_from": "previous_website_snapshot"
+      }
     }
   },
   {
@@ -829,6 +1263,20 @@
       "source": "user_manual_profile_check",
       "reason": "Suspected deleted (most likely), based on the user's manual check on 5 November 2026: the profile is unavailable and the checked saved reel URLs redirect to the profile instead of displaying a reel. The user considers deletion more likely than a username change because reel URLs would normally remain accessible after a rename. This is a user-reported assessment, not an Instagram-confirmed deletion. All 39 discovered reel URLs and previously saved profile and reel information are preserved; missing reel details are attributed to the unavailable profile and are excluded from further analysis.",
       "evidence": "User checked the unavailable profile and two saved reel URLs. Exclusion of all 39 reels is based on the profile-level assessment; individual automated checks were not performed."
+    },
+    "views": {
+      "value": 4800000,
+      "raw": "4.8M",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:19:09.217Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T16:19:09.217Z",
+        "retained_from": "previous_website_snapshot"
+      }
     }
   },
   {
@@ -855,6 +1303,20 @@
       "source": "user_manual_profile_check",
       "reason": "Suspected deleted (most likely), based on the user's manual check on 5 November 2026: the profile is unavailable and the checked saved reel URLs redirect to the profile instead of displaying a reel. The user considers deletion more likely than a username change because reel URLs would normally remain accessible after a rename. This is a user-reported assessment, not an Instagram-confirmed deletion. All 39 discovered reel URLs and previously saved profile and reel information are preserved; missing reel details are attributed to the unavailable profile and are excluded from further analysis.",
       "evidence": "User checked the unavailable profile and two saved reel URLs. Exclusion of all 39 reels is based on the profile-level assessment; individual automated checks were not performed."
+    },
+    "views": {
+      "value": 8500000,
+      "raw": "8.5M",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:19:09.217Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T16:19:09.217Z",
+        "retained_from": "previous_website_snapshot"
+      }
     }
   },
   {
@@ -881,6 +1343,20 @@
       "source": "user_manual_profile_check",
       "reason": "Suspected deleted (most likely), based on the user's manual check on 5 November 2026: the profile is unavailable and the checked saved reel URLs redirect to the profile instead of displaying a reel. The user considers deletion more likely than a username change because reel URLs would normally remain accessible after a rename. This is a user-reported assessment, not an Instagram-confirmed deletion. All 39 discovered reel URLs and previously saved profile and reel information are preserved; missing reel details are attributed to the unavailable profile and are excluded from further analysis.",
       "evidence": "User checked the unavailable profile and two saved reel URLs. Exclusion of all 39 reels is based on the profile-level assessment; individual automated checks were not performed."
+    },
+    "views": {
+      "value": 4047,
+      "raw": "4,047",
+      "approximate": false,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:19:09.217Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T16:19:09.217Z",
+        "retained_from": "previous_website_snapshot"
+      }
     }
   },
   {
@@ -907,6 +1383,20 @@
       "source": "user_manual_profile_check",
       "reason": "Suspected deleted (most likely), based on the user's manual check on 5 November 2026: the profile is unavailable and the checked saved reel URLs redirect to the profile instead of displaying a reel. The user considers deletion more likely than a username change because reel URLs would normally remain accessible after a rename. This is a user-reported assessment, not an Instagram-confirmed deletion. All 39 discovered reel URLs and previously saved profile and reel information are preserved; missing reel details are attributed to the unavailable profile and are excluded from further analysis.",
       "evidence": "User checked the unavailable profile and two saved reel URLs. Exclusion of all 39 reels is based on the profile-level assessment; individual automated checks were not performed."
+    },
+    "views": {
+      "value": 27300,
+      "raw": "27.3K",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:19:09.217Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T16:19:09.217Z",
+        "retained_from": "previous_website_snapshot"
+      }
     }
   },
   {
@@ -933,6 +1423,20 @@
       "source": "user_manual_profile_check",
       "reason": "Suspected deleted (most likely), based on the user's manual check on 5 November 2026: the profile is unavailable and the checked saved reel URLs redirect to the profile instead of displaying a reel. The user considers deletion more likely than a username change because reel URLs would normally remain accessible after a rename. This is a user-reported assessment, not an Instagram-confirmed deletion. All 39 discovered reel URLs and previously saved profile and reel information are preserved; missing reel details are attributed to the unavailable profile and are excluded from further analysis.",
       "evidence": "User checked the unavailable profile and two saved reel URLs. Exclusion of all 39 reels is based on the profile-level assessment; individual automated checks were not performed."
+    },
+    "views": {
+      "value": 22300,
+      "raw": "22.3K",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:19:09.217Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T16:19:09.217Z",
+        "retained_from": "previous_website_snapshot"
+      }
     }
   },
   {
@@ -959,6 +1463,20 @@
       "source": "user_manual_profile_check",
       "reason": "Suspected deleted (most likely), based on the user's manual check on 5 November 2026: the profile is unavailable and the checked saved reel URLs redirect to the profile instead of displaying a reel. The user considers deletion more likely than a username change because reel URLs would normally remain accessible after a rename. This is a user-reported assessment, not an Instagram-confirmed deletion. All 39 discovered reel URLs and previously saved profile and reel information are preserved; missing reel details are attributed to the unavailable profile and are excluded from further analysis.",
       "evidence": "User checked the unavailable profile and two saved reel URLs. Exclusion of all 39 reels is based on the profile-level assessment; individual automated checks were not performed."
+    },
+    "views": {
+      "value": 1600000,
+      "raw": "1.6M",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:19:09.217Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T16:19:09.217Z",
+        "retained_from": "previous_website_snapshot"
+      }
     }
   },
   {
@@ -985,6 +1503,20 @@
       "source": "user_manual_profile_check",
       "reason": "Suspected deleted (most likely), based on the user's manual check on 5 November 2026: the profile is unavailable and the checked saved reel URLs redirect to the profile instead of displaying a reel. The user considers deletion more likely than a username change because reel URLs would normally remain accessible after a rename. This is a user-reported assessment, not an Instagram-confirmed deletion. All 39 discovered reel URLs and previously saved profile and reel information are preserved; missing reel details are attributed to the unavailable profile and are excluded from further analysis.",
       "evidence": "User checked the unavailable profile and two saved reel URLs. Exclusion of all 39 reels is based on the profile-level assessment; individual automated checks were not performed."
+    },
+    "views": {
+      "value": 3900000,
+      "raw": "3.9M",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:19:09.217Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T16:19:09.217Z",
+        "retained_from": "previous_website_snapshot"
+      }
     }
   },
   {
@@ -1011,6 +1543,20 @@
       "source": "user_manual_profile_check",
       "reason": "Suspected deleted (most likely), based on the user's manual check on 5 November 2026: the profile is unavailable and the checked saved reel URLs redirect to the profile instead of displaying a reel. The user considers deletion more likely than a username change because reel URLs would normally remain accessible after a rename. This is a user-reported assessment, not an Instagram-confirmed deletion. All 39 discovered reel URLs and previously saved profile and reel information are preserved; missing reel details are attributed to the unavailable profile and are excluded from further analysis.",
       "evidence": "User checked the unavailable profile and two saved reel URLs. Exclusion of all 39 reels is based on the profile-level assessment; individual automated checks were not performed."
+    },
+    "views": {
+      "value": 2400000,
+      "raw": "2.4M",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:19:09.217Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-23T16:19:09.217Z",
+        "retained_from": "previous_website_snapshot"
+      }
     }
   }
 ]

@@ -648,6 +648,28 @@
       },
       "excluded_from_collection": true,
       "retained_metrics_in_analysis": true
+    },
+    "prxctm0l": {
+      "username": "prxctm0l",
+      "status": "Deleted or username changed",
+      "observed_at": "2026-11-14T04:44:19.844Z",
+      "last_fetched_at": "2026-10-24T06:25:55.926Z",
+      "profile_text": "prxctm0l\n33 posts\n2,425 followers\n89 following\nCommunity\nこれは『オギー&コックローチ』の公式Instagramです! あらゆ るチェイスを繰り広げよう! カートゥーンネットワークで『オ ギー&コックローチ』を毎日放送中! 『オギー&コックロー チ』 デジタル版、ブルーレイ&DVDが絶賛発売中!\nFollow",
+      "bio": "Community\nこれは『オギー&コックローチ』の公式Instagramです! あらゆ るチェイスを繰り広げよう! カートゥーンネットワークで『オ ギー&コックローチ』を毎日放送中! 『オギー&コックロー チ』 デジタル版、ブルーレイ&DVDが絶賛発売中!",
+      "country": "India",
+      "date_joined": "October 2022",
+      "posts_count": "33",
+      "deletion_date_range": null,
+      "age_restriction": null,
+      "minimum_age": null,
+      "false_identification": null,
+      "resolution_note": "User reports on 14 November 2026 that prxctm0l is unavailable and saved reel DeCbiUjBF49 redirects to schizosub5, whose page is also unavailable. Deletion versus a username change is unconfirmed; the redirect is user-reported evidence, not a verified username migration. Stop further collection and retries while retaining captured metrics for historical analysis. Missing values remain unknown, not zero.",
+      "saved_data_available": true,
+      "deletion_assessment": null,
+      "reason": "User reports on 14 November 2026 that prxctm0l is unavailable and saved reel DeCbiUjBF49 redirects to schizosub5, whose page is also unavailable. Deletion versus a username change is unconfirmed; the redirect is user-reported evidence, not a verified username migration. Stop further collection and retries while retaining captured metrics for historical analysis. Missing values remain unknown, not zero.",
+      "exclusion": null,
+      "excluded_from_collection": true,
+      "retained_metrics_in_analysis": true
     }
   }
 }

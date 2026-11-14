@@ -391,7 +391,8 @@
       "value": 1300000,
       "raw": "1.3M",
       "approximate": true,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:40:36.024Z"
     },
     "missing": [],
     "missing_reasons": {},
@@ -472,7 +473,8 @@
       "value": 366000,
       "raw": "366K",
       "approximate": true,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:40:36.024Z"
     },
     "missing": [],
     "missing_reasons": {},
@@ -550,7 +552,8 @@
       "value": 7022,
       "raw": "7,022",
       "approximate": false,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:40:36.024Z"
     },
     "missing": [],
     "missing_reasons": {},
@@ -625,7 +628,8 @@
       "value": 2835,
       "raw": "2,835",
       "approximate": false,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:40:36.024Z"
     },
     "missing": [],
     "missing_reasons": {},
@@ -706,7 +710,8 @@
       "value": 162000,
       "raw": "162K",
       "approximate": true,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:40:36.024Z"
     },
     "missing": [],
     "missing_reasons": {},
@@ -787,7 +792,8 @@
       "value": 229000,
       "raw": "229K",
       "approximate": true,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:40:36.024Z"
     },
     "missing": [],
     "missing_reasons": {},
@@ -868,7 +874,8 @@
       "value": 3620,
       "raw": "3,620",
       "approximate": false,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:40:36.024Z"
     },
     "missing": [],
     "missing_reasons": {},
@@ -949,7 +956,8 @@
       "value": 4005,
       "raw": "4,005",
       "approximate": false,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:40:36.024Z"
     },
     "missing": [],
     "missing_reasons": {},
@@ -1030,7 +1038,8 @@
       "value": 29900,
       "raw": "29.9K",
       "approximate": true,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:40:36.024Z"
     },
     "missing": [],
     "missing_reasons": {},
@@ -1111,7 +1120,8 @@
       "value": 1000000,
       "raw": "1M",
       "approximate": true,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:40:36.024Z"
     },
     "missing": [],
     "missing_reasons": {},
@@ -1192,7 +1202,8 @@
       "value": 1700000,
       "raw": "1.7M",
       "approximate": true,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:40:36.024Z"
     },
     "missing": [],
     "missing_reasons": {},
@@ -1275,7 +1286,8 @@
       "value": 514000,
       "raw": "514K",
       "approximate": true,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:40:36.024Z"
     },
     "missing": [],
     "missing_reasons": {},
@@ -1356,7 +1368,8 @@
       "value": 509000,
       "raw": "509K",
       "approximate": true,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:40:36.024Z"
     },
     "missing": [],
     "missing_reasons": {},
@@ -1437,7 +1450,8 @@
       "value": 338000,
       "raw": "338K",
       "approximate": true,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:40:36.024Z"
     },
     "missing": [],
     "missing_reasons": {},
@@ -1518,7 +1532,8 @@
       "value": 1100000,
       "raw": "1.1M",
       "approximate": true,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:40:36.024Z"
     },
     "missing": [],
     "missing_reasons": {},
@@ -1599,7 +1614,8 @@
       "value": 631000,
       "raw": "631K",
       "approximate": true,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:40:36.024Z"
     },
     "missing": [],
     "missing_reasons": {},
@@ -1680,7 +1696,8 @@
       "value": 699000,
       "raw": "699K",
       "approximate": true,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:40:36.024Z"
     },
     "missing": [],
     "missing_reasons": {},
@@ -1761,7 +1778,8 @@
       "value": 19600,
       "raw": "19.6K",
       "approximate": true,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:40:36.024Z"
     },
     "missing": [],
     "missing_reasons": {},
@@ -1842,7 +1860,8 @@
       "value": 1742,
       "raw": "1,742",
       "approximate": false,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:40:36.024Z"
     },
     "missing": [],
     "missing_reasons": {},
@@ -1917,7 +1936,8 @@
       "value": 4000,
       "raw": "4,000",
       "approximate": false,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:40:36.024Z"
     },
     "missing": [],
     "missing_reasons": {},
@@ -1998,7 +2018,8 @@
       "value": 652000,
       "raw": "652K",
       "approximate": true,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:40:36.024Z"
     },
     "missing": [],
     "missing_reasons": {},
@@ -2079,7 +2100,8 @@
       "value": 17700,
       "raw": "17.7K",
       "approximate": true,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:40:36.024Z"
     },
     "missing": [],
     "missing_reasons": {},
@@ -2162,7 +2184,8 @@
       "value": 450000,
       "raw": "450K",
       "approximate": true,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:40:36.024Z"
     },
     "missing": [],
     "missing_reasons": {},
@@ -2243,7 +2266,8 @@
       "value": 1168,
       "raw": "1,168",
       "approximate": false,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:40:36.024Z"
     },
     "missing": [],
     "missing_reasons": {},
@@ -2324,7 +2348,8 @@
       "value": 775000,
       "raw": "775K",
       "approximate": true,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:40:36.024Z"
     },
     "missing": [],
     "missing_reasons": {},
@@ -2405,7 +2430,8 @@
       "value": 1574,
       "raw": "1,574",
       "approximate": false,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:40:36.024Z"
     },
     "missing": [],
     "missing_reasons": {},
@@ -2480,7 +2506,8 @@
       "value": 1392,
       "raw": "1,392",
       "approximate": false,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:40:36.024Z"
     },
     "missing": [],
     "missing_reasons": {},
@@ -2559,7 +2586,8 @@
       "value": 1500000,
       "raw": "1.5M",
       "approximate": true,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:40:36.024Z"
     },
     "missing": [],
     "missing_reasons": {},
@@ -2640,7 +2668,8 @@
       "value": 6055,
       "raw": "6,055",
       "approximate": false,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:40:36.024Z"
     },
     "missing": [],
     "missing_reasons": {},
@@ -2725,7 +2754,8 @@
       "value": 1600000,
       "raw": "1.6M",
       "approximate": true,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:40:36.024Z"
     },
     "missing": [],
     "missing_reasons": {},
@@ -2806,7 +2836,8 @@
       "value": 107000,
       "raw": "107K",
       "approximate": true,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:40:36.024Z"
     },
     "missing": [],
     "missing_reasons": {},
@@ -2887,7 +2918,8 @@
       "value": 676000,
       "raw": "676K",
       "approximate": true,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:40:36.024Z"
     },
     "missing": [],
     "missing_reasons": {},
@@ -2968,7 +3000,8 @@
       "value": 368000,
       "raw": "368K",
       "approximate": true,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:40:36.024Z"
     },
     "missing": [],
     "missing_reasons": {},
@@ -3049,7 +3082,8 @@
       "value": 98900,
       "raw": "98.9K",
       "approximate": true,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:40:36.024Z"
     },
     "missing": [],
     "missing_reasons": {},
@@ -3130,7 +3164,8 @@
       "value": 181000,
       "raw": "181K",
       "approximate": true,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:40:36.024Z"
     },
     "missing": [],
     "missing_reasons": {},
@@ -3213,7 +3248,8 @@
       "value": 2300000,
       "raw": "2.3M",
       "approximate": true,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:40:36.024Z"
     },
     "missing": [],
     "missing_reasons": {},

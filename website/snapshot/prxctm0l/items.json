@@ -28,7 +28,8 @@
       "value": 51200,
       "raw": "51.2K",
       "approximate": true,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-24T06:26:08.791Z"
     },
     "thumbnail_url": "https://instagram.fblr1-10.fna.fbcdn.net/v/t51.71878-15/851828841_1650513123090127_4103605204547723700_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=DWcGeOzoZUIQ7kNvwFjFyzL&_nc_oc=AdpnqQg-gtronjuHnu0iCN_XRm1I1TWChX-AxVtlFK_hmFoPeo0C-zrjXt57PtWRuJ5_b_oX-CyZQf3smeXRvZMc&_nc_zt=23&_nc_ht=instagram.fblr1-10.fna&_nc_gid=6YO6B5eFj0uIpl5XXjW5bg&_nc_ss=7e6a8&oh=00_AQTxJYQNj39gI0UCrimA-ocRvHBPTkT96rk9zH9drBEsYQ&oe=6AE7CD1F&ig_cache_key=MDJSQVF6Qm1uZ3hUSUhJdDBGQU04ZVpnZ0hNZS15T0xUaGdoTTpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
@@ -41,7 +42,10 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:55:54.379Z"
+    "last_attempt_at": "2026-10-28T11:55:54.379Z",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   },
   {
     "kind": "reel",
@@ -78,7 +82,8 @@
       "value": 5092,
       "raw": "5,092",
       "approximate": false,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-24T06:26:08.791Z"
     },
     "thumbnail_url": "https://instagram.fblr1-6.fna.fbcdn.net/v/t51.71878-15/851904887_2608583539571018_3760427906678520606_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=oKqCoC0rJXsQ7kNvwFLBW-t&_nc_oc=Adp-iBzAnHKZqMTW5VJLNq6LzlwvYy-wQYN-Ewd5mxt-5qXCGWNz-mM33RsCI7JQCB2JDAzpi9qZEkfzE5gSslpC&_nc_zt=23&_nc_ht=instagram.fblr1-6.fna&_nc_gid=oL6a5Ni79YBKGFxN7ZalEQ&_nc_ss=7f6a8&oh=00_AQQ6kpi3byGKUYZMQp7CuJtBUkFNuVY0g4LSSPifUl7k2g&oe=6AE79DED&ig_cache_key=MDJSQVF6Qm5jSnh6SUhma1FKQUVvNVBpOEhRYmt2TkI3N0NlMDpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
@@ -91,7 +96,10 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:55:58.863Z"
+    "last_attempt_at": "2026-10-28T11:55:58.863Z",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   },
   {
     "kind": "reel",
@@ -128,7 +136,8 @@
       "value": 27300,
       "raw": "27.3K",
       "approximate": true,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-24T06:26:08.791Z"
     },
     "thumbnail_url": "https://instagram.fblr24-3.fna.fbcdn.net/v/t51.71878-15/847939082_1755217482409647_6698676879635345074_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=0lUskrLWZ9QQ7kNvwH__Jom&_nc_oc=AdpAgk8vxBkpieloK8fmNm2foh4pl0NiBF70vCdGmwnJ8AtsRXejcY9wAHdrRHvod5SaSNNhvq9G_GaSomlUKCkw&_nc_zt=23&_nc_ht=instagram.fblr24-3.fna&_nc_gid=DhWi96JMgYoMu1eIVh5gmw&_nc_ss=7f6a8&oh=00_AQQNmEPzrIqWNOh3lHjFrnsoqW4LBmw6sZrCZHSD97IRQQ&oe=6AE7AB86&ig_cache_key=MDJSQVF6QmdxR2lqSUhYRHdHQUstbWltb0hJWHYyWExKdXlZTTpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
@@ -141,7 +150,10 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:56:03.013Z"
+    "last_attempt_at": "2026-10-28T11:56:03.013Z",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   },
   {
     "kind": "reel",
@@ -167,7 +179,8 @@
       "value": 2617,
       "raw": "2,617",
       "approximate": false,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-24T06:26:08.791Z"
     },
     "thumbnail_url": "https://instagram.fblr1-4.fna.fbcdn.net/v/t51.71878-15/843474381_1610517317524408_3342939070345726172_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=6vPAC1xm0u0Q7kNvwHRBYGJ&_nc_oc=AdrTuH6aA-E5lHtYl6YLmZu-n6UUFPp6Lol3kdO1NwW1IjNd5rN2HKzz2mslsR4s6SKPz30PeW5E--YT9gtDeoB0&_nc_zt=23&_nc_ht=instagram.fblr1-4.fna&_nc_gid=TGV6GFqpcAknxS4cq54Ytg&_nc_ss=7f6a8&oh=00_AQT0Kc2KLYN4HdHUvxezbvKOq-Ed85wqkTXNUtocOvUMtA&oe=6AE7A000&ig_cache_key=MDJSQVF6QnMxbFJqSUh3YmdGQUxpYm5jZ0hYNEZrTHR4SXUzRTpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
@@ -184,7 +197,10 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:56:07.321Z"
+    "last_attempt_at": "2026-10-28T11:56:07.321Z",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   },
   {
     "kind": "reel",
@@ -215,7 +231,8 @@
       "value": 134000,
       "raw": "134K",
       "approximate": true,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-24T06:26:08.791Z"
     },
     "thumbnail_url": "https://instagram.fblr1-6.fna.fbcdn.net/v/t51.71878-15/838817802_1667458695020949_3597692724803396231_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=MGTYDQxXne0Q7kNvwHxtAPM&_nc_oc=AdoF3zr_s7hz7QaXrSGpdVAtdyZ3LnBl4CUx-q4d6m_WYfEfgYL2hhWHX_q033fkdt2XPTYD_NeimuAkFMakx7hw&_nc_zt=23&_nc_ht=instagram.fblr1-6.fna&_nc_gid=dNBCsB5dsDawEZQiCp_tcA&_nc_ss=7f6a8&oh=00_AQS4bVA_py78FfSYPWjsu8Z7-qyN6sp5N6mjzkSWGXFi-g&oe=6AE7B4EF&ig_cache_key=MDJSQVF6QmdwWS16RUhpX3dGQUpYQk1Yc0hlSkx0TVlmaTZjZzpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
@@ -229,7 +246,10 @@
     },
     "last_error": null,
     "last_attempt_at": "2026-10-28T11:56:11.474Z",
-    "date_source": "og_description"
+    "date_source": "og_description",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   },
   {
     "kind": "reel",
@@ -260,7 +280,8 @@
       "value": 82400,
       "raw": "82.4K",
       "approximate": true,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-24T06:26:08.791Z"
     },
     "thumbnail_url": "https://instagram.fblr1-8.fna.fbcdn.net/v/t51.71878-15/839884686_1743425316714513_1343402809651887630_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=zJG8pRb6UVMQ7kNvwFH7O31&_nc_oc=AdpK2AI-f2NmZrdeMGeMB5hR7ptTJAdJsTE1w6-a9SQdeonIkofygk2QZBN2CZ0NPMwsdKoy-4Neb_R0FipxAymJ&_nc_zt=23&_nc_ht=instagram.fblr1-8.fna&_nc_gid=TiVFJeKmjIPyTwiGVrj8_w&_nc_ss=7f6a8&oh=00_AQQVliHNLB4ukYmGAOidPXiT2YzBQhI_dFnpWj0wVhnulQ&oe=6AE7BDFA&ig_cache_key=MDJSQVF6Qm82ZkR6SUhvakVHQUJINHNkWUh2TG1rRWc3X2o5czpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
@@ -274,7 +295,10 @@
     },
     "last_error": null,
     "last_attempt_at": "2026-10-28T11:56:15.972Z",
-    "date_source": "og_description"
+    "date_source": "og_description",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   },
   {
     "kind": "reel",
@@ -307,7 +331,8 @@
       "value": 61800,
       "raw": "61.8K",
       "approximate": true,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-24T06:26:08.791Z"
     },
     "thumbnail_url": "https://instagram.fblr1-6.fna.fbcdn.net/v/t51.71878-15/837858088_1454926256494411_4004713263930163299_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=joH4KX-tiCMQ7kNvwH1WmNf&_nc_oc=AdoNrfhJQtFTLJIF342qkwAkfSF4qumSISCtGxb2SpL6W1ioK2fsPhGFam8qakEbzdKqwfQnH57psBqL_aGD7DMV&_nc_zt=23&_nc_ht=instagram.fblr1-6.fna&_nc_gid=ap10MVqnvf87ZYbLT17p-A&_nc_ss=7f6a8&oh=00_AQTx3QsCSoPERAQIHHgDb6BrjVmANQceOOeRJOMSFP-OvQ&oe=6AE7BD21&ig_cache_key=MDJSQVF6QmlpejhERUhQeXNGQUV0WHNXb0hmcG1UTjJOQTJ1TTpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
@@ -320,7 +345,10 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:56:20.190Z"
+    "last_attempt_at": "2026-10-28T11:56:20.190Z",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   },
   {
     "kind": "reel",
@@ -353,7 +381,8 @@
       "value": 36000,
       "raw": "36K",
       "approximate": true,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-24T06:26:08.791Z"
     },
     "thumbnail_url": "https://instagram.fblr1-7.fna.fbcdn.net/v/t51.71878-15/837858109_1469776714994686_5838021193415406164_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=QvEdmacDY14Q7kNvwHbBcVb&_nc_oc=Adq5zmXyTq7JNeHZ1f8B4ZyXnbR5x61aAH0YE4rsJx9nttCiSj40LF-HJKRzts9pzAYGbDaMd98MjPmDAIH0aU_b&_nc_zt=23&_nc_ht=instagram.fblr1-7.fna&_nc_gid=jbcjCS0KRVLtgYN2GoINVg&_nc_ss=7f6a8&oh=00_AQSBzlv7F2XBXWa5yZwRnFc816b7xXUKVRPERU4j4uOTsQ&oe=6AE7A930&ig_cache_key=MDJSQVF6QmoyejhERUh3VGdGQVA0VC13NEhXTkVFVVZReXVpQTpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
@@ -366,7 +395,10 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:56:24.607Z"
+    "last_attempt_at": "2026-10-28T11:56:24.607Z",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   },
   {
     "kind": "reel",
@@ -399,7 +431,8 @@
       "value": 82400,
       "raw": "82.4K",
       "approximate": true,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-24T06:26:08.791Z"
     },
     "thumbnail_url": "https://instagram.fblr24-1.fna.fbcdn.net/v/t51.71878-15/837359604_2335341953868778_1929420384416805663_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=rzNy1EvsfHcQ7kNvwHv9hSb&_nc_oc=AdoTgsOIhwdPogTkBtikeLjdRYHJUyMiyX_OMgwv_9nWTimelJnTtA-gVGIbJZbX0OB7ds1qp5DMPA9bM-7R6g-G&_nc_zt=23&_nc_ht=instagram.fblr24-1.fna&_nc_gid=Sv9Bz7RHJttYfKhPVHA7Tw&_nc_ss=7f6a8&oh=00_AQQv9gwL3gqr3lW3jRbaDvoOr6LT0Ko3N6sIcTAVlXdxkQ&oe=6AE7B005&ig_cache_key=MDJSQVF6QnZRWDZURUhfMHNJQU9yamxpc0huYTNHR2hfemotczpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
@@ -412,7 +445,10 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:56:28.742Z"
+    "last_attempt_at": "2026-10-28T11:56:28.742Z",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   },
   {
     "kind": "reel",
@@ -443,7 +479,8 @@
       "value": 196000,
       "raw": "196K",
       "approximate": true,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-24T06:26:08.791Z"
     },
     "thumbnail_url": "https://instagram.fblr24-2.fna.fbcdn.net/v/t51.71878-15/833093666_1060593930308455_1495421520696075422_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=23yFyyBHUtQQ7kNvwHl8MxG&_nc_oc=AdrjjbDRYCFTxxiPuUK-YuzIsHfEPR_VUwdTlmTI9stPC4WoKOvBrbQC-XElOMXheGd3jsahohBp93a6XFvB-U5I&_nc_zt=23&_nc_ht=instagram.fblr24-2.fna&_nc_gid=-7nS50yIPBYsLz6pVH68vw&_nc_ss=7f6a8&oh=00_AQTWPfPdj_UUiS8VjAeViw3qjh3jxpg3h6YdDSGLiJ5lug&oe=6AE7AB6F&ig_cache_key=MDJSQVF6QmlJQXFERUhtc1FEQUdlTGQ4UUg4ODNBRko1a2tESTpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
@@ -456,7 +493,10 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:56:33.102Z"
+    "last_attempt_at": "2026-10-28T11:56:33.102Z",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   },
   {
     "kind": "reel",
@@ -489,7 +529,8 @@
       "value": 129000,
       "raw": "129K",
       "approximate": true,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-24T06:26:08.791Z"
     },
     "thumbnail_url": "https://instagram.fblr1-7.fna.fbcdn.net/v/t51.71878-15/836751925_1129437653089101_2782382451133713652_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=ESQM4JoW0DYQ7kNvwG0oLyT&_nc_oc=AdoMvCyesTyeioEpnNTpFWyELX8e541vsBuJSSr_U3EiX097jJOwCrq6l41loq5WD_Hya6E7jMcoUnxda0hQH7Lf&_nc_zt=23&_nc_ht=instagram.fblr1-7.fna&_nc_gid=YV5Fz1nbDfi3bXIq93qZlQ&_nc_ss=7f6a8&oh=00_AQSUUFmOGN4fb7Jx6CUCqdP_PetzEnQleizsxx78MM7JhA&oe=6AE7BB84&ig_cache_key=MDJSQVF6QmpYUzN6RUhOd01FQUUyN0c3SUhHQUtkSnZRTUctMDpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
@@ -502,7 +543,10 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:56:37.171Z"
+    "last_attempt_at": "2026-10-28T11:56:37.171Z",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   },
   {
     "kind": "reel",
@@ -535,7 +579,8 @@
       "value": 94600,
       "raw": "94.6K",
       "approximate": true,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-24T06:26:08.791Z"
     },
     "thumbnail_url": "https://instagram.fblr1-8.fna.fbcdn.net/v/t51.71878-15/836406335_1405590091218002_3655536152514744220_n.jpg?stp=cmp1_dst-jpg_e35_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=Aopx9cfPO7IQ7kNvwFhH9c7&_nc_oc=AdotadB9vpBfPZDvJcgiImM9OdAn6YiTbxQuOlw1U7oezdnitYBR068zTO19ysjsVKJwtwqg9NAFzCwTiIT8N3WY&_nc_zt=23&_nc_ht=instagram.fblr1-8.fna&_nc_gid=n-_jDmVTMdMhT_wdDSKx-g&_nc_ss=7f6a8&oh=00_AQSBAjS6G31wXTzJgVvnJgsWf34HeEXQarWMPxFDOhfLtA&oe=6AE7AD53&ig_cache_key=MDJSQVF6QmpfTTJqRUhZUDRFQUZJOEZuSUh3eEs3TXB4UFBVbzpjbXAxX2RzdC1qcGdfZTM1X3R0Ng%3D%3D",
     "media_url": null,
@@ -548,7 +593,10 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:56:42.019Z"
+    "last_attempt_at": "2026-10-28T11:56:42.019Z",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   },
   {
     "kind": "reel",
@@ -581,7 +629,8 @@
       "value": 38100,
       "raw": "38.1K",
       "approximate": true,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-24T06:26:08.791Z"
     },
     "thumbnail_url": "https://instagram.fblr1-8.fna.fbcdn.net/v/t51.71878-15/834601108_1091068853790855_7619035790390870927_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=-8J9iMB1yFwQ7kNvwFdNi1c&_nc_oc=AdqopIuqvxMq2XHRbGpyhVDtI6ATZk-trTnCV2GgdSmjDtmyhzPd9jPOZ5LXojKgu0el-mcxZ-uHWlM4EsC1WysN&_nc_zt=23&_nc_ht=instagram.fblr1-8.fna&_nc_gid=HTbQvmEhHQjeKBYZKkAdfA&_nc_ss=7f6a8&oh=00_AQSdNGOsaWmCFRUVZlLy7ZLt1ntF37vsdcyiiotMH_PU_A&oe=6AE7AA90&ig_cache_key=MDJSQVF6QnBRQXZ6RUhVdUFEQUllb2RFTUhyMEM4YVk5RFBCazpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
@@ -594,7 +643,10 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:56:46.373Z"
+    "last_attempt_at": "2026-10-28T11:56:46.373Z",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   },
   {
     "kind": "reel",
@@ -602,10 +654,39 @@
     "url": "https://www.instagram.com/reel/DeCbiUjBF49/",
     "grid_views_raw": "11.4K",
     "grid_views_issue": null,
-    "status": "failed",
-    "last_error": "Instagram reports this page is unavailable.",
+    "status": "archived",
+    "last_error": null,
     "last_attempt_at": "2026-10-28T11:56:50.828Z",
-    "attempts": 1
+    "attempts": 1,
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true,
+    "missing": [],
+    "missing_reasons": {},
+    "availability_resolution": {
+      "status": "unavailable",
+      "source": "user_instruction",
+      "recorded_at": "2026-11-14T04:44:19.844Z",
+      "reason": "User reports on 14 November 2026 that prxctm0l is unavailable and saved reel DeCbiUjBF49 redirects to schizosub5, whose page is also unavailable. Deletion versus a username change is unconfirmed; the redirect is user-reported evidence, not a verified username migration. Stop further collection and retries while retaining captured metrics for historical analysis. Missing values remain unknown, not zero.",
+      "previous_status": "failed",
+      "previous_last_error": "Instagram reports this page is unavailable.",
+      "previous_missing": [],
+      "previous_missing_reasons": {}
+    },
+    "views": {
+      "value": 11400,
+      "raw": "11.4K",
+      "approximate": true,
+      "source": "profile_grid",
+      "observed_at": "2026-10-24T06:26:08.791Z"
+    },
+    "saved_observations": {
+      "views": {
+        "source": "profile_grid",
+        "observed_at": "2026-10-24T06:26:08.791Z",
+        "retained_from": "previous_website_snapshot"
+      }
+    }
   },
   {
     "kind": "reel",
@@ -633,7 +714,8 @@
       "value": 16600,
       "raw": "16.6K",
       "approximate": true,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-24T06:26:08.791Z"
     },
     "thumbnail_url": "https://instagram.fblr1-8.fna.fbcdn.net/v/t51.71878-15/833752999_1101883415931664_33335421611583670_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=8Kz0SCsfPdsQ7kNvwEqCHid&_nc_oc=AdrRepouGNfdVkZjtE79_bLZums5quNhSQVSYS_ukpNXwnSBNFqwIa5MV9pwS96cNsVHLwtxVu9VZZ0j6CujEHzV&_nc_zt=23&_nc_ht=instagram.fblr1-8.fna&_nc_gid=fc1ykToCj2W2mfRwJZgcFg&_nc_ss=7f6a8&oh=00_AQQg_YcJSBq-ihPVG8Au1On_w8A6ESTSCCLx_P1k80TnZA&oe=6AE7B066&ig_cache_key=MDJSQVF6QnFjUHNqRUhLT29EQUJBcmx6a0hZMjUyQUxhb21LczpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
@@ -650,7 +732,10 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:56:54.888Z"
+    "last_attempt_at": "2026-10-28T11:56:54.888Z",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   },
   {
     "kind": "reel",
@@ -683,7 +768,8 @@
       "value": 179000,
       "raw": "179K",
       "approximate": true,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-24T06:26:08.791Z"
     },
     "thumbnail_url": "https://instagram.fblr1-3.fna.fbcdn.net/v/t51.71878-15/835357765_1086273530678217_7271327983782457711_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=Ld3WhdlR4zsQ7kNvwEck_v8&_nc_oc=AdrgYckm0ze_MY9VVeeuo9G4nLKcQQ07LIuTuXlxABsyGlfRhQkYCOZf5tCNhhTLW8dCs_FMWZxSCe9-OFSaZis_&_nc_zt=23&_nc_ht=instagram.fblr1-3.fna&_nc_gid=jgMl6d0GnJgoWea-Tf9Svg&_nc_ss=7f6a8&oh=00_AQSnjKdTzm0ytoBpD_6B_IJ0C7f1a0D_kXNAkkCMu8hR5Q&oe=6AE7CB4B&ig_cache_key=MDJSQVF6QmtXTXlqRUg5ZHNEQU1uTDdNTUhSdkxvWkcteHRhNDpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
@@ -696,7 +782,10 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:56:59.023Z"
+    "last_attempt_at": "2026-10-28T11:56:59.023Z",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   },
   {
     "kind": "reel",
@@ -729,7 +818,8 @@
       "value": 66000,
       "raw": "66K",
       "approximate": true,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-24T06:26:08.791Z"
     },
     "thumbnail_url": "https://instagram.fblr1-7.fna.fbcdn.net/v/t51.71878-15/831828508_29242031645402086_980330461338234527_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=QnM56iB23coQ7kNvwFAWYRL&_nc_oc=Adqyu8BL0EsO01ea3CoxZOzVK2gnSCMCxMKlTJOebDi8D7QOfmBg1Hcoxmsfzpar_xMKngsBDBjvp2Lv1KyrLP4E&_nc_zt=23&_nc_ht=instagram.fblr1-7.fna&_nc_gid=68Ns1dugosoQ7uiRtLqUbQ&_nc_ss=7f6a8&oh=00_AQRl-jqlGda6JTsPxeLtg5OjdUTvgQwf0Am0J9B4LtQWPQ&oe=6AE7A29B&ig_cache_key=MDJSQVF6Qmh5eWxERUhlZU5uQU9ZanZBd0hYTldhRFo5dWowNDpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
@@ -742,7 +832,10 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:57:03.113Z"
+    "last_attempt_at": "2026-10-28T11:57:03.113Z",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   },
   {
     "kind": "reel",
@@ -775,7 +868,8 @@
       "value": 155000,
       "raw": "155K",
       "approximate": true,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-24T06:26:08.791Z"
     },
     "thumbnail_url": "https://instagram.fblr24-3.fna.fbcdn.net/v/t51.71878-15/831424393_1837174513943131_5716385344952026457_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=MKeb-9G6Rb4Q7kNvwGq7SPL&_nc_oc=Adrhkqx-tPEeJ7i17ufpf0v3Y3RBlbHsbV9B3bj3gK2wakmUcvobjmNoxUeo9pmNIYnGClzUFscnuY0OX5aCLft9&_nc_zt=23&_nc_ht=instagram.fblr24-3.fna&_nc_gid=WdSmFaULcmo9MdGdsOqspQ&_nc_ss=7f6a8&oh=00_AQRYcHguhEjw1qs7IqpU7jovmyo4MzBNR5v67GCf9LSagA&oe=6AE7A601&ig_cache_key=MDJSQVF6Qm9tSGpqRUg1b1lHQUZ0Q1M0WUhMNjVVVDFsRkhUMDpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
@@ -788,7 +882,10 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:57:07.149Z"
+    "last_attempt_at": "2026-10-28T11:57:07.149Z",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   },
   {
     "kind": "reel",
@@ -819,7 +916,8 @@
       "value": 500000,
       "raw": "500K",
       "approximate": true,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-24T06:26:08.791Z"
     },
     "thumbnail_url": "https://instagram.fblr24-3.fna.fbcdn.net/v/t51.71878-15/834038182_2789932488074110_4346765337127299511_n.jpg?stp=cmp1_dst-jpg_e35_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=nNM55uUNK9kQ7kNvwHZ_Jrv&_nc_oc=Adrqd54T6IX_l-cBSII25C5ljXhEl5jL1pAZw8usj47VThgmF6pXzn65kf6ff1b9JXGhwYf3JjxkT6s33gSC8rY_&_nc_zt=23&_nc_ht=instagram.fblr24-3.fna&_nc_gid=ASEdPLnp0yPdrdDQg8JtNw&_nc_ss=7f6a8&oh=00_AQTvJ4iVNy428IoeYva8VZiZcDy2LtsldXvIXyWogT4OXw&oe=6AE7BCA9&ig_cache_key=MDJSQVF6QnFacHRqRUhiZWtKQUg0ajVzWUhDOUJTUExjcGRFRTpjbXAxX2RzdC1qcGdfZTM1X3R0Ng%3D%3D",
     "media_url": null,
@@ -833,7 +931,10 @@
     },
     "last_error": null,
     "last_attempt_at": "2026-10-28T11:57:11.521Z",
-    "date_source": "og_description"
+    "date_source": "og_description",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   },
   {
     "kind": "reel",
@@ -861,7 +962,8 @@
       "value": 5732,
       "raw": "5,732",
       "approximate": false,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-24T06:26:08.791Z"
     },
     "thumbnail_url": "https://instagram.fblr1-5.fna.fbcdn.net/v/t51.71878-15/834601112_1393685619641532_7310578250054728966_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=4qwV-rLzD8sQ7kNvwGcSzS9&_nc_oc=Adq_TPDi7iaRhrXdrKrCr3NrgQU2SC-nLwu2mB6bnRs-IocgbYLzYMTSJ_o1AUk9M5jyhaDTXDebxsxI_0I1ZUaJ&_nc_zt=23&_nc_ht=instagram.fblr1-5.fna&_nc_gid=tgoRdwKI6Y5IRzt-ebKLRQ&_nc_ss=7f6a8&oh=00_AQSpJPN3JmBbnh1-B7dwHkNx_QdV_OTk0IQBorZbOP93oA&oe=6AE7A94E&ig_cache_key=MDJSQVF6QnBnQXZ6RUhqUE1FQUx5TVNiZ0hMMlIwWlFaOU5YRTpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
@@ -878,7 +980,10 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:57:15.990Z"
+    "last_attempt_at": "2026-10-28T11:57:15.990Z",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   },
   {
     "kind": "reel",
@@ -911,7 +1016,8 @@
       "value": 225000,
       "raw": "225K",
       "approximate": true,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-24T06:26:08.791Z"
     },
     "thumbnail_url": "https://instagram.fblr24-4.fna.fbcdn.net/v/t51.71878-15/831641760_3204837526378746_1977089666527660349_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=ZdZ4J2kcDM0Q7kNvwE1Cd9b&_nc_oc=Adpfk38EUXXS904oWSzjPzhJUL8_98dSvNshrbrNVOHpQVE4xpsLleYsdHhq_vypZwwxibHXYLzFf9QAh0RCNP7-&_nc_zt=23&_nc_ht=instagram.fblr24-4.fna&_nc_gid=PAdn5CU8ETbq0NseicgPpg&_nc_ss=7f6a8&oh=00_AQQnc4IfnQgSqNW7q0B-DGu_zdYqbgZWViW_dz9fINt4Ug&oe=6AE7C594&ig_cache_key=MDJSQVF6QnFEWWtURUh5R0lMQVBxWVVtSUhrd2h3R3owSmVwNDpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
@@ -924,7 +1030,10 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:57:20.063Z"
+    "last_attempt_at": "2026-10-28T11:57:20.063Z",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   },
   {
     "kind": "reel",
@@ -955,7 +1064,8 @@
       "value": 9147,
       "raw": "9,147",
       "approximate": false,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-24T06:26:08.791Z"
     },
     "thumbnail_url": "https://instagram.fblr1-6.fna.fbcdn.net/v/t51.71878-15/834437375_1161613976188664_8714069102815739296_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=RqUTpAPwaocQ7kNvwHMV7Oi&_nc_oc=AdqoI8WJXqTgWEPExD5DvAh_GIU5mNQjra6S4kDWvWZsZROqOL7nfTqVTfjKPuAq9LX3YhPjOOChjJaMYaI8CmJO&_nc_zt=23&_nc_ht=instagram.fblr1-6.fna&_nc_gid=rqSmoedJ6zTERVZ0lqIfpg&_nc_ss=7f6a8&oh=00_AQQZWcuKk-ZsncghHQ8bek4rBlr88UwBWWfyZ-GyLRzKWQ&oe=6AE79EF0&ig_cache_key=MDJSQVF6QnZfQXZERUhleUFFQVBpMmFsUUhycGZ1ZUtEOWlRMDpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
@@ -968,7 +1078,10 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:57:24.141Z"
+    "last_attempt_at": "2026-10-28T11:57:24.141Z",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   },
   {
     "kind": "reel",
@@ -999,7 +1112,8 @@
       "value": 250000,
       "raw": "250K",
       "approximate": true,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-24T06:26:08.791Z"
     },
     "thumbnail_url": "https://instagram.fblr24-1.fna.fbcdn.net/v/t51.71878-15/830510986_1992664224766269_2105380165496818798_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=7h4pLidRpskQ7kNvwHSTKQ3&_nc_oc=AdotuHu5523i81NK5z54Pbl-cm2wGg-siIwZRGFdEkQTeoZOfSr-h3HwbskuTutUIGPGZwZt_9bhxi_4k_tmDQD9&_nc_zt=23&_nc_ht=instagram.fblr24-1.fna&_nc_gid=j_ZQEl1I9ypoAFne0FQS8Q&_nc_ss=7f6a8&oh=00_AQSMcSxxF21R5drPyPWXQgLQLNdx2xbCZMsydRQE61_LRQ&oe=6AE7D16B&ig_cache_key=MDJSQVF6Qm9xWGdERUhVUlFIQUQwWlJrc0hHOUEzSFc1TWx4RTpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
@@ -1013,7 +1127,10 @@
     },
     "last_error": null,
     "last_attempt_at": "2026-10-28T11:57:28.216Z",
-    "date_source": "og_description"
+    "date_source": "og_description",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   },
   {
     "kind": "reel",
@@ -1047,7 +1164,8 @@
       "value": 99200,
       "raw": "99.2K",
       "approximate": true,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-24T06:26:08.791Z"
     },
     "thumbnail_url": "https://instagram.fblr1-3.fna.fbcdn.net/v/t51.71878-15/829092711_2173168373584653_6932697168077199047_n.jpg?stp=cmp1_dst-jpg_e35_tt6&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=fu2SmmGNwnIQ7kNvwEj1nrn&_nc_oc=AdoMzBxhqgeV_u3sSjeRwnD6jahEpGp2CJu4I73agcEU-VXsfBfgqwoA4Duycp2X-4-Km7syU5oxbD-k-nnrmLTg&_nc_zt=23&_nc_ht=instagram.fblr1-3.fna&_nc_gid=5l_jPUSR8Xwu5EkRDPpn9w&_nc_ss=7f6a8&oh=00_AQR_4X0L5UOibAZ71q_tLOL5MDiVQsn5BhAKx1mQP0wDRA&oe=6AE7A578&ig_cache_key=MDJSQVF6Qm1memFqRUhmTGdIQUEzVDhUQUhWX00xWU1jV21lWTpjbXAxX2RzdC1qcGdfZTM1X3R0Ng%3D%3D",
     "media_url": null,
@@ -1060,7 +1178,10 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:57:32.383Z"
+    "last_attempt_at": "2026-10-28T11:57:32.383Z",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   },
   {
     "kind": "reel",
@@ -1091,7 +1212,8 @@
       "value": 430000,
       "raw": "430K",
       "approximate": true,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-24T06:26:08.791Z"
     },
     "thumbnail_url": "https://instagram.fblr1-6.fna.fbcdn.net/v/t51.71878-15/833261495_1879489803034788_3105323829124328288_n.jpg?stp=cmp1_dst-jpg_e35_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=7mFaiPAJu2kQ7kNvwHSHkdS&_nc_oc=AdrGmVJmyu0Kby1eRsM3R8p6WZi5ENPPG7DYXEf2S9YZnajIFhyyjxk_KZSKOiHE0HE6fJuow2VSJiFG4TLvSttG&_nc_zt=23&_nc_ht=instagram.fblr1-6.fna&_nc_gid=ii7jAgskH_mFJB6JURpx0g&_nc_ss=7f6a8&oh=00_AQSPnc-EURrJi4lJKbm90PhZUZ1EsFa2oQtYfmu-__tL_w&oe=6AE7A517&ig_cache_key=MDJSQVF6QnJlUHFqRUhZcTBHQUtTZ0VkSUhrVk1ZSzJEcmd1TTpjbXAxX2RzdC1qcGdfZTM1X3R0Ng%3D%3D",
     "media_url": null,
@@ -1105,7 +1227,10 @@
     },
     "last_error": null,
     "last_attempt_at": "2026-10-28T11:57:36.489Z",
-    "date_source": "og_description"
+    "date_source": "og_description",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   },
   {
     "kind": "reel",
@@ -1136,7 +1261,8 @@
       "value": 49100,
       "raw": "49.1K",
       "approximate": true,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-24T06:26:08.791Z"
     },
     "thumbnail_url": "https://instagram.fblr1-7.fna.fbcdn.net/v/t51.71878-15/830434877_26799228246442006_1937542581275879270_n.jpg?stp=cmp1_dst-jpg_e35_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=nUeRM-SZF60Q7kNvwEGzglf&_nc_oc=AdoEh1-zL6Vt7BXqxo72t4BgHAOHbTZd8H76hX5ITh20mrDLIupOTaYdVB5o2Y5CFsbPfbwa7eU-XbVUMh-BE3Jz&_nc_zt=23&_nc_ht=instagram.fblr1-7.fna&_nc_gid=DFmNUiBgs_QodNH0Q5ChjQ&_nc_ss=7f6a8&oh=00_AQTZItUdBCmOwbUGTQAYDxRfSVArxND3Zedx8fhBidwZxw&oe=6AE7BE15&ig_cache_key=MDJSQVF6QmoxdWZ6RUh3VFZmQUJaQTRvOEh0b2pqR21abkpFNDpjbXAxX2RzdC1qcGdfZTM1X3R0Ng%3D%3D",
     "media_url": null,
@@ -1149,7 +1275,10 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:57:40.755Z"
+    "last_attempt_at": "2026-10-28T11:57:40.755Z",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   },
   {
     "kind": "reel",
@@ -1180,7 +1309,8 @@
       "value": 327000,
       "raw": "327K",
       "approximate": true,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-24T06:26:08.791Z"
     },
     "thumbnail_url": "https://instagram.fblr1-7.fna.fbcdn.net/v/t51.71878-15/830467007_2386234042180987_18159500939556175_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=MpgnsbE57gIQ7kNvwGrMUqn&_nc_oc=AdoJvw7eMj5r2mY3cjDMRlsRyn5vx49xlaV6LCh1dPiDZgvO-dqz4G8n_uPRw40N81PME-1yJeXT91eEPTJFdIA9&_nc_zt=23&_nc_ht=instagram.fblr1-7.fna&_nc_gid=IQEfyNaoh1MCaH0KO_vNpg&_nc_ss=7f6a8&oh=00_AQSjUNTkeZ4e-4ev083rhsd7tapNx5sMWrzDKd4BTifmig&oe=6AE7ACF5&ig_cache_key=MDJSQVF6QnItcmZ6RUhSSG9JQUh0bGIyZ0hfSU5BQUUtMXpFbzpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
@@ -1194,7 +1324,10 @@
     },
     "last_error": null,
     "last_attempt_at": "2026-10-28T11:57:44.906Z",
-    "date_source": "og_description"
+    "date_source": "og_description",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   },
   {
     "kind": "reel",
@@ -1225,7 +1358,8 @@
       "value": 128000,
       "raw": "128K",
       "approximate": true,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-24T06:26:08.791Z"
     },
     "thumbnail_url": "https://instagram.fblr24-2.fna.fbcdn.net/v/t51.71878-15/831103125_945143934846953_2031147788365644734_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=OTiGmnkX4BQQ7kNvwGxsycZ&_nc_oc=AdqNoXcUtHxmtk9f06NFmf4BHublAdu9kBGs9irnD_u3g_9Mqa_yqt05Ai12qHnlpNdfkzldmmC2yA8kQEXrpaUu&_nc_zt=23&_nc_ht=instagram.fblr24-2.fna&_nc_gid=wkci5CYEXaZqak0HtPjP_Q&_nc_ss=7f6a8&oh=00_AQTD1G2df4c6BkttCLYCGQCeN2Z8Ba5jWhPqRfiegxWWwg&oe=6AE79C10&ig_cache_key=MDJSQVF6QnBXZ2lURUhtbHNEQU9tSGYzZ0hKaFl3SEw3RDJ1czpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
@@ -1239,7 +1373,10 @@
     },
     "last_error": null,
     "last_attempt_at": "2026-10-28T11:57:48.949Z",
-    "date_source": "og_description"
+    "date_source": "og_description",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   },
   {
     "kind": "reel",
@@ -1265,7 +1402,8 @@
       "value": 6341,
       "raw": "6,341",
       "approximate": false,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-24T06:26:08.791Z"
     },
     "thumbnail_url": "https://instagram.fblr24-3.fna.fbcdn.net/v/t51.71878-15/830510850_1648996256856170_5114591215417382602_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=H2iDV0KuCrUQ7kNvwFZWjPS&_nc_oc=AdqxrrIyzOLTnOql0zR6QrmAqvmAoub41iksdj1-CzaJZgLSxid6LPPIqzJVQORgNbRSpxzhSjFtkSgdVzCDEz3I&_nc_zt=23&_nc_ht=instagram.fblr24-3.fna&_nc_gid=aU_5w1an6575jx9V2kb6CQ&_nc_ss=7f6a8&oh=00_AQQKzmTLnNgJGmFnJmLpYnIo_NfRyeBrNfBuPzOgkyTtmA&oe=6AE7ABBE&ig_cache_key=MDJSQVF6QmdLWGdERUh3TnNGQUdvNElOd0huSzM2UnNwV1NiWTpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
@@ -1282,7 +1420,10 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:57:53.153Z"
+    "last_attempt_at": "2026-10-28T11:57:53.153Z",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   },
   {
     "kind": "reel",
@@ -1313,7 +1454,8 @@
       "value": 129000,
       "raw": "129K",
       "approximate": true,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-24T06:26:08.791Z"
     },
     "thumbnail_url": "https://instagram.fblr1-3.fna.fbcdn.net/v/t51.71878-15/828776487_1095017496603995_2232340431886444751_n.jpg?stp=cmp1_dst-jpg_e35_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=ibjpoTCrPusQ7kNvwEyn_bj&_nc_oc=AdrHAGgi0po4mtsHEVJnud75gwCNqFwgvpq7_5dlda_0I4SgIU6IqNjhyJn6--n61I9DE_CrQ6rkzgkWOO_LQuW5&_nc_zt=23&_nc_ht=instagram.fblr1-3.fna&_nc_gid=q0X-HPZtmVlLTeQLRs68Ow&_nc_ss=7f6a8&oh=00_AQSWxYNSRW1k9Znw-dkabMMXGcYLRP3lfyDE1ZbCZRBHTA&oe=6AE7A50D&ig_cache_key=MDJSQVF6QmljZ1pqRUg2ZU1EQUZ0dDZLQUh5OTM2SHM5b1ZadzpjbXAxX2RzdC1qcGdfZTM1X3R0Ng%3D%3D",
     "media_url": null,
@@ -1326,7 +1468,10 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:57:57.447Z"
+    "last_attempt_at": "2026-10-28T11:57:57.447Z",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   },
   {
     "kind": "reel",
@@ -1357,7 +1502,8 @@
       "value": 144000,
       "raw": "144K",
       "approximate": true,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-24T06:26:08.791Z"
     },
     "thumbnail_url": "https://instagram.fblr24-3.fna.fbcdn.net/v/t51.71878-15/830540591_954519257728707_8710132094802837352_n.jpg?stp=cmp1_dst-jpg_e35_tt6&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=ktd51b4Kh7IQ7kNvwHxXUFL&_nc_oc=AdpoJlmpRh4GkuscjicfBns8R7hicLMYx507CXZz9YX5MBntWBasc8cgBv-eeGV4dfIHKFhRl1oIiGMfOHdpITFW&_nc_zt=23&_nc_ht=instagram.fblr24-3.fna&_nc_gid=gloGqQ7SGgDKQx6PfXgVGQ&_nc_ss=7f6a8&oh=00_AQQ6EZkJsmTG4c9EMxJFFvHCfr4TyahHeAkL82vRFmCFYg&oe=6AE7A255&ig_cache_key=MDJSQVF6Qmk4TGdURUhJV1FEQU1QR1NWVUgtWnJnZUdpLWMtRTpjbXAxX2RzdC1qcGdfZTM1X3R0Ng%3D%3D",
     "media_url": null,
@@ -1371,7 +1517,10 @@
     },
     "last_error": null,
     "last_attempt_at": "2026-10-28T11:58:01.491Z",
-    "date_source": "og_description"
+    "date_source": "og_description",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   },
   {
     "kind": "reel",
@@ -1402,7 +1551,8 @@
       "value": 99300,
       "raw": "99.3K",
       "approximate": true,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-24T06:26:08.791Z"
     },
     "thumbnail_url": "https://instagram.fblr24-1.fna.fbcdn.net/v/t51.71878-15/831400909_1626253055789333_523857673370460409_n.jpg?stp=cmp1_dst-jpg_e35_tt6&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=_ZpmKg33r90Q7kNvwGRSB9U&_nc_oc=Adr45Uj77Isrpc4bt7WPPIqncsfX24C3UWdHp7JASMOTAe3QtkmoVsLkk5v75vDWjt2YNjzg5r1Qj5tr04M_OZtp&_nc_zt=23&_nc_ht=instagram.fblr24-1.fna&_nc_gid=bxfS_gwnfy4Li_u0JNNgpQ&_nc_ss=7f6a8&oh=00_AQQX6vaU0Kd4guZBeKjPtc0AFuKIz16MZz9-SWoel16v1g&oe=6AE7A411&ig_cache_key=MDJSQVF6QnMwcmpqRUhFY2NGQUJXSnRJc0h4eDFGQi1uZ0cwWTpjbXAxX2RzdC1qcGdfZTM1X3R0Ng%3D%3D",
     "media_url": null,
@@ -1416,6 +1566,9 @@
     },
     "last_error": null,
     "last_attempt_at": "2026-10-28T11:58:05.344Z",
-    "date_source": "og_description"
+    "date_source": "og_description",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   }
 ]
