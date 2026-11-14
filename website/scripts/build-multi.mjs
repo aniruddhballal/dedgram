@@ -399,9 +399,13 @@ const overviewAccountRows = publishedSnapshotProfiles.map((username) => {
   const complete = details.filter(isCompleteReel).length;
   const handled = details.filter((item) => isCompleteReel(item) || isResolvedReel(item)).length;
   const status = retainedMetricSet.has(username) ? 'Unavailable; historical metrics retained' : profileLevelSet.has(username) ? (discovery.reel.complete ? 'Profile and reel grid complete' : 'Profile details complete; reel grid pending') : partialPublishedProfiles.has(username) ? 'Partial reel coverage' : 'Reel analysis complete';
-  const reelLikes = metricTotal(items, 'reel', 'likes');
-  const reelComments = metricTotal(items, 'reel', 'comments');
-  const reelViews = metricTotal(items, 'reel', 'views');
+  const observations = savedReelRows(discovery, items);
+  const totalFor = field => discovery.reel.complete && reels.length === 0
+    ? { display: '0', actual: '0', title: 'Confirmed empty reel grid; total is zero.' }
+    : metricTotal(observations, 'reel', field);
+  const reelLikes = totalFor('likes');
+  const reelComments = totalFor('comments');
+  const reelViews = totalFor('views');
   return `<tr><td><a href="../profiles/${username}/">@${esc(username)}</a><small class="cell-note">${esc(status)}</small></td><td>${esc(profile.account_based_in || 'Unavailable')}</td><td>${esc(profile.date_joined || 'Unavailable')}</td><td>${esc(metric(profile.posts_count))}</td><td>${discovery.reel.complete ? fmt(reels.length) : discovery.reel.attempted_at ? `${fmt(reels.length)}+ (partial)` : 'Not scanned'}</td><td>${fmt(handled)} / ${discovery.reel.complete ? fmt(reels.length) : 'unknown'}</td><td>${totalCell(reelLikes, 'Total reel likes')}</td><td>${totalCell(reelComments, 'Total reel comments')}</td><td>${totalCell(reelViews, 'Total reel views')}</td><td>${esc(metric(profile.followers_count))}</td></tr>`;
 }).join('');
 const deletedProfiles = excludedProfiles.filter((username) => exclusionRecords.profiles?.[username]?.status === 'Deleted or username changed');
