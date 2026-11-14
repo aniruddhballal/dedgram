@@ -1,7 +1,7 @@
 {
-  "started_at": "2026-10-28T11:29:33.623Z",
-  "updated_at": "2026-10-28T11:29:54.695Z",
-  "status": "partial",
+  "started_at": "2026-11-14T05:09:36.686Z",
+  "updated_at": "2026-11-14T05:09:44.161Z",
+  "status": "complete",
   "phase": "done",
   "scope": [
     "reel"
@@ -10,14 +10,11 @@
   "error": null,
   "progress": {
     "task": "item_details",
-    "label": "Reel details",
-    "action": "Opening reel pages and extracting dates, captions, views, likes and comments",
-    "completed": 5,
-    "total": 5,
+    "label": "Detail resolution",
+    "completed": 1,
+    "total": 1,
     "percent": 100,
-    "remaining": 0,
-    "current_item": null,
-    "detail": "Stage finished with review required",
-    "updated_at": "2026-10-28T11:29:54.695Z"
-  }
+    "detail": "resolved_unavailable_reel ; parent available; 0 unresolved reels remain."
+  },
+  "browser_left_open": true
 }

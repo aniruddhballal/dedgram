@@ -5,7 +5,7 @@
     "url": "https://www.instagram.com/reel/DeRpDc7T7Mq/",
     "grid_views_raw": "51.9K",
     "grid_views_issue": null,
-    "status": "partial",
+    "status": "archived",
     "fetched_at": "2026-10-28T11:29:37.085Z",
     "date": "2026-10-09",
     "date_precision": "day",
@@ -29,12 +29,8 @@
     },
     "thumbnail_url": "https://instagram.fblr24-2.fna.fbcdn.net/v/t51.82787-15/836917836_18092681975672824_7329417586738541070_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=QekWSBWc8E8Q7kNvwHcWw7Q&_nc_oc=AdqvtSE1zyl-8SK9dLKnvKsgQqokv6M2bfsDPwTSa8HaNR3Zr6J3KWElf421CI8a0mX-vmc8mQzfc7NjrGtSGokh&_nc_zt=23&_nc_ht=instagram.fblr24-2.fna&_nc_gid=CmbNx2N1M5acpGyaHV8_mQ&_nc_ss=7e6a8&oh=00_AQQIkKJPvWptjl9tIDw2BEPmL5GSJh9WrUqMXykn7_T_Fw&oe=6AE7BFD8&ig_cache_key=MDJSQVF6Qmt4YTRqRUhNa2RBQVBpdk1jb0hkbEszWlE0eURWUTpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
-    "missing": [
-      "comments"
-    ],
-    "missing_reasons": {
-      "comments": "No readable comment count was found on the content page or in its metadata."
-    },
+    "missing": [],
+    "missing_reasons": {},
     "raw": {
       "description": "kanika_s.0711 on October 9, 2026: \"#あらゆる追いかけっこを繰り広げる\". ",
       "article_text": "kanika_s.0711\n•\nFollow\n• AI-generated profile\n#あらゆる追いかけっこを繰り広げる\nLikes\n20\n11\nslowisaki\n•\nFollow\nDaft Punk · End Of Line (feat. TRS-80)\nDaft Punk · End Of Line (feat. TRS-80)\none year since tron: ares came out 🫡\n-\n-fun fact: i bought all of my gear on sale! my leather jacket and pants cost me like $360\n-\n-\n-\n-\n-\n-\n-\n-\n-🍷AFFILIATE CODES 🍷\n-@insta360 @insta360motorcycling code INRX56J\n-@codemotorsports code SLOW\n-@neoracing_us code SLOW\n-@chinmounts LIB\n-@cardosystems code 060EVENTUALLY\n-@tinybotvinyl wrap, hit up @albreeze_r6 for all of your wrapping needs!\n-\n-follow for more scooter content 🍷\n-\n#explore #explorepage #motorcycle #bike #motogirl bikergirl motorcyclecontent ninja400 kawasaki ninja slow socal california girlswhoride bikecontent reels reelsofinstagram 636 zx6r\n448K\n1,882\n17.3K",
@@ -42,7 +38,27 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:29:37.086Z"
+    "last_attempt_at": "2026-11-14T05:09:38.553Z",
+    "availability_resolution": {
+      "status": "unavailable",
+      "source": "automated_visible_page_check",
+      "recorded_at": "2026-11-14T05:09:44.161Z",
+      "reel_error": "Instagram reports this page is unavailable.",
+      "parent": {
+        "status": "available",
+        "checked_at": "2026-11-14T05:09:44.161Z",
+        "url": "https://www.instagram.com/kanika_s.0711/"
+      },
+      "reason": "Reel unavailable on a fresh visible-page check. Treated as resolved unavailable, not an unfinished extraction; deletion is not Instagram-confirmed.",
+      "previous_status": "partial",
+      "previous_last_error": null,
+      "previous_missing": [
+        "comments"
+      ],
+      "previous_missing_reasons": {
+        "comments": "No readable comment count was found on the content page or in its metadata."
+      }
+    }
   },
   {
     "kind": "reel",

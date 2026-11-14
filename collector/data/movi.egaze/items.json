@@ -401,39 +401,57 @@
     "url": "https://www.instagram.com/reel/DeyW4IvuN_C/",
     "grid_views_raw": "3,822",
     "grid_views_issue": null,
-    "status": "partial",
-    "fetched_at": "2026-10-28T11:32:13.839Z",
+    "status": "complete",
+    "fetched_at": "2026-11-14T05:09:34.919Z",
     "date": "2026-10-21",
     "date_precision": "day",
     "caption": "「花粉症シーズン 🌼トムの対策は犬の被り物!?⁉️ 花 粉は防げても、ジェリーは防げません...。」",
     "hashtags": [],
     "mentions": [],
-    "likes": null,
-    "comments": null,
+    "likes": {
+      "value": 109,
+      "raw": "109",
+      "approximate": false,
+      "source": "og_description_localized"
+    },
+    "comments": {
+      "value": 0,
+      "raw": "0",
+      "approximate": false,
+      "source": "og_description_localized"
+    },
     "views": {
       "value": 3822,
       "raw": "3,822",
       "approximate": false,
       "source": "profile_grid"
     },
-    "thumbnail_url": "https://instagram.fblr24-3.fna.fbcdn.net/v/t51.82787-15/858593918_17979741209939952_6278376563647067773_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=DgVhI8X2YMQQ7kNvwEg5mAj&_nc_oc=Adq1g5GEyDrDsRMDfPrADHDI1uQgXB5UKBgX768Hm0fHb944Zk5XzCkqSGOaZqi6NUQcS7buDX5gF7wSjcj7D8Wg&_nc_zt=23&_nc_ht=instagram.fblr24-3.fna&_nc_gid=Uz2AkaSdTRUbE7Hr40SSwA&_nc_ss=7f6a8&oh=00_AQSVDON9PZD2o-f-ogaM1gHipVB9TfJ6CRJuuQTaiDx3lA&oe=6AE7B309&ig_cache_key=MDJSQVF6Qm40YUxUTUhldUEtQVBEUF9MY0hPRVloVjMwMlVtbzpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
+    "thumbnail_url": "https://instagram.fblr24-3.fna.fbcdn.net/v/t51.82787-15/858593918_17979741209939952_6278376563647067773_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=GmOi6eUSMswQ7kNvwFcEY08&_nc_oc=AdodGk9j7Fxd_s-KJpWpQAOwOFnNBIfIx4bAdbqnuLMhHc_3c3d1ChA2_qGtHJ0mfQoNq8xExJbUHE5ObdYE3uzd&_nc_zt=23&_nc_ht=instagram.fblr24-3.fna&_nc_gid=qN-IIkRcFGWdhKwZEz_eEA&_nc_ss=7b6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQTOnFykTTvn-4CYvLyE83yXcLCaLlVpGPevRErGwTW0aA&oe=6AFDAC09",
     "media_url": null,
-    "missing": [
-      "likes",
-      "comments"
-    ],
-    "missing_reasons": {
-      "likes": "No readable like count was found on the content page or in its metadata.",
-      "comments": "No readable comment count was found on the content page or in its metadata."
-    },
+    "missing": [],
+    "missing_reasons": {},
     "raw": {
-      "description": "2026年10月21日、「いいね！」108件、コメント0件 - movi.egaze: 「花粉症シーズン 🌼トムの対策は犬の被り物!?⁉️ 花 粉は防げても、ジェリーは防げません...。」",
-      "article_text": "movi.egaze\n•\nFollow\n花粉症シーズン 🌼トムの対策は犬の被り物!?⁉️ 花 粉は防げても、ジェリーは防げません...。\n108\n5\nwolverinecrosser\n•\nFollow\n294K\n442\n14.2K",
-      "aria_text": "movi.egaze reels\nmovi.egaze reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nwolverinecrosser reels\nwolverinecrosser reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
-      "json_ld": {}
+      "description": "「花粉症シーズン 🌼トムの対策は犬の被り物!?⁉️ 花 粉は防げても、ジェリーは防げません...。」 - 2026年10月21日、「いいね！」109件、コメント0件 - movi.egaze",
+      "article_text": "movi.egaze\nFollow\n花粉症シーズン 🌼トムの対策は犬の被り物!?⁉️ 花 粉は防げても、ジェリーは防げません...。\nSee translation\n109\n5\n10\nwtvlitchi\nFollow\nGubi Sandhu, RDB, Dilpreet Virdee, G.I. Jatt · Yaad\nGubi Sandhu, RDB, Dilpreet Virdee, G.I. Jatt · Yaad\nhare krishna evrbdy🤗\n.\n.\n#reels #explore #fypage #viral #relatable\n29.3K\n605\n827\n33K",
+      "aria_text": "movi.egaze reels\nmovi.egaze reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nwtvlitchi reels\nwtvlitchi reels\nAudio image\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "likes_visibility": "not_shown",
+        "reshares": {
+          "raw": "5",
+          "source": "dom_action_control",
+          "label": "Repost"
+        },
+        "shares": {
+          "raw": "10",
+          "source": "dom_action_control",
+          "label": "Share"
+        }
+      }
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:32:13.839Z",
+    "last_attempt_at": "2026-11-14T05:09:34.920Z",
     "deletion_check": {
       "status": "exists",
       "reason": "The reel page opened without Instagram's unavailable-page message.",
@@ -586,7 +604,22 @@
         "source": "fresh_incognito_context"
       }
     },
-    "date_source": "og_description_localized"
+    "date_source": "og_description_localized",
+    "reshares": {
+      "value": 5,
+      "raw": "5",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Repost"
+    },
+    "shares": {
+      "value": 10,
+      "raw": "10",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Share"
+    },
+    "likes_visibility": "not_shown"
   },
   {
     "kind": "reel",

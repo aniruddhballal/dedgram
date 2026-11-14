@@ -1,7 +1,7 @@
 {
-  "started_at": "2026-10-28T11:43:33.858Z",
-  "updated_at": "2026-11-05T17:36:32.208Z",
-  "status": "partial",
+  "started_at": "2026-11-14T05:09:26.054Z",
+  "updated_at": "2026-11-14T05:09:29.447Z",
+  "status": "complete",
   "phase": "done",
   "scope": [
     "reel"
@@ -10,15 +10,11 @@
   "error": null,
   "progress": {
     "task": "item_details",
-    "label": "Reel details",
-    "action": "Opening reel pages and extracting dates, captions, views, likes and comments",
-    "completed": 23,
-    "total": 23,
+    "label": "Detail resolution",
+    "completed": 1,
+    "total": 1,
     "percent": 100,
-    "remaining": 0,
-    "current_item": null,
-    "detail": "1 reel dates recovered from saved evidence. 1 reels still need analysis or review.",
-    "updated_at": "2026-11-05T17:36:32.208Z"
+    "detail": "resolved_unavailable_metrics; 0 unresolved reels remain."
   },
   "deletion_check": {
     "operation": "automated reel availability check",
@@ -38,5 +34,6 @@
     ],
     "newly_complete_reels": 0,
     "network_requests": 0
-  }
+  },
+  "browser_left_open": true
 }
