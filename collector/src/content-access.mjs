@@ -13,3 +13,17 @@ export function confirmedMetricAbsence(record, field) {
     && ['explicitly_hidden', 'disabled'].includes(evidence?.state)
     && Boolean(evidence?.evidence);
 }
+
+export function metricPanelEvidence(text, field) {
+  const value = String(text || '');
+  if (field === 'likes') {
+    const message = value.match(/(?:Only\s+)?[\w.]+ can see the total number of people who liked this post\.?/i)?.[0];
+    return message ? { state: 'explicitly_hidden', evidence: message } : null;
+  }
+  if (field === 'comments') {
+    const disabled = value.match(/comments are turned off|commenting is turned off/i)?.[0];
+    if (disabled) return { state: 'disabled', evidence: disabled };
+    if (/^\s*(?:Close\s*)?Comments\s*No comments yet\./i.test(value)) return { state: 'measured', evidence: 'No comments yet.', raw: '0' };
+  }
+  return null;
+}

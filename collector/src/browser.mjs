@@ -3,7 +3,7 @@ import { writeFile } from 'node:fs/promises';
 import { chromium } from 'playwright';
 import { canonicalItemUrl, clean } from './model.mjs';
 import { engagementFromDocument } from './reel-engagement.mjs';
-import { contentBarrier } from './content-access.mjs';
+import { contentBarrier, metricPanelEvidence } from './content-access.mjs';
 
 const pause = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
@@ -346,20 +346,27 @@ export async function captureItem(page, item) {
       await pause(800);
       const dialog = page.getByRole('dialog').last();
       if (!await dialog.isVisible().catch(() => false)) continue;
-      const text = await dialog.innerText();
-      await pause(500);
-      const repeated = await dialog.innerText();
+      let text = await dialog.innerText();
+      let evidence = metricPanelEvidence(text, field);
+      let repeatedEvidence = null, repeated = text, stable = false, panelReads = 1;
+      // A panel may appear before its visibility message has loaded. Allow a
+      // bounded settling period, still requiring two matching evidence reads.
+      for (let pass = 0; pass < 3; pass++) {
+        await pause(500);
+        repeated = await dialog.innerText();
+        panelReads++;
+        repeatedEvidence = metricPanelEvidence(repeated, field);
+        stable = Boolean(evidence && JSON.stringify(evidence) === JSON.stringify(repeatedEvidence));
+        if (stable) break;
+        if (pass < 2) { text = repeated; evidence = repeatedEvidence; }
+      }
       const clear = !contentBarrier(await page.locator('body').innerText());
-      snapshot.capture_checks.metric_panels.push({ field, stable: text === repeated, access_clear: clear, evidence: text.slice(0, 1500) });
-      if (text === repeated && clear) {
-        const hidden = field === 'likes' && /can see the total number of people who liked this post/i.test(text);
-        const zero = field === 'comments' && /No comments yet\./i.test(text);
-        const disabled = field === 'comments' && /comments are turned off|commenting is turned off/i.test(text);
-        if (hidden || disabled) snapshot.engagement.availability[field] = { state: hidden ? 'explicitly_hidden' : 'disabled', evidence: text.slice(0, 1500), source: 'metric_dialog' };
-        if (zero) {
-          snapshot.engagement.comments = { raw: '0', source: 'dom_comments_panel', label: 'No comments yet.' };
-          snapshot.engagement.availability.comments = { state: 'measured', evidence: 'No comments yet.', source: 'metric_dialog' };
-        }
+      snapshot.capture_checks.metric_panels.push({ field, stable, access_clear: clear,
+        evidence: evidence?.evidence || null, repeated_evidence: repeatedEvidence?.evidence || null,
+        panel_changed: text !== repeated, read_passes: panelReads });
+      if (stable && clear) {
+        snapshot.engagement.availability[field] = { ...evidence, source: 'metric_dialog' };
+        if (evidence.raw != null) snapshot.engagement[field] = { raw: evidence.raw, source: 'dom_comments_panel', label: evidence.evidence };
       }
       await page.keyboard.press('Escape');
       if (!clear) {

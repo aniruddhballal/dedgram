@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import { chromium } from 'playwright';
 import { captureItem } from '../src/browser.mjs';
 import { itemFromSnapshot, itemAnalysisHandled } from '../src/model.mjs';
+import { metricPanelEvidence } from '../src/content-access.mjs';
 
 const item = { kind: 'reel', shortcode: 'TARGET', url: 'https://www.instagram.com/reel/TARGET/' };
 const readable = (likeContent) => `<article data-shortcode="TARGET"><h1>Caption</h1><time datetime="2026-11-01T00:00:00Z"></time><div><button aria-label="Like"></button><span>${likeContent}</span></div><div><button aria-label="Comment"></button><span>4</span></div></article>`;
@@ -71,13 +72,24 @@ test('read-only panels establish hidden likes and a genuine zero comment count',
   const html = `<main><article data-shortcode="TARGET"><time datetime="2026-11-01T00:00:00Z"></time>
     <div><button aria-label="Like" onclick="window.heartClicked=true"></button><span onclick="show('Likes','owner can see the total number of people who liked this post.')">Likes</span></div>
     <div><button aria-label="Comment" onclick="show('Comments','No comments yet.')"></button></div></article></main>
-    <script>function show(title,text){document.querySelector('[role=dialog]')?.remove();const d=document.createElement('div');d.setAttribute('role','dialog');d.innerText=title+'\\n'+text;document.body.append(d);} document.onkeydown=e=>{if(e.key==='Escape')document.querySelector('[role=dialog]')?.remove()};</script>`;
+    <script>function show(title,text){document.querySelector('[role=dialog]')?.remove();const d=document.createElement('div');d.setAttribute('role','dialog');d.innerHTML='<h2>'+title+'</h2><p></p><div id="changing"></div>';document.body.append(d);if(title==='Likes')setTimeout(()=>d.querySelector('p').textContent=text,1100);else d.querySelector('p').textContent=text;let counter=0;setInterval(()=>{const list=document.querySelector('#changing');if(list)list.textContent='Loaded users '+counter++},50);} document.onkeydown=e=>{if(e.key==='Escape')document.querySelector('[role=dialog]')?.remove()};</script>`;
   await fixture(html, async page => {
     const snapshot = await captureItem(page, item);
     const result = itemFromSnapshot(item, { ...snapshot, grid_views_raw: '3K' });
     assert.equal(result.comments.value, 0);
     assert.equal(result.status, 'metrics_unavailable');
     assert.equal(result.raw.engagement.availability.likes.source, 'metric_dialog');
+    assert.equal(snapshot.capture_checks.metric_panels[0].panel_changed, true);
+    assert.equal(snapshot.capture_checks.metric_panels[0].stable, true);
+    assert(snapshot.capture_checks.metric_panels[0].read_passes >= 3);
     assert.equal(await page.evaluate(() => window.heartClicked), undefined);
   });
+});
+
+test('metric evidence is independent of list churn and does not infer zero from a user comment', () => {
+  const message = 'damon.maxx can see the total number of people who liked this post.';
+  assert.deepEqual(metricPanelEvidence('Likes\n'+message+'\nalice', 'likes'), metricPanelEvidence('Likes\n'+message+'\nalice\nbob', 'likes'));
+  assert.equal(metricPanelEvidence('Likes\nalice\nbob', 'likes'), null);
+  assert.equal(metricPanelEvidence('Comments\nalice\nNo comments yet.', 'comments'), null);
+  assert.equal(metricPanelEvidence('Comments\nNo comments yet.\nStart the conversation.', 'comments').raw, '0');
 });
