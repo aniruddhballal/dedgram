@@ -1,0 +1,46 @@
+{
+  "started_at": "2026-10-28T11:55:49.317Z",
+  "updated_at": "2026-11-14T04:44:19.844Z",
+  "status": "excluded",
+  "phase": "done",
+  "scope": [
+    "reel"
+  ],
+  "current_url": null,
+  "error": null,
+  "progress": {
+    "task": "item_details",
+    "label": "Reel details",
+    "action": "Opening reel pages and extracting dates, captions, views, likes and comments",
+    "completed": 32,
+    "total": 32,
+    "percent": 100,
+    "remaining": 0,
+    "current_item": null,
+    "detail": "Further collection stopped; saved metrics retained. Unavailable reel resolved; four partial historical records preserved.",
+    "updated_at": "2026-11-14T04:44:19.844Z"
+  },
+  "metadata_date_recovery": {
+    "updated_at": "2026-11-05T17:36:32.208Z",
+    "recovered_reels": [
+      "DePmSoJS1vv",
+      "DePK1I6z1s6",
+      "Dd_Wwzqz_R8",
+      "Dd9psfFSC98",
+      "Dd8_t94TSgL",
+      "Dd85d3Lz9tg",
+      "Dd8zZC-TpDh",
+      "Dd7IVgoCxes",
+      "Dd7DG0zSYUt"
+    ],
+    "newly_complete_reels": 9,
+    "network_requests": 0
+  },
+  "account_status": "deleted",
+  "account_status_observed_at": "2026-11-14T04:44:19.844Z",
+  "excluded_from_collection": true,
+  "excluded_from_analysis": false,
+  "retained_metrics_in_analysis": true,
+  "resolution_note": "User reports on 14 November 2026 that prxctm0l is unavailable and saved reel DeCbiUjBF49 redirects to schizosub5, whose page is also unavailable. Deletion versus a username change is unconfirmed; the redirect is user-reported evidence, not a verified username migration. Stop further collection and retries while retaining captured metrics for historical analysis. Missing values remain unknown, not zero.",
+  "collection_stopped_at": "2026-11-14T04:44:19.844Z"
+}

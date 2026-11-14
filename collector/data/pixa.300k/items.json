@@ -1549,10 +1549,86 @@
     "url": "https://www.instagram.com/reel/DbbblxUS1-A/",
     "grid_views_raw": "52.5K",
     "grid_views_issue": null,
-    "status": "failed",
-    "last_error": "Instagram reports this page is unavailable.",
-    "last_attempt_at": "2026-10-28T12:03:45.659Z",
-    "attempts": 1
+    "status": "metrics_unavailable",
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T04:42:32.571Z",
+    "attempts": 1,
+    "fetched_at": "2026-11-14T04:42:32.570Z",
+    "date": "2026-07-30",
+    "date_precision": "day",
+    "date_source": "og_description_localized",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": null,
+    "comments": {
+      "value": 4,
+      "raw": "4",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Comment"
+    },
+    "reshares": {
+      "value": 21,
+      "raw": "21",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Repost"
+    },
+    "shares": null,
+    "likes_visibility": "not_shown",
+    "views": {
+      "value": 52500,
+      "raw": "52.5K",
+      "approximate": true,
+      "source": "profile_grid"
+    },
+    "thumbnail_url": "https://instagram.fblr1-6.fna.fbcdn.net/v/t51.82787-15/765262372_17901184608511690_4462175571899067771_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=qqVqZJT_xawQ7kNvwGk0RFs&_nc_oc=AdoqjKWWOB5LUEDsEVDFISqgcwnFM8Wr1Yrfyt9YRh4GUulhkjtGUZepre_i6hzgWtQYL6Gf5Aryn5Ykmucrn2Ox&_nc_zt=23&_nc_ht=instagram.fblr1-6.fna&_nc_gid=lZYAxg2aVgtf8Hi_dS_ZKA&_nc_ss=7b6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQQmO9F5jkKMwSD0nn7F2pcr9mjO7ytzp7T-JQajh_DoGQ&oe=6AFDCC4D",
+    "media_url": null,
+    "missing": [
+      "likes"
+    ],
+    "missing_reasons": {
+      "likes": "No numeric like count is exposed by the page or captured metadata. Resolved as unavailable by user instruction; value remains unknown."
+    },
+    "raw": {
+      "description": "「この落ち方よ...\n\nジャンプスピンサーブってやつかなジャンプスピンサーブ (トップスピン強め) +ほんの少しサイド回転混ざりって感じなのかな横から見たら絶対落ちてるんだろうなバレーボールちゃんと勉強しよ...\n\n#宮浦健人 選手 #ウルフドッグス名古屋」 - 2026年7月30日、pixa.300k",
+      "article_text": "pixa.300k\nFollow\nこの落ち方よ...\n\nジャンプスピンサーブってやつかなジャンプスピンサーブ (トップスピン強め) +ほんの少しサイド回転混ざりって感じなのかな横から見たら絶対落ちてるんだろうなバレーボールちゃんと勉強しよ...\n\n#宮浦健人 選手 #ウルフドッグス名古屋\nSee translation\nLikes\n4\n21\nshubh_official_0502\nFollow\nCouldn't see Modi Ji, but this beautiful father daughter moment made my day! ❤️✨✨\nIIMB#pink line#metro ##fatherlove❤️\n118K\n1,235\n9,631",
+      "aria_text": "pixa.300k reels\npixa.300k reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nshubh_official_0502 reels\nshubh_official_0502 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "likes_visibility": "not_shown",
+        "comments": {
+          "raw": "4",
+          "source": "dom_action_control",
+          "label": "Comment"
+        },
+        "reshares": {
+          "raw": "21",
+          "source": "dom_action_control",
+          "label": "Repost"
+        }
+      }
+    },
+    "analysis_resolution": {
+      "status": "resolved",
+      "reason": "Metrics not exposed by Instagram; collected all available details.",
+      "source": "user_instruction_after_live_capture",
+      "recorded_at": "2026-11-14T04:44:19.844Z",
+      "unavailable_fields": [
+        "likes"
+      ],
+      "current_page_unavailable_fields": [
+        "likes",
+        "views"
+      ],
+      "historical_metrics_retained": [
+        "views"
+      ],
+      "historical_views_source": "profile_grid",
+      "previous_status": "partial"
+    }
   },
   {
     "kind": "reel",

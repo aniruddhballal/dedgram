@@ -41,7 +41,10 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:55:54.379Z"
+    "last_attempt_at": "2026-10-28T11:55:54.379Z",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   },
   {
     "kind": "reel",
@@ -91,7 +94,10 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:55:58.863Z"
+    "last_attempt_at": "2026-10-28T11:55:58.863Z",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   },
   {
     "kind": "reel",
@@ -141,7 +147,10 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:56:03.013Z"
+    "last_attempt_at": "2026-10-28T11:56:03.013Z",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   },
   {
     "kind": "reel",
@@ -184,7 +193,10 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:56:07.321Z"
+    "last_attempt_at": "2026-10-28T11:56:07.321Z",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   },
   {
     "kind": "reel",
@@ -229,7 +241,10 @@
     },
     "last_error": null,
     "last_attempt_at": "2026-10-28T11:56:11.474Z",
-    "date_source": "og_description"
+    "date_source": "og_description",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   },
   {
     "kind": "reel",
@@ -274,7 +289,10 @@
     },
     "last_error": null,
     "last_attempt_at": "2026-10-28T11:56:15.972Z",
-    "date_source": "og_description"
+    "date_source": "og_description",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   },
   {
     "kind": "reel",
@@ -320,7 +338,10 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:56:20.190Z"
+    "last_attempt_at": "2026-10-28T11:56:20.190Z",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   },
   {
     "kind": "reel",
@@ -366,7 +387,10 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:56:24.607Z"
+    "last_attempt_at": "2026-10-28T11:56:24.607Z",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   },
   {
     "kind": "reel",
@@ -412,7 +436,10 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:56:28.742Z"
+    "last_attempt_at": "2026-10-28T11:56:28.742Z",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   },
   {
     "kind": "reel",
@@ -456,7 +483,10 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:56:33.102Z"
+    "last_attempt_at": "2026-10-28T11:56:33.102Z",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   },
   {
     "kind": "reel",
@@ -502,7 +532,10 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:56:37.171Z"
+    "last_attempt_at": "2026-10-28T11:56:37.171Z",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   },
   {
     "kind": "reel",
@@ -548,7 +581,10 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:56:42.019Z"
+    "last_attempt_at": "2026-10-28T11:56:42.019Z",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   },
   {
     "kind": "reel",
@@ -594,7 +630,10 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:56:46.373Z"
+    "last_attempt_at": "2026-10-28T11:56:46.373Z",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   },
   {
     "kind": "reel",
@@ -602,10 +641,25 @@
     "url": "https://www.instagram.com/reel/DeCbiUjBF49/",
     "grid_views_raw": "11.4K",
     "grid_views_issue": null,
-    "status": "failed",
-    "last_error": "Instagram reports this page is unavailable.",
+    "status": "archived",
+    "last_error": null,
     "last_attempt_at": "2026-10-28T11:56:50.828Z",
-    "attempts": 1
+    "attempts": 1,
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true,
+    "missing": [],
+    "missing_reasons": {},
+    "availability_resolution": {
+      "status": "unavailable",
+      "source": "user_instruction",
+      "recorded_at": "2026-11-14T04:44:19.844Z",
+      "reason": "User reports on 14 November 2026 that prxctm0l is unavailable and saved reel DeCbiUjBF49 redirects to schizosub5, whose page is also unavailable. Deletion versus a username change is unconfirmed; the redirect is user-reported evidence, not a verified username migration. Stop further collection and retries while retaining captured metrics for historical analysis. Missing values remain unknown, not zero.",
+      "previous_status": "failed",
+      "previous_last_error": "Instagram reports this page is unavailable.",
+      "previous_missing": [],
+      "previous_missing_reasons": {}
+    }
   },
   {
     "kind": "reel",
@@ -650,7 +704,10 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:56:54.888Z"
+    "last_attempt_at": "2026-10-28T11:56:54.888Z",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   },
   {
     "kind": "reel",
@@ -696,7 +753,10 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:56:59.023Z"
+    "last_attempt_at": "2026-10-28T11:56:59.023Z",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   },
   {
     "kind": "reel",
@@ -742,7 +802,10 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:57:03.113Z"
+    "last_attempt_at": "2026-10-28T11:57:03.113Z",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   },
   {
     "kind": "reel",
@@ -788,7 +851,10 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:57:07.149Z"
+    "last_attempt_at": "2026-10-28T11:57:07.149Z",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   },
   {
     "kind": "reel",
@@ -833,7 +899,10 @@
     },
     "last_error": null,
     "last_attempt_at": "2026-10-28T11:57:11.521Z",
-    "date_source": "og_description"
+    "date_source": "og_description",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   },
   {
     "kind": "reel",
@@ -878,7 +947,10 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:57:15.990Z"
+    "last_attempt_at": "2026-10-28T11:57:15.990Z",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   },
   {
     "kind": "reel",
@@ -924,7 +996,10 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:57:20.063Z"
+    "last_attempt_at": "2026-10-28T11:57:20.063Z",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   },
   {
     "kind": "reel",
@@ -968,7 +1043,10 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:57:24.141Z"
+    "last_attempt_at": "2026-10-28T11:57:24.141Z",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   },
   {
     "kind": "reel",
@@ -1013,7 +1091,10 @@
     },
     "last_error": null,
     "last_attempt_at": "2026-10-28T11:57:28.216Z",
-    "date_source": "og_description"
+    "date_source": "og_description",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   },
   {
     "kind": "reel",
@@ -1060,7 +1141,10 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:57:32.383Z"
+    "last_attempt_at": "2026-10-28T11:57:32.383Z",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   },
   {
     "kind": "reel",
@@ -1105,7 +1189,10 @@
     },
     "last_error": null,
     "last_attempt_at": "2026-10-28T11:57:36.489Z",
-    "date_source": "og_description"
+    "date_source": "og_description",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   },
   {
     "kind": "reel",
@@ -1149,7 +1236,10 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:57:40.755Z"
+    "last_attempt_at": "2026-10-28T11:57:40.755Z",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   },
   {
     "kind": "reel",
@@ -1194,7 +1284,10 @@
     },
     "last_error": null,
     "last_attempt_at": "2026-10-28T11:57:44.906Z",
-    "date_source": "og_description"
+    "date_source": "og_description",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   },
   {
     "kind": "reel",
@@ -1239,7 +1332,10 @@
     },
     "last_error": null,
     "last_attempt_at": "2026-10-28T11:57:48.949Z",
-    "date_source": "og_description"
+    "date_source": "og_description",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   },
   {
     "kind": "reel",
@@ -1282,7 +1378,10 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:57:53.153Z"
+    "last_attempt_at": "2026-10-28T11:57:53.153Z",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   },
   {
     "kind": "reel",
@@ -1326,7 +1425,10 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:57:57.447Z"
+    "last_attempt_at": "2026-10-28T11:57:57.447Z",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   },
   {
     "kind": "reel",
@@ -1371,7 +1473,10 @@
     },
     "last_error": null,
     "last_attempt_at": "2026-10-28T11:58:01.491Z",
-    "date_source": "og_description"
+    "date_source": "og_description",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   },
   {
     "kind": "reel",
@@ -1416,6 +1521,9 @@
     },
     "last_error": null,
     "last_attempt_at": "2026-10-28T11:58:05.344Z",
-    "date_source": "og_description"
+    "date_source": "og_description",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   }
 ]

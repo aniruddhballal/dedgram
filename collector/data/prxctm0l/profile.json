@@ -94,5 +94,23 @@
       }
     }
   },
-  "issues": []
+  "issues": [],
+  "account_status": "deleted",
+  "account_status_observed_at": "2026-11-14T04:44:19.844Z",
+  "excluded_from_collection": true,
+  "excluded_from_analysis": false,
+  "retained_metrics_in_analysis": true,
+  "resolution_note": "User reports on 14 November 2026 that prxctm0l is unavailable and saved reel DeCbiUjBF49 redirects to schizosub5, whose page is also unavailable. Deletion versus a username change is unconfirmed; the redirect is user-reported evidence, not a verified username migration. Stop further collection and retries while retaining captured metrics for historical analysis. Missing values remain unknown, not zero.",
+  "collection_stopped_at": "2026-11-14T04:44:19.844Z",
+  "availability_evidence": {
+    "source": "user_manual_check",
+    "recorded_at": "2026-11-14T04:44:19.844Z",
+    "profile_url": "https://www.instagram.com/prxctm0l/",
+    "reel_url": "https://www.instagram.com/reel/DeCbiUjBF49/",
+    "redirect_url": "https://www.instagram.com/schizosub5/",
+    "redirect_page_available": false,
+    "username_change_confirmed": false,
+    "deleted_confirmed": false,
+    "network_verification_performed": false
+  }
 }
