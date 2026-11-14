@@ -8,10 +8,15 @@ export function contentBarrier(text) {
 
 export function confirmedMetricAbsence(record, field) {
   const evidence = record.raw?.engagement?.availability?.[field];
+  const native = record.raw?.android_capture?.metric_availability?.[field];
+  const nativeVerified = native?.status === 'not_exposed' && native.source === 'verified_reel_controls'
+    && native.samples >= 2 && native.details_capture_verified === true
+    && Number.isFinite(native.first_observed_at) && Number.isFinite(native.confirmed_at)
+    && native.confirmed_at - native.first_observed_at >= 500 && Boolean(native.control_evidence);
   return record.raw?.capture_checks?.access_clear === true
     && record.raw.capture_checks.stable === true
-    && ['explicitly_hidden', 'disabled'].includes(evidence?.state)
-    && Boolean(evidence?.evidence);
+    && (nativeVerified || (['explicitly_hidden', 'disabled'].includes(evidence?.state)
+      && Boolean(evidence?.evidence)));
 }
 
 export function metricPanelEvidence(text, field) {

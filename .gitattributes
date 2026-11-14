@@ -1,0 +1,3 @@
+# Preserve imported phone exports byte-for-byte for manifest SHA-256 checks.
+collector/data/imports/android/**/reels.json -text
+collector/data/imports/android/**/pending_reels.json -text

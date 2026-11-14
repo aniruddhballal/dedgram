@@ -1,5 +1,18 @@
 # Instagram collector and local workspace
 
+## Import saved Android reel captures
+
+Copy `Documents/dedgram/reels.json` and `pending_reels.json` from the phone into a local folder, then preview the offline merge from the repository root:
+
+```powershell
+node collector/scripts/import-android-reels.mjs --source="C:\path\to\phone-export"
+node collector/scripts/import-android-reels.mjs --source="C:\path\to\phone-export" --apply
+```
+
+The importer requires a unique existing shortcode match, matching phone checkpoint/time and verified account/caption evidence. It updates the active `collector/data/<profile>/items.json` records, refreshes run status and reports, and saves original phone documents plus a manifest under `collector/data/imports/android/`. Before/after profile snapshots preserve the previous data. Reimporting identical captures makes no changes. No Instagram requests are made and website publication files are not updated.
+
+Native metric-availability evidence can resolve missing counts without inventing zeroes. Valid older observations remain when a phone field fails, with metric observation times retained. Established dates remain canonical; yearless or relative phone labels, observation time and timezone are kept separately. A changed displayed owner is recorded on the matching reel without moving or renaming the entire profile catalog.
+
 This is an independent collector. `targets.json` supplies `edlt.shox` as the default candidate. Pass `--username=NAME` to collect another account from `../data/database/profiles/index.json`. It reads the shared catalog, writes active analysis records under `collector/data/`, and mirrors confirmed username migrations into the shared data store.
 
 The collector uses free, local Playwright Chromium automation. It reads visible Instagram pages, finds post and reel links from the profile grids, then opens each item by its canonical URL. It saves after each discovery update and each item, so interrupted runs can resume. It does not use undocumented Instagram endpoints or bypass login, checkpoints, or rate limits.
