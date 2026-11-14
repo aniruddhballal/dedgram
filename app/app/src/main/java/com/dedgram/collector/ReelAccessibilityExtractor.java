@@ -66,6 +66,16 @@ public final class ReelAccessibilityExtractor {
             return null;
         }
 
+        public String queueIssue() {
+            for (Entry e : entries) {
+                String t=e.display().trim().toLowerCase(Locale.ROOT).replace("\u2019", "'").replaceAll("[.!]+$", "");
+                if(t.matches(".*(?:http\s*429|429.*too many requests|too many requests|please wait a few minutes|try again later).*"))return "rate_limited";
+                if(t.matches(".*(?:age.restricted content|confirm your age|verify your age|sensitive content warning|security checkpoint|log in to continue).*" )||t.equals("sensitive content"))return "needs_review";
+                if(t.equals("sorry, this page isn't available")||t.equals("this page isn't available")||t.equals("this reel is unavailable")||t.equals("this content isn't available right now")||t.equals("page isn't available"))return "deleted";
+            }
+            return null;
+        }
+
         public boolean noCommentsYet() { return indexContaining("no comments yet") >= 0; }
         public boolean likesHidden() { return indexContaining("can see the total number of likes") >= 0; }
         public boolean hasCaptionSheet() {

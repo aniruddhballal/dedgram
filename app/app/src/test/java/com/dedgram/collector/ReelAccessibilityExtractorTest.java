@@ -176,6 +176,15 @@ public final class ReelAccessibilityExtractorTest {
         assertEquals("", ReelAccessibilityExtractor.snapshot(root).datePosted());
     }
 
+    @Test public void queueDistinguishesCounter429FromAccessErrorsAndUnavailablePages() {
+        AccessibilityNodeInfo root=node(INSTAGRAM,"429",false);
+        assertEquals(null,ReelAccessibilityExtractor.snapshot(root).queueIssue());
+        root.setText("HTTP 429");assertEquals("rate_limited",ReelAccessibilityExtractor.snapshot(root).queueIssue());
+        root.setText("This page isn't available.");assertEquals("deleted",ReelAccessibilityExtractor.snapshot(root).queueIssue());
+        root.setText("Sensitive content");assertEquals("needs_review",ReelAccessibilityExtractor.snapshot(root).queueIssue());
+        root.setText("Age-restricted content");assertEquals("needs_review",ReelAccessibilityExtractor.snapshot(root).queueIssue());
+    }
+
     private static AccessibilityNodeInfo reel(String packageName) {
         AccessibilityNodeInfo root = node(packageName, "", false);
         shadowOf(root).addChild(node(packageName, "like", false));

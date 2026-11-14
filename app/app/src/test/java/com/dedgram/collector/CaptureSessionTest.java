@@ -10,6 +10,12 @@ public final class CaptureSessionTest {
     private static final long MINUTE = 60_000L;
     private static final String INSTAGRAM = CaptureSession.INSTAGRAM_PACKAGE;
 
+    @Test public void navigationDeadlineCheckDoesNotExtendSession() {
+        CaptureSession s=new CaptureSession(START);assertTrue(s.observeForeground(INSTAGRAM,START));
+        assertFalse(s.expire(START+MINUTE));assertTrue(s.expire(START+30*MINUTE));
+        assertFalse(s.observeForeground(INSTAGRAM,START+30*MINUTE+1));
+    }
+
     @Test
     public void startupGraceDoesNotPermitCaptureOutsideInstagram() {
         CaptureSession session = new CaptureSession(START);

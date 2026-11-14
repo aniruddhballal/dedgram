@@ -101,3 +101,31 @@ Instagram can change its UI structure and accessibility labels. If the profile h
 `date_posted.value` preserves the displayed publication label. `publication_observation` stores `raw_text`, UTC `observed_at`, `observed_at_epoch_ms`, device `timezone`, `locale` and source. `exact_publication_time` stays null unless separately established; the app does not assume a year for labels without one or a rounding rule for relative ages. `caption_expanded` records successful expanded-caption verification, `likes_availability: owner_only` records explicit hidden-count evidence, and `navigation_error` records a failed sheet verification. Existing JSON records remain readable.
 
 The app cannot guarantee fields Instagram does not expose. In particular, some reels expose no share/repost/save count, and ordinary FYP accessibility nodes may expose no reel URL/shortcode. Those captures do not gain a fabricated link or count. Exact shortcode matching remains unavailable in that case; timestamp-based record identity prevents overwriting a different reel.
+
+## Pending reel queue (2.4.0)
+
+Put a UTF-8 JSON document at `Documents/dedgram/pending_reels.json`. See [`pending_reels.example.json`](pending_reels.example.json). Use an object containing a `reels` array; each entry has an Instagram reel `url` and initially `status: null`. `expected_account` is recommended so a changed account or unrelated screen cannot silently supply a queued result. A top-level array is also accepted. Duplicate canonical URLs, invalid destinations and unsupported statuses are rejected before the run. Additional entry and document metadata is preserved.
+
+In **REEL COLLECTION**, the queue card shows pending and total counts next to **START / RESUME**. Choose the exact **Documents/dedgram** folder once in Android's document picker and allow access. This persisted folder grant lets the app update computer-created files with their exact names; no broad storage permission is requested. If capture is off, Start/resume requests a fresh accessibility session. Enable the service when prompted; the first pending URL then opens in Instagram automatically. Do not press Back or switch apps during the run.
+
+The runner opens one URL, waits for a stable matching account/render, invokes the existing caption/date/metrics capture pipeline, saves the result to the exact `reels.json`, verifies it, and only then checkpoints that queue entry. Saved records have the requested URL/shortcode and an explicit identity source; ordinary Instagram accessibility UI may not independently expose a shortcode, so the source distinguishes deep-link/account/render checks from directly exposed link data.
+
+| Status | Meaning |
+| --- | --- |
+| `null` | Eligible for collection |
+| `collected` | Requested fields captured or explicitly resolved, such as owner-only likes |
+| `partial` | Result saved, with one or more requested fields still unreadable |
+| `failed` | Load, identity or capture could not be verified |
+| `deleted` | Instagram explicitly reported the reel unavailable; deletion versus archiving is not established |
+| `needs_review` | An age, sensitive-content, login or other access gate needs inspection |
+| `rate_limited` | A visible HTTP 429/throttle message stopped the run |
+
+Each attempted entry receives `updated_at`, `captured_at` and an optional diagnostic `detail`. Only null-status entries are automatically attempted. To retry an earlier result, deliberately reset its status to JSON null; the result store de-duplicates by shortcode and preserves older valid field observations when the latest capture fails to replace them. Reused values carry their original capture time in `retained_observations`.
+
+The Instagram queue overlay shows attempted progress and acts as **Stop**. Opening dedgram, leaving Instagram, locking the phone, expiry or Stop ends the existing capture session and pauses the batch; resume uses the saved statuses. During a queued deep-link transition only, an unknown active window is tolerated for at most eight seconds without traversing or acting on it. Other app foregrounds and the existing session deadlines still stop capture. A repeated caption alone is not used as a new-reel identity: visible metric observations also contribute to the render-change check.
+
+Explicit access/throttle screens and unverified load timeouts stop the batch without retry. The app reads visible Instagram UI; it cannot inspect hidden HTTP responses in Instagram's network stack. It does not mark an empty or timed-out page deleted. Completed queue entries are not re-run automatically after a restart.
+
+Results and queue updates keep last-good private backups before replacing their documents. Invalid or unwritable documents stop the run rather than silently starting an empty collection. Computer edits while a run is active are discouraged; a removed active URL stops checkpointing rather than overwriting the changed queue.
+
+MediaStore's legacy path is still supported for ordinary captures without a folder grant, but renamed output files are rejected. Queue runs use the granted exact documents to avoid `reels (1).json` collisions.

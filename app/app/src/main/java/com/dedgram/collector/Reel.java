@@ -6,6 +6,9 @@ import org.json.JSONObject;
 /** A reel capture. Nullable values are paired with a field-level error. */
 public final class Reel {
     public String shortcode = "";
+    public String url = "";
+    public String identitySource = "accessibility";
+    public JSONObject retainedObservations;
     public String account = "";
     public String capturedAt = "";
     public Long likes;
@@ -33,6 +36,8 @@ public final class Reel {
 
     public static Reel fromJson(JSONObject object) {
         Reel reel = new Reel();
+        reel.url = object.optString("url", "");
+        reel.identitySource = object.optString("identity_source", "accessibility");
         reel.shortcode = object.optString("shortcode", "");
         reel.account = object.optString("account", "");
         reel.capturedAt = object.optString("captured_at", "");
@@ -52,9 +57,9 @@ public final class Reel {
         reel.savesError = fieldError(object, "saves");
         reel.datePostedError = fieldError(object, "date_posted");
         reel.captionError = fieldError(object, "caption");
+        reel.retainedObservations = object.optJSONObject("retained_observations");
         reel.publicationObservation = object.optJSONObject("publication_observation");
-        reel.navigationError = object.optString("navigation_error", "");
-        if (reel.navigationError.isEmpty()) reel.navigationError = null;
+        reel.navigationError = object.isNull("navigation_error") ? null : object.optString("navigation_error", null);
         reel.captionExpanded = object.optBoolean("caption_expanded", false);
         reel.captureStage = object.optString("capture_stage", "legacy");
         reel.likesAvailability = object.optString("likes_availability", "unknown");
@@ -64,6 +69,9 @@ public final class Reel {
     public JSONObject toJson() throws JSONException {
         JSONObject object = new JSONObject();
         object.put("shortcode", shortcode);
+        object.put("url", url);
+        object.put("identity_source", identitySource);
+        object.put("retained_observations", retainedObservations == null ? JSONObject.NULL : retainedObservations);
         object.put("account", account);
         object.put("captured_at", capturedAt);
         object.put("likes", field(likes, likesError));
@@ -80,6 +88,24 @@ public final class Reel {
         object.put("capture_stage", captureStage);
         object.put("likes_availability", likesAvailability);
         return object;
+    }
+
+    public void retainMissingFrom(Reel old) {
+        if(likes==null&&old.likes!=null&&old.likesError==null){likes=old.likes;retained("likes",old);}
+        if(comments==null&&old.comments!=null&&old.commentsError==null){comments=old.comments;retained("comments",old);}
+        if(viewsOrPlays==null&&old.viewsOrPlays!=null&&old.viewsOrPlaysError==null){viewsOrPlays=old.viewsOrPlays;retained("views_or_plays",old);}
+        if(shares==null&&old.shares!=null&&old.sharesError==null){shares=old.shares;retained("shares",old);}
+        if(reposts==null&&old.reposts!=null&&old.repostsError==null){reposts=old.reposts;retained("reposts",old);}
+        if(saves==null&&old.saves!=null&&old.savesError==null){saves=old.saves;retained("saves",old);}
+        if((caption.isEmpty()||captionError!=null)&&!old.caption.isEmpty()&&old.captionError==null){caption=old.caption;retained("caption",old);}
+        if((datePosted.isEmpty()||datePostedError!=null)&&!old.datePosted.isEmpty()&&old.datePostedError==null){datePosted=old.datePosted;publicationObservation=old.publicationObservation;retained("date_posted",old);}
+    }
+    private void retained(String field,Reel old) {
+        try{if(retainedObservations==null)retainedObservations=new JSONObject();
+            JSONObject observation=old.retainedObservations==null?null:old.retainedObservations.optJSONObject(field);
+            if(observation==null)observation=new JSONObject().put("captured_at",old.capturedAt).put("reason","Latest capture did not expose a reliable replacement; previous valid observation retained");
+            retainedObservations.put(field,observation);
+        }catch(JSONException ignored){}
     }
 
     public boolean hasErrors() {

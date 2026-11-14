@@ -32,6 +32,10 @@ public final class MainActivity extends Activity {
     private TextView headerCount;
     private TextView profileCount;
     private TextView reelCount;
+    private TextView pendingCount, pendingProgress, pendingStart;
+    private long pendingRefresh;
+    private boolean startAfterFolder;
+    private static final int PICK_PENDING_REELS = 901;
     private TextView profileModeButton;
     private TextView reelModeButton;
     private TextView accessibilityStatus;
@@ -40,6 +44,7 @@ public final class MainActivity extends Activity {
     private final Runnable statusUpdate = new Runnable() {
         @Override public void run() {
             refreshCaptureStatus();
+            if (android.os.SystemClock.elapsedRealtime() - pendingRefresh > 2000) refreshPendingQueue();
             statusHandler.postDelayed(this, 500L);
         }
     };
@@ -204,6 +209,17 @@ public final class MainActivity extends Activity {
         container.addView(UiStyles.utility(this, "REEL CAPTURE SETUP"));
         container.addView(UiStyles.text(this, "Enable a capture session above, then tap the reel control. It expands the caption, records the displayed posting date with its observation time, and opens Likes and plays. Unreadable fields are saved with errors.", 12, 0xFF555555, false));
         container.addView(spacer(22));
+        container.addView(UiStyles.utility(this, "PENDING REEL QUEUE"));
+        LinearLayout queueRow = new LinearLayout(this);queueRow.setGravity(Gravity.CENTER_VERTICAL);
+        pendingCount = UiStyles.text(this, "Choose pending_reels.json", 15, Color.BLACK, true);
+        queueRow.addView(pendingCount,new LinearLayout.LayoutParams(0,-2,1));
+        pendingStart = UiStyles.button(this, "START / RESUME", v -> startPendingQueue(), true);queueRow.addView(pendingStart);
+        container.addView(queueRow,margin(0,10,0,0));
+        container.addView(UiStyles.button(this,"CHOOSE DEDGRAM FOLDER",v -> choosePendingQueue(), false),margin(0,8,0,0));
+        pendingProgress = UiStyles.text(this,"Documents/dedgram/pending_reels.json",12,0xFF555555,false);
+        container.addView(pendingProgress,margin(0,8,0,0));
+        container.addView(UiStyles.text(this,"Processes null-status entries one at a time. Saved results are skipped on resume. Stop from the queue overlay in Instagram; leaving Instagram also pauses this session.",12,0xFF555555,false),margin(0,8,0,0));
+        container.addView(spacer(22));
         LinearLayout heading = new LinearLayout(this);
         heading.setGravity(Gravity.CENTER_VERTICAL);
         heading.setOrientation(LinearLayout.HORIZONTAL);
@@ -225,6 +241,30 @@ public final class MainActivity extends Activity {
         privacy.setLineSpacing(UiStyles.dp(this, 2), 1.0f);
         container.addView(privacy, margin(0, 4, 0, 0));
         return container;
+    }
+
+    private void refreshPendingQueue() {
+        pendingRefresh=android.os.SystemClock.elapsedRealtime();if(pendingCount==null)return;
+        try { PendingReels q=PendingReelStore.read(this);pendingCount.setText((q.reels.length()-q.done())+" pending / "+q.reels.length()+" total");pendingStart.setEnabled(q.next()!=null);pendingProgress.setText(PendingReelStore.progress(this)); }
+        catch(Exception e){pendingCount.setText("Queue unavailable");pendingStart.setEnabled(false);pendingProgress.setText(e.getMessage());}
+    }
+    private void choosePendingQueue() {
+        Intent intent=new Intent(Intent.ACTION_OPEN_DOCUMENT_TREE);
+        intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION|Intent.FLAG_GRANT_WRITE_URI_PERMISSION|Intent.FLAG_GRANT_PERSISTABLE_URI_PERMISSION);
+        if(Build.VERSION.SDK_INT>=26)intent.putExtra("android.provider.extra.INITIAL_URI",android.net.Uri.parse("content://com.android.externalstorage.documents/document/primary%3ADocuments%2Fdedgram"));
+        startActivityForResult(intent,PICK_PENDING_REELS);
+    }
+    @Override protected void onActivityResult(int request,int result,Intent data) {
+        super.onActivityResult(request,result,data);
+        if(request==PICK_PENDING_REELS&&result==RESULT_OK&&data!=null&&data.getData()!=null){try{SharedReelDocuments.choose(this,data.getData());if(startAfterFolder){startAfterFolder=false;startPendingQueue();}}catch(Exception e){startAfterFolder=false;android.widget.Toast.makeText(this,e.getMessage(),android.widget.Toast.LENGTH_LONG).show();}refreshPendingQueue();}
+    }
+    private void startPendingQueue() {
+        try {if(SharedReelDocuments.folder(this)==null){startAfterFolder=true;choosePendingQueue();return;}if(PendingReelStore.read(this).next()==null)return;
+            ProfileAccessibilityService.stopCapture();
+            ProfileAccessibilityService.prepareCaptureSession(this);PendingReelStore.arm(this);
+            PendingReelStore.progress(this,"Waiting for accessibility permission; Instagram will open the first pending URL automatically");
+            startActivity(new Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS));
+        }catch(Exception e){android.widget.Toast.makeText(this,e.getMessage(),android.widget.Toast.LENGTH_LONG).show();}
     }
 
     private void applyMode() {
@@ -327,6 +367,7 @@ public final class MainActivity extends Activity {
         if (storageStatus != null) storageStatus.setText("Stored in " + ProfileStore.storageLocation());
         renderProfiles();
         renderReels();
+        refreshPendingQueue();
     }
 
     private void refreshCaptureStatus() {

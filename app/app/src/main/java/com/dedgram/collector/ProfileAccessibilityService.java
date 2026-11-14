@@ -49,6 +49,8 @@ public final class ProfileAccessibilityService extends AccessibilityService {
     private final Runnable foregroundCheck = this::checkForeground;
     private CaptureSession session;
     private boolean reelCaptureInProgress;
+    private PendingQueueRunner pendingQueue;
+    private TextView queueBubble;
     private boolean screenReceiverRegistered;
     private final BroadcastReceiver screenReceiver = new BroadcastReceiver() {
         @Override public void onReceive(Context context, Intent intent) {
@@ -82,6 +84,21 @@ public final class ProfileAccessibilityService extends AccessibilityService {
         windowManager = (WindowManager) getSystemService(WINDOW_SERVICE);
         refreshSavedUsernames();
         mainHandler.post(foregroundCheck);
+        if (PendingReelStore.consumeArm(this)) {
+            pendingQueue = new PendingQueueRunner(this, new PendingQueueRunner.Host() {
+                public AccessibilityNodeInfo root() { return currentInstagramRoot(); }
+                public void open(String url) {
+                    Intent intent = new Intent(Intent.ACTION_VIEW, android.net.Uri.parse(url));
+                    intent.setPackage(INSTAGRAM_PACKAGE); intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    startActivity(intent);
+                }
+                public void capture() { reelCaptureInProgress = true; captureCurrentReel(reelBubble, 0); }
+                public void stopService() { stopCaptureSession(); }
+                public boolean save(Reel reel) { return ReelStore.addOrReplace(getApplicationContext(), reel); }
+                public void progress(String text) { updateQueueBubble(text); }
+            });
+            pendingQueue.start();
+        }
     }
 
     @Override
@@ -148,6 +165,8 @@ public final class ProfileAccessibilityService extends AccessibilityService {
     }
 
     private void clearSession() {
+        if (pendingQueue != null) pendingQueue.stop("Paused; start the queue again to resume null-status entries");
+        removeQueueBubble();
         if (session != null) session.stop();
         mainHandler.removeCallbacksAndMessages(null);
         reelCaptureInProgress = false;
@@ -179,6 +198,11 @@ public final class ProfileAccessibilityService extends AccessibilityService {
         }
         AccessibilityNodeInfo root = getRootInActiveWindow();
         String packageName = root == null ? null : String.valueOf(root.getPackageName());
+        if ((packageName == null || "null".equals(packageName)) && pendingQueue != null && pendingQueue.isNavigating()
+                && !session.expire(SystemClock.elapsedRealtime())) {
+            if(root != null)root.recycle();
+            return null; // No traversal or action while Instagram replaces its window.
+        }
         if (session.observeForeground(packageName, SystemClock.elapsedRealtime())) return root;
         if (root != null) root.recycle();
         if (session.isStopped()) stopCaptureSession();
@@ -270,9 +294,11 @@ public final class ProfileAccessibilityService extends AccessibilityService {
         if (instagramActive) {
             showBubble();
             showReelBubble();
+            if (pendingQueue != null && pendingQueue.isRunning()) updateQueueBubble(PendingReelStore.progress(this));
         } else {
             removeBubble();
             removeReelBubble();
+            removeQueueBubble();
         }
     }
 
@@ -435,6 +461,7 @@ public final class ProfileAccessibilityService extends AccessibilityService {
     }
 
     private void captureCurrentReel(TextView source) {
+        if (pendingQueue != null && pendingQueue.isRunning()) { showMessage("Queue is running; use its Stop control to pause"); return; }
         if (reelCaptureInProgress || session == null || session.isStopped()) return;
         reelCaptureInProgress = true;
         captureCurrentReel(source, 0);
@@ -642,6 +669,7 @@ public final class ProfileAccessibilityService extends AccessibilityService {
     private void saveReel(TextView source, Reel reel) {
         reelCaptureInProgress = false;
         if (session == null || session.isStopped()) return;
+        if (pendingQueue != null && pendingQueue.isCapturing()) { pendingQueue.accept(reel); return; }
         if (ReelStore.addOrReplace(getApplicationContext(), reel)) {
             if (reel.hasErrors()) showMessage("Reel saved with field errors");
             else showMessage("Reel saved");
@@ -650,6 +678,27 @@ public final class ProfileAccessibilityService extends AccessibilityService {
             showMessage("Could not save reel JSON");
             showReelFailureFeedback();
         }
+    }
+
+    private void updateQueueBubble(String text) {
+        if (pendingQueue == null || !pendingQueue.isRunning()) { removeQueueBubble(); return; }
+        AccessibilityNodeInfo visible = currentInstagramRoot();
+        if (visible == null) { removeQueueBubble(); return; } visible.recycle();
+        if (queueBubble == null && windowManager != null) {
+            TextView view = new TextView(this);view.setTextSize(12);view.setTextColor(android.graphics.Color.WHITE);
+            view.setBackgroundColor(0xEE312E81);view.setPadding(dp(10),dp(8),dp(10),dp(8));
+            view.setContentDescription("Stop pending reel queue");view.setOnClickListener(v -> stopCaptureSession());
+            WindowManager.LayoutParams params = new WindowManager.LayoutParams(dp(190), -2,
+                    WindowManager.LayoutParams.TYPE_ACCESSIBILITY_OVERLAY,
+                    WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE | WindowManager.LayoutParams.FLAG_NOT_TOUCH_MODAL, PixelFormat.TRANSLUCENT);
+            params.gravity = Gravity.TOP | Gravity.START;params.x = dp(16);params.y = dp(390);
+            try { windowManager.addView(view,params);queueBubble=view; } catch (RuntimeException ignored) { }
+        }
+        if (queueBubble != null) queueBubble.setText(text+"\nTAP TO STOP");
+    }
+    private void removeQueueBubble() {
+        if (queueBubble != null && windowManager != null) try { windowManager.removeView(queueBubble); } catch (RuntimeException ignored) { }
+        queueBubble = null;
     }
 
     private void showReelSuccessFeedback() {

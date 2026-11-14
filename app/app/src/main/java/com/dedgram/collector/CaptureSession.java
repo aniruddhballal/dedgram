@@ -25,19 +25,21 @@ public final class CaptureSession {
      * session permanently. Expiry is inclusive at both time limits.
      */
     public boolean observeForeground(String packageName, long nowMs) {
-        if (stopped) return false;
-        long elapsedMs = nowMs - startedAtMs;
-        if (elapsedMs >= MAX_SESSION_DURATION_MS
-                || (!instagramObserved && elapsedMs >= STARTUP_GRACE_MS)) {
-            stop();
-            return false;
-        }
+        if (expire(nowMs)) return false;
         if (INSTAGRAM_PACKAGE.equals(packageName)) {
             instagramObserved = true;
             return true;
         }
         if (instagramObserved) stop();
         return false;
+    }
+
+    /** Deadline check without treating an expected navigation gap as another app. */
+    public boolean expire(long nowMs) {
+        if(stopped)return true;
+        long elapsedMs=nowMs-startedAtMs;
+        if(elapsedMs>=MAX_SESSION_DURATION_MS||(!instagramObserved&&elapsedMs>=STARTUP_GRACE_MS))stop();
+        return stopped;
     }
 
     public boolean isStopped() {

@@ -69,6 +69,23 @@ public final class ProfileAccessibilityServiceTest {
         if (controller != null) controller.destroy();
     }
 
+    @Test public void queueNavigationAllowsOnlyBoundedUnknownWindowGap() throws Exception {
+        enterInstagram();
+        PendingQueueRunner.Host h=new PendingQueueRunner.Host(){
+            public AccessibilityNodeInfo root(){return null;} public void open(String u){} public void capture(){}
+            public void stopService(){} public void progress(String s){} public boolean save(Reel r){return true;}
+        };
+        PendingQueueRunner.Storage storage=new PendingQueueRunner.Storage(){
+            public PendingReels read()throws Exception{return new PendingReels("{\"reels\":[{\"url\":\"https://instagram.com/reel/ONE/\",\"status\":null}]}");}
+            public void result(String u,String s,String d,String at){}public void progress(String s){}
+        };
+        PendingQueueRunner queue=new PendingQueueRunner(h,storage);ReflectionHelpers.setField(service,"pendingQueue",queue);queue.start();
+        shadowOf(Looper.getMainLooper()).idleFor(Duration.ofMillis(600));
+        serviceShadow.root=null;CountingNodeShadow.treeReads=0;
+        sendInstagramWindowEvent();assertEquals(0,serviceShadow.disableCalls);assertEquals(0,CountingNodeShadow.treeReads);
+        shadowOf(Looper.getMainLooper()).idleFor(Duration.ofSeconds(9));assertEquals(1,serviceShadow.disableCalls);
+    }
+
     @Test
     public void interruptDisablesAccessibilityAndCancelsPendingWork() {
         AtomicInteger callbacks = enqueueDelayedWork();
