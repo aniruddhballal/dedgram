@@ -129,8 +129,8 @@
     "url": "https://www.instagram.com/reel/Db-8FENzkc_/",
     "grid_views_raw": "9,898",
     "grid_views_issue": null,
-    "status": "partial",
-    "fetched_at": "2026-11-14T09:51:21.155Z",
+    "status": "metrics_unavailable",
+    "fetched_at": "2026-11-14T19:37:34.335Z",
     "date": "2026-08-13",
     "date_precision": "day",
     "caption": "『ONE PIECE』 エルバフ編 最新情報を発表&最 新PV公開 オープニング主題歌&エンディング主題歌、さら にエルバフ編の重要キャラクター「ロキ」のキャストが決 定しました!! ◆オープニング主題歌",
@@ -141,15 +141,15 @@
       "value": 5,
       "raw": "5",
       "approximate": false,
-      "source": "dom_action_control",
-      "label": "Comment"
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:37:34.335Z"
     },
     "views": {
-      "value": 9898,
-      "raw": "9,898",
+      "value": 9911,
+      "raw": "9911",
       "approximate": false,
-      "source": "profile_grid",
-      "observed_at": "2026-10-28T09:42:48.126Z"
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:37:34.335Z"
     },
     "thumbnail_url": "https://instagram.fblr24-1.fna.fbcdn.net/v/t51.82787-15/772955235_17902348935511690_7189665635391968635_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=-vTl0CfnUl8Q7kNvwEJPq7Z&_nc_oc=AdoFvUoS9VlhVe17sIvsZamfwr7RrOpmmPYBPWUWr4sg-z66P5Dw-L8JwRpbnysTEu81hkmi2PIGsu0BK58I2yCu&_nc_zt=23&_nc_ht=instagram.fblr24-1.fna&_nc_gid=37J-mfzKoSYYUdraVi05QQ&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQQKhS6-r4EEo9yous9jIe80PHEE2nIXz_hkuB_OSXEq7w&oe=6AFDEA2C",
     "media_url": null,
@@ -161,60 +161,92 @@
     },
     "raw": {
       "description": "「『ONE PIECE』 エルバフ編 最新情報を発表&最 新PV公開 オープニング主題歌&エンディング主題歌、さら にエルバフ編の重要キャラクター「ロキ」のキャストが決 定しました!! ◆オープニング主題歌」 - 2026年8月13日、pixa.300k",
-      "article_text": "pixa.300k\nFollow\n『ONE PIECE』 エルバフ編 最新情報を発表&最 新PV公開 オープニング主題歌&エンディング主題歌、さら にエルバフ編の重要キャラクター「ロキ」のキャストが決 定しました!! ◆オープニング主題歌\nSee translation\nLikes\n5\n3\nchiragkohliii\nFollow\nFrankfurt, Germany\nAlone but not lonely\n.\n.\n.\n📸: @cineseele\n57.9K\n173\n5,265\n7,248",
+      "article_text": "Android reel capture by pixa.300k\n『ONE PIECE』 エルバフ編 最新情報を発表&最 新PV公開 オープニング主題歌&エンディング主題歌、さら にエルバフ編の重要キャラクター「ロキ」のキャストが決 定しました!! ◆オープニング主題歌\n13 August",
       "aria_text": "pixa.300k reels\npixa.300k reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nchiragkohliii reels\nchiragkohliii reels\nLocation\nLocation\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
       "json_ld": {},
       "engagement": {
-        "scope": "reel_action_controls",
         "availability": {
           "likes": {
-            "state": "not_captured",
-            "evidence": "Control located but no reliable numeric value parsed."
-          },
-          "comments": {
-            "state": "measured",
-            "evidence": "Comment"
-          },
-          "reshares": {
-            "state": "measured",
-            "evidence": "Repost"
-          },
-          "shares": {
-            "state": "not_captured",
-            "evidence": "Control located but no reliable numeric value parsed."
+            "state": "explicitly_hidden",
+            "evidence": "Instagram Android Likes and plays explicitly indicated owner-only likes",
+            "source": "instagram_android_ui"
           }
-        },
-        "likes_visibility": "not_shown",
-        "comments": {
-          "raw": "5",
-          "source": "dom_action_control",
-          "label": "Comment"
-        },
-        "reshares": {
-          "raw": "3",
-          "source": "dom_action_control",
-          "label": "Repost"
         }
       },
       "capture_checks": {
         "access_clear": true,
         "stable": true,
-        "read_passes": 2,
-        "access_attempts": [],
-        "metric_panels": [
-          {
-            "field": "likes",
-            "stable": false,
-            "access_clear": true,
-            "evidence": null,
-            "repeated_evidence": "pixa.300k can see the total number of people who liked this post.",
-            "panel_changed": true
+        "source": "queue_deep_link_and_account_check",
+        "caption_expanded": true
+      },
+      "android_capture": {
+        "shortcode": "Db-8FENzkc_",
+        "url": "https://www.instagram.com/reel/Db-8FENzkc_/",
+        "identity_source": "queue_deep_link_and_account_check",
+        "retained_observations": null,
+        "metric_availability": {
+          "shares": {
+            "status": "not_exposed",
+            "source": "verified_reel_controls",
+            "samples": 2,
+            "details_capture_verified": true,
+            "first_observed_at": 1794685054355,
+            "confirmed_at": 1794685056539,
+            "control_evidence": "visible_share_control_without_count_before_save",
+            "scope": "Observed Instagram Android UI; not a claim that the metric can never be exposed elsewhere"
           }
-        ]
+        },
+        "account": "pixa.300k",
+        "captured_at": "1794685054335",
+        "likes": {
+          "value": null,
+          "error": null
+        },
+        "comments": {
+          "value": 5,
+          "error": null
+        },
+        "views_or_plays": {
+          "value": 9911,
+          "error": null
+        },
+        "shares": {
+          "value": null,
+          "error": null
+        },
+        "reposts": {
+          "value": 3,
+          "error": null
+        },
+        "saves": {
+          "value": 41,
+          "error": null
+        },
+        "date_posted": {
+          "value": "13 August",
+          "error": null
+        },
+        "caption": {
+          "value": "『ONE PIECE』 エルバフ編 最新情報を発表&最 新PV公開 オープニング主題歌&エンディング主題歌、さら にエルバフ編の重要キャラクター「ロキ」のキャストが決 定しました!! ◆オープニング主題歌",
+          "error": null
+        },
+        "publication_observation": {
+          "raw_text": "13 August",
+          "observed_at": "2026-11-14T19:37:35.831Z",
+          "observed_at_epoch_ms": 1794685055831,
+          "timezone": "Asia/Kolkata",
+          "locale": "en-GB",
+          "source": "instagram_android_expanded_caption_footer",
+          "exact_publication_time": null
+        },
+        "caption_expanded": true,
+        "navigation_error": null,
+        "capture_stage": "finished",
+        "likes_availability": "owner_only"
       }
     },
     "last_error": null,
-    "last_attempt_at": "2026-11-14T09:51:21.155Z",
+    "last_attempt_at": "2026-11-14T19:37:34.335Z",
     "likes_visibility": "not_shown",
     "metric_corrections": {
       "likes": {
@@ -245,13 +277,64 @@
       "value": 3,
       "raw": "3",
       "approximate": false,
-      "source": "dom_action_control",
-      "label": "Repost"
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:37:34.335Z"
     },
     "access_review": null,
-    "extraction_review": "Metric extraction is incomplete; absence has not been confirmed. Inspect or retry rather than assume hidden counts.",
+    "extraction_review": null,
     "date_source": "og_description_localized",
-    "shares": null
+    "shares": null,
+    "saves": {
+      "value": 41,
+      "raw": "41",
+      "approximate": false,
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:37:34.335Z"
+    },
+    "analysis_resolution": {
+      "status": "resolved",
+      "source": "explicit_visibility_evidence",
+      "recorded_at": "2026-11-14T19:37:34.335Z",
+      "reason": "Unavailable metrics resolved using explicit visibility evidence or user assessment. Saved observations remain valid; missing values are unknown, not zero.",
+      "unavailable_fields": [
+        "likes"
+      ]
+    },
+    "observed_owner_username": "pixa.300k",
+    "owner_identity_observation": {
+      "source": "queue_deep_link_and_account_check",
+      "observed_at": "2026-11-14T19:37:34.335Z",
+      "historical_account": null,
+      "verification": null
+    },
+    "publication_observation": {
+      "raw_text": "13 August",
+      "observed_at": "2026-11-14T19:37:35.831Z",
+      "observed_at_epoch_ms": 1794685055831,
+      "timezone": "Asia/Kolkata",
+      "locale": "en-GB",
+      "source": "instagram_android_expanded_caption_footer",
+      "exact_publication_time": null
+    },
+    "metric_availability": {
+      "shares": {
+        "status": "not_exposed",
+        "source": "verified_reel_controls",
+        "samples": 2,
+        "details_capture_verified": true,
+        "first_observed_at": 1794685054355,
+        "confirmed_at": 1794685056539,
+        "control_evidence": "visible_share_control_without_count_before_save",
+        "scope": "Observed Instagram Android UI; not a claim that the metric can never be exposed elsewhere"
+      }
+    },
+    "android_import": {
+      "imported_at": "2026-11-14T19:45:51.511Z",
+      "captured_at": "2026-11-14T19:37:34.335Z",
+      "phone_status": "collected",
+      "source": "Documents/dedgram/reels.json",
+      "capture_method": "android_queue"
+    }
   },
   {
     "kind": "reel",
@@ -259,8 +342,8 @@
     "url": "https://www.instagram.com/reel/Db-78V8zEPk/",
     "grid_views_raw": "160K",
     "grid_views_issue": null,
-    "status": "partial",
-    "fetched_at": "2026-11-14T09:51:28.215Z",
+    "status": "metrics_unavailable",
+    "fetched_at": "2026-11-14T19:37:44.943Z",
     "date": "2026-08-13",
     "date_precision": "day",
     "caption": "『ONE PIECE』 エルバフ編 最新情報を発表&最 新PV公開 オープニング主題歌&エンディング主題歌、さら にエルバフ編の重要キャラクター「ロキ」のキャストが決 定しました!! ◆オープニング主題歌",
@@ -271,15 +354,15 @@
       "value": 85,
       "raw": "85",
       "approximate": false,
-      "source": "dom_action_control",
-      "label": "Comment"
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:37:44.943Z"
     },
     "views": {
-      "value": 160000,
-      "raw": "160K",
-      "approximate": true,
-      "source": "profile_grid",
-      "observed_at": "2026-10-28T09:42:48.126Z"
+      "value": 160075,
+      "raw": "160075",
+      "approximate": false,
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:37:44.943Z"
     },
     "thumbnail_url": "https://instagram.fblr1-3.fna.fbcdn.net/v/t51.82787-15/774281563_17902348629511690_8412360914885815373_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=wGN2MOPoWD8Q7kNvwFqZ1l7&_nc_oc=AdpzInXI8qQGUec0VPztRZKCoTxpvO4cJDrjI_yWt3qqmJUj2Ek-zPLYUiHQni-3ClpHW7gw5B3fnfKVUPkhOvix&_nc_zt=23&_nc_ht=instagram.fblr1-3.fna&_nc_gid=JDqTM5xFndtecsJPhuY3jw&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQTRmlE6T0reXmW825aNS7COr7mT4NksUW_38-XSjt-vwA&oe=6AFDEC87",
     "media_url": null,
@@ -291,60 +374,92 @@
     },
     "raw": {
       "description": "pixa.300k on August 13, 2026: \"『ONE PIECE』 エルバフ編 最新情報を発表&最 新PV公開 オープニング主題歌&エンディング主題歌、さら にエルバフ編の重要キャラクター「ロキ」のキャストが決 定しました!! ◆オープニング主題歌\". ",
-      "article_text": "pixa.300k\nFollow\n『ONE PIECE』 エルバフ編 最新情報を発表&最 新PV公開 オープニング主題歌&エンディング主題歌、さら にエルバフ編の重要キャラクター「ロキ」のキャストが決 定しました!! ◆オープニング主題歌\nSee translation\nLikes\n85\n237\nblr.decoded\nFollow\nSilk Board floods because it sits at the bottom of a bowl. 🥣\n\nBangalore Decoded.\n\n⛰️ A valley floor\nSilk Board junction sits on a valley floor. Deccan Herald reported in 2017 that the valley narrows right at the junction, from the Adugodi side and the Madiwala-BTM Layout side, and that the junction's flooding is blamed on this squeeze.\n\n🌧️ Four directions\nIn May 2025, Deccan Herald called Central Silk Board junction a \"chronic flood-prone spot where water from four directions converges\".\n\n🌊 The lake next door\nMadiwala lake's overflow naturally runs east to Agara lake, then on to Bellandur and Varthur.\n\n🛣️ Then we built in it\nThe Outer Ring Road stretch near Madiwala lake is built on that valley. Then came the double-decker flyover and a metro station.\n\n📅 May 2025\nAfter heavy rain on 18 and 19 May 2025, one side of the road under the double-decker flyover was unusable, and rainwater reached the escalators of the Silk Board metro station, which had not opened yet.\n\n🚇 The pillar\nTransport Minister Ramalinga Reddy said Namma Metro blocked drainage on the Madiwala side: \"They built a pillar blocking the natural flow of water.\"\n\n🤯 The part most people don't know\nMaheshwar Rao, then BBMP chief commissioner and also managing director of Namma Metro (BMRCL), said the Silk Board area \"forms a bowl-like depression, causing water to flow backward into the station during heavy rains\" (NewsKarnataka). To The Times of India he said the area forms a \"saucer\" near the station, and water pushes back into it when the stormwater drain is full.\n\n💬 Which way do you cross Silk Board? Comment your route.\n\n📤 Send this to someone who crosses Silk Board every day.\n\nFollow @blr.decoded: one Bangalore story, every day.\n\nSources: Deccan Herald (Rasheed Kappan, 2017; May 2025), The Times of India (May 2025), NewsKarnataka (May 2025), CDD Society (Waterbody Rejuvenation compendium, 2019)\nMap data © OpenStreetMap contributors\n\n#bangalore #bengaluru #silkboard #bangalorerains #blrdecoded #nammabengaluru\n4,871\n14\n33\n1,420",
+      "article_text": "Android reel capture by pixa.300k\n『ONE PIECE』 エルバフ編 最新情報を発表&最 新PV公開 オープニング主題歌&エンディング主題歌、さら にエルバフ編の重要キャラクター「ロキ」のキャストが決 定しました!! ◆オープニング主題歌\n13 August",
       "aria_text": "pixa.300k reels\npixa.300k reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nblr.decoded reels\nblr.decoded reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
       "json_ld": {},
       "engagement": {
-        "scope": "reel_action_controls",
         "availability": {
           "likes": {
-            "state": "not_captured",
-            "evidence": "Control located but no reliable numeric value parsed."
-          },
-          "comments": {
-            "state": "measured",
-            "evidence": "Comment"
-          },
-          "reshares": {
-            "state": "measured",
-            "evidence": "Repost"
-          },
-          "shares": {
-            "state": "not_captured",
-            "evidence": "Control located but no reliable numeric value parsed."
+            "state": "explicitly_hidden",
+            "evidence": "Instagram Android Likes and plays explicitly indicated owner-only likes",
+            "source": "instagram_android_ui"
           }
-        },
-        "likes_visibility": "not_shown",
-        "comments": {
-          "raw": "85",
-          "source": "dom_action_control",
-          "label": "Comment"
-        },
-        "reshares": {
-          "raw": "237",
-          "source": "dom_action_control",
-          "label": "Repost"
         }
       },
       "capture_checks": {
         "access_clear": true,
         "stable": true,
-        "read_passes": 2,
-        "access_attempts": [],
-        "metric_panels": [
-          {
-            "field": "likes",
-            "stable": false,
-            "access_clear": true,
-            "evidence": null,
-            "repeated_evidence": "pixa.300k can see the total number of people who liked this post.",
-            "panel_changed": true
+        "source": "queue_deep_link_and_account_check",
+        "caption_expanded": true
+      },
+      "android_capture": {
+        "shortcode": "Db-78V8zEPk",
+        "url": "https://www.instagram.com/reel/Db-78V8zEPk/",
+        "identity_source": "queue_deep_link_and_account_check",
+        "retained_observations": null,
+        "metric_availability": {
+          "shares": {
+            "status": "not_exposed",
+            "source": "verified_reel_controls",
+            "samples": 2,
+            "details_capture_verified": true,
+            "first_observed_at": 1794685064969,
+            "confirmed_at": 1794685066842,
+            "control_evidence": "visible_share_control_without_count_before_save",
+            "scope": "Observed Instagram Android UI; not a claim that the metric can never be exposed elsewhere"
           }
-        ]
+        },
+        "account": "pixa.300k",
+        "captured_at": "1794685064943",
+        "likes": {
+          "value": null,
+          "error": null
+        },
+        "comments": {
+          "value": 85,
+          "error": null
+        },
+        "views_or_plays": {
+          "value": 160075,
+          "error": null
+        },
+        "shares": {
+          "value": null,
+          "error": null
+        },
+        "reposts": {
+          "value": 237,
+          "error": null
+        },
+        "saves": {
+          "value": 60,
+          "error": null
+        },
+        "date_posted": {
+          "value": "13 August",
+          "error": null
+        },
+        "caption": {
+          "value": "『ONE PIECE』 エルバフ編 最新情報を発表&最 新PV公開 オープニング主題歌&エンディング主題歌、さら にエルバフ編の重要キャラクター「ロキ」のキャストが決 定しました!! ◆オープニング主題歌",
+          "error": null
+        },
+        "publication_observation": {
+          "raw_text": "13 August",
+          "observed_at": "2026-11-14T19:37:46.170Z",
+          "observed_at_epoch_ms": 1794685066171,
+          "timezone": "Asia/Kolkata",
+          "locale": "en-GB",
+          "source": "instagram_android_expanded_caption_footer",
+          "exact_publication_time": null
+        },
+        "caption_expanded": true,
+        "navigation_error": null,
+        "capture_stage": "finished",
+        "likes_availability": "owner_only"
       }
     },
     "last_error": null,
-    "last_attempt_at": "2026-11-14T09:51:28.216Z",
+    "last_attempt_at": "2026-11-14T19:37:44.943Z",
     "likes_visibility": "not_shown",
     "metric_corrections": {
       "likes": {
@@ -360,16 +475,67 @@
       }
     },
     "access_review": null,
-    "extraction_review": "Metric extraction is incomplete; absence has not been confirmed. Inspect or retry rather than assume hidden counts.",
+    "extraction_review": null,
     "date_source": "og_description",
     "reshares": {
       "value": 237,
       "raw": "237",
       "approximate": false,
-      "source": "dom_action_control",
-      "label": "Repost"
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:37:44.943Z"
     },
-    "shares": null
+    "shares": null,
+    "saves": {
+      "value": 60,
+      "raw": "60",
+      "approximate": false,
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:37:44.943Z"
+    },
+    "analysis_resolution": {
+      "status": "resolved",
+      "source": "explicit_visibility_evidence",
+      "recorded_at": "2026-11-14T19:37:44.943Z",
+      "reason": "Unavailable metrics resolved using explicit visibility evidence or user assessment. Saved observations remain valid; missing values are unknown, not zero.",
+      "unavailable_fields": [
+        "likes"
+      ]
+    },
+    "observed_owner_username": "pixa.300k",
+    "owner_identity_observation": {
+      "source": "queue_deep_link_and_account_check",
+      "observed_at": "2026-11-14T19:37:44.943Z",
+      "historical_account": null,
+      "verification": null
+    },
+    "publication_observation": {
+      "raw_text": "13 August",
+      "observed_at": "2026-11-14T19:37:46.170Z",
+      "observed_at_epoch_ms": 1794685066171,
+      "timezone": "Asia/Kolkata",
+      "locale": "en-GB",
+      "source": "instagram_android_expanded_caption_footer",
+      "exact_publication_time": null
+    },
+    "metric_availability": {
+      "shares": {
+        "status": "not_exposed",
+        "source": "verified_reel_controls",
+        "samples": 2,
+        "details_capture_verified": true,
+        "first_observed_at": 1794685064969,
+        "confirmed_at": 1794685066842,
+        "control_evidence": "visible_share_control_without_count_before_save",
+        "scope": "Observed Instagram Android UI; not a claim that the metric can never be exposed elsewhere"
+      }
+    },
+    "android_import": {
+      "imported_at": "2026-11-14T19:45:51.511Z",
+      "captured_at": "2026-11-14T19:37:44.943Z",
+      "phone_status": "collected",
+      "source": "Documents/dedgram/reels.json",
+      "capture_method": "android_queue"
+    }
   },
   {
     "kind": "reel",
@@ -377,8 +543,8 @@
     "url": "https://www.instagram.com/reel/Db-71q0zV9T/",
     "grid_views_raw": "60.9K",
     "grid_views_issue": null,
-    "status": "partial",
-    "fetched_at": "2026-11-14T09:51:36.316Z",
+    "status": "metrics_unavailable",
+    "fetched_at": "2026-11-14T19:37:54.802Z",
     "date": "2026-08-13",
     "date_precision": "day",
     "caption": "『ONE PIECE』 エルバフ編 最新情報を発表&最 新PV公開 オープニング主題歌&エンディング主題歌、さら にエルバフ編の重要キャラクター「ロキ」のキャストが決 定しました!! ◆オープニング主題歌",
@@ -389,15 +555,15 @@
       "value": 5,
       "raw": "5",
       "approximate": false,
-      "source": "dom_action_control",
-      "label": "Comment"
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:37:54.802Z"
     },
     "views": {
-      "value": 60900,
-      "raw": "60.9K",
-      "approximate": true,
-      "source": "profile_grid",
-      "observed_at": "2026-10-28T09:42:48.126Z"
+      "value": 60983,
+      "raw": "60983",
+      "approximate": false,
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:37:54.802Z"
     },
     "thumbnail_url": "https://instagram.fblr24-4.fna.fbcdn.net/v/t51.82787-15/774280968_17902348278511690_138640147511582339_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=5yS4ADDrcV8Q7kNvwGeQLTr&_nc_oc=AdralX67UhG36piwCtEB_ojhAtB7jn1n8NFaRxATM6hbgxc4DeULTAeb2NAjvaz2SXcCDxaam-99j1FiwjfRCpr5&_nc_zt=23&_nc_ht=instagram.fblr24-4.fna&_nc_gid=ZoljdbZSapaL_gs6LZye2g&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQRY9mBux69iJZdTj_nBN5hVzZoL1IM92tY4JX5gpHhNug&oe=6AFE16F4",
     "media_url": null,
@@ -409,60 +575,92 @@
     },
     "raw": {
       "description": "「『ONE PIECE』 エルバフ編 最新情報を発表&最 新PV公開 オープニング主題歌&エンディング主題歌、さら にエルバフ編の重要キャラクター「ロキ」のキャストが決 定しました!! ◆オープニング主題歌」 - 2026年8月13日、pixa.300k",
-      "article_text": "pixa.300k\nFollow\n『ONE PIECE』 エルバフ編 最新情報を発表&最 新PV公開 オープニング主題歌&エンディング主題歌、さら にエルバフ編の重要キャラクター「ロキ」のキャストが決 定しました!! ◆オープニング主題歌\nSee translation\nLikes\n5\n1\nalbertobarsiguitar\nFollow\nSynth riffs + guitar = 👨🏻‍🍳🤌\n24.7K\n114\n726\n3,790",
+      "article_text": "Android reel capture by pixa.300k\n『ONE PIECE』 エルバフ編 最新情報を発表&最 新PV公開 オープニング主題歌&エンディング主題歌、さら にエルバフ編の重要キャラクター「ロキ」のキャストが決 定しました!! ◆オープニング主題歌\n13 August",
       "aria_text": "pixa.300k reels\npixa.300k reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nalbertobarsiguitar reels\nalbertobarsiguitar reels\nVerified\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
       "json_ld": {},
       "engagement": {
-        "scope": "reel_action_controls",
         "availability": {
           "likes": {
-            "state": "not_captured",
-            "evidence": "Control located but no reliable numeric value parsed."
-          },
-          "comments": {
-            "state": "measured",
-            "evidence": "Comment"
-          },
-          "reshares": {
-            "state": "measured",
-            "evidence": "Repost"
-          },
-          "shares": {
-            "state": "not_captured",
-            "evidence": "Control located but no reliable numeric value parsed."
+            "state": "explicitly_hidden",
+            "evidence": "Instagram Android Likes and plays explicitly indicated owner-only likes",
+            "source": "instagram_android_ui"
           }
-        },
-        "likes_visibility": "not_shown",
-        "comments": {
-          "raw": "5",
-          "source": "dom_action_control",
-          "label": "Comment"
-        },
-        "reshares": {
-          "raw": "1",
-          "source": "dom_action_control",
-          "label": "Repost"
         }
       },
       "capture_checks": {
         "access_clear": true,
         "stable": true,
-        "read_passes": 2,
-        "access_attempts": [],
-        "metric_panels": [
-          {
-            "field": "likes",
-            "stable": false,
-            "access_clear": true,
-            "evidence": null,
-            "repeated_evidence": "pixa.300k can see the total number of people who liked this post.",
-            "panel_changed": true
+        "source": "queue_deep_link_and_account_check",
+        "caption_expanded": true
+      },
+      "android_capture": {
+        "shortcode": "Db-71q0zV9T",
+        "url": "https://www.instagram.com/reel/Db-71q0zV9T/",
+        "identity_source": "queue_deep_link_and_account_check",
+        "retained_observations": null,
+        "metric_availability": {
+          "shares": {
+            "status": "not_exposed",
+            "source": "verified_reel_controls",
+            "samples": 2,
+            "details_capture_verified": true,
+            "first_observed_at": 1794685074848,
+            "confirmed_at": 1794685076760,
+            "control_evidence": "visible_share_control_without_count_before_save",
+            "scope": "Observed Instagram Android UI; not a claim that the metric can never be exposed elsewhere"
           }
-        ]
+        },
+        "account": "pixa.300k",
+        "captured_at": "1794685074802",
+        "likes": {
+          "value": null,
+          "error": null
+        },
+        "comments": {
+          "value": 5,
+          "error": null
+        },
+        "views_or_plays": {
+          "value": 60983,
+          "error": null
+        },
+        "shares": {
+          "value": null,
+          "error": null
+        },
+        "reposts": {
+          "value": 1,
+          "error": null
+        },
+        "saves": {
+          "value": 3,
+          "error": null
+        },
+        "date_posted": {
+          "value": "13 August",
+          "error": null
+        },
+        "caption": {
+          "value": "『ONE PIECE』 エルバフ編 最新情報を発表&最 新PV公開 オープニング主題歌&エンディング主題歌、さら にエルバフ編の重要キャラクター「ロキ」のキャストが決 定しました!! ◆オープニング主題歌",
+          "error": null
+        },
+        "publication_observation": {
+          "raw_text": "13 August",
+          "observed_at": "2026-11-14T19:37:56.063Z",
+          "observed_at_epoch_ms": 1794685076063,
+          "timezone": "Asia/Kolkata",
+          "locale": "en-GB",
+          "source": "instagram_android_expanded_caption_footer",
+          "exact_publication_time": null
+        },
+        "caption_expanded": true,
+        "navigation_error": null,
+        "capture_stage": "finished",
+        "likes_availability": "owner_only"
       }
     },
     "last_error": null,
-    "last_attempt_at": "2026-11-14T09:51:36.316Z",
+    "last_attempt_at": "2026-11-14T19:37:54.802Z",
     "likes_visibility": "not_shown",
     "metric_corrections": {
       "likes": {
@@ -478,16 +676,67 @@
       }
     },
     "access_review": null,
-    "extraction_review": "Metric extraction is incomplete; absence has not been confirmed. Inspect or retry rather than assume hidden counts.",
+    "extraction_review": null,
     "date_source": "og_description_localized",
     "reshares": {
       "value": 1,
       "raw": "1",
       "approximate": false,
-      "source": "dom_action_control",
-      "label": "Repost"
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:37:54.802Z"
     },
-    "shares": null
+    "shares": null,
+    "saves": {
+      "value": 3,
+      "raw": "3",
+      "approximate": false,
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:37:54.802Z"
+    },
+    "analysis_resolution": {
+      "status": "resolved",
+      "source": "explicit_visibility_evidence",
+      "recorded_at": "2026-11-14T19:37:54.802Z",
+      "reason": "Unavailable metrics resolved using explicit visibility evidence or user assessment. Saved observations remain valid; missing values are unknown, not zero.",
+      "unavailable_fields": [
+        "likes"
+      ]
+    },
+    "observed_owner_username": "pixa.300k",
+    "owner_identity_observation": {
+      "source": "queue_deep_link_and_account_check",
+      "observed_at": "2026-11-14T19:37:54.802Z",
+      "historical_account": null,
+      "verification": null
+    },
+    "publication_observation": {
+      "raw_text": "13 August",
+      "observed_at": "2026-11-14T19:37:56.063Z",
+      "observed_at_epoch_ms": 1794685076063,
+      "timezone": "Asia/Kolkata",
+      "locale": "en-GB",
+      "source": "instagram_android_expanded_caption_footer",
+      "exact_publication_time": null
+    },
+    "metric_availability": {
+      "shares": {
+        "status": "not_exposed",
+        "source": "verified_reel_controls",
+        "samples": 2,
+        "details_capture_verified": true,
+        "first_observed_at": 1794685074848,
+        "confirmed_at": 1794685076760,
+        "control_evidence": "visible_share_control_without_count_before_save",
+        "scope": "Observed Instagram Android UI; not a claim that the metric can never be exposed elsewhere"
+      }
+    },
+    "android_import": {
+      "imported_at": "2026-11-14T19:45:51.511Z",
+      "captured_at": "2026-11-14T19:37:54.802Z",
+      "phone_status": "collected",
+      "source": "Documents/dedgram/reels.json",
+      "capture_method": "android_queue"
+    }
   },
   {
     "kind": "reel",
@@ -999,8 +1248,8 @@
     "url": "https://www.instagram.com/reel/Db-LNQqTYu1/",
     "grid_views_raw": "11.7K",
     "grid_views_issue": null,
-    "status": "partial",
-    "fetched_at": "2026-11-14T09:51:45.489Z",
+    "status": "metrics_unavailable",
+    "fetched_at": "2026-11-14T19:38:05.272Z",
     "date": "2026-08-13",
     "date_precision": "day",
     "caption": "『ONE PIECE』 エルバフ編 最新情報を発表&最新PV公 開 オープニング主題歌&エンディング主題歌、さらに エルバフ編の重要キャラクター 「ロキ」のキャストが 決定しました!! ◆オープニング主題歌",
@@ -1011,15 +1260,15 @@
       "value": 0,
       "raw": "0",
       "approximate": false,
-      "source": "dom_action_control",
-      "label": "No comments yet."
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:38:05.272Z"
     },
     "views": {
-      "value": 11700,
-      "raw": "11.7K",
-      "approximate": true,
-      "source": "profile_grid",
-      "observed_at": "2026-10-28T09:42:48.126Z"
+      "value": 11718,
+      "raw": "11718",
+      "approximate": false,
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:38:05.272Z"
     },
     "thumbnail_url": "https://instagram.fblr24-4.fna.fbcdn.net/v/t51.82787-15/774267534_17902295190511690_5570981260600603673_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=jQ78IUm1vXgQ7kNvwGOJJmZ&_nc_oc=AdoDQhuje1sGtNHcmIQx17HI6zsoYNs2HM6G78xZcYT4tq6D61q3kKpZkPRG5a-tnhIuCUhQGRtgVD9Z4cuTHyMA&_nc_zt=23&_nc_ht=instagram.fblr24-4.fna&_nc_gid=DerCkBHvcvq7ykJU42xsPQ&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQRdAshKE1yI5xfsfvdYtabeiHFKLxFVnrwkIn3LWJCWjw&oe=6AFE1CE6",
     "media_url": null,
@@ -1031,70 +1280,92 @@
     },
     "raw": {
       "description": "「『ONE PIECE』 エルバフ編 最新情報を発表&最新PV公 開 オープニング主題歌&エンディング主題歌、さらに エルバフ編の重要キャラクター 「ロキ」のキャストが 決定しました!! ◆オープニング主題歌」 - 2026年8月13日、pixa.300k",
-      "article_text": "pixa.300k\nFollow\n『ONE PIECE』 エルバフ編 最新情報を発表&最新PV公 開 オープニング主題歌&エンディング主題歌、さらに エルバフ編の重要キャラクター 「ロキ」のキャストが 決定しました!! ◆オープニング主題歌\nSee translation\nLikes\n1\nareyouaryan\nFollow\nTalwiinder, Kidjaywest, NDS · Mangda Wapis Kyun\nTalwiinder, Kidjaywest, NDS · Mangda Wapis Kyun\n#hashtagkaunpadhtahai\n#areyouaryan\n22.2K\n69\n404\n1,692",
+      "article_text": "Android reel capture by pixa.300k\n『ONE PIECE』 エルバフ編 最新情報を発表&最新PV公 開 オープニング主題歌&エンディング主題歌、さらに エルバフ編の重要キャラクター 「ロキ」のキャストが 決定しました!! ◆オープニング主題歌\n13 August",
       "aria_text": "pixa.300k reels\npixa.300k reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nareyouaryan reels\nareyouaryan reels\nVerified\nAudio image\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
       "json_ld": {},
       "engagement": {
-        "scope": "reel_action_controls",
         "availability": {
           "likes": {
-            "state": "not_captured",
-            "evidence": "Control located but no reliable numeric value parsed."
-          },
-          "comments": {
-            "state": "measured",
-            "evidence": "No comments yet.",
-            "raw": "0",
-            "source": "metric_dialog"
-          },
-          "reshares": {
-            "state": "measured",
-            "evidence": "Repost"
-          },
-          "shares": {
-            "state": "not_captured",
-            "evidence": "Control located but no reliable numeric value parsed."
+            "state": "explicitly_hidden",
+            "evidence": "Instagram Android Likes and plays explicitly indicated owner-only likes",
+            "source": "instagram_android_ui"
           }
-        },
-        "likes_visibility": "not_shown",
-        "reshares": {
-          "raw": "1",
-          "source": "dom_action_control",
-          "label": "Repost"
-        },
-        "comments": {
-          "raw": "0",
-          "source": "dom_comments_panel",
-          "label": "No comments yet."
         }
       },
       "capture_checks": {
         "access_clear": true,
         "stable": true,
-        "read_passes": 2,
-        "access_attempts": [],
-        "metric_panels": [
-          {
-            "field": "likes",
-            "stable": false,
-            "access_clear": true,
-            "evidence": null,
-            "repeated_evidence": "pixa.300k can see the total number of people who liked this post.",
-            "panel_changed": true
-          },
-          {
-            "field": "comments",
-            "stable": true,
-            "access_clear": true,
-            "evidence": "No comments yet.",
-            "repeated_evidence": "No comments yet.",
-            "panel_changed": false
+        "source": "queue_deep_link_and_account_check",
+        "caption_expanded": true
+      },
+      "android_capture": {
+        "shortcode": "Db-LNQqTYu1",
+        "url": "https://www.instagram.com/reel/Db-LNQqTYu1/",
+        "identity_source": "queue_deep_link_and_account_check",
+        "retained_observations": null,
+        "metric_availability": {
+          "shares": {
+            "status": "not_exposed",
+            "source": "verified_reel_controls",
+            "samples": 2,
+            "details_capture_verified": true,
+            "first_observed_at": 1794685085306,
+            "confirmed_at": 1794685087203,
+            "control_evidence": "visible_share_control_without_count_before_save",
+            "scope": "Observed Instagram Android UI; not a claim that the metric can never be exposed elsewhere"
           }
-        ]
+        },
+        "account": "pixa.300k",
+        "captured_at": "1794685085272",
+        "likes": {
+          "value": null,
+          "error": null
+        },
+        "comments": {
+          "value": 0,
+          "error": null
+        },
+        "views_or_plays": {
+          "value": 11718,
+          "error": null
+        },
+        "shares": {
+          "value": null,
+          "error": null
+        },
+        "reposts": {
+          "value": 1,
+          "error": null
+        },
+        "saves": {
+          "value": 19,
+          "error": null
+        },
+        "date_posted": {
+          "value": "13 August",
+          "error": null
+        },
+        "caption": {
+          "value": "『ONE PIECE』 エルバフ編 最新情報を発表&最新PV公 開 オープニング主題歌&エンディング主題歌、さらに エルバフ編の重要キャラクター 「ロキ」のキャストが 決定しました!! ◆オープニング主題歌",
+          "error": null
+        },
+        "publication_observation": {
+          "raw_text": "13 August",
+          "observed_at": "2026-11-14T19:38:06.592Z",
+          "observed_at_epoch_ms": 1794685086593,
+          "timezone": "Asia/Kolkata",
+          "locale": "en-GB",
+          "source": "instagram_android_expanded_caption_footer",
+          "exact_publication_time": null
+        },
+        "caption_expanded": true,
+        "navigation_error": null,
+        "capture_stage": "finished",
+        "likes_availability": "owner_only"
       }
     },
     "last_error": null,
-    "last_attempt_at": "2026-11-14T09:51:45.489Z",
+    "last_attempt_at": "2026-11-14T19:38:05.272Z",
     "likes_visibility": "not_shown",
     "metric_corrections": {
       "likes": {
@@ -1110,16 +1381,67 @@
       }
     },
     "access_review": null,
-    "extraction_review": "Metric extraction is incomplete; absence has not been confirmed. Inspect or retry rather than assume hidden counts.",
+    "extraction_review": null,
     "date_source": "og_description_localized",
     "reshares": {
       "value": 1,
       "raw": "1",
       "approximate": false,
-      "source": "dom_action_control",
-      "label": "Repost"
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:38:05.272Z"
     },
-    "shares": null
+    "shares": null,
+    "saves": {
+      "value": 19,
+      "raw": "19",
+      "approximate": false,
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:38:05.272Z"
+    },
+    "analysis_resolution": {
+      "status": "resolved",
+      "source": "explicit_visibility_evidence",
+      "recorded_at": "2026-11-14T19:38:05.272Z",
+      "reason": "Unavailable metrics resolved using explicit visibility evidence or user assessment. Saved observations remain valid; missing values are unknown, not zero.",
+      "unavailable_fields": [
+        "likes"
+      ]
+    },
+    "observed_owner_username": "pixa.300k",
+    "owner_identity_observation": {
+      "source": "queue_deep_link_and_account_check",
+      "observed_at": "2026-11-14T19:38:05.272Z",
+      "historical_account": null,
+      "verification": null
+    },
+    "publication_observation": {
+      "raw_text": "13 August",
+      "observed_at": "2026-11-14T19:38:06.592Z",
+      "observed_at_epoch_ms": 1794685086593,
+      "timezone": "Asia/Kolkata",
+      "locale": "en-GB",
+      "source": "instagram_android_expanded_caption_footer",
+      "exact_publication_time": null
+    },
+    "metric_availability": {
+      "shares": {
+        "status": "not_exposed",
+        "source": "verified_reel_controls",
+        "samples": 2,
+        "details_capture_verified": true,
+        "first_observed_at": 1794685085306,
+        "confirmed_at": 1794685087203,
+        "control_evidence": "visible_share_control_without_count_before_save",
+        "scope": "Observed Instagram Android UI; not a claim that the metric can never be exposed elsewhere"
+      }
+    },
+    "android_import": {
+      "imported_at": "2026-11-14T19:45:51.511Z",
+      "captured_at": "2026-11-14T19:38:05.272Z",
+      "phone_status": "collected",
+      "source": "Documents/dedgram/reels.json",
+      "capture_method": "android_queue"
+    }
   },
   {
     "kind": "reel",
@@ -1127,11 +1449,11 @@
     "url": "https://www.instagram.com/reel/Dbv8sl7zgkE/",
     "grid_views_raw": "9,637",
     "grid_views_issue": null,
-    "status": "partial",
-    "fetched_at": "2026-11-14T09:51:54.365Z",
+    "status": "metrics_unavailable",
+    "fetched_at": "2026-11-14T19:38:15.027Z",
     "date": "2026-08-07",
     "date_precision": "day",
-    "caption": "上坂すみれさん\n\n◆ソマーズ聖:\n\n安元洋貴さん\n\n◆キリンガム聖: 立花慎之介さん\n\nそして神の騎士団団長 シャムロック聖は、以前発表し たとおり、津田健次郎さんが演じます。ルフィ達の新たな冒険が描かれる「エルバフ編」!今後 の放送も、ぜひご注目ください。\n\nTVアニメ『ONE PIECE』\n\nエルバフ編\n\n毎週日曜よる11:15~\n\n全国フジテレビ系列にて放送中\n\n#ONEPIECE #神の騎士団1」 - 2026年8月7日、pixa.300k",
+    "caption": "TVアニメ『ONE PIECE』 神の騎士団\n\nキャスト解禁&最新PVを公開\n\n現在、アニメ「エルバフ編」が放送中!\n\n今後アニメに登場予定の神の騎士団、4人の映像と、 軍子宮、ソマーズ聖、キリンガム聖のキャストを公開!\n\n◆軍子宮:\n\n上坂すみれさん\n\n◆ソマーズ聖:\n\n安元洋貴さん\n\n◆キリンガム聖: 立花慎之介さん\n\nそして神の騎士団団長 シャムロック聖は、以前発表し たとおり、津田健次郎さんが演じます。ルフィ達の新たな冒険が描かれる「エルバフ編」!今後 の放送も、ぜひご注目ください。\n\nTVアニメ『ONE PIECE』\n\nエルバフ編\n\n毎週日曜よる11:15~\n\n全国フジテレビ系列にて放送中\n\n#ONEPIECE #神の騎士団1",
     "hashtags": [
       "#ONEPIECE",
       "#神の騎士団1"
@@ -1142,15 +1464,15 @@
       "value": 1,
       "raw": "1",
       "approximate": false,
-      "source": "dom_action_control",
-      "label": "Comment"
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:38:15.027Z"
     },
     "views": {
-      "value": 9637,
-      "raw": "9,637",
+      "value": 9649,
+      "raw": "9649",
       "approximate": false,
-      "source": "profile_grid",
-      "observed_at": "2026-10-28T09:42:48.126Z"
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:38:15.027Z"
     },
     "thumbnail_url": "https://instagram.fblr1-9.fna.fbcdn.net/v/t51.82787-15/764863290_17901361950511690_7711569425727829583_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=OTE9scgVuZIQ7kNvwFeZNx4&_nc_oc=AdqyX8Fdrm4ysj14v11BuCa1FwInw0yyQmUeYEhAaznKl8i4dtadwBzOpSmtjMaVEztGv4FjDn5yu2LTkugWtz3-&_nc_zt=23&_nc_ht=instagram.fblr1-9.fna&_nc_gid=cOWaFFNYzLw-4w-6S7xDkg&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQTvqYY6EUFBC7TlYn3UEjoeWWMPg5hgz3ewHoLvfkwbSQ&oe=6AFE12FB",
     "media_url": null,
@@ -1162,60 +1484,92 @@
     },
     "raw": {
       "description": "「TVアニメ『ONE PIECE』 神の騎士団\n\nキャスト解禁&最新PVを公開\n\n現在、アニメ「エルバフ編」が放送中!\n\n今後アニメに登場予定の神の騎士団、4人の映像と、 軍子宮、ソマーズ聖、キリンガム聖のキャストを公開!\n\n◆軍子宮:\n\n上坂すみれさん\n\n◆ソマーズ聖:\n\n安元洋貴さん\n\n◆キリンガム聖: 立花慎之介さん\n\nそして神の騎士団団長 シャムロック聖は、以前発表し たとおり、津田健次郎さんが演じます。ルフィ達の新たな冒険が描かれる「エルバフ編」!今後 の放送も、ぜひご注目ください。\n\nTVアニメ『ONE PIECE』\n\nエルバフ編\n\n毎週日曜よる11:15~\n\n全国フジテレビ系列にて放送中\n\n#ONEPIECE #神の騎士団1」 - 2026年8月7日、pixa.300k",
-      "article_text": "pixa.300k\nFollow\nTVアニメ『ONE PIECE』 神の騎士団\n\nキャスト解禁&最新PVを公開\n\n現在、アニメ「エルバフ編」が放送中!\n\n今後アニメに登場予定の神の騎士団、4人の映像と、 軍子宮、ソマーズ聖、キリンガム聖のキャストを公開!\n\n◆軍子宮:\n\n上坂すみれさん\n\n◆ソマーズ聖:\n\n安元洋貴さん\n\n◆キリンガム聖: 立花慎之介さん\n\nそして神の騎士団団長 シャムロック聖は、以前発表し たとおり、津田健次郎さんが演じます。ルフィ達の新たな冒険が描かれる「エルバフ編」!今後 の放送も、ぜひご注目ください。\n\nTVアニメ『ONE PIECE』\n\nエルバフ編\n\n毎週日曜よる11:15~\n\n全国フジテレビ系列にて放送中\n\n#ONEPIECE #神の騎士団1\nSee translation\nLikes\n1\n3\nalbertobarsiguitar\nFollow\nSynth riffs + guitar = 👨🏻‍🍳🤌\n24.7K\n114\n726\n3,790",
+      "article_text": "Android reel capture by pixa.300k\nTVアニメ『ONE PIECE』 神の騎士団\n\nキャスト解禁&最新PVを公開\n\n現在、アニメ「エルバフ編」が放送中!\n\n今後アニメに登場予定の神の騎士団、4人の映像と、 軍子宮、ソマーズ聖、キリンガム聖のキャストを公開!\n\n◆軍子宮:\n\n上坂すみれさん\n\n◆ソマーズ聖:\n\n安元洋貴さん\n\n◆キリンガム聖: 立花慎之介さん\n\nそして神の騎士団団長 シャムロック聖は、以前発表し たとおり、津田健次郎さんが演じます。ルフィ達の新たな冒険が描かれる「エルバフ編」!今後 の放送も、ぜひご注目ください。\n\nTVアニメ『ONE PIECE』\n\nエルバフ編\n\n毎週日曜よる11:15~\n\n全国フジテレビ系列にて放送中\n\n#ONEPIECE #神の騎士団1\n8 August",
       "aria_text": "pixa.300k reels\npixa.300k reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nalbertobarsiguitar reels\nalbertobarsiguitar reels\nVerified\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
       "json_ld": {},
       "engagement": {
-        "scope": "reel_action_controls",
         "availability": {
           "likes": {
-            "state": "not_captured",
-            "evidence": "Control located but no reliable numeric value parsed."
-          },
-          "comments": {
-            "state": "measured",
-            "evidence": "Comment"
-          },
-          "reshares": {
-            "state": "measured",
-            "evidence": "Repost"
-          },
-          "shares": {
-            "state": "not_captured",
-            "evidence": "Control located but no reliable numeric value parsed."
+            "state": "explicitly_hidden",
+            "evidence": "Instagram Android Likes and plays explicitly indicated owner-only likes",
+            "source": "instagram_android_ui"
           }
-        },
-        "likes_visibility": "not_shown",
-        "comments": {
-          "raw": "1",
-          "source": "dom_action_control",
-          "label": "Comment"
-        },
-        "reshares": {
-          "raw": "3",
-          "source": "dom_action_control",
-          "label": "Repost"
         }
       },
       "capture_checks": {
         "access_clear": true,
         "stable": true,
-        "read_passes": 2,
-        "access_attempts": [],
-        "metric_panels": [
-          {
-            "field": "likes",
-            "stable": false,
-            "access_clear": true,
-            "evidence": null,
-            "repeated_evidence": null,
-            "panel_changed": false
+        "source": "queue_deep_link_and_account_check",
+        "caption_expanded": true
+      },
+      "android_capture": {
+        "shortcode": "Dbv8sl7zgkE",
+        "url": "https://www.instagram.com/reel/Dbv8sl7zgkE/",
+        "identity_source": "queue_deep_link_and_account_check",
+        "retained_observations": null,
+        "metric_availability": {
+          "shares": {
+            "status": "not_exposed",
+            "source": "verified_reel_controls",
+            "samples": 2,
+            "details_capture_verified": true,
+            "first_observed_at": 1794685095052,
+            "confirmed_at": 1794685098780,
+            "control_evidence": "visible_share_control_without_count_before_save",
+            "scope": "Observed Instagram Android UI; not a claim that the metric can never be exposed elsewhere"
           }
-        ]
+        },
+        "account": "pixa.300k",
+        "captured_at": "1794685095027",
+        "likes": {
+          "value": null,
+          "error": null
+        },
+        "comments": {
+          "value": 1,
+          "error": null
+        },
+        "views_or_plays": {
+          "value": 9649,
+          "error": null
+        },
+        "shares": {
+          "value": null,
+          "error": null
+        },
+        "reposts": {
+          "value": 3,
+          "error": null
+        },
+        "saves": {
+          "value": 16,
+          "error": null
+        },
+        "date_posted": {
+          "value": "8 August",
+          "error": null
+        },
+        "caption": {
+          "value": "TVアニメ『ONE PIECE』 神の騎士団\n\nキャスト解禁&最新PVを公開\n\n現在、アニメ「エルバフ編」が放送中!\n\n今後アニメに登場予定の神の騎士団、4人の映像と、 軍子宮、ソマーズ聖、キリンガム聖のキャストを公開!\n\n◆軍子宮:\n\n上坂すみれさん\n\n◆ソマーズ聖:\n\n安元洋貴さん\n\n◆キリンガム聖: 立花慎之介さん\n\nそして神の騎士団団長 シャムロック聖は、以前発表し たとおり、津田健次郎さんが演じます。ルフィ達の新たな冒険が描かれる「エルバフ編」!今後 の放送も、ぜひご注目ください。\n\nTVアニメ『ONE PIECE』\n\nエルバフ編\n\n毎週日曜よる11:15~\n\n全国フジテレビ系列にて放送中\n\n#ONEPIECE #神の騎士団1",
+          "error": null
+        },
+        "publication_observation": {
+          "raw_text": "8 August",
+          "observed_at": "2026-11-14T19:38:18.089Z",
+          "observed_at_epoch_ms": 1794685098090,
+          "timezone": "Asia/Kolkata",
+          "locale": "en-GB",
+          "source": "instagram_android_expanded_caption_footer",
+          "exact_publication_time": null
+        },
+        "caption_expanded": true,
+        "navigation_error": null,
+        "capture_stage": "finished",
+        "likes_availability": "owner_only"
       }
     },
     "last_error": null,
-    "last_attempt_at": "2026-11-14T09:51:54.365Z",
+    "last_attempt_at": "2026-11-14T19:38:15.027Z",
     "likes_visibility": "not_shown",
     "metric_corrections": {
       "likes": {
@@ -1231,16 +1585,67 @@
       }
     },
     "access_review": null,
-    "extraction_review": "Metric extraction is incomplete; absence has not been confirmed. Inspect or retry rather than assume hidden counts.",
+    "extraction_review": null,
     "date_source": "og_description_localized",
     "reshares": {
       "value": 3,
       "raw": "3",
       "approximate": false,
-      "source": "dom_action_control",
-      "label": "Repost"
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:38:15.027Z"
     },
-    "shares": null
+    "shares": null,
+    "saves": {
+      "value": 16,
+      "raw": "16",
+      "approximate": false,
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:38:15.027Z"
+    },
+    "analysis_resolution": {
+      "status": "resolved",
+      "source": "explicit_visibility_evidence",
+      "recorded_at": "2026-11-14T19:38:15.027Z",
+      "reason": "Unavailable metrics resolved using explicit visibility evidence or user assessment. Saved observations remain valid; missing values are unknown, not zero.",
+      "unavailable_fields": [
+        "likes"
+      ]
+    },
+    "observed_owner_username": "pixa.300k",
+    "owner_identity_observation": {
+      "source": "queue_deep_link_and_account_check",
+      "observed_at": "2026-11-14T19:38:15.027Z",
+      "historical_account": null,
+      "verification": null
+    },
+    "publication_observation": {
+      "raw_text": "8 August",
+      "observed_at": "2026-11-14T19:38:18.089Z",
+      "observed_at_epoch_ms": 1794685098090,
+      "timezone": "Asia/Kolkata",
+      "locale": "en-GB",
+      "source": "instagram_android_expanded_caption_footer",
+      "exact_publication_time": null
+    },
+    "metric_availability": {
+      "shares": {
+        "status": "not_exposed",
+        "source": "verified_reel_controls",
+        "samples": 2,
+        "details_capture_verified": true,
+        "first_observed_at": 1794685095052,
+        "confirmed_at": 1794685098780,
+        "control_evidence": "visible_share_control_without_count_before_save",
+        "scope": "Observed Instagram Android UI; not a claim that the metric can never be exposed elsewhere"
+      }
+    },
+    "android_import": {
+      "imported_at": "2026-11-14T19:45:51.511Z",
+      "captured_at": "2026-11-14T19:38:15.027Z",
+      "phone_status": "collected",
+      "source": "Documents/dedgram/reels.json",
+      "capture_method": "android_queue"
+    }
   },
   {
     "kind": "reel",
@@ -2118,21 +2523,24 @@
     "url": "https://www.instagram.com/reel/DbqT0cpzvF5/",
     "grid_views_raw": "45.8K",
     "grid_views_issue": null,
-    "status": "partial",
-    "fetched_at": "2026-11-14T09:52:14.240Z",
+    "status": "metrics_unavailable",
+    "fetched_at": "2026-11-14T19:38:27.164Z",
     "date": "2026-08-05",
     "date_precision": "day",
     "caption": "この落ち方よ...\n\nジャンプスピンサーブってやつかな\n\nジャンプスピンサーブ(トップスピン強め)+ほんの少し サイド回転 混ざりって感じなのかな 横から見たら絶対落ちてるんだろうな バレーボールちゃんと勉強しよ...\n\n#宮浦健人選手 #ウルフドッグス名古屋",
-    "hashtags": [],
+    "hashtags": [
+      "#宮浦健人選手",
+      "#ウルフドッグス名古屋"
+    ],
     "mentions": [],
     "likes": null,
     "comments": null,
     "views": {
-      "value": 45800,
-      "raw": "45.8K",
-      "approximate": true,
-      "source": "profile_grid",
-      "observed_at": "2026-10-28T09:42:48.126Z"
+      "value": 45849,
+      "raw": "45849",
+      "approximate": false,
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:38:27.164Z"
     },
     "thumbnail_url": "https://instagram.fblr1-10.fna.fbcdn.net/v/t51.82787-15/764937999_17901186273511690_8244183539798934200_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=6BG-qFuMuiwQ7kNvwGWcyEa&_nc_oc=Adrvo8QgN1tDsg4DMAg90UDgQlEymT7rP-GXeaCtFltlEEli6N-hNqEfQYGSm-EdXC67Af-v1jI8iH5o9_Lt8GBa&_nc_zt=23&_nc_ht=instagram.fblr1-10.fna&_nc_gid=cOZeJQFk_h8GCT5IwFSq1w&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQRaXdQ7Vyyt9iAxhnURI9-HIXrx0sB3UzVc2vR8Pj79fQ&oe=6AFDF93B",
     "media_url": null,
@@ -2146,63 +2554,102 @@
     },
     "raw": {
       "description": "「この落ち方よ...\n\nジャンプスピンサーブってやつかな\n\nジャンプスピンサーブ(トップスピン強め)+ほんの少し サイド回転 混ざりって感じなのかな 横から見たら絶対落ちてるんだろうな バレーボールちゃんと勉強しよ...\n\n#宮浦健人選手 #ウルフドッグス名古屋」 - 2026年8月5日、pixa.300k",
-      "article_text": "pixa.300k\nFollow\nこの落ち方よ...\n\nジャンプスピンサーブってやつかな\n\nジャンプスピンサーブ(トップスピン強め)+ほんの少し サイド回転 混ざりって感じなのかな 横から見たら絶対落ちてるんだろうな バレーボールちゃんと勉強しよ...\n\n#宮浦健人選手 #ウルフドッグス名古屋\nSee translation\nLikes\n4\nonechampionship\nFollow\n2 people\nKeep your head up 🙏 @rodtang_jimungnon @nongogaiyanghadao\n \n#TheInnerCircle38\n🔴 Join The Inner Circle for only USD9.99/month at live.onefc.com.\n🟢 NEW 👉 Log in with LINE! No account? Sign up to watch select past events from 2026 for FREE\n128K\n659\n3,061\n6,087",
+      "article_text": "Android reel capture by pixa.300k\nこの落ち方よ...\n\nジャンプスピンサーブってやつかな\n\nジャンプスピンサーブ(トップスピン強め)+ほんの少し サイド回転 混ざりって感じなのかな 横から見たら絶対落ちてるんだろうな バレーボールちゃんと勉強しよ...\n\n#宮浦健人選手 #ウルフドッグス名古屋\n5 August",
       "aria_text": "pixa.300k reels\npixa.300k reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nonechampionship reels\nonechampionship reels\nVerified\nTagged users\nTagged users\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
       "json_ld": {},
       "engagement": {
-        "scope": "reel_action_controls",
         "availability": {
           "likes": {
-            "state": "not_captured",
-            "evidence": "Control located but no reliable numeric value parsed."
-          },
-          "comments": {
-            "state": "not_captured",
-            "evidence": "Control located but no reliable numeric value parsed."
-          },
-          "reshares": {
-            "state": "measured",
-            "evidence": "Repost"
-          },
-          "shares": {
-            "state": "not_captured",
-            "evidence": "Control located but no reliable numeric value parsed."
+            "state": "explicitly_hidden",
+            "evidence": "Instagram Android Likes and plays explicitly indicated owner-only likes",
+            "source": "instagram_android_ui"
           }
-        },
-        "likes_visibility": "not_shown",
-        "reshares": {
-          "raw": "4",
-          "source": "dom_action_control",
-          "label": "Repost"
         }
       },
       "capture_checks": {
         "access_clear": true,
         "stable": true,
-        "read_passes": 2,
-        "access_attempts": [],
-        "metric_panels": [
-          {
-            "field": "likes",
-            "stable": false,
-            "access_clear": true,
-            "evidence": null,
-            "repeated_evidence": null,
-            "panel_changed": false
+        "source": "queue_deep_link_and_account_check",
+        "caption_expanded": true
+      },
+      "android_capture": {
+        "shortcode": "DbqT0cpzvF5",
+        "url": "https://www.instagram.com/reel/DbqT0cpzvF5/",
+        "identity_source": "queue_deep_link_and_account_check",
+        "retained_observations": null,
+        "metric_availability": {
+          "comments": {
+            "status": "not_exposed",
+            "source": "verified_reel_controls",
+            "samples": 2,
+            "details_capture_verified": true,
+            "first_observed_at": 1794685107200,
+            "confirmed_at": 1794685109084,
+            "control_evidence": "visible_comment_control_without_count_before_repost",
+            "scope": "Observed Instagram Android UI; not a claim that the metric can never be exposed elsewhere"
           },
-          {
-            "field": "comments",
-            "stable": false,
-            "access_clear": true,
-            "evidence": null,
-            "repeated_evidence": null,
-            "panel_changed": false
+          "shares": {
+            "status": "not_exposed",
+            "source": "verified_reel_controls",
+            "samples": 2,
+            "details_capture_verified": true,
+            "first_observed_at": 1794685107200,
+            "confirmed_at": 1794685109084,
+            "control_evidence": "visible_share_control_without_count_before_save",
+            "scope": "Observed Instagram Android UI; not a claim that the metric can never be exposed elsewhere"
           }
-        ]
+        },
+        "account": "pixa.300k",
+        "captured_at": "1794685107164",
+        "likes": {
+          "value": null,
+          "error": null
+        },
+        "comments": {
+          "value": null,
+          "error": null
+        },
+        "views_or_plays": {
+          "value": 45849,
+          "error": null
+        },
+        "shares": {
+          "value": null,
+          "error": null
+        },
+        "reposts": {
+          "value": 4,
+          "error": null
+        },
+        "saves": {
+          "value": 41,
+          "error": null
+        },
+        "date_posted": {
+          "value": "5 August",
+          "error": null
+        },
+        "caption": {
+          "value": "この落ち方よ...\n\nジャンプスピンサーブってやつかな\n\nジャンプスピンサーブ(トップスピン強め)+ほんの少し サイド回転 混ざりって感じなのかな 横から見たら絶対落ちてるんだろうな バレーボールちゃんと勉強しよ...\n\n#宮浦健人選手 #ウルフドッグス名古屋",
+          "error": null
+        },
+        "publication_observation": {
+          "raw_text": "5 August",
+          "observed_at": "2026-11-14T19:38:28.418Z",
+          "observed_at_epoch_ms": 1794685108419,
+          "timezone": "Asia/Kolkata",
+          "locale": "en-GB",
+          "source": "instagram_android_expanded_caption_footer",
+          "exact_publication_time": null
+        },
+        "caption_expanded": true,
+        "navigation_error": null,
+        "capture_stage": "finished",
+        "likes_availability": "owner_only"
       }
     },
     "last_error": null,
-    "last_attempt_at": "2026-11-14T09:52:14.240Z",
+    "last_attempt_at": "2026-11-14T19:38:27.164Z",
     "likes_visibility": "not_shown",
     "metric_corrections": {
       "likes": {
@@ -2218,16 +2665,78 @@
       }
     },
     "access_review": null,
-    "extraction_review": "Metric extraction is incomplete; absence has not been confirmed. Inspect or retry rather than assume hidden counts.",
+    "extraction_review": null,
     "date_source": "og_description_localized",
     "reshares": {
       "value": 4,
       "raw": "4",
       "approximate": false,
-      "source": "dom_action_control",
-      "label": "Repost"
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:38:27.164Z"
     },
-    "shares": null
+    "shares": null,
+    "saves": {
+      "value": 41,
+      "raw": "41",
+      "approximate": false,
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:38:27.164Z"
+    },
+    "analysis_resolution": {
+      "status": "resolved",
+      "source": "explicit_visibility_evidence",
+      "recorded_at": "2026-11-14T19:38:27.164Z",
+      "reason": "Unavailable metrics resolved using explicit visibility evidence or user assessment. Saved observations remain valid; missing values are unknown, not zero.",
+      "unavailable_fields": [
+        "likes",
+        "comments"
+      ]
+    },
+    "observed_owner_username": "pixa.300k",
+    "owner_identity_observation": {
+      "source": "queue_deep_link_and_account_check",
+      "observed_at": "2026-11-14T19:38:27.164Z",
+      "historical_account": null,
+      "verification": null
+    },
+    "publication_observation": {
+      "raw_text": "5 August",
+      "observed_at": "2026-11-14T19:38:28.418Z",
+      "observed_at_epoch_ms": 1794685108419,
+      "timezone": "Asia/Kolkata",
+      "locale": "en-GB",
+      "source": "instagram_android_expanded_caption_footer",
+      "exact_publication_time": null
+    },
+    "metric_availability": {
+      "comments": {
+        "status": "not_exposed",
+        "source": "verified_reel_controls",
+        "samples": 2,
+        "details_capture_verified": true,
+        "first_observed_at": 1794685107200,
+        "confirmed_at": 1794685109084,
+        "control_evidence": "visible_comment_control_without_count_before_repost",
+        "scope": "Observed Instagram Android UI; not a claim that the metric can never be exposed elsewhere"
+      },
+      "shares": {
+        "status": "not_exposed",
+        "source": "verified_reel_controls",
+        "samples": 2,
+        "details_capture_verified": true,
+        "first_observed_at": 1794685107200,
+        "confirmed_at": 1794685109084,
+        "control_evidence": "visible_share_control_without_count_before_save",
+        "scope": "Observed Instagram Android UI; not a claim that the metric can never be exposed elsewhere"
+      }
+    },
+    "android_import": {
+      "imported_at": "2026-11-14T19:45:51.511Z",
+      "captured_at": "2026-11-14T19:38:27.164Z",
+      "phone_status": "collected",
+      "source": "Documents/dedgram/reels.json",
+      "capture_method": "android_queue"
+    }
   },
   {
     "kind": "reel",
@@ -2489,29 +2998,27 @@
     "url": "https://www.instagram.com/reel/DboF01eS2Ds/",
     "grid_views_raw": "2M",
     "grid_views_issue": null,
-    "status": "partial",
-    "fetched_at": "2026-11-14T09:52:30.557Z",
+    "status": "metrics_unavailable",
+    "fetched_at": "2026-11-14T19:38:36.787Z",
     "date": "2026-08-04",
     "date_precision": "day",
-    "caption": "Hollywood. Known for his own standout fashion moments, he kept it effortlessly stylish in a look worthy of the runway. - @pixa.300k on August 4, 2026",
+    "caption": "Tonight, V stepped into the crowd, taking in live performances at Vogue World: Hollywood. Known for his own standout fashion moments, he kept it effortlessly stylish in a look worthy of the runway.",
     "hashtags": [],
-    "mentions": [
-      "@pixa.300k"
-    ],
+    "mentions": [],
     "likes": null,
     "comments": {
       "value": 1667,
-      "raw": "1,667",
+      "raw": "1667",
       "approximate": false,
-      "source": "dom_action_control",
-      "label": "Comment"
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:38:36.787Z"
     },
     "views": {
-      "value": 2000000,
-      "raw": "2M",
-      "approximate": true,
-      "source": "profile_grid",
-      "observed_at": "2026-10-28T09:42:48.126Z"
+      "value": 2049218,
+      "raw": "2049218",
+      "approximate": false,
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:38:36.787Z"
     },
     "thumbnail_url": "https://instagram.fblr24-4.fna.fbcdn.net/v/t51.82787-15/766562085_17901186099511690_3648685335723112068_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=SG1QuOptjicQ7kNvwGGwp2G&_nc_oc=AdrXTKxMGeW3_YMIVIw3u9yxeYEwn2-6marfaXL48nvKz8N1a6TVAKv37X647uKzj-FKPGyeTurzuPR1Q6ifFoox&_nc_zt=23&_nc_ht=instagram.fblr24-4.fna&_nc_gid=KPpuvsGU_B3PzTlmi9Sr0w&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQTHIZgz-0QWaVNEejXcUhsoaGGuWB6jcdvL9Qd1VE8bRQ&oe=6AFE182B",
     "media_url": null,
@@ -2523,60 +3030,92 @@
     },
     "raw": {
       "description": "Tonight, V stepped into the crowd, taking in live performances at Vogue World: Hollywood. Known for his own standout fashion moments, he kept it effortlessly stylish in a look worthy of the runway. - @pixa.300k on August 4, 2026",
-      "article_text": "pixa.300k\nFollow\nTonight, V stepped into the crowd, taking in live performances at Vogue World: Hollywood. Known for his own standout fashion moments, he kept it effortlessly stylish in a look worthy of the runway.\nLikes\n1,667\n2,246\nalbertobarsiguitar\nFollow\nSynth riffs + guitar = 👨🏻‍🍳🤌\n24.8K\n114\n726\n3,790",
+      "article_text": "Android reel capture by pixa.300k\nTonight, V stepped into the crowd, taking in live performances at Vogue World: Hollywood. Known for his own standout fashion moments, he kept it effortlessly stylish in a look worthy of the runway.\n4 August",
       "aria_text": "pixa.300k reels\npixa.300k reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nalbertobarsiguitar reels\nalbertobarsiguitar reels\nVerified\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
       "json_ld": {},
       "engagement": {
-        "scope": "reel_action_controls",
         "availability": {
           "likes": {
-            "state": "not_captured",
-            "evidence": "Control located but no reliable numeric value parsed."
-          },
-          "comments": {
-            "state": "measured",
-            "evidence": "Comment"
-          },
-          "reshares": {
-            "state": "measured",
-            "evidence": "Repost"
-          },
-          "shares": {
-            "state": "not_captured",
-            "evidence": "Control located but no reliable numeric value parsed."
+            "state": "explicitly_hidden",
+            "evidence": "Instagram Android Likes and plays explicitly indicated owner-only likes",
+            "source": "instagram_android_ui"
           }
-        },
-        "likes_visibility": "not_shown",
-        "comments": {
-          "raw": "1,667",
-          "source": "dom_action_control",
-          "label": "Comment"
-        },
-        "reshares": {
-          "raw": "2,246",
-          "source": "dom_action_control",
-          "label": "Repost"
         }
       },
       "capture_checks": {
         "access_clear": true,
         "stable": true,
-        "read_passes": 2,
-        "access_attempts": [],
-        "metric_panels": [
-          {
-            "field": "likes",
-            "stable": false,
-            "access_clear": true,
-            "evidence": null,
-            "repeated_evidence": "pixa.300k can see the total number of people who liked this post.",
-            "panel_changed": true
+        "source": "queue_deep_link_and_account_check",
+        "caption_expanded": true
+      },
+      "android_capture": {
+        "shortcode": "DboF01eS2Ds",
+        "url": "https://www.instagram.com/reel/DboF01eS2Ds/",
+        "identity_source": "queue_deep_link_and_account_check",
+        "retained_observations": null,
+        "metric_availability": {
+          "shares": {
+            "status": "not_exposed",
+            "source": "verified_reel_controls",
+            "samples": 2,
+            "details_capture_verified": true,
+            "first_observed_at": 1794685116824,
+            "confirmed_at": 1794685118824,
+            "control_evidence": "visible_share_control_without_count_before_save",
+            "scope": "Observed Instagram Android UI; not a claim that the metric can never be exposed elsewhere"
           }
-        ]
+        },
+        "account": "pixa.300k",
+        "captured_at": "1794685116787",
+        "likes": {
+          "value": null,
+          "error": null
+        },
+        "comments": {
+          "value": 1667,
+          "error": null
+        },
+        "views_or_plays": {
+          "value": 2049218,
+          "error": null
+        },
+        "shares": {
+          "value": null,
+          "error": null
+        },
+        "reposts": {
+          "value": 2246,
+          "error": null
+        },
+        "saves": {
+          "value": 5806,
+          "error": null
+        },
+        "date_posted": {
+          "value": "4 August",
+          "error": null
+        },
+        "caption": {
+          "value": "Tonight, V stepped into the crowd, taking in live performances at Vogue World: Hollywood. Known for his own standout fashion moments, he kept it effortlessly stylish in a look worthy of the runway.",
+          "error": null
+        },
+        "publication_observation": {
+          "raw_text": "4 August",
+          "observed_at": "2026-11-14T19:38:38.071Z",
+          "observed_at_epoch_ms": 1794685118072,
+          "timezone": "Asia/Kolkata",
+          "locale": "en-GB",
+          "source": "instagram_android_expanded_caption_footer",
+          "exact_publication_time": null
+        },
+        "caption_expanded": true,
+        "navigation_error": null,
+        "capture_stage": "finished",
+        "likes_availability": "owner_only"
       }
     },
     "last_error": null,
-    "last_attempt_at": "2026-11-14T09:52:30.557Z",
+    "last_attempt_at": "2026-11-14T19:38:36.787Z",
     "likes_visibility": "not_shown",
     "metric_corrections": {
       "likes": {
@@ -2592,16 +3131,67 @@
       }
     },
     "access_review": null,
-    "extraction_review": "Metric extraction is incomplete; absence has not been confirmed. Inspect or retry rather than assume hidden counts.",
+    "extraction_review": null,
     "date_source": "og_description",
     "reshares": {
       "value": 2246,
-      "raw": "2,246",
+      "raw": "2246",
       "approximate": false,
-      "source": "dom_action_control",
-      "label": "Repost"
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:38:36.787Z"
     },
-    "shares": null
+    "shares": null,
+    "saves": {
+      "value": 5806,
+      "raw": "5806",
+      "approximate": false,
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:38:36.787Z"
+    },
+    "analysis_resolution": {
+      "status": "resolved",
+      "source": "explicit_visibility_evidence",
+      "recorded_at": "2026-11-14T19:38:36.787Z",
+      "reason": "Unavailable metrics resolved using explicit visibility evidence or user assessment. Saved observations remain valid; missing values are unknown, not zero.",
+      "unavailable_fields": [
+        "likes"
+      ]
+    },
+    "observed_owner_username": "pixa.300k",
+    "owner_identity_observation": {
+      "source": "queue_deep_link_and_account_check",
+      "observed_at": "2026-11-14T19:38:36.787Z",
+      "historical_account": null,
+      "verification": null
+    },
+    "publication_observation": {
+      "raw_text": "4 August",
+      "observed_at": "2026-11-14T19:38:38.071Z",
+      "observed_at_epoch_ms": 1794685118072,
+      "timezone": "Asia/Kolkata",
+      "locale": "en-GB",
+      "source": "instagram_android_expanded_caption_footer",
+      "exact_publication_time": null
+    },
+    "metric_availability": {
+      "shares": {
+        "status": "not_exposed",
+        "source": "verified_reel_controls",
+        "samples": 2,
+        "details_capture_verified": true,
+        "first_observed_at": 1794685116824,
+        "confirmed_at": 1794685118824,
+        "control_evidence": "visible_share_control_without_count_before_save",
+        "scope": "Observed Instagram Android UI; not a claim that the metric can never be exposed elsewhere"
+      }
+    },
+    "android_import": {
+      "imported_at": "2026-11-14T19:45:51.511Z",
+      "captured_at": "2026-11-14T19:38:36.787Z",
+      "phone_status": "collected",
+      "source": "Documents/dedgram/reels.json",
+      "capture_method": "android_queue"
+    }
   },
   {
     "kind": "reel",
@@ -3004,9 +3594,9 @@
     "url": "https://www.instagram.com/reel/Dbg1Srkz6Gy/",
     "grid_views_raw": "29.4K",
     "grid_views_issue": null,
-    "status": "partial",
+    "status": "metrics_unavailable",
     "last_error": null,
-    "last_attempt_at": "2026-11-14T09:52:38.183Z",
+    "last_attempt_at": "2026-11-14T19:38:47.601Z",
     "attempts": 1,
     "deletion_check": {
       "status": "exists",
@@ -3027,38 +3617,41 @@
       "previous_attempt_at": "2026-10-28T12:00:52.712Z",
       "cause_confirmed": false
     },
-    "fetched_at": "2026-11-14T09:52:38.182Z",
+    "fetched_at": "2026-11-14T19:38:47.601Z",
     "access_review": null,
-    "extraction_review": "Metric extraction is incomplete; absence has not been confirmed. Inspect or retry rather than assume hidden counts.",
+    "extraction_review": null,
     "date": "2026-08-01",
     "date_precision": "day",
     "date_source": "og_description_localized",
-    "caption": null,
-    "hashtags": [],
+    "caption": "この落ち方よ...\n\nジャンプスピンサーブってやつかな\n\nジャンプスピンサーブ(トップスピン強め)+ほんの少し サイド回転 混ざりって感じなのかな 横から見たら絶対落ちてるんだろうな バレーボールちゃんと勉強しよ...\n\n#宮浦健人選手 #ウルフドッグス名古屋",
+    "hashtags": [
+      "#宮浦健人選手",
+      "#ウルフドッグス名古屋"
+    ],
     "mentions": [],
     "likes": null,
     "comments": {
       "value": 3,
       "raw": "3",
       "approximate": false,
-      "source": "dom_action_control",
-      "label": "Comment"
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:38:47.601Z"
     },
     "reshares": {
       "value": 5,
       "raw": "5",
       "approximate": false,
-      "source": "dom_action_control",
-      "label": "Repost"
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:38:47.601Z"
     },
     "shares": null,
     "likes_visibility": "not_shown",
     "views": {
-      "value": 29400,
-      "raw": "29.4K",
-      "approximate": true,
-      "source": "profile_grid",
-      "observed_at": "2026-10-28T09:42:48.126Z"
+      "value": 29477,
+      "raw": "29477",
+      "approximate": false,
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:38:47.601Z"
     },
     "thumbnail_url": "https://instagram.fblr1-7.fna.fbcdn.net/v/t51.82787-15/765970316_17901186045511690_4445339748358497055_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=hRThCZb-o2cQ7kNvwHb9a-l&_nc_oc=AdrRFLqdR7R4KN_s4H1T2rqwUTa3wBoOqjy0q8IeDARPzCBedHvRWe2sQsqIZ_rRi5GWRBzC7iagQn3ExHtdDVvf&_nc_zt=23&_nc_ht=instagram.fblr1-7.fna&_nc_gid=1lLO4ts7irYnLs8dahVWDQ&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQSdNpFh76R5hxEefv2kQUNqmmM2r-57rq9isE_rT65DiQ&oe=6AFDFEBF",
     "media_url": null,
@@ -3070,57 +3663,140 @@
     },
     "raw": {
       "description": "「この落ち方よ...\n\nジャンプスピンサーブってやつかな\n\nジャンプスピンサーブ(トップスピン強め)+ほんの少し サイド回転 混ざりって感じなのかな 横から見たら絶対落ちてるんだろうな バレーボールちゃんと勉強しよ...\n\n#宮浦健人選手 #ウルフドッグス名古屋」 - 2026年8月1日、pixa.300k",
-      "article_text": "pixa.300k\nFollow\nこの落ち方よ...\n\nジャンプスピンサーブってやつかな\n\nジャンプスピンサーブ(トップスピン強め)+ほんの少し サイド回転 混ざりって感じなのかな 横から見たら絶対落ちてるんだろうな バレーボールちゃんと勉強しよ...\n\n#宮浦健人選手 #ウルフドッグス名古屋\nSee translation\nLikes\n3\n5\nwingsoverwa\nFollow\npurc · eye of ra\nThe show must go on. #rfdswa #pc12ng #wetseason @pilatusaircraft\nSee translation\n33.8K\n85\n1,050\n4,032",
+      "article_text": "Android reel capture by pixa.300k\nこの落ち方よ...\n\nジャンプスピンサーブってやつかな\n\nジャンプスピンサーブ(トップスピン強め)+ほんの少し サイド回転 混ざりって感じなのかな 横から見たら絶対落ちてるんだろうな バレーボールちゃんと勉強しよ...\n\n#宮浦健人選手 #ウルフドッグス名古屋\n2 August",
       "aria_text": "pixa.300k reels\npixa.300k reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nwingsoverwa reels\nwingsoverwa reels\nAudio image\nLocation\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
       "json_ld": {},
       "engagement": {
-        "scope": "reel_action_controls",
         "availability": {
           "likes": {
-            "state": "not_captured",
-            "evidence": "Control located but no reliable numeric value parsed."
-          },
-          "comments": {
-            "state": "measured",
-            "evidence": "Comment"
-          },
-          "reshares": {
-            "state": "measured",
-            "evidence": "Repost"
-          },
-          "shares": {
-            "state": "not_captured",
-            "evidence": "Control located but no reliable numeric value parsed."
+            "state": "explicitly_hidden",
+            "evidence": "Instagram Android Likes and plays explicitly indicated owner-only likes",
+            "source": "instagram_android_ui"
           }
-        },
-        "likes_visibility": "not_shown",
-        "comments": {
-          "raw": "3",
-          "source": "dom_action_control",
-          "label": "Comment"
-        },
-        "reshares": {
-          "raw": "5",
-          "source": "dom_action_control",
-          "label": "Repost"
         }
       },
       "capture_checks": {
         "access_clear": true,
         "stable": true,
-        "read_passes": 2,
-        "access_attempts": [],
-        "metric_panels": [
-          {
-            "field": "likes",
-            "stable": false,
-            "access_clear": true,
-            "evidence": null,
-            "repeated_evidence": "pixa.300k can see the total number of people who liked this post.",
-            "panel_changed": true
+        "source": "queue_deep_link_and_account_check",
+        "caption_expanded": true
+      },
+      "android_capture": {
+        "shortcode": "Dbg1Srkz6Gy",
+        "url": "https://www.instagram.com/reel/Dbg1Srkz6Gy/",
+        "identity_source": "queue_deep_link_and_account_check",
+        "retained_observations": null,
+        "metric_availability": {
+          "shares": {
+            "status": "not_exposed",
+            "source": "verified_reel_controls",
+            "samples": 2,
+            "details_capture_verified": true,
+            "first_observed_at": 1794685127642,
+            "confirmed_at": 1794685129680,
+            "control_evidence": "visible_share_control_without_count_before_save",
+            "scope": "Observed Instagram Android UI; not a claim that the metric can never be exposed elsewhere"
           }
-        ]
+        },
+        "account": "pixa.300k",
+        "captured_at": "1794685127601",
+        "likes": {
+          "value": null,
+          "error": null
+        },
+        "comments": {
+          "value": 3,
+          "error": null
+        },
+        "views_or_plays": {
+          "value": 29477,
+          "error": null
+        },
+        "shares": {
+          "value": null,
+          "error": null
+        },
+        "reposts": {
+          "value": 5,
+          "error": null
+        },
+        "saves": {
+          "value": 43,
+          "error": null
+        },
+        "date_posted": {
+          "value": "2 August",
+          "error": null
+        },
+        "caption": {
+          "value": "この落ち方よ...\n\nジャンプスピンサーブってやつかな\n\nジャンプスピンサーブ(トップスピン強め)+ほんの少し サイド回転 混ざりって感じなのかな 横から見たら絶対落ちてるんだろうな バレーボールちゃんと勉強しよ...\n\n#宮浦健人選手 #ウルフドッグス名古屋",
+          "error": null
+        },
+        "publication_observation": {
+          "raw_text": "2 August",
+          "observed_at": "2026-11-14T19:38:49.014Z",
+          "observed_at_epoch_ms": 1794685129014,
+          "timezone": "Asia/Kolkata",
+          "locale": "en-GB",
+          "source": "instagram_android_expanded_caption_footer",
+          "exact_publication_time": null
+        },
+        "caption_expanded": true,
+        "navigation_error": null,
+        "capture_stage": "finished",
+        "likes_availability": "owner_only"
       }
+    },
+    "saves": {
+      "value": 43,
+      "raw": "43",
+      "approximate": false,
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:38:47.601Z"
+    },
+    "analysis_resolution": {
+      "status": "resolved",
+      "source": "explicit_visibility_evidence",
+      "recorded_at": "2026-11-14T19:38:47.601Z",
+      "reason": "Unavailable metrics resolved using explicit visibility evidence or user assessment. Saved observations remain valid; missing values are unknown, not zero.",
+      "unavailable_fields": [
+        "likes"
+      ]
+    },
+    "observed_owner_username": "pixa.300k",
+    "owner_identity_observation": {
+      "source": "queue_deep_link_and_account_check",
+      "observed_at": "2026-11-14T19:38:47.601Z",
+      "historical_account": null,
+      "verification": null
+    },
+    "publication_observation": {
+      "raw_text": "2 August",
+      "observed_at": "2026-11-14T19:38:49.014Z",
+      "observed_at_epoch_ms": 1794685129014,
+      "timezone": "Asia/Kolkata",
+      "locale": "en-GB",
+      "source": "instagram_android_expanded_caption_footer",
+      "exact_publication_time": null
+    },
+    "metric_availability": {
+      "shares": {
+        "status": "not_exposed",
+        "source": "verified_reel_controls",
+        "samples": 2,
+        "details_capture_verified": true,
+        "first_observed_at": 1794685127642,
+        "confirmed_at": 1794685129680,
+        "control_evidence": "visible_share_control_without_count_before_save",
+        "scope": "Observed Instagram Android UI; not a claim that the metric can never be exposed elsewhere"
+      }
+    },
+    "android_import": {
+      "imported_at": "2026-11-14T19:45:51.511Z",
+      "captured_at": "2026-11-14T19:38:47.601Z",
+      "phone_status": "collected",
+      "source": "Documents/dedgram/reels.json",
+      "capture_method": "android_queue"
     }
   },
   {
@@ -3264,9 +3940,9 @@
     "url": "https://www.instagram.com/reel/Dbd7Qy0SmJG/",
     "grid_views_raw": "5.1M",
     "grid_views_issue": null,
-    "status": "partial",
+    "status": "metrics_unavailable",
     "last_error": null,
-    "last_attempt_at": "2026-11-14T09:52:54.165Z",
+    "last_attempt_at": "2026-11-14T19:38:57.832Z",
     "attempts": 1,
     "deletion_check": {
       "status": "exists",
@@ -3287,9 +3963,9 @@
       "previous_attempt_at": "2026-10-28T12:01:39.188Z",
       "cause_confirmed": false
     },
-    "fetched_at": "2026-11-14T09:52:54.165Z",
+    "fetched_at": "2026-11-14T19:38:57.832Z",
     "access_review": null,
-    "extraction_review": "Metric extraction is incomplete; absence has not been confirmed. Inspect or retry rather than assume hidden counts.",
+    "extraction_review": null,
     "date": "2026-07-31",
     "date_precision": "day",
     "date_source": "og_description",
@@ -3302,26 +3978,26 @@
     "likes": null,
     "comments": {
       "value": 1737,
-      "raw": "1,737",
+      "raw": "1737",
       "approximate": false,
-      "source": "dom_action_control",
-      "label": "Comment"
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:38:57.832Z"
     },
     "reshares": {
-      "value": 573,
-      "raw": "573",
+      "value": 572,
+      "raw": "572",
       "approximate": false,
-      "source": "dom_action_control",
-      "label": "Repost"
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:38:57.832Z"
     },
     "shares": null,
     "likes_visibility": "not_shown",
     "views": {
-      "value": 5100000,
-      "raw": "5.1M",
-      "approximate": true,
-      "source": "profile_grid",
-      "observed_at": "2026-10-28T09:42:48.126Z"
+      "value": 5177792,
+      "raw": "5177792",
+      "approximate": false,
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:38:57.832Z"
     },
     "thumbnail_url": "https://instagram.fblr1-10.fna.fbcdn.net/v/t51.82787-15/766635989_17901185223511690_748295352024425322_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=Uui4-U1CAEYQ7kNvwFYxBC7&_nc_oc=Adq3ZFml8C9kacYOX7S7CSps_Q3DBob-DRTvScMmpLjYYO3OSXatpLSuEHhMr_sjVMz9zrawU7l5ou3YXj22o1_3&_nc_zt=23&_nc_ht=instagram.fblr1-10.fna&_nc_gid=9oDG3yum5537-GPGe2dPPw&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQTu16GioOzBLQaztVDXx8HxAQBN6FLE-oXBHNz2n8jGSQ&oe=6AFE0ABE",
     "media_url": null,
@@ -3333,57 +4009,140 @@
     },
     "raw": {
       "description": "pixa.300k on July 31, 2026: \"この落ち方よ...\n\nジャンプスピンサーブってやつかな\n\nジャンプスピンサーブ(トップスピン強め)+ほんの少し サイド回転 混ざりって感じなのかな 横から見たら絶対落ちてるんだろうな バレーボールちゃんと勉強しよ...\n\n#宮浦健人選手 #ウルフドッグス名古屋\". ",
-      "article_text": "pixa.300k\nFollow\nこの落ち方よ...\n\nジャンプスピンサーブってやつかな\n\nジャンプスピンサーブ(トップスピン強め)+ほんの少し サイド回転 混ざりって感じなのかな 横から見たら絶対落ちてるんだろうな バレーボールちゃんと勉強しよ...\n\n#宮浦健人選手 #ウルフドッグス名古屋\nSee translation\nLikes\n1,737\n573\nalbertobarsiguitar\nFollow\nSynth riffs + guitar = 👨🏻‍🍳🤌\n24.8K\n114\n727\n3,790",
+      "article_text": "Android reel capture by pixa.300k\nこの落ち方よ...\n\nジャンプスピンサーブってやつかな\n\nジャンプスピンサーブ(トップスピン強め)+ほんの少し サイド回転 混ざりって感じなのかな 横から見たら絶対落ちてるんだろうな バレーボールちゃんと勉強しよ...\n\n#宮浦健人選手 #ウルフドッグス名古屋\n1 August",
       "aria_text": "pixa.300k reels\npixa.300k reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nalbertobarsiguitar reels\nalbertobarsiguitar reels\nVerified\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
       "json_ld": {},
       "engagement": {
-        "scope": "reel_action_controls",
         "availability": {
           "likes": {
-            "state": "not_captured",
-            "evidence": "Control located but no reliable numeric value parsed."
-          },
-          "comments": {
-            "state": "measured",
-            "evidence": "Comment"
-          },
-          "reshares": {
-            "state": "measured",
-            "evidence": "Repost"
-          },
-          "shares": {
-            "state": "not_captured",
-            "evidence": "Control located but no reliable numeric value parsed."
+            "state": "explicitly_hidden",
+            "evidence": "Instagram Android Likes and plays explicitly indicated owner-only likes",
+            "source": "instagram_android_ui"
           }
-        },
-        "likes_visibility": "not_shown",
-        "comments": {
-          "raw": "1,737",
-          "source": "dom_action_control",
-          "label": "Comment"
-        },
-        "reshares": {
-          "raw": "573",
-          "source": "dom_action_control",
-          "label": "Repost"
         }
       },
       "capture_checks": {
         "access_clear": true,
         "stable": true,
-        "read_passes": 2,
-        "access_attempts": [],
-        "metric_panels": [
-          {
-            "field": "likes",
-            "stable": false,
-            "access_clear": true,
-            "evidence": null,
-            "repeated_evidence": "pixa.300k can see the total number of people who liked this post.",
-            "panel_changed": true
+        "source": "queue_deep_link_and_account_check",
+        "caption_expanded": true
+      },
+      "android_capture": {
+        "shortcode": "Dbd7Qy0SmJG",
+        "url": "https://www.instagram.com/reel/Dbd7Qy0SmJG/",
+        "identity_source": "queue_deep_link_and_account_check",
+        "retained_observations": null,
+        "metric_availability": {
+          "shares": {
+            "status": "not_exposed",
+            "source": "verified_reel_controls",
+            "samples": 2,
+            "details_capture_verified": true,
+            "first_observed_at": 1794685137847,
+            "confirmed_at": 1794685139720,
+            "control_evidence": "visible_share_control_without_count_before_save",
+            "scope": "Observed Instagram Android UI; not a claim that the metric can never be exposed elsewhere"
           }
-        ]
+        },
+        "account": "pixa.300k",
+        "captured_at": "1794685137832",
+        "likes": {
+          "value": null,
+          "error": null
+        },
+        "comments": {
+          "value": 1737,
+          "error": null
+        },
+        "views_or_plays": {
+          "value": 5177792,
+          "error": null
+        },
+        "shares": {
+          "value": null,
+          "error": null
+        },
+        "reposts": {
+          "value": 572,
+          "error": null
+        },
+        "saves": {
+          "value": 4349,
+          "error": null
+        },
+        "date_posted": {
+          "value": "1 August",
+          "error": null
+        },
+        "caption": {
+          "value": "この落ち方よ...\n\nジャンプスピンサーブってやつかな\n\nジャンプスピンサーブ(トップスピン強め)+ほんの少し サイド回転 混ざりって感じなのかな 横から見たら絶対落ちてるんだろうな バレーボールちゃんと勉強しよ...\n\n#宮浦健人選手 #ウルフドッグス名古屋",
+          "error": null
+        },
+        "publication_observation": {
+          "raw_text": "1 August",
+          "observed_at": "2026-11-14T19:38:59.018Z",
+          "observed_at_epoch_ms": 1794685139019,
+          "timezone": "Asia/Kolkata",
+          "locale": "en-GB",
+          "source": "instagram_android_expanded_caption_footer",
+          "exact_publication_time": null
+        },
+        "caption_expanded": true,
+        "navigation_error": null,
+        "capture_stage": "finished",
+        "likes_availability": "owner_only"
       }
+    },
+    "saves": {
+      "value": 4349,
+      "raw": "4349",
+      "approximate": false,
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:38:57.832Z"
+    },
+    "analysis_resolution": {
+      "status": "resolved",
+      "source": "explicit_visibility_evidence",
+      "recorded_at": "2026-11-14T19:38:57.832Z",
+      "reason": "Unavailable metrics resolved using explicit visibility evidence or user assessment. Saved observations remain valid; missing values are unknown, not zero.",
+      "unavailable_fields": [
+        "likes"
+      ]
+    },
+    "observed_owner_username": "pixa.300k",
+    "owner_identity_observation": {
+      "source": "queue_deep_link_and_account_check",
+      "observed_at": "2026-11-14T19:38:57.832Z",
+      "historical_account": null,
+      "verification": null
+    },
+    "publication_observation": {
+      "raw_text": "1 August",
+      "observed_at": "2026-11-14T19:38:59.018Z",
+      "observed_at_epoch_ms": 1794685139019,
+      "timezone": "Asia/Kolkata",
+      "locale": "en-GB",
+      "source": "instagram_android_expanded_caption_footer",
+      "exact_publication_time": null
+    },
+    "metric_availability": {
+      "shares": {
+        "status": "not_exposed",
+        "source": "verified_reel_controls",
+        "samples": 2,
+        "details_capture_verified": true,
+        "first_observed_at": 1794685137847,
+        "confirmed_at": 1794685139720,
+        "control_evidence": "visible_share_control_without_count_before_save",
+        "scope": "Observed Instagram Android UI; not a claim that the metric can never be exposed elsewhere"
+      }
+    },
+    "android_import": {
+      "imported_at": "2026-11-14T19:45:51.511Z",
+      "captured_at": "2026-11-14T19:38:57.832Z",
+      "phone_status": "collected",
+      "source": "Documents/dedgram/reels.json",
+      "capture_method": "android_queue"
     }
   },
   {
@@ -3532,9 +4291,9 @@
     "url": "https://www.instagram.com/reel/DbdkwzAyuR8/",
     "grid_views_raw": "21.5K",
     "grid_views_issue": null,
-    "status": "partial",
+    "status": "metrics_unavailable",
     "last_error": null,
-    "last_attempt_at": "2026-11-14T09:53:01.333Z",
+    "last_attempt_at": "2026-11-14T19:39:07.930Z",
     "attempts": 1,
     "deletion_check": {
       "status": "exists",
@@ -3555,38 +4314,41 @@
       "previous_attempt_at": "2026-10-28T12:02:25.562Z",
       "cause_confirmed": false
     },
-    "fetched_at": "2026-11-14T09:53:01.332Z",
+    "fetched_at": "2026-11-14T19:39:07.930Z",
     "access_review": null,
-    "extraction_review": "Metric extraction is incomplete; absence has not been confirmed. Inspect or retry rather than assume hidden counts.",
+    "extraction_review": null,
     "date": "2026-07-31",
     "date_precision": "day",
     "date_source": "og_description_localized",
-    "caption": null,
-    "hashtags": [],
+    "caption": "この落ち方よ...\n\nジャンプスピンサーブってやつかな\n\nジャンプスピンサーブ(トップスピン強め)+ほんの少し サイド回転 混ざりって感じなのかな 横から見たら絶対落ちてるんだろうな バレーボールちゃんと勉強しよ...\n\n#宮浦健人選手 #ウルフドッグス名古屋",
+    "hashtags": [
+      "#宮浦健人選手",
+      "#ウルフドッグス名古屋"
+    ],
     "mentions": [],
     "likes": null,
     "comments": {
       "value": 3,
       "raw": "3",
       "approximate": false,
-      "source": "dom_action_control",
-      "label": "Comment"
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:39:07.930Z"
     },
     "reshares": {
       "value": 1,
       "raw": "1",
       "approximate": false,
-      "source": "dom_action_control",
-      "label": "Repost"
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:39:07.930Z"
     },
     "shares": null,
     "likes_visibility": "not_shown",
     "views": {
-      "value": 21500,
-      "raw": "21.5K",
-      "approximate": true,
-      "source": "profile_grid",
-      "observed_at": "2026-10-28T09:42:48.126Z"
+      "value": 21532,
+      "raw": "21532",
+      "approximate": false,
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:39:07.930Z"
     },
     "thumbnail_url": "https://instagram.fblr1-3.fna.fbcdn.net/v/t51.82787-15/766464966_17901185082511690_1470971463529852732_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=WGwaLqrs7esQ7kNvwG8WNc7&_nc_oc=Ado__DOO1BjxreKlrTU2JQx44FJbDw1ePGZhckXxmDJLz-qrroLwGK6TShbqXENAipdc1vQUroAcVOi0jXRRkNZq&_nc_zt=23&_nc_ht=instagram.fblr1-3.fna&_nc_gid=bv4T4fEbtcNS-z0vPeoBog&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQTFCinlawKhJYOX5GVtzMpFvIMiRjNvLzWPM_cNsTGIpA&oe=6AFDF536",
     "media_url": null,
@@ -3598,57 +4360,140 @@
     },
     "raw": {
       "description": "「この落ち方よ...\n\nジャンプスピンサーブってやつかな\n\nジャンプスピンサーブ(トップスピン強め)+ほんの少し サイド回転 混ざりって感じなのかな 横から見たら絶対落ちてるんだろうな バレーボールちゃんと勉強しよ...\n\n#宮浦健人選手 #ウルフドッグス名古屋」 - 2026年7月31日、pixa.300k",
-      "article_text": "pixa.300k\nFollow\nBoney M. · Rasputin\nこの落ち方よ...\n\nジャンプスピンサーブってやつかな\n\nジャンプスピンサーブ(トップスピン強め)+ほんの少し サイド回転 混ざりって感じなのかな 横から見たら絶対落ちてるんだろうな バレーボールちゃんと勉強しよ...\n\n#宮浦健人選手 #ウルフドッグス名古屋\nSee translation\nLikes\n3\n1\nannehathaway\nFollow\n💖 Once again, happy birthday to Ryan Gosling 💖 #44\n2.8M\n7,629\n62K\n106K",
+      "article_text": "Android reel capture by pixa.300k\nこの落ち方よ...\n\nジャンプスピンサーブってやつかな\n\nジャンプスピンサーブ(トップスピン強め)+ほんの少し サイド回転 混ざりって感じなのかな 横から見たら絶対落ちてるんだろうな バレーボールちゃんと勉強しよ...\n\n#宮浦健人選手 #ウルフドッグス名古屋\n31 July",
       "aria_text": "pixa.300k reels\npixa.300k reels\nAudio image\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nannehathaway reels\nannehathaway reels\nVerified\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
       "json_ld": {},
       "engagement": {
-        "scope": "reel_action_controls",
         "availability": {
           "likes": {
-            "state": "not_captured",
-            "evidence": "Control located but no reliable numeric value parsed."
-          },
-          "comments": {
-            "state": "measured",
-            "evidence": "Comment"
-          },
-          "reshares": {
-            "state": "measured",
-            "evidence": "Repost"
-          },
-          "shares": {
-            "state": "not_captured",
-            "evidence": "Control located but no reliable numeric value parsed."
+            "state": "explicitly_hidden",
+            "evidence": "Instagram Android Likes and plays explicitly indicated owner-only likes",
+            "source": "instagram_android_ui"
           }
-        },
-        "likes_visibility": "not_shown",
-        "comments": {
-          "raw": "3",
-          "source": "dom_action_control",
-          "label": "Comment"
-        },
-        "reshares": {
-          "raw": "1",
-          "source": "dom_action_control",
-          "label": "Repost"
         }
       },
       "capture_checks": {
         "access_clear": true,
         "stable": true,
-        "read_passes": 2,
-        "access_attempts": [],
-        "metric_panels": [
-          {
-            "field": "likes",
-            "stable": false,
-            "access_clear": true,
-            "evidence": null,
-            "repeated_evidence": null,
-            "panel_changed": false
+        "source": "queue_deep_link_and_account_check",
+        "caption_expanded": true
+      },
+      "android_capture": {
+        "shortcode": "DbdkwzAyuR8",
+        "url": "https://www.instagram.com/reel/DbdkwzAyuR8/",
+        "identity_source": "queue_deep_link_and_account_check",
+        "retained_observations": null,
+        "metric_availability": {
+          "shares": {
+            "status": "not_exposed",
+            "source": "verified_reel_controls",
+            "samples": 2,
+            "details_capture_verified": true,
+            "first_observed_at": 1794685147947,
+            "confirmed_at": 1794685149799,
+            "control_evidence": "visible_share_control_without_count_before_save",
+            "scope": "Observed Instagram Android UI; not a claim that the metric can never be exposed elsewhere"
           }
-        ]
+        },
+        "account": "pixa.300k",
+        "captured_at": "1794685147930",
+        "likes": {
+          "value": null,
+          "error": null
+        },
+        "comments": {
+          "value": 3,
+          "error": null
+        },
+        "views_or_plays": {
+          "value": 21532,
+          "error": null
+        },
+        "shares": {
+          "value": null,
+          "error": null
+        },
+        "reposts": {
+          "value": 1,
+          "error": null
+        },
+        "saves": {
+          "value": 14,
+          "error": null
+        },
+        "date_posted": {
+          "value": "31 July",
+          "error": null
+        },
+        "caption": {
+          "value": "この落ち方よ...\n\nジャンプスピンサーブってやつかな\n\nジャンプスピンサーブ(トップスピン強め)+ほんの少し サイド回転 混ざりって感じなのかな 横から見たら絶対落ちてるんだろうな バレーボールちゃんと勉強しよ...\n\n#宮浦健人選手 #ウルフドッグス名古屋",
+          "error": null
+        },
+        "publication_observation": {
+          "raw_text": "31 July",
+          "observed_at": "2026-11-14T19:39:09.152Z",
+          "observed_at_epoch_ms": 1794685149152,
+          "timezone": "Asia/Kolkata",
+          "locale": "en-GB",
+          "source": "instagram_android_expanded_caption_footer",
+          "exact_publication_time": null
+        },
+        "caption_expanded": true,
+        "navigation_error": null,
+        "capture_stage": "finished",
+        "likes_availability": "owner_only"
       }
+    },
+    "saves": {
+      "value": 14,
+      "raw": "14",
+      "approximate": false,
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:39:07.930Z"
+    },
+    "analysis_resolution": {
+      "status": "resolved",
+      "source": "explicit_visibility_evidence",
+      "recorded_at": "2026-11-14T19:39:07.930Z",
+      "reason": "Unavailable metrics resolved using explicit visibility evidence or user assessment. Saved observations remain valid; missing values are unknown, not zero.",
+      "unavailable_fields": [
+        "likes"
+      ]
+    },
+    "observed_owner_username": "pixa.300k",
+    "owner_identity_observation": {
+      "source": "queue_deep_link_and_account_check",
+      "observed_at": "2026-11-14T19:39:07.930Z",
+      "historical_account": null,
+      "verification": null
+    },
+    "publication_observation": {
+      "raw_text": "31 July",
+      "observed_at": "2026-11-14T19:39:09.152Z",
+      "observed_at_epoch_ms": 1794685149152,
+      "timezone": "Asia/Kolkata",
+      "locale": "en-GB",
+      "source": "instagram_android_expanded_caption_footer",
+      "exact_publication_time": null
+    },
+    "metric_availability": {
+      "shares": {
+        "status": "not_exposed",
+        "source": "verified_reel_controls",
+        "samples": 2,
+        "details_capture_verified": true,
+        "first_observed_at": 1794685147947,
+        "confirmed_at": 1794685149799,
+        "control_evidence": "visible_share_control_without_count_before_save",
+        "scope": "Observed Instagram Android UI; not a claim that the metric can never be exposed elsewhere"
+      }
+    },
+    "android_import": {
+      "imported_at": "2026-11-14T19:45:51.511Z",
+      "captured_at": "2026-11-14T19:39:07.930Z",
+      "phone_status": "collected",
+      "source": "Documents/dedgram/reels.json",
+      "capture_method": "android_queue"
     }
   },
   {
@@ -3657,9 +4502,9 @@
     "url": "https://www.instagram.com/reel/DbdQzNBzR-6/",
     "grid_views_raw": "272K",
     "grid_views_issue": null,
-    "status": "partial",
+    "status": "metrics_unavailable",
     "last_error": null,
-    "last_attempt_at": "2026-11-14T09:53:10.305Z",
+    "last_attempt_at": "2026-11-14T19:39:17.913Z",
     "attempts": 1,
     "deletion_check": {
       "status": "exists",
@@ -3680,38 +4525,41 @@
       "previous_attempt_at": "2026-10-28T12:02:48.600Z",
       "cause_confirmed": false
     },
-    "fetched_at": "2026-11-14T09:53:10.305Z",
+    "fetched_at": "2026-11-14T19:39:17.913Z",
     "access_review": null,
-    "extraction_review": "Metric extraction is incomplete; absence has not been confirmed. Inspect or retry rather than assume hidden counts.",
+    "extraction_review": null,
     "date": "2026-07-31",
     "date_precision": "day",
     "date_source": "og_description_localized",
-    "caption": null,
-    "hashtags": [],
+    "caption": "この落ち方よ...\n\nジャンプスピンサーブってやつかな\n\nジャンプスピンサーブ(トップスピン強め)+ほんの少し サイド回転 混ざりって感じなのかな 横から見たら絶対落ちてるんだろうな バレーボールちゃんと勉強しよ...\n\n#宮浦健人選手 #ウルフドッグス名古屋",
+    "hashtags": [
+      "#宮浦健人選手",
+      "#ウルフドッグス名古屋"
+    ],
     "mentions": [],
     "likes": null,
     "comments": {
       "value": 153,
       "raw": "153",
       "approximate": false,
-      "source": "dom_action_control",
-      "label": "Comment"
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:39:17.913Z"
     },
     "reshares": {
       "value": 153,
       "raw": "153",
       "approximate": false,
-      "source": "dom_action_control",
-      "label": "Repost"
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:39:17.913Z"
     },
     "shares": null,
     "likes_visibility": "not_shown",
     "views": {
-      "value": 272000,
-      "raw": "272K",
-      "approximate": true,
-      "source": "profile_grid",
-      "observed_at": "2026-10-28T09:42:48.126Z"
+      "value": 272916,
+      "raw": "272916",
+      "approximate": false,
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:39:17.913Z"
     },
     "thumbnail_url": "https://instagram.fblr1-8.fna.fbcdn.net/v/t51.82787-15/766241005_17901185061511690_2859476033696964161_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=vlkTWcPt0GsQ7kNvwGqtiyT&_nc_oc=AdrEJJ5jbLR2NDpZQ0stg5YscC2xotUjyMStmvVmfVJDiYdy3uuUUOsuiJ4kM-5RP9jWtj3D8Q_jaeUWASVnShxx&_nc_zt=23&_nc_ht=instagram.fblr1-8.fna&_nc_gid=4HGbcgQhh8YatgRlyKHByQ&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQSV9NhltQFSWFee4z0mfjqf_3jF7ZmZCVnf8Nh3flToQA&oe=6AFDF80A",
     "media_url": null,
@@ -3723,57 +4571,140 @@
     },
     "raw": {
       "description": "「この落ち方よ...\n\nジャンプスピンサーブってやつかな\n\nジャンプスピンサーブ(トップスピン強め)+ほんの少し サイド回転 混ざりって感じなのかな 横から見たら絶対落ちてるんだろうな バレーボールちゃんと勉強しよ...\n\n#宮浦健人選手 #ウルフドッグス名古屋」 - 2026年7月31日、pixa.300k",
-      "article_text": "pixa.300k\nFollow\nこの落ち方よ...\n\nジャンプスピンサーブってやつかな\n\nジャンプスピンサーブ(トップスピン強め)+ほんの少し サイド回転 混ざりって感じなのかな 横から見たら絶対落ちてるんだろうな バレーボールちゃんと勉強しよ...\n\n#宮浦健人選手 #ウルフドッグス名古屋\nSee translation\nLikes\n153\n153\nonechampionship\nFollow\n2 people\nKeep your head up 🙏 @rodtang_jimungnon @nongogaiyanghadao\n \n#TheInnerCircle38\n🔴 Join The Inner Circle for only USD9.99/month at live.onefc.com.\n🟢 NEW 👉 Log in with LINE! No account? Sign up to watch select past events from 2026 for FREE\n128K\n659\n3,062\n6,087",
+      "article_text": "Android reel capture by pixa.300k\nこの落ち方よ...\n\nジャンプスピンサーブってやつかな\n\nジャンプスピンサーブ(トップスピン強め)+ほんの少し サイド回転 混ざりって感じなのかな 横から見たら絶対落ちてるんだろうな バレーボールちゃんと勉強しよ...\n\n#宮浦健人選手 #ウルフドッグス名古屋\n31 July",
       "aria_text": "pixa.300k reels\npixa.300k reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nonechampionship reels\nonechampionship reels\nVerified\nTagged users\nTagged users\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
       "json_ld": {},
       "engagement": {
-        "scope": "reel_action_controls",
         "availability": {
           "likes": {
-            "state": "not_captured",
-            "evidence": "Control located but no reliable numeric value parsed."
-          },
-          "comments": {
-            "state": "measured",
-            "evidence": "Comment"
-          },
-          "reshares": {
-            "state": "measured",
-            "evidence": "Repost"
-          },
-          "shares": {
-            "state": "not_captured",
-            "evidence": "Control located but no reliable numeric value parsed."
+            "state": "explicitly_hidden",
+            "evidence": "Instagram Android Likes and plays explicitly indicated owner-only likes",
+            "source": "instagram_android_ui"
           }
-        },
-        "likes_visibility": "not_shown",
-        "comments": {
-          "raw": "153",
-          "source": "dom_action_control",
-          "label": "Comment"
-        },
-        "reshares": {
-          "raw": "153",
-          "source": "dom_action_control",
-          "label": "Repost"
         }
       },
       "capture_checks": {
         "access_clear": true,
         "stable": true,
-        "read_passes": 2,
-        "access_attempts": [],
-        "metric_panels": [
-          {
-            "field": "likes",
-            "stable": false,
-            "access_clear": true,
-            "evidence": null,
-            "repeated_evidence": null,
-            "panel_changed": false
+        "source": "queue_deep_link_and_account_check",
+        "caption_expanded": true
+      },
+      "android_capture": {
+        "shortcode": "DbdQzNBzR-6",
+        "url": "https://www.instagram.com/reel/DbdQzNBzR-6/",
+        "identity_source": "queue_deep_link_and_account_check",
+        "retained_observations": null,
+        "metric_availability": {
+          "shares": {
+            "status": "not_exposed",
+            "source": "verified_reel_controls",
+            "samples": 2,
+            "details_capture_verified": true,
+            "first_observed_at": 1794685157971,
+            "confirmed_at": 1794685160042,
+            "control_evidence": "visible_share_control_without_count_before_save",
+            "scope": "Observed Instagram Android UI; not a claim that the metric can never be exposed elsewhere"
           }
-        ]
+        },
+        "account": "pixa.300k",
+        "captured_at": "1794685157913",
+        "likes": {
+          "value": null,
+          "error": null
+        },
+        "comments": {
+          "value": 153,
+          "error": null
+        },
+        "views_or_plays": {
+          "value": 272916,
+          "error": null
+        },
+        "shares": {
+          "value": null,
+          "error": null
+        },
+        "reposts": {
+          "value": 153,
+          "error": null
+        },
+        "saves": {
+          "value": 1291,
+          "error": null
+        },
+        "date_posted": {
+          "value": "31 July",
+          "error": null
+        },
+        "caption": {
+          "value": "この落ち方よ...\n\nジャンプスピンサーブってやつかな\n\nジャンプスピンサーブ(トップスピン強め)+ほんの少し サイド回転 混ざりって感じなのかな 横から見たら絶対落ちてるんだろうな バレーボールちゃんと勉強しよ...\n\n#宮浦健人選手 #ウルフドッグス名古屋",
+          "error": null
+        },
+        "publication_observation": {
+          "raw_text": "31 July",
+          "observed_at": "2026-11-14T19:39:19.246Z",
+          "observed_at_epoch_ms": 1794685159247,
+          "timezone": "Asia/Kolkata",
+          "locale": "en-GB",
+          "source": "instagram_android_expanded_caption_footer",
+          "exact_publication_time": null
+        },
+        "caption_expanded": true,
+        "navigation_error": null,
+        "capture_stage": "finished",
+        "likes_availability": "owner_only"
       }
+    },
+    "saves": {
+      "value": 1291,
+      "raw": "1291",
+      "approximate": false,
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:39:17.913Z"
+    },
+    "analysis_resolution": {
+      "status": "resolved",
+      "source": "explicit_visibility_evidence",
+      "recorded_at": "2026-11-14T19:39:17.913Z",
+      "reason": "Unavailable metrics resolved using explicit visibility evidence or user assessment. Saved observations remain valid; missing values are unknown, not zero.",
+      "unavailable_fields": [
+        "likes"
+      ]
+    },
+    "observed_owner_username": "pixa.300k",
+    "owner_identity_observation": {
+      "source": "queue_deep_link_and_account_check",
+      "observed_at": "2026-11-14T19:39:17.913Z",
+      "historical_account": null,
+      "verification": null
+    },
+    "publication_observation": {
+      "raw_text": "31 July",
+      "observed_at": "2026-11-14T19:39:19.246Z",
+      "observed_at_epoch_ms": 1794685159247,
+      "timezone": "Asia/Kolkata",
+      "locale": "en-GB",
+      "source": "instagram_android_expanded_caption_footer",
+      "exact_publication_time": null
+    },
+    "metric_availability": {
+      "shares": {
+        "status": "not_exposed",
+        "source": "verified_reel_controls",
+        "samples": 2,
+        "details_capture_verified": true,
+        "first_observed_at": 1794685157971,
+        "confirmed_at": 1794685160042,
+        "control_evidence": "visible_share_control_without_count_before_save",
+        "scope": "Observed Instagram Android UI; not a claim that the metric can never be exposed elsewhere"
+      }
+    },
+    "android_import": {
+      "imported_at": "2026-11-14T19:45:51.511Z",
+      "captured_at": "2026-11-14T19:39:17.913Z",
+      "phone_status": "collected",
+      "source": "Documents/dedgram/reels.json",
+      "capture_method": "android_queue"
     }
   },
   {

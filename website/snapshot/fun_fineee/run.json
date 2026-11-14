@@ -1,19 +1,25 @@
 {
   "started_at": "2026-11-14T09:54:32.120Z",
-  "updated_at": "2026-11-14T09:54:39.647Z",
-  "status": "blocked",
-  "phase": "item details",
+  "updated_at": "2026-11-14T19:45:51.511Z",
+  "status": "partial",
+  "phase": "done",
   "scope": [
     "reel"
   ],
-  "current_url": "https://www.instagram.com/reel/DddW5GHyKy_/",
-  "error": "Instagram returned HTTP 429 (rate limit). URL: https://www.instagram.com/reel/DddW5GHyKy_/",
+  "current_url": null,
+  "error": null,
   "progress": {
-    "task": "item_details",
-    "label": "Verify incomplete reel details",
-    "completed": 1,
+    "task": "android_import",
+    "label": "Import Android reel captures",
+    "completed": 2,
     "total": 2,
-    "detail": "DddW5GHyKy_",
-    "updated_at": "2026-11-14T09:54:39.124Z"
-  }
+    "detail": "Phone captures imported; unresolved saved reels remain",
+    "updated_at": "2026-11-14T19:45:51.511Z"
+  },
+  "android_import": {
+    "imported_at": "2026-11-14T19:45:51.511Z",
+    "source_batch": "data/imports/android/2026-11-14T19-45-51-511Z",
+    "updated_reels": 2
+  },
+  "previous_collection_error": "Instagram returned HTTP 429 (rate limit). URL: https://www.instagram.com/reel/DddW5GHyKy_/"
 }

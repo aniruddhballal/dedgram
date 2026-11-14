@@ -99,40 +99,123 @@
     "url": "https://www.instagram.com/reel/Dd2L0NtPH4L/",
     "grid_views_raw": "8.1M",
     "grid_views_issue": null,
-    "status": "needs_review",
-    "fetched_at": "2026-10-28T11:25:11.251Z",
+    "status": "complete",
+    "fetched_at": "2026-11-14T19:28:09.384Z",
     "date": "2026-09-28",
     "date_precision": "day",
-    "caption": null,
-    "hashtags": [],
+    "caption": "#TVアニメ『THINKER』 希望の最新ネタがついに解禁!! 🧠 容赦なしの最新爆笑シーンを公開!さらに、キレキレの煽り＆予想外のツッコミに加",
+    "hashtags": [
+      "#TVアニメ"
+    ],
     "mentions": [],
-    "likes": null,
-    "comments": null,
+    "likes": {
+      "value": 238501,
+      "raw": "238501",
+      "approximate": false,
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:28:09.384Z"
+    },
+    "comments": {
+      "value": 954,
+      "raw": "954",
+      "approximate": false,
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:28:09.384Z"
+    },
     "views": {
-      "value": 8100000,
-      "raw": "8.1M",
-      "approximate": true,
-      "source": "profile_grid",
-      "observed_at": "2026-10-23T16:14:10.227Z"
+      "value": 8182603,
+      "raw": "8182603",
+      "approximate": false,
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:28:09.384Z"
     },
     "thumbnail_url": "https://instagram.fblr1-7.fna.fbcdn.net/v/t51.82787-15/847495276_18117138496938921_6850486167244014952_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=kwiTFfFmIfwQ7kNvwF35JIe&_nc_oc=AdoHvTzc3JntTRYoNRNXa6rGK878c7tpkwjT0Dbo3F7C5dwsxfheGmrLzy93tLkV-X_Miw_nX7yTIxjKKg2BPZBK&_nc_zt=23&_nc_ht=instagram.fblr1-7.fna&_nc_gid=rhLVt9fSCtFiJbNdSQKDGA&_nc_ss=7f6a8&oh=00_AQSjjT6DzWF884N4eS8pZ58rEnXJ0aHiEfkd2ePXx9OMEA&oe=6AE7A678&ig_cache_key=MDJSQVF6Qm16QWd6SUhjVjFBQUtuamRBUUgzOUFSWDJpRlRxazpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
-    "missing": [
-      "likes",
-      "comments"
-    ],
-    "missing_reasons": {
-      "likes": "No readable like count was found on the content page or in its metadata.",
-      "comments": "No readable comment count was found on the content page or in its metadata."
-    },
+    "missing": [],
+    "missing_reasons": {},
     "raw": {
       "description": "「#TVアニメ『THINKER』 希望の最新ネタがついに解禁!! 🧠 容赦なしの最新爆笑シーンを公開!さらに、キレキレの煽り＆予想外のツッコミに加」 - 2026年9月28日、「いいね！」238K件、コメント951件 - memesprcaf",
-      "article_text": "memesprcaf\n•\nFollow\n#TVアニメ『THINKER』 希望の最新ネタがついに解禁!! 🧠 容赦なしの最新爆笑シーンを公開!さらに、キレキレの煽り＆予想外のツッコミに加\n238K\n951\n3,503\nbroishe\n•\nFollow\nTame Impala · Eventually\n#contagiouslaughter\n88K\n258\n4,252",
+      "article_text": "Android reel capture by tankandoobrasil\n#TVアニメ『THINKER』 希望の最新ネタがついに解禁!! 🧠 容赦なしの最新爆笑シーンを公開!さらに、キレキレの煽り＆予想外のツッコミに加\n29 September",
       "aria_text": "memesprcaf reels\nmemesprcaf reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nbroishe reels\nbroishe reels\nAudio image\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
-      "json_ld": {}
+      "json_ld": {},
+      "android_capture": {
+        "shortcode": "Dd2L0NtPH4L",
+        "url": "https://www.instagram.com/reel/Dd2L0NtPH4L/",
+        "identity_source": "manual_copy_link_and_account_confirmation",
+        "retained_observations": null,
+        "account": "tankandoobrasil",
+        "captured_at": "1794684489384",
+        "likes": {
+          "value": 238501,
+          "error": null
+        },
+        "comments": {
+          "value": 954,
+          "error": null
+        },
+        "views_or_plays": {
+          "value": 8182603,
+          "error": null
+        },
+        "shares": {
+          "value": 55914,
+          "error": null
+        },
+        "reposts": {
+          "value": 3492,
+          "error": null
+        },
+        "saves": {
+          "value": 6307,
+          "error": null
+        },
+        "date_posted": {
+          "value": "29 September",
+          "error": null
+        },
+        "caption": {
+          "value": "#TVアニメ『THINKER』 希望の最新ネタがついに解禁!! 🧠 容赦なしの最新爆笑シーンを公開!さらに、キレキレの煽り＆予想外のツッコミに加",
+          "error": null
+        },
+        "caption_expanded": true,
+        "navigation_error": null,
+        "capture_stage": "finished",
+        "likes_availability": "unknown",
+        "publication_observation": {
+          "raw_text": "29 September",
+          "observed_at": "2026-11-14T19:28:09.3849514+00:00",
+          "observed_at_epoch_ms": 1794684489384,
+          "timezone": "Asia/Kolkata",
+          "locale": "en-GB",
+          "source": "manual_instagram_android_expanded_caption_footer",
+          "exact_publication_time": null
+        },
+        "capture_method": "manual_adb_ui_capture_after_user_navigation",
+        "historical_account": "memesprcaf",
+        "field_observations": {
+          "likes_raw": "238,501",
+          "plays_raw": "8,182,603",
+          "comments_raw": "Comment number is 954. View comments",
+          "reposts_raw": "Reposted 3492 times",
+          "shares_raw": "Reshare number is 55914",
+          "saves_raw": "Save number is 6307",
+          "caption_source": "expanded_caption_accessibility_node",
+          "identity_source": "copied_reel_link_shortcode_and_user_confirmed_current_account"
+        },
+        "metric_availability": null
+      },
+      "engagement": {
+        "availability": {}
+      },
+      "capture_checks": {
+        "access_clear": true,
+        "stable": true,
+        "source": "manual_copy_link_and_account_confirmation",
+        "caption_expanded": true
+      }
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:25:11.252Z",
+    "last_attempt_at": "2026-11-14T19:28:09.384Z",
     "deletion_check": {
       "status": "age_restricted",
       "reason": "Instagram reported that this reel is age-restricted and requires viewers to be 25 or older.",
@@ -247,11 +330,58 @@
       "requires_detail_retry": true
     },
     "date_source": "og_description_localized",
-    "access_review": {
-      "kind": "age_restricted",
-      "reason": "Age restriction requires access confirmation or manual review; it is not a resolved missing metric.",
-      "recorded_at": "2026-11-14T08:26:03.802Z",
-      "previous_status": "age_restricted"
+    "access_review": null,
+    "reshares": {
+      "value": 3492,
+      "raw": "3492",
+      "approximate": false,
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:28:09.384Z"
+    },
+    "shares": {
+      "value": 55914,
+      "raw": "55914",
+      "approximate": false,
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:28:09.384Z"
+    },
+    "saves": {
+      "value": 6307,
+      "raw": "6307",
+      "approximate": false,
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:28:09.384Z"
+    },
+    "extraction_review": null,
+    "analysis_resolution": null,
+    "observed_owner_username": "tankandoobrasil",
+    "owner_identity_observation": {
+      "source": "manual_copy_link_and_account_confirmation",
+      "observed_at": "2026-11-14T19:28:09.384Z",
+      "historical_account": "memesprcaf",
+      "verification": {
+        "source": "instagram_copy_link_and_user_confirmation",
+        "shortcode": "Dd2L0NtPH4L",
+        "observed_account": "tankandoobrasil",
+        "observed_at": "2026-11-14T19:21:59.0162921Z"
+      }
+    },
+    "publication_observation": {
+      "raw_text": "29 September",
+      "observed_at": "2026-11-14T19:28:09.3849514+00:00",
+      "observed_at_epoch_ms": 1794684489384,
+      "timezone": "Asia/Kolkata",
+      "locale": "en-GB",
+      "source": "manual_instagram_android_expanded_caption_footer",
+      "exact_publication_time": null
+    },
+    "metric_availability": {},
+    "android_import": {
+      "imported_at": "2026-11-14T19:45:51.511Z",
+      "captured_at": "2026-11-14T19:28:09.384Z",
+      "phone_status": "collected",
+      "source": "Documents/dedgram/reels.json",
+      "capture_method": "manual_adb_ui_capture_after_user_navigation"
     }
   },
   {

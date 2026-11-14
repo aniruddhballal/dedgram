@@ -1770,33 +1770,33 @@
     "url": "https://www.instagram.com/reel/DejpZ6nostn/",
     "grid_views_raw": null,
     "grid_views_issue": "Sensitive Content overlay hides the profile grid view label; the reel page showed no readable view count.",
-    "status": "needs_review",
-    "fetched_at": "2026-10-28T11:03:55.862Z",
+    "status": "complete",
+    "fetched_at": "2026-11-14T19:16:17.801Z",
     "date": "2026-10-16",
     "date_precision": "day",
     "caption": "コービー・ブライアントはNBAの伝説的選手。\n5度のNBA優勝、18回のオールスター選出を達成。\n「Mamba Mentality」は、努力と諦めない精神の象徴。\n🐍🏀",
     "hashtags": [],
     "mentions": [],
     "likes": {
-      "value": 484068,
-      "raw": "484,068",
+      "value": 484085,
+      "raw": "484085",
       "approximate": false,
-      "source": "manual_user_details",
-      "observed_at": "2026-10-28T11:03:55.862Z"
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:16:17.801Z"
     },
     "comments": {
-      "value": 6960,
-      "raw": "6,960",
+      "value": 6952,
+      "raw": "6952",
       "approximate": false,
-      "source": "manual_user_details",
-      "observed_at": "2026-10-28T11:03:55.862Z"
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:16:17.801Z"
     },
     "views": {
-      "value": 8656811,
-      "raw": "8,656,811",
+      "value": 8667238,
+      "raw": "8667238",
       "approximate": false,
-      "source": "manual_user_details",
-      "observed_at": "2026-10-28T11:03:55.862Z"
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:16:17.801Z"
     },
     "thumbnail_url": "https://instagram.fblr1-7.fna.fbcdn.net/v/t51.82787-15/848804810_18077360840569933_181750827494485691_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=kxZ5aKNxaDEQ7kNvwHbzlqo&_nc_oc=AdrIdToXeqP9cPCRSkzgedQe69vtv0mmOtt0cek9V0cUjpbfI239SrX58y6-7_INxGgCLi8w2xOrD-rXmO-sFmv7&_nc_zt=23&_nc_ht=instagram.fblr1-7.fna&_nc_gid=tJux5hJ1SEXkBelseEsmFQ&_nc_ss=7f6a8&oh=00_AQPbetFVPgr_zqgQpd3sKyDgbepTNhWIH8ukM2JYZwLv3w&oe=6AE23D77&ig_cache_key=MDJSQVF6QnNxN2x6SUhRemxBQUUzMFlJOEhhcldGQXJzdWNTWTpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
@@ -1804,12 +1804,75 @@
     "missing_reasons": {},
     "raw": {
       "description": "484K likes, 6,963 comments - pichypeapp on October 16, 2026: \"コービー・ブライアントはNBAの伝説的選手。\n5度のNBA優勝、18回のオールスター選出を達成。\n「Mamba Mentality」は、努力と諦めない精神の象徴。\n🐍🏀\". ",
-      "article_text": "pichypeapp\n•\nFollow\nコービー・ブライアントはNBAの伝説的選手。\n5度のNBA優勝、18回のオールスター選出を達成。\n「Mamba Mentality」は、努力と諦めない精神の象徴。\n🐍🏀\nSensitive Content\nThis video contains content that some people may find upsetting.\nSee why\nSee reel\n483K\n6,963\n17.5K\nkrystinatasker\n•\nFollow\nUsher · Hey Daddy (Daddy's Home) (feat. Plies)\nUsher · Hey Daddy (Daddy's Home) (feat. Plies)\nI need 24 hours to recover 🤯🥹 ACKNOWLEDGE HIM! 👆🏻\n\n#streetfighter #romanreigns #tribalchief #akuma #wwe\n598K\n2,720\n5,965",
+      "article_text": "Android reel capture by pichypeapp\nコービー・ブライアントはNBAの伝説的選手。\n5度のNBA優勝、18回のオールスター選出を達成。\n「Mamba Mentality」は、努力と諦めない精神の象徴。\n🐍🏀\n16 October",
       "aria_text": "pichypeapp reels\npichypeapp reels\nSensitive content overlay icon\nLike\nComment\nRepost\nShare\nSave\nMore\nkrystinatasker reels\nkrystinatasker reels\nVerified\nAudio image\nTagged users\nLocation\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
-      "json_ld": {}
+      "json_ld": {},
+      "android_capture": {
+        "shortcode": "DejpZ6nostn",
+        "url": "https://www.instagram.com/reel/DejpZ6nostn/",
+        "identity_source": "queue_deep_link_and_account_check",
+        "retained_observations": null,
+        "account": "pichypeapp",
+        "captured_at": "1794683777801",
+        "likes": {
+          "value": 484085,
+          "error": null
+        },
+        "comments": {
+          "value": 6952,
+          "error": null
+        },
+        "views_or_plays": {
+          "value": 8667238,
+          "error": null
+        },
+        "shares": {
+          "value": 273369,
+          "error": null
+        },
+        "reposts": {
+          "value": 17512,
+          "error": null
+        },
+        "saves": {
+          "value": 43170,
+          "error": null
+        },
+        "date_posted": {
+          "value": "16 October",
+          "error": null
+        },
+        "caption": {
+          "value": "コービー・ブライアントはNBAの伝説的選手。\n5度のNBA優勝、18回のオールスター選出を達成。\n「Mamba Mentality」は、努力と諦めない精神の象徴。\n🐍🏀",
+          "error": null
+        },
+        "publication_observation": {
+          "raw_text": "16 October",
+          "observed_at": "2026-11-14T19:16:18.994Z",
+          "observed_at_epoch_ms": 1794683778994,
+          "timezone": "Asia/Kolkata",
+          "locale": "en-GB",
+          "source": "instagram_android_expanded_caption_footer",
+          "exact_publication_time": null
+        },
+        "caption_expanded": true,
+        "navigation_error": null,
+        "capture_stage": "finished",
+        "likes_availability": "unknown",
+        "metric_availability": null
+      },
+      "engagement": {
+        "availability": {}
+      },
+      "capture_checks": {
+        "access_clear": true,
+        "stable": true,
+        "source": "queue_deep_link_and_account_check",
+        "caption_expanded": true
+      }
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:03:55.862Z",
+    "last_attempt_at": "2026-11-14T19:16:17.801Z",
     "reposts": {
       "value": 17500,
       "raw": "17.5K",
@@ -1818,18 +1881,18 @@
       "observed_at": "2026-10-28T11:03:55.862Z"
     },
     "shares": {
-      "value": 273000,
-      "raw": "273K",
-      "approximate": true,
-      "source": "manual_user_details",
-      "observed_at": "2026-10-28T11:03:55.862Z"
+      "value": 273369,
+      "raw": "273369",
+      "approximate": false,
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:16:17.801Z"
     },
     "saves": {
-      "value": 43200,
-      "raw": "43.2K",
-      "approximate": true,
-      "source": "manual_user_details",
-      "observed_at": "2026-10-28T11:03:55.862Z"
+      "value": 43170,
+      "raw": "43170",
+      "approximate": false,
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:16:17.801Z"
     },
     "manual_observation": {
       "source": "manual_user_details",
@@ -1837,11 +1900,39 @@
       "resolution": "age_restricted",
       "reason": "Sensitive-content restriction prevented the normal collector from reading the reel details; engagement values were supplied manually by the user."
     },
-    "access_review": {
-      "kind": "age_restricted",
-      "reason": "Age restriction requires access confirmation or manual review; it is not a resolved missing metric.",
-      "recorded_at": "2026-11-14T08:26:03.802Z",
-      "previous_status": "age_restricted"
+    "access_review": null,
+    "reshares": {
+      "value": 17512,
+      "raw": "17512",
+      "approximate": false,
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:16:17.801Z"
+    },
+    "extraction_review": null,
+    "analysis_resolution": null,
+    "observed_owner_username": "pichypeapp",
+    "owner_identity_observation": {
+      "source": "queue_deep_link_and_account_check",
+      "observed_at": "2026-11-14T19:16:17.801Z",
+      "historical_account": null,
+      "verification": null
+    },
+    "publication_observation": {
+      "raw_text": "16 October",
+      "observed_at": "2026-11-14T19:16:18.994Z",
+      "observed_at_epoch_ms": 1794683778994,
+      "timezone": "Asia/Kolkata",
+      "locale": "en-GB",
+      "source": "instagram_android_expanded_caption_footer",
+      "exact_publication_time": null
+    },
+    "metric_availability": {},
+    "android_import": {
+      "imported_at": "2026-11-14T19:45:51.511Z",
+      "captured_at": "2026-11-14T19:16:17.801Z",
+      "phone_status": "collected",
+      "source": "Documents/dedgram/reels.json",
+      "capture_method": "android_queue"
     }
   },
   {
