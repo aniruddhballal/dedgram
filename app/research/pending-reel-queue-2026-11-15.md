@@ -1,5 +1,17 @@
 # Pending reel queue: 2.4.0 validation
 
+## 2.4.2 metric availability validation
+
+The user clarified that a verified unexposed metric is resolved and must not hold completion back. A failed read alone is insufficient evidence of that absence. The app now records two matching action-strip observations, separated by at least 500 ms, with the visible control and next control bounding an absent count region. A present but unreadable count/placeholder, missing controls, failed caption/date/likes/plays pipeline or navigation error cannot resolve the field. The saved scope explicitly describes the observed Android UI rather than claiming no Instagram surface could ever expose the number.
+
+`metric_availability` persists each field's status, source, observation times, sample count, successful-details check and control evidence. Resolved null values remain null and display Not exposed. Existing valid values retain their previous observation times when reused. The store also preserves additional record metadata, including the earlier manual capture provenance. Navigation errors now prevent a collected outcome even if all numeric fields have values.
+
+All 71 unit tests passed; the optimized preview APK was built and installed as 2.4.2 / 20402. Added tests cover verified absence, malformed/present/empty count nodes, absent controls, failed panels, navigation failures, insufficient observations, historical errors without evidence, JSON round trips and retention of valid older counts.
+
+A connected-device verification pass rechecked the 14 partial entries whose caption/date and likes/plays capture had succeeded. The first fun_fineee reel with an actual likes/plays extraction failure was left partial. All 14 rechecked entries gained confirmed availability evidence and became collected. The final phone queue is **25 collected, one partial, zero failed, zero pending**. The canonical results file contains 26 records with matching URL/captured_at checkpoints for all 26 queue entries. Evidence resolved 12 unexposed share counts, three comments counts, one repost count and one save count. The manually captured tankandoobrasil record retained its method and historical account metadata. No visible throttle or crash occurred in this pass.
+
+The remaining partial is `De8VsImSFMm`: caption/date are saved, but likes/plays capture did not succeed. Its missing metrics have not been declared unavailable. These counts supersede earlier checkpoints below. No collector/website dataset or profile-completion status was changed; these results are in the phone's pending_reels.json and reels.json.
+
 ## Live monitoring precaution
 
 Do not run the standard `adb shell uiautomator dump` while dedgram's accessibility capture is active. During the fresh 26-entry run, the system log at 00:35:17 showed registration of UiTestAutomationService with flags 0, immediately followed by removal of dedgram's overlay windows and service unbinding. This inspection interrupted the run after its first saved result; no dedgram crash occurred. Use shared-file pulls, logcat, dumpsys and screencap for live monitoring instead. Re-arm through the app and obtain the user's accessibility enablement to resume after this interruption. UI dumps are only used while capture is already off.

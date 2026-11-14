@@ -40,7 +40,8 @@ public final class PendingReels {
     }
     public static String outcome(Reel r){
         return r.hasErrors() || !r.captionExpanded || r.caption.isEmpty() || r.datePosted.isEmpty()
-            || r.viewsOrPlays==null || r.comments==null || (r.likes==null&&!"owner_only".equals(r.likesAvailability))
-            || r.shares==null || r.reposts==null || r.saves==null ? "partial" : "collected";
+            || r.viewsOrPlays==null || (r.comments==null&&!r.metricNotExposed("comments")) || (r.likes==null&&!"owner_only".equals(r.likesAvailability))
+            || (r.shares==null&&!r.metricNotExposed("shares")) || (r.reposts==null&&!r.metricNotExposed("reposts"))
+            || (r.saves==null&&!r.metricNotExposed("saves")) ? "partial" : "collected";
     }
 }

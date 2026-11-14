@@ -5,10 +5,15 @@ import org.json.JSONObject;
 
 /** A reel capture. Nullable values are paired with a field-level error. */
 public final class Reel {
+    private JSONObject savedDocument;
     public String shortcode = "";
     public String url = "";
     public String identitySource = "accessibility";
     public JSONObject retainedObservations;
+    public JSONObject metricAvailability;
+    JSONObject initialAbsentControls;
+    JSONObject confirmedAbsentControls;
+    long initialMetricObservationAt, confirmedMetricObservationAt;
     public String account = "";
     public String capturedAt = "";
     public Long likes;
@@ -36,6 +41,7 @@ public final class Reel {
 
     public static Reel fromJson(JSONObject object) {
         Reel reel = new Reel();
+        try { reel.savedDocument=new JSONObject(object.toString()); } catch(JSONException ignored){}
         reel.url = object.optString("url", "");
         reel.identitySource = object.optString("identity_source", "accessibility");
         reel.shortcode = object.optString("shortcode", "");
@@ -58,6 +64,7 @@ public final class Reel {
         reel.datePostedError = fieldError(object, "date_posted");
         reel.captionError = fieldError(object, "caption");
         reel.retainedObservations = object.optJSONObject("retained_observations");
+        reel.metricAvailability = object.optJSONObject("metric_availability");
         reel.publicationObservation = object.optJSONObject("publication_observation");
         reel.navigationError = object.isNull("navigation_error") ? null : object.optString("navigation_error", null);
         reel.captionExpanded = object.optBoolean("caption_expanded", false);
@@ -67,11 +74,12 @@ public final class Reel {
     }
 
     public JSONObject toJson() throws JSONException {
-        JSONObject object = new JSONObject();
+        JSONObject object = savedDocument==null?new JSONObject():new JSONObject(savedDocument.toString());
         object.put("shortcode", shortcode);
         object.put("url", url);
         object.put("identity_source", identitySource);
         object.put("retained_observations", retainedObservations == null ? JSONObject.NULL : retainedObservations);
+        object.put("metric_availability", metricAvailability == null ? JSONObject.NULL : metricAvailability);
         object.put("account", account);
         object.put("captured_at", capturedAt);
         object.put("likes", field(likes, likesError));
@@ -111,7 +119,16 @@ public final class Reel {
     public boolean hasErrors() {
         return likesError != null || commentsError != null || viewsOrPlaysError != null
                 || sharesError != null || repostsError != null || savesError != null
-                || datePostedError != null || captionError != null;
+                || datePostedError != null || captionError != null || navigationError != null;
+    }
+
+    public boolean metricNotExposed(String field) {
+        JSONObject evidence=metricAvailability==null?null:metricAvailability.optJSONObject(field);
+        return evidence!=null && "not_exposed".equals(evidence.optString("status"))
+                && "verified_reel_controls".equals(evidence.optString("source"))
+                && evidence.optInt("samples",0)>=2 && evidence.optBoolean("details_capture_verified",false)
+                && evidence.optLong("confirmed_at",0)-evidence.optLong("first_observed_at",0)>=500
+                && !evidence.optString("control_evidence", "").isEmpty();
     }
 
     private static JSONObject field(Object value, String error) throws JSONException {

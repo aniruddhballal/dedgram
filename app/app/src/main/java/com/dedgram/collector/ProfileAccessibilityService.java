@@ -482,6 +482,7 @@ public final class ProfileAccessibilityService extends AccessibilityService {
             return;
         }
         Reel reel = buildReel(snapshot);
+        ReelMetricAvailability.observe(reel, snapshot, true);
         boolean expanded = ReelAccessibilityExtractor.clickCaption(root);
         root.recycle();
         reel.captureStage = "caption";
@@ -574,6 +575,7 @@ public final class ProfileAccessibilityService extends AccessibilityService {
             root.recycle(); reel.viewsOrPlaysError = "Reel identity changed during capture; metrics were not read."; saveReel(source, reel); return;
         }
         reel.captureStage = "metrics";
+        ReelMetricAvailability.observe(reel, snapshot, false);
         boolean opened = ReelAccessibilityExtractor.clickLikesCount(root); root.recycle();
         if (!opened) { reel.viewsOrPlaysError = "Could not open Likes and plays from this reel."; saveReel(source, reel); return; }
         mainHandler.postDelayed(() -> finishReelCapture(source, reel, 0), 700L);
@@ -619,6 +621,7 @@ public final class ProfileAccessibilityService extends AccessibilityService {
         root.recycle();
         reel.captureStage = "finished";
         closeCapturedSheet(reel, false);
+        ReelMetricAvailability.resolve(reel);
         mainHandler.postDelayed(() -> saveReel(source, reel), 350L);
     }
 

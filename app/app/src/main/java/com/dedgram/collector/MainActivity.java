@@ -458,18 +458,18 @@ public final class MainActivity extends Activity {
         row.addView(UiStyles.text(this, title, 17, 0xFF312E81, true));
         String account = reel.account.isEmpty() ? "Account unavailable" : "@" + reel.account;
         row.addView(UiStyles.text(this, account, 12, 0xFF555555, false), margin(0, 4, 0, 0));
-        String summary = "Likes " + metric(reel.likes, reel.likesError)
-                + "  ·  Plays " + metric(reel.viewsOrPlays, reel.viewsOrPlaysError)
-                + "  ·  Comments " + metric(reel.comments, reel.commentsError);
+        String summary = "Likes " + metric(reel, "likes", reel.likes, reel.likesError)
+                + "  ·  Plays " + metric(reel, "views_or_plays", reel.viewsOrPlays, reel.viewsOrPlaysError)
+                + "  ·  Comments " + metric(reel, "comments", reel.comments, reel.commentsError);
         row.addView(UiStyles.text(this, summary, 13, Color.BLACK, true), margin(0, 10, 0, 0));
         String caption = reel.caption.isEmpty() ? (reel.captionError == null ? "Caption unavailable" : reel.captionError) : reel.caption;
         TextView captionView = UiStyles.text(this, caption, 14, Color.BLACK, false);
         captionView.setLineSpacing(UiStyles.dp(this, 2), 1.0f);
         row.addView(captionView, margin(0, 8, 0, 0));
         String details = "Date " + (reel.datePosted.isEmpty() ? (reel.datePostedError == null ? "Unavailable" : "ERROR") : reel.datePosted)
-                + "  ·  Shares " + metric(reel.shares, reel.sharesError)
-                + "  ·  Reposts " + metric(reel.reposts, reel.repostsError)
-                + "  ·  Saves " + metric(reel.saves, reel.savesError);
+                + "  ·  Shares " + metric(reel, "shares", reel.shares, reel.sharesError)
+                + "  ·  Reposts " + metric(reel, "reposts", reel.reposts, reel.repostsError)
+                + "  ·  Saves " + metric(reel, "saves", reel.saves, reel.savesError);
         row.addView(UiStyles.text(this, details, 11, 0xFF555555, false), margin(0, 8, 0, 0));
         if (reel.hasErrors()) {
             TextView warning = UiStyles.text(this, "Some fields contain capture errors; inspect reels.json for field-level details.", 11, 0xFF9A3412, true);
@@ -480,8 +480,10 @@ public final class MainActivity extends Activity {
         return row;
     }
 
-    private String metric(Long value, String error) {
+    private String metric(Reel reel, String field, Long value, String error) {
         if (value != null) return Long.toString(value);
+        if (reel.metricNotExposed(field)) return "Not exposed";
+        if (field.equals("likes") && "owner_only".equals(reel.likesAvailability)) return "Hidden";
         return error == null ? "Unavailable" : "ERROR";
     }
 

@@ -54,6 +54,36 @@ public final class ReelAccessibilityExtractor {
             return countAfter(label, 10);
         }
 
+        /** An intact action strip with no count node between adjacent controls.
+         * A present but unreadable count is never evidence of unavailability. */
+        public String absentCountControl(String label) {
+            if (!isLikelyReel() || hasCaptionSheet() || hasLikesAndPlaysSheet() || queueIssue()!=null) return null;
+            String expected = label.equals("comment") ? ":id/comment_button"
+                    : label.equals("share") ? ":id/direct_share_button"
+                    : label.equals("save") ? ":id/save_button" : "";
+            if (expected.isEmpty() && !label.equals("repost")) return null;
+            for (int i=0; i<entries.size(); i++) {
+                Entry action=entries.get(i);
+                boolean matches=expected.isEmpty() ? action.display().equalsIgnoreCase("Repost")
+                        : String.valueOf(action.node.getViewIdResourceName()).endsWith(expected);
+                if (!matches || !action.display().equalsIgnoreCase(label)) continue;
+                for (int j=i+1; j<entries.size(); j++) {
+                    Entry following=entries.get(j);
+                    if (following.display().isEmpty()) {
+                        // Even an empty count node can be a loading placeholder.
+                        if (following.node.getViewIdResourceName()!=null) return null;
+                        continue;
+                    }
+                    String next=following.display().trim();
+                    boolean boundary=isActionLabel(next) || next.equalsIgnoreCase("More");
+                    if (!boundary) return null;
+                    String expectedNext=label.equals("comment")?"Repost":label.equals("repost")?"Share":label.equals("share")?"Save":"More";
+                    return next.equalsIgnoreCase(expectedNext) ? "visible_"+label+"_control_without_count_before_"+expectedNext.toLowerCase(Locale.ROOT) : null;
+                }
+            }
+            return null;
+        }
+
         public Long playsFromSheet() {
             for (Entry e : entries) if (String.valueOf(e.node.getViewIdResourceName()).endsWith(":id/video_view_count_text")) return parseCount(e.text());
             int title = indexContaining("likes and plays");
