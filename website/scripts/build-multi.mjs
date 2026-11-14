@@ -37,12 +37,10 @@ const fullProfiles = [
   'dank.meemz420',
   'funny.exe07',
   'nhiftbl',
-  'coopyyz',
   'movi.egaze',
   'kanika_s.0711',
   'pixa.300k',
   'madarameme0',
-  'extreme_laugh_07',
   'damon.maxx',
   'turtle.4223253',
   'herogram_50k',
@@ -205,7 +203,7 @@ const profileLevelProfiles = [
   'emilily_ss',
   'dina4988542',
 ];
-const retainedMetricProfiles = ['jellyfish.m3mes', 'prxctm0l'];
+const retainedMetricProfiles = ['jellyfish.m3mes', 'prxctm0l', 'coopyyz', 'extreme_laugh_07'];
 const retainedMetricSet = new Set(retainedMetricProfiles);
 const excludedProfiles = ['hnvx.07', 'prime_senchui', 'vlad.aep_', 'nxx._.nmercy', 'dexea.100k', 'igpostinggang', 'rzk.mp4', 'renyajichu', 'hammergag', 'caodogsfofo', 'back', '41.3k', 'short_vibesz', 'oooiway', 'zuxxie.pov', 'extreme.laugh8', 'iron_block2', 'memes.fatafat', 'waytoway__', 'luffytheegear5', 'chir.eze', 'dinosaur.24252627'];
 const publishedProfiles = [...fullProfiles, ...profileLevelProfiles, ...retainedMetricProfiles, ...excludedProfiles];

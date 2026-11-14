@@ -5,7 +5,7 @@
     "url": "https://www.instagram.com/reel/De57B-ozAzu/",
     "grid_views_raw": "2,051",
     "grid_views_issue": null,
-    "status": "partial",
+    "status": "archived",
     "fetched_at": "2026-10-28T11:33:21.510Z",
     "date": "2026-10-24",
     "date_precision": "day",
@@ -28,12 +28,8 @@
     },
     "thumbnail_url": "https://instagram.fblr1-7.fna.fbcdn.net/v/t51.71878-15/861754723_2503481970160366_5320369721814338398_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=uQjnA2pgT_YQ7kNvwEv4Vw9&_nc_oc=AdrfNqgqpQhlBrYraVcM2IiKsciNVDhXtZZXwZiRMo8aYYSll9y9zbLpxKN-54shW-cfLMmSVXICMDW_yrxiUWaG&_nc_zt=23&_nc_ht=instagram.fblr1-7.fna&_nc_gid=nRRt7Q85Kuajp-AKDXkIJw&_nc_ss=7e6a8&oh=00_AQSfyWpk4psrsLI3f8Q-yO6b2yG-Es8g8EPfJxuOIr8Esw&oe=6AE7A74B&ig_cache_key=MDJSQVF6Qm1OVlhUTUg1X1FJQU81eWlGRUhFc0RWU1Y3TGZNNDpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
-    "missing": [
-      "comments"
-    ],
-    "missing_reasons": {
-      "comments": "No readable comment count was found on the content page or in its metadata."
-    },
+    "missing": [],
+    "missing_reasons": {},
     "raw": {
       "description": "extreme_laugh_07 on October 24, 2026: \"TVアニメ『佐々木とピーちゃん Season2』第1話は1 時間スペシャル! 新キャラクターのキャストが解禁! さらにOP 主題歌&メイン PVも公開!\". ",
       "article_text": "extreme_laugh_07\n•\nFollow\n• AI-generated profile\nTVアニメ『佐々木とピーちゃん Season2』第1話は1 時間スペシャル! 新キャラクターのキャストが解禁! さらにOP 主題歌&メイン PVも公開!\nLikes\n1\n1\nwolverinecrosser\n•\nFollow\n294K\n442\n14.2K",
@@ -41,7 +37,31 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:33:21.511Z"
+    "last_attempt_at": "2026-11-14T05:14:35.116Z",
+    "availability_resolution": {
+      "status": "unavailable",
+      "source": "automated_visible_page_check",
+      "recorded_at": "2026-11-14T05:14:35.116Z",
+      "reel_error": "Instagram reports this page is unavailable.",
+      "parent": {
+        "status": "unavailable",
+        "url": "https://www.instagram.com/extreme_laugh_07/",
+        "error": "Instagram reports this page is unavailable.",
+        "checked_at": "2026-11-14T05:14:35.116Z"
+      },
+      "reason": "Reel unavailable during a fresh page check; extraction resolved as unavailable. Deletion is not Instagram-confirmed.",
+      "previous_status": "partial",
+      "previous_last_error": null,
+      "previous_missing": [
+        "comments"
+      ],
+      "previous_missing_reasons": {
+        "comments": "No readable comment count was found on the content page or in its metadata."
+      }
+    },
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   },
   {
     "kind": "reel",
@@ -82,7 +102,34 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:33:25.447Z"
+    "last_attempt_at": "2026-10-28T11:33:25.447Z",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true,
+    "analysis_resolution": {
+      "status": "requires_verification",
+      "source": "saved_readable_capture",
+      "recorded_at": "2026-10-28T11:33:25.447Z",
+      "reason": "Previous automatic resolution lacked explicit evidence that the metric was hidden or disabled. Saved values retained; extraction requires verification.",
+      "unavailable_fields": [
+        "likes",
+        "comments"
+      ],
+      "policy_applied_at": "2026-11-14T08:13:07.918Z",
+      "policy_checked_at": "2026-11-14T08:26:03.802Z"
+    },
+    "extraction_review": "Metric extraction is incomplete; absence has not been confirmed. Inspect or retry rather than assume hidden counts.",
+    "previous_analysis_resolution": {
+      "status": "resolved",
+      "source": "saved_readable_capture",
+      "recorded_at": "2026-10-28T11:33:25.447Z",
+      "reason": "Earlier successful readable capture did not expose these numeric fields. Parent account is now unavailable; missing metrics are resolved as unknown, while saved values remain usable.",
+      "unavailable_fields": [
+        "likes",
+        "comments"
+      ],
+      "policy_applied_at": "2026-11-14T08:13:07.918Z"
+    }
   },
   {
     "kind": "reel",
@@ -135,7 +182,32 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:33:29.422Z"
+    "last_attempt_at": "2026-10-28T11:33:29.422Z",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true,
+    "analysis_resolution": {
+      "status": "requires_verification",
+      "source": "saved_readable_capture",
+      "recorded_at": "2026-10-28T11:33:29.422Z",
+      "reason": "Previous automatic resolution lacked explicit evidence that the metric was hidden or disabled. Saved values retained; extraction requires verification.",
+      "unavailable_fields": [
+        "comments"
+      ],
+      "policy_applied_at": "2026-11-14T08:13:07.918Z",
+      "policy_checked_at": "2026-11-14T08:26:03.802Z"
+    },
+    "extraction_review": "Metric extraction is incomplete; absence has not been confirmed. Inspect or retry rather than assume hidden counts.",
+    "previous_analysis_resolution": {
+      "status": "resolved",
+      "source": "saved_readable_capture",
+      "recorded_at": "2026-10-28T11:33:29.422Z",
+      "reason": "Earlier successful readable capture did not expose these numeric fields. Parent account is now unavailable; missing metrics are resolved as unknown, while saved values remain usable.",
+      "unavailable_fields": [
+        "comments"
+      ],
+      "policy_applied_at": "2026-11-14T08:13:07.918Z"
+    }
   },
   {
     "kind": "reel",
@@ -186,7 +258,10 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:33:33.374Z"
+    "last_attempt_at": "2026-10-28T11:33:33.374Z",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   },
   {
     "kind": "reel",
@@ -239,7 +314,10 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:33:37.388Z"
+    "last_attempt_at": "2026-10-28T11:33:37.388Z",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   },
   {
     "kind": "reel",
@@ -286,7 +364,32 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:33:41.446Z"
+    "last_attempt_at": "2026-10-28T11:33:41.446Z",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true,
+    "analysis_resolution": {
+      "status": "requires_verification",
+      "source": "saved_readable_capture",
+      "recorded_at": "2026-10-28T11:33:41.446Z",
+      "reason": "Previous automatic resolution lacked explicit evidence that the metric was hidden or disabled. Saved values retained; extraction requires verification.",
+      "unavailable_fields": [
+        "comments"
+      ],
+      "policy_applied_at": "2026-11-14T08:13:07.918Z",
+      "policy_checked_at": "2026-11-14T08:26:03.802Z"
+    },
+    "extraction_review": "Metric extraction is incomplete; absence has not been confirmed. Inspect or retry rather than assume hidden counts.",
+    "previous_analysis_resolution": {
+      "status": "resolved",
+      "source": "saved_readable_capture",
+      "recorded_at": "2026-10-28T11:33:41.446Z",
+      "reason": "Earlier successful readable capture did not expose these numeric fields. Parent account is now unavailable; missing metrics are resolved as unknown, while saved values remain usable.",
+      "unavailable_fields": [
+        "comments"
+      ],
+      "policy_applied_at": "2026-11-14T08:13:07.918Z"
+    }
   },
   {
     "kind": "reel",
@@ -333,7 +436,10 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:33:45.554Z"
+    "last_attempt_at": "2026-10-28T11:33:45.554Z",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   },
   {
     "kind": "reel",
@@ -380,7 +486,10 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:33:49.519Z"
+    "last_attempt_at": "2026-10-28T11:33:49.519Z",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   },
   {
     "kind": "reel",
@@ -425,7 +534,10 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:33:53.482Z"
+    "last_attempt_at": "2026-10-28T11:33:53.482Z",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   },
   {
     "kind": "reel",
@@ -472,7 +584,10 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:33:57.973Z"
+    "last_attempt_at": "2026-10-28T11:33:57.973Z",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   },
   {
     "kind": "reel",
@@ -517,7 +632,10 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:34:01.911Z"
+    "last_attempt_at": "2026-10-28T11:34:01.911Z",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   },
   {
     "kind": "reel",
@@ -564,7 +682,10 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:34:05.996Z"
+    "last_attempt_at": "2026-10-28T11:34:05.996Z",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   },
   {
     "kind": "reel",
@@ -609,7 +730,10 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:34:10.241Z"
+    "last_attempt_at": "2026-10-28T11:34:10.241Z",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   },
   {
     "kind": "reel",
@@ -654,7 +778,10 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:34:14.445Z"
+    "last_attempt_at": "2026-10-28T11:34:14.445Z",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   },
   {
     "kind": "reel",
@@ -701,6 +828,9 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:34:18.717Z"
+    "last_attempt_at": "2026-10-28T11:34:18.717Z",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   }
 ]

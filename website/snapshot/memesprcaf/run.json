@@ -1,6 +1,6 @@
 {
   "started_at": "2026-10-28T11:24:58.024Z",
-  "updated_at": "2026-11-05T17:36:32.208Z",
+  "updated_at": "2026-11-14T08:26:03.802Z",
   "status": "partial",
   "phase": "done",
   "scope": [
@@ -17,8 +17,8 @@
     "percent": 1,
     "remaining": 3011,
     "current_item": null,
-    "detail": "1 reel dates recovered from saved evidence. 3011 reels still need analysis or review.",
-    "updated_at": "2026-11-05T17:36:32.208Z"
+    "detail": "Policy audit: access or missing-metric evidence requires verification. All saved values preserved.",
+    "updated_at": "2026-11-14T08:26:03.802Z"
   },
   "deletion_check": {
     "operation": "automated reel availability check",

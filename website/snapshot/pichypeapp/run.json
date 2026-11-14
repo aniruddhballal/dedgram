@@ -1,7 +1,7 @@
 {
   "started_at": "2026-10-24T09:20:37.642Z",
-  "updated_at": "2026-10-28T11:03:55.862Z",
-  "status": "complete",
+  "updated_at": "2026-11-14T08:26:03.802Z",
+  "status": "partial",
   "phase": "done",
   "scope": [
     "reel"
@@ -21,5 +21,9 @@
         "resolution": "age_restricted"
       }
     ]
+  },
+  "progress": {
+    "detail": "Policy audit: access or missing-metric evidence requires verification. All saved values preserved.",
+    "updated_at": "2026-11-14T08:26:03.802Z"
   }
 }

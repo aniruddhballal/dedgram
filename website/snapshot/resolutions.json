@@ -670,6 +670,58 @@
       "exclusion": null,
       "excluded_from_collection": true,
       "retained_metrics_in_analysis": true
+    },
+    "coopyyz": {
+      "username": "coopyyz",
+      "status": "Deleted or username changed",
+      "observed_at": "2026-11-14T05:14:30.330Z",
+      "last_fetched_at": "2026-10-28T09:01:58.676Z",
+      "profile_text": null,
+      "bio": "③魔王軍との全面戦争を繰り広げる！勇者伝説公式Instagramです！TVアニメ「聖剣のレガリア」放送中！「劇場版特別編」デジタル配信中／ブルーレイ＆DVD発売中",
+      "country": null,
+      "date_joined": "October 2026",
+      "posts_count": {
+        "value": 6,
+        "raw": "6",
+        "approximate": false
+      },
+      "deletion_date_range": null,
+      "age_restriction": null,
+      "minimum_age": null,
+      "false_identification": null,
+      "resolution_note": "Reel and parent profile unavailable on 14 November 2026. Deletion versus rename is unconfirmed. Further collection stopped; saved observations retained for historical analysis, with missing values unknown.",
+      "saved_data_available": true,
+      "deletion_assessment": null,
+      "reason": "Reel and parent profile unavailable on 14 November 2026. Deletion versus rename is unconfirmed. Further collection stopped; saved observations retained for historical analysis, with missing values unknown.",
+      "exclusion": null,
+      "excluded_from_collection": true,
+      "retained_metrics_in_analysis": true
+    },
+    "extreme_laugh_07": {
+      "username": "extreme_laugh_07",
+      "status": "Deleted or username changed",
+      "observed_at": "2026-11-14T05:14:35.117Z",
+      "last_fetched_at": "2026-10-28T09:05:10.686Z",
+      "profile_text": null,
+      "bio": "id managed by : @7_r_o_m_e_o\n.....\nFollowed by alankritbajoria123",
+      "country": null,
+      "date_joined": "October 2026",
+      "posts_count": {
+        "value": 13,
+        "raw": "13",
+        "approximate": false
+      },
+      "deletion_date_range": null,
+      "age_restriction": null,
+      "minimum_age": null,
+      "false_identification": null,
+      "resolution_note": "Reel and parent profile unavailable on 14 November 2026. Deletion versus rename is unconfirmed. Further collection stopped; saved observations retained for historical analysis, with missing values unknown.",
+      "saved_data_available": true,
+      "deletion_assessment": null,
+      "reason": "Reel and parent profile unavailable on 14 November 2026. Deletion versus rename is unconfirmed. Further collection stopped; saved observations retained for historical analysis, with missing values unknown.",
+      "exclusion": null,
+      "excluded_from_collection": true,
+      "retained_metrics_in_analysis": true
     }
   }
 }

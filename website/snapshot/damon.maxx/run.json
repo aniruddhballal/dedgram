@@ -1,6 +1,6 @@
 {
-  "started_at": "2026-11-05T14:55:25.419Z",
-  "updated_at": "2026-11-05T14:55:33.301Z",
+  "started_at": "2026-11-14T05:09:50.068Z",
+  "updated_at": "2026-11-14T08:26:03.802Z",
   "status": "partial",
   "phase": "done",
   "scope": [
@@ -10,14 +10,12 @@
   "error": null,
   "progress": {
     "task": "item_details",
-    "label": "Reel details",
-    "action": "Opening reel pages and extracting dates, captions, views, likes and comments",
+    "label": "Detail resolution",
     "completed": 1,
     "total": 1,
     "percent": 100,
-    "remaining": 0,
-    "current_item": null,
-    "detail": "Stage finished with review required",
-    "updated_at": "2026-11-05T14:55:33.301Z"
-  }
+    "detail": "Policy audit: access or missing-metric evidence requires verification. All saved values preserved.",
+    "updated_at": "2026-11-14T08:26:03.802Z"
+  },
+  "browser_left_open": true
 }

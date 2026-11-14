@@ -99,7 +99,7 @@
     "url": "https://www.instagram.com/reel/Dd2L0NtPH4L/",
     "grid_views_raw": "8.1M",
     "grid_views_issue": null,
-    "status": "age_restricted",
+    "status": "needs_review",
     "fetched_at": "2026-10-28T11:25:11.251Z",
     "date": "2026-09-28",
     "date_precision": "day",
@@ -246,7 +246,13 @@
       "reason": "Instagram displayed age-restricted content; viewing requires viewers to be 25 or older. Full reel details should be retried after the rate limit clears.",
       "requires_detail_retry": true
     },
-    "date_source": "og_description_localized"
+    "date_source": "og_description_localized",
+    "access_review": {
+      "kind": "age_restricted",
+      "reason": "Age restriction requires access confirmation or manual review; it is not a resolved missing metric.",
+      "recorded_at": "2026-11-14T08:26:03.802Z",
+      "previous_status": "age_restricted"
+    }
   },
   {
     "kind": "reel",

@@ -5,7 +5,7 @@
     "url": "https://www.instagram.com/reel/De_rAgQvgZE/",
     "grid_views_raw": "515",
     "grid_views_issue": null,
-    "status": "partial",
+    "status": "archived",
     "fetched_at": "2026-10-28T11:30:29.244Z",
     "date": "2026-10-27",
     "date_precision": "day",
@@ -28,12 +28,8 @@
     },
     "thumbnail_url": "https://instagram.fblr24-1.fna.fbcdn.net/v/t51.82787-15/868222419_1990810355494985_1195958832930775444_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=Z-Tdd4ozDi8Q7kNvwGe7NWG&_nc_oc=Ado2OtbhDs6mEcM9qHg44Pchaq1lzoDTTyoK8bPuKiaDnzPWHm11oFnG9NAPxHfP8ZBrSeTzRGW-A37iPTmhVz9x&_nc_zt=23&_nc_ht=instagram.fblr24-1.fna&_nc_gid=eC6pxtYT-eEnPAc7n77xXA&_nc_ss=7e6a8&oh=00_AQQb3SQQ0FL1b_RYyIDgcqyBJf5eSFOOkjQOChFcjczlRQ&oe=6AE7C1FC&ig_cache_key=MDJSQVF6QnRNRndETUhvUklIQUVud0RhZ0hPT2FZRUpSaDFObzpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
-    "missing": [
-      "comments"
-    ],
-    "missing_reasons": {
-      "comments": "No readable comment count was found on the content page or in its metadata."
-    },
+    "missing": [],
+    "missing_reasons": {},
     "raw": {
       "description": "coopyyz on October 27, 2026: \"③魔王軍との全面戦争を繰り広げる！「勇者伝説公式Instagramです！TVアニメ『聖剣のレガリア』放送中！『劇場版特別\n\n編』デジタル配信中／ブルーレイ＆DVD発売中\". ",
       "article_text": "coopyyz\n•\nFollow\n③魔王軍との全面戦争を繰り広げる！「勇者伝説公式Instagramです！TVアニメ『聖剣のレガリア』放送中！『劇場版特別\n\n編』デジタル配信中／ブルーレイ＆DVD発売中\nLikes\n2\nnerds_of_comedy\n•\nFollow\nAIB Knockout Throwback 🙂‍↕️\n.\n.\n.\n.\n.\n#tanmaybhat #rohanjoshi #standupcomedyindia #gursimrankhamba #arjunkapoor\n262K\n438\n3,755",
@@ -41,7 +37,31 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:30:29.245Z"
+    "last_attempt_at": "2026-11-14T05:14:30.330Z",
+    "availability_resolution": {
+      "status": "unavailable",
+      "source": "automated_visible_page_check",
+      "recorded_at": "2026-11-14T05:14:30.330Z",
+      "reel_error": "Instagram reports this page is unavailable.",
+      "parent": {
+        "status": "unavailable",
+        "url": "https://www.instagram.com/coopyyz/",
+        "error": "Instagram reports this page is unavailable.",
+        "checked_at": "2026-11-14T05:14:30.330Z"
+      },
+      "reason": "Reel unavailable during a fresh page check; extraction resolved as unavailable. Deletion is not Instagram-confirmed.",
+      "previous_status": "partial",
+      "previous_last_error": null,
+      "previous_missing": [
+        "comments"
+      ],
+      "previous_missing_reasons": {
+        "comments": "No readable comment count was found on the content page or in its metadata."
+      }
+    },
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   },
   {
     "kind": "reel",
@@ -85,7 +105,32 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:30:34.570Z"
+    "last_attempt_at": "2026-10-28T11:30:34.570Z",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true,
+    "analysis_resolution": {
+      "status": "requires_verification",
+      "source": "saved_readable_capture",
+      "recorded_at": "2026-10-28T11:30:34.570Z",
+      "reason": "Previous automatic resolution lacked explicit evidence that the metric was hidden or disabled. Saved values retained; extraction requires verification.",
+      "unavailable_fields": [
+        "comments"
+      ],
+      "policy_applied_at": "2026-11-14T08:13:07.880Z",
+      "policy_checked_at": "2026-11-14T08:26:03.802Z"
+    },
+    "extraction_review": "Metric extraction is incomplete; absence has not been confirmed. Inspect or retry rather than assume hidden counts.",
+    "previous_analysis_resolution": {
+      "status": "resolved",
+      "source": "saved_readable_capture",
+      "recorded_at": "2026-10-28T11:30:34.570Z",
+      "reason": "Earlier successful readable capture did not expose these numeric fields. Parent account is now unavailable; missing metrics are resolved as unknown, while saved values remain usable.",
+      "unavailable_fields": [
+        "comments"
+      ],
+      "policy_applied_at": "2026-11-14T08:13:07.880Z"
+    }
   },
   {
     "kind": "reel",
@@ -130,7 +175,10 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:30:39.174Z"
+    "last_attempt_at": "2026-10-28T11:30:39.174Z",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   },
   {
     "kind": "reel",
@@ -175,7 +223,10 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:30:43.139Z"
+    "last_attempt_at": "2026-10-28T11:30:43.139Z",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   },
   {
     "kind": "reel",
@@ -222,7 +273,10 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:30:47.137Z"
+    "last_attempt_at": "2026-10-28T11:30:47.137Z",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   },
   {
     "kind": "reel",
@@ -269,6 +323,9 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:30:51.317Z"
+    "last_attempt_at": "2026-10-28T11:30:51.317Z",
+    "excluded_from_collection": true,
+    "excluded_from_analysis": false,
+    "retained_metrics_in_analysis": true
   }
 ]
