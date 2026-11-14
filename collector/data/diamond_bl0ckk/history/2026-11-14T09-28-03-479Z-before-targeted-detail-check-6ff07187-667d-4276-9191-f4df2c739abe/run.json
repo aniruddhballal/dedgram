@@ -1,0 +1,46 @@
+{
+  "started_at": "2026-10-24T15:58:27.629Z",
+  "updated_at": "2026-11-05T17:54:20.269Z",
+  "status": "partial",
+  "phase": "done",
+  "scope": [
+    "reel"
+  ],
+  "current_url": null,
+  "error": null,
+  "manual_availability_review": {
+    "checked_at": "2026-11-05T17:54:20.269Z",
+    "verified_by": "user",
+    "status": "exists",
+    "confirmed_reels": [
+      "Dewt3HZAPPu",
+      "Dewt1f4gVUd",
+      "Dewt0PrgTgM",
+      "DewtyNEAHps",
+      "DewtrMNAa7N",
+      "DewtpqoggfY",
+      "Dewtlf7AgsY",
+      "DeuINNTAjzR",
+      "DeuIL4rgpFm",
+      "DeuIKPKAFmE",
+      "DeuIIzNACJK"
+    ],
+    "action": "retry_reel_details",
+    "remaining_reel_details": 95,
+    "previous_run_status": "running",
+    "suspected_cause": "possible_rate_limiting",
+    "cause_confirmed": false
+  },
+  "progress": {
+    "task": "item_details",
+    "label": "Reel details",
+    "action": "Ready for collection or retry",
+    "completed": 0,
+    "total": 95,
+    "percent": 0,
+    "remaining": 95,
+    "current_item": null,
+    "detail": "11 previously failed reels manually confirmed to exist and ready for retry; 84 additional reels remain pending. No scraping has started.",
+    "updated_at": "2026-11-05T17:54:20.269Z"
+  }
+}

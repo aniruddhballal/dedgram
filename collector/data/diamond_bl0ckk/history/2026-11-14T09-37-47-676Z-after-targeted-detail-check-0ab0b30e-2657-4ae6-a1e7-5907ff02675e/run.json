@@ -1,0 +1,42 @@
+{
+  "started_at": "2026-11-14T09:28:03.491Z",
+  "updated_at": "2026-11-14T09:37:47.613Z",
+  "status": "complete",
+  "phase": "done",
+  "scope": [
+    "reel"
+  ],
+  "current_url": null,
+  "error": null,
+  "manual_availability_review": {
+    "checked_at": "2026-11-05T17:54:20.269Z",
+    "verified_by": "user",
+    "status": "exists",
+    "confirmed_reels": [
+      "Dewt3HZAPPu",
+      "Dewt1f4gVUd",
+      "Dewt0PrgTgM",
+      "DewtyNEAHps",
+      "DewtrMNAa7N",
+      "DewtpqoggfY",
+      "Dewtlf7AgsY",
+      "DeuINNTAjzR",
+      "DeuIL4rgpFm",
+      "DeuIKPKAFmE",
+      "DeuIIzNACJK"
+    ],
+    "action": "retry_reel_details",
+    "remaining_reel_details": 95,
+    "previous_run_status": "running",
+    "suspected_cause": "possible_rate_limiting",
+    "cause_confirmed": false
+  },
+  "progress": {
+    "task": "item_details",
+    "label": "Verify incomplete reel details",
+    "completed": 95,
+    "total": 95,
+    "detail": "All reels complete or explicitly resolved",
+    "updated_at": "2026-11-14T09:37:47.613Z"
+  }
+}

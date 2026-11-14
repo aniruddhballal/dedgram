@@ -1,7 +1,7 @@
 {
-  "started_at": "2026-10-24T15:58:27.629Z",
-  "updated_at": "2026-11-05T17:54:20.269Z",
-  "status": "partial",
+  "started_at": "2026-11-14T09:28:03.491Z",
+  "updated_at": "2026-11-14T09:37:47.613Z",
+  "status": "complete",
   "phase": "done",
   "scope": [
     "reel"
@@ -33,14 +33,10 @@
   },
   "progress": {
     "task": "item_details",
-    "label": "Reel details",
-    "action": "Ready for collection or retry",
-    "completed": 0,
+    "label": "Verify incomplete reel details",
+    "completed": 95,
     "total": 95,
-    "percent": 0,
-    "remaining": 95,
-    "current_item": null,
-    "detail": "11 previously failed reels manually confirmed to exist and ready for retry; 84 additional reels remain pending. No scraping has started.",
-    "updated_at": "2026-11-05T17:54:20.269Z"
+    "detail": "All reels complete or explicitly resolved",
+    "updated_at": "2026-11-14T09:37:47.613Z"
   }
 }
