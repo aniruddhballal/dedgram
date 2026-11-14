@@ -1,7 +1,29 @@
-import { copyFile, mkdir, readFile, rm, writeFile } from 'node:fs/promises';
+import { copyFile, mkdir, readFile, readdir, rm, writeFile } from 'node:fs/promises';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { normalizeReelDate } from '../lib/reel-date.mjs';
+import { retainProfileObservations, retainReelObservations, savedReelRows } from '../lib/saved-observations.mjs';
+import { writeReport } from '../../collector/src/report.mjs';
+
+async function optionalJson(file, fallback) {
+  try { return JSON.parse(await readFile(file, 'utf8')); }
+  catch (error) { if (error.code === 'ENOENT') return fallback; throw error; }
+}
+
+async function savedHistory(directory) {
+  let entries;
+  try { entries = await readdir(join(directory, 'history'), { withFileTypes: true }); }
+  catch (error) { if (error.code === 'ENOENT') return []; throw error; }
+  const names = entries.filter(e => e.isDirectory()).map(e => e.name).sort((a, b) =>
+    b.slice(0, 24).localeCompare(a.slice(0, 24)) || Number(b.includes('-after')) - Number(a.includes('-after')) || b.localeCompare(a));
+  const history = [];
+  for (const name of names) {
+    const base = join(directory, 'history', name);
+    history.push({ source: `collector/history/${name}`, profile: await optionalJson(join(base, 'profile.json'), null),
+      items: await optionalJson(join(base, 'items.json'), []) });
+  }
+  return history;
+}
 
 const site = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const repo = resolve(site, '..');
@@ -38,7 +60,6 @@ const fullProfiles = [
   'pranto_harryson',
   'nastynigas',
   'dank.meemz420',
-  'prxctm0l',
   'funny.exe07',
   'nhiftbl',
   'coopyyz',
@@ -210,7 +231,7 @@ const profileLevelProfiles = [
   'emilily_ss',
   'dina4988542',
 ];
-const retainedMetricProfiles = ['jellyfish.m3mes'];
+const retainedMetricProfiles = ['jellyfish.m3mes', 'prxctm0l'];
 const excludedProfiles = ['hnvx.07', 'prime_senchui', 'vlad.aep_', 'nxx._.nmercy', 'dexea.100k', 'igpostinggang', 'rzk.mp4', 'renyajichu', 'hammergag', 'caodogsfofo', 'back', '41.3k', 'short_vibesz', 'oooiway', 'zuxxie.pov', 'extreme.laugh8', 'iron_block2', 'memes.fatafat', 'waytoway__', 'luffytheegear5', 'chir.eze', 'dinosaur.24252627'];
 const publishedProfiles = [...fullProfiles, ...profileLevelProfiles, ...retainedMetricProfiles, ...excludedProfiles];
 const files = ['profile.json', 'discovery.json', 'items.json', 'run.json', 'profile.csv', 'items.csv', 'report.html'];
@@ -256,6 +277,9 @@ const images = [];
 const excludedSnapshotProfiles = excludedProfiles.filter((username) => excludedRecords[username].saved_data_available);
 for (const username of [...fullProfiles, ...profileLevelProfiles, ...retainedMetricProfiles, ...excludedSnapshotProfiles]) {
   const source = join(repo, 'collector', 'data', sourceUsername(username));
+  const previousProfile = await optionalJson(join(snapshot, username, 'profile.json'), null);
+  const previousItems = await optionalJson(join(snapshot, username, 'items.json'), []);
+  const history = await savedHistory(source);
   await mkdir(join(snapshot, username), { recursive: true });
   for (const file of files) {
     if (file === 'profile.json' || file === 'profile.csv' || file === 'items.json') continue;
@@ -269,15 +293,36 @@ for (const username of [...fullProfiles, ...profileLevelProfiles, ...retainedMet
     }
     await copyFile(join(source, file), join(snapshot, username, file));
   }
-  const profile = JSON.parse(await readFile(join(source, 'profile.json'), 'utf8'));
+  const profile = retainProfileObservations(JSON.parse(await readFile(join(source, 'profile.json'), 'utf8')),
+    [...history.map(h => ({ record: h.profile, source: h.source })), { record: previousProfile, source: 'previous_website_snapshot' }]);
   profile.username = username;
   await writeFile(join(snapshot, username, 'profile.json'), JSON.stringify(profile, null, 2) + '\n', 'utf8');
   const profileCsv = await readFile(join(source, 'profile.csv'), 'utf8');
   const profileCsvLines = profileCsv.split(/\r?\n/);
   if (profileCsvLines[1]) profileCsvLines[1] = profileCsvLines[1].replace(/^"[^"]*"/, JSON.stringify(username));
   await writeFile(join(snapshot, username, 'profile.csv'), profileCsvLines.join('\n'), 'utf8');
-  const items = JSON.parse(await readFile(join(source, 'items.json'), 'utf8')).map(normalizeReelDate);
+  const discovery = await optionalJson(join(snapshot, username, 'discovery.json'), {});
+  const grids = new Map((discovery.reel?.items || []).map(item => [item.url, item]));
+  const candidates = new Map();
+  for (const saved of [...history, { source: 'previous_website_snapshot', items: previousItems }]) {
+    for (const record of saved.items) {
+      if (!candidates.has(record.url)) candidates.set(record.url, []);
+      candidates.get(record.url).push({ record, source: saved.source });
+    }
+  }
+  const currentItems = JSON.parse(await readFile(join(source, 'items.json'), 'utf8'));
+  const currentUrls = new Set(currentItems.map(item => item.url));
+  for (const [url, saved] of candidates) if (!currentUrls.has(url) && grids.has(url)) {
+    currentItems.push(saved[0].record);
+  }
+  const items = currentItems.map(item => retainReelObservations(normalizeReelDate(item), candidates.get(item.url) || [],
+    grids.get(item.url), discovery.reel?.attempted_at));
   await writeFile(join(snapshot, username, 'items.json'), JSON.stringify(items, null, 2) + '\n', 'utf8');
+  // Regenerate exports from the same retained observations used by the website.
+  await writeReport({ base: join(snapshot, username), csv: join(snapshot, username, 'items.csv'),
+    profileCsv: join(snapshot, username, 'profile.csv'), report: join(snapshot, username, 'report.html') }, profile, discovery,
+    [...items.filter(item => item.kind !== 'reel'), ...savedReelRows(discovery, items)],
+    await optionalJson(join(source, 'run.json'), {}));
   images.push({ file: `avatar-${username}.jpg`, url: profile.profile_picture_url });
   if (offline) {
     try { await copyFile(join(source, 'profile.jpg'), join(mediaDir, `avatar-${username}.jpg`)); }

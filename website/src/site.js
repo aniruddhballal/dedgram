@@ -40,9 +40,9 @@ if (reelGrid) {
     for (const card of ordered) {
       const matchesStatus = filter.value === 'all'
         || (filter.value === 'complete' ? card.dataset.status === 'complete'
-          : filter.value === 'resolved' ? ['archived', 'age_restricted'].includes(card.dataset.status)
+          : filter.value === 'resolved' ? ['archived', 'age_restricted', 'metrics_unavailable'].includes(card.dataset.status)
             : filter.value === 'pending' ? card.dataset.status === 'pending'
-              : !['complete', 'archived', 'age_restricted', 'pending'].includes(card.dataset.status));
+              : !['complete', 'archived', 'age_restricted', 'metrics_unavailable', 'pending'].includes(card.dataset.status));
       card.hidden = !matchesStatus || !card.textContent.toLocaleLowerCase().includes(query);
       if (!card.hidden) visible++;
     }
