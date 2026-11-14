@@ -1,0 +1,42 @@
+{
+  "started_at": "2026-11-14T04:25:04.067Z",
+  "updated_at": "2026-11-14T04:28:33.115Z",
+  "status": "partial",
+  "phase": "done",
+  "scope": [
+    "reel"
+  ],
+  "current_url": null,
+  "error": null,
+  "progress": {
+    "task": "manual_resolution",
+    "label": "Reel availability resolved",
+    "completed": 8,
+    "total": 8,
+    "percent": 100,
+    "remaining": 0,
+    "current_item": null,
+    "detail": "Eight unavailable reels marked deleted by user assessment; 1 other reel still needs detail review.",
+    "updated_at": "2026-11-14T04:28:33.115Z"
+  },
+  "deletion_check": {
+    "operation": "automated reel availability check",
+    "issue_type": "Missing date, likes, comments",
+    "started_at": "2026-10-29T02:22:39.804Z",
+    "completed_at": "2026-10-29T02:23:18.101Z",
+    "counts": {
+      "deleted": 0,
+      "exists": 7,
+      "check_failed": 1
+    }
+  },
+  "metadata_date_recovery": {
+    "updated_at": "2026-11-05T17:36:32.208Z",
+    "recovered_reels": [
+      "DexCipioR-T"
+    ],
+    "newly_complete_reels": 0,
+    "network_requests": 0
+  },
+  "browser_left_open": true
+}
