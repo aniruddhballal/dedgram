@@ -1,7 +1,7 @@
 {
   "started_at": "2026-11-14T09:50:05.632Z",
-  "updated_at": "2026-11-14T09:51:08.918Z",
-  "status": "partial",
+  "updated_at": "2026-11-14T19:45:51.511Z",
+  "status": "complete",
   "phase": "done",
   "scope": [
     "reel"
@@ -9,11 +9,16 @@
   "current_url": null,
   "error": null,
   "progress": {
-    "task": "item_details",
-    "label": "Verify incomplete reel details",
+    "task": "android_import",
+    "label": "Import Android reel captures",
     "completed": 7,
     "total": 7,
-    "detail": "Uncertain metrics and access gates remain reviewable",
-    "updated_at": "2026-11-14T09:51:08.918Z"
+    "detail": "All saved reels complete or resolved",
+    "updated_at": "2026-11-14T19:45:51.511Z"
+  },
+  "android_import": {
+    "imported_at": "2026-11-14T19:45:51.511Z",
+    "source_batch": "data/imports/android/2026-11-14T19-45-51-511Z",
+    "updated_reels": 7
   }
 }

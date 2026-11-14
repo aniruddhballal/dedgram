@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "source_batch": "data/imports/android/2026-11-14T19-45-51-511Z",
+  "changes": [
+    {
+      "shortcode": "DbdQzNBzR-6",
+      "before_status": "partial",
+      "after_status": "metrics_unavailable",
+      "observed_account": "pixa.300k",
+      "canonical_date": "2026-07-31",
+      "phone_date_label": "31 July"
+    },
+    {
+      "shortcode": "DbdkwzAyuR8",
+      "before_status": "partial",
+      "after_status": "metrics_unavailable",
+      "observed_account": "pixa.300k",
+      "canonical_date": "2026-07-31",
+      "phone_date_label": "31 July"
+    },
+    {
+      "shortcode": "Dbd7Qy0SmJG",
+      "before_status": "partial",
+      "after_status": "metrics_unavailable",
+      "observed_account": "pixa.300k",
+      "canonical_date": "2026-07-31",
+      "phone_date_label": "1 August"
+    },
+    {
+      "shortcode": "Dbg1Srkz6Gy",
+      "before_status": "partial",
+      "after_status": "metrics_unavailable",
+      "observed_account": "pixa.300k",
+      "canonical_date": "2026-08-01",
+      "phone_date_label": "2 August"
+    },
+    {
+      "shortcode": "DboF01eS2Ds",
+      "before_status": "partial",
+      "after_status": "metrics_unavailable",
+      "observed_account": "pixa.300k",
+      "canonical_date": "2026-08-04",
+      "phone_date_label": "4 August"
+    },
+    {
+      "shortcode": "DbqT0cpzvF5",
+      "before_status": "partial",
+      "after_status": "metrics_unavailable",
+      "observed_account": "pixa.300k",
+      "canonical_date": "2026-08-05",
+      "phone_date_label": "5 August"
+    },
+    {
+      "shortcode": "Dbv8sl7zgkE",
+      "before_status": "partial",
+      "after_status": "metrics_unavailable",
+      "observed_account": "pixa.300k",
+      "canonical_date": "2026-08-07",
+      "phone_date_label": "8 August"
+    },
+    {
+      "shortcode": "Db-LNQqTYu1",
+      "before_status": "partial",
+      "after_status": "metrics_unavailable",
+      "observed_account": "pixa.300k",
+      "canonical_date": "2026-08-13",
+      "phone_date_label": "13 August"
+    },
+    {
+      "shortcode": "Db-71q0zV9T",
+      "before_status": "partial",
+      "after_status": "metrics_unavailable",
+      "observed_account": "pixa.300k",
+      "canonical_date": "2026-08-13",
+      "phone_date_label": "13 August"
+    },
+    {
+      "shortcode": "Db-78V8zEPk",
+      "before_status": "partial",
+      "after_status": "metrics_unavailable",
+      "observed_account": "pixa.300k",
+      "canonical_date": "2026-08-13",
+      "phone_date_label": "13 August"
+    },
+    {
+      "shortcode": "Db-8FENzkc_",
+      "before_status": "partial",
+      "after_status": "metrics_unavailable",
+      "observed_account": "pixa.300k",
+      "canonical_date": "2026-08-13",
+      "phone_date_label": "13 August"
+    }
+  ],
+  "before_snapshot": "data\\pixa.300k\\history\\2026-11-14T19-45-51-511Z-before-android-reel-import-5ce395ab-6f70-45b1-85f4-dc541cc48233",
+  "after_snapshot": "data\\pixa.300k\\history\\2026-11-14T19-45-51-511Z-after-android-reel-import-fc0e4027-f047-401b-947a-9a7245a05103"
+}

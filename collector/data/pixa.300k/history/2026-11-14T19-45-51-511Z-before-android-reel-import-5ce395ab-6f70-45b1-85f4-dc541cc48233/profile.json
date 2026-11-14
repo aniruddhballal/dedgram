@@ -1,0 +1,108 @@
+{
+  "username": "pixa.300k",
+  "url": "https://www.instagram.com/pixa.300k/",
+  "fetched_at": "2026-10-28T09:04:34.336Z",
+  "display_name": "Pablexi",
+  "bio": "TVアニメ 『ONE PIECE』 エルバフ編 最新情報を発表&最新PV公開 オープニング主題歌&エンディング主題歌、さらにエルバフ編の重要キャラクター 「ロキ」のキャストが決定しました!! ◆オープニング主題歌: アイナ・ジ・エンド\n「ルミナス -\nLuminous」\n◆エンディング主題歌:",
+  "posts_count": {
+    "value": 34,
+    "raw": "34",
+    "approximate": false
+  },
+  "posts_count_observed_at": "2026-10-28T09:04:34.336Z",
+  "followers_count": {
+    "value": 972,
+    "raw": "972",
+    "approximate": false,
+    "source": "header_title"
+  },
+  "following_count": {
+    "value": 0,
+    "raw": "0",
+    "approximate": false,
+    "source": "header_text"
+  },
+  "count_evidence": {
+    "followers": {
+      "header": {
+        "value": 972,
+        "raw": "972",
+        "approximate": false
+      },
+      "exact_title": {
+        "value": 972,
+        "raw": "972",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 975,
+        "raw": "975",
+        "approximate": false
+      }
+    },
+    "following": {
+      "header": {
+        "value": 0,
+        "raw": "0",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 0,
+        "raw": "0",
+        "approximate": false
+      },
+      "conflict": false
+    },
+    "posts": {
+      "header": {
+        "value": 34,
+        "raw": "34",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 34,
+        "raw": "34",
+        "approximate": false
+      }
+    }
+  },
+  "category": null,
+  "ai_generated_profile": false,
+  "profile_picture_url": "https://instagram.fblr1-6.fna.fbcdn.net/v/t51.82787-19/766052255_17901184224511690_1614101434822601450_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=e0KRYgSxzsoQ7kNvwE2ztxF&_nc_oc=Adouna2MSlqkLt21X_YtxM7SHevtK_KNrZoqGPcmhuP4AyMbiMC2Cok-_hMGfX06UmwZarcTs19PmPh1yYr3hwaD&_nc_zt=24&_nc_ht=instagram.fblr1-6.fna&_nc_gid=-vqAqN__MJ6edjwL87Lx9Q&_nc_ss=7f6a8&oh=00_AQQqotCdonyitzOv8FPQEy131pjOj0pwr4y8bHPysXuFcQ&oe=6AE78D2C",
+  "date_joined": "June 2025",
+  "account_based_in": "India",
+  "former_usernames_count": {
+    "value": 1,
+    "raw": "1",
+    "approximate": false
+  },
+  "raw": {
+    "header_text": "pixa.300k\nPablexi\n34 posts\n972 followers\n0 following\nTVアニメ 『ONE PIECE』 エルバフ編 最新情報を発表&最新PV公開 オープニング主題歌&エンディング主題歌、さらにエルバフ編の重要キャラクター 「ロキ」のキャストが決定しました!! ◆オープニング主題歌: アイナ・ジ・エンド... \nmore\nFollow\nMessage",
+    "about_text": "About this account\npixa.300k\nTo help keep our community authentic, we’re showing information about profiles on Instagram. See why this information is important.\nDate joined\nJune 2025\nAccount based in\nIndia\nFormer usernames\n1\nClose",
+    "description": "975 Followers, 0 Following, 34 Posts - Pablexi (@pixa.300k) on Instagram: \"TVアニメ 『ONE PIECE』 エルバフ編 最新情報を発表&最新PV公開 オープニング主題歌&エンディング主題歌、さらにエルバフ編の重要キャラクター 「ロキ」のキャストが決定しました!! ◆オープニング主題歌: アイナ・ジ・エンド\n「ルミナス -\nLuminous」\n◆エンディング主題歌:\"",
+    "stat_evidence": {
+      "posts": {
+        "label": "",
+        "exact_title": ""
+      },
+      "followers": {
+        "label": "972 followers",
+        "exact_title": "972"
+      },
+      "following": {
+        "label": "0 following",
+        "exact_title": ""
+      }
+    }
+  },
+  "issues": [],
+  "current_username": "pixa.300k",
+  "username_history": [
+    {
+      "username": "pixa.300k",
+      "role": "current username",
+      "first_seen_at": "2026-10-28T09:04:34.332Z"
+    }
+  ],
+  "username_change_observed_at": null
+}

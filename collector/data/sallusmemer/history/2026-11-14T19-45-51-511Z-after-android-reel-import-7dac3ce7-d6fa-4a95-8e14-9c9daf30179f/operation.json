@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "source_batch": "data/imports/android/2026-11-14T19-45-51-511Z",
+  "changes": [
+    {
+      "shortcode": "De1QnjiOWf7",
+      "before_status": "partial",
+      "after_status": "metrics_unavailable",
+      "observed_account": "sallusmemer",
+      "canonical_date": "2026-10-23",
+      "phone_date_label": "23 October"
+    },
+    {
+      "shortcode": "De1WgSJOBN9",
+      "before_status": "partial",
+      "after_status": "metrics_unavailable",
+      "observed_account": "sallusmemer",
+      "canonical_date": "2026-10-23",
+      "phone_date_label": "23 October"
+    },
+    {
+      "shortcode": "De1tP0muNVQ",
+      "before_status": "partial",
+      "after_status": "metrics_unavailable",
+      "observed_account": "sallusmemer",
+      "canonical_date": "2026-10-23",
+      "phone_date_label": "23 October"
+    },
+    {
+      "shortcode": "De1wV9Lui1g",
+      "before_status": "partial",
+      "after_status": "metrics_unavailable",
+      "observed_account": "sallusmemer",
+      "canonical_date": "2026-10-23",
+      "phone_date_label": "23 October"
+    },
+    {
+      "shortcode": "De2QaDCyqSg",
+      "before_status": "partial",
+      "after_status": "metrics_unavailable",
+      "observed_account": "sallusmemer",
+      "canonical_date": "2026-10-23",
+      "phone_date_label": "24 October"
+    },
+    {
+      "shortcode": "De3acHyuM6B",
+      "before_status": "partial",
+      "after_status": "metrics_unavailable",
+      "observed_account": "sallusmemer",
+      "canonical_date": "2026-10-23",
+      "phone_date_label": "24 October"
+    },
+    {
+      "shortcode": "De4YxpTuVVg",
+      "before_status": "partial",
+      "after_status": "metrics_unavailable",
+      "observed_account": "sallusmemer",
+      "canonical_date": "2026-10-24",
+      "phone_date_label": "24 October"
+    }
+  ],
+  "before_snapshot": "data\\sallusmemer\\history\\2026-11-14T19-45-51-511Z-before-android-reel-import-ddb8fb91-cf85-4fa4-bb5b-02fc871633b2",
+  "after_snapshot": "data\\sallusmemer\\history\\2026-11-14T19-45-51-511Z-after-android-reel-import-7dac3ce7-d6fa-4a95-8e14-9c9daf30179f"
+}

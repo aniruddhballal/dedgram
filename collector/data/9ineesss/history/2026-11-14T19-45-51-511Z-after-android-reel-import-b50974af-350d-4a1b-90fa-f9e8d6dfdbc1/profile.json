@@ -1,0 +1,94 @@
+{
+  "username": "9ineesss",
+  "url": "https://www.instagram.com/9ineesss/",
+  "fetched_at": "2026-10-23T14:37:51.141Z",
+  "display_name": "爱。",
+  "bio": "TVアニメ『紫禁・御猫房』10月10日放送開始！宮廷に隠された秘密とは？みんなは観たい？コメントで教えてね！\n#紫禁御猫房#新作アニメ#拡散希望#猫\n《紫禁•御猫房》\n#紫禁御猫房\n新作アニメ\n拡散希望\n猫",
+  "posts_count": {
+    "value": 120,
+    "raw": "120",
+    "approximate": false
+  },
+  "followers_count": {
+    "value": 323,
+    "raw": "323",
+    "approximate": false,
+    "source": "header_title"
+  },
+  "following_count": {
+    "value": 1,
+    "raw": "1",
+    "approximate": false,
+    "source": "header_text"
+  },
+  "count_evidence": {
+    "followers": {
+      "header": {
+        "value": 323,
+        "raw": "323",
+        "approximate": false
+      },
+      "exact_title": {
+        "value": 323,
+        "raw": "323",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 323,
+        "raw": "323",
+        "approximate": false
+      }
+    },
+    "following": {
+      "header": {
+        "value": 1,
+        "raw": "1",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 1,
+        "raw": "1",
+        "approximate": false
+      },
+      "conflict": false
+    },
+    "posts": {
+      "header": {
+        "value": 120,
+        "raw": "120",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 120,
+        "raw": "120",
+        "approximate": false
+      }
+    }
+  },
+  "category": null,
+  "ai_generated_profile": false,
+  "profile_picture_url": "https://instagram.fblr1-5.fna.fbcdn.net/v/t51.82787-19/857709325_18136906348619901_6992249769576006638_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=v1hG1MJ9Y3AQ7kNvwFxuCS0&_nc_oc=AdphuAny3bv0y0h2dxYpqm6MjdImhlyr3ngt_hiY-irjJBgw8QLshSPqlw1hAG0NxR67qGrWpxaFTA8Mq7nBuJzf&_nc_zt=24&_nc_ht=instagram.fblr1-5.fna&_nc_gid=skBEUn-9taHIMxorD0rl7A&_nc_ss=7f6a8&oh=00_AQPrr1LFPrq9iWTC_c8zwFKdZzQCZANpfKyo31RE5HhgAA&oe=6AE12EB0",
+  "date_joined": "October 2026",
+  "account_based_in": "India",
+  "former_usernames_count": null,
+  "raw": {
+    "header_text": "9ineesss\n爱。\n120 posts\n323 followers\n1 following\nTea Room\nTVアニメ『紫禁・御猫房』10月10日放送開始！宮廷に隠された秘密とは？みんなは観たい？コメントで教えてね！\n#紫禁御猫房#新作アニメ#拡散希望#猫\n《紫禁•御猫房》\n#紫禁御猫房... \nmore\nFollow\nMessage",
+    "about_text": "About this account\n9ineesss\nTo help keep our community authentic, we’re showing information about profiles on Instagram. See why this information is important.\nDate joined\nOctober 2026\nAccount based in\nIndia\nClose",
+    "description": "323 Followers, 1 Following, 120 Posts - 爱。 (@9ineesss) on Instagram: \"TVアニメ『紫禁・御猫房』10月10日放送開始！宮廷に隠された秘密とは？みんなは観たい？コメントで教えてね！\n#紫禁御猫房#新作アニメ#拡散希望#猫\n《紫禁•御猫房》\n#紫禁御猫房\n新作アニメ\n拡散希望\n猫\"",
+    "stat_evidence": {
+      "posts": {
+        "label": "",
+        "exact_title": ""
+      },
+      "followers": {
+        "label": "323 followers",
+        "exact_title": "323"
+      },
+      "following": {
+        "label": "1 following",
+        "exact_title": ""
+      }
+    }
+  },
+  "issues": []
+}

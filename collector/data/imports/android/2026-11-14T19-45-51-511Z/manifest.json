@@ -1,0 +1,509 @@
+{
+  "schema_version": 1,
+  "imported_at": "2026-11-14T19:45:51.511Z",
+  "source": "ADB Documents/dedgram",
+  "sha256": {
+    "reels": "9d77d9910427075b34711fa246a40a9999558894847b086376189e6650227837",
+    "queue": "09b74f1b70ed1b354eaab1c53db2608a06ca5cf56e3ab65b15a52745d43165e9"
+  },
+  "changes": [
+    {
+      "profile": "memesprcaf",
+      "shortcode": "Dd2L0NtPH4L",
+      "before_status": "needs_review",
+      "after_status": "complete",
+      "observed_account": "tankandoobrasil",
+      "canonical_date": "2026-09-28",
+      "phone_date_label": "29 September"
+    },
+    {
+      "profile": "pichypeapp",
+      "shortcode": "DejpZ6nostn",
+      "before_status": "needs_review",
+      "after_status": "complete",
+      "observed_account": "pichypeapp",
+      "canonical_date": "2026-10-16",
+      "phone_date_label": "16 October"
+    },
+    {
+      "profile": "pixa.300k",
+      "shortcode": "DbdQzNBzR-6",
+      "before_status": "partial",
+      "after_status": "metrics_unavailable",
+      "observed_account": "pixa.300k",
+      "canonical_date": "2026-07-31",
+      "phone_date_label": "31 July"
+    },
+    {
+      "profile": "pixa.300k",
+      "shortcode": "DbdkwzAyuR8",
+      "before_status": "partial",
+      "after_status": "metrics_unavailable",
+      "observed_account": "pixa.300k",
+      "canonical_date": "2026-07-31",
+      "phone_date_label": "31 July"
+    },
+    {
+      "profile": "pixa.300k",
+      "shortcode": "Dbd7Qy0SmJG",
+      "before_status": "partial",
+      "after_status": "metrics_unavailable",
+      "observed_account": "pixa.300k",
+      "canonical_date": "2026-07-31",
+      "phone_date_label": "1 August"
+    },
+    {
+      "profile": "pixa.300k",
+      "shortcode": "Dbg1Srkz6Gy",
+      "before_status": "partial",
+      "after_status": "metrics_unavailable",
+      "observed_account": "pixa.300k",
+      "canonical_date": "2026-08-01",
+      "phone_date_label": "2 August"
+    },
+    {
+      "profile": "pixa.300k",
+      "shortcode": "DboF01eS2Ds",
+      "before_status": "partial",
+      "after_status": "metrics_unavailable",
+      "observed_account": "pixa.300k",
+      "canonical_date": "2026-08-04",
+      "phone_date_label": "4 August"
+    },
+    {
+      "profile": "pixa.300k",
+      "shortcode": "DbqT0cpzvF5",
+      "before_status": "partial",
+      "after_status": "metrics_unavailable",
+      "observed_account": "pixa.300k",
+      "canonical_date": "2026-08-05",
+      "phone_date_label": "5 August"
+    },
+    {
+      "profile": "pixa.300k",
+      "shortcode": "Dbv8sl7zgkE",
+      "before_status": "partial",
+      "after_status": "metrics_unavailable",
+      "observed_account": "pixa.300k",
+      "canonical_date": "2026-08-07",
+      "phone_date_label": "8 August"
+    },
+    {
+      "profile": "pixa.300k",
+      "shortcode": "Db-LNQqTYu1",
+      "before_status": "partial",
+      "after_status": "metrics_unavailable",
+      "observed_account": "pixa.300k",
+      "canonical_date": "2026-08-13",
+      "phone_date_label": "13 August"
+    },
+    {
+      "profile": "pixa.300k",
+      "shortcode": "Db-71q0zV9T",
+      "before_status": "partial",
+      "after_status": "metrics_unavailable",
+      "observed_account": "pixa.300k",
+      "canonical_date": "2026-08-13",
+      "phone_date_label": "13 August"
+    },
+    {
+      "profile": "pixa.300k",
+      "shortcode": "Db-78V8zEPk",
+      "before_status": "partial",
+      "after_status": "metrics_unavailable",
+      "observed_account": "pixa.300k",
+      "canonical_date": "2026-08-13",
+      "phone_date_label": "13 August"
+    },
+    {
+      "profile": "pixa.300k",
+      "shortcode": "Db-8FENzkc_",
+      "before_status": "partial",
+      "after_status": "metrics_unavailable",
+      "observed_account": "pixa.300k",
+      "canonical_date": "2026-08-13",
+      "phone_date_label": "13 August"
+    },
+    {
+      "profile": "sallusmemer",
+      "shortcode": "De1QnjiOWf7",
+      "before_status": "partial",
+      "after_status": "metrics_unavailable",
+      "observed_account": "sallusmemer",
+      "canonical_date": "2026-10-23",
+      "phone_date_label": "23 October"
+    },
+    {
+      "profile": "sallusmemer",
+      "shortcode": "De1WgSJOBN9",
+      "before_status": "partial",
+      "after_status": "metrics_unavailable",
+      "observed_account": "sallusmemer",
+      "canonical_date": "2026-10-23",
+      "phone_date_label": "23 October"
+    },
+    {
+      "profile": "sallusmemer",
+      "shortcode": "De1tP0muNVQ",
+      "before_status": "partial",
+      "after_status": "metrics_unavailable",
+      "observed_account": "sallusmemer",
+      "canonical_date": "2026-10-23",
+      "phone_date_label": "23 October"
+    },
+    {
+      "profile": "sallusmemer",
+      "shortcode": "De1wV9Lui1g",
+      "before_status": "partial",
+      "after_status": "metrics_unavailable",
+      "observed_account": "sallusmemer",
+      "canonical_date": "2026-10-23",
+      "phone_date_label": "23 October"
+    },
+    {
+      "profile": "sallusmemer",
+      "shortcode": "De2QaDCyqSg",
+      "before_status": "partial",
+      "after_status": "metrics_unavailable",
+      "observed_account": "sallusmemer",
+      "canonical_date": "2026-10-23",
+      "phone_date_label": "24 October"
+    },
+    {
+      "profile": "sallusmemer",
+      "shortcode": "De3acHyuM6B",
+      "before_status": "partial",
+      "after_status": "metrics_unavailable",
+      "observed_account": "sallusmemer",
+      "canonical_date": "2026-10-23",
+      "phone_date_label": "24 October"
+    },
+    {
+      "profile": "sallusmemer",
+      "shortcode": "De4YxpTuVVg",
+      "before_status": "partial",
+      "after_status": "metrics_unavailable",
+      "observed_account": "sallusmemer",
+      "canonical_date": "2026-10-24",
+      "phone_date_label": "24 October"
+    },
+    {
+      "profile": "9ineesss",
+      "shortcode": "DeiYT9HSmcS",
+      "before_status": "partial",
+      "after_status": "metrics_unavailable",
+      "observed_account": "9ineesss",
+      "canonical_date": "2026-10-15",
+      "phone_date_label": "16 October"
+    },
+    {
+      "profile": "9ineesss",
+      "shortcode": "DemuY0XPauJ",
+      "before_status": "partial",
+      "after_status": "metrics_unavailable",
+      "observed_account": "9ineesss",
+      "canonical_date": "2026-10-17",
+      "phone_date_label": "17 October"
+    },
+    {
+      "profile": "9ineesss",
+      "shortcode": "DeoEFnky3eU",
+      "before_status": "partial",
+      "after_status": "metrics_unavailable",
+      "observed_account": "9ineesss",
+      "canonical_date": "2026-10-17",
+      "phone_date_label": "18 October"
+    },
+    {
+      "profile": "9ineesss",
+      "shortcode": "DepXl3rSJBU",
+      "before_status": "partial",
+      "after_status": "metrics_unavailable",
+      "observed_account": "9ineesss",
+      "canonical_date": "2026-10-18",
+      "phone_date_label": "19 October"
+    },
+    {
+      "profile": "fun_fineee",
+      "shortcode": "DddW5GHyKy_",
+      "before_status": "partial",
+      "after_status": "metrics_unavailable",
+      "observed_account": "fun_fineee",
+      "canonical_date": "2026-09-18",
+      "phone_date_label": "19 September"
+    },
+    {
+      "profile": "fun_fineee",
+      "shortcode": "De8VsImSFMm",
+      "before_status": "partial",
+      "after_status": "partial",
+      "observed_account": "fun_fineee",
+      "canonical_date": "2026-10-25",
+      "phone_date_label": "26 October"
+    }
+  ],
+  "profiles": [
+    {
+      "username": "9ineesss",
+      "schema_version": 1,
+      "source_batch": "data/imports/android/2026-11-14T19-45-51-511Z",
+      "changes": [
+        {
+          "shortcode": "DeiYT9HSmcS",
+          "before_status": "partial",
+          "after_status": "metrics_unavailable",
+          "observed_account": "9ineesss",
+          "canonical_date": "2026-10-15",
+          "phone_date_label": "16 October"
+        },
+        {
+          "shortcode": "DemuY0XPauJ",
+          "before_status": "partial",
+          "after_status": "metrics_unavailable",
+          "observed_account": "9ineesss",
+          "canonical_date": "2026-10-17",
+          "phone_date_label": "17 October"
+        },
+        {
+          "shortcode": "DeoEFnky3eU",
+          "before_status": "partial",
+          "after_status": "metrics_unavailable",
+          "observed_account": "9ineesss",
+          "canonical_date": "2026-10-17",
+          "phone_date_label": "18 October"
+        },
+        {
+          "shortcode": "DepXl3rSJBU",
+          "before_status": "partial",
+          "after_status": "metrics_unavailable",
+          "observed_account": "9ineesss",
+          "canonical_date": "2026-10-18",
+          "phone_date_label": "19 October"
+        }
+      ],
+      "before_snapshot": "data\\9ineesss\\history\\2026-11-14T19-45-51-511Z-before-android-reel-import-fa67f94b-e89b-4e34-b57f-bbc711acc062",
+      "after_snapshot": "data\\9ineesss\\history\\2026-11-14T19-45-51-511Z-after-android-reel-import-b50974af-350d-4a1b-90fa-f9e8d6dfdbc1"
+    },
+    {
+      "username": "fun_fineee",
+      "schema_version": 1,
+      "source_batch": "data/imports/android/2026-11-14T19-45-51-511Z",
+      "changes": [
+        {
+          "shortcode": "DddW5GHyKy_",
+          "before_status": "partial",
+          "after_status": "metrics_unavailable",
+          "observed_account": "fun_fineee",
+          "canonical_date": "2026-09-18",
+          "phone_date_label": "19 September"
+        },
+        {
+          "shortcode": "De8VsImSFMm",
+          "before_status": "partial",
+          "after_status": "partial",
+          "observed_account": "fun_fineee",
+          "canonical_date": "2026-10-25",
+          "phone_date_label": "26 October"
+        }
+      ],
+      "before_snapshot": "data\\fun_fineee\\history\\2026-11-14T19-45-51-511Z-before-android-reel-import-617e6325-04f5-4d76-b334-eb58aac4f804",
+      "after_snapshot": "data\\fun_fineee\\history\\2026-11-14T19-45-51-511Z-after-android-reel-import-6c8cd94d-9d62-42e1-a042-fdce55b10f04"
+    },
+    {
+      "username": "memesprcaf",
+      "schema_version": 1,
+      "source_batch": "data/imports/android/2026-11-14T19-45-51-511Z",
+      "changes": [
+        {
+          "shortcode": "Dd2L0NtPH4L",
+          "before_status": "needs_review",
+          "after_status": "complete",
+          "observed_account": "tankandoobrasil",
+          "canonical_date": "2026-09-28",
+          "phone_date_label": "29 September"
+        }
+      ],
+      "before_snapshot": "data\\memesprcaf\\history\\2026-11-14T19-45-51-511Z-before-android-reel-import-0466353c-bf3f-4cb5-b70f-3b8b88c9b1f3",
+      "after_snapshot": "data\\memesprcaf\\history\\2026-11-14T19-45-51-511Z-after-android-reel-import-7b27bb44-9141-44aa-b975-e57eb2b852b5"
+    },
+    {
+      "username": "pichypeapp",
+      "schema_version": 1,
+      "source_batch": "data/imports/android/2026-11-14T19-45-51-511Z",
+      "changes": [
+        {
+          "shortcode": "DejpZ6nostn",
+          "before_status": "needs_review",
+          "after_status": "complete",
+          "observed_account": "pichypeapp",
+          "canonical_date": "2026-10-16",
+          "phone_date_label": "16 October"
+        }
+      ],
+      "before_snapshot": "data\\pichypeapp\\history\\2026-11-14T19-45-51-511Z-before-android-reel-import-503b377c-a8f9-4ad3-9f88-b94301a7be16",
+      "after_snapshot": "data\\pichypeapp\\history\\2026-11-14T19-45-51-511Z-after-android-reel-import-0e60fcdd-6eb9-428e-92c9-3723d2b80d21"
+    },
+    {
+      "username": "pixa.300k",
+      "schema_version": 1,
+      "source_batch": "data/imports/android/2026-11-14T19-45-51-511Z",
+      "changes": [
+        {
+          "shortcode": "DbdQzNBzR-6",
+          "before_status": "partial",
+          "after_status": "metrics_unavailable",
+          "observed_account": "pixa.300k",
+          "canonical_date": "2026-07-31",
+          "phone_date_label": "31 July"
+        },
+        {
+          "shortcode": "DbdkwzAyuR8",
+          "before_status": "partial",
+          "after_status": "metrics_unavailable",
+          "observed_account": "pixa.300k",
+          "canonical_date": "2026-07-31",
+          "phone_date_label": "31 July"
+        },
+        {
+          "shortcode": "Dbd7Qy0SmJG",
+          "before_status": "partial",
+          "after_status": "metrics_unavailable",
+          "observed_account": "pixa.300k",
+          "canonical_date": "2026-07-31",
+          "phone_date_label": "1 August"
+        },
+        {
+          "shortcode": "Dbg1Srkz6Gy",
+          "before_status": "partial",
+          "after_status": "metrics_unavailable",
+          "observed_account": "pixa.300k",
+          "canonical_date": "2026-08-01",
+          "phone_date_label": "2 August"
+        },
+        {
+          "shortcode": "DboF01eS2Ds",
+          "before_status": "partial",
+          "after_status": "metrics_unavailable",
+          "observed_account": "pixa.300k",
+          "canonical_date": "2026-08-04",
+          "phone_date_label": "4 August"
+        },
+        {
+          "shortcode": "DbqT0cpzvF5",
+          "before_status": "partial",
+          "after_status": "metrics_unavailable",
+          "observed_account": "pixa.300k",
+          "canonical_date": "2026-08-05",
+          "phone_date_label": "5 August"
+        },
+        {
+          "shortcode": "Dbv8sl7zgkE",
+          "before_status": "partial",
+          "after_status": "metrics_unavailable",
+          "observed_account": "pixa.300k",
+          "canonical_date": "2026-08-07",
+          "phone_date_label": "8 August"
+        },
+        {
+          "shortcode": "Db-LNQqTYu1",
+          "before_status": "partial",
+          "after_status": "metrics_unavailable",
+          "observed_account": "pixa.300k",
+          "canonical_date": "2026-08-13",
+          "phone_date_label": "13 August"
+        },
+        {
+          "shortcode": "Db-71q0zV9T",
+          "before_status": "partial",
+          "after_status": "metrics_unavailable",
+          "observed_account": "pixa.300k",
+          "canonical_date": "2026-08-13",
+          "phone_date_label": "13 August"
+        },
+        {
+          "shortcode": "Db-78V8zEPk",
+          "before_status": "partial",
+          "after_status": "metrics_unavailable",
+          "observed_account": "pixa.300k",
+          "canonical_date": "2026-08-13",
+          "phone_date_label": "13 August"
+        },
+        {
+          "shortcode": "Db-8FENzkc_",
+          "before_status": "partial",
+          "after_status": "metrics_unavailable",
+          "observed_account": "pixa.300k",
+          "canonical_date": "2026-08-13",
+          "phone_date_label": "13 August"
+        }
+      ],
+      "before_snapshot": "data\\pixa.300k\\history\\2026-11-14T19-45-51-511Z-before-android-reel-import-5ce395ab-6f70-45b1-85f4-dc541cc48233",
+      "after_snapshot": "data\\pixa.300k\\history\\2026-11-14T19-45-51-511Z-after-android-reel-import-fc0e4027-f047-401b-947a-9a7245a05103"
+    },
+    {
+      "username": "sallusmemer",
+      "schema_version": 1,
+      "source_batch": "data/imports/android/2026-11-14T19-45-51-511Z",
+      "changes": [
+        {
+          "shortcode": "De1QnjiOWf7",
+          "before_status": "partial",
+          "after_status": "metrics_unavailable",
+          "observed_account": "sallusmemer",
+          "canonical_date": "2026-10-23",
+          "phone_date_label": "23 October"
+        },
+        {
+          "shortcode": "De1WgSJOBN9",
+          "before_status": "partial",
+          "after_status": "metrics_unavailable",
+          "observed_account": "sallusmemer",
+          "canonical_date": "2026-10-23",
+          "phone_date_label": "23 October"
+        },
+        {
+          "shortcode": "De1tP0muNVQ",
+          "before_status": "partial",
+          "after_status": "metrics_unavailable",
+          "observed_account": "sallusmemer",
+          "canonical_date": "2026-10-23",
+          "phone_date_label": "23 October"
+        },
+        {
+          "shortcode": "De1wV9Lui1g",
+          "before_status": "partial",
+          "after_status": "metrics_unavailable",
+          "observed_account": "sallusmemer",
+          "canonical_date": "2026-10-23",
+          "phone_date_label": "23 October"
+        },
+        {
+          "shortcode": "De2QaDCyqSg",
+          "before_status": "partial",
+          "after_status": "metrics_unavailable",
+          "observed_account": "sallusmemer",
+          "canonical_date": "2026-10-23",
+          "phone_date_label": "24 October"
+        },
+        {
+          "shortcode": "De3acHyuM6B",
+          "before_status": "partial",
+          "after_status": "metrics_unavailable",
+          "observed_account": "sallusmemer",
+          "canonical_date": "2026-10-23",
+          "phone_date_label": "24 October"
+        },
+        {
+          "shortcode": "De4YxpTuVVg",
+          "before_status": "partial",
+          "after_status": "metrics_unavailable",
+          "observed_account": "sallusmemer",
+          "canonical_date": "2026-10-24",
+          "phone_date_label": "24 October"
+        }
+      ],
+      "before_snapshot": "data\\sallusmemer\\history\\2026-11-14T19-45-51-511Z-before-android-reel-import-ddb8fb91-cf85-4fa4-bb5b-02fc871633b2",
+      "after_snapshot": "data\\sallusmemer\\history\\2026-11-14T19-45-51-511Z-after-android-reel-import-7dac3ce7-d6fa-4a95-8e14-9c9daf30179f"
+    }
+  ]
+}

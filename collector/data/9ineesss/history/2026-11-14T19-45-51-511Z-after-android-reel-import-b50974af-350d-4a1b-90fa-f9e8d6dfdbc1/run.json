@@ -1,0 +1,47 @@
+{
+  "started_at": "2026-11-14T09:49:09.303Z",
+  "updated_at": "2026-11-14T19:45:51.511Z",
+  "status": "complete",
+  "phase": "done",
+  "scope": [
+    "reel"
+  ],
+  "current_url": null,
+  "error": null,
+  "deletion_check": {
+    "operation": "automated reel availability check",
+    "issue_type": "Missing date, likes, comments",
+    "started_at": "2026-10-29T02:22:39.804Z",
+    "completed_at": "2026-10-29T02:23:18.300Z",
+    "counts": {
+      "deleted": 0,
+      "exists": 7,
+      "check_failed": 1
+    }
+  },
+  "metadata_date_recovery": {
+    "updated_at": "2026-11-05T17:36:32.208Z",
+    "recovered_reels": [
+      "Der1sPXNK8e",
+      "DepX5e5y6mX",
+      "DemspEgNjMh",
+      "DemF44bOhLI",
+      "DekHtr1t9oL"
+    ],
+    "newly_complete_reels": 0,
+    "network_requests": 0
+  },
+  "progress": {
+    "task": "android_import",
+    "label": "Import Android reel captures",
+    "completed": 4,
+    "total": 4,
+    "detail": "All saved reels complete or resolved",
+    "updated_at": "2026-11-14T19:45:51.511Z"
+  },
+  "android_import": {
+    "imported_at": "2026-11-14T19:45:51.511Z",
+    "source_batch": "data/imports/android/2026-11-14T19-45-51-511Z",
+    "updated_reels": 4
+  }
+}

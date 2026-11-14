@@ -1,0 +1,408 @@
+{
+  "version": 1,
+  "exported_at": "2026-11-14T18:14:18.484Z",
+  "reels": [
+    {
+      "url": "https:\/\/www.instagram.com\/reel\/De8VsImSFMm\/",
+      "expected_account": "fun_fineee",
+      "status": "partial",
+      "collector_status": "partial",
+      "missing": [
+        "likes"
+      ],
+      "updated_at": 1794683772071,
+      "detail": null,
+      "captured_at": "1794683769575"
+    },
+    {
+      "url": "https:\/\/www.instagram.com\/reel\/DddW5GHyKy_\/",
+      "expected_account": "fun_fineee",
+      "status": "collected",
+      "collector_status": "partial",
+      "missing": [
+        "likes"
+      ],
+      "previous_attempt": {
+        "status": "partial",
+        "captured_at": "1794683226906",
+        "detail": null
+      },
+      "updated_at": 1794685029149,
+      "detail": null,
+      "captured_at": "1794685025150"
+    },
+    {
+      "url": "https:\/\/www.instagram.com\/reel\/DepXl3rSJBU\/",
+      "expected_account": "9ineesss",
+      "status": "collected",
+      "collector_status": "partial",
+      "missing": [
+        "likes"
+      ],
+      "previous_attempt": {
+        "status": "partial",
+        "captured_at": "1794683236807",
+        "detail": null
+      },
+      "updated_at": 1794685039420,
+      "detail": null,
+      "captured_at": "1794685034770"
+    },
+    {
+      "url": "https:\/\/www.instagram.com\/reel\/DeoEFnky3eU\/",
+      "expected_account": "9ineesss",
+      "status": "collected",
+      "collector_status": "partial",
+      "missing": [
+        "likes",
+        "comments"
+      ],
+      "previous_attempt": {
+        "status": "partial",
+        "captured_at": "1794683247401",
+        "detail": null
+      },
+      "updated_at": 1794685048603,
+      "detail": null,
+      "captured_at": "1794685044912"
+    },
+    {
+      "url": "https:\/\/www.instagram.com\/reel\/DemuY0XPauJ\/",
+      "expected_account": "9ineesss",
+      "status": "collected",
+      "collector_status": "partial",
+      "missing": [
+        "likes"
+      ],
+      "updated_at": 1794683261895,
+      "detail": null,
+      "captured_at": "1794683257506"
+    },
+    {
+      "url": "https:\/\/www.instagram.com\/reel\/DeiYT9HSmcS\/",
+      "expected_account": "9ineesss",
+      "status": "collected",
+      "collector_status": "partial",
+      "missing": [
+        "likes"
+      ],
+      "updated_at": 1794683271992,
+      "detail": null,
+      "captured_at": "1794683267552"
+    },
+    {
+      "url": "https:\/\/www.instagram.com\/reel\/De4YxpTuVVg\/",
+      "expected_account": "sallusmemer",
+      "status": "collected",
+      "collector_status": "partial",
+      "missing": [
+        "likes"
+      ],
+      "updated_at": 1794683281815,
+      "detail": null,
+      "captured_at": "1794683277426"
+    },
+    {
+      "url": "https:\/\/www.instagram.com\/reel\/De3acHyuM6B\/",
+      "expected_account": "sallusmemer",
+      "status": "collected",
+      "collector_status": "partial",
+      "missing": [
+        "likes"
+      ],
+      "updated_at": 1794683291991,
+      "detail": null,
+      "captured_at": "1794683287330"
+    },
+    {
+      "url": "https:\/\/www.instagram.com\/reel\/De2QaDCyqSg\/",
+      "expected_account": "sallusmemer",
+      "status": "collected",
+      "collector_status": "partial",
+      "missing": [
+        "likes"
+      ],
+      "updated_at": 1794683302219,
+      "detail": null,
+      "captured_at": "1794683297962"
+    },
+    {
+      "url": "https:\/\/www.instagram.com\/reel\/De1wV9Lui1g\/",
+      "expected_account": "sallusmemer",
+      "status": "collected",
+      "collector_status": "partial",
+      "missing": [
+        "likes"
+      ],
+      "updated_at": 1794683312563,
+      "detail": null,
+      "captured_at": "1794683307823"
+    },
+    {
+      "url": "https:\/\/www.instagram.com\/reel\/De1tP0muNVQ\/",
+      "expected_account": "sallusmemer",
+      "status": "collected",
+      "collector_status": "partial",
+      "missing": [
+        "likes"
+      ],
+      "updated_at": 1794683322523,
+      "detail": null,
+      "captured_at": "1794683318197"
+    },
+    {
+      "url": "https:\/\/www.instagram.com\/reel\/De1WgSJOBN9\/",
+      "expected_account": "sallusmemer",
+      "status": "collected",
+      "collector_status": "partial",
+      "missing": [
+        "likes"
+      ],
+      "updated_at": 1794683332460,
+      "detail": null,
+      "captured_at": "1794683328265"
+    },
+    {
+      "url": "https:\/\/www.instagram.com\/reel\/De1QnjiOWf7\/",
+      "expected_account": "sallusmemer",
+      "status": "collected",
+      "collector_status": "partial",
+      "missing": [
+        "likes"
+      ],
+      "updated_at": 1794683342465,
+      "detail": null,
+      "captured_at": "1794683337926"
+    },
+    {
+      "url": "https:\/\/www.instagram.com\/reel\/Db-8FENzkc_\/",
+      "expected_account": "pixa.300k",
+      "status": "collected",
+      "collector_status": "partial",
+      "missing": [
+        "likes"
+      ],
+      "previous_attempt": {
+        "status": "partial",
+        "captured_at": "1794683348308",
+        "detail": null
+      },
+      "updated_at": 1794685059195,
+      "detail": null,
+      "captured_at": "1794685054335"
+    },
+    {
+      "url": "https:\/\/www.instagram.com\/reel\/Db-78V8zEPk\/",
+      "expected_account": "pixa.300k",
+      "status": "collected",
+      "collector_status": "partial",
+      "missing": [
+        "likes"
+      ],
+      "previous_attempt": {
+        "status": "partial",
+        "captured_at": "1794683358845",
+        "detail": null
+      },
+      "updated_at": 1794685069121,
+      "detail": null,
+      "captured_at": "1794685064943"
+    },
+    {
+      "url": "https:\/\/www.instagram.com\/reel\/Db-71q0zV9T\/",
+      "expected_account": "pixa.300k",
+      "status": "collected",
+      "collector_status": "partial",
+      "missing": [
+        "likes"
+      ],
+      "previous_attempt": {
+        "status": "partial",
+        "captured_at": "1794683369791",
+        "detail": null
+      },
+      "updated_at": 1794685079711,
+      "detail": null,
+      "captured_at": "1794685074802"
+    },
+    {
+      "url": "https:\/\/www.instagram.com\/reel\/Db-LNQqTYu1\/",
+      "expected_account": "pixa.300k",
+      "status": "collected",
+      "collector_status": "partial",
+      "missing": [
+        "likes"
+      ],
+      "previous_attempt": {
+        "status": "partial",
+        "captured_at": "1794683379869",
+        "detail": null
+      },
+      "updated_at": 1794685089407,
+      "detail": null,
+      "captured_at": "1794685085272"
+    },
+    {
+      "url": "https:\/\/www.instagram.com\/reel\/Dbv8sl7zgkE\/",
+      "expected_account": "pixa.300k",
+      "status": "collected",
+      "collector_status": "partial",
+      "missing": [
+        "likes"
+      ],
+      "previous_attempt": {
+        "status": "partial",
+        "captured_at": "1794683390120",
+        "detail": null
+      },
+      "updated_at": 1794685101463,
+      "detail": null,
+      "captured_at": "1794685095027"
+    },
+    {
+      "url": "https:\/\/www.instagram.com\/reel\/DbqT0cpzvF5\/",
+      "expected_account": "pixa.300k",
+      "status": "collected",
+      "collector_status": "partial",
+      "missing": [
+        "likes",
+        "comments"
+      ],
+      "previous_attempt": {
+        "status": "partial",
+        "captured_at": "1794683402403",
+        "detail": null
+      },
+      "updated_at": 1794685110961,
+      "detail": null,
+      "captured_at": "1794685107164"
+    },
+    {
+      "url": "https:\/\/www.instagram.com\/reel\/DboF01eS2Ds\/",
+      "expected_account": "pixa.300k",
+      "status": "collected",
+      "collector_status": "partial",
+      "missing": [
+        "likes"
+      ],
+      "previous_attempt": {
+        "status": "partial",
+        "captured_at": "1794683411667",
+        "detail": null
+      },
+      "updated_at": 1794685121978,
+      "detail": null,
+      "captured_at": "1794685116787"
+    },
+    {
+      "url": "https:\/\/www.instagram.com\/reel\/Dbg1Srkz6Gy\/",
+      "expected_account": "pixa.300k",
+      "status": "collected",
+      "collector_status": "partial",
+      "missing": [
+        "likes"
+      ],
+      "previous_attempt": {
+        "status": "partial",
+        "captured_at": "1794683422107",
+        "detail": null
+      },
+      "updated_at": 1794685132252,
+      "detail": null,
+      "captured_at": "1794685127601"
+    },
+    {
+      "url": "https:\/\/www.instagram.com\/reel\/Dbd7Qy0SmJG\/",
+      "expected_account": "pixa.300k",
+      "status": "collected",
+      "collector_status": "partial",
+      "missing": [
+        "likes"
+      ],
+      "previous_attempt": {
+        "status": "partial",
+        "captured_at": "1794683432618",
+        "detail": null
+      },
+      "updated_at": 1794685142318,
+      "detail": null,
+      "captured_at": "1794685137832"
+    },
+    {
+      "url": "https:\/\/www.instagram.com\/reel\/DbdkwzAyuR8\/",
+      "expected_account": "pixa.300k",
+      "status": "collected",
+      "collector_status": "partial",
+      "missing": [
+        "likes"
+      ],
+      "previous_attempt": {
+        "status": "partial",
+        "captured_at": "1794683442444",
+        "detail": null
+      },
+      "updated_at": 1794685152127,
+      "detail": null,
+      "captured_at": "1794685147930"
+    },
+    {
+      "url": "https:\/\/www.instagram.com\/reel\/DbdQzNBzR-6\/",
+      "expected_account": "pixa.300k",
+      "status": "collected",
+      "collector_status": "partial",
+      "missing": [
+        "likes"
+      ],
+      "previous_attempt": {
+        "status": "partial",
+        "captured_at": "1794683452736",
+        "detail": null
+      },
+      "updated_at": 1794685162631,
+      "detail": null,
+      "captured_at": "1794685157913"
+    },
+    {
+      "url": "https:\/\/www.instagram.com\/reel\/DejpZ6nostn\/",
+      "expected_account": "pichypeapp",
+      "status": "collected",
+      "collector_status": "needs_review",
+      "missing": [],
+      "access_review": {
+        "kind": "age_restricted",
+        "reason": "Age restriction requires access confirmation or manual review; it is not a resolved missing metric.",
+        "recorded_at": "2026-11-14T08:26:03.802Z",
+        "previous_status": "age_restricted"
+      },
+      "updated_at": 1794683782025,
+      "detail": null,
+      "captured_at": "1794683777801"
+    },
+    {
+      "url": "https:\/\/www.instagram.com\/reel\/Dd2L0NtPH4L\/",
+      "expected_account": "tankandoobrasil",
+      "status": "collected",
+      "collector_status": "needs_review",
+      "missing": [
+        "likes",
+        "comments"
+      ],
+      "access_review": {
+        "kind": "age_restricted",
+        "reason": "Age restriction requires access confirmation or manual review; it is not a resolved missing metric.",
+        "recorded_at": "2026-11-14T08:26:03.802Z",
+        "previous_status": "age_restricted"
+      },
+      "updated_at": 1794684489384,
+      "detail": "Manual UI capture after exact shortcode and current account confirmation; previous automated identity mismatch preserved in local backup.",
+      "captured_at": "1794684489384",
+      "historical_expected_account": "memesprcaf",
+      "identity_verification": {
+        "source": "instagram_copy_link_and_user_confirmation",
+        "shortcode": "Dd2L0NtPH4L",
+        "observed_account": "tankandoobrasil",
+        "observed_at": "2026-11-14T19:21:59.0162921Z"
+      }
+    }
+  ]
+}

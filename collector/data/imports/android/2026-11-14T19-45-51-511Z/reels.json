@@ -1,0 +1,1605 @@
+{
+  "version": 1,
+  "reels": [
+    {
+      "shortcode": "Dd2L0NtPH4L",
+      "url": "https:\/\/www.instagram.com\/reel\/Dd2L0NtPH4L\/",
+      "identity_source": "manual_copy_link_and_account_confirmation",
+      "retained_observations": null,
+      "account": "tankandoobrasil",
+      "captured_at": "1794684489384",
+      "likes": {
+        "value": 238501,
+        "error": null
+      },
+      "comments": {
+        "value": 954,
+        "error": null
+      },
+      "views_or_plays": {
+        "value": 8182603,
+        "error": null
+      },
+      "shares": {
+        "value": 55914,
+        "error": null
+      },
+      "reposts": {
+        "value": 3492,
+        "error": null
+      },
+      "saves": {
+        "value": 6307,
+        "error": null
+      },
+      "date_posted": {
+        "value": "29 September",
+        "error": null
+      },
+      "caption": {
+        "value": "#TVアニメ『THINKER』 希望の最新ネタがついに解禁!! 🧠 容赦なしの最新爆笑シーンを公開!さらに、キレキレの煽り＆予想外のツッコミに加",
+        "error": null
+      },
+      "caption_expanded": true,
+      "navigation_error": null,
+      "capture_stage": "finished",
+      "likes_availability": "unknown",
+      "publication_observation": {
+        "raw_text": "29 September",
+        "observed_at": "2026-11-14T19:28:09.3849514+00:00",
+        "observed_at_epoch_ms": 1794684489384,
+        "timezone": "Asia\/Kolkata",
+        "locale": "en-GB",
+        "source": "manual_instagram_android_expanded_caption_footer",
+        "exact_publication_time": null
+      },
+      "capture_method": "manual_adb_ui_capture_after_user_navigation",
+      "historical_account": "memesprcaf",
+      "field_observations": {
+        "likes_raw": "238,501",
+        "plays_raw": "8,182,603",
+        "comments_raw": "Comment number is 954. View comments",
+        "reposts_raw": "Reposted 3492 times",
+        "shares_raw": "Reshare number is 55914",
+        "saves_raw": "Save number is 6307",
+        "caption_source": "expanded_caption_accessibility_node",
+        "identity_source": "copied_reel_link_shortcode_and_user_confirmed_current_account"
+      },
+      "metric_availability": null
+    },
+    {
+      "shortcode": "DejpZ6nostn",
+      "url": "https:\/\/www.instagram.com\/reel\/DejpZ6nostn\/",
+      "identity_source": "queue_deep_link_and_account_check",
+      "retained_observations": null,
+      "account": "pichypeapp",
+      "captured_at": "1794683777801",
+      "likes": {
+        "value": 484085,
+        "error": null
+      },
+      "comments": {
+        "value": 6952,
+        "error": null
+      },
+      "views_or_plays": {
+        "value": 8667238,
+        "error": null
+      },
+      "shares": {
+        "value": 273369,
+        "error": null
+      },
+      "reposts": {
+        "value": 17512,
+        "error": null
+      },
+      "saves": {
+        "value": 43170,
+        "error": null
+      },
+      "date_posted": {
+        "value": "16 October",
+        "error": null
+      },
+      "caption": {
+        "value": "コービー・ブライアントはNBAの伝説的選手。\n5度のNBA優勝、18回のオールスター選出を達成。\n「Mamba Mentality」は、努力と諦めない精神の象徴。\n🐍🏀",
+        "error": null
+      },
+      "publication_observation": {
+        "raw_text": "16 October",
+        "observed_at": "2026-11-14T19:16:18.994Z",
+        "observed_at_epoch_ms": 1794683778994,
+        "timezone": "Asia\/Kolkata",
+        "locale": "en-GB",
+        "source": "instagram_android_expanded_caption_footer",
+        "exact_publication_time": null
+      },
+      "caption_expanded": true,
+      "navigation_error": null,
+      "capture_stage": "finished",
+      "likes_availability": "unknown",
+      "metric_availability": null
+    },
+    {
+      "shortcode": "DbdQzNBzR-6",
+      "url": "https:\/\/www.instagram.com\/reel\/DbdQzNBzR-6\/",
+      "identity_source": "queue_deep_link_and_account_check",
+      "retained_observations": null,
+      "metric_availability": {
+        "shares": {
+          "status": "not_exposed",
+          "source": "verified_reel_controls",
+          "samples": 2,
+          "details_capture_verified": true,
+          "first_observed_at": 1794685157971,
+          "confirmed_at": 1794685160042,
+          "control_evidence": "visible_share_control_without_count_before_save",
+          "scope": "Observed Instagram Android UI; not a claim that the metric can never be exposed elsewhere"
+        }
+      },
+      "account": "pixa.300k",
+      "captured_at": "1794685157913",
+      "likes": {
+        "value": null,
+        "error": null
+      },
+      "comments": {
+        "value": 153,
+        "error": null
+      },
+      "views_or_plays": {
+        "value": 272916,
+        "error": null
+      },
+      "shares": {
+        "value": null,
+        "error": null
+      },
+      "reposts": {
+        "value": 153,
+        "error": null
+      },
+      "saves": {
+        "value": 1291,
+        "error": null
+      },
+      "date_posted": {
+        "value": "31 July",
+        "error": null
+      },
+      "caption": {
+        "value": "この落ち方よ...\n\nジャンプスピンサーブってやつかな\n\nジャンプスピンサーブ(トップスピン強め)+ほんの少し サイド回転 混ざりって感じなのかな 横から見たら絶対落ちてるんだろうな バレーボールちゃんと勉強しよ...\n\n#宮浦健人選手 #ウルフドッグス名古屋",
+        "error": null
+      },
+      "publication_observation": {
+        "raw_text": "31 July",
+        "observed_at": "2026-11-14T19:39:19.246Z",
+        "observed_at_epoch_ms": 1794685159247,
+        "timezone": "Asia\/Kolkata",
+        "locale": "en-GB",
+        "source": "instagram_android_expanded_caption_footer",
+        "exact_publication_time": null
+      },
+      "caption_expanded": true,
+      "navigation_error": null,
+      "capture_stage": "finished",
+      "likes_availability": "owner_only"
+    },
+    {
+      "shortcode": "DbdkwzAyuR8",
+      "url": "https:\/\/www.instagram.com\/reel\/DbdkwzAyuR8\/",
+      "identity_source": "queue_deep_link_and_account_check",
+      "retained_observations": null,
+      "metric_availability": {
+        "shares": {
+          "status": "not_exposed",
+          "source": "verified_reel_controls",
+          "samples": 2,
+          "details_capture_verified": true,
+          "first_observed_at": 1794685147947,
+          "confirmed_at": 1794685149799,
+          "control_evidence": "visible_share_control_without_count_before_save",
+          "scope": "Observed Instagram Android UI; not a claim that the metric can never be exposed elsewhere"
+        }
+      },
+      "account": "pixa.300k",
+      "captured_at": "1794685147930",
+      "likes": {
+        "value": null,
+        "error": null
+      },
+      "comments": {
+        "value": 3,
+        "error": null
+      },
+      "views_or_plays": {
+        "value": 21532,
+        "error": null
+      },
+      "shares": {
+        "value": null,
+        "error": null
+      },
+      "reposts": {
+        "value": 1,
+        "error": null
+      },
+      "saves": {
+        "value": 14,
+        "error": null
+      },
+      "date_posted": {
+        "value": "31 July",
+        "error": null
+      },
+      "caption": {
+        "value": "この落ち方よ...\n\nジャンプスピンサーブってやつかな\n\nジャンプスピンサーブ(トップスピン強め)+ほんの少し サイド回転 混ざりって感じなのかな 横から見たら絶対落ちてるんだろうな バレーボールちゃんと勉強しよ...\n\n#宮浦健人選手 #ウルフドッグス名古屋",
+        "error": null
+      },
+      "publication_observation": {
+        "raw_text": "31 July",
+        "observed_at": "2026-11-14T19:39:09.152Z",
+        "observed_at_epoch_ms": 1794685149152,
+        "timezone": "Asia\/Kolkata",
+        "locale": "en-GB",
+        "source": "instagram_android_expanded_caption_footer",
+        "exact_publication_time": null
+      },
+      "caption_expanded": true,
+      "navigation_error": null,
+      "capture_stage": "finished",
+      "likes_availability": "owner_only"
+    },
+    {
+      "shortcode": "Dbd7Qy0SmJG",
+      "url": "https:\/\/www.instagram.com\/reel\/Dbd7Qy0SmJG\/",
+      "identity_source": "queue_deep_link_and_account_check",
+      "retained_observations": null,
+      "metric_availability": {
+        "shares": {
+          "status": "not_exposed",
+          "source": "verified_reel_controls",
+          "samples": 2,
+          "details_capture_verified": true,
+          "first_observed_at": 1794685137847,
+          "confirmed_at": 1794685139720,
+          "control_evidence": "visible_share_control_without_count_before_save",
+          "scope": "Observed Instagram Android UI; not a claim that the metric can never be exposed elsewhere"
+        }
+      },
+      "account": "pixa.300k",
+      "captured_at": "1794685137832",
+      "likes": {
+        "value": null,
+        "error": null
+      },
+      "comments": {
+        "value": 1737,
+        "error": null
+      },
+      "views_or_plays": {
+        "value": 5177792,
+        "error": null
+      },
+      "shares": {
+        "value": null,
+        "error": null
+      },
+      "reposts": {
+        "value": 572,
+        "error": null
+      },
+      "saves": {
+        "value": 4349,
+        "error": null
+      },
+      "date_posted": {
+        "value": "1 August",
+        "error": null
+      },
+      "caption": {
+        "value": "この落ち方よ...\n\nジャンプスピンサーブってやつかな\n\nジャンプスピンサーブ(トップスピン強め)+ほんの少し サイド回転 混ざりって感じなのかな 横から見たら絶対落ちてるんだろうな バレーボールちゃんと勉強しよ...\n\n#宮浦健人選手 #ウルフドッグス名古屋",
+        "error": null
+      },
+      "publication_observation": {
+        "raw_text": "1 August",
+        "observed_at": "2026-11-14T19:38:59.018Z",
+        "observed_at_epoch_ms": 1794685139019,
+        "timezone": "Asia\/Kolkata",
+        "locale": "en-GB",
+        "source": "instagram_android_expanded_caption_footer",
+        "exact_publication_time": null
+      },
+      "caption_expanded": true,
+      "navigation_error": null,
+      "capture_stage": "finished",
+      "likes_availability": "owner_only"
+    },
+    {
+      "shortcode": "Dbg1Srkz6Gy",
+      "url": "https:\/\/www.instagram.com\/reel\/Dbg1Srkz6Gy\/",
+      "identity_source": "queue_deep_link_and_account_check",
+      "retained_observations": null,
+      "metric_availability": {
+        "shares": {
+          "status": "not_exposed",
+          "source": "verified_reel_controls",
+          "samples": 2,
+          "details_capture_verified": true,
+          "first_observed_at": 1794685127642,
+          "confirmed_at": 1794685129680,
+          "control_evidence": "visible_share_control_without_count_before_save",
+          "scope": "Observed Instagram Android UI; not a claim that the metric can never be exposed elsewhere"
+        }
+      },
+      "account": "pixa.300k",
+      "captured_at": "1794685127601",
+      "likes": {
+        "value": null,
+        "error": null
+      },
+      "comments": {
+        "value": 3,
+        "error": null
+      },
+      "views_or_plays": {
+        "value": 29477,
+        "error": null
+      },
+      "shares": {
+        "value": null,
+        "error": null
+      },
+      "reposts": {
+        "value": 5,
+        "error": null
+      },
+      "saves": {
+        "value": 43,
+        "error": null
+      },
+      "date_posted": {
+        "value": "2 August",
+        "error": null
+      },
+      "caption": {
+        "value": "この落ち方よ...\n\nジャンプスピンサーブってやつかな\n\nジャンプスピンサーブ(トップスピン強め)+ほんの少し サイド回転 混ざりって感じなのかな 横から見たら絶対落ちてるんだろうな バレーボールちゃんと勉強しよ...\n\n#宮浦健人選手 #ウルフドッグス名古屋",
+        "error": null
+      },
+      "publication_observation": {
+        "raw_text": "2 August",
+        "observed_at": "2026-11-14T19:38:49.014Z",
+        "observed_at_epoch_ms": 1794685129014,
+        "timezone": "Asia\/Kolkata",
+        "locale": "en-GB",
+        "source": "instagram_android_expanded_caption_footer",
+        "exact_publication_time": null
+      },
+      "caption_expanded": true,
+      "navigation_error": null,
+      "capture_stage": "finished",
+      "likes_availability": "owner_only"
+    },
+    {
+      "shortcode": "DboF01eS2Ds",
+      "url": "https:\/\/www.instagram.com\/reel\/DboF01eS2Ds\/",
+      "identity_source": "queue_deep_link_and_account_check",
+      "retained_observations": null,
+      "metric_availability": {
+        "shares": {
+          "status": "not_exposed",
+          "source": "verified_reel_controls",
+          "samples": 2,
+          "details_capture_verified": true,
+          "first_observed_at": 1794685116824,
+          "confirmed_at": 1794685118824,
+          "control_evidence": "visible_share_control_without_count_before_save",
+          "scope": "Observed Instagram Android UI; not a claim that the metric can never be exposed elsewhere"
+        }
+      },
+      "account": "pixa.300k",
+      "captured_at": "1794685116787",
+      "likes": {
+        "value": null,
+        "error": null
+      },
+      "comments": {
+        "value": 1667,
+        "error": null
+      },
+      "views_or_plays": {
+        "value": 2049218,
+        "error": null
+      },
+      "shares": {
+        "value": null,
+        "error": null
+      },
+      "reposts": {
+        "value": 2246,
+        "error": null
+      },
+      "saves": {
+        "value": 5806,
+        "error": null
+      },
+      "date_posted": {
+        "value": "4 August",
+        "error": null
+      },
+      "caption": {
+        "value": "Tonight, V stepped into the crowd, taking in live performances at Vogue World: Hollywood. Known for his own standout fashion moments, he kept it effortlessly stylish in a look worthy of the runway.",
+        "error": null
+      },
+      "publication_observation": {
+        "raw_text": "4 August",
+        "observed_at": "2026-11-14T19:38:38.071Z",
+        "observed_at_epoch_ms": 1794685118072,
+        "timezone": "Asia\/Kolkata",
+        "locale": "en-GB",
+        "source": "instagram_android_expanded_caption_footer",
+        "exact_publication_time": null
+      },
+      "caption_expanded": true,
+      "navigation_error": null,
+      "capture_stage": "finished",
+      "likes_availability": "owner_only"
+    },
+    {
+      "shortcode": "DbqT0cpzvF5",
+      "url": "https:\/\/www.instagram.com\/reel\/DbqT0cpzvF5\/",
+      "identity_source": "queue_deep_link_and_account_check",
+      "retained_observations": null,
+      "metric_availability": {
+        "comments": {
+          "status": "not_exposed",
+          "source": "verified_reel_controls",
+          "samples": 2,
+          "details_capture_verified": true,
+          "first_observed_at": 1794685107200,
+          "confirmed_at": 1794685109084,
+          "control_evidence": "visible_comment_control_without_count_before_repost",
+          "scope": "Observed Instagram Android UI; not a claim that the metric can never be exposed elsewhere"
+        },
+        "shares": {
+          "status": "not_exposed",
+          "source": "verified_reel_controls",
+          "samples": 2,
+          "details_capture_verified": true,
+          "first_observed_at": 1794685107200,
+          "confirmed_at": 1794685109084,
+          "control_evidence": "visible_share_control_without_count_before_save",
+          "scope": "Observed Instagram Android UI; not a claim that the metric can never be exposed elsewhere"
+        }
+      },
+      "account": "pixa.300k",
+      "captured_at": "1794685107164",
+      "likes": {
+        "value": null,
+        "error": null
+      },
+      "comments": {
+        "value": null,
+        "error": null
+      },
+      "views_or_plays": {
+        "value": 45849,
+        "error": null
+      },
+      "shares": {
+        "value": null,
+        "error": null
+      },
+      "reposts": {
+        "value": 4,
+        "error": null
+      },
+      "saves": {
+        "value": 41,
+        "error": null
+      },
+      "date_posted": {
+        "value": "5 August",
+        "error": null
+      },
+      "caption": {
+        "value": "この落ち方よ...\n\nジャンプスピンサーブってやつかな\n\nジャンプスピンサーブ(トップスピン強め)+ほんの少し サイド回転 混ざりって感じなのかな 横から見たら絶対落ちてるんだろうな バレーボールちゃんと勉強しよ...\n\n#宮浦健人選手 #ウルフドッグス名古屋",
+        "error": null
+      },
+      "publication_observation": {
+        "raw_text": "5 August",
+        "observed_at": "2026-11-14T19:38:28.418Z",
+        "observed_at_epoch_ms": 1794685108419,
+        "timezone": "Asia\/Kolkata",
+        "locale": "en-GB",
+        "source": "instagram_android_expanded_caption_footer",
+        "exact_publication_time": null
+      },
+      "caption_expanded": true,
+      "navigation_error": null,
+      "capture_stage": "finished",
+      "likes_availability": "owner_only"
+    },
+    {
+      "shortcode": "Dbv8sl7zgkE",
+      "url": "https:\/\/www.instagram.com\/reel\/Dbv8sl7zgkE\/",
+      "identity_source": "queue_deep_link_and_account_check",
+      "retained_observations": null,
+      "metric_availability": {
+        "shares": {
+          "status": "not_exposed",
+          "source": "verified_reel_controls",
+          "samples": 2,
+          "details_capture_verified": true,
+          "first_observed_at": 1794685095052,
+          "confirmed_at": 1794685098780,
+          "control_evidence": "visible_share_control_without_count_before_save",
+          "scope": "Observed Instagram Android UI; not a claim that the metric can never be exposed elsewhere"
+        }
+      },
+      "account": "pixa.300k",
+      "captured_at": "1794685095027",
+      "likes": {
+        "value": null,
+        "error": null
+      },
+      "comments": {
+        "value": 1,
+        "error": null
+      },
+      "views_or_plays": {
+        "value": 9649,
+        "error": null
+      },
+      "shares": {
+        "value": null,
+        "error": null
+      },
+      "reposts": {
+        "value": 3,
+        "error": null
+      },
+      "saves": {
+        "value": 16,
+        "error": null
+      },
+      "date_posted": {
+        "value": "8 August",
+        "error": null
+      },
+      "caption": {
+        "value": "TVアニメ『ONE PIECE』 神の騎士団\n\nキャスト解禁&最新PVを公開\n\n現在、アニメ「エルバフ編」が放送中!\n\n今後アニメに登場予定の神の騎士団、4人の映像と、 軍子宮、ソマーズ聖、キリンガム聖のキャストを公開!\n\n◆軍子宮:\n\n上坂すみれさん\n\n◆ソマーズ聖:\n\n安元洋貴さん\n\n◆キリンガム聖: 立花慎之介さん\n\nそして神の騎士団団長 シャムロック聖は、以前発表し たとおり、津田健次郎さんが演じます。ルフィ達の新たな冒険が描かれる「エルバフ編」!今後 の放送も、ぜひご注目ください。\n\nTVアニメ『ONE PIECE』\n\nエルバフ編\n\n毎週日曜よる11:15~\n\n全国フジテレビ系列にて放送中\n\n#ONEPIECE #神の騎士団1",
+        "error": null
+      },
+      "publication_observation": {
+        "raw_text": "8 August",
+        "observed_at": "2026-11-14T19:38:18.089Z",
+        "observed_at_epoch_ms": 1794685098090,
+        "timezone": "Asia\/Kolkata",
+        "locale": "en-GB",
+        "source": "instagram_android_expanded_caption_footer",
+        "exact_publication_time": null
+      },
+      "caption_expanded": true,
+      "navigation_error": null,
+      "capture_stage": "finished",
+      "likes_availability": "owner_only"
+    },
+    {
+      "shortcode": "Db-LNQqTYu1",
+      "url": "https:\/\/www.instagram.com\/reel\/Db-LNQqTYu1\/",
+      "identity_source": "queue_deep_link_and_account_check",
+      "retained_observations": null,
+      "metric_availability": {
+        "shares": {
+          "status": "not_exposed",
+          "source": "verified_reel_controls",
+          "samples": 2,
+          "details_capture_verified": true,
+          "first_observed_at": 1794685085306,
+          "confirmed_at": 1794685087203,
+          "control_evidence": "visible_share_control_without_count_before_save",
+          "scope": "Observed Instagram Android UI; not a claim that the metric can never be exposed elsewhere"
+        }
+      },
+      "account": "pixa.300k",
+      "captured_at": "1794685085272",
+      "likes": {
+        "value": null,
+        "error": null
+      },
+      "comments": {
+        "value": 0,
+        "error": null
+      },
+      "views_or_plays": {
+        "value": 11718,
+        "error": null
+      },
+      "shares": {
+        "value": null,
+        "error": null
+      },
+      "reposts": {
+        "value": 1,
+        "error": null
+      },
+      "saves": {
+        "value": 19,
+        "error": null
+      },
+      "date_posted": {
+        "value": "13 August",
+        "error": null
+      },
+      "caption": {
+        "value": "『ONE PIECE』 エルバフ編 最新情報を発表&最新PV公 開 オープニング主題歌&エンディング主題歌、さらに エルバフ編の重要キャラクター 「ロキ」のキャストが 決定しました!! ◆オープニング主題歌",
+        "error": null
+      },
+      "publication_observation": {
+        "raw_text": "13 August",
+        "observed_at": "2026-11-14T19:38:06.592Z",
+        "observed_at_epoch_ms": 1794685086593,
+        "timezone": "Asia\/Kolkata",
+        "locale": "en-GB",
+        "source": "instagram_android_expanded_caption_footer",
+        "exact_publication_time": null
+      },
+      "caption_expanded": true,
+      "navigation_error": null,
+      "capture_stage": "finished",
+      "likes_availability": "owner_only"
+    },
+    {
+      "shortcode": "Db-71q0zV9T",
+      "url": "https:\/\/www.instagram.com\/reel\/Db-71q0zV9T\/",
+      "identity_source": "queue_deep_link_and_account_check",
+      "retained_observations": null,
+      "metric_availability": {
+        "shares": {
+          "status": "not_exposed",
+          "source": "verified_reel_controls",
+          "samples": 2,
+          "details_capture_verified": true,
+          "first_observed_at": 1794685074848,
+          "confirmed_at": 1794685076760,
+          "control_evidence": "visible_share_control_without_count_before_save",
+          "scope": "Observed Instagram Android UI; not a claim that the metric can never be exposed elsewhere"
+        }
+      },
+      "account": "pixa.300k",
+      "captured_at": "1794685074802",
+      "likes": {
+        "value": null,
+        "error": null
+      },
+      "comments": {
+        "value": 5,
+        "error": null
+      },
+      "views_or_plays": {
+        "value": 60983,
+        "error": null
+      },
+      "shares": {
+        "value": null,
+        "error": null
+      },
+      "reposts": {
+        "value": 1,
+        "error": null
+      },
+      "saves": {
+        "value": 3,
+        "error": null
+      },
+      "date_posted": {
+        "value": "13 August",
+        "error": null
+      },
+      "caption": {
+        "value": "『ONE PIECE』 エルバフ編 最新情報を発表&最 新PV公開 オープニング主題歌&エンディング主題歌、さら にエルバフ編の重要キャラクター「ロキ」のキャストが決 定しました!! ◆オープニング主題歌",
+        "error": null
+      },
+      "publication_observation": {
+        "raw_text": "13 August",
+        "observed_at": "2026-11-14T19:37:56.063Z",
+        "observed_at_epoch_ms": 1794685076063,
+        "timezone": "Asia\/Kolkata",
+        "locale": "en-GB",
+        "source": "instagram_android_expanded_caption_footer",
+        "exact_publication_time": null
+      },
+      "caption_expanded": true,
+      "navigation_error": null,
+      "capture_stage": "finished",
+      "likes_availability": "owner_only"
+    },
+    {
+      "shortcode": "Db-78V8zEPk",
+      "url": "https:\/\/www.instagram.com\/reel\/Db-78V8zEPk\/",
+      "identity_source": "queue_deep_link_and_account_check",
+      "retained_observations": null,
+      "metric_availability": {
+        "shares": {
+          "status": "not_exposed",
+          "source": "verified_reel_controls",
+          "samples": 2,
+          "details_capture_verified": true,
+          "first_observed_at": 1794685064969,
+          "confirmed_at": 1794685066842,
+          "control_evidence": "visible_share_control_without_count_before_save",
+          "scope": "Observed Instagram Android UI; not a claim that the metric can never be exposed elsewhere"
+        }
+      },
+      "account": "pixa.300k",
+      "captured_at": "1794685064943",
+      "likes": {
+        "value": null,
+        "error": null
+      },
+      "comments": {
+        "value": 85,
+        "error": null
+      },
+      "views_or_plays": {
+        "value": 160075,
+        "error": null
+      },
+      "shares": {
+        "value": null,
+        "error": null
+      },
+      "reposts": {
+        "value": 237,
+        "error": null
+      },
+      "saves": {
+        "value": 60,
+        "error": null
+      },
+      "date_posted": {
+        "value": "13 August",
+        "error": null
+      },
+      "caption": {
+        "value": "『ONE PIECE』 エルバフ編 最新情報を発表&最 新PV公開 オープニング主題歌&エンディング主題歌、さら にエルバフ編の重要キャラクター「ロキ」のキャストが決 定しました!! ◆オープニング主題歌",
+        "error": null
+      },
+      "publication_observation": {
+        "raw_text": "13 August",
+        "observed_at": "2026-11-14T19:37:46.170Z",
+        "observed_at_epoch_ms": 1794685066171,
+        "timezone": "Asia\/Kolkata",
+        "locale": "en-GB",
+        "source": "instagram_android_expanded_caption_footer",
+        "exact_publication_time": null
+      },
+      "caption_expanded": true,
+      "navigation_error": null,
+      "capture_stage": "finished",
+      "likes_availability": "owner_only"
+    },
+    {
+      "shortcode": "Db-8FENzkc_",
+      "url": "https:\/\/www.instagram.com\/reel\/Db-8FENzkc_\/",
+      "identity_source": "queue_deep_link_and_account_check",
+      "retained_observations": null,
+      "metric_availability": {
+        "shares": {
+          "status": "not_exposed",
+          "source": "verified_reel_controls",
+          "samples": 2,
+          "details_capture_verified": true,
+          "first_observed_at": 1794685054355,
+          "confirmed_at": 1794685056539,
+          "control_evidence": "visible_share_control_without_count_before_save",
+          "scope": "Observed Instagram Android UI; not a claim that the metric can never be exposed elsewhere"
+        }
+      },
+      "account": "pixa.300k",
+      "captured_at": "1794685054335",
+      "likes": {
+        "value": null,
+        "error": null
+      },
+      "comments": {
+        "value": 5,
+        "error": null
+      },
+      "views_or_plays": {
+        "value": 9911,
+        "error": null
+      },
+      "shares": {
+        "value": null,
+        "error": null
+      },
+      "reposts": {
+        "value": 3,
+        "error": null
+      },
+      "saves": {
+        "value": 41,
+        "error": null
+      },
+      "date_posted": {
+        "value": "13 August",
+        "error": null
+      },
+      "caption": {
+        "value": "『ONE PIECE』 エルバフ編 最新情報を発表&最 新PV公開 オープニング主題歌&エンディング主題歌、さら にエルバフ編の重要キャラクター「ロキ」のキャストが決 定しました!! ◆オープニング主題歌",
+        "error": null
+      },
+      "publication_observation": {
+        "raw_text": "13 August",
+        "observed_at": "2026-11-14T19:37:35.831Z",
+        "observed_at_epoch_ms": 1794685055831,
+        "timezone": "Asia\/Kolkata",
+        "locale": "en-GB",
+        "source": "instagram_android_expanded_caption_footer",
+        "exact_publication_time": null
+      },
+      "caption_expanded": true,
+      "navigation_error": null,
+      "capture_stage": "finished",
+      "likes_availability": "owner_only"
+    },
+    {
+      "shortcode": "De1QnjiOWf7",
+      "url": "https:\/\/www.instagram.com\/reel\/De1QnjiOWf7\/",
+      "identity_source": "queue_deep_link_and_account_check",
+      "retained_observations": null,
+      "account": "sallusmemer",
+      "captured_at": "1794683337926",
+      "likes": {
+        "value": null,
+        "error": null
+      },
+      "comments": {
+        "value": 58,
+        "error": null
+      },
+      "views_or_plays": {
+        "value": 182861,
+        "error": null
+      },
+      "shares": {
+        "value": 32830,
+        "error": null
+      },
+      "reposts": {
+        "value": 207,
+        "error": null
+      },
+      "saves": {
+        "value": 969,
+        "error": null
+      },
+      "date_posted": {
+        "value": "23 October",
+        "error": null
+      },
+      "caption": {
+        "value": "TVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開!",
+        "error": null
+      },
+      "publication_observation": {
+        "raw_text": "23 October",
+        "observed_at": "2026-11-14T19:08:59.486Z",
+        "observed_at_epoch_ms": 1794683339486,
+        "timezone": "Asia\/Kolkata",
+        "locale": "en-GB",
+        "source": "instagram_android_expanded_caption_footer",
+        "exact_publication_time": null
+      },
+      "caption_expanded": true,
+      "navigation_error": null,
+      "capture_stage": "finished",
+      "likes_availability": "owner_only",
+      "metric_availability": null
+    },
+    {
+      "shortcode": "De1WgSJOBN9",
+      "url": "https:\/\/www.instagram.com\/reel\/De1WgSJOBN9\/",
+      "identity_source": "queue_deep_link_and_account_check",
+      "retained_observations": null,
+      "account": "sallusmemer",
+      "captured_at": "1794683328265",
+      "likes": {
+        "value": null,
+        "error": null
+      },
+      "comments": {
+        "value": 1,
+        "error": null
+      },
+      "views_or_plays": {
+        "value": 9434,
+        "error": null
+      },
+      "shares": {
+        "value": 562,
+        "error": null
+      },
+      "reposts": {
+        "value": 8,
+        "error": null
+      },
+      "saves": {
+        "value": 22,
+        "error": null
+      },
+      "date_posted": {
+        "value": "23 October",
+        "error": null
+      },
+      "caption": {
+        "value": "TVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開!",
+        "error": null
+      },
+      "publication_observation": {
+        "raw_text": "23 October",
+        "observed_at": "2026-11-14T19:08:49.461Z",
+        "observed_at_epoch_ms": 1794683329461,
+        "timezone": "Asia\/Kolkata",
+        "locale": "en-GB",
+        "source": "instagram_android_expanded_caption_footer",
+        "exact_publication_time": null
+      },
+      "caption_expanded": true,
+      "navigation_error": null,
+      "capture_stage": "finished",
+      "likes_availability": "owner_only",
+      "metric_availability": null
+    },
+    {
+      "shortcode": "De1tP0muNVQ",
+      "url": "https:\/\/www.instagram.com\/reel\/De1tP0muNVQ\/",
+      "identity_source": "queue_deep_link_and_account_check",
+      "retained_observations": null,
+      "account": "sallusmemer",
+      "captured_at": "1794683318197",
+      "likes": {
+        "value": null,
+        "error": null
+      },
+      "comments": {
+        "value": 8,
+        "error": null
+      },
+      "views_or_plays": {
+        "value": 27342,
+        "error": null
+      },
+      "shares": {
+        "value": 3924,
+        "error": null
+      },
+      "reposts": {
+        "value": 59,
+        "error": null
+      },
+      "saves": {
+        "value": 143,
+        "error": null
+      },
+      "date_posted": {
+        "value": "23 October",
+        "error": null
+      },
+      "caption": {
+        "value": "TVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開!",
+        "error": null
+      },
+      "publication_observation": {
+        "raw_text": "23 October",
+        "observed_at": "2026-11-14T19:08:39.348Z",
+        "observed_at_epoch_ms": 1794683319349,
+        "timezone": "Asia\/Kolkata",
+        "locale": "en-GB",
+        "source": "instagram_android_expanded_caption_footer",
+        "exact_publication_time": null
+      },
+      "caption_expanded": true,
+      "navigation_error": null,
+      "capture_stage": "finished",
+      "likes_availability": "owner_only",
+      "metric_availability": null
+    },
+    {
+      "shortcode": "De1wV9Lui1g",
+      "url": "https:\/\/www.instagram.com\/reel\/De1wV9Lui1g\/",
+      "identity_source": "queue_deep_link_and_account_check",
+      "retained_observations": null,
+      "account": "sallusmemer",
+      "captured_at": "1794683307823",
+      "likes": {
+        "value": null,
+        "error": null
+      },
+      "comments": {
+        "value": 433,
+        "error": null
+      },
+      "views_or_plays": {
+        "value": 985371,
+        "error": null
+      },
+      "shares": {
+        "value": 158943,
+        "error": null
+      },
+      "reposts": {
+        "value": 240,
+        "error": null
+      },
+      "saves": {
+        "value": 2925,
+        "error": null
+      },
+      "date_posted": {
+        "value": "23 October",
+        "error": null
+      },
+      "caption": {
+        "value": "TVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開!",
+        "error": null
+      },
+      "publication_observation": {
+        "raw_text": "23 October",
+        "observed_at": "2026-11-14T19:08:29.256Z",
+        "observed_at_epoch_ms": 1794683309257,
+        "timezone": "Asia\/Kolkata",
+        "locale": "en-GB",
+        "source": "instagram_android_expanded_caption_footer",
+        "exact_publication_time": null
+      },
+      "caption_expanded": true,
+      "navigation_error": null,
+      "capture_stage": "finished",
+      "likes_availability": "owner_only",
+      "metric_availability": null
+    },
+    {
+      "shortcode": "De2QaDCyqSg",
+      "url": "https:\/\/www.instagram.com\/reel\/De2QaDCyqSg\/",
+      "identity_source": "queue_deep_link_and_account_check",
+      "retained_observations": null,
+      "account": "sallusmemer",
+      "captured_at": "1794683297962",
+      "likes": {
+        "value": null,
+        "error": null
+      },
+      "comments": {
+        "value": 4,
+        "error": null
+      },
+      "views_or_plays": {
+        "value": 8592,
+        "error": null
+      },
+      "shares": {
+        "value": 67,
+        "error": null
+      },
+      "reposts": {
+        "value": 1,
+        "error": null
+      },
+      "saves": {
+        "value": 10,
+        "error": null
+      },
+      "date_posted": {
+        "value": "24 October",
+        "error": null
+      },
+      "caption": {
+        "value": "TVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開!",
+        "error": null
+      },
+      "publication_observation": {
+        "raw_text": "24 October",
+        "observed_at": "2026-11-14T19:08:19.376Z",
+        "observed_at_epoch_ms": 1794683299377,
+        "timezone": "Asia\/Kolkata",
+        "locale": "en-GB",
+        "source": "instagram_android_expanded_caption_footer",
+        "exact_publication_time": null
+      },
+      "caption_expanded": true,
+      "navigation_error": null,
+      "capture_stage": "finished",
+      "likes_availability": "owner_only",
+      "metric_availability": null
+    },
+    {
+      "shortcode": "De3acHyuM6B",
+      "url": "https:\/\/www.instagram.com\/reel\/De3acHyuM6B\/",
+      "identity_source": "queue_deep_link_and_account_check",
+      "retained_observations": null,
+      "account": "sallusmemer",
+      "captured_at": "1794683287330",
+      "likes": {
+        "value": null,
+        "error": null
+      },
+      "comments": {
+        "value": 47,
+        "error": null
+      },
+      "views_or_plays": {
+        "value": 30676,
+        "error": null
+      },
+      "shares": {
+        "value": 4326,
+        "error": null
+      },
+      "reposts": {
+        "value": 19,
+        "error": null
+      },
+      "saves": {
+        "value": 115,
+        "error": null
+      },
+      "date_posted": {
+        "value": "24 October",
+        "error": null
+      },
+      "caption": {
+        "value": "TVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開!",
+        "error": null
+      },
+      "publication_observation": {
+        "raw_text": "24 October",
+        "observed_at": "2026-11-14T19:08:08.940Z",
+        "observed_at_epoch_ms": 1794683288940,
+        "timezone": "Asia\/Kolkata",
+        "locale": "en-GB",
+        "source": "instagram_android_expanded_caption_footer",
+        "exact_publication_time": null
+      },
+      "caption_expanded": true,
+      "navigation_error": null,
+      "capture_stage": "finished",
+      "likes_availability": "owner_only",
+      "metric_availability": null
+    },
+    {
+      "shortcode": "De4YxpTuVVg",
+      "url": "https:\/\/www.instagram.com\/reel\/De4YxpTuVVg\/",
+      "identity_source": "queue_deep_link_and_account_check",
+      "retained_observations": null,
+      "account": "sallusmemer",
+      "captured_at": "1794683277426",
+      "likes": {
+        "value": null,
+        "error": null
+      },
+      "comments": {
+        "value": 37,
+        "error": null
+      },
+      "views_or_plays": {
+        "value": 15958,
+        "error": null
+      },
+      "shares": {
+        "value": 1867,
+        "error": null
+      },
+      "reposts": {
+        "value": 11,
+        "error": null
+      },
+      "saves": {
+        "value": 16,
+        "error": null
+      },
+      "date_posted": {
+        "value": "24 October",
+        "error": null
+      },
+      "caption": {
+        "value": "TVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開!",
+        "error": null
+      },
+      "publication_observation": {
+        "raw_text": "24 October",
+        "observed_at": "2026-11-14T19:07:58.682Z",
+        "observed_at_epoch_ms": 1794683278683,
+        "timezone": "Asia\/Kolkata",
+        "locale": "en-GB",
+        "source": "instagram_android_expanded_caption_footer",
+        "exact_publication_time": null
+      },
+      "caption_expanded": true,
+      "navigation_error": null,
+      "capture_stage": "finished",
+      "likes_availability": "owner_only",
+      "metric_availability": null
+    },
+    {
+      "shortcode": "DeiYT9HSmcS",
+      "url": "https:\/\/www.instagram.com\/reel\/DeiYT9HSmcS\/",
+      "identity_source": "queue_deep_link_and_account_check",
+      "retained_observations": null,
+      "account": "9ineesss",
+      "captured_at": "1794683267552",
+      "likes": {
+        "value": null,
+        "error": null
+      },
+      "comments": {
+        "value": 0,
+        "error": null
+      },
+      "views_or_plays": {
+        "value": 4672,
+        "error": null
+      },
+      "shares": {
+        "value": 53,
+        "error": null
+      },
+      "reposts": {
+        "value": 7,
+        "error": null
+      },
+      "saves": {
+        "value": 49,
+        "error": null
+      },
+      "date_posted": {
+        "value": "16 October",
+        "error": null
+      },
+      "caption": {
+        "value": "的现场直播。以独特时尚造型而闻名的他，这次依旧保持一贯的高级感，以一身宛如T台造型般的时尚穿搭，展现出 effortless 的魅力。",
+        "error": null
+      },
+      "publication_observation": {
+        "raw_text": "16 October",
+        "observed_at": "2026-11-14T19:07:48.765Z",
+        "observed_at_epoch_ms": 1794683268765,
+        "timezone": "Asia\/Kolkata",
+        "locale": "en-GB",
+        "source": "instagram_android_expanded_caption_footer",
+        "exact_publication_time": null
+      },
+      "caption_expanded": true,
+      "navigation_error": null,
+      "capture_stage": "finished",
+      "likes_availability": "owner_only",
+      "metric_availability": null
+    },
+    {
+      "shortcode": "DemuY0XPauJ",
+      "url": "https:\/\/www.instagram.com\/reel\/DemuY0XPauJ\/",
+      "identity_source": "queue_deep_link_and_account_check",
+      "retained_observations": null,
+      "account": "9ineesss",
+      "captured_at": "1794683257506",
+      "likes": {
+        "value": null,
+        "error": null
+      },
+      "comments": {
+        "value": 1,
+        "error": null
+      },
+      "views_or_plays": {
+        "value": 6491,
+        "error": null
+      },
+      "shares": {
+        "value": 190,
+        "error": null
+      },
+      "reposts": {
+        "value": 40,
+        "error": null
+      },
+      "saves": {
+        "value": 47,
+        "error": null
+      },
+      "date_posted": {
+        "value": "17 October",
+        "error": null
+      },
+      "caption": {
+        "value": "的现场直播。以独特时尚造型而闻名的他，这次依旧保持一贯的高级感，以一身宛如T台造型般的时尚穿搭，展现出 effortless 的魅力。",
+        "error": null
+      },
+      "publication_observation": {
+        "raw_text": "17 October",
+        "observed_at": "2026-11-14T19:07:38.791Z",
+        "observed_at_epoch_ms": 1794683258791,
+        "timezone": "Asia\/Kolkata",
+        "locale": "en-GB",
+        "source": "instagram_android_expanded_caption_footer",
+        "exact_publication_time": null
+      },
+      "caption_expanded": true,
+      "navigation_error": null,
+      "capture_stage": "finished",
+      "likes_availability": "owner_only",
+      "metric_availability": null
+    },
+    {
+      "shortcode": "DeoEFnky3eU",
+      "url": "https:\/\/www.instagram.com\/reel\/DeoEFnky3eU\/",
+      "identity_source": "queue_deep_link_and_account_check",
+      "retained_observations": null,
+      "metric_availability": {
+        "comments": {
+          "status": "not_exposed",
+          "source": "verified_reel_controls",
+          "samples": 2,
+          "details_capture_verified": true,
+          "first_observed_at": 1794685044926,
+          "confirmed_at": 1794685046758,
+          "control_evidence": "visible_comment_control_without_count_before_repost",
+          "scope": "Observed Instagram Android UI; not a claim that the metric can never be exposed elsewhere"
+        }
+      },
+      "account": "9ineesss",
+      "captured_at": "1794685044912",
+      "likes": {
+        "value": null,
+        "error": null
+      },
+      "comments": {
+        "value": null,
+        "error": null
+      },
+      "views_or_plays": {
+        "value": 356,
+        "error": null
+      },
+      "shares": {
+        "value": 1,
+        "error": null
+      },
+      "reposts": {
+        "value": 2,
+        "error": null
+      },
+      "saves": {
+        "value": 3,
+        "error": null
+      },
+      "date_posted": {
+        "value": "18 October",
+        "error": null
+      },
+      "caption": {
+        "value": "TVアニメ『紫禁・御猫房』10月10日放送開始！宮廷に隠された秘密とは？みんなは観たい？コメントで教えてね！\n#紫禁御猫房#新作アニメ#拡散希望#猫\n《紫禁•御猫房》\n#紫禁御猫房\n新作アニメ\n拡散希望\n猫",
+        "error": null
+      },
+      "publication_observation": {
+        "raw_text": "18 October",
+        "observed_at": "2026-11-14T19:37:26.177Z",
+        "observed_at_epoch_ms": 1794685046177,
+        "timezone": "Asia\/Kolkata",
+        "locale": "en-GB",
+        "source": "instagram_android_expanded_caption_footer",
+        "exact_publication_time": null
+      },
+      "caption_expanded": true,
+      "navigation_error": null,
+      "capture_stage": "finished",
+      "likes_availability": "owner_only"
+    },
+    {
+      "shortcode": "DepXl3rSJBU",
+      "url": "https:\/\/www.instagram.com\/reel\/DepXl3rSJBU\/",
+      "identity_source": "queue_deep_link_and_account_check",
+      "retained_observations": null,
+      "metric_availability": {
+        "comments": {
+          "status": "not_exposed",
+          "source": "verified_reel_controls",
+          "samples": 2,
+          "details_capture_verified": true,
+          "first_observed_at": 1794685034791,
+          "confirmed_at": 1794685036625,
+          "control_evidence": "visible_comment_control_without_count_before_repost",
+          "scope": "Observed Instagram Android UI; not a claim that the metric can never be exposed elsewhere"
+        }
+      },
+      "account": "9ineesss",
+      "captured_at": "1794685034770",
+      "likes": {
+        "value": null,
+        "error": null
+      },
+      "comments": {
+        "value": null,
+        "error": null
+      },
+      "views_or_plays": {
+        "value": 2058,
+        "error": null
+      },
+      "shares": {
+        "value": 9,
+        "error": null
+      },
+      "reposts": {
+        "value": 32,
+        "error": null
+      },
+      "saves": {
+        "value": 10,
+        "error": null
+      },
+      "date_posted": {
+        "value": "19 October",
+        "error": null
+      },
+      "caption": {
+        "value": "TVアニメ『紫禁・御猫房』10月10日放送開始！宮廷に隠された秘密とは？みんなは観たい？コメントで教えてね！\n#紫禁御猫房#新作アニメ#拡散希望#猫\n《紫禁•御猫房》\n#紫禁御猫房\n新作アニメ\n拡散希望\n猫",
+        "error": null
+      },
+      "publication_observation": {
+        "raw_text": "19 October",
+        "observed_at": "2026-11-14T19:37:15.972Z",
+        "observed_at_epoch_ms": 1794685035972,
+        "timezone": "Asia\/Kolkata",
+        "locale": "en-GB",
+        "source": "instagram_android_expanded_caption_footer",
+        "exact_publication_time": null
+      },
+      "caption_expanded": true,
+      "navigation_error": null,
+      "capture_stage": "finished",
+      "likes_availability": "owner_only"
+    },
+    {
+      "shortcode": "DddW5GHyKy_",
+      "url": "https:\/\/www.instagram.com\/reel\/DddW5GHyKy_\/",
+      "identity_source": "queue_deep_link_and_account_check",
+      "retained_observations": null,
+      "metric_availability": {
+        "reposts": {
+          "status": "not_exposed",
+          "source": "verified_reel_controls",
+          "samples": 2,
+          "details_capture_verified": true,
+          "first_observed_at": 1794685025168,
+          "confirmed_at": 1794685027341,
+          "control_evidence": "visible_repost_control_without_count_before_share",
+          "scope": "Observed Instagram Android UI; not a claim that the metric can never be exposed elsewhere"
+        },
+        "shares": {
+          "status": "not_exposed",
+          "source": "verified_reel_controls",
+          "samples": 2,
+          "details_capture_verified": true,
+          "first_observed_at": 1794685025168,
+          "confirmed_at": 1794685027341,
+          "control_evidence": "visible_share_control_without_count_before_save",
+          "scope": "Observed Instagram Android UI; not a claim that the metric can never be exposed elsewhere"
+        },
+        "saves": {
+          "status": "not_exposed",
+          "source": "verified_reel_controls",
+          "samples": 2,
+          "details_capture_verified": true,
+          "first_observed_at": 1794685025168,
+          "confirmed_at": 1794685027341,
+          "control_evidence": "visible_save_control_without_count_before_more",
+          "scope": "Observed Instagram Android UI; not a claim that the metric can never be exposed elsewhere"
+        }
+      },
+      "account": "fun_fineee",
+      "captured_at": "1794685025150",
+      "likes": {
+        "value": null,
+        "error": null
+      },
+      "comments": {
+        "value": 0,
+        "error": null
+      },
+      "views_or_plays": {
+        "value": 148,
+        "error": null
+      },
+      "shares": {
+        "value": null,
+        "error": null
+      },
+      "reposts": {
+        "value": null,
+        "error": null
+      },
+      "saves": {
+        "value": null,
+        "error": null
+      },
+      "date_posted": {
+        "value": "19 September",
+        "error": null
+      },
+      "caption": {
+        "value": "CID funny 😁 😂 \n...\n...\n😂😂🤣 daya",
+        "error": null
+      },
+      "publication_observation": {
+        "raw_text": "19 September",
+        "observed_at": "2026-11-14T19:37:06.732Z",
+        "observed_at_epoch_ms": 1794685026733,
+        "timezone": "Asia\/Kolkata",
+        "locale": "en-GB",
+        "source": "instagram_android_expanded_caption_footer",
+        "exact_publication_time": null
+      },
+      "caption_expanded": true,
+      "navigation_error": null,
+      "capture_stage": "finished",
+      "likes_availability": "owner_only"
+    },
+    {
+      "shortcode": "De8VsImSFMm",
+      "url": "https:\/\/www.instagram.com\/reel\/De8VsImSFMm\/",
+      "identity_source": "queue_deep_link_and_account_check",
+      "retained_observations": null,
+      "account": "fun_fineee",
+      "captured_at": "1794683769575",
+      "likes": {
+        "value": null,
+        "error": "Could not read the likes count from the reel UI."
+      },
+      "comments": {
+        "value": 0,
+        "error": null
+      },
+      "views_or_plays": {
+        "value": null,
+        "error": "Could not open Likes and plays from this reel."
+      },
+      "shares": {
+        "value": null,
+        "error": "Could not read the shares count from the reel UI."
+      },
+      "reposts": {
+        "value": null,
+        "error": "Could not read the repost count from the reel UI."
+      },
+      "saves": {
+        "value": null,
+        "error": "Could not read the saves count from the reel UI."
+      },
+      "date_posted": {
+        "value": "26 October",
+        "error": null
+      },
+      "caption": {
+        "value": "Tarakh mehta ka ultta chashman",
+        "error": null
+      },
+      "publication_observation": {
+        "raw_text": "26 October",
+        "observed_at": "2026-11-14T19:16:10.949Z",
+        "observed_at_epoch_ms": 1794683770949,
+        "timezone": "Asia\/Kolkata",
+        "locale": "en-GB",
+        "source": "instagram_android_expanded_caption_footer",
+        "exact_publication_time": null
+      },
+      "caption_expanded": true,
+      "navigation_error": null,
+      "capture_stage": "metrics",
+      "likes_availability": "unknown",
+      "metric_availability": null
+    }
+  ]
+}

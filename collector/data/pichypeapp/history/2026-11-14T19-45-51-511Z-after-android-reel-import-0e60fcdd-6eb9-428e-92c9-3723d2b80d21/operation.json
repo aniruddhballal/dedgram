@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "source_batch": "data/imports/android/2026-11-14T19-45-51-511Z",
+  "changes": [
+    {
+      "shortcode": "DejpZ6nostn",
+      "before_status": "needs_review",
+      "after_status": "complete",
+      "observed_account": "pichypeapp",
+      "canonical_date": "2026-10-16",
+      "phone_date_label": "16 October"
+    }
+  ],
+  "before_snapshot": "data\\pichypeapp\\history\\2026-11-14T19-45-51-511Z-before-android-reel-import-503b377c-a8f9-4ad3-9f88-b94301a7be16",
+  "after_snapshot": "data\\pichypeapp\\history\\2026-11-14T19-45-51-511Z-after-android-reel-import-0e60fcdd-6eb9-428e-92c9-3723d2b80d21"
+}

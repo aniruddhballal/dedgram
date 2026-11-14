@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "source_batch": "data/imports/android/2026-11-14T19-45-51-511Z",
+  "changes": [
+    {
+      "shortcode": "DddW5GHyKy_",
+      "before_status": "partial",
+      "after_status": "metrics_unavailable",
+      "observed_account": "fun_fineee",
+      "canonical_date": "2026-09-18",
+      "phone_date_label": "19 September"
+    },
+    {
+      "shortcode": "De8VsImSFMm",
+      "before_status": "partial",
+      "after_status": "partial",
+      "observed_account": "fun_fineee",
+      "canonical_date": "2026-10-25",
+      "phone_date_label": "26 October"
+    }
+  ],
+  "before_snapshot": "data\\fun_fineee\\history\\2026-11-14T19-45-51-511Z-before-android-reel-import-617e6325-04f5-4d76-b334-eb58aac4f804",
+  "after_snapshot": "data\\fun_fineee\\history\\2026-11-14T19-45-51-511Z-after-android-reel-import-6c8cd94d-9d62-42e1-a042-fdce55b10f04"
+}

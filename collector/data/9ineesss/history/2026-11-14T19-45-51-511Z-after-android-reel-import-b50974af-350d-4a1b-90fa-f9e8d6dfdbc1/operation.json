@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "source_batch": "data/imports/android/2026-11-14T19-45-51-511Z",
+  "changes": [
+    {
+      "shortcode": "DeiYT9HSmcS",
+      "before_status": "partial",
+      "after_status": "metrics_unavailable",
+      "observed_account": "9ineesss",
+      "canonical_date": "2026-10-15",
+      "phone_date_label": "16 October"
+    },
+    {
+      "shortcode": "DemuY0XPauJ",
+      "before_status": "partial",
+      "after_status": "metrics_unavailable",
+      "observed_account": "9ineesss",
+      "canonical_date": "2026-10-17",
+      "phone_date_label": "17 October"
+    },
+    {
+      "shortcode": "DeoEFnky3eU",
+      "before_status": "partial",
+      "after_status": "metrics_unavailable",
+      "observed_account": "9ineesss",
+      "canonical_date": "2026-10-17",
+      "phone_date_label": "18 October"
+    },
+    {
+      "shortcode": "DepXl3rSJBU",
+      "before_status": "partial",
+      "after_status": "metrics_unavailable",
+      "observed_account": "9ineesss",
+      "canonical_date": "2026-10-18",
+      "phone_date_label": "19 October"
+    }
+  ],
+  "before_snapshot": "data\\9ineesss\\history\\2026-11-14T19-45-51-511Z-before-android-reel-import-fa67f94b-e89b-4e34-b57f-bbc711acc062",
+  "after_snapshot": "data\\9ineesss\\history\\2026-11-14T19-45-51-511Z-after-android-reel-import-b50974af-350d-4a1b-90fa-f9e8d6dfdbc1"
+}

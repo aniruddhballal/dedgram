@@ -745,11 +745,11 @@
     "url": "https://www.instagram.com/reel/De4YxpTuVVg/",
     "grid_views_raw": "13.1K",
     "grid_views_issue": null,
-    "status": "partial",
-    "fetched_at": "2026-11-14T09:50:12.481Z",
+    "status": "metrics_unavailable",
+    "fetched_at": "2026-11-14T19:07:57.426Z",
     "date": "2026-10-24",
     "date_precision": "day",
-    "caption": null,
+    "caption": "TVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開!",
     "hashtags": [],
     "mentions": [],
     "likes": null,
@@ -757,14 +757,15 @@
       "value": 37,
       "raw": "37",
       "approximate": false,
-      "source": "dom_action_control",
-      "label": "Comment"
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:07:57.426Z"
     },
     "views": {
-      "value": 13100,
-      "raw": "13.1K",
-      "approximate": true,
-      "source": "profile_grid"
+      "value": 15958,
+      "raw": "15958",
+      "approximate": false,
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:07:57.426Z"
     },
     "thumbnail_url": "https://instagram.fblr24-4.fna.fbcdn.net/v/t51.82787-15/864581507_1838780747392298_8153919378196153029_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=u92-4ueJIxwQ7kNvwF5x8gF&_nc_oc=AdrGwXLjuTGxQfo6_3m3aPbyoEvC1AEuNX0B0hiqSa5RggCtw-6G70-8QsTdAmQKPgXo1OxoZFnAt8VBSLanXV9Z&_nc_zt=23&_nc_ht=instagram.fblr24-4.fna&_nc_gid=5LLy_fxL8olw0bxF07vraw&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQRRtMyUk_njcc0Oq4xUKLSv7aImomHg_oqdRRAtyqD3Dg&oe=6AFDFF1B",
     "media_url": null,
@@ -776,72 +777,139 @@
     },
     "raw": {
       "description": "「TVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開!」 - 2026年10月24日、sallusmemer",
-      "article_text": "sallusmemer\nFollow\nTVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開!\nSee translation\nLikes\n37\n11\nchiragkohliii\nFollow\nFrankfurt, Germany\nAlone but not lonely\n.\n.\n.\n📸: @cineseele\n57.9K\n173\n5,264\n7,248",
+      "article_text": "Android reel capture by sallusmemer\nTVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開!\n24 October",
       "aria_text": "sallusmemer reels\nsallusmemer reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nchiragkohliii reels\nchiragkohliii reels\nLocation\nLocation\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
       "json_ld": {},
       "engagement": {
-        "scope": "reel_action_controls",
         "availability": {
           "likes": {
-            "state": "not_captured",
-            "evidence": "Control located but no reliable numeric value parsed."
-          },
-          "comments": {
-            "state": "measured",
-            "evidence": "Comment"
-          },
-          "reshares": {
-            "state": "measured",
-            "evidence": "Repost"
-          },
-          "shares": {
-            "state": "not_captured",
-            "evidence": "Control located but no reliable numeric value parsed."
+            "state": "explicitly_hidden",
+            "evidence": "Instagram Android Likes and plays explicitly indicated owner-only likes",
+            "source": "instagram_android_ui"
           }
-        },
-        "likes_visibility": "not_shown",
-        "comments": {
-          "raw": "37",
-          "source": "dom_action_control",
-          "label": "Comment"
-        },
-        "reshares": {
-          "raw": "11",
-          "source": "dom_action_control",
-          "label": "Repost"
         }
       },
       "capture_checks": {
         "access_clear": true,
         "stable": true,
-        "read_passes": 2,
-        "access_attempts": [],
-        "metric_panels": [
-          {
-            "field": "likes",
-            "stable": false,
-            "access_clear": true,
-            "evidence": null,
-            "repeated_evidence": null,
-            "panel_changed": false
-          }
-        ]
+        "source": "queue_deep_link_and_account_check",
+        "caption_expanded": true
+      },
+      "android_capture": {
+        "shortcode": "De4YxpTuVVg",
+        "url": "https://www.instagram.com/reel/De4YxpTuVVg/",
+        "identity_source": "queue_deep_link_and_account_check",
+        "retained_observations": null,
+        "account": "sallusmemer",
+        "captured_at": "1794683277426",
+        "likes": {
+          "value": null,
+          "error": null
+        },
+        "comments": {
+          "value": 37,
+          "error": null
+        },
+        "views_or_plays": {
+          "value": 15958,
+          "error": null
+        },
+        "shares": {
+          "value": 1867,
+          "error": null
+        },
+        "reposts": {
+          "value": 11,
+          "error": null
+        },
+        "saves": {
+          "value": 16,
+          "error": null
+        },
+        "date_posted": {
+          "value": "24 October",
+          "error": null
+        },
+        "caption": {
+          "value": "TVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開!",
+          "error": null
+        },
+        "publication_observation": {
+          "raw_text": "24 October",
+          "observed_at": "2026-11-14T19:07:58.682Z",
+          "observed_at_epoch_ms": 1794683278683,
+          "timezone": "Asia/Kolkata",
+          "locale": "en-GB",
+          "source": "instagram_android_expanded_caption_footer",
+          "exact_publication_time": null
+        },
+        "caption_expanded": true,
+        "navigation_error": null,
+        "capture_stage": "finished",
+        "likes_availability": "owner_only",
+        "metric_availability": null
       }
     },
     "last_error": null,
-    "last_attempt_at": "2026-11-14T09:50:12.481Z",
+    "last_attempt_at": "2026-11-14T19:07:57.426Z",
     "access_review": null,
-    "extraction_review": "Metric extraction is incomplete; absence has not been confirmed. Inspect or retry rather than assume hidden counts.",
+    "extraction_review": null,
     "date_source": "og_description_localized",
     "reshares": {
       "value": 11,
       "raw": "11",
       "approximate": false,
-      "source": "dom_action_control",
-      "label": "Repost"
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:07:57.426Z"
     },
-    "shares": null,
-    "likes_visibility": "not_shown"
+    "shares": {
+      "value": 1867,
+      "raw": "1867",
+      "approximate": false,
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:07:57.426Z"
+    },
+    "likes_visibility": "not_shown",
+    "saves": {
+      "value": 16,
+      "raw": "16",
+      "approximate": false,
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:07:57.426Z"
+    },
+    "analysis_resolution": {
+      "status": "resolved",
+      "source": "explicit_visibility_evidence",
+      "recorded_at": "2026-11-14T19:07:57.426Z",
+      "reason": "Unavailable metrics resolved using explicit visibility evidence or user assessment. Saved observations remain valid; missing values are unknown, not zero.",
+      "unavailable_fields": [
+        "likes"
+      ]
+    },
+    "observed_owner_username": "sallusmemer",
+    "owner_identity_observation": {
+      "source": "queue_deep_link_and_account_check",
+      "observed_at": "2026-11-14T19:07:57.426Z",
+      "historical_account": null,
+      "verification": null
+    },
+    "publication_observation": {
+      "raw_text": "24 October",
+      "observed_at": "2026-11-14T19:07:58.682Z",
+      "observed_at_epoch_ms": 1794683278683,
+      "timezone": "Asia/Kolkata",
+      "locale": "en-GB",
+      "source": "instagram_android_expanded_caption_footer",
+      "exact_publication_time": null
+    },
+    "metric_availability": {},
+    "android_import": {
+      "imported_at": "2026-11-14T19:45:51.511Z",
+      "captured_at": "2026-11-14T19:07:57.426Z",
+      "phone_status": "collected",
+      "source": "Documents/dedgram/reels.json",
+      "capture_method": "android_queue"
+    }
   },
   {
     "kind": "reel",
@@ -1174,11 +1242,11 @@
     "url": "https://www.instagram.com/reel/De3acHyuM6B/",
     "grid_views_raw": "29.4K",
     "grid_views_issue": null,
-    "status": "partial",
-    "fetched_at": "2026-11-14T09:50:20.112Z",
+    "status": "metrics_unavailable",
+    "fetched_at": "2026-11-14T19:08:07.330Z",
     "date": "2026-10-23",
     "date_precision": "day",
-    "caption": null,
+    "caption": "TVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開!",
     "hashtags": [],
     "mentions": [],
     "likes": null,
@@ -1186,14 +1254,15 @@
       "value": 47,
       "raw": "47",
       "approximate": false,
-      "source": "dom_action_control",
-      "label": "Comment"
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:08:07.330Z"
     },
     "views": {
-      "value": 29400,
-      "raw": "29.4K",
-      "approximate": true,
-      "source": "profile_grid"
+      "value": 30676,
+      "raw": "30676",
+      "approximate": false,
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:08:07.330Z"
     },
     "thumbnail_url": "https://instagram.fblr24-4.fna.fbcdn.net/v/t51.82787-15/865463149_1111840788159760_185807346138563481_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=Wsxxbei7nSoQ7kNvwGGLShi&_nc_oc=Adri_KEPQ2yQrr4oZ47oWeaFsrmI0aMDCZ1A-Ts1y6gaszsr5ltGMiv7y9qmrszEXPfeldWqJ3X2XdkZJ_JK0IUW&_nc_zt=23&_nc_ht=instagram.fblr24-4.fna&_nc_gid=DWGRbnuMnrGUP2Y0cY76BA&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQQP2pCBzP58CRJqdBbFlFMl2ZKG8gj-_0alG0X2_NJBPg&oe=6AFE07D8",
     "media_url": null,
@@ -1205,72 +1274,139 @@
     },
     "raw": {
       "description": "「TVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開!」 - 2026年10月23日、sallusmemer",
-      "article_text": "sallusmemer\nFollow\nTVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開!\nSee translation\nLikes\n47\n19\nchiragkohliii\nFollow\nFrankfurt, Germany\nAlone but not lonely\n.\n.\n.\n📸: @cineseele\n57.9K\n173\n5,264\n7,248",
+      "article_text": "Android reel capture by sallusmemer\nTVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開!\n24 October",
       "aria_text": "sallusmemer reels\nsallusmemer reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nchiragkohliii reels\nchiragkohliii reels\nLocation\nLocation\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
       "json_ld": {},
       "engagement": {
-        "scope": "reel_action_controls",
         "availability": {
           "likes": {
-            "state": "not_captured",
-            "evidence": "Control located but no reliable numeric value parsed."
-          },
-          "comments": {
-            "state": "measured",
-            "evidence": "Comment"
-          },
-          "reshares": {
-            "state": "measured",
-            "evidence": "Repost"
-          },
-          "shares": {
-            "state": "not_captured",
-            "evidence": "Control located but no reliable numeric value parsed."
+            "state": "explicitly_hidden",
+            "evidence": "Instagram Android Likes and plays explicitly indicated owner-only likes",
+            "source": "instagram_android_ui"
           }
-        },
-        "likes_visibility": "not_shown",
-        "comments": {
-          "raw": "47",
-          "source": "dom_action_control",
-          "label": "Comment"
-        },
-        "reshares": {
-          "raw": "19",
-          "source": "dom_action_control",
-          "label": "Repost"
         }
       },
       "capture_checks": {
         "access_clear": true,
         "stable": true,
-        "read_passes": 2,
-        "access_attempts": [],
-        "metric_panels": [
-          {
-            "field": "likes",
-            "stable": false,
-            "access_clear": true,
-            "evidence": null,
-            "repeated_evidence": "sallusmemer can see the total number of people who liked this post.",
-            "panel_changed": true
-          }
-        ]
+        "source": "queue_deep_link_and_account_check",
+        "caption_expanded": true
+      },
+      "android_capture": {
+        "shortcode": "De3acHyuM6B",
+        "url": "https://www.instagram.com/reel/De3acHyuM6B/",
+        "identity_source": "queue_deep_link_and_account_check",
+        "retained_observations": null,
+        "account": "sallusmemer",
+        "captured_at": "1794683287330",
+        "likes": {
+          "value": null,
+          "error": null
+        },
+        "comments": {
+          "value": 47,
+          "error": null
+        },
+        "views_or_plays": {
+          "value": 30676,
+          "error": null
+        },
+        "shares": {
+          "value": 4326,
+          "error": null
+        },
+        "reposts": {
+          "value": 19,
+          "error": null
+        },
+        "saves": {
+          "value": 115,
+          "error": null
+        },
+        "date_posted": {
+          "value": "24 October",
+          "error": null
+        },
+        "caption": {
+          "value": "TVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開!",
+          "error": null
+        },
+        "publication_observation": {
+          "raw_text": "24 October",
+          "observed_at": "2026-11-14T19:08:08.940Z",
+          "observed_at_epoch_ms": 1794683288940,
+          "timezone": "Asia/Kolkata",
+          "locale": "en-GB",
+          "source": "instagram_android_expanded_caption_footer",
+          "exact_publication_time": null
+        },
+        "caption_expanded": true,
+        "navigation_error": null,
+        "capture_stage": "finished",
+        "likes_availability": "owner_only",
+        "metric_availability": null
       }
     },
     "last_error": null,
-    "last_attempt_at": "2026-11-14T09:50:20.113Z",
+    "last_attempt_at": "2026-11-14T19:08:07.330Z",
     "access_review": null,
-    "extraction_review": "Metric extraction is incomplete; absence has not been confirmed. Inspect or retry rather than assume hidden counts.",
+    "extraction_review": null,
     "date_source": "og_description_localized",
     "reshares": {
       "value": 19,
       "raw": "19",
       "approximate": false,
-      "source": "dom_action_control",
-      "label": "Repost"
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:08:07.330Z"
     },
-    "shares": null,
-    "likes_visibility": "not_shown"
+    "shares": {
+      "value": 4326,
+      "raw": "4326",
+      "approximate": false,
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:08:07.330Z"
+    },
+    "likes_visibility": "not_shown",
+    "saves": {
+      "value": 115,
+      "raw": "115",
+      "approximate": false,
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:08:07.330Z"
+    },
+    "analysis_resolution": {
+      "status": "resolved",
+      "source": "explicit_visibility_evidence",
+      "recorded_at": "2026-11-14T19:08:07.330Z",
+      "reason": "Unavailable metrics resolved using explicit visibility evidence or user assessment. Saved observations remain valid; missing values are unknown, not zero.",
+      "unavailable_fields": [
+        "likes"
+      ]
+    },
+    "observed_owner_username": "sallusmemer",
+    "owner_identity_observation": {
+      "source": "queue_deep_link_and_account_check",
+      "observed_at": "2026-11-14T19:08:07.330Z",
+      "historical_account": null,
+      "verification": null
+    },
+    "publication_observation": {
+      "raw_text": "24 October",
+      "observed_at": "2026-11-14T19:08:08.940Z",
+      "observed_at_epoch_ms": 1794683288940,
+      "timezone": "Asia/Kolkata",
+      "locale": "en-GB",
+      "source": "instagram_android_expanded_caption_footer",
+      "exact_publication_time": null
+    },
+    "metric_availability": {},
+    "android_import": {
+      "imported_at": "2026-11-14T19:45:51.511Z",
+      "captured_at": "2026-11-14T19:08:07.330Z",
+      "phone_status": "collected",
+      "source": "Documents/dedgram/reels.json",
+      "capture_method": "android_queue"
+    }
   },
   {
     "kind": "reel",
@@ -1502,11 +1638,11 @@
     "url": "https://www.instagram.com/reel/De2QaDCyqSg/",
     "grid_views_raw": "8,442",
     "grid_views_issue": null,
-    "status": "partial",
-    "fetched_at": "2026-11-14T09:50:27.720Z",
+    "status": "metrics_unavailable",
+    "fetched_at": "2026-11-14T19:08:17.962Z",
     "date": "2026-10-23",
     "date_precision": "day",
-    "caption": null,
+    "caption": "TVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開!",
     "hashtags": [],
     "mentions": [],
     "likes": null,
@@ -1514,14 +1650,15 @@
       "value": 4,
       "raw": "4",
       "approximate": false,
-      "source": "dom_action_control",
-      "label": "Comment"
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:08:17.962Z"
     },
     "views": {
-      "value": 8442,
-      "raw": "8,442",
+      "value": 8592,
+      "raw": "8592",
       "approximate": false,
-      "source": "profile_grid"
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:08:17.962Z"
     },
     "thumbnail_url": "https://instagram.fblr1-9.fna.fbcdn.net/v/t51.82787-15/862666809_1413838203726538_7640366035812845890_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=mypg7li9OAEQ7kNvwHlTFNx&_nc_oc=Ado9NTsWRY1sFQe40-M6SPQgY-7RiZNDVyhIOxAt6wJzbRDrsNs-fZ9A_g3qtB_dYEGv2iJZ8b0hV3I17EnAN4hU&_nc_zt=23&_nc_ht=instagram.fblr1-9.fna&_nc_gid=tDtinmeKRqvYTaV8xkYinw&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQQo-3ttMZmOf1Q7acRNe5UiGhirnweUGDZ90pS5YpkE3g&oe=6AFE0E86",
     "media_url": null,
@@ -1533,72 +1670,139 @@
     },
     "raw": {
       "description": "「TVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開!」 - 2026年10月23日、sallusmemer",
-      "article_text": "sallusmemer\nFollow\nTVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開!\nSee translation\nLikes\n4\n1\nWatch full feature\n1:11:38\ncolinandsamir \n and mosseri\nFollow\nThe Future of Instagram according to @mosseri\n90.5K\n4,869\n5,050\n77.9K",
+      "article_text": "Android reel capture by sallusmemer\nTVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開!\n24 October",
       "aria_text": "sallusmemer reels\nsallusmemer reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\n\ncolinandsamir reels\ncolinandsamir reels\nVerified\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
       "json_ld": {},
       "engagement": {
-        "scope": "reel_action_controls",
         "availability": {
           "likes": {
-            "state": "not_captured",
-            "evidence": "Control located but no reliable numeric value parsed."
-          },
-          "comments": {
-            "state": "measured",
-            "evidence": "Comment"
-          },
-          "reshares": {
-            "state": "measured",
-            "evidence": "Repost"
-          },
-          "shares": {
-            "state": "not_captured",
-            "evidence": "Control located but no reliable numeric value parsed."
+            "state": "explicitly_hidden",
+            "evidence": "Instagram Android Likes and plays explicitly indicated owner-only likes",
+            "source": "instagram_android_ui"
           }
-        },
-        "likes_visibility": "not_shown",
-        "comments": {
-          "raw": "4",
-          "source": "dom_action_control",
-          "label": "Comment"
-        },
-        "reshares": {
-          "raw": "1",
-          "source": "dom_action_control",
-          "label": "Repost"
         }
       },
       "capture_checks": {
         "access_clear": true,
         "stable": true,
-        "read_passes": 2,
-        "access_attempts": [],
-        "metric_panels": [
-          {
-            "field": "likes",
-            "stable": false,
-            "access_clear": true,
-            "evidence": null,
-            "repeated_evidence": "sallusmemer can see the total number of people who liked this post.",
-            "panel_changed": true
-          }
-        ]
+        "source": "queue_deep_link_and_account_check",
+        "caption_expanded": true
+      },
+      "android_capture": {
+        "shortcode": "De2QaDCyqSg",
+        "url": "https://www.instagram.com/reel/De2QaDCyqSg/",
+        "identity_source": "queue_deep_link_and_account_check",
+        "retained_observations": null,
+        "account": "sallusmemer",
+        "captured_at": "1794683297962",
+        "likes": {
+          "value": null,
+          "error": null
+        },
+        "comments": {
+          "value": 4,
+          "error": null
+        },
+        "views_or_plays": {
+          "value": 8592,
+          "error": null
+        },
+        "shares": {
+          "value": 67,
+          "error": null
+        },
+        "reposts": {
+          "value": 1,
+          "error": null
+        },
+        "saves": {
+          "value": 10,
+          "error": null
+        },
+        "date_posted": {
+          "value": "24 October",
+          "error": null
+        },
+        "caption": {
+          "value": "TVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開!",
+          "error": null
+        },
+        "publication_observation": {
+          "raw_text": "24 October",
+          "observed_at": "2026-11-14T19:08:19.376Z",
+          "observed_at_epoch_ms": 1794683299377,
+          "timezone": "Asia/Kolkata",
+          "locale": "en-GB",
+          "source": "instagram_android_expanded_caption_footer",
+          "exact_publication_time": null
+        },
+        "caption_expanded": true,
+        "navigation_error": null,
+        "capture_stage": "finished",
+        "likes_availability": "owner_only",
+        "metric_availability": null
       }
     },
     "last_error": null,
-    "last_attempt_at": "2026-11-14T09:50:27.720Z",
+    "last_attempt_at": "2026-11-14T19:08:17.962Z",
     "access_review": null,
-    "extraction_review": "Metric extraction is incomplete; absence has not been confirmed. Inspect or retry rather than assume hidden counts.",
+    "extraction_review": null,
     "date_source": "og_description_localized",
     "reshares": {
       "value": 1,
       "raw": "1",
       "approximate": false,
-      "source": "dom_action_control",
-      "label": "Repost"
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:08:17.962Z"
     },
-    "shares": null,
-    "likes_visibility": "not_shown"
+    "shares": {
+      "value": 67,
+      "raw": "67",
+      "approximate": false,
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:08:17.962Z"
+    },
+    "likes_visibility": "not_shown",
+    "saves": {
+      "value": 10,
+      "raw": "10",
+      "approximate": false,
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:08:17.962Z"
+    },
+    "analysis_resolution": {
+      "status": "resolved",
+      "source": "explicit_visibility_evidence",
+      "recorded_at": "2026-11-14T19:08:17.962Z",
+      "reason": "Unavailable metrics resolved using explicit visibility evidence or user assessment. Saved observations remain valid; missing values are unknown, not zero.",
+      "unavailable_fields": [
+        "likes"
+      ]
+    },
+    "observed_owner_username": "sallusmemer",
+    "owner_identity_observation": {
+      "source": "queue_deep_link_and_account_check",
+      "observed_at": "2026-11-14T19:08:17.962Z",
+      "historical_account": null,
+      "verification": null
+    },
+    "publication_observation": {
+      "raw_text": "24 October",
+      "observed_at": "2026-11-14T19:08:19.376Z",
+      "observed_at_epoch_ms": 1794683299377,
+      "timezone": "Asia/Kolkata",
+      "locale": "en-GB",
+      "source": "instagram_android_expanded_caption_footer",
+      "exact_publication_time": null
+    },
+    "metric_availability": {},
+    "android_import": {
+      "imported_at": "2026-11-14T19:45:51.511Z",
+      "captured_at": "2026-11-14T19:08:17.962Z",
+      "phone_status": "collected",
+      "source": "Documents/dedgram/reels.json",
+      "capture_method": "android_queue"
+    }
   },
   {
     "kind": "reel",
@@ -2379,11 +2583,11 @@
     "url": "https://www.instagram.com/reel/De1wV9Lui1g/",
     "grid_views_raw": "937K",
     "grid_views_issue": null,
-    "status": "partial",
-    "fetched_at": "2026-11-14T09:50:40.351Z",
+    "status": "metrics_unavailable",
+    "fetched_at": "2026-11-14T19:08:27.823Z",
     "date": "2026-10-23",
     "date_precision": "day",
-    "caption": null,
+    "caption": "TVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開!",
     "hashtags": [],
     "mentions": [],
     "likes": null,
@@ -2391,14 +2595,15 @@
       "value": 433,
       "raw": "433",
       "approximate": false,
-      "source": "dom_action_control",
-      "label": "Comment"
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:08:27.823Z"
     },
     "views": {
-      "value": 937000,
-      "raw": "937K",
-      "approximate": true,
-      "source": "profile_grid"
+      "value": 985371,
+      "raw": "985371",
+      "approximate": false,
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:08:27.823Z"
     },
     "thumbnail_url": "https://instagram.fblr1-8.fna.fbcdn.net/v/t51.82787-15/858565149_1097176126512414_4029543774122496468_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=4OOuI1YMm_sQ7kNvwFln5qq&_nc_oc=Adpag363bOX5iREKUFR_1vVMoaiK-vWmWd-n6mB-ROFTYHjdY-DXqROqAGHetxZ8OH2bq12c56ouCO9_ifuekEBd&_nc_zt=23&_nc_ht=instagram.fblr1-8.fna&_nc_gid=Ub3zpT0VUipE8fwjtoBJ4Q&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQTkHknXrrA8pixPP1ZkO7A4gPUHPekmGslsa2cqQDHOQQ&oe=6AFE08F9",
     "media_url": null,
@@ -2410,72 +2615,139 @@
     },
     "raw": {
       "description": "「TVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開!」 - 2026年10月23日、sallusmemer",
-      "article_text": "sallusmemer\nFollow\nTVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開!\nSee translation\nLikes\n433\n240\nthe_greek_.god_\nFollow\nAnirudh Ravichander · Jersey The Book\nAnirudh Ravichander · Jersey The Book\n2 Days Out 🌍🇮🇳\n\n@saaheel_sharma\n\n#fyp #insta #icn #icnuae #gym\n37.1K\n142\n154\n1,528",
+      "article_text": "Android reel capture by sallusmemer\nTVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開!\n23 October",
       "aria_text": "sallusmemer reels\nsallusmemer reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nthe_greek_.god_ reels\nthe_greek_.god_ reels\nVerified\nAudio image\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
       "json_ld": {},
       "engagement": {
-        "scope": "reel_action_controls",
         "availability": {
           "likes": {
-            "state": "not_captured",
-            "evidence": "Control located but no reliable numeric value parsed."
-          },
-          "comments": {
-            "state": "measured",
-            "evidence": "Comment"
-          },
-          "reshares": {
-            "state": "measured",
-            "evidence": "Repost"
-          },
-          "shares": {
-            "state": "not_captured",
-            "evidence": "Control located but no reliable numeric value parsed."
+            "state": "explicitly_hidden",
+            "evidence": "Instagram Android Likes and plays explicitly indicated owner-only likes",
+            "source": "instagram_android_ui"
           }
-        },
-        "likes_visibility": "not_shown",
-        "comments": {
-          "raw": "433",
-          "source": "dom_action_control",
-          "label": "Comment"
-        },
-        "reshares": {
-          "raw": "240",
-          "source": "dom_action_control",
-          "label": "Repost"
         }
       },
       "capture_checks": {
         "access_clear": true,
         "stable": true,
-        "read_passes": 2,
-        "access_attempts": [],
-        "metric_panels": [
-          {
-            "field": "likes",
-            "stable": false,
-            "access_clear": true,
-            "evidence": null,
-            "repeated_evidence": null,
-            "panel_changed": false
-          }
-        ]
+        "source": "queue_deep_link_and_account_check",
+        "caption_expanded": true
+      },
+      "android_capture": {
+        "shortcode": "De1wV9Lui1g",
+        "url": "https://www.instagram.com/reel/De1wV9Lui1g/",
+        "identity_source": "queue_deep_link_and_account_check",
+        "retained_observations": null,
+        "account": "sallusmemer",
+        "captured_at": "1794683307823",
+        "likes": {
+          "value": null,
+          "error": null
+        },
+        "comments": {
+          "value": 433,
+          "error": null
+        },
+        "views_or_plays": {
+          "value": 985371,
+          "error": null
+        },
+        "shares": {
+          "value": 158943,
+          "error": null
+        },
+        "reposts": {
+          "value": 240,
+          "error": null
+        },
+        "saves": {
+          "value": 2925,
+          "error": null
+        },
+        "date_posted": {
+          "value": "23 October",
+          "error": null
+        },
+        "caption": {
+          "value": "TVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開!",
+          "error": null
+        },
+        "publication_observation": {
+          "raw_text": "23 October",
+          "observed_at": "2026-11-14T19:08:29.256Z",
+          "observed_at_epoch_ms": 1794683309257,
+          "timezone": "Asia/Kolkata",
+          "locale": "en-GB",
+          "source": "instagram_android_expanded_caption_footer",
+          "exact_publication_time": null
+        },
+        "caption_expanded": true,
+        "navigation_error": null,
+        "capture_stage": "finished",
+        "likes_availability": "owner_only",
+        "metric_availability": null
       }
     },
     "last_error": null,
-    "last_attempt_at": "2026-11-14T09:50:40.352Z",
+    "last_attempt_at": "2026-11-14T19:08:27.823Z",
     "access_review": null,
-    "extraction_review": "Metric extraction is incomplete; absence has not been confirmed. Inspect or retry rather than assume hidden counts.",
+    "extraction_review": null,
     "date_source": "og_description_localized",
     "reshares": {
       "value": 240,
       "raw": "240",
       "approximate": false,
-      "source": "dom_action_control",
-      "label": "Repost"
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:08:27.823Z"
     },
-    "shares": null,
-    "likes_visibility": "not_shown"
+    "shares": {
+      "value": 158943,
+      "raw": "158943",
+      "approximate": false,
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:08:27.823Z"
+    },
+    "likes_visibility": "not_shown",
+    "saves": {
+      "value": 2925,
+      "raw": "2925",
+      "approximate": false,
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:08:27.823Z"
+    },
+    "analysis_resolution": {
+      "status": "resolved",
+      "source": "explicit_visibility_evidence",
+      "recorded_at": "2026-11-14T19:08:27.823Z",
+      "reason": "Unavailable metrics resolved using explicit visibility evidence or user assessment. Saved observations remain valid; missing values are unknown, not zero.",
+      "unavailable_fields": [
+        "likes"
+      ]
+    },
+    "observed_owner_username": "sallusmemer",
+    "owner_identity_observation": {
+      "source": "queue_deep_link_and_account_check",
+      "observed_at": "2026-11-14T19:08:27.823Z",
+      "historical_account": null,
+      "verification": null
+    },
+    "publication_observation": {
+      "raw_text": "23 October",
+      "observed_at": "2026-11-14T19:08:29.256Z",
+      "observed_at_epoch_ms": 1794683309257,
+      "timezone": "Asia/Kolkata",
+      "locale": "en-GB",
+      "source": "instagram_android_expanded_caption_footer",
+      "exact_publication_time": null
+    },
+    "metric_availability": {},
+    "android_import": {
+      "imported_at": "2026-11-14T19:45:51.511Z",
+      "captured_at": "2026-11-14T19:08:27.823Z",
+      "phone_status": "collected",
+      "source": "Documents/dedgram/reels.json",
+      "capture_method": "android_queue"
+    }
   },
   {
     "kind": "reel",
@@ -2931,11 +3203,11 @@
     "url": "https://www.instagram.com/reel/De1tP0muNVQ/",
     "grid_views_raw": "26.4K",
     "grid_views_issue": null,
-    "status": "partial",
-    "fetched_at": "2026-11-14T09:50:50.194Z",
+    "status": "metrics_unavailable",
+    "fetched_at": "2026-11-14T19:08:38.197Z",
     "date": "2026-10-23",
     "date_precision": "day",
-    "caption": null,
+    "caption": "TVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開!",
     "hashtags": [],
     "mentions": [],
     "likes": null,
@@ -2943,14 +3215,15 @@
       "value": 8,
       "raw": "8",
       "approximate": false,
-      "source": "dom_action_control",
-      "label": "Comment"
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:08:38.197Z"
     },
     "views": {
-      "value": 26400,
-      "raw": "26.4K",
-      "approximate": true,
-      "source": "profile_grid"
+      "value": 27342,
+      "raw": "27342",
+      "approximate": false,
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:08:38.197Z"
     },
     "thumbnail_url": "https://instagram.fblr1-9.fna.fbcdn.net/v/t51.82787-15/858356077_1653791526079476_8924688404221930256_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=nLhUuDOXXVwQ7kNvwFTJTnN&_nc_oc=AdpdorwuVPDH9t93ailEbt2b90btKq8W11Cm1h58bnNw6LKLSm9djgJOVY7Ew3EMqt33b8-4HR5pgekThAxQ_H8T&_nc_zt=23&_nc_ht=instagram.fblr1-9.fna&_nc_gid=-VJ7GS1niTriBDebeu3Vsg&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQT-jfjX9ZGZDfNmchjawsFU1ArzukB08YMOgkSk_HKbxg&oe=6AFDFD3F",
     "media_url": null,
@@ -2962,72 +3235,139 @@
     },
     "raw": {
       "description": "「TVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開!」 - 2026年10月23日、sallusmemer",
-      "article_text": "sallusmemer\nFollow\nTVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開!\nSee translation\nLikes\n8\n59\nwingsoverwa\nFollow\npurc · eye of ra\nThe show must go on. #rfdswa #pc12ng #wetseason @pilatusaircraft\nSee translation\n33.8K\n85\n1,050\n4,032",
+      "article_text": "Android reel capture by sallusmemer\nTVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開!\n23 October",
       "aria_text": "sallusmemer reels\nsallusmemer reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nwingsoverwa reels\nwingsoverwa reels\nAudio image\nLocation\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
       "json_ld": {},
       "engagement": {
-        "scope": "reel_action_controls",
         "availability": {
           "likes": {
-            "state": "not_captured",
-            "evidence": "Control located but no reliable numeric value parsed."
-          },
-          "comments": {
-            "state": "measured",
-            "evidence": "Comment"
-          },
-          "reshares": {
-            "state": "measured",
-            "evidence": "Repost"
-          },
-          "shares": {
-            "state": "not_captured",
-            "evidence": "Control located but no reliable numeric value parsed."
+            "state": "explicitly_hidden",
+            "evidence": "Instagram Android Likes and plays explicitly indicated owner-only likes",
+            "source": "instagram_android_ui"
           }
-        },
-        "likes_visibility": "not_shown",
-        "comments": {
-          "raw": "8",
-          "source": "dom_action_control",
-          "label": "Comment"
-        },
-        "reshares": {
-          "raw": "59",
-          "source": "dom_action_control",
-          "label": "Repost"
         }
       },
       "capture_checks": {
         "access_clear": true,
         "stable": true,
-        "read_passes": 2,
-        "access_attempts": [],
-        "metric_panels": [
-          {
-            "field": "likes",
-            "stable": false,
-            "access_clear": true,
-            "evidence": null,
-            "repeated_evidence": null,
-            "panel_changed": false
-          }
-        ]
+        "source": "queue_deep_link_and_account_check",
+        "caption_expanded": true
+      },
+      "android_capture": {
+        "shortcode": "De1tP0muNVQ",
+        "url": "https://www.instagram.com/reel/De1tP0muNVQ/",
+        "identity_source": "queue_deep_link_and_account_check",
+        "retained_observations": null,
+        "account": "sallusmemer",
+        "captured_at": "1794683318197",
+        "likes": {
+          "value": null,
+          "error": null
+        },
+        "comments": {
+          "value": 8,
+          "error": null
+        },
+        "views_or_plays": {
+          "value": 27342,
+          "error": null
+        },
+        "shares": {
+          "value": 3924,
+          "error": null
+        },
+        "reposts": {
+          "value": 59,
+          "error": null
+        },
+        "saves": {
+          "value": 143,
+          "error": null
+        },
+        "date_posted": {
+          "value": "23 October",
+          "error": null
+        },
+        "caption": {
+          "value": "TVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開!",
+          "error": null
+        },
+        "publication_observation": {
+          "raw_text": "23 October",
+          "observed_at": "2026-11-14T19:08:39.348Z",
+          "observed_at_epoch_ms": 1794683319349,
+          "timezone": "Asia/Kolkata",
+          "locale": "en-GB",
+          "source": "instagram_android_expanded_caption_footer",
+          "exact_publication_time": null
+        },
+        "caption_expanded": true,
+        "navigation_error": null,
+        "capture_stage": "finished",
+        "likes_availability": "owner_only",
+        "metric_availability": null
       }
     },
     "last_error": null,
-    "last_attempt_at": "2026-11-14T09:50:50.194Z",
+    "last_attempt_at": "2026-11-14T19:08:38.197Z",
     "access_review": null,
-    "extraction_review": "Metric extraction is incomplete; absence has not been confirmed. Inspect or retry rather than assume hidden counts.",
+    "extraction_review": null,
     "date_source": "og_description_localized",
     "reshares": {
       "value": 59,
       "raw": "59",
       "approximate": false,
-      "source": "dom_action_control",
-      "label": "Repost"
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:08:38.197Z"
     },
-    "shares": null,
-    "likes_visibility": "not_shown"
+    "shares": {
+      "value": 3924,
+      "raw": "3924",
+      "approximate": false,
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:08:38.197Z"
+    },
+    "likes_visibility": "not_shown",
+    "saves": {
+      "value": 143,
+      "raw": "143",
+      "approximate": false,
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:08:38.197Z"
+    },
+    "analysis_resolution": {
+      "status": "resolved",
+      "source": "explicit_visibility_evidence",
+      "recorded_at": "2026-11-14T19:08:38.197Z",
+      "reason": "Unavailable metrics resolved using explicit visibility evidence or user assessment. Saved observations remain valid; missing values are unknown, not zero.",
+      "unavailable_fields": [
+        "likes"
+      ]
+    },
+    "observed_owner_username": "sallusmemer",
+    "owner_identity_observation": {
+      "source": "queue_deep_link_and_account_check",
+      "observed_at": "2026-11-14T19:08:38.197Z",
+      "historical_account": null,
+      "verification": null
+    },
+    "publication_observation": {
+      "raw_text": "23 October",
+      "observed_at": "2026-11-14T19:08:39.348Z",
+      "observed_at_epoch_ms": 1794683319349,
+      "timezone": "Asia/Kolkata",
+      "locale": "en-GB",
+      "source": "instagram_android_expanded_caption_footer",
+      "exact_publication_time": null
+    },
+    "metric_availability": {},
+    "android_import": {
+      "imported_at": "2026-11-14T19:45:51.511Z",
+      "captured_at": "2026-11-14T19:08:38.197Z",
+      "phone_status": "collected",
+      "source": "Documents/dedgram/reels.json",
+      "capture_method": "android_queue"
+    }
   },
   {
     "kind": "reel",
@@ -3483,11 +3823,11 @@
     "url": "https://www.instagram.com/reel/De1WgSJOBN9/",
     "grid_views_raw": "9,309",
     "grid_views_issue": null,
-    "status": "partial",
-    "fetched_at": "2026-11-14T09:50:59.550Z",
+    "status": "metrics_unavailable",
+    "fetched_at": "2026-11-14T19:08:48.265Z",
     "date": "2026-10-23",
     "date_precision": "day",
-    "caption": null,
+    "caption": "TVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開!",
     "hashtags": [],
     "mentions": [],
     "likes": null,
@@ -3495,14 +3835,15 @@
       "value": 1,
       "raw": "1",
       "approximate": false,
-      "source": "dom_action_control",
-      "label": "Comment"
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:08:48.265Z"
     },
     "views": {
-      "value": 9309,
-      "raw": "9,309",
+      "value": 9434,
+      "raw": "9434",
       "approximate": false,
-      "source": "profile_grid"
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:08:48.265Z"
     },
     "thumbnail_url": "https://instagram.fblr1-6.fna.fbcdn.net/v/t51.82787-15/857843105_2050930815591821_3960137821523253376_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=7g7z92Zmyi8Q7kNvwFF0-9p&_nc_oc=AdoslDG7wYogZGBf8gX9UXkBP5i2klQxR7WDLmckCMWrNdrpewr5KrNKDIM7JwQWuXnVflEdnL6Q4GtxtQRkj9OM&_nc_zt=23&_nc_ht=instagram.fblr1-6.fna&_nc_gid=k1AIC9Fso0QppqyK22ieeg&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQSAvLLsV_cDFMnrrwq8la-iuEaZWvLspvc2IuqfdDNPbA&oe=6AFE0B24",
     "media_url": null,
@@ -3514,72 +3855,139 @@
     },
     "raw": {
       "description": "「TVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開!」 - 2026年10月23日、sallusmemer",
-      "article_text": "sallusmemer\nFollow\nIshika Joshi · Friend Circle Ki Duniya (Slowed)\nIshika Joshi · Friend Circle Ki Duniya (Slowed)\nTVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開!\nSee translation\nLikes\n1\n8\nnotsaharsh\nFollow\nBangalore, India\nimnotsaharshandimakevideos\n\nmusic by @_adilmusic - PRABHJI 86 🐐\n42.7K\n209\n680\n4,674",
+      "article_text": "Android reel capture by sallusmemer\nTVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開!\n23 October",
       "aria_text": "sallusmemer reels\nsallusmemer reels\nAudio image\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nnotsaharsh reels\nnotsaharsh reels\nLocation\nLocation\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
       "json_ld": {},
       "engagement": {
-        "scope": "reel_action_controls",
         "availability": {
           "likes": {
-            "state": "not_captured",
-            "evidence": "Control located but no reliable numeric value parsed."
-          },
-          "comments": {
-            "state": "measured",
-            "evidence": "Comment"
-          },
-          "reshares": {
-            "state": "measured",
-            "evidence": "Repost"
-          },
-          "shares": {
-            "state": "not_captured",
-            "evidence": "Control located but no reliable numeric value parsed."
+            "state": "explicitly_hidden",
+            "evidence": "Instagram Android Likes and plays explicitly indicated owner-only likes",
+            "source": "instagram_android_ui"
           }
-        },
-        "likes_visibility": "not_shown",
-        "comments": {
-          "raw": "1",
-          "source": "dom_action_control",
-          "label": "Comment"
-        },
-        "reshares": {
-          "raw": "8",
-          "source": "dom_action_control",
-          "label": "Repost"
         }
       },
       "capture_checks": {
         "access_clear": true,
         "stable": true,
-        "read_passes": 2,
-        "access_attempts": [],
-        "metric_panels": [
-          {
-            "field": "likes",
-            "stable": false,
-            "access_clear": true,
-            "evidence": null,
-            "repeated_evidence": "sallusmemer can see the total number of people who liked this post.",
-            "panel_changed": true
-          }
-        ]
+        "source": "queue_deep_link_and_account_check",
+        "caption_expanded": true
+      },
+      "android_capture": {
+        "shortcode": "De1WgSJOBN9",
+        "url": "https://www.instagram.com/reel/De1WgSJOBN9/",
+        "identity_source": "queue_deep_link_and_account_check",
+        "retained_observations": null,
+        "account": "sallusmemer",
+        "captured_at": "1794683328265",
+        "likes": {
+          "value": null,
+          "error": null
+        },
+        "comments": {
+          "value": 1,
+          "error": null
+        },
+        "views_or_plays": {
+          "value": 9434,
+          "error": null
+        },
+        "shares": {
+          "value": 562,
+          "error": null
+        },
+        "reposts": {
+          "value": 8,
+          "error": null
+        },
+        "saves": {
+          "value": 22,
+          "error": null
+        },
+        "date_posted": {
+          "value": "23 October",
+          "error": null
+        },
+        "caption": {
+          "value": "TVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開!",
+          "error": null
+        },
+        "publication_observation": {
+          "raw_text": "23 October",
+          "observed_at": "2026-11-14T19:08:49.461Z",
+          "observed_at_epoch_ms": 1794683329461,
+          "timezone": "Asia/Kolkata",
+          "locale": "en-GB",
+          "source": "instagram_android_expanded_caption_footer",
+          "exact_publication_time": null
+        },
+        "caption_expanded": true,
+        "navigation_error": null,
+        "capture_stage": "finished",
+        "likes_availability": "owner_only",
+        "metric_availability": null
       }
     },
     "last_error": null,
-    "last_attempt_at": "2026-11-14T09:50:59.550Z",
+    "last_attempt_at": "2026-11-14T19:08:48.265Z",
     "access_review": null,
-    "extraction_review": "Metric extraction is incomplete; absence has not been confirmed. Inspect or retry rather than assume hidden counts.",
+    "extraction_review": null,
     "date_source": "og_description_localized",
     "reshares": {
       "value": 8,
       "raw": "8",
       "approximate": false,
-      "source": "dom_action_control",
-      "label": "Repost"
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:08:48.265Z"
     },
-    "shares": null,
-    "likes_visibility": "not_shown"
+    "shares": {
+      "value": 562,
+      "raw": "562",
+      "approximate": false,
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:08:48.265Z"
+    },
+    "likes_visibility": "not_shown",
+    "saves": {
+      "value": 22,
+      "raw": "22",
+      "approximate": false,
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:08:48.265Z"
+    },
+    "analysis_resolution": {
+      "status": "resolved",
+      "source": "explicit_visibility_evidence",
+      "recorded_at": "2026-11-14T19:08:48.265Z",
+      "reason": "Unavailable metrics resolved using explicit visibility evidence or user assessment. Saved observations remain valid; missing values are unknown, not zero.",
+      "unavailable_fields": [
+        "likes"
+      ]
+    },
+    "observed_owner_username": "sallusmemer",
+    "owner_identity_observation": {
+      "source": "queue_deep_link_and_account_check",
+      "observed_at": "2026-11-14T19:08:48.265Z",
+      "historical_account": null,
+      "verification": null
+    },
+    "publication_observation": {
+      "raw_text": "23 October",
+      "observed_at": "2026-11-14T19:08:49.461Z",
+      "observed_at_epoch_ms": 1794683329461,
+      "timezone": "Asia/Kolkata",
+      "locale": "en-GB",
+      "source": "instagram_android_expanded_caption_footer",
+      "exact_publication_time": null
+    },
+    "metric_availability": {},
+    "android_import": {
+      "imported_at": "2026-11-14T19:45:51.511Z",
+      "captured_at": "2026-11-14T19:08:48.265Z",
+      "phone_status": "collected",
+      "source": "Documents/dedgram/reels.json",
+      "capture_method": "android_queue"
+    }
   },
   {
     "kind": "reel",
@@ -3811,11 +4219,11 @@
     "url": "https://www.instagram.com/reel/De1QnjiOWf7/",
     "grid_views_raw": "168K",
     "grid_views_issue": null,
-    "status": "partial",
-    "fetched_at": "2026-11-14T09:51:06.405Z",
+    "status": "metrics_unavailable",
+    "fetched_at": "2026-11-14T19:08:57.926Z",
     "date": "2026-10-23",
     "date_precision": "day",
-    "caption": null,
+    "caption": "TVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開!",
     "hashtags": [],
     "mentions": [],
     "likes": null,
@@ -3823,14 +4231,15 @@
       "value": 58,
       "raw": "58",
       "approximate": false,
-      "source": "dom_action_control",
-      "label": "Comment"
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:08:57.926Z"
     },
     "views": {
-      "value": 168000,
-      "raw": "168K",
-      "approximate": true,
-      "source": "profile_grid"
+      "value": 182861,
+      "raw": "182861",
+      "approximate": false,
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:08:57.926Z"
     },
     "thumbnail_url": "https://instagram.fblr24-1.fna.fbcdn.net/v/t51.82787-15/863442401_2418603755215576_5473127056186425886_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=hwPNWBoqAwoQ7kNvwFO_9iJ&_nc_oc=Adqf-41JqMgm3iVYLjc1-O6DQ2JoIN5fAE3_Q6Rsnj3Wx6U4YcMYRdTprTzn0VkpDxr68AyDu8OLWD-ZWcyC-DIr&_nc_zt=23&_nc_ht=instagram.fblr24-1.fna&_nc_gid=nvLw_rsIIu6siIJogYtCZg&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQSyLv2H5kdjM0RQZmykQVr1Z_kWVO11YGNTnnlZdlAOuA&oe=6AFDE71A",
     "media_url": null,
@@ -3842,71 +4251,138 @@
     },
     "raw": {
       "description": "「TVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開!」 - 2026年10月23日、sallusmemer",
-      "article_text": "sallusmemer\nFollow\nTVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開!\nSee translation\nLikes\n58\n206\nalbertobarsiguitar\nFollow\nSynth riffs + guitar = 👨🏻‍🍳🤌\n24.7K\n114\n726\n3,790",
+      "article_text": "Android reel capture by sallusmemer\nTVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開!\n23 October",
       "aria_text": "sallusmemer reels\nsallusmemer reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nalbertobarsiguitar reels\nalbertobarsiguitar reels\nVerified\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
       "json_ld": {},
       "engagement": {
-        "scope": "reel_action_controls",
         "availability": {
           "likes": {
-            "state": "not_captured",
-            "evidence": "Control located but no reliable numeric value parsed."
-          },
-          "comments": {
-            "state": "measured",
-            "evidence": "Comment"
-          },
-          "reshares": {
-            "state": "measured",
-            "evidence": "Repost"
-          },
-          "shares": {
-            "state": "not_captured",
-            "evidence": "Control located but no reliable numeric value parsed."
+            "state": "explicitly_hidden",
+            "evidence": "Instagram Android Likes and plays explicitly indicated owner-only likes",
+            "source": "instagram_android_ui"
           }
-        },
-        "likes_visibility": "not_shown",
-        "comments": {
-          "raw": "58",
-          "source": "dom_action_control",
-          "label": "Comment"
-        },
-        "reshares": {
-          "raw": "206",
-          "source": "dom_action_control",
-          "label": "Repost"
         }
       },
       "capture_checks": {
         "access_clear": true,
         "stable": true,
-        "read_passes": 2,
-        "access_attempts": [],
-        "metric_panels": [
-          {
-            "field": "likes",
-            "stable": false,
-            "access_clear": true,
-            "evidence": null,
-            "repeated_evidence": "sallusmemer can see the total number of people who liked this post.",
-            "panel_changed": true
-          }
-        ]
+        "source": "queue_deep_link_and_account_check",
+        "caption_expanded": true
+      },
+      "android_capture": {
+        "shortcode": "De1QnjiOWf7",
+        "url": "https://www.instagram.com/reel/De1QnjiOWf7/",
+        "identity_source": "queue_deep_link_and_account_check",
+        "retained_observations": null,
+        "account": "sallusmemer",
+        "captured_at": "1794683337926",
+        "likes": {
+          "value": null,
+          "error": null
+        },
+        "comments": {
+          "value": 58,
+          "error": null
+        },
+        "views_or_plays": {
+          "value": 182861,
+          "error": null
+        },
+        "shares": {
+          "value": 32830,
+          "error": null
+        },
+        "reposts": {
+          "value": 207,
+          "error": null
+        },
+        "saves": {
+          "value": 969,
+          "error": null
+        },
+        "date_posted": {
+          "value": "23 October",
+          "error": null
+        },
+        "caption": {
+          "value": "TVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開!",
+          "error": null
+        },
+        "publication_observation": {
+          "raw_text": "23 October",
+          "observed_at": "2026-11-14T19:08:59.486Z",
+          "observed_at_epoch_ms": 1794683339486,
+          "timezone": "Asia/Kolkata",
+          "locale": "en-GB",
+          "source": "instagram_android_expanded_caption_footer",
+          "exact_publication_time": null
+        },
+        "caption_expanded": true,
+        "navigation_error": null,
+        "capture_stage": "finished",
+        "likes_availability": "owner_only",
+        "metric_availability": null
       }
     },
     "last_error": null,
-    "last_attempt_at": "2026-11-14T09:51:06.405Z",
+    "last_attempt_at": "2026-11-14T19:08:57.926Z",
     "access_review": null,
-    "extraction_review": "Metric extraction is incomplete; absence has not been confirmed. Inspect or retry rather than assume hidden counts.",
+    "extraction_review": null,
     "date_source": "og_description_localized",
     "reshares": {
-      "value": 206,
-      "raw": "206",
+      "value": 207,
+      "raw": "207",
       "approximate": false,
-      "source": "dom_action_control",
-      "label": "Repost"
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:08:57.926Z"
     },
-    "shares": null,
-    "likes_visibility": "not_shown"
+    "shares": {
+      "value": 32830,
+      "raw": "32830",
+      "approximate": false,
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:08:57.926Z"
+    },
+    "likes_visibility": "not_shown",
+    "saves": {
+      "value": 969,
+      "raw": "969",
+      "approximate": false,
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:08:57.926Z"
+    },
+    "analysis_resolution": {
+      "status": "resolved",
+      "source": "explicit_visibility_evidence",
+      "recorded_at": "2026-11-14T19:08:57.926Z",
+      "reason": "Unavailable metrics resolved using explicit visibility evidence or user assessment. Saved observations remain valid; missing values are unknown, not zero.",
+      "unavailable_fields": [
+        "likes"
+      ]
+    },
+    "observed_owner_username": "sallusmemer",
+    "owner_identity_observation": {
+      "source": "queue_deep_link_and_account_check",
+      "observed_at": "2026-11-14T19:08:57.926Z",
+      "historical_account": null,
+      "verification": null
+    },
+    "publication_observation": {
+      "raw_text": "23 October",
+      "observed_at": "2026-11-14T19:08:59.486Z",
+      "observed_at_epoch_ms": 1794683339486,
+      "timezone": "Asia/Kolkata",
+      "locale": "en-GB",
+      "source": "instagram_android_expanded_caption_footer",
+      "exact_publication_time": null
+    },
+    "metric_availability": {},
+    "android_import": {
+      "imported_at": "2026-11-14T19:45:51.511Z",
+      "captured_at": "2026-11-14T19:08:57.926Z",
+      "phone_status": "collected",
+      "source": "Documents/dedgram/reels.json",
+      "capture_method": "android_queue"
+    }
   }
 ]

@@ -140,7 +140,7 @@
     "grid_views_raw": "65",
     "grid_views_issue": null,
     "status": "partial",
-    "fetched_at": "2026-11-14T09:54:36.614Z",
+    "fetched_at": "2026-11-14T19:16:09.575Z",
     "date": "2026-10-25",
     "date_precision": "day",
     "caption": "Tarakh mehta ka ultta chashman",
@@ -151,8 +151,8 @@
       "value": 0,
       "raw": "0",
       "approximate": false,
-      "source": "dom_action_control",
-      "label": "No comments yet."
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:16:09.575Z"
     },
     "views": {
       "value": 65,
@@ -170,64 +170,107 @@
     },
     "raw": {
       "description": "Tarakh mehta ka ultta chashman - @fun_fineee on October 25, 2026",
-      "article_text": "fun_fineee\nFollow\nAI content\nTarakh mehta ka ultta chashman\nSee translation\nareyouaryan\nFollow\nTalwiinder, Kidjaywest, NDS · Mangda Wapis Kyun\nTalwiinder, Kidjaywest, NDS · Mangda Wapis Kyun\n#hashtagkaunpadhtahai\n#areyouaryan\n22.2K\n69\n404\n1,692",
+      "article_text": "Android reel capture by fun_fineee\nTarakh mehta ka ultta chashman\n26 October",
       "aria_text": "fun_fineee reels\nfun_fineee reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nareyouaryan reels\nareyouaryan reels\nVerified\nAudio image\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
       "json_ld": {},
       "engagement": {
-        "scope": "reel_action_controls",
-        "availability": {
-          "likes": {
-            "state": "not_captured",
-            "evidence": "Control located but no reliable numeric value parsed."
-          },
-          "comments": {
-            "state": "measured",
-            "evidence": "No comments yet.",
-            "raw": "0",
-            "source": "metric_dialog"
-          },
-          "reshares": {
-            "state": "not_captured",
-            "evidence": "Control located but no reliable numeric value parsed."
-          },
-          "shares": {
-            "state": "not_captured",
-            "evidence": "Control located but no reliable numeric value parsed."
-          }
-        },
-        "likes_visibility": "not_shown",
-        "comments": {
-          "raw": "0",
-          "source": "dom_comments_panel",
-          "label": "No comments yet."
-        }
+        "availability": {}
       },
       "capture_checks": {
         "access_clear": true,
         "stable": true,
-        "read_passes": 2,
-        "access_attempts": [],
-        "metric_panels": [
-          {
-            "field": "comments",
-            "stable": true,
-            "access_clear": true,
-            "evidence": "No comments yet.",
-            "repeated_evidence": "No comments yet.",
-            "panel_changed": false,
-            "read_passes": 2
-          }
-        ]
+        "source": "queue_deep_link_and_account_check",
+        "caption_expanded": true
+      },
+      "android_capture": {
+        "shortcode": "De8VsImSFMm",
+        "url": "https://www.instagram.com/reel/De8VsImSFMm/",
+        "identity_source": "queue_deep_link_and_account_check",
+        "retained_observations": null,
+        "account": "fun_fineee",
+        "captured_at": "1794683769575",
+        "likes": {
+          "value": null,
+          "error": "Could not read the likes count from the reel UI."
+        },
+        "comments": {
+          "value": 0,
+          "error": null
+        },
+        "views_or_plays": {
+          "value": null,
+          "error": "Could not open Likes and plays from this reel."
+        },
+        "shares": {
+          "value": null,
+          "error": "Could not read the shares count from the reel UI."
+        },
+        "reposts": {
+          "value": null,
+          "error": "Could not read the repost count from the reel UI."
+        },
+        "saves": {
+          "value": null,
+          "error": "Could not read the saves count from the reel UI."
+        },
+        "date_posted": {
+          "value": "26 October",
+          "error": null
+        },
+        "caption": {
+          "value": "Tarakh mehta ka ultta chashman",
+          "error": null
+        },
+        "publication_observation": {
+          "raw_text": "26 October",
+          "observed_at": "2026-11-14T19:16:10.949Z",
+          "observed_at_epoch_ms": 1794683770949,
+          "timezone": "Asia/Kolkata",
+          "locale": "en-GB",
+          "source": "instagram_android_expanded_caption_footer",
+          "exact_publication_time": null
+        },
+        "caption_expanded": true,
+        "navigation_error": null,
+        "capture_stage": "metrics",
+        "likes_availability": "unknown",
+        "metric_availability": null
       }
     },
     "last_error": null,
-    "last_attempt_at": "2026-11-14T09:54:36.615Z",
+    "last_attempt_at": "2026-11-14T19:16:09.575Z",
     "access_review": null,
-    "extraction_review": "Metric extraction is incomplete; absence has not been confirmed. Inspect or retry rather than assume hidden counts.",
+    "extraction_review": "Android capture remains incomplete; unresolved fields are not confirmed unavailable.",
     "date_source": "og_description",
     "reshares": null,
     "shares": null,
-    "likes_visibility": "not_shown"
+    "likes_visibility": "not_shown",
+    "saves": null,
+    "analysis_resolution": null,
+    "observed_owner_username": "fun_fineee",
+    "owner_identity_observation": {
+      "source": "queue_deep_link_and_account_check",
+      "observed_at": "2026-11-14T19:16:09.575Z",
+      "historical_account": null,
+      "verification": null
+    },
+    "publication_observation": {
+      "raw_text": "26 October",
+      "observed_at": "2026-11-14T19:16:10.949Z",
+      "observed_at_epoch_ms": 1794683770949,
+      "timezone": "Asia/Kolkata",
+      "locale": "en-GB",
+      "source": "instagram_android_expanded_caption_footer",
+      "exact_publication_time": null
+    },
+    "metric_availability": {},
+    "android_import": {
+      "imported_at": "2026-11-14T19:45:51.511Z",
+      "captured_at": "2026-11-14T19:16:09.575Z",
+      "phone_status": "partial",
+      "source": "Documents/dedgram/reels.json",
+      "capture_method": "android_queue"
+    }
   },
   {
     "kind": "reel",
@@ -1377,8 +1420,8 @@
     "url": "https://www.instagram.com/reel/DddW5GHyKy_/",
     "grid_views_raw": "128",
     "grid_views_issue": null,
-    "status": "partial",
-    "fetched_at": "2026-11-14T09:49:06.694Z",
+    "status": "metrics_unavailable",
+    "fetched_at": "2026-11-14T19:37:05.150Z",
     "date": "2026-09-18",
     "date_precision": "day",
     "caption": "CID funny 😁 😂 \n...\n...\n😂😂🤣 daya",
@@ -1389,14 +1432,15 @@
       "value": 0,
       "raw": "0",
       "approximate": false,
-      "source": "dom_action_control",
-      "label": "No comments yet."
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:37:05.150Z"
     },
     "views": {
-      "value": 128,
-      "raw": "128",
+      "value": 148,
+      "raw": "148",
       "approximate": false,
-      "source": "profile_grid"
+      "source": "instagram_android_ui",
+      "observed_at": "2026-11-14T19:37:05.150Z"
     },
     "thumbnail_url": "https://instagram.fblr24-1.fna.fbcdn.net/v/t51.82787-15/797337082_18025648955911366_2261755383080346418_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=cpglGvWA5o8Q7kNvwEPBP7i&_nc_oc=AdoXnMmdaN8LQynM6QBm0243JbrtXh54YAHQS_NU-QSVrgewY6V8ACrG_f_WT4-aaMPhMvN8MiXLHP6JugWZ51-p&_nc_zt=23&_nc_ht=instagram.fblr24-1.fna&_nc_gid=kuo4NyQAnWzMbFokmvIl8A&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQR5jSO5c1xefJlZZPZC0pIMQgY2uBsoTFwEDeNOsSGIXQ&oe=6AFDFF4B",
     "media_url": null,
@@ -1408,71 +1452,183 @@
     },
     "raw": {
       "description": "CID funny 😁 😂 \n...\n...\n😂😂🤣 daya - @fun_fineee on September 18, 2026",
-      "article_text": "fun_fineee\nFollow\nCID funny 😁 😂\n...\n...\n😂😂🤣 daya\nLikes\nalbertobarsiguitar\nFollow\nSynth riffs + guitar = 👨🏻‍🍳🤌\n24.7K\n114\n724\n3,790",
+      "article_text": "Android reel capture by fun_fineee\nCID funny 😁 😂 \n...\n...\n😂😂🤣 daya\n19 September",
       "aria_text": "fun_fineee reels\nfun_fineee reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nalbertobarsiguitar reels\nalbertobarsiguitar reels\nVerified\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
       "json_ld": {},
       "engagement": {
-        "scope": "reel_action_controls",
         "availability": {
           "likes": {
-            "state": "not_captured",
-            "evidence": "Control located but no reliable numeric value parsed."
-          },
-          "comments": {
-            "state": "measured",
-            "evidence": "No comments yet.",
-            "raw": "0",
-            "source": "metric_dialog"
-          },
-          "reshares": {
-            "state": "not_captured",
-            "evidence": "Control located but no reliable numeric value parsed."
-          },
-          "shares": {
-            "state": "not_captured",
-            "evidence": "Control located but no reliable numeric value parsed."
+            "state": "explicitly_hidden",
+            "evidence": "Instagram Android Likes and plays explicitly indicated owner-only likes",
+            "source": "instagram_android_ui"
           }
-        },
-        "likes_visibility": "not_shown",
-        "comments": {
-          "raw": "0",
-          "source": "dom_comments_panel",
-          "label": "No comments yet."
         }
       },
       "capture_checks": {
         "access_clear": true,
         "stable": true,
-        "read_passes": 2,
-        "access_attempts": [],
-        "metric_panels": [
-          {
-            "field": "likes",
-            "stable": false,
-            "access_clear": true,
-            "evidence": null,
-            "repeated_evidence": "fun_fineee can see the total number of people who liked this post.",
-            "panel_changed": true
+        "source": "queue_deep_link_and_account_check",
+        "caption_expanded": true
+      },
+      "android_capture": {
+        "shortcode": "DddW5GHyKy_",
+        "url": "https://www.instagram.com/reel/DddW5GHyKy_/",
+        "identity_source": "queue_deep_link_and_account_check",
+        "retained_observations": null,
+        "metric_availability": {
+          "reposts": {
+            "status": "not_exposed",
+            "source": "verified_reel_controls",
+            "samples": 2,
+            "details_capture_verified": true,
+            "first_observed_at": 1794685025168,
+            "confirmed_at": 1794685027341,
+            "control_evidence": "visible_repost_control_without_count_before_share",
+            "scope": "Observed Instagram Android UI; not a claim that the metric can never be exposed elsewhere"
           },
-          {
-            "field": "comments",
-            "stable": true,
-            "access_clear": true,
-            "evidence": "No comments yet.",
-            "repeated_evidence": "No comments yet.",
-            "panel_changed": false
+          "shares": {
+            "status": "not_exposed",
+            "source": "verified_reel_controls",
+            "samples": 2,
+            "details_capture_verified": true,
+            "first_observed_at": 1794685025168,
+            "confirmed_at": 1794685027341,
+            "control_evidence": "visible_share_control_without_count_before_save",
+            "scope": "Observed Instagram Android UI; not a claim that the metric can never be exposed elsewhere"
+          },
+          "saves": {
+            "status": "not_exposed",
+            "source": "verified_reel_controls",
+            "samples": 2,
+            "details_capture_verified": true,
+            "first_observed_at": 1794685025168,
+            "confirmed_at": 1794685027341,
+            "control_evidence": "visible_save_control_without_count_before_more",
+            "scope": "Observed Instagram Android UI; not a claim that the metric can never be exposed elsewhere"
           }
-        ]
+        },
+        "account": "fun_fineee",
+        "captured_at": "1794685025150",
+        "likes": {
+          "value": null,
+          "error": null
+        },
+        "comments": {
+          "value": 0,
+          "error": null
+        },
+        "views_or_plays": {
+          "value": 148,
+          "error": null
+        },
+        "shares": {
+          "value": null,
+          "error": null
+        },
+        "reposts": {
+          "value": null,
+          "error": null
+        },
+        "saves": {
+          "value": null,
+          "error": null
+        },
+        "date_posted": {
+          "value": "19 September",
+          "error": null
+        },
+        "caption": {
+          "value": "CID funny 😁 😂 \n...\n...\n😂😂🤣 daya",
+          "error": null
+        },
+        "publication_observation": {
+          "raw_text": "19 September",
+          "observed_at": "2026-11-14T19:37:06.732Z",
+          "observed_at_epoch_ms": 1794685026733,
+          "timezone": "Asia/Kolkata",
+          "locale": "en-GB",
+          "source": "instagram_android_expanded_caption_footer",
+          "exact_publication_time": null
+        },
+        "caption_expanded": true,
+        "navigation_error": null,
+        "capture_stage": "finished",
+        "likes_availability": "owner_only"
       }
     },
     "last_error": null,
-    "last_attempt_at": "2026-11-14T09:49:06.694Z",
+    "last_attempt_at": "2026-11-14T19:37:05.150Z",
     "access_review": null,
-    "extraction_review": "Metric extraction is incomplete; absence has not been confirmed. Inspect or retry rather than assume hidden counts.",
+    "extraction_review": null,
     "date_source": "og_description",
     "reshares": null,
     "shares": null,
-    "likes_visibility": "not_shown"
+    "likes_visibility": "not_shown",
+    "saves": null,
+    "analysis_resolution": {
+      "status": "resolved",
+      "source": "explicit_visibility_evidence",
+      "recorded_at": "2026-11-14T19:37:05.150Z",
+      "reason": "Unavailable metrics resolved using explicit visibility evidence or user assessment. Saved observations remain valid; missing values are unknown, not zero.",
+      "unavailable_fields": [
+        "likes"
+      ]
+    },
+    "observed_owner_username": "fun_fineee",
+    "owner_identity_observation": {
+      "source": "queue_deep_link_and_account_check",
+      "observed_at": "2026-11-14T19:37:05.150Z",
+      "historical_account": null,
+      "verification": null
+    },
+    "publication_observation": {
+      "raw_text": "19 September",
+      "observed_at": "2026-11-14T19:37:06.732Z",
+      "observed_at_epoch_ms": 1794685026733,
+      "timezone": "Asia/Kolkata",
+      "locale": "en-GB",
+      "source": "instagram_android_expanded_caption_footer",
+      "exact_publication_time": null
+    },
+    "metric_availability": {
+      "reposts": {
+        "status": "not_exposed",
+        "source": "verified_reel_controls",
+        "samples": 2,
+        "details_capture_verified": true,
+        "first_observed_at": 1794685025168,
+        "confirmed_at": 1794685027341,
+        "control_evidence": "visible_repost_control_without_count_before_share",
+        "scope": "Observed Instagram Android UI; not a claim that the metric can never be exposed elsewhere"
+      },
+      "shares": {
+        "status": "not_exposed",
+        "source": "verified_reel_controls",
+        "samples": 2,
+        "details_capture_verified": true,
+        "first_observed_at": 1794685025168,
+        "confirmed_at": 1794685027341,
+        "control_evidence": "visible_share_control_without_count_before_save",
+        "scope": "Observed Instagram Android UI; not a claim that the metric can never be exposed elsewhere"
+      },
+      "saves": {
+        "status": "not_exposed",
+        "source": "verified_reel_controls",
+        "samples": 2,
+        "details_capture_verified": true,
+        "first_observed_at": 1794685025168,
+        "confirmed_at": 1794685027341,
+        "control_evidence": "visible_save_control_without_count_before_more",
+        "scope": "Observed Instagram Android UI; not a claim that the metric can never be exposed elsewhere"
+      }
+    },
+    "android_import": {
+      "imported_at": "2026-11-14T19:45:51.511Z",
+      "captured_at": "2026-11-14T19:37:05.150Z",
+      "phone_status": "collected",
+      "source": "Documents/dedgram/reels.json",
+      "capture_method": "android_queue"
+    }
   },
   {
     "kind": "reel",

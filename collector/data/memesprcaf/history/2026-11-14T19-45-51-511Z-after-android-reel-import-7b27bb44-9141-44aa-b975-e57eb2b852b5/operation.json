@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "source_batch": "data/imports/android/2026-11-14T19-45-51-511Z",
+  "changes": [
+    {
+      "shortcode": "Dd2L0NtPH4L",
+      "before_status": "needs_review",
+      "after_status": "complete",
+      "observed_account": "tankandoobrasil",
+      "canonical_date": "2026-09-28",
+      "phone_date_label": "29 September"
+    }
+  ],
+  "before_snapshot": "data\\memesprcaf\\history\\2026-11-14T19-45-51-511Z-before-android-reel-import-0466353c-bf3f-4cb5-b70f-3b8b88c9b1f3",
+  "after_snapshot": "data\\memesprcaf\\history\\2026-11-14T19-45-51-511Z-after-android-reel-import-7b27bb44-9141-44aa-b975-e57eb2b852b5"
+}
