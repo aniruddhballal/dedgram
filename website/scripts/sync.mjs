@@ -47,7 +47,6 @@ const fullProfiles = [
   'pixa.300k',
   'madarameme0',
   'extreme_laugh_07',
-  'jellyfish.m3mes',
   'damon.maxx',
   'turtle.4223253',
   'herogram_50k',
@@ -211,8 +210,9 @@ const profileLevelProfiles = [
   'emilily_ss',
   'dina4988542',
 ];
+const retainedMetricProfiles = ['jellyfish.m3mes'];
 const excludedProfiles = ['hnvx.07', 'prime_senchui', 'vlad.aep_', 'nxx._.nmercy', 'dexea.100k', 'igpostinggang', 'rzk.mp4', 'renyajichu', 'hammergag', 'caodogsfofo', 'back', '41.3k', 'short_vibesz', 'oooiway', 'zuxxie.pov', 'extreme.laugh8', 'iron_block2', 'memes.fatafat', 'waytoway__', 'luffytheegear5', 'chir.eze', 'dinosaur.24252627'];
-const publishedProfiles = [...fullProfiles, ...profileLevelProfiles, ...excludedProfiles];
+const publishedProfiles = [...fullProfiles, ...profileLevelProfiles, ...retainedMetricProfiles, ...excludedProfiles];
 const files = ['profile.json', 'discovery.json', 'items.json', 'run.json', 'profile.csv', 'items.csv', 'report.html'];
 const sourceCatalog = JSON.parse(await readFile(join(repo, 'data', 'database', 'profiles', 'index.json'), 'utf8'));
 const catalog = {
@@ -224,7 +224,7 @@ if (!Array.isArray(catalog.profile_keys) || publishedProfiles.some((username) =>
 }
 await writeFile(join(snapshot, 'index.json'), JSON.stringify(catalog, null, 2) + '\n', 'utf8');
 const excludedRecords = {};
-for (const username of excludedProfiles) {
+for (const username of [...excludedProfiles, ...retainedMetricProfiles]) {
   const profile = JSON.parse(await readFile(join(repo, 'data', 'database', 'profiles', `profile-${username}.json`), 'utf8'));
   excludedRecords[username] = {
     username,
@@ -244,7 +244,9 @@ for (const username of excludedProfiles) {
     saved_data_available: profile.saved_data_available || false,
     deletion_assessment: profile.deletion_assessment || null,
     reason: profile.resolution_note || profile.last_error || null,
-    exclusion: profile.exclusion || null
+    exclusion: profile.exclusion || null,
+    excluded_from_collection: Boolean(profile.excluded_from_collection),
+    retained_metrics_in_analysis: Boolean(profile.retained_metrics_in_analysis)
   };
 }
 await writeFile(join(snapshot, 'resolutions.json'), JSON.stringify({ schema_version: 1, profiles: excludedRecords }, null, 2) + '\n', 'utf8');
@@ -252,7 +254,7 @@ const mediaDir = join(snapshot, 'media');
 await mkdir(mediaDir, { recursive: true });
 const images = [];
 const excludedSnapshotProfiles = excludedProfiles.filter((username) => excludedRecords[username].saved_data_available);
-for (const username of [...fullProfiles, ...profileLevelProfiles, ...excludedSnapshotProfiles]) {
+for (const username of [...fullProfiles, ...profileLevelProfiles, ...retainedMetricProfiles, ...excludedSnapshotProfiles]) {
   const source = join(repo, 'collector', 'data', sourceUsername(username));
   await mkdir(join(snapshot, username), { recursive: true });
   for (const file of files) {

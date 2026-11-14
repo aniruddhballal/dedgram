@@ -43,7 +43,6 @@ const fullProfiles = [
   'pixa.300k',
   'madarameme0',
   'extreme_laugh_07',
-  'jellyfish.m3mes',
   'damon.maxx',
   'turtle.4223253',
   'herogram_50k',
@@ -206,8 +205,10 @@ const profileLevelProfiles = [
   'emilily_ss',
   'dina4988542',
 ];
+const retainedMetricProfiles = ['jellyfish.m3mes'];
+const retainedMetricSet = new Set(retainedMetricProfiles);
 const excludedProfiles = ['hnvx.07', 'prime_senchui', 'vlad.aep_', 'nxx._.nmercy', 'dexea.100k', 'igpostinggang', 'rzk.mp4', 'renyajichu', 'hammergag', 'caodogsfofo', 'back', '41.3k', 'short_vibesz', 'oooiway', 'zuxxie.pov', 'extreme.laugh8', 'iron_block2', 'memes.fatafat', 'waytoway__', 'luffytheegear5', 'chir.eze', 'dinosaur.24252627'];
-const publishedProfiles = [...fullProfiles, ...profileLevelProfiles, ...excludedProfiles];
+const publishedProfiles = [...fullProfiles, ...profileLevelProfiles, ...retainedMetricProfiles, ...excludedProfiles];
 const profileLevelSet = new Set(profileLevelProfiles);
 const excludedSet = new Set(excludedProfiles);
 const files = ['profile.json', 'discovery.json', 'items.json', 'run.json', 'profile.csv', 'items.csv', 'report.html'];
@@ -244,7 +245,7 @@ const buildDate = new Intl.DateTimeFormat('en-IN', { day: 'numeric', month: 'lon
 
 const snapshotData = new Map();
 const excludedSnapshotProfiles = excludedProfiles.filter((username) => exclusionRecords.profiles?.[username]?.saved_data_available);
-const snapshotProfiles = [...fullProfiles, ...profileLevelProfiles, ...excludedSnapshotProfiles];
+const snapshotProfiles = [...fullProfiles, ...profileLevelProfiles, ...retainedMetricProfiles, ...excludedSnapshotProfiles];
 for (const username of snapshotProfiles) {
   const [profile, discovery, items, run] = await Promise.all([
     readJson(`${username}/profile.json`), readJson(`${username}/discovery.json`),
@@ -258,7 +259,7 @@ const zeroReelProfiles = new Set([...fullProfiles, ...profileLevelProfiles].filt
 }));
 
 const numberMetric = (value) => Number.isFinite(value?.value) ? value.value : null;
-const publishedSnapshotProfiles = [...fullProfiles, ...profileLevelProfiles];
+const publishedSnapshotProfiles = [...fullProfiles, ...profileLevelProfiles, ...retainedMetricProfiles];
 const profileInstagramUrl = (username) => snapshotData.get(username)?.profile?.url || instagram(username);
 const publishedReelRows = publishedSnapshotProfiles.flatMap((username) => {
   const snapshot = snapshotData.get(username);
@@ -355,8 +356,8 @@ function shell({ title, description, base, active, profileKey, content }) {
 const publishedSet = new Set(publishedProfiles);
 const catalogCard = (username, i, ready) => {
   const excludedRecord = exclusionRecords.profiles?.[username];
-  const label = excludedRecord ? (excludedRecord.deletion_assessment?.status === 'suspected_deleted' ? 'Unavailable; suspected deleted' : `Excluded after initial collection: ${excludedRecord.status}`) : profileLevelSet.has(username) ? 'Profile saved; reel analysis pending' : partialPublishedProfiles.has(username) ? 'Some reels analyzed' : ready ? 'Profile and reels analyzed' : 'Not analyzed yet';
-  const tag = excludedRecord ? 'Excluded from analysis' : profileLevelSet.has(username) ? 'Profile saved' : ready ? 'View record' : 'Not analyzed';
+  const label = retainedMetricSet.has(username) ? 'Unavailable; saved metrics retained for analysis' : excludedRecord ? (excludedRecord.deletion_assessment?.status === 'suspected_deleted' ? 'Unavailable; suspected deleted' : `Excluded after initial collection: ${excludedRecord.status}`) : profileLevelSet.has(username) ? 'Profile saved; reel analysis pending' : partialPublishedProfiles.has(username) ? 'Some reels analyzed' : ready ? 'Profile and reels analyzed' : 'Not analyzed yet';
+  const tag = retainedMetricSet.has(username) ? 'Historical record' : excludedRecord ? 'Excluded from analysis' : profileLevelSet.has(username) ? 'Profile saved' : ready ? 'View record' : 'Not analyzed';
   const inner = `<span class="row-number">${String(i + 1).padStart(3, '0')}</span><span class="row-title"><strong>@${esc(username)}</strong><small>${esc(label)}</small></span><span class="row-tag ${ready ? 'live' : ''}">${esc(tag)}</span>`;
   return `<article class="profile-row" data-catalog-row><div class="profile-row-main">${ready ? `<a class="profile-internal" href="./profiles/${username}/" aria-label="View saved profile data for @${username}">${inner}</a>` : `<div class="profile-internal">${inner}</div>`}</div><div class="row-external">${external(profileInstagramUrl(username), 'Instagram', 'external-link')}</div></article>`;
 };
@@ -373,7 +374,7 @@ const zeroReelLabelledCatalogHtml = [...zeroReelProfiles].reduce((html, username
 }, catalogHtml);
 const catalogHtmlForOutput = publishedProfiles.reduce((html, username) => {
   const excludedRecord = exclusionRecords.profiles?.[username];
-  const label = excludedRecord ? (excludedRecord.deletion_assessment?.status === 'suspected_deleted' ? 'Unavailable; suspected deleted' : `Excluded after initial collection: ${excludedRecord.status}`) : profileLevelSet.has(username) ? 'Profile saved; reel analysis pending' : partialPublishedProfiles.has(username) ? 'Some reels analyzed' : 'Profile and reels analyzed';
+  const label = retainedMetricSet.has(username) ? 'Unavailable; saved metrics retained for analysis' : excludedRecord ? (excludedRecord.deletion_assessment?.status === 'suspected_deleted' ? 'Unavailable; suspected deleted' : `Excluded after initial collection: ${excludedRecord.status}`) : profileLevelSet.has(username) ? 'Profile saved; reel analysis pending' : partialPublishedProfiles.has(username) ? 'Some reels analyzed' : 'Profile and reels analyzed';
   const escapedUsername = username.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
   return html.replace(new RegExp(`(<strong>@${escapedUsername}<\\/strong><small>)[^<]*(</small>)`, 'g'), `$1${esc(label)}$2`);
 }, zeroReelLabelledCatalogHtml);
@@ -397,7 +398,7 @@ const overviewAccountRows = publishedSnapshotProfiles.map((username) => {
   const details = items.filter((item) => item.kind === 'reel');
   const complete = details.filter(isCompleteReel).length;
   const handled = details.filter((item) => isCompleteReel(item) || isResolvedReel(item)).length;
-  const status = profileLevelSet.has(username) ? (discovery.reel.complete ? 'Profile and reel grid complete' : 'Profile details complete; reel grid pending') : partialPublishedProfiles.has(username) ? 'Partial reel coverage' : 'Reel analysis complete';
+  const status = retainedMetricSet.has(username) ? 'Unavailable; historical metrics retained' : profileLevelSet.has(username) ? (discovery.reel.complete ? 'Profile and reel grid complete' : 'Profile details complete; reel grid pending') : partialPublishedProfiles.has(username) ? 'Partial reel coverage' : 'Reel analysis complete';
   const reelLikes = metricTotal(items, 'reel', 'likes');
   const reelComments = metricTotal(items, 'reel', 'comments');
   const reelViews = metricTotal(items, 'reel', 'views');
@@ -430,7 +431,7 @@ const reelAnalysisPendingCount = publishedSnapshotProfiles.filter((username) => 
   const { discovery, items } = snapshotData.get(username);
   return (discovery.reel.items || []).length > 0 && !items.some((item) => item.kind === 'reel');
 }).length;
-const reelRecordProfileCount = publishedSnapshotProfiles.filter((username) => snapshotData.get(username).items.some((item) => item.kind === 'reel')).length;
+const reelRecordProfileCount = publishedSnapshotProfiles.filter((username) => !retainedMetricSet.has(username) && snapshotData.get(username).items.some((item) => item.kind === 'reel')).length;
 const profileDetailsOnlyCount = publishedSnapshotProfiles.filter((username) => {
   const { discovery, items } = snapshotData.get(username);
   return !zeroReelProfiles.has(username) && !(discovery.reel.items || []).length
@@ -441,6 +442,7 @@ const profileStatusRows = [
   { label: 'Reel analysis pending', count: reelAnalysisPendingCount, note: 'URLs saved; reel pages not analyzed', className: 'pending' },
   { label: 'Reel records collected', count: reelRecordProfileCount, note: 'Reel-level records exist', className: 'analyzed' },
   { label: 'Confirmed zero reels', count: zeroReelProfiles.size, note: 'Profile details saved; no reels posted', className: 'zero' },
+  { label: 'Unavailable; saved metrics retained', count: retainedMetricProfiles.length, note: 'Collection stopped; captured numbers remain in analysis', className: 'historical' },
   { label: 'Excluded after initial collection', count: excludedProfiles.length, note: 'Status records kept outside analysis', className: 'excluded' }
 ];
 if (overview.futureCandidates) profileStatusRows.push({ label: 'Not collected', count: overview.futureCandidates, note: 'Cataloged; profile details not collected', className: 'uncollected' });
@@ -451,7 +453,7 @@ const profileStatusLegend = profileStatusRows.map((row) => `<div class="profile-
 const profileStatusBreakdownHtml = `<section class="profile-status-breakdown" aria-labelledby="profile-status-heading"><div class="section-head"><div><span class="overline">PROFILE STATUS / ${fmt(profileStatusTotal)} RECORDS</span><h2 id="profile-status-heading">Where every profile stands.</h2><p>The complete catalog, separated by the deepest collection state currently saved.</p></div></div><div class="profile-status-bar" role="img" aria-label="${esc(profileStatusRows.map((row) => `${row.label}: ${row.count}`).join('; '))}">${profileStatusBar}</div><div class="profile-status-legend">${profileStatusLegend}</div></section>`;
 const overviewHtml = shell({ title: 'How dead is the internet? One reel at a time. · dedgram atlas', description: 'A public snapshot testing the theory that bot accounts are creating an internet of bots, one reel at a time.', base: '../', active: 'overview', content: `
   <section class="hero overview-hero"><div class="hero-copy"><div class="eyebrow">BOT CULTURE / PUBLIC SNAPSHOT</div><h1><span class="headline-line">How dead is the <em>internet?</em></span><br><span class="headline-line"><em>One reel at a time.</em></span></h1><p>This atlas tests a theory: the internet is filling with bot accounts posting for other bot accounts, manufacturing the views and likes that keep the cycle going. These totals reflect the research records currently available on the public site.</p><div class="hero-actions"><a class="button primary" href="../">View published profiles</a><a class="button secondary" href="../#future">Show future candidates</a></div></div><div class="hero-count" aria-label="${fmt(overview.completelyAnalyzedProfiles)} public records completely analyzed"><strong>${fmt(overview.completelyAnalyzedProfiles)}</strong><span>PUBLIC RECORDS COMPLETELY ANALYZED</span></div></section>
-  <section class="stat-strip overview-stat-strip availability-stat-strip" aria-label="Overall collection statistics"><div><span>AVAILABLE PROFILES</span><strong>${fmt(overview.publicRecords - overview.excludedRecords)}/${fmt(overview.publicRecords)}</strong><small>Identified profiles available on Instagram</small></div><div><span>REELS DISCOVERED</span><strong>${fmt(overview.reelUrls)}</strong></div><div><span>REELS ANALYZED</span><strong>${fmt(overview.reelDetails)}</strong><small>Full reel information captured</small></div><div><span>REELS PENDING</span><strong>${fmt(overview.reelPending)}</strong><small>URLs saved; reel-detail collection not completed</small></div><div><span>PARTIALLY ANALYZED</span><strong>${fmt(overview.reelPartial)}</strong><small>Some details collected; required information missing</small></div><div><span>REELS FAILED</span><strong>${fmt(overview.reelFailed)}</strong><small>Collection attempts failed</small></div><div><span>REELS RESOLVED</span><strong>${fmt(overview.reelResolved)}</strong><small>Deleted, archived, or age restricted; no further analysis</small></div><div><span>REELS EXCLUDED</span><strong>${fmt(overview.reelExcluded)}</strong><small>Saved URLs from profiles excluded from analysis</small></div></section>
+  <section class="stat-strip overview-stat-strip availability-stat-strip" aria-label="Overall collection statistics"><div><span>AVAILABLE PROFILES</span><strong>${fmt(overview.publicRecords - overview.excludedRecords - retainedMetricProfiles.length)}/${fmt(overview.publicRecords)}</strong><small>Identified profiles available on Instagram</small></div><div><span>REELS DISCOVERED</span><strong>${fmt(overview.reelUrls)}</strong></div><div><span>REELS ANALYZED</span><strong>${fmt(overview.reelDetails)}</strong><small>Full reel information captured</small></div><div><span>REELS PENDING</span><strong>${fmt(overview.reelPending)}</strong><small>URLs saved; reel-detail collection not completed</small></div><div><span>PARTIALLY ANALYZED</span><strong>${fmt(overview.reelPartial)}</strong><small>Some details collected; required information missing</small></div><div><span>REELS FAILED</span><strong>${fmt(overview.reelFailed)}</strong><small>Collection attempts failed</small></div><div><span>REELS RESOLVED</span><strong>${fmt(overview.reelResolved)}</strong><small>Deleted, archived, or age restricted; no further analysis</small></div><div><span>REELS EXCLUDED</span><strong>${fmt(overview.reelExcluded)}</strong><small>Saved URLs from profiles excluded from analysis</small></div></section>
   <section class="metric-note"><span class="overline">ACTUAL STORED NUMBERS</span><h2>Engagement totals are not rounded estimates</h2><p>They are the values stored from the collected reel records. Hover over a compact total to see the full stored number.</p></section>
   <section class="stat-strip overview-stat-strip secondary-stats" aria-label="Collected metrics"><div><span>INSTAGRAM POSTS</span><strong>${fmt(overview.posts)}</strong><small>${fmt(overview.profileRecords)} profiles with saved counts</small></div><div><span>TOTAL REEL VIEWS</span><strong class="compact-total" title="Full stored total: ${fmt(overview.views)}${overview.viewsApproximate ? ' · Some source labels were abbreviated by Instagram.' : ''}" aria-label="Total reel views: ${fmt(overview.views)}">${compactTotal(overview.views)}</strong><small>${fmt(overview.viewsCovered)} reels with readable views</small></div><div><span>TOTAL REEL LIKES</span><strong class="compact-total" title="Full stored total: ${fmt(overview.likes)}${overview.likesApproximate ? ' · Some source labels were abbreviated by Instagram.' : ''}" aria-label="Total reel likes: ${fmt(overview.likes)}">${compactTotal(overview.likes)}</strong><small>${fmt(overview.likesCovered)} reels with readable likes</small></div><div><span>TOTAL REEL COMMENTS</span><strong class="compact-total" title="Full stored total: ${fmt(overview.comments)}${overview.commentsApproximate ? ' · Some source labels were abbreviated by Instagram.' : ''}" aria-label="Total reel comments: ${fmt(overview.comments)}">${compactTotal(overview.comments)}</strong><small>${fmt(overview.commentsCovered)} reels with readable comments</small></div><div><span>NEXT TO ANALYZE</span><strong>${fmt(overview.nearTerm)}</strong><small>Published profiles with more work queued</small></div></section>
   <section class="overview-grid"><div class="overview-panel"><span class="overline">PROFILE MAP</span><h2>Accounts by country</h2>${overviewBars(countryRows, overview.profileRecords)}</div><div class="overview-panel"><span class="overline">REEL LANGUAGE</span><h2>Frequent hashtags</h2>${overviewBars(hashtagRows, completeReels.length)}<p class="panel-foot">From completed reel captions.</p></div></section>
@@ -569,7 +571,7 @@ async function zeroAwareProfileLevelPage(published, profile, discovery, items, r
 const profilePages = [];
 for (const published of publishedProfiles) {
   const excludedRecord = exclusionRecords.profiles?.[published];
-  if (excludedRecord) {
+  if (excludedRecord && !retainedMetricSet.has(published)) {
     const recordNumber = String(publishedProfiles.indexOf(published) + 1).padStart(3, '0');
     profilePages.push({ published, html: snapshotData.has(published) ? await excludedSnapshotPage(excludedRecord, recordNumber) : excludedProfilePage(excludedRecord, recordNumber) });
     continue;
@@ -618,7 +620,8 @@ for (const published of publishedProfiles) {
   }));
   const recordNumber = String(publishedProfiles.indexOf(published) + 1).padStart(3, '0');
   const profileHtml = shell({ title: `@${published} Â· dedgram atlas`, description: `Saved profile details and ${reels.length} reel records for @${published}.`, base: '../../', active: 'profile', profileKey: published, content: `<section class="profile-hero"><div class="profile-hero-top"><a class="back-link" href="../../">All profiles</a><span class="snapshot-label">SAVED ${esc(date(profile.fetched_at))}</span></div><div class="profile-title-row"><div class="profile-avatar">${avatar}</div><div><div class="eyebrow">PROFILE RECORD / ${recordNumber}</div><h1>@${published}</h1>${displayName ? `<p>${esc(displayName)}</p>` : ''}</div><div class="profile-hero-link">${external(profile.url || instagram(published), 'Instagram profile', 'button secondary')}</div></div><div class="profile-meta"><span>${esc(profile.category || 'Category unavailable')}</span><span>${profile.ai_generated_profile ? 'AI-generated profile' : 'AI label not shown'}</span><span>Collected ${esc(date(profile.fetched_at))}</span></div></section><section class="profile-stats" aria-label="Profile metrics"><div><span>FOLLOWERS</span><strong>${esc(metric(profile.followers_count))}</strong><small>Saved count</small></div><div><span>FOLLOWING</span><strong>${esc(metric(profile.following_count))}</strong><small>Profile header</small></div><div><span>POSTS</span><strong>${esc(metric(profile.posts_count))}</strong><small>Saved count</small></div><div><span>REELS</span><strong>${fmt(reels.length)}</strong><small>Full grid confirmed</small></div></section><section class="profile-context"><div class="context-card"><span class="overline">02 / ACCOUNT DETAILS</span><h2>Account details</h2><dl class="account-facts">${field('Category', profile.category)}${field('Account based in', profile.account_based_in)}${field('Date joined', profile.date_joined)}${field('Former usernames', metric(profile.former_usernames_count))}${field('AI-generated label', profile.ai_generated_profile ? 'Shown on Instagram' : 'Not shown')}${field('Last profile scan', date(profile.fetched_at))}${field('Reel grid verified', date(discovery.reel.attempted_at))}${field('Collection run', `${run.status || 'Unknown'} Â· ${complete}/${reels.length} reels complete`)}</dl></div><div class="context-card bio-card"><span class="overline">PROFILE BIO</span><h2>Bio</h2><p class="bio-text">${esc(profile.bio || 'No bio captured.')}</p></div></section>${collectionNote}${profileIssues ? `<section class="evidence-note"><span class="note-symbol">i</span><div><h2>Source note</h2><ul>${profileIssues}</ul><p>These notes come from the saved collection record.</p></div></section>` : ''}<section class="reels-section" id="reels"><div class="section-head"><div><span class="overline">03 / REEL RECORDS</span><h2>${fmt(reels.length)} reels</h2><p>${fmt(complete)} complete · ${fmt(resolvedCount)} manually resolved · ${fmt(review)} need review${pendingItems.length ? ` · ${fmt(pendingItems.length)} pending (${fmt(retryCount)} retries)` : ''} · Metrics retain Instagram's displayed precision.</p></div><div class="reel-controls"><div class="control-field"><label for="reel-search">Search reels</label><input id="reel-search" type="search" placeholder="Shortcode or caption" autocomplete="off"></div><div class="control-field"><label for="reel-filter">Show</label><select id="reel-filter"><option value="all">All records</option><option value="complete">Complete</option><option value="resolved">Manually resolved</option><option value="pending">Analysis / retry pending</option><option value="review">Needs review</option></select></div><div class="control-field"><label for="reel-sort">Sort</label><select id="reel-sort"><option value="newest">Newest first</option><option value="oldest">Oldest first</option><option value="views">Most views</option></select></div></div></div><div class="directory-toolbar"><span id="reel-count">${fmt(reels.length)} reels shown</span><span>SAVED SNAPSHOT</span></div><div class="reel-grid" id="reel-grid">${reelCards.join('')}</div><p class="empty-state" id="reel-empty" hidden>No reels match those filters.</p></section><section class="downloads"><div><span class="overline">04 / SOURCE FILES</span><h2>Source files</h2><p>Original records and exports.</p></div><div class="download-links">${files.map((name) => `<a href="../../downloads/${published}/${name}" ${name.endsWith('.json') || name.endsWith('.csv') ? 'download' : ''}>${esc(name)}</a>`).join('')}</div></section>` });
-  profilePages.push({ published, html: profileHtml });
+  const retainedNotice = retainedMetricSet.has(published) ? `<section class="evidence-note"><div><h2>Unavailable account ? saved metrics retained for analysis</h2><p>${esc(exclusionRecords.profiles[published].resolution_note)}</p><p>Previously captured numbers remain in historical engagement totals. Missing values are unknown, not zero. Further collection and retries are stopped.</p></div></section>` : '';
+  profilePages.push({ published, html: retainedNotice ? profileHtml.replace('<section class="reels-section"', retainedNotice + '<section class="reels-section"').replaceAll('still need review', 'have incomplete historical data') : profileHtml });
 }
 
 await rm(output, { recursive: true, force: true });

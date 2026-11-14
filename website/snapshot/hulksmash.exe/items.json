@@ -295,7 +295,8 @@
       "value": 1245,
       "raw": "1,245",
       "approximate": false,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:40:36.024Z"
     },
     "missing": [],
     "missing_reasons": {},
@@ -342,7 +343,8 @@
       "value": 488000,
       "raw": "488K",
       "approximate": true,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T14:40:36.024Z"
     },
     "missing": [],
     "missing_reasons": {},
@@ -381,26 +383,79 @@
     "url": "https://www.instagram.com/reel/DevljIkP60c/",
     "grid_views_raw": "1.3M",
     "grid_views_issue": null,
-    "status": "partial",
-    "last_error": "Instagram rendered an empty page.",
-    "last_attempt_at": "2026-10-24T15:44:46.918Z",
+    "status": "complete",
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T02:56:14.598Z",
     "attempts": 2,
     "views": {
       "value": 1300000,
       "raw": "1.3M",
       "approximate": true,
-      "source": "profile_grid",
-      "observed_at": "2026-10-23T14:40:36.024Z"
+      "source": "profile_grid"
     },
-    "missing": [
-      "date",
-      "likes",
-      "comments"
-    ],
-    "missing_reasons": {
-      "date": "No readable timestamp or calendar date was found on the content page or in its metadata.",
-      "likes": "No readable like count was found on the content page or in its metadata.",
-      "comments": "No readable comment count was found on the content page or in its metadata."
+    "missing": [],
+    "missing_reasons": {},
+    "fetched_at": "2026-11-14T02:56:14.597Z",
+    "date": "2026-10-20",
+    "date_precision": "day",
+    "date_source": "og_description_localized",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 126000,
+      "raw": "126K",
+      "approximate": true,
+      "source": "og_description_localized"
+    },
+    "comments": {
+      "value": 267,
+      "raw": "267",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Comment"
+    },
+    "reshares": {
+      "value": 5492,
+      "raw": "5,492",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Repost"
+    },
+    "shares": {
+      "value": 141000,
+      "raw": "141K",
+      "approximate": true,
+      "source": "dom_action_control",
+      "label": "Share"
+    },
+    "likes_visibility": "not_shown",
+    "thumbnail_url": "https://instagram.fblr1-7.fna.fbcdn.net/v/t51.82787-15/857798597_18111386119970699_6514709779512912820_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=Z96cbvYVLbgQ7kNvwHi1AnJ&_nc_oc=AdpD1njvO__CGkH7NBvucVS6NoikDKXN2q0TB9kVdvtCPz1yIoYgsu8GOsff-4bvM31vc9uXOs3hYLatIjJJWxVR&_nc_zt=23&_nc_ht=instagram.fblr1-7.fna&_nc_gid=Ez4EBM3tDr249Uyf27vapA&_nc_ss=7e6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQQPn0vnJb2GBJKoBVbXB88aki5lL20LBLcx2WYrBr8mbQ&oe=6AFDA8B1",
+    "media_url": null,
+    "raw": {
+      "description": "「#あらゆる追いかけっこを繰り広げる」 - 2026年10月20日、「いいね！」126K件、コメント267件 - hulksmash.exe",
+      "article_text": "hulksmash.exe\nFollow\n#あらゆる追いかけっこを繰り広げる\n125K\n267\n5,492\n141K\nradhe48085 and the_caper_beats_studio\nFollow\nSadhu Tiwari · Parvati\nRecognize your own energy that itself is the power 💪💪💪\n334K\n9,988\n5,228\n55.5K",
+      "aria_text": "hulksmash.exe reels\nhulksmash.exe reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nradhe48085 reels\nradhe48085 reels\nAudio image\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "likes_visibility": "not_shown",
+        "comments": {
+          "raw": "267",
+          "source": "dom_action_control",
+          "label": "Comment"
+        },
+        "reshares": {
+          "raw": "5,492",
+          "source": "dom_action_control",
+          "label": "Repost"
+        },
+        "shares": {
+          "raw": "141K",
+          "source": "dom_action_control",
+          "label": "Share"
+        }
+      }
     }
   },
   {
@@ -409,26 +464,79 @@
     "url": "https://www.instagram.com/reel/DevKXnmOGsm/",
     "grid_views_raw": "366K",
     "grid_views_issue": null,
-    "status": "partial",
-    "last_error": "Instagram rendered an empty page.",
-    "last_attempt_at": "2026-10-24T15:45:09.888Z",
+    "status": "complete",
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T02:56:18.890Z",
     "attempts": 2,
     "views": {
       "value": 366000,
       "raw": "366K",
       "approximate": true,
-      "source": "profile_grid",
-      "observed_at": "2026-10-23T14:40:36.024Z"
+      "source": "profile_grid"
     },
-    "missing": [
-      "date",
-      "likes",
-      "comments"
-    ],
-    "missing_reasons": {
-      "date": "No readable timestamp or calendar date was found on the content page or in its metadata.",
-      "likes": "No readable like count was found on the content page or in its metadata.",
-      "comments": "No readable comment count was found on the content page or in its metadata."
+    "missing": [],
+    "missing_reasons": {},
+    "fetched_at": "2026-11-14T02:56:18.890Z",
+    "date": "2026-10-20",
+    "date_precision": "day",
+    "date_source": "og_description_localized",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 34000,
+      "raw": "34K",
+      "approximate": true,
+      "source": "og_description_localized"
+    },
+    "comments": {
+      "value": 186,
+      "raw": "186",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Comment"
+    },
+    "reshares": {
+      "value": 3037,
+      "raw": "3,037",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Repost"
+    },
+    "shares": {
+      "value": 26400,
+      "raw": "26.4K",
+      "approximate": true,
+      "source": "dom_action_control",
+      "label": "Share"
+    },
+    "likes_visibility": "not_shown",
+    "thumbnail_url": "https://instagram.fblr1-6.fna.fbcdn.net/v/t51.82787-15/859780083_18111342898970699_3441846067567108168_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=EjzVkFMfmmYQ7kNvwHY4CKV&_nc_oc=Adow_WGAb7C2jXS95gIuwTicLpUhT94o4oVgT18oXBE3f6mFaMeVpuQ1hpjMouJzpKStk8YzA3W4yFyvzoXm4gut&_nc_zt=23&_nc_ht=instagram.fblr1-6.fna&_nc_gid=zsxQXlDc131c2QocHu2reQ&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQTxXu7Vwzyp078rHonDtVkVMpII-I-KFjQx6Hrhv6O0aw&oe=6AFD9F3E",
+    "media_url": null,
+    "raw": {
+      "description": "「#あらゆる追いかけっこを繰り広げる」 - 2026年10月20日、「いいね！」34K件、コメント186件 - hulksmash.exe",
+      "article_text": "hulksmash.exe\nFollow\n#あらゆる追いかけっこを繰り広げる\n34.3K\n186\n3,037\n26.4K\nradhe48085 and the_caper_beats_studio\nFollow\nSadhu Tiwari · Parvati\nRecognize your own energy that itself is the power 💪💪💪\n334K\n9,988\n5,228\n55.5K",
+      "aria_text": "hulksmash.exe reels\nhulksmash.exe reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nradhe48085 reels\nradhe48085 reels\nAudio image\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "likes_visibility": "not_shown",
+        "comments": {
+          "raw": "186",
+          "source": "dom_action_control",
+          "label": "Comment"
+        },
+        "reshares": {
+          "raw": "3,037",
+          "source": "dom_action_control",
+          "label": "Repost"
+        },
+        "shares": {
+          "raw": "26.4K",
+          "source": "dom_action_control",
+          "label": "Share"
+        }
+      }
     }
   },
   {
@@ -437,27 +545,74 @@
     "url": "https://www.instagram.com/reel/Det5peqNT-7/",
     "grid_views_raw": "7,022",
     "grid_views_issue": null,
-    "status": "partial",
+    "status": "complete",
     "views": {
       "value": 7022,
       "raw": "7,022",
       "approximate": false,
-      "source": "profile_grid",
-      "observed_at": "2026-10-23T14:40:36.024Z"
+      "source": "profile_grid"
     },
-    "missing": [
-      "date",
-      "likes",
-      "comments"
-    ],
-    "missing_reasons": {
-      "date": "No readable timestamp or calendar date was found on the content page or in its metadata.",
-      "likes": "No readable like count was found on the content page or in its metadata.",
-      "comments": "No readable comment count was found on the content page or in its metadata."
+    "missing": [],
+    "missing_reasons": {},
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T02:56:22.708Z",
+    "attempts": 1,
+    "fetched_at": "2026-11-14T02:56:22.707Z",
+    "date": "2026-10-20",
+    "date_precision": "day",
+    "date_source": "og_description_localized",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 278,
+      "raw": "278",
+      "approximate": false,
+      "source": "og_description_localized"
     },
-    "last_error": "Instagram rendered an empty page.",
-    "last_attempt_at": "2026-10-24T15:45:32.920Z",
-    "attempts": 1
+    "comments": {
+      "value": 0,
+      "raw": "0",
+      "approximate": false,
+      "source": "og_description_localized"
+    },
+    "reshares": {
+      "value": 16,
+      "raw": "16",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Repost"
+    },
+    "shares": {
+      "value": 278,
+      "raw": "278",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Share"
+    },
+    "likes_visibility": "not_shown",
+    "thumbnail_url": "https://instagram.fblr1-5.fna.fbcdn.net/v/t51.82787-15/858921969_18111193315970699_1042263225445574799_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=OwZwqM2Lhh8Q7kNvwGuS6rO&_nc_oc=AdrY06twLC1bfypA8O7lFyi5g45n8jPLCdEshkMX5S631CG9lkzPuE-kafH0uhYWO4ltVWxDaAmCdZAe9919ut_I&_nc_zt=23&_nc_ht=instagram.fblr1-5.fna&_nc_gid=-oxvmqIyxZnjKBhz9FUMMA&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQSmzTcShD37MJD3vzUEu3jmpBLCW2FZjfyGo_4bYozuEw&oe=6AFDBA1B",
+    "media_url": null,
+    "raw": {
+      "description": "「#あらゆる追いかけっこを繰り広げる」 - 2026年10月20日、「いいね！」278件、コメント0件 - hulksmash.exe",
+      "article_text": "hulksmash.exe\nFollow\n#あらゆる追いかけっこを繰り広げる\n278\n16\n278\nradhe48085 and the_caper_beats_studio\nFollow\nSadhu Tiwari · Parvati\nRecognize your own energy that itself is the power 💪💪💪\n334K\n9,988\n5,228\n55.5K",
+      "aria_text": "hulksmash.exe reels\nhulksmash.exe reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nradhe48085 reels\nradhe48085 reels\nAudio image\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "likes_visibility": "not_shown",
+        "reshares": {
+          "raw": "16",
+          "source": "dom_action_control",
+          "label": "Repost"
+        },
+        "shares": {
+          "raw": "278",
+          "source": "dom_action_control",
+          "label": "Share"
+        }
+      }
+    }
   },
   {
     "kind": "reel",
@@ -465,27 +620,80 @@
     "url": "https://www.instagram.com/reel/DetBmr5NduT/",
     "grid_views_raw": "2,835",
     "grid_views_issue": null,
-    "status": "partial",
+    "status": "complete",
     "views": {
       "value": 2835,
       "raw": "2,835",
       "approximate": false,
-      "source": "profile_grid",
-      "observed_at": "2026-10-23T14:40:36.024Z"
+      "source": "profile_grid"
     },
-    "missing": [
-      "date",
-      "likes",
-      "comments"
-    ],
-    "missing_reasons": {
-      "date": "No readable timestamp or calendar date was found on the content page or in its metadata.",
-      "likes": "No readable like count was found on the content page or in its metadata.",
-      "comments": "No readable comment count was found on the content page or in its metadata."
+    "missing": [],
+    "missing_reasons": {},
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T02:56:26.578Z",
+    "attempts": 1,
+    "fetched_at": "2026-11-14T02:56:26.578Z",
+    "date": "2026-10-19",
+    "date_precision": "day",
+    "date_source": "og_description_localized",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 81,
+      "raw": "81",
+      "approximate": false,
+      "source": "og_description_localized"
     },
-    "last_error": "Instagram rendered an empty page.",
-    "last_attempt_at": "2026-10-24T15:45:55.861Z",
-    "attempts": 1
+    "comments": {
+      "value": 1,
+      "raw": "1",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Comment"
+    },
+    "reshares": {
+      "value": 5,
+      "raw": "5",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Repost"
+    },
+    "shares": {
+      "value": 45,
+      "raw": "45",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Share"
+    },
+    "likes_visibility": "not_shown",
+    "thumbnail_url": "https://instagram.fblr1-7.fna.fbcdn.net/v/t51.82787-15/857937602_18111094063970699_425414531709286070_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=hJmsopPupKwQ7kNvwHBkE5N&_nc_oc=Adqq9laGMH41LG4-o4MweVprcXt8r_q0WffWFqe1bKrhJr-PVryWawD50OEXRKue2DgLQer1hio_OGlCHHY1acPo&_nc_zt=23&_nc_ht=instagram.fblr1-7.fna&_nc_gid=FFieygmXFS1HxLmnVryAYA&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQSdVjMSgFI8X0SKhqAaraRpjrcOROW_CU692zGRwxlt6Q&oe=6AFD9DE6",
+    "media_url": null,
+    "raw": {
+      "description": "「#あらゆる追いかけっこを繰り広げる」 - 2026年10月19日、「いいね！」81件、コメント1件 - hulksmash.exe",
+      "article_text": "hulksmash.exe\nFollow\n#あらゆる追いかけっこを繰り広げる\n81\n1\n5\n45\nradhe48085 and the_caper_beats_studio\nFollow\nSadhu Tiwari · Parvati\nRecognize your own energy that itself is the power 💪💪💪\n334K\n9,988\n5,228\n55.5K",
+      "aria_text": "hulksmash.exe reels\nhulksmash.exe reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nradhe48085 reels\nradhe48085 reels\nAudio image\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "likes_visibility": "not_shown",
+        "comments": {
+          "raw": "1",
+          "source": "dom_action_control",
+          "label": "Comment"
+        },
+        "reshares": {
+          "raw": "5",
+          "source": "dom_action_control",
+          "label": "Repost"
+        },
+        "shares": {
+          "raw": "45",
+          "source": "dom_action_control",
+          "label": "Share"
+        }
+      }
+    }
   },
   {
     "kind": "reel",
@@ -493,27 +701,80 @@
     "url": "https://www.instagram.com/reel/DesnGfBOdXR/",
     "grid_views_raw": "162K",
     "grid_views_issue": null,
-    "status": "partial",
+    "status": "complete",
     "views": {
       "value": 162000,
       "raw": "162K",
       "approximate": true,
-      "source": "profile_grid",
-      "observed_at": "2026-10-23T14:40:36.024Z"
+      "source": "profile_grid"
     },
-    "missing": [
-      "date",
-      "likes",
-      "comments"
-    ],
-    "missing_reasons": {
-      "date": "No readable timestamp or calendar date was found on the content page or in its metadata.",
-      "likes": "No readable like count was found on the content page or in its metadata.",
-      "comments": "No readable comment count was found on the content page or in its metadata."
+    "missing": [],
+    "missing_reasons": {},
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T02:56:30.647Z",
+    "attempts": 1,
+    "fetched_at": "2026-11-14T02:56:30.647Z",
+    "date": "2026-10-19",
+    "date_precision": "day",
+    "date_source": "og_description_localized",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 17000,
+      "raw": "17K",
+      "approximate": true,
+      "source": "og_description_localized"
     },
-    "last_error": "Instagram rendered an empty page.",
-    "last_attempt_at": "2026-10-24T15:46:19.015Z",
-    "attempts": 1
+    "comments": {
+      "value": 229,
+      "raw": "229",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Comment"
+    },
+    "reshares": {
+      "value": 1124,
+      "raw": "1,124",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Repost"
+    },
+    "shares": {
+      "value": 10200,
+      "raw": "10.2K",
+      "approximate": true,
+      "source": "dom_action_control",
+      "label": "Share"
+    },
+    "likes_visibility": "not_shown",
+    "thumbnail_url": "https://instagram.fblr24-3.fna.fbcdn.net/v/t51.82787-15/852586500_18111050746970699_6520722202988944609_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=Z-uBvPt8L04Q7kNvwEGIycZ&_nc_oc=AdoNqJtSzlDrCsxx5Ybzij1FGBihqeWq7n8ouvnxH2xWPe4V8DzHj24M0xm-1UuFREr-5-RR-DSzVm2-h5rWdhXn&_nc_zt=23&_nc_ht=instagram.fblr24-3.fna&_nc_gid=ro4suJrwjIwjhQ1pmI8YaQ&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQR5SsoNN34f1aMJ0M4bDFmC5eQdSjYy2Ndvkf_6y-RDxw&oe=6AFDB935",
+    "media_url": null,
+    "raw": {
+      "description": "「#あらゆる追いかけっこを繰り広げる」 - 2026年10月19日、「いいね！」17K件、コメント229件 - hulksmash.exe",
+      "article_text": "hulksmash.exe\nFollow\nDillon Francis · Catchy Song (feat. T-Pain & That Girl Lay Lay)\nDillon Francis · Catchy Song (feat. T-Pain & That Girl Lay Lay)\n#あらゆる追いかけっこを繰り広げる\n17.4K\n229\n1,124\n10.2K\nradhe48085 and the_caper_beats_studio\nFollow\nSadhu Tiwari · Parvati\nRecognize your own energy that itself is the power 💪💪💪\n334K\n9,988\n5,228\n55.5K",
+      "aria_text": "hulksmash.exe reels\nhulksmash.exe reels\nAudio image\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nradhe48085 reels\nradhe48085 reels\nAudio image\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "likes_visibility": "not_shown",
+        "comments": {
+          "raw": "229",
+          "source": "dom_action_control",
+          "label": "Comment"
+        },
+        "reshares": {
+          "raw": "1,124",
+          "source": "dom_action_control",
+          "label": "Repost"
+        },
+        "shares": {
+          "raw": "10.2K",
+          "source": "dom_action_control",
+          "label": "Share"
+        }
+      }
+    }
   },
   {
     "kind": "reel",
@@ -521,27 +782,80 @@
     "url": "https://www.instagram.com/reel/DesTJK-zpEv/",
     "grid_views_raw": "229K",
     "grid_views_issue": null,
-    "status": "partial",
+    "status": "complete",
     "views": {
       "value": 229000,
       "raw": "229K",
       "approximate": true,
-      "source": "profile_grid",
-      "observed_at": "2026-10-23T14:40:36.024Z"
+      "source": "profile_grid"
     },
-    "missing": [
-      "date",
-      "likes",
-      "comments"
-    ],
-    "missing_reasons": {
-      "date": "No readable timestamp or calendar date was found on the content page or in its metadata.",
-      "likes": "No readable like count was found on the content page or in its metadata.",
-      "comments": "No readable comment count was found on the content page or in its metadata."
+    "missing": [],
+    "missing_reasons": {},
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T02:56:34.881Z",
+    "attempts": 1,
+    "fetched_at": "2026-11-14T02:56:34.881Z",
+    "date": "2026-10-19",
+    "date_precision": "day",
+    "date_source": "og_description_localized",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 7274,
+      "raw": "7,274",
+      "approximate": false,
+      "source": "og_description_localized"
     },
-    "last_error": "Instagram rendered an empty page.",
-    "last_attempt_at": "2026-10-24T15:46:41.950Z",
-    "attempts": 1
+    "comments": {
+      "value": 16,
+      "raw": "16",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Comment"
+    },
+    "reshares": {
+      "value": 248,
+      "raw": "248",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Repost"
+    },
+    "shares": {
+      "value": 8019,
+      "raw": "8,019",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Share"
+    },
+    "likes_visibility": "not_shown",
+    "thumbnail_url": "https://instagram.fblr1-4.fna.fbcdn.net/v/t51.82787-15/858088464_18111023218970699_3029225598746121042_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=mSfTDqPQYZMQ7kNvwGvS92y&_nc_oc=AdoJVwrgHnvmb1ngZtS6L1BV5Dql285o3Cg5wDQiH_9zeUw7_K5M6Zi4KCan8u1cr7OMXtaW_7JQ1oSUquwioVCR&_nc_zt=23&_nc_ht=instagram.fblr1-4.fna&_nc_gid=pntGLPk5y1-xQhEVeB_f2Q&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQSXdy2x1b54RV66LFDDwauCRy83do2qWka-QvpxUuTVQg&oe=6AFD8F18",
+    "media_url": null,
+    "raw": {
+      "description": "「#あらゆる追いかけっこを繰り広げる」 - 2026年10月19日、「いいね！」7,274件、コメント16件 - hulksmash.exe",
+      "article_text": "hulksmash.exe\nFollow\n#あらゆる追いかけっこを繰り広げる\n7,274\n16\n248\n8,019\nradhe48085 and the_caper_beats_studio\nFollow\nSadhu Tiwari · Parvati\nRecognize your own energy that itself is the power 💪💪💪\n334K\n9,988\n5,228\n55.5K",
+      "aria_text": "hulksmash.exe reels\nhulksmash.exe reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nradhe48085 reels\nradhe48085 reels\nAudio image\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "likes_visibility": "not_shown",
+        "comments": {
+          "raw": "16",
+          "source": "dom_action_control",
+          "label": "Comment"
+        },
+        "reshares": {
+          "raw": "248",
+          "source": "dom_action_control",
+          "label": "Repost"
+        },
+        "shares": {
+          "raw": "8,019",
+          "source": "dom_action_control",
+          "label": "Share"
+        }
+      }
+    }
   },
   {
     "kind": "reel",
@@ -549,27 +863,80 @@
     "url": "https://www.instagram.com/reel/DerbpNbpqDe/",
     "grid_views_raw": "3,620",
     "grid_views_issue": null,
-    "status": "partial",
+    "status": "complete",
     "views": {
       "value": 3620,
       "raw": "3,620",
       "approximate": false,
-      "source": "profile_grid",
-      "observed_at": "2026-10-23T14:40:36.024Z"
+      "source": "profile_grid"
     },
-    "missing": [
-      "date",
-      "likes",
-      "comments"
-    ],
-    "missing_reasons": {
-      "date": "No readable timestamp or calendar date was found on the content page or in its metadata.",
-      "likes": "No readable like count was found on the content page or in its metadata.",
-      "comments": "No readable comment count was found on the content page or in its metadata."
+    "missing": [],
+    "missing_reasons": {},
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T02:56:38.725Z",
+    "attempts": 1,
+    "fetched_at": "2026-11-14T02:56:38.724Z",
+    "date": "2026-10-19",
+    "date_precision": "day",
+    "date_source": "og_description_localized",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 156,
+      "raw": "156",
+      "approximate": false,
+      "source": "og_description_localized"
     },
-    "last_error": "Instagram rendered an empty page.",
-    "last_attempt_at": "2026-10-24T15:47:04.925Z",
-    "attempts": 1
+    "comments": {
+      "value": 4,
+      "raw": "4",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Comment"
+    },
+    "reshares": {
+      "value": 7,
+      "raw": "7",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Repost"
+    },
+    "shares": {
+      "value": 54,
+      "raw": "54",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Share"
+    },
+    "likes_visibility": "not_shown",
+    "thumbnail_url": "https://instagram.fblr1-10.fna.fbcdn.net/v/t51.82787-15/857625569_18110918854970699_259717485056195874_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=UD4QktmgkJQQ7kNvwHVFl8O&_nc_oc=AdpyzPQKOeVbdFpRQXYAbPOrx2wsNjZ52o5h0QLqJtEM8ZoV1__43vRiZvqIuEemK58SytLtG4_2ET10FawvCOk2&_nc_zt=23&_nc_ht=instagram.fblr1-10.fna&_nc_gid=WpTctfNvfEooUg7FlfPHlg&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQRlQThBqeZy9MaPg5pvvi-K4FMY72YuhTAnhT364pbj_w&oe=6AFD8DF8",
+    "media_url": null,
+    "raw": {
+      "description": "「#あらゆる追いかけっこを繰り広げる」 - 2026年10月19日、「いいね！」156件、コメント4件 - hulksmash.exe",
+      "article_text": "hulksmash.exe\nFollow\n#あらゆる追いかけっこを繰り広げる\n156\n4\n7\n54\nradhe48085 and the_caper_beats_studio\nFollow\nSadhu Tiwari · Parvati\nRecognize your own energy that itself is the power 💪💪💪\n334K\n9,988\n5,228\n55.5K",
+      "aria_text": "hulksmash.exe reels\nhulksmash.exe reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nradhe48085 reels\nradhe48085 reels\nAudio image\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "likes_visibility": "not_shown",
+        "comments": {
+          "raw": "4",
+          "source": "dom_action_control",
+          "label": "Comment"
+        },
+        "reshares": {
+          "raw": "7",
+          "source": "dom_action_control",
+          "label": "Repost"
+        },
+        "shares": {
+          "raw": "54",
+          "source": "dom_action_control",
+          "label": "Share"
+        }
+      }
+    }
   },
   {
     "kind": "reel",
@@ -577,27 +944,80 @@
     "url": "https://www.instagram.com/reel/DerMih9JJHq/",
     "grid_views_raw": "4,005",
     "grid_views_issue": null,
-    "status": "partial",
+    "status": "complete",
     "views": {
       "value": 4005,
       "raw": "4,005",
       "approximate": false,
-      "source": "profile_grid",
-      "observed_at": "2026-10-23T14:40:36.024Z"
+      "source": "profile_grid"
     },
-    "missing": [
-      "date",
-      "likes",
-      "comments"
-    ],
-    "missing_reasons": {
-      "date": "No readable timestamp or calendar date was found on the content page or in its metadata.",
-      "likes": "No readable like count was found on the content page or in its metadata.",
-      "comments": "No readable comment count was found on the content page or in its metadata."
+    "missing": [],
+    "missing_reasons": {},
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T02:56:42.925Z",
+    "attempts": 1,
+    "fetched_at": "2026-11-14T02:56:42.925Z",
+    "date": "2026-10-19",
+    "date_precision": "day",
+    "date_source": "og_description_localized",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 185,
+      "raw": "185",
+      "approximate": false,
+      "source": "og_description_localized"
     },
-    "last_error": "Instagram rendered an empty page.",
-    "last_attempt_at": "2026-10-24T15:47:27.850Z",
-    "attempts": 1
+    "comments": {
+      "value": 1,
+      "raw": "1",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Comment"
+    },
+    "reshares": {
+      "value": 15,
+      "raw": "15",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Repost"
+    },
+    "shares": {
+      "value": 90,
+      "raw": "90",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Share"
+    },
+    "likes_visibility": "not_shown",
+    "thumbnail_url": "https://instagram.fblr1-7.fna.fbcdn.net/v/t51.82787-15/856790248_18110881879970699_3521623715334856517_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=TlOcruUSYoQQ7kNvwHyLNmj&_nc_oc=Ado0TjlO4R3o4fMsXeBR51s5Nkv-vKn6YlUXMnU0dPPjV7VdLGbPAb7BPbCe7ZYdKpVFwZ-Kul6l8AzwFFfKeqHM&_nc_zt=23&_nc_ht=instagram.fblr1-7.fna&_nc_gid=xo_T2Y4WBMI0zJxRlVMCJQ&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQQhbecQ5yi1mCZ4sTwjjyKntGF2m6V7qTRJWWYMXaBX_w&oe=6AFD91F5",
+    "media_url": null,
+    "raw": {
+      "description": "「#あらゆる追いかけっこを繰り広げる」 - 2026年10月19日、「いいね！」185件、コメント1件 - hulksmash.exe",
+      "article_text": "hulksmash.exe\nFollow\n#あらゆる追いかけっこを繰り広げる\n185\n1\n15\n90\nradhe48085 and the_caper_beats_studio\nFollow\nSadhu Tiwari · Parvati\nRecognize your own energy that itself is the power 💪💪💪\n334K\n9,988\n5,228\n55.5K",
+      "aria_text": "hulksmash.exe reels\nhulksmash.exe reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nradhe48085 reels\nradhe48085 reels\nAudio image\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "likes_visibility": "not_shown",
+        "comments": {
+          "raw": "1",
+          "source": "dom_action_control",
+          "label": "Comment"
+        },
+        "reshares": {
+          "raw": "15",
+          "source": "dom_action_control",
+          "label": "Repost"
+        },
+        "shares": {
+          "raw": "90",
+          "source": "dom_action_control",
+          "label": "Share"
+        }
+      }
+    }
   },
   {
     "kind": "reel",
@@ -605,27 +1025,80 @@
     "url": "https://www.instagram.com/reel/DeqlvsVpG0P/",
     "grid_views_raw": "29.9K",
     "grid_views_issue": null,
-    "status": "partial",
+    "status": "complete",
     "views": {
       "value": 29900,
       "raw": "29.9K",
       "approximate": true,
-      "source": "profile_grid",
-      "observed_at": "2026-10-23T14:40:36.024Z"
+      "source": "profile_grid"
     },
-    "missing": [
-      "date",
-      "likes",
-      "comments"
-    ],
-    "missing_reasons": {
-      "date": "No readable timestamp or calendar date was found on the content page or in its metadata.",
-      "likes": "No readable like count was found on the content page or in its metadata.",
-      "comments": "No readable comment count was found on the content page or in its metadata."
+    "missing": [],
+    "missing_reasons": {},
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T02:56:46.836Z",
+    "attempts": 1,
+    "fetched_at": "2026-11-14T02:56:46.836Z",
+    "date": "2026-10-18",
+    "date_precision": "day",
+    "date_source": "og_description_localized",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 2006,
+      "raw": "2,006",
+      "approximate": false,
+      "source": "og_description_localized"
     },
-    "last_error": "Instagram rendered an empty page.",
-    "last_attempt_at": "2026-10-24T15:47:50.851Z",
-    "attempts": 1
+    "comments": {
+      "value": 10,
+      "raw": "10",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Comment"
+    },
+    "reshares": {
+      "value": 69,
+      "raw": "69",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Repost"
+    },
+    "shares": {
+      "value": 1869,
+      "raw": "1,869",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Share"
+    },
+    "likes_visibility": "not_shown",
+    "thumbnail_url": "https://instagram.fblr1-5.fna.fbcdn.net/v/t51.82787-15/856816397_18110813680970699_8441247328111700580_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=bGsF3ipHAH0Q7kNvwGLRGJn&_nc_oc=Adom_Lnj4TFykrpoTBCvOQHAWe9zZC3n_cXa-tViAgHzbk0YsUrd1p8xp4Jsqdsl6u4MOZSNAOK9PQ5wVc_XKR1Z&_nc_zt=23&_nc_ht=instagram.fblr1-5.fna&_nc_gid=aRVwnvQO7PRZCy3nsjaxAg&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQR1IGRnGhu8gLR35RWaYEuJwveo2otXWQamTriG5oPXQA&oe=6AFD9CED",
+    "media_url": null,
+    "raw": {
+      "description": "「#あらゆる追いかけっこを繰り広げる」 - 2026年10月18日、「いいね！」2,006件、コメント10件 - hulksmash.exe",
+      "article_text": "hulksmash.exe\nFollow\n#あらゆる追いかけっこを繰り広げる\n2,006\n10\n69\n1,869\ndesigner_pinal_ and 5 others\nFollow\nPritam, Atif Aslam · Tu Chahiye\nNani ka Ghar is blessing 🫶 #nanikaghar🏡❤️ #nanikaghar🏡❤️🤞🧿\n134K\n1,464\n2,359\n32.6K",
+      "aria_text": "hulksmash.exe reels\nhulksmash.exe reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\ndesigner_pinal_ reels\ndesigner_pinal_ reels\nAudio image\nLocation\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "likes_visibility": "not_shown",
+        "comments": {
+          "raw": "10",
+          "source": "dom_action_control",
+          "label": "Comment"
+        },
+        "reshares": {
+          "raw": "69",
+          "source": "dom_action_control",
+          "label": "Repost"
+        },
+        "shares": {
+          "raw": "1,869",
+          "source": "dom_action_control",
+          "label": "Share"
+        }
+      }
+    }
   },
   {
     "kind": "reel",
@@ -633,27 +1106,80 @@
     "url": "https://www.instagram.com/reel/DeqbIUFJ8rk/",
     "grid_views_raw": "1M",
     "grid_views_issue": null,
-    "status": "partial",
+    "status": "complete",
     "views": {
       "value": 1000000,
       "raw": "1M",
       "approximate": true,
-      "source": "profile_grid",
-      "observed_at": "2026-10-23T14:40:36.024Z"
+      "source": "profile_grid"
     },
-    "missing": [
-      "date",
-      "likes",
-      "comments"
-    ],
-    "missing_reasons": {
-      "date": "No readable timestamp or calendar date was found on the content page or in its metadata.",
-      "likes": "No readable like count was found on the content page or in its metadata.",
-      "comments": "No readable comment count was found on the content page or in its metadata."
+    "missing": [],
+    "missing_reasons": {},
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T02:56:51.722Z",
+    "attempts": 1,
+    "fetched_at": "2026-11-14T02:56:51.722Z",
+    "date": "2026-10-18",
+    "date_precision": "day",
+    "date_source": "og_description_localized",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 136000,
+      "raw": "136K",
+      "approximate": true,
+      "source": "og_description_localized"
     },
-    "last_error": "Instagram rendered an empty page.",
-    "last_attempt_at": "2026-10-24T15:48:13.782Z",
-    "attempts": 1
+    "comments": {
+      "value": 293,
+      "raw": "293",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Comment"
+    },
+    "reshares": {
+      "value": 7609,
+      "raw": "7,609",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Repost"
+    },
+    "shares": {
+      "value": 129000,
+      "raw": "129K",
+      "approximate": true,
+      "source": "dom_action_control",
+      "label": "Share"
+    },
+    "likes_visibility": "not_shown",
+    "thumbnail_url": "https://instagram.fblr1-7.fna.fbcdn.net/v/t51.82787-15/858482497_18110795836970699_3419916792886573485_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=45ZizEu4q3kQ7kNvwEbXvH2&_nc_oc=AdoR5OjK0X248tc2ZUuglhmUxpGMyFwrRsYBgUc1hbA6m7dJC4ywBsBEEj9y2fvakWbWpfbIptDJXCQBwU9WuvLX&_nc_zt=23&_nc_ht=instagram.fblr1-7.fna&_nc_gid=RPrRzDIJNzn0Q-86eQZv6w&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQRpeYX2M0CFPWnLr7sqgYss8pe6t1VEkuPGfaQcyi73NQ&oe=6AFDA7D5",
+    "media_url": null,
+    "raw": {
+      "description": "「#あらゆる追いかけっこを繰り広げる」 - 2026年10月18日、「いいね！」136K件、コメント293件 - hulksmash.exe",
+      "article_text": "hulksmash.exe\nFollow\n#あらゆる追いかけっこを繰り広げる\n136K\n293\n7,609\n129K\ndesigner_pinal_ and 5 others\nFollow\nPritam, Atif Aslam · Tu Chahiye\nNani ka Ghar is blessing 🫶 #nanikaghar🏡❤️ #nanikaghar🏡❤️🤞🧿\n134K\n1,464\n2,359\n32.6K",
+      "aria_text": "hulksmash.exe reels\nhulksmash.exe reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\ndesigner_pinal_ reels\ndesigner_pinal_ reels\nAudio image\nLocation\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "likes_visibility": "not_shown",
+        "comments": {
+          "raw": "293",
+          "source": "dom_action_control",
+          "label": "Comment"
+        },
+        "reshares": {
+          "raw": "7,609",
+          "source": "dom_action_control",
+          "label": "Repost"
+        },
+        "shares": {
+          "raw": "129K",
+          "source": "dom_action_control",
+          "label": "Share"
+        }
+      }
+    }
   },
   {
     "kind": "reel",
@@ -661,27 +1187,82 @@
     "url": "https://www.instagram.com/reel/DeqOBKvpOBL/",
     "grid_views_raw": "1.7M",
     "grid_views_issue": null,
-    "status": "partial",
+    "status": "complete",
     "views": {
       "value": 1700000,
       "raw": "1.7M",
       "approximate": true,
-      "source": "profile_grid",
-      "observed_at": "2026-10-23T14:40:36.024Z"
+      "source": "profile_grid"
     },
-    "missing": [
-      "date",
-      "likes",
-      "comments"
+    "missing": [],
+    "missing_reasons": {},
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T02:56:55.516Z",
+    "attempts": 1,
+    "fetched_at": "2026-11-14T02:56:55.516Z",
+    "date": "2026-10-18",
+    "date_precision": "day",
+    "date_source": "og_description",
+    "caption": "#あらゆる追いかけっこを繰り広げる",
+    "hashtags": [
+      "#あらゆる追いかけっこを繰り広げる"
     ],
-    "missing_reasons": {
-      "date": "No readable timestamp or calendar date was found on the content page or in its metadata.",
-      "likes": "No readable like count was found on the content page or in its metadata.",
-      "comments": "No readable comment count was found on the content page or in its metadata."
+    "mentions": [],
+    "likes": {
+      "value": 89000,
+      "raw": "89K",
+      "approximate": true,
+      "source": "og_description"
     },
-    "last_error": "Instagram rendered an empty page.",
-    "last_attempt_at": "2026-10-24T15:48:36.760Z",
-    "attempts": 1
+    "comments": {
+      "value": 153,
+      "raw": "153",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Comment"
+    },
+    "reshares": {
+      "value": 2895,
+      "raw": "2,895",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Repost"
+    },
+    "shares": {
+      "value": 63300,
+      "raw": "63.3K",
+      "approximate": true,
+      "source": "dom_action_control",
+      "label": "Share"
+    },
+    "likes_visibility": "not_shown",
+    "thumbnail_url": "https://instagram.fblr1-4.fna.fbcdn.net/v/t51.82787-15/856918973_18110771461970699_3364344237475587634_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=f9Ba8Na3Kb8Q7kNvwEQo31V&_nc_oc=AdrTVhW3doMgaLxtflpNJWwW_ydSH4A-1MlQro8iMP9d4Rtl49EuCNNZNmHx1gSqxEkm-wUChjOxur9CJdUvt9HX&_nc_zt=23&_nc_ht=instagram.fblr1-4.fna&_nc_gid=79CA_o0KidEUwMLmZYsgvg&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQS_k-4LTgdl8B-a5OKVnQ0U2ZHimsoMmAPnjb-EDwwNdg&oe=6AFD907E",
+    "media_url": null,
+    "raw": {
+      "description": "89K likes, 153 comments - hulksmash.exe on October 18, 2026: \"#あらゆる追いかけっこを繰り広げる\". ",
+      "article_text": "hulksmash.exe\nFollow\n#あらゆる追いかけっこを繰り広げる\n88.5K\n153\n2,895\n63.3K\nprasad99621\nFollow\nAI-generated profile\nKanika Kapoor, Meet Bros Anjjan, Kumaar · Baby Doll\nKanika Kapoor, Meet Bros Anjjan, Kumaar · Baby Doll\nBaby doll\n959\n58\n17\n4,226",
+      "aria_text": "hulksmash.exe reels\nhulksmash.exe reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nprasad99621 reels\nprasad99621 reels\nAudio image\nAudio image\nRepost\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "likes_visibility": "not_shown",
+        "comments": {
+          "raw": "153",
+          "source": "dom_action_control",
+          "label": "Comment"
+        },
+        "reshares": {
+          "raw": "2,895",
+          "source": "dom_action_control",
+          "label": "Repost"
+        },
+        "shares": {
+          "raw": "63.3K",
+          "source": "dom_action_control",
+          "label": "Share"
+        }
+      }
+    }
   },
   {
     "kind": "reel",
@@ -689,27 +1270,80 @@
     "url": "https://www.instagram.com/reel/DeqGR5cvmhX/",
     "grid_views_raw": "514K",
     "grid_views_issue": null,
-    "status": "partial",
+    "status": "complete",
     "views": {
       "value": 514000,
       "raw": "514K",
       "approximate": true,
-      "source": "profile_grid",
-      "observed_at": "2026-10-23T14:40:36.024Z"
+      "source": "profile_grid"
     },
-    "missing": [
-      "date",
-      "likes",
-      "comments"
-    ],
-    "missing_reasons": {
-      "date": "No readable timestamp or calendar date was found on the content page or in its metadata.",
-      "likes": "No readable like count was found on the content page or in its metadata.",
-      "comments": "No readable comment count was found on the content page or in its metadata."
+    "missing": [],
+    "missing_reasons": {},
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T02:56:59.432Z",
+    "attempts": 1,
+    "fetched_at": "2026-11-14T02:56:59.432Z",
+    "date": "2026-10-18",
+    "date_precision": "day",
+    "date_source": "og_description_localized",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 33000,
+      "raw": "33K",
+      "approximate": true,
+      "source": "og_description_localized"
     },
-    "last_error": "Instagram rendered an empty page.",
-    "last_attempt_at": "2026-10-24T15:48:59.801Z",
-    "attempts": 1
+    "comments": {
+      "value": 101,
+      "raw": "101",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Comment"
+    },
+    "reshares": {
+      "value": 1677,
+      "raw": "1,677",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Repost"
+    },
+    "shares": {
+      "value": 15100,
+      "raw": "15.1K",
+      "approximate": true,
+      "source": "dom_action_control",
+      "label": "Share"
+    },
+    "likes_visibility": "not_shown",
+    "thumbnail_url": "https://instagram.fblr1-3.fna.fbcdn.net/v/t51.82787-15/854668487_18110756797970699_1419606007620267934_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=nml4-UaaZssQ7kNvwFozHUY&_nc_oc=AdqqowWtojnkSPifKO_f10694wj2aciYjSG9Jii04X9I7SL687C9IcdPXCFOUk_xnHRPlKG775X5xr7P0hjI1aOy&_nc_zt=23&_nc_ht=instagram.fblr1-3.fna&_nc_gid=CLS8l3YFkXXJkQrMZroYmQ&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQTQZ_C9FJtCzKio1EldZXPdDZ_HHeGKjGbSFT1YmLbmnw&oe=6AFDA8DF",
+    "media_url": null,
+    "raw": {
+      "description": "「#あらゆる追いかけっこを繰り広げる」 - 2026年10月18日、「いいね！」33K件、コメント101件 - hulksmash.exe",
+      "article_text": "hulksmash.exe\nFollow\n#あらゆる追いかけっこを繰り広げる\n32.5K\n101\n1,677\n15.1K\nprasad99621\nFollow\nAI-generated profile\nKanika Kapoor, Meet Bros Anjjan, Kumaar · Baby Doll\nKanika Kapoor, Meet Bros Anjjan, Kumaar · Baby Doll\nBaby doll\n959\n58\n17\n4,226",
+      "aria_text": "hulksmash.exe reels\nhulksmash.exe reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nprasad99621 reels\nprasad99621 reels\nAudio image\nAudio image\nRepost\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "likes_visibility": "not_shown",
+        "comments": {
+          "raw": "101",
+          "source": "dom_action_control",
+          "label": "Comment"
+        },
+        "reshares": {
+          "raw": "1,677",
+          "source": "dom_action_control",
+          "label": "Repost"
+        },
+        "shares": {
+          "raw": "15.1K",
+          "source": "dom_action_control",
+          "label": "Share"
+        }
+      }
+    }
   },
   {
     "kind": "reel",
@@ -717,27 +1351,80 @@
     "url": "https://www.instagram.com/reel/Dep4MDmy6tT/",
     "grid_views_raw": "509K",
     "grid_views_issue": null,
-    "status": "partial",
+    "status": "complete",
     "views": {
       "value": 509000,
       "raw": "509K",
       "approximate": true,
-      "source": "profile_grid",
-      "observed_at": "2026-10-23T14:40:36.024Z"
+      "source": "profile_grid"
     },
-    "missing": [
-      "date",
-      "likes",
-      "comments"
-    ],
-    "missing_reasons": {
-      "date": "No readable timestamp or calendar date was found on the content page or in its metadata.",
-      "likes": "No readable like count was found on the content page or in its metadata.",
-      "comments": "No readable comment count was found on the content page or in its metadata."
+    "missing": [],
+    "missing_reasons": {},
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T02:57:03.185Z",
+    "attempts": 1,
+    "fetched_at": "2026-11-14T02:57:03.185Z",
+    "date": "2026-10-18",
+    "date_precision": "day",
+    "date_source": "og_description_localized",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 48000,
+      "raw": "48K",
+      "approximate": true,
+      "source": "og_description_localized"
     },
-    "last_error": "Instagram rendered an empty page.",
-    "last_attempt_at": "2026-10-24T15:49:22.741Z",
-    "attempts": 1
+    "comments": {
+      "value": 83,
+      "raw": "83",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Comment"
+    },
+    "reshares": {
+      "value": 2144,
+      "raw": "2,144",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Repost"
+    },
+    "shares": {
+      "value": 34100,
+      "raw": "34.1K",
+      "approximate": true,
+      "source": "dom_action_control",
+      "label": "Share"
+    },
+    "likes_visibility": "not_shown",
+    "thumbnail_url": "https://instagram.fblr1-4.fna.fbcdn.net/v/t51.82787-15/851426668_18110740000970699_5233726364829290594_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=w_W_2IlBqFwQ7kNvwEOo35W&_nc_oc=AdoxA5uAfDcdqnjVd-gzxLB455Rb-EySQoy-3DCEOoxhnvJxqy6Im8Ef1odfvUl0odW4wyYLxmYeq0rD3wVMhsgY&_nc_zt=23&_nc_ht=instagram.fblr1-4.fna&_nc_gid=wP-iJww4FmPVYXISG0ZRkQ&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQS-gnv1wIvJuEawEE6HApew3OAg5hBRQs-pM2L6LQ9iuw&oe=6AFD930D",
+    "media_url": null,
+    "raw": {
+      "description": "「#あらゆる追いかけっこを繰り広げる」 - 2026年10月18日、「いいね！」48K件、コメント83件 - hulksmash.exe",
+      "article_text": "hulksmash.exe\nFollow\n#あらゆる追いかけっこを繰り広げる\n48K\n83\n2,144\n34.1K\nprasad99621\nFollow\nAI-generated profile\nKanika Kapoor, Meet Bros Anjjan, Kumaar · Baby Doll\nKanika Kapoor, Meet Bros Anjjan, Kumaar · Baby Doll\nBaby doll\n959\n58\n17\n4,226",
+      "aria_text": "hulksmash.exe reels\nhulksmash.exe reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nprasad99621 reels\nprasad99621 reels\nAudio image\nAudio image\nRepost\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "likes_visibility": "not_shown",
+        "comments": {
+          "raw": "83",
+          "source": "dom_action_control",
+          "label": "Comment"
+        },
+        "reshares": {
+          "raw": "2,144",
+          "source": "dom_action_control",
+          "label": "Repost"
+        },
+        "shares": {
+          "raw": "34.1K",
+          "source": "dom_action_control",
+          "label": "Share"
+        }
+      }
+    }
   },
   {
     "kind": "reel",
@@ -745,27 +1432,80 @@
     "url": "https://www.instagram.com/reel/Deo-6ugpUy3/",
     "grid_views_raw": "338K",
     "grid_views_issue": null,
-    "status": "partial",
+    "status": "complete",
     "views": {
       "value": 338000,
       "raw": "338K",
       "approximate": true,
-      "source": "profile_grid",
-      "observed_at": "2026-10-23T14:40:36.024Z"
+      "source": "profile_grid"
     },
-    "missing": [
-      "date",
-      "likes",
-      "comments"
-    ],
-    "missing_reasons": {
-      "date": "No readable timestamp or calendar date was found on the content page or in its metadata.",
-      "likes": "No readable like count was found on the content page or in its metadata.",
-      "comments": "No readable comment count was found on the content page or in its metadata."
+    "missing": [],
+    "missing_reasons": {},
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T02:57:06.904Z",
+    "attempts": 1,
+    "fetched_at": "2026-11-14T02:57:06.904Z",
+    "date": "2026-10-18",
+    "date_precision": "day",
+    "date_source": "og_description_localized",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 45000,
+      "raw": "45K",
+      "approximate": true,
+      "source": "og_description_localized"
     },
-    "last_error": "Instagram rendered an empty page.",
-    "last_attempt_at": "2026-10-24T15:49:46.049Z",
-    "attempts": 1
+    "comments": {
+      "value": 174,
+      "raw": "174",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Comment"
+    },
+    "reshares": {
+      "value": 2254,
+      "raw": "2,254",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Repost"
+    },
+    "shares": {
+      "value": 38600,
+      "raw": "38.6K",
+      "approximate": true,
+      "source": "dom_action_control",
+      "label": "Share"
+    },
+    "likes_visibility": "not_shown",
+    "thumbnail_url": "https://instagram.fblr1-10.fna.fbcdn.net/v/t51.82787-15/853786854_18110640346970699_7193456541147437372_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=C6na7p91rZoQ7kNvwH0juvq&_nc_oc=AdqmediVl_lKjbge7BBlTAB-LLxSOJvR_plY1HiAwJrov08yUWyhCg6RGGxWUPiKIM-DXq6ysW_n0omcDKnQqvJu&_nc_zt=23&_nc_ht=instagram.fblr1-10.fna&_nc_gid=OLw4NW01pkKHrXSDHSghUQ&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQRNIcc1_r9Xp5TQ9BrKb6GycNAkGJlS4SkT6kd1ZrfLyQ&oe=6AFDABF6",
+    "media_url": null,
+    "raw": {
+      "description": "「#あらゆる追いかけっこを繰り広げる」 - 2026年10月18日、「いいね！」45K件、コメント174件 - hulksmash.exe",
+      "article_text": "hulksmash.exe\nFollow\nWaterflame · Jumper\n#あらゆる追いかけっこを繰り広げる\n45.3K\n174\n2,254\n38.6K\nprasad99621\nFollow\nAI-generated profile\nKanika Kapoor, Meet Bros Anjjan, Kumaar · Baby Doll\nKanika Kapoor, Meet Bros Anjjan, Kumaar · Baby Doll\nBaby doll\n959\n58\n17\n4,226",
+      "aria_text": "hulksmash.exe reels\nhulksmash.exe reels\nAudio image\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nprasad99621 reels\nprasad99621 reels\nAudio image\nAudio image\nRepost\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "likes_visibility": "not_shown",
+        "comments": {
+          "raw": "174",
+          "source": "dom_action_control",
+          "label": "Comment"
+        },
+        "reshares": {
+          "raw": "2,254",
+          "source": "dom_action_control",
+          "label": "Repost"
+        },
+        "shares": {
+          "raw": "38.6K",
+          "source": "dom_action_control",
+          "label": "Share"
+        }
+      }
+    }
   },
   {
     "kind": "reel",
@@ -773,27 +1513,80 @@
     "url": "https://www.instagram.com/reel/DeouNNyuaui/",
     "grid_views_raw": "1.1M",
     "grid_views_issue": null,
-    "status": "partial",
+    "status": "complete",
     "views": {
       "value": 1100000,
       "raw": "1.1M",
       "approximate": true,
-      "source": "profile_grid",
-      "observed_at": "2026-10-23T14:40:36.024Z"
+      "source": "profile_grid"
     },
-    "missing": [
-      "date",
-      "likes",
-      "comments"
-    ],
-    "missing_reasons": {
-      "date": "No readable timestamp or calendar date was found on the content page or in its metadata.",
-      "likes": "No readable like count was found on the content page or in its metadata.",
-      "comments": "No readable comment count was found on the content page or in its metadata."
+    "missing": [],
+    "missing_reasons": {},
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T02:57:10.726Z",
+    "attempts": 1,
+    "fetched_at": "2026-11-14T02:57:10.726Z",
+    "date": "2026-10-18",
+    "date_precision": "day",
+    "date_source": "og_description_localized",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 76000,
+      "raw": "76K",
+      "approximate": true,
+      "source": "og_description_localized"
     },
-    "last_error": "Instagram rendered an empty page.",
-    "last_attempt_at": "2026-10-24T15:50:09.199Z",
-    "attempts": 1
+    "comments": {
+      "value": 101,
+      "raw": "101",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Comment"
+    },
+    "reshares": {
+      "value": 2473,
+      "raw": "2,473",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Repost"
+    },
+    "shares": {
+      "value": 165000,
+      "raw": "165K",
+      "approximate": true,
+      "source": "dom_action_control",
+      "label": "Share"
+    },
+    "likes_visibility": "not_shown",
+    "thumbnail_url": "https://instagram.fblr24-4.fna.fbcdn.net/v/t51.82787-15/849146733_18110604367970699_1435286453909729189_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=ygDIGT_b9_YQ7kNvwEm0mE6&_nc_oc=AdpT0yhgM1sYqYG1hd690r1fpltZPkzzoahDVQa8lZjNuDTp91lgo1KIaBH5f7uQ6MWQ9P4bgbVM-JdNKHINxp-C&_nc_zt=23&_nc_ht=instagram.fblr24-4.fna&_nc_gid=knj7svYbMd__SOgaDjF2_A&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQTIjPcv8Bb6Q-xbb9otoeiQ6ah_Pqeuna7w7V9aA7qiwg&oe=6AFD8F9A",
+    "media_url": null,
+    "raw": {
+      "description": "「#あらゆる追いかけっこを繰り広げる」 - 2026年10月18日、「いいね！」76K件、コメント101件 - hulksmash.exe",
+      "article_text": "hulksmash.exe\nFollow\n#あらゆる追いかけっこを繰り広げる\n75.6K\n101\n2,473\n165K\nprasad99621\nFollow\nAI-generated profile\nKanika Kapoor, Meet Bros Anjjan, Kumaar · Baby Doll\nKanika Kapoor, Meet Bros Anjjan, Kumaar · Baby Doll\nBaby doll\n959\n58\n17\n4,226",
+      "aria_text": "hulksmash.exe reels\nhulksmash.exe reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nprasad99621 reels\nprasad99621 reels\nAudio image\nAudio image\nRepost\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "likes_visibility": "not_shown",
+        "comments": {
+          "raw": "101",
+          "source": "dom_action_control",
+          "label": "Comment"
+        },
+        "reshares": {
+          "raw": "2,473",
+          "source": "dom_action_control",
+          "label": "Repost"
+        },
+        "shares": {
+          "raw": "165K",
+          "source": "dom_action_control",
+          "label": "Share"
+        }
+      }
+    }
   },
   {
     "kind": "reel",
@@ -801,27 +1594,80 @@
     "url": "https://www.instagram.com/reel/Deod7ORv3AB/",
     "grid_views_raw": "631K",
     "grid_views_issue": null,
-    "status": "partial",
+    "status": "complete",
     "views": {
       "value": 631000,
       "raw": "631K",
       "approximate": true,
-      "source": "profile_grid",
-      "observed_at": "2026-10-23T14:40:36.024Z"
+      "source": "profile_grid"
     },
-    "missing": [
-      "date",
-      "likes",
-      "comments"
-    ],
-    "missing_reasons": {
-      "date": "No readable timestamp or calendar date was found on the content page or in its metadata.",
-      "likes": "No readable like count was found on the content page or in its metadata.",
-      "comments": "No readable comment count was found on the content page or in its metadata."
+    "missing": [],
+    "missing_reasons": {},
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T02:57:14.857Z",
+    "attempts": 1,
+    "fetched_at": "2026-11-14T02:57:14.856Z",
+    "date": "2026-10-18",
+    "date_precision": "day",
+    "date_source": "og_description_localized",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 57000,
+      "raw": "57K",
+      "approximate": true,
+      "source": "og_description_localized"
     },
-    "last_error": "Instagram rendered an empty page.",
-    "last_attempt_at": "2026-10-24T15:50:32.465Z",
-    "attempts": 1
+    "comments": {
+      "value": 89,
+      "raw": "89",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Comment"
+    },
+    "reshares": {
+      "value": 2418,
+      "raw": "2,418",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Repost"
+    },
+    "shares": {
+      "value": 41900,
+      "raw": "41.9K",
+      "approximate": true,
+      "source": "dom_action_control",
+      "label": "Share"
+    },
+    "likes_visibility": "not_shown",
+    "thumbnail_url": "https://instagram.fblr1-6.fna.fbcdn.net/v/t51.82787-15/854337511_18110572657970699_7723120199025882735_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=TRnj_WACWS8Q7kNvwGL5iPe&_nc_oc=Adr7N-iLxHHnEMOHpHaqmmgO3jqYxYOasF5tWRWIqwmYQuS4sJLjMQAJsvltNRJK4x775CEhKvWw5e1DeJPrrmze&_nc_zt=23&_nc_ht=instagram.fblr1-6.fna&_nc_gid=JdRqLfQ00UsNF1xQncr29Q&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQRBBExfbrKNLZH2sjso4q0M4tt3akqtNU81tVoW5isqmA&oe=6AFDA54D",
+    "media_url": null,
+    "raw": {
+      "description": "「#あらゆる追いかけっこを繰り広げる」 - 2026年10月18日、「いいね！」57K件、コメント89件 - hulksmash.exe",
+      "article_text": "hulksmash.exe\nFollow\n#あらゆる追いかけっこを繰り広げる\n57.3K\n89\n2,418\n41.9K\nprasad99621\nFollow\nAI-generated profile\nKanika Kapoor, Meet Bros Anjjan, Kumaar · Baby Doll\nKanika Kapoor, Meet Bros Anjjan, Kumaar · Baby Doll\nBaby doll\n959\n58\n17\n4,226",
+      "aria_text": "hulksmash.exe reels\nhulksmash.exe reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nprasad99621 reels\nprasad99621 reels\nAudio image\nAudio image\nRepost\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "likes_visibility": "not_shown",
+        "comments": {
+          "raw": "89",
+          "source": "dom_action_control",
+          "label": "Comment"
+        },
+        "reshares": {
+          "raw": "2,418",
+          "source": "dom_action_control",
+          "label": "Repost"
+        },
+        "shares": {
+          "raw": "41.9K",
+          "source": "dom_action_control",
+          "label": "Share"
+        }
+      }
+    }
   },
   {
     "kind": "reel",
@@ -829,27 +1675,80 @@
     "url": "https://www.instagram.com/reel/DeoXGV5AxO1/",
     "grid_views_raw": "699K",
     "grid_views_issue": null,
-    "status": "partial",
+    "status": "complete",
     "views": {
       "value": 699000,
       "raw": "699K",
       "approximate": true,
-      "source": "profile_grid",
-      "observed_at": "2026-10-23T14:40:36.024Z"
+      "source": "profile_grid"
     },
-    "missing": [
-      "date",
-      "likes",
-      "comments"
-    ],
-    "missing_reasons": {
-      "date": "No readable timestamp or calendar date was found on the content page or in its metadata.",
-      "likes": "No readable like count was found on the content page or in its metadata.",
-      "comments": "No readable comment count was found on the content page or in its metadata."
+    "missing": [],
+    "missing_reasons": {},
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T02:57:18.685Z",
+    "attempts": 1,
+    "fetched_at": "2026-11-14T02:57:18.685Z",
+    "date": "2026-10-18",
+    "date_precision": "day",
+    "date_source": "og_description_localized",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 39000,
+      "raw": "39K",
+      "approximate": true,
+      "source": "og_description_localized"
     },
-    "last_error": "Instagram rendered an empty page.",
-    "last_attempt_at": "2026-10-24T15:50:56.167Z",
-    "attempts": 1
+    "comments": {
+      "value": 336,
+      "raw": "336",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Comment"
+    },
+    "reshares": {
+      "value": 1695,
+      "raw": "1,695",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Repost"
+    },
+    "shares": {
+      "value": 86700,
+      "raw": "86.7K",
+      "approximate": true,
+      "source": "dom_action_control",
+      "label": "Share"
+    },
+    "likes_visibility": "not_shown",
+    "thumbnail_url": "https://instagram.fblr1-8.fna.fbcdn.net/v/t51.82787-15/850210736_18110562820970699_141106377524738223_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=o4GwrOCrbWkQ7kNvwH314yp&_nc_oc=AdoOXru2Ge_-tTtNH1isK3yZ0q21AkQs8cWt4IUW6wZjgin4oXnxH2bV-paB5si7Vga24FjlrmX0Q7_q1BrhaBN0&_nc_zt=23&_nc_ht=instagram.fblr1-8.fna&_nc_gid=3tSKfNPZgG7Uvmig4jKEEA&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQQWr6s4X27COJvRSwr5PoA8N7X-eRytz_iAi8ojRywcnw&oe=6AFDBA47",
+    "media_url": null,
+    "raw": {
+      "description": "「#あらゆる追いかけっこを繰り広げる」 - 2026年10月18日、「いいね！」39K件、コメント336件 - hulksmash.exe",
+      "article_text": "hulksmash.exe\nFollow\n#あらゆる追いかけっこを繰り広げる\n38.6K\n336\n1,695\n86.7K\nprasad99621\nFollow\nAI-generated profile\nKanika Kapoor, Meet Bros Anjjan, Kumaar · Baby Doll\nKanika Kapoor, Meet Bros Anjjan, Kumaar · Baby Doll\nBaby doll\n959\n58\n17\n4,226",
+      "aria_text": "hulksmash.exe reels\nhulksmash.exe reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nprasad99621 reels\nprasad99621 reels\nAudio image\nAudio image\nRepost\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "likes_visibility": "not_shown",
+        "comments": {
+          "raw": "336",
+          "source": "dom_action_control",
+          "label": "Comment"
+        },
+        "reshares": {
+          "raw": "1,695",
+          "source": "dom_action_control",
+          "label": "Repost"
+        },
+        "shares": {
+          "raw": "86.7K",
+          "source": "dom_action_control",
+          "label": "Share"
+        }
+      }
+    }
   },
   {
     "kind": "reel",
@@ -857,27 +1756,80 @@
     "url": "https://www.instagram.com/reel/Densx_XBfwn/",
     "grid_views_raw": "19.6K",
     "grid_views_issue": null,
-    "status": "partial",
+    "status": "complete",
     "views": {
       "value": 19600,
       "raw": "19.6K",
       "approximate": true,
-      "source": "profile_grid",
-      "observed_at": "2026-10-23T14:40:36.024Z"
+      "source": "profile_grid"
     },
-    "missing": [
-      "date",
-      "likes",
-      "comments"
-    ],
-    "missing_reasons": {
-      "date": "No readable timestamp or calendar date was found on the content page or in its metadata.",
-      "likes": "No readable like count was found on the content page or in its metadata.",
-      "comments": "No readable comment count was found on the content page or in its metadata."
+    "missing": [],
+    "missing_reasons": {},
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T02:57:26.518Z",
+    "attempts": 1,
+    "fetched_at": "2026-11-14T02:57:26.518Z",
+    "date": "2026-10-17",
+    "date_precision": "day",
+    "date_source": "og_description_localized",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 1033,
+      "raw": "1,033",
+      "approximate": false,
+      "source": "og_description_localized"
     },
-    "last_error": "Instagram rendered an empty page.",
-    "last_attempt_at": "2026-10-24T15:51:20.743Z",
-    "attempts": 1
+    "comments": {
+      "value": 31,
+      "raw": "31",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Comment"
+    },
+    "reshares": {
+      "value": 82,
+      "raw": "82",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Repost"
+    },
+    "shares": {
+      "value": 2726,
+      "raw": "2,726",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Share"
+    },
+    "likes_visibility": "not_shown",
+    "thumbnail_url": "https://instagram.fblr24-3.fna.fbcdn.net/v/t51.82787-15/850959248_18110488657970699_3220006033059611526_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=373HQx4KqUUQ7kNvwE8U9W8&_nc_oc=AdqdDeNUirdbExbsEpsbYUjiTHyvB0cCIqGtbNroQaoAtLbOOgHNVDSdiv9wn3zDLBkt4T8xeXL31ML4F0yibMtS&_nc_zt=23&_nc_ht=instagram.fblr24-3.fna&_nc_gid=XNyphFWcHJWeiAIpa8u8EA&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQSnKuEQW3FxKRgHAVfFCjSoQ0dijSv0q80j6VzK9VpHAA&oe=6AFD8758",
+    "media_url": null,
+    "raw": {
+      "description": "「#あらゆる追いかけっこを繰り広げる」 - 2026年10月17日、「いいね！」1,033件、コメント31件 - hulksmash.exe",
+      "article_text": "hulksmash.exe\nFollow\n#あらゆる追いかけっこを繰り広げる\n1,033\n31\n82\n2,726\ntulunada_sogasu\nFollow\n20 people\nಹುಲ್ಲು ಕಡಿಯುವಾಗ ಅನಿರೀಕ್ಷಿತವಾಗಿ ಕಣ್ಣಿಗೆ ಬಿದ್ದ ಕಂದೋಡಿ ಹಾವು! 🐍\nನಾವು ಪ್ರತಿದಿನ ಕೃಷಿ ಕೆಲಸ ಮಾಡುವಾಗ ಇಂತಹ ಅಪಾಯಕಾರಿ ಜೀವಿಗಳು ಹುಲ್ಲಿನ ನಡುವೆ ಅಡಗಿರಬಹುದು.\nಆದ್ದರಿಂದ ಎಲ್ಲರೂ ಎಚ್ಚರಿಕೆಯಿಂದಿರಿ. ಕೃಷಿ ಕೆಲಸಕ್ಕೆ ಹೋಗುವಾಗ ಗಮ್‌ಬೂಟ್ಸ್ ಧರಿಸಿ, ಕೈಗಳಿಗೆ ಸೂಕ್ತ ರಕ್ಷಣೆ ಒದಗಿಸಿಕೊಳ್ಳಿ.\nಹಾವನ್ನು ಕಂಡರೆ ಮುಟ್ಟಲು ಅಥವಾ ಹಿಡಿಯಲು ಪ್ರಯತ್ನಿಸಬೇಡಿ. ಸುರಕ್ಷಿತ ಅಂತರ ಕಾಯ್ದುಕೊಳ್ಳಿ.\nನಿಮ್ಮ ಸುರಕ್ಷತೆ ನಿಮ್ಮ ಕೈಯಲ್ಲಿದೆ. 🙏\n📌\n#SnakeAwareness #SnakeSafety #Kandodi #TulunadaSogasu #Tulunadu SnakeRescue VillageLife Agriculture FarmSafety NatureLovers KannadaReels TuluReels StaySafe WildlifeAwareness\nSee translation\n7,137\n144\n85\n3,658",
+      "aria_text": "hulksmash.exe reels\nhulksmash.exe reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\ntulunada_sogasu reels\ntulunada_sogasu reels\nTagged users\nTagged users\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "likes_visibility": "not_shown",
+        "comments": {
+          "raw": "31",
+          "source": "dom_action_control",
+          "label": "Comment"
+        },
+        "reshares": {
+          "raw": "82",
+          "source": "dom_action_control",
+          "label": "Repost"
+        },
+        "shares": {
+          "raw": "2,726",
+          "source": "dom_action_control",
+          "label": "Share"
+        }
+      }
+    }
   },
   {
     "kind": "reel",
@@ -885,27 +1837,74 @@
     "url": "https://www.instagram.com/reel/DembUBdtu-C/",
     "grid_views_raw": "1,742",
     "grid_views_issue": null,
-    "status": "partial",
+    "status": "complete",
     "views": {
       "value": 1742,
       "raw": "1,742",
       "approximate": false,
-      "source": "profile_grid",
-      "observed_at": "2026-10-23T14:40:36.024Z"
+      "source": "profile_grid"
     },
-    "missing": [
-      "date",
-      "likes",
-      "comments"
-    ],
-    "missing_reasons": {
-      "date": "No readable timestamp or calendar date was found on the content page or in its metadata.",
-      "likes": "No readable like count was found on the content page or in its metadata.",
-      "comments": "No readable comment count was found on the content page or in its metadata."
+    "missing": [],
+    "missing_reasons": {},
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T02:57:30.343Z",
+    "attempts": 1,
+    "fetched_at": "2026-11-14T02:57:30.343Z",
+    "date": "2026-10-17",
+    "date_precision": "day",
+    "date_source": "og_description_localized",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 75,
+      "raw": "75",
+      "approximate": false,
+      "source": "og_description_localized"
     },
-    "last_error": "Instagram rendered an empty page.",
-    "last_attempt_at": "2026-10-24T15:51:44.930Z",
-    "attempts": 1
+    "comments": {
+      "value": 0,
+      "raw": "0",
+      "approximate": false,
+      "source": "og_description_localized"
+    },
+    "reshares": {
+      "value": 4,
+      "raw": "4",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Repost"
+    },
+    "shares": {
+      "value": 30,
+      "raw": "30",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Share"
+    },
+    "likes_visibility": "not_shown",
+    "thumbnail_url": "https://instagram.fblr24-4.fna.fbcdn.net/v/t51.82787-15/850496365_18110352817970699_2970638245435001936_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=mtKPQo1t3_IQ7kNvwHme0BL&_nc_oc=Ado-4XE2yuCu0yJXheP0lE7oMC9avk2z8zNxs370zdWqT-JShDLZfqefhMNSUaKFP6b7-VVjYruO0yb-4SrkNaGf&_nc_zt=23&_nc_ht=instagram.fblr24-4.fna&_nc_gid=qo7c6jux6f5rsGb86F1hwg&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQQyXCnzfSe84aFGkCIspgQwvsN6tuTXrSw7BPVNO1iorA&oe=6AFD91E5",
+    "media_url": null,
+    "raw": {
+      "description": "「#あらゆる追いかけっこを繰り広げる」 - 2026年10月17日、「いいね！」75件、コメント0件 - hulksmash.exe",
+      "article_text": "hulksmash.exe\nFollow\n#あらゆる追いかけっこを繰り広げる\n75\n4\n30\nyashna.alt\nFollow\nSystem Of A Down · Lonely Day\nIsn't it just true\n\n(System of a down, soad, byob, chop suey, aerials, toxicity, roulette, rock music, metal music, serj tankian, alternative women, alternative rock, alternative metal, grunge rock, post grunge, metalcore, heavymetal, hardrock, hardcore, nu metal, pop rock, industrial metal, industrial rock, modern metal, pop punk, punk rock, pop metal, post screamo, progressive rock progressive metal)\n145\n7\n1\n9",
+      "aria_text": "hulksmash.exe reels\nhulksmash.exe reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nyashna.alt reels\nyashna.alt reels\nAudio image\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "likes_visibility": "not_shown",
+        "reshares": {
+          "raw": "4",
+          "source": "dom_action_control",
+          "label": "Repost"
+        },
+        "shares": {
+          "raw": "30",
+          "source": "dom_action_control",
+          "label": "Share"
+        }
+      }
+    }
   },
   {
     "kind": "reel",
@@ -913,27 +1912,80 @@
     "url": "https://www.instagram.com/reel/Delky4mN7Xr/",
     "grid_views_raw": "4,000",
     "grid_views_issue": null,
-    "status": "partial",
+    "status": "complete",
     "views": {
       "value": 4000,
       "raw": "4,000",
       "approximate": false,
-      "source": "profile_grid",
-      "observed_at": "2026-10-23T14:40:36.024Z"
+      "source": "profile_grid"
     },
-    "missing": [
-      "date",
-      "likes",
-      "comments"
-    ],
-    "missing_reasons": {
-      "date": "No readable timestamp or calendar date was found on the content page or in its metadata.",
-      "likes": "No readable like count was found on the content page or in its metadata.",
-      "comments": "No readable comment count was found on the content page or in its metadata."
+    "missing": [],
+    "missing_reasons": {},
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T02:57:34.816Z",
+    "attempts": 1,
+    "fetched_at": "2026-11-14T02:57:34.816Z",
+    "date": "2026-10-17",
+    "date_precision": "day",
+    "date_source": "og_description_localized",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 102,
+      "raw": "102",
+      "approximate": false,
+      "source": "og_description_localized"
     },
-    "last_error": "Instagram rendered an empty page.",
-    "last_attempt_at": "2026-10-24T15:52:10.417Z",
-    "attempts": 1
+    "comments": {
+      "value": 3,
+      "raw": "3",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Comment"
+    },
+    "reshares": {
+      "value": 3,
+      "raw": "3",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Repost"
+    },
+    "shares": {
+      "value": 102,
+      "raw": "102",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Share"
+    },
+    "likes_visibility": "not_shown",
+    "thumbnail_url": "https://instagram.fblr1-4.fna.fbcdn.net/v/t51.82787-15/851257183_18110250595970699_1590900169082292540_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=GQDt-eavgQ0Q7kNvwEWyjGp&_nc_oc=AdryPKbABe-h2eRPxH5a_c4g1xuH-OQf2YPPgtghOgGD_rJWSUGIcLrcFwrwOOhyRQzJg_5EszthQg5sGGO9ouuh&_nc_zt=23&_nc_ht=instagram.fblr1-4.fna&_nc_gid=AUcCRhNdwGAIv6_gdDwyIw&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQQs53kdFCeSKj5m98RUu32wohu2wnosvx5KEg-s84V4Nw&oe=6AFDBB25",
+    "media_url": null,
+    "raw": {
+      "description": "「#あらゆる追いかけっこを繰り広げる」 - 2026年10月17日、「いいね！」102件、コメント3件 - hulksmash.exe",
+      "article_text": "hulksmash.exe\nFollow\n#あらゆる追いかけっこを繰り広げる\n102\n3\n3\n102\nyashna.alt\nFollow\nSystem Of A Down · Lonely Day\nIsn't it just true\n\n(System of a down, soad, byob, chop suey, aerials, toxicity, roulette, rock music, metal music, serj tankian, alternative women, alternative rock, alternative metal, grunge rock, post grunge, metalcore, heavymetal, hardrock, hardcore, nu metal, pop rock, industrial metal, industrial rock, modern metal, pop punk, punk rock, pop metal, post screamo, progressive rock progressive metal)\n145\n7\n1\n9",
+      "aria_text": "hulksmash.exe reels\nhulksmash.exe reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nyashna.alt reels\nyashna.alt reels\nAudio image\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "likes_visibility": "not_shown",
+        "comments": {
+          "raw": "3",
+          "source": "dom_action_control",
+          "label": "Comment"
+        },
+        "reshares": {
+          "raw": "3",
+          "source": "dom_action_control",
+          "label": "Repost"
+        },
+        "shares": {
+          "raw": "102",
+          "source": "dom_action_control",
+          "label": "Share"
+        }
+      }
+    }
   },
   {
     "kind": "reel",
@@ -941,27 +1993,80 @@
     "url": "https://www.instagram.com/reel/DelbmictM1-/",
     "grid_views_raw": "652K",
     "grid_views_issue": null,
-    "status": "partial",
+    "status": "complete",
     "views": {
       "value": 652000,
       "raw": "652K",
       "approximate": true,
-      "source": "profile_grid",
-      "observed_at": "2026-10-23T14:40:36.024Z"
+      "source": "profile_grid"
     },
-    "missing": [
-      "date",
-      "likes",
-      "comments"
-    ],
-    "missing_reasons": {
-      "date": "No readable timestamp or calendar date was found on the content page or in its metadata.",
-      "likes": "No readable like count was found on the content page or in its metadata.",
-      "comments": "No readable comment count was found on the content page or in its metadata."
+    "missing": [],
+    "missing_reasons": {},
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T02:57:38.616Z",
+    "attempts": 1,
+    "fetched_at": "2026-11-14T02:57:38.616Z",
+    "date": "2026-10-16",
+    "date_precision": "day",
+    "date_source": "og_description_localized",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 59000,
+      "raw": "59K",
+      "approximate": true,
+      "source": "og_description_localized"
     },
-    "last_error": "Instagram rendered an empty page.",
-    "last_attempt_at": "2026-10-24T15:52:33.694Z",
-    "attempts": 1
+    "comments": {
+      "value": 140,
+      "raw": "140",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Comment"
+    },
+    "reshares": {
+      "value": 2890,
+      "raw": "2,890",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Repost"
+    },
+    "shares": {
+      "value": 45300,
+      "raw": "45.3K",
+      "approximate": true,
+      "source": "dom_action_control",
+      "label": "Share"
+    },
+    "likes_visibility": "not_shown",
+    "thumbnail_url": "https://instagram.fblr1-6.fna.fbcdn.net/v/t51.82787-15/850098151_18110238703970699_8474686065171703329_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=ou-vZHYzbxoQ7kNvwFORjEW&_nc_oc=AdoBkSmCeE98JFiQv9ebpYv6mtsSk_w-m65DFNcUIIBbx_7O3B4zzBxxcvjOYbbXrkGSJIasApx9aF8BH6k0Rzuu&_nc_zt=23&_nc_ht=instagram.fblr1-6.fna&_nc_gid=v_U4SPAFP-txm5XhKs9_bw&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQQbCy5EZc2-OHghLRo7iw7U_QvoDcoYSNXPPlHPC11bJg&oe=6AFDB83F",
+    "media_url": null,
+    "raw": {
+      "description": "「#あらゆる追いかけっこを繰り広げる」 - 2026年10月16日、「いいね！」59K件、コメント140件 - hulksmash.exe",
+      "article_text": "hulksmash.exe\nFollow\n#あらゆる追いかけっこを繰り広げる\n59.3K\n140\n2,890\n45.3K\nyashna.alt\nFollow\nSystem Of A Down · Lonely Day\nIsn't it just true\n\n(System of a down, soad, byob, chop suey, aerials, toxicity, roulette, rock music, metal music, serj tankian, alternative women, alternative rock, alternative metal, grunge rock, post grunge, metalcore, heavymetal, hardrock, hardcore, nu metal, pop rock, industrial metal, industrial rock, modern metal, pop punk, punk rock, pop metal, post screamo, progressive rock progressive metal)\n145\n7\n1\n9",
+      "aria_text": "hulksmash.exe reels\nhulksmash.exe reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nyashna.alt reels\nyashna.alt reels\nAudio image\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "likes_visibility": "not_shown",
+        "comments": {
+          "raw": "140",
+          "source": "dom_action_control",
+          "label": "Comment"
+        },
+        "reshares": {
+          "raw": "2,890",
+          "source": "dom_action_control",
+          "label": "Repost"
+        },
+        "shares": {
+          "raw": "45.3K",
+          "source": "dom_action_control",
+          "label": "Share"
+        }
+      }
+    }
   },
   {
     "kind": "reel",
@@ -969,27 +2074,82 @@
     "url": "https://www.instagram.com/reel/DelWdrstgnl/",
     "grid_views_raw": "17.7K",
     "grid_views_issue": null,
-    "status": "partial",
+    "status": "complete",
     "views": {
       "value": 17700,
       "raw": "17.7K",
       "approximate": true,
-      "source": "profile_grid",
-      "observed_at": "2026-10-23T14:40:36.024Z"
+      "source": "profile_grid"
     },
-    "missing": [
-      "date",
-      "likes",
-      "comments"
+    "missing": [],
+    "missing_reasons": {},
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T02:57:42.518Z",
+    "attempts": 1,
+    "fetched_at": "2026-11-14T02:57:42.517Z",
+    "date": "2026-10-16",
+    "date_precision": "day",
+    "date_source": "og_description",
+    "caption": "#あらゆる追いかけっこを繰り広げる",
+    "hashtags": [
+      "#あらゆる追いかけっこを繰り広げる"
     ],
-    "missing_reasons": {
-      "date": "No readable timestamp or calendar date was found on the content page or in its metadata.",
-      "likes": "No readable like count was found on the content page or in its metadata.",
-      "comments": "No readable comment count was found on the content page or in its metadata."
+    "mentions": [],
+    "likes": {
+      "value": 1732,
+      "raw": "1,732",
+      "approximate": false,
+      "source": "og_description"
     },
-    "last_error": "Instagram rendered an empty page.",
-    "last_attempt_at": "2026-10-24T15:52:57.107Z",
-    "attempts": 1
+    "comments": {
+      "value": 16,
+      "raw": "16",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Comment"
+    },
+    "reshares": {
+      "value": 108,
+      "raw": "108",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Repost"
+    },
+    "shares": {
+      "value": 2806,
+      "raw": "2,806",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Share"
+    },
+    "likes_visibility": "not_shown",
+    "thumbnail_url": "https://instagram.fblr24-4.fna.fbcdn.net/v/t51.82787-15/854508364_18110231929970699_8585810494608614910_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=rylGYE_SVN0Q7kNvwHbS30F&_nc_oc=AdpM12beqyNAn3i8e2NuRqQXaouvsBvEcUpsHL96b7nJ7GyVEfS_ftZBPXKq-hwFHj7s5WDMSHuGp43V5WKD4u4Q&_nc_zt=23&_nc_ht=instagram.fblr24-4.fna&_nc_gid=eB8Otgp73O8OX0brEnjvcA&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQQNr3kH6mU3Ig_uFcTNR7-vJTOKIC1E4o_CFtEHKUf4TA&oe=6AFDAD66",
+    "media_url": null,
+    "raw": {
+      "description": "1,732 likes, 16 comments - hulksmash.exe on October 16, 2026: \"#あらゆる追いかけっこを繰り広げる\". ",
+      "article_text": "hulksmash.exe\nFollow\n#あらゆる追いかけっこを繰り広げる\n1,732\n16\n108\n2,806\nyashna.alt\nFollow\nSystem Of A Down · Lonely Day\nIsn't it just true\n\n(System of a down, soad, byob, chop suey, aerials, toxicity, roulette, rock music, metal music, serj tankian, alternative women, alternative rock, alternative metal, grunge rock, post grunge, metalcore, heavymetal, hardrock, hardcore, nu metal, pop rock, industrial metal, industrial rock, modern metal, pop punk, punk rock, pop metal, post screamo, progressive rock progressive metal)\n145\n7\n1\n9",
+      "aria_text": "hulksmash.exe reels\nhulksmash.exe reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nyashna.alt reels\nyashna.alt reels\nAudio image\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "likes_visibility": "not_shown",
+        "comments": {
+          "raw": "16",
+          "source": "dom_action_control",
+          "label": "Comment"
+        },
+        "reshares": {
+          "raw": "108",
+          "source": "dom_action_control",
+          "label": "Repost"
+        },
+        "shares": {
+          "raw": "2,806",
+          "source": "dom_action_control",
+          "label": "Share"
+        }
+      }
+    }
   },
   {
     "kind": "reel",
@@ -997,27 +2157,80 @@
     "url": "https://www.instagram.com/reel/DelPSwrB-CE/",
     "grid_views_raw": "450K",
     "grid_views_issue": null,
-    "status": "partial",
+    "status": "complete",
     "views": {
       "value": 450000,
       "raw": "450K",
       "approximate": true,
-      "source": "profile_grid",
-      "observed_at": "2026-10-23T14:40:36.024Z"
+      "source": "profile_grid"
     },
-    "missing": [
-      "date",
-      "likes",
-      "comments"
-    ],
-    "missing_reasons": {
-      "date": "No readable timestamp or calendar date was found on the content page or in its metadata.",
-      "likes": "No readable like count was found on the content page or in its metadata.",
-      "comments": "No readable comment count was found on the content page or in its metadata."
+    "missing": [],
+    "missing_reasons": {},
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T02:57:46.379Z",
+    "attempts": 1,
+    "fetched_at": "2026-11-14T02:57:46.379Z",
+    "date": "2026-10-16",
+    "date_precision": "day",
+    "date_source": "og_description_localized",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 47000,
+      "raw": "47K",
+      "approximate": true,
+      "source": "og_description_localized"
     },
-    "last_error": "Instagram rendered an empty page.",
-    "last_attempt_at": "2026-10-24T15:53:20.162Z",
-    "attempts": 1
+    "comments": {
+      "value": 161,
+      "raw": "161",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Comment"
+    },
+    "reshares": {
+      "value": 1985,
+      "raw": "1,985",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Repost"
+    },
+    "shares": {
+      "value": 40900,
+      "raw": "40.9K",
+      "approximate": true,
+      "source": "dom_action_control",
+      "label": "Share"
+    },
+    "likes_visibility": "not_shown",
+    "thumbnail_url": "https://instagram.fblr24-4.fna.fbcdn.net/v/t51.82787-15/851111396_18110220574970699_9063888693687811710_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=M9p3ITJ1HHQQ7kNvwEuT3xs&_nc_oc=AdqvrOCJ1-EnrwaNgipCiM6V4Vel5bKyOYPWCt645M6S3NLqPW1lCet-zYluW6n0C3nYswpLMCtIqAUfWI5RTlV7&_nc_zt=23&_nc_ht=instagram.fblr24-4.fna&_nc_gid=2IU3jsg-BlbPzWQwpDqzlg&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQTidA8HhCS6J24gwmrE6mX5OTjsooLkCismz8OXJjwVqw&oe=6AFD9C2A",
+    "media_url": null,
+    "raw": {
+      "description": "「#あらゆる追いかけっこを繰り広げる」 - 2026年10月16日、「いいね！」47K件、コメント161件 - hulksmash.exe",
+      "article_text": "hulksmash.exe\nFollow\n#あらゆる追いかけっこを繰り広げる\n46.6K\n161\n1,985\n40.9K\nyashna.alt\nFollow\nSystem Of A Down · Lonely Day\nIsn't it just true\n\n(System of a down, soad, byob, chop suey, aerials, toxicity, roulette, rock music, metal music, serj tankian, alternative women, alternative rock, alternative metal, grunge rock, post grunge, metalcore, heavymetal, hardrock, hardcore, nu metal, pop rock, industrial metal, industrial rock, modern metal, pop punk, punk rock, pop metal, post screamo, progressive rock progressive metal)\n145\n7\n1\n9",
+      "aria_text": "hulksmash.exe reels\nhulksmash.exe reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nyashna.alt reels\nyashna.alt reels\nAudio image\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "likes_visibility": "not_shown",
+        "comments": {
+          "raw": "161",
+          "source": "dom_action_control",
+          "label": "Comment"
+        },
+        "reshares": {
+          "raw": "1,985",
+          "source": "dom_action_control",
+          "label": "Repost"
+        },
+        "shares": {
+          "raw": "40.9K",
+          "source": "dom_action_control",
+          "label": "Share"
+        }
+      }
+    }
   },
   {
     "kind": "reel",
@@ -1025,27 +2238,80 @@
     "url": "https://www.instagram.com/reel/Dek_Lnkph-l/",
     "grid_views_raw": "1,168",
     "grid_views_issue": null,
-    "status": "partial",
+    "status": "complete",
     "views": {
       "value": 1168,
       "raw": "1,168",
       "approximate": false,
-      "source": "profile_grid",
-      "observed_at": "2026-10-23T14:40:36.024Z"
+      "source": "profile_grid"
     },
-    "missing": [
-      "date",
-      "likes",
-      "comments"
-    ],
-    "missing_reasons": {
-      "date": "No readable timestamp or calendar date was found on the content page or in its metadata.",
-      "likes": "No readable like count was found on the content page or in its metadata.",
-      "comments": "No readable comment count was found on the content page or in its metadata."
+    "missing": [],
+    "missing_reasons": {},
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T02:57:50.170Z",
+    "attempts": 1,
+    "fetched_at": "2026-11-14T02:57:50.170Z",
+    "date": "2026-10-16",
+    "date_precision": "day",
+    "date_source": "og_description_localized",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 44,
+      "raw": "44",
+      "approximate": false,
+      "source": "og_description_localized"
     },
-    "last_error": "Instagram rendered an empty page.",
-    "last_attempt_at": "2026-10-24T15:53:43.648Z",
-    "attempts": 1
+    "comments": {
+      "value": 1,
+      "raw": "1",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Comment"
+    },
+    "reshares": {
+      "value": 4,
+      "raw": "4",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Repost"
+    },
+    "shares": {
+      "value": 11,
+      "raw": "11",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Share"
+    },
+    "likes_visibility": "not_shown",
+    "thumbnail_url": "https://instagram.fblr1-7.fna.fbcdn.net/v/t51.82787-15/849773310_18110191933970699_7503376123504513849_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=CuU_jpS9-UUQ7kNvwGf5hbw&_nc_oc=AdoadQnvWBs2Kp3VLJv4EKfBdiN7NeP6Jtw07Pi0B4O6Fyf4OledCirwt1dWuYQDJdfEtu5rB-5g5Dz3XTxQ6UUw&_nc_zt=23&_nc_ht=instagram.fblr1-7.fna&_nc_gid=anv4RF6tsjc6XYyrn2Jy7g&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQSc6ND8win-Kix2v0z3pR5_M41VwzQ_Ej2VsEAzuNmrcA&oe=6AFDA5CD",
+    "media_url": null,
+    "raw": {
+      "description": "「#あらゆる追いかけっこを繰り広げる」 - 2026年10月16日、「いいね！」44件、コメント1件 - hulksmash.exe",
+      "article_text": "hulksmash.exe\nFollow\n#あらゆる追いかけっこを繰り広げる\n44\n1\n4\n11\nyashna.alt\nFollow\nSystem Of A Down · Lonely Day\nIsn't it just true\n\n(System of a down, soad, byob, chop suey, aerials, toxicity, roulette, rock music, metal music, serj tankian, alternative women, alternative rock, alternative metal, grunge rock, post grunge, metalcore, heavymetal, hardrock, hardcore, nu metal, pop rock, industrial metal, industrial rock, modern metal, pop punk, punk rock, pop metal, post screamo, progressive rock progressive metal)\n145\n7\n1\n9",
+      "aria_text": "hulksmash.exe reels\nhulksmash.exe reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nyashna.alt reels\nyashna.alt reels\nAudio image\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "likes_visibility": "not_shown",
+        "comments": {
+          "raw": "1",
+          "source": "dom_action_control",
+          "label": "Comment"
+        },
+        "reshares": {
+          "raw": "4",
+          "source": "dom_action_control",
+          "label": "Repost"
+        },
+        "shares": {
+          "raw": "11",
+          "source": "dom_action_control",
+          "label": "Share"
+        }
+      }
+    }
   },
   {
     "kind": "reel",
@@ -1053,27 +2319,80 @@
     "url": "https://www.instagram.com/reel/Dek3w9vpYyg/",
     "grid_views_raw": "775K",
     "grid_views_issue": null,
-    "status": "partial",
+    "status": "complete",
     "views": {
       "value": 775000,
       "raw": "775K",
       "approximate": true,
-      "source": "profile_grid",
-      "observed_at": "2026-10-23T14:40:36.024Z"
+      "source": "profile_grid"
     },
-    "missing": [
-      "date",
-      "likes",
-      "comments"
-    ],
-    "missing_reasons": {
-      "date": "No readable timestamp or calendar date was found on the content page or in its metadata.",
-      "likes": "No readable like count was found on the content page or in its metadata.",
-      "comments": "No readable comment count was found on the content page or in its metadata."
+    "missing": [],
+    "missing_reasons": {},
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T02:57:54.042Z",
+    "attempts": 1,
+    "fetched_at": "2026-11-14T02:57:54.042Z",
+    "date": "2026-10-16",
+    "date_precision": "day",
+    "date_source": "og_description_localized",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 55000,
+      "raw": "55K",
+      "approximate": true,
+      "source": "og_description_localized"
     },
-    "last_error": "Instagram rendered an empty page.",
-    "last_attempt_at": "2026-10-24T15:54:06.911Z",
-    "attempts": 1
+    "comments": {
+      "value": 464,
+      "raw": "464",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Comment"
+    },
+    "reshares": {
+      "value": 3726,
+      "raw": "3,726",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Repost"
+    },
+    "shares": {
+      "value": 73500,
+      "raw": "73.5K",
+      "approximate": true,
+      "source": "dom_action_control",
+      "label": "Share"
+    },
+    "likes_visibility": "not_shown",
+    "thumbnail_url": "https://instagram.fblr1-9.fna.fbcdn.net/v/t51.82787-15/848787240_18110180425970699_8595520131093185194_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=djY4UE0PBhsQ7kNvwFbxjhf&_nc_oc=AdqBzP1nWW0dTtS14Z8tdnSS0XgbhQHw-ZOlOjQovwY_8geGdPF9TIxoOiWfzVw-yfLauBjgsc232ybX-3FK1lZR&_nc_zt=23&_nc_ht=instagram.fblr1-9.fna&_nc_gid=JBi5Ea0MG8FKOnzbAUjb0Q&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQQRYx8Hlx0VaulHiBXyfetpiSQL4SyqqO2aKFFg_B6J7g&oe=6AFDA92C",
+    "media_url": null,
+    "raw": {
+      "description": "「#あらゆる追いかけっこを繰り広げる」 - 2026年10月16日、「いいね！」55K件、コメント464件 - hulksmash.exe",
+      "article_text": "hulksmash.exe\nFollow\n#あらゆる追いかけっこを繰り広げる\n54.6K\n464\n3,726\n73.5K\nyashna.alt\nFollow\nSystem Of A Down · Lonely Day\nIsn't it just true\n\n(System of a down, soad, byob, chop suey, aerials, toxicity, roulette, rock music, metal music, serj tankian, alternative women, alternative rock, alternative metal, grunge rock, post grunge, metalcore, heavymetal, hardrock, hardcore, nu metal, pop rock, industrial metal, industrial rock, modern metal, pop punk, punk rock, pop metal, post screamo, progressive rock progressive metal)\n145\n7\n1\n9",
+      "aria_text": "hulksmash.exe reels\nhulksmash.exe reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nyashna.alt reels\nyashna.alt reels\nAudio image\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "likes_visibility": "not_shown",
+        "comments": {
+          "raw": "464",
+          "source": "dom_action_control",
+          "label": "Comment"
+        },
+        "reshares": {
+          "raw": "3,726",
+          "source": "dom_action_control",
+          "label": "Repost"
+        },
+        "shares": {
+          "raw": "73.5K",
+          "source": "dom_action_control",
+          "label": "Share"
+        }
+      }
+    }
   },
   {
     "kind": "reel",
@@ -1081,27 +2400,74 @@
     "url": "https://www.instagram.com/reel/Dej2TnPBKVB/",
     "grid_views_raw": "1,574",
     "grid_views_issue": null,
-    "status": "partial",
+    "status": "complete",
     "views": {
       "value": 1574,
       "raw": "1,574",
       "approximate": false,
-      "source": "profile_grid",
-      "observed_at": "2026-10-23T14:40:36.024Z"
+      "source": "profile_grid"
     },
-    "missing": [
-      "date",
-      "likes",
-      "comments"
-    ],
-    "missing_reasons": {
-      "date": "No readable timestamp or calendar date was found on the content page or in its metadata.",
-      "likes": "No readable like count was found on the content page or in its metadata.",
-      "comments": "No readable comment count was found on the content page or in its metadata."
+    "missing": [],
+    "missing_reasons": {},
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T02:57:58.094Z",
+    "attempts": 1,
+    "fetched_at": "2026-11-14T02:57:58.094Z",
+    "date": "2026-10-16",
+    "date_precision": "day",
+    "date_source": "og_description_localized",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 32,
+      "raw": "32",
+      "approximate": false,
+      "source": "og_description_localized"
     },
-    "last_error": "Instagram rendered an empty page.",
-    "last_attempt_at": "2026-10-24T15:54:30.566Z",
-    "attempts": 1
+    "comments": {
+      "value": 0,
+      "raw": "0",
+      "approximate": false,
+      "source": "og_description_localized"
+    },
+    "reshares": {
+      "value": 5,
+      "raw": "5",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Repost"
+    },
+    "shares": {
+      "value": 38,
+      "raw": "38",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Share"
+    },
+    "likes_visibility": "not_shown",
+    "thumbnail_url": "https://instagram.fblr24-2.fna.fbcdn.net/v/t51.82787-15/851829109_18110073454970699_6653458998085921205_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=qZ68bcLjLHcQ7kNvwHKz7ZB&_nc_oc=Ado7AQmasYawVjHtuKHFpeLRngOZwTfbCX8PiVQY90BJ25-EbhtNuNXX7zFLfsbS_5vr6pjsJHvJfzi7mmBxTh2i&_nc_zt=23&_nc_ht=instagram.fblr24-2.fna&_nc_gid=AOnXglQ3c_GONbbrYdvV9Q&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQRQC6G6jbkDbrWGriYw_m4dx31mlMAmXUh5EO16BBQ9bg&oe=6AFD9099",
+    "media_url": null,
+    "raw": {
+      "description": "「#あらゆる追いかけっこを繰り広げる」 - 2026年10月16日、「いいね！」32件、コメント0件 - hulksmash.exe",
+      "article_text": "hulksmash.exe\nFollow\n#あらゆる追いかけっこを繰り広げる\n32\n5\n38\nyashna.alt\nFollow\nSystem Of A Down · Lonely Day\nIsn't it just true\n\n(System of a down, soad, byob, chop suey, aerials, toxicity, roulette, rock music, metal music, serj tankian, alternative women, alternative rock, alternative metal, grunge rock, post grunge, metalcore, heavymetal, hardrock, hardcore, nu metal, pop rock, industrial metal, industrial rock, modern metal, pop punk, punk rock, pop metal, post screamo, progressive rock progressive metal)\n145\n7\n1\n9",
+      "aria_text": "hulksmash.exe reels\nhulksmash.exe reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nyashna.alt reels\nyashna.alt reels\nAudio image\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "likes_visibility": "not_shown",
+        "reshares": {
+          "raw": "5",
+          "source": "dom_action_control",
+          "label": "Repost"
+        },
+        "shares": {
+          "raw": "38",
+          "source": "dom_action_control",
+          "label": "Share"
+        }
+      }
+    }
   },
   {
     "kind": "reel",
@@ -1109,27 +2475,78 @@
     "url": "https://www.instagram.com/reel/DejuXA1Sksf/",
     "grid_views_raw": "1,392",
     "grid_views_issue": null,
-    "status": "partial",
+    "status": "complete",
     "views": {
       "value": 1392,
       "raw": "1,392",
       "approximate": false,
-      "source": "profile_grid",
-      "observed_at": "2026-10-23T14:40:36.024Z"
+      "source": "profile_grid"
     },
-    "missing": [
-      "date",
-      "likes",
-      "comments"
+    "missing": [],
+    "missing_reasons": {},
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T02:58:01.942Z",
+    "attempts": 1,
+    "fetched_at": "2026-11-14T02:58:01.942Z",
+    "date": "2026-10-16",
+    "date_precision": "day",
+    "date_source": "og_description",
+    "caption": "And racist level #real #relatable #memes",
+    "hashtags": [
+      "#real",
+      "#relatable",
+      "#memes"
     ],
-    "missing_reasons": {
-      "date": "No readable timestamp or calendar date was found on the content page or in its metadata.",
-      "likes": "No readable like count was found on the content page or in its metadata.",
-      "comments": "No readable comment count was found on the content page or in its metadata."
+    "mentions": [],
+    "likes": {
+      "value": 83,
+      "raw": "83",
+      "approximate": false,
+      "source": "og_description"
     },
-    "last_error": "Instagram rendered an empty page.",
-    "last_attempt_at": "2026-10-24T15:54:54.093Z",
-    "attempts": 1
+    "comments": {
+      "value": 0,
+      "raw": "0",
+      "approximate": false,
+      "source": "og_description"
+    },
+    "reshares": {
+      "value": 9,
+      "raw": "9",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Repost"
+    },
+    "shares": {
+      "value": 56,
+      "raw": "56",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Share"
+    },
+    "likes_visibility": "not_shown",
+    "thumbnail_url": "https://instagram.fblr1-6.fna.fbcdn.net/v/t51.82787-15/849772677_18110056834970699_5997252266804751447_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=gV4gZANwFIkQ7kNvwEhGIv8&_nc_oc=AdoymSe3msb5a730RiPQbgDgh8qlK0W0NIDSbIxkj3hVbDRFaw5e-uCvH51p2Vf5HhtUyzaokhruh3i9QbXDVXT7&_nc_zt=23&_nc_ht=instagram.fblr1-6.fna&_nc_gid=RB2AzCqW6qSLFx3dMBSVAw&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQTgPH6bXl5JZo83Zx75UzOwML1-GClwxMlokmVEtf1v9Q&oe=6AFD8957",
+    "media_url": null,
+    "raw": {
+      "description": "83 likes, 0 comments - hulksmash.exe on October 16, 2026: \"And racist level #real #relatable #memes\". ",
+      "article_text": "hulksmash.exe\nFollow\nAnd racist level #real #relatable #memes\n83\n9\n56\nyashna.alt\nFollow\nSystem Of A Down · Lonely Day\nIsn't it just true\n\n(System of a down, soad, byob, chop suey, aerials, toxicity, roulette, rock music, metal music, serj tankian, alternative women, alternative rock, alternative metal, grunge rock, post grunge, metalcore, heavymetal, hardrock, hardcore, nu metal, pop rock, industrial metal, industrial rock, modern metal, pop punk, punk rock, pop metal, post screamo, progressive rock progressive metal)\n145\n7\n1\n9",
+      "aria_text": "hulksmash.exe reels\nhulksmash.exe reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nyashna.alt reels\nyashna.alt reels\nAudio image\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "likes_visibility": "not_shown",
+        "reshares": {
+          "raw": "9",
+          "source": "dom_action_control",
+          "label": "Repost"
+        },
+        "shares": {
+          "raw": "56",
+          "source": "dom_action_control",
+          "label": "Share"
+        }
+      }
+    }
   },
   {
     "kind": "reel",
@@ -1137,27 +2554,80 @@
     "url": "https://www.instagram.com/reel/DejpVdkM_Ms/",
     "grid_views_raw": "1.5M",
     "grid_views_issue": null,
-    "status": "partial",
+    "status": "complete",
     "views": {
       "value": 1500000,
       "raw": "1.5M",
       "approximate": true,
-      "source": "profile_grid",
-      "observed_at": "2026-10-23T14:40:36.024Z"
+      "source": "profile_grid"
     },
-    "missing": [
-      "date",
-      "likes",
-      "comments"
-    ],
-    "missing_reasons": {
-      "date": "No readable timestamp or calendar date was found on the content page or in its metadata.",
-      "likes": "No readable like count was found on the content page or in its metadata.",
-      "comments": "No readable comment count was found on the content page or in its metadata."
+    "missing": [],
+    "missing_reasons": {},
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T02:58:05.886Z",
+    "attempts": 1,
+    "fetched_at": "2026-11-14T02:58:05.886Z",
+    "date": "2026-10-16",
+    "date_precision": "day",
+    "date_source": "og_description_localized",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 96000,
+      "raw": "96K",
+      "approximate": true,
+      "source": "og_description_localized"
     },
-    "last_error": "Instagram rendered an empty page.",
-    "last_attempt_at": "2026-10-24T15:55:17.321Z",
-    "attempts": 1
+    "comments": {
+      "value": 1155,
+      "raw": "1,155",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Comment"
+    },
+    "reshares": {
+      "value": 5756,
+      "raw": "5,756",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Repost"
+    },
+    "shares": {
+      "value": 121000,
+      "raw": "121K",
+      "approximate": true,
+      "source": "dom_action_control",
+      "label": "Share"
+    },
+    "likes_visibility": "not_shown",
+    "thumbnail_url": "https://instagram.fblr1-8.fna.fbcdn.net/v/t51.82787-15/841248571_18110045551970699_994669195761347528_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=gkJQeWJSqfwQ7kNvwEc1g2v&_nc_oc=Adr6rTGXmtGwQVHMLeJ9BBvSNGGVUo8BU6PP69ittFqNQvZUCZVZVAdnN2Ho5Ni5y_5LzDmjvzI-R5PHJwvEp2OD&_nc_zt=23&_nc_ht=instagram.fblr1-8.fna&_nc_gid=113jtBtFyYExFkAHHL1TGg&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQQYhmra9f6IM9MxilE94MiaYJeKjBH2Edx23z1rMD944w&oe=6AFDAAF5",
+    "media_url": null,
+    "raw": {
+      "description": "「#あらゆる追いかけっこを繰り広げる」 - 2026年10月16日、「いいね！」96K件、コメント1,155件 - hulksmash.exe",
+      "article_text": "hulksmash.exe\nFollow\n#あらゆる追いかけっこを繰り広げる\n96.4K\n1,155\n5,756\n121K\nyashna.alt\nFollow\nSystem Of A Down · Lonely Day\nIsn't it just true\n\n(System of a down, soad, byob, chop suey, aerials, toxicity, roulette, rock music, metal music, serj tankian, alternative women, alternative rock, alternative metal, grunge rock, post grunge, metalcore, heavymetal, hardrock, hardcore, nu metal, pop rock, industrial metal, industrial rock, modern metal, pop punk, punk rock, pop metal, post screamo, progressive rock progressive metal)\n145\n7\n1\n9",
+      "aria_text": "hulksmash.exe reels\nhulksmash.exe reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nyashna.alt reels\nyashna.alt reels\nAudio image\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "likes_visibility": "not_shown",
+        "comments": {
+          "raw": "1,155",
+          "source": "dom_action_control",
+          "label": "Comment"
+        },
+        "reshares": {
+          "raw": "5,756",
+          "source": "dom_action_control",
+          "label": "Repost"
+        },
+        "shares": {
+          "raw": "121K",
+          "source": "dom_action_control",
+          "label": "Share"
+        }
+      }
+    }
   },
   {
     "kind": "reel",
@@ -1165,27 +2635,84 @@
     "url": "https://www.instagram.com/reel/DejfyMnh0CY/",
     "grid_views_raw": "6,055",
     "grid_views_issue": null,
-    "status": "partial",
+    "status": "complete",
     "views": {
       "value": 6055,
       "raw": "6,055",
       "approximate": false,
-      "source": "profile_grid",
-      "observed_at": "2026-10-23T14:40:36.024Z"
+      "source": "profile_grid"
     },
-    "missing": [
-      "date",
-      "likes",
-      "comments"
+    "missing": [],
+    "missing_reasons": {},
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T02:58:09.762Z",
+    "attempts": 1,
+    "fetched_at": "2026-11-14T02:58:09.762Z",
+    "date": "2026-10-16",
+    "date_precision": "day",
+    "date_source": "og_description",
+    "caption": "#fyp #viral #xyzbca",
+    "hashtags": [
+      "#fyp",
+      "#viral",
+      "#xyzbca"
     ],
-    "missing_reasons": {
-      "date": "No readable timestamp or calendar date was found on the content page or in its metadata.",
-      "likes": "No readable like count was found on the content page or in its metadata.",
-      "comments": "No readable comment count was found on the content page or in its metadata."
+    "mentions": [],
+    "likes": {
+      "value": 406,
+      "raw": "406",
+      "approximate": false,
+      "source": "og_description"
     },
-    "last_error": "Instagram rendered an empty page.",
-    "last_attempt_at": "2026-10-24T15:55:40.481Z",
-    "attempts": 1
+    "comments": {
+      "value": 37,
+      "raw": "37",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Comment"
+    },
+    "reshares": {
+      "value": 19,
+      "raw": "19",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Repost"
+    },
+    "shares": {
+      "value": 252,
+      "raw": "252",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Share"
+    },
+    "likes_visibility": "not_shown",
+    "thumbnail_url": "https://instagram.fblr24-3.fna.fbcdn.net/v/t51.82787-15/847917706_18110027863970699_2517580393325570696_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=c19ve-3vngcQ7kNvwEqod5Y&_nc_oc=AdruHvADmzx2l_lrMB9rZD50SgEt0AKKq6d2dxHWPOuIzeXtp6-wG1PlbT47MgeLCNArjqZL6p1Yw_QjenbW_uBb&_nc_zt=23&_nc_ht=instagram.fblr24-3.fna&_nc_gid=49AhJzF_rNd5vkAfH3KYlw&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQRXHNiOMWOwxj08orOZlUnJhm1_rCtF6bRT6qHYEVWKyQ&oe=6AFD853D",
+    "media_url": null,
+    "raw": {
+      "description": "406 likes, 37 comments - hulksmash.exe on October 16, 2026: \"#fyp #viral #xyzbca\". ",
+      "article_text": "hulksmash.exe\nFollow\n#fyp #viral #xyzbca\n406\n37\n19\n252\nyashna.alt\nFollow\nSystem Of A Down · Lonely Day\nIsn't it just true\n\n(System of a down, soad, byob, chop suey, aerials, toxicity, roulette, rock music, metal music, serj tankian, alternative women, alternative rock, alternative metal, grunge rock, post grunge, metalcore, heavymetal, hardrock, hardcore, nu metal, pop rock, industrial metal, industrial rock, modern metal, pop punk, punk rock, pop metal, post screamo, progressive rock progressive metal)\n145\n7\n1\n9",
+      "aria_text": "hulksmash.exe reels\nhulksmash.exe reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nyashna.alt reels\nyashna.alt reels\nAudio image\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "likes_visibility": "not_shown",
+        "comments": {
+          "raw": "37",
+          "source": "dom_action_control",
+          "label": "Comment"
+        },
+        "reshares": {
+          "raw": "19",
+          "source": "dom_action_control",
+          "label": "Repost"
+        },
+        "shares": {
+          "raw": "252",
+          "source": "dom_action_control",
+          "label": "Share"
+        }
+      }
+    }
   },
   {
     "kind": "reel",
@@ -1193,27 +2720,80 @@
     "url": "https://www.instagram.com/reel/DejZTIYBGOj/",
     "grid_views_raw": "1.6M",
     "grid_views_issue": null,
-    "status": "partial",
+    "status": "complete",
     "views": {
       "value": 1600000,
       "raw": "1.6M",
       "approximate": true,
-      "source": "profile_grid",
-      "observed_at": "2026-10-23T14:40:36.024Z"
+      "source": "profile_grid"
     },
-    "missing": [
-      "date",
-      "likes",
-      "comments"
-    ],
-    "missing_reasons": {
-      "date": "No readable timestamp or calendar date was found on the content page or in its metadata.",
-      "likes": "No readable like count was found on the content page or in its metadata.",
-      "comments": "No readable comment count was found on the content page or in its metadata."
+    "missing": [],
+    "missing_reasons": {},
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T02:58:13.704Z",
+    "attempts": 1,
+    "fetched_at": "2026-11-14T02:58:13.704Z",
+    "date": "2026-10-16",
+    "date_precision": "day",
+    "date_source": "og_description_localized",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 129000,
+      "raw": "129K",
+      "approximate": true,
+      "source": "og_description_localized"
     },
-    "last_error": "Instagram rendered an empty page.",
-    "last_attempt_at": "2026-10-24T15:56:03.592Z",
-    "attempts": 1
+    "comments": {
+      "value": 903,
+      "raw": "903",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Comment"
+    },
+    "reshares": {
+      "value": 3740,
+      "raw": "3,740",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Repost"
+    },
+    "shares": {
+      "value": 258000,
+      "raw": "258K",
+      "approximate": true,
+      "source": "dom_action_control",
+      "label": "Share"
+    },
+    "likes_visibility": "not_shown",
+    "thumbnail_url": "https://instagram.fblr24-3.fna.fbcdn.net/v/t51.82787-15/851829333_18110017897970699_2529634110373366680_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=bFXkWThJML4Q7kNvwFCg0s8&_nc_oc=Adotwbnm90y5oazckRRvQ6kPb0SitIbM0ZDUGxRzogkoswWD9aVsOk6u3gunfzu-yeckAoHDGrBVBG0fbYMYTP_u&_nc_zt=23&_nc_ht=instagram.fblr24-3.fna&_nc_gid=pGgpx0Cy5mn5SwGtGrjLvg&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQSD6Gucb10zkVhXt9czpnaQRL3a7RW6BhCfyjQEMyWqgA&oe=6AFDA9ED",
+    "media_url": null,
+    "raw": {
+      "description": "「#あらゆる追いかけっこを繰り広げる」 - 2026年10月16日、「いいね！」129K件、コメント903件 - hulksmash.exe",
+      "article_text": "hulksmash.exe\nFollow\n#あらゆる追いかけっこを繰り広げる\n128K\n903\n3,740\n258K\nyashna.alt\nFollow\nSystem Of A Down · Lonely Day\nIsn't it just true\n\n(System of a down, soad, byob, chop suey, aerials, toxicity, roulette, rock music, metal music, serj tankian, alternative women, alternative rock, alternative metal, grunge rock, post grunge, metalcore, heavymetal, hardrock, hardcore, nu metal, pop rock, industrial metal, industrial rock, modern metal, pop punk, punk rock, pop metal, post screamo, progressive rock progressive metal)\n145\n7\n1\n9",
+      "aria_text": "hulksmash.exe reels\nhulksmash.exe reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nyashna.alt reels\nyashna.alt reels\nAudio image\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "likes_visibility": "not_shown",
+        "comments": {
+          "raw": "903",
+          "source": "dom_action_control",
+          "label": "Comment"
+        },
+        "reshares": {
+          "raw": "3,740",
+          "source": "dom_action_control",
+          "label": "Repost"
+        },
+        "shares": {
+          "raw": "258K",
+          "source": "dom_action_control",
+          "label": "Share"
+        }
+      }
+    }
   },
   {
     "kind": "reel",
@@ -1221,27 +2801,80 @@
     "url": "https://www.instagram.com/reel/DejQ54KP7bq/",
     "grid_views_raw": "107K",
     "grid_views_issue": null,
-    "status": "partial",
+    "status": "complete",
     "views": {
       "value": 107000,
       "raw": "107K",
       "approximate": true,
-      "source": "profile_grid",
-      "observed_at": "2026-10-23T14:40:36.024Z"
+      "source": "profile_grid"
     },
-    "missing": [
-      "date",
-      "likes",
-      "comments"
-    ],
-    "missing_reasons": {
-      "date": "No readable timestamp or calendar date was found on the content page or in its metadata.",
-      "likes": "No readable like count was found on the content page or in its metadata.",
-      "comments": "No readable comment count was found on the content page or in its metadata."
+    "missing": [],
+    "missing_reasons": {},
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T02:58:17.502Z",
+    "attempts": 1,
+    "fetched_at": "2026-11-14T02:58:17.502Z",
+    "date": "2026-10-16",
+    "date_precision": "day",
+    "date_source": "og_description_localized",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 10000,
+      "raw": "10K",
+      "approximate": true,
+      "source": "og_description_localized"
     },
-    "last_error": "Instagram rendered an empty page.",
-    "last_attempt_at": "2026-10-24T15:56:26.570Z",
-    "attempts": 1
+    "comments": {
+      "value": 13,
+      "raw": "13",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Comment"
+    },
+    "reshares": {
+      "value": 688,
+      "raw": "688",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Repost"
+    },
+    "shares": {
+      "value": 10900,
+      "raw": "10.9K",
+      "approximate": true,
+      "source": "dom_action_control",
+      "label": "Share"
+    },
+    "likes_visibility": "not_shown",
+    "thumbnail_url": "https://instagram.fblr1-5.fna.fbcdn.net/v/t51.82787-15/853050637_18110003842970699_1877346638551561404_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=8yadsZ26TokQ7kNvwFBUsS3&_nc_oc=AdrRxufWvn3FmvMe2bhau17yJgiuuF5n8_Ndh_FXuUN57neiBpcIXDZ5tCwn-flj115HBuNTDKK0tRUIxbuOWvcw&_nc_zt=23&_nc_ht=instagram.fblr1-5.fna&_nc_gid=uDLSXRPjFnA3Na-8sshr3w&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQRpgNtgTguNMmzAYBGMYXhxvnGIdUnub1v4xiQpqp8qew&oe=6AFDA57D",
+    "media_url": null,
+    "raw": {
+      "description": "「#あらゆる追いかけっこを繰り広げる」 - 2026年10月16日、「いいね！」10K件、コメント13件 - hulksmash.exe",
+      "article_text": "hulksmash.exe\nFollow\n#あらゆる追いかけっこを繰り広げる\n10.1K\n13\n688\n10.9K\nyashna.alt\nFollow\nSystem Of A Down · Lonely Day\nIsn't it just true\n\n(System of a down, soad, byob, chop suey, aerials, toxicity, roulette, rock music, metal music, serj tankian, alternative women, alternative rock, alternative metal, grunge rock, post grunge, metalcore, heavymetal, hardrock, hardcore, nu metal, pop rock, industrial metal, industrial rock, modern metal, pop punk, punk rock, pop metal, post screamo, progressive rock progressive metal)\n145\n7\n1\n9",
+      "aria_text": "hulksmash.exe reels\nhulksmash.exe reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nyashna.alt reels\nyashna.alt reels\nAudio image\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "likes_visibility": "not_shown",
+        "comments": {
+          "raw": "13",
+          "source": "dom_action_control",
+          "label": "Comment"
+        },
+        "reshares": {
+          "raw": "688",
+          "source": "dom_action_control",
+          "label": "Repost"
+        },
+        "shares": {
+          "raw": "10.9K",
+          "source": "dom_action_control",
+          "label": "Share"
+        }
+      }
+    }
   },
   {
     "kind": "reel",
@@ -1249,27 +2882,80 @@
     "url": "https://www.instagram.com/reel/DejBf4hBohU/",
     "grid_views_raw": "676K",
     "grid_views_issue": null,
-    "status": "partial",
+    "status": "complete",
     "views": {
       "value": 676000,
       "raw": "676K",
       "approximate": true,
-      "source": "profile_grid",
-      "observed_at": "2026-10-23T14:40:36.024Z"
+      "source": "profile_grid"
     },
-    "missing": [
-      "date",
-      "likes",
-      "comments"
-    ],
-    "missing_reasons": {
-      "date": "No readable timestamp or calendar date was found on the content page or in its metadata.",
-      "likes": "No readable like count was found on the content page or in its metadata.",
-      "comments": "No readable comment count was found on the content page or in its metadata."
+    "missing": [],
+    "missing_reasons": {},
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T02:58:21.606Z",
+    "attempts": 1,
+    "fetched_at": "2026-11-14T02:58:21.606Z",
+    "date": "2026-10-16",
+    "date_precision": "day",
+    "date_source": "og_description_localized",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 23000,
+      "raw": "23K",
+      "approximate": true,
+      "source": "og_description_localized"
     },
-    "last_error": "Instagram rendered an empty page.",
-    "last_attempt_at": "2026-10-24T15:56:49.617Z",
-    "attempts": 1
+    "comments": {
+      "value": 354,
+      "raw": "354",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Comment"
+    },
+    "reshares": {
+      "value": 1249,
+      "raw": "1,249",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Repost"
+    },
+    "shares": {
+      "value": 37200,
+      "raw": "37.2K",
+      "approximate": true,
+      "source": "dom_action_control",
+      "label": "Share"
+    },
+    "likes_visibility": "not_shown",
+    "thumbnail_url": "https://instagram.fblr24-3.fna.fbcdn.net/v/t51.82787-15/848535748_18109980841970699_9202402979862703794_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=7dXpcuwo76QQ7kNvwEkjUL0&_nc_oc=AdpzBvKHvrufIBE7pb4LjNRJBt6oFWTl4hFZQkgyqZobItVXkVVX7owJemYkBBh9QPcLQc7tIkdbAk5NW51CH3-2&_nc_zt=23&_nc_ht=instagram.fblr24-3.fna&_nc_gid=5ypsEMx2Bq9JiXGNx36oEw&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQRbNfOKIIcLB0UKOU9TBakV5iBxbD5GSWdbDK8-Taw5ig&oe=6AFD985A",
+    "media_url": null,
+    "raw": {
+      "description": "「#あらゆる追いかけっこを繰り広げる」 - 2026年10月16日、「いいね！」23K件、コメント354件 - hulksmash.exe",
+      "article_text": "hulksmash.exe\nFollow\nKCK Mixes · Holy Rage Bait\n#あらゆる追いかけっこを繰り広げる\n23.3K\n354\n1,249\n37.2K\nyashna.alt\nFollow\nSystem Of A Down · Lonely Day\nIsn't it just true\n\n(System of a down, soad, byob, chop suey, aerials, toxicity, roulette, rock music, metal music, serj tankian, alternative women, alternative rock, alternative metal, grunge rock, post grunge, metalcore, heavymetal, hardrock, hardcore, nu metal, pop rock, industrial metal, industrial rock, modern metal, pop punk, punk rock, pop metal, post screamo, progressive rock progressive metal)\n145\n7\n1\n9",
+      "aria_text": "hulksmash.exe reels\nhulksmash.exe reels\nAudio image\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nyashna.alt reels\nyashna.alt reels\nAudio image\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "likes_visibility": "not_shown",
+        "comments": {
+          "raw": "354",
+          "source": "dom_action_control",
+          "label": "Comment"
+        },
+        "reshares": {
+          "raw": "1,249",
+          "source": "dom_action_control",
+          "label": "Repost"
+        },
+        "shares": {
+          "raw": "37.2K",
+          "source": "dom_action_control",
+          "label": "Share"
+        }
+      }
+    }
   },
   {
     "kind": "reel",
@@ -1277,27 +2963,80 @@
     "url": "https://www.instagram.com/reel/Dei6D8NSrqF/",
     "grid_views_raw": "368K",
     "grid_views_issue": null,
-    "status": "partial",
+    "status": "complete",
     "views": {
       "value": 368000,
       "raw": "368K",
       "approximate": true,
-      "source": "profile_grid",
-      "observed_at": "2026-10-23T14:40:36.024Z"
+      "source": "profile_grid"
     },
-    "missing": [
-      "date",
-      "likes",
-      "comments"
-    ],
-    "missing_reasons": {
-      "date": "No readable timestamp or calendar date was found on the content page or in its metadata.",
-      "likes": "No readable like count was found on the content page or in its metadata.",
-      "comments": "No readable comment count was found on the content page or in its metadata."
+    "missing": [],
+    "missing_reasons": {},
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T02:58:25.389Z",
+    "attempts": 1,
+    "fetched_at": "2026-11-14T02:58:25.389Z",
+    "date": "2026-10-15",
+    "date_precision": "day",
+    "date_source": "og_description_localized",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 37000,
+      "raw": "37K",
+      "approximate": true,
+      "source": "og_description_localized"
     },
-    "last_error": "Instagram rendered an empty page.",
-    "last_attempt_at": "2026-10-24T15:57:12.652Z",
-    "attempts": 1
+    "comments": {
+      "value": 168,
+      "raw": "168",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Comment"
+    },
+    "reshares": {
+      "value": 2162,
+      "raw": "2,162",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Repost"
+    },
+    "shares": {
+      "value": 36800,
+      "raw": "36.8K",
+      "approximate": true,
+      "source": "dom_action_control",
+      "label": "Share"
+    },
+    "likes_visibility": "not_shown",
+    "thumbnail_url": "https://instagram.fblr1-3.fna.fbcdn.net/v/t51.82787-15/851828991_18109970008970699_577014435275137287_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=FEPTwz24w6MQ7kNvwGk5VKJ&_nc_oc=AdpslQJ2G8mmYRl-O7zkmYLK16OHyfmHJeovLjgJk1DaYLMtnY6DT_ZSXyOuRQIc4G8nlMd_xyueLne5cq8Upglm&_nc_zt=23&_nc_ht=instagram.fblr1-3.fna&_nc_gid=hNu2oBPuYJkXmh-r-cPM0Q&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQRJnLUDJruv9uY4TYfzHLsISkJ-4D0XfJ8ejAWbEf0rmg&oe=6AFD8DFE",
+    "media_url": null,
+    "raw": {
+      "description": "「#あらゆる追いかけっこを繰り広げる」 - 2026年10月15日、「いいね！」37K件、コメント168件 - hulksmash.exe",
+      "article_text": "hulksmash.exe\nFollow\n#あらゆる追いかけっこを繰り広げる\n36.5K\n168\n2,162\n36.8K\npibblepan\nFollow\nSnafu. · The Pibble Theme\npibble pibble\n\n694\n8,085\n23\n704\n2,925",
+      "aria_text": "hulksmash.exe reels\nhulksmash.exe reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\npibblepan reels\npibblepan reels\nVerified\nAudio image\nExplicit\nAudio image\nExplicit\nRepost\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "likes_visibility": "not_shown",
+        "comments": {
+          "raw": "168",
+          "source": "dom_action_control",
+          "label": "Comment"
+        },
+        "reshares": {
+          "raw": "2,162",
+          "source": "dom_action_control",
+          "label": "Repost"
+        },
+        "shares": {
+          "raw": "36.8K",
+          "source": "dom_action_control",
+          "label": "Share"
+        }
+      }
+    }
   },
   {
     "kind": "reel",
@@ -1305,27 +3044,80 @@
     "url": "https://www.instagram.com/reel/DeixvXlBWpv/",
     "grid_views_raw": "98.9K",
     "grid_views_issue": null,
-    "status": "partial",
+    "status": "complete",
     "views": {
       "value": 98900,
       "raw": "98.9K",
       "approximate": true,
-      "source": "profile_grid",
-      "observed_at": "2026-10-23T14:40:36.024Z"
+      "source": "profile_grid"
     },
-    "missing": [
-      "date",
-      "likes",
-      "comments"
-    ],
-    "missing_reasons": {
-      "date": "No readable timestamp or calendar date was found on the content page or in its metadata.",
-      "likes": "No readable like count was found on the content page or in its metadata.",
-      "comments": "No readable comment count was found on the content page or in its metadata."
+    "missing": [],
+    "missing_reasons": {},
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T02:58:29.239Z",
+    "attempts": 1,
+    "fetched_at": "2026-11-14T02:58:29.239Z",
+    "date": "2026-10-15",
+    "date_precision": "day",
+    "date_source": "og_description_localized",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 11000,
+      "raw": "11K",
+      "approximate": true,
+      "source": "og_description_localized"
     },
-    "last_error": "Instagram rendered an empty page.",
-    "last_attempt_at": "2026-10-24T15:57:35.774Z",
-    "attempts": 1
+    "comments": {
+      "value": 72,
+      "raw": "72",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Comment"
+    },
+    "reshares": {
+      "value": 785,
+      "raw": "785",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Repost"
+    },
+    "shares": {
+      "value": 8688,
+      "raw": "8,688",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Share"
+    },
+    "likes_visibility": "not_shown",
+    "thumbnail_url": "https://instagram.fblr1-4.fna.fbcdn.net/v/t51.82787-15/851828843_18109947349970699_5888313975726105429_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=XIxBaWZYxSIQ7kNvwG-BgC-&_nc_oc=AdrHsIz_H7ifs7vW4y4qaxZSBlP9Yp3LVySFYab6xsh1BOm1fYokGJcTUWAOWpXcJr9gUZHL9iMRpCWu87m7__Jh&_nc_zt=23&_nc_ht=instagram.fblr1-4.fna&_nc_gid=tJkDnSUCt6WTI-zYCXbRyA&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQSVFCC23KyHqUFx1dl_2ksrVASl4YF5wvNWV4JSpPRDJQ&oe=6AFDA203",
+    "media_url": null,
+    "raw": {
+      "description": "「#あらゆる追いかけっこを繰り広げる」 - 2026年10月15日、「いいね！」11K件、コメント72件 - hulksmash.exe",
+      "article_text": "hulksmash.exe\nFollow\n#あらゆる追いかけっこを繰り広げる\n10.5K\n72\n785\n8,688\naussietookem\nFollow\nkei truck brainslop\n#keitruck #jdm #car\n77.3K\n307\n4,817\n39.5K",
+      "aria_text": "hulksmash.exe reels\nhulksmash.exe reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\naussietookem reels\naussietookem reels\nVerified\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "likes_visibility": "not_shown",
+        "comments": {
+          "raw": "72",
+          "source": "dom_action_control",
+          "label": "Comment"
+        },
+        "reshares": {
+          "raw": "785",
+          "source": "dom_action_control",
+          "label": "Repost"
+        },
+        "shares": {
+          "raw": "8,688",
+          "source": "dom_action_control",
+          "label": "Share"
+        }
+      }
+    }
   },
   {
     "kind": "reel",
@@ -1333,27 +3125,82 @@
     "url": "https://www.instagram.com/reel/DeiouUtg3UL/",
     "grid_views_raw": "181K",
     "grid_views_issue": null,
-    "status": "partial",
+    "status": "complete",
     "views": {
       "value": 181000,
       "raw": "181K",
       "approximate": true,
-      "source": "profile_grid",
-      "observed_at": "2026-10-23T14:40:36.024Z"
+      "source": "profile_grid"
     },
-    "missing": [
-      "date",
-      "likes",
-      "comments"
+    "missing": [],
+    "missing_reasons": {},
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T02:58:32.969Z",
+    "attempts": 1,
+    "fetched_at": "2026-11-14T02:58:32.969Z",
+    "date": "2026-10-15",
+    "date_precision": "day",
+    "date_source": "og_description",
+    "caption": "#あらゆる追いかけっこを繰り広げる",
+    "hashtags": [
+      "#あらゆる追いかけっこを繰り広げる"
     ],
-    "missing_reasons": {
-      "date": "No readable timestamp or calendar date was found on the content page or in its metadata.",
-      "likes": "No readable like count was found on the content page or in its metadata.",
-      "comments": "No readable comment count was found on the content page or in its metadata."
+    "mentions": [],
+    "likes": {
+      "value": 11000,
+      "raw": "11K",
+      "approximate": true,
+      "source": "og_description"
     },
-    "last_error": "Instagram rendered an empty page.",
-    "last_attempt_at": "2026-10-24T15:57:58.715Z",
-    "attempts": 1
+    "comments": {
+      "value": 36,
+      "raw": "36",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Comment"
+    },
+    "reshares": {
+      "value": 502,
+      "raw": "502",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Repost"
+    },
+    "shares": {
+      "value": 23000,
+      "raw": "23K",
+      "approximate": true,
+      "source": "dom_action_control",
+      "label": "Share"
+    },
+    "likes_visibility": "not_shown",
+    "thumbnail_url": "https://instagram.fblr1-3.fna.fbcdn.net/v/t51.82787-15/852037320_18109920706970699_2349795939045129244_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=5nOarixOE2wQ7kNvwFz88Jv&_nc_oc=AdpEuJkVQKpsZuWC5UQ2njxHlZwAJkOiTG0phDoyHPuScAWesDzVO1ip19sPkbd2qbb_K4jjO5GUjEqgG7TQl4ze&_nc_zt=23&_nc_ht=instagram.fblr1-3.fna&_nc_gid=JjpT1hkS-ZWLmRlTycuWYA&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQQlKQbtxeEWpn-h-iH3kzwS841lKwev-L-8I2l5QqPwGw&oe=6AFDBA01",
+    "media_url": null,
+    "raw": {
+      "description": "11K likes, 36 comments - hulksmash.exe on October 15, 2026: \"#あらゆる追いかけっこを繰り広げる\". ",
+      "article_text": "hulksmash.exe\nFollow\n#あらゆる追いかけっこを繰り広げる\n10.9K\n36\n502\n23K\naussietookem\nFollow\nkei truck brainslop\n#keitruck #jdm #car\n77.3K\n307\n4,817\n39.5K",
+      "aria_text": "hulksmash.exe reels\nhulksmash.exe reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\naussietookem reels\naussietookem reels\nVerified\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "likes_visibility": "not_shown",
+        "comments": {
+          "raw": "36",
+          "source": "dom_action_control",
+          "label": "Comment"
+        },
+        "reshares": {
+          "raw": "502",
+          "source": "dom_action_control",
+          "label": "Repost"
+        },
+        "shares": {
+          "raw": "23K",
+          "source": "dom_action_control",
+          "label": "Share"
+        }
+      }
+    }
   },
   {
     "kind": "reel",
@@ -1361,26 +3208,79 @@
     "url": "https://www.instagram.com/reel/DehIKRLN5GT/",
     "grid_views_raw": "2.3M",
     "grid_views_issue": null,
-    "status": "partial",
+    "status": "complete",
     "views": {
       "value": 2300000,
       "raw": "2.3M",
       "approximate": true,
-      "source": "profile_grid",
-      "observed_at": "2026-10-23T14:40:36.024Z"
+      "source": "profile_grid"
     },
-    "missing": [
-      "date",
-      "likes",
-      "comments"
-    ],
-    "missing_reasons": {
-      "date": "No readable timestamp or calendar date was found on the content page or in its metadata.",
-      "likes": "No readable like count was found on the content page or in its metadata.",
-      "comments": "No readable comment count was found on the content page or in its metadata."
+    "missing": [],
+    "missing_reasons": {},
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T02:58:37.129Z",
+    "attempts": 1,
+    "fetched_at": "2026-11-14T02:58:37.129Z",
+    "date": "2026-10-15",
+    "date_precision": "day",
+    "date_source": "og_description_localized",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": {
+      "value": 91000,
+      "raw": "91K",
+      "approximate": true,
+      "source": "og_description_localized"
     },
-    "last_error": "Instagram rendered an empty page.",
-    "last_attempt_at": "2026-10-24T15:58:21.648Z",
-    "attempts": 1
+    "comments": {
+      "value": 429,
+      "raw": "429",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Comment"
+    },
+    "reshares": {
+      "value": 2114,
+      "raw": "2,114",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Repost"
+    },
+    "shares": {
+      "value": 228000,
+      "raw": "228K",
+      "approximate": true,
+      "source": "dom_action_control",
+      "label": "Share"
+    },
+    "likes_visibility": "not_shown",
+    "thumbnail_url": "https://instagram.fblr1-4.fna.fbcdn.net/v/t51.82787-15/851829868_18109754674970699_7240498635480253649_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=KOEDvUpD4acQ7kNvwGBPise&_nc_oc=AdoZ--0VYqoYTBzPIpVJy-_I2fdHCwOwzgHzk-ilQntRevGa1DA-90iQ4SzcKHD7yh_zhf-NStoNgzQ18iuXC48N&_nc_zt=23&_nc_ht=instagram.fblr1-4.fna&_nc_gid=AXuIhhEcI6Yisru4U7L5ng&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQSHkmMdijJaYQem-HQRtniR8azrnJz_V_YnjnPAZRyCRg&oe=6AFD8717",
+    "media_url": null,
+    "raw": {
+      "description": "「#あらゆる追いかけっこを繰り広げる」 - 2026年10月15日、「いいね！」91K件、コメント429件 - hulksmash.exe",
+      "article_text": "hulksmash.exe\nFollow\n#あらゆる追いかけっこを繰り広げる\n91.2K\n429\n2,114\n228K\naussietookem\nFollow\nkei truck brainslop\n#keitruck #jdm #car\n77.3K\n307\n4,817\n39.5K",
+      "aria_text": "hulksmash.exe reels\nhulksmash.exe reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\naussietookem reels\naussietookem reels\nVerified\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "likes_visibility": "not_shown",
+        "comments": {
+          "raw": "429",
+          "source": "dom_action_control",
+          "label": "Comment"
+        },
+        "reshares": {
+          "raw": "2,114",
+          "source": "dom_action_control",
+          "label": "Repost"
+        },
+        "shares": {
+          "raw": "228K",
+          "source": "dom_action_control",
+          "label": "Share"
+        }
+      }
+    }
   }
 ]
