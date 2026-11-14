@@ -30,7 +30,8 @@
       "value": 3334,
       "raw": "3,334",
       "approximate": false,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:22:28.246Z"
     },
     "thumbnail_url": "https://instagram.fblr1-6.fna.fbcdn.net/v/t51.82787-15/858088649_4051431285163580_398759506545902146_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=thXAtPRMjycQ7kNvwG_HC_K&_nc_oc=AdpewW1TEIbX4hrJ10malh1IW9V83jDDTG-UG20TlYr2ak51atnzZSfosKj1Nd_0of9Tq1vrYSavoo0Bb9n87mqW&_nc_zt=23&_nc_ht=instagram.fblr1-6.fna&_nc_gid=Nz1rvLM_CPgAuBUU_ixSeA&_nc_ss=7e6a8&oh=00_AQSqTYu04Va85YWPfsWGp6ynaP_dAvpTESTVRwYoMuwuHg&oe=6AE7A989&ig_cache_key=MDJSQVF6QnNsa0pUTUh3V1FPQUR5R2xWb0hxSzJJQlVLQ2VwSTpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
@@ -76,7 +77,8 @@
       "value": 123000,
       "raw": "123K",
       "approximate": true,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:22:28.246Z"
     },
     "thumbnail_url": "https://instagram.fblr24-2.fna.fbcdn.net/v/t51.82787-15/858893638_1466020505396255_6689773627399071052_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=aCG-RRH_1VoQ7kNvwEF4v_T&_nc_oc=AdrTsypx4RJ5eIeB4CaBq8UyJZWfHxMRLvT_CLmypNcorCO3dnTNQTAQ0Xx6_-6D3OJPUOWSGRVjM99nagdbKVNr&_nc_zt=23&_nc_ht=instagram.fblr24-2.fna&_nc_gid=fotl5L7urBIlKWT_CbTAHQ&_nc_ss=7f6a8&oh=00_AQRmO3hOWi4ZoT53YQwwYNzUTUMYr2p_e7pa_6N8UrZKfQ&oe=6AE7C0A2&ig_cache_key=MDJSQVF6QmthdE1UTUhWalVGQUI4a2RYOEhxOW5XWEV6bDVaQTpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
@@ -124,7 +126,8 @@
       "value": 4799,
       "raw": "4,799",
       "approximate": false,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:22:28.246Z"
     },
     "thumbnail_url": "https://instagram.fblr24-3.fna.fbcdn.net/v/t51.82787-15/863353500_18141960589579204_2565590918975411646_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=eEKr2sDhhnwQ7kNvwECieu-&_nc_oc=AdpBwn_V-0Blo2poMBuCoNeav4RnORFLZ_CvrgPVPT01WlwAOkEKcSbN3DIoQMnk5FTT-OpHYvkLJNyK02kSEjeM&_nc_zt=23&_nc_ht=instagram.fblr24-3.fna&_nc_gid=7TfM502Xk-6LB0qRHkUTPA&_nc_ss=7f6a8&oh=00_AQSDmzTsXU-GmGc3YmvxrUOMJ6fpyUa6KYdS6yE7QUtbHg&oe=6AE7B3FE&ig_cache_key=MDJSQVF6QnB5NmRUTUhCSFJBQU1TVGVGd0hXY19hSTc1VmZ3UTpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
@@ -145,10 +148,24 @@
     "url": "https://www.instagram.com/reel/De1gXVHIEMs/",
     "grid_views_raw": "22.6K",
     "grid_views_issue": null,
-    "status": "failed",
-    "last_error": "Instagram reports this page is unavailable.",
-    "last_attempt_at": "2026-10-28T11:53:49.983Z",
-    "attempts": 1
+    "status": "archived",
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T04:27:43.707Z",
+    "attempts": 3,
+    "missing": [],
+    "missing_reasons": {},
+    "deletion_check": {
+      "status": "deleted",
+      "checked_at": "2026-11-14T04:28:33.115Z",
+      "source": "user_instruction_after_retry",
+      "verified_by": "user_assessment",
+      "reason": "User directed these eight reels to be marked deleted following unavailable-page results on retry. The user reports the parent account still exists.",
+      "evidence": "All eight saved failed URLs were retried and returned unavailable-page results, including the initially aborted navigation on a second attempt. Deletion is the user-directed classification, not an Instagram-confirmed cause; no new network check was performed for this resolution.",
+      "previous_status": "failed",
+      "previous_last_error": "Instagram reports this page is unavailable.",
+      "previous_missing": [],
+      "previous_missing_reasons": {}
+    }
   },
   {
     "kind": "reel",
@@ -181,7 +198,8 @@
       "value": 801,
       "raw": "801",
       "approximate": false,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:22:28.246Z"
     },
     "thumbnail_url": "https://instagram.fblr1-8.fna.fbcdn.net/v/t51.82787-15/861421670_2312462342940292_1700812822792619041_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=MTpM0_I7kPUQ7kNvwGp5ZqF&_nc_oc=AdoRe2O4yEmbBQRHNVYx_T1Sf2iPl0JWrMIMJyA3bAipkeZdjyDnjQpK5lMIddkuHH3qVGfXtUrlybXuWn6ABr5T&_nc_zt=23&_nc_ht=instagram.fblr1-8.fna&_nc_gid=rlEqQQ2GCIU2NZclwb2NrQ&_nc_ss=7f6a8&oh=00_AQSb5naYBDc7SRKySAkP5811iUi8Wi5Mqf-GwnMRFYUCvQ&oe=6AE7B5EA&ig_cache_key=MDJSQVF6Qm1aQVdETUhMRGNJQUlUbWdSZ0hRSUNhRnlIRV8wTTpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
@@ -202,10 +220,24 @@
     "url": "https://www.instagram.com/reel/De0NuY6Is7s/",
     "grid_views_raw": "14.9K",
     "grid_views_issue": null,
-    "status": "failed",
-    "last_error": "Instagram reports this page is unavailable.",
-    "last_attempt_at": "2026-10-28T11:53:57.348Z",
-    "attempts": 1
+    "status": "archived",
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T04:25:11.598Z",
+    "attempts": 2,
+    "missing": [],
+    "missing_reasons": {},
+    "deletion_check": {
+      "status": "deleted",
+      "checked_at": "2026-11-14T04:28:33.115Z",
+      "source": "user_instruction_after_retry",
+      "verified_by": "user_assessment",
+      "reason": "User directed these eight reels to be marked deleted following unavailable-page results on retry. The user reports the parent account still exists.",
+      "evidence": "All eight saved failed URLs were retried and returned unavailable-page results, including the initially aborted navigation on a second attempt. Deletion is the user-directed classification, not an Instagram-confirmed cause; no new network check was performed for this resolution.",
+      "previous_status": "failed",
+      "previous_last_error": "Instagram reports this page is unavailable.",
+      "previous_missing": [],
+      "previous_missing_reasons": {}
+    }
   },
   {
     "kind": "reel",
@@ -213,10 +245,24 @@
     "url": "https://www.instagram.com/reel/De0MZVaoHZF/",
     "grid_views_raw": "5,748",
     "grid_views_issue": null,
-    "status": "failed",
-    "last_error": "Instagram reports this page is unavailable.",
-    "last_attempt_at": "2026-10-28T11:54:00.670Z",
-    "attempts": 1
+    "status": "archived",
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T04:25:15.156Z",
+    "attempts": 2,
+    "missing": [],
+    "missing_reasons": {},
+    "deletion_check": {
+      "status": "deleted",
+      "checked_at": "2026-11-14T04:28:33.115Z",
+      "source": "user_instruction_after_retry",
+      "verified_by": "user_assessment",
+      "reason": "User directed these eight reels to be marked deleted following unavailable-page results on retry. The user reports the parent account still exists.",
+      "evidence": "All eight saved failed URLs were retried and returned unavailable-page results, including the initially aborted navigation on a second attempt. Deletion is the user-directed classification, not an Instagram-confirmed cause; no new network check was performed for this resolution.",
+      "previous_status": "failed",
+      "previous_last_error": "Instagram reports this page is unavailable.",
+      "previous_missing": [],
+      "previous_missing_reasons": {}
+    }
   },
   {
     "kind": "reel",
@@ -249,7 +295,8 @@
       "value": 107000,
       "raw": "107K",
       "approximate": true,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:22:28.246Z"
     },
     "thumbnail_url": "https://instagram.fblr1-7.fna.fbcdn.net/v/t51.82787-15/862575682_2295789757821774_6548507038152418152_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=HuR8W0MkMzUQ7kNvwHfWsq4&_nc_oc=AdoS99qSkH4jUQ2081QSW9D8PUpLodyAk3L3w-knVvVwKYag2dChFK8ppqsvGRUqe4RBHxRWi8MQ6_DsUJl7Bi6W&_nc_zt=23&_nc_ht=instagram.fblr1-7.fna&_nc_gid=M4u9I-uPqQ7-nzz6OgboCg&_nc_ss=7f6a8&oh=00_AQSHtDMI1K1r1sgJi5XHTsPtVZ1UVAJHHA6bbSJE6iS_Ww&oe=6AE7CFE1&ig_cache_key=MDJSQVF6QmtMY2FUTUhBaWdJQUU1ei1qUUhkUGpnV21oak9LbzpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
@@ -295,7 +342,8 @@
       "value": 103000,
       "raw": "103K",
       "approximate": true,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:22:28.246Z"
     },
     "thumbnail_url": "https://instagram.fblr24-3.fna.fbcdn.net/v/t51.82787-15/861774949_3019490755049983_6727506397809606733_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=GDwiV_csJ_oQ7kNvwHjITeC&_nc_oc=AdpS9Rd98Gf8VkTF1r-9ztA2u4vLUcnXQgVz-r8EqExvQBy6LwfXk9Ktg3ptkwC-HF2wa5WnYEWCFg_DBHtvf4w2&_nc_zt=23&_nc_ht=instagram.fblr24-3.fna&_nc_gid=fNc4Hdu83BIJ3xMVS4cBRA&_nc_ss=7f6a8&oh=00_AQS_bBe36CuBJhcd7vKvCZmpIGhufe4uqKIAhjGYX-XL-A&oe=6AE7B706&ig_cache_key=MDJSQVF6Qm1Xa1hUTUhOYm9LQVA5NTIta0hiT2RjWFUwQW5NazpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
@@ -316,10 +364,24 @@
     "url": "https://www.instagram.com/reel/Dez73fioCek/",
     "grid_views_raw": "3,125",
     "grid_views_issue": null,
-    "status": "failed",
-    "last_error": "Instagram reports this page is unavailable.",
-    "last_attempt_at": "2026-10-28T11:54:13.176Z",
-    "attempts": 1
+    "status": "archived",
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T04:25:18.448Z",
+    "attempts": 2,
+    "missing": [],
+    "missing_reasons": {},
+    "deletion_check": {
+      "status": "deleted",
+      "checked_at": "2026-11-14T04:28:33.115Z",
+      "source": "user_instruction_after_retry",
+      "verified_by": "user_assessment",
+      "reason": "User directed these eight reels to be marked deleted following unavailable-page results on retry. The user reports the parent account still exists.",
+      "evidence": "All eight saved failed URLs were retried and returned unavailable-page results, including the initially aborted navigation on a second attempt. Deletion is the user-directed classification, not an Instagram-confirmed cause; no new network check was performed for this resolution.",
+      "previous_status": "failed",
+      "previous_last_error": "Instagram reports this page is unavailable.",
+      "previous_missing": [],
+      "previous_missing_reasons": {}
+    }
   },
   {
     "kind": "reel",
@@ -327,10 +389,24 @@
     "url": "https://www.instagram.com/reel/DezuOwPITBS/",
     "grid_views_raw": "97.4K",
     "grid_views_issue": null,
-    "status": "failed",
-    "last_error": "Instagram reports this page is unavailable.",
-    "last_attempt_at": "2026-10-28T11:54:16.550Z",
-    "attempts": 1
+    "status": "archived",
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T04:25:22.013Z",
+    "attempts": 2,
+    "missing": [],
+    "missing_reasons": {},
+    "deletion_check": {
+      "status": "deleted",
+      "checked_at": "2026-11-14T04:28:33.115Z",
+      "source": "user_instruction_after_retry",
+      "verified_by": "user_assessment",
+      "reason": "User directed these eight reels to be marked deleted following unavailable-page results on retry. The user reports the parent account still exists.",
+      "evidence": "All eight saved failed URLs were retried and returned unavailable-page results, including the initially aborted navigation on a second attempt. Deletion is the user-directed classification, not an Instagram-confirmed cause; no new network check was performed for this resolution.",
+      "previous_status": "failed",
+      "previous_last_error": "Instagram reports this page is unavailable.",
+      "previous_missing": [],
+      "previous_missing_reasons": {}
+    }
   },
   {
     "kind": "reel",
@@ -363,7 +439,8 @@
       "value": 375000,
       "raw": "375K",
       "approximate": true,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:22:28.246Z"
     },
     "thumbnail_url": "https://instagram.fblr1-6.fna.fbcdn.net/v/t51.82787-15/858088076_1129831549418414_2322807037245243497_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=rPmMthqZNSUQ7kNvwEwHEkl&_nc_oc=AdpteY8fUvYreFzcqyKXV_rjNW5C2bEYB5SfqymIGg6HYanQo9m3uxOfuE_KdCw5GCgraz-jo_lcaCc4Erl5lnei&_nc_zt=23&_nc_ht=instagram.fblr1-6.fna&_nc_gid=8ZhXDN7sJlq0Ibs-h9OxHQ&_nc_ss=7f6a8&oh=00_AQT8stoU0DWlBigJvIP7uJmZq1srEi-kJfUQ4L_Qs7vZDw&oe=6AE7D006&ig_cache_key=MDJSQVF6Qm94aUpUTUhrd01FQUs2N0tHZ0hzVVE4SUduQXg1QTpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
@@ -407,7 +484,8 @@
       "value": 439,
       "raw": "439",
       "approximate": false,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:22:28.246Z"
     },
     "thumbnail_url": "https://instagram.fblr24-3.fna.fbcdn.net/v/t51.82787-15/861965288_1629517315193700_1366167162339649190_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=2CpovfiR-w0Q7kNvwHaSs42&_nc_oc=AdrAP9mtoXPlSXbAnImGcfpg4J9N8wtGURLFo86anYFbciXh5zkxvTcmzc3CqTyjzqJoPR29FxRv0_w05KM_RSn8&_nc_zt=23&_nc_ht=instagram.fblr24-3.fna&_nc_gid=v0bbC8VKHQpsqzzbZKHK5A&_nc_ss=7f6a8&oh=00_AQQJQ8NLo_g7xs9FTPDWWo1OJDwS53Y6oV0OiNl-u7kZQA&oe=6AE7CF5E&ig_cache_key=MDJSQVF6QnVpTFlETUhDY29GQUdRN3VwQUh5NW4xRXFibURyODpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
@@ -453,7 +531,8 @@
       "value": 6557,
       "raw": "6,557",
       "approximate": false,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:22:28.246Z"
     },
     "thumbnail_url": "https://instagram.fblr1-3.fna.fbcdn.net/v/t51.82787-15/858088676_29143732588591626_2524864247218080759_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=Vd9Haf4a8eAQ7kNvwH_iEqe&_nc_oc=AdoKBAys8Fj5KR-uslqQZgIX5H8sGrPF7r9jCufqxxWMDBbq32qLyOwlGi8P1dXiR4o5XXOpwYqawP2tO1ZH-kKJ&_nc_zt=23&_nc_ht=instagram.fblr1-3.fna&_nc_gid=m8G052u2VGhvYMpQ50kyfw&_nc_ss=7f6a8&oh=00_AQQgwBnygHzO5nSgm9w9ot0pXu2j-id9UO3axNZfxTbEmA&oe=6AE79BA2&ig_cache_key=MDJSQVF6QnVSa0pUTUhFb3BuQUFvNlh3UUhweDRLSS1lTGhORTpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
@@ -474,10 +553,24 @@
     "url": "https://www.instagram.com/reel/DezHALdIHYt/",
     "grid_views_raw": "6,317",
     "grid_views_issue": null,
-    "status": "failed",
-    "last_error": "Instagram reports this page is unavailable.",
-    "last_attempt_at": "2026-10-28T11:54:32.005Z",
-    "attempts": 1
+    "status": "archived",
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T04:25:25.341Z",
+    "attempts": 2,
+    "missing": [],
+    "missing_reasons": {},
+    "deletion_check": {
+      "status": "deleted",
+      "checked_at": "2026-11-14T04:28:33.115Z",
+      "source": "user_instruction_after_retry",
+      "verified_by": "user_assessment",
+      "reason": "User directed these eight reels to be marked deleted following unavailable-page results on retry. The user reports the parent account still exists.",
+      "evidence": "All eight saved failed URLs were retried and returned unavailable-page results, including the initially aborted navigation on a second attempt. Deletion is the user-directed classification, not an Instagram-confirmed cause; no new network check was performed for this resolution.",
+      "previous_status": "failed",
+      "previous_last_error": "Instagram reports this page is unavailable.",
+      "previous_missing": [],
+      "previous_missing_reasons": {}
+    }
   },
   {
     "kind": "reel",
@@ -485,10 +578,24 @@
     "url": "https://www.instagram.com/reel/DezFshao327/",
     "grid_views_raw": "3,265",
     "grid_views_issue": null,
-    "status": "failed",
-    "last_error": "Instagram reports this page is unavailable.",
-    "last_attempt_at": "2026-10-28T11:54:35.714Z",
-    "attempts": 1
+    "status": "archived",
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T04:25:28.663Z",
+    "attempts": 2,
+    "missing": [],
+    "missing_reasons": {},
+    "deletion_check": {
+      "status": "deleted",
+      "checked_at": "2026-11-14T04:28:33.115Z",
+      "source": "user_instruction_after_retry",
+      "verified_by": "user_assessment",
+      "reason": "User directed these eight reels to be marked deleted following unavailable-page results on retry. The user reports the parent account still exists.",
+      "evidence": "All eight saved failed URLs were retried and returned unavailable-page results, including the initially aborted navigation on a second attempt. Deletion is the user-directed classification, not an Instagram-confirmed cause; no new network check was performed for this resolution.",
+      "previous_status": "failed",
+      "previous_last_error": "Instagram reports this page is unavailable.",
+      "previous_missing": [],
+      "previous_missing_reasons": {}
+    }
   },
   {
     "kind": "reel",
@@ -496,10 +603,24 @@
     "url": "https://www.instagram.com/reel/DezDvy6IP3B/",
     "grid_views_raw": "2,467",
     "grid_views_issue": null,
-    "status": "failed",
-    "last_error": "Instagram reports this page is unavailable.",
-    "last_attempt_at": "2026-10-28T11:54:39.191Z",
-    "attempts": 1
+    "status": "archived",
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T04:25:32.005Z",
+    "attempts": 2,
+    "missing": [],
+    "missing_reasons": {},
+    "deletion_check": {
+      "status": "deleted",
+      "checked_at": "2026-11-14T04:28:33.115Z",
+      "source": "user_instruction_after_retry",
+      "verified_by": "user_assessment",
+      "reason": "User directed these eight reels to be marked deleted following unavailable-page results on retry. The user reports the parent account still exists.",
+      "evidence": "All eight saved failed URLs were retried and returned unavailable-page results, including the initially aborted navigation on a second attempt. Deletion is the user-directed classification, not an Instagram-confirmed cause; no new network check was performed for this resolution.",
+      "previous_status": "failed",
+      "previous_last_error": "Instagram reports this page is unavailable.",
+      "previous_missing": [],
+      "previous_missing_reasons": {}
+    }
   },
   {
     "kind": "reel",
@@ -532,7 +653,8 @@
       "value": 133000,
       "raw": "133K",
       "approximate": true,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:22:28.246Z"
     },
     "thumbnail_url": "https://instagram.fblr1-6.fna.fbcdn.net/v/t51.82787-15/858088269_1111119001886285_2584833222337572116_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=SWiUgA_UtZcQ7kNvwFvBlS_&_nc_oc=AdrdFrxyTToInwGxNIbs-QcTxqeh6AGDajKEnOmq1tqOKPC9uaoHTTuy0eSoN4XQxrQs29tluEM51fWJ8Z-xra9U&_nc_zt=23&_nc_ht=instagram.fblr1-6.fna&_nc_gid=G1s0NYaYJ8hXxf_4cNVYfA&_nc_ss=7f6a8&oh=00_AQToc2ttGGIF_igTRvxmiby-WcFQiCpl6pyJt-_lttA8rg&oe=6AE7A89B&ig_cache_key=MDJSQVF6QmsxakpUTUhqdklEQUUwZWFZMEhIaXpmSXhRdERfVTpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
@@ -578,7 +700,8 @@
       "value": 183000,
       "raw": "183K",
       "approximate": true,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:22:28.246Z"
     },
     "thumbnail_url": "https://instagram.fblr24-1.fna.fbcdn.net/v/t51.82787-15/859359381_1652363012968899_1600015442023549403_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=6nizTXGhBRkQ7kNvwG6OlPt&_nc_oc=AdoIsT8eThFNsD3YNhcPb0R6TnMtnX_b91_rYcdW_UZhvDuPYvM-u1bDn2o8GNjFYevj3soQb7CAEubOKvE0_489&_nc_zt=23&_nc_ht=instagram.fblr24-1.fna&_nc_gid=60fbGM3WuwKxdoH4QkKirQ&_nc_ss=7f6a8&oh=00_AQQNmMHgCnvWo_PHykGj_Utmx8JjiVXR34W6PNsVAVFbng&oe=6AE7A92A&ig_cache_key=MDJSQVF6QnBYSU9ETUgwTjRGQU1PUmJiNEhrV1UwRnRzSjlEZzpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
@@ -624,7 +747,8 @@
       "value": 13700,
       "raw": "13.7K",
       "approximate": true,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:22:28.246Z"
     },
     "thumbnail_url": "https://instagram.fblr1-6.fna.fbcdn.net/v/t51.82787-15/857480179_1751106292855971_6614594089636431916_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=JcJCMLnPc18Q7kNvwEB7nhf&_nc_oc=AdqdDCb-AcVpJgsVYzkVfs6PwjxboNBoARTAs3PpW6W5iV9M62kdsrk8wEpXn7MmV-LzDLCS1hdNSBKLuFLwDrkb&_nc_zt=23&_nc_ht=instagram.fblr1-6.fna&_nc_gid=cCLFBRHIIDpVO6rLr3JmLA&_nc_ss=7f6a8&oh=00_AQQrOWrXtBdwnpkBTKqsA4K6h5ZFGKtgH5HwwUJYht_uoQ&oe=6AE7CF72&ig_cache_key=MDJSQVF6QnZNYkhETUhuemdHQUtPMGpEUUhSOExMV3l5SUxXWTpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
@@ -670,7 +794,8 @@
       "value": 36700,
       "raw": "36.7K",
       "approximate": true,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:22:28.246Z"
     },
     "thumbnail_url": "https://instagram.fblr1-7.fna.fbcdn.net/v/t51.82787-15/858088336_1809103540128748_942597580249565828_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=mmie-PxFOeIQ7kNvwFgo5lV&_nc_oc=AdrhNzHKCQW4e2qZzMV_-2Thwut8dyhiRXqN_H0DnUyL5mHXDloe7Cwb8rdd_L2tsS39HtsRddla_ubrDPhY4Xdt&_nc_zt=23&_nc_ht=instagram.fblr1-7.fna&_nc_gid=WaPcaoiDgY3sVJmuPIjAdw&_nc_ss=7f6a8&oh=00_AQTuLPOeY-mwNXYTsCYa-EdyIPF0iROyIo6GS-hTNFuN3Q&oe=6AE7CEAF&ig_cache_key=MDJSQVF6QnBCakpUTUhYbTBHQU93TDM3MEhnY2NVRFlRSzYxQTpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
@@ -691,41 +816,63 @@
     "url": "https://www.instagram.com/reel/DexCipioR-T/",
     "grid_views_raw": "10.5K",
     "grid_views_issue": null,
-    "status": "partial",
-    "fetched_at": "2026-10-28T11:54:59.989Z",
+    "status": "complete",
+    "fetched_at": "2026-11-14T04:31:08.021Z",
     "date": "2026-10-21",
     "date_precision": "day",
     "caption": "「#TVアニメ『SPRINKLES』話題のトッピング最新情報がついに 解禁！！思わず目を奪われてしまうカラフルな瞬間を一挙公開！さらに、予想外の組み合わせや華やかな仕上がりに加え、誰も予想できなかった最高の「珍事件」まで飛び出しました！！◆今回の注目ポイント：」",
-    "hashtags": [
-      "#TVアニメ"
-    ],
+    "hashtags": [],
     "mentions": [],
-    "likes": null,
-    "comments": null,
+    "likes": {
+      "value": 586,
+      "raw": "586",
+      "approximate": false,
+      "source": "og_description_localized"
+    },
+    "comments": {
+      "value": 4,
+      "raw": "4",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Comment"
+    },
     "views": {
       "value": 10500,
       "raw": "10.5K",
       "approximate": true,
       "source": "profile_grid"
     },
-    "thumbnail_url": "https://instagram.fblr1-7.fna.fbcdn.net/v/t51.82787-15/858263539_1116734130936621_8016231431976299560_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=wzD0GYBBrZ0Q7kNvwFdOaUn&_nc_oc=Adqp8pRWjKxYpO8M_MgXHAY7anCToS2buLLJxKkk_HP3omNK5WI0n63Y5dtIOrltbzEXy6UWmVOUX_OqFT6W0Izi&_nc_zt=23&_nc_ht=instagram.fblr1-7.fna&_nc_gid=7qzTAiUpJasXAZSXy8FrfA&_nc_ss=7f6a8&oh=00_AQQvzLPWeSjQw6YE1W2Ao_g-IA8shusxbVqB27il5_Rlmw&oe=6AE7A195&ig_cache_key=MDJSQVF6QnZNUEtETUhxZmNEQUMzYkx1MEhBMkEtYnlpc1JQdzpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
+    "thumbnail_url": "https://instagram.fblr1-7.fna.fbcdn.net/v/t51.82787-15/858263539_1116734130936621_8016231431976299560_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=CpzOYzDp0O0Q7kNvwGFgpMA&_nc_oc=AdqaXsm7g2fRxhB03UN3FxKS4tnQDkb7mqOJyYchCxOYutz_ItQCppHP_ub3bJ7JysQuULxNnaUYe8JVY7BOH3qx&_nc_zt=23&_nc_ht=instagram.fblr1-7.fna&_nc_gid=rPD0UqbYPwFl26aBxEBNfQ&_nc_ss=7e6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQRUi4hsiJFX4MwT8zNoDI9TC_qhUFuaBMaJvMEWbLSGMw&oe=6AFD9A95",
     "media_url": null,
-    "missing": [
-      "likes",
-      "comments"
-    ],
-    "missing_reasons": {
-      "likes": "No readable like count was found on the content page or in its metadata.",
-      "comments": "No readable comment count was found on the content page or in its metadata."
-    },
+    "missing": [],
+    "missing_reasons": {},
     "raw": {
-      "description": "2026年10月21日、「いいね！」583件、コメント4件 - nastynigas: 「#TVアニメ『SPRINKLES』話題のトッピング最新情報がついに 解禁！！思わず目を奪われてしまうカラフルな瞬間を一挙公開！さらに、予想外の組み合わせや華やかな仕上がりに加え、誰も予想できなかった最高の「珍事件」まで飛び出しました！！◆今回の注目ポイント：」",
-      "article_text": "nastynigas\n•\nFollow\n• AI-generated profile\n#TVアニメ『SPRINKLES』話題のトッピング最新情報がついに 解禁！！思わず目を奪われてしまうカラフルな瞬間を一挙公開！さらに、予想外の組み合わせや華やかな仕上がりに加え、誰も予想できなかった最高の「珍事件」まで飛び出しました！！◆今回の注目ポイント：\n583\n4\n36\nksyuking9\n•\nFollow\nCuuute dog 来福&旺财#pet\n130K\n140\n5,418",
-      "aria_text": "nastynigas reels\nnastynigas reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nksyuking9 reels\nksyuking9 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
-      "json_ld": {}
+      "description": "「#TVアニメ『SPRINKLES』話題のトッピング最新情報がついに 解禁！！思わず目を奪われてしまうカラフルな瞬間を一挙公開！さらに、予想外の組み合わせや華やかな仕上がりに加え、誰も予想できなかった最高の「珍事件」まで飛び出しました！！◆今回の注目ポイント：」 - 2026年10月21日、「いいね！」586件、コメント4件 - nastynigas",
+      "article_text": "nastynigas\nFollow\nAI-generated profile\n#TVアニメ『SPRINKLES』話題のトッピング最新情報がついに 解禁！！思わず目を奪われてしまうカラフルな瞬間を一挙公開！さらに、予想外の組み合わせや華やかな仕上がりに加え、誰も予想できなかった最高の「珍事件」まで飛び出しました！！◆今回の注目ポイント：\nSee translation\n586\n4\n36\n46\nstreakvision\nWear 🎧\n\n#ironmanedit #avengersdoomsday #jailer2song\n11.2K\n176\n591\n3,523",
+      "aria_text": "nastynigas reels\nnastynigas reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nstreakvision reels\nstreakvision reels\nVerified\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "likes_visibility": "not_shown",
+        "comments": {
+          "raw": "4",
+          "source": "dom_action_control",
+          "label": "Comment"
+        },
+        "reshares": {
+          "raw": "36",
+          "source": "dom_action_control",
+          "label": "Repost"
+        },
+        "shares": {
+          "raw": "46",
+          "source": "dom_action_control",
+          "label": "Share"
+        }
+      }
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:54:59.990Z",
+    "last_attempt_at": "2026-11-14T04:31:08.023Z",
     "deletion_check": {
       "status": "exists",
       "reason": "The reel page opened without Instagram's unavailable-page message.",
@@ -917,7 +1064,22 @@
         "source": "fresh_incognito_context"
       }
     },
-    "date_source": "og_description_localized"
+    "date_source": "og_description_localized",
+    "reshares": {
+      "value": 36,
+      "raw": "36",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Repost"
+    },
+    "shares": {
+      "value": 46,
+      "raw": "46",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Share"
+    },
+    "likes_visibility": "not_shown"
   },
   {
     "kind": "reel",
@@ -950,7 +1112,8 @@
       "value": 72200,
       "raw": "72.2K",
       "approximate": true,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:22:28.246Z"
     },
     "thumbnail_url": "https://instagram.fblr1-8.fna.fbcdn.net/v/t51.82787-15/858088253_984761037319426_8565742540970412100_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=trlURCTMSawQ7kNvwFqSUaH&_nc_oc=AdqkG7HPKQf8gXV7-467sc2n6qf5wzGpDKhOEWyyW7OggL_I28jmYel1dTFUwV-p1sGvLF2EguiT9PaOl3fiLqvs&_nc_zt=23&_nc_ht=instagram.fblr1-8.fna&_nc_gid=I_MRboCLgMsedwvcCWjd1A&_nc_ss=7f6a8&oh=00_AQSmuT7MRQw-iEhwbhStLUBOdIfhcB6hpLQ9GjdHnw4Ebw&oe=6AE7C6D7&ig_cache_key=MDJSQVF6QmoxakpUTUhvbjhEQUFKdDBZc0hkYUhmZGtSSS1pODpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
@@ -996,7 +1159,8 @@
       "value": 430000,
       "raw": "430K",
       "approximate": true,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:22:28.246Z"
     },
     "thumbnail_url": "https://instagram.fblr1-8.fna.fbcdn.net/v/t51.82787-15/859082282_1448706053874253_4733301869847636201_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=ohs8mFw6Gy4Q7kNvwH79FpY&_nc_oc=AdrzUSnWkiKihsj82iBDXpG7mqdhIZlJZTG9VdTZosgtmmd_zmUZRo2khXeFIKqAbGH0ExNq8t2pm2BMyeKQo4g6&_nc_zt=23&_nc_ht=instagram.fblr1-8.fna&_nc_gid=LziOFDW0m8cpl0AKMHBzSw&_nc_ss=7f6a8&oh=00_AQQCfP5HRNcg7SBP7Pc9QeLFssfLaSEKsNqhyKqdrEgTnQ&oe=6AE7B51A&ig_cache_key=MDJSQVF6QmlxT05ETUhseVVGQUUyaXVTa0hfQkN3UWVubzlmWTpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
@@ -1042,7 +1206,8 @@
       "value": 439000,
       "raw": "439K",
       "approximate": true,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:22:28.246Z"
     },
     "thumbnail_url": "https://instagram.fblr1-4.fna.fbcdn.net/v/t51.82787-15/849697469_1424890882598394_1712294887165681582_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=eR_zzwaBM3AQ7kNvwEFw-sH&_nc_oc=AdrI2vTBt_yNmvXoY2-H88os_GwK95oEDH85m2Iqnz0eZj6Y0cpkKIo8hCr5cRH42ykT7d-AYzSliJGfiuZ4-eo8&_nc_zt=23&_nc_ht=instagram.fblr1-4.fna&_nc_gid=8N9oxGXunDMt-TnxvQzqnw&_nc_ss=7f6a8&oh=00_AQRUAaaTZkz3VMhZrSj2HFbju6Xrnbd6HB9Pv_tlRTgTfg&oe=6AE7B2AF&ig_cache_key=MDJSQVF6QnIxYXBUSUg3ZzhGQVBxbDVrSUhJRXZERjY1Zk9yUTpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
@@ -1088,7 +1253,8 @@
       "value": 222000,
       "raw": "222K",
       "approximate": true,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:22:28.246Z"
     },
     "thumbnail_url": "https://instagram.fblr1-6.fna.fbcdn.net/v/t51.82787-15/859827803_1769803084286649_317336527287128898_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=ct38Z14M1mgQ7kNvwGM_Lbc&_nc_oc=Adr1Or-nBfIW3MEbS2AocN3XDuTNkLyJX_ViLN-wo_t2inMLtZU2_P20cDKriYZc5jhcT8BUUjEEUHUBXJyAC1F7&_nc_zt=23&_nc_ht=instagram.fblr1-6.fna&_nc_gid=bTpKzYTtSv43kJlhmvnTLw&_nc_ss=7f6a8&oh=00_AQSMAprz2X8BAB5-xYDTnhtEQuX0i8CCNJruYE_XJ1s9mA&oe=6AE7D15D&ig_cache_key=MDJSQVF6Qmx2dVB6TUhvRWtHQUxsS0tXUUg0MmRuQkVLVE5PYzpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
@@ -1134,7 +1300,8 @@
       "value": 9218,
       "raw": "9,218",
       "approximate": false,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:22:28.246Z"
     },
     "thumbnail_url": "https://instagram.fblr1-3.fna.fbcdn.net/v/t51.82787-15/856907164_1139127348489211_2644733002327998420_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=eU5z3tA3xRUQ7kNvwEDeyju&_nc_oc=Adp_ahxiD1dlA0A1JYSvulQGtU8A9LGj46f6QgNn1c04bsgg4Kbc3OnMr6bpc8kM8bLv0F1-EKpYe0xoY_yHJUQr&_nc_zt=23&_nc_ht=instagram.fblr1-3.fna&_nc_gid=crD0eF9MKGGU7H9v0YBDuQ&_nc_ss=7f6a8&oh=00_AQRx-nWCqzqSgmSxX_AZIkiu1-SWCLgo9gKuwHHF4Yrjhw&oe=6AE7BFB2&ig_cache_key=MDJSQVF6QnB4ZEV6TUhCd3dFQVB2cjljQUhwLXF6Sk5RLWd6azpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
@@ -1180,7 +1347,8 @@
       "value": 342000,
       "raw": "342K",
       "approximate": true,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:22:28.246Z"
     },
     "thumbnail_url": "https://instagram.fblr1-9.fna.fbcdn.net/v/t51.82787-15/857187737_983529074801280_3614362814227471035_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=hn3eC2VfQ9sQ7kNvwEX66hv&_nc_oc=AdrFaYk-kG-ImR7RkMr71iGhxEuDhPAXsLiDkNh7CXspaFC5TZfx3OuzXoCzQkA4iX9fH0v9yhDIMPcYtyG-0zzK&_nc_zt=23&_nc_ht=instagram.fblr1-9.fna&_nc_gid=a-ej0omnkySOM_06TjolFQ&_nc_ss=7f6a8&oh=00_AQSvRfIpIh-PXNpNl583EG1hkIVtTLmKcxELGLnzgVAPaQ&oe=6AE7B29B&ig_cache_key=MDJSQVF6QnBtbEZ6TUhnMzREQUlBNkliVUgxTXNvTXJ2YWFHODpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
@@ -1226,7 +1394,8 @@
       "value": 6618,
       "raw": "6,618",
       "approximate": false,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:22:28.246Z"
     },
     "thumbnail_url": "https://instagram.fblr24-2.fna.fbcdn.net/v/t51.82787-15/854999976_1752806209150422_9205022963521342861_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=Z0EFXa6f2ykQ7kNvwEkkGak&_nc_oc=AdplSE7qYOA6iS1aIDWiSCvQIBIXhwwXQQAZDc5_vijuXc1BO734ByYfkhU_G6uly6MgxjWwHC452-TGaN4Dqjdk&_nc_zt=23&_nc_ht=instagram.fblr24-2.fna&_nc_gid=uyMSctFzEdbI-3t7UVX0sA&_nc_ss=7f6a8&oh=00_AQQPwnUqRx71CFhAEhrzMWCCH6_sqpVD1CA_NccqWZdO4w&oe=6AE7C0FA&ig_cache_key=MDJSQVF6QnFoRDlqSUhLam9HQU5iZGRQOEhuY19fZjQzTkFISTpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
@@ -1272,7 +1441,8 @@
       "value": 64100,
       "raw": "64.1K",
       "approximate": true,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:22:28.246Z"
     },
     "thumbnail_url": "https://instagram.fblr1-7.fna.fbcdn.net/v/t51.82787-15/851331002_991278553996236_3557217531339507042_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=zPBumaixKYgQ7kNvwF2BbFs&_nc_oc=AdrEaNc6nQ3i50jefxT8EvpLkkTqgVIFB1H0pHEmsKTwIGcQFYPl9xc-D_gcLECOe_ryxL2i9muzeXcMlB1FVYLu&_nc_zt=23&_nc_ht=instagram.fblr1-7.fna&_nc_gid=UEGYLecNvB62CMe1Rlnl0g&_nc_ss=7f6a8&oh=00_AQTTYuE84pDCp93my4gsEY6EFWEUJF_7YqiKxXJy0vFr0Q&oe=6AE7C007&ig_cache_key=MDJSQVF6QnJwSHZqSUhrSVVEQU15YkZRWUhmOFpkTVdLRlNIQTpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
@@ -1318,7 +1488,8 @@
       "value": 4000000,
       "raw": "4M",
       "approximate": true,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:22:28.246Z"
     },
     "thumbnail_url": "https://instagram.fblr1-5.fna.fbcdn.net/v/t51.82787-15/855385260_2912865772411275_331597232643161159_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=WGKrNXMTYyUQ7kNvwHR5g3y&_nc_oc=AdroPS-TeaHREkffHFXoZIwA5u7-_v-0GAM2mGFbQwRUAghYPFLg8YRJVl_bPUSJDCU7GM2_U2qfZOjLKZ37Qgam&_nc_zt=23&_nc_ht=instagram.fblr1-5.fna&_nc_gid=dMEQJz0x2HyB29O1WuvlSg&_nc_ss=7f6a8&oh=00_AQQAkl_NosD0R2Sd-1FoSSNFgBnQ0XPcfGS0rRaCzl2zrg&oe=6AE7D16F&ig_cache_key=MDJSQVF6QnF3ay1ESUhQRmtLQUl1WnBHa0g3UkdhQkVlOE1odzpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
@@ -1364,7 +1535,8 @@
       "value": 3337,
       "raw": "3,337",
       "approximate": false,
-      "source": "profile_grid"
+      "source": "profile_grid",
+      "observed_at": "2026-10-23T16:22:28.246Z"
     },
     "thumbnail_url": "https://instagram.fblr1-4.fna.fbcdn.net/v/t51.82787-15/858088439_1817047142664250_7963223850935808886_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=a54f6b&efg=eyJlZmdfdGFnIjoiYmVzdF9pbWFnZV91cmxnZW4uQ0xJUFMuNjQweDY0MC5DMyJ9&_nc_ohc=BCF46hnnbIIQ7kNvwHvbAjD&_nc_oc=AdpWPz7JyJ3dOAeQPpLttVdtjbR6DSOsiKESTUFoaRaPqm-ge-lZKi3A-HV5_P8qNeGO1PkCaqCdS58JnaEkj5Nx&_nc_zt=23&_nc_ht=instagram.fblr1-4.fna&_nc_gid=adQ_d06BdzLiE2_jyWq9TA&_nc_ss=7f6a8&oh=00_AQTvslUrXw0QCbv0FoEg1Gcp28vm8ox8gAGk2JQ-uwWYpg&oe=6AE7C63B&ig_cache_key=MDJSQVF6QnZkakpUTUhtSFFHQURxSWVrRUg1ZzJEYm5aejhzVTpjbXAxX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3R0Ng%3D%3D",
     "media_url": null,
