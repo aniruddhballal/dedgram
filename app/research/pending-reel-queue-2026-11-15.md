@@ -1,5 +1,29 @@
 # Pending reel queue: 2.4.0 validation
 
+## Live monitoring precaution
+
+Do not run the standard `adb shell uiautomator dump` while dedgram's accessibility capture is active. During the fresh 26-entry run, the system log at 00:35:17 showed registration of UiTestAutomationService with flags 0, immediately followed by removal of dedgram's overlay windows and service unbinding. This inspection interrupted the run after its first saved result; no dedgram crash occurred. Use shared-file pulls, logcat, dumpsys and screencap for live monitoring instead. Re-arm through the app and obtain the user's accessibility enablement to resume after this interruption. UI dumps are only used while capture is already off.
+
+## Fresh run and 2.4.1 warning handling
+
+After a user-performed app-data reset and restored folder/accessibility grants, the 26-entry queue was reset to null statuses and the canonical results file emptied. Following the monitoring correction above, it captured 24 reels without another service interruption, crash or visible rate limit. It then stopped on pichypeapp's Sensitive content / See reel interstitial. Direct screenshot inspection established the precise warning; the earlier generic review classification did not establish an age-verification gate.
+
+Version 2.4.1 adds one semantic click on that exact dismissible interstitial, with a two-second clearing check. A warning that persists after the one click, a missing control, or an age/login gate still stops for review. Rate-limit classification takes priority over a simultaneously visible warning. All 64 unit tests passed and the optimized preview build was installed.
+
+The connected-device follow-up captured `DejpZ6nostn` for pichypeapp after automatically clearing the warning: 484,085 likes, 6,952 comments, 8,667,238 plays, 273,369 shares, 17,512 reposts, 43,170 saves, expanded caption and the raw publication label 16 October. These are observations at capture time, not continuously current totals.
+
+The last queued reel `Dd2L0NtPH4L` displayed tankandoobrasil rather than its historical expected account memesprcaf. The runner refused to attribute that account's metrics to the queued owner and stopped after its identity timeout. Copy link from the displayed reel independently exposed the requested shortcode, which supports an account-name change; final confirmation/capture remains pending. Automatic approval review rejected a subsequent direct command to reopen the URL, so the user was asked to navigate manually instead. No alternative automatic launcher was used to work around the rejection.
+
+At that intermediate checkpoint, the phone queue had 10 collected, 15 partial and one failed identity-verification entry. The first fun_fineee reel still has unreadable likes/plays, with its caption/date saved; it has not been labelled hidden metrics or deleted.
+
+### Final verified save
+
+The user manually reopened the final reel and confirmed its account name. The visible username node established the exact spelling `tankandoobrasil`; the phone queue retains `memesprcaf` as `historical_expected_account` and records the copied-shortcode/user verification separately. The fresh manual capture session expired in Settings before the return to Instagram, so the final reel was captured through direct ADB UI inspection on the already-open screen, not through the queued app pipeline. No rejected URL launch was retried.
+
+After pausing the video, the UI dump succeeded. The expanded caption node and 29 September footer were read directly; the Likes and plays panel exposed 238,501 likes and 8,182,603 plays. Reel nodes exposed 954 comments, 3,492 reposts, 55,914 shares and 6,307 saves. The saved result identifies its method as `manual_adb_ui_capture_after_user_navigation`, retains raw field observations and publication evidence, and replaces the earlier identity-timeout record. This is a manual completion, not evidence that the automated runner independently resolved a renamed account.
+
+The canonical result file was saved and reread before the queue entry was marked collected. Final phone files have 26 unique results and matching captured_at checkpoints for all 26 entries: 11 collected, 15 partial, zero failed, zero pending. Accessibility is off. The 15 partial records retain actual field errors (mostly unreadable share counts); their missing metrics were not reclassified as hidden or unavailable. These final results supersede the earlier test counts below. Collector and website data remain unchanged.
+
 Validated on the connected Oppo CPH2467 (ADB serial b78f7b32) using the optimized preview APK, versionName 2.4.0 and versionCode 20400. This extends the existing caption/date/metrics capture pipeline; it does not import phone results into collector or website datasets.
 
 ## Build and automated checks

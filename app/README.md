@@ -129,3 +129,5 @@ Explicit access/throttle screens and unverified load timeouts stop the batch wit
 Results and queue updates keep last-good private backups before replacing their documents. Invalid or unwritable documents stop the run rather than silently starting an empty collection. Computer edits while a run is active are discouraged; a removed active URL stops checkpointing rather than overwriting the changed queue.
 
 MediaStore's legacy path is still supported for ordinary captures without a folder grant, but renamed output files are rejected. Queue runs use the granted exact documents to avoid `reels (1).json` collisions.
+
+In 2.4.1, the exact **Sensitive content / See reel** interstitial is handled with one semantic tap per queued reel, followed by verification that normal reel content loads. A persistent warning, missing control, age verification or login gate still stops for review. Rate-limit messages take priority and are never dismissed or retried. During live testing, do not use standard `uiautomator dump`: its automation connection suppresses other accessibility services. Monitor with file pulls, logs and screenshots instead.

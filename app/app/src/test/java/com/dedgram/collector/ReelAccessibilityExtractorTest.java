@@ -185,6 +185,31 @@ public final class ReelAccessibilityExtractorTest {
         root.setText("Age-restricted content");assertEquals("needs_review",ReelAccessibilityExtractor.snapshot(root).queueIssue());
     }
 
+    @Test public void continuesOnlyExactDismissibleSensitiveInterstitial() {
+        AccessibilityNodeInfo root=node(INSTAGRAM,"Sensitive content",false);
+        shadowOf(root).addChild(node(INSTAGRAM,"See reel",true));
+        assertTrue(ReelAccessibilityExtractor.snapshot(root).continueSensitiveReel());
+        shadowOf(root).addChild(node(INSTAGRAM,"Confirm your age",false));
+        assertFalse(ReelAccessibilityExtractor.snapshot(root).continueSensitiveReel());
+    }
+
+    @Test public void refusesUnrelatedOrHiddenSeeReelButtons() {
+        AccessibilityNodeInfo root=node(INSTAGRAM,"Ordinary reel caption",false);
+        AccessibilityNodeInfo button=node(INSTAGRAM,"See reel",true);
+        shadowOf(root).addChild(button);
+        assertFalse(ReelAccessibilityExtractor.snapshot(root).continueSensitiveReel());
+        root.setText("Sensitive content");button.setVisibleToUser(false);
+        assertFalse(ReelAccessibilityExtractor.snapshot(root).continueSensitiveReel());
+    }
+
+    @Test public void rateLimitTakesPriorityOverSensitiveWarning() {
+        AccessibilityNodeInfo root=node(INSTAGRAM,"Sensitive content",false);
+        shadowOf(root).addChild(node(INSTAGRAM,"See reel",true));
+        shadowOf(root).addChild(node(INSTAGRAM,"HTTP 429",false));
+        assertEquals("rate_limited",ReelAccessibilityExtractor.snapshot(root).queueIssue());
+        assertFalse(ReelAccessibilityExtractor.snapshot(root).continueSensitiveReel());
+    }
+
     private static AccessibilityNodeInfo reel(String packageName) {
         AccessibilityNodeInfo root = node(packageName, "", false);
         shadowOf(root).addChild(node(packageName, "like", false));

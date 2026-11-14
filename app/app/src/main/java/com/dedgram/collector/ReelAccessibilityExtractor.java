@@ -67,13 +67,30 @@ public final class ReelAccessibilityExtractor {
         }
 
         public String queueIssue() {
+            // Throttling takes priority even when a warning is also present.
+            for (Entry e : entries) {
+                String t=e.display().trim().toLowerCase(Locale.ROOT);
+                if(t.matches(".*(?:http\\s*429|429.*too many requests|too many requests|please wait a few minutes|try again later).*"))return "rate_limited";
+            }
             for (Entry e : entries) {
                 String t=e.display().trim().toLowerCase(Locale.ROOT).replace("\u2019", "'").replaceAll("[.!]+$", "");
-                if(t.matches(".*(?:http\s*429|429.*too many requests|too many requests|please wait a few minutes|try again later).*"))return "rate_limited";
                 if(t.matches(".*(?:age.restricted content|confirm your age|verify your age|sensitive content warning|security checkpoint|log in to continue).*" )||t.equals("sensitive content"))return "needs_review";
                 if(t.equals("sorry, this page isn't available")||t.equals("this page isn't available")||t.equals("this reel is unavailable")||t.equals("this content isn't available right now")||t.equals("page isn't available"))return "deleted";
             }
             return null;
+        }
+
+        /** Only the verified, dismissible sensitive-content interstitial. Never age/login gates. */
+        public boolean continueSensitiveReel() {
+            boolean sensitive = false;
+            for (Entry e : entries) {
+                String text = e.display().trim().toLowerCase(Locale.ROOT);
+                if (text.matches(".*(?:confirm your age|verify your age|age.restricted|log in|security checkpoint|too many requests|http\\s*429).*")) return false;
+                if (text.equals("sensitive content")) sensitive = true;
+            }
+            if (!sensitive || !"needs_review".equals(queueIssue())) return false;
+            for (Entry e : entries) if (e.display().trim().equalsIgnoreCase("See reel") && click(e)) return true;
+            return false;
         }
 
         public boolean noCommentsYet() { return indexContaining("no comments yet") >= 0; }

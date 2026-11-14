@@ -6,7 +6,7 @@ public final class PendingQueueRunner {
     public interface Host {AccessibilityNodeInfo root();void open(String url);void capture();void stopService();void progress(String text);boolean save(Reel reel);}
     interface Storage {PendingReels read() throws Exception;void result(String url,String status,String detail,String capturedAt)throws Exception;void progress(String text);}
     private final Storage storage;private final Host host;private final Handler handler=new Handler(Looper.getMainLooper());
-    private boolean running,capturing;private JSONObject entry;private String url,baseline="",stable="";private int reads;private long openedAt;
+    private boolean running,capturing;private JSONObject entry;private String url,baseline="",stable="";private int reads;private long openedAt,confirmationAt;
     public PendingQueueRunner(final Context c,Host h){this(h,new Storage(){
         public PendingReels read()throws Exception{return PendingReelStore.read(c);}
         public void result(String u,String s,String d,String at)throws Exception{PendingReelStore.result(c,u,s,d,at);}
@@ -27,13 +27,24 @@ public final class PendingQueueRunner {
         AccessibilityNodeInfo root=host.root();baseline="";
         if(root!=null){baseline=signature(ReelAccessibilityExtractor.snapshot(root));root.recycle();}
         if(!running)return;
-        capturing=false;stable="";reads=0;openedAt=SystemClock.elapsedRealtime();progress("Opening "+PendingReels.shortcode(url));
+        capturing=false;stable="";reads=0;confirmationAt=0;openedAt=SystemClock.elapsedRealtime();progress("Opening "+PendingReels.shortcode(url));
         host.open(url);handler.postDelayed(this::poll,1000);
     }catch(Exception e){halt("Queue could not start: "+e.getMessage());}}
     private void poll(){if(!running)return;AccessibilityNodeInfo root=host.root();if(!running){if(root!=null)root.recycle();return;}
         if(root!=null){
-            ReelAccessibilityExtractor.Snapshot s=ReelAccessibilityExtractor.snapshot(root);root.recycle();
+            ReelAccessibilityExtractor.Snapshot s=ReelAccessibilityExtractor.snapshot(root);
             String issue=s.queueIssue();
+            if("needs_review".equals(issue)&&!capturing){
+                if(confirmationAt==0&&s.continueSensitiveReel()){
+                    confirmationAt=SystemClock.elapsedRealtime();root.recycle();
+                    progress("Opening confirmed sensitive-content reel "+shortcode());
+                    handler.postDelayed(this::poll,500);return;
+                }
+                if(confirmationAt>0&&SystemClock.elapsedRealtime()-confirmationAt<2000){
+                    root.recycle();handler.postDelayed(this::poll,500);return;
+                }
+            }
+            root.recycle();
             if(issue!=null){
                 if(issue.equals("deleted")&&!capturing){finish(failure("Instagram explicitly reported this reel unavailable; deletion versus archiving is unconfirmed."),"deleted",false);return;}
                 finish(failure("Instagram access requires review: "+issue),issue.equals("rate_limited")?"rate_limited":"needs_review",true);return;
