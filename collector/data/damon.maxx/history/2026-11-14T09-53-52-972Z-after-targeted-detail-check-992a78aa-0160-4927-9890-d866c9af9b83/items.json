@@ -1,0 +1,129 @@
+[
+  {
+    "kind": "reel",
+    "shortcode": "DfCCtM3ypuy",
+    "url": "https://www.instagram.com/reel/DfCCtM3ypuy/",
+    "grid_views_raw": "24.2K",
+    "grid_views_issue": null,
+    "status": "metrics_unavailable",
+    "fetched_at": "2026-11-14T09:53:50.453Z",
+    "date": "2026-10-28",
+    "date_precision": "day",
+    "caption": null,
+    "hashtags": [],
+    "mentions": [],
+    "likes": null,
+    "comments": {
+      "value": 4,
+      "raw": "4",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Comment"
+    },
+    "views": {
+      "value": 24200,
+      "raw": "24.2K",
+      "approximate": true,
+      "source": "profile_grid"
+    },
+    "thumbnail_url": "https://instagram.fblr1-3.fna.fbcdn.net/v/t51.71878-15/867376823_1779056206704428_8491341009305876638_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=IcDZG1MNNTUQ7kNvwG8C6EC&_nc_oc=AdpqS5QBeq7McT9_MZZsnJOjOZgg9I2aMf6Q03nkSEy3JYN7hupxlhowOnJjAPAjHtlOGkd1OLZM8VRCD3fmAaj2&_nc_zt=23&_nc_ht=instagram.fblr1-3.fna&_nc_gid=dh9YsQ-fQIKg_uNbpw7-kA&_nc_ss=7e6a8&_nc_ct=RQosPBUKFQgAAAA&oh=00_AQTWepR4OXQW2bl8WLieJ0uxMisi4en5BAh7WHXAt-7pjA&oe=6AFE07C5",
+    "media_url": null,
+    "missing": [
+      "likes"
+    ],
+    "missing_reasons": {
+      "likes": "The like control displayed no numeric like count; nearby comment or reshare counts are not likes."
+    },
+    "raw": {
+      "description": "「\"有村架純が自分自身と向き合い、得た気づき。俳優業を通して「自分とは何なんだろう」と向き合ってきた彼女が、自分自身を知ることの大切さや、最新作『さとこはいつも』について語る。\".」 - 2026年10月28日、damon.maxx",
+      "article_text": "damon.maxx\nFollow\nUSA\n\"有村架純が自分自身と向き合い、得た気づき。俳優業を通して「自分とは何なんだろう」と向き合ってきた彼女が、自分自身を知ることの大切さや、最新作『さとこはいつも』について語る。\".\nSee translation\nLikes\n4\n2\nraahavy_\nFollow\nEminem · Venom\nbeen moving🤏🏽\n\n- @bulk code: RAAHAVY to save 💸\nad #bulk2026\n25.8K\n217\n261\n1,244",
+      "aria_text": "damon.maxx reels\ndamon.maxx reels\nLocation\nLocation\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nraahavy_ reels\nraahavy_ reels\nAudio image\nExplicit\nAudio image\nExplicit\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "json_ld": {},
+      "engagement": {
+        "scope": "reel_action_controls",
+        "availability": {
+          "likes": {
+            "state": "explicitly_hidden",
+            "evidence": "damon.maxx can see the total number of people who liked this post.",
+            "source": "metric_dialog"
+          },
+          "comments": {
+            "state": "measured",
+            "evidence": "Comment"
+          },
+          "reshares": {
+            "state": "measured",
+            "evidence": "Repost"
+          },
+          "shares": {
+            "state": "not_captured",
+            "evidence": "Control located but no reliable numeric value parsed."
+          }
+        },
+        "likes_visibility": "not_shown",
+        "comments": {
+          "raw": "4",
+          "source": "dom_action_control",
+          "label": "Comment"
+        },
+        "reshares": {
+          "raw": "2",
+          "source": "dom_action_control",
+          "label": "Repost"
+        }
+      },
+      "capture_checks": {
+        "access_clear": true,
+        "stable": true,
+        "read_passes": 2,
+        "access_attempts": [],
+        "metric_panels": [
+          {
+            "field": "likes",
+            "stable": true,
+            "access_clear": true,
+            "evidence": "damon.maxx can see the total number of people who liked this post.",
+            "repeated_evidence": "damon.maxx can see the total number of people who liked this post.",
+            "panel_changed": false,
+            "read_passes": 3
+          }
+        ]
+      }
+    },
+    "last_error": null,
+    "last_attempt_at": "2026-11-14T09:53:50.454Z",
+    "date_source": "og_description_localized",
+    "reshares": {
+      "value": 2,
+      "raw": "2",
+      "approximate": false,
+      "source": "dom_action_control",
+      "label": "Repost"
+    },
+    "shares": null,
+    "likes_visibility": "not_shown",
+    "analysis_resolution": {
+      "status": "resolved",
+      "source": "explicit_visibility_evidence",
+      "recorded_at": "2026-11-14T09:53:50.453Z",
+      "reason": "Unavailable metrics resolved using explicit visibility evidence or user assessment. Saved observations remain valid; missing values are unknown, not zero.",
+      "unavailable_fields": [
+        "likes"
+      ],
+      "previous_status": "partial",
+      "policy_checked_at": "2026-11-14T08:26:03.802Z"
+    },
+    "extraction_review": null,
+    "previous_analysis_resolution": {
+      "status": "resolved",
+      "source": "visible_page_capture",
+      "recorded_at": "2026-11-14T05:09:54.028Z",
+      "reason": "Reel loads, but numeric values for these fields are not exposed by the page or captured metadata. Missing values remain unknown; saved observations are retained.",
+      "unavailable_fields": [
+        "likes"
+      ],
+      "previous_status": "partial"
+    },
+    "access_review": null
+  }
+]

@@ -5,8 +5,8 @@
     "url": "https://www.instagram.com/reel/DeY5crXtbSy/",
     "grid_views_raw": "51.9K",
     "grid_views_issue": null,
-    "status": "partial",
-    "fetched_at": "2026-11-14T08:53:21.221Z",
+    "status": "metrics_unavailable",
+    "fetched_at": "2026-11-14T09:53:58.956Z",
     "date": "2026-10-12",
     "date_precision": "day",
     "caption": null,
@@ -26,7 +26,7 @@
       "approximate": true,
       "source": "profile_grid"
     },
-    "thumbnail_url": "https://instagram.fblr1-3.fna.fbcdn.net/v/t51.82787-15/849697780_18115372414991214_7958506602361601700_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=dwRT1o1ltFgQ7kNvwHF3G6B&_nc_oc=AdpUoWykBNHwZlRpSKa_j3-n9y1nqDcdOwOCBEEapRmR3w-HHxyLIUi8oDE2M_7-LWMNcFKz_1dmq2a4EGtwN6JU&_nc_zt=23&_nc_ht=instagram.fblr1-3.fna&_nc_gid=Q_KZL8cOd8Wjp4etRVEo8g&_nc_ss=7e6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQRPaHW9ev99HVgCNstuGznNG_NnfW91w6J5A5sDkZZjHA&oe=6AFDE187",
+    "thumbnail_url": "https://instagram.fblr1-3.fna.fbcdn.net/v/t51.82787-15/849697780_18115372414991214_7958506602361601700_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=dwRT1o1ltFgQ7kNvwHF3G6B&_nc_oc=AdpUoWykBNHwZlRpSKa_j3-n9y1nqDcdOwOCBEEapRmR3w-HHxyLIUi8oDE2M_7-LWMNcFKz_1dmq2a4EGtwN6JU&_nc_zt=23&_nc_ht=instagram.fblr1-3.fna&_nc_gid=W3yEQTggk-Eih4x89JilmA&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQSvxrxbwK8r_ou1b8Jb3etrqaYAJNJw-lXJZIWi6chGng&oe=6AFE19C7",
     "media_url": null,
     "missing": [
       "likes"
@@ -36,15 +36,16 @@
     },
     "raw": {
       "description": "「#あらゆる追いかけっこを繰り広げる」 - 2026年10月12日、memeehubx69",
-      "article_text": "memeehubx69\nFollow\n#あらゆる追いかけっこを繰り広げる\nLikes\n4\n1\nanuraag__d\nFollow\nLed Zeppelin · Stairway to Heaven (Remaster)\nLed Zeppelin · Stairway to Heaven (Remaster)\ncultural impact\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n#kolkata_calcutta_city #mumbai_diaries #artinmotion #mumbai_ig #indiangods\n\n(viral 2027, reels cinema, filmmaking, cinematography, cinematic, reels viral, 2027 viral, art collective, street visuals, visual art, street collective, art in making, art motion, cinematic visuals, content creators, Mumbai viral, Mumbai reels, Kolkata visual, Kolkata reels, Kolkata viral, Varanasi, gods of india, Indiaj Gods? Varanasi reels, Mumbai reels, art form, crazy visuals, crazy aesthetics)\n3,819\n15\n178\n415",
-      "aria_text": "memeehubx69 reels\nmemeehubx69 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nanuraag__d reels\nanuraag__d reels\nVerified\nAudio image\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "article_text": "memeehubx69\nFollow\n#あらゆる追いかけっこを繰り広げる\nLikes\n4\n1\nchiragkohliii\nFollow\nFrankfurt, Germany\nAlone but not lonely\n.\n.\n.\n📸: @cineseele\n58K\n173\n5,268\n7,248",
+      "aria_text": "memeehubx69 reels\nmemeehubx69 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nchiragkohliii reels\nchiragkohliii reels\nLocation\nLocation\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
       "json_ld": {},
       "engagement": {
         "scope": "reel_action_controls",
         "availability": {
           "likes": {
-            "state": "not_captured",
-            "evidence": "Control located but no reliable numeric value parsed."
+            "state": "explicitly_hidden",
+            "evidence": "memeehubx69 can see the total number of people who liked this post.",
+            "source": "metric_dialog"
           },
           "comments": {
             "state": "measured",
@@ -79,15 +80,18 @@
         "metric_panels": [
           {
             "field": "likes",
-            "stable": false,
+            "stable": true,
             "access_clear": true,
-            "evidence": "Likes"
+            "evidence": "memeehubx69 can see the total number of people who liked this post.",
+            "repeated_evidence": "memeehubx69 can see the total number of people who liked this post.",
+            "panel_changed": true,
+            "read_passes": 4
           }
         ]
       }
     },
     "last_error": null,
-    "last_attempt_at": "2026-11-14T08:53:21.223Z",
+    "last_attempt_at": "2026-11-14T09:53:58.956Z",
     "date_source": "og_description_localized",
     "reshares": {
       "value": 1,
@@ -99,17 +103,17 @@
     "shares": null,
     "likes_visibility": "not_shown",
     "analysis_resolution": {
-      "status": "requires_verification",
-      "source": "visible_page_capture",
-      "recorded_at": "2026-11-14T05:14:37.883Z",
-      "reason": "Previous automatic resolution lacked explicit evidence that the metric was hidden or disabled. Saved values retained; extraction requires verification.",
+      "status": "resolved",
+      "source": "explicit_visibility_evidence",
+      "recorded_at": "2026-11-14T09:53:58.956Z",
+      "reason": "Unavailable metrics resolved using explicit visibility evidence or user assessment. Saved observations remain valid; missing values are unknown, not zero.",
       "unavailable_fields": [
         "likes"
       ],
       "previous_status": "partial",
       "policy_checked_at": "2026-11-14T08:26:03.802Z"
     },
-    "extraction_review": "Metric extraction is incomplete; absence has not been confirmed. Inspect or retry rather than assume hidden counts.",
+    "extraction_review": null,
     "previous_analysis_resolution": {
       "status": "resolved",
       "source": "visible_page_capture",
@@ -1364,8 +1368,8 @@
     "url": "https://www.instagram.com/reel/Ddv5ntQNCNz/",
     "grid_views_raw": "25.5K",
     "grid_views_issue": null,
-    "status": "partial",
-    "fetched_at": "2026-11-14T08:53:37.297Z",
+    "status": "metrics_unavailable",
+    "fetched_at": "2026-11-14T09:54:11.451Z",
     "date": "2026-09-26",
     "date_precision": "day",
     "caption": null,
@@ -1385,7 +1389,7 @@
       "approximate": true,
       "source": "profile_grid"
     },
-    "thumbnail_url": "https://instagram.fblr1-7.fna.fbcdn.net/v/t51.82787-15/849427405_18115373500991214_8632300979136910064_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=MxxIwZIbO8kQ7kNvwH2hL39&_nc_oc=AdrW9vjmPL8ozySIRkcxts5g0jubg4eE49CsKiXEEHzGKbStbo3nMkWnU9tN5RySEtGvr_Vc5eonTe7WQmsG-4Hl&_nc_zt=23&_nc_ht=instagram.fblr1-7.fna&_nc_gid=Nj01tBFFQSJUycDZeXZ3NQ&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQSHqX6_lZMi6AMYA1byZhQ_bUm9W9z-B5-6LyOqx3wWXg&oe=6AFDEAB4",
+    "thumbnail_url": "https://instagram.fblr1-7.fna.fbcdn.net/v/t51.82787-15/849427405_18115373500991214_8632300979136910064_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=MxxIwZIbO8kQ7kNvwH2hL39&_nc_oc=AdrW9vjmPL8ozySIRkcxts5g0jubg4eE49CsKiXEEHzGKbStbo3nMkWnU9tN5RySEtGvr_Vc5eonTe7WQmsG-4Hl&_nc_zt=23&_nc_ht=instagram.fblr1-7.fna&_nc_gid=IqJTWjyIYGXqxZX5p6nRhA&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQRYOEWWFKVpJilkNkHq3CoXuyaMkhc3F7x30rWSWHp4vg&oe=6AFDEAB4",
     "media_url": null,
     "missing": [
       "likes"
@@ -1395,15 +1399,16 @@
     },
     "raw": {
       "description": "「#あらゆる追いかけっこを繰り広げる」 - 2026年9月26日、memeehubx69",
-      "article_text": "memeehubx69\nFollow\n#あらゆる追いかけっこを繰り広げる\nSee translation\nLikes\n2\n8\nai_man_and_art\nFollow\nAI-generated profile\n1,490\n1\n25\n1,228",
-      "aria_text": "memeehubx69 reels\nmemeehubx69 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nai_man_and_art reels\nai_man_and_art reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "article_text": "memeehubx69\nFollow\n#あらゆる追いかけっこを繰り広げる\nSee translation\nLikes\n2\n8\nsourabhparmar_17\nFollow\nSnxff, kito · focus (Ultra Slowed)\nTo chalie suru krte hai\n11.4K\n22\n100\n674",
+      "aria_text": "memeehubx69 reels\nmemeehubx69 reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nsourabhparmar_17 reels\nsourabhparmar_17 reels\nAudio image\nLocation\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
       "json_ld": {},
       "engagement": {
         "scope": "reel_action_controls",
         "availability": {
           "likes": {
-            "state": "not_captured",
-            "evidence": "Control located but no reliable numeric value parsed."
+            "state": "explicitly_hidden",
+            "evidence": "memeehubx69 can see the total number of people who liked this post.",
+            "source": "metric_dialog"
           },
           "comments": {
             "state": "measured",
@@ -1438,15 +1443,18 @@
         "metric_panels": [
           {
             "field": "likes",
-            "stable": false,
+            "stable": true,
             "access_clear": true,
-            "evidence": "Likes\nmemeehubx69 can see the total number of people who liked this post.\nduh_im_xaynab\n⋆✮⋆˙\nFollow\nmehnoorkaur07\nMehnoor kaur 🌻\nFollow\nmuskan11_d\nMUSKAN🖤\nFollow\n_jannatul.ferdous.shanta_\nShanta....🐻\nFollow\nzoheehee_michealjacksonvers\nZohe 🥹\nFollow\nbrofiii.24\n.\nFollow\ner.fanaaa\nerfana🎀\nFollow\nitx.umaima.12\nitx.umaima.12\nFollow\nk.puneet_\n𝑷𝒖𝒏𝒆𝒆𝒕\nFollow\narshiya_sethiya\nArshiya\nFollow"
+            "evidence": "memeehubx69 can see the total number of people who liked this post.",
+            "repeated_evidence": "memeehubx69 can see the total number of people who liked this post.",
+            "panel_changed": false,
+            "read_passes": 3
           }
         ]
       }
     },
     "last_error": null,
-    "last_attempt_at": "2026-11-14T08:53:37.297Z",
+    "last_attempt_at": "2026-11-14T09:54:11.452Z",
     "date_source": "og_description_localized",
     "reshares": {
       "value": 8,
@@ -1458,17 +1466,17 @@
     "shares": null,
     "likes_visibility": "not_shown",
     "analysis_resolution": {
-      "status": "requires_verification",
-      "source": "visible_page_capture",
-      "recorded_at": "2026-11-14T05:14:46.787Z",
-      "reason": "Previous automatic resolution lacked explicit evidence that the metric was hidden or disabled. Saved values retained; extraction requires verification.",
+      "status": "resolved",
+      "source": "explicit_visibility_evidence",
+      "recorded_at": "2026-11-14T09:54:11.451Z",
+      "reason": "Unavailable metrics resolved using explicit visibility evidence or user assessment. Saved observations remain valid; missing values are unknown, not zero.",
       "unavailable_fields": [
         "likes"
       ],
       "previous_status": "partial",
       "policy_checked_at": "2026-11-14T08:26:03.802Z"
     },
-    "extraction_review": "Metric extraction is incomplete; absence has not been confirmed. Inspect or retry rather than assume hidden counts.",
+    "extraction_review": null,
     "previous_analysis_resolution": {
       "status": "resolved",
       "source": "visible_page_capture",

@@ -1,19 +1,19 @@
 {
-  "started_at": "2026-11-14T08:54:53.623Z",
-  "updated_at": "2026-11-14T08:56:59.922Z",
-  "status": "partial",
-  "phase": "done",
+  "started_at": "2026-11-14T09:54:32.120Z",
+  "updated_at": "2026-11-14T09:54:39.647Z",
+  "status": "blocked",
+  "phase": "item details",
   "scope": [
     "reel"
   ],
-  "current_url": null,
-  "error": null,
+  "current_url": "https://www.instagram.com/reel/DddW5GHyKy_/",
+  "error": "Instagram returned HTTP 429 (rate limit). URL: https://www.instagram.com/reel/DddW5GHyKy_/",
   "progress": {
     "task": "item_details",
     "label": "Verify incomplete reel details",
-    "completed": 14,
-    "total": 14,
-    "detail": "Uncertain metrics and access gates remain reviewable",
-    "updated_at": "2026-11-14T08:56:59.922Z"
+    "completed": 1,
+    "total": 2,
+    "detail": "DddW5GHyKy_",
+    "updated_at": "2026-11-14T09:54:39.124Z"
   }
 }

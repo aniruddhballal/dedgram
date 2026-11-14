@@ -1,7 +1,7 @@
 {
-  "started_at": "2026-11-14T08:53:15.247Z",
-  "updated_at": "2026-11-14T08:53:53.998Z",
-  "status": "partial",
+  "started_at": "2026-11-14T09:53:53.004Z",
+  "updated_at": "2026-11-14T09:54:13.957Z",
+  "status": "complete",
   "phase": "done",
   "scope": [
     "reel"
@@ -11,10 +11,10 @@
   "progress": {
     "task": "item_details",
     "label": "Verify incomplete reel details",
-    "completed": 5,
-    "total": 5,
-    "detail": "Uncertain metrics and access gates remain reviewable",
-    "updated_at": "2026-11-14T08:53:53.998Z"
+    "completed": 2,
+    "total": 2,
+    "detail": "All reels complete or explicitly resolved",
+    "updated_at": "2026-11-14T09:54:13.957Z"
   },
   "browser_left_open": true
 }

@@ -1,0 +1,19 @@
+{
+  "started_at": "2026-11-14T09:48:41.323Z",
+  "updated_at": "2026-11-14T09:49:09.223Z",
+  "status": "partial",
+  "phase": "done",
+  "scope": [
+    "reel"
+  ],
+  "current_url": null,
+  "error": null,
+  "progress": {
+    "task": "item_details",
+    "label": "Verify incomplete reel details",
+    "completed": 3,
+    "total": 3,
+    "detail": "Uncertain metrics and access gates remain reviewable",
+    "updated_at": "2026-11-14T09:49:09.223Z"
+  }
+}

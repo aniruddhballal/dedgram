@@ -746,7 +746,7 @@
     "grid_views_raw": "13.1K",
     "grid_views_issue": null,
     "status": "partial",
-    "fetched_at": "2026-11-14T09:12:53.499Z",
+    "fetched_at": "2026-11-14T09:50:12.481Z",
     "date": "2026-10-24",
     "date_precision": "day",
     "caption": null,
@@ -766,7 +766,7 @@
       "approximate": true,
       "source": "profile_grid"
     },
-    "thumbnail_url": "https://instagram.fblr24-4.fna.fbcdn.net/v/t51.82787-15/864581507_1838780747392298_8153919378196153029_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=u92-4ueJIxwQ7kNvwF5x8gF&_nc_oc=AdrGwXLjuTGxQfo6_3m3aPbyoEvC1AEuNX0B0hiqSa5RggCtw-6G70-8QsTdAmQKPgXo1OxoZFnAt8VBSLanXV9Z&_nc_zt=23&_nc_ht=instagram.fblr24-4.fna&_nc_gid=IlrHPiTRsN1waNY03mdvLQ&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQTh13rkEOcGoI_O351EwM9Ibue50h3f8yTsumTsBb1E1A&oe=6AFDFF1B",
+    "thumbnail_url": "https://instagram.fblr24-4.fna.fbcdn.net/v/t51.82787-15/864581507_1838780747392298_8153919378196153029_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=u92-4ueJIxwQ7kNvwF5x8gF&_nc_oc=AdrGwXLjuTGxQfo6_3m3aPbyoEvC1AEuNX0B0hiqSa5RggCtw-6G70-8QsTdAmQKPgXo1OxoZFnAt8VBSLanXV9Z&_nc_zt=23&_nc_ht=instagram.fblr24-4.fna&_nc_gid=5LLy_fxL8olw0bxF07vraw&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQRRtMyUk_njcc0Oq4xUKLSv7aImomHg_oqdRRAtyqD3Dg&oe=6AFDFF1B",
     "media_url": null,
     "missing": [
       "likes"
@@ -776,8 +776,8 @@
     },
     "raw": {
       "description": "「TVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開!」 - 2026年10月24日、sallusmemer",
-      "article_text": "sallusmemer\nFollow\nTVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開!\nSee translation\nLikes\n37\n11\npeaktylerr\nFollow\nforever dark\n162K\n239\n4,262\n8,332",
-      "aria_text": "sallusmemer reels\nsallusmemer reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\npeaktylerr reels\npeaktylerr reels\nVerified\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "article_text": "sallusmemer\nFollow\nTVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開!\nSee translation\nLikes\n37\n11\nchiragkohliii\nFollow\nFrankfurt, Germany\nAlone but not lonely\n.\n.\n.\n📸: @cineseele\n57.9K\n173\n5,264\n7,248",
+      "aria_text": "sallusmemer reels\nsallusmemer reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nchiragkohliii reels\nchiragkohliii reels\nLocation\nLocation\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
       "json_ld": {},
       "engagement": {
         "scope": "reel_action_controls",
@@ -821,13 +821,15 @@
             "field": "likes",
             "stable": false,
             "access_clear": true,
-            "evidence": "Likes"
+            "evidence": null,
+            "repeated_evidence": null,
+            "panel_changed": false
           }
         ]
       }
     },
     "last_error": null,
-    "last_attempt_at": "2026-11-14T09:12:53.499Z",
+    "last_attempt_at": "2026-11-14T09:50:12.481Z",
     "access_review": null,
     "extraction_review": "Metric extraction is incomplete; absence has not been confirmed. Inspect or retry rather than assume hidden counts.",
     "date_source": "og_description_localized",
@@ -1173,7 +1175,7 @@
     "grid_views_raw": "29.4K",
     "grid_views_issue": null,
     "status": "partial",
-    "fetched_at": "2026-11-14T09:13:21.553Z",
+    "fetched_at": "2026-11-14T09:50:20.112Z",
     "date": "2026-10-23",
     "date_precision": "day",
     "caption": null,
@@ -1193,7 +1195,7 @@
       "approximate": true,
       "source": "profile_grid"
     },
-    "thumbnail_url": "https://instagram.fblr24-4.fna.fbcdn.net/v/t51.82787-15/865463149_1111840788159760_185807346138563481_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=Wsxxbei7nSoQ7kNvwGGLShi&_nc_oc=Adri_KEPQ2yQrr4oZ47oWeaFsrmI0aMDCZ1A-Ts1y6gaszsr5ltGMiv7y9qmrszEXPfeldWqJ3X2XdkZJ_JK0IUW&_nc_zt=23&_nc_ht=instagram.fblr24-4.fna&_nc_gid=74mVIA2vpEV1MlWnO9Ko4Q&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQRvhSwDMoYp4uNkwWyrjTPYjWJGk2QlMQ_DXX3JhqVi7Q&oe=6AFE07D8",
+    "thumbnail_url": "https://instagram.fblr24-4.fna.fbcdn.net/v/t51.82787-15/865463149_1111840788159760_185807346138563481_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=Wsxxbei7nSoQ7kNvwGGLShi&_nc_oc=Adri_KEPQ2yQrr4oZ47oWeaFsrmI0aMDCZ1A-Ts1y6gaszsr5ltGMiv7y9qmrszEXPfeldWqJ3X2XdkZJ_JK0IUW&_nc_zt=23&_nc_ht=instagram.fblr24-4.fna&_nc_gid=DWGRbnuMnrGUP2Y0cY76BA&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQQP2pCBzP58CRJqdBbFlFMl2ZKG8gj-_0alG0X2_NJBPg&oe=6AFE07D8",
     "media_url": null,
     "missing": [
       "likes"
@@ -1203,8 +1205,8 @@
     },
     "raw": {
       "description": "「TVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開!」 - 2026年10月23日、sallusmemer",
-      "article_text": "sallusmemer\nFollow\nTVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開!\nSee translation\nLikes\n47\n19\nvishal.rao\nFollow\nPeace > Money 🤟🏻♾️\n\n#fitonwheels #fitness #gym #lifestyle #brahmin\n10.9K\n138\n62\n1,465",
-      "aria_text": "sallusmemer reels\nsallusmemer reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nvishal.rao reels\nvishal.rao reels\nVerified\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "article_text": "sallusmemer\nFollow\nTVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開!\nSee translation\nLikes\n47\n19\nchiragkohliii\nFollow\nFrankfurt, Germany\nAlone but not lonely\n.\n.\n.\n📸: @cineseele\n57.9K\n173\n5,264\n7,248",
+      "aria_text": "sallusmemer reels\nsallusmemer reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nchiragkohliii reels\nchiragkohliii reels\nLocation\nLocation\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
       "json_ld": {},
       "engagement": {
         "scope": "reel_action_controls",
@@ -1248,13 +1250,15 @@
             "field": "likes",
             "stable": false,
             "access_clear": true,
-            "evidence": "Likes"
+            "evidence": null,
+            "repeated_evidence": "sallusmemer can see the total number of people who liked this post.",
+            "panel_changed": true
           }
         ]
       }
     },
     "last_error": null,
-    "last_attempt_at": "2026-11-14T09:13:21.554Z",
+    "last_attempt_at": "2026-11-14T09:50:20.113Z",
     "access_review": null,
     "extraction_review": "Metric extraction is incomplete; absence has not been confirmed. Inspect or retry rather than assume hidden counts.",
     "date_source": "og_description_localized",
@@ -1499,7 +1503,7 @@
     "grid_views_raw": "8,442",
     "grid_views_issue": null,
     "status": "partial",
-    "fetched_at": "2026-11-14T09:13:42.435Z",
+    "fetched_at": "2026-11-14T09:50:27.720Z",
     "date": "2026-10-23",
     "date_precision": "day",
     "caption": null,
@@ -1519,7 +1523,7 @@
       "approximate": false,
       "source": "profile_grid"
     },
-    "thumbnail_url": "https://instagram.fblr1-9.fna.fbcdn.net/v/t51.82787-15/862666809_1413838203726538_7640366035812845890_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=mypg7li9OAEQ7kNvwHlTFNx&_nc_oc=Ado9NTsWRY1sFQe40-M6SPQgY-7RiZNDVyhIOxAt6wJzbRDrsNs-fZ9A_g3qtB_dYEGv2iJZ8b0hV3I17EnAN4hU&_nc_zt=23&_nc_ht=instagram.fblr1-9.fna&_nc_gid=H_bRb9va-fgEXFg_YeSutg&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQQil7NbJqNVhVBtBOWH8Yuyni4469d5x-JP2IRybsZK4A&oe=6AFE0E86",
+    "thumbnail_url": "https://instagram.fblr1-9.fna.fbcdn.net/v/t51.82787-15/862666809_1413838203726538_7640366035812845890_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=mypg7li9OAEQ7kNvwHlTFNx&_nc_oc=Ado9NTsWRY1sFQe40-M6SPQgY-7RiZNDVyhIOxAt6wJzbRDrsNs-fZ9A_g3qtB_dYEGv2iJZ8b0hV3I17EnAN4hU&_nc_zt=23&_nc_ht=instagram.fblr1-9.fna&_nc_gid=tDtinmeKRqvYTaV8xkYinw&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQQo-3ttMZmOf1Q7acRNe5UiGhirnweUGDZ90pS5YpkE3g&oe=6AFE0E86",
     "media_url": null,
     "missing": [
       "likes"
@@ -1529,8 +1533,8 @@
     },
     "raw": {
       "description": "「TVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開!」 - 2026年10月23日、sallusmemer",
-      "article_text": "sallusmemer\nFollow\nTVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開!\nSee translation\nLikes\n4\n1\nai.orange_\nFollow\nAI-generated profile\n• AI content\n“I kept only the sweet ones.”\n\nShabari waited her whole life for Lord Rama. She tasted every berry first, so he would only get the sweetest. Others saw half-eaten fruit. Lord Rama saw pure devotion and ate them all. 🫐\n\nOne basket. One lifetime of waiting. A love that needed no words. ❤️\n\nAn animated retelling inspired by the Ramayana.\n497K\n1,510\n11.7K\n29.9K",
-      "aria_text": "sallusmemer reels\nsallusmemer reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nai.orange_ reels\nai.orange_ reels\nRepost\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "article_text": "sallusmemer\nFollow\nTVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開!\nSee translation\nLikes\n4\n1\nWatch full feature\n1:11:38\ncolinandsamir \n and mosseri\nFollow\nThe Future of Instagram according to @mosseri\n90.5K\n4,869\n5,050\n77.9K",
+      "aria_text": "sallusmemer reels\nsallusmemer reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\n\ncolinandsamir reels\ncolinandsamir reels\nVerified\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
       "json_ld": {},
       "engagement": {
         "scope": "reel_action_controls",
@@ -1574,13 +1578,15 @@
             "field": "likes",
             "stable": false,
             "access_clear": true,
-            "evidence": "Likes"
+            "evidence": null,
+            "repeated_evidence": "sallusmemer can see the total number of people who liked this post.",
+            "panel_changed": true
           }
         ]
       }
     },
     "last_error": null,
-    "last_attempt_at": "2026-11-14T09:13:42.435Z",
+    "last_attempt_at": "2026-11-14T09:50:27.720Z",
     "access_review": null,
     "extraction_review": "Metric extraction is incomplete; absence has not been confirmed. Inspect or retry rather than assume hidden counts.",
     "date_source": "og_description_localized",
@@ -2374,7 +2380,7 @@
     "grid_views_raw": "937K",
     "grid_views_issue": null,
     "status": "partial",
-    "fetched_at": "2026-11-14T09:14:37.459Z",
+    "fetched_at": "2026-11-14T09:50:40.351Z",
     "date": "2026-10-23",
     "date_precision": "day",
     "caption": null,
@@ -2394,7 +2400,7 @@
       "approximate": true,
       "source": "profile_grid"
     },
-    "thumbnail_url": "https://instagram.fblr1-8.fna.fbcdn.net/v/t51.82787-15/858565149_1097176126512414_4029543774122496468_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=4OOuI1YMm_sQ7kNvwFln5qq&_nc_oc=Adpag363bOX5iREKUFR_1vVMoaiK-vWmWd-n6mB-ROFTYHjdY-DXqROqAGHetxZ8OH2bq12c56ouCO9_ifuekEBd&_nc_zt=23&_nc_ht=instagram.fblr1-8.fna&_nc_gid=dalp36CUJXrBvfwSP7qDsA&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQTEiNBekpUVrUaNVHLx6jYpfYesb_D_7dZQ_AmMl0z2WA&oe=6AFE08F9",
+    "thumbnail_url": "https://instagram.fblr1-8.fna.fbcdn.net/v/t51.82787-15/858565149_1097176126512414_4029543774122496468_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=4OOuI1YMm_sQ7kNvwFln5qq&_nc_oc=Adpag363bOX5iREKUFR_1vVMoaiK-vWmWd-n6mB-ROFTYHjdY-DXqROqAGHetxZ8OH2bq12c56ouCO9_ifuekEBd&_nc_zt=23&_nc_ht=instagram.fblr1-8.fna&_nc_gid=Ub3zpT0VUipE8fwjtoBJ4Q&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQTkHknXrrA8pixPP1ZkO7A4gPUHPekmGslsa2cqQDHOQQ&oe=6AFE08F9",
     "media_url": null,
     "missing": [
       "likes"
@@ -2404,8 +2410,8 @@
     },
     "raw": {
       "description": "「TVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開!」 - 2026年10月23日、sallusmemer",
-      "article_text": "sallusmemer\nFollow\nTVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開!\nSee translation\nLikes\n433\n240\nai.orange_\nFollow\nAI-generated profile\n• AI content\n“I kept only the sweet ones.”\n\nShabari waited her whole life for Lord Rama. She tasted every berry first, so he would only get the sweetest. Others saw half-eaten fruit. Lord Rama saw pure devotion and ate them all. 🫐\n\nOne basket. One lifetime of waiting. A love that needed no words. ❤️\n\nAn animated retelling inspired by the Ramayana.\n497K\n1,510\n11.7K\n29.9K",
-      "aria_text": "sallusmemer reels\nsallusmemer reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nai.orange_ reels\nai.orange_ reels\nRepost\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "article_text": "sallusmemer\nFollow\nTVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開!\nSee translation\nLikes\n433\n240\nthe_greek_.god_\nFollow\nAnirudh Ravichander · Jersey The Book\nAnirudh Ravichander · Jersey The Book\n2 Days Out 🌍🇮🇳\n\n@saaheel_sharma\n\n#fyp #insta #icn #icnuae #gym\n37.1K\n142\n154\n1,528",
+      "aria_text": "sallusmemer reels\nsallusmemer reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nthe_greek_.god_ reels\nthe_greek_.god_ reels\nVerified\nAudio image\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
       "json_ld": {},
       "engagement": {
         "scope": "reel_action_controls",
@@ -2449,13 +2455,15 @@
             "field": "likes",
             "stable": false,
             "access_clear": true,
-            "evidence": "Likes"
+            "evidence": null,
+            "repeated_evidence": null,
+            "panel_changed": false
           }
         ]
       }
     },
     "last_error": null,
-    "last_attempt_at": "2026-11-14T09:14:37.460Z",
+    "last_attempt_at": "2026-11-14T09:50:40.352Z",
     "access_review": null,
     "extraction_review": "Metric extraction is incomplete; absence has not been confirmed. Inspect or retry rather than assume hidden counts.",
     "date_source": "og_description_localized",
@@ -2924,7 +2932,7 @@
     "grid_views_raw": "26.4K",
     "grid_views_issue": null,
     "status": "partial",
-    "fetched_at": "2026-11-14T09:15:12.085Z",
+    "fetched_at": "2026-11-14T09:50:50.194Z",
     "date": "2026-10-23",
     "date_precision": "day",
     "caption": null,
@@ -2944,7 +2952,7 @@
       "approximate": true,
       "source": "profile_grid"
     },
-    "thumbnail_url": "https://instagram.fblr1-9.fna.fbcdn.net/v/t51.82787-15/858356077_1653791526079476_8924688404221930256_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=UR0mOFLJGnEQ7kNvwGPUReL&_nc_oc=AdrX8lg7dDIfwsctl7cE3zvCN6pu8kIA_nymL0ZIwYX0J03Arq7Htwz9J8ol_B0mgEAcINQepc8e0ctbT55pIHQ_&_nc_zt=23&_nc_ht=instagram.fblr1-9.fna&_nc_gid=SOQzHXFbNHriZ2d0gyYurA&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQRwsNMRt8xtHNVUOk-0m8M7tsi7YmMULJ2ywG-oqGYVaA&oe=6AFDFD3F",
+    "thumbnail_url": "https://instagram.fblr1-9.fna.fbcdn.net/v/t51.82787-15/858356077_1653791526079476_8924688404221930256_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=nLhUuDOXXVwQ7kNvwFTJTnN&_nc_oc=AdpdorwuVPDH9t93ailEbt2b90btKq8W11Cm1h58bnNw6LKLSm9djgJOVY7Ew3EMqt33b8-4HR5pgekThAxQ_H8T&_nc_zt=23&_nc_ht=instagram.fblr1-9.fna&_nc_gid=-VJ7GS1niTriBDebeu3Vsg&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQT-jfjX9ZGZDfNmchjawsFU1ArzukB08YMOgkSk_HKbxg&oe=6AFDFD3F",
     "media_url": null,
     "missing": [
       "likes"
@@ -2954,8 +2962,8 @@
     },
     "raw": {
       "description": "「TVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開!」 - 2026年10月23日、sallusmemer",
-      "article_text": "sallusmemer\nFollow\nTVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開!\nSee translation\nLikes\n8\n59\nthemarketinginterns\nFollow\nCan’t compete anymore ✌️\n\n#startup #claude #chatgpt #fable #vibecoding\n14.3K\n102\n397\n2,937",
-      "aria_text": "sallusmemer reels\nsallusmemer reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nthemarketinginterns reels\nthemarketinginterns reels\nVerified\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "article_text": "sallusmemer\nFollow\nTVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開!\nSee translation\nLikes\n8\n59\nwingsoverwa\nFollow\npurc · eye of ra\nThe show must go on. #rfdswa #pc12ng #wetseason @pilatusaircraft\nSee translation\n33.8K\n85\n1,050\n4,032",
+      "aria_text": "sallusmemer reels\nsallusmemer reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nwingsoverwa reels\nwingsoverwa reels\nAudio image\nLocation\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
       "json_ld": {},
       "engagement": {
         "scope": "reel_action_controls",
@@ -2999,13 +3007,15 @@
             "field": "likes",
             "stable": false,
             "access_clear": true,
-            "evidence": "Likes\nsallusmemer can see the total number of people who liked this post.\nrrukayatt\nR.\nFollow\nvanshikaa.yadavvv\n𝐯.𝐲 🦋\nFollow\n_ibahusain_\nIba\nFollow\nfakeha.siddiqa\nLee\nFollow\nazmi_siddiquee\n아즈미 시디키\nFollow\nkrish_ivvyas\nKRISHIV VYAS 🎓🥋🥋\nFollow\nsharuxn\n𝚂𝚑𝚊𝚛.\nFollow\ncherr.ix25\n𝖘𝖆𝖛𝖎༒\nFollow\nitzz_pixell.rayyan\nyour💠pixelll💠rayyan\nFollow\nwft.palakkk\n🌙palakk\nFollow"
+            "evidence": null,
+            "repeated_evidence": null,
+            "panel_changed": false
           }
         ]
       }
     },
     "last_error": null,
-    "last_attempt_at": "2026-11-14T09:15:12.086Z",
+    "last_attempt_at": "2026-11-14T09:50:50.194Z",
     "access_review": null,
     "extraction_review": "Metric extraction is incomplete; absence has not been confirmed. Inspect or retry rather than assume hidden counts.",
     "date_source": "og_description_localized",
@@ -3474,7 +3484,7 @@
     "grid_views_raw": "9,309",
     "grid_views_issue": null,
     "status": "partial",
-    "fetched_at": "2026-11-14T09:15:47.473Z",
+    "fetched_at": "2026-11-14T09:50:59.550Z",
     "date": "2026-10-23",
     "date_precision": "day",
     "caption": null,
@@ -3494,7 +3504,7 @@
       "approximate": false,
       "source": "profile_grid"
     },
-    "thumbnail_url": "https://instagram.fblr1-6.fna.fbcdn.net/v/t51.82787-15/857843105_2050930815591821_3960137821523253376_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=7g7z92Zmyi8Q7kNvwFF0-9p&_nc_oc=AdoslDG7wYogZGBf8gX9UXkBP5i2klQxR7WDLmckCMWrNdrpewr5KrNKDIM7JwQWuXnVflEdnL6Q4GtxtQRkj9OM&_nc_zt=23&_nc_ht=instagram.fblr1-6.fna&_nc_gid=T905HsvaNFjP4tewjduuVg&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQTfJN16KHYUYoKIDMe0TdswsiPjiod-EJf39qeuNJbEAw&oe=6AFE0B24",
+    "thumbnail_url": "https://instagram.fblr1-6.fna.fbcdn.net/v/t51.82787-15/857843105_2050930815591821_3960137821523253376_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=7g7z92Zmyi8Q7kNvwFF0-9p&_nc_oc=AdoslDG7wYogZGBf8gX9UXkBP5i2klQxR7WDLmckCMWrNdrpewr5KrNKDIM7JwQWuXnVflEdnL6Q4GtxtQRkj9OM&_nc_zt=23&_nc_ht=instagram.fblr1-6.fna&_nc_gid=k1AIC9Fso0QppqyK22ieeg&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQSAvLLsV_cDFMnrrwq8la-iuEaZWvLspvc2IuqfdDNPbA&oe=6AFE0B24",
     "media_url": null,
     "missing": [
       "likes"
@@ -3504,8 +3514,8 @@
     },
     "raw": {
       "description": "「TVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開!」 - 2026年10月23日、sallusmemer",
-      "article_text": "sallusmemer\nFollow\nIshika Joshi · Friend Circle Ki Duniya (Slowed)\nIshika Joshi · Friend Circle Ki Duniya (Slowed)\nTVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開!\nSee translation\nLikes\n1\n8\nleonphamdk\nFollow\nCarb addiction needs to be studied🫪\n51.2K\n387\n504\n7,157",
-      "aria_text": "sallusmemer reels\nsallusmemer reels\nAudio image\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nleonphamdk reels\nleonphamdk reels\nVerified\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "article_text": "sallusmemer\nFollow\nIshika Joshi · Friend Circle Ki Duniya (Slowed)\nIshika Joshi · Friend Circle Ki Duniya (Slowed)\nTVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開!\nSee translation\nLikes\n1\n8\nnotsaharsh\nFollow\nBangalore, India\nimnotsaharshandimakevideos\n\nmusic by @_adilmusic - PRABHJI 86 🐐\n42.7K\n209\n680\n4,674",
+      "aria_text": "sallusmemer reels\nsallusmemer reels\nAudio image\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nnotsaharsh reels\nnotsaharsh reels\nLocation\nLocation\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
       "json_ld": {},
       "engagement": {
         "scope": "reel_action_controls",
@@ -3549,13 +3559,15 @@
             "field": "likes",
             "stable": false,
             "access_clear": true,
-            "evidence": "Likes\nsallusmemer can see the total number of people who liked this post.\n_blossoms_._\nK\nFollow\ntatheer.1zu\nH e e r 🍁\nFollow\nsrikar.24_\nSrikar Prativadi☢\nFollow\nnot.minsa2o13\n𝑴𝒊𝒏𝒔𝒂✨\nFollow\ntushar.kesavan\ntokyo 🈴\nFollow\nsshreyy203645\nTi_ ShreySingh\nFollow\nti_shreysingh\nTi_Shrey singh\nFollow\nsaifsarif53\nN H Shabbir Wahid\nFollow\nmadhomalkhokhar4\nAmeet kumar\nFollow\nvineettt_02._\nVineet ? :(\nFollow"
+            "evidence": null,
+            "repeated_evidence": "sallusmemer can see the total number of people who liked this post.",
+            "panel_changed": true
           }
         ]
       }
     },
     "last_error": null,
-    "last_attempt_at": "2026-11-14T09:15:47.473Z",
+    "last_attempt_at": "2026-11-14T09:50:59.550Z",
     "access_review": null,
     "extraction_review": "Metric extraction is incomplete; absence has not been confirmed. Inspect or retry rather than assume hidden counts.",
     "date_source": "og_description_localized",
@@ -3800,7 +3812,7 @@
     "grid_views_raw": "168K",
     "grid_views_issue": null,
     "status": "partial",
-    "fetched_at": "2026-11-14T09:16:08.207Z",
+    "fetched_at": "2026-11-14T09:51:06.405Z",
     "date": "2026-10-23",
     "date_precision": "day",
     "caption": null,
@@ -3820,7 +3832,7 @@
       "approximate": true,
       "source": "profile_grid"
     },
-    "thumbnail_url": "https://instagram.fblr24-1.fna.fbcdn.net/v/t51.82787-15/863442401_2418603755215576_5473127056186425886_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=hwPNWBoqAwoQ7kNvwFO_9iJ&_nc_oc=Adqf-41JqMgm3iVYLjc1-O6DQ2JoIN5fAE3_Q6Rsnj3Wx6U4YcMYRdTprTzn0VkpDxr68AyDu8OLWD-ZWcyC-DIr&_nc_zt=23&_nc_ht=instagram.fblr24-1.fna&_nc_gid=ucLmB7FLqdeDIUhX8WbscQ&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQS9wlWrL61OBXV9SrFl0DDi9IuZzz6lnVhRgWlVCdBf3g&oe=6AFDE71A",
+    "thumbnail_url": "https://instagram.fblr24-1.fna.fbcdn.net/v/t51.82787-15/863442401_2418603755215576_5473127056186425886_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=hwPNWBoqAwoQ7kNvwFO_9iJ&_nc_oc=Adqf-41JqMgm3iVYLjc1-O6DQ2JoIN5fAE3_Q6Rsnj3Wx6U4YcMYRdTprTzn0VkpDxr68AyDu8OLWD-ZWcyC-DIr&_nc_zt=23&_nc_ht=instagram.fblr24-1.fna&_nc_gid=nvLw_rsIIu6siIJogYtCZg&_nc_ss=7f6a8&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQSyLv2H5kdjM0RQZmykQVr1Z_kWVO11YGNTnnlZdlAOuA&oe=6AFDE71A",
     "media_url": null,
     "missing": [
       "likes"
@@ -3830,8 +3842,8 @@
     },
     "raw": {
       "description": "「TVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開!」 - 2026年10月23日、sallusmemer",
-      "article_text": "sallusmemer\nFollow\nTVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開!\nSee translation\nLikes\n58\n206\nwingsoverwa\nFollow\npurc · eye of ra\nThe show must go on. #rfdswa #pc12ng #wetseason @pilatusaircraft\nSee translation\n33.7K\n85\n1,050\n4,032",
-      "aria_text": "sallusmemer reels\nsallusmemer reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nwingsoverwa reels\nwingsoverwa reels\nAudio image\nLocation\nAudio image\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
+      "article_text": "sallusmemer\nFollow\nTVアニメ『佐々木とピーちゃん Season2』第1話は1時間スペシャル！新キャラクターのキャストが解禁！さらにOP主題歌＆メインPVも公開!\nSee translation\nLikes\n58\n206\nalbertobarsiguitar\nFollow\nSynth riffs + guitar = 👨🏻‍🍳🤌\n24.7K\n114\n726\n3,790",
+      "aria_text": "sallusmemer reels\nsallusmemer reels\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nalbertobarsiguitar reels\nalbertobarsiguitar reels\nVerified\nVideo player\nAdjust volume\nAudio is muted\nPress to play\nPlay button icon\nLike\nComment\nRepost\nShare\nSave\nMore\nLoading...\nLoading...\nLoading...\nLoading...\nReels navigation controls\nNavigate to previous Reel\n\nNavigate to next Reel\n",
       "json_ld": {},
       "engagement": {
         "scope": "reel_action_controls",
@@ -3875,13 +3887,15 @@
             "field": "likes",
             "stable": false,
             "access_clear": true,
-            "evidence": "Likes"
+            "evidence": null,
+            "repeated_evidence": "sallusmemer can see the total number of people who liked this post.",
+            "panel_changed": true
           }
         ]
       }
     },
     "last_error": null,
-    "last_attempt_at": "2026-11-14T09:16:08.207Z",
+    "last_attempt_at": "2026-11-14T09:51:06.405Z",
     "access_review": null,
     "extraction_review": "Metric extraction is incomplete; absence has not been confirmed. Inspect or retry rather than assume hidden counts.",
     "date_source": "og_description_localized",
