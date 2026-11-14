@@ -100,5 +100,20 @@
       "first_seen_at": "2026-10-28T09:01:58.673Z"
     }
   ],
-  "username_change_observed_at": null
+  "username_change_observed_at": null,
+  "account_status": "deleted",
+  "account_status_observed_at": "2026-11-14T05:14:30.330Z",
+  "excluded_from_collection": true,
+  "excluded_from_analysis": false,
+  "retained_metrics_in_analysis": true,
+  "resolution_note": "Reel and parent profile unavailable on 14 November 2026. Deletion versus rename is unconfirmed. Further collection stopped; saved observations retained for historical analysis, with missing values unknown.",
+  "availability_evidence": {
+    "reel_url": "https://www.instagram.com/reel/De_rAgQvgZE/",
+    "parent": {
+      "status": "unavailable",
+      "url": "https://www.instagram.com/coopyyz/",
+      "error": "Instagram reports this page is unavailable.",
+      "checked_at": "2026-11-14T05:14:30.330Z"
+    }
+  }
 }

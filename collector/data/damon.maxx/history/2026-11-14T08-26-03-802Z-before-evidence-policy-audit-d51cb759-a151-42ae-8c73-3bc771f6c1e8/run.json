@@ -1,0 +1,20 @@
+{
+  "started_at": "2026-11-14T05:09:50.068Z",
+  "updated_at": "2026-11-14T05:09:54.028Z",
+  "status": "complete",
+  "phase": "done",
+  "scope": [
+    "reel"
+  ],
+  "current_url": null,
+  "error": null,
+  "progress": {
+    "task": "item_details",
+    "label": "Detail resolution",
+    "completed": 1,
+    "total": 1,
+    "percent": 100,
+    "detail": "resolved_unavailable_metrics; 0 unresolved reels remain."
+  },
+  "browser_left_open": true
+}

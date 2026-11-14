@@ -1,0 +1,25 @@
+{
+  "started_at": "2026-10-24T09:20:37.642Z",
+  "updated_at": "2026-10-28T11:03:55.862Z",
+  "status": "complete",
+  "phase": "done",
+  "scope": [
+    "reel"
+  ],
+  "current_url": null,
+  "error": null,
+  "manual_review": {
+    "operation": "manual reel review",
+    "performed_at": "2026-10-28T11:03:55.862Z",
+    "resolved_items": [
+      {
+        "shortcode": "De1Jk4IRtIP",
+        "resolution": "deleted_or_archived"
+      },
+      {
+        "shortcode": "DejpZ6nostn",
+        "resolution": "age_restricted"
+      }
+    ]
+  }
+}

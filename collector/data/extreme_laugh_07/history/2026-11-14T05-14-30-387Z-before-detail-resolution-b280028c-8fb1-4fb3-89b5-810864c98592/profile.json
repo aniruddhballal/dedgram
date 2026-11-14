@@ -1,0 +1,108 @@
+{
+  "username": "extreme_laugh_07",
+  "url": "https://www.instagram.com/extreme_laugh_07/",
+  "fetched_at": "2026-10-28T09:05:10.686Z",
+  "display_name": "Ꮢᴏᴍᴇᴏ",
+  "bio": "id managed by : @7_r_o_m_e_o\n.....\nFollowed by alankritbajoria123",
+  "posts_count": {
+    "value": 13,
+    "raw": "13",
+    "approximate": false
+  },
+  "posts_count_observed_at": "2026-10-28T09:05:10.686Z",
+  "followers_count": {
+    "value": 7503,
+    "raw": "7,503",
+    "approximate": false,
+    "source": "header_title"
+  },
+  "following_count": {
+    "value": 18,
+    "raw": "18",
+    "approximate": false,
+    "source": "header_text"
+  },
+  "count_evidence": {
+    "followers": {
+      "header": {
+        "value": 7503,
+        "raw": "7,503",
+        "approximate": false
+      },
+      "exact_title": {
+        "value": 7503,
+        "raw": "7,503",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 7513,
+        "raw": "7,513",
+        "approximate": false
+      }
+    },
+    "following": {
+      "header": {
+        "value": 18,
+        "raw": "18",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 18,
+        "raw": "18",
+        "approximate": false
+      },
+      "conflict": false
+    },
+    "posts": {
+      "header": {
+        "value": 13,
+        "raw": "13",
+        "approximate": false
+      },
+      "metadata": {
+        "value": 13,
+        "raw": "13",
+        "approximate": false
+      }
+    }
+  },
+  "category": "Editor",
+  "ai_generated_profile": true,
+  "profile_picture_url": "https://instagram.fblr1-9.fna.fbcdn.net/v/t51.82787-19/867617896_18219831229358935_6130378454436331294_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=gWnKY-vVG8oQ7kNvwEt4ykg&_nc_oc=AdoHg8RDHN_rspNYlhImKOXo-KUB_GN2_s3WSrVaxtuoaUdO5zb6R1XoteYMkH5kzDDNWxT-w0bsyvEeIvD9KzLZ&_nc_zt=24&_nc_ht=instagram.fblr1-9.fna&_nc_gid=T2E_YNGkuQEVyvJu7cDASQ&_nc_ss=7f6a8&oh=00_AQSLszRrTD0wkMxk7i5oA4VK4Sj6aqftsUWOiDEF5V1s2Q&oe=6AE795F8",
+  "date_joined": "October 2026",
+  "account_based_in": "India",
+  "former_usernames_count": {
+    "value": 2,
+    "raw": "2",
+    "approximate": false
+  },
+  "raw": {
+    "header_text": "extreme_laugh_07\nᏒᴏᴍᴇᴏ\n13 posts\n7,503 followers\n18 following\nEditor • \nAI-generated profile\nid managed by : @7_r_o_m_e_o\n.....\nFollowed by alankritbajoria123\nFollow",
+    "about_text": "About this account\nextreme_laugh_07\n • AI-generated profile\nTo help keep our community authentic, we’re showing information about profiles on Instagram. See why this information is important.\nDate joined\nOctober 2026\nAccount based in\nIndia\nFormer usernames\n2\nClose",
+    "description": "7,513 Followers, 18 Following, 13 Posts - Ꮢᴏᴍᴇᴏ (@extreme_laugh_07) on Instagram: \"id managed by : @7_r_o_m_e_o \n.....\"",
+    "stat_evidence": {
+      "posts": {
+        "label": "",
+        "exact_title": ""
+      },
+      "followers": {
+        "label": "7,503 followers",
+        "exact_title": "7,503"
+      },
+      "following": {
+        "label": "18 following",
+        "exact_title": ""
+      }
+    }
+  },
+  "issues": [],
+  "current_username": "extreme_laugh_07",
+  "username_history": [
+    {
+      "username": "extreme_laugh_07",
+      "role": "current username",
+      "first_seen_at": "2026-10-28T09:05:10.682Z"
+    }
+  ],
+  "username_change_observed_at": null
+}

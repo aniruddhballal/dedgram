@@ -1,7 +1,7 @@
 {
-  "started_at": "2026-10-28T11:33:18.106Z",
-  "updated_at": "2026-10-28T11:34:20.333Z",
-  "status": "partial",
+  "started_at": "2026-11-14T05:14:30.500Z",
+  "updated_at": "2026-11-14T08:26:03.802Z",
+  "status": "excluded",
   "phase": "done",
   "scope": [
     "reel"
@@ -10,14 +10,17 @@
   "error": null,
   "progress": {
     "task": "item_details",
-    "label": "Reel details",
-    "action": "Opening reel pages and extracting dates, captions, views, likes and comments",
-    "completed": 15,
-    "total": 15,
-    "percent": 100,
-    "remaining": 0,
-    "current_item": null,
-    "detail": "Stage finished with review required",
-    "updated_at": "2026-10-28T11:34:20.333Z"
-  }
+    "label": "Resolve incomplete reel details",
+    "completed": 1,
+    "total": 4,
+    "percent": 25,
+    "detail": "Policy audit: access or missing-metric evidence requires verification. All saved values preserved.",
+    "updated_at": "2026-11-14T08:26:03.802Z"
+  },
+  "browser_left_open": true,
+  "excluded_from_collection": true,
+  "excluded_from_analysis": false,
+  "retained_metrics_in_analysis": true,
+  "account_status": "deleted",
+  "resolution_note": "Reel and parent profile unavailable on 14 November 2026. Deletion versus rename is unconfirmed. Further collection stopped; saved observations retained for historical analysis, with missing values unknown."
 }

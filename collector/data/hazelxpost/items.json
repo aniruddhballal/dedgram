@@ -973,7 +973,7 @@
     "url": "https://www.instagram.com/reel/Degf-wAoeNT/",
     "grid_views_raw": "388",
     "grid_views_issue": null,
-    "status": "metrics_unavailable",
+    "status": "partial",
     "fetched_at": "2026-11-14T05:09:29.446Z",
     "date": "2026-10-15",
     "date_precision": "day",
@@ -1163,6 +1163,19 @@
     "shares": null,
     "likes_visibility": "not_shown",
     "analysis_resolution": {
+      "status": "requires_verification",
+      "source": "visible_page_capture",
+      "recorded_at": "2026-11-14T05:09:29.447Z",
+      "reason": "Previous automatic resolution lacked explicit evidence that the metric was hidden or disabled. Saved values retained; extraction requires verification.",
+      "unavailable_fields": [
+        "likes",
+        "comments"
+      ],
+      "previous_status": "partial",
+      "policy_checked_at": "2026-11-14T08:26:03.802Z"
+    },
+    "extraction_review": "Metric extraction is incomplete; absence has not been confirmed. Inspect or retry rather than assume hidden counts.",
+    "previous_analysis_resolution": {
       "status": "resolved",
       "source": "visible_page_capture",
       "recorded_at": "2026-11-14T05:09:29.447Z",

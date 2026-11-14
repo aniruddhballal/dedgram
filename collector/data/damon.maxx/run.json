@@ -1,7 +1,7 @@
 {
   "started_at": "2026-11-14T05:09:50.068Z",
-  "updated_at": "2026-11-14T05:09:54.028Z",
-  "status": "complete",
+  "updated_at": "2026-11-14T08:26:03.802Z",
+  "status": "partial",
   "phase": "done",
   "scope": [
     "reel"
@@ -14,7 +14,8 @@
     "completed": 1,
     "total": 1,
     "percent": 100,
-    "detail": "resolved_unavailable_metrics; 0 unresolved reels remain."
+    "detail": "Policy audit: access or missing-metric evidence requires verification. All saved values preserved.",
+    "updated_at": "2026-11-14T08:26:03.802Z"
   },
   "browser_left_open": true
 }
