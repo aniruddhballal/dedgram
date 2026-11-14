@@ -43,7 +43,15 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:51:30.779Z"
+    "last_attempt_at": "2026-10-28T11:51:30.779Z",
+    "excluded_from_analysis": false,
+    "excluded_from_collection": true,
+    "retained_metrics_in_analysis": true,
+    "collection_exclusion": {
+      "source": "user_manual_profile_check",
+      "observed_at": "2026-11-14T03:19:04.985Z",
+      "reason": "The user reports the profile and checked reel links unavailable on 14 November 2026; deletion versus a username change is unconfirmed. Stop further collection and retry review. Retain all 31 URLs and previously captured data for historical analysis: 1 complete reel, 21 partial reels, and 9 failed detail attempts. Use saved values with their capture dates; missing values remain unknown, not zero."
+    }
   },
   {
     "kind": "reel",
@@ -54,7 +62,15 @@
     "status": "failed",
     "last_error": "Instagram reports this page is unavailable.",
     "last_attempt_at": "2026-10-28T11:51:34.991Z",
-    "attempts": 1
+    "attempts": 1,
+    "excluded_from_analysis": false,
+    "excluded_from_collection": true,
+    "retained_metrics_in_analysis": true,
+    "collection_exclusion": {
+      "source": "user_manual_profile_check",
+      "observed_at": "2026-11-14T03:19:04.985Z",
+      "reason": "The user reports the profile and checked reel links unavailable on 14 November 2026; deletion versus a username change is unconfirmed. Stop further collection and retry review. Retain all 31 URLs and previously captured data for historical analysis: 1 complete reel, 21 partial reels, and 9 failed detail attempts. Use saved values with their capture dates; missing values remain unknown, not zero."
+    }
   },
   {
     "kind": "reel",
@@ -65,7 +81,15 @@
     "status": "failed",
     "last_error": "Instagram reports this page is unavailable.",
     "last_attempt_at": "2026-10-28T11:51:38.739Z",
-    "attempts": 1
+    "attempts": 1,
+    "excluded_from_analysis": false,
+    "excluded_from_collection": true,
+    "retained_metrics_in_analysis": true,
+    "collection_exclusion": {
+      "source": "user_manual_profile_check",
+      "observed_at": "2026-11-14T03:19:04.985Z",
+      "reason": "The user reports the profile and checked reel links unavailable on 14 November 2026; deletion versus a username change is unconfirmed. Stop further collection and retry review. Retain all 31 URLs and previously captured data for historical analysis: 1 complete reel, 21 partial reels, and 9 failed detail attempts. Use saved values with their capture dates; missing values remain unknown, not zero."
+    }
   },
   {
     "kind": "reel",
@@ -76,7 +100,15 @@
     "status": "failed",
     "last_error": "Instagram reports this page is unavailable.",
     "last_attempt_at": "2026-10-28T11:51:42.277Z",
-    "attempts": 1
+    "attempts": 1,
+    "excluded_from_analysis": false,
+    "excluded_from_collection": true,
+    "retained_metrics_in_analysis": true,
+    "collection_exclusion": {
+      "source": "user_manual_profile_check",
+      "observed_at": "2026-11-14T03:19:04.985Z",
+      "reason": "The user reports the profile and checked reel links unavailable on 14 November 2026; deletion versus a username change is unconfirmed. Stop further collection and retry review. Retain all 31 URLs and previously captured data for historical analysis: 1 complete reel, 21 partial reels, and 9 failed detail attempts. Use saved values with their capture dates; missing values remain unknown, not zero."
+    }
   },
   {
     "kind": "reel",
@@ -87,7 +119,15 @@
     "status": "failed",
     "last_error": "Instagram reports this page is unavailable.",
     "last_attempt_at": "2026-10-28T11:51:45.699Z",
-    "attempts": 1
+    "attempts": 1,
+    "excluded_from_analysis": false,
+    "excluded_from_collection": true,
+    "retained_metrics_in_analysis": true,
+    "collection_exclusion": {
+      "source": "user_manual_profile_check",
+      "observed_at": "2026-11-14T03:19:04.985Z",
+      "reason": "The user reports the profile and checked reel links unavailable on 14 November 2026; deletion versus a username change is unconfirmed. Stop further collection and retry review. Retain all 31 URLs and previously captured data for historical analysis: 1 complete reel, 21 partial reels, and 9 failed detail attempts. Use saved values with their capture dates; missing values remain unknown, not zero."
+    }
   },
   {
     "kind": "reel",
@@ -98,7 +138,15 @@
     "status": "failed",
     "last_error": "Instagram reports this page is unavailable.",
     "last_attempt_at": "2026-10-28T11:51:49.138Z",
-    "attempts": 1
+    "attempts": 1,
+    "excluded_from_analysis": false,
+    "excluded_from_collection": true,
+    "retained_metrics_in_analysis": true,
+    "collection_exclusion": {
+      "source": "user_manual_profile_check",
+      "observed_at": "2026-11-14T03:19:04.985Z",
+      "reason": "The user reports the profile and checked reel links unavailable on 14 November 2026; deletion versus a username change is unconfirmed. Stop further collection and retry review. Retain all 31 URLs and previously captured data for historical analysis: 1 complete reel, 21 partial reels, and 9 failed detail attempts. Use saved values with their capture dates; missing values remain unknown, not zero."
+    }
   },
   {
     "kind": "reel",
@@ -109,7 +157,15 @@
     "status": "failed",
     "last_error": "Instagram reports this page is unavailable.",
     "last_attempt_at": "2026-10-28T11:51:52.662Z",
-    "attempts": 1
+    "attempts": 1,
+    "excluded_from_analysis": false,
+    "excluded_from_collection": true,
+    "retained_metrics_in_analysis": true,
+    "collection_exclusion": {
+      "source": "user_manual_profile_check",
+      "observed_at": "2026-11-14T03:19:04.985Z",
+      "reason": "The user reports the profile and checked reel links unavailable on 14 November 2026; deletion versus a username change is unconfirmed. Stop further collection and retry review. Retain all 31 URLs and previously captured data for historical analysis: 1 complete reel, 21 partial reels, and 9 failed detail attempts. Use saved values with their capture dates; missing values remain unknown, not zero."
+    }
   },
   {
     "kind": "reel",
@@ -120,7 +176,15 @@
     "status": "failed",
     "last_error": "Instagram reports this page is unavailable.",
     "last_attempt_at": "2026-10-28T11:51:56.206Z",
-    "attempts": 1
+    "attempts": 1,
+    "excluded_from_analysis": false,
+    "excluded_from_collection": true,
+    "retained_metrics_in_analysis": true,
+    "collection_exclusion": {
+      "source": "user_manual_profile_check",
+      "observed_at": "2026-11-14T03:19:04.985Z",
+      "reason": "The user reports the profile and checked reel links unavailable on 14 November 2026; deletion versus a username change is unconfirmed. Stop further collection and retry review. Retain all 31 URLs and previously captured data for historical analysis: 1 complete reel, 21 partial reels, and 9 failed detail attempts. Use saved values with their capture dates; missing values remain unknown, not zero."
+    }
   },
   {
     "kind": "reel",
@@ -131,7 +195,15 @@
     "status": "failed",
     "last_error": "Instagram reports this page is unavailable.",
     "last_attempt_at": "2026-10-28T11:51:59.631Z",
-    "attempts": 1
+    "attempts": 1,
+    "excluded_from_analysis": false,
+    "excluded_from_collection": true,
+    "retained_metrics_in_analysis": true,
+    "collection_exclusion": {
+      "source": "user_manual_profile_check",
+      "observed_at": "2026-11-14T03:19:04.985Z",
+      "reason": "The user reports the profile and checked reel links unavailable on 14 November 2026; deletion versus a username change is unconfirmed. Stop further collection and retry review. Retain all 31 URLs and previously captured data for historical analysis: 1 complete reel, 21 partial reels, and 9 failed detail attempts. Use saved values with their capture dates; missing values remain unknown, not zero."
+    }
   },
   {
     "kind": "reel",
@@ -142,7 +214,15 @@
     "status": "failed",
     "last_error": "Instagram reports this page is unavailable.",
     "last_attempt_at": "2026-10-28T11:52:02.980Z",
-    "attempts": 1
+    "attempts": 1,
+    "excluded_from_analysis": false,
+    "excluded_from_collection": true,
+    "retained_metrics_in_analysis": true,
+    "collection_exclusion": {
+      "source": "user_manual_profile_check",
+      "observed_at": "2026-11-14T03:19:04.985Z",
+      "reason": "The user reports the profile and checked reel links unavailable on 14 November 2026; deletion versus a username change is unconfirmed. Stop further collection and retry review. Retain all 31 URLs and previously captured data for historical analysis: 1 complete reel, 21 partial reels, and 9 failed detail attempts. Use saved values with their capture dates; missing values remain unknown, not zero."
+    }
   },
   {
     "kind": "reel",
@@ -187,7 +267,15 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:52:07.387Z"
+    "last_attempt_at": "2026-10-28T11:52:07.387Z",
+    "excluded_from_analysis": false,
+    "excluded_from_collection": true,
+    "retained_metrics_in_analysis": true,
+    "collection_exclusion": {
+      "source": "user_manual_profile_check",
+      "observed_at": "2026-11-14T03:19:04.985Z",
+      "reason": "The user reports the profile and checked reel links unavailable on 14 November 2026; deletion versus a username change is unconfirmed. Stop further collection and retry review. Retain all 31 URLs and previously captured data for historical analysis: 1 complete reel, 21 partial reels, and 9 failed detail attempts. Use saved values with their capture dates; missing values remain unknown, not zero."
+    }
   },
   {
     "kind": "reel",
@@ -232,7 +320,15 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:52:11.878Z"
+    "last_attempt_at": "2026-10-28T11:52:11.878Z",
+    "excluded_from_analysis": false,
+    "excluded_from_collection": true,
+    "retained_metrics_in_analysis": true,
+    "collection_exclusion": {
+      "source": "user_manual_profile_check",
+      "observed_at": "2026-11-14T03:19:04.985Z",
+      "reason": "The user reports the profile and checked reel links unavailable on 14 November 2026; deletion versus a username change is unconfirmed. Stop further collection and retry review. Retain all 31 URLs and previously captured data for historical analysis: 1 complete reel, 21 partial reels, and 9 failed detail attempts. Use saved values with their capture dates; missing values remain unknown, not zero."
+    }
   },
   {
     "kind": "reel",
@@ -277,7 +373,15 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:52:15.890Z"
+    "last_attempt_at": "2026-10-28T11:52:15.890Z",
+    "excluded_from_analysis": false,
+    "excluded_from_collection": true,
+    "retained_metrics_in_analysis": true,
+    "collection_exclusion": {
+      "source": "user_manual_profile_check",
+      "observed_at": "2026-11-14T03:19:04.985Z",
+      "reason": "The user reports the profile and checked reel links unavailable on 14 November 2026; deletion versus a username change is unconfirmed. Stop further collection and retry review. Retain all 31 URLs and previously captured data for historical analysis: 1 complete reel, 21 partial reels, and 9 failed detail attempts. Use saved values with their capture dates; missing values remain unknown, not zero."
+    }
   },
   {
     "kind": "reel",
@@ -322,7 +426,15 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:52:20.097Z"
+    "last_attempt_at": "2026-10-28T11:52:20.097Z",
+    "excluded_from_analysis": false,
+    "excluded_from_collection": true,
+    "retained_metrics_in_analysis": true,
+    "collection_exclusion": {
+      "source": "user_manual_profile_check",
+      "observed_at": "2026-11-14T03:19:04.985Z",
+      "reason": "The user reports the profile and checked reel links unavailable on 14 November 2026; deletion versus a username change is unconfirmed. Stop further collection and retry review. Retain all 31 URLs and previously captured data for historical analysis: 1 complete reel, 21 partial reels, and 9 failed detail attempts. Use saved values with their capture dates; missing values remain unknown, not zero."
+    }
   },
   {
     "kind": "reel",
@@ -367,7 +479,15 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:52:24.486Z"
+    "last_attempt_at": "2026-10-28T11:52:24.486Z",
+    "excluded_from_analysis": false,
+    "excluded_from_collection": true,
+    "retained_metrics_in_analysis": true,
+    "collection_exclusion": {
+      "source": "user_manual_profile_check",
+      "observed_at": "2026-11-14T03:19:04.985Z",
+      "reason": "The user reports the profile and checked reel links unavailable on 14 November 2026; deletion versus a username change is unconfirmed. Stop further collection and retry review. Retain all 31 URLs and previously captured data for historical analysis: 1 complete reel, 21 partial reels, and 9 failed detail attempts. Use saved values with their capture dates; missing values remain unknown, not zero."
+    }
   },
   {
     "kind": "reel",
@@ -412,7 +532,15 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:52:28.599Z"
+    "last_attempt_at": "2026-10-28T11:52:28.599Z",
+    "excluded_from_analysis": false,
+    "excluded_from_collection": true,
+    "retained_metrics_in_analysis": true,
+    "collection_exclusion": {
+      "source": "user_manual_profile_check",
+      "observed_at": "2026-11-14T03:19:04.985Z",
+      "reason": "The user reports the profile and checked reel links unavailable on 14 November 2026; deletion versus a username change is unconfirmed. Stop further collection and retry review. Retain all 31 URLs and previously captured data for historical analysis: 1 complete reel, 21 partial reels, and 9 failed detail attempts. Use saved values with their capture dates; missing values remain unknown, not zero."
+    }
   },
   {
     "kind": "reel",
@@ -457,7 +585,15 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:52:32.845Z"
+    "last_attempt_at": "2026-10-28T11:52:32.845Z",
+    "excluded_from_analysis": false,
+    "excluded_from_collection": true,
+    "retained_metrics_in_analysis": true,
+    "collection_exclusion": {
+      "source": "user_manual_profile_check",
+      "observed_at": "2026-11-14T03:19:04.985Z",
+      "reason": "The user reports the profile and checked reel links unavailable on 14 November 2026; deletion versus a username change is unconfirmed. Stop further collection and retry review. Retain all 31 URLs and previously captured data for historical analysis: 1 complete reel, 21 partial reels, and 9 failed detail attempts. Use saved values with their capture dates; missing values remain unknown, not zero."
+    }
   },
   {
     "kind": "reel",
@@ -502,7 +638,15 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:52:37.412Z"
+    "last_attempt_at": "2026-10-28T11:52:37.412Z",
+    "excluded_from_analysis": false,
+    "excluded_from_collection": true,
+    "retained_metrics_in_analysis": true,
+    "collection_exclusion": {
+      "source": "user_manual_profile_check",
+      "observed_at": "2026-11-14T03:19:04.985Z",
+      "reason": "The user reports the profile and checked reel links unavailable on 14 November 2026; deletion versus a username change is unconfirmed. Stop further collection and retry review. Retain all 31 URLs and previously captured data for historical analysis: 1 complete reel, 21 partial reels, and 9 failed detail attempts. Use saved values with their capture dates; missing values remain unknown, not zero."
+    }
   },
   {
     "kind": "reel",
@@ -547,7 +691,15 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:52:41.410Z"
+    "last_attempt_at": "2026-10-28T11:52:41.410Z",
+    "excluded_from_analysis": false,
+    "excluded_from_collection": true,
+    "retained_metrics_in_analysis": true,
+    "collection_exclusion": {
+      "source": "user_manual_profile_check",
+      "observed_at": "2026-11-14T03:19:04.985Z",
+      "reason": "The user reports the profile and checked reel links unavailable on 14 November 2026; deletion versus a username change is unconfirmed. Stop further collection and retry review. Retain all 31 URLs and previously captured data for historical analysis: 1 complete reel, 21 partial reels, and 9 failed detail attempts. Use saved values with their capture dates; missing values remain unknown, not zero."
+    }
   },
   {
     "kind": "reel",
@@ -592,7 +744,15 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:52:46.042Z"
+    "last_attempt_at": "2026-10-28T11:52:46.042Z",
+    "excluded_from_analysis": false,
+    "excluded_from_collection": true,
+    "retained_metrics_in_analysis": true,
+    "collection_exclusion": {
+      "source": "user_manual_profile_check",
+      "observed_at": "2026-11-14T03:19:04.985Z",
+      "reason": "The user reports the profile and checked reel links unavailable on 14 November 2026; deletion versus a username change is unconfirmed. Stop further collection and retry review. Retain all 31 URLs and previously captured data for historical analysis: 1 complete reel, 21 partial reels, and 9 failed detail attempts. Use saved values with their capture dates; missing values remain unknown, not zero."
+    }
   },
   {
     "kind": "reel",
@@ -637,7 +797,15 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:52:49.882Z"
+    "last_attempt_at": "2026-10-28T11:52:49.882Z",
+    "excluded_from_analysis": false,
+    "excluded_from_collection": true,
+    "retained_metrics_in_analysis": true,
+    "collection_exclusion": {
+      "source": "user_manual_profile_check",
+      "observed_at": "2026-11-14T03:19:04.985Z",
+      "reason": "The user reports the profile and checked reel links unavailable on 14 November 2026; deletion versus a username change is unconfirmed. Stop further collection and retry review. Retain all 31 URLs and previously captured data for historical analysis: 1 complete reel, 21 partial reels, and 9 failed detail attempts. Use saved values with their capture dates; missing values remain unknown, not zero."
+    }
   },
   {
     "kind": "reel",
@@ -682,7 +850,15 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:52:53.765Z"
+    "last_attempt_at": "2026-10-28T11:52:53.765Z",
+    "excluded_from_analysis": false,
+    "excluded_from_collection": true,
+    "retained_metrics_in_analysis": true,
+    "collection_exclusion": {
+      "source": "user_manual_profile_check",
+      "observed_at": "2026-11-14T03:19:04.985Z",
+      "reason": "The user reports the profile and checked reel links unavailable on 14 November 2026; deletion versus a username change is unconfirmed. Stop further collection and retry review. Retain all 31 URLs and previously captured data for historical analysis: 1 complete reel, 21 partial reels, and 9 failed detail attempts. Use saved values with their capture dates; missing values remain unknown, not zero."
+    }
   },
   {
     "kind": "reel",
@@ -727,7 +903,15 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:52:57.744Z"
+    "last_attempt_at": "2026-10-28T11:52:57.744Z",
+    "excluded_from_analysis": false,
+    "excluded_from_collection": true,
+    "retained_metrics_in_analysis": true,
+    "collection_exclusion": {
+      "source": "user_manual_profile_check",
+      "observed_at": "2026-11-14T03:19:04.985Z",
+      "reason": "The user reports the profile and checked reel links unavailable on 14 November 2026; deletion versus a username change is unconfirmed. Stop further collection and retry review. Retain all 31 URLs and previously captured data for historical analysis: 1 complete reel, 21 partial reels, and 9 failed detail attempts. Use saved values with their capture dates; missing values remain unknown, not zero."
+    }
   },
   {
     "kind": "reel",
@@ -772,7 +956,15 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:53:01.777Z"
+    "last_attempt_at": "2026-10-28T11:53:01.777Z",
+    "excluded_from_analysis": false,
+    "excluded_from_collection": true,
+    "retained_metrics_in_analysis": true,
+    "collection_exclusion": {
+      "source": "user_manual_profile_check",
+      "observed_at": "2026-11-14T03:19:04.985Z",
+      "reason": "The user reports the profile and checked reel links unavailable on 14 November 2026; deletion versus a username change is unconfirmed. Stop further collection and retry review. Retain all 31 URLs and previously captured data for historical analysis: 1 complete reel, 21 partial reels, and 9 failed detail attempts. Use saved values with their capture dates; missing values remain unknown, not zero."
+    }
   },
   {
     "kind": "reel",
@@ -817,7 +1009,15 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:53:05.876Z"
+    "last_attempt_at": "2026-10-28T11:53:05.876Z",
+    "excluded_from_analysis": false,
+    "excluded_from_collection": true,
+    "retained_metrics_in_analysis": true,
+    "collection_exclusion": {
+      "source": "user_manual_profile_check",
+      "observed_at": "2026-11-14T03:19:04.985Z",
+      "reason": "The user reports the profile and checked reel links unavailable on 14 November 2026; deletion versus a username change is unconfirmed. Stop further collection and retry review. Retain all 31 URLs and previously captured data for historical analysis: 1 complete reel, 21 partial reels, and 9 failed detail attempts. Use saved values with their capture dates; missing values remain unknown, not zero."
+    }
   },
   {
     "kind": "reel",
@@ -862,7 +1062,15 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:53:10.100Z"
+    "last_attempt_at": "2026-10-28T11:53:10.100Z",
+    "excluded_from_analysis": false,
+    "excluded_from_collection": true,
+    "retained_metrics_in_analysis": true,
+    "collection_exclusion": {
+      "source": "user_manual_profile_check",
+      "observed_at": "2026-11-14T03:19:04.985Z",
+      "reason": "The user reports the profile and checked reel links unavailable on 14 November 2026; deletion versus a username change is unconfirmed. Stop further collection and retry review. Retain all 31 URLs and previously captured data for historical analysis: 1 complete reel, 21 partial reels, and 9 failed detail attempts. Use saved values with their capture dates; missing values remain unknown, not zero."
+    }
   },
   {
     "kind": "reel",
@@ -907,7 +1115,15 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:53:14.366Z"
+    "last_attempt_at": "2026-10-28T11:53:14.366Z",
+    "excluded_from_analysis": false,
+    "excluded_from_collection": true,
+    "retained_metrics_in_analysis": true,
+    "collection_exclusion": {
+      "source": "user_manual_profile_check",
+      "observed_at": "2026-11-14T03:19:04.985Z",
+      "reason": "The user reports the profile and checked reel links unavailable on 14 November 2026; deletion versus a username change is unconfirmed. Stop further collection and retry review. Retain all 31 URLs and previously captured data for historical analysis: 1 complete reel, 21 partial reels, and 9 failed detail attempts. Use saved values with their capture dates; missing values remain unknown, not zero."
+    }
   },
   {
     "kind": "reel",
@@ -952,7 +1168,15 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:53:18.466Z"
+    "last_attempt_at": "2026-10-28T11:53:18.466Z",
+    "excluded_from_analysis": false,
+    "excluded_from_collection": true,
+    "retained_metrics_in_analysis": true,
+    "collection_exclusion": {
+      "source": "user_manual_profile_check",
+      "observed_at": "2026-11-14T03:19:04.985Z",
+      "reason": "The user reports the profile and checked reel links unavailable on 14 November 2026; deletion versus a username change is unconfirmed. Stop further collection and retry review. Retain all 31 URLs and previously captured data for historical analysis: 1 complete reel, 21 partial reels, and 9 failed detail attempts. Use saved values with their capture dates; missing values remain unknown, not zero."
+    }
   },
   {
     "kind": "reel",
@@ -997,7 +1221,15 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:53:22.899Z"
+    "last_attempt_at": "2026-10-28T11:53:22.899Z",
+    "excluded_from_analysis": false,
+    "excluded_from_collection": true,
+    "retained_metrics_in_analysis": true,
+    "collection_exclusion": {
+      "source": "user_manual_profile_check",
+      "observed_at": "2026-11-14T03:19:04.985Z",
+      "reason": "The user reports the profile and checked reel links unavailable on 14 November 2026; deletion versus a username change is unconfirmed. Stop further collection and retry review. Retain all 31 URLs and previously captured data for historical analysis: 1 complete reel, 21 partial reels, and 9 failed detail attempts. Use saved values with their capture dates; missing values remain unknown, not zero."
+    }
   },
   {
     "kind": "reel",
@@ -1042,7 +1274,15 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:53:26.928Z"
+    "last_attempt_at": "2026-10-28T11:53:26.928Z",
+    "excluded_from_analysis": false,
+    "excluded_from_collection": true,
+    "retained_metrics_in_analysis": true,
+    "collection_exclusion": {
+      "source": "user_manual_profile_check",
+      "observed_at": "2026-11-14T03:19:04.985Z",
+      "reason": "The user reports the profile and checked reel links unavailable on 14 November 2026; deletion versus a username change is unconfirmed. Stop further collection and retry review. Retain all 31 URLs and previously captured data for historical analysis: 1 complete reel, 21 partial reels, and 9 failed detail attempts. Use saved values with their capture dates; missing values remain unknown, not zero."
+    }
   },
   {
     "kind": "reel",
@@ -1084,6 +1324,14 @@
       "json_ld": {}
     },
     "last_error": null,
-    "last_attempt_at": "2026-10-28T11:53:30.940Z"
+    "last_attempt_at": "2026-10-28T11:53:30.940Z",
+    "excluded_from_analysis": false,
+    "excluded_from_collection": true,
+    "retained_metrics_in_analysis": true,
+    "collection_exclusion": {
+      "source": "user_manual_profile_check",
+      "observed_at": "2026-11-14T03:19:04.985Z",
+      "reason": "The user reports the profile and checked reel links unavailable on 14 November 2026; deletion versus a username change is unconfirmed. Stop further collection and retry review. Retain all 31 URLs and previously captured data for historical analysis: 1 complete reel, 21 partial reels, and 9 failed detail attempts. Use saved values with their capture dates; missing values remain unknown, not zero."
+    }
   }
 ]

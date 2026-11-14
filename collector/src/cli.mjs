@@ -127,7 +127,7 @@ async function collect() {
   const limit = limitArg ? Number(limitArg.slice(8)) : Infinity;
   if (!Number.isInteger(limit) && limit !== Infinity || limit < 0) throw new Error('--limit must be a nonnegative integer.');
   let { profile, discovery, items, run } = await files();
-  if (profile?.excluded_from_analysis || run.excluded_from_analysis) {
+  if (profile?.excluded_from_collection || run.excluded_from_collection || profile?.excluded_from_analysis || run.excluded_from_analysis) {
     log(`Skipping @${username}: ${profile?.resolution_note || run.resolution_note || 'Profile excluded from analysis.'}`);
     return;
   }

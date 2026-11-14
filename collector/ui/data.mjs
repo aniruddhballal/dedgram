@@ -105,7 +105,7 @@ export async function failedReels() {
   const keys = await usernames();
   const profiles = await Promise.all(keys.map(profileData));
   return profiles.flatMap(({ username, profile, items }) => items
-    .filter((item) => item.kind === 'reel' && (item.status === 'partial' || item.status === 'failed' || item.last_error))
+    .filter((item) => !item.excluded_from_collection && item.kind === 'reel' && (item.status === 'partial' || item.status === 'failed' || item.last_error))
     .map((item) => {
       const missing = (item.missing || []).map((field) => `${field}: ${item.missing_reasons?.[field] || 'No readable value was found.'}`);
       return {

@@ -1,0 +1,41 @@
+{
+  "started_at": "2026-10-28T11:51:26.751Z",
+  "updated_at": "2026-11-14T03:14:47.663Z",
+  "status": "excluded",
+  "phase": "done",
+  "scope": [
+    "reel"
+  ],
+  "current_url": null,
+  "error": null,
+  "progress": {
+    "task": "item_details",
+    "label": "Reel details",
+    "action": "Opening reel pages and extracting dates, captions, views, likes and comments",
+    "completed": 31,
+    "total": 31,
+    "percent": 100,
+    "remaining": 0,
+    "current_item": null,
+    "detail": "Excluded: profile and checked reels unavailable; deletion or rename unconfirmed. All 31 URLs retained.",
+    "updated_at": "2026-11-14T03:14:47.663Z"
+  },
+  "account_status": "deleted",
+  "account_status_observed_at": "2026-11-14T03:14:47.663Z",
+  "excluded_from_analysis": true,
+  "resolution_note": "Excluded from further collection, review, and active analysis following the user's manual check on 14 November 2026: the profile and the saved reel links checked by the user are unavailable. The account may have been deleted or renamed; neither is confirmed. All 31 previously discovered reel URLs and captured metrics are preserved. No new automated network verification was performed.",
+  "exclusion": {
+    "reason": "unavailable_deleted_or_renamed",
+    "source": "user_manual_check",
+    "recorded_at": "2026-11-14T03:14:47.663Z",
+    "deleted_confirmed": false,
+    "username_change_confirmed": false,
+    "saved_reel_urls": 31,
+    "network_verification_performed": false,
+    "checked_urls": [
+      "https://www.instagram.com/jellyfish.m3mes/",
+      "https://www.instagram.com/reel/DfCH7a5TL_Q/",
+      "https://www.instagram.com/reel/DfCHdmkT2d-/"
+    ]
+  }
+}
