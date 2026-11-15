@@ -4,6 +4,10 @@ dedgram is a native Android companion for collecting Instagram profile details a
 
 ## Current features
 
+- The header identifies dedgram as **BOT SCRAPER** and shows total saved profiles and reels beneath the version number, independently of the selected catalog or search filter.
+- The main screen contains a right-aligned **Capture session** switch, catalog tabs, collection actions and saved results. Tap the header's **ⓘ** icon once for all setup, collection, queue, availability, storage and privacy information.
+- Turning the session switch on opens Android Accessibility settings for a fresh start request. Its checked state follows actual accessibility enablement. Turning it off stops capture and disables access; if the service cannot be reached, Android settings opens for manual disablement.
+
 - The capture bubble appears only while Instagram is the active app.
 - The profile control uses the historical rounded-square AInsta alien mark; the reel control uses the black-and-white dedgram target/logo mark.
 - Drag the bubble to any position on the screen. Its position is remembered for later sessions.
@@ -34,11 +38,11 @@ dedgram is a native Android companion for collecting Instagram profile details a
 ## Capture setup
 
 1. Install the APK and open dedgram. Catalog viewing needs no capture permissions.
-2. Read the **Capture session** notice and tap **Open accessibility settings**. This authorizes one start; enable the service within two minutes.
+2. Tap **ⓘ** for setup information, then turn on the **Capture session** switch. This opens accessibility settings and authorizes one start; enable the service within two minutes.
 3. Enable **dedgram profile and reel capture**, then open Instagram within 60 seconds.
 4. Open an individual Instagram profile or reel. Leave the reel in its normal viewing state; the reel control expands its caption automatically.
 5. Tap the alien profile control or the dedgram reel control.
-6. When finished, leave Instagram or use **Stop capture and turn access off** in dedgram. Verify the status is **OFF** before using Google Pay or another payment app. Starting another session requires returning to dedgram, opening accessibility settings from its session control, and enabling the service again. Direct enablement in Settings without this fresh start request is rejected.
+6. When finished, leave Instagram or turn the **Capture session** switch off in dedgram. Verify the switch is off before using Google Pay or another payment app. Starting another session requires returning to dedgram, turning the switch on to open accessibility settings, and enabling the service again. Direct enablement in Settings without this fresh start request is rejected.
 
 Google Pay can block payments when it detects unknown apps with active accessibility access. A [reported payment-blocking issue with the original screenshot](issues/2026-10-31-google-pay-payments-blocked/README.md) prompted this change; the [investigation](issues/2026-10-31-google-pay-payments-blocked/INVESTIGATION.md) records evidence and verification limits. Disabling capture reduces this exposure, but does not guarantee that a previously triggered block is cleared. Follow [Google Pay's guidance](https://support.google.com/pay/india/answer/17165523?hl=en) for an existing block.
 

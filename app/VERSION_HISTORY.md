@@ -2,6 +2,12 @@
 
 The Android app uses semantic versioning. The canonical current version is stored in the repository-root `VERSION` file; Gradle reads that file for both `versionName` and the monotonically increasing `versionCode`.
 
+## 2.5.2 - Balanced header and compact capture controls
+
+Changed the header subtitle to BOT SCRAPER and added combined saved profile/reel totals beneath the version. Moved all collection instructions, storage notes and privacy guidance into a single scrollable information dialog behind the header's info icon. Both catalogs now lead with actions and saved data. Replaced the settings/stop button pair and textual access status with one right-aligned Capture session switch. Enabling opens Android settings with a fresh start request; disabling preserves the existing stop/disable behavior and settings fallback. Programmatic switch refreshes follow Android's actual state without launching settings or arming a new session. Version code is 20502; optimized preview assembly refreshes `app/dedgram.apk`.
+
+Validation: all 93 unit tests pass, including guidance visibility, combined totals independent of search, settings launch without premature ON state, and disable fallback without arming another session. Debug, preview and release assembly pass; preview lint reports zero errors. Connected-phone checks confirmed both catalogs show 3 profiles / 27 reels, one info tap reveals guidance, switching on opens accessibility settings, and switching off disables an active service. Access was off at the end. The installed package is 2.5.2 / 20502; repository and generated preview APK SHA-256 matches `D0F14CE641DC5FC99CF0F14AC7B7D5935C0AFB4E42418EB3248878B09D10F3CE`.
+
 ## 2.5.1 - Show captured profile details in the catalog
 
 Profile entries now show the captured avatar, counts, display name, bio, category, country, join date, former username count and observation timestamps. Each field distinguishes saved values, verified not-shown states and extraction failures with the actual reason. Rounded counts retain their displayed precision; zero stays a real value. Saved header text expands inline, and failed refreshes can reveal the previous successful capture separately. Username-only records remain supported. The optimized preview build refreshes `app/dedgram.apk`; version code is 20501.

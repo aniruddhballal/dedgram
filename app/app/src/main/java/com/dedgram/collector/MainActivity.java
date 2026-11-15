@@ -1,6 +1,7 @@
 package com.dedgram.collector;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.ComponentName;
 import android.content.Intent;
 import android.graphics.Color;
@@ -19,6 +20,7 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
+import android.widget.Switch;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -38,8 +40,9 @@ public final class MainActivity extends Activity {
     private static final int PICK_PENDING_REELS = 901;
     private TextView profileModeButton;
     private TextView reelModeButton;
-    private TextView accessibilityStatus;
-    private TextView stopCaptureButton;
+    private Switch captureToggle;
+    private boolean updatingCaptureToggle;
+    private int savedReelCount;
     private final Handler statusHandler = new Handler(Looper.getMainLooper());
     private final Runnable statusUpdate = new Runnable() {
         @Override public void run() {
@@ -48,7 +51,6 @@ public final class MainActivity extends Activity {
             statusHandler.postDelayed(this, 500L);
         }
     };
-    private TextView storageStatus;
     private EditText searchInput;
     private List<Profile> loadedProfiles = new ArrayList<>();
     private boolean keyboardVisible;
@@ -128,8 +130,8 @@ public final class MainActivity extends Activity {
         LinearLayout switcher = new LinearLayout(this);
         switcher.setOrientation(LinearLayout.HORIZONTAL);
         switcher.setPadding(0, 0, 0, UiStyles.dp(this, 2));
-        profileModeButton = modeButton("PROFILE DETECTION", false);
-        reelModeButton = modeButton("REEL COLLECTION", true);
+        profileModeButton = modeButton("PROFILES", false);
+        reelModeButton = modeButton("REELS", true);
         profileModeButton.setOnClickListener(ignored -> {
             reelMode = false;
             applyMode();
@@ -156,17 +158,6 @@ public final class MainActivity extends Activity {
         LinearLayout container = new LinearLayout(this);
         container.setOrientation(LinearLayout.VERTICAL);
         container.addView(spacer(20));
-        container.addView(UiStyles.utility(this, "PROFILE CATALOG"));
-        TextView title = UiStyles.text(this, "Capture profiles", 24, Color.BLACK, true);
-        title.setLetterSpacing(-0.02f);
-        container.addView(title, margin(0, 5, 0, 0));
-        TextView description = UiStyles.text(this, "Save profile counts, bio, account details and picture. Tap the alien control at the top of a profile; it opens About this account and returns automatically. Keep Instagram open until capture finishes.", 15, Color.BLACK, false);
-        description.setLineSpacing(UiStyles.dp(this, 2), 1.0f);
-        container.addView(description, margin(0, 10, 0, 0));
-        container.addView(spacer(20));
-        container.addView(UiStyles.utility(this, "CAPTURE SETUP"));
-        container.addView(UiStyles.text(this, "Enable a capture session above, open Instagram, then tap the alien profile control. Saved profiles are highlighted while Instagram is open.", 12, 0xFF555555, false));
-        container.addView(spacer(22));
         LinearLayout heading = new LinearLayout(this);
         heading.setGravity(Gravity.CENTER_VERTICAL);
         heading.setOrientation(LinearLayout.HORIZONTAL);
@@ -183,14 +174,6 @@ public final class MainActivity extends Activity {
         profileList = new LinearLayout(this);
         profileList.setOrientation(LinearLayout.VERTICAL);
         container.addView(profileList, margin(0, 10, 0, 0));
-        container.addView(spacer(18));
-        container.addView(UiStyles.rule(this, Color.BLACK, 1));
-        storageStatus = UiStyles.text(this, "Stored in Documents/dedgram/profiles.json", 11, 0xFF555555, false);
-        storageStatus.setLineSpacing(UiStyles.dp(this, 2), 1.0f);
-        container.addView(storageStatus, margin(0, 10, 0, 0));
-        TextView privacy = UiStyles.text(this, "Profile mode does not save screenshots, captions, bios, or direct messages.", 11, 0xFF555555, false);
-        privacy.setLineSpacing(UiStyles.dp(this, 2), 1.0f);
-        container.addView(privacy, margin(0, 4, 0, 0));
         return container;
     }
 
@@ -198,27 +181,15 @@ public final class MainActivity extends Activity {
         LinearLayout container = new LinearLayout(this);
         container.setOrientation(LinearLayout.VERTICAL);
         container.addView(spacer(20));
-        container.addView(UiStyles.utility(this, "REEL COLLECTION"));
-        TextView title = UiStyles.text(this, "Capture reels", 24, 0xFF312E81, true);
-        title.setLetterSpacing(-0.02f);
-        container.addView(title, margin(0, 5, 0, 0));
-        TextView description = UiStyles.text(this, "Open an individual reel in Instagram, then tap the dedgram logo control. Reel mode opens Likes and plays and records every requested field separately.", 15, Color.BLACK, false);
-        description.setLineSpacing(UiStyles.dp(this, 2), 1.0f);
-        container.addView(description, margin(0, 10, 0, 0));
-        container.addView(spacer(20));
-        container.addView(UiStyles.utility(this, "REEL CAPTURE SETUP"));
-        container.addView(UiStyles.text(this, "Enable a capture session above, then tap the reel control. It expands the caption, records the displayed posting date with its observation time, and opens Likes and plays. Unreadable fields are saved with errors.", 12, 0xFF555555, false));
-        container.addView(spacer(22));
-        container.addView(UiStyles.utility(this, "PENDING REEL QUEUE"));
+        container.addView(UiStyles.utility(this, "PENDING REELS"));
         LinearLayout queueRow = new LinearLayout(this);queueRow.setGravity(Gravity.CENTER_VERTICAL);
-        pendingCount = UiStyles.text(this, "Choose pending_reels.json", 15, Color.BLACK, true);
+        pendingCount = UiStyles.text(this, "No queue", 15, Color.BLACK, true);
         queueRow.addView(pendingCount,new LinearLayout.LayoutParams(0,-2,1));
         pendingStart = UiStyles.button(this, "START / RESUME", v -> startPendingQueue(), true);queueRow.addView(pendingStart);
         container.addView(queueRow,margin(0,10,0,0));
         container.addView(UiStyles.button(this,"CHOOSE DEDGRAM FOLDER",v -> choosePendingQueue(), false),margin(0,8,0,0));
-        pendingProgress = UiStyles.text(this,"Documents/dedgram/pending_reels.json",12,0xFF555555,false);
+        pendingProgress = UiStyles.text(this,"",12,0xFF555555,false);
         container.addView(pendingProgress,margin(0,8,0,0));
-        container.addView(UiStyles.text(this,"Processes null-status entries one at a time. Saved results are skipped on resume. Stop from the queue overlay in Instagram; leaving Instagram also pauses this session.",12,0xFF555555,false),margin(0,8,0,0));
         container.addView(spacer(22));
         LinearLayout heading = new LinearLayout(this);
         heading.setGravity(Gravity.CENTER_VERTICAL);
@@ -232,21 +203,14 @@ public final class MainActivity extends Activity {
         reelList = new LinearLayout(this);
         reelList.setOrientation(LinearLayout.VERTICAL);
         container.addView(reelList, margin(0, 10, 0, 0));
-        container.addView(spacer(18));
-        container.addView(UiStyles.rule(this, 0xFF4F46E5, 1));
-        TextView storage = UiStyles.text(this, "Stored in " + ReelStore.storageLocation(), 11, 0xFF555555, false);
-        storage.setLineSpacing(UiStyles.dp(this, 2), 1.0f);
-        container.addView(storage, margin(0, 10, 0, 0));
-        TextView privacy = UiStyles.text(this, "Captions are stored as UTF-8, including non-Latin scripts, emojis, and special characters.", 11, 0xFF555555, false);
-        privacy.setLineSpacing(UiStyles.dp(this, 2), 1.0f);
-        container.addView(privacy, margin(0, 4, 0, 0));
         return container;
     }
 
     private void refreshPendingQueue() {
         pendingRefresh=android.os.SystemClock.elapsedRealtime();if(pendingCount==null)return;
         try { PendingReels q=PendingReelStore.read(this);pendingCount.setText((q.reels.length()-q.done())+" pending / "+q.reels.length()+" total");pendingStart.setEnabled(q.next()!=null);pendingProgress.setText(PendingReelStore.progress(this)); }
-        catch(Exception e){pendingCount.setText("Queue unavailable");pendingStart.setEnabled(false);pendingProgress.setText(e.getMessage());}
+        catch(Exception e){pendingCount.setText(SharedReelDocuments.folder(this)==null?"No queue":"Queue unavailable");pendingStart.setEnabled(false);pendingProgress.setText(SharedReelDocuments.folder(this)==null?"":e.getMessage());}
+        pendingProgress.setVisibility(TextUtils.isEmpty(pendingProgress.getText())?View.GONE:View.VISIBLE);
     }
     private void choosePendingQueue() {
         Intent intent=new Intent(Intent.ACTION_OPEN_DOCUMENT_TREE);
@@ -310,7 +274,7 @@ public final class MainActivity extends Activity {
         TextView wordmark = UiStyles.text(this, "dedgram", 30, Color.BLACK, true);
         wordmark.setLetterSpacing(-0.05f);
         brand.addView(wordmark);
-        brand.addView(UiStyles.utility(this, "PROFILE COLLECTOR"), margin(0, 3, 0, 0));
+        brand.addView(UiStyles.utility(this, "BOT SCRAPER"), margin(0, 3, 0, 0));
         header.addView(brand, new LinearLayout.LayoutParams(0, -2, 1));
 
         LinearLayout versionAndCount = new LinearLayout(this);
@@ -319,8 +283,15 @@ public final class MainActivity extends Activity {
         TextView version = UiStyles.utility(this, "v" + BuildConfig.VERSION_NAME);
         version.setGravity(Gravity.END);
         version.setTextColor(0xFF555555);
-        versionAndCount.addView(version);
-        headerCount = UiStyles.utility(this, "0 PROFILES");
+        LinearLayout versionRow=new LinearLayout(this);
+        versionRow.setGravity(Gravity.CENTER_VERTICAL|Gravity.END);
+        versionRow.addView(version);
+        TextView info=UiStyles.text(this,"ⓘ",22,Color.BLACK,false);
+        info.setGravity(Gravity.CENTER);info.setContentDescription("App information");
+        info.setOnClickListener(v->showAppInformation());
+        versionRow.addView(info,new LinearLayout.LayoutParams(UiStyles.dp(this,48),UiStyles.dp(this,48)));
+        versionAndCount.addView(versionRow);
+        headerCount = UiStyles.text(this, "0 PROFILES / 0 REELS",9,Color.BLACK,true);
         headerCount.setGravity(Gravity.END);
         versionAndCount.addView(headerCount, margin(0, 3, 0, 0));
         header.addView(versionAndCount);
@@ -338,33 +309,26 @@ public final class MainActivity extends Activity {
         TextView title = UiStyles.text(this, "CAPTURE SESSION", 15, Color.BLACK, true);
         title.setLetterSpacing(0.02f);
         top.addView(title, new LinearLayout.LayoutParams(0, -2, 1));
-        TextView status = UiStyles.utility(this, "CHECKING");
-        top.addView(status);
-        accessibilityStatus = status;
-        row.addView(top);
-
-        TextView copy = UiStyles.text(this, "Payment apps such as Google Pay may block payments while accessibility is enabled. Stop capture and verify it is OFF before making payments.\n\nStart here, enable dedgram in Accessibility settings within 2 minutes, then open Instagram within 60 seconds. Capture turns off when you leave Instagram, lock your phone, or reach 30 minutes. Return here to start another session.", 12, 0xFF555555, false);
-        copy.setLineSpacing(UiStyles.dp(this, 2), 1.0f);
-        row.addView(copy, margin(0, 5, 0, 10));
-        row.addView(UiStyles.button(this, "OPEN ACCESSIBILITY SETTINGS", ignored ->
-                openAccessibilitySettings(), true), new LinearLayout.LayoutParams(-1, UiStyles.dp(this, 48)));
-        stopCaptureButton = UiStyles.button(this, "STOP CAPTURE AND TURN ACCESS OFF", ignored -> {
-            if (!ProfileAccessibilityService.stopCapture() && isAccessibilityEnabled()) {
-                openAccessibilitySettings();
-            }
+        captureToggle=new Switch(this);
+        captureToggle.setContentDescription("Capture session");
+        captureToggle.setShowText(false);
+        captureToggle.setMinHeight(UiStyles.dp(this,48));
+        captureToggle.setOnCheckedChangeListener((button,checked)->{
+            if(updatingCaptureToggle)return;
+            if(checked)openAccessibilitySettings();
+            else if(!ProfileAccessibilityService.stopCapture() && isAccessibilityEnabled())openAccessibilitySettings();
             refreshCaptureStatus();
-        }, false);
-        row.addView(stopCaptureButton, margin(0, 8, 0, 0));
+        });
+        top.addView(captureToggle);
+        row.addView(top);
         row.addView(UiStyles.rule(this, 0xFFDDDDDD, 1), ruleMargin(0xFFDDDDDD, 1, 0, 14, 0, 0));
         return row;
     }
 
     private void refreshScreen() {
         loadedProfiles = ProfileStore.read(this);
-        String count = loadedProfiles.size() + (loadedProfiles.size() == 1 ? " PROFILE" : " PROFILES");
-        if (headerCount != null) headerCount.setText(count);
+        updateHeaderCount();
         refreshCaptureStatus();
-        if (storageStatus != null) storageStatus.setText("Stored in " + ProfileStore.storageLocation());
         renderProfiles();
         renderReels();
         refreshPendingQueue();
@@ -372,8 +336,35 @@ public final class MainActivity extends Activity {
 
     private void refreshCaptureStatus() {
         boolean enabled = isAccessibilityEnabled();
-        if (accessibilityStatus != null) accessibilityStatus.setText(enabled ? "ACCESS ON" : "OFF");
-        if (stopCaptureButton != null) stopCaptureButton.setEnabled(enabled);
+        if(captureToggle!=null){
+            updatingCaptureToggle=true;
+            captureToggle.setChecked(enabled);
+            updatingCaptureToggle=false;
+        }
+    }
+
+    private void updateHeaderCount(){
+        if(headerCount!=null)headerCount.setText(loadedProfiles.size()+" PROFILES / "+savedReelCount+" REELS");
+    }
+
+    private void showAppInformation(){
+        ScrollView scroll=new ScrollView(this);
+        LinearLayout content=new LinearLayout(this);content.setOrientation(LinearLayout.VERTICAL);
+        int padding=UiStyles.dp(this,20);content.setPadding(padding,padding,padding,padding);scroll.addView(content);
+        information(content,"Capture session","Turn on the Capture session switch to open Android Accessibility settings. Enable dedgram there within 2 minutes, then open Instagram within 60 seconds. The switch reflects Android's actual accessibility state; opening settings alone does not turn capture on. Turn the switch off to stop capture and disable access. If Android cannot stop it directly, the switch opens settings so you can disable it there.\n\nCapture stops when you leave Instagram, lock the phone, press Stop in the queue overlay, or reach 30 minutes. Return to dedgram to start another session. Payment apps such as Google Pay may block payments while accessibility is enabled. Stop capture and verify the switch is off before making payments.");
+        information(content,"Profiles","Open an Instagram profile at its header and tap the alien control once. Keep Instagram open until capture finishes. The app expands the bio, captures counts and the visible profile picture, opens About this account and, if needed, Former usernames, then returns automatically. No further taps are needed. Reel URL discovery is not part of profile capture.\n\nUsernames are deduplicated. Another tap refreshes the existing record while preserving its first-saved time. Profiles already saved are highlighted while Instagram is open. Older username-only records can be upgraded with another capture.");
+        information(content,"Reels","Open an individual Instagram reel and tap the dedgram target control. It expands the caption, preserves the displayed posting date and its observation time, and opens Likes and plays. Likes, comments, reposts, shares, saves and plays are recorded independently. Captions preserve their original Unicode text, including emojis and non-Latin scripts. Relative dates are kept as displayed rather than converted into invented publication times.");
+        information(content,"Reading saved results","Saved values appear in the catalogs. Not shown means the verified Instagram UI did not expose the value; missing values are unknown, never zero. Failed fields show the actual extraction error. Rounded counts are labeled. Captured, finished and first-saved times use the phone's local timezone.\n\nShow saved header reveals the profile's original header text. A failed refresh can show the previous successful capture separately, so older values are not confused with the latest attempt. Capture and storage failures also appear in Instagram's status banner.");
+        information(content,"Pending reel queue","Put pending_reels.json in Documents/dedgram, then use Choose dedgram folder to grant access to that exact directory. Start / resume opens accessibility settings for a fresh session and processes eligible URLs one at a time. Instagram opens the first pending reel automatically after access is enabled.\n\nOnly entries whose status is null are attempted; saved results are skipped on resume. Stop from the queue overlay or leave Instagram to pause. Reset a result's status to null deliberately if you want to retry it. Do not edit the queue file while it is running.");
+        information(content,"Storage and privacy","Profiles: "+ProfileStore.storageLocation()+"\nReels: "+ReelStore.storageLocation()+"\nQueue: Documents/dedgram/pending_reels.json\n\nThe files are user-visible JSON documents. Profile capture saves the bio and a PNG crop of the visible avatar. The temporary full screenshot is discarded; the app does not collect other apps' text, screenshots or direct messages. Avatar capture requires Android 11 or newer. Catalog viewing needs no capture permission.");
+        new AlertDialog.Builder(this).setTitle("About dedgram").setView(scroll).setPositiveButton("DONE",null).show();
+    }
+
+    private void information(LinearLayout content,String title,String body){
+        content.addView(UiStyles.text(this,title,16,Color.BLACK,true),margin(0,12,0,0));
+        TextView text=UiStyles.text(this,body,13,0xFF555555,false);
+        text.setTextIsSelectable(true);text.setLineSpacing(UiStyles.dp(this,3),1f);
+        content.addView(text,margin(0,6,0,10));
     }
 
     private EditText buildSearchInput() {
@@ -441,10 +432,11 @@ public final class MainActivity extends Activity {
         if (reelList == null) return;
         reelList.removeAllViews();
         List<Reel> reels = ReelStore.read(this);
+        savedReelCount=reels.size();
+        updateHeaderCount();
         if (reelCount != null) reelCount.setText(reels.size() + (reels.size() == 1 ? " REEL" : " REELS"));
         if (reels.isEmpty()) {
             reelList.addView(UiStyles.text(this, "Nothing saved yet", 24, 0xFF312E81, true), margin(0, 20, 0, 0));
-            reelList.addView(UiStyles.text(this, "Open an Instagram reel, then tap the dedgram logo control.", 15, Color.BLACK, false), margin(0, 10, 0, 0));
             return;
         }
         for (Reel reel : reels) reelList.addView(buildReelRow(reel));
@@ -471,11 +463,6 @@ public final class MainActivity extends Activity {
                 + "  ·  Reposts " + metric(reel, "reposts", reel.reposts, reel.repostsError)
                 + "  ·  Saves " + metric(reel, "saves", reel.saves, reel.savesError);
         row.addView(UiStyles.text(this, details, 11, 0xFF555555, false), margin(0, 8, 0, 0));
-        if (reel.hasErrors()) {
-            TextView warning = UiStyles.text(this, "Some fields contain capture errors; inspect reels.json for field-level details.", 11, 0xFF9A3412, true);
-            warning.setLineSpacing(UiStyles.dp(this, 2), 1.0f);
-            row.addView(warning, margin(0, 8, 0, 0));
-        }
         row.addView(UiStyles.rule(this, 0xFFE0E0E0, 1), ruleMargin(0xFFE0E0E0, 1, 0, 14, 0, 0));
         return row;
     }
@@ -501,7 +488,6 @@ public final class MainActivity extends Activity {
         empty.setOrientation(LinearLayout.VERTICAL);
         empty.setPadding(0, UiStyles.dp(this, 22), 0, UiStyles.dp(this, 22));
         empty.addView(UiStyles.text(this, "No matching profile", 24, Color.BLACK, true), margin(0, 20, 0, 0));
-        empty.addView(UiStyles.text(this, "Try a username, @username, or Instagram profile URL.", 15, Color.BLACK, false), margin(0, 10, 0, 0));
         return empty;
     }
 
@@ -510,7 +496,6 @@ public final class MainActivity extends Activity {
         empty.setOrientation(LinearLayout.VERTICAL);
         empty.setPadding(0, UiStyles.dp(this, 22), 0, UiStyles.dp(this, 22));
         empty.addView(UiStyles.text(this, "Nothing saved yet", 24, Color.BLACK, true), margin(0, 20, 0, 0));
-        empty.addView(UiStyles.text(this, "Open an Instagram profile at its header, then tap the alien control to save its details.", 15, Color.BLACK, false), margin(0, 10, 0, 0));
         return empty;
     }
 
@@ -520,9 +505,9 @@ public final class MainActivity extends Activity {
         row.setPadding(0, UiStyles.dp(this, 14), 0, UiStyles.dp(this, 14));
         row.addView(UiStyles.text(this, "@" + profile.username, 16, Color.BLACK, true));
         String captureStatus = profile.details.optString("capture_status", "username_only");
-        row.addView(UiStyles.text(this, "failed".equals(captureStatus) ? "Profile fetch failed - see field errors below"
+        row.addView(UiStyles.text(this, "failed".equals(captureStatus) ? "Profile fetch failed"
                 : "complete".equals(captureStatus) ? "Profile details saved"
-                : "Username only - tap the profile control again to capture details", 12,
+                : "Username only", 12,
                 profile.captureFailed() ? 0xFF9A3412 : 0xFF555555, true), margin(0, 5, 0, 0));
         row.addView(UiStyles.text(this, "instagram.com/" + profile.normalizedUsername + "/", 12, 0xFF555555, false), margin(0, 5, 0, 0));
         row.addView(ProfileDetailsView.create(this, profile), margin(0, 10, 0, 0));
