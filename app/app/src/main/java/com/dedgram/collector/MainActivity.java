@@ -520,11 +520,12 @@ public final class MainActivity extends Activity {
         row.setPadding(0, UiStyles.dp(this, 14), 0, UiStyles.dp(this, 14));
         row.addView(UiStyles.text(this, "@" + profile.username, 16, Color.BLACK, true));
         String captureStatus = profile.details.optString("capture_status", "username_only");
-        row.addView(UiStyles.text(this, "failed".equals(captureStatus) ? "Profile fetch failed - tap the profile icon again to retry"
-                : "complete".equals(captureStatus) ? "Profile details saved - unavailable fields recorded separately"
+        row.addView(UiStyles.text(this, "failed".equals(captureStatus) ? "Profile fetch failed - see field errors below"
+                : "complete".equals(captureStatus) ? "Profile details saved"
                 : "Username only - tap the profile control again to capture details", 12,
                 profile.captureFailed() ? 0xFF9A3412 : 0xFF555555, true), margin(0, 5, 0, 0));
         row.addView(UiStyles.text(this, "instagram.com/" + profile.normalizedUsername + "/", 12, 0xFF555555, false), margin(0, 5, 0, 0));
+        row.addView(ProfileDetailsView.create(this, profile), margin(0, 10, 0, 0));
         row.addView(UiStyles.rule(this, 0xFFDDDDDD, 1), ruleMargin(0xFFDDDDDD, 1, 0, 14, 0, 0));
         return row;
     }

@@ -2,6 +2,12 @@
 
 The Android app uses semantic versioning. The canonical current version is stored in the repository-root `VERSION` file; Gradle reads that file for both `versionName` and the monotonically increasing `versionCode`.
 
+## 2.5.1 - Show captured profile details in the catalog
+
+Profile entries now show the captured avatar, counts, display name, bio, category, country, join date, former username count and observation timestamps. Each field distinguishes saved values, verified not-shown states and extraction failures with the actual reason. Rounded counts retain their displayed precision; zero stays a real value. Saved header text expands inline, and failed refreshes can reveal the previous successful capture separately. Username-only records remain supported. The optimized preview build refreshes `app/dedgram.apk`; version code is 20501.
+
+Validation: all 89 unit tests pass, including four profile presentation regressions for failures, absence, rounded/zero counts, expandable sources/history, legacy timestamps and invalid images. Debug, preview and release builds pass; preview lint has zero errors. Connected-phone inspection confirmed the saved avatar, Unicode bio, account fields, unavailable states and header expansion. The installed package is 2.5.1 / 20501, and repository/preview APK SHA-256 matches `4E7BDE6E70A8367F44ECCE82B8A17E4E51D1A4306B1FBA3F9D164A0919015998`.
+
 ## 2.5.0 - Profile details and verified field availability
 
 The alien profile control now captures header counts, expanded bio, display name, category, avatar PNG, country, join date and former username count. It opens About this account semantically and returns to the original profile. Exact post counts are distinguished from rounded displays. Each field records captured values, evidence-backed not-shown states, or extraction failures; genuine absence permits a successful save, while extraction/navigation failures persist diagnostics and show a red status banner and catalog warning. Repeated captures update the existing username record while preserving first-seen time and the prior successful observation on failed refreshes.
