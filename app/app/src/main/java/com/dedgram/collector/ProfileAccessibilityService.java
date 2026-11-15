@@ -52,6 +52,10 @@ public final class ProfileAccessibilityService extends AccessibilityService {
     private ReelLinkCapture reelLinkCapture;
     private ReelClipboardReader reelClipboard;
     private ProfileCaptureRunner profileCapture;
+    private CompleteAnalysisRunner completeAnalysis;
+    private TextView analysisBubble,analysisProgress;
+    private boolean analysisBubbleAttached;
+    private boolean clearingSession;
     private TextView profileStatus;
     private final Runnable hideProfileStatus = this::removeProfileStatus;
     private PendingQueueRunner pendingQueue;
@@ -111,6 +115,17 @@ public final class ProfileAccessibilityService extends AccessibilityService {
         if (event == null || session == null || session.isStopped()) return;
         boolean instagramEvent = INSTAGRAM_PACKAGE.equals(String.valueOf(event.getPackageName()));
         if (instagramEvent) {
+            if(completeAnalysis!=null && completeAnalysis.isRunning() && event.getEventType()==AccessibilityEvent.TYPE_VIEW_SCROLLED){
+                AccessibilityNodeInfo source=event.getSource();
+                if(source!=null){
+                    String id=String.valueOf(source.getViewIdResourceName());
+                    if(id.endsWith(":id/clips_viewer_view_pager")){
+                        android.util.Log.i("dedgramAnalysis","scroll source="+id+" from="+event.getFromIndex()+" to="+event.getToIndex()+" count="+event.getItemCount());
+                        completeAnalysis.observeScroll(event.getItemCount(),event.getFromIndex(),event.getToIndex());
+                    }
+                    source.recycle();
+                }
+            }
             syncBubbleVisibility();
             if (session.isStopped()) return;
             if (event.getEventType() == AccessibilityEvent.TYPE_WINDOW_STATE_CHANGED) {
@@ -170,6 +185,11 @@ public final class ProfileAccessibilityService extends AccessibilityService {
     }
 
     private void clearSession() {
+        if(clearingSession)return;
+        clearingSession=true;
+        try {
+        if(completeAnalysis!=null)completeAnalysis.cancel("Capture session ended; scan is partial.");
+        removeAnalysisProgress();
         if(reelLinkCapture!=null)reelLinkCapture.cancel();
         if(reelClipboard!=null)reelClipboard.close();
         if (profileCapture != null) profileCapture.cancel();
@@ -185,7 +205,9 @@ public final class ProfileAccessibilityService extends AccessibilityService {
         }
         removeBubble();
         removeReelBubble();
+        removeAnalysisBubble();
         if (activeService.get() == this) activeService.clear();
+        } finally {clearingSession=false;}
     }
 
     private void checkForeground() {
@@ -309,10 +331,12 @@ public final class ProfileAccessibilityService extends AccessibilityService {
         if (instagramActive) {
             showBubble();
             showReelBubble();
+            showAnalysisBubble();
             if (pendingQueue != null && pendingQueue.isRunning()) updateQueueBubble(PendingReelStore.progress(this));
         } else {
             removeBubble();
             removeReelBubble();
+            removeAnalysisBubble();
             removeQueueBubble();
         }
     }
@@ -395,7 +419,76 @@ public final class ProfileAccessibilityService extends AccessibilityService {
         return WindowManager.LayoutParams.TYPE_ACCESSIBILITY_OVERLAY;
     }
 
+    private void showAnalysisBubble(){
+        if(analysisBubbleAttached || windowManager==null)return;
+        TextView view=new TextView(this);view.setBackground(new AnalysisBubbleDrawable());view.setElevation(dp(5));
+        view.setContentDescription("dedgram complete analysis");view.setOnClickListener(v->startCompleteAnalysis());
+        android.content.SharedPreferences preferences=getSharedPreferences("analysis_bubble_position",MODE_PRIVATE);
+        WindowManager.LayoutParams params=new WindowManager.LayoutParams(dp(52),dp(52),overlayType(),
+                WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE|WindowManager.LayoutParams.FLAG_NOT_TOUCH_MODAL,PixelFormat.TRANSLUCENT);
+        params.gravity=Gravity.TOP|Gravity.START;params.x=clampPosition(preferences.getInt("x",dp(16)),maxBubbleX(params));
+        params.y=clampPosition(preferences.getInt("y",dp(336)),maxBubbleY(params));params.setTitle("dedgram complete analysis bubble");
+        view.setOnTouchListener(new View.OnTouchListener(){
+            float downX,downY;int startX,startY;boolean dragging;
+            public boolean onTouch(View target,MotionEvent event){
+                switch(event.getActionMasked()){
+                    case MotionEvent.ACTION_DOWN:downX=event.getRawX();downY=event.getRawY();startX=params.x;startY=params.y;dragging=false;return true;
+                    case MotionEvent.ACTION_MOVE:
+                        float dx=event.getRawX()-downX,dy=event.getRawY()-downY;
+                        if(Math.hypot(dx,dy)>ViewConfiguration.get(ProfileAccessibilityService.this).getScaledTouchSlop())dragging=true;
+                        if(dragging){params.x=clampPosition(startX+Math.round(dx),maxBubbleX(params));params.y=clampPosition(startY+Math.round(dy),maxBubbleY(params));updateBubblePosition(target,params);}return true;
+                    case MotionEvent.ACTION_UP:
+                        if(dragging)preferences.edit().putInt("x",params.x).putInt("y",params.y).apply();else target.performClick();return true;
+                    case MotionEvent.ACTION_CANCEL:return true;
+                    default:return true;
+                }
+            }
+        });
+        try{windowManager.addView(view,params);analysisBubble=view;analysisBubbleAttached=true;}catch(RuntimeException ignored){}
+    }
+    private void removeAnalysisBubble(){
+        if(analysisBubble!=null && windowManager!=null)try{windowManager.removeView(analysisBubble);}catch(RuntimeException ignored){}
+        analysisBubble=null;analysisBubbleAttached=false;
+    }
+    private void startCompleteAnalysis(){
+        if(session==null || session.isStopped())return;
+        if(reelCaptureInProgress || (profileCapture!=null && profileCapture.isRunning()) || (pendingQueue!=null && pendingQueue.isRunning()) || (completeAnalysis!=null && completeAnalysis.isRunning())){
+            showProfileStatus("Capture is already running",false);return;
+        }
+        removeProfileStatus();
+        completeAnalysis=new CompleteAnalysisRunner(mainHandler,new CompleteAnalysisRunner.Host(){
+            public AccessibilityNodeInfo root(){return currentInstagramRoot();}
+            public void profile(){captureCurrentProfile(analysisBubble,0);}
+            public void reel(){reelCaptureInProgress=true;captureCurrentReel(analysisBubble,0);}
+            public boolean back(){return performGlobalAction(GLOBAL_ACTION_BACK);}
+            public boolean checkpoint(String username,org.json.JSONObject state){return ProfileStore.saveAnalysis(getApplicationContext(),username,state);}
+            public void progress(String text){updateAnalysisProgress(text);}
+            public void finished(String message,boolean complete){
+                removeAnalysisProgress();
+                if(reelCaptureInProgress && !clearingSession){stopCaptureSession();return;}
+                showProfileStatus(message,!complete);
+            }
+        });completeAnalysis.start();
+    }
+    private void updateAnalysisProgress(String message){
+        if(windowManager==null)return;
+        if(analysisProgress==null){
+            TextView view=new TextView(this);view.setTextSize(12);view.setTextColor(android.graphics.Color.WHITE);view.setBackgroundColor(0xEE312E81);
+            view.setPadding(dp(12),dp(10),dp(12),dp(10));view.setContentDescription("Stop complete analysis");view.setOnClickListener(v->stopCaptureSession());
+            WindowManager.LayoutParams params=new WindowManager.LayoutParams(dp(240),WindowManager.LayoutParams.WRAP_CONTENT,overlayType(),
+                    WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE|WindowManager.LayoutParams.FLAG_NOT_TOUCH_MODAL,PixelFormat.TRANSLUCENT);
+            params.gravity=Gravity.TOP|Gravity.END;params.x=dp(12);params.y=dp(85);params.setTitle("dedgram complete analysis progress");
+            try{windowManager.addView(view,params);analysisProgress=view;}catch(RuntimeException ignored){}
+        }
+        if(analysisProgress!=null)analysisProgress.setText("COMPLETE ANALYSIS\n"+message+"\nTAP TO STOP");
+    }
+    private void removeAnalysisProgress(){
+        if(analysisProgress!=null && windowManager!=null)try{windowManager.removeView(analysisProgress);}catch(RuntimeException ignored){}
+        analysisProgress=null;
+    }
+
     private void captureCurrentProfile(TextView source) {
+        if(completeAnalysis!=null && completeAnalysis.isRunning()){showProfileStatus("Complete analysis is running",false);return;}
         captureCurrentProfile(source, 0);
     }
 
@@ -440,7 +533,7 @@ public final class ProfileAccessibilityService extends AccessibilityService {
                 || (profileCapture != null && profileCapture.isRunning())) {
             showMessage("Capture is running; wait for it to finish"); return;
         }
-        showProfileStatus("Capturing profile; keep Instagram open", false);
+        if(completeAnalysis==null || !completeAnalysis.isRunning())showProfileStatus("Capturing profile; keep Instagram open", false);
         profileCapture = new ProfileCaptureRunner(mainHandler, new ProfileCaptureRunner.Host() {
             public AccessibilityNodeInfo root() { return currentInstagramRoot(); }
             public boolean back() { return performGlobalAction(GLOBAL_ACTION_BACK); }
@@ -449,6 +542,12 @@ public final class ProfileAccessibilityService extends AccessibilityService {
             }
             public void finished(ProfileCaptureRecord record) {
                 restoreProfileCaptureControls();
+                boolean analysis=completeAnalysis!=null && completeAnalysis.awaitingProfile();
+                if(analysis){
+                    boolean saved=record!=null && ProfileStore.saveCapture(getApplicationContext(),record.finish());
+                    if(saved){savedUsernames.add(record.username);setBubbleAlreadySaved(true);}
+                    completeAnalysis.profileFinished(record,saved);return;
+                }
                 if (record == null) { showProfileStatus("Profile fetch failed: open a profile at its header first", true); showCaptureFailure(source, "Open an Instagram profile at its header first"); return; }
                 Profile captured = record.finish();
                 boolean saved = ProfileStore.saveCapture(getApplicationContext(), captured);
@@ -504,6 +603,7 @@ public final class ProfileAccessibilityService extends AccessibilityService {
         if (!verified) { result.accept(null,"Profile identity changed before avatar capture."); return; }
         if(bubble!=null)bubble.setVisibility(View.INVISIBLE);
         if(reelBubble!=null)reelBubble.setVisibility(View.INVISIBLE);
+        if(analysisBubble!=null)analysisBubble.setVisibility(View.INVISIBLE);
         mainHandler.postDelayed(() -> {
         if(session==null || session.isStopped())return;
         AccessibilityNodeInfo beforeScreenshot=currentInstagramRoot();
@@ -546,9 +646,11 @@ public final class ProfileAccessibilityService extends AccessibilityService {
     private void restoreProfileCaptureControls() {
         if(bubble!=null)bubble.setVisibility(View.VISIBLE);
         if(reelBubble!=null)reelBubble.setVisibility(View.VISIBLE);
+        if(analysisBubble!=null)analysisBubble.setVisibility(View.VISIBLE);
     }
 
     private void captureCurrentReel(TextView source) {
+        if(completeAnalysis!=null && completeAnalysis.isRunning()){showProfileStatus("Complete analysis is running",false);return;}
         if (pendingQueue != null && pendingQueue.isRunning()) { showMessage("Queue is running; use its Stop control to pause"); return; }
         if (reelCaptureInProgress || (profileCapture != null && profileCapture.isRunning()) || session == null || session.isStopped()) return;
         reelCaptureInProgress = true;
@@ -798,6 +900,9 @@ public final class ProfileAccessibilityService extends AccessibilityService {
         reelCaptureInProgress = false;
         if (session == null || session.isStopped()) return;
         if (pendingQueue != null && pendingQueue.isCapturing()) { pendingQueue.accept(reel); return; }
+        if(completeAnalysis!=null && completeAnalysis.isCapturing()){
+            completeAnalysis.reelFinished(reel,ReelStore.addOrReplace(getApplicationContext(),reel));return;
+        }
         if (ReelStore.addOrReplace(getApplicationContext(), reel)) {
             if (reel.hasErrors()) showMessage("Reel saved with field errors");
             else showMessage("Reel saved");

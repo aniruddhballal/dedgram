@@ -2,6 +2,12 @@
 
 The Android app uses semantic versioning. The canonical current version is stored in the repository-root `VERSION` file; Gradle reads that file for both `versionName` and the monotonically increasing `versionCode`.
 
+## 2.6.0 - Complete account analysis from one floating control
+
+Added a draggable purple checklist/play control that composes profile capture, profile Reels-tab navigation and sequential full reel captures. Its live progress panel shows saved counts and provides Stop. Saves durable per-profile checkpoints and unique canonical shortcodes, distinguishes partial saved counts from a verified total, detects terminal collection positions, and does not mark stalled or interrupted scans complete. Confirmed totals and analysis results appear in both compact and expanded profile entries. Restored known reel panels from an interrupted run are dismissed only after verifying account and collection context. Existing temporary-session limits and mutually exclusive capture workflows are preserved. Version code is 20600; optimized preview assembly refreshes `app/dedgram.apk`.
+
+Validation: all 127 tests pass; debug, preview and release builds pass; preview lint has zero errors. The connected phone completed reposted's profile and all 11 reels from one tap, saved both confirmed total fields as 11 with zero reel field errors, and displayed that total in the catalog. A separate Stop test retained two saved reels and a partial count of two without a total; a regression covers stopping during reel 8 with exactly seven saved. Repository/preview APK SHA-256 matches `CDFC7AB29C0AC6D37988EE0F1B522F48A695DCE5E2A4DB97F0A2DA5A4649F5CF`. See [Complete analysis research](research/complete-analysis-2026-11-15.md) for terminal-position evidence and safeguards.
+
 ## 2.5.4 - Automatic canonical URLs for individual reel captures
 
 The reel icon now opens Share → Copy link automatically, reads a fresh copied URL through a brief focused accessibility overlay, strips tracking parameters/fragments, and verifies return to the original reel before continuing caption/date/metrics capture. Saves canonical URL, shortcode, URL verification evidence and explicit URL errors. Expanded reel entries expose the link and an Open reel action. Stale clipboard data, unknown destinations, missing controls and changed reel identity cannot silently supply a link. Existing queue URL capture is preserved. Version code is 20504; optimized preview assembly refreshes `app/dedgram.apk`.

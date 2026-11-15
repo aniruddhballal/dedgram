@@ -57,6 +57,15 @@ public final class ProfileDetailsView {
         field(context,content,details,"posts_count","Exact posts");
         field(context,content,details,"followers_count","Followers");
         field(context,content,details,"following_count","Following");
+        JSONObject analysis=details.optJSONObject("complete_analysis");
+        if(analysis!=null){
+            String state=analysis.optString("status","partial");
+            text(context,content,"Complete analysis · "+(state.equals("complete")?"Complete":state.equals("running")?"Scan unfinished":"Partial"),12,state.equals("complete")?0xFF166534:ERROR,true);
+            text(context,content,analysis.isNull("total_reels")?"Reels captured · "+analysis.optInt("captured_count")+" (partial count)":"Total reels · "+analysis.optInt("total_reels"),12,Color.BLACK,true);
+            int errors=analysis.optInt("reels_with_errors");if(errors>0)text(context,content,"Reels with field errors · "+errors,12,ERROR,true);
+            if(state.equals("partial") && !string(analysis,"detail").isEmpty())text(context,content,string(analysis,"detail"),12,ERROR,false);
+            if(analysis.has("updated_at_epoch_ms"))text(context,content,"Analysis updated · "+dateTime(string(analysis,"updated_at_epoch_ms")),11,MUTED,false);
+        }
         field(context,content,details,"category","Category");
         field(context,content,details,"account_based_in","Country");
         field(context,content,details,"date_joined","Date joined");

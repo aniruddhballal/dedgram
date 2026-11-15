@@ -55,6 +55,16 @@ public class ProfileDetailsViewTest {
         View legacy=ProfileDetailsView.create(RuntimeEnvironment.getApplication(),new Profile("owner","owner","1794717891201"));
         assertNull(find(legacy,"Bio · Not captured"));
     }
+    @Test public void partialAnalysisCountIsNotPresentedAsAConfirmedTotal()throws Exception {
+        ProfileCaptureRecord record=new ProfileCaptureRecord("owner");
+        JSONObject analysis=new JSONObject().put("status","partial").put("captured_count",7).put("total_reels",JSONObject.NULL).put("scan_complete",false);
+        record.json.put("complete_analysis",analysis);
+        View partial=ProfileDetailsView.create(RuntimeEnvironment.getApplication(),record.finish());
+        assertNotNull(find(partial,"Reels captured · 7 (partial count)"));assertNull(find(partial,"Total reels · 7"));
+        analysis.put("status","complete").put("total_reels",11).put("scan_complete",true);
+        View complete=ProfileDetailsView.create(RuntimeEnvironment.getApplication(),record.finish());
+        assertNotNull(find(complete,"Total reels · 11"));assertNull(find(complete,"Reels captured · 7 (partial count)"));
+    }
     private TextView find(View view,String text){
         if(view instanceof TextView && ((TextView)view).getText().toString().equals(text))return (TextView)view;
         if(view instanceof ViewGroup){ViewGroup group=(ViewGroup)view;for(int i=0;i<group.getChildCount();i++){TextView found=find(group.getChildAt(i),text);if(found!=null)return found;}}

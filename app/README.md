@@ -1,6 +1,6 @@
 # dedgram Android
 
-dedgram is a native Android companion for collecting Instagram profile details and reel metrics. It places two distinct capture controls over Instagram, reads the active Instagram accessibility tree during a temporary capture session, and maintains separate searchable profile and reel catalogs.
+dedgram is a native Android companion for collecting Instagram profile details and reel metrics. It places three distinct capture controls over Instagram, reads the active Instagram accessibility tree during a temporary capture session, and maintains separate searchable profile and reel catalogs.
 
 ## Current features
 
@@ -14,7 +14,7 @@ dedgram is a native Android companion for collecting Instagram profile details a
 - The profile control uses the historical rounded-square AInsta alien mark; the reel control uses the black-and-white dedgram target/logo mark.
 - Drag the bubble to any position on the screen. Its position is remembered for later sessions.
 - A tap and a drag are distinguished, so repositioning the bubble does not accidentally save a profile.
-- Both controls use accessibility overlays; general draw-over-other-apps permission is no longer requested.
+- All three controls use accessibility overlays; general draw-over-other-apps permission is no longer requested.
 - Capture is a temporary session: start it from dedgram, enable access within two minutes, then open Instagram within 60 seconds of enabling access; leaving Instagram, locking the phone, pressing Stop, or reaching 30 minutes disables accessibility completely.
 - Queued captures are canceled when the session ends. The service never searches background Instagram windows or injects coordinate gestures/global Back actions.
 - Profile capture retries briefly when Instagram has not finished rendering the profile header.
@@ -44,6 +44,7 @@ dedgram is a native Android companion for collecting Instagram profile details a
 3. Enable **dedgram profile and reel capture**, then open Instagram within 60 seconds.
 4. Open an individual Instagram profile or reel. Leave the reel in its normal viewing state; the reel control expands its caption automatically.
 5. Tap the alien profile control or the dedgram reel control.
+   For the whole account, open its profile header and tap the purple checklist/play control once instead. Its progress panel is also Stop.
 6. When finished, leave Instagram or turn the **Capture session** switch off in dedgram. Verify the switch is off before using Google Pay or another payment app. Starting another session requires returning to dedgram, turning the switch on to open accessibility settings, and enabling the service again. Direct enablement in Settings without this fresh start request is rejected.
 
 Google Pay can block payments when it detects unknown apps with active accessibility access. A [reported payment-blocking issue with the original screenshot](issues/2026-10-31-google-pay-payments-blocked/README.md) prompted this change; the [investigation](issues/2026-10-31-google-pay-payments-blocked/INVESTIGATION.md) records evidence and verification limits. Disabling capture reduces this exposure, but does not guarantee that a previously triggered block is cleared. Follow [Google Pay's guidance](https://support.google.com/pay/india/answer/17165523?hl=en) for an existing block.
@@ -61,6 +62,20 @@ Reel collection reads the active reel, opens the caption through its accessible 
 The service captures only when the active accessibility root belongs to Instagram. Profile capture saves the fields described below; reel capture saves captions, dates, and visible metrics. Saved-profile highlighting inspects Instagram's tree automatically on relevant events. Profile capture takes a screenshot after the tap to crop the visible avatar; the full screenshot exists only in memory and is discarded. It does not collect other apps' text, screenshots, or direct messages.
 
 ## Catalog storage
+
+### Complete analysis (2.6.0)
+
+The purple checklist/play icon is the third floating control. From an open profile header, one tap runs the existing profile capture, opens that account's Reels tab, returns a previously scrolled grid toward its beginning, opens the first reel, then repeatedly invokes the existing full reel capture and pages forward using Instagram's accessibility actions. Displayed ordering is retained, including pinned items. No production coordinate gestures are used.
+
+The progress panel shows the account and unique reels saved; tap it to stop the capture session. Profile, individual-reel, pending-queue and complete-analysis workflows are serialized. A changed owner, ad interruption, access gate, save failure, unknown navigation state or unsupported next action stops the analysis with partial progress. Previous valid reel records remain saved and are updated by canonical shortcode on a later run. A later run starts at the first reel; this is not a resume-from-last-position queue.
+
+Each accepted reel is saved durably before incrementing the count. `profiles.json` stores `complete_analysis` checkpoints with `captured_count`, unique `captured_shortcodes`, `visited_positions`, field-error count, status, phase and timestamps. For example, stopping while reel 8 is being processed after seven successful saves retains seven records and a partial count of seven. The current unfinished reel is not counted. Closing Instagram, locking the phone, Stop and the existing 30-minute session deadline all preserve partial state.
+
+`complete_analysis.total_reels` and profile `reels_count` stay null until the end is verified. End verification requires the known terminal position in the viewer's accessibility collection, every position covered by saved canonical reel identities, unchanged account/reel observations, no visible loading state, and repeated observations with no next action. A false-returning next action alone cannot prove completion. Instagram may report an action accepted even at the end, so its return value is never used alone. An explicit empty Reels grid is verified on separate observations before saving zero. Missing proof leaves the total unknown.
+
+A verified inventory total and capture completeness are separate: `scan_complete: true` can retain a confirmed total while `status: partial` reports profile or reel field errors. Only a verified end plus successful requested captures earns `status: complete`. Collapsed profile rows show either the verified total or a clearly labeled captured count; expanded rows show analysis state, partial/total count, errors and observation time. A process interruption leaves unfinished metadata rather than claiming a completed scan.
+
+The controller keeps only shortcodes and positions in memory; large reel payloads remain in the existing reel store. Reopening a reel after Stop can restore an old Share, caption or metrics panel. A matching account and collection position are verified before dismissing such a known panel; unknown panels stop the run. Research and phone validation are recorded in `research/complete-analysis-2026-11-15.md`.
 
 ### Automatic reel URLs (2.5.4)
 

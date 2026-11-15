@@ -198,6 +198,22 @@ public final class ProfileStore {
                 : SharedReelDocuments.file(context, FILE_NAME, create);
     }
 
+    public static boolean saveAnalysis(Context context,String username,JSONObject state){
+        synchronized(LOCK){
+            try{
+                List<Profile> profiles=read(context);if(readFailed)return false;
+                for(int i=0;i<profiles.size();i++){
+                    Profile profile=profiles.get(i);if(!profile.normalizedUsername.equals(normalizeUsername(username)))continue;
+                    JSONObject details=new JSONObject(profile.details.toString());details.put("complete_analysis",new JSONObject(state.toString()));
+                    details.put("reels_count",state.isNull("total_reels")?JSONObject.NULL:state.getInt("total_reels"));
+                    profiles.set(i,new Profile(profile.username,profile.normalizedUsername,profile.firstSeenAt,details));
+                    return write(context,profiles);
+                }
+                return false;
+            }catch(Exception failure){return false;}
+        }
+    }
+
     private static Uri findFile(ContentResolver resolver) {
         Uri collection = MediaStore.Files.getContentUri("external");
         String[] projection = {MediaStore.MediaColumns._ID};

@@ -1,0 +1,155 @@
+{
+  "device": "OnePlus CPH2467",
+  "android_api": 35,
+  "version": "2.6.0",
+  "version_code": 20600,
+  "confirmed_profile_reels_count": 11,
+  "completed_run": {
+    "status": "complete",
+    "phase": "finished",
+    "username": "reposted",
+    "started_at_epoch_ms": 1794733982500,
+    "updated_at_epoch_ms": 1794734124428,
+    "captured_count": 11,
+    "reels_with_errors": 0,
+    "profile_complete": true,
+    "scan_complete": true,
+    "total_reels": 11,
+    "detail": "Terminal collection position 10 of 11; every position saved; next action unavailable on repeated stable observations.",
+    "captured_shortcodes": [
+      "DSuwCXpDJ_v",
+      "DStZwcvDIWA",
+      "DStQ5r9DPG0",
+      "DStFknqDDR2",
+      "DSs5nbuDNHh",
+      "DSsspIajLDN",
+      "DSsYrJcDKmQ",
+      "DSqn4pojEh9",
+      "DSqfqdSjH3t",
+      "DSl4e-DjESD",
+      "DSjR1CpjPtu"
+    ],
+    "visited_positions": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ]
+  },
+  "saved_reels": [
+    {
+      "shortcode": "DSuwCXpDJ_v",
+      "url": "https://www.instagram.com/reel/DSuwCXpDJ_v/",
+      "captured_at": "1794733986941",
+      "caption_expanded": true,
+      "url_source": "instagram_copy_link_verified_reel"
+    },
+    {
+      "shortcode": "DStZwcvDIWA",
+      "url": "https://www.instagram.com/reel/DStZwcvDIWA/",
+      "captured_at": "1794734000843",
+      "caption_expanded": true,
+      "url_source": "instagram_copy_link_verified_reel"
+    },
+    {
+      "shortcode": "DStQ5r9DPG0",
+      "url": "https://www.instagram.com/reel/DStQ5r9DPG0/",
+      "captured_at": "1794734014143",
+      "caption_expanded": true,
+      "url_source": "instagram_copy_link_verified_reel"
+    },
+    {
+      "shortcode": "DStFknqDDR2",
+      "url": "https://www.instagram.com/reel/DStFknqDDR2/",
+      "captured_at": "1794734026966",
+      "caption_expanded": true,
+      "url_source": "instagram_copy_link_verified_reel"
+    },
+    {
+      "shortcode": "DSs5nbuDNHh",
+      "url": "https://www.instagram.com/reel/DSs5nbuDNHh/",
+      "captured_at": "1794734038160",
+      "caption_expanded": true,
+      "url_source": "instagram_copy_link_verified_reel"
+    },
+    {
+      "shortcode": "DSsspIajLDN",
+      "url": "https://www.instagram.com/reel/DSsspIajLDN/",
+      "captured_at": "1794734049419",
+      "caption_expanded": true,
+      "url_source": "instagram_copy_link_verified_reel"
+    },
+    {
+      "shortcode": "DSsYrJcDKmQ",
+      "url": "https://www.instagram.com/reel/DSsYrJcDKmQ/",
+      "captured_at": "1794734062781",
+      "caption_expanded": true,
+      "url_source": "instagram_copy_link_verified_reel"
+    },
+    {
+      "shortcode": "DSqn4pojEh9",
+      "url": "https://www.instagram.com/reel/DSqn4pojEh9/",
+      "captured_at": "1794734076170",
+      "caption_expanded": true,
+      "url_source": "instagram_copy_link_verified_reel"
+    },
+    {
+      "shortcode": "DSqfqdSjH3t",
+      "url": "https://www.instagram.com/reel/DSqfqdSjH3t/",
+      "captured_at": "1794734088045",
+      "caption_expanded": true,
+      "url_source": "instagram_copy_link_verified_reel"
+    },
+    {
+      "shortcode": "DSl4e-DjESD",
+      "url": "https://www.instagram.com/reel/DSl4e-DjESD/",
+      "captured_at": "1794734100882",
+      "caption_expanded": true,
+      "url_source": "instagram_copy_link_verified_reel"
+    },
+    {
+      "shortcode": "DSjR1CpjPtu",
+      "url": "https://www.instagram.com/reel/DSjR1CpjPtu/",
+      "captured_at": "1794734112610",
+      "caption_expanded": true,
+      "url_source": "instagram_copy_link_verified_reel"
+    }
+  ],
+  "stopped_run": {
+    "status": "partial",
+    "phase": "stopped",
+    "username": "reposted",
+    "started_at_epoch_ms": 1794725522233,
+    "updated_at_epoch_ms": 1794725554516,
+    "captured_count": 2,
+    "reels_with_errors": 0,
+    "profile_complete": true,
+    "scan_complete": false,
+    "total_reels": null,
+    "detail": "Capture session ended; scan is partial.",
+    "captured_shortcodes": [
+      "DSuwCXpDJ_v",
+      "DStZwcvDIWA"
+    ],
+    "visited_positions": [
+      0,
+      1
+    ]
+  },
+  "validation": {
+    "unit_tests": 127,
+    "failures": 0,
+    "debug_build": "passed",
+    "preview_build": "passed",
+    "release_build": "passed",
+    "lint_errors": 0,
+    "apk_sha256": "CDFC7AB29C0AC6D37988EE0F1B522F48A695DCE5E2A4DB97F0A2DA5A4649F5CF"
+  }
+}
