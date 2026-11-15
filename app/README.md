@@ -1,6 +1,6 @@
 # dedgram Android
 
-dedgram is a native Android companion for collecting Instagram profile usernames and reel metrics. It places two distinct capture controls over Instagram, reads the active Instagram accessibility tree during a temporary capture session, and maintains separate searchable profile and reel catalogs.
+dedgram is a native Android companion for collecting Instagram profile details and reel metrics. It places two distinct capture controls over Instagram, reads the active Instagram accessibility tree during a temporary capture session, and maintains separate searchable profile and reel catalogs.
 
 ## Current features
 
@@ -14,7 +14,7 @@ dedgram is a native Android companion for collecting Instagram profile usernames
 - Profile capture retries briefly when Instagram has not finished rendering the profile header.
 - Username extraction accepts profile-shaped accessibility labels, profile descriptions, and Instagram profile URLs.
 - Candidate validation rejects common UI labels and metric values such as `posts`, `followers`, and `1.2K followers` instead of treating them as usernames.
-- Usernames are normalized case-insensitively and duplicate profiles are not added.
+- Usernames are normalized case-insensitively. Repeat profile captures update the existing record and preserve its original first-seen timestamp.
 - Successful saves show a toast and a left-to-right shimmer across the bubble.
 - Already-saved profiles show a separate toast, pulse animation, and short vibration.
 - While an Instagram profile is open, the capture bubble gets a thin silver outline when that username is already saved; the check is debounced and event-driven, without continuous polling.
@@ -25,7 +25,7 @@ dedgram is a native Android companion for collecting Instagram profile usernames
 - The search field has keyboard-aware insets: results stay above the keyboard, the catalog remains scrollable while the keyboard is open, and the previous scroll position is restored when it closes.
 - The catalog has a fixed-height search field with spacing from the section heading and no decorative empty-state bar.
 - The app has separate **PROFILE DETECTION** and **REEL COLLECTION** modes with visually distinct controls.
-- The original black profile control remains available over Instagram unchanged.
+- The black alien profile control captures profile details, including About this account, independently of reel collection.
 - The reel control is a separate dedgram target/logo control that stays visible alongside the alien profile control.
 - Reel capture reads likes, comments, reposts, shares, saves, posted date, and UTF-8 caption text from the active reel.
 - Reel capture uses Instagram's semantic likes-button action to open **Likes and plays** and reads the plays value there. If Instagram exposes no clickable control, it records an error instead of injecting a screen tap.
@@ -52,7 +52,7 @@ The repository sample format for reel records is [`reel_capture.json`](reel_capt
 
 Reel collection reads the active reel, opens the caption through its accessible control, waits for a stable caption and publication footer, then dismisses that sheet through Instagram's own controls before opening **Likes and plays**. The capture stores the posting label verbatim (including relative ages and any displayed year), its UTC observation time, device timezone and locale; it does not invent an exact publication time. Metrics-sheet dismiss controls are preferred. The tested caption sheet requires one guarded Back action after its text and date match the capture; the reel identity is checked again before reading metrics. No coordinate gestures or background-window searches are used. Unknown selectors, unexposed metrics, and unsuccessful panel transitions remain explicit field errors. Owner-only likes are identified separately from extraction failures. A missing count is never assumed to be zero; an explicit empty comments message may establish zero comments.
 
-The service captures only when the active accessibility root belongs to Instagram. Profile capture saves usernames and timestamps; reel capture also saves captions, dates, and visible metrics. Saved-profile highlighting inspects Instagram's tree automatically on relevant events. It does not collect other apps' text, screenshots, or direct messages.
+The service captures only when the active accessibility root belongs to Instagram. Profile capture saves the fields described below; reel capture saves captions, dates, and visible metrics. Saved-profile highlighting inspects Instagram's tree automatically on relevant events. Profile capture takes a screenshot after the tap to crop the visible avatar; the full screenshot exists only in memory and is discarded. It does not collect other apps' text, screenshots, or direct messages.
 
 ## Catalog storage
 
@@ -62,7 +62,23 @@ The Android catalog is stored at the user-visible shared path:
 Documents/dedgram/profiles.json
 ```
 
-Each saved entry contains the captured username, its normalized username, and the first-seen timestamp. The app derives the displayed `instagram.com/<username>/` URL from the normalized username. The file is outside private app storage, so it remains user-visible and normally survives an app uninstall. The app also de-duplicates and validates entries when reading the file.
+Each saved entry preserves the captured username, its normalized username, and the first-seen timestamp. Version 2 captures also contain profile details and field availability. Existing username-only records remain readable and can be upgraded with another profile tap. The app derives the displayed `instagram.com/<username>/` URL from the normalized username. The file is outside private app storage, so it remains user-visible and normally survives an app uninstall.
+
+### Profile details capture (2.5.0)
+
+Open a profile at its header and tap the alien control once. Leave Instagram open until the status banner finishes; no other user taps are needed. The app verifies two stable header observations, expands a truncated bio, captures the avatar, opens Options then About this account, reads the stable account details, and returns using Instagram's Back control. If the Former usernames row has no readable count, it automatically opens that detail screen, verifies the matching account's count, then returns through About to the profile. Only a verified Options menu without About uses one guarded global Back. Reel URLs and reel details are outside this action.
+
+Saved fields are `posts_count`, `followers_count`, `following_count`, `profile_header_text`, `fetched_at`, `bio`, `display_name`, `category`, `account_based_in`, `date_joined`, `profile_picture`, and `former_usernames_count`. `about_text` preserves the account panel evidence. The avatar is a PNG crop encoded as base64 inside `profile_picture`, with dimensions and `source: visible_header_crop`; it is not an original-resolution download or a guessed URL. Avatar capture requires Android 11 or newer. The floating controls are hidden briefly so they cannot cover the avatar in the crop.
+
+Each field has `field_availability.<field>` with `status`, `evidence`, `observed_at`, and `error`:
+
+- `available`: the value was read from the verified UI.
+- `not_shown`: explicit Not shared text or a verified absent optional row; null values are unknown, never zero. A rounded posts count cannot establish an exact count: `posts_count` stays null and the displayed metric is retained as `posts_count_displayed`. Rounded followers/following retain `raw` and `approximate`.
+- `failed`: unreadable visible values, unknown layout, failed expansion, screenshot failure, interrupted navigation, or unverified absence. These errors must be retried or inspected; they are never converted into unavailable data.
+
+`capture_status: complete` means all requested Android profile fields are either captured or verified not shown. It does not mean the collector's profile-level completion rule (which includes the reel inventory) has been satisfied. Any extraction or navigation failure sets `capture_status: failed`, saves the diagnostic record and displays a red failure banner plus catalog warning. The banner also works when Android suppresses app toasts. A failed refresh preserves a previous successful capture under `last_successful_capture`.
+
+Profile capture and reel capture cannot run simultaneously. Leaving Instagram or ending a session cancels pending work and saves a failed attempt when a profile has already been identified. Profile storage uses the existing scoped folder grant when available, keeps a private last-good backup, refuses malformed input files, and verifies writes. Research and connected-device evidence is in [profile capture investigation](research/profile-details-capture-2026-11-15.md).
 
 ## Build and test
 

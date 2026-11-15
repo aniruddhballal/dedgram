@@ -16,7 +16,7 @@ public final class SharedReelDocuments {
  }
  public static Uri file(Context c,String name,boolean create)throws Exception{Uri tree=folder(c);if(tree==null)throw new IOException("Choose Documents/dedgram to grant exact-file access");return file(c,tree,name,create);}
  private static Uri file(Context c,Uri tree,String name,boolean create)throws Exception{
-  if(!name.equals("pending_reels.json")&&!name.equals("reels.json"))throw new IOException("Unsupported shared document");
+  if(!name.equals("pending_reels.json")&&!name.equals("reels.json")&&!name.equals("profiles.json"))throw new IOException("Unsupported shared document");
   String id=DocumentsContract.getTreeDocumentId(tree);Uri children=DocumentsContract.buildChildDocumentsUriUsingTree(tree,id);
   try(Cursor cursor=c.getContentResolver().query(children,new String[]{DocumentsContract.Document.COLUMN_DOCUMENT_ID,DocumentsContract.Document.COLUMN_DISPLAY_NAME},null,null,null)){
    if(cursor==null)throw new IOException("Folder is not readable");

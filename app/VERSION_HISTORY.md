@@ -2,6 +2,12 @@
 
 The Android app uses semantic versioning. The canonical current version is stored in the repository-root `VERSION` file; Gradle reads that file for both `versionName` and the monotonically increasing `versionCode`.
 
+## 2.5.0 - Profile details and verified field availability
+
+The alien profile control now captures header counts, expanded bio, display name, category, avatar PNG, country, join date and former username count. It opens About this account semantically and returns to the original profile. Exact post counts are distinguished from rounded displays. Each field records captured values, evidence-backed not-shown states, or extraction failures; genuine absence permits a successful save, while extraction/navigation failures persist diagnostics and show a red status banner and catalog warning. Repeated captures update the existing username record while preserving first-seen time and the prior successful observation on failed refreshes.
+
+Enabled nonimportant Instagram layout nodes needed to verify optional sections, plus screenshot capability for the avatar crop only. Capture remains temporary and Instagram-scoped; no reel inventory scan is added. Profile documents gain exact-folder access, last-good backup and readback verification. Existing records remain readable. Version code is 20500; the optimized preview build refreshes `app/dedgram.apk` for an in-place device upgrade. See the profile capture investigation for tests and limitations.
+
 ## 1.0.0 — Initial AInsta release
 
 Commits from the buildable Android shell through the first packaged AInsta release established the app, profile storage, strict username extraction, the accessibility capture service, and the catalog screen.

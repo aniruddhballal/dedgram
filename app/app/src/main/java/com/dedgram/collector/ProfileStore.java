@@ -36,6 +36,7 @@ public final class ProfileStore {
     // Instagram permits usernames to end in an underscore, but not a period.
     private static final Pattern USERNAME_PATTERN = Pattern.compile("[a-z0-9](?:[a-z0-9._]{0,28}[a-z0-9_])?");
     private static final Object LOCK = new Object();
+    private static boolean readFailed;
 
     private ProfileStore() {}
 
@@ -54,13 +55,17 @@ public final class ProfileStore {
 
     public static List<Profile> read(Context context) {
         synchronized (LOCK) {
-            Uri uri = findFile(context.getContentResolver());
+            readFailed = false;
+            Uri uri;
+            try { uri = document(context, false); }
+            catch (Exception error) { readFailed = true; return new ArrayList<>(); }
             if (uri == null) return new ArrayList<>();
             try (InputStream input = context.getContentResolver().openInputStream(uri)) {
-                if (input == null) return new ArrayList<>();
+                if (input == null) { readFailed = true; return new ArrayList<>(); }
                 String json = new String(readAll(input), StandardCharsets.UTF_8);
                 return parse(json);
             } catch (IOException | JSONException ignored) {
+                readFailed = true;
                 return new ArrayList<>();
             }
         }
@@ -75,6 +80,7 @@ public final class ProfileStore {
         if (normalized.isEmpty()) return SaveResult.FAILED;
         synchronized (LOCK) {
             List<Profile> profiles = read(context);
+            if (readFailed) return SaveResult.FAILED;
             Set<String> seen = new HashSet<>();
             for (Profile profile : profiles) {
                 if (!profile.normalizedUsername.isEmpty()) seen.add(profile.normalizedUsername);
@@ -85,26 +91,41 @@ public final class ProfileStore {
         }
     }
 
-    private static List<Profile> parse(String json) throws JSONException {
+    static List<Profile> parse(String json) throws JSONException {
         List<Profile> profiles = new ArrayList<>();
-        if (json == null || json.trim().isEmpty()) return profiles;
+        if (json == null || json.trim().isEmpty()) throw new JSONException("Empty profile document");
         JSONArray array = new JSONObject(json).optJSONArray("profiles");
-        if (array == null) return profiles;
+        if (array == null) throw new JSONException("Missing profiles array");
         Set<String> seen = new HashSet<>();
         for (int index = 0; index < array.length(); index += 1) {
             Profile profile = Profile.fromJson(array.getJSONObject(index));
             String normalized = normalizeUsername(profile.normalizedUsername);
             if (normalized.isEmpty() || seen.contains(normalized)) continue;
             seen.add(normalized);
-            profiles.add(new Profile(profile.username, normalized, profile.firstSeenAt));
+            profiles.add(new Profile(profile.username, normalized, profile.firstSeenAt, profile.details));
         }
         return profiles;
     }
 
     private static boolean write(Context context, List<Profile> profiles) {
         ContentResolver resolver = context.getContentResolver();
-        Uri uri = findFile(resolver);
+        Uri uri;
+        try { uri = document(context, false); }
+        catch (Exception error) { return false; }
         boolean pending = false;
+        if (uri != null) {
+            try (InputStream input = resolver.openInputStream(uri)) {
+                if (input == null) return false;
+                byte[] bytes = readAll(input);
+                parse(new String(bytes, StandardCharsets.UTF_8));
+                try (java.io.FileOutputStream backup = context.openFileOutput("profiles-last-good.json", 0)) {
+                    backup.write(bytes); backup.getFD().sync();
+                }
+            } catch (Exception error) { return false; }
+        }
+        if (uri == null && SharedReelDocuments.folder(context) != null) {
+            try { uri = document(context, true); } catch (Exception error) { return false; }
+        }
         if (uri == null) {
             ContentValues values = new ContentValues();
             values.put(MediaStore.MediaColumns.DISPLAY_NAME, FILE_NAME);
@@ -113,12 +134,17 @@ public final class ProfileStore {
             values.put(MediaStore.MediaColumns.IS_PENDING, 1);
             uri = resolver.insert(MediaStore.Files.getContentUri("external"), values);
             pending = true;
+            if (uri != null) try (Cursor check = resolver.query(uri, new String[]{MediaStore.MediaColumns.DISPLAY_NAME}, null, null, null)) {
+                if (check == null || !check.moveToFirst() || !FILE_NAME.equals(check.getString(0))) {
+                    resolver.delete(uri, null, null); return false;
+                }
+            }
         }
         if (uri == null) return false;
         try (OutputStream output = resolver.openOutputStream(uri, "wt")) {
             if (output == null) return false;
             JSONObject root = new JSONObject();
-            root.put("version", 1);
+            root.put("version", 2);
             JSONArray array = new JSONArray();
             for (Profile profile : profiles) array.put(profile.toJson());
             root.put("profiles", array);
@@ -129,11 +155,47 @@ public final class ProfileStore {
                 ready.put(MediaStore.MediaColumns.IS_PENDING, 0);
                 resolver.update(uri, ready, null, null);
             }
-            return true;
+            try (InputStream check = resolver.openInputStream(uri)) {
+                if (check == null) return false;
+                return parse(new String(readAll(check), StandardCharsets.UTF_8)).size() == profiles.size();
+            }
         } catch (IOException | JSONException error) {
             if (pending) resolver.delete(uri, null, null);
             return false;
         }
+    }
+
+    public static boolean saveCapture(Context context, Profile captured) {
+        synchronized (LOCK) {
+            try {
+                List<Profile> profiles = read(context);
+                if (readFailed) return false;
+                boolean replaced = false;
+                for (int i=0; i<profiles.size(); i++) {
+                    Profile old = profiles.get(i);
+                    if (!old.normalizedUsername.equals(captured.normalizedUsername)) continue;
+                    JSONObject merged = new JSONObject(old.details.toString());
+                    // Keep the last successful complete observation if a later attempt fails.
+                    if (captured.captureFailed() && "complete".equals(old.details.optString("capture_status"))) {
+                        JSONObject lastGood = new JSONObject(old.details.toString());
+                        lastGood.remove("last_successful_capture");
+                        merged.put("last_successful_capture", lastGood);
+                    }
+                    if (!captured.captureFailed()) merged.remove("last_successful_capture");
+                    java.util.Iterator<String> keys = captured.details.keys();
+                    while (keys.hasNext()) { String key=keys.next(); merged.put(key, captured.details.get(key)); }
+                    profiles.set(i, new Profile(captured.username, captured.normalizedUsername, old.firstSeenAt, merged));
+                    replaced = true; break;
+                }
+                if (!replaced) profiles.add(0, captured);
+                return write(context, profiles);
+            } catch (Exception error) { return false; }
+        }
+    }
+
+    private static Uri document(Context context, boolean create) throws Exception {
+        return SharedReelDocuments.folder(context) == null ? findFile(context.getContentResolver())
+                : SharedReelDocuments.file(context, FILE_NAME, create);
     }
 
     private static Uri findFile(ContentResolver resolver) {
@@ -144,11 +206,9 @@ public final class ProfileStore {
         Uri uri = findFile(resolver, collection, projection, selection, args);
         if (uri != null) return uri;
 
-        // Some file managers and adb copies update the path on disk without
-        // preserving MediaStore's RELATIVE_PATH metadata. The filename is
-        // still unique for dedgram, so use it as a safe compatibility fallback.
+        // Accept the provider's alternate trailing-slash form, never unrelated folders.
         return findFile(resolver, collection, projection,
-                MediaStore.MediaColumns.DISPLAY_NAME + "=?", new String[]{FILE_NAME});
+                selection, new String[]{FILE_NAME, RELATIVE_PATH});
     }
 
     private static Uri findFile(ContentResolver resolver, Uri collection, String[] projection,

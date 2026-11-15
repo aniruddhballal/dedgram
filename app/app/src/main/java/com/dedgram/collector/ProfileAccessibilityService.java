@@ -49,6 +49,9 @@ public final class ProfileAccessibilityService extends AccessibilityService {
     private final Runnable foregroundCheck = this::checkForeground;
     private CaptureSession session;
     private boolean reelCaptureInProgress;
+    private ProfileCaptureRunner profileCapture;
+    private TextView profileStatus;
+    private final Runnable hideProfileStatus = this::removeProfileStatus;
     private PendingQueueRunner pendingQueue;
     private TextView queueBubble;
     private boolean screenReceiverRegistered;
@@ -165,6 +168,8 @@ public final class ProfileAccessibilityService extends AccessibilityService {
     }
 
     private void clearSession() {
+        if (profileCapture != null) profileCapture.cancel();
+        removeProfileStatus();
         if (pendingQueue != null) pendingQueue.stop("Paused; start the queue again to resume null-status entries");
         removeQueueBubble();
         if (session != null) session.stop();
@@ -421,48 +426,121 @@ public final class ProfileAccessibilityService extends AccessibilityService {
 
     private void captureCurrentProfile(TextView source, int attempt) {
         if (session == null || session.isStopped()) return;
+        if (reelCaptureInProgress || (pendingQueue != null && pendingQueue.isRunning())
+                || (profileCapture != null && profileCapture.isRunning())) {
+            showMessage("Capture is running; wait for it to finish"); return;
+        }
+        showProfileStatus("Capturing profile; keep Instagram open", false);
+        profileCapture = new ProfileCaptureRunner(mainHandler, new ProfileCaptureRunner.Host() {
+            public AccessibilityNodeInfo root() { return currentInstagramRoot(); }
+            public boolean back() { return performGlobalAction(GLOBAL_ACTION_BACK); }
+            public void picture(android.graphics.Rect bounds, String username, java.util.function.BiConsumer<Object,String> result) {
+                captureProfilePicture(bounds, username, result);
+            }
+            public void finished(ProfileCaptureRecord record) {
+                restoreProfileCaptureControls();
+                if (record == null) { showProfileStatus("Profile fetch failed: open a profile at its header first", true); showCaptureFailure(source, "Open an Instagram profile at its header first"); return; }
+                Profile captured = record.finish();
+                boolean saved = ProfileStore.saveCapture(getApplicationContext(), captured);
+                if (!saved) { showProfileStatus("Could not save profile. Check document access and try again.", true); showCaptureFailure(source, "Could not save profile"); return; }
+                savedUsernames.add(record.username);
+                setBubbleAlreadySaved(true);
+                if (record.hasFailures()) {
+                    showProfileStatus("Profile fetch failed: " + record.failureSummary() + ". Tap the icon again to retry.", true);
+                    showCaptureFailure(source, "Profile fetch failed: " + record.failureSummary());
+                } else {
+                    showProfileStatus("Saved profile @" + record.username, false);
+                    showMessage("Saved profile @" + record.username);
+                    if (source.getBackground() instanceof CaptureBubbleDrawable)
+                        ((CaptureBubbleDrawable)source.getBackground()).startShimmer();
+                }
+            }
+        });
+        profileCapture.start();
+    }
+
+    private void removeProfileStatus() {
+        mainHandler.removeCallbacks(hideProfileStatus);
+        if(profileStatus!=null && windowManager!=null)try{windowManager.removeView(profileStatus);}catch(RuntimeException ignored){}
+        profileStatus=null;
+    }
+
+    private void showProfileStatus(String message, boolean failed) {
+        removeProfileStatus();
+        if(windowManager==null || session==null || session.isStopped())return;
+        TextView view=new TextView(this);
+        view.setText(message);view.setTextSize(14);view.setTextColor(android.graphics.Color.WHITE);
+        view.setPadding(dp(16),dp(12),dp(16),dp(12));
+        view.setBackgroundColor(failed?0xFF8B261C:0xFF202020);
+        WindowManager.LayoutParams params=new WindowManager.LayoutParams(
+                getResources().getDisplayMetrics().widthPixels-dp(32),WindowManager.LayoutParams.WRAP_CONTENT,
+                WindowManager.LayoutParams.TYPE_ACCESSIBILITY_OVERLAY,
+                WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE|WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE,
+                PixelFormat.TRANSLUCENT);
+        params.gravity=Gravity.BOTTOM|Gravity.CENTER_HORIZONTAL;params.y=dp(72);
+        params.setTitle("dedgram profile capture status");
+        try{windowManager.addView(view,params);profileStatus=view;}catch(RuntimeException ignored){}
+        mainHandler.postDelayed(hideProfileStatus,failed?15_000L:8_000L);
+    }
+
+    private void captureProfilePicture(android.graphics.Rect bounds, String username,
+                                      java.util.function.BiConsumer<Object,String> result) {
+        if (Build.VERSION.SDK_INT < 30) {
+            result.accept(null,"Android 11 or newer is required to capture the visible profile picture."); return;
+        }
         AccessibilityNodeInfo root = currentInstagramRoot();
-        if (session.isStopped()) return;
-        if (root == null || !INSTAGRAM_PACKAGE.equals(String.valueOf(root.getPackageName()))) {
-            if (root != null) root.recycle();
-            if (attempt < MAX_CAPTURE_ATTEMPTS) {
-                mainHandler.postDelayed(() -> captureCurrentProfile(source, attempt + 1), CAPTURE_RETRY_DELAY_MS);
-            } else {
-                showCaptureFailure(source, "Open an Instagram profile first");
+        boolean verified = root != null && ProfileAccessibilityExtractor.snapshot(root).isHeader(username);
+        if (root != null) root.recycle();
+        if (!verified) { result.accept(null,"Profile identity changed before avatar capture."); return; }
+        if(bubble!=null)bubble.setVisibility(View.INVISIBLE);
+        if(reelBubble!=null)reelBubble.setVisibility(View.INVISIBLE);
+        mainHandler.postDelayed(() -> {
+        if(session==null || session.isStopped())return;
+        AccessibilityNodeInfo beforeScreenshot=currentInstagramRoot();
+        ProfileAccessibilityExtractor.Snapshot beforeProfile=beforeScreenshot==null?null:ProfileAccessibilityExtractor.snapshot(beforeScreenshot);
+        boolean stillProfile=beforeProfile!=null && beforeProfile.isHeader(username) && bounds.equals(beforeProfile.pictureBounds());
+        if(beforeScreenshot!=null)beforeScreenshot.recycle();
+        if(!stillProfile){restoreProfileCaptureControls();result.accept(null,"Profile moved before avatar capture.");return;}
+        takeScreenshot(android.view.Display.DEFAULT_DISPLAY, getMainExecutor(), new TakeScreenshotCallback() {
+            @Override public void onSuccess(ScreenshotResult screenshot) {
+                restoreProfileCaptureControls();
+                android.hardware.HardwareBuffer buffer = screenshot.getHardwareBuffer();
+                android.graphics.Bitmap hardware = null, bitmap = null, avatar = null;
+                try {
+                    AccessibilityNodeInfo current = currentInstagramRoot();
+                    ProfileAccessibilityExtractor.Snapshot currentProfile=current==null?null:ProfileAccessibilityExtractor.snapshot(current);
+                    boolean same = currentProfile!=null && currentProfile.isHeader(username) && bounds.equals(currentProfile.pictureBounds());
+                    if(current != null)current.recycle();
+                    if(!same){result.accept(null,"Profile changed during avatar capture.");return;}
+                    hardware=android.graphics.Bitmap.wrapHardwareBuffer(buffer,screenshot.getColorSpace());
+                    if(hardware==null)throw new java.io.IOException("Screenshot bitmap unavailable");
+                    bitmap=hardware.copy(android.graphics.Bitmap.Config.ARGB_8888,false);
+                    if(bounds.left<0 || bounds.top<0 || bounds.right>bitmap.getWidth() || bounds.bottom>bitmap.getHeight())
+                        throw new java.io.IOException("Avatar bounds outside screenshot");
+                    avatar=android.graphics.Bitmap.createBitmap(bitmap,bounds.left,bounds.top,bounds.width(),bounds.height());
+                    java.io.ByteArrayOutputStream bytes=new java.io.ByteArrayOutputStream();
+                    if(!avatar.compress(android.graphics.Bitmap.CompressFormat.PNG,100,bytes))throw new java.io.IOException("PNG encoding failed");
+                    org.json.JSONObject picture=new org.json.JSONObject();
+                    picture.put("mime_type","image/png").put("source","visible_header_crop")
+                            .put("width",avatar.getWidth()).put("height",avatar.getHeight())
+                            .put("base64",android.util.Base64.encodeToString(bytes.toByteArray(),android.util.Base64.NO_WRAP));
+                    result.accept(picture,null);
+                } catch(Exception error){result.accept(null,"Visible profile picture capture failed: "+error.getMessage());}
+                finally {if(avatar!=null)avatar.recycle();if(bitmap!=null)bitmap.recycle();if(hardware!=null)hardware.recycle();buffer.close();}
             }
-            return;
-        }
-        String username = InstagramUsernameExtractor.extract(root);
-        root.recycle();
-        if (username.isEmpty()) {
-            if (attempt < MAX_CAPTURE_ATTEMPTS) {
-                mainHandler.postDelayed(() -> captureCurrentProfile(source, attempt + 1), CAPTURE_RETRY_DELAY_MS);
-            } else {
-                showCaptureFailure(source, "Could not identify this profile");
-            }
-            return;
-        }
-        ProfileStore.SaveResult result = ProfileStore.add(getApplicationContext(), username);
-        if (result == ProfileStore.SaveResult.ADDED) {
-            savedUsernames.add(username);
-            setBubbleAlreadySaved(true);
-            showMessage("Saved @" + username);
-            if (source == bubble && source.getBackground() instanceof CaptureBubbleDrawable) {
-                ((CaptureBubbleDrawable) source.getBackground()).startShimmer();
-            }
-        } else if (result == ProfileStore.SaveResult.ALREADY_PRESENT) {
-            savedUsernames.add(username);
-            setBubbleAlreadySaved(true);
-            showMessage("Already saved @" + username);
-            showAlreadySavedFeedback(source);
-        } else {
-            showCaptureFailure(source, "Could not save @" + username);
-        }
+            @Override public void onFailure(int errorCode) {restoreProfileCaptureControls();result.accept(null,"Visible avatar screenshot failed, Android code "+errorCode);}
+        });
+        },120L);
+    }
+
+    private void restoreProfileCaptureControls() {
+        if(bubble!=null)bubble.setVisibility(View.VISIBLE);
+        if(reelBubble!=null)reelBubble.setVisibility(View.VISIBLE);
     }
 
     private void captureCurrentReel(TextView source) {
         if (pendingQueue != null && pendingQueue.isRunning()) { showMessage("Queue is running; use its Stop control to pause"); return; }
-        if (reelCaptureInProgress || session == null || session.isStopped()) return;
+        if (reelCaptureInProgress || (profileCapture != null && profileCapture.isRunning()) || session == null || session.isStopped()) return;
         reelCaptureInProgress = true;
         captureCurrentReel(source, 0);
     }

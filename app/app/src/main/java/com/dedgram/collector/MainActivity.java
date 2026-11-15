@@ -160,7 +160,7 @@ public final class MainActivity extends Activity {
         TextView title = UiStyles.text(this, "Capture profiles", 24, Color.BLACK, true);
         title.setLetterSpacing(-0.02f);
         container.addView(title, margin(0, 5, 0, 0));
-        TextView description = UiStyles.text(this, "Keep a clean, deduplicated list of Instagram usernames. Tap the alien profile control while a profile is open.", 15, Color.BLACK, false);
+        TextView description = UiStyles.text(this, "Save profile counts, bio, account details and picture. Tap the alien control at the top of a profile; it opens About this account and returns automatically. Keep Instagram open until capture finishes.", 15, Color.BLACK, false);
         description.setLineSpacing(UiStyles.dp(this, 2), 1.0f);
         container.addView(description, margin(0, 10, 0, 0));
         container.addView(spacer(20));
@@ -510,7 +510,7 @@ public final class MainActivity extends Activity {
         empty.setOrientation(LinearLayout.VERTICAL);
         empty.setPadding(0, UiStyles.dp(this, 22), 0, UiStyles.dp(this, 22));
         empty.addView(UiStyles.text(this, "Nothing saved yet", 24, Color.BLACK, true), margin(0, 20, 0, 0));
-        empty.addView(UiStyles.text(this, "Open an Instagram profile, then tap the dedgram circle to add its username.", 15, Color.BLACK, false), margin(0, 10, 0, 0));
+        empty.addView(UiStyles.text(this, "Open an Instagram profile at its header, then tap the alien control to save its details.", 15, Color.BLACK, false), margin(0, 10, 0, 0));
         return empty;
     }
 
@@ -519,6 +519,11 @@ public final class MainActivity extends Activity {
         row.setOrientation(LinearLayout.VERTICAL);
         row.setPadding(0, UiStyles.dp(this, 14), 0, UiStyles.dp(this, 14));
         row.addView(UiStyles.text(this, "@" + profile.username, 16, Color.BLACK, true));
+        String captureStatus = profile.details.optString("capture_status", "username_only");
+        row.addView(UiStyles.text(this, "failed".equals(captureStatus) ? "Profile fetch failed - tap the profile icon again to retry"
+                : "complete".equals(captureStatus) ? "Profile details saved - unavailable fields recorded separately"
+                : "Username only - tap the profile control again to capture details", 12,
+                profile.captureFailed() ? 0xFF9A3412 : 0xFF555555, true), margin(0, 5, 0, 0));
         row.addView(UiStyles.text(this, "instagram.com/" + profile.normalizedUsername + "/", 12, 0xFF555555, false), margin(0, 5, 0, 0));
         row.addView(UiStyles.rule(this, 0xFFDDDDDD, 1), ruleMargin(0xFFDDDDDD, 1, 0, 14, 0, 0));
         return row;

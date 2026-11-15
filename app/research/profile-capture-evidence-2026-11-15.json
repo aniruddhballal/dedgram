@@ -1,0 +1,344 @@
+﻿{
+    "device":  "OnePlus CPH2467",
+    "android_api":  35,
+    "tested_version":  "2.5.0",
+    "records":  [
+                    {
+                        "username":  "edlt.shox",
+                        "capture_status":  "complete",
+                        "first_seen_at":  "1794717967235",
+                        "counts":  {
+                                       "followers":  {
+                                                         "value":  26000,
+                                                         "raw":  "26K",
+                                                         "approximate":  true
+                                                     },
+                                       "posts":  {
+                                                     "value":  0,
+                                                     "raw":  "0",
+                                                     "approximate":  false
+                                                 },
+                                       "following":  {
+                                                         "value":  46,
+                                                         "raw":  "46",
+                                                         "approximate":  false
+                                                     }
+                                   },
+                        "category":  null,
+                        "country":  "Tajikistan",
+                        "date_joined":  "September 2026",
+                        "former_usernames_count":  18,
+                        "avatar":  {
+                                       "width":  222,
+                                       "source":  "visible_header_crop",
+                                       "height":  222
+                                   },
+                        "field_availability":  {
+                                                   "posts_count":  {
+                                                                       "status":  "available",
+                                                                       "evidence":  "profile_header_familiar_post_count_value; displayed count captured without inventing precision.",
+                                                                       "observed_at":  "2026-11-15T04:53:07.272Z",
+                                                                       "error":  null
+                                                                   },
+                                                   "followers_count":  {
+                                                                           "status":  "available",
+                                                                           "evidence":  "profile_header_familiar_followers_value; displayed count captured without inventing precision.",
+                                                                           "observed_at":  "2026-11-15T04:53:07.272Z",
+                                                                           "error":  null
+                                                                       },
+                                                   "following_count":  {
+                                                                           "status":  "available",
+                                                                           "evidence":  "profile_header_familiar_following_value; displayed count captured without inventing precision.",
+                                                                           "observed_at":  "2026-11-15T04:53:07.273Z",
+                                                                           "error":  null
+                                                                       },
+                                                   "profile_header_text":  {
+                                                                               "status":  "available",
+                                                                               "evidence":  "Active profile header; two matching observations at least 500 ms apart.",
+                                                                               "observed_at":  "2026-11-15T04:53:07.270Z",
+                                                                               "error":  null
+                                                                           },
+                                                   "bio":  {
+                                                               "status":  "available",
+                                                               "evidence":  "Expanded original-language bio in profile_user_info_compose_view.",
+                                                               "observed_at":  "2026-11-15T04:53:07.275Z",
+                                                               "error":  null
+                                                           },
+                                                   "display_name":  {
+                                                                        "status":  "available",
+                                                                        "evidence":  "profile_header_full_name_above_vanity",
+                                                                        "observed_at":  "2026-11-15T04:53:07.274Z",
+                                                                        "error":  null
+                                                                    },
+                                                   "category":  {
+                                                                    "status":  "not_shown",
+                                                                    "evidence":  "No separate category text in the verified profile information container.",
+                                                                    "observed_at":  "2026-11-15T04:53:07.275Z",
+                                                                    "error":  null
+                                                                },
+                                                   "account_based_in":  {
+                                                                            "status":  "available",
+                                                                            "evidence":  "Account based in row",
+                                                                            "observed_at":  "2026-11-15T04:53:10.069Z",
+                                                                            "error":  null
+                                                                        },
+                                                   "date_joined":  {
+                                                                       "status":  "available",
+                                                                       "evidence":  "Date joined row",
+                                                                       "observed_at":  "2026-11-15T04:53:10.068Z",
+                                                                       "error":  null
+                                                                   },
+                                                   "profile_picture":  {
+                                                                           "status":  "available",
+                                                                           "evidence":  "PNG crop of visible profile avatar from the verified header; not an original image URL.",
+                                                                           "observed_at":  "2026-11-15T04:53:07.514Z",
+                                                                           "error":  null
+                                                                       },
+                                                   "former_usernames_count":  {
+                                                                                  "status":  "available",
+                                                                                  "evidence":  "Former usernames row: 18",
+                                                                                  "observed_at":  "2026-11-15T04:53:10.070Z",
+                                                                                  "error":  null
+                                                                              },
+                                                   "about_text":  {
+                                                                      "status":  "available",
+                                                                      "evidence":  "Verified About this account screen for @edlt.shox",
+                                                                      "observed_at":  "2026-11-15T04:53:10.067Z",
+                                                                      "error":  null
+                                                                  }
+                                               }
+                    },
+                    {
+                        "username":  "illmisguideyou",
+                        "capture_status":  "complete",
+                        "first_seen_at":  "1794717932382",
+                        "counts":  {
+                                       "followers":  {
+                                                         "value":  9361,
+                                                         "raw":  "9,361",
+                                                         "approximate":  false
+                                                     },
+                                       "posts":  {
+                                                     "value":  1180,
+                                                     "raw":  "1,180",
+                                                     "approximate":  false
+                                                 },
+                                       "following":  {
+                                                         "value":  46,
+                                                         "raw":  "46",
+                                                         "approximate":  false
+                                                     }
+                                   },
+                        "category":  "Reel creator",
+                        "country":  null,
+                        "date_joined":  "December 2022",
+                        "former_usernames_count":  10,
+                        "avatar":  {
+                                       "width":  222,
+                                       "source":  "visible_header_crop",
+                                       "height":  222
+                                   },
+                        "field_availability":  {
+                                                   "posts_count":  {
+                                                                       "status":  "available",
+                                                                       "evidence":  "profile_header_familiar_post_count_value; displayed count captured without inventing precision.",
+                                                                       "observed_at":  "2026-11-15T04:45:28.226239Z",
+                                                                       "error":  null
+                                                                   },
+                                                   "followers_count":  {
+                                                                           "status":  "available",
+                                                                           "evidence":  "profile_header_familiar_followers_value; displayed count captured without inventing precision.",
+                                                                           "observed_at":  "2026-11-15T04:45:28.226806Z",
+                                                                           "error":  null
+                                                                       },
+                                                   "following_count":  {
+                                                                           "status":  "available",
+                                                                           "evidence":  "profile_header_familiar_following_value; displayed count captured without inventing precision.",
+                                                                           "observed_at":  "2026-11-15T04:45:28.227067Z",
+                                                                           "error":  null
+                                                                       },
+                                                   "profile_header_text":  {
+                                                                               "status":  "available",
+                                                                               "evidence":  "Active profile header; two matching observations at least 500 ms apart.",
+                                                                               "observed_at":  "2026-11-15T04:45:28.225736Z",
+                                                                               "error":  null
+                                                                           },
+                                                   "bio":  {
+                                                               "status":  "available",
+                                                               "evidence":  "Expanded original-language bio in profile_user_info_compose_view.",
+                                                               "observed_at":  "2026-11-15T04:45:28.227516Z",
+                                                               "error":  null
+                                                           },
+                                                   "display_name":  {
+                                                                        "status":  "not_shown",
+                                                                        "evidence":  "No display-name row in the verified familiar profile header.",
+                                                                        "observed_at":  "2026-11-15T04:45:28.227380Z",
+                                                                        "error":  null
+                                                                    },
+                                                   "category":  {
+                                                                    "status":  "available",
+                                                                    "evidence":  "Separate non-bio text in profile_user_info_compose_view.",
+                                                                    "observed_at":  "2026-11-15T04:45:28.227549Z",
+                                                                    "error":  null
+                                                                },
+                                                   "account_based_in":  {
+                                                                            "status":  "not_shown",
+                                                                            "evidence":  "Account based in explicitly displays: Not shared",
+                                                                            "observed_at":  "2026-11-15T04:45:31.562364Z",
+                                                                            "error":  null
+                                                                        },
+                                                   "date_joined":  {
+                                                                       "status":  "available",
+                                                                       "evidence":  "Date joined row",
+                                                                       "observed_at":  "2026-11-15T04:45:31.562119Z",
+                                                                       "error":  null
+                                                                   },
+                                                   "profile_picture":  {
+                                                                           "status":  "available",
+                                                                           "evidence":  "PNG crop of visible profile avatar from the verified header; not an original image URL.",
+                                                                           "observed_at":  "2026-11-15T04:45:28.366222Z",
+                                                                           "error":  null
+                                                                       },
+                                                   "former_usernames_count":  {
+                                                                                  "status":  "available",
+                                                                                  "evidence":  "Former usernames row: 10",
+                                                                                  "observed_at":  "2026-11-15T04:45:31.562789Z",
+                                                                                  "error":  null
+                                                                              },
+                                                   "about_text":  {
+                                                                      "status":  "available",
+                                                                      "evidence":  "Verified About this account screen for @illmisguideyou",
+                                                                      "observed_at":  "2026-11-15T04:45:31.561367Z",
+                                                                      "error":  null
+                                                                  }
+                                               }
+                    },
+                    {
+                        "username":  "reposted",
+                        "capture_status":  "complete",
+                        "first_seen_at":  "1794717891201",
+                        "counts":  {
+                                       "followers":  {
+                                                         "value":  77,
+                                                         "raw":  "77",
+                                                         "approximate":  false
+                                                     },
+                                       "posts":  {
+                                                     "value":  11,
+                                                     "raw":  "11",
+                                                     "approximate":  false
+                                                 },
+                                       "following":  {
+                                                         "value":  0,
+                                                         "raw":  "0",
+                                                         "approximate":  false
+                                                     }
+                                   },
+                        "category":  null,
+                        "country":  null,
+                        "date_joined":  "November 2025",
+                        "former_usernames_count":  28,
+                        "avatar":  {
+                                       "width":  222,
+                                       "source":  "visible_header_crop",
+                                       "height":  222
+                                   },
+                        "field_availability":  {
+                                                   "posts_count":  {
+                                                                       "status":  "available",
+                                                                       "evidence":  "profile_header_familiar_post_count_value; displayed count captured without inventing precision.",
+                                                                       "observed_at":  "2026-11-15T04:44:47.451873Z",
+                                                                       "error":  null
+                                                                   },
+                                                   "followers_count":  {
+                                                                           "status":  "available",
+                                                                           "evidence":  "profile_header_familiar_followers_value; displayed count captured without inventing precision.",
+                                                                           "observed_at":  "2026-11-15T04:44:47.452358Z",
+                                                                           "error":  null
+                                                                       },
+                                                   "following_count":  {
+                                                                           "status":  "available",
+                                                                           "evidence":  "profile_header_familiar_following_value; displayed count captured without inventing precision.",
+                                                                           "observed_at":  "2026-11-15T04:44:47.452792Z",
+                                                                           "error":  null
+                                                                       },
+                                                   "profile_header_text":  {
+                                                                               "status":  "available",
+                                                                               "evidence":  "Active profile header; two matching observations at least 500 ms apart.",
+                                                                               "observed_at":  "2026-11-15T04:44:47.451080Z",
+                                                                               "error":  null
+                                                                           },
+                                                   "bio":  {
+                                                               "status":  "available",
+                                                               "evidence":  "Expanded original-language bio in profile_user_info_compose_view.",
+                                                               "observed_at":  "2026-11-15T04:44:47.453124Z",
+                                                               "error":  null
+                                                           },
+                                                   "display_name":  {
+                                                                        "status":  "available",
+                                                                        "evidence":  "profile_header_full_name_above_vanity",
+                                                                        "observed_at":  "2026-11-15T04:44:47.452939Z",
+                                                                        "error":  null
+                                                                    },
+                                                   "category":  {
+                                                                    "status":  "not_shown",
+                                                                    "evidence":  "No separate category text in the verified profile information container.",
+                                                                    "observed_at":  "2026-11-15T04:44:47.453208Z",
+                                                                    "error":  null
+                                                                },
+                                                   "account_based_in":  {
+                                                                            "status":  "not_shown",
+                                                                            "evidence":  "Account based in explicitly displays: Not shared",
+                                                                            "observed_at":  "2026-11-15T04:44:50.483658Z",
+                                                                            "error":  null
+                                                                        },
+                                                   "date_joined":  {
+                                                                       "status":  "available",
+                                                                       "evidence":  "Date joined row",
+                                                                       "observed_at":  "2026-11-15T04:44:50.483397Z",
+                                                                       "error":  null
+                                                                   },
+                                                   "profile_picture":  {
+                                                                           "status":  "available",
+                                                                           "evidence":  "PNG crop of visible profile avatar from the verified header; not an original image URL.",
+                                                                           "observed_at":  "2026-11-15T04:44:47.823347Z",
+                                                                           "error":  null
+                                                                       },
+                                                   "former_usernames_count":  {
+                                                                                  "status":  "available",
+                                                                                  "evidence":  "Former usernames row: 28",
+                                                                                  "observed_at":  "2026-11-15T04:44:50.483937Z",
+                                                                                  "error":  null
+                                                                              },
+                                                   "about_text":  {
+                                                                      "status":  "available",
+                                                                      "evidence":  "Verified About this account screen for @reposted",
+                                                                      "observed_at":  "2026-11-15T04:44:50.482671Z",
+                                                                      "error":  null
+                                                                  }
+                                               }
+                    }
+                ],
+    "interruption":  [
+                         {
+                             "username":  "edlt.shox",
+                             "capture_status":  "failed",
+                             "navigation_error":  "About screen identity or stable content could not be verified.",
+                             "first_seen_at":  "1794717967235"
+                         }
+                     ],
+    "retry_preserved_first_seen":  true,
+    "duplicates_after_retry":  0,
+    "final_validation":  {
+                             "unit_tests":  85,
+                             "failures":  0,
+                             "debug_assembly":  "passed",
+                             "preview_assembly":  "passed",
+                             "release_assembly":  "passed",
+                             "preview_lint_errors":  0,
+                             "preview_lint_warnings":  25,
+                             "version_code":  20500,
+                             "apk_sha256":  "A3B6DA9FC6FBEB4480BA50F1C760CB83F97272CF3BDADE9FBC687E3D96E3E083",
+                             "final_installed_profile_capture":  "edlt.shox complete; first-seen unchanged; stale failure cleared"
+                         }
+}
