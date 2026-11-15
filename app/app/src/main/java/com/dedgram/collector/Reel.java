@@ -8,6 +8,8 @@ public final class Reel {
     private JSONObject savedDocument;
     public String shortcode = "";
     public String url = "";
+    public String urlError;
+    public JSONObject urlObservation;
     public String identitySource = "accessibility";
     public JSONObject retainedObservations;
     public JSONObject metricAvailability;
@@ -43,6 +45,8 @@ public final class Reel {
         Reel reel = new Reel();
         try { reel.savedDocument=new JSONObject(object.toString()); } catch(JSONException ignored){}
         reel.url = object.optString("url", "");
+        reel.urlError=object.isNull("url_error")?null:object.optString("url_error",null);
+        reel.urlObservation=object.optJSONObject("url_observation");
         reel.identitySource = object.optString("identity_source", "accessibility");
         reel.shortcode = object.optString("shortcode", "");
         reel.account = object.optString("account", "");
@@ -77,6 +81,8 @@ public final class Reel {
         JSONObject object = savedDocument==null?new JSONObject():new JSONObject(savedDocument.toString());
         object.put("shortcode", shortcode);
         object.put("url", url);
+        object.put("url_error",urlError==null?JSONObject.NULL:urlError);
+        object.put("url_observation",urlObservation==null?JSONObject.NULL:urlObservation);
         object.put("identity_source", identitySource);
         object.put("retained_observations", retainedObservations == null ? JSONObject.NULL : retainedObservations);
         object.put("metric_availability", metricAvailability == null ? JSONObject.NULL : metricAvailability);
@@ -119,7 +125,7 @@ public final class Reel {
     public boolean hasErrors() {
         return likesError != null || commentsError != null || viewsOrPlaysError != null
                 || sharesError != null || repostsError != null || savesError != null
-                || datePostedError != null || captionError != null || navigationError != null;
+                || datePostedError != null || captionError != null || navigationError != null || urlError != null;
     }
 
     public boolean metricNotExposed(String field) {

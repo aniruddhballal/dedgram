@@ -2,6 +2,14 @@
 
 The Android app uses semantic versioning. The canonical current version is stored in the repository-root `VERSION` file; Gradle reads that file for both `versionName` and the monotonically increasing `versionCode`.
 
+## 2.5.4 - Automatic canonical URLs for individual reel captures
+
+The reel icon now opens Share → Copy link automatically, reads a fresh copied URL through a brief focused accessibility overlay, strips tracking parameters/fragments, and verifies return to the original reel before continuing caption/date/metrics capture. Saves canonical URL, shortcode, URL verification evidence and explicit URL errors. Expanded reel entries expose the link and an Open reel action. Stale clipboard data, unknown destinations, missing controls and changed reel identity cannot silently supply a link. Existing queue URL capture is preserved. Version code is 20504; optimized preview assembly refreshes `app/dedgram.apk`.
+
+Explicitly sponsored ads are skipped for ordinary icon capture; their alternate caption and metrics layouts are outside the requested feature.
+
+Validation: all 108 tests pass; debug, preview and release builds pass; preview lint reports zero errors. On the connected phone, two normal reposted reels gained clean matching URLs and completed their existing detail capture. Reopening the links, including the new Open reel action, returned to the matching content. Installed package metadata confirms 2.5.4 / 20504. Repository/preview APK SHA-256 matches `5CA0CA46960C4B92244BA9180A385872064505D72C1F6E4BE0BCB466B2C6FF91`. See [reel URL capture research](research/reel-url-capture-2026-11-15.md) for evidence and limits.
+
 ## 2.5.3 - Independent collapsible catalog entries
 
 Moved the info icon directly beside BOT SCRAPER. Each profile and reel now starts as a compact, single-line bar with an expand/collapse indicator. Tapping it shows the existing complete details, independently of other entries; choices persist across search, tab changes and reopening the app. Stable profile/reel identities keep each choice separate, failed captures retain a visible warning indicator, and details are created only when first expanded. Version code is 20503; optimized preview assembly refreshes `app/dedgram.apk`.

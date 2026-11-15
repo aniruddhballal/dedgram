@@ -62,6 +62,16 @@ The service captures only when the active accessibility root belongs to Instagra
 
 ## Catalog storage
 
+### Automatic reel URLs (2.5.4)
+
+Ordinary reel-icon captures now open Instagram's Share → Copy link controls automatically before collecting caption and metrics. The app reads only a fresh copied link, normalizes it to `https://www.instagram.com/reel/<shortcode>/`, discards query parameters/fragments, and verifies the original author/caption/count observations before continuing. No manual copy or additional user tap is needed. Expanded reel entries show the canonical URL and an **Open reel** action.
+
+Ordinary icon captures skip reels explicitly identified by Instagram as sponsored ads. Ad-specific caption/metrics layouts are outside this feature.
+
+Android restricts clipboard reads to focused apps. A short-lived accessibility overlay requests focus solely to read the freshly copied link, then returns focus to Instagram. Only this owned overlay and its bounded focus-restoration transition are exempted from the foreground stop check; foreign-app content is not read. The clipboard read requires Android 8 or newer to verify its timestamp. The copied link replaces the clipboard's prior content, as Instagram's Copy link action normally does. Share recipients and unrelated clipboard text are never saved.
+
+Reel JSON retains `url` and `shortcode` and now includes nullable `url_error` and `url_observation` with the copy/verification times and source. Missing controls, stale clipboard content, invalid or ambiguous destinations and changed reel identity remain explicit errors. Failed verification never attaches a copied URL to another reel. Existing legacy records remain readable; they do not acquire invented URLs. Queued captures retain their already-canonical requested URLs and do not open Share. Canonical shortcodes also let later captures update the same known reel.
+
 The Android catalog is stored at the user-visible shared path:
 
 ```text

@@ -49,6 +49,8 @@ public final class ProfileAccessibilityService extends AccessibilityService {
     private final Runnable foregroundCheck = this::checkForeground;
     private CaptureSession session;
     private boolean reelCaptureInProgress;
+    private ReelLinkCapture reelLinkCapture;
+    private ReelClipboardReader reelClipboard;
     private ProfileCaptureRunner profileCapture;
     private TextView profileStatus;
     private final Runnable hideProfileStatus = this::removeProfileStatus;
@@ -168,6 +170,8 @@ public final class ProfileAccessibilityService extends AccessibilityService {
     }
 
     private void clearSession() {
+        if(reelLinkCapture!=null)reelLinkCapture.cancel();
+        if(reelClipboard!=null)reelClipboard.close();
         if (profileCapture != null) profileCapture.cancel();
         removeProfileStatus();
         if (pendingQueue != null) pendingQueue.stop("Paused; start the queue again to resume null-status entries");
@@ -203,6 +207,11 @@ public final class ProfileAccessibilityService extends AccessibilityService {
         }
         AccessibilityNodeInfo root = getRootInActiveWindow();
         String packageName = root == null ? null : String.valueOf(root.getPackageName());
+        if(reelClipboard!=null && (reelClipboard.holdsFocus() || reelClipboard.restoringFocus())
+                && (getPackageName().equals(packageName) || packageName==null || "null".equals(packageName))
+                && !session.expire(SystemClock.elapsedRealtime())){
+            if(root!=null)root.recycle();return null; // Do not traverse our temporary clipboard-focus overlay.
+        }
         if ((packageName == null || "null".equals(packageName)) && pendingQueue != null && pendingQueue.isNavigating()
                 && !session.expire(SystemClock.elapsedRealtime())) {
             if(root != null)root.recycle();
@@ -296,6 +305,7 @@ public final class ProfileAccessibilityService extends AccessibilityService {
         AccessibilityNodeInfo root = currentInstagramRoot();
         boolean instagramActive = root != null;
         if (root != null) root.recycle();
+        if(reelClipboard!=null && (reelClipboard.holdsFocus() || reelClipboard.restoringFocus()))return;
         if (instagramActive) {
             showBubble();
             showReelBubble();
@@ -559,8 +569,44 @@ public final class ProfileAccessibilityService extends AccessibilityService {
             retryOrFailReel(source, attempt, "Open an individual Instagram reel first");
             return;
         }
+        if((pendingQueue==null || !pendingQueue.isCapturing()) && ReelLink.isAd(root)){
+            root.recycle();reelCaptureInProgress=false;showProfileStatus("Ad skipped",false);return;
+        }
         Reel reel = buildReel(snapshot);
         ReelMetricAvailability.observe(reel, snapshot, true);
+        if(pendingQueue!=null && pendingQueue.isCapturing()){
+            root.recycle();beginReelDetails(source,reel);return;
+        }
+        String fingerprint=ReelLink.fingerprint(root);root.recycle();
+        reel.urlError="Reel URL has not been verified.";reel.shortcode="";
+        reelLinkCapture=new ReelLinkCapture(mainHandler,new ReelLinkCapture.Host(){
+            public AccessibilityNodeInfo root(){return currentInstagramRoot();}
+            public void clipboard(long copiedAt,java.util.function.BiConsumer<String,String> result){
+                reelClipboard=new ReelClipboardReader(ProfileAccessibilityService.this,windowManager,mainHandler);
+                reelClipboard.read(copiedAt,result);
+            }
+            public void finished(String url,String error,boolean returned,long copiedAt){
+                if(session==null || session.isStopped())return;
+                reel.urlError=error;
+                if(url!=null && error==null){
+                    try{
+                        reel.url=PendingReels.canonicalUrl(url);reel.shortcode=PendingReels.shortcode(reel.url);
+                        reel.identitySource="instagram_copy_link_verified_reel";
+                        reel.urlObservation=new org.json.JSONObject().put("source","instagram_android_share_copy_link")
+                                .put("copied_at_epoch_ms",copiedAt).put("verified_at_epoch_ms",System.currentTimeMillis())
+                                .put("verification","matching_reel_before_and_after_copy").put("tracking_parameters_removed",true);
+                    }catch(Exception invalid){reel.url="";reel.shortcode="";reel.urlError="Copied reel URL was invalid.";}
+                }
+                if(!returned){reel.navigationError=error;reel.captureStage="url_failed";saveReel(source,reel);return;}
+                beginReelDetails(source,reel);
+            }
+        },fingerprint);
+        reelLinkCapture.start();
+    }
+
+    private void beginReelDetails(TextView source,Reel reel){
+        AccessibilityNodeInfo root=currentInstagramRoot();
+        if(root==null)return;
         boolean expanded = ReelAccessibilityExtractor.clickCaption(root);
         root.recycle();
         reel.captureStage = "caption";
@@ -743,6 +789,7 @@ public final class ProfileAccessibilityService extends AccessibilityService {
             reel.savesError = message;
             reel.datePostedError = message;
             reel.captionError = message;
+            reel.urlError = message;
             saveReel(source, reel);
         }
     }

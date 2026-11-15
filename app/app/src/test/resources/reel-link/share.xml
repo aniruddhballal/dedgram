@@ -1,0 +1,7 @@
+<hierarchy>
+  <node text="" resource-id="" content-desc="" class="android.view.View" package="com.instagram.android" bounds="[0,107][1080,2352]">
+    <node index="0" text="" resource-id="com.instagram.android:id/background_dimmer" class="android.widget.Button" package="com.instagram.android" content-desc="Dismiss" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,107][1080,2352]" />
+    <node index="0" text="" resource-id="com.instagram.android:id/button" class="android.widget.ImageView" package="com.instagram.android" content-desc="Copy link" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[279,2035][435,2191]" />
+    <node index="1" text="Copy link" resource-id="com.instagram.android:id/label" class="android.widget.TextView" package="com.instagram.android" content-desc="Copy link" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[280,2215][434,2304]" />
+  </node>
+</hierarchy>
