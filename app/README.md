@@ -5,6 +5,8 @@ dedgram is a native Android companion for collecting Instagram profile details a
 ## Current features
 
 - The header identifies dedgram as **BOT SCRAPER** and shows total saved profiles and reels beneath the version number, independently of the selected catalog or search filter.
+- The **ⓘ** icon sits beside **BOT SCRAPER**. Profiles and reels start as compact, single-line bars; tap any bar to reveal or hide its complete details independently. Expansion choices persist across searches, tab changes and app restarts. Failed captures retain an exclamation indicator while collapsed. Detail views and avatar decoding are deferred until expansion.
+- The info glyph is sized to the subtitle, with an expanded touch area that does not increase the header height or move the version/count block.
 - The main screen contains a right-aligned **Capture session** switch, catalog tabs, collection actions and saved results. Tap the header's **ⓘ** icon once for all setup, collection, queue, availability, storage and privacy information.
 - Turning the session switch on opens Android Accessibility settings for a fresh start request. Its checked state follows actual accessibility enablement. Turning it off stops capture and disables access; if the service cannot be reached, Android settings opens for manual disablement.
 

@@ -35,6 +35,7 @@ public class MainScreenTest {
         assertNull(text(root,"OPEN ACCESSIBILITY SETTINGS"));assertNull(text(root,"STOP CAPTURE AND TURN ACCESS OFF"));
         assertNull(text(root,"CAPTURE SETUP"));assertNull(text(root,"Storage and privacy"));
         View info=description(root,"App information");assertNotNull(info);info.performClick();
+        assertSame(text(root,"BOT SCRAPER").getParent(),info.getParent());
         AlertDialog dialog=ShadowAlertDialog.getLatestAlertDialog();assertTrue(dialog.isShowing());
         assertNotNull(text(dialog.getWindow().getDecorView(),"Storage and privacy"));
         assertNotNull(text(dialog.getWindow().getDecorView(),"Pending reel queue"));
@@ -68,6 +69,19 @@ public class MainScreenTest {
         TextView header=ReflectionHelpers.getField(activity,"headerCount");assertEquals("2 PROFILES / 3 REELS",header.getText().toString());
         android.widget.EditText search=ReflectionHelpers.getField(activity,"searchInput");search.setText("one");
         assertEquals("2 PROFILES / 3 REELS",header.getText().toString());
+    }
+    @Test public void infoIconDoesNotIncreaseHeaderHeightOrMoveVersionAndCounts(){
+        View root=activity.getWindow().getDecorView();
+        TextView label=text(root,"BOT SCRAPER");View info=description(root,"App information");
+        ViewGroup subtitle=(ViewGroup)label.getParent(),brand=(ViewGroup)subtitle.getParent(),header=(ViewGroup)brand.getParent();
+        int width=android.view.View.MeasureSpec.makeMeasureSpec(UiStyles.dp(activity,360),View.MeasureSpec.EXACTLY);
+        header.measure(width,View.MeasureSpec.UNSPECIFIED);header.layout(0,0,header.getMeasuredWidth(),header.getMeasuredHeight());
+        assertEquals(label.getMeasuredHeight(),subtitle.getMeasuredHeight());
+        assertTrue(((TextView)info).getTextSize()<=label.getTextSize()*1.3f);
+        int height=header.getMeasuredHeight(),versionTop=header.getChildAt(1).getTop();
+        info.setVisibility(View.GONE);
+        header.measure(width,View.MeasureSpec.UNSPECIFIED);header.layout(0,0,header.getMeasuredWidth(),header.getMeasuredHeight());
+        assertEquals(height,header.getMeasuredHeight());assertEquals(versionTop,header.getChildAt(1).getTop());
     }
     private TextView text(View root,String label){
         if(root instanceof TextView && ((TextView)root).getText().toString().equals(label))return (TextView)root;

@@ -274,7 +274,26 @@ public final class MainActivity extends Activity {
         TextView wordmark = UiStyles.text(this, "dedgram", 30, Color.BLACK, true);
         wordmark.setLetterSpacing(-0.05f);
         brand.addView(wordmark);
-        brand.addView(UiStyles.utility(this, "BOT SCRAPER"), margin(0, 3, 0, 0));
+        LinearLayout subtitle=new LinearLayout(this);subtitle.setGravity(Gravity.CENTER_VERTICAL);
+        TextView subtitleLabel=UiStyles.utility(this,"BOT SCRAPER");
+        subtitle.addView(subtitleLabel);
+        TextView info=UiStyles.text(this,"ⓘ",12,Color.BLACK,false);
+        info.setIncludeFontPadding(false);
+        info.setGravity(Gravity.CENTER);info.setContentDescription("App information");
+        info.setOnClickListener(v->showAppInformation());
+        subtitle.addView(info,new LinearLayout.LayoutParams(UiStyles.dp(this,28),-1));
+        subtitleLabel.measure(View.MeasureSpec.UNSPECIFIED,View.MeasureSpec.UNSPECIFIED);
+        LinearLayout.LayoutParams subtitleParams=new LinearLayout.LayoutParams(-1,subtitleLabel.getMeasuredHeight());
+        subtitleParams.topMargin=UiStyles.dp(this,3);brand.addView(subtitle,subtitleParams);
+        // Keep the visual row as tall as its text, with a larger touch target in the header.
+        header.addOnLayoutChangeListener((v,l,t,r,b,oldL,oldT,oldR,oldB)->{
+            android.graphics.Rect hit=new android.graphics.Rect();info.getDrawingRect(hit);
+            header.offsetDescendantRectToMyCoords(info,hit);
+            int half=UiStyles.dp(this,24),centerX=hit.centerX(),centerY=hit.centerY();
+            hit.set(Math.max(0,centerX-half),Math.max(0,centerY-half),
+                    Math.min(header.getWidth(),centerX+half),Math.min(header.getHeight(),centerY+half));
+            header.setTouchDelegate(new android.view.TouchDelegate(hit,info));
+        });
         header.addView(brand, new LinearLayout.LayoutParams(0, -2, 1));
 
         LinearLayout versionAndCount = new LinearLayout(this);
@@ -283,14 +302,7 @@ public final class MainActivity extends Activity {
         TextView version = UiStyles.utility(this, "v" + BuildConfig.VERSION_NAME);
         version.setGravity(Gravity.END);
         version.setTextColor(0xFF555555);
-        LinearLayout versionRow=new LinearLayout(this);
-        versionRow.setGravity(Gravity.CENTER_VERTICAL|Gravity.END);
-        versionRow.addView(version);
-        TextView info=UiStyles.text(this,"ⓘ",22,Color.BLACK,false);
-        info.setGravity(Gravity.CENTER);info.setContentDescription("App information");
-        info.setOnClickListener(v->showAppInformation());
-        versionRow.addView(info,new LinearLayout.LayoutParams(UiStyles.dp(this,48),UiStyles.dp(this,48)));
-        versionAndCount.addView(versionRow);
+        versionAndCount.addView(version);
         headerCount = UiStyles.text(this, "0 PROFILES / 0 REELS",9,Color.BLACK,true);
         headerCount.setGravity(Gravity.END);
         versionAndCount.addView(headerCount, margin(0, 3, 0, 0));
@@ -354,7 +366,7 @@ public final class MainActivity extends Activity {
         information(content,"Capture session","Turn on the Capture session switch to open Android Accessibility settings. Enable dedgram there within 2 minutes, then open Instagram within 60 seconds. The switch reflects Android's actual accessibility state; opening settings alone does not turn capture on. Turn the switch off to stop capture and disable access. If Android cannot stop it directly, the switch opens settings so you can disable it there.\n\nCapture stops when you leave Instagram, lock the phone, press Stop in the queue overlay, or reach 30 minutes. Return to dedgram to start another session. Payment apps such as Google Pay may block payments while accessibility is enabled. Stop capture and verify the switch is off before making payments.");
         information(content,"Profiles","Open an Instagram profile at its header and tap the alien control once. Keep Instagram open until capture finishes. The app expands the bio, captures counts and the visible profile picture, opens About this account and, if needed, Former usernames, then returns automatically. No further taps are needed. Reel URL discovery is not part of profile capture.\n\nUsernames are deduplicated. Another tap refreshes the existing record while preserving its first-saved time. Profiles already saved are highlighted while Instagram is open. Older username-only records can be upgraded with another capture.");
         information(content,"Reels","Open an individual Instagram reel and tap the dedgram target control. It expands the caption, preserves the displayed posting date and its observation time, and opens Likes and plays. Likes, comments, reposts, shares, saves and plays are recorded independently. Captions preserve their original Unicode text, including emojis and non-Latin scripts. Relative dates are kept as displayed rather than converted into invented publication times.");
-        information(content,"Reading saved results","Saved values appear in the catalogs. Not shown means the verified Instagram UI did not expose the value; missing values are unknown, never zero. Failed fields show the actual extraction error. Rounded counts are labeled. Captured, finished and first-saved times use the phone's local timezone.\n\nShow saved header reveals the profile's original header text. A failed refresh can show the previous successful capture separately, so older values are not confused with the latest attempt. Capture and storage failures also appear in Instagram's status banner.");
+        information(content,"Reading saved results","Each profile and reel starts as a compact entry bar. Tap its bar to expand or collapse the full saved details. Entries work independently, and each choice is remembered across searches, tab changes and reopening the app. An exclamation mark keeps capture failures visible even when collapsed.\n\nNot shown means the verified Instagram UI did not expose the value; missing values are unknown, never zero. Failed fields show the actual extraction error. Rounded counts are labeled. Captured, finished and first-saved times use the phone's local timezone.\n\nShow saved header reveals the profile's original header text. A failed refresh can show the previous successful capture separately, so older values are not confused with the latest attempt. Capture and storage failures also appear in Instagram's status banner.");
         information(content,"Pending reel queue","Put pending_reels.json in Documents/dedgram, then use Choose dedgram folder to grant access to that exact directory. Start / resume opens accessibility settings for a fresh session and processes eligible URLs one at a time. Instagram opens the first pending reel automatically after access is enabled.\n\nOnly entries whose status is null are attempted; saved results are skipped on resume. Stop from the queue overlay or leave Instagram to pause. Reset a result's status to null deliberately if you want to retry it. Do not edit the queue file while it is running.");
         information(content,"Storage and privacy","Profiles: "+ProfileStore.storageLocation()+"\nReels: "+ReelStore.storageLocation()+"\nQueue: Documents/dedgram/pending_reels.json\n\nThe files are user-visible JSON documents. Profile capture saves the bio and a PNG crop of the visible avatar. The temporary full screenshot is discarded; the app does not collect other apps' text, screenshots or direct messages. Avatar capture requires Android 11 or newer. Catalog viewing needs no capture permission.");
         new AlertDialog.Builder(this).setTitle("About dedgram").setView(scroll).setPositiveButton("DONE",null).show();
@@ -443,6 +455,13 @@ public final class MainActivity extends Activity {
     }
 
     private View buildReelRow(Reel reel) {
+        String identity=reel.shortcode.isEmpty()?"captured:"+reel.capturedAt+":"+reel.account:"shortcode:"+reel.shortcode;
+        String account=reel.account.isEmpty()?"Reel":"@"+reel.account;
+        String label=account+" · "+(reel.shortcode.isEmpty()?ProfileDetailsView.dateTime(reel.capturedAt):reel.shortcode);
+        return CollapsibleEntryView.create(this,"reel:"+identity,label,"reel "+label,reel.hasErrors(),0xFF312E81,()->buildReelDetails(reel));
+    }
+
+    private View buildReelDetails(Reel reel) {
         LinearLayout row = new LinearLayout(this);
         row.setOrientation(LinearLayout.VERTICAL);
         row.setPadding(0, UiStyles.dp(this, 16), 0, UiStyles.dp(this, 16));
@@ -500,10 +519,14 @@ public final class MainActivity extends Activity {
     }
 
     private View buildProfileRow(Profile profile) {
+        return CollapsibleEntryView.create(this,"profile:"+profile.normalizedUsername,"@"+profile.username,
+                "profile @"+profile.username,profile.captureFailed(),Color.BLACK,()->buildProfileDetails(profile));
+    }
+
+    private View buildProfileDetails(Profile profile) {
         LinearLayout row = new LinearLayout(this);
         row.setOrientation(LinearLayout.VERTICAL);
         row.setPadding(0, UiStyles.dp(this, 14), 0, UiStyles.dp(this, 14));
-        row.addView(UiStyles.text(this, "@" + profile.username, 16, Color.BLACK, true));
         String captureStatus = profile.details.optString("capture_status", "username_only");
         row.addView(UiStyles.text(this, "failed".equals(captureStatus) ? "Profile fetch failed"
                 : "complete".equals(captureStatus) ? "Profile details saved"

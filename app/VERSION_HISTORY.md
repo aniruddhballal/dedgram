@@ -2,6 +2,14 @@
 
 The Android app uses semantic versioning. The canonical current version is stored in the repository-root `VERSION` file; Gradle reads that file for both `versionName` and the monotonically increasing `versionCode`.
 
+## 2.5.3 - Independent collapsible catalog entries
+
+Moved the info icon directly beside BOT SCRAPER. Each profile and reel now starts as a compact, single-line bar with an expand/collapse indicator. Tapping it shows the existing complete details, independently of other entries; choices persist across search, tab changes and reopening the app. Stable profile/reel identities keep each choice separate, failed captures retain a visible warning indicator, and details are created only when first expanded. Version code is 20503; optimized preview assembly refreshes `app/dedgram.apk`.
+
+The info glyph is proportional to the subtitle and constrained to the text row's original height. A larger delegated touch area keeps it easy to tap without pushing the version or counts down. A layout regression checks that hiding the icon does not change header height or the right-hand block's position.
+
+Validation: all 98 unit tests pass; debug, preview and release assembly pass; preview lint has zero errors. Connected-phone checks confirmed independent profile/reel expansion, full detail rendering, remembered choices across tab changes and app upgrade, compact header alignment, and opening info by tapping outside the small visible glyph within its larger touch area. The installed package is 2.5.3 / 20503. Repository and generated preview APK SHA-256 matches `4549A40E99B5F45BB6D0D2AAB48AFB1E7370E90DFD7DA013C6019CA89872083A`. Capture remained off during catalog testing.
+
 ## 2.5.2 - Balanced header and compact capture controls
 
 Changed the header subtitle to BOT SCRAPER and added combined saved profile/reel totals beneath the version. Moved all collection instructions, storage notes and privacy guidance into a single scrollable information dialog behind the header's info icon. Both catalogs now lead with actions and saved data. Replaced the settings/stop button pair and textual access status with one right-aligned Capture session switch. Enabling opens Android settings with a fresh start request; disabling preserves the existing stop/disable behavior and settings fallback. Programmatic switch refreshes follow Android's actual state without launching settings or arming a new session. Version code is 20502; optimized preview assembly refreshes `app/dedgram.apk`.
