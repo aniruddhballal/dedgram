@@ -2,6 +2,14 @@
 
 The Android app uses semantic versioning. The canonical current version is stored in the repository-root `VERSION` file; Gradle reads that file for both `versionName` and the monotonically increasing `versionCode`.
 
+## 2.6.1 - Keep About inspection inside the account page
+
+Fixed Complete analysis selecting Instagram's outer navigation pager as an About-page scroll target. Short About pages now finish without scrolling unrelated containers, and invisible screens cannot supply selectors or receive capture actions. Increased the focused copied-link read window to six seconds for slow Android/Instagram animations, preserving clipboard freshness checks. Paging accepts live metric changes only when owner, caption, collection position and count still match; identical captions require changed collection-position evidence. Version code is 20601; optimized preview assembly refreshes `app/dedgram.apk`.
+
+Validation: all 132 unit tests pass, including the connected-phone short-page fixture, refusal to scroll its navigation pager, and hidden-profile isolation. Preview/release builds pass; preview lint has zero errors and 29 warnings. See [About navigation investigation](research/about-navigation-fix-2026-11-16.md) for the reproduced failure and phone validation.
+
+On the connected phone, one analysis tap completed missp.riyax1's profile and all seven reels, with seven confirmed in both total fields, all positions 0 through 6 covered, canonical URLs and zero reel field errors. Repository/preview APK SHA-256: `C8A6DCE3A8FA439D06E352DF461AE405C419770395DFA5D66D12AC9B1F0B1BFE`.
+
 ## 2.6.0 - Complete account analysis from one floating control
 
 Added a draggable purple checklist/play control that composes profile capture, profile Reels-tab navigation and sequential full reel captures. Its live progress panel shows saved counts and provides Stop. Saves durable per-profile checkpoints and unique canonical shortcodes, distinguishes partial saved counts from a verified total, detects terminal collection positions, and does not mark stalled or interrupted scans complete. Confirmed totals and analysis results appear in both compact and expanded profile entries. Restored known reel panels from an interrupted run are dismissed only after verifying account and collection context. Existing temporary-session limits and mutually exclusive capture workflows are preserved. Version code is 20600; optimized preview assembly refreshes `app/dedgram.apk`.

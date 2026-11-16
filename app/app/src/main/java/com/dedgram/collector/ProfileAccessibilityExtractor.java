@@ -27,7 +27,7 @@ public final class ProfileAccessibilityExtractor {
             node.getBoundsInScreen(bounds);
             for (int i=0; i<node.getChildCount(); i++) {
                 AccessibilityNodeInfo child = node.getChild(i);
-                if (child != null) { children.add(new Node(child)); child.recycle(); }
+                if (child != null) { if(child.isVisibleToUser())children.add(new Node(child)); child.recycle(); }
             }
         }
         Node find(Predicate<Node> test) {
@@ -157,7 +157,8 @@ public final class ProfileAccessibilityExtractor {
             else record.available(field,value,label+" row");
         }
         public boolean canScrollAbout() {
-            return tree.find(n->n.scrollable)!=null;
+            Node content=tree.id("bloks_container");
+            return content!=null && content.find(n->n.scrollable)!=null;
         }
         public boolean isFormerUsernames() {
             Node title=tree.id("action_bar_title");
@@ -185,9 +186,20 @@ public final class ProfileAccessibilityExtractor {
         return action(root,n->n.getText()!=null && n.getText().toString().matches("(?s).*(?:…|\\.\\.\\.)\\s*more$"),AccessibilityNodeInfo.ACTION_CLICK,true);
     }
     public static boolean scrollAbout(AccessibilityNodeInfo root) {
-        return action(root,AccessibilityNodeInfo::isScrollable,AccessibilityNodeInfo.ACTION_SCROLL_FORWARD,false);
+        return scrollAboutContent(root);
+    }
+    private static boolean scrollAboutContent(AccessibilityNodeInfo node) {
+        if(!node.isVisibleToUser())return false;
+        if(String.valueOf(node.getViewIdResourceName()).endsWith(":id/bloks_container"))
+            return action(node,AccessibilityNodeInfo::isScrollable,AccessibilityNodeInfo.ACTION_SCROLL_FORWARD,false);
+        for(int i=0;i<node.getChildCount();i++){
+            AccessibilityNodeInfo child=node.getChild(i);
+            if(child!=null){boolean moved=scrollAboutContent(child);child.recycle();if(moved)return true;}
+        }
+        return false;
     }
     private static boolean action(AccessibilityNodeInfo node,Predicate<AccessibilityNodeInfo> test,int action,boolean ancestors) {
+        if(!node.isVisibleToUser())return false;
         if(test.test(node)){
             if(node.performAction(action))return true;
             if(ancestors){

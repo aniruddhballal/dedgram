@@ -29,6 +29,7 @@ public class CompleteAnalysisRunnerTest {
         String screen="profile",finished;
         int index,count=2,captures,actions;boolean wrongOwner,blocked,noMetadata,empty,failSave,stall,fieldError,acceptAtEnd,failCheckpoint,restoredShare;
         long captureDelay;
+        boolean changingCounts,identicalCaptions;
         int stallAfter=Integer.MAX_VALUE;
         final List<JSONObject> states=new ArrayList<>();
         final List<String> progress=new ArrayList<>();
@@ -59,7 +60,8 @@ public class CompleteAnalysisRunnerTest {
             if(!noMetadata)item.setCollectionItemInfo(AccessibilityNodeInfo.CollectionItemInfo.obtain(index,1,0,1,false));
             shadowOf(pager).addChild(item);
             shadowOf(item).addChild(node("clips_author_username",wrongOwner&&index>0?"other":"owner"));
-            shadowOf(item).addChild(node("clips_caption","Original caption "+index));
+            shadowOf(item).addChild(node("clips_caption","Original caption "+(identicalCaptions?0:index)));
+            if(changingCounts){shadowOf(item).addChild(node(null,"Like"));shadowOf(item).addChild(node(null,Integer.toString(10+captures)));}
             for(String control:new String[]{"Repost","Share","Save"})shadowOf(item).addChild(node(null,control));
             if(restoredShare){
                 AccessibilityNodeInfo dismiss=node("background_dimmer","");dismiss.setContentDescription("Dismiss");dismiss.setClickable(true);
@@ -94,6 +96,14 @@ public class CompleteAnalysisRunnerTest {
     @Test public void failedScrollBeforeLastIsPartialNotACompletedCount()throws Exception{
         Host host=new Host();host.blocked=true;host.start();host.idle(30);
         assertEquals(1,host.captures);assertEquals("partial",host.last().getString("status"));assertTrue(host.last().isNull("total_reels"));
+    }
+    @Test public void liveCountsCanChangeDuringCaptureAtTheSameVerifiedPosition()throws Exception{
+        Host host=new Host();host.changingCounts=true;host.start();host.idle(30);
+        assertEquals(2,host.captures);assertEquals("complete",host.last().getString("status"));
+    }
+    @Test public void identicalCaptionsAdvanceOnlyWithChangedCollectionPosition()throws Exception{
+        Host host=new Host();host.identicalCaptions=true;host.start();host.idle(30);
+        assertEquals(2,host.captures);assertEquals("complete",host.last().getString("status"));
     }
     @Test public void missingCollectionEvidenceCannotProduceAFinalTotal()throws Exception{
         Host host=new Host();host.noMetadata=true;host.count=1;host.start();host.idle(30);

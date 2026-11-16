@@ -14,7 +14,7 @@ public final class CompleteAnalysisRunner {
     private final Handler handler;private final Host host;
     private CompleteAnalysisRun run;
     private boolean running,capturing;
-    private String phase="",stable="",lastSignature="";
+    private String phase="",stable="",lastSignature="",lastContentIdentity="";
     private int attempts,logicalPosition,activePosition=-1,lastCount=-1,eventCount=-1,eventIndex=-1,terminalChecks,duplicates,captureGeneration,rewinds,recoveredPanels;
     private long lastTerminalAt;
     public CompleteAnalysisRunner(Handler handler,Host host){this.handler=handler;this.host=host;}
@@ -81,13 +81,14 @@ public final class CompleteAnalysisRunner {
         if(!view.viewer || view.loading){root.recycle();retry(this::viewer,"A normal reel did not finish loading.");return;}
         if(!run.username.equals(view.owner)){root.recycle();stop("Viewer left @"+run.username+"; no other account was captured. Total remains unverified.");return;}
         if(view.signature.isEmpty() || !view.signature.equals(stable)){stable=view.signature;root.recycle();retry(this::viewer,"Reel observations did not stabilize.");return;}
-        if(phase.equals("next") && view.signature.equals(lastSignature)){
+        if(phase.equals("next") && view.signature.equals(lastSignature)
+                && !(view.count>0 && view.index==logicalPosition && view.index!=activePosition)){
             root.recycle();retry(this::viewer,"Viewer did not advance; total remains unverified.");return;
         }
         activePosition=view.index>=0?view.index:eventIndex>=0?eventIndex:logicalPosition;
         lastCount=view.count>0?view.count:eventCount;
         if(activePosition!=logicalPosition){root.recycle();stop("Viewer position skipped or repeated; total remains unverified.");return;}
-        lastSignature=view.signature;root.recycle();capturing=true;phase="capture";run.phase="reel_capture";
+        lastSignature=view.signature;lastContentIdentity=view.contentIdentity;root.recycle();capturing=true;phase="capture";run.phase="reel_capture";
         int generation=++captureGeneration;progress("Capturing reel "+(run.codes.size()+1));host.reel();
         handler.postDelayed(()->{if(running && capturing && generation==captureGeneration)stop("Reel capture timed out; partial progress is saved.");},90_000L);
     }
@@ -106,7 +107,12 @@ public final class CompleteAnalysisRunner {
         if(root==null){retry(this::advance,"Could not return to the reel viewer.");return;}
         CompleteAnalysisExtractor.Viewer view=CompleteAnalysisExtractor.viewer(root);
         if(!view.viewer || view.loading){root.recycle();retry(this::advance,"Reel panels did not close or content is still loading.");return;}
-        if(!run.username.equals(view.owner) || !lastSignature.equals(view.signature)){
+        boolean samePosition=view.count>0 && view.count==lastCount && view.index==activePosition
+                && lastContentIdentity.equals(view.contentIdentity);
+        if(!run.username.equals(view.owner) || (!samePosition && !lastSignature.equals(view.signature))){
+            android.util.Log.i("dedgramAnalysis","Paging identity mismatch: owner="+run.username.equals(view.owner)
+                    +" position="+activePosition+"/"+view.index+" count="+lastCount+"/"+view.count
+                    +" caption="+lastContentIdentity.equals(view.contentIdentity));
             root.recycle();stop("Reel changed before automatic paging.");return;
         }
         int count=view.count>0?view.count:lastCount>0?lastCount:eventCount;

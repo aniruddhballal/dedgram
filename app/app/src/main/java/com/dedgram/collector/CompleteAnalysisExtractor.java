@@ -9,7 +9,7 @@ import java.util.List;
 public final class CompleteAnalysisExtractor {
     private CompleteAnalysisExtractor() {}
     public static final class Viewer {
-        public String owner="",signature="",issue;
+        public String owner="",signature="",contentIdentity="",issue;
         public boolean viewer,loading,forward;
         public int count=-1,index=-1;
     }
@@ -17,6 +17,7 @@ public final class CompleteAnalysisExtractor {
         Viewer v=new Viewer();ReelAccessibilityExtractor.Snapshot s=ReelAccessibilityExtractor.snapshot(root);
         v.viewer=s.isLikelyReel() && !s.hasCaptionSheet() && !s.hasLikesAndPlaysSheet() && !ReelLink.hasShareSheet(root);
         v.owner=ProfileStore.normalizeUsername(s.account());v.signature=ReelLink.fingerprint(root);v.issue=s.queueIssue();
+        v.contentIdentity=v.owner+"\n"+s.caption();
         AccessibilityNodeInfo pager=find(root,"clips_viewer_view_pager");
         if(pager!=null){Rect viewport=new Rect();pager.getBoundsInScreen(viewport);metadata(pager,v,viewport);pager.recycle();}
         v.loading=containsLoading(root);

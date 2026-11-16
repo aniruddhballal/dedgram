@@ -85,6 +85,30 @@ public class ProfileCaptureTest {
         assertEquals(28,r.json.getLong("former_usernames_count"));
         assertEquals("not_shown",status(r,"account_based_in"));assertTrue(r.json.isNull("account_based_in"));
     }
+    @Test public void actualMisspAboutScreenIdentityAndFieldsAreReadable()throws Exception {
+        ProfileCaptureRecord r=new ProfileCaptureRecord("missp.riyax1");
+        ProfileAccessibilityExtractor.Snapshot s=ProfileAccessibilityExtractor.snapshot(fixture("about-missp"));
+        assertTrue(s.isAbout("missp.riyax1"));
+        s.readAbout(r,true);
+        assertEquals("October 2026",r.json.getString("date_joined"));
+        assertEquals("India",r.json.getString("account_based_in"));
+        assertEquals("not_shown",status(r,"former_usernames_count"));
+    }
+    @Test public void shortAboutPageNeverScrollsInstagramNavigationPager()throws Exception {
+        final int[] scrollActions={0};
+        actions=(label,action)->{if(action==AccessibilityNodeInfo.ACTION_SCROLL_FORWARD)scrollActions[0]++;return true;};
+        AccessibilityNodeInfo root=fixture("about-missp");
+        assertFalse(ProfileAccessibilityExtractor.snapshot(root).canScrollAbout());
+        assertFalse(ProfileAccessibilityExtractor.scrollAbout(root));
+        assertEquals(0,scrollActions[0]);
+    }
+    @Test public void hiddenScreensCannotSupplyAboutTitleOrReceiveScrolls()throws Exception {
+        AccessibilityNodeInfo wrapper=AccessibilityNodeInfo.obtain();wrapper.setVisibleToUser(true);
+        AccessibilityNodeInfo hidden=fixture("header");hidden.setVisibleToUser(false);
+        shadowOf(wrapper).addChild(hidden);shadowOf(wrapper).addChild(fixture("about-missp"));
+        assertTrue(ProfileAccessibilityExtractor.snapshot(wrapper).isAbout("missp.riyax1"));
+        assertFalse(ProfileAccessibilityExtractor.snapshot(wrapper).fingerprint().contains("77followers"));
+    }
     @Test public void unreadableVisibleCountFailsAndRoundedPostsDoNotInventExactCount()throws Exception {
         AccessibilityNodeInfo root=fixture("header","text=\"11\"","text=\"1.2K\"");
         ProfileCaptureRecord r=new ProfileCaptureRecord("reposted");ProfileAccessibilityExtractor.snapshot(root).readHeader(r);

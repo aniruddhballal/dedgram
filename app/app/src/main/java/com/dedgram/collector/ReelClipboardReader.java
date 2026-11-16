@@ -24,7 +24,9 @@ public final class ReelClipboardReader {
     public void close(){if(focus!=null){try{windows.removeView(focus);}catch(RuntimeException ignored){}focus=null;releaseUntil=SystemClock.elapsedRealtime()+500L;}}
     public void read(long copiedAt,BiConsumer<String,String> callback){
         if(Build.VERSION.SDK_INT<26){callback.accept(null,"Android cannot verify freshness of the copied link on this version.");return;}
-        deadline=SystemClock.elapsedRealtime()+1800L;
+        // Window focus can arrive late while Instagram animates Share and Android's copy preview.
+        // Keep the freshness check strict; allow time for the focused reader to receive its callback.
+        deadline=SystemClock.elapsedRealtime()+6000L;
         focus=new TextView(context);focus.setText("Reading reel link…");focus.setTextSize(14);focus.setTextColor(0xFFFFFFFF);focus.setBackgroundColor(0xFF202020);
         int padding=UiStyles.dp(context,12);focus.setPadding(padding,padding,padding,padding);focus.setFocusableInTouchMode(true);
         WindowManager.LayoutParams params=new WindowManager.LayoutParams(-2,-2,WindowManager.LayoutParams.TYPE_ACCESSIBILITY_OVERLAY,

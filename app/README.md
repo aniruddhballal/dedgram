@@ -65,6 +65,8 @@ The service captures only when the active accessibility root belongs to Instagra
 
 ### Complete analysis (2.6.0)
 
+Version 2.6.1 confines About-page scrolling to its visible content container. Instagram's outer navigation pager is never used to inspect account fields; short About pages need no scroll. Invisible screens cannot supply profile selectors or receive capture actions. The copied-link focus window allows six seconds for Android/Instagram animations while still requiring a fresh clipboard timestamp.
+
 The purple checklist/play icon is the third floating control. From an open profile header, one tap runs the existing profile capture, opens that account's Reels tab, returns a previously scrolled grid toward its beginning, opens the first reel, then repeatedly invokes the existing full reel capture and pages forward using Instagram's accessibility actions. Displayed ordering is retained, including pinned items. No production coordinate gestures are used.
 
 The progress panel shows the account and unique reels saved; tap it to stop the capture session. Profile, individual-reel, pending-queue and complete-analysis workflows are serialized. A changed owner, ad interruption, access gate, save failure, unknown navigation state or unsupported next action stops the analysis with partial progress. Previous valid reel records remain saved and are updated by canonical shortcode on a later run. A later run starts at the first reel; this is not a resume-from-last-position queue.
