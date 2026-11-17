@@ -1,6 +1,6 @@
 # dedgram Android
 
-dedgram is a native Android companion for collecting Instagram profile details and reel metrics. It places three distinct capture controls over Instagram, reads the active Instagram accessibility tree during a temporary capture session, and maintains separate searchable profile and reel catalogs.
+dedgram is a native Android companion for collecting Instagram profile details and reel metrics. It places one compact Quick Ball edge handle over Instagram, reads the active Instagram accessibility tree during a temporary capture session, and maintains separate searchable profile and reel catalogs.
 
 ## Current features
 
@@ -10,29 +10,29 @@ dedgram is a native Android companion for collecting Instagram profile details a
 - The main screen contains a right-aligned **Capture session** switch, catalog tabs, collection actions and saved results. Tap the header's **ⓘ** icon once for all setup, collection, queue, availability, storage and privacy information.
 - Turning the session switch on opens Android Accessibility settings for a fresh start request. Its checked state follows actual accessibility enablement. Turning it off stops capture and disables access; if the service cannot be reached, Android settings opens for manual disablement.
 
-- The capture bubble appears only while Instagram is the active app.
-- The profile control uses the historical rounded-square AInsta alien mark; the reel control uses the black-and-white dedgram target/logo mark.
-- Drag the bubble to any position on the screen. Its position is remembered for later sessions.
-- A tap and a drag are distinguished, so repositioning the bubble does not accidentally save a profile.
-- All three controls use accessibility overlays; general draw-over-other-apps permission is no longer requested.
+- The Quick Ball handle appears only while Instagram is the active app.
+- Tap the handle for a fan menu with new native outline Profile, Reel and Analyze icons. Outside taps and the close button dismiss it; action selection collapses it before capture starts.
+- Drag the handle to either edge. Its edge and relative height are remembered for later sessions; the handle excludes its own small touch area from Android edge-Back gestures.
+- A tap and a drag are distinguished, so repositioning the handle does not accidentally capture anything.
+- The handle and menu use accessibility overlays; general draw-over-other-apps permission is not requested.
 - Capture is a temporary session: start it from dedgram, enable access within two minutes, then open Instagram within 60 seconds of enabling access; leaving Instagram, locking the phone, pressing Stop, or reaching 30 minutes disables accessibility completely.
 - Queued captures are canceled when the session ends. The service never searches background Instagram windows or injects coordinate gestures/global Back actions.
 - Profile capture retries briefly when Instagram has not finished rendering the profile header.
 - Username extraction accepts profile-shaped accessibility labels, profile descriptions, and Instagram profile URLs.
 - Candidate validation rejects common UI labels and metric values such as `posts`, `followers`, and `1.2K followers` instead of treating them as usernames.
 - Usernames are normalized case-insensitively. Repeat profile captures update the existing record and preserve its original first-seen timestamp.
-- Successful saves show a toast and a left-to-right shimmer across the bubble.
-- Already-saved profiles show a separate toast, pulse animation, and short vibration.
-- While an Instagram profile is open, the capture bubble gets a thin silver outline when that username is already saved; the check is debounced and event-driven, without continuous polling.
-- Capture or save failures show a separate toast, jitter animation, and warning vibration.
+- Successful profile saves show a toast and status banner; reel capture retains haptic feedback.
+- Profile capture refreshes existing records without duplicating their usernames.
+- While an already-saved profile is open, the handle crescent and Profile glyph turn green; the check is debounced and event-driven.
+- Capture or save failures retain their toast/status messages and warning vibration.
 - The main app shows the actual Android accessibility enablement status and provides a complete Stop control in both catalog modes.
 - The saved-profile catalog displays the username and its derived Instagram profile URL.
 - Search matches usernames, `@username`, and Instagram profile URLs. It shows match counts and a no-match state.
 - The search field has keyboard-aware insets: results stay above the keyboard, the catalog remains scrollable while the keyboard is open, and the previous scroll position is restored when it closes.
 - The catalog has a fixed-height search field with spacing from the section heading and no decorative empty-state bar.
-- The app has separate **PROFILE DETECTION** and **REEL COLLECTION** modes with visually distinct controls.
-- The black alien profile control captures profile details, including About this account, independently of reel collection.
-- The reel control is a separate dedgram target/logo control that stays visible alongside the alien profile control.
+- The app has separate profile and reel catalog tabs; the quick menu offers the collection actions independently.
+- The Profile action captures profile details, including About this account, independently of reel collection.
+- The Reel action captures the current individual reel. Analyze performs complete account analysis.
 - Reel capture reads likes, comments, reposts, shares, saves, posted date, and UTF-8 caption text from the active reel.
 - Reel capture uses Instagram's semantic likes-button action to open **Likes and plays** and reads the plays value there. If Instagram exposes no clickable control, it records an error instead of injecting a screen tap.
 - Reel fields are saved independently with a `value` and `error`, so an unreadable field is never silently omitted.
@@ -43,8 +43,8 @@ dedgram is a native Android companion for collecting Instagram profile details a
 2. Tap **ⓘ** for setup information, then turn on the **Capture session** switch. This opens accessibility settings and authorizes one start; enable the service within two minutes.
 3. Enable **dedgram profile and reel capture**, then open Instagram within 60 seconds.
 4. Open an individual Instagram profile or reel. Leave the reel in its normal viewing state; the reel control expands its caption automatically.
-5. Tap the alien profile control or the dedgram reel control.
-   For the whole account, open its profile header and tap the purple checklist/play control once instead. Its progress panel is also Stop.
+5. Tap the edge handle and choose **Profile** or **Reel**.
+   For the whole account, open its profile header and choose **Analyze**. Its progress panel is also Stop.
 6. When finished, leave Instagram or turn the **Capture session** switch off in dedgram. Verify the switch is off before using Google Pay or another payment app. Starting another session requires returning to dedgram, turning the switch on to open accessibility settings, and enabling the service again. Direct enablement in Settings without this fresh start request is rejected.
 
 Google Pay can block payments when it detects unknown apps with active accessibility access. A [reported payment-blocking issue with the original screenshot](issues/2026-10-31-google-pay-payments-blocked/README.md) prompted this change; the [investigation](issues/2026-10-31-google-pay-payments-blocked/INVESTIGATION.md) records evidence and verification limits. Disabling capture reduces this exposure, but does not guarantee that a previously triggered block is cleared. Follow [Google Pay's guidance](https://support.google.com/pay/india/answer/17165523?hl=en) for an existing block.
@@ -62,6 +62,10 @@ Reel collection reads the active reel, opens the caption through its accessible 
 The service captures only when the active accessibility root belongs to Instagram. Profile capture saves the fields described below; reel capture saves captions, dates, and visible metrics. Saved-profile highlighting inspects Instagram's tree automatically on relevant events. Profile capture takes a screenshot after the tap to crop the visible avatar; the full screenshot exists only in memory and is discarded. It does not collect other apps' text, screenshots, or direct messages.
 
 ## Catalog storage
+
+### Quick menu (2.7.0)
+
+The three floating controls are replaced by one slim curved edge handle. Tap it to open Profile, Reel and Analyze in a labeled fan menu with new native outline icons. Choosing an action collapses the menu before the existing capture flow starts. An outside tap or the close control dismisses the menu without activating Instagram underneath. Drag the handle to either edge; its edge and relative height persist. While collapsed, only the small handle intercepts touch. Busy actions are disabled; existing capture progress/Stop panels remain unchanged. The handle retains saved-profile highlighting and is hidden during avatar capture. No general overlay permission is added.
 
 ### Complete analysis (2.6.0)
 

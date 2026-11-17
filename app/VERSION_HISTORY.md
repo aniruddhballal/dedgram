@@ -2,6 +2,14 @@
 
 The Android app uses semantic versioning. The canonical current version is stored in the repository-root `VERSION` file; Gradle reads that file for both `versionName` and the monotonically increasing `versionCode`.
 
+## 2.7.0 - One curved Quick Ball handle for all capture actions
+
+Replaced the three independent floating controls with one slim, curved edge handle. The crescent's hollow side faces its docked edge. Tap it to reveal a mirrored fan of Profile, Reel and Analyze actions, using new native outline icons and readable label backings. Outside taps and Close dismiss the menu without activating Instagram beneath it. A selection removes the menu before invoking its existing capture flow. Dragging docks to the nearest edge and persists edge/relative height; a narrowly scoped gesture exclusion prevents Android Back from intercepting a handle drag. Saved-profile highlighting, temporary-session restrictions, profile-avatar overlay hiding, queue and complete-analysis progress/Stop controls are preserved. Busy actions are disabled and pending selections are canceled on teardown. No general overlay permission or scraping/data-schema change is introduced. Version code is 20700; optimized preview assembly refreshes `app/dedgram.apk`.
+
+Validation: 137 unit tests pass, including outside dismissal, collapse-before-dispatch for all three actions, canceling pending work on teardown, busy/avatar hiding and dock-position persistence. Preview/release builds and preview lint pass. Connected-phone research is recorded in [Quick Ball verification](research/quick-ball-2026-11-16.md).
+
+On the connected phone, both docking directions and all three menu actions were verified. Analyze completed missp.riyax1's profile and all seven reels with clean canonical URLs, zero reel field errors and confirmed total seven. Preview lint reports zero errors / 28 warnings. Repository/preview APK SHA-256: `EC0491019E69B5F1920293557D6CD3352530C67AF4003DC5F4FBE07422143D56`.
+
 ## 2.6.1 - Keep About inspection inside the account page
 
 Fixed Complete analysis selecting Instagram's outer navigation pager as an About-page scroll target. Short About pages now finish without scrolling unrelated containers, and invisible screens cannot supply selectors or receive capture actions. Increased the focused copied-link read window to six seconds for slow Android/Instagram animations, preserving clipboard freshness checks. Paging accepts live metric changes only when owner, caption, collection position and count still match; identical captions require changed collection-position evidence. Version code is 20601; optimized preview assembly refreshes `app/dedgram.apk`.
